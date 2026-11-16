@@ -149,12 +149,11 @@ export function buildSession(c: Content, s: AppState = getState(), minutes: 30 |
   // 5. Dictation: decoding fast speech.
   if (b.dictation > 0) add({ kind: "dictation", title: "Listen and write", why: "Writing down exactly what you hear trains your ear for fast, connected speech.", minutes: b.dictation });
 
-  // 6. Speaking happens in HelloTalk / Praktika: Pocket gives today's topic, words and pattern, then logs it.
-  add({ kind: "speak", title: "Today's speaking topic", why: "Prepare here in 3 minutes, then speak in HelloTalk or Praktika and log it. Real conversation is where speaking grows.", minutes: 3, ref: { cue: repeatCue(s, c) } });
-
-  // 8. Mistakes, then wrap-up.
+  // 6. Mistakes.
   const open = s.mistakes.filter((m) => !m.fixed && m.expected);
   if (open.length >= 3 && minutes > 30) add({ kind: "mistakes", title: "Fix old mistakes", why: "Correcting your own past mistakes is the most personal practice there is.", minutes: 4 });
+  // 7. Optional, last: today's speaking topic. The speaking itself happens in HelloTalk / Praktika.
+  add({ kind: "speak", title: "Speaking topic (optional)", why: "Read it on the way, then speak in HelloTalk or Praktika and log your minutes. Real conversation is where speaking grows.", minutes: 3, ref: { cue: repeatCue(s, c) } });
   add({ kind: "wrap", title: "Done for today", why: "See what you achieved.", minutes: 2 });
 
   return { date: today(), minutes, steps, index: 0, started: new Date().toISOString() };

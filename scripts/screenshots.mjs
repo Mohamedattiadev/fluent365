@@ -84,7 +84,6 @@ try {
     await seed(page);
 
     await shot(page, `${tag}-01-home`);
-    if (tag === "phone") await shot(page, `${tag}-01b-home-full`, true);
 
     await page.goto(`${BASE}#/session`);
     await page.waitForTimeout(600);
@@ -104,7 +103,7 @@ try {
     console.log(`swipe right: ${before} -> ${after}`);
 
     if (topic) {
-      await page.goto(`${BASE}#/grammar/${topic.id}`);
+      await page.goto(`${BASE}#/learn/grammar/${topic.id}`);
       await page.waitForTimeout(400);
       await shot(page, `${tag}-04-grammar-page`);
       await shot(page, `${tag}-05-grammar-page-full`, true);
@@ -120,7 +119,7 @@ try {
       }
     }
 
-    for (const [route, name] of [["/practice", "07-practice"], ["/progress", "08-progress"], ["/settings", "09-settings"], ["/words", "10-words"]]) {
+    for (const [route, name] of [["/learn/words", "07-learn-words"], ["/learn/grammar", "08-learn-grammar"], ["/read", "09-read"], ["/listen", "10-listen"], ["/settings", "13-settings"]]) {
       await page.goto(`${BASE}#${route}`);
       await page.waitForTimeout(500);
       await shot(page, `${tag}-${name}`);

@@ -113,7 +113,7 @@ function StepView({ c, step, onDone }: { c: Content; step: SessionStep; onDone: 
       return info ? <Reader c={c} info={info} target={dailyTarget(getState(), c.books)} onDone={onDone} /> : <Skip onDone={onDone} />;
     }
     case "speak":
-      return <SpeakPrompt c={c} cueId={ref.cue} onDone={onDone} />;
+      return <OptionalSpeak c={c} cueId={ref.cue} onDone={onDone} />;
     case "wrap":
       return <Wrap c={c} onDone={onDone} />;
   }
@@ -134,6 +134,24 @@ function StepView({ c, step, onDone }: { c: Content; step: SessionStep; onDone: 
     return <SpeakingTask part1={part1.questions.slice(0, 3)} card={cue} onDone={onDone} />;
   }
   return <Skip onDone={onDone} />;
+}
+
+/** The last card: an optional speaking topic for HelloTalk / Praktika. Skipping is one tap. */
+function OptionalSpeak({ c, cueId, onDone }: { c: Content; cueId?: string; onDone: () => void }) {
+  const [open, setOpen] = useState(false);
+  if (open) return <SpeakPrompt c={c} cueId={cueId} onDone={onDone} />;
+  const cue = c.ielts.cueCards.find((x) => x.id === cueId);
+  return (
+    <div>
+      <h2>Want to speak today?</h2>
+      <p>{cue ? <>Topic: <b>{cue.title.replace(/\.$/, "")}</b></> : "A topic to talk about"}, with questions, your newest words and a grammar pattern to use in HelloTalk or Praktika.</p>
+      <p className="small muted">Optional. Your study for today is already done.</p>
+      <ActionBar>
+        <button className="btn big primary" onClick={() => setOpen(true)}>Show the topic</button>
+        <button className="btn quiet" style={{ width: "100%" }} onClick={onDone}>Skip</button>
+      </ActionBar>
+    </div>
+  );
 }
 
 const Skip = ({ onDone }: { onDone: () => void }) => (

@@ -1,20 +1,30 @@
-// "Today", Anki-style: one Study now button (the guided session), then the decks with their counts.
+// Today: one Study now button and one small progress line. Everything else lives in Learn, Read and Listen.
 import { useEffect, useState } from "react";
-import { Icon } from "../components/ui";
 import type { Content } from "../lib/content";
-import { dueCardKeys, dueTopics } from "../lib/learning";
-import { currentBook, dailyTarget, readToday } from "../lib/reading";
-import { dayNumber, phaseOf, skillOf } from "../lib/session";
+import { dueCardKeys } from "../lib/learning";
+import { currentBook } from "../lib/reading";
+import { dayNumber } from "../lib/session";
 import { getState, today, update, useApp } from "../lib/store";
 import type { DayLog } from "../lib/types";
 import { navigate } from "../router";
 import { ensureSession } from "./Session";
 
+export const studied = (d?: DayLog) => !!d && (d.active >= 300 || d.sessionDone);
+
+/** Studied days in the current Monday–Sunday week. */
+export function daysThisWeek(days: Record<string, DayLog>) {
+  const now = new Date();
+  const monday = new Date(now.getFullYear(), now.getMonth(), now.getDate() - ((now.getDay() + 6) % 7));
+  return Array.from({ length: 7 }, (_, i) => today(new Date(monday.getFullYear(), monday.getMonth(), monday.getDate() + i))).filter((k) => studied(days[k])).length;
+}
+
+/** Words known well: remembered for 3+ weeks by the scheduler, or marked as already known. */
+export const wordsKnown = (s = getState()) => Object.values(s.cards).filter((x) => !x.card.fresh && x.card.stability >= 21).length + Object.keys(s.known).length;
+
 export function Home({ c }: { c: Content }) {
   const settings = useApp((s) => s.settings);
   const session = useApp((s) => s.session);
   const days = useApp((s) => s.days);
-  const openMistakes = useApp((s) => s.mistakes.filter((m) => !m.fixed && m.expected).length);
   const [, force] = useState(0);
   useEffect(() => { if (!session || session.date !== today()) { ensureSession(c); force((x) => x + 1); } }, [c, session]);
   if (!session || session.date !== today()) return null;
@@ -22,93 +32,39 @@ export function Home({ c }: { c: Content }) {
   const s = getState();
   const finished = !!session.finished;
   const started = session.index > 0 && !finished;
-  const steps = session.steps.filter((x) => x.kind !== "wrap");
-  const total = session.steps.reduce((n, x) => n + x.minutes, 0);
+  const steps = session.steps.filter((x) => x.kind !== "wrap" && x.kind !== "speak");
+  const total = steps.reduce((n, x) => n + x.minutes, 0);
   const due = dueCardKeys().length;
-  const newWords = session.steps.find((x) => x.kind === "pretech")?.ref?.words?.length ?? (session.steps.some((x) => x.kind === "pretech") ? 8 : 0);
-  const grammarDue = dueTopics().length;
-  const grammarNew = session.steps.some((x) => x.kind === "grammar") ? 1 : 0;
-  const reading = session.steps.filter((x) => skillOf(x) === "reading").length;
-  const bookNow = currentBook(s, c.books);
-  const listening = session.steps.filter((x) => skillOf(x) === "listening").length;
-  const spokeToday = s.external.some((e) => e.at.startsWith(today()));
+  const book = currentBook(s, c.books);
+  const bookPct = book ? Math.floor(((s.reading.books[book.id]?.words ?? 0) / book.words) * 100) : null;
   const now = new Date();
-  const phase = phaseOf(s);
-
-  const decks: { name: string; icon: string; to: string; due?: number; fresh?: number; note?: string }[] = [
-    { name: "Words", icon: "words", to: "/words", due, fresh: newWords },
-    { name: "Grammar", icon: "grammar", to: "/grammar", due: grammarDue, fresh: grammarNew },
-    { name: "Reading", icon: "reading", to: bookNow ? `/reading/book/${bookNow.id}` : "/reading", note: bookNow ? `Book: ${readToday(s).toLocaleString()} / ${dailyTarget(s, c.books).toLocaleString()} words` : undefined, fresh: reading },
-    { name: "Listening", icon: "listening", to: "/listening", fresh: listening },
-    { name: "Speaking", icon: "speaking", to: "/speak", note: spokeToday ? "Logged today" : "Today's topic" },
-    { name: "Mistakes", icon: "again", to: "/practice/mistakes", due: openMistakes },
-  ];
 
   return (
-    <div className="home">
-      <p className="overline">{now.toLocaleDateString(undefined, { weekday: "long", day: "numeric", month: "long" })} · Day {dayNumber(s)} · {phase === "IELTS" ? "IELTS" : phase}</p>
+    <div className="today">
+      <p className="overline">{now.toLocaleDateString(undefined, { weekday: "long", day: "numeric", month: "long" })} · Day {dayNumber(s)}</p>
       <h1>{settings.name ? `Hi, ${settings.name}` : "Today"}</h1>
-
       <section className="study">
         {finished ? (
           <>
-            <p className="study-sub">Today's session is done. {due ? `${due} words are still due.` : "Nothing is due."}</p>
-            {due > 0 && <button className="btn big primary" onClick={() => navigate("/words/review")}>Review {due} words</button>}
-            <button className="btn quiet" onClick={() => { update(() => ({ session: null })); ensureSession(c); navigate("/session"); }}>Study more</button>
+            <p className="done-line">Done for today.</p>
+            {due > 0
+              ? <button className="btn big primary" onClick={() => navigate("/learn/words/review")}>Review {due} more {due === 1 ? "word" : "words"}</button>
+              : <button className="btn big outline" onClick={() => { update(() => ({ session: null })); ensureSession(c); navigate("/session"); }}>Study more</button>}
           </>
         ) : (
           <>
             <button className="btn big primary" onClick={() => navigate("/session")} autoFocus>
-              {started ? `Continue · ${session.index + 1} of ${steps.length}` : "Study now"}
+              {started ? "Continue" : "Study now"}
             </button>
-            <p className="study-sub">About {total} min · {due} reviews · {newWords} new words</p>
-            {!started && settings.minutes !== 30 && <button className="btn quiet" onClick={() => { ensureSession(c, 30); navigate("/session"); }}>Short day (25 min)</button>}
+            <p className="study-sub">{!started ? `About ${total} min` : session.steps[session.index]?.kind === "speak" ? "Only the optional speaking topic is left" : `Step ${Math.min(session.index + 1, steps.length)} of ${steps.length}`}</p>
           </>
         )}
       </section>
-
-      <table className="decks">
-        <thead><tr><th scope="col">Deck</th><th scope="col" className="n">Due</th><th scope="col" className="n">New</th><th aria-hidden /></tr></thead>
-        <tbody>
-          {decks.map((d) => (
-            <tr key={d.name} onClick={() => navigate(d.to)}>
-              <th scope="row"><a href={`#${d.to}`} onClick={(e) => e.stopPropagation()}><Icon name={d.icon} size={20} />{d.name}</a></th>
-              {d.note ? <td colSpan={2} className="note">{d.note}</td> : (<><td className="n">{d.due ?? "–"}</td><td className="n">{d.fresh ?? "–"}</td></>)}
-              <td className="go" aria-hidden><Icon name="chevron" size={20} /></td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-
-      <WeekStrip days={days} />
-    </div>
-  );
-}
-
-export const studied = (d?: DayLog) => !!d && (d.active >= 300 || d.sessionDone);
-
-/** Monday–Sunday. Studied days are filled; missed days are just rest days (nothing to lose). */
-export function WeekStrip({ days }: { days: Record<string, DayLog> }) {
-  const now = new Date();
-  const monday = new Date(now.getFullYear(), now.getMonth(), now.getDate() - ((now.getDay() + 6) % 7));
-  const t = today();
-  const week = Array.from({ length: 7 }, (_, i) => {
-    const d = new Date(monday.getFullYear(), monday.getMonth(), monday.getDate() + i);
-    const k = today(d);
-    return { k, label: d.toLocaleDateString(undefined, { weekday: "narrow" }), long: d.toLocaleDateString(undefined, { weekday: "long" }), on: studied(days[k]), past: k < t, isToday: k === t };
-  });
-  const count = week.filter((d) => d.on).length;
-  return (
-    <div className="weekbox">
-      <div className="week" role="list" aria-label="Days studied this week">
-        {week.map((d) => (
-          <div key={d.k} className="day" role="listitem" aria-label={`${d.long}: ${d.on ? "studied" : d.isToday ? "today" : d.past ? "rest day" : "coming up"}`}>
-            <span className={`dot ${d.on ? "on" : ""} ${d.isToday ? "today" : ""}`}>{d.on ? <Icon name="check" size={16} /> : null}</span>
-            <span aria-hidden>{d.label}</span>
-          </div>
-        ))}
-      </div>
-      <p className="small muted" style={{ margin: 0 }}>{count} of 7 days this week · rest days are fine</p>
+      <p className="progress-line">
+        <span>{daysThisWeek(days)}/7 days this week</span>
+        <span>{wordsKnown(s).toLocaleString()} words known</span>
+        {book && <span>{bookPct}% of {book.title.replace(/^The /, "")}</span>}
+      </p>
     </div>
   );
 }

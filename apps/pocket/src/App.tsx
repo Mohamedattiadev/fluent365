@@ -6,31 +6,32 @@ import * as db from "./lib/db";
 import { isLoaded, loadState, useApp } from "./lib/store";
 import type { GrammarTopic } from "./lib/types";
 import { navigate, useRoute } from "./router";
-import { SpeakPrompt } from "./components/Skills";
-import { GrammarScreen, ListeningScreen, PracticeScreen, ReadingScreen, WordsScreen } from "./screens/Browse";
 import { Home } from "./screens/Home";
-import { ProgressScreen } from "./screens/Progress";
+import { LearnScreen } from "./screens/Learn";
+import { ListenScreen } from "./screens/Listen";
+import { PracticeScreen } from "./screens/LocalOnly";
+import { ReadScreen } from "./screens/Read";
 import { SessionScreen } from "./screens/Session";
 import { SettingsScreen } from "./screens/Settings";
 import { Setup } from "./screens/Setup";
 
-// Bottom navigation bar (Pocket is a phone app; on wide screens it stays in a centred column).
-// Top navigation on the web layout (laptop/tablet). Pocket = words, grammar, reading, listening, a speaking prompt.
-const TOP = [
+// Four places, the same on phone (bottom bar) and laptop (top bar). Settings is a small gear.
+const NAV = [
   { to: "/", label: "Today", icon: "today" },
-  { to: "/words", label: "Words", icon: "words" },
-  { to: "/grammar", label: "Grammar", icon: "grammar" },
-  { to: "/reading", label: "Reading", icon: "reading" },
-  { to: "/listening", label: "Listening", icon: "listening" },
-  { to: "/speak", label: "Speaking", icon: "speaking" },
-  { to: "/progress", label: "Progress", icon: "progress" },
+  { to: "/learn", label: "Learn", icon: "school" },
+  { to: "/read", label: "Read", icon: "reading" },
+  { to: "/listen", label: "Listen", icon: "listening" },
 ];
-// Phone bottom bar: four items only.
-const BOTTOM = [
-  { to: "/", label: "Today", icon: "today" },
-  { to: "/listening", label: "Listen", icon: "listening" },
-  { to: "/progress", label: "Progress", icon: "progress" },
-  { to: "/settings", label: "Settings", icon: "settings" },
+// Old addresses (bookmarks, earlier versions) go to their new place.
+const LEGACY: [RegExp, (m: RegExpMatchArray) => string][] = [
+  [/^\/words(\/review)?$/, (m) => `/learn/words${m[1] ?? ""}`],
+  [/^\/words\/learn\/(.+)$/, (m) => `/learn/words/new/${m[1]}`],
+  [/^\/grammar(\/.*)?$/, (m) => `/learn/grammar${m[1] ?? ""}`],
+  [/^\/practice\/mistakes$/, () => "/learn/grammar/mistakes"],
+  [/^\/reading\/(book|chapters)\/(.+)$/, (m) => `/read/${m[1]}/${m[2]}`],
+  [/^\/reading(\/.*)?$/, () => "/read"],
+  [/^\/listening$/, () => "/listen"],
+  [/^\/(progress|speak)$/, () => "/"],
 ];
 const SIZE: Record<string, string> = { normal: "m", large: "l" };
 
@@ -57,6 +58,9 @@ export function App() {
   }, []);
 
   useEffect(() => { window.scrollTo(0, 0); }, [route]);
+  useEffect(() => {
+    for (const [re, to] of LEGACY) { const m = route.match(re); if (m) { navigate(to(m)); break; } }
+  }, [route]);
 
   useEffect(() => {
     const r = document.documentElement;
@@ -85,35 +89,31 @@ export function App() {
   switch (section) {
     case "": page = <Home c={content} />; break;
     case "session": page = <SessionScreen c={content} />; break;
-    case "grammar": page = <GrammarScreen c={content} path={rest} />; break;
-    case "words": page = <WordsScreen c={content} path={rest} />; break;
-    case "reading": page = <ReadingScreen c={content} path={rest} />; break;
-    case "listening": page = <ListeningScreen c={content} />; break;
-    case "speak": page = <div><SpeakPrompt c={content} onDone={() => navigate("/")} /></div>; break;
-    case "practice": page = <PracticeScreen c={content} path={rest} />; break;
-    case "progress": page = <ProgressScreen c={content} />; break;
+    case "learn": page = <LearnScreen c={content} path={rest} />; break;
+    case "read": page = <ReadScreen c={content} path={rest} />; break;
+    case "listen": page = <ListenScreen c={content} path={rest} />; break;
+    case "practice": page = <PracticeScreen c={content} path={rest} />; break; // hidden: Local app features
     case "settings": page = <SettingsScreen c={content} path={rest} />; break;
     default: page = <Home c={content} />;
   }
-  // Highlight the most specific matching item (e.g. "Writing" rather than "All practice").
-  const match = (items: { to: string }[]) => items.filter((n) => n.to !== "-" && (n.to === "/" ? section === "" : route === n.to || route.startsWith(`${n.to}/`))).sort((x, y) => y.to.length - x.to.length)[0]?.to;
-  const top = match(TOP);
-  const bottom = ["words", "grammar", "reading", "practice", "speak"].includes(section) ? "/" : match(BOTTOM);
+  const current = section === "" ? "/" : NAV.find((n) => n.to === `/${section}`)?.to;
+  const gear = section === "settings";
 
   return (
     <div className={`app ${focus ? "focus-mode" : ""}`}>
       <header className="topnav nav" aria-label="Main">
         <a href="#/" className="brand"><img src="./icons/icon.svg" alt="" /> Fluent365</a>
         <nav className="links" aria-label="Sections">
-          {TOP.map((n) => <a key={n.to} className="link" href={`#${n.to}`} aria-current={top === n.to ? "page" : undefined}><Icon name={n.icon} size={20} filled={top === n.to} />{n.label}</a>)}
+          {NAV.map((n) => <a key={n.to} className="link" href={`#${n.to}`} aria-current={current === n.to ? "page" : undefined}><Icon name={n.icon} size={20} filled={current === n.to} />{n.label}</a>)}
         </nav>
-        <div className="end"><a className="link" href="#/settings" aria-current={section === "settings" ? "page" : undefined}><Icon name="settings" size={20} filled={section === "settings"} />Settings</a></div>
+        <a className="gear" href="#/settings" aria-label="Settings" aria-current={gear ? "page" : undefined}><Icon name="settings" filled={gear} /></a>
       </header>
       <main className="main" id="main">
+        {!focus && <a className="gear phone-gear" href="#/settings" aria-label="Settings" aria-current={gear ? "page" : undefined}><Icon name="settings" filled={gear} /></a>}
         {page}
       </main>
       <nav className="bottomnav nav" aria-label="Main">
-        {BOTTOM.map((n) => <a key={n.to} href={`#${n.to}`} aria-current={bottom === n.to ? "page" : undefined}><span className="ind"><Icon name={n.icon} filled={bottom === n.to} /></span>{n.label}</a>)}
+        {NAV.map((n) => <a key={n.to} href={`#${n.to}`} aria-current={current === n.to ? "page" : undefined}><span className="ind"><Icon name={n.icon} filled={current === n.to} /></span>{n.label}</a>)}
       </nav>
       <Toaster />
     </div>
