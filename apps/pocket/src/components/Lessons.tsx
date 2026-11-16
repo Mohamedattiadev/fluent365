@@ -67,10 +67,10 @@ function LessonWords({ c, lesson, title, intro, words, practice, onDone }: { c: 
       <div>
         <h2>{title}</h2>
         {intro && <p className="muted">{intro}</p>}
-        <ul className="list card">
+        <ul className="list">
           {words.map((w) => (
             <li key={w.en}>
-              <div className="row"><b style={{ fontSize: "1.1rem" }}>{w.en}</b><span className="pill">{w.pos}</span><span className="grow" /><SpeakButton text={`${w.en}. ${w.example}`} label="Hear" /></div>
+              <div className="row"><b style={{ fontSize: "var(--fs-lg)" }}>{w.en}</b><span className="small faint">{w.pos}</span><span className="grow" /><SpeakButton text={`${w.en}. ${w.example}`} label="Hear" /></div>
               {(() => { const d = c.vocab.find((v) => v.w.toLowerCase() === w.en.toLowerCase())?.d; return d ? <p style={{ margin: "4px 0" }}>{d}</p> : null; })()}
               <p className="muted small" dir={lang === "ar" ? "rtl" : undefined} style={{ margin: "4px 0" }}>{lang === "ar" ? w.ar : lang === "tr" ? w.tr : `TR: ${w.tr} · AR: ${w.ar}`}</p>
               <p style={{ margin: 0 }}><i>{w.example}</i></p>
@@ -116,7 +116,7 @@ function UnitRunner({ course, unit, onDone }: { course: Course; unit: Unit; onDo
       <div>
         <h2>{unit.title}</h2>
         <p className="muted">{unit.goal}</p>
-        <div className="card"><Passage blocks={passage} /></div>
+        <Passage blocks={passage} />
         <ActionBar><button className="btn big primary" onClick={() => finish(1)}>Done <Icon name="check" /></button></ActionBar>
       </div>
     );

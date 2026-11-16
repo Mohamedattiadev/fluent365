@@ -1,9 +1,11 @@
+// "Today": one obvious action (Start), the plan as a quiet list, and a forgiving week view.
 import { useEffect, useState } from "react";
-import { ActionBar, Icon, Progress } from "../components/ui";
+import { Icon, SKILLS, skillStyle } from "../components/ui";
 import type { Content } from "../lib/content";
 import { dueCardKeys } from "../lib/learning";
-import { dayNumber, GUIDE, phaseOf } from "../lib/session";
+import { dayNumber, GUIDE, phaseOf, skillOf } from "../lib/session";
 import { getState, today, update, useApp } from "../lib/store";
+import type { DayLog } from "../lib/types";
 import { navigate } from "../router";
 import { ensureSession } from "./Session";
 
@@ -12,6 +14,7 @@ export function Home({ c }: { c: Content }) {
   const session = useApp((s) => s.session);
   const day = useApp((s) => s.days[today()]);
   const days = useApp((s) => s.days);
+  const openMistakes = useApp((s) => s.mistakes.filter((m) => !m.fixed && m.expected).length);
   const [, force] = useState(0);
   useEffect(() => { if (!session || session.date !== today()) { ensureSession(c); force((x) => x + 1); } }, [c, session]);
   if (!session || session.date !== today()) return null;
@@ -19,75 +22,105 @@ export function Home({ c }: { c: Content }) {
   const s = getState();
   const finished = !!session.finished;
   const started = session.index > 0 && !finished;
+  const steps = session.steps.filter((x) => x.kind !== "wrap");
   const total = session.steps.reduce((n, x) => n + x.minutes, 0);
-  const week = Array.from({ length: 7 }, (_, i) => {
-    const d = new Date(Date.now() - (6 - i) * 86400000);
-    const k = today(d);
-    return { k, label: d.toLocaleDateString(undefined, { weekday: "narrow" }), on: (days[k]?.active ?? 0) >= 300 || days[k]?.sessionDone };
-  });
+  const skills = [...new Set(steps.map(skillOf).filter(Boolean))].map((k) => SKILLS[k!].label.toLowerCase());
   const n = dayNumber(s);
   const guide = GUIDE.find((g) => n >= g.from && n <= g.to) ?? GUIDE[GUIDE.length - 1];
-  const hello = new Date().getHours() < 12 ? "Good morning" : new Date().getHours() < 18 ? "Good afternoon" : "Good evening";
+  const now = new Date();
+  const hello = now.getHours() < 12 ? "Good morning" : now.getHours() < 18 ? "Good afternoon" : "Good evening";
+  const due = dueCardKeys().length;
+  const phase = phaseOf(s);
 
   return (
     <div>
-      <h1>{hello}{settings.name ? `, ${settings.name}` : ""}</h1>
-      <p className="muted">Day {n} of 365 · {phaseOf(s) === "IELTS" ? "IELTS phase" : `${phaseOf(s)} phase`} · {guide.focus}</p>
-
-      <div className="card">
+      <section className="home-hero">
+        <p className="overline">{now.toLocaleDateString(undefined, { weekday: "long", day: "numeric", month: "long" })}</p>
+        <h1>{finished ? "Today's session is done" : `${hello}${settings.name ? `, ${settings.name}` : ""}`}</h1>
         {finished ? (
+          <p className="lede">{Math.round((day?.active ?? 0) / 60)} active minutes today. Tomorrow's plan is ready when you are.</p>
+        ) : (
+          <p className="lede">About {total} minutes · {joinList(skills)}.</p>
+        )}
+        <p className="small faint" title={guide.focus}>Day {n} of 365 · {phase === "IELTS" ? "IELTS phase" : `${phase} phase`}</p>
+        {!finished ? (
           <>
-            <h2>Today's session is done ✓</h2>
-            <p className="muted">{Math.round((day?.active ?? 0) / 60)} active minutes today. Come back tomorrow, or keep going with extra practice below.</p>
+            <div className="start-row">
+              <button className="btn big primary" onClick={() => navigate("/session")} autoFocus>
+                {started ? `Continue session · step ${session.index + 1} of ${steps.length}` : "Start today's session"} <Icon name="play" />
+              </button>
+              <span className="kbd desktop-only" aria-hidden>Enter</span>
+            </div>
+            {!started && settings.minutes !== 30 && (
+              <button className="btn quiet" onClick={() => { ensureSession(c, 30); navigate("/session"); }}>Short on time? Do a 25-minute short day instead</button>
+            )}
           </>
         ) : (
-          <>
-            <h2>{started ? "Continue today's session" : "Today's session"}</h2>
-            <p className="muted">About {total} minutes · {session.steps.length - 1} steps. Just press the button and follow along.</p>
-            {started && <Progress value={session.index / session.steps.length} />}
-            <ol className="small" style={{ paddingLeft: 22, marginTop: 12 }}>
-              {session.steps.filter((x) => x.kind !== "wrap").map((x, i) => (
-                <li key={x.id} style={{ opacity: i < session.index ? 0.5 : 1, marginBottom: 4 }}>
-                  {i < session.index ? "✓ " : ""}{x.title} <span className="muted">· {x.minutes} min</span>
-                </li>
-              ))}
-            </ol>
-          </>
+          <div className="start-row">
+            {due > 0 ? <button className="btn big primary" onClick={() => navigate("/words/review")}>Review words ({due} due) <Icon name="arrow" /></button> : null}
+            <button className="btn quiet" onClick={() => { update(() => ({ session: null })); ensureSession(c); navigate("/session"); }}>Do another session</button>
+          </div>
         )}
-      </div>
+      </section>
 
-      <div className="card">
-        <h3>This week</h3>
-        <div className="row" style={{ justifyContent: "space-between" }} aria-label="Days studied this week">
-          {week.map((d) => (
-            <div key={d.k} className="center" style={{ flex: 1 }}>
-              <div style={{ width: 34, height: 34, margin: "0 auto", borderRadius: 999, background: d.on ? "var(--good)" : "var(--surface-2)", border: d.k === today() ? "2px solid var(--primary)" : "none" }} aria-label={`${d.k}: ${d.on ? "studied" : "not studied"}`} />
-              <span className="small muted">{d.label}</span>
-            </div>
-          ))}
-        </div>
-        <p className="small muted" style={{ marginTop: 8 }}>Missing a day is fine. Fluent365 never makes you "catch up": tomorrow's plan just continues.</p>
-      </div>
-
-      {finished && (
-        <div className="grid2">
-          <button className="btn big outline" onClick={() => navigate("/words/review")}>Review words ({dueCardKeys().length} due)</button>
-          <button className="btn big outline" onClick={() => { update(() => ({ session: null })); ensureSession(c); navigate("/session"); }}>Do another session</button>
-        </div>
-      )}
-
-      {!finished && (
-        <ActionBar>
-          <button className="btn big primary" onClick={() => navigate("/session")} autoFocus>
-            {started ? "Continue" : "Start today's session"} <Icon name="arrow" />
-          </button>
-          {!started && settings.minutes !== 30 && (
-            <button className="btn link" style={{ width: "100%" }} onClick={() => { ensureSession(c, 30); navigate("/session"); }}>
-              Short on time? Do a 25-minute short day instead
+      <div className="home-grid">
+        <section aria-labelledby="plan-h">
+          <h2 className="section-title" id="plan-h">Today's plan</h2>
+          <ul className="plan">
+            {steps.map((x, i) => {
+              const sk = skillOf(x);
+              const done = i < session.index || finished;
+              const current = i === session.index && started;
+              return (
+                <li key={x.id} style={skillStyle(sk)} className={done ? "done" : current ? "now" : undefined} aria-current={current ? "step" : undefined}>
+                  <Icon name={sk ? SKILLS[sk].icon : "list"} size={20} />
+                  <span className="grow"><span className="name">{sk ? SKILLS[sk].label : "Review"}</span><span className="detail">{sk && x.title.startsWith(`${SKILLS[sk].label} · `) ? x.title.slice(SKILLS[sk].label.length + 3) : x.title}</span></span>
+                  <span className="mins">{done ? <span className="status"><Icon name="check" size={18} /> Done</span> : `${x.minutes} min`}</span>
+                </li>
+              );
+            })}
+          </ul>
+        </section>
+        <aside aria-labelledby="week-h">
+          <h2 className="section-title" id="week-h">This week</h2>
+          <WeekStrip days={days} />
+          {openMistakes > 0 && (
+            <button className="btn quiet" style={{ paddingLeft: 0, marginTop: 16 }} onClick={() => navigate("/practice/mistakes")}>
+              Fix old mistakes ({openMistakes}) <Icon name="arrow" size={20} />
             </button>
           )}
-        </ActionBar>
-      )}
+        </aside>
+      </div>
     </div>
+  );
+}
+
+const joinList = (xs: string[]) => (xs.length <= 1 ? xs.join("") : `${xs.slice(0, -1).join(", ")} and ${xs[xs.length - 1]}`);
+
+export const studied = (d?: DayLog) => !!d && (d.active >= 300 || d.sessionDone);
+
+/** Monday–Sunday. Studied days are filled; missed days are rest days (no guilt, no streak to lose). */
+export function WeekStrip({ days }: { days: Record<string, DayLog> }) {
+  const now = new Date();
+  const monday = new Date(now.getFullYear(), now.getMonth(), now.getDate() - ((now.getDay() + 6) % 7));
+  const t = today();
+  const week = Array.from({ length: 7 }, (_, i) => {
+    const d = new Date(monday.getFullYear(), monday.getMonth(), monday.getDate() + i);
+    const k = today(d);
+    return { k, label: d.toLocaleDateString(undefined, { weekday: "narrow" }), long: d.toLocaleDateString(undefined, { weekday: "long" }), on: studied(days[k]), past: k < t, isToday: k === t };
+  });
+  const count = week.filter((d) => d.on).length;
+  return (
+    <>
+      <div className="week" role="list" aria-label="Days studied this week">
+        {week.map((d) => (
+          <div key={d.k} className="day" role="listitem" aria-label={`${d.long}: ${d.on ? "studied" : d.isToday ? "today" : d.past ? "rest day" : "coming up"}`}>
+            <span className={`dot ${d.on ? "on" : ""} ${d.isToday ? "today" : ""} ${!d.on && d.past ? "rest" : ""}`}>{!d.on && d.past && <Icon name="rest" size={16} />}</span>
+            <span aria-hidden>{d.label}</span>
+          </div>
+        ))}
+      </div>
+      <p className="small muted">{count} of 7 days this week · rest days are fine</p>
+    </>
   );
 }

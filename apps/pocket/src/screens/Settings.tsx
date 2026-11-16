@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { ActionBar, Icon, toast } from "../components/ui";
+import { ActionBar, Icon, Segmented, toast, Toggle } from "../components/ui";
 import type { Content } from "../lib/content";
 import * as db from "../lib/db";
 import { addCards } from "../lib/learning";
@@ -9,7 +9,7 @@ import type { Exercise, GrammarTopic, ImportItem, Settings } from "../lib/types"
 import { navigate } from "../router";
 import { IDLE_LIMIT } from "../lib/activity";
 
-const Back = ({ to = "/settings" }: { to?: string }) => <button className="btn link" onClick={() => navigate(to)}><Icon name="back" /> Back</button>;
+const Back = ({ to = "/settings" }: { to?: string }) => <button className="btn quiet" style={{ marginLeft: -10 }} onClick={() => navigate(to)}><Icon name="back" size={20} /> Settings</button>;
 
 export function SettingsScreen({ c, path }: { c: Content; path: string[] }) {
   if (path[0] === "backup") return <BackupScreen c={c} />;
@@ -22,38 +22,45 @@ function Main() {
   const s = useApp((x) => x.settings);
   const set = (patch: Partial<Settings>) => update((st) => ({ settings: { ...st.settings, ...patch }, session: "minutes" in patch || "level" in patch || "newWords" in patch ? null : st.session }));
   const [confirmReset, setConfirmReset] = useState("");
+  const size = ({ normal: "m", large: "l" } as Record<string, Settings["textSize"]>)[s.textSize] ?? s.textSize;
+  const Row = ({ label, hint, children }: { label: string; hint?: string; children: React.ReactNode }) => (
+    <div className="setting-row"><span className="grow"><span className="setting-label">{label}</span>{hint && <span className="setting-hint">{hint}</span>}</span>{children}</div>
+  );
   return (
     <div>
       <h1>Settings</h1>
-      <div className="card">
-        <h2>Your plan</h2>
-        <label className="field"><span>Name (optional)</span><input type="text" value={s.name} onChange={(e) => set({ name: e.target.value })} /></label>
-        <div className="grid2">
-          <label className="field"><span>English level</span><select value={s.level} onChange={(e) => set({ level: e.target.value as Settings["level"] })}><option value="A2">A2 Elementary</option><option value="B1">B1 Intermediate</option><option value="B2">B2 Upper-intermediate</option><option value="C1">C1 Advanced</option></select></label>
-          <label className="field"><span>Goal</span><select value={s.goal} onChange={(e) => set({ goal: e.target.value as Settings["goal"] })}><option value="ielts-gt">IELTS General Training</option><option value="ielts-ac">IELTS Academic</option><option value="general">General English</option></select></label>
-          <label className="field"><span>Daily time</span><select value={s.minutes} onChange={(e) => set({ minutes: Number(e.target.value) as Settings["minutes"] })}><option value={30}>About 25 minutes</option><option value={60}>About 1 hour</option><option value={90}>About 1.5 hours</option></select></label>
-          <label className="field"><span>New words per day (max)</span><select value={s.newWords} onChange={(e) => set({ newWords: Number(e.target.value) })}>{[5, 8, 10, 12, 15, 20].map((n) => <option key={n} value={n}>{n}</option>)}</select></label>
-          <label className="field"><span>Explanations in</span><select value={s.explainLang} onChange={(e) => set({ explainLang: e.target.value as Settings["explainLang"] })}><option value="en">English</option><option value="tr">Türkçe (where available)</option><option value="ar">العربية (where available)</option></select></label>
+
+      <p className="overline" style={{ marginTop: 24 }}>Display</p>
+      <div className="settings-group">
+        <div>
+          <Row label="Text size"><Segmented label="Text size" value={size} onChange={(v) => set({ textSize: v })} options={[["s", "S"], ["m", "M"], ["l", "L"], ["xl", "XL"]]} /></Row>
+          <p className="size-preview">Preview: I have lived in this city since 2015.</p>
         </div>
-        <p className="small muted">New words are reduced automatically when your reviews pile up. Changing these rebuilds today's session.</p>
+        <Row label="Theme"><Segmented label="Theme" value={s.theme} onChange={(v) => set({ theme: v })} options={[["system", "System"], ["light", "Light"], ["dark", "Dark"]]} /></Row>
+        <Toggle label="High contrast" hint="Darker text and stronger borders" checked={!!s.highContrast} onChange={(v) => set({ highContrast: v })} />
+        <Toggle label="Reduce motion" hint="Also follows your device setting" checked={s.reduceMotion} onChange={(v) => set({ reduceMotion: v })} />
+        <Toggle label="More space" hint="Extra room between sections" checked={s.comfortable} onChange={(v) => set({ comfortable: v })} />
       </div>
-      <div className="card">
-        <h2>Display</h2>
-        <div className="grid2">
-          <label className="field"><span>Text size</span><select value={s.textSize} onChange={(e) => set({ textSize: e.target.value as Settings["textSize"] })}><option value="normal">Normal</option><option value="large">Large</option><option value="xl">Extra large</option></select></label>
-          <label className="field"><span>Theme</span><select value={s.theme} onChange={(e) => set({ theme: e.target.value as Settings["theme"] })}><option value="system">Same as device</option><option value="light">Light</option><option value="dark">Dark</option></select></label>
-        </div>
-        <label className="check"><input type="checkbox" checked={s.comfortable} onChange={(e) => set({ comfortable: e.target.checked })} /> Comfortable mode (more space between things)</label>
-        <label className="check"><input type="checkbox" checked={s.reduceMotion} onChange={(e) => set({ reduceMotion: e.target.checked })} /> Reduce motion</label>
+
+      <p className="overline">Your plan</p>
+      <div className="settings-group">
+        <Row label="Name" hint="Optional"><input type="text" value={s.name} onChange={(e) => set({ name: e.target.value })} aria-label="Name" style={{ width: 220 }} /></Row>
+        <Row label="English level"><select aria-label="English level" value={s.level} onChange={(e) => set({ level: e.target.value as Settings["level"] })}><option value="A2">A2 Elementary</option><option value="B1">B1 Intermediate</option><option value="B2">B2 Upper-intermediate</option><option value="C1">C1 Advanced</option></select></Row>
+        <Row label="Goal"><select aria-label="Goal" value={s.goal} onChange={(e) => set({ goal: e.target.value as Settings["goal"] })}><option value="ielts-gt">IELTS General Training</option><option value="ielts-ac">IELTS Academic</option><option value="general">General English</option></select></Row>
+        <Row label="Daily time" hint="Changing this rebuilds today's session"><select aria-label="Daily time" value={s.minutes} onChange={(e) => set({ minutes: Number(e.target.value) as Settings["minutes"] })}><option value={30}>About 25 minutes</option><option value={60}>About 1 hour</option><option value={90}>About 1.5 hours</option></select></Row>
+        <Row label="New words per day (max)" hint="Reduced automatically when reviews pile up"><select aria-label="New words per day" value={s.newWords} onChange={(e) => set({ newWords: Number(e.target.value) })}>{[5, 8, 10, 12, 15, 20].map((n) => <option key={n} value={n}>{n}</option>)}</select></Row>
+        <Row label="Explanations in"><select aria-label="Explanations in" value={s.explainLang} onChange={(e) => set({ explainLang: e.target.value as Settings["explainLang"] })}><option value="en">English</option><option value="tr">Türkçe (where available)</option><option value="ar">العربية (where available)</option></select></Row>
       </div>
-      <div className="card stack">
-        <h2>Your data</h2>
-        <button className="btn big outline" onClick={() => navigate("/settings/backup")}>Backup, restore & Anki</button>
-        <button className="btn big outline" onClick={() => navigate("/settings/import")}>Import Centre (Praktika, PDF, text)</button>
-        <button className="btn big outline" onClick={() => navigate("/settings/about")}>How Fluent365 works · privacy · licences</button>
+
+      <p className="overline">Your data</p>
+      <div className="settings-group">
+        <button className="navrow" onClick={() => navigate("/settings/backup")}><Icon name="download" size={20} /><span className="grow">Backup, restore and Anki</span><Icon name="arrow" size={20} /></button>
+        <button className="navrow" onClick={() => navigate("/settings/import")}><Icon name="upload" size={20} /><span className="grow">Import Centre (Praktika, PDF, text)</span><Icon name="arrow" size={20} /></button>
+        <button className="navrow" onClick={() => navigate("/settings/about")}><Icon name="info" size={20} /><span className="grow">How Fluent365 works · privacy · licences</span><Icon name="arrow" size={20} /></button>
       </div>
-      <div className="card">
-        <h2>Start over</h2>
+
+      <p className="overline">Start over</p>
+      <div className="settings-group" style={{ padding: 16 }}>
         <p className="muted">Deletes all progress on this device. Download a backup first. Type <b>DELETE</b> to confirm.</p>
         <div className="row"><input type="text" value={confirmReset} onChange={(e) => setConfirmReset(e.target.value)} aria-label="Type DELETE to confirm" style={{ maxWidth: 200 }} />
           <button className="btn danger" disabled={confirmReset !== "DELETE"} onClick={async () => { await db.clear("blobs"); await replaceState(emptyState()); setConfirmReset(""); navigate("/"); }}>Delete everything</button></div>
@@ -115,7 +122,7 @@ function BackupScreen({ c }: { c: Content }) {
       <h1>Backup & restore</h1>
       <div className="card">
         <p>Your progress is stored only in this browser on this device. If you clear browser data or lose the phone, it's gone — so download a backup every week or two.</p>
-        {persisted !== null && <p className="small muted">{persisted ? "✓ This browser has agreed to keep your data safe from automatic clean-up." : "Tip: install Fluent365 to your home screen so the browser keeps your data safely."}</p>}
+        {persisted !== null && <p className="small muted">{persisted ? "This browser has agreed to keep your data safe from automatic clean-up." : "Tip: install Fluent365 to your home screen so the browser keeps your data safely."}</p>}
         <button className="btn big primary" onClick={() => { download(`fluent365-backup-${today()}.json`, JSON.stringify(makeBackup())); toast("Backup downloaded"); }}>Download backup</button>
       </div>
       <div className="card">
@@ -203,7 +210,8 @@ function ImportCentre({ c }: { c: Content }) {
       <div className="card">
         <h2>Praktika</h2>
         <div className="feedback info" role="status">
-          <strong className="title">Automatic Praktika account synchronisation is not currently available.</strong>
+          <strong className="title"><Icon name="info" size={22} /> No automatic sync</strong>
+          <p><b>Automatic Praktika account synchronisation is not currently available.</b></p>
           Praktika has no public API or official way to connect other apps (checked 16 Nov 2026). You can import supported lesson exports or shared material: download a lesson summary PDF in Praktika and share it to Fluent365, choose the file here, or paste text.
         </div>
         <label className="check" style={{ marginTop: 12 }}>
@@ -219,7 +227,7 @@ function ImportCentre({ c }: { c: Content }) {
         <button className="btn big outline" onClick={() => fileRef.current?.click()} disabled={!!busy}>Choose a PDF or text file</button>
         {busy && <p role="status">{busy}</p>}
         <label className="field"><span>…or paste text (words, "original → corrected" lines)</span><textarea value={paste} onChange={(e) => setPaste(e.target.value)} placeholder={"Vocabulary\nto commute – to travel to work\n\nYou said: I am agree with you\nCorrected: I agree with you"} /></label>
-        <button className="btn primary" disabled={!paste.trim()} onClick={() => { addImport(parseLearningText(paste, "praktika", "paste", "Pasted text")); setPaste(""); }}>Read this text</button>
+        <button className="btn outline" disabled={!paste.trim()} onClick={() => { addImport(parseLearningText(paste, "praktika", "paste", "Pasted text")); setPaste(""); }}>Read this text</button>
       </div>
 
       {pending.map((it) => <ReviewImport key={it.id} item={it} c={c} />)}
@@ -344,7 +352,7 @@ function About({ c }: { c: Content }) {
       <div className="card">
         <h2>Licences</h2>
         <p className="small">{c.licence}</p>
-        <p className="small">Lessons, grammar topics and IELTS-style prompts: original content, CC BY-SA 4.0. Software: MIT. Spaced repetition: ts-fsrs (MIT). PDF reading: pdf.js (Apache-2.0). IELTS is a registered trademark of the British Council, IDP and Cambridge University Press & Assessment; Fluent365 is not affiliated with them.</p>
+        <p className="small">Lessons, grammar topics and IELTS-style prompts: original content, CC BY-SA 4.0. Software: MIT. Spaced repetition: ts-fsrs (MIT). PDF reading: pdf.js (Apache-2.0). Typeface: Atkinson Hyperlegible Next (<a href="./licenses/atkinson-hyperlegible-next-OFL.txt">SIL OFL 1.1</a>). Icons: Lucide (<a href="./licenses/lucide-ISC-and-feather-MIT.txt">ISC; Feather icons MIT</a>). IELTS is a registered trademark of the British Council, IDP and Cambridge University Press & Assessment; Fluent365 is not affiliated with them.</p>
       </div>
     </div>
   );

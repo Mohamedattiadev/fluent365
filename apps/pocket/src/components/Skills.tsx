@@ -7,7 +7,7 @@ import { getState, uid, update, useApp } from "../lib/store";
 import { diffWords, matches, shuffle, wordCount } from "../lib/text";
 import type { AudioBlock, Block, CueCard, Exercise as Ex, Lang, VocabItem } from "../lib/types";
 import { ExerciseRunner } from "./Grammar";
-import { ActionBar, Icon, mmss, Progress, speak, SpeakButton, stopSpeaking, toast, useTimer, voices } from "./ui";
+import { ActionBar, Icon, mmss, skillStyle, Progress, Segmented, speak, SpeakButton, stopSpeaking, toast, useTimer, voices } from "./ui";
 import type { Content } from "../lib/content";
 
 // ---------- Blocks ----------
@@ -59,22 +59,17 @@ export function AudioPlayer({ audio, once = false, onPlayed }: { audio: AudioBlo
   }
   const blocked = once && plays > 0;
   return (
-    <div className="card soft">
-      <div className="row">
-        {playing ? (
-          <button className="btn primary" onClick={() => { stopSpeaking(); setPlaying(false); }}><Icon name="stop" /> Stop</button>
-        ) : (
-          <button className="btn primary" onClick={play} disabled={blocked}><Icon name="play" /> {plays ? "Play again" : "Play recording"}</button>
-        )}
-        {!once && (
-          <label className="row small">Speed
-            <select value={rate} onChange={(e) => setRate(Number(e.target.value))} style={{ width: "auto", minHeight: 44 }}>
-              <option value={0.8}>Slow</option><option value={0.95}>Normal</option><option value={1.15}>Fast</option>
-            </select>
-          </label>
-        )}
+    <div className="player">
+      {playing ? (
+        <button className="play-btn" onClick={() => { stopSpeaking(); setPlaying(false); }} aria-label="Stop the recording"><Icon name="stop" size={32} /></button>
+      ) : (
+        <button className="play-btn" onClick={play} disabled={blocked} aria-label={plays ? "Play the recording again" : "Play the recording"}><Icon name="play" size={32} /></button>
+      )}
+      <div className="grow">
+        <p style={{ margin: 0, fontWeight: 600 }}>{playing ? "Playing…" : blocked ? "Played once" : plays ? "Play again" : "Play the recording"}</p>
+        <p className="small muted" style={{ margin: 0 }}>{once ? "Exam mode: you can play it once. Read the questions first." : "The recording uses your device's voices."}</p>
       </div>
-      <p className="small muted" style={{ marginTop: 8 }}>{once ? "Exam mode: you can play it once. Read the questions first." : "The recording uses your device's voices."}</p>
+      {!once && <Segmented label="Speed" value={rate} onChange={setRate} options={[[0.8, "0.8×"], [0.95, "1×"], [1.15, "1.15×"]]} />}
     </div>
   );
 }
@@ -100,23 +95,23 @@ export function InputTask({ title, intro, tip, passage, audio, questions, once, 
     <div>
       <h2>{title}</h2>
       {intro && <p className="muted">{intro}</p>}
-      {tip && stage === "input" && <div className="feedback info"><strong className="title">Tip</strong>{tip}</div>}
+      {tip && stage === "input" && <div className="feedback info"><strong className="title"><Icon name="hint" size={22} /> Tip</strong><p>{tip}</p></div>}
       {audio && stage !== "after" && <AudioPlayer audio={audio} once={once} onPlayed={() => setPlayed(true)} />}
       {audio && !canSpeak && stage === "input" && <p className="small muted">This device has no English voice installed, so you'll read the transcript instead (see Troubleshooting to add a voice).</p>}
-      {passage && stage !== "after" && <div className="card"><Passage blocks={passage} /></div>}
+      {passage && stage !== "after" && <Passage blocks={passage} />}
       {stage === "input" && (
         <ActionBar><button className="btn big primary" disabled={!played} onClick={() => setStage("questions")}>{audio ? (played ? "Answer the questions" : "Play the recording first") : "Answer the questions"} <Icon name="arrow" /></button></ActionBar>
       )}
       {stage === "questions" && audio && !canSpeak && <Transcript audio={audio} />}
       {stage === "questions" && items.length > 0 && (
-        <div className="card">
+        <div style={{ marginTop: 24 }}>
           <ExerciseRunner items={items} onFinish={(a) => { setAcc(a); setStage("after"); }} />
         </div>
       )}
       {stage === "questions" && items.length === 0 && <ActionBar><button className="btn big primary" onClick={() => onDone(1)}>Continue</button></ActionBar>}
       {stage === "after" && (
         <div>
-          <div className="center card"><p className="big-number">{Math.round(acc * 100)}%</p><p className="muted">correct on the first try</p></div>
+          <div className="stats"><div><p className="big-number">{Math.round(acc * 100)}%</p><p className="label">correct on the first try</p></div></div>
           {audio && <Transcript audio={audio} />}
           {passage && <details className="card soft"><summary>Read the text again</summary><Passage blocks={passage} /></details>}
           <ActionBar><button className="btn big primary" onClick={() => onDone(acc)}>Continue <Icon name="arrow" /></button></ActionBar>
@@ -156,6 +151,7 @@ export function WritingTask({ title, prompt, data, minutes, minWords, tip, model
   const [checks, setChecks] = useState<string[]>([]);
   const [rewrite, setRewrite] = useState("");
   const [seconds] = useTimer(stage === "write");
+  const [showTimer, setShowTimer] = useState(true);
   const lastPing = useRef(0);
   useEffect(() => { void db.get<string>("kv", draftKey).then((d) => d && setText(d)); }, [draftKey]);
   const onType = (v: string) => {
@@ -176,10 +172,15 @@ export function WritingTask({ title, prompt, data, minutes, minWords, tip, model
     return (
       <div>
         <h2>{title}</h2>
-        <div className="card soft"><p style={{ whiteSpace: "pre-wrap", fontWeight: 600 }}>{prompt}</p>{data && <pre style={{ whiteSpace: "pre-wrap", fontFamily: "inherit" }}>{data}</pre>}</div>
-        {tip && <details className="card soft"><summary>How to plan it</summary><p>{tip}</p></details>}
-        <div className="row"><span className={`timer ${left < 0 ? "muted" : ""}`} aria-label="Time left">{left >= 0 ? mmss(left) : `+${mmss(left)}`}</span><span className="muted">{a.words} / {minWords}+ words</span></div>
-        <textarea value={text} onChange={(e) => onType(e.target.value)} placeholder="Write here. Your draft is saved on this device." style={{ minHeight: 280 }} aria-label="Your writing" />
+        <div className="prompt-box" style={skillStyle("writing")}><p>{prompt}</p>{data && <pre style={{ whiteSpace: "pre-wrap" }}>{data}</pre>}</div>
+        {tip && <details><summary>How to plan it</summary><p>{tip}</p></details>}
+        <textarea className="writing-area" value={text} onChange={(e) => onType(e.target.value)} placeholder="Write here. Your draft is saved on this device." aria-label="Your writing" />
+        <div className="writing-foot">
+          <span>{a.words} words <span className="faint">(aim for {minWords}+)</span></span>
+          <span aria-hidden>·</span>
+          {showTimer ? <span className={left < 120 ? "late" : ""} aria-label="Time left">{left >= 0 ? `${mmss(left)} left` : `${mmss(left)} over time`}</span> : <span>Timer hidden</span>}
+          <button className="btn quiet" style={{ minHeight: 44, padding: "4px 8px" }} onClick={() => setShowTimer(!showTimer)}>{showTimer ? "Hide timer" : "Show timer"}</button>
+        </div>
         <ActionBar><button className="btn big primary" disabled={a.words < Math.min(20, minWords)} onClick={() => { ping("writing"); setStage("review"); }}>I've finished <Icon name="arrow" /></button></ActionBar>
       </div>
     );
@@ -187,17 +188,17 @@ export function WritingTask({ title, prompt, data, minutes, minWords, tip, model
     return (
       <div>
         <h2>Check your writing</h2>
-        <div className="grid2">
-          <div className="card"><p className="big-number">{a.words}</p><p className="muted">words {a.words < minWords ? `(aim for ${minWords}+)` : "✓"}</p></div>
-          <div className="card"><p className="big-number">{a.paragraphs}</p><p className="muted">paragraphs</p></div>
+        <div className="stats">
+          <div><p className="big-number">{a.words}</p><p className="label">words {a.words < minWords ? `(aim for ${minWords}+)` : "(enough)"}</p></div>
+          <div><p className="big-number">{a.paragraphs}</p><p className="label">paragraphs</p></div>
         </div>
-        <div className="card">
+        <div>
           <p><b>Linking words you used:</b> {a.linkers.length ? a.linkers.join(", ") : "none yet — add some (however, for example, as a result)"}</p>
           {a.contractions.length > 0 && <p><b>Contractions:</b> {a.contractions.join(", ")} — fine in an informal letter, avoid them in an essay or formal letter.</p>}
           <p className="small muted">These are counts, not a band score. Fluent365 does not give official IELTS scores.</p>
         </div>
-        {model && <details className="card soft" open><summary>Model answer — compare it with yours</summary><p style={{ whiteSpace: "pre-wrap" }}>{model}</p></details>}
-        <div className="card">
+        {model && <details className="card soft" open><summary>Model answer: compare it with yours</summary><p style={{ whiteSpace: "pre-wrap" }}>{model}</p></details>}
+        <div>
           <h3>Self-check</h3>
           {WRITING_CHECK.map((c) => (
             <label key={c} className="check">
@@ -276,7 +277,7 @@ export function SpeakingTask({ part1 = [], card, useful = [], onDone }: { part1?
   if (stage === "part1")
     return (
       <div>
-        <p className="pill blue">Speaking · Part 1 style</p>
+        <p className="overline">Part 1 style · question {q + 1} of {part1.length}</p>
         <h2>{part1[q]}</h2>
         <p className="muted">Answer out loud in 2–4 sentences. Give a reason or an example.</p>
         <SpeakButton text={part1[q]} label="Hear the question" />
@@ -287,9 +288,9 @@ export function SpeakingTask({ part1 = [], card, useful = [], onDone }: { part1?
   if (stage === "prep")
     return (
       <div>
-        <p className="pill blue">Speaking · Part 2 style</p>
-        <div className="card"><h2>{card.title}</h2><p>You should say:</p><ul>{card.points.map((p) => <li key={p}>{p}</li>)}</ul><p>{card.explain}</p></div>
-        {useful.length > 0 && <details className="card soft"><summary>Useful phrases</summary><ul>{useful.map((u) => <li key={u}>{u}</li>)}</ul></details>}
+        <p className="overline">Part 2 style · cue card</p>
+        <div className="prompt-box" style={skillStyle("speaking")}><h2>{card.title}</h2><p>You should say:</p><ul>{card.points.map((p) => <li key={p}>{p}</li>)}</ul><p>{card.explain}</p></div>
+        {useful.length > 0 && <details><summary>Useful phrases</summary><ul>{useful.map((u) => <li key={u}>{u}</li>)}</ul></details>}
         <p><span className="timer">{mmss(60 - prep)}</span> <span className="muted">to prepare. Write 3–5 key words, not sentences.</span></p>
         <ActionBar>
           {prepRunning ? <button className="btn big primary" onClick={() => setStage("talk")}>Start speaking now <Icon name="arrow" /></button>
@@ -300,12 +301,13 @@ export function SpeakingTask({ part1 = [], card, useful = [], onDone }: { part1?
   if (stage === "talk")
     return (
       <div>
-        <div className="card"><h3>{card.title}</h3><ul className="small">{card.points.map((p) => <li key={p}>{p}</li>)}</ul></div>
-        <p className="center"><span className="timer">{mmss(talk)}</span> <span className="muted">/ aim for 2:00</span></p>
-        <Progress value={talk / 120} />
+        <div className="prompt-box" style={skillStyle("speaking")}><h3>{card.title}</h3><ul className="small">{card.points.map((p) => <li key={p}>{p}</li>)}</ul></div>
+        <p><span className="timer">{mmss(talk)}</span> <span className="muted">/ aim for 2:00</span></p>
+        <Progress value={talk / 120} label="Speaking time" />
         {r.supported && (
-          <div className="row" style={{ marginTop: 12 }}>
-            {r.recording ? <button className="btn danger" onClick={r.stop}><Icon name="stop" /> Stop recording</button> : <button className="btn outline" onClick={r.start}><Icon name="mic" /> Record myself (optional)</button>}
+          <div className="row" style={{ marginTop: 16 }}>
+            <button className={`record-btn ${r.recording ? "on" : ""}`} onClick={r.recording ? r.stop : r.start} aria-label={r.recording ? "Stop recording" : "Record myself"}><Icon name={r.recording ? "stop" : "mic"} size={32} /></button>
+            <span className={r.recording ? "" : "muted"} style={r.recording ? { color: "var(--error)", fontWeight: 600 } : undefined}>{r.recording ? `Recording… ${mmss(talk)}` : r.url ? "Recorded. Tap to record again." : "Record myself (optional)"}</span>
           </div>
         )}
         {r.error && <p className="small muted">{r.error}</p>}
@@ -316,7 +318,7 @@ export function SpeakingTask({ part1 = [], card, useful = [], onDone }: { part1?
     <div>
       <h2>How did it go?</h2>
       {r.url && <div className="card soft"><p className="small">Listen to yourself:</p><audio controls src={r.url} style={{ width: "100%" }} /></div>}
-      <div className="card">
+      <div>
         {SPEAK_CHECK.map((c) => (
           <label key={c} className="check">
             <input type="checkbox" checked={checks.includes(c)} onChange={(e) => setChecks(e.target.checked ? [...checks, c] : checks.filter((x) => x !== c))} /> {c}
@@ -342,7 +344,7 @@ export function Fluency({ cue, minutes, onDone }: { cue: CueCard; minutes: numbe
     return (
       <div>
         <h2>Fluency: {rounds.map((r) => r / 60).join(" · ")} minutes</h2>
-        <div className="card"><h3>{cue.title}</h3><ul>{cue.points.map((p) => <li key={p}>{p}</li>)}</ul></div>
+        <div className="prompt-box" style={skillStyle("speaking")}><h3>{cue.title}</h3><ul>{cue.points.map((p) => <li key={p}>{p}</li>)}</ul></div>
         <p className="muted">Talk about this three times: {rounds.map((r) => mmss(r)).join(", then ")}. Same content, faster each time. Use only words you already know. No new words, no stopping to correct.</p>
         <ActionBar><button className="btn big primary" onClick={() => { setRound(0); ping("speaking"); }}>Start round 1</button></ActionBar>
       </div>
@@ -350,17 +352,17 @@ export function Fluency({ cue, minutes, onDone }: { cue: CueCard; minutes: numbe
   if (round < 3)
     return (
       <div className="center">
-        <p className="pill blue">Round {round + 1} of 3</p>
+        <p className="overline">Round {round + 1} of 3</p>
         <h2>{cue.title}</h2>
-        <p className="timer" style={{ fontSize: "3rem" }}>{mmss(rounds[round] - t)}</p>
-        <Progress value={t / rounds[round]} />
+        <p className="timer" style={{ fontSize: "var(--fs-3xl)" }}>{mmss(rounds[round] - t)}</p>
+        <Progress value={t / rounds[round]} label={`Round ${round + 1}`} />
         <p className="muted">Keep talking out loud until the timer ends.</p>
         <ActionBar><button className="btn big outline" onClick={() => { setT(0); setRound(round + 1); }}>Next round</button></ActionBar>
       </div>
     );
   return (
-    <div className="center">
-      <h2>Done!</h2>
+    <div>
+      <h2>Done</h2>
       <p className="muted">Was the third time smoother than the first? That smoothness is fluency.</p>
       <ActionBar><button className="btn big primary" onClick={onDone}>Continue <Icon name="arrow" /></button></ActionBar>
     </div>
@@ -380,20 +382,20 @@ export function Dictation({ sentences, onDone }: { sentences: string[]; onDone: 
   const [text, setText] = useState("");
   const [checked, setChecked] = useState(false);
   const s = sentences[i];
-  if (!s) return <div className="center"><h2>Dictation done</h2><ActionBar><button className="btn big primary" onClick={onDone}>Continue <Icon name="arrow" /></button></ActionBar></div>;
+  if (!s) return <div><h2>Dictation done</h2><ActionBar><button className="btn big primary" onClick={onDone}>Continue <Icon name="arrow" /></button></ActionBar></div>;
   const ok = matches(text, [s]);
   return (
     <div>
-      <p className="pill blue">Sentence {i + 1} of {sentences.length}</p>
+      <p className="overline">Sentence {i + 1} of {sentences.length}</p>
       <h2>Listen and write exactly what you hear</h2>
       <div className="row">
-        <button className="btn primary" onClick={() => { stopSpeaking(); speak(s, { rate: 0.9 }); ping("listening"); }}><Icon name="play" /> Play</button>
-        <button className="btn outline" onClick={() => { stopSpeaking(); speak(s, { rate: 0.7 }); ping("listening"); }}>Slower</button>
+        <button className="play-btn" onClick={() => { stopSpeaking(); speak(s, { rate: 0.9 }); ping("listening"); }} aria-label="Play the sentence"><Icon name="play" size={32} /></button>
+        <button className="btn outline" onClick={() => { stopSpeaking(); speak(s, { rate: 0.7 }); ping("listening"); }}>Play slower</button>
       </div>
       <input type="text" value={text} onChange={(e) => setText(e.target.value)} disabled={checked} placeholder="Type the sentence" aria-label="What you heard" style={{ marginTop: 12 }} autoCapitalize="off" autoComplete="off" />
       {checked && (
         <div className={`feedback ${ok ? "ok" : "no"}`}>
-          <strong className="title">{ok ? "Perfect!" : "Compare"}</strong>
+          <strong className="title"><Icon name={ok ? "check" : "x"} size={22} /> {ok ? "Exactly right" : "Compare"}</strong>
           <p className="diff">{diffWords(text, s).map((d, k) => <span key={k} className={d.op}>{d.text} </span>)}</p>
           {!ok && <p className="muted">Now say the sentence out loud, copying the speaker's rhythm (shadowing).</p>}
         </div>
@@ -411,12 +413,12 @@ export function Recall({ items, onDone }: { items: VocabItem[]; onDone: () => vo
   const [i, setI] = useState(0);
   const [shown, setShown] = useState(false);
   const v = items[i];
-  if (!v) return <div className="center"><h2>Warmed up!</h2><ActionBar><button className="btn big primary" onClick={onDone}>Continue <Icon name="arrow" /></button></ActionBar></div>;
+  if (!v) return <div><h2>Warmed up</h2><ActionBar><button className="btn big primary" onClick={onDone}>Continue <Icon name="arrow" /></button></ActionBar></div>;
   return (
     <div>
-      <p className="pill blue">Warm-up {i + 1} of {items.length}</p>
+      <p className="overline">Warm-up {i + 1} of {items.length}</p>
       <h2>Which word from yesterday means…</h2>
-      <div className="card flash"><p style={{ fontSize: "1.2rem" }}>{v.d ?? v.tr}</p>{shown && <div className="word">{v.w}</div>}</div>
+      <div className="flash" key={`${i}-${shown}`}><p className="prompt-text">{v.d ?? v.tr}</p>{shown && <><hr className="divider" /><div className="word">{v.w}</div></>}</div>
       <ActionBar>
         {shown ? <button className="btn big primary" onClick={() => { setShown(false); setI(i + 1); }}>Next <Icon name="arrow" /></button>
           : <button className="btn big primary" onClick={() => { setShown(true); ping("vocabulary"); }}>I said it · Show</button>}
@@ -429,6 +431,6 @@ export function Recall({ items, onDone }: { items: VocabItem[]; onDone: () => vo
 export function FixMistakes({ onDone, max = 5 }: { onDone: () => void; max?: number }) {
   const list = useMemo(() => getState().mistakes.filter((m) => !m.fixed && m.expected && m.kind !== "listening").slice(0, max), [max]);
   const items = list.map((m) => ({ ex: { type: "rewrite", prompt: m.prompt.startsWith("Correct:") ? m.prompt : `${m.prompt}`, answers: [m.expected], why: m.why ? `${m.why} (You wrote: "${m.given}")` : `You wrote: "${m.given}"` } as Ex, topic: m.topic }));
-  if (!items.length) return <div className="center"><h2>No open mistakes</h2><ActionBar><button className="btn big primary" onClick={onDone}>Continue</button></ActionBar></div>;
+  if (!items.length) return <div><h2>No open mistakes</h2><ActionBar><button className="btn big primary" onClick={onDone}>Continue</button></ActionBar></div>;
   return <ExerciseRunner items={items} review onFinish={() => onDone()} />;
 }

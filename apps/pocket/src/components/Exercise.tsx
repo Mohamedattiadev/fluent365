@@ -7,6 +7,13 @@ import { diffWords, matches, shuffle } from "../lib/text";
 import type { Exercise as Ex, Mistake } from "../lib/types";
 import { ActionBar, Icon, SpeakButton } from "./ui";
 
+/** Colour is never the only signal: right/wrong options also get an icon and a word. */
+export function OptionMark({ state }: { state: string }) {
+  if (state === "right") return <span className="mark"><Icon name="check" size={20} /> Correct</span>;
+  if (state === "wrong") return <span className="mark"><Icon name="x" size={20} /> Your answer</span>;
+  return null;
+}
+
 export interface ExerciseResult { ok: boolean; firstTry: boolean }
 
 interface Props {
@@ -100,6 +107,20 @@ export function Exercise({ ex, topic, kind = "grammar", review, onDone, nextLabe
     onDone({ ok, firstTry: ok });
   }
 
+  // Keyboard on a laptop: 1–9 pick an option, Enter checks / continues.
+  useEffect(() => {
+    if (!(isMC || ex.type === "tfng") || state !== "answer") return;
+    const count = isMC ? (ex as { options: string[] }).options.length : 3;
+    const onDigit = (e: KeyboardEvent) => {
+      const t = (e.target as HTMLElement)?.tagName;
+      if (t === "INPUT" || t === "TEXTAREA" || e.ctrlKey || e.metaKey || e.altKey) return;
+      const n = Number(e.key);
+      if (n >= 1 && n <= count) { e.preventDefault(); setChoice(n - 1); }
+    };
+    window.addEventListener("keydown", onDigit);
+    return () => window.removeEventListener("keydown", onDigit);
+  }, [ex, state, isMC]);
+
   const onKey = (e: React.KeyboardEvent) => {
     if (e.key === "Enter" && !e.shiftKey && ex.type !== "produce") {
       e.preventDefault();
@@ -122,9 +143,9 @@ export function Exercise({ ex, topic, kind = "grammar", review, onDone, nextLabe
 
   return (
     <div onKeyDown={onKey}>
-      <p className="pill blue">{LABEL[ex.type]}</p>
+      <p className="overline">{LABEL[ex.type]}</p>
       {ex.type === "fix" && <p className="muted small">This sentence has a mistake. Write it correctly.</p>}
-      <h2 style={{ marginTop: 8 }}>{ex.type === "fix" ? <span style={{ textDecoration: "underline wavy var(--bad)" }}>{ex.wrong}</span> : ex.type === "build" ? "Put the words in order" : prompt}</h2>
+      <h2 style={{ marginTop: 4 }}>{ex.type === "fix" ? <span style={{ textDecoration: "underline wavy var(--error)", textUnderlineOffset: 6 }}>{ex.wrong}</span> : ex.type === "build" ? "Put the words in order" : prompt}</h2>
 
       {(isMC || ex.type === "tfng") && (
         <div className="options" role="radiogroup">
@@ -133,7 +154,7 @@ export function Exercise({ ex, topic, kind = "grammar", review, onDone, nextLabe
             const cls = answered ? (right ? "right" : i === choice ? "wrong" : "") : i === choice ? "selected" : "";
             return (
               <button key={i} role="radio" aria-checked={i === choice} className={`btn option ${cls}`} disabled={answered} onClick={() => setChoice(i)}>
-                <span aria-hidden>{String.fromCharCode(65 + i)}.</span> {o}
+                <span className="key" aria-hidden>{i + 1}</span><span className="opt-text">{o}</span><OptionMark state={cls} />
               </button>
             );
           })}
@@ -169,14 +190,14 @@ export function Exercise({ ex, topic, kind = "grammar", review, onDone, nextLabe
 
       {state === "hint" && (
         <div className="feedback info" role="status">
-          <strong className="title">Not quite. Try once more.</strong>
+          <strong className="title"><Icon name="hint" size={22} /> Not quite. Try once more.</strong>
           {"why" in ex && <p>Hint: {hintOf(ex.why)}</p>}
         </div>
       )}
 
       {answered && (
         <div className={`feedback ${state === "correct" ? "ok" : "no"}`} role="status">
-          <strong className="title">{state === "correct" ? "Correct!" : "Not this time"}</strong>
+          <strong className="title"><Icon name={state === "correct" ? "check" : "x"} size={22} /> {state === "correct" ? "Correct" : "Not quite"}</strong>
           {state === "wrong" && typedAnswers.length > 0 && (
             <p className="diff">
               {diffWords(ex.type === "build" ? built : text, expected).map((d, i) => (

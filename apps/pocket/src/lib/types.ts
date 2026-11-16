@@ -1,6 +1,7 @@
 // Content types (public, built from content/) and learner state types (private, on device).
 
 export type Lang = "en" | "tr" | "ar";
+export type Skill = "words" | "grammar" | "reading" | "listening" | "writing" | "speaking";
 
 // ---------- Grammar ----------
 export type Exercise =
@@ -87,7 +88,8 @@ export interface Settings {
   target: number;
   minutes: 30 | 60 | 90;
   explainLang: Lang;
-  textSize: "normal" | "large" | "xl";
+  textSize: "s" | "m" | "l" | "xl";
+  highContrast: boolean;
   theme: "system" | "light" | "dark";
   reduceMotion: boolean;
   comfortable: boolean;

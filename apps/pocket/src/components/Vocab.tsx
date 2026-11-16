@@ -6,7 +6,8 @@ import { preview, Rating, type Grade } from "../lib/srs";
 import { getState, useApp } from "../lib/store";
 import { shuffle } from "../lib/text";
 import type { MyCard, VocabItem } from "../lib/types";
-import { ActionBar, Icon, Progress, SpeakButton } from "./ui";
+import { OptionMark } from "./Exercise";
+import { ActionBar, Icon, Progress, speak, stopSpeaking } from "./ui";
 import { ping } from "../lib/activity";
 
 export interface CardView { key: string; w: string; d?: string; ex?: string; pos?: string; tr?: string; ar?: string; lvl?: string; source?: string }
@@ -21,18 +22,30 @@ export const viewOf = (v: VocabItem): CardView => ({ key: String(v.id), w: v.w, 
 /** Hide the word inside its example so the learner has to recall it. */
 const cloze = (ex: string, w: string) => ex.replace(new RegExp(`\\b${w.split(" ")[0].replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\w*`, "gi"), "_____");
 
+/** The example sentence with the target word in bold. */
+function Example({ ex, w }: { ex: string; w: string }) {
+  const stem = w.split(" ")[0].replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const parts = ex.split(new RegExp(`(\\b${stem}\\w*)`, "i"));
+  return <p className="example">"{parts.map((p, i) => (i % 2 ? <b key={i}>{p}</b> : <span key={i}>{p}</span>))}"</p>;
+}
+
+export function AudioIcon({ text, label = "Listen" }: { text: string; label?: string }) {
+  return <button className="icon-btn" onClick={() => { stopSpeaking(); speak(text); }} aria-label={`${label}: ${text}`}><Icon name="audio" /></button>;
+}
+
 export function WordFace({ v, showWord = true }: { v: CardView; showWord?: boolean }) {
   const lang = useApp((s) => s.settings.explainLang);
   const own = lang === "tr" ? v.tr : lang === "ar" ? v.ar : undefined;
   return (
-    <div>
+    <>
       {showWord && <div className="word">{v.w}</div>}
-      {v.pos && <p className="pill">{v.pos}</p>} {v.lvl && <span className="pill" title="Estimated level from word frequency">≈ {v.lvl}</span>}
-      {v.d && <p style={{ fontSize: "1.1rem", marginTop: 10 }}>{v.d}</p>}
+      {(v.pos || v.lvl) && <p className="small faint" style={{ margin: 0 }}>{[v.pos, v.lvl && `≈ ${v.lvl}`].filter(Boolean).join(" · ")}</p>}
+      <hr className="divider" />
+      {v.d && <p className="meaning">{v.d}</p>}
       {own && <p dir={lang === "ar" ? "rtl" : undefined} className="muted">{own}</p>}
-      {v.ex && <p className="muted"><i>"{v.ex}"</i></p>}
-      {v.source && <p className="small muted">From: {v.source}</p>}
-    </div>
+      {v.ex && <Example ex={v.ex} w={v.w} />}
+      {v.source && <p className="small faint">From: {v.source}</p>}
+    </>
   );
 }
 
@@ -53,46 +66,57 @@ export function ReviewSession({ c, limit = 60, onDone }: { c: Content; limit?: n
     if (mine) void preview(mine.card.fresh ? undefined : mine.card).then(setLabels);
   }, [key]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  if (!all.length || i >= all.length || !view)
-    return (
-      <div className="center">
-        <h2>{all.length ? "Reviews done" : "No reviews due"}</h2>
-        <p className="muted">{all.length ? `You reviewed ${all.length} cards.` : "Nothing to review right now."}</p>
-        <ActionBar><button className="btn big primary" onClick={onDone}>Continue <Icon name="arrow" /></button></ActionBar>
-      </div>
-    );
-
   async function rate(g: Grade) {
     await reviewWord(key, g);
     if (g === Rating.Again && again.filter((k) => k === key).length < 1) setAgain([...again, key]);
     setI(i + 1);
   }
 
+  // Keyboard: Space shows the answer, 1–4 grade it.
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (!view || (e.target as HTMLElement)?.tagName === "INPUT" || (e.target as HTMLElement)?.tagName === "TEXTAREA") return;
+      if (!shown && e.key === " ") { e.preventDefault(); setShown(true); ping("vocabulary"); }
+      else if (shown && ["1", "2", "3", "4"].includes(e.key)) { e.preventDefault(); void rate(([Rating.Again, Rating.Hard, Rating.Good, Rating.Easy] as Grade[])[Number(e.key) - 1]); }
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  });
+
+  if (!all.length || i >= all.length || !view)
+    return (
+      <div>
+        <h2>{all.length ? "Reviews done" : "No reviews due"}</h2>
+        <p className="muted">{all.length ? `You reviewed ${all.length} cards.` : "Nothing to review right now."}</p>
+        <ActionBar><button className="btn big primary" onClick={onDone}>Continue <Icon name="arrow" /></button></ActionBar>
+      </div>
+    );
+
   return (
     <div>
-      <div className="row small muted" style={{ marginBottom: 8 }}>
+      <div className="counter">
         <span>{i + 1} / {all.length}</span>
-        <div className="grow"><Progress value={i / all.length} /></div>
+        <div className="grow"><Progress value={i / all.length} label={`Card ${i + 1} of ${all.length}`} /></div>
       </div>
-      <div className="card flash" aria-live="polite">
+      <div className="flash" key={`${key}-${shown}`} aria-live="polite">
         {!shown ? (
           recallFromMeaning && view.d ? (
             <>
-              <p className="muted small">What is the word?</p>
-              <p style={{ fontSize: "1.25rem", fontWeight: 700 }}>{view.d}</p>
-              {view.ex && <p className="muted"><i>"{cloze(view.ex, view.w)}"</i></p>}
+              <p className="overline">What is the word?</p>
+              <p className="prompt-text">{view.d}</p>
+              {view.ex && <p className="example">"{cloze(view.ex, view.w)}"</p>}
             </>
           ) : (
             <>
               <div className="word">{view.w}</div>
-              <SpeakButton text={view.w} />
-              <p className="muted small" style={{ marginTop: 12 }}>Say what it means — in English or your language — before you look.</p>
+              <AudioIcon text={view.w} />
+              <p className="muted small" style={{ marginTop: 12 }}>Say what it means, in English or your language, before you look.</p>
             </>
           )
         ) : (
           <>
             <WordFace v={view} />
-            <SpeakButton text={view.ex ? `${view.w}. ${view.ex}` : view.w} />
+            <AudioIcon text={view.ex ? `${view.w}. ${view.ex}` : view.w} label="Listen to the example" />
           </>
         )}
       </div>
@@ -101,11 +125,11 @@ export function ReviewSession({ c, limit = 60, onDone }: { c: Content; limit?: n
           <button className="btn big primary" onClick={() => { setShown(true); ping("vocabulary"); }} autoFocus>Show answer</button>
         ) : (
           <div>
-            <p className="small muted center" style={{ margin: "0 0 6px" }}>How well did you remember?</p>
+            <p className="small muted center" style={{ margin: "0 0 8px" }}>How well did you remember?</p>
             <div className="grades">
               <button className="btn g-again" onClick={() => rate(Rating.Again as Grade)}>Again<small>{labels[Rating.Again]}</small></button>
-              <button className="btn g-hard" onClick={() => rate(Rating.Hard as Grade)}>Hard<small>{labels[Rating.Hard]}</small></button>
-              <button className="btn g-good" onClick={() => rate(Rating.Good as Grade)} autoFocus>Good<small>{labels[Rating.Good]}</small></button>
+              <button className="btn" onClick={() => rate(Rating.Hard as Grade)}>Hard<small>{labels[Rating.Hard]}</small></button>
+              <button className="btn primary" onClick={() => rate(Rating.Good as Grade)} autoFocus>Good<small>{labels[Rating.Good]}</small></button>
               <button className="btn g-easy" onClick={() => rate(Rating.Easy as Grade)}>Easy<small>{labels[Rating.Easy]}</small></button>
             </div>
           </div>
@@ -155,17 +179,17 @@ export function NewWords({ c, ids, onDone }: { c: Content; ids: number[]; onDone
 
   return (
     <div>
-      <div className="row small muted" style={{ marginBottom: 8 }}>
+      <div className="counter">
         <span>New word {i + 1} of {items.length}</span>
-        <div className="grow"><Progress value={i / items.length} /></div>
+        <div className="grow"><Progress value={i / items.length} label={`New word ${i + 1} of ${items.length}`} /></div>
       </div>
       {phase === "see" ? (
         <>
-          <div className="card flash">
+          <div className="flash" key={v.id}>
             <WordFace v={viewOf(v)} />
-            <SpeakButton text={v.ex ? `${v.w}. ${v.ex}` : v.w} />
+            <AudioIcon text={v.ex ? `${v.w}. ${v.ex}` : v.w} />
           </div>
-          <p className="muted small center">Say the word and the example out loud once.</p>
+          <p className="muted small center" style={{ marginTop: 12 }}>Say the word and the example out loud once.</p>
           <ActionBar>
             <div className="grid2">
               <button className="btn big outline" onClick={known}>I already know it</button>
@@ -175,14 +199,17 @@ export function NewWords({ c, ids, onDone }: { c: Content; ids: number[]; onDone
         </>
       ) : (
         <>
-          <h2 className="center" style={{ fontSize: "1.8rem" }}>{v.w}</h2>
-          <p className="muted center">Which meaning is right?</p>
-          <div className="options">
-            {options.map((o, k) => (
-              <button key={o.id} className={`btn option ${pick === null ? "" : o.id === v.id ? "right" : pick === k ? "wrong" : ""}`} disabled={pick !== null} onClick={() => { setPick(k); ping("vocabulary"); }}>
-                {o.d}
-              </button>
-            ))}
+          <p className="overline">Which meaning is right?</p>
+          <h2 style={{ fontSize: "var(--fs-2xl)" }}>{v.w}</h2>
+          <div className="options" role="radiogroup">
+            {options.map((o, k) => {
+              const state = pick === null ? "" : o.id === v.id ? "right" : pick === k ? "wrong" : "";
+              return (
+                <button key={o.id} role="radio" aria-checked={pick === k} className={`btn option ${state}`} disabled={pick !== null} onClick={() => { setPick(k); ping("vocabulary"); }}>
+                  <span className="opt-text">{o.d}</span><OptionMark state={state} />
+                </button>
+              );
+            })}
           </div>
           {pick !== null && <ActionBar><button className="btn big primary" onClick={next} autoFocus>Next <Icon name="arrow" /></button></ActionBar>}
         </>

@@ -1,12 +1,12 @@
 // The guided daily session: one step after another, the learner just presses Next.
-import { useEffect, useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { CourseUnitView, LessonStepView } from "../components/Lessons";
 import { GrammarLesson, GrammarReview } from "../components/Grammar";
 import { Dictation, dictationSentences, FixMistakes, Fluency, Recall, SpeakingTask, WritingTask } from "../components/Skills";
 import { NewWords, ReviewSession } from "../components/Vocab";
-import { ActionBar, Icon } from "../components/ui";
+import { ActionBar, Icon, Progress, SkillLabel, SKILLS } from "../components/ui";
 import type { Content } from "../lib/content";
-import { buildSession, dayNumber, phaseOf } from "../lib/session";
+import { buildSession, dayNumber, phaseOf, skillOf } from "../lib/session";
 import { bumpDay, getState, today, update, useApp } from "../lib/store";
 import type { SessionStep } from "../lib/types";
 import { navigate } from "../router";
@@ -38,26 +38,45 @@ function advance() {
 export function SessionScreen({ c }: { c: Content }) {
   const session = useApp((s) => s.session);
   const stale = !session || session.date !== today();
+  const [confirm, setConfirm] = useState(false);
   useEffect(() => { if (stale) ensureSession(c); }, [stale, c]);
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") setConfirm((v) => !v); };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
   if (!session || stale) return null;
   const step = session.steps[session.index];
+  const visible = session.steps.filter((s) => s.kind !== "wrap").length;
+  const isWrap = !step || step.kind === "wrap";
+  const sk = step ? skillOf(step) : undefined;
   return (
     <div className="focus">
-      <div className="row" style={{ marginBottom: 12 }}>
-        <button className="btn link" onClick={() => navigate("/")} aria-label="Pause and go home"><Icon name="back" /> Pause</button>
-        <div className="grow steps-dots" aria-label={`Step ${Math.min(session.index + 1, session.steps.length)} of ${session.steps.length}`}>
-          {session.steps.filter((s) => s.kind !== "wrap").map((s, i) => <span key={s.id} className={i < session.index ? "done" : i === session.index ? "now" : ""} />)}
+      {!isWrap && (
+        <div className="session-top">
+          <button className="icon-btn" onClick={() => setConfirm(true)} aria-label="Close the session"><Icon name="close" /></button>
+          <Progress value={session.index / visible} label={`Step ${session.index + 1} of ${visible}`} />
+          <span className="count" aria-hidden>{session.index + 1} / {visible}</span>
         </div>
-      </div>
+      )}
+      {confirm && !isWrap && (
+        <div className="confirm" role="alertdialog" aria-labelledby="leave-h">
+          <p id="leave-h"><b>Leave the session?</b> Your place is saved. You can continue from Today at any time.</p>
+          <div className="row">
+            <button className="btn outline" onClick={() => navigate("/")} autoFocus>Leave for now</button>
+            <button className="btn quiet" onClick={() => setConfirm(false)}>Stay</button>
+          </div>
+        </div>
+      )}
       {step ? (
         <>
-          {step.kind !== "wrap" && (
-            <div className="small muted" style={{ marginBottom: 8 }}>
-              <b>{step.title}</b> · about {step.minutes} min
-              <div>{step.why}</div>
-            </div>
+          {!isWrap && (
+            <header className="step-head">
+              <SkillLabel skill={sk} text={sk && step.title.toLowerCase().startsWith(SKILLS[sk].label.toLowerCase()) ? step.title.split(" · ").slice(1).join(" · ") || undefined : step.title} />
+              <p className="why">{step.why} <span className="faint">· about {step.minutes} min</span></p>
+            </header>
           )}
-          <div className="card"><StepView key={step.id} c={c} step={step} onDone={advance} /></div>
+          <div className="step-body"><div className="card"><StepView key={step.id} c={c} step={step} onDone={advance} /></div></div>
         </>
       ) : (
         <Wrap c={c} />
@@ -117,13 +136,14 @@ function Wrap({ c, onDone }: { c: Content; onDone?: () => void }) {
   const weekMinutes = Object.entries(s.days).filter(([d]) => Date.now() - new Date(d).getTime() < 7 * 86400000).reduce((n, [, d]) => n + d.active, 0) / 60;
   const phase = phaseOf(s);
   return (
-    <div className="center">
-      <h1>Well done!</h1>
-      <p className="muted">That's today's session. Day {dayNumber(s)} of your 365-day plan · {phase === "IELTS" ? "IELTS phase" : `${phase} phase`}</p>
-      <div className="grid2" style={{ textAlign: "left" }}>
-        <div className="card"><p className="big-number">{Math.round((day?.active ?? 0) / 60)}</p><p className="muted">active minutes today</p></div>
-        <div className="card"><p className="big-number">{known}</p><p className="muted">words you know well</p></div>
-        <div className="card"><p className="big-number">{Math.round(weekMinutes)}</p><p className="muted">minutes this week</p></div>
+    <div style={{ paddingTop: 32 }}>
+      <p className="overline">Day {dayNumber(s)} of 365 · {phase === "IELTS" ? "IELTS phase" : `${phase} phase`}</p>
+      <h1>Well done</h1>
+      <p className="lede">That's today's session.</p>
+      <div className="stats">
+        <div><p className="big-number">{Math.round((day?.active ?? 0) / 60)}</p><p className="label">active minutes today</p></div>
+        <div><p className="big-number">{known}</p><p className="label">words you know well</p></div>
+        <div><p className="big-number">{Math.round(weekMinutes)}</p><p className="label">minutes this week</p></div>
       </div>
       <p className="small muted">Tomorrow's session is ready when you are. Short on time? Settings → Daily time → 30 minutes.</p>
       <ActionBar>

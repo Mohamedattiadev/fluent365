@@ -16,7 +16,7 @@ export function Setup() {
     <div className="options" role="radiogroup">
       {options.map(([v, label, hint]) => (
         <button key={String(v)} role="radio" aria-checked={value === v} className={`btn option ${value === v ? "selected" : ""}`} onClick={() => onPick(v)}>
-          <span><b>{label}</b>{hint && <span className="muted small" style={{ display: "block", fontWeight: 400 }}>{hint}</span>}</span>
+          <span className="opt-text"><b>{label}</b>{hint && <span className="muted small" style={{ display: "block" }}>{hint}</span>}</span>
         </button>
       ))}
     </div>
@@ -48,13 +48,13 @@ export function Setup() {
   ];
   return (
     <main className="main" style={{ maxWidth: 640 }}>
-      <p className="small muted">Step {step + 1} of {screens.length}</p>
-      <div className="card">{screens[step]}</div>
+      <p className="overline">Step {step + 1} of {screens.length}</p>
+      <div>{screens[step]}</div>
       <ActionBar>
         <button className="btn big primary" onClick={() => (step + 1 < screens.length ? setStep(step + 1) : finish())}>
           {step + 1 < screens.length ? "Next" : "Start learning"} <Icon name="arrow" />
         </button>
-        {step > 0 && <button className="btn link" style={{ width: "100%" }} onClick={() => setStep(step - 1)}>Back</button>}
+        {step > 0 && <button className="btn quiet" style={{ width: "100%" }} onClick={() => setStep(step - 1)}>Back</button>}
       </ActionBar>
     </main>
   );

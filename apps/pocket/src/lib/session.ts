@@ -6,7 +6,7 @@ import type { Content } from "./content";
 import { dueCardKeys, dueTopics, recentAccuracy } from "./learning";
 import { getState, today, uid } from "./store";
 import type { AppState } from "./store";
-import type { DaySession, LessonInfo, LessonStep, SessionStep } from "./types";
+import type { DaySession, LessonInfo, LessonStep, SessionStep, Skill } from "./types";
 
 export type Phase = "B1" | "B2" | "IELTS";
 
@@ -220,3 +220,17 @@ export const GUIDE = [
   { from: 241, to: 300, focus: "IELTS skills: timed practice, writing and speaking" },
   { from: 301, to: 365, focus: "Full practice, error correction, targeted revision, exam readiness" },
 ];
+
+/** Which skill a session step trains (used for its colour line, icon and label). */
+export function skillOf(step: SessionStep): Skill | undefined {
+  const r = step.ref ?? {};
+  switch (step.kind) {
+    case "recall": case "review": case "pretech": return "words";
+    case "grammar": case "grammar-review": case "mistakes": return "grammar";
+    case "dictation": return "listening";
+    case "fluency": return "speaking";
+    case "input": return /listening/i.test(step.title) || r.course?.includes("listening") ? "listening" : "reading";
+    case "output": return r.prompt || /writing/i.test(step.title) ? "writing" : "speaking";
+    default: return undefined;
+  }
+}

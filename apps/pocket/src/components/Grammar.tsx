@@ -31,9 +31,9 @@ export function ExerciseRunner({ items, onFinish, review, persistKey }: { items:
   const item = items[Math.min(i, items.length - 1)];
   return (
     <div>
-      <div className="row small muted" style={{ marginBottom: 8 }}>
+      <div className="counter">
         <span>Question {i + 1} of {items.length}</span>
-        <div className="grow"><Progress value={i / items.length} /></div>
+        <div className="grow"><Progress value={i / items.length} label={`Question ${i + 1} of ${items.length}`} /></div>
       </div>
       <Exercise
         key={i}
@@ -67,13 +67,11 @@ export function GrammarLesson({ topic, onDone }: { topic: GrammarTopic; onDone: 
   if (stage === "notice")
     return (
       <div>
-        <p className="pill blue">Step 1 · Notice</p>
+        <p className="overline">Notice</p>
         <h2>{topic.title}</h2>
-        <p className="muted">Read these sentences out loud. Look at the <b>bold</b> words. Don't think about rules yet — just notice.</p>
-        <div className="card soft">
-          <ul className="notice-list">{topic.notice.map((n, i) => <li key={i}><Bold text={n} /></li>)}</ul>
-          <SpeakButton text={topic.notice.map((n) => n.replace(/\*\*/g, "")).join(" ")} label="Listen to all" />
-        </div>
+        <p className="muted">Read these sentences out loud. Look at the <mark>marked</mark> words. Don't think about rules yet. Just notice.</p>
+        <ul className="notice-list">{topic.notice.map((n, i) => <li key={i}><Bold text={n} /></li>)}</ul>
+        <SpeakButton text={topic.notice.map((n) => n.replace(/\*\*/g, "")).join(" ")} label="Listen to all" />
         <ActionBar><button className="btn big primary" onClick={() => setStage(topic.compare ? "compare" : "explain")}>Next <Icon name="arrow" /></button></ActionBar>
       </div>
     );
@@ -81,13 +79,13 @@ export function GrammarLesson({ topic, onDone }: { topic: GrammarTopic; onDone: 
   if (stage === "compare" && topic.compare)
     return (
       <div>
-        <p className="pill blue">Step 2 · Compare</p>
+        <p className="overline">Compare</p>
         <h2>What's the difference?</h2>
-        <div className="grid2">
-          <div className="card"><p className="pill">A</p><p style={{ fontSize: "1.2rem", fontWeight: 700 }}>{topic.compare.a}</p></div>
-          <div className="card"><p className="pill">B</p><p style={{ fontSize: "1.2rem", fontWeight: 700 }}>{topic.compare.b}</p></div>
+        <div className="compare">
+          <div><span className="head">A</span><p className="sent">{topic.compare.a}</p></div>
+          <div><span className="head">B</span><p className="sent">{topic.compare.b}</p></div>
         </div>
-        {revealed ? <div className="feedback info"><p style={{ margin: 0 }}>{topic.compare.note}</p></div> : <p className="muted">Say the difference to yourself first.</p>}
+        {revealed ? <div className="feedback info"><strong className="title"><Icon name="hint" size={22} /> The difference</strong><p>{topic.compare.note}</p></div> : <p className="muted">Say the difference to yourself first.</p>}
         <ActionBar>
           {revealed ? <button className="btn big primary" onClick={() => setStage("explain")}>Next <Icon name="arrow" /></button>
             : <button className="btn big primary" onClick={() => setRevealed(true)}>Show the difference</button>}
@@ -98,9 +96,9 @@ export function GrammarLesson({ topic, onDone }: { topic: GrammarTopic; onDone: 
   if (stage === "explain")
     return (
       <div>
-        <p className="pill blue">Step 3 · Why it works</p>
+        <p className="overline">Why it works</p>
         <h2>{topic.title}</h2>
-        <div className="card"><p dir={lang === "ar" && topic.explain.ar ? "rtl" : undefined}>{explanation}</p></div>
+        <div className="rule-box"><p className="overline">Rule</p><p dir={lang === "ar" && topic.explain.ar ? "rtl" : undefined} style={{ whiteSpace: "pre-line" }}>{explanation}</p></div>
         <p className="muted">Now practise. First you choose, then you build, then you write your own.</p>
         <ActionBar><button className="btn big primary" onClick={() => setStage("practice")}>Start practice <Icon name="arrow" /></button></ActionBar>
       </div>
@@ -120,7 +118,7 @@ export function GrammarLesson({ topic, onDone }: { topic: GrammarTopic; onDone: 
     );
 
   return (
-    <div className="center">
+    <div>
       <h2>{acc >= 0.8 ? "Well done!" : acc >= 0.6 ? "Good work" : "Good start"}</h2>
       <p className="big-number">{Math.round(acc * 100)}%</p>
       <p className="muted">correct on the first try. {acc < 0.8 ? "This pattern will come back sooner so you can practise it again." : "It will come back in a few days to make it automatic."}</p>
@@ -140,7 +138,7 @@ export function GrammarReview({ topics, onDone, count = 8 }: { topics: GrammarTo
   if (!items.length) return <ActionBar><button className="btn big primary" onClick={onDone}>Continue</button></ActionBar>;
   if (done !== null)
     return (
-      <div className="center">
+      <div>
         <h2>Check-up done</h2>
         <p className="big-number">{Math.round(done * 100)}%</p>
         <p className="muted">Mixed practice is harder than practising one topic, and that is why it works.</p>
@@ -149,7 +147,7 @@ export function GrammarReview({ topics, onDone, count = 8 }: { topics: GrammarTo
     );
   return (
     <div>
-      <p className="muted small">Topics: {topics.map((t) => t.title).join(" · ")}</p>
+      <p className="small faint">Topics: {topics.map((t) => t.title).join(" · ")}</p>
       <ExerciseRunner
         items={items}
         review

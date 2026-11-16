@@ -10,5 +10,8 @@
     "test": "pnpm --filter pocket test",
     "e2e": "node tests/e2e.mjs"
   },
-  "packageManager": "pnpm@11.23.0"
+  "packageManager": "pnpm@11.23.0",
+  "devDependencies": {
+    "playwright-core": "1.63.0"
+  }
 }

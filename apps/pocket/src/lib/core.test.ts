@@ -9,7 +9,7 @@ import { buildSession, newWordLimit } from "./session";
 import { Rating, schedule, type Grade } from "./srs";
 import { emptyState, flush, getState, loadState, replaceState } from "./store";
 import { diffWords, matches, normalize } from "./text";
-import type { GrammarTopic, IeltsContent, LessonInfo, VocabItem } from "./types";
+import type { GrammarTopic, IeltsContent, LessonInfo, SessionStep, VocabItem } from "./types";
 
 const data = join(__dirname, "../../public/data");
 const read = <T,>(f: string) => JSON.parse(readFileSync(join(data, f), "utf8")) as T;
@@ -169,5 +169,22 @@ describe("Anki", () => {
     expect(tsv).toContain("#guid column:1");
     expect(tsv).toContain("fluent365-1\tcommute\ttravel to work\tngsl");
     expect(ankiImport("#separator:tab\n#html:true\nhello\t<b>greeting</b>\nworld\tthe earth\n")).toEqual([{ w: "hello", d: "greeting" }, { w: "world", d: "the earth" }]);
+  });
+});
+
+describe("design: skill of each session step", () => {
+  it("maps steps to the six skills for colour lines and labels", async () => {
+    const { skillOf } = await import("./session");
+    const step = (kind: SessionStep["kind"], title = "", ref: SessionStep["ref"] = {}) => ({ id: "x", kind, title, why: "", minutes: 5, ref }) as SessionStep;
+    expect(skillOf(step("review"))).toBe("words");
+    expect(skillOf(step("grammar-review"))).toBe("grammar");
+    expect(skillOf(step("dictation"))).toBe("listening");
+    expect(skillOf(step("input", "Lesson 3 · Listening", { lesson: 3, step: 1 }))).toBe("listening");
+    expect(skillOf(step("input", "Lesson 3 · Reading", { lesson: 3, step: 2 }))).toBe("reading");
+    expect(skillOf(step("input", "IELTS practice", { course: "ielts-listening-tests", unit: "t1-part1" }))).toBe("listening");
+    expect(skillOf(step("output", "Writing · Task 2", { prompt: "p1" }))).toBe("writing");
+    expect(skillOf(step("output", "Speaking practice", { cue: "c1" }))).toBe("speaking");
+    expect(skillOf(step("fluency"))).toBe("speaking");
+    expect(skillOf(step("wrap"))).toBeUndefined();
   });
 });

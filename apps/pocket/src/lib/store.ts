@@ -13,7 +13,8 @@ export const DEFAULT_SETTINGS: Settings = {
   target: 7.5,
   minutes: 60,
   explainLang: "en",
-  textSize: "large",
+  textSize: "m",
+  highContrast: false,
   theme: "system",
   reduceMotion: false,
   comfortable: false,
@@ -79,6 +80,10 @@ export async function loadState() {
     if (values[i] !== undefined) (base as unknown as Record<string, unknown>)[s] = values[i];
   });
   base.settings = { ...DEFAULT_SETTINGS, ...base.settings };
+  // Older versions stored "normal" | "large" for text size.
+  const size = base.settings.textSize as string;
+  if (size === "normal") base.settings.textSize = "m";
+  else if (size === "large") base.settings.textSize = "l";
   state = base;
   loaded = true;
   emit();

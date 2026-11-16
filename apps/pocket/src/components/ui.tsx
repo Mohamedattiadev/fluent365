@@ -1,36 +1,34 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { boldParts } from "../lib/text";
+import type { Skill } from "../lib/types";
+export type { Skill };
 
-const paths: Record<string, string> = {
-  home: "M3 11l9-8 9 8v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z",
-  grammar: "M4 4h11a3 3 0 0 1 3 3v13H7a3 3 0 0 1-3-3zM4 17a3 3 0 0 1 3-3h11M8 8h6",
-  words: "M3 6h13v13H3zM8 3h13v13",
-  reading: "M2 5c3-1 6-1 10 1 4-2 7-2 10-1v14c-3-1-6-1-10 1-4-2-7-2-10-1zM12 6v14",
-  practice: "M12 3a3 3 0 0 1 3 3v6a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3zM5 11a7 7 0 0 0 14 0M12 18v3",
-  progress: "M4 20V10M10 20V4M16 20v-7M22 20H2",
-  settings: "M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z",
-  play: "M7 4l13 8-13 8z",
-  stop: "M6 6h12v12H6z",
-  mic: "M12 3a3 3 0 0 1 3 3v6a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3zM5 11a7 7 0 0 0 14 0M12 18v3",
-  check: "M4 12l5 5L20 6",
-  arrow: "M5 12h14M13 6l6 6-6 6",
-  back: "M19 12H5M11 6l-6 6 6 6",
+import {
+  ArrowLeft, ArrowRight, BookOpen, ChartLine, Check, CircleCheck, Download, FileText, Headphones, Info, Layers, Lightbulb,
+  ListChecks, Mic, Moon, Pause, PenLine, Pilcrow, Play, RotateCcw, Settings, Square, Sun, Target, Timer, TriangleAlert,
+  Upload, Volume2, X, type LucideIcon,
+} from "lucide-react";
+
+// One icon set (Lucide, ISC licence), one stroke weight, always currentColor. Never emoji.
+const ICONS: Record<string, LucideIcon> = {
+  home: Sun, today: Sun, words: Layers, grammar: Pilcrow, reading: BookOpen, listening: Headphones, writing: PenLine,
+  speaking: Mic, mic: Mic, practice: Target, progress: ChartLine, settings: Settings, check: Check, done: CircleCheck,
+  x: X, close: X, hint: Lightbulb, audio: Volume2, timer: Timer, rest: Moon, play: Play, pause: Pause, stop: Square,
+  arrow: ArrowRight, back: ArrowLeft, warn: TriangleAlert, again: RotateCcw, upload: Upload, file: FileText,
+  download: Download, info: Info, list: ListChecks,
 };
 
-export function Icon({ name, label }: { name: keyof typeof paths | string; label?: string }) {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden={label ? undefined : true} role={label ? "img" : undefined} aria-label={label}>
-      <path d={paths[name] ?? paths.arrow} />
-    </svg>
-  );
+export function Icon({ name, label, size }: { name: string; label?: string; size?: number }) {
+  const C = ICONS[name] ?? ArrowRight;
+  return <C size={size ?? 24} strokeWidth={size && size >= 32 ? 1.75 : 2} aria-hidden={label ? undefined : true} role={label ? "img" : undefined} aria-label={label} focusable="false" />;
 }
 
 export const Bold = ({ text }: { text: string }) => <>{boldParts(text).map((p, i) => (p.b ? <b key={i}>{p.t}</b> : <span key={i}>{p.t}</span>))}</>;
 
-export function Progress({ value }: { value: number }) {
+export function Progress({ value, label }: { value: number; label?: string }) {
   const v = Math.max(0, Math.min(1, value));
   return (
-    <div className="progress" role="progressbar" aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round(v * 100)}>
+    <div className="progress" role="progressbar" aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round(v * 100)} aria-valuetext={label} aria-label={label ?? "Progress"}>
       <div style={{ width: `${v * 100}%` }} />
     </div>
   );
@@ -106,8 +104,52 @@ export function stopSpeaking() {
 
 export function SpeakButton({ text, label = "Listen" }: { text: string; label?: string }) {
   return (
-    <button className="btn outline" onClick={() => { stopSpeaking(); speak(text); }} aria-label={`${label}: ${text}`}>
-      <Icon name="play" /> {label}
+    <button className="btn quiet" onClick={() => { stopSpeaking(); speak(text); }} aria-label={`${label}: ${text}`}>
+      <Icon name="audio" size={20} /> {label}
     </button>
+  );
+}
+
+// ---------- Skills: each has a muted ink colour used only for a thin rule, a label and an icon ----------
+export const SKILLS: Record<Skill, { label: string; icon: string }> = {
+  words: { label: "Words", icon: "words" },
+  grammar: { label: "Grammar", icon: "grammar" },
+  reading: { label: "Reading", icon: "reading" },
+  listening: { label: "Listening", icon: "listening" },
+  writing: { label: "Writing", icon: "writing" },
+  speaking: { label: "Speaking", icon: "speaking" },
+};
+export const skillStyle = (sk?: Skill) => (sk ? ({ "--skill": `var(--sk-${sk})` } as React.CSSProperties) : undefined);
+
+/** "[icon] GRAMMAR · Present perfect" in the skill's ink. */
+export function SkillLabel({ skill, text }: { skill?: Skill; text?: string }) {
+  if (!skill) return text ? <p className="overline">{text}</p> : null;
+  return (
+    <p className="skill-label" style={skillStyle(skill)}>
+      <Icon name={SKILLS[skill].icon} size={20} /> <span>{SKILLS[skill].label}{text ? ` · ${text}` : ""}</span>
+    </p>
+  );
+}
+
+/** Segmented control (radio group) for 2–4 short choices. */
+export function Segmented<T extends string | number>({ label, value, options, onChange }: { label: string; value: T; options: [T, string][]; onChange: (v: T) => void }) {
+  return (
+    <div className="segmented" role="radiogroup" aria-label={label}>
+      {options.map(([v, l]) => (
+        <button key={String(v)} type="button" role="radio" aria-checked={value === v} onClick={() => onChange(v)}>{l}</button>
+      ))}
+    </div>
+  );
+}
+
+/** 52×32 switch: teal fill and a check glyph when on (colour is never the only signal). */
+export function Toggle({ label, checked, onChange, hint }: { label: string; checked: boolean; onChange: (v: boolean) => void; hint?: string }) {
+  return (
+    <div className="setting-row">
+      <span className="grow"><span className="setting-label">{label}</span>{hint && <span className="setting-hint">{hint}</span>}</span>
+      <button type="button" role="switch" aria-checked={checked} aria-label={label} className="switch" onClick={() => onChange(!checked)}>
+        <span className="thumb">{checked && <Icon name="check" size={16} />}</span>
+      </button>
+    </div>
   );
 }
