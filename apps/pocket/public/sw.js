@@ -1,6 +1,6 @@
 // Fluent365 service worker: caches the whole app for offline use and receives files/text shared
 // from other Android apps (Web Share Target). Paths are relative to this file, so it works under
-// any GitHub Pages sub-path. The build replaces self.__FILES__ and __VERSION__.
+// any GitHub Pages sub-path. The build fills in the file list and version below.
 const VERSION = "__VERSION__";
 const FILES = self.__FILES__;
 const CACHE = `fluent365-${VERSION}`;

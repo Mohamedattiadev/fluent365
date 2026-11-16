@@ -26,8 +26,9 @@ function offlineList(): Plugin {
       for (const f of files) if (f !== "sw.js") hash.update(readFileSync(join(dist, f)));
       const sw = join(dist, "sw.js");
       const code = readFileSync(sw, "utf8")
-        .replace("self.__FILES__", JSON.stringify(list))
-        .replace("__VERSION__", hash.digest("hex").slice(0, 10));
+        .replace("const FILES = self.__FILES__;", `const FILES = ${JSON.stringify(list)};`)
+        .replace('const VERSION = "__VERSION__";', `const VERSION = "${hash.digest("hex").slice(0, 10)}";`);
+      if (code.includes("__FILES__") || code.includes("__VERSION__")) throw new Error("sw.js placeholders were not filled");
       writeFileSync(sw, code);
     },
   };
