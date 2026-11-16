@@ -7,7 +7,7 @@ import { getState, useApp } from "../lib/store";
 import { shuffle } from "../lib/text";
 import type { MyCard, VocabItem } from "../lib/types";
 import { OptionMark } from "./Exercise";
-import { ActionBar, Icon, Progress, speak, stopSpeaking } from "./ui";
+import { ActionBar, buzz, Icon, Progress, speak, stopSpeaking } from "./ui";
 import { ping } from "../lib/activity";
 
 export interface CardView { key: string; w: string; d?: string; ex?: string; pos?: string; tr?: string; ar?: string; lvl?: string; source?: string }
@@ -60,6 +60,7 @@ export function SwipeCard({ shown, onFlip, onLeft, onRight, children, labels = [
   const done = (dir: -1 | 1) => {
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches || document.documentElement.dataset.motion === "reduce";
     const act = () => { setDx(0); setLeaving(0); if (!shown) onFlip(); else if (dir > 0) onRight(); else onLeft(); };
+    if (shown) buzz(dir > 0 ? 12 : [20, 40, 20]);
     if (reduce || !shown) return act();
     setLeaving(dir);
     setTimeout(act, 160);
@@ -153,7 +154,7 @@ export function ReviewSession({ c, limit = 60, onDone }: { c: Content; limit?: n
         <div className="grow"><Progress value={i / all.length} label={`Card ${i + 1} of ${all.length}`} /></div>
       </div>
       <SwipeCard key={key} shown={shown} onFlip={() => { setShown(true); ping("vocabulary"); }} onLeft={() => void rate(Rating.Again as Grade)} onRight={() => void rate(Rating.Good as Grade)}>
-      <div className="flash" key={`${key}-${shown}`} aria-live="polite">
+      <div className={`flash ${shown ? "back" : ""}`} key={`${key}-${shown}`} aria-live="polite">
         {!shown ? (
           recallFromMeaning && view.d ? (
             <>
@@ -308,7 +309,7 @@ export function IntroCards({ items, onDone, title }: { items: CardView[]; onDone
         <div className="grow"><Progress value={seen.size / items.length} label={`New word ${seen.size + 1} of ${items.length}`} /></div>
       </div>
       <SwipeCard key={`${idx}-${pos}`} shown={shown} onFlip={flip} onLeft={again} onRight={gotIt} labels={["Again", "Got it"]}>
-        <div className="flash" key={`${idx}-${shown}`} aria-live="polite">
+        <div className={`flash ${shown ? "back" : ""}`} key={`${idx}-${shown}`} aria-live="polite">
           {!shown ? (
             <>
               <p className="overline">New word</p>

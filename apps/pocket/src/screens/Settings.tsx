@@ -36,6 +36,7 @@ function Main() {
           <Row label="Text size"><Segmented label="Text size" value={size} onChange={(v) => set({ textSize: v })} options={[["s", "S"], ["m", "M"], ["l", "L"], ["xl", "XL"]]} /></Row>
           <p className="size-preview">Preview: I have lived in this city since 2015.</p>
         </div>
+        <Row label="Colour" hint="For the main button and progress. Green and red stay for right and wrong."><Segmented label="Colour" value={s.accent ?? "violet"} onChange={(v) => set({ accent: v })} options={[["violet", "Violet"], ["blue", "Blue"], ["orange", "Orange"], ["mono", "Black"]]} /></Row>
         <Row label="Theme"><Segmented label="Theme" value={s.theme} onChange={(v) => set({ theme: v })} options={[["system", "System"], ["light", "Light"], ["dark", "Dark"]]} /></Row>
         <Toggle label="High contrast" hint="Darker text and stronger borders" checked={!!s.highContrast} onChange={(v) => set({ highContrast: v })} />
         <Toggle label="Reduce motion" hint="Also follows your device setting" checked={s.reduceMotion} onChange={(v) => set({ reduceMotion: v })} />

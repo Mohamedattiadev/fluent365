@@ -81,7 +81,7 @@ export function SessionScreen({ c }: { c: Content }) {
               {step.kind !== "speak" && <p className="why">{step.why} <span className="faint">· about {step.minutes} min</span></p>}
             </header>
           )}
-          <div className="step-body"><div className="card"><StepView key={step.id} c={c} step={step} onDone={advance} /></div></div>
+          <div className="step-body" key={step.id}><div className="card"><StepView key={step.id} c={c} step={step} onDone={advance} /></div></div>
         </>
       ) : (
         <Wrap c={c} />

@@ -27,6 +27,32 @@ export function Progress({ value, label }: { value: number; label?: string }) {
   );
 }
 
+const reduced = () => typeof window !== "undefined" && (window.matchMedia("(prefers-reduced-motion: reduce)").matches || document.documentElement.dataset.motion === "reduce");
+
+/** A short vibration on phones that support it (Android). Silent elsewhere. */
+export function buzz(pattern: number | number[] = 12) {
+  try { if (!reduced()) navigator.vibrate?.(pattern); } catch { /* not supported */ }
+}
+
+/** Counts a number up from 0 when it first appears (instant with reduced motion). */
+export function CountUp({ value, ms = 700 }: { value: number; ms?: number }) {
+  const [n, setN] = useState(() => (reduced() ? value : 0));
+  useEffect(() => {
+    if (reduced()) { setN(value); return; }
+    let raf = 0;
+    const t0 = performance.now();
+    const from = 0;
+    const tick = (t: number) => {
+      const k = Math.min(1, (t - t0) / ms);
+      setN(Math.round(from + (value - from) * (1 - Math.pow(1 - k, 3))));
+      if (k < 1) raf = requestAnimationFrame(tick);
+    };
+    raf = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(raf);
+  }, [value, ms]);
+  return <>{n.toLocaleString()}</>;
+}
+
 /** The one obvious action at the bottom of the screen. */
 export function ActionBar({ children }: { children: ReactNode }) {
   return <div className="actionbar">{children}</div>;

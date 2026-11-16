@@ -5,7 +5,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { recordAttempt } from "../lib/learning";
 import { diffWords, matches, shuffle } from "../lib/text";
 import type { Exercise as Ex, Mistake } from "../lib/types";
-import { ActionBar, Icon, SpeakButton } from "./ui";
+import { ActionBar, buzz, Icon, SpeakButton } from "./ui";
 
 /** Colour is never the only signal: right/wrong options also get an icon and a word. */
 export function OptionMark({ state }: { state: string }) {
@@ -73,6 +73,7 @@ export function Exercise({ ex, topic, kind = "grammar", review, onDone, nextLabe
       const given = isMC ? (ex as { options: string[] }).options[choice] : ["true", "false", "not given"][choice];
       record(ok, given);
       setState(ok ? "correct" : "wrong");
+      buzz(ok ? 12 : [20, 40, 20]);
       return;
     }
     if (ex.type === "produce") {
@@ -88,6 +89,7 @@ export function Exercise({ ex, topic, kind = "grammar", review, onDone, nextLabe
     if (ok) {
       record(firstTry.current, given);
       setState("correct");
+      buzz(12);
     } else if (state === "answer" && ex.type !== "build") {
       firstTry.current = false;
       setState("hint");
@@ -95,6 +97,7 @@ export function Exercise({ ex, topic, kind = "grammar", review, onDone, nextLabe
       record(false, given);
       firstTry.current = false;
       setState("wrong");
+      buzz([20, 40, 20]);
     }
   }
 

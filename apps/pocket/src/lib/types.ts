@@ -96,6 +96,8 @@ export interface Settings {
   explainLang: Lang;
   textSize: "s" | "m" | "l" | "xl";
   highContrast: boolean;
+  /** One accent colour for the main action and progress; "mono" = black and white. */
+  accent?: "violet" | "blue" | "orange" | "mono";
   theme: "system" | "light" | "dark";
   reduceMotion: boolean;
   comfortable: boolean;

@@ -43,8 +43,9 @@ export function LearnScreen({ c, path }: { c: Content; path: string[] }) {
         {([["words", "Words", "words"], ["grammar", "Grammar", "grammar"]] as const).map(([k, label, icon]) => (
           <a key={k} role="tab" href={`#/learn/${k}`} aria-selected={tab === k}><Icon name={icon} size={20} filled={tab === k} />{label}</a>
         ))}
+        <span className="ptabs-ind" style={{ transform: `translateX(${tab === "grammar" ? 100 : 0}%)` }} aria-hidden />
       </div>
-      {tab === "grammar" ? <GrammarTab c={c} /> : <WordsTab c={c} />}
+      <div className="tab-panel" key={tab}>{tab === "grammar" ? <GrammarTab c={c} /> : <WordsTab c={c} />}</div>
     </div>
   );
 }

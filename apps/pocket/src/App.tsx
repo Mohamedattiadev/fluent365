@@ -68,6 +68,7 @@ export function App() {
     if (settings.theme === "system") delete r.dataset.theme;
     r.dataset.size = SIZE[settings.textSize] ?? settings.textSize;
     r.dataset.contrast = settings.highContrast ? "high" : "";
+    r.dataset.accent = settings.accent ?? "violet";
     r.dataset.comfortable = String(settings.comfortable);
     r.dataset.motion = settings.reduceMotion ? "reduce" : "";
   }, [settings]);
@@ -110,7 +111,7 @@ export function App() {
       </header>
       <main className="main" id="main">
         {!focus && <a className="gear phone-gear" href="#/settings" aria-label="Settings" aria-current={gear ? "page" : undefined}><Icon name="settings" filled={gear} /></a>}
-        {page}
+        <div className="page" key={focus ? "session" : section === "learn" && rest.length <= 1 ? "learn" : route}>{page}</div>
       </main>
       <nav className="bottomnav nav" aria-label="Main">
         {NAV.map((n) => <a key={n.to} href={`#${n.to}`} aria-current={current === n.to ? "page" : undefined}><span className="ind"><Icon name={n.icon} filled={current === n.to} /></span>{n.label}</a>)}
