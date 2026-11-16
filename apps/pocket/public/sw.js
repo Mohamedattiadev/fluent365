@@ -73,5 +73,5 @@ self.addEventListener("fetch", (event) => {
     );
     return;
   }
-  event.respondWith(caches.match(req, { ignoreSearch: true }).then((hit) => hit || fetch(req)));
+  event.respondWith(caches.match(req, { ignoreSearch: true, ignoreVary: true }).then((hit) => hit || fetch(req)));
 });
