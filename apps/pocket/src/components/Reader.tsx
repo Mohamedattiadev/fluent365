@@ -26,7 +26,7 @@ export function lookupWord(index: Map<string, VocabItem>, raw: string): VocabIte
   return undefined;
 }
 
-export function Reader({ c, info, target, onDone }: { c: Content; info: BookInfo; target: number; onDone?: () => void }) {
+export function Reader({ c, info, target, onDone, actions }: { c: Content; info: BookInfo; target: number; onDone?: () => void; actions?: React.ReactNode }) {
   const [book, setBook] = useState<Book | null>(null);
   const [error, setError] = useState(false);
   const stored = useApp((s) => s.reading.books[info.id]); // select the stored object (stable), default below
@@ -85,12 +85,12 @@ export function Reader({ c, info, target, onDone }: { c: Content; info: BookInfo
 
   return (
     <div className="reader">
-      <p className="overline">{info.title} · {info.author}{chapter ? ` · ${chapter.title}` : ""}</p>
-      <div className="counter">
-        <span>{Math.round((pos.words / info.words) * 100)}% of the book</span>
-        <div className="grow"><Progress value={pos.words / info.words} label={`${Math.round((pos.words / info.words) * 100)}% of ${info.title}`} /></div>
+      <div className="reader-head">
+        <b className="grow ellipsis">{info.title}</b>
+        {actions}
       </div>
-      <p className="small muted" style={{ margin: "0 0 12px" }}>Today: {today.toLocaleString()} / {target.toLocaleString()} words{reachedTarget ? " · target reached" : ""} · tap any word to look it up</p>
+      <div className="thin-bar"><Progress value={pos.words / info.words} label={`${Math.round((pos.words / info.words) * 100)}% of ${info.title}${chapter ? `, ${chapter.title}` : ""}`} /></div>
+      <p className="small muted reader-meta">{Math.round((pos.words / info.words) * 100)}% of the book · today {today.toLocaleString()} / {target.toLocaleString()} words{reachedTarget ? " · target reached" : ""}{today === 0 ? " · tap a word to look it up" : ""}</p>
       <div className="book-text" onClick={onTap}>
         {book.blocks.slice(page.start, page.end).map((b, i) =>
           b.type === "h2" ? <h3 key={i}>{b.text}</h3> : <p key={i}>{b.text.split(/(\s+)/).map((t, k) => (/\S/.test(t) ? <span key={k} className="w">{t}</span> : t))}</p>,

@@ -49,7 +49,7 @@ writeFileSync(join(root, "apps/pocket/src/theme.gen.css"), css);
 
 // ---------- Icons ----------
 const ICONS = {
-  today: "today", words: "style", grammar: "spellcheck", reading: "menu_book", listening: "headphones", writing: "edit_note", speaking: "mic",
+  today: "today", words: "dictionary", grammar: "spellcheck", reading: "menu_book", listening: "headphones", writing: "edit_note", speaking: "mic",
   mic: "mic", practice: "exercise", progress: "monitoring", settings: "settings", check: "check", done: "check_circle", x: "close", close: "close",
   hint: "lightbulb", audio: "volume_up", timer: "timer", rest: "bedtime", play: "play_arrow", pause: "pause", stop: "stop", arrow: "arrow_forward",
   back: "arrow_back", chevron: "chevron_right", warn: "warning", again: "replay", upload: "upload", file: "description", download: "download", info: "info",

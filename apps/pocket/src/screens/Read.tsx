@@ -37,13 +37,10 @@ export function ReadScreen({ c, path }: { c: Content; path: string[] }) {
   const n = c.books.indexOf(info) + 1;
   return (
     <div className="read-page">
-      <div className="read-head">
-        <span className="small muted">Book {n} of {c.books.length}</span>
-        <span className="grow" />
-        <button className="btn quiet" onClick={() => navigate(`/read/chapters/${info.id}`)}>Chapters</button>
-        <button className="btn quiet" onClick={() => navigate("/read/books")}>All books</button>
-      </div>
-      <Reader key={info.id} c={c} info={info} target={dailyTarget(s, c.books)} />
+      <Reader key={info.id} c={c} info={info} target={dailyTarget(s, c.books)} actions={<>
+        <button className="btn quiet" onClick={() => navigate(`/read/chapters/${info.id}`)} aria-label={`Chapters of ${info.title}`}>Chapters</button>
+        <button className="btn quiet" onClick={() => navigate("/read/books")} aria-label={`All books (this is book ${n} of ${c.books.length})`}>Books</button>
+      </>} />
     </div>
   );
 }

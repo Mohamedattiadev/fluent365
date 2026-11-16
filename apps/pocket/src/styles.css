@@ -470,13 +470,20 @@ pre { font-family: inherit; }
 .field.search { margin-bottom: 12px; }
 .list.boxed .rowbtn > .icon:first-child { color: var(--md-on-surface-variant); }
 .btn.back { margin-left: -10px; }
-.read-head { display: flex; align-items: center; gap: 4px; margin: 0 52px 8px 0; }
-.read-head .btn.quiet { padding: 0 10px; }
+.reader-head { display: flex; align-items: center; gap: 4px; margin: 0 48px 4px 0; line-height: 1.4; }
+.reader-head .btn.quiet { padding: 0 8px; flex-shrink: 0; }
+.thin-bar { margin: 4px 0 6px; }
+.reader-meta { margin: 0 0 16px; }
+.ellipsis { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+.thin-bar .progress { height: 4px; }
+.focus-mode .reader-head { margin-right: 0; }
+.learn-actions .btn.quiet { justify-self: start; padding-left: 4px; }
+.list .pill { margin: 0; flex-shrink: 0; }
 @media (min-width: 900px) {
   .today { max-width: 560px; margin: 48px auto 0; }
   .ptabs { max-width: 480px; margin-right: 0; }
   .learn-actions { grid-template-columns: minmax(0, 320px) auto; justify-content: start; align-items: center; }
-  .read-head { margin-right: 0; }
+  .reader-head { margin-right: 0; }
   .phone-gear { display: none; }
   .learn, .read-page { max-width: 760px; margin: 0 auto; }
 }

@@ -78,7 +78,7 @@ export function SessionScreen({ c }: { c: Content }) {
           {!isWrap && (
             <header className="step-head">
               <SkillLabel skill={sk} text={sk && step.title.toLowerCase().startsWith(SKILLS[sk].label.toLowerCase()) ? step.title.split(" · ").slice(1).join(" · ") || undefined : step.title} />
-              <p className="why">{step.why} <span className="faint">· about {step.minutes} min</span></p>
+              {step.kind !== "speak" && <p className="why">{step.why} <span className="faint">· about {step.minutes} min</span></p>}
             </header>
           )}
           <div className="step-body"><div className="card"><StepView key={step.id} c={c} step={step} onDone={advance} /></div></div>

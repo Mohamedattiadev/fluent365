@@ -111,20 +111,17 @@ function WordsTab({ c }: { c: Content }) {
     <div>
       <div className="learn-actions">
         {due > 0 ? <button className="btn big primary" onClick={() => navigate("/learn/words/review")}>Review {due} {due === 1 ? "word" : "words"}</button>
-          : <p className="muted" style={{ margin: 0 }}>No words due. Come back later or learn new ones.</p>}
-        <button className="btn outline" onClick={learnNew}>Learn new words</button>
+          : <p className="muted" style={{ margin: 0 }}>No words due right now.</p>}
+        <button className="btn quiet" onClick={learnNew}><Icon name="arrow" size={18} /> Learn new words</button>
       </div>
       <label className="field search"><span className="sr-only">Search all words</span><input type="search" value={q} onChange={(e) => { setQ(e.target.value); setOpen(null); }} placeholder={`Search ${c.vocab.length.toLocaleString()} words`} /></label>
       {!needle && (
-        <>
-          <div className="tabs" role="tablist" aria-label="Word lists">
-            {TABS.map(([k, label, n]) => <button key={k} role="tab" aria-selected={tab === k} className={`chip ${tab === k ? "on" : ""}`} onClick={() => { setTab(k); setOpen(null); }}>{label} <span className="num">{n}</span></button>)}
-          </div>
-          <p className="small muted" style={{ margin: "8px 0 4px" }}>{explain[tab]}</p>
-        </>
+        <div className="tabs" role="tablist" aria-label="Word lists">
+          {TABS.map(([k, label, n]) => <button key={k} role="tab" aria-selected={tab === k} title={explain[k]} className={`chip ${tab === k ? "on" : ""}`} onClick={() => { setTab(k); setOpen(null); }}>{label} <span className="num">{n}</span></button>)}
+        </div>
       )}
       <ul className="list" aria-live="polite">
-        {rows.length === 0 && <li className="muted small">{needle ? "No words found." : tab === "learned" ? "No learned words yet. Words move here after about 3 weeks of remembering them." : "Nothing here yet."}</li>}
+        {rows.length === 0 && <li className="muted small">{needle ? "No words found." : explain[tab]}</li>}
         {rows.map((r) => {
           const v = r.vocabId != null ? c.vocabById.get(r.vocabId) : undefined;
           const card = cards[r.key];
@@ -132,7 +129,7 @@ function WordsTab({ c }: { c: Content }) {
           return (
             <li key={r.key}>
               <button className="rowbtn" onClick={() => setOpen(open === r.key ? null : r.key)} aria-expanded={open === r.key}>
-                <span className="grow"><span style={{ display: "block" }}>{r.w}</span><span className="small muted">{r.d ? (r.d.length > 70 ? `${r.d.slice(0, 70)}…` : r.d) : ""}</span></span>
+                <span className="grow" style={{ minWidth: 0 }}><span style={{ display: "block" }}>{r.w}</span><span className="small muted ellipsis" style={{ display: "block" }}>{r.d ?? ""}</span></span>
                 {r.right && <span className="small muted num" style={{ whiteSpace: "nowrap" }}>{r.right}</span>}
               </button>
               {open === r.key && view && (
@@ -169,8 +166,9 @@ function GrammarTab({ c }: { c: Content }) {
     return (
       <li>
         <button className="rowbtn" onClick={() => navigate(`/learn/grammar/${id}`)}>
-          <span className="grow"><span style={{ display: "block" }}>{title}</span><span className="small muted">{level}{m?.learnedAt ? ` · practised ${m.attempts}×` : ""}</span></span>
-          {score !== null && <span className="small muted num" title="Average of recognition, practice, production and automatic use">{score}%</span>}
+          <span className="grow">{title}</span>
+          {score !== null && <span className="small muted num" title={`Practised ${m!.attempts}× · average of recognition, practice, production and automatic use`}>{score}%</span>}
+          <span className="pill">{level}</span>
           <Icon name="chevron" size={20} />
         </button>
       </li>
@@ -184,8 +182,7 @@ function GrammarTab({ c }: { c: Content }) {
           {learned > 0 && <li><button className="rowbtn" onClick={() => navigate("/learn/grammar/mix")}><Icon name="grammar" /><span className="grow"><span style={{ display: "block" }}>Mixed review</span><span className="small muted">Questions from the {learned} {learned === 1 ? "topic" : "topics"} you have learned</span></span><Icon name="chevron" size={20} /></button></li>}
         </ul>
       )}
-      <p className="small muted" style={{ marginTop: 16 }}>Each topic: one page that explains it, then practice. Study now teaches them in order; open any topic here.</p>
-      {personal.length > 0 && <><h2 className="section-title">Your corrections</h2><ul className="list">{personal.map((t) => <Row key={t.id} id={t.id} title={t.title} level={t.level} />)}</ul></>}
+            {personal.length > 0 && <><h2 className="section-title">Your corrections</h2><ul className="list">{personal.map((t) => <Row key={t.id} id={t.id} title={t.title} level={t.level} />)}</ul></>}
       <h2 className="section-title">Core patterns</h2>
       <ul className="list">{core.map((t) => <Row key={t.id} id={t.id} title={t.title} level={t.level} />)}</ul>
       <h2 className="section-title">More grammar</h2>
