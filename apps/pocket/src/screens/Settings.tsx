@@ -36,6 +36,15 @@ function Main() {
           <Row label="Text size"><Segmented label="Text size" value={size} onChange={(v) => set({ textSize: v })} options={[["s", "S"], ["m", "M"], ["l", "L"], ["xl", "XL"]]} /></Row>
           <p className="size-preview">Preview: I have lived in this city since 2015.</p>
         </div>
+        <Row label="Colour">
+          <div className="swatches" role="radiogroup" aria-label="Colour">
+            {(["violet", "blue", "green", "orange"] as const).map((k) => (
+              <button key={k} type="button" role="radio" aria-checked={(s.seed ?? "violet") === k} aria-label={k} className="swatch" style={{ "--c": `var(--seed-${k})` } as React.CSSProperties} onClick={() => set({ seed: k })}>
+                {(s.seed ?? "violet") === k && <Icon name="check" size={20} />}
+              </button>
+            ))}
+          </div>
+        </Row>
         <Row label="Theme"><Segmented label="Theme" value={s.theme} onChange={(v) => set({ theme: v })} options={[["system", "System"], ["light", "Light"], ["dark", "Dark"]]} /></Row>
         <Toggle label="High contrast" hint="Darker text and stronger borders" checked={!!s.highContrast} onChange={(v) => set({ highContrast: v })} />
         <Toggle label="Reduce motion" hint="Also follows your device setting" checked={s.reduceMotion} onChange={(v) => set({ reduceMotion: v })} />
@@ -352,7 +361,7 @@ function About({ c }: { c: Content }) {
       <div className="card">
         <h2>Licences</h2>
         <p className="small">{c.licence}</p>
-        <p className="small">Lessons, grammar topics and IELTS-style prompts: original content, CC BY-SA 4.0. Software: MIT. Spaced repetition: ts-fsrs (MIT). PDF reading: pdf.js (Apache-2.0). Typeface: Atkinson Hyperlegible Next (<a href="./licenses/atkinson-hyperlegible-next-OFL.txt">SIL OFL 1.1</a>). Icons: Lucide (<a href="./licenses/lucide-ISC-and-feather-MIT.txt">ISC; Feather icons MIT</a>). IELTS is a registered trademark of the British Council, IDP and Cambridge University Press & Assessment; Fluent365 is not affiliated with them.</p>
+        <p className="small">Lessons, grammar topics and IELTS-style prompts: original content, CC BY-SA 4.0. Software: MIT. Spaced repetition: ts-fsrs (MIT). PDF reading: pdf.js (Apache-2.0). Typeface: Roboto (<a href="./licenses/roboto-OFL.txt">SIL OFL 1.1</a>). Icons: Material Symbols (<a href="./licenses/material-symbols-Apache-2.0.txt">Apache-2.0</a>). Colour schemes: Material Color Utilities (Apache-2.0). IELTS is a registered trademark of the British Council, IDP and Cambridge University Press & Assessment; Fluent365 is not affiliated with them.</p>
       </div>
     </div>
   );

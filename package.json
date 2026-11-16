@@ -8,10 +8,16 @@
     "build": "pnpm content && pnpm --filter pocket build",
     "preview": "pnpm --filter pocket preview",
     "test": "pnpm --filter pocket test",
-    "e2e": "node tests/e2e.mjs"
+    "e2e": "node tests/e2e.mjs",
+    "gen:material": "esbuild scripts/gen-material.mjs --bundle --platform=node --format=esm --outfile=node_modules/.cache/gen-material.mjs --external:node:* --log-level=warning --define:import.meta.url=\\\"file://$PWD/scripts/gen-material.mjs\\\" && node node_modules/.cache/gen-material.mjs",
+    "screenshots": "node scripts/screenshots.mjs screenshots"
   },
   "packageManager": "pnpm@11.23.0",
   "devDependencies": {
+    "@fontsource/roboto": "5.3.0",
+    "@material-symbols/svg-400": "0.48.2",
+    "@material/material-color-utilities": "0.4.0",
+    "esbuild": "0.25.12",
     "playwright-core": "1.63.0"
   }
 }

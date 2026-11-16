@@ -3,24 +3,17 @@ import { boldParts } from "../lib/text";
 import type { Skill } from "../lib/types";
 export type { Skill };
 
-import {
-  ArrowLeft, ArrowRight, BookOpen, ChartLine, Check, CircleCheck, Download, FileText, Headphones, Info, Layers, Lightbulb,
-  ListChecks, Mic, Moon, Pause, PenLine, Pilcrow, Play, RotateCcw, Settings, Square, Sun, Target, Timer, TriangleAlert,
-  Upload, Volume2, X, type LucideIcon,
-} from "lucide-react";
+import { ICON_PATHS } from "./icons.gen";
 
-// One icon set (Lucide, ISC licence), one stroke weight, always currentColor. Never emoji.
-const ICONS: Record<string, LucideIcon> = {
-  home: Sun, today: Sun, words: Layers, grammar: Pilcrow, reading: BookOpen, listening: Headphones, writing: PenLine,
-  speaking: Mic, mic: Mic, practice: Target, progress: ChartLine, settings: Settings, check: Check, done: CircleCheck,
-  x: X, close: X, hint: Lightbulb, audio: Volume2, timer: Timer, rest: Moon, play: Play, pause: Pause, stop: Square,
-  arrow: ArrowRight, back: ArrowLeft, warn: TriangleAlert, again: RotateCcw, upload: Upload, file: FileText,
-  download: Download, info: Info, list: ListChecks,
-};
-
-export function Icon({ name, label, size }: { name: string; label?: string; size?: number }) {
-  const C = ICONS[name] ?? ArrowRight;
-  return <C size={size ?? 24} strokeWidth={size && size >= 32 ? 1.75 : 2} aria-hidden={label ? undefined : true} role={label ? "img" : undefined} aria-label={label} focusable="false" />;
+// Material Symbols Rounded (Apache-2.0), generated into icons.gen.ts. Never emoji.
+export function Icon({ name, label, size, filled }: { name: string; label?: string; size?: number; filled?: boolean }) {
+  const p = ICON_PATHS[name] ?? ICON_PATHS.arrow;
+  const px = size ?? 24;
+  return (
+    <svg className="icon" viewBox="0 -960 960 960" width={px} height={px} fill="currentColor" aria-hidden={label ? undefined : true} role={label ? "img" : undefined} aria-label={label} focusable="false">
+      <path d={filled ? p.f : p.d} />
+    </svg>
+  );
 }
 
 export const Bold = ({ text }: { text: string }) => <>{boldParts(text).map((p, i) => (p.b ? <b key={i}>{p.t}</b> : <span key={i}>{p.t}</span>))}</>;
@@ -119,14 +112,20 @@ export const SKILLS: Record<Skill, { label: string; icon: string }> = {
   writing: { label: "Writing", icon: "writing" },
   speaking: { label: "Speaking", icon: "speaking" },
 };
-export const skillStyle = (sk?: Skill) => (sk ? ({ "--skill": `var(--sk-${sk})` } as React.CSSProperties) : undefined);
+export const skillStyle = (sk?: Skill) =>
+  sk ? ({ "--skill": `var(--sk-${sk})`, "--skill-container": `var(--sk-${sk}-container)`, "--skill-on": `var(--sk-${sk}-on)` } as React.CSSProperties) : undefined;
 
-/** "[icon] GRAMMAR · Present perfect" in the skill's ink. */
+/** Round 40px badge with the skill's container colour (Material list "leading avatar"). */
+export function SkillBadge({ skill, icon }: { skill?: Skill; icon?: string }) {
+  return <span className="badge" style={skillStyle(skill)} aria-hidden><Icon name={icon ?? (skill ? SKILLS[skill].icon : "list")} size={22} /></span>;
+}
+
+/** Assist-chip style label: skill icon in its colour, then "Grammar · Present perfect". */
 export function SkillLabel({ skill, text }: { skill?: Skill; text?: string }) {
   if (!skill) return text ? <p className="overline">{text}</p> : null;
   return (
     <p className="skill-label" style={skillStyle(skill)}>
-      <Icon name={SKILLS[skill].icon} size={20} /> <span>{SKILLS[skill].label}{text ? ` · ${text}` : ""}</span>
+      <Icon name={SKILLS[skill].icon} size={18} /> <span>{SKILLS[skill].label}{text ? ` · ${text}` : ""}</span>
     </p>
   );
 }
@@ -136,7 +135,7 @@ export function Segmented<T extends string | number>({ label, value, options, on
   return (
     <div className="segmented" role="radiogroup" aria-label={label}>
       {options.map(([v, l]) => (
-        <button key={String(v)} type="button" role="radio" aria-checked={value === v} onClick={() => onChange(v)}>{l}</button>
+        <button key={String(v)} type="button" role="radio" aria-checked={value === v} onClick={() => onChange(v)}>{value === v && <Icon name="check" size={18} />}{l}</button>
       ))}
     </div>
   );
@@ -148,7 +147,7 @@ export function Toggle({ label, checked, onChange, hint }: { label: string; chec
     <div className="setting-row">
       <span className="grow"><span className="setting-label">{label}</span>{hint && <span className="setting-hint">{hint}</span>}</span>
       <button type="button" role="switch" aria-checked={checked} aria-label={label} className="switch" onClick={() => onChange(!checked)}>
-        <span className="thumb">{checked && <Icon name="check" size={16} />}</span>
+        <span className="thumb">{checked ? <Icon name="check" size={16} /> : null}</span>
       </button>
     </div>
   );

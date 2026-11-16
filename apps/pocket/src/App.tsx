@@ -22,7 +22,7 @@ const SIDE = [
   { to: "/listening", label: "Listening", icon: "listening" },
   { to: "/practice/writing", label: "Writing", icon: "writing" },
   { to: "/practice/speaking", label: "Speaking", icon: "speaking" },
-  { to: "/practice", label: "All practice", icon: "practice" },
+  { to: "/practice", label: "Practice", icon: "practice" },
   { to: "-" },
   { to: "/progress", label: "Progress", icon: "progress" },
   { to: "/settings", label: "Settings", icon: "settings" },
@@ -66,6 +66,7 @@ export function App() {
     if (settings.theme === "system") delete r.dataset.theme;
     r.dataset.size = SIZE[settings.textSize] ?? settings.textSize;
     r.dataset.contrast = settings.highContrast ? "high" : "";
+    r.dataset.seed = settings.seed ?? "violet";
     r.dataset.comfortable = String(settings.comfortable);
     r.dataset.motion = settings.reduceMotion ? "reduce" : "";
   }, [settings]);
@@ -103,17 +104,17 @@ export function App() {
 
   return (
     <div className={`app ${focus ? "focus-mode" : ""}`}>
-      <nav className="sidebar" aria-label="Main">
-        <a href="#/" className="wordmark" aria-label="Fluent365, today"><span className="dot" aria-hidden /><span className="name">Fluent365</span></a>
+      <nav className="sidebar nav" aria-label="Main">
+        <a href="#/" className="brand" aria-label="Fluent365, today"><img className="logo" src="./icons/icon.svg" alt="" /> Fluent365</a>
         {SIDE.map((n) => n.to === "-" ? <hr key="hr" /> : (
-          <a key={n.to} href={`#${n.to}`} aria-current={side === n.to ? "page" : undefined}><Icon name={n.icon!} size={20} /><span className="nav-label">{n.label}</span></a>
+          <a key={n.to} href={`#${n.to}`} aria-current={side === n.to ? "page" : undefined}><span className="ind"><Icon name={n.icon!} filled={side === n.to} /></span><span className="lbl">{n.label}</span></a>
         ))}
       </nav>
       <main className="main" id="main">
         {page}
       </main>
-      <nav className="bottomnav" aria-label="Main">
-        {BOTTOM.map((n) => <a key={n.to} href={`#${n.to}`} aria-current={bottom === n.to ? "page" : undefined}><Icon name={n.icon} /> {n.label}</a>)}
+      <nav className="bottomnav nav" aria-label="Main">
+        {BOTTOM.map((n) => <a key={n.to} href={`#${n.to}`} aria-current={bottom === n.to ? "page" : undefined}><span className="ind"><Icon name={n.icon} filled={bottom === n.to} /></span>{n.label}</a>)}
       </nav>
       <Toaster />
     </div>

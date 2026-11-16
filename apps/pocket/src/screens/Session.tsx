@@ -60,11 +60,14 @@ export function SessionScreen({ c }: { c: Content }) {
         </div>
       )}
       {confirm && !isWrap && (
-        <div className="confirm" role="alertdialog" aria-labelledby="leave-h">
-          <p id="leave-h"><b>Leave the session?</b> Your place is saved. You can continue from Today at any time.</p>
-          <div className="row">
-            <button className="btn outline" onClick={() => navigate("/")} autoFocus>Leave for now</button>
-            <button className="btn quiet" onClick={() => setConfirm(false)}>Stay</button>
+        <div className="scrim" onClick={() => setConfirm(false)}>
+          <div className="dialog" role="alertdialog" aria-modal="true" aria-labelledby="leave-h" aria-describedby="leave-p" onClick={(e) => e.stopPropagation()}>
+            <h2 id="leave-h">Leave the session?</h2>
+            <p id="leave-p">Your place is saved. You can continue from Today at any time.</p>
+            <div className="actions">
+              <button className="btn quiet" onClick={() => setConfirm(false)} autoFocus>Stay</button>
+              <button className="btn quiet" onClick={() => navigate("/")}>Leave</button>
+            </div>
           </div>
         </div>
       )}

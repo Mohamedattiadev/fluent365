@@ -4,7 +4,7 @@ import { GrammarLesson, GrammarReview } from "../components/Grammar";
 import { CourseUnitView, LessonStepView } from "../components/Lessons";
 import { FixMistakes, SpeakingTask, WritingTask } from "../components/Skills";
 import { NewWords, ReviewSession, WordFace, viewOf } from "../components/Vocab";
-import { Icon, SKILLS, SkillLabel, skillStyle, SpeakButton, toast, type Skill } from "../components/ui";
+import { Icon, SkillBadge, SkillLabel, skillStyle, SpeakButton, toast, type Skill } from "../components/ui";
 import { COURSES, loadCourse, type Content } from "../lib/content";
 import { addCards, dueCardKeys, markKnown } from "../lib/learning";
 import { kindName } from "../lib/session";
@@ -165,7 +165,7 @@ export function ReadingScreen({ c, path }: { c: Content; path: string[] }) {
             return (
               <li key={i} style={skillStyle(sk)} className={done.has(i) ? "done" : undefined}>
                 <button className="rowbtn" onClick={() => navigate(`/reading/lesson/${n}/${i}`)}>
-                  <Icon name={SKILLS[sk].icon} size={20} /><span className="grow name">{i + 1}. {kindName(k)}</span>{done.has(i) && <Done />}<Icon name="arrow" size={20} />
+                  <SkillBadge skill={sk} icon={done.has(i) ? "check" : undefined} /><span className="grow name">{i + 1}. {kindName(k)}</span>{done.has(i) && <Done />}<Icon name="chevron" />
                 </button>
               </li>
             );
@@ -182,7 +182,7 @@ export function ReadingScreen({ c, path }: { c: Content; path: string[] }) {
         <Back to="/reading" />
         <h1>{course.title}</h1>
         <p className="lede">{course.description}</p>
-        <ul className="list">{course.units.map((u) => <li key={u.id}><button className="rowbtn" onClick={() => navigate(`/reading/course/${course.id}/${u.id}`)}><span className="grow"><b>{u.title}</b><br /><span className="small muted">{u.goal}</span></span>{coursework[`${course.id}/${u.id}`]?.done && <Done />}<Icon name="arrow" /></button></li>)}</ul>
+        <ul className="list">{course.units.map((u) => <li key={u.id}><button className="rowbtn" onClick={() => navigate(`/reading/course/${course.id}/${u.id}`)}><span className="grow"><b>{u.title}</b><br /><span className="small muted">{u.goal}</span></span>{coursework[`${course.id}/${u.id}`]?.done && <Done />}<Icon name="chevron" /></button></li>)}</ul>
       </div>
     );
   }
@@ -205,7 +205,7 @@ export function ReadingScreen({ c, path }: { c: Content; path: string[] }) {
         })}
       </ul>
       <h2 className="section-title">Courses</h2>
-      <ul className="list">{COURSES.map((id) => <li key={id}><button className="rowbtn" onClick={() => navigate(`/reading/course/${id}`)}><span className="grow"><b>{courseName(id)}</b></span><Icon name="arrow" /></button></li>)}</ul>
+      <ul className="list">{COURSES.map((id) => <li key={id}><button className="rowbtn" onClick={() => navigate(`/reading/course/${id}`)}><span className="grow"><b>{courseName(id)}</b></span><Icon name="chevron" /></button></li>)}</ul>
     </div>
   );
 }
@@ -225,7 +225,7 @@ export function PracticeScreen({ c, path }: { c: Content; path: string[] }) {
   }
   if (path[0] === "writing") {
     const list = c.ielts.writing.filter((p) => goal === "ielts-ac" ? p.module === "academic" : true);
-    return <div><SkillLabel skill="writing" /><h1>Writing tasks</h1><p className="lede">Timed IELTS-style prompts with a word count, self-check and a rewrite step.</p><ul className="list">{list.map((p) => <li key={p.id}><button className="rowbtn" onClick={() => navigate(`/practice/writing/${p.id}`)}><span className="grow"><b>Task {p.task} · {p.module === "general" ? "General Training" : "Academic"} · {p.kind}</b><br /><span className="small muted">{p.text.slice(0, 120)}…</span></span><Icon name="arrow" /></button></li>)}</ul></div>;
+    return <div><SkillLabel skill="writing" /><h1>Writing tasks</h1><p className="lede">Timed IELTS-style prompts with a word count, self-check and a rewrite step.</p><ul className="list">{list.map((p) => <li key={p.id}><button className="rowbtn" onClick={() => navigate(`/practice/writing/${p.id}`)}><span className="grow"><b>Task {p.task} · {p.module === "general" ? "General Training" : "Academic"} · {p.kind}</b><br /><span className="small muted">{p.text.slice(0, 120)}…</span></span><Icon name="chevron" /></button></li>)}</ul></div>;
   }
   if (path[0] === "speaking" && path[1]) {
     const cue = c.ielts.cueCards.find((x) => x.id === path[1]);
@@ -233,7 +233,7 @@ export function PracticeScreen({ c, path }: { c: Content; path: string[] }) {
     const part1 = c.ielts.part1[0];
     return <div><Back to="/practice/speaking" /><SkillLabel skill="speaking" text="Cue card" /><div><SpeakingTask part1={part1.questions.slice(0, 2)} card={cue} onDone={() => navigate("/practice")} /><details style={{ marginTop: 16 }}><summary>Part 3 discussion questions</summary><ul>{cue.followUp.map((f) => <li key={f}>{f}</li>)}</ul></details></div></div>;
   }
-  if (path[0] === "speaking") return <div><SkillLabel skill="speaking" /><h1>Speaking cue cards</h1><p className="lede">Part 2 cue cards with 1 minute to prepare, a 2-minute talk and an optional recording on this device.</p><ul className="list">{c.ielts.cueCards.map((cc) => <li key={cc.id}><button className="rowbtn" onClick={() => navigate(`/practice/speaking/${cc.id}`)}><span className="grow">{cc.title}</span><Icon name="arrow" /></button></li>)}</ul></div>;
+  if (path[0] === "speaking") return <div><SkillLabel skill="speaking" /><h1>Speaking cue cards</h1><p className="lede">Part 2 cue cards with 1 minute to prepare, a 2-minute talk and an optional recording on this device.</p><ul className="list">{c.ielts.cueCards.map((cc) => <li key={cc.id}><button className="rowbtn" onClick={() => navigate(`/practice/speaking/${cc.id}`)}><span className="grow">{cc.title}</span><Icon name="chevron" /></button></li>)}</ul></div>;
   if (path[0] === "mistakes") return <div><Back to="/practice" /><SkillLabel skill="grammar" text="My mistakes" /><FixMistakes max={10} onDone={() => navigate("/practice")} /><MistakeList /></div>;
   if (path[0] === "grammar-mix") {
     const learned = c.grammar.filter((t) => !!grammar[t.id]?.learnedAt);
@@ -277,9 +277,9 @@ export function PracticeScreen({ c, path }: { c: Content; path: string[] }) {
   const row = (to: string, title: string, sub: string, sk?: Skill, icon?: string) => (
     <li key={to} style={skillStyle(sk)}>
       <button className="rowbtn" onClick={() => navigate(to)}>
-        <Icon name={icon ?? (sk ? SKILLS[sk].icon : "list")} size={20} />
+        <SkillBadge skill={sk} icon={icon} />
         <span className="grow"><span className="name">{title}</span><span className="detail">{sub}</span></span>
-        <Icon name="arrow" size={20} />
+        <Icon name="chevron" />
       </button>
     </li>
   );
@@ -325,13 +325,13 @@ export function ListeningScreen({ c }: { c: Content }) {
       <h2 className="section-title">IELTS practice tests</h2>
       <ul className="list">
         {(tests?.units ?? []).map((u) => (
-          <li key={u.id}><button className="rowbtn" onClick={() => navigate(`/reading/course/ielts-listening-tests/${u.id}`)}><span className="grow"><b>{u.title}</b><br /><span className="small muted">{u.goal}</span></span>{coursework[`ielts-listening-tests/${u.id}`]?.done && <Done />}<Icon name="arrow" /></button></li>
+          <li key={u.id}><button className="rowbtn" onClick={() => navigate(`/reading/course/ielts-listening-tests/${u.id}`)}><span className="grow"><b>{u.title}</b><br /><span className="small muted">{u.goal}</span></span>{coursework[`ielts-listening-tests/${u.id}`]?.done && <Done />}<Icon name="chevron" /></button></li>
         ))}
       </ul>
       <h2 className="section-title">Lesson recordings</h2>
       <ul className="list">
         {withAudio.map(({ l, i }) => (
-          <li key={l.number}><button className="rowbtn" onClick={() => navigate(`/reading/lesson/${l.number}/${i}`)}><span className="grow"><b>{l.number}. {l.title}</b><br /><span className="small muted">{l.level} · {l.topic}</span></span>{lessons[l.number]?.done.includes(i) && <Done />}<Icon name="arrow" /></button></li>
+          <li key={l.number}><button className="rowbtn" onClick={() => navigate(`/reading/lesson/${l.number}/${i}`)}><span className="grow"><b>{l.number}. {l.title}</b><br /><span className="small muted">{l.level} · {l.topic}</span></span>{lessons[l.number]?.done.includes(i) && <Done />}<Icon name="chevron" /></button></li>
         ))}
       </ul>
     </div>

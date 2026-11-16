@@ -90,6 +90,7 @@ export interface Settings {
   explainLang: Lang;
   textSize: "s" | "m" | "l" | "xl";
   highContrast: boolean;
+  seed: "violet" | "blue" | "green" | "orange";
   theme: "system" | "light" | "dark";
   reduceMotion: boolean;
   comfortable: boolean;
