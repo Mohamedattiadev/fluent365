@@ -13,21 +13,7 @@ import { SessionScreen } from "./screens/Session";
 import { SettingsScreen } from "./screens/Settings";
 import { Setup } from "./screens/Setup";
 
-// Laptop/tablet sidebar: Today, the six skills, all practice, then Progress and Settings.
-const SIDE = [
-  { to: "/", label: "Today", icon: "today" },
-  { to: "/words", label: "Words", icon: "words" },
-  { to: "/grammar", label: "Grammar", icon: "grammar" },
-  { to: "/reading", label: "Reading", icon: "reading" },
-  { to: "/listening", label: "Listening", icon: "listening" },
-  { to: "/practice/writing", label: "Writing", icon: "writing" },
-  { to: "/practice/speaking", label: "Speaking", icon: "speaking" },
-  { to: "/practice", label: "Practice", icon: "practice" },
-  { to: "-" },
-  { to: "/progress", label: "Progress", icon: "progress" },
-  { to: "/settings", label: "Settings", icon: "settings" },
-];
-// Phone bottom bar: four items only.
+// Bottom navigation bar (Pocket is a phone app; on wide screens it stays in a centred column).
 const BOTTOM = [
   { to: "/", label: "Today", icon: "today" },
   { to: "/practice", label: "Practice", icon: "practice" },
@@ -99,17 +85,10 @@ export function App() {
   }
   // Highlight the most specific matching item (e.g. "Writing" rather than "All practice").
   const match = (items: { to: string }[]) => items.filter((n) => n.to !== "-" && (n.to === "/" ? section === "" : route === n.to || route.startsWith(`${n.to}/`))).sort((x, y) => y.to.length - x.to.length)[0]?.to;
-  const side = match(SIDE);
   const bottom = ["words", "grammar", "reading", "listening", "practice"].includes(section) ? "/practice" : match(BOTTOM);
 
   return (
     <div className={`app ${focus ? "focus-mode" : ""}`}>
-      <nav className="sidebar nav" aria-label="Main">
-        <a href="#/" className="brand" aria-label="Fluent365, today"><img className="logo" src="./icons/icon.svg" alt="" /> Fluent365</a>
-        {SIDE.map((n) => n.to === "-" ? <hr key="hr" /> : (
-          <a key={n.to} href={`#${n.to}`} aria-current={side === n.to ? "page" : undefined}><span className="ind"><Icon name={n.icon!} filled={side === n.to} /></span><span className="lbl">{n.label}</span></a>
-        ))}
-      </nav>
       <main className="main" id="main">
         {page}
       </main>
