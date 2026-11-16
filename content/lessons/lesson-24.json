@@ -1,0 +1,329 @@
+{
+  "id": "lesson-24",
+  "number": 24,
+  "title": "Getting Around",
+  "topic": "Transport and infrastructure",
+  "level": "B2",
+  "goal": "Understand a talk about changes to a city's transport, describe a line graph with two lines, and report trends precisely with verbs and adverbs such as rose sharply and levelled off.",
+  "steps": [
+    {
+      "kind": "words",
+      "i18n": {"ar":{"title":"المفردات: النقل والبنية التحتية","intro":"في هذا الدرس 12 كلمة وعبارة عن النقل داخل المدينة والمرور والمواصلات العامة. النقل من أكثر المواضيع تكرارًا في رسوم Task 1 البيانية (أعداد الركاب) وفي Task 2 (الازدحام المروري، الاستثمار في النقل العام)."},"en":{"title":"Vocabulary: transport and infrastructure","intro":"This lesson has 12 words and phrases about city transport, traffic and public transport. Transport is one of the most common topics in Task 1 graphs (passenger numbers) and Task 2 (traffic congestion, investment in public transport)."}},
+      "title": "Kelimeler: ulaşım ve altyapı",
+      "intro": "Bu derste şehir içi ulaşım, trafik ve toplu taşıma hakkında 12 kelime ve kalıp var. Ulaşım Task 1 grafiklerinde (yolcu sayıları) ve Task 2'de (trafik sıkışıklığı, toplu taşıma yatırımı) en sık çıkan konulardan biridir.",
+      "words": [
+        { "en": "congestion", "pos": "noun", "tr": "trafik sıkışıklığı", "ar": "الازدحام المروري", "example": "Congestion in the city centre is worst between eight and nine in the morning." },
+        { "en": "public transport", "pos": "phrase", "tr": "toplu taşıma", "ar": "وسائل النقل العام", "example": "If public transport were cheaper, fewer people would drive to work." },
+        { "en": "commuter", "pos": "noun", "tr": "her gün işe/okula gidip gelen kişi", "ar": "المسافر اليومي إلى العمل", "example": "The average commuter in the city spends an hour a day travelling." },
+        { "en": "rush hour", "pos": "phrase", "tr": "trafiğin en yoğun olduğu saat", "ar": "ساعة الذروة", "example": "Trains are always crowded during the rush hour." },
+        { "en": "fare", "pos": "noun", "tr": "bilet ücreti, yol ücreti", "ar": "أجرة الركوب", "example": "The bus fare has gone up again this year." },
+        { "en": "rail network", "pos": "phrase", "tr": "demiryolu ağı", "ar": "شبكة السكك الحديدية", "example": "The country's rail network connects all the major cities." },
+        { "en": "cycle lane", "pos": "phrase", "tr": "bisiklet yolu", "ar": "مسار الدراجات", "example": "The new cycle lane is separated from the traffic by a low wall." },
+        { "en": "emissions", "pos": "noun (plural)", "tr": "emisyonlar, salınan gazlar", "ar": "الانبعاثات", "example": "Electric buses produce no exhaust emissions in the street." },
+        { "en": "pedestrian", "pos": "noun / adjective", "tr": "yaya", "ar": "مُشاة؛ خاص بالمشاة", "example": "The bridge is for pedestrian use only." },
+        { "en": "high-speed rail", "pos": "phrase", "tr": "hızlı tren", "ar": "القطارات فائقة السرعة", "example": "High-speed rail has cut the journey between the two cities to two hours." },
+        { "en": "toll", "pos": "noun", "tr": "geçiş ücreti (köprü, otoyol)", "ar": "رسوم المرور", "example": "Drivers pay a toll to cross the bridge." },
+        { "en": "maintenance", "pos": "noun", "tr": "bakım (onarım)", "ar": "الصيانة", "example": "Old roads need regular maintenance to stay safe." }
+      ],
+      "practice": [
+        {
+          "type": "choice", "id": "w1",
+          "prompt": "Heavy ___ in the city centre means that a five-kilometre journey can take an hour.",
+          "options": ["congestion", "maintenance", "fare", "toll"],
+          "answer": 0,
+          "why": { "tr": "Kısa bir yolun bir saat sürmesi trafik sıkışıklığıdır: congestion. \"toll\" geçiş ücreti, \"maintenance\" bakım demek.", "ar": "أن تستغرق رحلة قصيرة ساعة كاملة سببه الازدحام: congestion. أما toll فرسوم المرور، وmaintenance الصيانة.", "en": "Slow traffic is caused by congestion." },
+          "example": "Congestion is a serious problem in most large cities."
+        },
+        {
+          "type": "gap", "id": "w2",
+          "prompt": "Write the correct form of COMMUTE: Thousands of ___ travel into the city by train every morning.",
+          "answers": ["commuters"],
+          "why": { "tr": "\"Thousands of\" sonrasında çoğul bir kişi ismi gerekir: commute (fiil) → commuter (kişi) → commuters.", "ar": "بعد Thousands of نحتاج إلى اسم شخص بصيغة الجمع: commute (فعل) ← commuter (شخص) ← commuters.", "en": "A plural noun for people is needed: commuters." },
+          "example": "Most commuters in the city travel by bus."
+        },
+        {
+          "type": "choice", "id": "w3",
+          "prompt": "Which word means the money you pay for a journey on a bus or train?",
+          "options": ["fare", "fee", "toll", "fine"],
+          "answer": 0,
+          "why": { "tr": "Otobüs/tren yolculuğu için ödenen para \"fare\". \"toll\" köprü ya da yol için, \"fine\" ceza, \"fee\" genel bir hizmet ücreti (okul, doktor).", "ar": "المال الذي يُدفع مقابل رحلة بالحافلة أو القطار هو fare. أما toll فلعبور طريق أو جسر، وfine غرامة، وfee رسوم خدمة عامة.", "en": "Fare = price of a journey; toll = road/bridge; fine = penalty; fee = for a service." },
+          "example": "Children travel at half fare."
+        },
+        {
+          "type": "choice", "id": "w4",
+          "prompt": "The tunnel will be closed at night for ___ work.",
+          "options": ["maintenance", "maintain", "maintained", "maintaining"],
+          "answer": 0,
+          "why": { "tr": "\"work\" isminden önce isim kullanılır: maintenance work (bakım çalışması). maintain fiildir.", "ar": "قبل الاسم work نستخدم اسمًا: maintenance work أي أعمال الصيانة، أما maintain فهو فعل.", "en": "\"Maintenance work\" is a noun + noun collocation." },
+          "example": "The line is closed this weekend for maintenance work."
+        },
+        {
+          "type": "gap", "id": "w5",
+          "prompt": "Write ONE word: The main road is busiest in the morning and evening rush ___.",
+          "answers": ["hour", "hours"],
+          "why": { "tr": "Kalıp \"rush hour\" = trafiğin en yoğun saati. Sabah ve akşam iki dönem olduğu için \"rush hours\" da kabul edilir.", "ar": "التعبير الثابت rush hour أي ساعة الذروة، وتُقبل rush hours لأن هناك فترتين صباحًا ومساءً.", "en": "The collocation is \"rush hour\"." },
+          "example": "I try not to drive during the rush hour."
+        },
+        {
+          "type": "choice", "id": "w6",
+          "prompt": "A pedestrian is someone who…",
+          "options": ["is walking, especially in a street", "drives a bus or taxi", "travels to work every day", "rides a bicycle"],
+          "answer": 0,
+          "why": { "tr": "\"Pedestrian\" yaya demek. İşe gidip gelen kişi \"commuter\", bisikletli \"cyclist\".", "ar": "pedestrian تعني الماشي على قدميه. أما من يسافر يوميًا إلى العمل فهو commuter، وراكب الدراجة cyclist.", "en": "A pedestrian is a person walking; a cyclist rides a bike." },
+          "example": "The square is now only open to pedestrians."
+        }
+      ]
+    },
+    {
+      "kind": "listen",
+      "i18n": {"ar":{"title":"الاستماع · Part 2: تغييرات النقل في وسط المدينة","intro":"مسؤول النقل في البلدية يشرح في اجتماع عام تغييرات المرور والنقل العام المزمعة في وسط المدينة. هناك متحدث واحد. اقرأ الأسئلة وخيارات 4–6 أولًا.","tip":"في أسئلة المطابقة في Part 2 (مكان ← تغيير) قد يذكر المتحدث شيئًا كان مخططًا لمكان ما ثم تغيّر: \"was going to get…, but…\". اختر القرار الأخير. بعض الخيارات لا تُستخدم أبدًا."},"en":{"title":"Listening · Part 2: transport changes in the city centre","intro":"The council's transport officer explains planned traffic and public transport changes in the city centre at a public meeting. There is one speaker. Read the questions and the options for 4–6 first.","tip":"In Part 2 matching questions (place → change) the speaker may mention something first planned for a place and then changed: \"was going to get…, but…\". Choose the final decision. Some options are never used."}},
+      "title": "Dinleme · Part 2: şehir merkezinde ulaşım değişiklikleri",
+      "intro": "Belediyenin ulaşım sorumlusu, şehir merkezinde yapılacak trafik ve toplu taşıma değişikliklerini bir halk toplantısında anlatıyor. Tek konuşmacı var. Önce soruları ve 4–6 için seçenekleri oku.",
+      "tip": "Part 2 eşleştirme sorularında (yer → değişiklik) konuşmacı bir yer için önce planlanan, sonra değişen bir şey söyleyebilir: \"was going to get…, but…\". Son kararı seç. Seçeneklerden bazıları hiç kullanılmaz.",
+      "audio": {
+        "type": "audio", "id": "l-audio",
+        "speakers": {
+          "N": { "name": "Narrator", "voice": "en-GB-SoniaNeural" },
+          "rob": { "name": "Rob Kettering", "voice": "en-NZ-MitchellNeural" }
+        },
+        "lines": [
+          { "speaker": "N", "text": "You will hear a council officer talking to residents about changes to transport in the city centre. First, you have some time to look at questions one to six.", "pauseAfterMs": 2500 },
+          { "speaker": "N", "text": "Now listen carefully and answer questions one to six.", "pauseAfterMs": 1200 },
+          { "speaker": "rob", "text": "Good evening, and thanks for coming out on a wet night. I'm Rob Kettering from the council's transport team, and I'm here to explain the changes that start in September.", "pauseAfterMs": 500 },
+          { "speaker": "rob", "text": "First, some background. Over the last ten years, the number of cars entering the centre during the morning rush hour rose steadily, and it has only recently levelled off. Congestion now adds about twenty minutes to the average bus journey, and buses that are stuck in traffic are buses that people stop using.", "pauseAfterMs": 500 },
+          { "speaker": "rob", "text": "So what are we trying to achieve? Cleaner air will certainly be a welcome result, as emissions from traffic are highest in exactly those streets. And the new charge will raise some money. But I want to be clear that the main aim is to make public transport faster and more reliable, so that it becomes a real choice for every commuter.", "pauseAfterMs": 500 },
+          { "speaker": "rob", "text": "Now, the charge itself. Some people have described it as a toll, but it isn't a fee for using one road. It's a daily charge for driving into the central zone on weekdays between seven and seven.", "pauseAfterMs": 500 },
+          { "speaker": "rob", "text": "Who has to pay? Taxis will pay like everyone else, I'm afraid. Delivery vans are free only at night, between midnight and five in the morning. The one group that won't pay at all is people who actually live inside the zone, as long as they register their car with us.", "pauseAfterMs": 500 },
+          { "speaker": "rob", "text": "What about bus fares? There was a lot of talk about cutting the fare to one pound fifty, and I know some of you were hoping for that. In the end, the single fare will stay at two pounds. What is changing is that one ticket will now be valid for a whole hour, on as many buses as you like.", "pauseAfterMs": 500 },
+          { "speaker": "rob", "text": "Let me now go through the main locations. Starting with Station Square, in front of the main station. This is where the city links with the rail network, and with the new high-speed rail line opening next year, it's going to get much busier. So Station Square will be closed to all vehicles and become a pedestrian area. Buses will stop just round the corner.", "pauseAfterMs": 500 },
+          { "speaker": "rob", "text": "Next, Castle Street. Many of you have asked for a bus lane here, but the street simply isn't wide enough. Instead, we're putting in a cycle lane on both sides, protected from the traffic by a low kerb.", "pauseAfterMs": 500 },
+          { "speaker": "rob", "text": "And finally, Mill Bridge. The original plan was for a bus-only lane across the bridge. However, when engineers inspected it in the spring, they found that it needs urgent maintenance. So, from September, the bridge will be closed while the road surface and supports are repaired, and the bus lane will have to wait until next year.", "pauseAfterMs": 500 },
+          { "speaker": "rob", "text": "I know these changes won't suit everyone. Some shop owners are worried that customers will stop coming. But in other cities that have made similar changes, the number of shoppers fell slightly at first and then recovered within a year. Right, I'll take your questions now.", "pauseAfterMs": 1500 },
+          { "speaker": "N", "text": "That is the end of the recording.", "pauseAfterMs": 0 }
+        ]
+      },
+      "questions": [
+        { "type": "text", "text": "Questions 1–3. Choose the correct letter." },
+        {
+          "type": "choice", "id": "l1",
+          "prompt": "1. What is the main aim of the changes?",
+          "options": ["to reduce air pollution", "to improve bus services", "to raise money for the council"],
+          "answer": 1,
+          "why": { "tr": "Temiz hava \"a welcome result\", para da toplanacak, ama \"the main aim is to make public transport faster and more reliable\". Otobüs hizmetini iyileştirmek: B.", "ar": "الهواء النظيف \"a welcome result\"، والرسوم ستجمع بعض المال، لكن \"the main aim is to make public transport faster and more reliable\": B.", "en": "Cleaner air and money are side effects; \"the main aim is to make public transport faster and more reliable\"." },
+          "example": "Cleaner air is a welcome result, but the main aim is faster buses."
+        },
+        {
+          "type": "choice", "id": "l2",
+          "prompt": "2. Who will not have to pay the charge?",
+          "options": ["taxi drivers", "delivery vans in the morning", "people who live in the zone"],
+          "answer": 2,
+          "why": { "tr": "Taksiler ödeyecek; teslimat araçları sadece gece (gece yarısı–sabah beş) ücretsiz. \"The one group that won't pay at all is people who actually live inside the zone.\"", "ar": "سيارات الأجرة تدفع، وشاحنات التوصيل معفاة ليلًا فقط. \"The one group that won't pay at all is people who actually live inside the zone\".", "en": "Taxis pay; vans are free only at night; residents of the zone don't pay." },
+          "example": "People who live inside the zone won't have to pay."
+        },
+        {
+          "type": "choice", "id": "l3",
+          "prompt": "3. What will happen to the single bus fare?",
+          "options": ["It will fall to £1.50.", "It will stay the same.", "It will rise slightly."],
+          "answer": 1,
+          "why": { "tr": "1,50'ye indirmek konuşuldu ama \"In the end, the single fare will stay at two pounds.\" Değişen şey biletin bir saat geçerli olması.", "ar": "نوقش خفض الأجرة إلى جنيه ونصف، لكن \"In the end, the single fare will stay at two pounds\"، والتغيير أن التذكرة صالحة لساعة.", "en": "\"In the end, the single fare will stay at two pounds.\"" },
+          "example": "In the end, the price will stay the same."
+        },
+        { "type": "text", "text": "Questions 4–6. What change will be made at each location? Choose the correct letter. There are more changes than locations." },
+        {
+          "type": "choice", "id": "l4",
+          "prompt": "4. Station Square",
+          "options": ["a new cycle lane", "open to pedestrians only", "a bus-only lane", "a new car park", "closed for repairs"],
+          "answer": 1,
+          "why": { "tr": "\"Station Square will be closed to all vehicles and become a pedestrian area.\" Otobüsler köşede duracak.", "ar": "\"Station Square will be closed to all vehicles and become a pedestrian area\"، والحافلات ستتوقف عند الزاوية.", "en": "\"…closed to all vehicles and become a pedestrian area.\"" },
+          "example": "The square has become a pedestrian area."
+        },
+        {
+          "type": "choice", "id": "l5",
+          "prompt": "5. Castle Street",
+          "options": ["a new cycle lane", "open to pedestrians only", "a bus-only lane", "a new car park", "closed for repairs"],
+          "answer": 0,
+          "why": { "tr": "Otobüs şeridi istendi ama \"the street simply isn't wide enough. Instead, we're putting in a cycle lane on both sides\". Tuzak: bus lane.", "ar": "طُلب مسار للحافلات لكن \"the street simply isn't wide enough. Instead, we're putting in a cycle lane\". الفخّ: مسار الحافلات.", "en": "Not wide enough for a bus lane; \"instead, we're putting in a cycle lane\"." },
+          "example": "The road wasn't wide enough, so they built a cycle lane instead."
+        },
+        {
+          "type": "choice", "id": "l6",
+          "prompt": "6. Mill Bridge",
+          "options": ["a new cycle lane", "open to pedestrians only", "a bus-only lane", "a new car park", "closed for repairs"],
+          "answer": 4,
+          "why": { "tr": "Plan otobüs şeridiydi (\"The original plan was…\"), ama köprü acil bakım gerektiriyor: \"the bridge will be closed while the road surface and supports are repaired\".", "ar": "كانت الخطة الأصلية مسارًا للحافلات، لكن الجسر يحتاج إلى صيانة عاجلة: \"the bridge will be closed while the road surface and supports are repaired\".", "en": "The bus lane was the original plan; now \"the bridge will be closed while … repaired\"." },
+          "example": "The bridge will be closed while it is repaired."
+        }
+      ]
+    },
+    {
+      "kind": "read",
+      "i18n": {"ar":{"title":"القراءة: True / False / Not Given ومطابقة المعلومات","intro":"ستقرأ نصًا أكاديميًا عن سبب إزالة الترام من المدن وكيف عاد في السنوات الأخيرة. الفقرات A–F.","tip":"اترك أسئلة مطابقة المعلومات للنهاية: أثناء حل أسئلة TFNG أولًا ستتعرف على النص، ثم تجد ما في كل فقرة بسرعة أكبر. انتبه للتواريخ وأسماء المدن؛ فهي تسهّل المسح السريع."},"en":{"title":"Reading: True / False / Not Given and matching information","intro":"You will read an academic text about why trams were removed from cities and how they have come back in recent years. Paragraphs A–F.","tip":"Leave the matching information questions until last: solving the TFNG questions first gets you to know the text, so you then find what is in each paragraph faster. Watch for dates and city names; they make scanning easier."}},
+      "title": "Okuma: True / False / Not Given ve bilgi eşleştirme",
+      "intro": "Tramvayın şehirlerden neden kaldırıldığını ve son yıllarda nasıl geri döndüğünü anlatan akademik bir metin okuyacaksın. Paragraflar A–F.",
+      "tip": "Bilgi eşleştirme sorularını en sona bırak: önce TFNG sorularını çözerken metni tanırsın, sonra hangi paragrafta ne olduğunu daha hızlı bulursun. Tarihlere ve şehir adlarına dikkat et; bunlar taramayı kolaylaştırır.",
+      "passage": [
+        { "type": "heading", "text": "The Return of the Tram" },
+        { "type": "text", "text": "A  At the beginning of the twentieth century, the electric tram was the backbone of public transport in hundreds of cities across Europe, North America and beyond. Trams were cheaper to run than horse-drawn vehicles and could carry far more passengers. For the first time, an ordinary commuter could live several kilometres from the workplace, and new suburbs grew along the tram routes. In many cities, the tram network shaped the pattern of development that still exists today." },
+        { "type": "text", "text": "B  By the middle of the century, however, trams were disappearing rapidly. Many systems were old and in need of expensive maintenance, and buses, which did not need tracks or overhead wires, seemed more flexible and modern. Above all, planners in many countries came to see the private car as the transport of the future, and trams were regarded as an obstacle to traffic. In Britain, almost every city had removed its trams by the early 1960s, and a similar pattern was seen across much of North America." },
+        { "type": "text", "text": "C  The car brought freedom, but it also brought problems that became impossible to ignore. Roads built to reduce congestion quickly filled with new traffic, and town centres were divided by wide roads that were unpleasant for any pedestrian. Concern about air quality and, later, about carbon emissions led governments to look again at alternatives. Some cities introduced charges for driving into the centre: London began charging in 2003, and Stockholm made its scheme permanent in 2007 after a trial and a public vote. Each of these is sometimes described as a toll, although drivers pay to enter an area rather than to use a single road." },
+        { "type": "text", "text": "D  It was in this context that the tram returned. Nantes, in western France, opened a new system in 1985, and Strasbourg followed in 1994, using its new line as part of a plan to remove through traffic from the historic centre. Modern trams are quiet, accessible to wheelchair users and parents with pushchairs, and attractive enough to persuade some drivers to leave their cars at home. Many new systems connect directly with the rail network, so that passengers can change easily between local and long-distance services. In the following decades, dozens of cities in Europe and elsewhere opened new lines or extended old ones." },
+        { "type": "text", "text": "E  Trams are not a perfect solution. Building a new line is expensive and disruptive, as streets must be dug up for months, and local shops sometimes lose customers during construction. A tram can also only go where its tracks go, so it is less flexible than a bus. Critics argue that modern electric buses, given their own lanes, can provide a similar service at a fraction of the cost. Supporters reply that a fixed line gives businesses and residents confidence that the service will remain, which encourages investment along the route." },
+        { "type": "text", "text": "F  Similar debates surround other major projects, such as high-speed rail, which since Japan opened its first line in 1964 has spread to many countries. In each case, the question is not simply whether a technology works, but what kind of city or country people want to live in. A new cycle lane or tram line is not only a way of moving people; it is also a statement about who the streets are for. During the rush hour in many city centres today, the answer is changing." }
+      ],
+      "questions": [
+        { "type": "heading", "text": "Questions 1–4: True, False or Not Given?" },
+        { "type": "text", "text": "TRUE if the statement agrees with the information, FALSE if it contradicts the information, NOT GIVEN if there is no information on this." },
+        {
+          "type": "tfng", "id": "r1",
+          "statement": "1. Early tram routes influenced where new housing was built.",
+          "answer": "true",
+          "why": { "tr": "Paragraf A: \"new suburbs grew along the tram routes\". Yeni banliyöler tramvay hatları boyunca büyüdü: TRUE.", "ar": "الفقرة A: \"new suburbs grew along the tram routes\"، أي أن الضواحي الجديدة نمت على طول خطوط الترام: TRUE.", "en": "\"New suburbs grew along the tram routes.\"" },
+          "example": "New suburbs grew along the railway line."
+        },
+        {
+          "type": "tfng", "id": "r2",
+          "statement": "2. Trams were removed mainly because passengers preferred buses.",
+          "answer": "false",
+          "why": { "tr": "Paragraf B: en önemli neden (\"Above all\") planlamacıların özel arabayı geleceğin ulaşımı olarak görmesiydi, yolcu tercihi değil: FALSE.", "ar": "الفقرة B: السبب الأهم (Above all) أن المخططين رأوا السيارة الخاصة وسيلة المستقبل، لا أن الركاب فضّلوا الحافلات: FALSE.", "en": "\"Above all\", planners saw the car as the future; passengers' preference is not the main reason." },
+          "example": "Above all, planners wanted more space for cars."
+        },
+        {
+          "type": "tfng", "id": "r3",
+          "statement": "3. Stockholm's driving charge was tested before it became permanent.",
+          "answer": "true",
+          "why": { "tr": "Paragraf C: Stockholm \"made its scheme permanent in 2007 after a trial and a public vote\". \"trial\" = deneme, test: TRUE.", "ar": "الفقرة C: جعلت Stockholm نظامها دائمًا \"after a trial and a public vote\"، وtrial تعني تجربة: TRUE.", "en": "\"…permanent in 2007 after a trial and a public vote.\"" },
+          "example": "The scheme became permanent after a six-month trial."
+        },
+        {
+          "type": "tfng", "id": "r4",
+          "statement": "4. Strasbourg's tram is the most heavily used in France.",
+          "answer": "not given",
+          "why": { "tr": "Paragraf D, Strasbourg'un 1994'te hat açtığını ve amacını anlatıyor, ama yolcu sayısı ya da diğer şehirlerle karşılaştırma yok: NOT GIVEN.", "ar": "تذكر الفقرة D أن Strasbourg افتتحت خطها عام 1994 وهدفها، لكنها لا تذكر عدد الركاب ولا تقارنها بغيرها: NOT GIVEN.", "en": "No information about passenger numbers or comparisons." },
+          "example": "The text does not compare the number of passengers."
+        },
+        { "type": "heading", "text": "Questions 5–7: Which paragraph contains the following information?" },
+        { "type": "text", "text": "Choose A, B, C, D, E or F." },
+        {
+          "type": "choice", "id": "r5",
+          "prompt": "5. a cheaper alternative suggested by opponents of trams",
+          "options": ["A", "B", "C", "D", "E", "F"],
+          "answer": 4,
+          "why": { "tr": "Paragraf E: \"Critics argue that modern electric buses… can provide a similar service at a fraction of the cost.\"", "ar": "الفقرة E: \"Critics argue that modern electric buses… can provide a similar service at a fraction of the cost\".", "en": "E: electric buses \"at a fraction of the cost\"." },
+          "example": "Critics say buses offer a similar service at a fraction of the cost."
+        },
+        {
+          "type": "choice", "id": "r6",
+          "prompt": "6. the reason why building more roads did not solve traffic problems",
+          "options": ["A", "B", "C", "D", "E", "F"],
+          "answer": 2,
+          "why": { "tr": "Paragraf C: \"Roads built to reduce congestion quickly filled with new traffic.\" Yeni yollar yeni trafikle doldu.", "ar": "الفقرة C: \"Roads built to reduce congestion quickly filled with new traffic\"، أي امتلأت الطرق الجديدة بحركة جديدة.", "en": "C: new roads \"quickly filled with new traffic\"." },
+          "example": "The new road quickly filled with traffic."
+        },
+        {
+          "type": "choice", "id": "r7",
+          "prompt": "7. groups of people who find modern trams easy to use",
+          "options": ["A", "B", "C", "D", "E", "F"],
+          "answer": 3,
+          "why": { "tr": "Paragraf D: modern tramvaylar \"accessible to wheelchair users and parents with pushchairs\".", "ar": "الفقرة D: الترام الحديث \"accessible to wheelchair users and parents with pushchairs\".", "en": "D: \"accessible to wheelchair users and parents with pushchairs\"." },
+          "example": "The new trains are accessible to wheelchair users."
+        }
+      ]
+    },
+    {
+      "kind": "language",
+      "i18n": {"ar":{"title":"اللغة: وصف الاتجاهات بأفعال وظروف دقيقة"},"en":{"title":"Language: describing trends with precise verbs and adverbs"}},
+      "title": "Dil: eğilimleri kesin fiil ve zarflarla anlatmak",
+      "explain": {
+        "tr": "Task 1'de \"increased\" ve \"decreased\" kelimelerini tekrar etmek yerine daha kesin fiiller kullan: artış için rise, climb, grow, soar (çok hızlı); düşüş için fall, drop, decline, plunge (çok hızlı); sabit kalma için remain stable, level off (artış/düşüşten sonra durmak), plateau; zirve ve dip için peak at, reach a low of; iniş çıkış için fluctuate. Değişimin hızını ve büyüklüğünü zarfla anlat: sharply, dramatically, significantly (büyük); steadily, gradually (düzenli); slightly, marginally (küçük). İki yapı var: fiil + zarf (Passenger numbers rose sharply) ya da sıfat + isim (There was a sharp rise in passenger numbers). Dikkat: \"rise\" geçişsizdir (nesne almaz), \"raise\" geçişlidir: The council raised fares → Fares rose. Edatlar: rise BY 20% (fark), rise TO 80,000 (son değer), FROM… TO…",
+        "ar": "في Task 1 استخدم أفعالًا أدق من increased وdecreased: للارتفاع rise وclimb وgrow وsoar (سريع جدًا)، وللانخفاض fall وdrop وdecline وplunge (سريع جدًا)، وللثبات remain stable وlevel off (التوقف بعد صعود أو هبوط) وplateau، وللقمة والقاع peak at وreach a low of، وللتذبذب fluctuate. وعبّر عن السرعة والحجم بالظروف: sharply وdramatically وsignificantly (كبير)، steadily وgradually (منتظم)، slightly وmarginally (صغير). هناك تركيبان: فعل + ظرف (Passenger numbers rose sharply) أو صفة + اسم (There was a sharp rise in passenger numbers). انتبه: rise فعل لازم وraise متعدٍّ: The council raised fares لكن Fares rose. والحروف: rise BY 20% (مقدار التغير)، rise TO 80,000 (القيمة النهائية)، FROM… TO…",
+        "en": "In Task 1, use precise verbs instead of repeating increased and decreased: rise, climb, grow, soar (very fast); fall, drop, decline, plunge (very fast); remain stable, level off (stop changing after a rise or fall), plateau; peak at, reach a low of; fluctuate. Show speed and size with adverbs: sharply, dramatically, significantly (large); steadily, gradually (regular); slightly, marginally (small). Use verb + adverb (Passenger numbers rose sharply) or adjective + noun (There was a sharp rise in passenger numbers). Rise has no object; raise has one: The council raised fares → Fares rose. Prepositions: rise BY 20% (the change), rise TO 80,000 (the final value), FROM… TO…"
+      },
+      "examples": [
+        "The number of commuters using the tram rose sharply after the new line opened in 2008.",
+        "Bus passenger numbers fell slightly in 2010 and then levelled off at around 95,000 a day.",
+        "There was a dramatic drop in public transport use in 2020, followed by a steady recovery.",
+        "Congestion peaked in 2015, when the average journey across the city took 48 minutes."
+      ],
+      "questions": [
+        {
+          "type": "choice", "id": "g1",
+          "prompt": "After rising for five years, the number of cyclists ___ at about 12,000 a day and stayed there.",
+          "options": ["levelled off", "soared", "fluctuated", "plunged"],
+          "answer": 0,
+          "why": { "tr": "Artıştan sonra bir değerde sabitlenmek \"level off\" demek. \"soar\" ve \"plunge\" çok hızlı değişim; \"fluctuate\" iniş çıkış.", "ar": "الثبات عند قيمة بعد الارتفاع هو level off. أما soar وplunge فتغيّر سريع جدًا، وfluctuate تذبذب.", "en": "Stopping at a level after a rise = level off." },
+          "example": "Prices rose quickly and then levelled off."
+        },
+        {
+          "type": "choice", "id": "g2",
+          "prompt": "There was a ___ fall in car use between 2015 and 2020.",
+          "options": ["significant", "significantly", "significance", "signify"],
+          "answer": 0,
+          "why": { "tr": "\"fall\" burada isim, bu yüzden önünde sıfat gerekir: a significant fall. Zarf (significantly) fiille kullanılır: car use fell significantly.", "ar": "fall هنا اسم، فنحتاج قبله إلى صفة: a significant fall. أما الظرف significantly فيأتي مع الفعل: car use fell significantly.", "en": "Before a noun use an adjective: a significant fall. With a verb: fell significantly." },
+          "example": "There was a slight increase in bus fares."
+        },
+        {
+          "type": "choice", "id": "g3",
+          "prompt": "Which sentence is correct?",
+          "options": ["Fares rose by 10% in 2024.", "Fares raised by 10% in 2024.", "Fares were risen by 10% in 2024.", "Fares rised by 10% in 2024."],
+          "answer": 0,
+          "why": { "tr": "\"rise\" geçişsiz: Fares rose. \"raise\" nesne ister (The council raised fares). \"risen\" edilgende kullanılmaz; \"rised\" diye bir biçim yok (rise–rose–risen).", "ar": "rise فعل لازم: Fares rose. أما raise فيحتاج إلى مفعول (The council raised fares). ولا يُستخدم risen في المبني للمجهول، ولا توجد صيغة rised.", "en": "Rise (rose, risen) has no object; raise needs one. \"Rised\" does not exist." },
+          "example": "Ticket prices rose by five per cent last year."
+        },
+        {
+          "type": "gap", "id": "g4",
+          "prompt": "Write ONE word: The number of tram passengers rose ___ 45,000 in 2010 to 80,000 in 2015.",
+          "answers": ["from"],
+          "why": { "tr": "Başlangıç ve bitiş değerleri birlikte: from… to… \"to 80,000\" var, öyleyse başlangıç için \"from\".", "ar": "القيمتان الأولى والأخيرة معًا: from… to…، وبما أن to 80,000 موجودة فنحتاج إلى from.", "en": "Rose from (start) to (end)." },
+          "example": "Sales rose from 200 to 350 units."
+        },
+        {
+          "type": "gap", "id": "g5",
+          "prompt": "Write ONE word: Passenger numbers increased ___ 25,000, from 60,000 to 85,000.",
+          "answers": ["by"],
+          "why": { "tr": "25.000 artış miktarı (fark): increase BY. Son değer için \"to\" kullanılırdı.", "ar": "25,000 هو مقدار الزيادة، فنستخدم by، أما القيمة النهائية فنستخدم معها to.", "en": "The size of the change takes \"by\"." },
+          "example": "The population grew by 10% in five years."
+        }
+      ]
+    },
+    {
+      "kind": "write",
+      "i18n": {"ar":{"title":"الكتابة · Task 1: رسم بياني بخطين","tip":"قدّم الرسم البياني في جملة المقدمة بكلماتك. في الـ overview اكتب الاتجاهين الرئيسيين ونقطة لافتة (تقاطع الخطين، الانخفاض في 2020) دون ذكر أرقام. في فقرات العرض جمّع البيانات: فقرة للحافلات وفقرة للترام، أو حسب الفترات الزمنية. استخدم أفعالًا وظروفًا دقيقة (rose sharply, fell slightly, levelled off, peaked) وادعم كل نقطة مهمة برقم. لا تخمّن الأسباب."},"en":{"title":"Writing · Task 1: a graph with two lines","tip":"Introduce the graph in your own words in the opening sentence. In the overview, write the two main trends and one striking point (the lines crossing, the drop in 2020) without numbers. In the body paragraphs, group the data: one paragraph on buses, one on trams, or by time period. Use precise verbs and adverbs (rose sharply, fell slightly, levelled off, peaked) and support each key point with a figure. Don't guess the reasons."}},
+      "title": "Yazma · Task 1: iki çizgili grafik",
+      "task": 1,
+      "prompt": "The line graph below shows the average number of passengers per day using buses and trams in the city of Harwick between 2000 and 2025.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "data": "Practice data (invented for this lesson; Harwick is a fictional city).\nAverage passengers per day (thousands)\nYear | Buses | Trams\n2000 | 120 | 20\n2005 | 125 | 22\n2010 | 118 | 45\n2015 | 95 | 80\n2020 | 60 | 55\n2025 | 85 | 105",
+      "minutes": 20,
+      "minWords": 150,
+      "tip": "Giriş cümlesinde grafiği kendi kelimelerinle tanıt. Overview'da iki ana eğilimi ve dikkat çeken bir noktayı (iki çizginin kesişmesi, 2020'deki düşüş) sayı vermeden yaz. Gövde paragraflarında verileri grupla: bir paragraf otobüsler, bir paragraf tramvaylar ya da zaman dönemlerine göre. Kesin fiil ve zarflar kullan (rose sharply, fell slightly, levelled off, peaked) ve her önemli noktayı sayıyla destekle. Neden olduğunu tahmin etme.",
+      "model": "The line graph compares the average daily number of bus and tram passengers in Harwick over a twenty-five-year period from 2000 to 2025.\n\nOverall, bus use declined for most of the period, whereas tram use grew considerably, so that by 2025 trams had overtaken buses as the more popular form of transport. Both services experienced a sharp drop in 2020, followed by a recovery.\n\nIn 2000, buses carried around 120,000 passengers a day, six times as many as trams, which carried just 20,000. Bus numbers rose slightly to a peak of 125,000 in 2005, but then fell steadily, reaching 95,000 in 2015. In 2020, they plunged to 60,000, the lowest figure on the graph, before recovering to 85,000 by 2025.\n\nTram use, by contrast, remained almost stable at just over 20,000 until 2005. It then rose sharply, roughly doubling to 45,000 in 2010 and climbing to 80,000 in 2015. Like bus use, it fell significantly in 2020, to 55,000, but it then soared to 105,000 in 2025, its highest level and 20,000 more than the figure for buses."
+    },
+    {
+      "kind": "speak",
+      "i18n": {"ar":{"title":"المحادثة: النقل والرحلات"},"en":{"title":"Speaking: transport and journeys"}},
+      "title": "Konuşma: ulaşım ve yolculuklar",
+      "part1": [
+        "How do you usually travel to work or school?",
+        "Is public transport good where you live?",
+        "Do you prefer travelling by bus or by train? Why?",
+        "Has traffic in your city got better or worse in recent years?"
+      ],
+      "card": {
+        "title": "Describe a journey you remember well.",
+        "points": [
+          "where you were going",
+          "how you travelled",
+          "who you were with"
+        ],
+        "explain": "and explain why you remember this journey so well."
+      },
+      "useful": [
+        "It was a train journey from… to…, which took about…",
+        "We set off early to avoid the rush hour, but…",
+        "The traffic got steadily worse as we approached the city.",
+        "What made it memorable was…",
+        "Looking back, we should have taken the train instead of driving.",
+        "Since then, the journey has become much quicker, thanks to the new high-speed rail line."
+      ]
+    }
+  ]
+}

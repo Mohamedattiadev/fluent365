@@ -1,0 +1,322 @@
+{
+  "id": "lesson-08",
+  "number": 8,
+  "title": "Media and Advertising",
+  "topic": "Media & advertising",
+  "level": "B1+",
+  "goal": "Follow a short lecture and an academic text on advertising, and write a careful opinion essay using hedging language.",
+  "steps": [
+    {
+      "kind": "words",
+      "i18n": {"ar":{"title":"الكلمات: الإعلام والإعلانات","intro":"الإعلام والإعلانات من أكثر موضوعات Writing Task 2 شيوعًا (مثل الإعلانات الموجّهة للأطفال أو وسائل التواصل الاجتماعي). تساعدك هذه الكلمات الاثنتا عشرة على الكتابة والتحدث في هذا الموضوع بلغة متوازنة وأكاديمية."},"en":{"title":"Words: Media and advertising","intro":"Media and advertising are among the favourite topics of Writing Task 2 (for example, advertising aimed at children, or social media). These 12 words let you write and speak about the topic in balanced, academic language."}},
+      "title": "Kelimeler: medya ve reklam",
+      "intro": "Medya ve reklam, Writing Task 2'nin en sevilen konularından biri (örneğin çocuklara yönelik reklamlar ya da sosyal medya). Bu 12 kelime, bu konuda dengeli ve akademik bir dille yazıp konuşmanı sağlar.",
+      "words": [
+        { "en": "target audience", "pos": "phrase", "tr": "hedef kitle", "ar": "الجمهور المستهدف", "example": "The target audience for this advert is teenagers who play video games." },
+        { "en": "persuasive", "pos": "adjective", "tr": "ikna edici", "ar": "مقنع", "example": "The most persuasive adverts tell a simple story." },
+        { "en": "misleading", "pos": "adjective", "tr": "yanıltıcı", "ar": "مضلِّل", "example": "The claim that the drink was \"healthy\" was misleading." },
+        { "en": "consumer", "pos": "noun", "tr": "tüketici", "ar": "المستهلك", "example": "Consumers are becoming more careful about what they buy online." },
+        { "en": "brand loyalty", "pos": "phrase", "tr": "marka bağlılığı", "ar": "الولاء للعلامة التجارية", "example": "Some companies build brand loyalty by rewarding regular customers." },
+        { "en": "influencer", "pos": "noun", "tr": "(sosyal medya) fenomeni, influencer", "ar": "مؤثّر (على وسائل التواصل)", "example": "The influencer has more than a million followers." },
+        { "en": "sponsored content", "pos": "phrase", "tr": "sponsorlu içerik", "ar": "محتوى مموَّل (مدفوع)", "example": "Sponsored content should be clearly labelled as an advert." },
+        { "en": "regulation", "pos": "noun", "tr": "düzenleme, yasal kural", "ar": "تنظيم؛ لوائح قانونية", "example": "Stricter regulation of online advertising is being discussed." },
+        { "en": "exposure", "pos": "noun", "tr": "(bir şeye) maruz kalma", "ar": "التعرّض (لشيء)", "example": "Children's exposure to advertising has increased with smartphones." },
+        { "en": "mainstream media", "pos": "phrase", "tr": "ana akım medya", "ar": "وسائل الإعلام الرئيسية (التقليدية)", "example": "The story was ignored by the mainstream media at first." },
+        { "en": "credible", "pos": "adjective", "tr": "güvenilir, inandırıcı", "ar": "موثوق؛ جدير بالتصديق", "example": "A credible news source checks its facts before publishing." },
+        { "en": "impulse purchase", "pos": "phrase", "tr": "anlık (plansız) satın alma", "ar": "شراء اندفاعي (غير مخطط له)", "example": "Sweets near the checkout encourage impulse purchases." }
+      ],
+      "practice": [
+        {
+          "type": "choice", "id": "w1",
+          "prompt": "The group of people that an advert is designed for is its ___.",
+          "options": ["target audience", "brand loyalty", "regulation", "exposure"],
+          "answer": 0,
+          "why": { "tr": "\"target audience\" = hedef kitle, reklamın ulaşmak istediği insanlar.", "ar": "target audience تعني الجمهور المستهدف، أي الناس الذين يريد الإعلان الوصول إليهم.", "en": "The target audience is the group an advert is aimed at." },
+          "example": "Older people are the target audience for this holiday company."
+        },
+        {
+          "type": "gap", "id": "w2",
+          "prompt": "Write the correct form of PERSUADE: The advert was very ___; I bought the product the next day.",
+          "answers": ["persuasive"],
+          "why": { "tr": "\"very\" sonrası sıfat gerekir: persuade (fiil) → persuasive (sıfat).", "ar": "بعد very نحتاج إلى صفة: persuade (فعل) تصبح persuasive (صفة).", "en": "After very we need an adjective: persuade → persuasive." },
+          "example": "She gave a very persuasive argument for banning junk food adverts."
+        },
+        {
+          "type": "choice", "id": "w3",
+          "prompt": "A ___ advert gives people a false idea about a product.",
+          "options": ["misleading", "credible", "mainstream", "sponsored"],
+          "answer": 0,
+          "why": { "tr": "\"misleading\" = yanlış bir izlenim veren, yanıltıcı. \"credible\" bunun tam tersi: güvenilir.", "ar": "misleading تعني مضلِّلًا يعطي فكرة خاطئة، وcredible عكسها: موثوق.", "en": "Misleading means giving a false idea; credible is almost the opposite." },
+          "example": "The price in the advert was misleading because it did not include tax."
+        },
+        {
+          "type": "choice", "id": "w4",
+          "prompt": "\"Brand loyalty\" means…",
+          "options": ["continuing to buy the same company's products", "working for a famous company", "paying more for a product", "complaining about a brand"],
+          "answer": 0,
+          "why": { "tr": "\"brand loyalty\" = bir markaya bağlı kalıp hep onun ürünlerini almak.", "ar": "brand loyalty تعني الاستمرار في شراء منتجات العلامة التجارية نفسها.", "en": "Brand loyalty is when customers keep buying from the same brand." },
+          "example": "My grandfather showed great brand loyalty: he drove the same make of car all his life."
+        },
+        {
+          "type": "choice", "id": "w5",
+          "prompt": "Children's ___ to advertising has increased since smartphones became common.",
+          "options": ["exposure", "exposition", "expose", "exposing"],
+          "answer": 0,
+          "why": { "tr": "İsim gerekiyor ve kalıp \"exposure to something\" (bir şeye maruz kalma). \"exposition\" sergi ya da açıklama demek.", "ar": "نحتاج إلى اسم، والتعبير هو exposure to something أي التعرّض لشيء. أما exposition فتعني معرضًا أو شرحًا.", "en": "The noun is exposure, used with to. Exposition means an exhibition or explanation." },
+          "example": "Long exposure to loud music can damage your hearing."
+        },
+        {
+          "type": "gap", "id": "w6",
+          "prompt": "Write ONE word: Buying something you had not planned to buy is an ___ purchase.",
+          "answers": ["impulse"],
+          "why": { "tr": "Kalıp \"impulse purchase\" ya da \"impulse buying\" = düşünmeden, anlık satın alma. \"an\" sesli harfle başlayan kelimeyi gösteriyor.", "ar": "التعبير هو impulse purchase أو impulse buying أي الشراء دون تخطيط. وكلمة an تدل على أن الكلمة تبدأ بصوت متحرك.", "en": "The collocation is \"impulse purchase\"; \"an\" shows a vowel sound follows." },
+          "example": "The sunglasses were an impulse purchase at the airport."
+        }
+      ]
+    },
+    {
+      "kind": "listen",
+      "i18n": {"ar":{"title":"الاستماع · Part 4: التكرار في الإعلانات","intro":"محاضِر يلقي محاضرة قصيرة عن سبب تكرار المعلنين الرسالة نفسها مرات كثيرة. كما في الامتحان، هناك متحدث واحد ولا توقّف.","tip":"في Part 4 يشرح متحدث واحد موضوعًا أكاديميًا، والملاحظات تتبع عادةً ترتيب الكلام. عبارات مثل \"However\" و\"Now\" و\"This raises a question\" تدل على الانتقال إلى قسم جديد؛ تتبّع بهذه الإشارات القسم الذي ينتمي إليه كل سؤال. انظر إلى الكلمات قبل الفراغ وبعده وتوقّع نوع الكلمة المطلوبة (اسم، صفة، فعل)."},"en":{"title":"Listening · Part 4: Repetition in advertising","intro":"A lecturer gives a short talk on why advertisers repeat the same message again and again. As in the exam, there is one speaker and no break.","tip":"In Part 4 one speaker explains an academic topic, and the notes usually follow the order of the talk. Phrases like \"However\", \"Now\" and \"This raises a question\" show a move to a new section; use these signals to track which section each question is in. Look at the words before and after the gap and predict what kind of word is needed (noun, adjective, verb)."}},
+      "title": "Dinleme · Part 4: reklamda tekrar",
+      "intro": "Bir öğretim görevlisi, reklamcıların aynı mesajı neden defalarca tekrarladığını anlatan kısa bir ders veriyor. Sınavdaki gibi tek konuşmacı var ve ara verilmiyor.",
+      "tip": "Part 4'te tek bir konuşmacı akademik bir konu anlatır ve notlar genelde konuşmanın sırasını izler. \"However\", \"Now\", \"This raises a question\" gibi ifadeler yeni bir bölüme geçildiğini gösterir; soruların hangi bölümde olduğunu bu sinyallerle takip et. Boşluktan önceki ve sonraki kelimelere bakıp ne tür bir kelime (isim, sıfat, fiil) gerektiğini tahmin et.",
+      "audio": {
+        "type": "audio", "id": "l-audio",
+        "speakers": {
+          "N": { "name": "Narrator", "voice": "en-GB-SoniaNeural" },
+          "lecturer": { "name": "Lecturer", "voice": "en-GB-RyanNeural" }
+        },
+        "lines": [
+          { "speaker": "N", "text": "You will hear part of a lecture about advertising. First, you have some time to look at questions one to six.", "pauseAfterMs": 2500 },
+          { "speaker": "N", "text": "Now listen carefully and answer questions one to six.", "pauseAfterMs": 1200 },
+          { "speaker": "lecturer", "text": "Good morning. In today's session I want to look at a simple question: why do advertisers repeat the same message so many times? Anyone who has seen the same advert five times during one football match has probably wondered about this, usually with some irritation.", "pauseAfterMs": 500 },
+          { "speaker": "lecturer", "text": "Let's start with the psychology. In the late nineteen-sixties, the psychologist Robert Zajonc carried out experiments in which people were shown unfamiliar words, shapes or faces, some only once and some many times.", "pauseAfterMs": 400 },
+          { "speaker": "lecturer", "text": "Afterwards, people tended to say that they liked the items they had seen more often. Later studies found the same pattern even when people could not remember seeing the items at all. This became known as the mere exposure effect. Put simply, familiarity tends to make things feel safe, and we often prefer what feels safe.", "pauseAfterMs": 500 },
+          { "speaker": "lecturer", "text": "For advertisers, the lesson was clear. A consumer does not need to pay close attention to an advert for it to have an effect. Repeated exposure alone can make a brand seem familiar, and therefore more trustworthy, when someone is standing in a shop choosing between two similar products.", "pauseAfterMs": 400 },
+          { "speaker": "lecturer", "text": "That is one reason why so many supermarket decisions are made in seconds, and why some of them are simply impulse purchases.", "pauseAfterMs": 500 },
+          { "speaker": "lecturer", "text": "However, and this is important, the effect has limits. Research suggests that after a certain point, extra repetition stops helping and can begin to annoy people. Advertisers sometimes call this wear-out. So the cleverest campaigns tend to repeat one idea in slightly different forms, rather than showing an identical advert again and again.", "pauseAfterMs": 500 },
+          { "speaker": "lecturer", "text": "Now, how has this changed in the age of social media? Traditionally, a company bought space in the mainstream media, that is, television, newspapers and radio, and hoped to reach its target audience among everyone else who was watching or reading.", "pauseAfterMs": 400 },
+          { "speaker": "lecturer", "text": "Today, online platforms can show adverts to very specific groups, based on their age, location and interests. And a lot of advertising no longer looks like advertising at all.", "pauseAfterMs": 400 },
+          { "speaker": "lecturer", "text": "When an influencer recommends a face cream to their followers, many viewers experience it as advice from a friend rather than a persuasive message from a company. Influencers often seem more credible than the celebrities in traditional adverts, precisely because they look like ordinary people.", "pauseAfterMs": 500 },
+          { "speaker": "lecturer", "text": "This raises a question of honesty. Sponsored content that is not clearly labelled can be misleading, because the audience does not know that the person has been paid. For this reason, regulation in many countries now requires paid posts to be labelled, for instance with the word ad.", "pauseAfterMs": 400 },
+          { "speaker": "lecturer", "text": "Whether these labels actually work is another matter. Some studies suggest that many people, especially younger viewers, scroll past them without noticing them at all. And that is where we will pick up next week.", "pauseAfterMs": 1500 },
+          { "speaker": "N", "text": "That is the end of the recording.", "pauseAfterMs": 0 }
+        ]
+      },
+      "questions": [
+        { "type": "text", "text": "Questions 1–4. Complete the notes below. Write ONE WORD ONLY for each answer." },
+        { "type": "text", "text": "Repetition in advertising" },
+        {
+          "type": "gap", "id": "l1",
+          "prompt": "1. In Zajonc's experiments, people preferred the items they had seen more ___.",
+          "answers": ["often"],
+          "why": { "tr": "\"people tended to say that they liked the items they had seen more often\". \"preferred\" = \"liked\"; boşluktan sonra cümle bitiyor, yani bir zarf gerekiyor: often.", "ar": "\"people tended to say that they liked the items they had seen more often\". preferred تعني liked، والجملة تنتهي بعد الفراغ فنحتاج إلى ظرف: often.", "en": "\"They liked the items they had seen more often.\"" },
+          "example": "Children usually prefer the songs they have heard more often."
+        },
+        {
+          "type": "gap", "id": "l2",
+          "prompt": "2. Repeated exposure makes a brand seem familiar and therefore more ___.",
+          "answers": ["trustworthy"],
+          "why": { "tr": "\"can make a brand seem familiar, and therefore more trustworthy\". \"familiar\" soruda zaten var; \"safe\" daha önce genel bir fikir olarak geçiyor, tuzak.", "ar": "\"can make a brand seem familiar, and therefore more trustworthy\". كلمة familiar موجودة في السؤال، وsafe ذُكرت قبل ذلك كفكرة عامة، فهي فخّ.", "en": "\"Can make a brand seem familiar, and therefore more trustworthy.\"" },
+          "example": "A familiar logo can make a product seem more trustworthy."
+        },
+        {
+          "type": "gap", "id": "l3",
+          "prompt": "3. \"Wear-out\": after a certain point, more repetition can ___ people.",
+          "answers": ["annoy"],
+          "why": { "tr": "\"extra repetition stops helping and can begin to annoy people. Advertisers sometimes call this wear-out.\" \"can\" sonrası yalın fiil: annoy.", "ar": "\"extra repetition stops helping and can begin to annoy people. Advertisers sometimes call this wear-out.\" بعد can يأتي الفعل في صيغته الأساسية: annoy.", "en": "\"Extra repetition … can begin to annoy people. Advertisers sometimes call this wear-out.\"" },
+          "example": "Hearing the same song every hour can annoy people."
+        },
+        {
+          "type": "gap", "id": "l4",
+          "prompt": "4. Many countries now require paid posts to be ___.",
+          "answers": ["labelled", "labeled"],
+          "why": { "tr": "\"regulation in many countries now requires paid posts to be labelled\". \"to be\" sonrası V3: labelled (Amerikan yazımı: labeled).", "ar": "\"regulation in many countries now requires paid posts to be labelled\". بعد to be يأتي التصريف الثالث: labelled (وبالتهجئة الأمريكية labeled).", "en": "\"Requires paid posts to be labelled\" (US spelling: labeled)." },
+          "example": "All food must be labelled with a list of ingredients."
+        },
+        { "type": "text", "text": "Questions 5–6. Choose the correct letter." },
+        {
+          "type": "choice", "id": "l5",
+          "prompt": "5. According to the lecturer, the most effective campaigns",
+          "options": ["show an identical advert many times.", "repeat one idea in slightly different forms.", "avoid repeating their message."],
+          "answer": 1,
+          "why": { "tr": "\"the cleverest campaigns tend to repeat one idea in slightly different forms, rather than showing an identical advert again and again\". A, \"rather than\" ile reddedilen seçenek; C ise dersin ana fikrine ters.", "ar": "\"the cleverest campaigns tend to repeat one idea in slightly different forms, rather than showing an identical advert again and again\". الخيار A مرفوض بعبارة rather than، وC عكس فكرة المحاضرة.", "en": "\"Repeat one idea in slightly different forms, rather than showing an identical advert again and again.\"" },
+          "example": "The campaign repeated one message in many different forms."
+        },
+        {
+          "type": "choice", "id": "l6",
+          "prompt": "6. What does the lecturer say about labels on paid posts?",
+          "options": ["They have solved the problem of misleading content.", "Younger viewers find them confusing.", "Many viewers may not notice them."],
+          "answer": 2,
+          "why": { "tr": "\"many people, especially younger viewers, scroll past them without noticing them at all\". B tuzak: genç izleyicilerden söz ediliyor ama \"confusing\" denmiyor; A ise \"another matter\" ifadesiyle çelişiyor.", "ar": "\"many people, especially younger viewers, scroll past them without noticing them at all\". الخيار B فخّ: ذُكر الشباب لكن لم يُقل إنهم يجدونها مربكة، وA يناقض عبارة another matter.", "en": "\"Scroll past them without noticing them at all.\" Nobody says they are confusing." },
+          "example": "Many drivers pass the sign without noticing it."
+        }
+      ]
+    },
+    {
+      "kind": "read",
+      "i18n": {"ar":{"title":"القراءة: الاختيار من متعدد وإكمال الملخص","intro":"نص أكاديمي عن الجهة التي تدفع ثمن الإعلام \"المجاني\"، وكيف يؤثر ذلك في الإعلانات والصحافة.","tip":"في أسئلة الاختيار من متعدد، الخيار الذي يكرر كلمة من النص كثيرًا ما يكون فخًّا؛ الإجابة الصحيحة تقول الفكرة نفسها بكلمات مختلفة. في إكمال الملخص توقّع أولًا نوع الكلمة في الفراغ (اسم، صفة)، ثم حدّد الفقرة التي يتحدث عنها الملخص وخذ الكلمة من النص كما هي."},"en":{"title":"Reading: Multiple choice and summary completion","intro":"An academic text about who pays for \"free\" media and how this affects advertising and journalism.","tip":"In multiple-choice questions, an option that repeats a word from the text is often a trap; the correct answer says the same idea in different words. In summary completion, first predict the type of word for the gap (noun, adjective), then find which paragraph the summary covers and copy the word exactly from the text."}},
+      "title": "Okuma: çoktan seçmeli ve özet tamamlama",
+      "intro": "\"Ücretsiz\" medyanın parasını kimin ödediğini ve bunun reklam ve haberciliği nasıl etkilediğini anlatan akademik bir metin.",
+      "tip": "Çoktan seçmeli sorularda metindeki kelimeyi tekrarlayan seçenek çoğu zaman tuzaktır; doğru cevap aynı fikri farklı kelimelerle söyler. Özet tamamlamada önce boşluğun kelime türünü (isim, sıfat) tahmin et, sonra özetin hangi paragrafı anlattığını bul ve kelimeyi metinden aynen al.",
+      "passage": [
+        { "type": "heading", "text": "Who Pays for Free Media?" },
+        { "type": "text", "text": "Much of the media that people use every day appears to be free. News websites, video platforms, search engines and social networks charge their users nothing, yet they employ thousands of people and run enormous data centres. The money comes largely from advertising. In this business model, often described as the attention economy, the real product being sold is not the content itself but the attention of the audience, which is sold to advertisers." },
+        { "type": "text", "text": "Advertising has paid for media for a long time. In the nineteenth century, many newspapers were able to lower their prices sharply because advertisers covered much of the cost, and commercial television and radio were funded in a similar way for most of the twentieth century. What has changed is precision. A newspaper advertiser could only guess who would see an advert; an online platform can show it to a carefully defined target audience and measure exactly how many people clicked on it." },
+        { "type": "text", "text": "This precision depends on data. Platforms collect information about what users search for, watch and buy, and use it to predict which adverts are likely to be most persuasive for each person. Supporters argue that this makes advertising more useful: a consumer who is shown products related to their real interests may find adverts less irritating than random ones. Critics reply that people rarely understand how much information is collected, and that adverts tailored closely to an individual's worries or habits could encourage impulse purchases that they later regret." },
+        { "type": "text", "text": "There are also concerns about the quality of information. If income depends on attention, content that provokes strong emotions tends to be rewarded, because people are more likely to click on it and share it. Misleading headlines can attract more readers than careful reporting. Mainstream media organisations, which are expected to check their facts, compete for the same advertising money as websites that do not, and some journalists argue that this has made credible journalism harder to fund." },
+        { "type": "text", "text": "Responses vary. Some news organisations have introduced subscriptions, asking readers to pay directly. Governments have discussed stronger regulation of how personal data may be used in advertising, and some, including the European Union, already have strict data protection laws. Meanwhile, sponsored content and the rise of the influencer have blurred the line between advertising and entertainment, making it harder for audiences to tell when they are being sold something. Understanding who pays for free media may be the first step towards using it wisely." }
+      ],
+      "questions": [
+        { "type": "heading", "text": "Questions 1–3: Choose the correct letter." },
+        {
+          "type": "choice", "id": "r1",
+          "prompt": "1. According to the first paragraph, what is really being sold in the attention economy?",
+          "options": ["news and video content", "the attention of users", "users' personal opinions", "space in printed newspapers"],
+          "answer": 1,
+          "why": { "tr": "\"the real product being sold is not the content itself but the attention of the audience\". A tuzak: \"not the content itself\" diyerek içerik reddediliyor.", "ar": "\"the real product being sold is not the content itself but the attention of the audience\". الخيار A فخّ لأن النص يقول not the content itself.", "en": "\"The real product being sold is not the content itself but the attention of the audience.\"" },
+          "example": "In this model, the real product is the audience's attention."
+        },
+        {
+          "type": "choice", "id": "r2",
+          "prompt": "2. What does the writer say is the main difference between older and online advertising?",
+          "options": ["Online adverts are much cheaper to produce.", "Online adverts can be aimed and measured more exactly.", "Newspapers no longer depend on advertising.", "Television adverts were more persuasive."],
+          "answer": 1,
+          "why": { "tr": "Paragraf 2: \"What has changed is precision\": çevrimiçi reklam belirli bir hedef kitleye gösterilebiliyor ve kaç kişinin tıkladığı ölçülebiliyor. A, C ve D metinde yok.", "ar": "الفقرة الثانية: \"What has changed is precision\"، فالإعلان الإلكتروني يُوجَّه إلى جمهور محدد ويُقاس عدد النقرات. الخيارات A وC وD غير مذكورة.", "en": "\"What has changed is precision\": adverts can be shown to a defined audience and clicks measured." },
+          "example": "What has changed is how precisely companies can reach their customers."
+        },
+        {
+          "type": "choice", "id": "r3",
+          "prompt": "3. Why, according to some journalists, has credible journalism become harder to fund?",
+          "options": ["Readers no longer trust mainstream media.", "It competes for advertising money with sites that do not check facts.", "Governments have stopped supporting newspapers.", "Emotional stories are no longer popular."],
+          "answer": 1,
+          "why": { "tr": "Paragraf 4: ana akım medya \"compete for the same advertising money as websites that do not [check their facts]\". D metnin tersi: duygusal içerik ödüllendiriliyor.", "ar": "الفقرة الرابعة: وسائل الإعلام الرئيسية \"compete for the same advertising money as websites that do not\" أي لا تتحقق من الحقائق. الخيار D عكس النص.", "en": "Mainstream media \"compete for the same advertising money as websites that do not\" check facts." },
+          "example": "Small shops compete for the same customers as large online stores."
+        },
+        { "type": "heading", "text": "Questions 4–7: Complete the summary." },
+        { "type": "text", "text": "Use ONE WORD ONLY from the passage for each answer." },
+        { "type": "text", "text": "Platforms gather (4) ___ about what people search for, watch and buy. Supporters say that a (5) ___ who sees adverts linked to their interests may find them less irritating, but critics worry that very personal adverts could lead to (6) ___ purchases. To reduce their dependence on advertising, some news organisations now offer (7) ___." },
+        {
+          "type": "gap", "id": "r4",
+          "prompt": "4. Platforms gather ___ about what people search for, watch and buy.",
+          "answers": ["information", "data"],
+          "why": { "tr": "Paragraf 3: \"Platforms collect information about what users search for, watch and buy\". \"gather\" = \"collect\". Paragrafın ilk cümlesindeki \"data\" da aynı anlamda.", "ar": "الفقرة الثالثة: \"Platforms collect information about what users search for, watch and buy\". gather تعني collect، وكلمة data في أول الفقرة بالمعنى نفسه.", "en": "\"Platforms collect information about what users search for, watch and buy.\" Data is also accepted." },
+          "example": "The app collects information about where you go."
+        },
+        {
+          "type": "gap", "id": "r5",
+          "prompt": "5. Supporters say that a ___ who sees adverts linked to their interests may find them less irritating.",
+          "answers": ["consumer"],
+          "why": { "tr": "Paragraf 3: \"a consumer who is shown products related to their real interests may find adverts less irritating\". \"a\" sonrası tekil isim: consumer.", "ar": "الفقرة الثالثة: \"a consumer who is shown products related to their real interests may find adverts less irritating\". بعد a يأتي اسم مفرد: consumer.", "en": "\"A consumer who is shown products related to their real interests may find adverts less irritating.\"" },
+          "example": "A consumer who reads reviews is less likely to be disappointed."
+        },
+        {
+          "type": "gap", "id": "r6",
+          "prompt": "6. Critics worry that very personal adverts could lead to ___ purchases.",
+          "answers": ["impulse"],
+          "why": { "tr": "Paragraf 3: \"could encourage impulse purchases that they later regret\". \"lead to\" = \"encourage\".", "ar": "الفقرة الثالثة: \"could encourage impulse purchases that they later regret\". lead to تعني encourage هنا.", "en": "\"Could encourage impulse purchases that they later regret.\"" },
+          "example": "Flash sales often lead to impulse purchases."
+        },
+        {
+          "type": "gap", "id": "r7",
+          "prompt": "7. To reduce their dependence on advertising, some news organisations now offer ___.",
+          "answers": ["subscriptions"],
+          "why": { "tr": "Paragraf 5: \"Some news organisations have introduced subscriptions, asking readers to pay directly\". Okur doğrudan ödeyince reklama bağımlılık azalır.", "ar": "الفقرة الخامسة: \"Some news organisations have introduced subscriptions, asking readers to pay directly\". عندما يدفع القرّاء مباشرة يقلّ الاعتماد على الإعلانات.", "en": "\"Some news organisations have introduced subscriptions, asking readers to pay directly.\"" },
+          "example": "The newspaper now offers online subscriptions."
+        }
+      ]
+    },
+    {
+      "kind": "language",
+      "i18n": {"ar":{"title":"اللغة: التعبير الحذر (hedging)"},"en":{"title":"Language: Hedging"}},
+      "title": "Dil: temkinli ifade (hedging)",
+      "explain": {
+        "tr": "Akademik yazıda kesin ve genelleyici iddialar (\"All adverts lie\", \"Social media always causes…\") zayıf görünür; IELTS'te Band 7 için fikirlerini temkinli ve dengeli söylemen gerekir. Bunun için: tend to + fiil (Adverts tend to exaggerate…), be likely to + fiil (Children are likely to…), may / might / could (This may lead to…), It could be argued that… / It is often said that…, sıklık zarfları (often, generally, in many cases), ve \"some / many\" (\"all\" yerine). Dikkat: her cümleyi temkinli yapma; kendi net görüşünü yine açıkça söyle (I believe…, In my view…).",
+        "ar": "في الكتابة الأكاديمية تبدو الادعاءات القاطعة والمعمَّمة ضعيفة (All adverts lie أو Social media always causes…)، وللوصول إلى الدرجة 7 في IELTS عليك أن تعبّر عن أفكارك بحذر وتوازن. استخدم: tend to + فعل (Adverts tend to exaggerate…)، وbe likely to + فعل (Children are likely to…)، وmay / might / could (This may lead to…)، وIt could be argued that… / It is often said that…، وظروف التكرار (often, generally, in many cases)، وsome / many بدلًا من all. انتبه: لا تجعل كل جملة حذرة، بل عبّر عن رأيك الواضح أيضًا (I believe…, In my view…).",
+        "en": "In academic writing, absolute claims (\"All adverts lie\", \"Social media always causes…\") look weak; for band 7 you need to present ideas with care and balance. Use: tend to + verb (Adverts tend to exaggerate…), be likely to + verb (Children are likely to…), may / might / could (This may lead to…), It could be argued that… / It is often said that…, frequency adverbs (often, generally, in many cases), and some / many instead of all. But do not hedge everything: still state your own position clearly (I believe…, In my view…)."
+      },
+      "examples": [
+        "Advertising aimed at teenagers tends to focus on appearance and popularity.",
+        "It could be argued that influencers are more persuasive than traditional adverts.",
+        "Children who spend several hours online every day are likely to see a large number of adverts.",
+        "Stricter regulation may reduce misleading claims, although it is unlikely to remove them completely."
+      ],
+      "questions": [
+        {
+          "type": "choice", "id": "g1",
+          "prompt": "Which sentence is most appropriate for an academic essay?",
+          "options": ["All adverts lie to people.", "Adverts often exaggerate the benefits of a product.", "Adverts always trick consumers.", "Every advert is misleading."],
+          "answer": 1,
+          "why": { "tr": "B \"often\" ile temkinli ve savunulabilir bir iddia. Diğerleri \"all\", \"always\", \"every\" ile aşırı genelleme yapıyor.", "ar": "B ادعاء حذر يمكن الدفاع عنه بفضل often. أما البقية ففيها تعميم مبالغ فيه بـ all وalways وevery.", "en": "B is hedged with \"often\"; the others overgeneralise with all, always and every." },
+          "example": "Adverts often make products look better than they really are."
+        },
+        {
+          "type": "choice", "id": "g2",
+          "prompt": "Young people ___ to trust influencers more than celebrities.",
+          "options": ["tend", "are tending", "likely", "could"],
+          "answer": 0,
+          "why": { "tr": "\"tend to + fiil\" genel bir eğilimi anlatır ve basit zamanla kullanılır: tend to trust. \"likely\" için \"are likely to\" gerekir; \"could\" sonrası \"to\" gelmez.", "ar": "tend to + فعل تصف ميلًا عامًا وتُستخدم بالمضارع البسيط: tend to trust. أما likely فتحتاج are likely to، وcould لا تأتي بعدها to.", "en": "\"Tend to + verb\" in the simple form. Likely needs \"are likely to\"; could is not followed by to." },
+          "example": "Older readers tend to prefer printed newspapers."
+        },
+        {
+          "type": "gap", "id": "g3",
+          "prompt": "Write ONE word: It ___ be argued that advertising helps consumers find useful products.",
+          "answers": ["could", "can", "might", "may"],
+          "why": { "tr": "Kalıp: \"It could be argued that…\" (… olduğu ileri sürülebilir). \"can\", \"might\", \"may\" da kabul edilir.", "ar": "التعبير هو It could be argued that… أي يمكن القول إن… وتُقبل أيضًا can وmight وmay.", "en": "The fixed phrase is \"It could be argued that…\"; can, might and may also work." },
+          "example": "It could be argued that television is less influential than it used to be."
+        },
+        {
+          "type": "choice", "id": "g4",
+          "prompt": "Stricter regulation is ___ to reduce the amount of misleading advertising.",
+          "options": ["likely", "probably", "possible", "tend"],
+          "answer": 0,
+          "why": { "tr": "\"be likely to + fiil\" = muhtemelen … olacak. \"probably\" bir zarf ve \"to\" ile kullanılmaz; \"possible\" \"to\" ile bu yapıda kullanılmaz.", "ar": "be likely to + فعل تعني من المرجح أن. أما probably فظرف لا يُستخدم مع to، وpossible لا تُستخدم بهذه البنية.", "en": "\"Be likely to + verb\". Probably is an adverb (is probably going to), and possible does not fit here." },
+          "example": "Prices are likely to rise next year."
+        },
+        {
+          "type": "choice", "id": "g5",
+          "prompt": "Which version makes this claim more cautious? \"Social media advertising causes impulse buying.\"",
+          "options": ["Social media advertising may contribute to impulse buying.", "Social media advertising definitely causes impulse buying.", "Social media advertising always causes impulse buying.", "Social media advertising causes all impulse buying."],
+          "answer": 0,
+          "why": { "tr": "A hem \"may\" hem de \"contribute to\" (katkıda bulunmak, tek neden değil) kullanıyor. B, C ve D iddiayı daha da kesin yapıyor.", "ar": "A تستخدم may وcontribute to (تُسهم، أي ليست السبب الوحيد). أما B وC وD فتجعل الادعاء أكثر قطعية.", "en": "A uses may and contribute to (one cause among others); B–D make the claim stronger." },
+          "example": "Poor sleep may contribute to stress at work."
+        }
+      ]
+    },
+    {
+      "kind": "write",
+      "i18n": {"ar":{"title":"الكتابة · Task 2: مقال رأي","tip":"في أسئلة \"To what extent\" صرّح برأيك بوضوح في المقدمة وحافظ على الرأي نفسه حتى النهاية. الرأي المتوازن (مثل \"أوافق إلى حد كبير، لكن…\") مناسب جدًا للحصول على Band 7. في كل فقرة عرض فكرة رئيسية وشرح ومثال. استخدم عبارات الحذر (tend to, are likely to, it could be argued) وكلمات هذا الدرس (target audience, persuasive, regulation, exposure)."},"en":{"title":"Writing · Task 2: An opinion essay","tip":"In \"To what extent\" questions, state your opinion clearly in the introduction and keep the same view to the end. A balanced view (for example, \"I largely agree, but…\") works very well for Band 7. Each body paragraph should have one main idea, an explanation and an example. Use hedging (tend to, are likely to, it could be argued) and this lesson's words (target audience, persuasive, regulation, exposure)."}},
+      "title": "Yazma · Task 2: görüş denemesi",
+      "task": 2,
+      "prompt": "Some people think that all advertising aimed at children should be banned.\n\nTo what extent do you agree or disagree?",
+      "minutes": 40,
+      "minWords": 250,
+      "tip": "\"To what extent\" sorularında görüşünü girişte açıkça söyle ve sonuna kadar aynı görüşü koru. Dengeli bir görüş (örneğin \"büyük ölçüde katılıyorum, ama…\") Band 7 için çok uygundur. Her gövde paragrafında bir ana fikir, bir açıklama ve bir örnek olsun. Temkinli ifadeler (tend to, are likely to, it could be argued) ve bu dersin kelimelerini (target audience, persuasive, regulation, exposure) kullan.",
+      "model": "Children today are exposed to advertising not only on television but also on video platforms, games and social media. Some people believe that every advert targeting children should be prohibited. I largely agree with this view, although I think a complete ban would be difficult to enforce and that strict regulation is a more realistic aim.\n\nThe main argument for a ban is that young children are not able to judge advertising in the way adults can. Research in psychology suggests that younger children tend to see adverts as information rather than as persuasive messages designed to sell them something. This makes them an easy target audience. In addition, adverts aimed at children often promote sugary snacks and expensive toys, and children who see them are likely to pressure their parents into buying these products. Constant exposure to such messages may also encourage materialistic values from an early age.\n\nOn the other hand, it could be argued that a total ban is neither practical nor entirely necessary. Much of the content children watch online is produced in other countries, so national laws are hard to apply. Moreover, not all advertising is harmful: adverts for books, educational games or sports clubs can provide useful information to families. For these reasons, a better approach might be to ban advertising for unhealthy food and to require all sponsored content aimed at young viewers to be clearly labelled. Some countries, such as Sweden, have long restricted television advertising aimed at young children, which suggests that firm rules can be introduced.\n\nIn conclusion, I agree that children need strong protection from advertising, because they are particularly easy to persuade. However, rather than banning every advert, governments should introduce clear regulation that targets the most harmful products and the most misleading techniques."
+    },
+    {
+      "kind": "speak",
+      "i18n": {"ar":{"title":"المحادثة: الإعلام والإعلانات"},"en":{"title":"Speaking: Media and advertising"}},
+      "title": "Konuşma: medya ve reklam",
+      "part1": [
+        "How do you usually get the news?",
+        "Do you pay attention to adverts when you watch videos online?",
+        "Have you ever bought something because of an advert?",
+        "Do you follow any influencers or online creators? Why or why not?"
+      ],
+      "card": {
+        "title": "Describe an advertisement that you remember well.",
+        "points": ["where you saw or heard it", "what product or service it was for", "what happened in it"],
+        "explain": "and explain why you remember it so well."
+      },
+      "useful": [
+        "I first came across it on… a few months ago.",
+        "It was advertising a…, and the target audience was clearly…",
+        "What made it so persuasive was the way it…",
+        "I tend to skip most adverts, but this one…",
+        "To be fair, it was a little misleading, because…",
+        "I suppose it stuck in my mind because…"
+      ]
+    }
+  ]
+}

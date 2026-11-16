@@ -1,0 +1,319 @@
+{
+  "id": "lesson-06",
+  "number": 6,
+  "title": "Cities and Housing",
+  "topic": "Cities & housing",
+  "level": "B1+",
+  "goal": "Describe how a place has changed, in speech and in a Task 1 map report, using the passive and precise words for cities and housing.",
+  "steps": [
+    {
+      "kind": "words",
+      "i18n": {"ar":{"title":"الكلمات: المدن والسكن","intro":"المدن والسكن موضوع شائع جدًا في أسئلة الخرائط في IELTS Writing Task 1 وفي Speaking. تعلّم هذه الكلمات الاثنتي عشرة مع جملها الأمثلة؛ وستراها كلها مجددًا في بقية الدرس."},"en":{"title":"Words: Cities and housing","intro":"Cities and housing come up very often in IELTS Writing Task 1 map questions and in Speaking. Learn these 12 words with their example sentences; you will see all of them again in the rest of the lesson."}},
+      "title": "Kelimeler: şehirler ve konut",
+      "intro": "Şehirler ve konut, IELTS Writing Task 1 harita sorularında ve Speaking'de çok sık çıkan bir konu. Bu 12 kelimeyi örnek cümleleriyle öğren; dersin geri kalanında hepsini tekrar göreceksin.",
+      "words": [
+        { "en": "affordable housing", "pos": "phrase", "tr": "uygun fiyatlı konut", "ar": "مساكن ميسورة التكلفة", "example": "The city needs more affordable housing for nurses and teachers." },
+        { "en": "urban sprawl", "pos": "phrase", "tr": "kentsel yayılma, şehrin kontrolsüz büyümesi", "ar": "الزحف العمراني", "example": "Urban sprawl has replaced much of the farmland around the city." },
+        { "en": "residential", "pos": "adjective", "tr": "konut (bölgesi), yerleşim", "ar": "سكني", "example": "Lorries are not allowed in residential streets at night." },
+        { "en": "infrastructure", "pos": "noun", "tr": "altyapı (yol, su, elektrik, ulaşım)", "ar": "البنية التحتية", "example": "The new district will need roads, schools and other infrastructure." },
+        { "en": "densely populated", "pos": "phrase", "tr": "yoğun nüfuslu", "ar": "مكتظ بالسكان", "example": "Hong Kong is one of the most densely populated places in the world." },
+        { "en": "redevelop", "pos": "verb", "tr": "yeniden düzenlemek, yeniden inşa etmek", "ar": "يعيد تطوير (منطقة أو موقع)", "example": "The council wants to redevelop the old railway yard." },
+        { "en": "pedestrianised", "pos": "adjective", "tr": "yayalaştırılmış, araç trafiğine kapatılmış", "ar": "مخصص للمشاة فقط", "example": "The pedestrianised high street is full of cafés in summer." },
+        { "en": "green space", "pos": "noun phrase", "tr": "yeşil alan", "ar": "مساحة خضراء", "example": "Children in the city centre have very little green space to play in." },
+        { "en": "commute", "pos": "verb / noun", "tr": "işe gidip gelmek; işe gidiş geliş yolculuğu", "ar": "يتنقّل يوميًا إلى العمل؛ رحلة الذهاب إلى العمل", "example": "Many people commute to the capital by train every day." },
+        { "en": "outskirts", "pos": "noun (plural)", "tr": "şehrin kenar kısımları, dış mahalleler", "ar": "ضواحي المدينة؛ أطرافها", "example": "The hospital is on the outskirts of the town." },
+        { "en": "landmark", "pos": "noun", "tr": "simge yapı, önemli yer işareti", "ar": "معلم بارز", "example": "The old clock tower is the town's best-known landmark." },
+        { "en": "overcrowded", "pos": "adjective", "tr": "aşırı kalabalık, tıkış tıkış", "ar": "مكتظ؛ مزدحم أكثر من اللازم", "example": "Some families live in overcrowded flats with one bedroom for five people." }
+      ],
+      "practice": [
+        {
+          "type": "choice", "id": "w1",
+          "prompt": "The ___ of a city are the parts furthest from the centre.",
+          "options": ["outskirts", "landmarks", "infrastructure", "residents"],
+          "answer": 0,
+          "why": { "tr": "\"outskirts\" şehrin kenar kısımları demek ve her zaman çoğul kullanılır: on the outskirts of the city.", "ar": "outskirts تعني أطراف المدينة وتُستخدم دائمًا بصيغة الجمع: on the outskirts of the city.", "en": "\"Outskirts\" are the outer parts of a town; it is always plural: on the outskirts of." },
+          "example": "We live on the outskirts, so it takes forty minutes to get to the centre."
+        },
+        {
+          "type": "choice", "id": "w2",
+          "prompt": "Roads, railways, water pipes and power lines are all part of a city's ___.",
+          "options": ["infrastructure", "landmark", "green space", "sprawl"],
+          "answer": 0,
+          "why": { "tr": "\"infrastructure\" yol, su, elektrik ve ulaşım gibi temel sistemlerin hepsi demek. Sayılamayan bir isimdir.", "ar": "infrastructure تعني الأنظمة الأساسية كالطرق والمياه والكهرباء والمواصلات، وهي اسم غير معدود.", "en": "Infrastructure is the basic systems a city needs: transport, water and power. It is uncountable." },
+          "example": "The town grew so fast that its infrastructure could not keep up."
+        },
+        {
+          "type": "gap", "id": "w3",
+          "prompt": "Write the correct form of POPULATE: Hong Kong is one of the most densely ___ places in the world.",
+          "answers": ["populated"],
+          "why": { "tr": "\"densely\" bir zarf; ardından sıfat gerekiyor: populate → populated. Kalıp: densely populated.", "ar": "densely ظرف، ويأتي بعده صفة: populate تصبح populated. التعبير الثابت: densely populated.", "en": "After the adverb densely we need an adjective: densely populated." },
+          "example": "The north of the country is much less densely populated than the south."
+        },
+        {
+          "type": "choice", "id": "w4",
+          "prompt": "Many young workers cannot find ___ housing in the capital.",
+          "options": ["affordable", "economic", "valuable", "priceless"],
+          "answer": 0,
+          "why": { "tr": "\"affordable\" = parası yetebilecek fiyatta. \"economic\" ekonomiyle ilgili, \"valuable\" ve \"priceless\" değerli demek; anlam tutmuyor.", "ar": "affordable تعني بسعر يمكن تحمّله. أما economic فتعني متعلق بالاقتصاد، وvaluable وpriceless تعنيان ثمين، وهذا لا يناسب المعنى.", "en": "Affordable means cheap enough for people to pay. Economic, valuable and priceless mean something else." },
+          "example": "The new flats are not affordable for most local families."
+        },
+        {
+          "type": "choice", "id": "w5",
+          "prompt": "My ___ to work takes an hour each way, so I read on the train.",
+          "options": ["commute", "sprawl", "outskirts", "landmark"],
+          "answer": 0,
+          "why": { "tr": "\"commute\" burada isim: işe gidip gelme yolculuğu. \"my commute to work\" çok doğal bir kalıp.", "ar": "commute هنا اسم بمعنى رحلة الذهاب إلى العمل، وmy commute to work تعبير طبيعي جدًا.", "en": "Commute is a noun here: the journey to work. \"My commute to work\" is a natural phrase." },
+          "example": "Working from home has shortened my commute to zero."
+        },
+        {
+          "type": "gap", "id": "w6",
+          "prompt": "Write ONE word beginning with RE-: The council plans to ___ the old docks, turning them into homes and offices.",
+          "answers": ["redevelop"],
+          "why": { "tr": "Eski bir alanı yıkıp ya da dönüştürüp yeni amaçla kullanmak: \"redevelop\". \"plans to\" sonrası fiilin yalın hâli gelir.", "ar": "تحويل موقع قديم لاستخدام جديد هو redevelop، وبعد plans to يأتي الفعل في صيغته الأساسية.", "en": "To change an old area for a new use is to redevelop it; plans to + base verb." },
+          "example": "The old airport was redeveloped as a business park."
+        }
+      ]
+    },
+    {
+      "kind": "listen",
+      "i18n": {"ar":{"title":"الاستماع · Part 2: المخطط الجديد لأحد الأحياء","intro":"موظفة تخطيط في البلدية تشرح للسكان في اجتماع كيف سيتغيّر حي Eastgate خلال السنوات الخمس القادمة. إنها تصف الخريطة بالكلمات، فاستمع جيدًا إلى الاتجاهات (in front of, on the left, behind).","tip":"في Part 2 يصف متحدث واحد مكانًا أو مخططًا. انتبه للفرق بين \"at the moment\" و\"will be\": السؤال غالبًا لا يسأل عن الوضع الحالي بل عن التغيير. إذا ذُكر رقم مأمول ثم تغيّر (\"At first we hoped for half, but…\") فاختر المعلومة الأخيرة."},"en":{"title":"Listening · Part 2: A new plan for a neighbourhood","intro":"A council planning officer explains at a residents' meeting how the Eastgate area will change over the next five years. She describes the map in words, so listen carefully for directions (in front of, on the left, behind).","tip":"In Part 2 one speaker describes a place or a plan. Listen for the difference between \"at the moment\" and \"will be\": the question often asks about the change, not the present situation. If a number is first hoped for and then changes (\"At first we hoped for half, but…\"), choose the final information."}},
+      "title": "Dinleme · Part 2: bir semtin yeni planı",
+      "intro": "Bir belediye planlama görevlisi, sakinlerle yaptığı toplantıda Eastgate semtinin önümüzdeki beş yılda nasıl değişeceğini anlatıyor. Haritayı kelimelerle tarif ediyor: yönleri (in front of, on the left, behind) dikkatle dinle.",
+      "tip": "Part 2'de konuşmacı tek başına bir yeri ya da planı anlatır. \"at the moment\" ile \"will be\" arasındaki farkı dinle: soru çoğu zaman şimdiki durumu değil, değişikliği sorar. Bir sayı önce umulup sonra değişirse (\"At first we hoped for half, but…\") son bilgiyi seç.",
+      "audio": {
+        "type": "audio", "id": "l-audio",
+        "speakers": {
+          "N": { "name": "Narrator", "voice": "en-GB-SoniaNeural" },
+          "marion": { "name": "Marion", "voice": "en-NZ-MollyNeural" }
+        },
+        "lines": [
+          { "speaker": "N", "text": "You will hear a planning officer talking to local residents about changes to their area. First, you have some time to look at questions one to six.", "pauseAfterMs": 2500 },
+          { "speaker": "N", "text": "Now listen carefully and answer questions one to six.", "pauseAfterMs": 1200 },
+          { "speaker": "marion", "text": "Good evening, everyone, and thank you for coming. I'm Marion Pryce from the council's planning team, and tonight I'm going to describe how Eastgate will change over the next five years.", "pauseAfterMs": 500 },
+          { "speaker": "marion", "text": "Most of you know Eastgate well. It's one of the most densely populated parts of the city, and for a long time it's also been one of the most overcrowded, with families sharing flats that are far too small for them.", "pauseAfterMs": 500 },
+          { "speaker": "marion", "text": "So, let me describe the plan. Imagine you're standing outside Eastgate station, facing the river. At the moment, directly in front of you, there's a large car park. That car park will be replaced by a public square with trees and benches.", "pauseAfterMs": 400 },
+          { "speaker": "marion", "text": "The street that leads from the station down to the river will be pedestrianised, so there'll be no cars at all, apart from deliveries before ten in the morning.", "pauseAfterMs": 500 },
+          { "speaker": "marion", "text": "On the left-hand side of the square is the old wool exchange. It's the area's best-known landmark, and some of you were worried it would be knocked down. I can promise you it won't. It's going to be redeveloped as a library and community centre, and the clock tower on top will be repaired.", "pauseAfterMs": 500 },
+          { "speaker": "marion", "text": "Now, the biggest change is along the river. The empty warehouses to the right of the square will be demolished, and in their place we'll build around four hundred new homes.", "pauseAfterMs": 400 },
+          { "speaker": "marion", "text": "I know the question everyone asks is about price. At first we hoped that half of them would be affordable housing, but that wasn't possible within the budget. The council has now agreed on forty per cent, and those homes will be for rent, not for sale.", "pauseAfterMs": 500 },
+          { "speaker": "marion", "text": "Between the new homes and the river, there'll be a strip of green space about the length of two football pitches, with a children's playground at the end nearest the bridge.", "pauseAfterMs": 500 },
+          { "speaker": "marion", "text": "Of course, the infrastructure has to come first. Before any of the homes are finished, a new primary school will open behind the wool exchange. We're also adding a cycle lane along the river, so that people can commute into the city centre without a car.", "pauseAfterMs": 400 },
+          { "speaker": "marion", "text": "And bus route twelve, which at present ends at the station, will be extended to the hospital on the outskirts.", "pauseAfterMs": 500 },
+          { "speaker": "marion", "text": "Some people have asked why we aren't building on the fields outside the city instead. Simply put, we want to avoid more urban sprawl. Building on land that has already been used protects the countryside, and it means new residents will be close to shops, jobs and transport.", "pauseAfterMs": 400 },
+          { "speaker": "marion", "text": "Finally, I want to reassure those of you who live in the residential streets behind the station: nothing there will change. Right, I'll take questions now.", "pauseAfterMs": 1500 },
+          { "speaker": "N", "text": "That is the end of the recording.", "pauseAfterMs": 0 }
+        ]
+      },
+      "questions": [
+        { "type": "text", "text": "Questions 1–2. Choose the correct letter." },
+        {
+          "type": "choice", "id": "l1",
+          "prompt": "1. What will happen to the car park in front of the station?",
+          "options": ["It will be made larger.", "It will become a public square.", "It will be moved to the riverside."],
+          "answer": 1,
+          "why": { "tr": "\"That car park will be replaced by a public square with trees and benches.\" \"at the moment\" şimdiki durumu anlatıyor; soru değişikliği soruyor.", "ar": "\"That car park will be replaced by a public square with trees and benches.\" عبارة at the moment تصف الوضع الحالي، والسؤال عن التغيير.", "en": "\"That car park will be replaced by a public square with trees and benches.\"" },
+          "example": "The old car park will be replaced by a small park."
+        },
+        {
+          "type": "choice", "id": "l2",
+          "prompt": "2. What proportion of the new homes will be affordable housing?",
+          "options": ["a quarter", "40 per cent", "half"],
+          "answer": 1,
+          "why": { "tr": "\"At first we hoped that half of them would be affordable housing, but that wasn't possible\" → yarısı tuzak. Son karar: \"The council has now agreed on forty per cent\".", "ar": "\"At first we hoped that half ... but that wasn't possible\"، فالنصف فخّ. القرار النهائي: \"The council has now agreed on forty per cent\".", "en": "Half was the first hope, \"but that wasn't possible\"; \"the council has now agreed on forty per cent\"." },
+          "example": "We hoped for half, but in the end we agreed on forty per cent."
+        },
+        { "type": "text", "text": "Questions 3–4. Complete the sentences. Write ONE WORD ONLY for each answer." },
+        {
+          "type": "gap", "id": "l3",
+          "prompt": "3. The old wool exchange will become a library and ___ centre.",
+          "answers": ["community"],
+          "why": { "tr": "\"It's going to be redeveloped as a library and community centre\". Yıkılmayacak; yeni bir kullanım alacak.", "ar": "\"It's going to be redeveloped as a library and community centre\". لن يُهدم، بل سيُستخدم استخدامًا جديدًا.", "en": "\"It's going to be redeveloped as a library and community centre.\"" },
+          "example": "The old church is now used as a community centre."
+        },
+        {
+          "type": "gap", "id": "l4",
+          "prompt": "4. The children's playground will be at the end of the green space nearest the ___.",
+          "answers": ["bridge"],
+          "why": { "tr": "\"with a children's playground at the end nearest the bridge\". \"river\" de geçiyor ama yeşil alan zaten nehir ile evlerin arasında; uç nokta köprüye yakın olan.", "ar": "\"with a children's playground at the end nearest the bridge\". كلمة river مذكورة أيضًا، لكن المساحة الخضراء كلها بجانب النهر، والطرف المقصود هو القريب من الجسر.", "en": "\"With a children's playground at the end nearest the bridge.\" The whole strip is by the river." },
+          "example": "The café is at the end of the park nearest the bridge."
+        },
+        { "type": "text", "text": "Questions 5–6. Where does the speaker say each of these will be? Choose the correct letter." },
+        {
+          "type": "choice", "id": "l5",
+          "prompt": "5. the new primary school",
+          "options": ["in front of the station", "behind the wool exchange", "along the river", "on the outskirts", "behind the station"],
+          "answer": 1,
+          "why": { "tr": "\"a new primary school will open behind the wool exchange\". E tuzak: istasyonun arkasında konut sokakları var ve orada \"nothing ... will change\".", "ar": "\"a new primary school will open behind the wool exchange\". الخيار E فخّ: خلف المحطة شوارع سكنية لن يتغير فيها شيء.", "en": "\"A new primary school will open behind the wool exchange.\" Behind the station, nothing will change." },
+          "example": "The new school will be built behind the library."
+        },
+        {
+          "type": "choice", "id": "l6",
+          "prompt": "6. the new cycle lane",
+          "options": ["in front of the station", "behind the wool exchange", "along the river", "on the outskirts", "behind the station"],
+          "answer": 2,
+          "why": { "tr": "\"We're also adding a cycle lane along the river\". D tuzak: \"outskirts\" otobüs hattının gideceği hastane için söylendi.", "ar": "\"We're also adding a cycle lane along the river\". الخيار D فخّ: الضواحي ذُكرت بخصوص المستشفى الذي سيصل إليه خط الحافلات.", "en": "\"We're also adding a cycle lane along the river.\" The outskirts are where the hospital is." },
+          "example": "There is a cycle lane along the river all the way to the centre."
+        }
+      ]
+    },
+    {
+      "kind": "read",
+      "i18n": {"ar":{"title":"القراءة: مطابقة المعلومات (Matching information)","intro":"نص أكاديمي يناقش هل ينبغي أن تتوسع المدن أفقيًا نحو الخارج أم عموديًا نحو الأعلى. الفقرات مرقّمة بالحروف A–E.","tip":"في أسئلة Matching information لا تأتي العبارات بترتيب النص، وقد تكون الفقرة الواحدة إجابة لأكثر من سؤال. سجّل أولًا الفكرة الرئيسية لكل فقرة بكلمة أو كلمتين، ثم ابحث عن الفكرة المفتاحية في العبارة (مثل \"a rule\" أو \"a distinction\") بمرادفها."},"en":{"title":"Reading: Matching information","intro":"An academic text debating whether cities should grow outwards or upwards. The paragraphs are labelled A–E.","tip":"In Matching information questions the statements are not in text order, and one paragraph can be the answer more than once. First note the main idea of each paragraph in a word or two; then look for the key idea in the statement (for example \"a rule\" or \"a distinction\") through a synonym."}},
+      "title": "Okuma: bilgi eşleştirme (Matching information)",
+      "intro": "Şehirlerin dışa doğru mu yoksa yukarı doğru mu büyümesi gerektiğini tartışan akademik bir metin. Paragraflar A–E harfleriyle işaretli.",
+      "tip": "Matching information sorularında ifadeler metnin sırasında değildir ve bir paragraf birden fazla kez cevap olabilir. Önce her paragrafın ana fikrini bir iki kelimeyle not et; sonra ifadedeki anahtar fikri (örneğin \"a rule\", \"a distinction\") eş anlamlısıyla ara.",
+      "passage": [
+        { "type": "heading", "text": "Upwards or Outwards? How Cities Grow" },
+        { "type": "text", "text": "A  As the world's urban population grows, cities face a basic choice. They can grow outwards, onto the farmland and countryside around their edges, or upwards, by fitting more homes into the land they already occupy. For much of the twentieth century, many cities chose the first option. New residential suburbs spread across the outskirts, each house with its own garden and driveway. For many families this was an attractive way of life, but it came at a price." },
+        { "type": "text", "text": "B  Critics of urban sprawl point to several problems. Low-density suburbs need long roads, pipes and power lines to serve relatively few households, so their infrastructure is expensive to build and to maintain. Because shops and workplaces are often far away, residents usually depend on cars, and many face a long commute every day. Farmland and wildlife habitats are also lost as the city expands." },
+        { "type": "text", "text": "C  Building upwards, or increasing density, is often presented as the solution. A densely populated neighbourhood can support frequent public transport, as well as local shops and services within walking distance. Some cities have redeveloped old industrial land, such as former docks and railway yards, turning it into new districts of flats, offices and pedestrianised streets. In a number of cases, a disused factory or warehouse has been kept as a landmark and given a new life as a museum or a market hall." },
+        { "type": "text", "text": "D  However, density is not the same as quality. Some of the tower blocks that were built quickly and cheaply in the mid-twentieth century showed that putting large numbers of people together, without good design or maintenance, can create unhappy places. Planners today stress the difference between density and overcrowding: the first describes how many homes there are in an area, while the second describes homes that are too small for the people living in them. A well-designed dense neighbourhood also needs green space, such as parks and courtyards, where residents can relax and children can play." },
+        { "type": "text", "text": "E  The question of cost is equally important. Land in city centres is expensive, so new flats in popular areas are often sold at prices that local workers cannot pay. Many city governments now require developers to include a share of affordable housing in large projects, to be sold or rented below the market price. Whether a city grows outwards or upwards, the real test of its planning may be whether ordinary people can afford to live in it." }
+      ],
+      "questions": [
+        { "type": "heading", "text": "Questions 1–6: Which paragraph contains the following information?" },
+        { "type": "text", "text": "Choose A, B, C, D or E. The statements are not in the order of the text. A paragraph may be the answer more than once." },
+        {
+          "type": "choice", "id": "r1",
+          "prompt": "1. examples of old buildings being kept and used for a different purpose",
+          "options": ["A", "B", "C", "D", "E"],
+          "answer": 2,
+          "why": { "tr": "Paragraf C: \"a disused factory or warehouse has been kept as a landmark and given a new life as a museum or a market hall\". \"a different purpose\" = \"a new life as a museum\".", "ar": "الفقرة C: \"a disused factory or warehouse has been kept as a landmark and given a new life as a museum or a market hall\"، أي استخدام مختلف.", "en": "Paragraph C: a disused factory \"has been kept as a landmark and given a new life as a museum or a market hall\"." },
+          "example": "The old power station was kept and turned into an art gallery."
+        },
+        {
+          "type": "choice", "id": "r2",
+          "prompt": "2. a reason why providing services to suburbs is costly",
+          "options": ["A", "B", "C", "D", "E"],
+          "answer": 1,
+          "why": { "tr": "Paragraf B: uzun yollar ve borular az sayıda haneye hizmet ediyor, \"so their infrastructure is expensive to build and to maintain\". E'de de maliyet var ama konu arsa fiyatı, banliyö hizmetleri değil.", "ar": "الفقرة B: طرق وأنابيب طويلة تخدم عددًا قليلًا من المنازل، \"so their infrastructure is expensive to build and to maintain\". الفقرة E عن غلاء الأرض لا عن خدمات الضواحي.", "en": "Paragraph B: \"their infrastructure is expensive to build and to maintain\". E is about land prices in the centre." },
+          "example": "Serving a few houses with long roads is expensive."
+        },
+        {
+          "type": "choice", "id": "r3",
+          "prompt": "3. an explanation of the difference between two terms",
+          "options": ["A", "B", "C", "D", "E"],
+          "answer": 3,
+          "why": { "tr": "Paragraf D: \"the difference between density and overcrowding: the first describes… while the second describes…\". İki terim: density ve overcrowding.", "ar": "الفقرة D: \"the difference between density and overcrowding: the first describes… while the second describes…\". المصطلحان: density وovercrowding.", "en": "Paragraph D explains \"the difference between density and overcrowding\"." },
+          "example": "The teacher explained the difference between weather and climate."
+        },
+        {
+          "type": "choice", "id": "r4",
+          "prompt": "4. a description of a way of living that many people found appealing",
+          "options": ["A", "B", "C", "D", "E"],
+          "answer": 0,
+          "why": { "tr": "Paragraf A: bahçeli, garaj yollu banliyö evleri; \"For many families this was an attractive way of life\". \"appealing\" = \"attractive\".", "ar": "الفقرة A: بيوت الضواحي ذات الحدائق، و\"For many families this was an attractive way of life\". كلمة appealing تعني attractive.", "en": "Paragraph A: \"For many families this was an attractive way of life.\" Appealing = attractive." },
+          "example": "Living by the sea is an attractive way of life for many retired people."
+        },
+        {
+          "type": "choice", "id": "r5",
+          "prompt": "5. a rule that some authorities have introduced for builders",
+          "options": ["A", "B", "C", "D", "E"],
+          "answer": 4,
+          "why": { "tr": "Paragraf E: \"Many city governments now require developers to include a share of affordable housing\". \"authorities\" = city governments, \"builders\" = developers, \"rule\" = require.", "ar": "الفقرة E: \"Many city governments now require developers to include a share of affordable housing\". authorities = city governments، وbuilders = developers، وrule = require.", "en": "Paragraph E: city governments \"require developers to include a share of affordable housing\"." },
+          "example": "The city requires developers to build a park in every large project."
+        },
+        {
+          "type": "choice", "id": "r6",
+          "prompt": "6. a mention of natural areas that disappear as cities spread",
+          "options": ["A", "B", "C", "D", "E"],
+          "answer": 1,
+          "why": { "tr": "Paragraf B'nin son cümlesi: \"Farmland and wildlife habitats are also lost as the city expands.\" A'da kırsaldan söz ediliyor ama kaybolmasından değil. B ikinci kez cevap oluyor.", "ar": "آخر جملة في الفقرة B: \"Farmland and wildlife habitats are also lost as the city expands.\" الفقرة A تذكر الريف دون الحديث عن فقدانه. B جواب للمرة الثانية.", "en": "Paragraph B: \"Farmland and wildlife habitats are also lost as the city expands.\" B is used twice." },
+          "example": "Many wildlife habitats were lost when the motorway was built."
+        }
+      ]
+    },
+    {
+      "kind": "language",
+      "i18n": {"ar":{"title":"اللغة: المبني للمجهول (passive) لوصف التغيير"},"en":{"title":"Language: The passive for describing change"}},
+      "title": "Dil: değişimi anlatmak için edilgen yapı (passive)",
+      "explain": {
+        "tr": "Bir yerin nasıl değiştiğini anlatırken önemli olan kimin yaptığı değil, neyin değiştiğidir; bu yüzden edilgen yapı (be + V3) kullanılır. Geçmişten bugüne değişim: has/have been + V3 (The factory has been converted into flats). Geçmişte belli bir zaman: was/were + V3 (The bridge was built in 2010). Gelecek plan: will be + V3 (The car park will be replaced by a park). Şu anda süren iş: is/are being + V3. Task 1 harita sorularında bu yapı neredeyse her cümlede gerekir. Fiil özneyle uyumlu olmalı: The houses have been…, The road has been…",
+        "ar": "عند وصف تغيّر مكانٍ ما، المهم هو ما تغيّر لا من قام بالتغيير، ولذلك نستخدم المبني للمجهول (be + التصريف الثالث). تغيّر من الماضي حتى الآن: has/have been + V3 (The factory has been converted into flats). وقت محدد في الماضي: was/were + V3 (The bridge was built in 2010). خطة مستقبلية: will be + V3 (The car park will be replaced by a park). عمل جارٍ الآن: is/are being + V3. في خرائط Task 1 تحتاج هذه البنية في كل جملة تقريبًا، ويجب أن يتوافق الفعل مع الفاعل: The houses have been… / The road has been…",
+        "en": "When you describe how a place has changed, what changed matters more than who did it, so use the passive (be + past participle). Change up to now: has/have been + past participle (The factory has been converted into flats). A finished time in the past: was/were + past participle (The bridge was built in 2010). Plans: will be + past participle (The car park will be replaced by a park). Work in progress: is/are being + past participle. Task 1 maps need this in almost every sentence. Make the verb agree with the subject: The houses have been… / The road has been…"
+      },
+      "examples": [
+        "The old warehouses have been demolished, and four hundred homes have been built in their place.",
+        "The high street was pedestrianised in 2015, so cars can no longer drive through the centre.",
+        "The car park will be replaced by a public square with trees and benches.",
+        "The station is being redeveloped, and a new bus station will be added next to it."
+      ],
+      "questions": [
+        {
+          "type": "choice", "id": "g1",
+          "prompt": "Since 2010, three new parks ___ in the city centre.",
+          "options": ["have been created", "have created", "were creating", "are created"],
+          "answer": 0,
+          "why": { "tr": "\"Since 2010\" geçmişten bugüne süren bir dönem: present perfect. Parklar kendileri bir şey yaratmıyor, yaratılıyor: have been created (edilgen).", "ar": "Since 2010 تدل على فترة من الماضي حتى الآن، أي present perfect. والحدائق لا تُنشئ شيئًا بل تُنشأ، فنستخدم المبني للمجهول: have been created.", "en": "\"Since 2010\" needs the present perfect, and parks are created by someone: have been created." },
+          "example": "Since the new law, many cycle lanes have been created."
+        },
+        {
+          "type": "choice", "id": "g2",
+          "prompt": "Next year, the old cinema ___ into flats.",
+          "options": ["will convert", "will be converted", "has been converting", "is converted"],
+          "answer": 1,
+          "why": { "tr": "\"Next year\" gelecek plan; sinema dönüştürülecek: will be + V3 = will be converted. \"will convert\" sinemanın bir şeyi dönüştüreceği anlamına gelir.", "ar": "Next year خطة مستقبلية، والسينما ستُحوَّل: will be + V3 = will be converted. أما will convert فتعني أن السينما ستحوّل شيئًا.", "en": "A future plan in the passive: will be converted. \"Will convert\" would make the cinema the doer." },
+          "example": "The old school will be converted into a hotel."
+        },
+        {
+          "type": "gap", "id": "g3",
+          "prompt": "Write the correct form of BUILD: A shopping centre has been ___ on the site of the old factory.",
+          "answers": ["built"],
+          "why": { "tr": "\"has been\" sonrası fiilin üçüncü hâli (V3) gelir: build – built – built.", "ar": "بعد has been يأتي التصريف الثالث للفعل: build – built – built.", "en": "After has been we need the past participle: build – built – built." },
+          "example": "A new bridge has been built across the river."
+        },
+        {
+          "type": "choice", "id": "g4",
+          "prompt": "Which sentence is the best choice for describing a map in Writing Task 1?",
+          "options": ["They have knocked down the houses.", "The houses have been knocked down.", "Somebody knocked the houses.", "The houses has been knocked down."],
+          "answer": 1,
+          "why": { "tr": "B edilgen ve özne-fiil uyumu doğru (houses → have). A'da \"They\" belirsiz ve gayriresmî; C'de anlam eksik; D'de \"houses has\" uyumsuz.", "ar": "B مبني للمجهول والفعل يوافق الفاعل (houses → have). في A الضمير They غامض وغير رسمي، وC ناقصة المعنى، وD فيها خطأ توافق houses has.", "en": "B is passive with correct agreement. A uses a vague \"they\", C is incomplete, D has \"houses has\"." },
+          "example": "The trees along the road have been cut down."
+        },
+        {
+          "type": "gap", "id": "g5",
+          "prompt": "Write ONE word: The main street ___ been pedestrianised, so cars are no longer allowed there.",
+          "answers": ["has"],
+          "why": { "tr": "Özne tekil (The main street) ve sonuç bugüne bağlı (no longer allowed): has been + V3.", "ar": "الفاعل مفرد (The main street) والنتيجة مرتبطة بالحاضر (no longer allowed)، لذلك has been + V3.", "en": "Singular subject and a present result: has been pedestrianised." },
+          "example": "The square has been pedestrianised, and it is much quieter now."
+        }
+      ]
+    },
+    {
+      "kind": "write",
+      "i18n": {"ar":{"title":"الكتابة · Task 1: تغيّر بلدة (خريطة)","tip":"ابدأ بجملة تمهيدية تعيد فيها صياغة السؤال بكلماتك. ثم قدّم ملخصًا عامًا (overview)، مثل أن البلدة أصبحت سكنية أكثر وأنسب للمشاة. بعد ذلك صِف التغييرات منطقةً منطقة (الشمال، الوسط، الشرق…). استخدم المبني للمجهول (has been converted, was replaced) ولا تعبّر عن رأيك: لا يُكتب رأي شخصي في Task 1."},"en":{"title":"Writing · Task 1: How a town has changed (map)","tip":"Start with an introductory sentence that rewrites the question in your own words. Then give an overview, such as that the town has become more residential and pedestrian-friendly. After that, describe the changes area by area (north, centre, east…). Use the passive (has been converted, was replaced) and don't give opinions: Task 1 has no personal views."}},
+      "title": "Yazma · Task 1: bir kasabanın değişimi (harita)",
+      "task": 1,
+      "prompt": "The information below describes the town of Morrowby in 2005 and today. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "data": "Practice data (an invented town, given in words instead of two maps)\n\nMorrowby in 2005\n• North: farmland on both sides of the main road.\n• Centre: a high street open to traffic, with a car park to the east of it.\n• East: a factory beside the river; no way to cross the river on foot.\n• South: a small railway station and a row of houses.\n• West: a large wood.\n\nMorrowby today\n• North: farmland on the west side of the main road only; a housing estate of about 200 homes on the east side.\n• Centre: the high street is pedestrianised; the car park has become a park with a playground.\n• East: the factory has been converted into flats; a footbridge now crosses the river.\n• South: the station is larger, with a new bus station next to it; the row of houses is unchanged.\n• West: the wood is smaller, because a sports centre has been built on its southern edge.",
+      "minutes": 20,
+      "minWords": 150,
+      "tip": "Önce bir giriş cümlesiyle soruyu kendi kelimelerinle yaz. Sonra genel bir özet (overview) ver: kasaba daha konut ağırlıklı ve yaya dostu oldu gibi. Ardından değişiklikleri bölge bölge (kuzey, merkez, doğu…) anlat. Edilgen yapı kullan (has been converted, was replaced) ve fikir belirtme: Task 1'de kişisel görüş yazılmaz.",
+      "model": "The information describes how the town of Morrowby has changed between 2005 and the present day.\n\nOverall, the town has become more residential and more pleasant for pedestrians, while some of its industrial land and countryside has been lost or given new uses.\n\nThe most noticeable change is in the north. In 2005 there was farmland on both sides of the main road, but the land to the east has since been redeveloped as a housing estate of around 200 homes. The farmland to the west of the road remains.\n\nIn the centre, the high street, which was once open to traffic, has been pedestrianised, and the car park to the east of it has been replaced by a park with a playground, creating new green space in the centre. Nearby, the riverside factory has been converted into flats, and a footbridge has been built across the river, which could not previously be crossed on foot.\n\nIn the south, the railway station has been extended and a bus station has been added next to it, although the row of houses has not changed. Finally, the wood in the west has become smaller, as a sports centre has been constructed on its southern edge."
+    },
+    {
+      "kind": "speak",
+      "i18n": {"ar":{"title":"المحادثة: المكان الذي تعيش فيه"},"en":{"title":"Speaking: Where you live"}},
+      "title": "Konuşma: yaşadığın yer",
+      "part1": [
+        "Do you live in a house or a flat?",
+        "What do you like most about the area where you live?",
+        "Is it easy to get around your town or city?",
+        "Has your neighbourhood changed much since you were a child?"
+      ],
+      "card": {
+        "title": "Describe a place in your town or city that has changed a lot.",
+        "points": ["where the place is", "what it was like before", "what it is like now"],
+        "explain": "and explain whether you think the change has been good for the people who live there."
+      },
+      "useful": [
+        "When I was a child, there used to be… there, but it has been replaced by…",
+        "It has been completely redeveloped over the last few years.",
+        "These days it's much more crowded, especially at weekends.",
+        "One thing I really miss is the green space we used to have.",
+        "On the positive side, it's become much easier to get to by public transport.",
+        "On balance, I'd say the change has been good for most residents, although…"
+      ]
+    }
+  ]
+}

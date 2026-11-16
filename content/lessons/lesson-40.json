@@ -1,0 +1,779 @@
+{
+  "id": "lesson-40",
+  "number": 40,
+  "title": "The Future of Work and Society",
+  "topic": "Future of work",
+  "level": "B2+",
+  "goal": "Follow a seminar planning discussion and an academic text on automation and work, use idiomatic language naturally in Speaking, and know when to keep it out of Writing.",
+  "steps": [
+    {
+      "kind": "words",
+      "i18n": {"ar":{"title":"المفردات: مستقبل العمل والمجتمع","intro":"الدرس الأخير في المسار: الأتمتة، والعمل المرن، والتعلّم مدى الحياة. هذا الموضوع يتكرر كثيرًا في Task 2 ويجمع مفردات التكنولوجيا والاقتصاد والتعليم من الدروس السابقة. تتيح لك هذه الكلمات الاثنتا عشرة أن تصف بلغة دقيقة كيف يتغير العمل وما أثره في المجتمع."},"en":{"title":"Vocabulary: the future of work and society","intro":"The last lesson of the path: automation, flexible working and lifelong learning. This topic comes up very often in Task 2 and brings together technology, economics and education vocabulary from earlier lessons. These 12 words let you describe precisely how work is changing and its effects on society."}},
+      "title": "Kelimeler: işin ve toplumun geleceği",
+      "intro": "Yolun son dersi: otomasyon, esnek çalışma ve yaşam boyu öğrenme. Bu konu Task 2'de çok sık çıkar ve önceki derslerdeki teknoloji, ekonomi ve eğitim kelimelerini bir araya getirir. Bu 12 kelime, işin nasıl değiştiğini ve topluma etkilerini kesin bir dille anlatmanı sağlar.",
+      "words": [
+        {
+          "en": "automation",
+          "pos": "noun",
+          "tr": "otomasyon, makineleşme",
+          "ar": "الأتمتة",
+          "example": "Automation has replaced many routine tasks in factories."
+        },
+        {
+          "en": "job security",
+          "pos": "phrase",
+          "tr": "iş güvencesi",
+          "ar": "الأمان الوظيفي",
+          "example": "Many young workers value job security more than a high salary."
+        },
+        {
+          "en": "remote working",
+          "pos": "phrase",
+          "tr": "uzaktan çalışma",
+          "ar": "العمل عن بُعد",
+          "example": "Remote working became far more common after 2020."
+        },
+        {
+          "en": "gig economy",
+          "pos": "phrase",
+          "tr": "kısa süreli, iş bazlı (platform) ekonomi",
+          "ar": "اقتصاد الأعمال المؤقتة (الحرّة)",
+          "example": "Delivery riders are a familiar part of the gig economy."
+        },
+        {
+          "en": "lifelong learning",
+          "pos": "phrase",
+          "tr": "yaşam boyu öğrenme",
+          "ar": "التعلّم مدى الحياة",
+          "example": "Lifelong learning will be essential as jobs keep changing."
+        },
+        {
+          "en": "reskill",
+          "pos": "verb",
+          "tr": "yeni beceriler kazandırmak / kazanmak (yeniden eğitim)",
+          "ar": "يكتسب (أو يُكسِب) مهارات جديدة",
+          "example": "The company paid to reskill its staff when the factory was automated."
+        },
+        {
+          "en": "workforce",
+          "pos": "noun",
+          "tr": "işgücü, çalışanların tümü",
+          "ar": "القوى العاملة",
+          "example": "Women now make up almost half of the workforce."
+        },
+        {
+          "en": "made redundant",
+          "pos": "phrase",
+          "tr": "işten çıkarılmış (iş ortadan kalktığı için)",
+          "ar": "مُسرَّح من العمل (لإلغاء الوظيفة)",
+          "example": "Two hundred staff were made redundant when the branch closed."
+        },
+        {
+          "en": "work-life balance",
+          "pos": "phrase",
+          "tr": "iş-yaşam dengesi",
+          "ar": "التوازن بين العمل والحياة",
+          "example": "Flexible hours can improve employees' work-life balance."
+        },
+        {
+          "en": "universal basic income",
+          "pos": "phrase",
+          "tr": "evrensel temel gelir",
+          "ar": "الدخل الأساسي الشامل",
+          "example": "Several regions have tested a universal basic income on a small scale."
+        },
+        {
+          "en": "obsolete",
+          "pos": "adjective",
+          "tr": "modası geçmiş, artık kullanılmayan",
+          "ar": "متقادم؛ عفا عليه الزمن",
+          "example": "Some skills become obsolete within a few years."
+        },
+        {
+          "en": "productivity",
+          "pos": "noun",
+          "tr": "verimlilik",
+          "ar": "الإنتاجية",
+          "example": "New software can raise productivity, but only if staff are trained to use it."
+        }
+      ],
+      "practice": [
+        {
+          "type": "choice",
+          "id": "w1",
+          "prompt": "If your job disappears because the company no longer needs that role, you are ___.",
+          "options": [
+            "made redundant",
+            "promoted",
+            "self-employed",
+            "reskilled"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "İş ortadan kalktığı için çıkarılmak \"be made redundant\"tır. \"promoted\" terfi etmek, \"self-employed\" serbest çalışan, \"reskilled\" yeniden eğitilmiş demektir.",
+            "ar": "فقدان العمل لأن الوظيفة أُلغيت هو be made redundant. أما promoted فتعني تمت ترقيته، وself-employed يعمل لحسابه، وreskilled أُعيد تأهيله.",
+            "en": "Losing your job because the role no longer exists = made redundant."
+          },
+          "example": "He was made redundant after twenty years with the company."
+        },
+        {
+          "type": "choice",
+          "id": "w2",
+          "prompt": "Work arranged through apps, often job by job, without a permanent contract, is part of the ___.",
+          "options": [
+            "gig economy",
+            "workforce",
+            "job security",
+            "productivity"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Uygulamalar üzerinden iş iş yapılan, kalıcı sözleşmesiz çalışma \"gig economy\"dir.",
+            "ar": "العمل عبر التطبيقات مهمةً بمهمة ودون عقد دائم هو gig economy.",
+            "en": "App-based, task-by-task work = the gig economy."
+          },
+          "example": "Many students earn extra money in the gig economy."
+        },
+        {
+          "type": "gap",
+          "id": "w3",
+          "prompt": "Write the correct form of PRODUCE: Better training usually leads to higher ___.",
+          "answers": [
+            "productivity"
+          ],
+          "why": {
+            "tr": "\"higher\" sıfatından sonra isim gerekir; iş bağlamında \"verimlilik\" anlamı için productivity.",
+            "ar": "بعد الصفة higher نحتاج إلى اسم، وفي سياق العمل نقول productivity (الإنتاجية).",
+            "en": "A noun meaning efficiency at work: productivity."
+          },
+          "example": "Productivity rose after the new system was introduced."
+        },
+        {
+          "type": "choice",
+          "id": "w4",
+          "prompt": "Something that is no longer used because something newer has replaced it is ___.",
+          "options": [
+            "obsolete",
+            "redundant",
+            "remote",
+            "flexible"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "\"obsolete\" = modası geçmiş, artık kullanılmayan (teknoloji, beceri). \"redundant\" daha çok insanlar ve işler için kullanılır.",
+            "ar": "obsolete تعني متقادمًا لم يعد مستخدمًا (تقنية أو مهارة). أما redundant فتُستخدم غالبًا للأشخاص والوظائف.",
+            "en": "No longer used = obsolete."
+          },
+          "example": "Fax machines are now almost obsolete."
+        },
+        {
+          "type": "gap",
+          "id": "w5",
+          "prompt": "Write ONE word: Many people who work long hours struggle to find a healthy work-life ___.",
+          "answers": [
+            "balance"
+          ],
+          "why": {
+            "tr": "Sabit kalıp \"work-life balance\" (iş-yaşam dengesi).",
+            "ar": "التعبير الثابت هو work-life balance.",
+            "en": "The phrase is \"work-life balance\"."
+          },
+          "example": "A four-day week could improve work-life balance."
+        },
+        {
+          "type": "choice",
+          "id": "w6",
+          "prompt": "Which sentence uses \"reskill\" correctly?",
+          "options": [
+            "Workers whose jobs are automated may need to reskill.",
+            "The machine reskilled the workers out of their jobs.",
+            "She reskilled a new car last week.",
+            "The factory was reskilled by the storm."
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "\"reskill\" = yeni bir iş için yeni beceriler öğrenmek. Diğer cümleler kelimeyi anlamsız biçimde kullanıyor.",
+            "ar": "reskill تعني تعلّم مهارات جديدة لعمل جديد. الجمل الأخرى تستخدم الكلمة بلا معنى.",
+            "en": "To reskill = to learn new skills for different work."
+          },
+          "example": "The government funds courses to help adults reskill."
+        }
+      ]
+    },
+    {
+      "kind": "listen",
+      "i18n": {"ar":{"title":"الاستماع · Part 3: ندوة عن مستقبل العمل","intro":"طالبان، Zoe وHamid، يخططان لعرضهما في ندوة عن مستقبل العمل. تسجيل Part 3 بطول الامتحان؛ يتفق المتحدثان في بعض النقاط ويختلفان في أخرى. اقرأ الأسئلة أولًا؛ يُشغَّل التسجيل مرة واحدة فقط.","tip":"في أسئلة \"من قال ذلك؟\" إذا كان هناك خيار \"both\" فكن حذرًا: عندما يقول أحدهما فكرة ويردّ الآخر بـ\"OK\" فقط، فهذه ليست دائمًا موافقة كاملة. الموافقة الحقيقية تأتي عادةً بـ\"Agreed\" أو \"Exactly\" أو بتكرار الفكرة. وبالمثل، \"I'm a bit sceptical\" و\"I'd rather we didn't…\" تدلّان على الاعتراض."},"en":{"title":"Listening · Part 3: a seminar on the future of work","intro":"Two students, Zoe and Hamid, plan their seminar presentation on the future of work. An exam-length Part 3 recording; the two speakers agree on some points and disagree on others. Read the questions first; the recording plays once.","tip":"In \"who said it?\" questions, be careful if there is a \"both\" option: when one speaker says an idea and the other only says \"OK\", that is not always full agreement. Real agreement usually comes with \"Agreed\", \"Exactly\" or by repeating the idea. In the same way, \"I'm a bit sceptical\" and \"I'd rather we didn't…\" show disagreement."}},
+      "title": "Dinleme · Part 3: işin geleceği semineri",
+      "intro": "İki öğrenci, Zoe ve Hamid, işin geleceği hakkındaki seminer sunumlarını planlıyor. Sınav uzunluğunda bir Part 3 kaydı; iki konuşmacı bazı konularda anlaşıyor, bazılarında anlaşmıyor. Önce soruları oku; kayıt bir kez çalar.",
+      "tip": "\"Kim söyledi?\" sorularında \"both\" seçeneği varsa dikkatli ol: biri bir fikri söyleyip diğeri sadece \"OK\" dediğinde bu her zaman tam bir katılım değildir. Gerçek bir katılım genellikle \"Agreed\", \"Exactly\" ya da fikrin tekrarıyla gelir. Aynı şekilde \"I'm a bit sceptical\", \"I'd rather we didn't…\" itirazı gösterir.",
+      "audio": {
+        "type": "audio",
+        "id": "l-audio",
+        "speakers": {
+          "N": {
+            "name": "Narrator",
+            "voice": "en-GB-SoniaNeural"
+          },
+          "zoe": {
+            "name": "Zoe",
+            "voice": "en-NZ-MollyNeural"
+          },
+          "hamid": {
+            "name": "Hamid",
+            "voice": "en-GB-ThomasNeural"
+          }
+        },
+        "lines": [
+          {
+            "speaker": "N",
+            "text": "You will hear two students, Zoe and Hamid, planning a seminar presentation on the future of work. First, you have some time to look at questions one to six.",
+            "pauseAfterMs": 2500
+          },
+          {
+            "speaker": "N",
+            "text": "Now listen carefully and answer questions one to six.",
+            "pauseAfterMs": 1200
+          },
+          {
+            "speaker": "zoe",
+            "text": "Hamid, have you got a minute? I wanted to go over our seminar on the future of work before Monday.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "hamid",
+            "text": "Sure. I've read most of the articles on the list. Which side are we taking?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "zoe",
+            "text": "Neither, officially. We're meant to present both views on automation and then make a recommendation. I thought we could start with the history, because people have been predicting the end of work for two hundred years, and it hasn't happened yet.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "hamid",
+            "text": "Right, the weavers who smashed machines in the early nineteenth century, and then the panic about computers in the sixties. Every time, new jobs appeared that nobody could have imagined.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "zoe",
+            "text": "Exactly. So that's the optimistic case. Automation raises productivity, things get cheaper, people spend the money on other things, and that creates work elsewhere.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "hamid",
+            "text": "But I don't want us to make it sound too easy. The new jobs don't necessarily go to the same people. If you're a fifty-five-year-old warehouse worker who's been made redundant, being told that there are lots of vacancies for software engineers isn't much comfort.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "zoe",
+            "text": "True. And the transition can take a generation. That's what worries me most, actually: not mass unemployment, but a long, painful adjustment for the people caught in the middle of it.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "hamid",
+            "text": "Which is where lifelong learning comes in. I found a good article arguing that the idea of education finishing at twenty-two is already obsolete. People will need to reskill several times in their careers.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "zoe",
+            "text": "I'm a bit sceptical about that one. It's easy for governments to say \"retrain\", but courses are often expensive, and people with families and full-time jobs simply don't have the time. I thought the article was rather naive.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "hamid",
+            "text": "Fair enough, but that's not an argument against retraining; it's an argument for funding it properly. Some countries give every adult an individual training budget they can spend over their working life.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "zoe",
+            "text": "OK, that's a good example. Let's include it. What about the gig economy? I've got some notes on delivery riders and app-based work.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "hamid",
+            "text": "It fits, but under a different heading, I think. It isn't really about machines replacing people. It's about job security. The work exists; it's the contracts that have changed.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "zoe",
+            "text": "So, three sections: automation, retraining and the quality of work. Remote working could go in the third section too.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "hamid",
+            "text": "Hmm, I'd keep that brief. The evidence is so mixed. Some studies say people working from home are more productive, others say less, and a lot depends on the type of job.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "zoe",
+            "text": "Agreed. And universal basic income? A lot of the articles mention it.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "hamid",
+            "text": "I'd rather we didn't make it the centre of our recommendation. The trials have been small and short, and it would be enormously expensive at national level. We could mention it as one proposal that's being debated.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "zoe",
+            "text": "I actually find it more convincing than you do, but I take the point that the evidence is limited. So what's our recommendation?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "hamid",
+            "text": "Something practical. Properly funded retraining, and minimum protections for people in flexible work, like sick pay. Those are things governments could do now.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "zoe",
+            "text": "And maybe something about work-life balance? If productivity rises, some of the gains could come as shorter working hours rather than just higher profits.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "hamid",
+            "text": "Nice. That gives us an optimistic ending. Let's divide it up: you take the history and automation, and I'll do retraining and the gig economy.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "zoe",
+            "text": "Done. I'll send you my slides by Saturday.",
+            "pauseAfterMs": 1500
+          },
+          {
+            "speaker": "N",
+            "text": "That is the end of the recording.",
+            "pauseAfterMs": 0
+          }
+        ]
+      },
+      "questions": [
+        {
+          "type": "text",
+          "text": "Questions 1–2. Choose the correct letter."
+        },
+        {
+          "type": "choice",
+          "id": "l1",
+          "prompt": "1. Why does Zoe want to begin the presentation with history?",
+          "options": [
+            "Predictions that work would disappear have often been made before.",
+            "Their tutor asked them to focus on history.",
+            "It is the section with the most evidence.",
+            "Hamid knows a lot about the nineteenth century."
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Zoe: \"people have been predicting the end of work for two hundred years, and it hasn't happened yet\". Hocanın tarih istediği söylenmiyor; hoca iki görüşü ve bir öneri istiyor.",
+            "ar": "تقول Zoe: \"people have been predicting the end of work for two hundred years, and it hasn't happened yet\". لم يُطلب منهما التركيز على التاريخ، بل عرض الرأيين وتقديم توصية.",
+            "en": "\"People have been predicting the end of work for two hundred years.\""
+          },
+          "example": "People have been predicting the end of the book for decades."
+        },
+        {
+          "type": "choice",
+          "id": "l2",
+          "prompt": "2. What concern does Hamid raise about the new jobs created by automation?",
+          "options": [
+            "They may not go to the workers who have lost their jobs.",
+            "They are usually badly paid.",
+            "There will be far too few of them.",
+            "They only exist in large cities."
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Hamid: \"The new jobs don't necessarily go to the same people.\" Depo işçisi örneği bunu açıklıyor. Sayının az olacağını söylemiyor; tam tersine \"lots of vacancies\" var.",
+            "ar": "يقول Hamid: \"The new jobs don't necessarily go to the same people\"، ومثال عامل المستودع يوضّح ذلك. لم يقل إن الوظائف قليلة، بل هناك lots of vacancies.",
+            "en": "\"The new jobs don't necessarily go to the same people.\""
+          },
+          "example": "The new jobs did not go to the people who had lost theirs."
+        },
+        {
+          "type": "text",
+          "text": "Questions 3–4. Who expresses each of these opinions? Choose the correct answer."
+        },
+        {
+          "type": "choice",
+          "id": "l3",
+          "prompt": "3. Universal basic income is a fairly persuasive idea.",
+          "options": [
+            "Zoe",
+            "Hamid",
+            "both Zoe and Hamid"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Zoe: \"I actually find it more convincing than you do\". Hamid ise onu önerinin merkezine koymak istemiyor. \"convincing\" = \"persuasive\".",
+            "ar": "تقول Zoe: \"I actually find it more convincing than you do\"، أما Hamid فلا يريد جعله محور التوصية. convincing تعني persuasive.",
+            "en": "Zoe: \"I actually find it more convincing than you do.\""
+          },
+          "example": "I find her argument more convincing than his."
+        },
+        {
+          "type": "choice",
+          "id": "l4",
+          "prompt": "4. The gig economy is more about job security than about technology.",
+          "options": [
+            "Zoe",
+            "Hamid",
+            "both Zoe and Hamid"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "Hamid: \"It isn't really about machines replacing people. It's about job security.\" Zoe sadece bölümleri sıralıyor (\"So, three sections\"), görüşü tekrarlamıyor.",
+            "ar": "يقول Hamid: \"It isn't really about machines replacing people. It's about job security\". أما Zoe فتنتقل إلى ترتيب الأقسام دون أن تتبنّى الرأي.",
+            "en": "Hamid: \"It's about job security.\""
+          },
+          "example": "The problem is not technology but job security."
+        },
+        {
+          "type": "text",
+          "text": "Questions 5–6. Complete the sentences below. Write NO MORE THAN TWO WORDS for each answer."
+        },
+        {
+          "type": "gap",
+          "id": "l5",
+          "prompt": "5. Some countries give every adult an individual ___ to use during their working life.",
+          "answers": [
+            "training budget"
+          ],
+          "why": {
+            "tr": "Hamid: \"Some countries give every adult an individual training budget they can spend over their working life.\"",
+            "ar": "يقول Hamid: \"Some countries give every adult an individual training budget\".",
+            "en": "\"An individual training budget.\""
+          },
+          "example": "Each employee has a training budget for courses."
+        },
+        {
+          "type": "gap",
+          "id": "l6",
+          "prompt": "6. Their recommendation includes minimum protections for flexible workers, such as ___.",
+          "answers": [
+            "sick pay"
+          ],
+          "why": {
+            "tr": "Hamid: \"minimum protections for people in flexible work, like sick pay\". \"like\" = \"such as\".",
+            "ar": "يقول Hamid: \"minimum protections for people in flexible work, like sick pay\". like تعني such as.",
+            "en": "\"Minimum protections… like sick pay.\""
+          },
+          "example": "Workers on flexible contracts often have no sick pay."
+        }
+      ]
+    },
+    {
+      "kind": "read",
+      "i18n": {"ar":{"title":"القراءة: مطابقة المعلومات وإكمال الملخص","intro":"نص أكاديمي بطول الامتحان يتناول من منظور تاريخي كيف تغيّر الأتمتة العمل والمجتمع. الفقرات مرقّمة بالأحرف A–F. هذا آخر نص قراءة في المسار: بطول الامتحان الحقيقي وصعوبته.","tip":"ابدأ بأسئلة إكمال الملخص: يغطي الملخص عادةً فقرة أو فقرتين من النص، وهذا يوفّر عليك الوقت في أسئلة المطابقة. في المطابقة حدّد الكلمة المجردة في العبارة (\"a prediction\", \"a reference to legal disagreements\", \"examples of countries\") وابحث في النص عن الإشارات الدالة عليها: تواريخ، وأسماء دول، وكلمات مثل \"courts\"."},"en":{"title":"Reading: matching information and summary completion","intro":"An exam-length academic text that looks at how automation changes work and society from a historical perspective. The paragraphs are labelled A–F. This is the last reading text of the path: at real exam length and difficulty.","tip":"Look at the summary completion questions first: the summary usually covers one or two paragraphs, which saves time on the matching questions. In matching, identify the abstract word in the statement (\"a prediction\", \"a reference to legal disagreements\", \"examples of countries\") and look for signals of it in the text: dates, country names, words like \"courts\"."}},
+      "title": "Okuma: bilgi eşleştirme ve özet tamamlama",
+      "intro": "Otomasyonun işi ve toplumu nasıl değiştirdiğini tarihsel bir perspektifle ele alan, sınav uzunluğunda akademik bir metin. Paragraflar A–F harfleriyle işaretli. Bu, yolun son okuma metni: gerçek sınav uzunluğu ve zorluğunda.",
+      "tip": "Önce özet tamamlama sorularına bak: özet genellikle metnin bir ya da iki paragrafını kapsar, bu da eşleştirme sorularında zaman kazandırır. Eşleştirmede ifadedeki soyut kelimeyi (\"a prediction\", \"a reference to legal disagreements\", \"examples of countries\") belirle ve metinde onu gösteren işaretleri ara: tarih, ülke adı, \"courts\" gibi kelimeler.",
+      "passage": [
+        {
+          "type": "heading",
+          "text": "Work After Automation"
+        },
+        {
+          "type": "text",
+          "text": "A  Anxiety about machines taking human jobs is far from new. In the early nineteenth century, textile workers in England destroyed mechanical looms that threatened their livelihoods, and similar fears have resurfaced with almost every major technological advance since. In 1930, the economist John Maynard Keynes predicted that, within a century, rising productivity would allow people in wealthy countries to work around fifteen hours a week. Average working hours did fall substantially during the twentieth century, but nowhere near that far, and the long-predicted disappearance of work has not taken place. Instead, as old occupations declined, new ones emerged, many of which would have been impossible to imagine a generation earlier. Skills that once seemed essential became obsolete, yet the workforce as a whole adapted, if often painfully."
+        },
+        {
+          "type": "text",
+          "text": "B  Optimists argue that the same pattern will continue. Sceptics reply that the present wave of automation differs in one important respect: machines are no longer limited to physical or strictly routine work. Software can now draft documents, analyse medical images and answer customer questions, tasks that until recently required educated human judgement. Even so, most researchers emphasise that technology tends to automate tasks rather than entire jobs. A lawyer whose software reviews contracts still has to advise clients; a radiologist assisted by image analysis still has to decide on treatment. Estimates of how many jobs are at risk vary widely, partly because they depend on how easily the remaining tasks within each job can be reorganised."
+        },
+        {
+          "type": "text",
+          "text": "C  What is clearer is that automation has already reshaped the structure of employment. In many advanced economies, economists have observed a process sometimes described as job polarisation. Employment has grown at the top of the pay scale, in professional and technical occupations, and at the bottom, in personal services such as care and cleaning, which are difficult to automate. Meanwhile, many routine jobs in the middle, including clerical and some manufacturing work, have declined. This hollowing out of the middle has consequences beyond the workplace, since such jobs once offered a stable route into the middle class for people without university degrees."
+        },
+        {
+          "type": "text",
+          "text": "D  Alongside these changes, the nature of employment contracts has shifted. Digital platforms that connect customers with drivers, couriers and freelance professionals have created what is often called the gig economy. For some workers, this offers welcome flexibility and a way to earn extra income. For others, it means unpredictable earnings and little job security, without the sick pay, holiday pay or pension contributions that traditional employees receive. Whether platform workers should be classified as self-employed or as employees has become the subject of legal disputes in several countries, and courts have not always reached the same conclusions. The spread of remote working, which accelerated sharply after 2020, has blurred the boundaries of employment in a different way: it has freed many office workers from long commutes, but it has also made it harder for some to separate their working hours from the rest of their lives."
+        },
+        {
+          "type": "text",
+          "text": "E  If careers are likely to involve several changes of direction, the traditional model of education, concentrated in the first two decades of life, looks increasingly inadequate. Many governments now promote lifelong learning, and some have created individual accounts that adults can use to pay for approved courses throughout their working lives; France and Singapore are frequently cited examples. Such schemes face familiar obstacles, however. Adults who would benefit most from training, particularly those in low-paid or insecure work, are often the least likely to take part, because of cost, lack of time or limited confidence after years away from education. Helping people reskill therefore requires more than money; it requires flexible courses and practical support."
+        },
+        {
+          "type": "text",
+          "text": "F  Finally, the gains from higher productivity raise a broader question about how they should be shared. Some propose that they should be taken partly in the form of shorter working hours, and trials of a four-day week in several countries have reported improvements in employees' well-being and work-life balance, although critics note that participating firms chose to take part. Others advocate a universal basic income, a regular payment to every citizen, which supporters argue would provide a safety net for people moving between jobs; opponents point to its cost and to the limited scale of existing experiments. Such debates suggest that the future of work will be shaped not only by technology itself, but by political choices about the kind of society people want."
+        }
+      ],
+      "questions": [
+        {
+          "type": "heading",
+          "text": "Questions 1–4: Which paragraph contains the following information?"
+        },
+        {
+          "type": "text",
+          "text": "Choose A, B, C, D, E or F. The statements are not in the order of the text."
+        },
+        {
+          "type": "choice",
+          "id": "r1",
+          "prompt": "1. a prediction about working hours that did not come true",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "A: Keynes 1930'da haftada yaklaşık on beş saat çalışılacağını öngördü; \"nowhere near that far\" ifadesi bunun gerçekleşmediğini gösteriyor.",
+            "ar": "الفقرة A: توقّع Keynes عام 1930 أن يعمل الناس نحو خمس عشرة ساعة أسبوعيًا، وعبارة nowhere near that far تُظهر أن ذلك لم يتحقق.",
+            "en": "A: Keynes's fifteen-hour week; hours fell \"nowhere near that far\"."
+          },
+          "example": "The prediction did not come true."
+        },
+        {
+          "type": "choice",
+          "id": "r2",
+          "prompt": "2. a reference to disagreements in law about how certain workers should be classified",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ],
+          "answer": 3,
+          "why": {
+            "tr": "D: \"Whether platform workers should be classified as self-employed or as employees has become the subject of legal disputes in several countries\".",
+            "ar": "الفقرة D: \"Whether platform workers should be classified as self-employed or as employees has become the subject of legal disputes\".",
+            "en": "D: \"Legal disputes\" about whether platform workers are employees."
+          },
+          "example": "The case raised the question of how drivers should be classified."
+        },
+        {
+          "type": "choice",
+          "id": "r3",
+          "prompt": "3. examples of countries that help adults pay for training",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ],
+          "answer": 4,
+          "why": {
+            "tr": "E: \"some have created individual accounts that adults can use to pay for approved courses… France and Singapore are frequently cited examples\".",
+            "ar": "الفقرة E: حسابات فردية يستخدمها البالغون لدفع تكاليف الدورات، وFrance وSingapore مثالان شائعان.",
+            "en": "E: individual accounts for courses; France and Singapore."
+          },
+          "example": "Singapore is often cited as an example of lifelong learning policy."
+        },
+        {
+          "type": "choice",
+          "id": "r4",
+          "prompt": "4. the claim that jobs in the middle of the pay range have become less common",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "C: \"many routine jobs in the middle, including clerical and some manufacturing work, have declined\". \"less common\" = \"declined\".",
+            "ar": "الفقرة C: \"many routine jobs in the middle… have declined\". عبارة less common تعني declined.",
+            "en": "C: \"Routine jobs in the middle… have declined.\""
+          },
+          "example": "Middle-income jobs have become less common in many countries."
+        },
+        {
+          "type": "heading",
+          "text": "Questions 5–7: Complete the summary below."
+        },
+        {
+          "type": "text",
+          "text": "Write NO MORE THAN TWO WORDS from the passage for each answer."
+        },
+        {
+          "type": "gap",
+          "id": "r5",
+          "prompt": "5. Most researchers believe that technology usually automates particular ___ rather than whole jobs.",
+          "answers": [
+            "tasks"
+          ],
+          "why": {
+            "tr": "B: \"technology tends to automate tasks rather than entire jobs\". \"whole\" = \"entire\".",
+            "ar": "الفقرة B: \"technology tends to automate tasks rather than entire jobs\". whole تعني entire.",
+            "en": "\"Automate tasks rather than entire jobs.\""
+          },
+          "example": "Software can take over some tasks, but not the whole job."
+        },
+        {
+          "type": "gap",
+          "id": "r6",
+          "prompt": "6. Trials of a ___ have reported benefits for employees, although the firms involved chose to participate.",
+          "answers": [
+            "four-day week"
+          ],
+          "why": {
+            "tr": "F: \"trials of a four-day week in several countries have reported improvements in employees' well-being\". Kısa çizgili kelimeler tek kelime sayılır: four-day week (iki kelime).",
+            "ar": "الفقرة F: \"trials of a four-day week… have reported improvements in employees' well-being\". الجواب: four-day week.",
+            "en": "\"Trials of a four-day week.\""
+          },
+          "example": "The company is trying a four-day week for six months."
+        },
+        {
+          "type": "gap",
+          "id": "r7",
+          "prompt": "7. Supporters of a universal basic income say it would act as a ___ for people changing jobs.",
+          "answers": [
+            "safety net"
+          ],
+          "why": {
+            "tr": "F: \"which supporters argue would provide a safety net for people moving between jobs\". \"changing jobs\" = \"moving between jobs\".",
+            "ar": "الفقرة F: \"would provide a safety net for people moving between jobs\". changing jobs تعني moving between jobs.",
+            "en": "\"Would provide a safety net for people moving between jobs.\""
+          },
+          "example": "Unemployment benefits provide a safety net."
+        }
+      ]
+    },
+    {
+      "kind": "language",
+      "i18n": {"ar":{"title":"اللغة: تعابير اصطلاحية طبيعية لـSpeaking 7+ (ولماذا لا تُستخدم في Writing)"},"en":{"title":"Language: natural idioms for Speaking 7+ (and why not in Writing)"}},
+      "title": "Dil: Speaking 7+ için doğal deyimler (ve Writing'de neden kullanılmaz)",
+      "explain": {
+        "tr": "Speaking'de Band 7 için tanımlayıcılarda \"less common and idiomatic vocabulary\" kullanımı geçer. Bu, ezberlenmiş eğlenceli deyimler (\"It's raining cats and dogs\", \"a piece of cake\") değil, günlük konuşmada gerçekten kullanılan doğal kalıplar demektir: I'm snowed under at work (işten başımı kaşıyamıyorum), it has its ups and downs, to make ends meet (geçinmek), to be my own boss, to call it a day, a steep learning curve, on the go. Kural: deyimi bağlamına uygun ve doğru biçimde kullan; bir cevaba bir iki tane yeter. Writing'de (Task 1 ve Task 2) ise deyimler resmî olmayan bir üslup yaratır ve puanı düşürebilir. Bunun yerine resmî karşılığı kullan: make ends meet → cover basic living costs; get the sack → be dismissed; at the end of the day → ultimately; a double-edged sword → has both advantages and disadvantages.",
+        "ar": "في وصف درجة Band 7 للمحادثة نجد less common and idiomatic vocabulary. وهذا لا يعني تعابير محفوظة طريفة (It's raining cats and dogs, a piece of cake)، بل عبارات طبيعية تُستخدم فعلًا في الكلام اليومي: I'm snowed under at work (غارق في العمل)، it has its ups and downs، to make ends meet (يدبّر معيشته)، to be my own boss، to call it a day، a steep learning curve، on the go. القاعدة: استخدم التعبير في سياقه الصحيح وبشكله الصحيح، ويكفي تعبير أو اثنان في الإجابة. أما في الكتابة (Task 1 وTask 2) فالتعابير الاصطلاحية تجعل الأسلوب غير رسمي وقد تخفض الدرجة. استخدم المقابل الرسمي: make ends meet ← cover basic living costs؛ get the sack ← be dismissed؛ at the end of the day ← ultimately؛ a double-edged sword ← has both advantages and disadvantages.",
+        "en": "The band 7 Speaking descriptors mention \"less common and idiomatic vocabulary\". This does not mean memorised, colourful idioms (\"It's raining cats and dogs\", \"a piece of cake\") but natural expressions people really use: I'm snowed under at work, it has its ups and downs, to make ends meet, to be my own boss, to call it a day, a steep learning curve, on the go. Use them accurately and in the right context; one or two per answer is plenty. In Writing (Task 1 and Task 2), idioms make the style informal and can lower your score. Use a formal equivalent instead: make ends meet → cover basic living costs; get the sack → be dismissed; at the end of the day → ultimately; a double-edged sword → has both advantages and disadvantages."
+      },
+      "examples": [
+        "Speaking: \"I've been snowed under at work recently, so I haven't had much free time.\"",
+        "Speaking: \"Working from home has its ups and downs: I save time, but I miss my colleagues.\"",
+        "Writing: Many gig workers struggle to cover their basic living costs. (not: to make ends meet)",
+        "Writing: Ultimately, automation has both advantages and disadvantages. (not: At the end of the day, it's a double-edged sword.)"
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "id": "g1",
+          "prompt": "Speaking Part 1: \"Do you work or study?\" Which answer uses an idiom naturally?",
+          "options": [
+            "I'm a nurse, and to be honest I've been snowed under at work since the winter started.",
+            "I'm a nurse, and it's raining cats and dogs in my job.",
+            "I work. It is a piece of cake and the ball is in my court.",
+            "I am working as nurse in the hospital since three years."
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "A, \"snowed under\" (iş yükünden boğulmak) deyimini doğru bağlamda ve doğal kullanıyor. B ve C deyimleri yanlış bağlamda, ezber gibi kullanıyor; D'de dil bilgisi hataları var (as a nurse, for three years, have been working).",
+            "ar": "الخيار A يستخدم snowed under (غارق في العمل) في سياق صحيح وبشكل طبيعي. B وC يستخدمان التعابير في غير موضعها كأنها محفوظة، وD فيه أخطاء نحوية.",
+            "en": "A uses \"snowed under\" accurately; B and C misuse memorised idioms; D has grammar errors."
+          },
+          "example": "I've been snowed under with assignments this week."
+        },
+        {
+          "type": "gap",
+          "id": "g2",
+          "prompt": "Write ONE word: \"Working from home has its ups and ___: it's flexible, but it can feel quite lonely.\"",
+          "answers": [
+            "downs"
+          ],
+          "why": {
+            "tr": "Sabit kalıp \"ups and downs\" (iyi ve kötü yanları). Speaking'de çok doğal.",
+            "ar": "التعبير الثابت هو ups and downs (الإيجابيات والسلبيات)، وهو طبيعي جدًا في المحادثة.",
+            "en": "The fixed phrase is \"ups and downs\"."
+          },
+          "example": "Every job has its ups and downs."
+        },
+        {
+          "type": "choice",
+          "id": "g3",
+          "prompt": "Which is the most appropriate way to express \"make ends meet\" in a Task 2 essay?",
+          "options": [
+            "cover their basic living costs",
+            "keep their heads above water",
+            "get by on a shoestring",
+            "tighten their belts"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Task 2 resmî bir yazı: A deyim içermeyen akademik bir ifade. B, C ve D de deyimdir ve resmî olmayan bir üslup yaratır.",
+            "ar": "Task 2 نص رسمي: الخيار A عبارة أكاديمية بلا تعابير اصطلاحية. أما B وC وD فتعابير اصطلاحية غير رسمية.",
+            "en": "A is formal; the others are idioms."
+          },
+          "example": "Many delivery workers struggle to cover their basic living costs."
+        },
+        {
+          "type": "choice",
+          "id": "g4",
+          "prompt": "Which sentence would be inappropriate in a Task 2 essay?",
+          "options": [
+            "At the end of the day, robots are going to steal loads of jobs, no doubt about it.",
+            "Ultimately, automation is likely to replace a significant number of jobs.",
+            "It is probable that automation will lead to considerable job losses in some sectors.",
+            "Automation may well reduce employment in certain industries."
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "A hem deyim (\"at the end of the day\") hem de konuşma dili (\"loads of\", \"no doubt about it\") içeriyor ve aşırı kesin. Diğerleri resmî ve temkinli.",
+            "ar": "الخيار A يحتوي على تعبير اصطلاحي (at the end of the day) ولغة عامية (loads of, no doubt about it) وقطعية مبالغ فيها. البقية رسمية ومتحفّظة.",
+            "en": "A is informal and over-certain; the others are formal and hedged."
+          },
+          "example": "Ultimately, the effects of automation will depend on government policy."
+        },
+        {
+          "type": "gap",
+          "id": "g5",
+          "prompt": "Write ONE word (Speaking): \"Since I started freelancing, I've been my own ___, which I love, although the income isn't always steady.\"",
+          "answers": [
+            "boss"
+          ],
+          "why": {
+            "tr": "Deyim \"be my own boss\" = kendi işimin patronu olmak. Speaking'de çok doğal.",
+            "ar": "التعبير be my own boss يعني أن أعمل لحسابي، وهو طبيعي جدًا في المحادثة.",
+            "en": "\"Be my own boss\" = be self-employed."
+          },
+          "example": "She left the bank because she wanted to be her own boss."
+        }
+      ]
+    },
+    {
+      "kind": "write",
+      "i18n": {"ar":{"title":"الكتابة · Task 2: مقال كامل (ناقش الرأيين)","tip":"آخر مقال في المسار: استخدم كل ما تعلّمته في الدروس السابقة. أعد صياغة المقدمة (الدرس 34)، وقدّم رأيك مع تحفّظ (الدرس 33)، وقيّم الرأي المخالف (الدرس 36)، واستخدم المتلازمات اللفظية الصحيحة (الدرس 37)، ولا تُغرق النص بأدوات الربط (الدرس 38)، وراجع أدوات التعريف وحروف الجر (الدرس 39). وقاعدة هذا الدرس: لا تعابير اصطلاحية. بدلًا من عبارات مثل \"At the end of the day\" و\"a double-edged sword\" اكتب مقابلها الرسمي."},"en":{"title":"Writing · Task 2: full essay (discuss both views)","tip":"The last essay of the path: use everything from earlier lessons. Paraphrase the introduction (lesson 34), give your view with a hedge (lesson 33), evaluate the opposing view (lesson 36), use correct collocations (lesson 37), don't overload with linking words (lesson 38), and check articles and prepositions (lesson 39). And this lesson's rule: no idioms. Instead of phrases like \"At the end of the day\" or \"a double-edged sword\", write their formal equivalents."}},
+      "title": "Yazma · Task 2: tam deneme (iki görüşü tartış)",
+      "task": 2,
+      "prompt": "Some people believe that automation and artificial intelligence will create more jobs than they destroy. Others fear that they will lead to widespread unemployment.\n\nDiscuss both views and give your own opinion.\n\nWrite at least 250 words.",
+      "minutes": 40,
+      "minWords": 250,
+      "tip": "Yolun son denemesi: önceki derslerdeki her şeyi kullan. Girişi paraphrase et (ders 34), görüşünü çekinceyle ver (ders 33), karşı görüşü değerlendir (ders 36), doğru eşdizimler kullan (ders 37), bağlaçlara boğma (ders 38), article ve edatları kontrol et (ders 39). Ve bu dersin kuralı: deyim yok. \"At the end of the day\", \"a double-edged sword\" gibi ifadeler yerine resmî karşılıklarını yaz.",
+      "model": "Advances in automation and artificial intelligence have prompted a lively debate about the future of employment. While some argue that these technologies will ultimately generate more work than they eliminate, others predict mass unemployment. In my view, the optimists are probably right about the overall number of jobs, but this outcome is far from automatic.\n\nThose who expect job creation point to history. Since the Industrial Revolution, new machines have repeatedly made certain occupations obsolete, yet total employment has continued to grow. Higher productivity lowers prices, which leaves consumers with more money to spend on other goods and services, and entirely new industries emerge. Moreover, most technologies automate particular tasks rather than whole jobs, allowing workers to concentrate on activities that require judgement, creativity or personal contact.\n\nThose who fear unemployment, on the other hand, argue that the current wave of technology is different, because software can now perform cognitive tasks that once required educated workers. They also note that new jobs are rarely created in the same places, or for the same people, as the jobs that disappear. A middle-aged administrator who is made redundant cannot easily become a data scientist, and such workers may face years of insecurity.\n\nI believe that the second argument identifies the real problem: not a permanent shortage of work, but a difficult and potentially long transition. Whether this transition succeeds will depend largely on government policy. Affordable, flexible retraining programmes, together with basic protections for people in temporary or platform-based work, would allow far more people to benefit from technological change.\n\nIn conclusion, although automation is unlikely to cause permanent mass unemployment, its benefits will not be shared fairly unless societies invest in lifelong learning and support those whose jobs are most at risk."
+    },
+    {
+      "kind": "speak",
+      "i18n": {"ar":{"title":"المحادثة: العمل وخطط المستقبل"},"en":{"title":"Speaking: work and future plans"}},
+      "title": "Konuşma: iş ve gelecek planları",
+      "part1": [
+        "Do you work or are you a student?",
+        "What do you like most about your job or studies?",
+        "Would you prefer to work from home or in an office? Why?",
+        "Do you think you will do the same kind of work in ten years' time?"
+      ],
+      "card": {
+        "title": "Describe a job you would like to do in the future.",
+        "points": [
+          "what the job is",
+          "what skills or qualifications it requires",
+          "how you plan to get this job"
+        ],
+        "explain": "and explain why this job appeals to you, and how you think it might change in the future."
+      },
+      "useful": [
+        "It's something I've wanted to do ever since I was a teenager.",
+        "I'd imagine there's quite a steep learning curve at the beginning.",
+        "Like any job, it has its ups and downs, but…",
+        "What really appeals to me is the chance to be my own boss eventually.",
+        "I suspect a lot of the routine work will be automated before long.",
+        "So I'm trying to pick up skills that a machine can't easily replace."
+      ]
+    }
+  ]
+}

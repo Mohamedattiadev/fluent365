@@ -1,0 +1,14 @@
+node_modules/
+dist/
+apps/pocket/public/data/
+*.log
+.DS_Store
+.env
+.env.*
+!.env.example
+# Private learner data must never be committed
+*.sqlite
+*.db
+backups/
+fluent365-backup-*.json
+private/

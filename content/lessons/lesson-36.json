@@ -1,0 +1,813 @@
+{
+  "id": "lesson-36",
+  "number": 36,
+  "title": "Government and Public Spending",
+  "topic": "Government & public spending",
+  "level": "B2+",
+  "goal": "Follow a detailed enquiry and an academic text on public spending, report a bar chart and a pie chart together, and evaluate arguments with counter-arguments (It could be argued…, However, this overlooks…).",
+  "steps": [
+    {
+      "kind": "words",
+      "i18n": {"ar":{"title":"المفردات: الحكومة والإنفاق العام","intro":"الضرائب والميزانية والخدمات العامة تتكرر في Task 2 (\"Should governments spend more on…?\") وفي رسوم Task 1 البيانية. تتيح لك هذه الكلمات الاثنتا عشرة أن تشرح بلغة أكاديمية من أين يأتي المال (revenue, taxpayer) وكيف يُوزَّع (allocate, priority, value for money)."},"en":{"title":"Vocabulary: government and public spending","intro":"Taxes, budgets and public services come up often in Task 2 (\"Should governments spend more on…?\") and in Task 1 charts. These 12 words let you explain in academic language where the money comes from (revenue, taxpayer) and how it is shared out (allocate, priority, value for money)."}},
+      "title": "Kelimeler: devlet ve kamu harcamaları",
+      "intro": "Vergiler, bütçe ve kamu hizmetleri hem Task 2'de (\"Should governments spend more on…?\") hem de Task 1 grafiklerinde sık çıkar. Bu 12 kelime, paranın nereden geldiğini (revenue, taxpayer) ve nasıl dağıtıldığını (allocate, priority, value for money) akademik bir dille anlatmanı sağlar.",
+      "words": [
+        {
+          "en": "public expenditure",
+          "pos": "phrase",
+          "tr": "kamu harcaması",
+          "ar": "الإنفاق العام",
+          "example": "Public expenditure on health has risen as the population has aged."
+        },
+        {
+          "en": "allocate",
+          "pos": "verb",
+          "tr": "(kaynak, para) ayırmak, tahsis etmek",
+          "ar": "يخصّص (أموالًا أو موارد)",
+          "example": "The council allocated extra money to repair local roads."
+        },
+        {
+          "en": "taxpayer",
+          "pos": "noun",
+          "tr": "vergi mükellefi, vergi ödeyen",
+          "ar": "دافع الضرائب",
+          "example": "Taxpayers expect public money to be spent carefully."
+        },
+        {
+          "en": "revenue",
+          "pos": "noun",
+          "tr": "gelir (özellikle devletin vergi geliri)",
+          "ar": "الإيرادات",
+          "example": "Tax revenue fell sharply during the recession."
+        },
+        {
+          "en": "budget deficit",
+          "pos": "phrase",
+          "tr": "bütçe açığı",
+          "ar": "عجز الميزانية",
+          "example": "The government borrowed heavily to cover its budget deficit."
+        },
+        {
+          "en": "infrastructure",
+          "pos": "noun",
+          "tr": "altyapı (yol, köprü, su, enerji)",
+          "ar": "البنية التحتية",
+          "example": "Investment in infrastructure can create jobs and support growth."
+        },
+        {
+          "en": "welfare",
+          "pos": "noun",
+          "tr": "sosyal yardım, refah hizmetleri",
+          "ar": "الرعاية الاجتماعية",
+          "example": "Welfare spending supports people who are unemployed, ill or elderly."
+        },
+        {
+          "en": "funding cuts",
+          "pos": "phrase",
+          "tr": "bütçe kesintileri, ödenek kesintisi",
+          "ar": "تخفيضات التمويل",
+          "example": "Funding cuts forced several libraries to close."
+        },
+        {
+          "en": "value for money",
+          "pos": "phrase",
+          "tr": "paranın karşılığını verme, fiyatına değme",
+          "ar": "قيمة مقابل المال؛ جدوى الإنفاق",
+          "example": "The new bus service offers good value for money."
+        },
+        {
+          "en": "cost-effective",
+          "pos": "adjective",
+          "tr": "maliyet açısından verimli",
+          "ar": "فعّال من حيث التكلفة",
+          "example": "Vaccination is one of the most cost-effective health policies."
+        },
+        {
+          "en": "subsidise",
+          "pos": "verb",
+          "tr": "sübvanse etmek, (devlet) desteklemek",
+          "ar": "يدعم ماليًا (الحكومة)",
+          "example": "Many governments subsidise public transport to reduce traffic."
+        },
+        {
+          "en": "priority",
+          "pos": "noun",
+          "tr": "öncelik",
+          "ar": "أولوية",
+          "example": "For most voters, health care is the top priority."
+        }
+      ],
+      "practice": [
+        {
+          "type": "choice",
+          "id": "w1",
+          "prompt": "The money a government receives, mainly from taxes, is its ___.",
+          "options": [
+            "revenue",
+            "deficit",
+            "welfare",
+            "expenditure"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Devletin aldığı para (gelir) \"revenue\"dur. \"expenditure\" tam tersi, harcamadır; \"deficit\" harcamanın gelirden fazla olmasıdır.",
+            "ar": "المال الذي تتلقاه الحكومة هو revenue (الإيرادات). أما expenditure فهي العكس أي الإنفاق، وdeficit هو زيادة الإنفاق على الإيرادات.",
+            "en": "Money coming in = revenue; expenditure is money going out."
+          },
+          "example": "Most government revenue comes from income tax and sales tax."
+        },
+        {
+          "type": "choice",
+          "id": "w2",
+          "prompt": "If a government spends more than it receives in a year, it has a ___.",
+          "options": [
+            "budget deficit",
+            "budget surplus",
+            "tax revenue",
+            "value for money"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Harcama gelirden fazlaysa \"budget deficit\" (bütçe açığı) olur. \"surplus\" bunun tersidir (fazla).",
+            "ar": "إذا كان الإنفاق أكبر من الإيرادات فهناك budget deficit (عجز). أما surplus فهو الفائض، أي العكس.",
+            "en": "Spending more than you receive = a deficit; the opposite is a surplus."
+          },
+          "example": "The country has had a budget deficit for five years in a row."
+        },
+        {
+          "type": "choice",
+          "id": "w3",
+          "prompt": "Choose the correct preposition: The government has allocated more money ___ mental health services.",
+          "options": [
+            "to",
+            "at",
+            "with",
+            "from"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Kalıp \"allocate something to something\" (bir şeye para ayırmak). Bazen \"for\" da kullanılır, ama \"at\", \"with\", \"from\" yanlış.",
+            "ar": "التعبير هو allocate something to something، وتُستخدم أحيانًا for، أما at وwith وfrom فخطأ.",
+            "en": "Allocate money to (or for) something."
+          },
+          "example": "The school allocated half its budget to new computers."
+        },
+        {
+          "type": "gap",
+          "id": "w4",
+          "prompt": "Write the correct form of SUBSIDY: Bus fares are low because the service is ___ by the city.",
+          "answers": [
+            "subsidised",
+            "subsidized"
+          ],
+          "why": {
+            "tr": "Edilgen yapı (is + past participle): subsidy (isim) → subsidise (fiil) → subsidised. Amerikan yazımı \"subsidized\" da doğru.",
+            "ar": "مبني للمجهول (is + التصريف الثالث): الاسم subsidy ← الفعل subsidise ← subsidised. ويصح الإملاء الأمريكي subsidized.",
+            "en": "Passive: is subsidised (US: subsidized)."
+          },
+          "example": "Housing for nurses is partly subsidised by the hospital."
+        },
+        {
+          "type": "choice",
+          "id": "w5",
+          "prompt": "Which phrase means \"worth the amount that was paid for it\"?",
+          "options": [
+            "value for money",
+            "funding cuts",
+            "public expenditure",
+            "top priority"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "\"value for money\" = paranın karşılığını vermek. Diğerleri kesinti, harcama ve öncelik anlamına gelir.",
+            "ar": "value for money تعني أن الشيء يستحق ما دُفع فيه. أما البقية فتعني التخفيضات والإنفاق والأولوية.",
+            "en": "Value for money = worth what was paid."
+          },
+          "example": "The audit asked whether the new hospital was good value for money."
+        },
+        {
+          "type": "gap",
+          "id": "w6",
+          "prompt": "Write ONE word: Repairing old bridges is often more cost-___ than building new ones.",
+          "answers": [
+            "effective"
+          ],
+          "why": {
+            "tr": "Sıfat \"cost-effective\" = maliyet açısından verimli. \"efficient\" de var ama kalıp \"cost-effective\"tir.",
+            "ar": "الصفة الثابتة هي cost-effective (فعّال من حيث التكلفة).",
+            "en": "The compound adjective is \"cost-effective\"."
+          },
+          "example": "Insulating old houses is a cost-effective way to cut energy use."
+        }
+      ]
+    },
+    {
+      "kind": "listen",
+      "i18n": {"ar":{"title":"الاستماع · Part 1: طلب للمشاركة في ميزانية الحي","intro":"يتصل Callum للتقدّم إلى برنامج \"community budget\" في البلدية، حيث يقرّر المواطنون كيف تُصرف الأموال. Part 1 بطول الامتحان: المحادثة طويلة، وبعض المعلومات تُعطى خطأً أولًا ثم تُصحَّح. اقرأ النموذج أولًا؛ يُشغَّل التسجيل مرة واحدة فقط.","tip":"أكثر فخ شيوعًا في Part 1 هو معلومة \"كان الأمر كذلك سابقًا، ثم تغيّر\": \"It was, last year… the maximum this year is…\". اكتب دائمًا المعلومة الحالية. عند كتابة الأرقام لا تكرر الوحدة (£)؛ فالنموذج يذكرها مسبقًا. في الأسماء المتهجّاة حرفًا حرفًا انتبه إلى \"double\" وإلى أحرف العلة (E, A, I)."},"en":{"title":"Listening · Part 1: applying to a neighbourhood budget","intro":"Callum calls to apply to the council's \"community budget\" scheme, where residents decide how money is spent. An exam-length Part 1: the conversation is long and some details are given wrongly first and then corrected. Read the form first; the recording plays once.","tip":"The most common trap in Part 1 is \"it used to be so, now it has changed\": \"It was, last year… the maximum this year is…\". Always write the current information. When writing numbers don't repeat the unit (£); the form already gives it. In names spelled letter by letter watch for \"double\" and the vowels (E, A, I)."}},
+      "title": "Dinleme · Part 1: mahalle bütçesine başvuru",
+      "intro": "Callum, belediyenin vatandaşların karar verdiği \"community budget\" programına başvurmak için arıyor. Sınav uzunluğunda bir Part 1: konuşma uzun ve birkaç bilgi önce yanlış verilip sonra düzeltiliyor. Önce formu oku; kayıt bir kez çalar.",
+      "tip": "Part 1'de en sık tuzak \"eskiden öyleydi, şimdi değişti\" bilgisidir: \"It was, last year… the maximum this year is…\". Her zaman güncel bilgiyi yaz. Sayıları yazarken birimi (£) tekrar yazma; form zaten veriyor. Harfle söylenen isimlerde \"double\" ve sesli harflere (E, A, I) dikkat et.",
+      "audio": {
+        "type": "audio",
+        "id": "l-audio",
+        "speakers": {
+          "N": {
+            "name": "Narrator",
+            "voice": "en-GB-SoniaNeural"
+          },
+          "margaret": {
+            "name": "Margaret",
+            "voice": "en-GB-LibbyNeural"
+          },
+          "callum": {
+            "name": "Callum",
+            "voice": "en-NZ-MitchellNeural"
+          }
+        },
+        "lines": [
+          {
+            "speaker": "N",
+            "text": "You will hear a man phoning a council office about a community budget scheme. First, you have some time to look at questions one to six.",
+            "pauseAfterMs": 2500
+          },
+          {
+            "speaker": "N",
+            "text": "Now listen carefully and answer questions one to six.",
+            "pauseAfterMs": 1200
+          },
+          {
+            "speaker": "margaret",
+            "text": "Good morning, Westbridge Council, community budget team. Margaret speaking. How can I help?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "callum",
+            "text": "Hello. I'm calling about the community budget scheme. I saw a notice in the library saying residents can propose local projects, and I'm part of a small group that would like to apply.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "margaret",
+            "text": "Lovely. Yes, this is the third year we've run it. Basically, the council sets aside a small part of its public expenditure each year and lets residents decide how to allocate it. Can I take a few details first?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "callum",
+            "text": "Of course.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "margaret",
+            "text": "What's your name?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "callum",
+            "text": "Callum Teague. That's T-E-A-G-U-E.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "margaret",
+            "text": "Thanks. And the name of your group?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "callum",
+            "text": "We're the Linden Park Friends. We're just residents who live around the park.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "margaret",
+            "text": "And what's the project?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "callum",
+            "text": "Well, originally we were going to ask for new equipment for the children's playground, but it turns out the council already has that on its list for next year. So instead it's the footbridge over the stream. It's been closed for nearly a year, and people have to walk right round by the main road.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "margaret",
+            "text": "Ah yes, I know the one. Small infrastructure projects like that are very popular with voters, because everyone uses them. Now, you'll want to know how much you can apply for.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "callum",
+            "text": "Please. Someone told me it was five thousand pounds.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "margaret",
+            "text": "It was, last year. Because of funding cuts, the maximum this year is three thousand five hundred. The money comes from the council's general budget, not from any extra tax revenue, so it has to stretch quite a long way.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "callum",
+            "text": "Right. That might still be enough, if we do some of the painting ourselves.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "margaret",
+            "text": "That kind of thing goes down well. The panel likes projects that are cost-effective and show real value for money for the taxpayer. Which brings me to the paperwork. With the form, you'll need to include three quotes from different builders, so the panel can compare prices.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "callum",
+            "text": "Three quotes. OK. And photos?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "margaret",
+            "text": "Photos are helpful but not essential. The quotes are the one thing we can't accept an application without.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "callum",
+            "text": "Understood. And who actually decides which projects get the money?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "margaret",
+            "text": "Well, it isn't a committee of councillors, which is what many people assume. Every application that meets the rules goes on a shortlist, and then residents vote. Last year we held a public meeting, but hardly anyone came, so this year the vote's online, and you can also vote on paper at the library if you prefer.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "callum",
+            "text": "That sounds fairer. Is there a limit to how many projects get funded?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "margaret",
+            "text": "It depends on the size of the bids. The total pot is around forty thousand, so usually ten to fifteen projects. Some people ask why we don't spend it on welfare services instead, but those are funded separately. This is meant for small neighbourhood improvements.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "callum",
+            "text": "Makes sense. Any advice for making our application stronger?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "margaret",
+            "text": "The main thing is to show who benefits. The panel gives priority to projects that help a lot of people, especially older residents or families with young children. So if you could collect signatures from neighbours who'd use the bridge, that would really help. Don't spend too long on the budget table, though. A simple breakdown is fine.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "callum",
+            "text": "Signatures. That's easy, we've already got a list of about sixty people.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "margaret",
+            "text": "Perfect. I'll email you the form this afternoon. If you have any questions, just ring back. Good luck!",
+            "pauseAfterMs": 1500
+          },
+          {
+            "speaker": "N",
+            "text": "That is the end of the recording.",
+            "pauseAfterMs": 0
+          }
+        ]
+      },
+      "questions": [
+        {
+          "type": "text",
+          "text": "Questions 1–4. Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer."
+        },
+        {
+          "type": "text",
+          "text": "Westbridge Community Budget: enquiry"
+        },
+        {
+          "type": "gap",
+          "id": "l1",
+          "prompt": "1. Contact: Callum ___",
+          "answers": [
+            "Teague"
+          ],
+          "why": {
+            "tr": "Callum adını harf harf söylüyor: \"T-E-A-G-U-E\". \"ea\" ve \"ue\" harflerine dikkat.",
+            "ar": "يتهجّى Callum اسمه: \"T-E-A-G-U-E\". انتبه إلى الحرفين ea وue.",
+            "en": "\"Callum Teague. That's T-E-A-G-U-E.\""
+          },
+          "example": "Please spell your surname for me."
+        },
+        {
+          "type": "gap",
+          "id": "l2",
+          "prompt": "2. Project: repair of the ___ over the stream",
+          "answers": [
+            "footbridge"
+          ],
+          "why": {
+            "tr": "İlk fikir oyun parkıydı (\"originally… playground\") ama belediye bunu zaten planlamış: \"So instead it's the footbridge over the stream.\" İkinci, güncel bilgi doğru cevaptır.",
+            "ar": "كانت الفكرة الأولى الملعب (originally… playground) لكن البلدية خطّطت له مسبقًا: So instead it's the footbridge over the stream. المعلومة الثانية هي الصحيحة.",
+            "en": "\"Originally… the playground… So instead it's the footbridge.\""
+          },
+          "example": "The footbridge over the river has been closed for repairs."
+        },
+        {
+          "type": "gap",
+          "id": "l3",
+          "prompt": "3. Maximum grant this year: £___",
+          "answers": [
+            "3,500",
+            "3500",
+            "three thousand five hundred"
+          ],
+          "why": {
+            "tr": "Callum 5.000 diyor, ama Margaret: \"It was, last year. Because of funding cuts, the maximum this year is three thousand five hundred.\" Bu yılın rakamı: 3,500.",
+            "ar": "يقول Callum خمسة آلاف، لكن Margaret ترد: It was, last year… the maximum this year is three thousand five hundred. رقم هذا العام: 3,500.",
+            "en": "\"It was, last year… the maximum this year is three thousand five hundred.\""
+          },
+          "example": "Because of funding cuts, the maximum grant is now £3,500."
+        },
+        {
+          "type": "gap",
+          "id": "l4",
+          "prompt": "4. The application must include three ___ from builders.",
+          "answers": [
+            "quotes",
+            "quotations"
+          ],
+          "why": {
+            "tr": "\"you'll need to include three quotes from different builders\". Fotoğraflar \"helpful but not essential\", yani zorunlu değil; zorunlu olan teklifler (quotes).",
+            "ar": "\"you'll need to include three quotes from different builders\". الصور مفيدة لكنها غير ضرورية، أما عروض الأسعار (quotes) فإلزامية.",
+            "en": "\"Three quotes from different builders.\" Photos are optional."
+          },
+          "example": "We got three quotes before choosing a builder."
+        },
+        {
+          "type": "text",
+          "text": "Questions 5–6. Choose the correct letter."
+        },
+        {
+          "type": "choice",
+          "id": "l5",
+          "prompt": "5. How will residents choose the projects this year?",
+          "options": [
+            "at a public meeting",
+            "through a committee of councillors",
+            "by voting online or on paper",
+            "by signing a petition"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "\"this year the vote's online, and you can also vote on paper at the library\". Halk toplantısı geçen yıldı; komite ise insanların yanlış varsaydığı şey.",
+            "ar": "\"this year the vote's online, and you can also vote on paper at the library\". الاجتماع العام كان العام الماضي، واللجنة هي ما يفترضه الناس خطأً.",
+            "en": "\"This year the vote's online… or on paper at the library.\""
+          },
+          "example": "Residents can vote online or on paper at the library."
+        },
+        {
+          "type": "choice",
+          "id": "l6",
+          "prompt": "6. According to Margaret, what would make the application stronger?",
+          "options": [
+            "a detailed budget table",
+            "evidence of support from people who will benefit",
+            "photographs of the damaged bridge",
+            "a contribution from a local business"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"The main thing is to show who benefits… if you could collect signatures from neighbours who'd use the bridge, that would really help.\" Bütçe tablosu için \"Don't spend too long… a simple breakdown is fine\" diyor.",
+            "ar": "\"The main thing is to show who benefits… collect signatures from neighbours who'd use the bridge\". أما جدول الميزانية فتقول عنه: a simple breakdown is fine.",
+            "en": "\"Show who benefits… collect signatures from neighbours.\""
+          },
+          "example": "Signatures from local people show that the project has support."
+        }
+      ]
+    },
+    {
+      "kind": "read",
+      "i18n": {"ar":{"title":"القراءة: مطابقة المعلومات (Matching information) والاختيار من متعدد","intro":"نص أكاديمي بطول الامتحان يناقش كيف تجمع الحكومات المال وكيف توزّعه. الفقرات مرقّمة بالأحرف A–F.","tip":"في Matching information لا تأتي العبارات بترتيب النص، وتبدأ عادةً بكلمة مجردة: \"a reason…\" و\"an example…\" و\"a problem with…\". حدّد هذا النوع أولًا: إذا قالت \"an example of a city\" فابحث عن اسم مكان؛ وإذا قالت \"a reason\" فابحث عن كلمات مثل \"because\" و\"since\" و\"as\"."},"en":{"title":"Reading: matching information and multiple choice","intro":"An exam-length academic text on how governments raise money and how they share it out. The paragraphs are labelled A–F.","tip":"In Matching information the statements are not in text order and usually start with an abstract word: \"a reason…\", \"an example…\", \"a problem with…\". Identify this type first: if it says \"an example of a city\", look for a place name; if it says \"a reason\", look for words like \"because\", \"since\", \"as\"."}},
+      "title": "Okuma: bilgi eşleştirme (Matching information) ve çoktan seçmeli",
+      "intro": "Devletlerin parayı nasıl topladığını ve nasıl dağıttığını tartışan, sınav uzunluğunda akademik bir metin. Paragraflar A–F harfleriyle işaretli.",
+      "tip": "Matching information'da ifadeler metnin sırasında değildir ve genellikle soyut bir kelimeyle başlar: \"a reason…\", \"an example…\", \"a problem with…\". Önce bu türü belirle: \"an example of a city\" diyorsa bir yer adı ara; \"a reason\" diyorsa \"because\", \"since\", \"as\" gibi kelimeler ara.",
+      "passage": [
+        {
+          "type": "heading",
+          "text": "Where the Money Goes: The Politics of Public Spending"
+        },
+        {
+          "type": "text",
+          "text": "A  Every modern state collects money from its citizens and spends it on their behalf. In most countries, the bulk of government revenue comes from a handful of sources: taxes on income, taxes on spending such as sales tax, contributions to social insurance, and taxes on company profits. When this income is not enough to cover what the state spends, the gap, known as the budget deficit, is filled by borrowing. On the spending side, the largest items in wealthy countries are usually pensions and other forms of welfare, followed by health care and education; defence, policing and transport take smaller shares, while interest on past borrowing can absorb a surprisingly large part of the total."
+        },
+        {
+          "type": "text",
+          "text": "B  How public expenditure is divided among these areas is not a technical calculation but a political choice. Each pound or euro allocated to one purpose is unavailable for another, and every group in society can make a reasonable case for its own priority. Elections add a further complication. Because governments are judged over a few years, they may favour spending whose results are quick and visible, such as a new hospital wing that can be opened with a ceremony, over maintenance work that prevents problems no voter will ever see. Political scientists have long noted this bias towards the visible, which helps to explain why repairs are so often postponed. Ministers rarely lose an election because a drain was not cleaned, but they may well win one by promising something new."
+        },
+        {
+          "type": "text",
+          "text": "C  The consequences of postponement can be costly. In many countries, roads, bridges, water pipes and school buildings constructed decades ago now need major renovation, and the cost of repairing them rises the longer the work is delayed. A pipe that leaks a little today may burst tomorrow, causing damage far more expensive than the original repair. Similar reasoning applies outside infrastructure. Spending on early childhood education or on preventive health care can reduce the need for much more expensive interventions later. Such investments, however, require governments to accept costs now in exchange for savings that may arrive only after they have left office."
+        },
+        {
+          "type": "text",
+          "text": "D  Taxpayers understandably want to know whether their money is well spent, and governments have developed many tools to answer this question. Cost-benefit analysis compares the expected costs of a project with the value of its benefits, while auditors check whether public bodies achieve value for money. These methods are useful, but they have limits. Some benefits, such as a sense of safety or a more attractive town centre, are hard to express in figures. Numerical targets can also distort behaviour: when hospitals or schools are judged mainly on a single number, staff may concentrate on improving that number rather than on the wider quality of the service. A hospital that is judged only on waiting times, for instance, may be tempted to treat simple cases first, leaving more complicated patients to wait longer."
+        },
+        {
+          "type": "text",
+          "text": "E  Disagreements about public spending became especially sharp after the global financial crisis of 2008. As tax revenue fell and deficits grew, several European governments introduced substantial funding cuts, arguing that high levels of debt would damage confidence and burden future generations. Critics argued that reducing spending during a downturn could weaken demand further and slow the recovery. Economists still debate how much each side was right, and the answer may well depend on a country's particular circumstances. What the episode made clear is that decisions about the size of the state are as much about values as about evidence."
+        },
+        {
+          "type": "text",
+          "text": "F  One response to public distrust has been to involve citizens directly. Participatory budgeting, first introduced in the Brazilian city of Porto Alegre in 1989, allows residents to propose and vote on how part of a local budget should be used. The idea has since spread to many cities around the world. Supporters claim that it increases trust and directs money to neglected neighbourhoods; sceptics point out that only a small share of spending is usually involved, and that those who take part are not always representative of the wider population. Even so, such schemes suggest that how decisions are made may matter to citizens almost as much as what is decided. A budget that people have helped to shape, even in a small way, is perhaps more likely to be seen as legitimate, including by those whose own proposals were rejected."
+        }
+      ],
+      "questions": [
+        {
+          "type": "heading",
+          "text": "Questions 1–6: Which paragraph contains the following information?"
+        },
+        {
+          "type": "text",
+          "text": "Choose A, B, C, D, E or F. The statements are not in the order of the text. A paragraph may be the answer more than once."
+        },
+        {
+          "type": "choice",
+          "id": "r1",
+          "prompt": "1. an example of a city where residents were first given a say in spending decisions",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ],
+          "answer": 5,
+          "why": {
+            "tr": "F: \"Participatory budgeting, first introduced in the Brazilian city of Porto Alegre in 1989, allows residents to propose and vote…\". \"an example of a city\" → bir yer adı aradık: Porto Alegre.",
+            "ar": "الفقرة F: \"Participatory budgeting, first introduced in the Brazilian city of Porto Alegre in 1989\". عبارة an example of a city تعني أن نبحث عن اسم مكان.",
+            "en": "F: \"First introduced in the Brazilian city of Porto Alegre.\""
+          },
+          "example": "Porto Alegre is often given as an example of participatory budgeting."
+        },
+        {
+          "type": "choice",
+          "id": "r2",
+          "prompt": "2. a reason why politicians may prefer new projects to maintenance",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "B: \"Because governments are judged over a few years, they may favour spending whose results are quick and visible… over maintenance work\". \"Because\" = bir neden.",
+            "ar": "الفقرة B: \"Because governments are judged over a few years, they may favour spending whose results are quick and visible… over maintenance work\".",
+            "en": "B: \"Because governments are judged over a few years, they may favour… quick and visible\" spending."
+          },
+          "example": "Politicians may prefer new projects because the results are visible."
+        },
+        {
+          "type": "choice",
+          "id": "r3",
+          "prompt": "3. a problem with judging public services by a single figure",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ],
+          "answer": 3,
+          "why": {
+            "tr": "D: \"when hospitals or schools are judged mainly on a single number, staff may concentrate on improving that number rather than on the wider quality\". \"a single figure\" = \"a single number\".",
+            "ar": "الفقرة D: \"when hospitals or schools are judged mainly on a single number, staff may concentrate on improving that number\".",
+            "en": "D: \"Judged mainly on a single number.\""
+          },
+          "example": "Judging schools by a single number can be misleading."
+        },
+        {
+          "type": "choice",
+          "id": "r4",
+          "prompt": "4. the main ways in which governments raise money",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "A: \"the bulk of government revenue comes from a handful of sources: taxes on income, taxes on spending…\". \"raise money\" = \"revenue comes from\".",
+            "ar": "الفقرة A: \"the bulk of government revenue comes from a handful of sources: taxes on income, taxes on spending\".",
+            "en": "A lists the main sources of revenue."
+          },
+          "example": "Governments raise most of their money through taxes."
+        },
+        {
+          "type": "choice",
+          "id": "r5",
+          "prompt": "5. a view that reducing spending in a recession can make recovery slower",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ],
+          "answer": 4,
+          "why": {
+            "tr": "E: \"Critics argued that reducing spending during a downturn could weaken demand further and slow the recovery.\" \"recession\" = \"downturn\".",
+            "ar": "الفقرة E: \"Critics argued that reducing spending during a downturn could weaken demand further and slow the recovery\". recession تعني downturn.",
+            "en": "E: \"Reducing spending during a downturn could… slow the recovery.\""
+          },
+          "example": "Some economists argue that cuts during a downturn slow the recovery."
+        },
+        {
+          "type": "choice",
+          "id": "r6",
+          "prompt": "6. the idea that spending money early can prevent greater costs later",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "C: \"Spending on early childhood education or on preventive health care can reduce the need for much more expensive interventions later.\" Ayrıca boru örneği.",
+            "ar": "الفقرة C: \"Spending on early childhood education or on preventive health care can reduce the need for much more expensive interventions later\".",
+            "en": "C: preventive spending \"can reduce the need for much more expensive interventions later\"."
+          },
+          "example": "Fixing a small leak early prevents a much bigger bill later."
+        },
+        {
+          "type": "text",
+          "text": "Question 7. Choose the correct letter."
+        },
+        {
+          "type": "choice",
+          "id": "r7",
+          "prompt": "7. Which statement best reflects the overall argument of the passage?",
+          "options": [
+            "Public spending decisions involve values and trade-offs, not only technical calculation.",
+            "Participatory budgeting should replace elected governments.",
+            "Funding cuts after 2008 were clearly the right policy.",
+            "Cost-benefit analysis can measure every benefit of public spending."
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "B paragrafı: \"not a technical calculation but a political choice\"; E: \"as much about values as about evidence\". B ve C metnin söylemediği aşırı iddialar; D metne ters (\"Some benefits… are hard to express in figures\").",
+            "ar": "الفقرة B: not a technical calculation but a political choice، والفقرة E: as much about values as about evidence. الخياران B وC ادعاءات لم ترد، وD يناقض النص.",
+            "en": "\"Not a technical calculation but a political choice\"; \"as much about values as about evidence\"."
+          },
+          "example": "Decisions about taxes are as much about values as about evidence."
+        }
+      ]
+    },
+    {
+      "kind": "language",
+      "i18n": {"ar":{"title":"اللغة: لغة التقييم والحجج المضادة (It could be argued…, However, this overlooks…)"},"en":{"title":"Language: evaluative language and counter-arguments (It could be argued…, However, this overlooks…)"}},
+      "title": "Dil: değerlendirme dili ve karşı argümanlar (It could be argued…, However, this overlooks…)",
+      "explain": {
+        "tr": "Band 7+ bir denemede karşı görüşü sadece söylemek yetmez; onu değerlendirip cevaplaman gerekir. Üç adım: 1) Karşı görüşü tarafsız sun: \"It could be argued that…\", \"Opponents of this view claim that…\", \"Some would point out that…\". 2) Kısmen kabul et: \"This argument has some merit, since…\", \"There is some truth in this.\" 3) Zayıf noktasını göster: \"However, this overlooks the fact that…\", \"This claim is difficult to sustain because…\", \"On closer inspection, however,…\". Değerlendirme sıfatları da çok işe yarar: a convincing / persuasive / valid argument; a weak / flawed / simplistic argument. Dikkat: \"I think\" yerine bu kalıplar görüşünü daha objektif gösterir, ama karşı görüşü cevapsız bırakırsan paragrafın yönü belirsizleşir.",
+        "ar": "في مقال Band 7+ لا يكفي ذكر الرأي المعارض، بل يجب تقييمه والرد عليه. ثلاث خطوات: 1) قدّم الرأي المعارض بحياد: It could be argued that… / Opponents of this view claim that…. 2) اعترف به جزئيًا: This argument has some merit, since… / There is some truth in this. 3) أظهر نقطة ضعفه: However, this overlooks the fact that… / This claim is difficult to sustain because… / On closer inspection, however,…. وتفيد صفات التقييم كثيرًا: a convincing / valid argument و a weak / flawed / simplistic argument. انتبه: هذه العبارات تجعل رأيك أكثر موضوعية من I think، لكن إذا تركت الرأي المعارض دون رد يصبح اتجاه الفقرة غامضًا.",
+        "en": "At band 7+, it is not enough to mention the opposing view; you need to evaluate and answer it. Three steps: 1) Present it fairly: \"It could be argued that…\", \"Opponents of this view claim that…\". 2) Concede part of it: \"This argument has some merit, since…\", \"There is some truth in this.\" 3) Show its weakness: \"However, this overlooks the fact that…\", \"This claim is difficult to sustain because…\", \"On closer inspection, however,…\". Evaluative adjectives help too: a convincing / persuasive / valid argument; a weak / flawed / simplistic argument. If you leave the counter-argument unanswered, the direction of your paragraph becomes unclear."
+      },
+      "examples": [
+        "It could be argued that cutting public spending reduces the burden on future taxpayers.",
+        "However, this overlooks the fact that delayed repairs to infrastructure usually cost far more later.",
+        "This argument has some merit, since subsidised transport mainly benefits people who live in cities.",
+        "The claim that welfare discourages work is difficult to sustain, because most recipients are children, pensioners or people who are ill."
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "id": "g1",
+          "prompt": "Which phrase best introduces an opposing view fairly?",
+          "options": [
+            "It could be argued that",
+            "It is obvious to everyone that",
+            "Only a fool would think that",
+            "As I have proved,"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "\"It could be argued that\" karşı görüşü tarafsız ve akademik bir tonla sunar. B ve D aşırı kesin; C saldırgan ve akademik değil.",
+            "ar": "It could be argued that تقدّم الرأي المعارض بحياد ونبرة أكاديمية. أما B وD فقاطعتان جدًا، وC عدائية وغير أكاديمية.",
+            "en": "\"It could be argued that\" is neutral and academic."
+          },
+          "example": "It could be argued that higher taxes discourage investment."
+        },
+        {
+          "type": "gap",
+          "id": "g2",
+          "prompt": "Write ONE word: Some say free university education is unfair to taxpayers. However, this ___ the fact that graduates usually pay more tax later.",
+          "answers": [
+            "overlooks",
+            "ignores"
+          ],
+          "why": {
+            "tr": "Kalıp \"this overlooks the fact that…\" (bu, … gerçeğini göz ardı ediyor). \"ignores\" da doğru.",
+            "ar": "التعبير هو this overlooks the fact that… (هذا يتجاهل حقيقة أن…)، ويصح ignores أيضًا.",
+            "en": "\"This overlooks (ignores) the fact that…\"."
+          },
+          "example": "This argument overlooks the fact that prevention is cheaper than cure."
+        },
+        {
+          "type": "choice",
+          "id": "g3",
+          "prompt": "Choose the most suitable adjective: \"The argument that all taxes harm growth is rather ___: it ignores how public spending on education supports the economy.\"",
+          "options": [
+            "simplistic",
+            "convincing",
+            "persuasive",
+            "valid"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Cümlenin devamı argümanın bir şeyi göz ardı ettiğini söylüyor, yani olumsuz bir değerlendirme gerek: \"simplistic\" (aşırı basite indirgenmiş). Diğer üçü olumlu.",
+            "ar": "بقية الجملة تقول إن الحجة تتجاهل شيئًا، فنحتاج إلى تقييم سلبي: simplistic (تبسيطي). الصفات الأخرى إيجابية.",
+            "en": "The rest of the sentence criticises the argument, so a negative adjective: simplistic."
+          },
+          "example": "Blaming one group for the deficit is a simplistic argument."
+        },
+        {
+          "type": "choice",
+          "id": "g4",
+          "prompt": "Put the counter-argument steps in a logical order: (1) However, this overlooks the long-term savings. (2) It could be argued that preventive health care is expensive. (3) This argument has some merit, since clinics cost money to run.",
+          "options": [
+            "2 – 3 – 1",
+            "1 – 2 – 3",
+            "3 – 1 – 2",
+            "2 – 1 – 3"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Doğru sıra: karşı görüşü sun (2), kısmen kabul et (3), zayıf noktasını göster (1).",
+            "ar": "الترتيب الصحيح: قدّم الرأي المعارض (2)، ثم اعترف به جزئيًا (3)، ثم أظهر نقطة ضعفه (1).",
+            "en": "Present (2), concede (3), rebut (1)."
+          },
+          "example": "It could be argued that… This has some merit… However, this overlooks…"
+        },
+        {
+          "type": "gap",
+          "id": "g5",
+          "prompt": "Write ONE word: The claim that cutting spending always reduces debt is difficult to ___, because cuts can also reduce tax revenue.",
+          "answers": [
+            "sustain",
+            "defend",
+            "justify"
+          ],
+          "why": {
+            "tr": "Kalıp \"difficult to sustain\" (savunması zor). \"defend\" ve \"justify\" da anlamca doğru.",
+            "ar": "التعبير هو difficult to sustain (يصعب الدفاع عنه)، ويصح أيضًا defend وjustify.",
+            "en": "\"Difficult to sustain (defend, justify)\"."
+          },
+          "example": "This view is difficult to sustain in the light of recent evidence."
+        }
+      ]
+    },
+    {
+      "kind": "write",
+      "i18n": {"ar":{"title":"الكتابة · Task 1: رسم بياني بالأعمدة ودائري معًا","tip":"عندما يُعطى رسمان معًا، أعد صياغة كليهما في المقدمة، واذكر في النظرة العامة (overview) سمة رئيسية من كل رسم. ثم خصّص لكل رسم فقرة مستقلة. لا تربط الرسمين ببعضهما قسرًا؛ إذا لم تكن بينهما علاقة واضحة فصِف كلًّا منهما على حدة. لا تُبدِ رأيك في Task 1: عبارة \"It could be argued…\" في هذا الدرس خاصة بـTask 2، أما هنا فاكتفِ بوصف البيانات."},"en":{"title":"Writing · Task 1: bar chart and pie chart together","tip":"When two charts are given together, paraphrase both in the introduction and give one main feature of each in the overview. Then give each chart its own body paragraph. Don't force a link between them; if there is no clear relationship, describe them separately. Don't give opinions in Task 1: \"It could be argued…\" in this lesson is for Task 2; here, only report the data."}},
+      "title": "Yazma · Task 1: sütun ve pasta grafiği birlikte",
+      "task": 1,
+      "prompt": "The bar chart below shows public spending per person on four services in Calvera in 2004 and 2024. The pie chart shows the sources of the Calveran government's income in 2024.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words.",
+      "data": "Practice data (invented for this lesson; Calvera is a fictional country).\n\nBar chart: public spending per person, in Calveran dollars (adjusted for inflation)\nService | 2004 | 2024\nHealth | 1,200 | 2,100\nEducation | 950 | 1,050\nPensions and welfare | 1,600 | 2,400\nTransport | 500 | 380\n\nPie chart: sources of government income, 2024 (%)\nIncome tax | 38\nSales tax | 27\nCompany tax | 15\nSocial insurance contributions | 12\nOther sources | 8",
+      "minutes": 20,
+      "minWords": 150,
+      "tip": "İki grafik birlikte verildiğinde girişte ikisini de paraphrase et ve genel bakışta (overview) her grafikten bir ana özellik söyle. Sonra her grafiğe ayrı bir gövde paragrafı ayır. İki grafiği zorla birbirine bağlama; aralarında açık bir ilişki yoksa ayrı anlat. Task 1'de görüş bildirme: \"It could be argued…\" bu derste Task 2 içindir, burada yalnızca veriyi raporla.",
+      "model": "The bar chart compares how much the government of Calvera spent per person on four public services in 2004 and 2024, while the pie chart shows where its income came from in 2024.\n\nOverall, spending per person rose on three of the four services, with the largest increases in health and in pensions and welfare, whereas transport was the only area to receive less. As for income, taxes on earnings were by far the most important source.\n\nIn 2004, pensions and welfare accounted for the highest spending, at 1,600 dollars per person, followed by health at 1,200. Over the next twenty years, both figures grew considerably, reaching 2,400 and 2,100 dollars respectively, which means that health spending rose by 75 per cent, the steepest increase of any service. Expenditure on education rose only slightly, from 950 to 1,050 dollars. By contrast, spending on transport fell from 500 to 380 dollars per person.\n\nTurning to the pie chart, income tax provided 38 per cent of government revenue, and sales tax a further 27 per cent. Company tax contributed 15 per cent, while social insurance contributions made up 12 per cent. The remaining 8 per cent came from other sources."
+    },
+    {
+      "kind": "speak",
+      "i18n": {"ar":{"title":"المحادثة: الضرائب والخدمات العامة"},"en":{"title":"Speaking: taxes and public services"}},
+      "title": "Konuşma: vergiler ve kamu hizmetleri",
+      "part1": [
+        "What public services do you use most often?",
+        "Is public transport good in the place where you live?",
+        "Do you think libraries are still important today?",
+        "If you could improve one thing in your neighbourhood, what would it be?"
+      ],
+      "card": {
+        "title": "Describe a public service or facility in your area that you think is good value for money.",
+        "points": [
+          "what it is and where it is",
+          "how often you or others use it",
+          "who pays for it, as far as you know"
+        ],
+        "explain": "and explain why you think it is worth the money spent on it."
+      },
+      "useful": [
+        "As far as I know, it's funded partly by the city and partly by ticket sales.",
+        "Some people might argue it's a waste of taxpayers' money, but…",
+        "That overlooks the fact that hundreds of people use it every day.",
+        "In my view, it's excellent value for money, especially for students.",
+        "If anything, I'd say the government should allocate more to it.",
+        "The only real drawback is that it gets quite crowded at weekends."
+      ]
+    }
+  ]
+}

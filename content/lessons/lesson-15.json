@@ -1,0 +1,751 @@
+{
+  "id": "lesson-15",
+  "number": 15,
+  "title": "Space Exploration",
+  "topic": "Space exploration",
+  "level": "B1+",
+  "goal": "Follow a tutorial discussion and an academic text about space, talk about ongoing activities with the present perfect continuous, and answer a two-part essay question.",
+  "steps": [
+    {
+      "kind": "words",
+      "i18n": {"ar":{"title":"المفردات: استكشاف الفضاء","intro":"في هذا الدرس 12 كلمة وتعبيرًا عن استكشاف الفضاء. \"هل من الصواب إنفاق كل هذا المال على الفضاء؟\" من الأسئلة الكلاسيكية في IELTS Task 2، كما تتكرر الأقمار الصناعية والحطام الفضائي والشركات الخاصة في نصوص القراءة."},"en":{"title":"Vocabulary: space exploration","intro":"This lesson has 12 words and phrases about space exploration. \"Is it right to spend so much money on space?\" is a classic IELTS Task 2 question; satellites, space debris and private companies also come up often in reading texts."}},
+      "title": "Kelimeler: uzay araştırmaları",
+      "intro": "Bu derste uzay araştırmaları hakkında 12 kelime ve kalıp var. \"Uzaya bu kadar para harcamak doğru mu?\" IELTS Task 2'nin klasik sorularından biridir; uydular, uzay çöpü ve özel şirketler okuma metinlerinde de sık çıkar.",
+      "words": [
+        {
+          "en": "satellite",
+          "pos": "noun",
+          "tr": "uydu",
+          "ar": "قمر صناعي",
+          "example": "Weather forecasts depend on data from satellites."
+        },
+        {
+          "en": "orbit",
+          "pos": "noun / verb",
+          "tr": "yörünge; yörüngede dönmek",
+          "ar": "مدار؛ يدور في مدار",
+          "example": "The International Space Station orbits the Earth about every ninety minutes."
+        },
+        {
+          "en": "launch",
+          "pos": "verb / noun",
+          "tr": "fırlatmak; fırlatma",
+          "ar": "يُطلق؛ إطلاق",
+          "example": "The rocket was launched early in the morning."
+        },
+        {
+          "en": "astronaut",
+          "pos": "noun",
+          "tr": "astronot",
+          "ar": "رائد فضاء",
+          "example": "Astronauts train for years before their first mission."
+        },
+        {
+          "en": "mission",
+          "pos": "noun",
+          "tr": "görev (uzay görevi)",
+          "ar": "مهمّة",
+          "example": "The mission to Mars will take several months."
+        },
+        {
+          "en": "space debris",
+          "pos": "phrase",
+          "tr": "uzay çöpü",
+          "ar": "الحطام الفضائي",
+          "example": "Space debris can damage working satellites."
+        },
+        {
+          "en": "colonise",
+          "pos": "verb",
+          "tr": "koloni kurmak, yerleşmek",
+          "ar": "يستوطن؛ يُنشئ مستعمرة",
+          "example": "Some people dream of colonising Mars one day."
+        },
+        {
+          "en": "unmanned",
+          "pos": "adjective",
+          "tr": "insansız",
+          "ar": "غير مأهول (بلا طاقم)",
+          "example": "Unmanned probes have visited every planet in the solar system."
+        },
+        {
+          "en": "exploration",
+          "pos": "noun",
+          "tr": "keşif",
+          "ar": "الاستكشاف",
+          "example": "Space exploration has led to many useful inventions."
+        },
+        {
+          "en": "atmosphere",
+          "pos": "noun",
+          "tr": "atmosfer",
+          "ar": "الغلاف الجوي",
+          "example": "Mars has a very thin atmosphere."
+        },
+        {
+          "en": "spin-off",
+          "pos": "noun",
+          "tr": "yan ürün, dolaylı kazanım",
+          "ar": "منتج جانبي؛ فائدة غير مباشرة",
+          "example": "Some everyday products began as spin-offs from space research."
+        },
+        {
+          "en": "private sector",
+          "pos": "phrase",
+          "tr": "özel sektör",
+          "ar": "القطاع الخاص",
+          "example": "The private sector now builds many of the rockets used in space."
+        }
+      ],
+      "practice": [
+        {
+          "type": "choice",
+          "id": "w1",
+          "prompt": "A ___ travels around the Earth and is used for TV, phone calls and GPS.",
+          "options": [
+            "mission",
+            "satellite",
+            "launch",
+            "spin-off"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "Dünya'nın etrafında dönen ve iletişim için kullanılan cisim \"satellite\"tir (uydu).",
+            "ar": "الجسم الذي يدور حول الأرض ويُستخدم في الاتصالات هو satellite (قمر صناعي).",
+            "en": "An object orbiting the Earth for communications is a satellite."
+          },
+          "example": "The satellite sends pictures of the weather every hour."
+        },
+        {
+          "type": "choice",
+          "id": "w2",
+          "prompt": "The rocket was ___ at six o'clock in the morning.",
+          "options": [
+            "launched",
+            "orbited",
+            "colonised",
+            "explored"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Roket \"launch\" edilir (fırlatılır). \"orbit\" yörüngede dönmektir; fırlatma değil.",
+            "ar": "الصاروخ يُطلَق (launched)، أما orbit فتعني يدور في مدار.",
+            "en": "Rockets are launched."
+          },
+          "example": "The new satellite will be launched next spring."
+        },
+        {
+          "type": "gap",
+          "id": "w3",
+          "prompt": "Write the correct form of EXPLORE: Space ___ is extremely expensive.",
+          "answers": [
+            "exploration"
+          ],
+          "why": {
+            "tr": "Cümlenin öznesi bir isim olmalı: explore → exploration. \"Space exploration\" sabit bir ifade.",
+            "ar": "فاعل الجملة يجب أن يكون اسمًا: explore تصبح exploration، وspace exploration تعبير ثابت.",
+            "en": "A noun is needed: space exploration."
+          },
+          "example": "Ocean exploration is still in its early stages."
+        },
+        {
+          "type": "choice",
+          "id": "w4",
+          "prompt": "An unmanned spacecraft…",
+          "options": [
+            "has only one astronaut",
+            "cannot leave the Earth's atmosphere",
+            "is owned by a private company",
+            "carries no people on board"
+          ],
+          "answer": 3,
+          "why": {
+            "tr": "\"unmanned\" = insansız, içinde hiç insan yok. Tek astronotlu bir araç \"crewed\" sayılır.",
+            "ar": "unmanned تعني بلا طاقم، أي لا يوجد فيها أي إنسان.",
+            "en": "Unmanned means with no people on board."
+          },
+          "example": "An unmanned probe landed on the comet."
+        },
+        {
+          "type": "gap",
+          "id": "w5",
+          "prompt": "Write ONE word: Thousands of pieces of space ___, such as old rocket parts, are now circling the Earth.",
+          "answers": [
+            "debris"
+          ],
+          "why": {
+            "tr": "\"space debris\" = uzay çöpü: eski roket parçaları, bozuk uydular.",
+            "ar": "space debris تعني الحطام الفضائي مثل أجزاء الصواريخ القديمة والأقمار المعطّلة.",
+            "en": "\"Space debris\" = old rocket parts and broken satellites."
+          },
+          "example": "Space debris is becoming a serious problem."
+        },
+        {
+          "type": "choice",
+          "id": "w6",
+          "prompt": "Which phrase means 'businesses that are not owned by the government'?",
+          "options": [
+            "the public sector",
+            "the space agency",
+            "the private sector",
+            "mission control"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "\"private sector\" = özel sektör. \"public sector\" devletin yönettiği kurumlardır.",
+            "ar": "private sector تعني القطاع الخاص، أما public sector فهو القطاع العام الذي تديره الدولة.",
+            "en": "The private sector = companies not owned by the state."
+          },
+          "example": "Most new jobs were created in the private sector."
+        }
+      ]
+    },
+    {
+      "kind": "listen",
+      "i18n": {"ar":{"title":"الاستماع · Part 3: عرض عن الحطام الفضائي","intro":"طالبان، إينيس وتوماش، يناقشان مع المشرف عرضهما عن الحطام الفضائي. من يرى ماذا، وبماذا ينصح المشرف؟ يُشغَّل التسجيل مرة واحدة فقط.","tip":"في أسئلة \"من قال ماذا؟\" يبدي الطالبان رأيين مختلفين في الموضوع نفسه؛ وقول أحدهما \"I'm less sure\" يدل على اختلاف الرأي. أما نصائح المشرف (\"Honestly, a simple… would be clearer\"، \"I'd leave it out\") فتكون عادة سؤالًا مستقلًا."},"en":{"title":"Listening · Part 3: a space debris presentation","intro":"Two students, Ines and Tomasz, discuss their presentation on space debris with their tutor. Who thinks what, and what does the tutor suggest? The recording plays once.","tip":"In \"who says what?\" questions, the two students give different views on the same point; one saying \"I'm less sure\" signals disagreement. The tutor's advice (\"Honestly, a simple… would be clearer\", \"I'd leave it out\") is usually a separate question."}},
+      "title": "Dinleme · Part 3: uzay çöpü sunumu",
+      "intro": "İki öğrenci, Ines ve Tomasz, uzay çöpü hakkındaki sunumlarını danışman hocalarıyla konuşuyor. Kim neyi düşünüyor, hoca ne öneriyor? Kayıt bir kez çalar.",
+      "tip": "\"Kim ne diyor?\" sorularında iki öğrenci aynı konuda farklı görüş bildirir; birinin \"I'm less sure\" demesi görüş ayrılığını gösterir. Hocanın tavsiyeleri (\"Honestly, a simple… would be clearer\", \"I'd leave it out\") genelde ayrı bir soru olur.",
+      "audio": {
+        "type": "audio",
+        "id": "l-audio",
+        "speakers": {
+          "N": {
+            "name": "Narrator",
+            "voice": "en-GB-RyanNeural"
+          },
+          "tutor": {
+            "name": "Tutor",
+            "voice": "en-GB-LibbyNeural"
+          },
+          "ines": {
+            "name": "Ines",
+            "voice": "en-AU-NatashaNeural"
+          },
+          "tomasz": {
+            "name": "Tomasz",
+            "voice": "en-NZ-MitchellNeural"
+          }
+        },
+        "lines": [
+          {
+            "speaker": "N",
+            "text": "You will hear two students, Ines and Tomasz, talking to their tutor about a seminar presentation on space debris. First, you have some time to look at questions one to six.",
+            "pauseAfterMs": 2500
+          },
+          {
+            "speaker": "N",
+            "text": "Now listen carefully and answer questions one to six.",
+            "pauseAfterMs": 1200
+          },
+          {
+            "speaker": "tutor",
+            "text": "Come in, both of you. So, how's the presentation going?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "ines",
+            "text": "Quite well, I think. We've been reading about space debris for about two weeks now, and there's far more material than we expected.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "tutor",
+            "text": "That's usually a good sign. Remind me what your main focus is.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "tomasz",
+            "text": "Originally we wanted to cover the whole history of space exploration, but that was far too much. So now we're looking only at debris in low orbit, the region where most satellites are.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "tutor",
+            "text": "Sensible. And what have you found?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "ines",
+            "text": "The basic problem is that every launch leaves something behind: old rocket stages, broken satellites, even tiny flakes of paint. Because they're travelling so fast, even a very small piece can damage a working satellite.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "tomasz",
+            "text": "And there's a risk of a chain reaction. If two large objects collide, they create thousands of new fragments, which then hit other things.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "tutor",
+            "text": "Yes, that's often called the Kessler syndrome. Have you explained it with a diagram?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "tomasz",
+            "text": "Not yet. I've been trying to make an animation, but it's taking ages.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "tutor",
+            "text": "Honestly, a simple diagram would be clearer. Animations often distract the audience from the main point.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "ines",
+            "text": "I agree. I'll draw one this week.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "tutor",
+            "text": "Good. Now, what about solutions?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "ines",
+            "text": "That's the part I find most interesting. Some private sector companies have been testing ways to capture old satellites, using nets or magnets. I think that's where the real progress is going to come from.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "tomasz",
+            "text": "I'm less sure. Those tests are very expensive, and no company will remove debris unless someone pays it to. I think the answer is international rules. Every new mission should have to plan how its satellite will leave orbit at the end of its life.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "tutor",
+            "text": "Both good points. You might present them as two sides of a debate. And remember that unmanned satellites aren't the only concern. Astronauts on the space station sometimes have to move to safety when debris passes close by.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "ines",
+            "text": "Should we mention plans to colonise Mars? A lot of the articles talk about that.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "tutor",
+            "text": "I'd leave it out. It's interesting, but it isn't really connected to your question.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "tomasz",
+            "text": "OK. And how long should the presentation be?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "tutor",
+            "text": "Twenty minutes, plus five for questions. And please send me your slides by Monday, not on the morning itself.",
+            "pauseAfterMs": 1500
+          },
+          {
+            "speaker": "N",
+            "text": "That is the end of the recording.",
+            "pauseAfterMs": 0
+          }
+        ]
+      },
+      "questions": [
+        {
+          "type": "text",
+          "text": "Questions 1–3. Choose the correct letter."
+        },
+        {
+          "type": "choice",
+          "id": "l1",
+          "prompt": "1. What is the main focus of the students' presentation now?",
+          "options": [
+            "the history of space exploration",
+            "debris in low orbit",
+            "damage caused by flakes of paint"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "Önce tüm uzay araştırmaları tarihini planlamışlar ama \"that was far too much\". Şimdi: \"we're looking only at debris in low orbit\".",
+            "ar": "خطّطوا أولًا لتاريخ استكشاف الفضاء كله لكن \"that was far too much\"، والآن: \"we're looking only at debris in low orbit\".",
+            "en": "\"Now we're looking only at debris in low orbit.\""
+          },
+          "example": "We decided to focus only on one city."
+        },
+        {
+          "type": "choice",
+          "id": "l2",
+          "prompt": "2. What does the tutor advise about explaining the chain reaction?",
+          "options": [
+            "Use a simple diagram.",
+            "Make an animation.",
+            "Leave it out of the talk."
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "\"Honestly, a simple diagram would be clearer. Animations often distract the audience\". Animasyon Tomasz'ın fikri; tuzak.",
+            "ar": "\"Honestly, a simple diagram would be clearer. Animations often distract the audience\". الرسم المتحرك فكرة Tomasz وهو فخّ.",
+            "en": "\"A simple diagram would be clearer.\""
+          },
+          "example": "A simple diagram is often clearer than a long explanation."
+        },
+        {
+          "type": "choice",
+          "id": "l3",
+          "prompt": "3. What does the tutor say about plans to colonise Mars?",
+          "options": [
+            "They should be part of the conclusion.",
+            "They are not relevant to the topic.",
+            "They are discussed in too few articles."
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"I'd leave it out. It's interesting, but it isn't really connected to your question.\" C yanlış: \"A lot of the articles talk about that\".",
+            "ar": "\"I'd leave it out. It's interesting, but it isn't really connected to your question.\" والخيار C خطأ لأن \"A lot of the articles talk about that\".",
+            "en": "\"It isn't really connected to your question.\""
+          },
+          "example": "That point is interesting, but it isn't relevant to the essay question."
+        },
+        {
+          "type": "text",
+          "text": "Questions 4–6. Who expresses each of these opinions? Choose the correct answer."
+        },
+        {
+          "type": "choice",
+          "id": "l4",
+          "prompt": "4. Private companies will probably make the most progress in removing debris.",
+          "options": [
+            "Ines",
+            "Tomasz",
+            "the tutor"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Ines: \"Some private sector companies have been testing ways to capture old satellites... I think that's where the real progress is going to come from.\"",
+            "ar": "تقول Ines: \"Some private sector companies have been testing ways... I think that's where the real progress is going to come from.\"",
+            "en": "Ines: \"I think that's where the real progress is going to come from.\""
+          },
+          "example": "I think real progress is going to come from new technology."
+        },
+        {
+          "type": "choice",
+          "id": "l5",
+          "prompt": "5. International rules are the best solution.",
+          "options": [
+            "Ines",
+            "Tomasz",
+            "the tutor"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "Tomasz: \"I'm less sure... I think the answer is international rules.\"",
+            "ar": "يقول Tomasz: \"I'm less sure... I think the answer is international rules.\"",
+            "en": "Tomasz: \"I think the answer is international rules.\""
+          },
+          "example": "Many experts think the answer is stricter rules."
+        },
+        {
+          "type": "choice",
+          "id": "l6",
+          "prompt": "6. Animations can draw attention away from the main point.",
+          "options": [
+            "Ines",
+            "Tomasz",
+            "the tutor"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "Hoca: \"Animations often distract the audience from the main point.\" \"distract\" = dikkati dağıtmak.",
+            "ar": "يقول المرشد: \"Animations often distract the audience from the main point\"، وdistract تعني يشتّت الانتباه.",
+            "en": "The tutor: \"Animations often distract the audience from the main point.\""
+          },
+          "example": "Loud music can distract students from their work."
+        }
+      ]
+    },
+    {
+      "kind": "read",
+      "i18n": {"ar":{"title":"القراءة: مطابقة العناوين (Matching headings)","intro":"ستقرأ نصًا من ست فقرات عن تكاليف استكشاف الفضاء وفوائده. اختر لكل فقرة العنوان الأنسب.","tip":"يجب أن يلخّص العنوان الفقرة كلها. اقرأ الفقرة أولًا وعبّر عن فكرتها الرئيسية بكلمتين أو ثلاث بنفسك، ثم انظر إلى الخيارات. العناوين التي تحتوي كلمة وردت في الفقرة حرفيًا (\"Mars\"، \"farmers\") غالبًا ما تكون فخًا."},"en":{"title":"Reading: Matching headings","intro":"You will read a six-paragraph text about the costs and benefits of space exploration. Choose the best heading for each paragraph.","tip":"A heading should sum up the whole paragraph. Read the paragraph first and state its main idea in two or three words yourself; then look at the options. Headings that contain a word from the paragraph exactly (\"Mars\", \"farmers\") are often traps."}},
+      "title": "Okuma: başlık eşleştirme (Matching headings)",
+      "intro": "Uzay araştırmalarının maliyeti ve faydaları üzerine altı paragraflık bir metin okuyacaksın. Her paragraf için en uygun başlığı seç.",
+      "tip": "Başlıklar paragrafın tamamını özetlemeli. Önce paragrafı oku ve ana fikri iki üç kelimeyle kendin söyle; sonra seçeneklere bak. Paragrafta geçen bir kelimeyi (\"Mars\", \"farmers\") aynen içeren başlıklar çoğu zaman tuzaktır.",
+      "passage": [
+        {
+          "type": "heading",
+          "text": "Is Space Worth the Cost?"
+        },
+        {
+          "type": "text",
+          "text": "A  Since the first artificial satellite was launched in 1957, space exploration has been criticised as an expensive luxury. Every few years, someone asks why governments spend billions on rockets when there are so many problems to solve on Earth. The question is a fair one, but it often rests on the assumption that money spent on space simply disappears. In reality, most of it is spent on Earth, on the salaries of engineers and scientists and on the companies that build their equipment."
+        },
+        {
+          "type": "text",
+          "text": "B  Much of the value of space activity is now so familiar that it is easy to forget. Satellites in orbit around the Earth provide the data for weather forecasts, carry phone calls and television broadcasts, and allow navigation apps to show us exactly where we are. Farmers use satellite images to monitor their crops, and scientists use them to measure changes in ice, forests and sea levels."
+        },
+        {
+          "type": "text",
+          "text": "C  Supporters also point to spin-offs: technologies first developed for space missions that later found everyday uses. Space agencies often cite examples such as improved water filters, lighter materials and better medical imaging. The exact contribution of space research to these products is sometimes difficult to measure, but the general principle is widely accepted: solving extremely difficult engineering problems tends to produce ideas that are useful elsewhere."
+        },
+        {
+          "type": "text",
+          "text": "D  For decades, space was almost entirely the business of national governments. In recent years, however, the private sector has played a growing role. Companies have developed rockets whose first stages can return to Earth and be used again, which has helped to reduce the cost of reaching orbit. Supporters say that competition has made space more accessible; critics worry that commercial interests may not always match the public good."
+        },
+        {
+          "type": "text",
+          "text": "E  One consequence of this boom is a crowded sky. Thousands of new satellites have been launched in a short time, and old ones, along with fragments of rockets, remain in orbit as space debris. Because objects in low orbit travel at several kilometres per second, even a fragment the size of a coin can seriously damage a working spacecraft. Without international agreement on how to remove dead satellites, some experts fear that certain orbits could become too dangerous to use, damaging the very services that make space valuable."
+        },
+        {
+          "type": "text",
+          "text": "F  The most ambitious question is whether humans should travel further. Some business leaders talk of colonising Mars, arguing that humanity should not depend on a single planet. Many scientists are more cautious. Mars has a thin atmosphere, extreme cold and high levels of radiation, and unmanned probes can explore it at a fraction of the cost and risk of sending astronauts. For now, robots are likely to remain our main explorers of other worlds."
+        }
+      ],
+      "questions": [
+        {
+          "type": "heading",
+          "text": "Questions 1–6"
+        },
+        {
+          "type": "text",
+          "text": "The passage has six paragraphs, A–F. Choose the correct heading for each paragraph."
+        },
+        {
+          "type": "choice",
+          "id": "r1",
+          "prompt": "1. Paragraph A",
+          "options": [
+            "The first satellite",
+            "Where the money really goes",
+            "Problems on Earth",
+            "Why astronauts are paid so much"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "Paragraf A'nın ana fikri: uzaya harcanan para kaybolmuyor, \"most of it is spent on Earth\". 1957 ve Dünya'daki sorunlar sadece giriş ayrıntısı.",
+            "ar": "الفكرة الرئيسية في A: المال المنفق على الفضاء لا يختفي، بل \"most of it is spent on Earth\". أما 1957 ومشكلات الأرض فتفاصيل تمهيدية.",
+            "en": "The key idea: \"most of it is spent on Earth\"."
+          },
+          "example": "Most of the money really goes on salaries."
+        },
+        {
+          "type": "choice",
+          "id": "r2",
+          "prompt": "2. Paragraph B",
+          "options": [
+            "Services we take for granted",
+            "A new kind of farming",
+            "Measuring sea levels",
+            "The history of television"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "\"so familiar that it is easy to forget\" = \"take for granted\" (varlığını fark etmemek). Hava durumu, telefon, navigasyon: hepsi uydu hizmetleri.",
+            "ar": "\"so familiar that it is easy to forget\" تعني take for granted (نعتاد عليه فلا نلاحظه). الطقس والهاتف والملاحة كلها خدمات أقمار صناعية.",
+            "en": "\"So familiar that it is easy to forget\" = taken for granted."
+          },
+          "example": "We take clean water for granted until it is cut off."
+        },
+        {
+          "type": "choice",
+          "id": "r3",
+          "prompt": "3. Paragraph C",
+          "options": [
+            "Inventions that failed",
+            "Medicine in space",
+            "Why agencies keep secrets",
+            "Hard problems, useful answers"
+          ],
+          "answer": 3,
+          "why": {
+            "tr": "Paragraf C: \"solving extremely difficult engineering problems tends to produce ideas that are useful elsewhere\". Tıbbi görüntüleme sadece bir örnek.",
+            "ar": "الفقرة C: \"solving extremely difficult engineering problems tends to produce ideas that are useful elsewhere\". والتصوير الطبي مجرد مثال.",
+            "en": "\"Solving extremely difficult engineering problems tends to produce ideas that are useful elsewhere.\""
+          },
+          "example": "Hard problems often lead to useful answers."
+        },
+        {
+          "type": "choice",
+          "id": "r4",
+          "prompt": "4. Paragraph D",
+          "options": [
+            "The end of government space agencies",
+            "Rockets that cannot be reused",
+            "Business enters the space race",
+            "Why launches are getting more dangerous"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "Paragraf D: \"the private sector has played a growing role\": şirketler uzaya giriyor. B metinle çelişiyor: roketler \"be used again\".",
+            "ar": "الفقرة D: \"the private sector has played a growing role\"، أي دخول الشركات مجال الفضاء. الخيار B يناقض النص لأن الصواريخ \"be used again\".",
+            "en": "\"The private sector has played a growing role.\""
+          },
+          "example": "More and more businesses are entering the market."
+        },
+        {
+          "type": "choice",
+          "id": "r5",
+          "prompt": "5. Paragraph E",
+          "options": [
+            "A traffic problem above our heads",
+            "The benefits of more satellites",
+            "Cleaning the Earth's atmosphere",
+            "How satellites are built"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "\"a crowded sky\": çok sayıda uydu ve çöp; yörüngeler tehlikeli olabilir. \"traffic problem above our heads\" bunu mecazla anlatıyor.",
+            "ar": "\"a crowded sky\": أقمار وحطام كثير، وقد تصبح المدارات خطرة. وعبارة traffic problem above our heads تصف ذلك مجازيًا.",
+            "en": "\"A crowded sky\" full of satellites and debris."
+          },
+          "example": "The roads into the city have a serious traffic problem."
+        },
+        {
+          "type": "choice",
+          "id": "r6",
+          "prompt": "6. Paragraph F",
+          "options": [
+            "Life on Mars is confirmed",
+            "Robots or people?",
+            "Leaving the Earth by 2050",
+            "The cold of space"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "Paragraf F insanların Mars'a gitmesini ve insansız robotların daha ucuz olduğunu karşılaştırıyor: \"robots are likely to remain our main explorers\".",
+            "ar": "تقارن الفقرة F بين إرسال البشر إلى المريخ والمسابير غير المأهولة الأرخص: \"robots are likely to remain our main explorers\".",
+            "en": "Humans versus unmanned probes: \"robots are likely to remain our main explorers\"."
+          },
+          "example": "Should we send robots or people to explore the deep ocean?"
+        }
+      ]
+    },
+    {
+      "kind": "language",
+      "i18n": {"ar":{"title":"اللغة: المضارع التام المستمر (have been + -ing)"},"en":{"title":"Language: present perfect continuous (have been + -ing)"}},
+      "title": "Dil: present perfect continuous (have been + -ing)",
+      "explain": {
+        "tr": "\"have/has been + -ing\" geçmişte başlayıp hâlâ devam eden (ya da az önce biten) bir eylemi, özellikle süresini vurgulamak için kullanılır: Scientists have been studying Mars for decades. \"for\" (süre) ve \"since\" (başlangıç noktası) ile ve \"How long…?\" sorularında çok yaygındır. Sonucu ya da tamamlanmış bir miktarı söylerken present perfect simple kullan: The agency has launched three satellites this year (✓), has been launching three satellites (✗). Durum fiilleri (know, believe, own, understand) sürekli biçimde kullanılmaz: I have known her for years. Konuşma Part 1'de (\"I've been learning English for…\") ve Task 2'de süregelen eğilimleri anlatırken (\"Private companies have been playing a growing role\") çok işe yarar.",
+        "ar": "نستخدم have/has been + -ing لحدث بدأ في الماضي وما زال مستمرًا (أو انتهى للتو)، مع التركيز على مدّته: Scientists have been studying Mars for decades. ويكثر استخدامه مع for (المدة) وsince (نقطة البداية) وفي أسئلة How long…?. أما عند ذكر نتيجة أو كمية مكتملة فنستخدم المضارع التام البسيط: The agency has launched three satellites this year (✓)، وليس has been launching three satellites (✗). أفعال الحالة (know, believe, own, understand) لا تأتي بصيغة الاستمرار: I have known her for years. يفيدك هذا الزمن في Part 1 من المحادثة (I've been learning English for…) وفي Task 2 لوصف اتجاهات مستمرة (Private companies have been playing a growing role).",
+        "en": "Use have/has been + -ing for an activity that started in the past and is still continuing (or has just stopped), especially to emphasise its duration: Scientists have been studying Mars for decades. It is common with for (a period) and since (a starting point) and in How long…? questions. For a result or a completed number, use the present perfect simple: The agency has launched three satellites this year (✓), not has been launching three satellites (✗). State verbs (know, believe, own, understand) are not used in the continuous: I have known her for years. It is useful in Speaking Part 1 (I've been learning English for…) and in Task 2 for ongoing trends (Private companies have been playing a growing role)."
+      },
+      "examples": [
+        "Astronauts have been living on the International Space Station without a break since 2000.",
+        "Private companies have been developing reusable rockets for over a decade.",
+        "I've been reading a lot about space exploration recently.",
+        "Scientists have been studying the Martian atmosphere to understand how the planet lost its water."
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "id": "g1",
+          "prompt": "Engineers ___ on the new satellite since January, and it still isn't finished.",
+          "options": [
+            "worked",
+            "have been working",
+            "are working",
+            "had worked"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "Ocak'ta başladı ve hâlâ sürüyor (\"still isn't finished\"), \"since\" de var: have been working.",
+            "ar": "بدأ العمل في يناير وما زال مستمرًا (still isn't finished)، ومع since نستخدم have been working.",
+            "en": "Started in January and still continuing, with \"since\": have been working."
+          },
+          "example": "I have been waiting for the bus since eight o'clock."
+        },
+        {
+          "type": "choice",
+          "id": "g2",
+          "prompt": "Which sentence is correct?",
+          "options": [
+            "I have been knowing about this mission for years.",
+            "I am knowing about this mission for years.",
+            "I have known about this mission for years.",
+            "I know about this mission for years."
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "\"know\" bir durum fiili; sürekli biçimde kullanılmaz. Süre için present perfect simple: have known.",
+            "ar": "know فعل حالة لا يأتي بصيغة الاستمرار، ومع المدة نستخدم المضارع التام البسيط: have known.",
+            "en": "\"Know\" is a state verb, so \"have known\"."
+          },
+          "example": "We have known each other since primary school."
+        },
+        {
+          "type": "gap",
+          "id": "g3",
+          "prompt": "Write ONE word: How long have you ___ studying astronomy?",
+          "answers": [
+            "been"
+          ],
+          "why": {
+            "tr": "Present perfect continuous: have + been + -ing. Eksik olan \"been\".",
+            "ar": "المضارع التام المستمر: have + been + -ing، والناقص هو been.",
+            "en": "have + been + -ing."
+          },
+          "example": "How long have you been living in this city?"
+        },
+        {
+          "type": "choice",
+          "id": "g4",
+          "prompt": "Choose the best sentence for a RESULT (a finished number):",
+          "options": [
+            "The agency has been launching three satellites this year.",
+            "The agency has launched three satellites this year.",
+            "The agency is launching three satellites this year already.",
+            "The agency has been launched three satellites this year."
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "Tamamlanmış bir sayı (three satellites) için present perfect simple: has launched.",
+            "ar": "مع العدد المكتمل (three satellites) نستخدم المضارع التام البسيط: has launched.",
+            "en": "A completed number takes the present perfect simple: has launched."
+          },
+          "example": "She has written four books so far."
+        },
+        {
+          "type": "gap",
+          "id": "g5",
+          "prompt": "Write the correct form of TRY (present perfect continuous, THREE words): Scientists ___ to find signs of life on Mars for many years.",
+          "answers": [
+            "have been trying"
+          ],
+          "why": {
+            "tr": "\"for many years\" ve devam eden bir çaba: have been trying.",
+            "ar": "مع for many years وجهد مستمر: have been trying.",
+            "en": "A continuing effort with \"for many years\": have been trying."
+          },
+          "example": "They have been trying to solve the problem for months."
+        }
+      ]
+    },
+    {
+      "kind": "write",
+      "i18n": {"ar":{"title":"الكتابة · Task 2: مقال بسؤالين","tip":"في السؤال المكوّن من جزأين (Why…? Should…?) خصّص لكل سؤال فقرة مستقلة في صلب المقال، وأشِر إليهما معًا باختصار في المقدمة. أجب عن السؤال الثاني برأي واضح. استخدم المضارع التام المستمر لوصف الاتجاهات المستمرة (have been investing)، وجرّب كلمات satellite وorbit وspin-off وunmanned."},"en":{"title":"Writing · Task 2: a two-question essay","tip":"In a two-part question (Why…? Should…?), give each question its own body paragraph and mention both briefly in the introduction. Answer the second question with a clear opinion. Use the present perfect continuous for ongoing trends (have been investing); try the words satellite, orbit, spin-off and unmanned."}},
+      "title": "Yazma · Task 2: iki soruluk deneme",
+      "task": 2,
+      "prompt": "Some countries are spending large amounts of money on space exploration.\n\nWhy do you think governments invest in space programmes? Should this money be spent on solving problems on Earth instead?\n\nWrite a short essay that answers both questions.",
+      "minutes": 35,
+      "minWords": 230,
+      "tip": "İki parçalı soruda (Why…? Should…?) her soruya ayrı bir gövde paragrafı ayır ve girişte ikisine de kısaca değin. İkinci soruya net bir görüşle cevap ver. Süregelen eğilimleri anlatmak için present perfect continuous kullan (have been investing); satellite, orbit, spin-off, unmanned kelimelerini dene.",
+      "model": "Over the past few decades, a growing number of countries have been investing heavily in space programmes, from launching satellites to planning missions to the Moon and Mars. This essay will consider why governments make this investment and argue that, while problems on Earth must come first, abandoning space exploration would be a mistake.\n\nThere are several reasons why governments spend money on space. The most practical is that modern life depends on satellites in orbit: they provide weather forecasts, communications and the navigation systems used by delivery companies and ambulances. A country that cannot launch its own satellites must rely on others for these services. In addition, space programmes bring national prestige and help to develop a highly skilled workforce, and the engineering challenges involved often produce spin-offs that benefit other industries.\n\nNevertheless, critics argue that this money would do more good if it were spent on hospitals, schools or tackling climate change. This argument is understandable, especially in countries where many people lack basic services. However, it presents a false choice. Space budgets are usually a small fraction of public spending, and much of the money is spent on Earth, creating jobs in research and manufacturing. Moreover, satellites have been playing an essential role in tackling global problems, for example by measuring the loss of forests and the melting of ice.\n\nIn my view, governments should therefore continue to invest in space, but focus on unmanned missions and Earth-observation satellites, which offer the greatest practical benefits at the lowest cost, rather than expensive plans to colonise other planets. In this way, space exploration can help to solve problems on Earth rather than compete with them."
+    },
+    {
+      "kind": "speak",
+      "i18n": {"ar":{"title":"التحدث: الفضاء وأخبار العلوم"},"en":{"title":"Speaking: space and science news"}},
+      "title": "Konuşma: uzay ve bilim haberleri",
+      "part1": [
+        "Are you interested in space or astronomy?",
+        "Did you ever want to be an astronaut when you were a child?",
+        "Is it easy to see the stars where you live?",
+        "Have you been watching any films or documentaries about space recently?"
+      ],
+      "card": {
+        "title": "Describe a news story about science or space that interested you.",
+        "points": [
+          "what the story was about",
+          "where you heard or read about it",
+          "what happened"
+        ],
+        "explain": "and explain why it interested you."
+      },
+      "useful": [
+        "I've been following this story for a while, ever since…",
+        "I first came across it on…",
+        "Basically, scientists have been trying to…",
+        "What really caught my attention was…",
+        "It made me realise how much we depend on satellites, for example…",
+        "I'm curious to see what happens next, because…"
+      ]
+    }
+  ]
+}

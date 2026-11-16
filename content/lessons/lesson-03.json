@@ -1,0 +1,713 @@
+{
+  "id": "lesson-03",
+  "number": 3,
+  "title": "Our Changing Planet",
+  "topic": "The environment",
+  "level": "B1",
+  "goal": "Follow a discussion about an environmental project and explain causes, effects and solutions in writing.",
+  "steps": [
+    {
+      "kind": "words",
+      "i18n": {"tr":{"title":"Kelimeler: çevre"},"ar":{"title":"الكلمات: البيئة","intro":"البيئة من أكثر الموضوعات تكرارًا في IELTS Writing Task 2. ستساعدك هذه الكلمات والعبارات الاثنتا عشرة على وصف المشكلات والحلول. اقرأ الجمل الأمثلة بصوت عالٍ، ثم حلّ التمارين."},"en":{"title":"Words: The environment","intro":"The environment is one of the most common topics in IELTS Writing Task 2. These twelve words and phrases will help you describe problems and solutions. Read the example sentences aloud, then do the exercises."}},
+      "title": "Words: The environment",
+      "intro": "Çevre, IELTS Writing Task 2'de en sık çıkan konulardan biri. Bu on iki kelime ve kalıp, sorunları ve çözümleri anlatmana yardım edecek. Örnek cümleleri sesli oku, sonra alıştırmaları yap.",
+      "words": [
+        {
+          "en": "climate change",
+          "pos": "noun",
+          "tr": "iklim değişikliği",
+          "ar": "تغيّر المناخ",
+          "example": "Climate change is making heatwaves more frequent in many regions."
+        },
+        {
+          "en": "greenhouse gas emissions",
+          "pos": "noun",
+          "tr": "sera gazı salımları",
+          "ar": "انبعاثات الغازات الدفيئة",
+          "example": "Many countries have promised to cut their greenhouse gas emissions."
+        },
+        {
+          "en": "renewable energy",
+          "pos": "noun",
+          "tr": "yenilenebilir enerji",
+          "ar": "الطاقة المتجدّدة",
+          "example": "Wind and solar power are the most common forms of renewable energy."
+        },
+        {
+          "en": "fossil fuels",
+          "pos": "noun",
+          "tr": "fosil yakıtlar (kömür, petrol, doğal gaz)",
+          "ar": "الوقود الأحفوري",
+          "example": "Burning fossil fuels releases carbon dioxide into the air."
+        },
+        {
+          "en": "reduce waste",
+          "pos": "phrase",
+          "tr": "atığı azaltmak",
+          "ar": "يقلّل النفايات",
+          "example": "Buying food in smaller amounts is an easy way to reduce waste."
+        },
+        {
+          "en": "recycle",
+          "pos": "verb",
+          "tr": "geri dönüştürmek",
+          "ar": "يعيد التدوير",
+          "example": "Most glass bottles can be recycled again and again."
+        },
+        {
+          "en": "pollution",
+          "pos": "noun",
+          "tr": "kirlilik",
+          "ar": "التلوّث",
+          "example": "Air pollution is a serious health problem in many large cities."
+        },
+        {
+          "en": "endangered species",
+          "pos": "noun",
+          "tr": "nesli tükenmekte olan tür",
+          "ar": "الأنواع المهدّدة بالانقراض",
+          "example": "The park was created to protect several endangered species."
+        },
+        {
+          "en": "natural habitat",
+          "pos": "noun",
+          "tr": "doğal yaşam alanı",
+          "ar": "الموطن الطبيعي",
+          "example": "When forests are cut down, many animals lose their natural habitat."
+        },
+        {
+          "en": "carbon footprint",
+          "pos": "noun",
+          "tr": "karbon ayak izi",
+          "ar": "البصمة الكربونية",
+          "example": "Flying less is one of the best ways to reduce your carbon footprint."
+        },
+        {
+          "en": "sustainable",
+          "pos": "adjective",
+          "tr": "sürdürülebilir",
+          "ar": "مستدام",
+          "example": "The city wants to develop a more sustainable transport system."
+        },
+        {
+          "en": "raise awareness",
+          "pos": "phrase",
+          "tr": "farkındalık yaratmak, bilinçlendirmek",
+          "ar": "يرفع الوعي",
+          "example": "The campaign aims to raise awareness of plastic in the sea."
+        }
+      ],
+      "practice": [
+        {
+          "type": "choice",
+          "id": "w1",
+          "prompt": "The school runs a poster campaign to ___ awareness of food waste.",
+          "options": [
+            "raise",
+            "rise",
+            "grow",
+            "lift"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Kalıp \"raise awareness\" (farkındalık yaratmak). \"Rise\" nesne almaz (prices rise), bu yüzden \"rise awareness\" yanlış.",
+            "ar": "التعبير هو raise awareness. أما rise فلا يأخذ مفعولًا به (prices rise)، فلا نقول rise awareness.",
+            "en": "\"Raise\" takes an object; \"rise\" does not. The collocation is \"raise awareness\"."
+          },
+          "example": "Television documentaries can raise awareness of environmental problems."
+        },
+        {
+          "type": "gap",
+          "id": "w2",
+          "prompt": "Coal, oil and gas are known as ___ fuels. (one word)",
+          "answers": [
+            "fossil"
+          ],
+          "why": {
+            "tr": "Kömür, petrol ve doğal gaz \"fossil fuels\" (fosil yakıtlar) olarak adlandırılır; milyonlarca yıl önceki canlıların kalıntılarından oluşurlar.",
+            "ar": "الفحم والنفط والغاز تُسمّى fossil fuels لأنها تكوّنت من بقايا كائنات عاشت قبل ملايين السنين.",
+            "en": "Coal, oil and gas are fossil fuels, formed from ancient plants and animals."
+          },
+          "example": "Most of the world's electricity still comes from fossil fuels."
+        },
+        {
+          "type": "choice",
+          "id": "w3",
+          "prompt": "Which of these is a form of renewable energy?",
+          "options": [
+            "coal",
+            "solar power",
+            "petrol",
+            "natural gas"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "Renewable = yenilenebilir, yani bitmeyen kaynak. Güneş enerjisi yenilenebilir; kömür, benzin ve doğal gaz fosil yakıttır.",
+            "ar": "renewable تعني متجدّدة، أي لا تنفد. الطاقة الشمسية متجدّدة، أما الفحم والبنزين والغاز فهي وقود أحفوري.",
+            "en": "Solar power does not run out; the others are fossil fuels."
+          },
+          "example": "The village gets most of its electricity from solar power."
+        },
+        {
+          "type": "choice",
+          "id": "w4",
+          "prompt": "An \"endangered species\" is a type of animal or plant that…",
+          "options": [
+            "is dangerous to humans",
+            "might soon disappear completely",
+            "lives only in cities",
+            "has been brought from another country"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"Endangered\" = tehlike altında; nesli tükenebilir. \"Dangerous\" (tehlikeli) ile karıştırma.",
+            "ar": "endangered تعني مهدّدًا بالانقراض، ولا تعني dangerous (خطير).",
+            "en": "\"Endangered\" means at risk of disappearing, not \"dangerous\"."
+          },
+          "example": "The snow leopard is an endangered species."
+        },
+        {
+          "type": "gap",
+          "id": "w5",
+          "prompt": "Taking the train instead of flying can reduce your carbon ___. (one word)",
+          "answers": [
+            "footprint"
+          ],
+          "why": {
+            "tr": "\"Carbon footprint\" bir kişinin ya da kurumun neden olduğu toplam sera gazı miktarıdır; \"reduce\" ile sık kullanılır.",
+            "ar": "carbon footprint هي كمية الغازات الدفيئة التي يسبّبها شخص أو مؤسسة، وتُستخدم كثيرًا مع reduce.",
+            "en": "\"Carbon footprint\" is the total greenhouse gas a person or group produces."
+          },
+          "example": "Eating less meat is one way to reduce your carbon footprint."
+        },
+        {
+          "type": "choice",
+          "id": "w6",
+          "prompt": "Which sentence uses \"sustainable\" correctly?",
+          "options": [
+            "The river is very sustainable after the rain.",
+            "Farmers are looking for more sustainable ways to grow food.",
+            "She sustainable the old bottles.",
+            "This species is sustainable and may disappear."
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"Sustainable\" bir sıfattır: çevreye zarar vermeden uzun süre devam edebilen. \"Sustainable ways to grow food\" doğal bir kullanım.",
+            "ar": "sustainable صفة تعني ما يمكن الاستمرار فيه دون الإضرار بالبيئة، مثل sustainable ways to grow food.",
+            "en": "\"Sustainable\" is an adjective meaning able to continue without harming the environment."
+          },
+          "example": "Sustainable fishing protects fish numbers for the future."
+        }
+      ]
+    },
+    {
+      "kind": "listen",
+      "i18n": {"tr":{"title":"Dinleme · Part 3: yemek israfı projesi"},"ar":{"title":"الاستماع، الجزء 3: مشروع عن هدر الطعام","intro":"طالبان يناقشان مع أستاذهما مشروعهما عن هدر الطعام في مطعم الحرم الجامعي. اقرأ الأسئلة أولًا؛ يُشغَّل التسجيل مرة واحدة.","tip":"في الجزء 3 يتناقش عدة أشخاص في الأفكار. الإجابة الصحيحة غالبًا ليست أول فكرة تُطرح، بل ما يتفقون عليه في النهاية. إذا اقترح أحدهم فكرة ثم اعتُرض عليها بـ \"But…\" أو \"that wouldn't really…\" فاستبعد ذلك الخيار. وعند قراءة السؤال ضع خطًا تحت صاحب الرأي المسؤول عنه (الطلاب أم الأستاذ؟)."},"en":{"title":"Listening Part 3: A project on food waste","intro":"Two students talk to their tutor about their project on food waste in the campus canteen. Read the questions first; the recording plays once.","tip":"In Part 3 several people discuss ideas. The right answer is often not the first idea mentioned but the conclusion they reach in the end. If someone suggests an idea and it is then rejected with \"But…\" or \"that wouldn't really…\", that option is out. When you read the question, underline whose opinion is being asked about (the students' or the tutor's?)."}},
+      "title": "Listening Part 3: A project on food waste",
+      "intro": "İki öğrenci, kampüs yemekhanesindeki yemek israfı üzerine yaptıkları projeyi hocalarıyla konuşuyor. Önce soruları oku; kayıt bir kez çalar.",
+      "tip": "Bölüm 3'te birkaç kişi fikir tartışır. Doğru cevap çoğu zaman ilk söylenen fikir değil, sonunda vardıkları sonuçtur. Biri fikir söyler, sonra \"But…\", \"that wouldn't really…\" diye itiraz edilirse o seçenek elenir. Soruyu okurken kimin görüşünün sorulduğunun (öğrenciler mi, hoca mı?) altını çiz.",
+      "audio": {
+        "type": "audio",
+        "id": "l-audio",
+        "speakers": {
+          "N": {
+            "name": "Narrator",
+            "voice": "en-GB-SoniaNeural"
+          },
+          "marsh": {
+            "name": "Dr Marsh",
+            "voice": "en-GB-ThomasNeural"
+          },
+          "leila": {
+            "name": "Leila",
+            "voice": "en-NZ-MollyNeural"
+          },
+          "ben": {
+            "name": "Ben",
+            "voice": "en-US-AndrewNeural"
+          }
+        },
+        "lines": [
+          {
+            "speaker": "N",
+            "text": "Part three. You will hear two environmental science students, Leila and Ben, discussing their project with their tutor, Dr Marsh. First, you have some time to look at questions one to six.",
+            "pauseAfterMs": 2500
+          },
+          {
+            "speaker": "marsh",
+            "text": "So, Leila, Ben, how's the project on the campus canteen going?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "leila",
+            "text": "Quite well, I think. As you know, we wanted to measure how much food the main canteen throws away, and then suggest ways to reduce waste.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "marsh",
+            "text": "And what did you find?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "ben",
+            "text": "More than we expected. We weighed the bins every evening for two weeks, and the biggest category wasn't food from students' plates, which is what we'd assumed. It was bread and rice that was cooked but never served at all.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "leila",
+            "text": "The kitchen staff told us they always make extra because they're afraid of running out at lunchtime.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "marsh",
+            "text": "So it's a planning problem more than a behaviour problem. What are you recommending?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "ben",
+            "text": "Well, our first idea was a campaign to raise awareness among students, with posters and so on. But given what we found, that wouldn't really deal with the main cause.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "leila",
+            "text": "So now we're suggesting a simple online menu, where students choose their meal the day before. Then the kitchen knows roughly how much to cook.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "marsh",
+            "text": "Sensible. And what about the waste that can't be avoided?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "ben",
+            "text": "At the moment it all goes to landfill, which is bad news, because food rotting there produces methane. That's one of the greenhouse gas emissions we covered in the climate change module.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "leila",
+            "text": "The university already has a small composting site near the sports fields, but it only takes garden waste. We think it could be expanded.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "marsh",
+            "text": "Good. Now, in your report, I'd like you to connect all this to the bigger picture. Food has a large carbon footprint, partly because of the energy used in farming, transport and cooking, and much of that still comes from fossil fuels. Even if the canteen switched completely to renewable energy, wasted food would still mean wasted land and water.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "ben",
+            "text": "And land links to the loss of natural habitat. We read that clearing forests for farmland is one of the biggest threats to endangered species.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "marsh",
+            "text": "Exactly. So a sustainable canteen isn't just about recycling a few cans and bottles.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "leila",
+            "text": "Should we include a section on pollution as well?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "marsh",
+            "text": "Briefly, yes, but keep the focus on food. I'd rather you went into depth on one issue than tried to cover everything.",
+            "pauseAfterMs": 1500
+          },
+          {
+            "speaker": "N",
+            "text": "That is the end of part three.",
+            "pauseAfterMs": 0
+          }
+        ]
+      },
+      "questions": [
+        {
+          "type": "heading",
+          "text": "Questions 1–3"
+        },
+        {
+          "type": "text",
+          "text": "Choose the correct letter."
+        },
+        {
+          "type": "choice",
+          "id": "l1",
+          "prompt": "1. What did the students find was the largest category of waste?",
+          "options": [
+            "food left on students' plates",
+            "food that was cooked but never served",
+            "packaging from takeaway meals",
+            "fruit that went bad in storage"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "Ben: \"the biggest category wasn't food from students' plates, which is what we'd assumed. It was bread and rice that was cooked but never served.\" Tabaklarda kalan yemek, öğrencilerin tahmini; bulgu değil.",
+            "ar": "يقول Ben: \"the biggest category wasn't food from students' plates... It was bread and rice that was cooked but never served.\" بقايا الصحون كانت توقّعهم فقط.",
+            "en": "\"It wasn't food from students' plates... It was bread and rice that was cooked but never served.\""
+          },
+          "example": "Much of the waste was food that had been cooked but never served."
+        },
+        {
+          "type": "choice",
+          "id": "l2",
+          "prompt": "2. Why did the students change their first recommendation?",
+          "options": [
+            "The posters were too expensive.",
+            "The kitchen staff disagreed with it.",
+            "It would not deal with the main cause of the waste.",
+            "Dr Marsh had already rejected it."
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "\"Our first idea was a campaign to raise awareness... But given what we found, that wouldn't really deal with the main cause.\" Asıl sorun planlama olduğu için kampanya yetersiz.",
+            "ar": "\"Our first idea was a campaign to raise awareness... But... that wouldn't really deal with the main cause.\" المشكلة الأساسية في التخطيط، لا في سلوك الطلاب.",
+            "en": "\"That wouldn't really deal with the main cause.\""
+          },
+          "example": "The plan was changed because it did not deal with the main cause."
+        },
+        {
+          "type": "choice",
+          "id": "l3",
+          "prompt": "3. What does Dr Marsh say about pollution?",
+          "options": [
+            "It should be left out of the report.",
+            "It should become the main focus.",
+            "It should be mentioned only briefly.",
+            "It has no connection with food."
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "Leila kirlilik bölümünü soruyor; Dr Marsh: \"Briefly, yes, but keep the focus on food.\" Yani kısaca değinilecek, ana konu olmayacak.",
+            "ar": "تسأل Leila عن قسم التلوّث فيجيب Dr Marsh: \"Briefly, yes, but keep the focus on food.\" أي يُذكر باختصار فقط.",
+            "en": "\"Briefly, yes, but keep the focus on food.\""
+          },
+          "example": "Mention the history briefly, but keep the focus on the results."
+        },
+        {
+          "type": "heading",
+          "text": "Questions 4–6"
+        },
+        {
+          "type": "text",
+          "text": "Complete the sentences below. Write NO MORE THAN TWO WORDS for each answer."
+        },
+        {
+          "type": "gap",
+          "id": "l4",
+          "prompt": "4. The students suggest an online ___ so that the kitchen knows how much to cook.",
+          "answers": [
+            "menu"
+          ],
+          "why": {
+            "tr": "Leila: \"we're suggesting a simple online menu, where students choose their meal the day before.\" Boşluk bir isim istiyor: menu.",
+            "ar": "تقول Leila: \"we're suggesting a simple online menu\". الفراغ يحتاج إلى اسم: menu.",
+            "en": "\"We're suggesting a simple online menu.\""
+          },
+          "example": "You can order from the online menu the day before."
+        },
+        {
+          "type": "gap",
+          "id": "l5",
+          "prompt": "5. At present, all of the canteen's unavoidable food waste goes to ___.",
+          "answers": [
+            "landfill",
+            "a landfill",
+            "landfill sites"
+          ],
+          "why": {
+            "tr": "Ben: \"At the moment it all goes to landfill.\" \"At present\" = \"at the moment\": soru konuşmadaki ifadeyi eş anlamlıyla veriyor.",
+            "ar": "يقول Ben: \"At the moment it all goes to landfill.\" وat present مرادفة لـ at the moment.",
+            "en": "\"At the moment it all goes to landfill.\""
+          },
+          "example": "Most household rubbish still goes to landfill."
+        },
+        {
+          "type": "gap",
+          "id": "l6",
+          "prompt": "6. The university's composting site only accepts ___ at the moment.",
+          "answers": [
+            "garden waste"
+          ],
+          "why": {
+            "tr": "Leila: \"it only takes garden waste.\" İki kelime: garden waste. Öğrenciler bunun genişletilmesini öneriyor.",
+            "ar": "تقول Leila: \"it only takes garden waste.\" كلمتان: garden waste.",
+            "en": "\"It only takes garden waste.\""
+          },
+          "example": "Leaves and grass can be put in the garden waste bin."
+        }
+      ]
+    },
+    {
+      "kind": "read",
+      "i18n": {"tr":{"title":"Okuma: cümle tamamlama (Sentence completion)"},"ar":{"title":"القراءة: إكمال الجمل (Sentence completion)","intro":"نص أكاديمي عن نهج \"rewilding\" الذي يهدف إلى حماية الطبيعة بتركها على حالها. اقرأ، ثم أكمل الجمل بكلمات من النص.","tip":"اختر أولًا الكلمة المفتاحية في الجملة (Britain, dams, communities) وابحث في النص عنها أو عن مرادفها (costly = expensive). خذ الإجابة من النص كما هي دون تغيير الكلمة. يجب أن تكون الجملة صحيحة نحويًا: \"local ___\" تحتاج إلى اسم جمع. لا تتجاوز الحد المسموح من الكلمات؛ والكلمة الموصولة بشرطة (labour-intensive) تُعدّ كلمة واحدة."},"en":{"title":"Reading: Sentence completion","intro":"An academic text about \"rewilding\", an approach that aims to protect nature by leaving it to itself. Read it, then complete the sentences with words from the text.","tip":"First pick the key word in the sentence (Britain, dams, communities) and scan the text for it or a synonym (costly = expensive). Copy the answer exactly from the text; don't change the word. The sentence must be grammatically correct: \"local ___\" needs a plural noun. Don't go over the word limit; a hyphenated word (labour-intensive) counts as one word."}},
+      "title": "Reading: Sentence completion",
+      "intro": "Doğayı kendi haline bırakarak korumayı amaçlayan \"rewilding\" yaklaşımı üzerine akademik bir metin. Oku, sonra cümleleri metinden aldığın kelimelerle tamamla.",
+      "tip": "Önce cümledeki anahtar kelimeyi seç (Britain, dams, communities) ve metinde onu ya da eş anlamlısını tara (costly = expensive). Cevabı metinden aynen al; kelimeyi değiştirme. Cümle dil bilgisi olarak doğru olmalı: \"local ___\" çoğul bir isim ister. Kelime sınırını aşma; tireli kelime (labour-intensive) tek kelime sayılır.",
+      "passage": [
+        {
+          "type": "heading",
+          "text": "Rewilding: Letting Nature Lead"
+        },
+        {
+          "type": "text",
+          "text": "Across Europe, conservationists are increasingly interested in an approach known as rewilding. Instead of managing land closely, for example by cutting grass or controlling the number of grazing animals, rewilding aims to restore natural processes and then allow nature to take its own course. Supporters argue that this is a more sustainable way of protecting wildlife than traditional conservation, which can be expensive and labour-intensive."
+        },
+        {
+          "type": "text",
+          "text": "One of the best-known examples involves the Eurasian beaver. Hunted for its fur, the animal disappeared from Britain several centuries ago, but in recent decades it has been brought back to a number of rivers. Beavers build dams across streams, and the pools behind them create wetland, a natural habitat for insects, fish, birds and frogs. The dams also slow the flow of water, which may reduce flooding further downstream. In some areas, the return of the beaver has also attracted visitors, giving nearby villages a new source of income."
+        },
+        {
+          "type": "text",
+          "text": "Rewilding is often presented as one response to climate change. Healthy wetlands, peat bogs and forests store large amounts of carbon, so protecting them helps to limit greenhouse gas emissions. However, scientists stress that nature cannot solve the problem alone. Unless societies move away from fossil fuels towards renewable energy, the carbon stored by restored land will remain small compared with the amount released every year."
+        },
+        {
+          "type": "text",
+          "text": "Not everyone welcomes the idea. Farmers sometimes worry that returning animals will damage crops or flood fields, and some local people feel that decisions about their land are being made by outsiders. Others fear that rewilding will reduce the amount of land available for producing food at a time when the world population is still growing. Successful projects therefore usually spend years in discussion with local communities, trying to raise awareness of the benefits while also listening to concerns."
+        },
+        {
+          "type": "text",
+          "text": "For individuals, the lessons of rewilding are modest but practical. Leaving part of a garden uncut, avoiding chemical sprays that cause pollution, and choosing to recycle and reduce waste all make a small difference, and each of these steps may also shrink a household's carbon footprint. Few gardens will ever shelter endangered species, but many can provide food and shelter for common ones whose numbers are slowly falling."
+        }
+      ],
+      "questions": [
+        {
+          "type": "heading",
+          "text": "Questions 1–6"
+        },
+        {
+          "type": "text",
+          "text": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+        },
+        {
+          "type": "gap",
+          "id": "r1",
+          "prompt": "1. Rewilding tries to restore ___ and then let nature develop by itself.",
+          "answers": [
+            "natural processes"
+          ],
+          "why": {
+            "tr": "Paragraf 1: \"rewilding aims to restore natural processes and then allow nature to take its own course.\" \"Let nature develop by itself\" = \"allow nature to take its own course\".",
+            "ar": "الفقرة 1: \"rewilding aims to restore natural processes and then allow nature to take its own course\"، وهي بمعنى let nature develop by itself.",
+            "en": "\"rewilding aims to restore natural processes\"."
+          },
+          "example": "Rewilding tries to restore natural processes such as flooding and grazing."
+        },
+        {
+          "type": "gap",
+          "id": "r2",
+          "prompt": "2. Traditional conservation can be costly and ___.",
+          "answers": [
+            "labour-intensive",
+            "labour intensive"
+          ],
+          "why": {
+            "tr": "\"...traditional conservation, which can be expensive and labour-intensive.\" \"Costly\" = \"expensive\"; cevap ondan sonra gelen kelime. Tireli kelime tek kelime sayılır.",
+            "ar": "\"...which can be expensive and labour-intensive.\" وcostly تعني expensive، والإجابة هي الكلمة التالية. الكلمة الموصولة بشرطة تُعدّ كلمة واحدة.",
+            "en": "\"expensive and labour-intensive\"; costly = expensive."
+          },
+          "example": "Cleaning the beach by hand is slow and labour-intensive."
+        },
+        {
+          "type": "gap",
+          "id": "r3",
+          "prompt": "3. Beavers were originally hunted in Britain for their ___.",
+          "answers": [
+            "fur"
+          ],
+          "why": {
+            "tr": "Paragraf 2: \"Hunted for its fur, the animal disappeared from Britain several centuries ago.\"",
+            "ar": "الفقرة 2: \"Hunted for its fur, the animal disappeared from Britain several centuries ago.\"",
+            "en": "\"Hunted for its fur\"."
+          },
+          "example": "In the past, many animals were hunted for their fur."
+        },
+        {
+          "type": "gap",
+          "id": "r4",
+          "prompt": "4. The pools behind beaver dams form ___, which many species use as a home.",
+          "answers": [
+            "wetland",
+            "wetlands"
+          ],
+          "why": {
+            "tr": "\"...the pools behind them create wetland, a natural habitat for insects, fish, birds and frogs.\" \"Natural habitat\" = \"a home\".",
+            "ar": "\"...the pools behind them create wetland, a natural habitat for insects, fish, birds and frogs.\" وnatural habitat تعني a home.",
+            "en": "\"create wetland, a natural habitat\"."
+          },
+          "example": "The new wetland has attracted many kinds of birds."
+        },
+        {
+          "type": "gap",
+          "id": "r5",
+          "prompt": "5. By slowing the flow of water, beaver dams may lower the risk of ___ downstream.",
+          "answers": [
+            "flooding"
+          ],
+          "why": {
+            "tr": "\"The dams also slow the flow of water, which may reduce flooding further downstream.\" \"Lower the risk of\" ≈ \"reduce\".",
+            "ar": "\"The dams also slow the flow of water, which may reduce flooding further downstream.\" وlower the risk of قريبة من reduce.",
+            "en": "\"which may reduce flooding further downstream\"."
+          },
+          "example": "Planting trees on hills can reduce flooding in towns below."
+        },
+        {
+          "type": "gap",
+          "id": "r6",
+          "prompt": "6. Successful projects usually spend years in discussion with local ___.",
+          "answers": [
+            "communities"
+          ],
+          "why": {
+            "tr": "Paragraf 4: \"spend years in discussion with local communities\". Cümle çoğul bir isim istiyor: communities.",
+            "ar": "الفقرة 4: \"spend years in discussion with local communities\"، والجملة تحتاج إلى اسم جمع: communities.",
+            "en": "\"spend years in discussion with local communities\"."
+          },
+          "example": "The council met local communities before building the wind farm."
+        }
+      ]
+    },
+    {
+      "kind": "language",
+      "i18n": {"tr":{"title":"Dil: neden ve sonuç"},"ar":{"title":"القواعد: السبب والنتيجة"},"en":{"title":"Grammar: Cause and effect"}},
+      "title": "Grammar: Cause and effect",
+      "explain": {
+        "tr": "Neden bildirmek için: because / as / since + tam cümle (because factories release chemicals); because of / due to + isim öbeği (because of pollution, due to heavy traffic). Sonuç bildirmek için yeni cümlenin başında As a result, / Therefore, (ardından virgül) ya da noktalı virgülden sonra \"; therefore,\". En sık hata: \"due to\" ya da \"because of\" sonrasına özne + fiil koymak.",
+        "ar": "للسبب: because / as / since + جملة كاملة (because factories release chemicals)، وbecause of / due to + اسم (because of pollution, due to heavy traffic). وللنتيجة: As a result, أو Therefore, في بداية جملة جديدة مع فاصلة، أو بعد فاصلة منقوطة \"; therefore,\". أكثر خطأ شائع: وضع فاعل وفعل بعد due to أو because of.",
+        "en": "For a cause: because / as / since + clause (because factories release chemicals); because of / due to + noun phrase (because of pollution, due to heavy traffic). For a result: As a result, / Therefore, at the start of a new sentence, or \"; therefore,\" after a semicolon. The most common error is putting a subject and verb after \"due to\" or \"because of\"."
+      },
+      "examples": [
+        "Many rivers are polluted because factories release chemicals into them.",
+        "Because of rising temperatures, some species are moving to cooler areas.",
+        "Air quality in many city centres is poor due to heavy traffic.",
+        "Plastic takes a very long time to break down. As a result, it builds up in the oceans."
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "id": "g1",
+          "prompt": "Many fish in the river have died ___ the pollution from the factory.",
+          "options": [
+            "because",
+            "because of",
+            "therefore",
+            "as a result"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "Boşluktan sonra bir isim öbeği var (the pollution), cümle değil. İsimden önce \"because of\" ya da \"due to\" kullanılır; \"because\" ise tam cümle ister.",
+            "ar": "بعد الفراغ اسم (the pollution) لا جملة، لذلك نستخدم because of أو due to. أما because فتأتي بعدها جملة كاملة.",
+            "en": "\"Because of\" + noun phrase; \"because\" + clause."
+          },
+          "example": "The beach was closed because of the pollution."
+        },
+        {
+          "type": "choice",
+          "id": "g2",
+          "prompt": "The city built more cycle lanes. ___, fewer people now drive to work.",
+          "options": [
+            "Because",
+            "Due to",
+            "As a result",
+            "Because of"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "Yeni bir cümlenin başında sonucu göstermek için \"As a result,\" ya da \"Therefore,\" kullanılır; arkasından virgül gelir. \"Because\" ve \"due to\" burada cümleyi yarım bırakır.",
+            "ar": "في بداية جملة جديدة نستخدم As a result, أو Therefore, لبيان النتيجة، ثم فاصلة.",
+            "en": "\"As a result,\" starts a new sentence that gives the effect."
+          },
+          "example": "Bus fares were cut. As a result, more people took the bus."
+        },
+        {
+          "type": "gap",
+          "id": "g3",
+          "prompt": "Many animals are losing their natural habitat ___ forests are being cut down. (one word)",
+          "answers": [
+            "because",
+            "as",
+            "since"
+          ],
+          "why": {
+            "tr": "Boşluktan sonra tam bir cümle var (forests are being cut down): özne + fiil. Bu yüzden \"because\" (ya da \"as\", \"since\").",
+            "ar": "بعد الفراغ جملة كاملة فيها فاعل وفعل، لذا نستخدم because (أو as أو since).",
+            "en": "A full clause follows, so we need \"because\" (or \"as\"/\"since\")."
+          },
+          "example": "Some birds are disappearing because their forests are being cut down."
+        },
+        {
+          "type": "choice",
+          "id": "g4",
+          "prompt": "Which sentence is correct?",
+          "options": [
+            "Due to people recycle more, there is less waste.",
+            "Due to more recycling, there is less waste.",
+            "Due to that people recycle, there is less waste.",
+            "Due to recycle more, there is less waste."
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"Due to\" bir isim öbeği ister: \"due to more recycling\". Arkasına özne + fiil (people recycle) gelmez.",
+            "ar": "due to يأتي بعدها اسم: due to more recycling، ولا تأتي بعدها جملة فيها فاعل وفعل.",
+            "en": "\"Due to\" is followed by a noun phrase, not a clause."
+          },
+          "example": "Due to heavy traffic, air quality in the centre is poor."
+        },
+        {
+          "type": "gap",
+          "id": "g5",
+          "prompt": "Burning fossil fuels produces greenhouse gases; ___, many countries are investing in renewable energy. (one or more words)",
+          "answers": [
+            "therefore",
+            "as a result",
+            "consequently"
+          ],
+          "why": {
+            "tr": "Noktalı virgülden sonra iki cümleyi sonuç ilişkisiyle bağlamak için \"therefore\" ya da \"as a result\" kullanılır, ardından virgül gelir.",
+            "ar": "بعد الفاصلة المنقوطة نستخدم therefore أو as a result لربط النتيجة بالسبب، ثم فاصلة.",
+            "en": "\"Therefore\" / \"as a result\" links a cause to its result after a semicolon."
+          },
+          "example": "Plastic takes centuries to break down; therefore, it builds up in the sea."
+        }
+      ]
+    },
+    {
+      "kind": "write",
+      "i18n": {"tr":{"title":"Yazma · Task 2: sorunlar ve çözümler"},"ar":{"title":"الكتابة، Task 2: المشكلات والحلول","tip":"في الفقرة الأولى اكتب مشكلتين، كل واحدة مع نتيجتها (because of, as a result). في الفقرة الثانية اربط كل حل بمشكلة واذكر من سيتولّاه (governments, local councils, families). ابدأ كل فقرة بجملة موضوع. استخدم أدوات السبب والنتيجة التي تعلّمتها في هذا الدرس وأربع كلمات منه على الأقل."},"en":{"title":"Writing Task 2: Problems and solutions","tip":"In the first paragraph, write two problems, each with its result (because of, as a result). In the second paragraph, link each solution to a problem and say who will carry it out (governments, local councils, families). Start each paragraph with a topic sentence. Use the cause-and-effect linkers from this lesson and at least four of its words."}},
+      "title": "Writing Task 2: Problems and solutions",
+      "task": 2,
+      "prompt": "In many cities, the amount of household waste is increasing every year. What problems does this cause, and what measures could be taken to reduce it?\n\nIn this lesson, write TWO body paragraphs: one on the problems and one on the solutions.",
+      "minutes": 18,
+      "minWords": 150,
+      "tip": "Birinci paragrafta iki sorunu, her birinin sonucuyla birlikte yaz (because of, as a result). İkinci paragrafta her çözümü bir soruna bağla ve kimin yapacağını söyle (governments, local councils, families). Her paragraf bir konu cümlesiyle başlasın. Bu derste öğrendiğin neden-sonuç bağlaçlarını ve en az dört kelimeyi kullan.",
+      "model": "The growing volume of household waste creates serious problems for both cities and the wider environment. Firstly, most rubbish still ends up in landfill sites, which take up large areas of land that could otherwise remain a natural habitat for wildlife. As food and other organic waste rots, it releases methane, a powerful greenhouse gas, and therefore contributes to climate change. Secondly, waste that is burned or badly managed can cause air and water pollution, which is particularly harmful to people living nearby. As a result, the true cost of a throwaway lifestyle is often paid by communities with little political influence.\n\nSeveral measures could help to tackle this issue. The most effective is to reduce waste at its source, for instance by requiring manufacturers to use less packaging or to take back old products. Local councils can also make it easier to recycle by collecting paper, glass and food waste separately from every home. However, practical systems work best when people understand why they matter, so schools and councils should run campaigns to raise awareness of each family's carbon footprint. If these steps were combined, cities could move towards a far more sustainable model in which rubbish is treated as a resource rather than a problem."
+    },
+    {
+      "kind": "speak",
+      "i18n": {"tr":{"title":"Konuşma: doğa ve çevre"},"ar":{"title":"المحادثة: الطبيعة والبيئة"},"en":{"title":"Speaking: Nature and the environment"}},
+      "title": "Speaking: Nature and the environment",
+      "part1": [
+        "Is there much nature near the place where you live?",
+        "Do you recycle things at home? Why or why not?",
+        "How do you usually travel around your town or city?",
+        "Have you ever taken part in an activity to protect the environment?"
+      ],
+      "card": {
+        "title": "Describe something you do to help the environment.",
+        "points": [
+          "what you do",
+          "when and why you started doing it",
+          "how easy or difficult it is"
+        ],
+        "explain": "and explain why you think it is important."
+      },
+      "useful": [
+        "It's something I started doing a couple of years ago.",
+        "The main reason I do it is that…",
+        "It's not always convenient, to be honest, but…",
+        "As a result, I've noticed that…",
+        "I think if more people did this, it would make a real difference.",
+        "It's a small thing, but it all adds up."
+      ]
+    }
+  ]
+}

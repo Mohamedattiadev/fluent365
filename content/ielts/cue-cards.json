@@ -1,0 +1,437 @@
+{
+ "note": "Original IELTS Speaking Part 2 style cue cards written for Bo-ok, each with a category and Part 3 discussion questions.",
+ "cards": [
+  {
+   "id": "book",
+   "title": "Describe a book you read that you found useful.",
+   "points": [
+    "what the book was",
+    "when you read it",
+    "what it was about"
+   ],
+   "explain": "and explain why you found it useful.",
+   "followUp": [
+    "Do people read less than they used to?",
+    "Should schools choose the books students read?",
+    "Will printed books disappear?",
+    "What kinds of books are popular with young people in your country?",
+    "Is it better to read a book or watch the film made from it?"
+   ],
+   "category": "media"
+  },
+  {
+   "id": "skill",
+   "title": "Describe a skill you learned as an adult.",
+   "points": [
+    "what the skill is",
+    "how you learned it",
+    "how long it took"
+   ],
+   "explain": "and explain how you feel about it now.",
+   "followUp": [
+    "Is it harder to learn new things as we get older?",
+    "Should employers pay for workers to learn new skills?",
+    "Which skills will be most important in the future?",
+    "Which skills will be most useful in the future?",
+    "Is it easier for children or adults to learn new skills? Why?"
+   ],
+   "category": "education"
+  },
+  {
+   "id": "place-quiet",
+   "title": "Describe a quiet place you like to go to.",
+   "points": [
+    "where it is",
+    "how often you go there",
+    "what you do there"
+   ],
+   "explain": "and explain why you like it.",
+   "followUp": [
+    "Why do some people prefer noisy places?",
+    "Are cities becoming too noisy?",
+    "How can city planners create more quiet spaces?",
+    "Why do some people find cities stressful?",
+    "Should governments create more quiet public spaces?"
+   ],
+   "category": "places"
+  },
+  {
+   "id": "person-advice",
+   "title": "Describe a person who gave you good advice.",
+   "points": [
+    "who the person is",
+    "what the advice was",
+    "when you received it"
+   ],
+   "explain": "and explain how it helped you.",
+   "followUp": [
+    "Do young people listen to advice from older people?",
+    "Is advice from friends better than advice from experts?",
+    "Has the internet changed where people get advice?",
+    "Do young people today listen to advice from older people?",
+    "Is advice from friends more useful than advice from experts?"
+   ],
+   "category": "people"
+  },
+  {
+   "id": "journey",
+   "title": "Describe a journey that took longer than you expected.",
+   "points": [
+    "where you were going",
+    "how you travelled",
+    "what caused the delay"
+   ],
+   "explain": "and explain how you felt about it.",
+   "followUp": [
+    "How has travel changed in your country?",
+    "Should governments invest more in public transport?",
+    "Will people travel less in the future?",
+    "How has travel changed in the last fifty years?",
+    "Should people be encouraged to use public transport? How?"
+   ],
+   "category": "experiences"
+  },
+  {
+   "id": "decision",
+   "title": "Describe an important decision you made.",
+   "points": [
+    "what the decision was",
+    "when you made it",
+    "who helped you decide"
+   ],
+   "explain": "and explain why it was important.",
+   "followUp": [
+    "Do people make better decisions alone or in groups?",
+    "Why do some people find decisions difficult?",
+    "Should children be allowed to make important decisions?",
+    "Do people today have too many choices?",
+    "Should parents make important decisions for their teenage children?"
+   ],
+   "category": "experiences"
+  },
+  {
+   "id": "technology",
+   "title": "Describe a piece of technology you use every day.",
+   "points": [
+    "what it is",
+    "how long you have had it",
+    "what you use it for"
+   ],
+   "explain": "and explain how your life would be different without it.",
+   "followUp": [
+    "Do people depend too much on technology?",
+    "How has technology changed the way people work?",
+    "Should there be limits on children's screen time?",
+    "Has technology made people more or less sociable?",
+    "What are the risks of depending on technology?"
+   ],
+   "category": "technology"
+  },
+  {
+   "id": "celebration",
+   "title": "Describe a celebration you enjoyed.",
+   "points": [
+    "what was celebrated",
+    "where it took place",
+    "who was there"
+   ],
+   "explain": "and explain why you enjoyed it.",
+   "followUp": [
+    "Are traditional celebrations still important?",
+    "Why do some people spend a lot of money on celebrations?",
+    "How do celebrations differ between generations?",
+    "Why are traditional celebrations important for a society?",
+    "Do people spend too much money on celebrations nowadays?"
+   ],
+   "category": "culture"
+  },
+  {
+   "id": "goal",
+   "title": "Describe a goal you hope to achieve in the next few years.",
+   "points": [
+    "what the goal is",
+    "why you chose it",
+    "what you are doing to achieve it"
+   ],
+   "explain": "and explain how you will feel when you achieve it.",
+   "followUp": [
+    "Is it important to set goals?",
+    "Why do many people give up on their goals?",
+    "Should schools teach students how to plan their future?",
+    "Is it important to plan your life carefully?",
+    "Do you think success depends more on hard work or on luck?"
+   ],
+   "category": "work"
+  },
+  {
+   "id": "film",
+   "title": "Describe a film that made you think.",
+   "points": [
+    "what the film was",
+    "when you saw it",
+    "what it was about"
+   ],
+   "explain": "and explain why it made you think.",
+   "followUp": [
+    "Can films change people's opinions?",
+    "Are cinemas still popular in your country?",
+    "Should films based on true stories stay close to the facts?",
+    "Should films be used in schools to teach? Why?",
+    "Will cinemas still exist in twenty years?"
+   ],
+   "category": "media"
+  },
+  {
+   "id": "help",
+   "title": "Describe a time you helped someone.",
+   "points": [
+    "who you helped",
+    "what the situation was",
+    "how you helped"
+   ],
+   "explain": "and explain how you felt afterwards.",
+   "followUp": [
+    "Why do some people volunteer?",
+    "Should helping in the community be part of school?",
+    "Are people less helpful in big cities?",
+    "Should helping others be taught at school?",
+    "Why do some people volunteer without being paid?"
+   ],
+   "category": "people"
+  },
+  {
+   "id": "building",
+   "title": "Describe a building you find interesting.",
+   "points": [
+    "where it is",
+    "what it looks like",
+    "what it is used for"
+   ],
+   "explain": "and explain why you find it interesting.",
+   "followUp": [
+    "Should old buildings be protected or replaced?",
+    "What makes a city attractive?",
+    "How will buildings change in the future?",
+    "Should old buildings be protected or replaced with modern ones?",
+    "Who should decide what new buildings look like?"
+   ],
+   "category": "places"
+  },
+  {
+   "id": "teacher",
+   "title": "Describe a teacher who influenced you.",
+   "points": [
+    "who the teacher was",
+    "what subject they taught",
+    "what they were like"
+   ],
+   "explain": "and explain how they influenced you.",
+   "category": "education",
+   "followUp": [
+    "What makes a good teacher?",
+    "Should teachers be paid more than they are now?",
+    "Will online learning replace teachers?",
+    "Is it better to study alone or in a group?",
+    "How has education changed since your parents were at school?"
+   ]
+  },
+  {
+   "id": "lesson-online",
+   "title": "Describe an online course or video that taught you something.",
+   "points": [
+    "what it was about",
+    "how you found it",
+    "what you learned"
+   ],
+   "explain": "and explain whether you would recommend it to others.",
+   "category": "education",
+   "followUp": [
+    "What are the advantages of studying online?",
+    "Why do many people not finish online courses?",
+    "Should universities offer all their courses online?",
+    "Can you learn practical skills from videos?",
+    "How can people stay motivated when they study alone?"
+   ]
+  },
+  {
+   "id": "app",
+   "title": "Describe an app on your phone that you find useful.",
+   "points": [
+    "what the app is",
+    "how often you use it",
+    "what you use it for"
+   ],
+   "explain": "and explain why it is useful to you.",
+   "category": "technology",
+   "followUp": [
+    "Do people spend too much time on their phones?",
+    "Should children have smartphones?",
+    "How do apps collect money if they are free?",
+    "What jobs might disappear because of technology?",
+    "Is social media good for friendships?"
+   ]
+  },
+  {
+   "id": "invention",
+   "title": "Describe an invention that has changed the way people live.",
+   "points": [
+    "what the invention is",
+    "when it was invented",
+    "how people use it"
+   ],
+   "explain": "and explain how it has changed people's lives.",
+   "category": "technology",
+   "followUp": [
+    "Which invention of the last century is the most important?",
+    "Do all inventions make life better?",
+    "Should governments pay for scientific research?",
+    "Why do some people resist new technology?",
+    "What will be the next big invention?"
+   ]
+  },
+  {
+   "id": "friend",
+   "title": "Describe a friend you have known for a long time.",
+   "points": [
+    "who the friend is",
+    "how you met",
+    "what you do together"
+   ],
+   "explain": "and explain why your friendship has lasted.",
+   "category": "people",
+   "followUp": [
+    "What makes a good friend?",
+    "Is it easy to make friends as an adult?",
+    "Can you be real friends with someone online?",
+    "Are friends more important than family?",
+    "Why do friendships sometimes end?"
+   ]
+  },
+  {
+   "id": "neighbour",
+   "title": "Describe a neighbour you know well.",
+   "points": [
+    "who the neighbour is",
+    "how long you have known them",
+    "what you talk about"
+   ],
+   "explain": "and explain why you get on well with them.",
+   "category": "people",
+   "followUp": [
+    "Do people know their neighbours less than in the past?",
+    "How can neighbours help each other?",
+    "Is it better to live in a house or a flat?",
+    "What problems can happen between neighbours?",
+    "Should cities create more community spaces?"
+   ]
+  },
+  {
+   "id": "city",
+   "title": "Describe a city you would like to visit.",
+   "points": [
+    "which city it is",
+    "how you know about it",
+    "what you would do there"
+   ],
+   "explain": "and explain why you would like to visit it.",
+   "category": "places",
+   "followUp": [
+    "What makes a city a good place to live?",
+    "Is tourism good for cities?",
+    "Should old city centres be closed to cars?",
+    "Why do people move from the countryside to cities?",
+    "How will cities change in the future?"
+   ]
+  },
+  {
+   "id": "park",
+   "title": "Describe a park or garden you enjoy visiting.",
+   "points": [
+    "where it is",
+    "what it looks like",
+    "what people do there"
+   ],
+   "explain": "and explain why you enjoy going there.",
+   "category": "nature",
+   "followUp": [
+    "Why are green spaces important in cities?",
+    "Should people grow their own food?",
+    "Do children spend enough time outdoors?",
+    "Who should pay for public parks?",
+    "How can cities be made greener?"
+   ]
+  },
+  {
+   "id": "weather",
+   "title": "Describe a time when the weather changed your plans.",
+   "points": [
+    "when it happened",
+    "what you had planned",
+    "what the weather was like"
+   ],
+   "explain": "and explain what you did instead.",
+   "category": "nature",
+   "followUp": [
+    "How is the climate changing in your country?",
+    "What can individuals do to protect the environment?",
+    "Should governments or companies do more about pollution?",
+    "Do people take weather forecasts seriously?",
+    "How does weather affect people's moods?"
+   ]
+  },
+  {
+   "id": "habit",
+   "title": "Describe a healthy habit you have.",
+   "points": [
+    "what the habit is",
+    "when you started it",
+    "how often you do it"
+   ],
+   "explain": "and explain how it helps you.",
+   "category": "health",
+   "followUp": [
+    "Why is it hard for people to change their habits?",
+    "Should junk food be taxed?",
+    "Is it the government's job to keep people healthy?",
+    "Do people worry too much about their health today?",
+    "How can schools help children to eat well?"
+   ]
+  },
+  {
+   "id": "job",
+   "title": "Describe a job you would like to do in the future.",
+   "points": [
+    "what the job is",
+    "what skills it needs",
+    "how you could get it"
+   ],
+   "explain": "and explain why you would like to do it.",
+   "category": "work",
+   "followUp": [
+    "What is more important in a job: money or satisfaction?",
+    "Should people stay in one job for many years?",
+    "Is working from home a good idea?",
+    "Which jobs will be most important in the future?",
+    "Should students work while they study?"
+   ]
+  },
+  {
+   "id": "tradition",
+   "title": "Describe a tradition in your country that you like.",
+   "points": [
+    "what the tradition is",
+    "when it happens",
+    "what people do"
+   ],
+   "explain": "and explain why you like it.",
+   "category": "culture",
+   "followUp": [
+    "Why do some traditions disappear?",
+    "Should young people learn about old traditions?",
+    "Is globalisation making cultures more similar?",
+    "How do festivals help tourism?",
+    "Can new traditions be created?"
+   ]
+  }
+ ]
+}

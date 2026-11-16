@@ -1,0 +1,771 @@
+{
+ "id": "lesson-27",
+ "number": 27,
+ "title": "Social Media and Well-being",
+ "topic": "Social media and well-being",
+ "level": "B2",
+ "goal": "Understand opinions about social media and mental health, and adjust how strongly you state a view with arguably, undoubtedly and to some extent.",
+ "steps": [
+  {
+   "kind": "words",
+   "i18n": {"ar":{"title":"المفردات: وسائل التواصل الاجتماعي والرفاه","intro":"في هذا الدرس 12 كلمة وعبارة عن وسائل التواصل الاجتماعي والصحة النفسية والعلاقات. تعلّم المتلازمات مثل \"interact with\" و\"in moderation\" و\"low self-esteem\" ككتل جاهزة."},"en":{"title":"Vocabulary: social media and wellbeing","intro":"This lesson has 12 words and phrases about social media, mental health and relationships. Learn collocations like \"interact with\", \"in moderation\" and \"low self-esteem\" as fixed chunks."}},
+   "title": "Kelimeler: sosyal medya ve iyi oluş",
+   "intro": "Bu derste sosyal medya, ruh sağlığı ve ilişkiler hakkında 12 kelime ve kalıp var. \"interact with\", \"in moderation\", \"low self-esteem\" gibi eşdizimleri kalıp olarak öğren.",
+   "words": [
+    {
+     "en": "screen time",
+     "pos": "phrase",
+     "tr": "ekran süresi (telefon, bilgisayar başında geçen zaman)",
+     "ar": "وقت الشاشة (الوقت المقضي أمام الأجهزة)",
+     "example": "Many parents try to limit their children's screen time at weekends."
+    },
+    {
+     "en": "platform",
+     "pos": "noun",
+     "tr": "platform (sosyal medya sitesi ya da uygulaması)",
+     "ar": "منصّة (موقع أو تطبيق للتواصل)",
+     "example": "Each platform has its own rules about what users can post."
+    },
+    {
+     "en": "algorithm",
+     "pos": "noun",
+     "tr": "algoritma (ne göreceğini seçen program)",
+     "ar": "خوارزمية",
+     "example": "The algorithm shows you more videos like the ones you have already watched."
+    },
+    {
+     "en": "addictive",
+     "pos": "adjective",
+     "tr": "bağımlılık yapan",
+     "ar": "يسبّب الإدمان",
+     "example": "Some apps are designed to be addictive, so people keep scrolling."
+    },
+    {
+     "en": "anxiety",
+     "pos": "noun",
+     "tr": "kaygı, endişe",
+     "ar": "القلق",
+     "example": "Checking messages late at night can increase anxiety and disturb sleep."
+    },
+    {
+     "en": "self-esteem",
+     "pos": "noun",
+     "tr": "özsaygı, kendine değer verme",
+     "ar": "تقدير الذات",
+     "example": "Constant comparison with others can damage a teenager's self-esteem."
+    },
+    {
+     "en": "peer pressure",
+     "pos": "phrase",
+     "tr": "akran baskısı",
+     "ar": "ضغط الأقران",
+     "example": "Peer pressure makes some young people post things they later regret."
+    },
+    {
+     "en": "cyberbullying",
+     "pos": "noun",
+     "tr": "siber zorbalık (internette zorbalık)",
+     "ar": "التنمّر الإلكتروني",
+     "example": "The school has a clear policy on cyberbullying."
+    },
+    {
+     "en": "isolation",
+     "pos": "noun",
+     "tr": "yalnızlık, yalıtılmışlık",
+     "ar": "العزلة",
+     "example": "For some older people, video calls reduce the feeling of isolation."
+    },
+    {
+     "en": "interact",
+     "pos": "verb",
+     "tr": "etkileşim kurmak, iletişim kurmak",
+     "ar": "يتفاعل",
+     "example": "Teenagers now interact with friends online as much as face to face."
+    },
+    {
+     "en": "in moderation",
+     "pos": "phrase",
+     "tr": "ölçülü olarak, aşırıya kaçmadan",
+     "ar": "باعتدال",
+     "example": "Like sugar, social media is probably fine in moderation."
+    },
+    {
+     "en": "mental health",
+     "pos": "phrase",
+     "tr": "ruh sağlığı",
+     "ar": "الصحة النفسية",
+     "example": "Talking to a friend can be good for your mental health."
+    }
+   ],
+   "practice": [
+    {
+     "type": "choice",
+     "id": "w1",
+     "prompt": "Apps that make users want to keep checking them again and again are described as…",
+     "options": [
+      "addictive",
+      "anxious",
+      "isolated",
+      "moderate"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "\"Addictive\" = bağımlılık yapan; bir şeyi tanımlar. \"anxious\" bir insanın hissidir; \"isolated\" yalnız kalmış; \"moderate\" ölçülü.",
+      "ar": "addictive تعني ما يسبّب الإدمان وتصف الشيء. أما anxious فشعور الإنسان، وisolated معزول، وmoderate معتدل.",
+      "en": "\"Addictive\" describes something people find hard to stop using."
+     },
+     "example": "Online games can be highly addictive for some children."
+    },
+    {
+     "type": "choice",
+     "id": "w2",
+     "prompt": "Which word completes both phrases: \"low ___\" and \"boost your ___\"?",
+     "options": [
+      "self-esteem",
+      "anxiety",
+      "platform",
+      "screen time"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "\"low self-esteem\" (düşük özsaygı) ve \"boost your self-esteem\" (özsaygını artırmak) doğal eşdizimler. \"low anxiety\" olur ama \"boost your anxiety\" doğal değil.",
+      "ar": "low self-esteem وboost your self-esteem تلازمان طبيعيان. أما boost your anxiety فغير طبيعي.",
+      "en": "\"Low self-esteem\" and \"boost your self-esteem\" are both natural."
+     },
+     "example": "Praise from teachers can boost a child's self-esteem."
+    },
+    {
+     "type": "gap",
+     "id": "w3",
+     "prompt": "Write the noun form of ANXIOUS: Many students suffer from exam ___.",
+     "answers": [
+      "anxiety"
+     ],
+     "why": {
+      "tr": "\"suffer from\" sonrasında isim gerekir: anxious (sıfat) → anxiety (isim). \"exam anxiety\" yaygın bir eşdizim.",
+      "ar": "بعد suffer from نحتاج إلى اسم: الصفة anxious تصبح الاسم anxiety.",
+      "en": "A noun after \"suffer from\": anxious → anxiety."
+     },
+     "example": "Breathing exercises can reduce exam anxiety."
+    },
+    {
+     "type": "choice",
+     "id": "w4",
+     "prompt": "\"Peer pressure\" is pressure that comes from…",
+     "options": [
+      "people of your own age or group",
+      "your parents and teachers",
+      "advertising companies",
+      "the government"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "\"Peer\" = yaşıt, aynı gruptaki kişi. Akran baskısı arkadaşlardan ve yaşıtlardan gelir.",
+      "ar": "peer تعني الشخص من نفس العمر أو المجموعة، فضغط الأقران يأتي من الأصدقاء والزملاء.",
+      "en": "A peer is someone of the same age or group."
+     },
+     "example": "He started smoking because of peer pressure at school."
+    },
+    {
+     "type": "gap",
+     "id": "w5",
+     "prompt": "Write ONE word: Most experts agree that social media is not harmful if it is used in ___.",
+     "answers": [
+      "moderation"
+     ],
+     "why": {
+      "tr": "Kalıp \"in moderation\" = ölçülü olarak, aşırıya kaçmadan.",
+      "ar": "التعبير الثابت in moderation أي باعتدال ودون إفراط.",
+      "en": "The fixed phrase is \"in moderation\"."
+     },
+     "example": "Coffee is fine in moderation."
+    },
+    {
+     "type": "choice",
+     "id": "w6",
+     "prompt": "Choose the correct preposition: Shy teenagers sometimes find it easier to interact ___ others online.",
+     "options": [
+      "with",
+      "to",
+      "at",
+      "for"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "\"interact with someone\" kalıbı: biriyle etkileşim kurmak.",
+      "ar": "الفعل interact يأتي مع with: interact with someone.",
+      "en": "The verb takes \"with\": interact with someone."
+     },
+     "example": "Children learn by interacting with each other."
+    }
+   ]
+  },
+  {
+   "kind": "listen",
+   "i18n": {"ar":{"title":"الاستماع · Part 1: المشاركة في بحث عن وسائل التواصل","intro":"امرأة تتصل هاتفيًا للمشاركة في بحث جامعي عن وسائل التواصل الاجتماعي والنوم. اقرأ الاستمارة أولًا. يُشغَّل التسجيل مرة واحدة.","tip":"في Part 1 كثيرًا ما يصحّح المتحدثون أنفسهم: \"about three hours… actually, nearer five\". اكتب دائمًا المعلومة الأخيرة المصحَّحة. في التواريخ يمكنك كتابة \"14\" أو \"14th\"؛ احرص على ألا تتجاوز عدد الكلمات المسموح."},"en":{"title":"Listening · Part 1: joining a social media study","intro":"A woman phones to take part in a university study on social media and sleep. Read the form first. The recording plays once.","tip":"In Part 1 speakers often correct themselves: \"about three hours… actually, nearer five\". Always write the final, corrected information. For dates you can write \"14\" or \"14th\"; be careful not to go over the word limit."}},
+   "title": "Dinleme · Part 1: sosyal medya araştırmasına katılım",
+   "intro": "Bir kadın, bir üniversitenin sosyal medya ve uyku üzerine yaptığı araştırmaya katılmak için telefonla arıyor. Önce formu oku. Kayıt bir kez çalar.",
+   "tip": "Part 1'de konuşmacılar sık sık kendilerini düzeltir: \"about three hours… actually, nearer five\". Her zaman son, düzeltilmiş bilgiyi yaz. Tarihlerde \"14\" ya da \"14th\" yazabilirsin; kelime sınırını aşmamaya dikkat et.",
+   "audio": {
+    "type": "audio",
+    "id": "l-audio",
+    "speakers": {
+     "N": {
+      "name": "Narrator",
+      "voice": "en-GB-SoniaNeural"
+     },
+     "owen": {
+      "name": "Owen",
+      "voice": "en-US-AndrewNeural"
+     },
+     "leila": {
+      "name": "Leila",
+      "voice": "en-NZ-MollyNeural"
+     }
+    },
+    "lines": [
+     {
+      "speaker": "N",
+      "text": "You will hear a woman phoning a university about a research study. First, you have some time to look at questions one to six.",
+      "pauseAfterMs": 2500
+     },
+     {
+      "speaker": "N",
+      "text": "Now listen carefully and answer questions one to six.",
+      "pauseAfterMs": 1200
+     },
+     {
+      "speaker": "owen",
+      "text": "Hello, Psychology Department, Owen speaking.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "leila",
+      "text": "Hi. I saw a poster about a study on social media and sleep, and I'd like to find out more. I might be interested in taking part.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "owen",
+      "text": "Great, we're still recruiting. Basically, we're looking at whether the way people use social media in the evening affects their sleep and their mental health. Can I take your name first?",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "leila",
+      "text": "Yes, it's Leila Haddad. That's H-A-double D-A-D.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "owen",
+      "text": "Thanks, Leila. And roughly how much screen time do you have on an average day? Not counting work.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "leila",
+      "text": "Oh, about three hours, I'd say. Actually, hang on, my phone tells me. It says… nearer five. That's a bit embarrassing.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "owen",
+      "text": "Don't worry, that's quite typical. Most of our participants underestimate it. Which platform do you use most?",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "leila",
+      "text": "Probably the video one. I start watching something short before bed, and then the algorithm keeps suggesting more, and suddenly it's one in the morning.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "owen",
+      "text": "Yes, they're designed to be addictive, really. So, the study runs for four weeks. In the first two weeks you just use your phone normally, and a small app records your screen time and when you fall asleep.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "leila",
+      "text": "And in the second two weeks?",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "owen",
+      "text": "We ask you to make one change: turn off all notifications after nine in the evening. We don't ask anyone to delete their accounts, and you can still use your phone if you want to. We're interested in whether removing the interruptions makes a difference.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "leila",
+      "text": "That sounds doable. I was worried you'd ask me to give up social media completely. I do use it to interact with my family abroad, so I wouldn't want to stop.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "owen",
+      "text": "No, not at all. We think it's probably fine in moderation; we just want to understand it better. Each week there's also a short questionnaire about mood and anxiety. It takes about ten minutes.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "leila",
+      "text": "Fine. Is there any payment?",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "owen",
+      "text": "There's a shopping voucher at the end. It used to be fifteen pounds, but we've just increased it to twenty.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "leila",
+      "text": "Lovely. And do I need to come in at any point?",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "owen",
+      "text": "Just once, at the start, so we can set up the app with you. The next introductory session is on Tuesday the fourteenth of March, at four o'clock.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "leila",
+      "text": "The fourteenth is fine. Where do I go? Is it the psychology building?",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "owen",
+      "text": "It usually is, but the building is being repaired this term, so we're using a meeting room in the main library. Go to the library café on the ground floor and someone will meet you there.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "leila",
+      "text": "The library café. Got it. Is there anything else I should know?",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "owen",
+      "text": "Only that everything is confidential, and your data is stored securely on university computers. We don't look at what you post, just how long you use each app. Oh, and if you ever feel the study is making you uncomfortable, you can leave at any time.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "leila",
+      "text": "That's reassuring. Thanks very much.",
+      "pauseAfterMs": 1500
+     },
+     {
+      "speaker": "N",
+      "text": "That is the end of the recording.",
+      "pauseAfterMs": 0
+     }
+    ]
+   },
+   "questions": [
+    {
+     "type": "text",
+     "text": "Questions 1–4. Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer."
+    },
+    {
+     "type": "text",
+     "text": "Social media and sleep study: new participant"
+    },
+    {
+     "type": "gap",
+     "id": "l1",
+     "prompt": "1. Surname: ___",
+     "answers": [
+      "Haddad"
+     ],
+     "why": {
+      "tr": "Leila soyadını kodluyor: \"H-A-double D-A-D\". \"double D\" iki D demek: Haddad.",
+      "ar": "تتهجّى Leila اسمها: \"H-A-double D-A-D\"، وdouble D تعني حرفي D متتاليين: Haddad.",
+      "en": "\"H-A-double D-A-D.\""
+     },
+     "example": "My surname has a double D in it."
+    },
+    {
+     "type": "gap",
+     "id": "l2",
+     "prompt": "2. Daily screen time (not work): about ___ hours",
+     "answers": [
+      "five",
+      "5"
+     ],
+     "why": {
+      "tr": "Önce \"about three hours\" diyor, sonra telefonuna bakıp düzeltiyor: \"nearer five\". Son bilgi doğrudur.",
+      "ar": "قالت أولًا \"about three hours\" ثم صحّحت بعد النظر إلى هاتفها: \"nearer five\". المعلومة الأخيرة هي الصحيحة.",
+      "en": "She first says three, then corrects herself: \"nearer five\"."
+     },
+     "example": "I thought I spent two hours online, but it was nearer four."
+    },
+    {
+     "type": "gap",
+     "id": "l3",
+     "prompt": "3. Introductory session: Tuesday ___ March, 4 pm",
+     "answers": [
+      "14",
+      "14th",
+      "fourteenth"
+     ],
+     "why": {
+      "tr": "\"on Tuesday the fourteenth of March, at four o'clock\". Sayıyı \"14\" ya da \"14th\" olarak yazabilirsin.",
+      "ar": "\"on Tuesday the fourteenth of March, at four o'clock\". يمكنك كتابة 14 أو 14th.",
+      "en": "\"Tuesday the fourteenth of March.\""
+     },
+     "example": "The meeting is on the fourteenth of March."
+    },
+    {
+     "type": "gap",
+     "id": "l4",
+     "prompt": "4. Payment: a £___ shopping voucher",
+     "answers": [
+      "20",
+      "twenty"
+     ],
+     "why": {
+      "tr": "\"It used to be fifteen pounds, but we've just increased it to twenty.\" 15 eski miktar, tuzak.",
+      "ar": "\"It used to be fifteen pounds, but we've just increased it to twenty.\" الرقم 15 قديم، فهو فخّ.",
+      "en": "\"It used to be fifteen… we've just increased it to twenty.\""
+     },
+     "example": "The ticket used to cost ten pounds, but now it's twelve."
+    },
+    {
+     "type": "text",
+     "text": "Questions 5–6. Choose the correct letter."
+    },
+    {
+     "type": "choice",
+     "id": "l5",
+     "prompt": "5. In the second half of the study, participants must",
+     "options": [
+      "delete their social media accounts.",
+      "turn off notifications in the evening.",
+      "stop using their phone after 9 pm."
+     ],
+     "answer": 1,
+     "why": {
+      "tr": "\"turn off all notifications after nine in the evening\". Hesap silme yok (\"We don't ask anyone to delete their accounts\") ve telefonu kullanmaya devam edebilir: C tuzak.",
+      "ar": "\"turn off all notifications after nine in the evening\". لا حذف للحسابات، ويمكنها استخدام الهاتف، فالخيار C فخّ.",
+      "en": "\"Turn off all notifications after nine… you can still use your phone.\""
+     },
+     "example": "I turn off notifications after nine so I can sleep."
+    },
+    {
+     "type": "choice",
+     "id": "l6",
+     "prompt": "6. Where should Leila go for the session?",
+     "options": [
+      "the psychology building",
+      "the library café",
+      "the main reception"
+     ],
+     "answer": 1,
+     "why": {
+      "tr": "Leila psikoloji binasını soruyor; Owen: \"It usually is, but the building is being repaired… Go to the library café on the ground floor.\"",
+      "ar": "تسأل Leila عن مبنى علم النفس، فيجيب Owen: \"It usually is, but the building is being repaired… Go to the library café\".",
+      "en": "\"The building is being repaired… Go to the library café.\""
+     },
+     "example": "The meeting is usually in our office, but this week it's in the café."
+    }
+   ]
+  },
+  {
+   "kind": "read",
+   "i18n": {"ar":{"title":"القراءة: Yes / No / Not Given","intro":"ستقرأ آراء كاتب عن تأثير وسائل التواصل الاجتماعي على الصحة النفسية للشباب. انتبه لمدى ثقة الكاتب (undoubtedly, arguably, to some extent).","tip":"في هذا النص يعبّر الكاتب عن رأيه أحيانًا بقوة (undoubtedly, clearly) وأحيانًا بتحفظ (arguably, to some extent). إذا ورد في السؤال تعبير قاطع مثل \"always\" أو \"the only cause\" وكان الكاتب متحفظًا، فالإجابة غالبًا NO."},"en":{"title":"Reading: Yes / No / Not Given","intro":"You will read a writer's views on how social media affects young people's mental health. Pay attention to how sure the writer is (undoubtedly, arguably, to some extent).","tip":"In this text the writer states opinions sometimes strongly (undoubtedly, clearly) and sometimes cautiously (arguably, to some extent). If the question has an absolute phrase like \"always\" or \"the only cause\" and the writer is cautious, the answer is usually NO."}},
+   "title": "Okuma: Yes / No / Not Given",
+   "intro": "Bir yazarın sosyal medyanın gençlerin ruh sağlığına etkisi hakkındaki görüşlerini okuyacaksın. Yazarın ne kadar emin olduğuna (undoubtedly, arguably, to some extent) dikkat et.",
+   "tip": "Bu metinde yazar görüşünü bazen güçlü (undoubtedly, clearly), bazen temkinli (arguably, to some extent) söylüyor. Soruda \"always\" ya da \"the only cause\" gibi kesin bir ifade varsa ve yazar temkinliyse, cevap çoğu zaman NO'dur.",
+   "passage": [
+    {
+     "type": "heading",
+     "text": "Is Social Media Really to Blame?"
+    },
+    {
+     "type": "text",
+     "text": "Few subjects generate as much anxiety among parents as their children's use of social media. Newspapers regularly report that teenagers are lonelier, more anxious and less happy than previous generations, and the smartphone is often presented as the obvious cause. There is undoubtedly something to this concern. The years in which smartphones became common were also years in which several countries recorded worrying trends in young people's mental health. Yet a connection in time is not proof that one thing caused the other, and I believe the debate has become far more emotional than the evidence justifies."
+    },
+    {
+     "type": "text",
+     "text": "Part of the difficulty is that \"social media\" is not a single activity. Sending messages to a close friend, watching cooking videos and scrolling anxiously through photographs of classmates on holiday are very different experiences, yet many studies simply measure total screen time. Research that does separate these activities tends to find that passive scrolling and constant comparison with others are linked with lower self-esteem, whereas active communication with people one already knows can actually reduce feelings of isolation. In my view, the question is not how long young people spend on a platform but what they do there."
+    },
+    {
+     "type": "text",
+     "text": "This is not to say that the companies behind these apps are innocent. Their business depends on attention, and features such as endless feeds, automatic video play and frequent notifications are clearly designed to keep users on the screen for as long as possible. The algorithm that selects what each person sees learns very quickly which content provokes a strong reaction. For a teenager who is already unhappy with their appearance, this can mean a steady stream of images that make the problem worse. To some extent, then, describing these products as addictive is fair, even if the word is sometimes used too loosely."
+    },
+    {
+     "type": "text",
+     "text": "Cyberbullying is a further concern. Bullying is, of course, nothing new, but in the past a child could at least escape it at home. When the bullying continues on a phone late into the night, there is no such escape, and the audience may be far larger. Peer pressure also takes new forms: the number of likes a post receives is visible to everyone, and many young people feel they must present a carefully edited version of their lives. Those who do not keep up may feel left out, while those who do can become exhausted by the effort of constantly performing for an audience. Neither outcome is good for well-being, and adults should not dismiss these pressures as trivial simply because they did not experience them at the same age."
+    },
+    {
+     "type": "text",
+     "text": "What, then, should be done? Banning teenagers from social media altogether seems to me both unrealistic and unwise. These platforms are now one of the main ways in which young people interact, organise their social lives and find communities of people who share their interests, which can be particularly valuable for those who feel different from others at school. A more sensible approach would combine regulation of the most harmful design features with education that helps young people notice how they feel after using particular apps."
+    },
+    {
+     "type": "text",
+     "text": "Arguably, the most useful message for families is the oldest one: most things are harmless in moderation. A teenager who sleeps well, sees friends in person and takes part in activities they enjoy is unlikely to be seriously harmed by an hour of videos in the evening. Parents who worry should perhaps look first at whether phones are replacing sleep, since poor sleep has well-established effects on mood and concentration. Social media is certainly not the whole story, but it is part of the story, and it deserves careful rather than panicked attention."
+    }
+   ],
+   "questions": [
+    {
+     "type": "heading",
+     "text": "Questions 1–7: Yes, No or Not Given?"
+    },
+    {
+     "type": "text",
+     "text": "Do the following statements agree with the views of the writer? Choose YES if the statement agrees with the views of the writer, NO if it contradicts them, NOT GIVEN if it is impossible to say what the writer thinks about this."
+    },
+    {
+     "type": "choice",
+     "id": "r1",
+     "prompt": "1. The fact that mental health problems increased at the same time as smartphones spread proves that smartphones caused them.",
+     "options": [
+      "Yes",
+      "No",
+      "Not Given"
+     ],
+     "answer": 1,
+     "why": {
+      "tr": "Paragraf 1: \"a connection in time is not proof that one thing caused the other\". Yazar bunun kanıt olmadığını düşünüyor: NO.",
+      "ar": "الفقرة الأولى: \"a connection in time is not proof that one thing caused the other\". الكاتب يرى أن هذا ليس دليلًا: NO.",
+      "en": "\"A connection in time is not proof that one thing caused the other.\""
+     },
+     "example": "Two things happening at the same time does not prove that one caused the other."
+    },
+    {
+     "type": "choice",
+     "id": "r2",
+     "prompt": "2. How young people use social media matters more than how much time they spend on it.",
+     "options": [
+      "Yes",
+      "No",
+      "Not Given"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "Paragraf 2: \"the question is not how long young people spend on a platform but what they do there\". Aynı görüş: YES.",
+      "ar": "الفقرة الثانية: \"the question is not how long young people spend on a platform but what they do there\". الرأي نفسه: YES.",
+      "en": "\"The question is not how long… but what they do there.\""
+     },
+     "example": "What matters is not how long you study but how well you study."
+    },
+    {
+     "type": "choice",
+     "id": "r3",
+     "prompt": "3. Some features of social media apps are intended to keep people using them.",
+     "options": [
+      "Yes",
+      "No",
+      "Not Given"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "Paragraf 3: sonsuz akış, otomatik video ve bildirimler \"are clearly designed to keep users on the screen for as long as possible\": YES. \"clearly\" yazarın emin olduğunu gösteriyor.",
+      "ar": "الفقرة الثالثة: هذه الخصائص \"are clearly designed to keep users on the screen for as long as possible\": YES.",
+      "en": "\"Clearly designed to keep users on the screen for as long as possible.\""
+     },
+     "example": "The game is clearly designed to keep players spending money."
+    },
+    {
+     "type": "choice",
+     "id": "r4",
+     "prompt": "4. The word \"addictive\" should never be used to describe social media apps.",
+     "options": [
+      "Yes",
+      "No",
+      "Not Given"
+     ],
+     "answer": 1,
+     "why": {
+      "tr": "Paragraf 3: \"To some extent… describing these products as addictive is fair\". Yazar kelimenin bazen gevşek kullanıldığını söylüyor ama hiç kullanılmamalı demiyor: NO.",
+      "ar": "الفقرة الثالثة: \"To some extent… describing these products as addictive is fair\". الكاتب لا يرفض الكلمة تمامًا: NO.",
+      "en": "\"To some extent… describing these products as addictive is fair.\""
+     },
+     "example": "To some extent, calling the game addictive is fair."
+    },
+    {
+     "type": "choice",
+     "id": "r5",
+     "prompt": "5. Cyberbullying is more common among girls than among boys.",
+     "options": [
+      "Yes",
+      "No",
+      "Not Given"
+     ],
+     "answer": 2,
+     "why": {
+      "tr": "Paragraf 4 siber zorbalığı anlatıyor ama kız ve erkekleri karşılaştırmıyor: NOT GIVEN.",
+      "ar": "تتناول الفقرة الرابعة التنمّر الإلكتروني لكنها لا تقارن بين الفتيات والفتيان: NOT GIVEN.",
+      "en": "The writer never compares girls and boys."
+     },
+     "example": "The article does not say whether boys or girls are bullied more."
+    },
+    {
+     "type": "choice",
+     "id": "r6",
+     "prompt": "6. Teenagers should not be allowed to use social media at all.",
+     "options": [
+      "Yes",
+      "No",
+      "Not Given"
+     ],
+     "answer": 1,
+     "why": {
+      "tr": "Paragraf 5: \"Banning teenagers from social media altogether seems to me both unrealistic and unwise.\" Yazar yasağa karşı: NO.",
+      "ar": "الفقرة الخامسة: \"Banning teenagers from social media altogether seems to me both unrealistic and unwise.\" الكاتب ضد المنع: NO.",
+      "en": "\"Banning teenagers… altogether seems to me both unrealistic and unwise.\""
+     },
+     "example": "A complete ban would be unrealistic."
+    },
+    {
+     "type": "choice",
+     "id": "r7",
+     "prompt": "7. Parents should check whether phone use is affecting their children's sleep.",
+     "options": [
+      "Yes",
+      "No",
+      "Not Given"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "Paragraf 6: \"Parents who worry should perhaps look first at whether phones are replacing sleep\". \"perhaps\" temkinli ama görüş aynı: YES.",
+      "ar": "الفقرة السادسة: \"Parents who worry should perhaps look first at whether phones are replacing sleep\". الرأي نفسه وإن كان بحذر: YES.",
+      "en": "\"Parents who worry should perhaps look first at whether phones are replacing sleep.\""
+     },
+     "example": "Parents should check whether games are keeping their children awake."
+    }
+   ]
+  },
+  {
+   "kind": "language",
+   "i18n": {"ar":{"title":"اللغة: ضبط قوة الرأي (arguably, undoubtedly, to some extent)"},"en":{"title":"Language: adjusting how strongly you state a view (arguably, undoubtedly, to some extent)"}},
+   "title": "Dil: görüşün gücünü ayarlamak (arguably, undoubtedly, to some extent)",
+   "explain": {
+    "tr": "Band 7 için görüşünü ne kadar güçlü söylediğini kanıta göre ayarlaman gerekir. Güçlendiren (boosting) ifadeler, kanıt güçlü olduğunda: undoubtedly, clearly, certainly, there is no doubt that. Yumuşatan (hedging) ifadeler, tartışmalı ya da kısmen doğru bir şey için: arguably (\"şöyle savunulabilir\", çoğunlukla üstünlük sıfatıyla: arguably the most important…), to some extent / to a certain extent (bir ölçüde), largely (büyük ölçüde), it could be argued that. Yer: \"undoubtedly\" ve \"arguably\" genelde fiilden önce ya da \"is\"ten sonra gelir (This is arguably the biggest problem). \"To some extent\" cümlenin başında ya da sonunda olur. Her cümleyi güçlendirme: bütün iddialar \"undoubtedly\" ise okuyucu sana güvenmez.",
+    "ar": "للحصول على الدرجة 7 يجب أن تضبط قوة رأيك حسب قوة الدليل. عبارات التقوية (boosting) عندما يكون الدليل قويًا: undoubtedly, clearly, certainly, there is no doubt that. وعبارات التلطيف (hedging) للأمور الخلافية أو الصحيحة جزئيًا: arguably (يمكن القول إن، وغالبًا مع صيغة التفضيل: arguably the most important)، to some extent / to a certain extent (إلى حدّ ما)، largely (إلى حدّ كبير)، it could be argued that. الموضع: undoubtedly وarguably تأتيان عادةً قبل الفعل أو بعد is (This is arguably the biggest problem)، وto some extent في أول الجملة أو آخرها. لا تقوِّ كل جملة: إذا كانت كل ادعاءاتك undoubtedly فلن يثق بك القارئ.",
+    "en": "For band 7 you need to match the strength of a claim to the evidence. Boosters, when the evidence is strong: undoubtedly, clearly, certainly, there is no doubt that. Hedges, for claims that are debatable or partly true: arguably (often with a superlative: arguably the most important…), to some extent / to a certain extent, largely, it could be argued that. Position: undoubtedly and arguably usually go before the main verb or after \"is\" (This is arguably the biggest problem); to some extent goes at the start or end of the clause. Don't boost every sentence: if every claim is \"undoubtedly\" true, the reader stops trusting you."
+   },
+   "examples": [
+    "Social media has undoubtedly changed the way teenagers interact with each other.",
+    "Poor sleep is arguably a bigger threat to young people's mental health than screen time itself.",
+    "To some extent, peer pressure online is simply an old problem in a new form.",
+    "There is no doubt that cyberbullying can have serious consequences for victims."
+   ],
+   "questions": [
+    {
+     "type": "choice",
+     "id": "g1",
+     "prompt": "The evidence is weak and experts disagree. Which sentence is most appropriate?",
+     "options": [
+      "Social media undoubtedly causes depression.",
+      "It could be argued that social media contributes to low mood in some users.",
+      "There is no doubt that social media causes depression.",
+      "Social media clearly causes depression in all teenagers."
+     ],
+     "answer": 1,
+     "why": {
+      "tr": "Kanıt zayıfsa temkinli konuş: \"It could be argued that… contributes… in some users\". Diğer seçenekler (undoubtedly, no doubt, clearly) güçlendirici ve kanıtla uyuşmuyor.",
+      "ar": "عندما يكون الدليل ضعيفًا نستخدم التلطيف: It could be argued that… in some users. الخيارات الأخرى تقوية لا تناسب الدليل.",
+      "en": "Weak evidence needs a hedge, not a booster."
+     },
+     "example": "It could be argued that the new law has had little effect."
+    },
+    {
+     "type": "choice",
+     "id": "g2",
+     "prompt": "Where is \"arguably\" placed correctly?",
+     "options": [
+      "This is arguably the most serious problem facing schools.",
+      "This is the most serious arguably problem facing schools.",
+      "This is the most serious problem arguably facing schools arguably.",
+      "Arguably this is the arguably most serious problem."
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "\"arguably\" çoğunlukla \"is\"ten sonra ve üstünlük sıfatından önce gelir: is arguably the most serious…",
+      "ar": "تأتي arguably عادةً بعد is وقبل صيغة التفضيل: is arguably the most serious…",
+      "en": "is + arguably + the most…"
+     },
+     "example": "Sleep is arguably the most underrated part of a healthy life."
+    },
+    {
+     "type": "gap",
+     "id": "g3",
+     "prompt": "Write ONE word: I agree with this view to some ___, but there are important exceptions.",
+     "answers": [
+      "extent"
+     ],
+     "why": {
+      "tr": "Kalıp \"to some extent\" = bir ölçüde. Kısmen katıldığını gösterir.",
+      "ar": "التعبير الثابت to some extent أي إلى حدّ ما، ويدل على موافقة جزئية.",
+      "en": "The fixed phrase is \"to some extent\"."
+     },
+     "example": "To some extent, every generation worries about new technology."
+    },
+    {
+     "type": "choice",
+     "id": "g4",
+     "prompt": "Which word BOOSTS the claim? \"Regular exercise ___ improves mood.\"",
+     "options": [
+      "undoubtedly",
+      "arguably",
+      "possibly",
+      "to some extent"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "\"undoubtedly\" = şüphesiz; iddiayı güçlendirir. Diğer üçü iddiayı yumuşatır. Egzersizin ruh haline etkisi için kanıt güçlü olduğundan güçlendirici uygun.",
+      "ar": "undoubtedly تعني بلا شك وتقوّي الادعاء، أما الخيارات الأخرى فتلطّفه.",
+      "en": "\"Undoubtedly\" strengthens the claim; the others weaken it."
+     },
+     "example": "The internet has undoubtedly made information easier to find."
+    },
+    {
+     "type": "gap",
+     "id": "g5",
+     "prompt": "Write ONE word (a hedge meaning \"mainly but not completely\"): The rise in anxiety is ___ due to pressure at school, although social media plays a part.",
+     "answers": [
+      "largely",
+      "mainly",
+      "partly"
+     ],
+     "why": {
+      "tr": "\"largely due to\" = büyük ölçüde …den dolayı. \"mainly\" de olur. \"although… plays a part\" başka sebeplerin de olduğunu gösteriyor, bu yüzden kesin olmayan bir ifade gerekiyor.",
+      "ar": "largely due to أي يعود إلى حدّ كبير إلى… وتُقبل mainly. عبارة although… plays a part تدل على أسباب أخرى، فنحتاج إلى تلطيف.",
+      "en": "\"Largely due to\": mainly, but not the only cause."
+     },
+     "example": "The delay was largely due to bad weather."
+    }
+   ]
+  },
+  {
+   "kind": "write",
+   "i18n": {"ar":{"title":"الكتابة · Task 2: إيجابي أم سلبي؟ (مقال كامل)","tip":"في سؤال \"Positive or negative development\" أعطِ إجابة واضحة (سلبي في الغالب، لكن…) وناقش الجانبين. اضبط قوة رأيك: إذا كان الدليل قويًا فاستخدم undoubtedly / clearly، وإذا كان الأمر خلافيًا فاستخدم arguably / to some extent. كلمات هذا الدرس: screen time, self-esteem, isolation, peer pressure, in moderation, mental health."},"en":{"title":"Writing · Task 2: positive or negative? (full essay)","tip":"In a \"Positive or negative development\" question give a clear answer (mostly negative, but…) and discuss both sides. Adjust the strength of your view: undoubtedly / clearly when the evidence is strong, arguably / to some extent when it is debatable. This lesson's words: screen time, self-esteem, isolation, peer pressure, in moderation, mental health."}},
+   "title": "Yazma · Task 2: olumlu mu, olumsuz mu? (tam deneme)",
+   "task": 2,
+   "prompt": "Many young people now spend several hours every day on social media.\n\nIs this a positive or a negative development?\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.",
+   "minutes": 40,
+   "minWords": 250,
+   "tip": "\"Positive or negative development\" sorusunda net bir cevap ver (çoğunlukla olumsuz, ama…) ve her iki tarafı da tartış. Görüşünün gücünü ayarla: kanıt güçlüyse undoubtedly / clearly, tartışmalıysa arguably / to some extent. Bu dersin kelimeleri: screen time, self-esteem, isolation, peer pressure, in moderation, mental health.",
+   "model": "Social media has become a central part of daily life for most young people, and many of them now spend three or four hours a day on these platforms. In my opinion, this is largely a negative development, although social media also brings some genuine benefits that should not be ignored.\n\nOn the positive side, social media allows young people to stay in touch with friends and relatives, even across great distances. A student who moves to another country, for instance, can interact with family every day, which can reduce feelings of isolation. Online communities can also be particularly valuable for teenagers with unusual interests or those who feel different from their classmates, since they can find people who share their experiences. To some extent, therefore, social media meets a real social need.\n\nHowever, spending several hours a day on these apps undoubtedly has costs. The most obvious is time: hours spent scrolling are hours not spent sleeping, exercising or meeting friends face to face. Poor sleep in particular has well-established effects on concentration and mood. In addition, much of the content young people see is carefully edited, and constant comparison with others can damage self-esteem. Peer pressure is also intensified when the popularity of every post can be measured in likes, and cyberbullying can follow a child home in a way that ordinary bullying could not.\n\nArguably, the real problem is not social media itself but the amount of screen time and the passive way in which it is often used. An hour spent messaging close friends is very different from three hours of scrolling late at night. Used in moderation, social media can be a useful tool; used for hours every day, it is likely to harm young people's mental health.\n\nOverall, I believe the current trend is more negative than positive, and young people would benefit from clearer limits."
+  },
+  {
+   "kind": "speak",
+   "i18n": {"ar":{"title":"المحادثة: وسائل التواصل الاجتماعي والرفاه"},"en":{"title":"Speaking: social media and wellbeing"}},
+   "title": "Konuşma: sosyal medya ve iyi oluş",
+   "part1": [
+    "How much time do you spend on your phone every day?",
+    "Which apps do you use most often? Why?",
+    "Do you prefer to talk to friends online or face to face?",
+    "Have you ever tried to spend less time on social media?"
+   ],
+   "card": {
+    "title": "Describe a time when you decided to spend less time on your phone or on social media.",
+    "points": [
+     "when this happened",
+     "why you made this decision",
+     "what you did instead"
+    ],
+    "explain": "and explain whether the change was easy or difficult and how it made you feel."
+   },
+   "useful": [
+    "To be honest, my screen time was arguably the highest of anyone I know.",
+    "What made me change was…",
+    "I found that the app was quite addictive, because the algorithm kept…",
+    "To some extent it worked, but…",
+    "There's no doubt that I slept better after…",
+    "These days I try to use it in moderation, for example by…"
+   ]
+  }
+ ]
+}

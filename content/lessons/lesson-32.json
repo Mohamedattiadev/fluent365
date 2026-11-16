@@ -1,0 +1,785 @@
+{
+ "id": "lesson-32",
+ "number": 32,
+ "title": "City or Country?",
+ "topic": "City life versus country life",
+ "level": "B2",
+ "goal": "Understand a rental enquiry and an article about leaving the city, discuss two views in an essay, and end with a clear conclusion and recommendation.",
+ "steps": [
+  {
+   "kind": "words",
+   "i18n": {"ar":{"title":"المفردات: الحياة في المدينة والريف","intro":"في هذا الدرس 12 كلمة وتعبيرًا للمقارنة بين الحياة في المدينة والريف. تعابير مثل \"urban / rural\" و\"pace of life\" و\"sense of community\" و\"cost of living\" ستفيدك كثيرًا في Speaking Part 1 وفي Task 2."},"en":{"title":"Vocabulary: city and country life","intro":"This lesson has 12 words and phrases for comparing city and country life. Phrases like \"urban / rural\", \"pace of life\", \"sense of community\" and \"cost of living\" are very useful in Speaking Part 1 and Task 2."}},
+   "title": "Kelimeler: şehir ve kır hayatı",
+   "intro": "Bu derste şehir ve kır hayatını karşılaştırmak için 12 kelime ve kalıp var. \"urban / rural\", \"pace of life\", \"sense of community\", \"cost of living\" gibi kalıplar Speaking Part 1 ve Task 2'de çok sık işine yarar.",
+   "words": [
+    {
+     "en": "urban",
+     "pos": "adjective",
+     "tr": "kentsel, şehirle ilgili",
+     "ar": "حضري؛ متعلق بالمدينة",
+     "example": "More than half of the world's population now lives in urban areas."
+    },
+    {
+     "en": "rural",
+     "pos": "adjective",
+     "tr": "kırsal",
+     "ar": "ريفي",
+     "example": "Many rural schools have fewer than fifty pupils."
+    },
+    {
+     "en": "commute",
+     "pos": "verb / noun",
+     "tr": "işe gidip gelmek; işe gidiş geliş yolculuğu",
+     "ar": "يتنقّل يوميًا إلى العمل؛ التنقّل اليومي",
+     "example": "She commutes to the city by train every day."
+    },
+    {
+     "en": "amenities",
+     "pos": "noun (plural)",
+     "tr": "olanaklar, hizmetler (dükkân, park, spor salonu vb.)",
+     "ar": "المرافق والخدمات",
+     "example": "The new estate has good amenities, including a park and a health centre."
+    },
+    {
+     "en": "cost of living",
+     "pos": "phrase",
+     "tr": "hayat pahalılığı, geçim maliyeti",
+     "ar": "تكلفة المعيشة",
+     "example": "The cost of living in the capital is much higher than in the provinces."
+    },
+    {
+     "en": "congestion",
+     "pos": "noun",
+     "tr": "(trafik) sıkışıklık, tıkanıklık",
+     "ar": "الازدحام (المروري)",
+     "example": "Traffic congestion is worst between eight and nine in the morning."
+    },
+    {
+     "en": "pace of life",
+     "pos": "phrase",
+     "tr": "yaşam temposu",
+     "ar": "إيقاع الحياة",
+     "example": "People often move to the countryside for a slower pace of life."
+    },
+    {
+     "en": "sense of community",
+     "pos": "phrase",
+     "tr": "topluluk duygusu, aidiyet hissi",
+     "ar": "الشعور بالانتماء إلى المجتمع",
+     "example": "There is a strong sense of community in the village."
+    },
+    {
+     "en": "remote",
+     "pos": "adjective",
+     "tr": "uzak, ıssız, merkezden uzak",
+     "ar": "نائٍ؛ بعيد",
+     "example": "Doctors are hard to recruit in remote areas."
+    },
+    {
+     "en": "green space",
+     "pos": "phrase",
+     "tr": "yeşil alan (park, bahçe vb.)",
+     "ar": "مساحة خضراء",
+     "example": "Access to green space is good for mental health."
+    },
+    {
+     "en": "overcrowded",
+     "pos": "adjective",
+     "tr": "aşırı kalabalık",
+     "ar": "مكتظّ",
+     "example": "Overcrowded trains are a daily problem for commuters."
+    },
+    {
+     "en": "relocate",
+     "pos": "verb",
+     "tr": "taşınmak, yer değiştirmek (genelde iş için)",
+     "ar": "ينتقل للإقامة أو العمل في مكان آخر",
+     "example": "The company relocated its head office to a smaller city."
+    }
+   ],
+   "practice": [
+    {
+     "type": "choice",
+     "id": "w1",
+     "prompt": "Which word is the opposite of \"urban\"?",
+     "options": [
+      "rural",
+      "remote",
+      "overcrowded",
+      "local"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "\"urban\" (kentsel) kelimesinin karşıtı \"rural\" (kırsal). \"remote\" uzak demek; her kırsal yer uzak değildir.",
+      "ar": "عكس urban (حضري) هو rural (ريفي). أما remote فتعني نائيًا، وليس كل ريف نائيًا.",
+      "en": "Urban ↔ rural."
+     },
+     "example": "The government wants to improve internet access in rural areas."
+    },
+    {
+     "type": "choice",
+     "id": "w2",
+     "prompt": "Which word completes both phrases: \"a slower ___ of life\" and \"the ___ of change\"?",
+     "options": [
+      "pace",
+      "cost",
+      "sense",
+      "space"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "\"pace of life\" (yaşam temposu) ve \"the pace of change\" (değişimin hızı) doğal eşdizimlerdir. \"cost of living\" olur, \"cost of life\" değil.",
+      "ar": "pace of life (إيقاع الحياة) وthe pace of change (سرعة التغيير) تلازمان طبيعيان. ونقول cost of living لا cost of life.",
+      "en": "\"Pace\" = speed: pace of life, pace of change."
+     },
+     "example": "The pace of life in a small town is much slower."
+    },
+    {
+     "type": "gap",
+     "id": "w3",
+     "prompt": "Write the noun form of CONGESTED: Many cities charge drivers a fee to reduce ___ in the centre.",
+     "answers": [
+      "congestion"
+     ],
+     "why": {
+      "tr": "\"reduce ___\" sonrasında isim gerekir: congested (sıfat) → congestion (isim).",
+      "ar": "بعد reduce نحتاج إلى اسم: الصفة congested تصبح الاسم congestion.",
+      "en": "A noun after \"reduce\": congestion."
+     },
+     "example": "The new bridge has reduced congestion in the town centre."
+    },
+    {
+     "type": "choice",
+     "id": "w4",
+     "prompt": "\"Amenities\" in a town are…",
+     "options": [
+      "useful services and places such as shops, parks and sports centres",
+      "the people who live there",
+      "the rules of the local council",
+      "the cost of houses"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "\"amenities\" bir yeri yaşamak için rahat kılan hizmet ve olanaklardır: dükkân, park, spor merkezi gibi.",
+      "ar": "amenities هي المرافق والخدمات التي تجعل المكان مريحًا للعيش: المتاجر والحدائق والمراكز الرياضية.",
+      "en": "Amenities = useful local facilities."
+     },
+     "example": "The village has few amenities: just a pub and a small shop."
+    },
+    {
+     "type": "gap",
+     "id": "w5",
+     "prompt": "Write ONE word: Many people say there is a stronger sense of ___ in small villages than in big cities.",
+     "answers": [
+      "community"
+     ],
+     "why": {
+      "tr": "Kalıp \"a sense of community\" = topluluk duygusu, aidiyet hissi.",
+      "ar": "التعبير الثابت a sense of community أي الشعور بالانتماء إلى المجتمع.",
+      "en": "The fixed phrase is \"a sense of community\"."
+     },
+     "example": "Street parties help to build a sense of community."
+    },
+    {
+     "type": "choice",
+     "id": "w6",
+     "prompt": "Choose the correct preposition: After the company moved, many staff decided to relocate ___ the north of the country.",
+     "options": [
+      "to",
+      "at",
+      "in",
+      "into"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "\"relocate to + yer\" = bir yere taşınmak. Hareket bildirdiği için \"to\".",
+      "ar": "relocate to + مكان أي ينتقل إلى، ونستخدم to لأنها تدل على الحركة.",
+      "en": "Movement to a place: relocate to."
+     },
+     "example": "We relocated to a smaller town when our first child was born."
+    }
+   ]
+  },
+  {
+   "kind": "listen",
+   "i18n": {"ar":{"title":"الاستماع · Part 1: منزل للإيجار في قرية","intro":"امرأة تعيش في المدينة تتصل بوكيل عقاري لتسأل عن منزل للإيجار في قرية. اقرأ النموذج أولًا. يُشغَّل التسجيل مرة واحدة فقط.","tip":"في Part 1 تتغير الأرقام كثيرًا: السعر القديم والسعر الجديد، ما كان سابقًا وما هو الآن. في عبارات مثل \"It was… but it's been reduced to…\" اكتب الرقم الثاني. إذا تُهجّئت أسماء الأماكن حرفًا حرفًا فاكتبها بعناية؛ الأحرف الكبيرة لا تهم، لكن التهجئة مهمة."},"en":{"title":"Listening · Part 1: a house to rent in a village","intro":"A woman who lives in the city calls an estate agent about a house to rent in a village. Read the form first. The recording plays once.","tip":"In Part 1 numbers often change: old price and new price, then and now. In phrases like \"It was… but it's been reduced to…\" write the second number. If place names are spelled out letter by letter, write them carefully; capital letters don't matter, but spelling does."}},
+   "title": "Dinleme · Part 1: köyde kiralık ev",
+   "intro": "Şehirde yaşayan bir kadın, bir köydeki kiralık ev hakkında emlakçıyı arıyor. Önce formu oku. Kayıt bir kez çalar.",
+   "tip": "Part 1'de rakamlar sık sık değişir: eski fiyat ve yeni fiyat, eskiden ve şimdi. \"It was… but it's been reduced to…\" gibi ifadelerde ikinci rakamı yaz. Yer adları harf harf söylenirse dikkatle yaz; büyük harf önemli değildir ama yazım önemlidir.",
+   "audio": {
+    "type": "audio",
+    "id": "l-audio",
+    "speakers": {
+     "N": {
+      "name": "Narrator",
+      "voice": "en-GB-SoniaNeural"
+     },
+     "craig": {
+      "name": "Craig",
+      "voice": "en-NZ-MitchellNeural"
+     },
+     "hannah": {
+      "name": "Hannah",
+      "voice": "en-US-AvaNeural"
+     }
+    },
+    "lines": [
+     {
+      "speaker": "N",
+      "text": "You will hear a woman phoning an estate agent about a house to rent. First, you have some time to look at questions one to six.",
+      "pauseAfterMs": 2500
+     },
+     {
+      "speaker": "N",
+      "text": "Now listen carefully and answer questions one to six.",
+      "pauseAfterMs": 1200
+     },
+     {
+      "speaker": "craig",
+      "text": "Good morning, Fairfield Lettings, Craig speaking. How can I help?",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "hannah",
+      "text": "Hi. I'm calling about Rose Cottage in Little Brayford. I saw it on your website, and I wanted to ask a few questions before I arrange a viewing.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "craig",
+      "text": "Of course. It's still available. Can I ask what's attracting you to the area? It helps me know what to tell you.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "hannah",
+      "text": "Well, at the moment my partner and I live right in the city centre. It's convenient, but the flat is tiny, the streets are overcrowded, and honestly we're tired of the noise and the congestion. We'd like a slower pace of life, and somewhere with a garden.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "craig",
+      "text": "That's a very common reason at the moment. Do you both work in the city?",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "hannah",
+      "text": "I do, but since last year I only go into the office two days a week. Sorry, that's not right, it's changed again. From next month it'll be just one day a week. The rest of the time I'll work from home.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "craig",
+      "text": "That makes a big difference. The commute from Little Brayford is about fifty minutes by train, but most people drive to the station first.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "hannah",
+      "text": "Fine. And the rent? The website said one thousand and fifty pounds a month.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "craig",
+      "text": "That was the original price, but the owner has reduced it to nine hundred and fifty, because it's been empty since the summer.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "hannah",
+      "text": "Oh, that's good news. The cost of living in the city is getting ridiculous, so that would really help.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "craig",
+      "text": "Now, I should be honest about the amenities, because people who relocate from a city are sometimes surprised. The village has a small shop with a post office counter, and a pub. There used to be a doctor's surgery, but it closed last year, so the nearest one is now in the next town.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "hannah",
+      "text": "Which town is that?",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "craig",
+      "text": "Hollin. That's H-O-double L-I-N. The station is there too, and the secondary school, so you'd be going to Hollin for most things.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "hannah",
+      "text": "And is it very remote? I mean, is there a bus?",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "craig",
+      "text": "There's a bus to Hollin, but only twice a day, so in practice you'd need a car. On the other hand, there's lots of green space: there's a footpath from the garden straight up onto the hills.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "hannah",
+      "text": "That sounds lovely. My partner's a keen runner. What about the internet? That's the most important thing for me, if I'm working from home.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "craig",
+      "text": "Good question. The village got fast broadband two years ago, so that shouldn't be a problem. The previous tenant worked from home as well.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "hannah",
+      "text": "Great. And is there much of a sense of community? I don't want to feel cut off.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "craig",
+      "text": "There's a village hall with events most weekends, and people are very friendly. Now, would you like to see it? I could do Saturday morning.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "hannah",
+      "text": "We're busy on Saturday morning, I'm afraid. Could we come in the afternoon instead?",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "craig",
+      "text": "Saturday afternoon is fine. Shall we say two o'clock? I'll meet you outside the cottage.",
+      "pauseAfterMs": 1500
+     },
+     {
+      "speaker": "N",
+      "text": "That is the end of the recording.",
+      "pauseAfterMs": 0
+     }
+    ]
+   },
+   "questions": [
+    {
+     "type": "text",
+     "text": "Questions 1–4. Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer."
+    },
+    {
+     "type": "text",
+     "text": "Rental enquiry: Rose Cottage, Little Brayford"
+    },
+    {
+     "type": "gap",
+     "id": "l1",
+     "prompt": "1. Days per week caller will go into the office (from next month): ___",
+     "answers": [
+      "one",
+      "1"
+     ],
+     "why": {
+      "tr": "Önce \"two days a week\" diyor, sonra düzeltiyor: \"From next month it'll be just one day a week.\" İkinci bilgi doğrudur.",
+      "ar": "قالت أولًا \"two days a week\" ثم صحّحت: \"From next month it'll be just one day a week.\"",
+      "en": "She corrects herself: \"From next month it'll be just one day a week.\""
+     },
+     "example": "I used to work in the office three days a week, but now it's just one."
+    },
+    {
+     "type": "gap",
+     "id": "l2",
+     "prompt": "2. Commute by train: about ___ minutes",
+     "answers": [
+      "fifty",
+      "50"
+     ],
+     "why": {
+      "tr": "\"The commute from Little Brayford is about fifty minutes by train\". \"fifteen\" ile karıştırma: fif-TY.",
+      "ar": "\"The commute from Little Brayford is about fifty minutes by train\". لا تخلط بين fifty وfifteen.",
+      "en": "\"About fifty minutes by train.\""
+     },
+     "example": "My commute takes about fifty minutes each way."
+    },
+    {
+     "type": "gap",
+     "id": "l3",
+     "prompt": "3. Rent per month: £___",
+     "answers": [
+      "950",
+      "nine hundred and fifty"
+     ],
+     "why": {
+      "tr": "Web sitesinde 1050 yazıyor ama \"the owner has reduced it to nine hundred and fifty\". Yeni fiyat: 950.",
+      "ar": "على الموقع 1050، لكن \"the owner has reduced it to nine hundred and fifty\". السعر الجديد 950.",
+      "en": "\"Reduced it to nine hundred and fifty.\""
+     },
+     "example": "The price was reduced from £500 to £450."
+    },
+    {
+     "type": "gap",
+     "id": "l4",
+     "prompt": "4. Nearest doctor, station and secondary school: in the town of ___",
+     "answers": [
+      "Hollin"
+     ],
+     "why": {
+      "tr": "Craig harf harf söylüyor: \"H-O-double L-I-N\". \"double L\" iki L demek: Hollin.",
+      "ar": "يتهجّى Craig الاسم: \"H-O-double L-I-N\"، وdouble L تعني حرفي L متتاليين: Hollin.",
+      "en": "\"H-O-double L-I-N.\""
+     },
+     "example": "The nearest hospital is in the next town."
+    },
+    {
+     "type": "text",
+     "text": "Questions 5–6. Choose the correct letter."
+    },
+    {
+     "type": "choice",
+     "id": "l5",
+     "prompt": "5. Which of these does the village have now?",
+     "options": [
+      "a doctor's surgery",
+      "a shop",
+      "a secondary school"
+     ],
+     "answer": 1,
+     "why": {
+      "tr": "\"The village has a small shop with a post office counter, and a pub.\" Doktor muayenehanesi \"closed last year\"; lise Hollin'de.",
+      "ar": "\"The village has a small shop with a post office counter, and a pub.\" العيادة \"closed last year\"، والمدرسة الثانوية في Hollin.",
+      "en": "\"The village has a small shop.\" The surgery closed; the school is in Hollin."
+     },
+     "example": "The village shop also has a post office counter."
+    },
+    {
+     "type": "choice",
+     "id": "l6",
+     "prompt": "6. When will Hannah view the cottage?",
+     "options": [
+      "Friday evening",
+      "Saturday morning",
+      "Saturday afternoon"
+     ],
+     "answer": 2,
+     "why": {
+      "tr": "Craig cumartesi sabahını öneriyor ama Hannah \"We're busy on Saturday morning… Could we come in the afternoon instead?\" Craig: \"Saturday afternoon is fine.\"",
+      "ar": "يقترح Craig صباح السبت، لكن Hannah مشغولة وتطلب بعد الظهر، فيوافق: \"Saturday afternoon is fine.\"",
+      "en": "\"Saturday afternoon is fine. Shall we say two o'clock?\""
+     },
+     "example": "We couldn't come in the morning, so we arranged a viewing for the afternoon."
+    }
+   ]
+  },
+  {
+   "kind": "read",
+   "i18n": {"ar":{"title":"القراءة: مطابقة الخصائص وملخص مع بنك كلمات","intro":"ستقرأ نصًا يناقش ظاهرة الانتقال من المدينة إلى الريف، ومزايا الحياة الحضرية والريفية وعيوبها. يعرض النص آراء ثلاثة باحثين.","tip":"في مطابقة الخصائص (matching features) ابحث أولًا عن اسم كل باحث في النص واقرأ ما حوله؛ فقد يرد الاسم في أكثر من موضع. وفي الملخص مع بنك الكلمات يجب أن تناسب الكلمة الصحيحة المعنى والقواعد معًا؛ وفي البنك كلمات خادعة."},"en":{"title":"Reading: matching features and summary with a word box","intro":"You will read a text about the trend of moving from the city to the countryside and the pros and cons of urban and rural life. The text gives the views of three researchers.","tip":"In matching features first find each researcher's name in the text and read around it; a name may appear in more than one place. In a summary with a word box the right word must fit both the meaning and the grammar; the box contains distractors."}},
+   "title": "Okuma: özellik eşleştirme ve kelime kutulu özet",
+   "intro": "Şehirden kırsala taşınma eğilimini ve kent ile kır yaşamının artılarını eksilerini tartışan bir metin okuyacaksın. Metinde üç araştırmacının görüşleri var.",
+   "tip": "Özellik eşleştirmede (matching features) önce metinde her araştırmacının adını bul ve çevresini oku; bir isim metinde birden fazla yerde geçebilir. Kelime kutulu özette doğru kelime hem anlama hem dil bilgisine uymalı; kutuda tuzak kelimeler vardır.",
+   "passage": [
+    {
+     "type": "heading",
+     "text": "The Pull of the Countryside"
+    },
+    {
+     "type": "text",
+     "text": "For more than two centuries, the dominant movement of people has been from the countryside to the city. Industrial jobs, better wages and the attractions of urban life drew millions away from farms and villages, and today more than half of the world's population lives in towns and cities. Yet in many wealthy countries a smaller movement in the opposite direction has become increasingly visible. Families who once accepted a long commute as the price of a city career are now asking whether they need to live near an office at all."
+    },
+    {
+     "type": "text",
+     "text": "The most obvious reason for this shift is the spread of remote working. Once employees were no longer required to be at their desks five days a week, the high cost of living in large cities became harder to justify. Dr Mara Kessling, a geographer who has interviewed families who left the city, notes that housing is usually the deciding factor. \"People tell us they love their neighbourhood,\" she says, \"but when they see what the same money buys a hundred kilometres away, a garden and an extra bedroom start to look more important than being close to restaurants.\" She adds, however, that most of the families she studied moved to small towns with a railway station rather than to truly remote villages."
+    },
+    {
+     "type": "text",
+     "text": "Supporters of rural life point to a slower pace of life, cleaner air and easy access to green space, which a growing body of research associates with lower stress. Many also describe a stronger sense of community, in which neighbours know one another and local events bring people together. Professor Tomás Ibarra, who studies wellbeing in different settlements, is cautious about this picture. In his view, the idea of the friendly village is partly a myth created by city dwellers. \"Close communities can be wonderful if you belong,\" he argues, \"but newcomers often find them harder to join than they expected, and older residents may resent people who push up house prices.\""
+    },
+    {
+     "type": "text",
+     "text": "The countryside also has real disadvantages. Public transport is often limited, so families may need two cars, which increases both costs and emissions. Shops, banks and medical practices have closed in many rural areas, partly because there are not enough customers to support them, and young people frequently leave to study or work elsewhere. For older residents without a car, the result can be a serious problem of isolation, which is known to harm both physical and mental health."
+    },
+    {
+     "type": "text",
+     "text": "Cities, for their part, are not simply overcrowded and stressful. Dr Nadia Fenwick, an urban planner, points out that city residents in wealthy countries often have a smaller environmental footprint than people in the countryside, because they live in smaller homes, share walls that keep heat in and can walk or use public transport. Cities also concentrate amenities such as hospitals, universities and cultural venues that would be impossible to support in a less populated area. \"The problem is not cities themselves,\" she says, \"but cities that are badly designed, with too much congestion and too few parks.\" She believes that more green space and better housing in urban areas would persuade many families to stay."
+    },
+    {
+     "type": "text",
+     "text": "It is too early to know whether the move to the countryside is a lasting trend or a temporary response to unusual circumstances. Some companies have already asked their staff to return to the office more often, and some families who relocated have discovered that rural life is less peaceful than they had imagined. What seems certain is that the old assumption that ambitious people must live in big cities has been weakened, and governments will need to plan for both urban and rural populations whose needs are changing."
+    }
+   ],
+   "questions": [
+    {
+     "type": "heading",
+     "text": "Questions 1–4: Which researcher makes each claim?"
+    },
+    {
+     "type": "text",
+     "text": "Choose the correct person. You may choose any person more than once."
+    },
+    {
+     "type": "choice",
+     "id": "r1",
+     "prompt": "1. Well-planned cities could encourage families not to leave.",
+     "options": [
+      "Dr Mara Kessling",
+      "Professor Tomás Ibarra",
+      "Dr Nadia Fenwick"
+     ],
+     "answer": 2,
+     "why": {
+      "tr": "Dr Fenwick: \"more green space and better housing in urban areas would persuade many families to stay\". \"not to leave\" = \"to stay\".",
+      "ar": "تقول Dr Fenwick: \"more green space and better housing in urban areas would persuade many families to stay\".",
+      "en": "Fenwick: better housing and green space \"would persuade many families to stay\"."
+     },
+     "example": "Better parks would persuade many families to stay in the city."
+    },
+    {
+     "type": "choice",
+     "id": "r2",
+     "prompt": "2. Village communities are not always welcoming to new arrivals.",
+     "options": [
+      "Dr Mara Kessling",
+      "Professor Tomás Ibarra",
+      "Dr Nadia Fenwick"
+     ],
+     "answer": 1,
+     "why": {
+      "tr": "Prof. Ibarra: \"newcomers often find them harder to join than they expected\". \"new arrivals\" = \"newcomers\".",
+      "ar": "يقول Ibarra: \"newcomers often find them harder to join than they expected\"، وnew arrivals تعني newcomers.",
+      "en": "Ibarra: \"newcomers often find them harder to join than they expected\"."
+     },
+     "example": "Newcomers often find it hard to make friends in a small village."
+    },
+    {
+     "type": "choice",
+     "id": "r3",
+     "prompt": "3. The price of homes is usually the main reason families move out of the city.",
+     "options": [
+      "Dr Mara Kessling",
+      "Professor Tomás Ibarra",
+      "Dr Nadia Fenwick"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "Dr Kessling: \"housing is usually the deciding factor\". \"the main reason\" = \"the deciding factor\".",
+      "ar": "تقول Dr Kessling: \"housing is usually the deciding factor\"، أي السبب الرئيسي.",
+      "en": "Kessling: \"housing is usually the deciding factor\"."
+     },
+     "example": "For most buyers, price is the deciding factor."
+    },
+    {
+     "type": "choice",
+     "id": "r4",
+     "prompt": "4. People in cities may have less impact on the environment than people in the countryside.",
+     "options": [
+      "Dr Mara Kessling",
+      "Professor Tomás Ibarra",
+      "Dr Nadia Fenwick"
+     ],
+     "answer": 2,
+     "why": {
+      "tr": "Dr Fenwick: city residents \"often have a smaller environmental footprint than people in the countryside\".",
+      "ar": "تقول Dr Fenwick إن سكان المدن \"often have a smaller environmental footprint than people in the countryside\".",
+      "en": "Fenwick: city residents \"often have a smaller environmental footprint\"."
+     },
+     "example": "Flats often have a smaller environmental footprint than large houses."
+    },
+    {
+     "type": "heading",
+     "text": "Questions 5–7: Complete the summary using the list of words below."
+    },
+    {
+     "type": "text",
+     "text": "Choose the correct word for each gap. There are more words than gaps."
+    },
+    {
+     "type": "text",
+     "text": "Rural areas offer green space and, for some, a close community. However, limited 5 ___ often means families need two cars. Many local 6 ___ such as banks and medical practices have closed, and older people without a car may suffer from 7 ___."
+    },
+    {
+     "type": "choice",
+     "id": "r5",
+     "prompt": "5. limited ___ often means families need two cars",
+     "options": [
+      "services",
+      "traffic",
+      "housing",
+      "isolation",
+      "transport",
+      "community"
+     ],
+     "answer": 4,
+     "why": {
+      "tr": "Paragraf 4: \"Public transport is often limited, so families may need two cars\". \"traffic\" tuzak: köyde sorun trafik değil, ulaşımın az olması.",
+      "ar": "الفقرة الرابعة: \"Public transport is often limited, so families may need two cars\". كلمة traffic فخّ.",
+      "en": "\"Public transport is often limited, so families may need two cars.\""
+     },
+     "example": "Public transport is limited in the evenings, so we usually drive."
+    },
+    {
+     "type": "choice",
+     "id": "r6",
+     "prompt": "6. Many local ___ such as banks and medical practices have closed",
+     "options": [
+      "services",
+      "traffic",
+      "housing",
+      "isolation",
+      "transport",
+      "community"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "Paragraf 4: \"Shops, banks and medical practices have closed\". Bunların ortak adı hizmetler: services. \"housing\" kapanmaz.",
+      "ar": "الفقرة الرابعة: \"Shops, banks and medical practices have closed\"، والاسم الجامع لها services.",
+      "en": "Banks and medical practices are local services."
+     },
+     "example": "Local services such as libraries have closed in many towns."
+    },
+    {
+     "type": "choice",
+     "id": "r7",
+     "prompt": "7. older people without a car may suffer from ___",
+     "options": [
+      "services",
+      "traffic",
+      "housing",
+      "isolation",
+      "transport",
+      "community"
+     ],
+     "answer": 3,
+     "why": {
+      "tr": "Paragraf 4: \"For older residents without a car, the result can be a serious problem of isolation\". \"community\" tersi anlamda, tuzak.",
+      "ar": "الفقرة الرابعة: \"For older residents without a car, the result can be a serious problem of isolation\".",
+      "en": "\"A serious problem of isolation.\""
+     },
+     "example": "Isolation can be a problem for older people living alone."
+    }
+   ]
+  },
+  {
+   "kind": "language",
+   "i18n": {"ar":{"title":"اللغة: الخاتمة والتوصية (In conclusion, it would be advisable to, ought to be)"},"en":{"title":"Language: conclusion and recommendation (In conclusion, it would be advisable to, ought to be)"}},
+   "title": "Dil: sonuç ve öneri (In conclusion, it would be advisable to, ought to be)",
+   "explain": {
+    "tr": "Task 2'nin son paragrafı iki iş yapar: ana görüşünü kısaca tekrar eder ve (gerekiyorsa) bir öneri sunar. Yeni fikir ekleme! Sonuç ifadeleri: In conclusion, / To conclude, / Overall, / To sum up, (gövdede değil, son paragrafta). Öneri ifadeleri: it would be advisable (for X) to + fiil (resmî ve yumuşak); X should / ought to + fiil; edilgen öneri: X ought to be / should be + V3 (\"More green space ought to be created.\"); it is recommended that + özne + yalın fiil (\"It is recommended that the council improve bus services.\"); the most effective solution would be to + fiil. Dikkat: \"ought\" her zaman \"to\" alır; \"advisable\" sonrası \"to + fiil\" gelir, -ing değil. \"In conclusion\" tek başına sonuç değildir: arkasından görüşünü yeni kelimelerle söyle.",
+    "ar": "للفقرة الأخيرة في Task 2 وظيفتان: إعادة رأيك الرئيسي باختصار، وتقديم توصية إن لزم. لا تضف فكرة جديدة! عبارات الخاتمة: In conclusion, / To conclude, / Overall, / To sum up, (في الفقرة الأخيرة فقط). عبارات التوصية: it would be advisable (for X) to + فعل (رسمية ولطيفة)؛ X should / ought to + فعل؛ والتوصية بالمبني للمجهول: X ought to be / should be + التصريف الثالث (More green space ought to be created)؛ وit is recommended that + فاعل + فعل مجرد (It is recommended that the council improve bus services)؛ وthe most effective solution would be to + فعل. انتبه: ought تأتي دائمًا مع to، وبعد advisable يأتي to + فعل لا -ing. وعبارة In conclusion وحدها لا تكفي: أعد صياغة رأيك بكلمات جديدة.",
+    "en": "The last paragraph of Task 2 does two jobs: it briefly restates your main view and, where relevant, makes a recommendation. Don't add new ideas! Conclusion phrases: In conclusion, / To conclude, / Overall, / To sum up, (in the final paragraph, not in the body). Recommendation phrases: it would be advisable (for X) to + verb (formal and polite); X should / ought to + verb; passive recommendations: X ought to be / should be + past participle (\"More green space ought to be created.\"); it is recommended that + subject + base verb (\"It is recommended that the council improve bus services.\"); the most effective solution would be to + verb. Note: ought always takes to; advisable is followed by to + verb, not -ing. \"In conclusion\" alone is not a conclusion: follow it with your view in new words."
+   },
+   "examples": [
+    "In conclusion, both cities and villages have advantages, but for most young families the city offers more opportunities.",
+    "It would be advisable for governments to invest in rural transport before encouraging people to relocate.",
+    "Public services in remote areas ought to be protected, even when they are expensive to run.",
+    "To sum up, the most effective solution would be to make cities greener rather than to move everyone to the countryside."
+   ],
+   "questions": [
+    {
+     "type": "choice",
+     "id": "g1",
+     "prompt": "Choose the correct sentence.",
+     "options": [
+      "It would be advisable for the council to build more parks.",
+      "It would be advisable for the council building more parks.",
+      "It would be advisable that the council to build more parks.",
+      "It would be advise for the council to build more parks."
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "Kalıp: it would be advisable (for X) to + yalın fiil. \"advisable\" sıfattır; \"advise\" fiil olduğu için burada kullanılmaz.",
+      "ar": "التركيب: it would be advisable (for X) to + فعل مجرد. advisable صفة، أما advise ففعل لا يصلح هنا.",
+      "en": "It would be advisable (for X) + to + base verb."
+     },
+     "example": "It would be advisable to book your tickets early."
+    },
+    {
+     "type": "gap",
+     "id": "g2",
+     "prompt": "Write ONE word: Old buildings in the city centre ought to ___ protected by law.",
+     "answers": [
+      "be"
+     ],
+     "why": {
+      "tr": "Edilgen öneri: ought to + be + V3 (protected). Binalar korunmayı yapmıyor, korunuyor; bu yüzden edilgen.",
+      "ar": "توصية بالمبني للمجهول: ought to + be + التصريف الثالث (protected)، لأن المباني تُحمى ولا تَحمي.",
+      "en": "Passive: ought to be + past participle."
+     },
+     "example": "These trees ought to be protected."
+    },
+    {
+     "type": "choice",
+     "id": "g3",
+     "prompt": "Which is the best way to begin a final paragraph?",
+     "options": [
+      "In conclusion, although rural life has clear attractions, cities remain better places for most young people to live.",
+      "In conclusion, another advantage of cities is the number of museums.",
+      "Firstly, I will conclude that cities are good.",
+      "In conclusion, there are many advantages and disadvantages."
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "İyi bir sonuç görüşünü yeni kelimelerle tekrar eder. B yeni bir fikir ekliyor; D çok genel ve görüş içermiyor; C yanlış bağlaç kullanıyor.",
+      "ar": "الخاتمة الجيدة تعيد الرأي بكلمات جديدة. الخيار B يضيف فكرة جديدة، وD عام جدًا بلا رأي، وC يستخدم رابطًا خاطئًا.",
+      "en": "A conclusion restates the view; it doesn't add new points or stay vague."
+     },
+     "example": "In conclusion, although online shopping is convenient, local shops still play an important role."
+    },
+    {
+     "type": "gap",
+     "id": "g4",
+     "prompt": "Write ONE word: It is recommended that every new housing estate ___ a park within walking distance.",
+     "answers": [
+      "include",
+      "have"
+     ],
+     "why": {
+      "tr": "\"It is recommended that\" + özne + yalın fiil (subjunctive): \"include\", \"includes\" değil. \"have\" da kabul edilir.",
+      "ar": "بعد It is recommended that يأتي فاعل + فعل مجرد: include لا includes، وتُقبل have أيضًا.",
+      "en": "It is recommended that + subject + base verb (include, not includes)."
+     },
+     "example": "It is recommended that every pupil bring a packed lunch."
+    },
+    {
+     "type": "choice",
+     "id": "g5",
+     "prompt": "Which recommendation sounds most suitable for a formal essay?",
+     "options": [
+      "Governments ought to improve broadband in rural areas.",
+      "Governments gotta improve broadband in rural areas.",
+      "Governments ought improve broadband in rural areas.",
+      "Governments must to improve broadband in rural areas."
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "\"ought to + fiil\" doğru ve resmî. \"gotta\" konuşma dili; \"ought\" \"to\"suz olmaz; \"must\" \"to\" almaz.",
+      "ar": "ought to + فعل صحيحة ورسمية. gotta عامية، وought لا تأتي بلا to، وmust لا تأخذ to.",
+      "en": "Ought to + verb; must + verb (no to); avoid informal gotta."
+     },
+     "example": "Schools ought to teach children how to cook."
+    }
+   ]
+  },
+  {
+   "kind": "write",
+   "i18n": {"ar":{"title":"الكتابة · Task 2: ناقش الرأيين (مقال كامل)","tip":"في سؤال \"Discuss both views\" خصّص لكل رأي فقرة مستقلة، وصرّح برأيك بوضوح في المقدمة والخاتمة. لا تُضف فكرة جديدة في الفقرة الأخيرة؛ أعد صياغة رأيك بكلمات جديدة وقدّم توصية (it would be advisable to…, ought to be…). مفردات هذا الدرس: rural, urban, green space, sense of community, amenities, pace of life, congestion."},"en":{"title":"Writing · Task 2: discuss both views (full essay)","tip":"In a \"Discuss both views\" question give each view its own paragraph and state your opinion clearly in the introduction and conclusion. Don't add new ideas in the last paragraph; restate your view in new words and make a recommendation (it would be advisable to…, ought to be…). This lesson's words: rural, urban, green space, sense of community, amenities, pace of life, congestion."}},
+   "title": "Yazma · Task 2: iki görüşü tartış (tam deneme)",
+   "task": 2,
+   "prompt": "Some people believe that children are better off growing up in the countryside. Others think that a city is a better place for children to grow up.\n\nDiscuss both these views and give your own opinion.\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.",
+   "minutes": 40,
+   "minWords": 250,
+   "tip": "\"Discuss both views\" sorusunda her görüşe ayrı bir paragraf ayır, kendi görüşünü girişte ve sonuçta açıkça söyle. Son paragrafta yeni fikir ekleme; görüşünü yeni kelimelerle tekrar et ve bir öneri sun (it would be advisable to…, ought to be…). Bu dersin kelimeleri: rural, urban, green space, sense of community, amenities, pace of life, congestion.",
+   "model": "Where children grow up can shape their health, education and opportunities. While some people believe that the countryside offers a better childhood, others argue that cities provide more advantages. In my opinion, both environments have strengths, but a well-planned city is, on balance, the better choice for most families.\n\nThose who favour rural areas point to the freedom and safety they offer. Children in the countryside often have far more green space to play in, and they can explore fields and woods with less danger from traffic. The slower pace of life may also mean less pressure and more time with family. In addition, many villages have a strong sense of community, so children grow up knowing their neighbours and feeling that they belong. For example, a child in a small village may be able to walk to school with friends from the age of seven, which is rarely possible in a busy city.\n\nOn the other hand, cities offer opportunities that the countryside often cannot. Urban areas have a much wider range of schools, sports clubs, libraries and museums, so children can discover their talents more easily. Teenagers in particular benefit from good public transport, which allows them to travel independently. By contrast, young people in remote areas may depend entirely on their parents to drive them to activities, and many rural amenities, such as shops and health centres, have closed in recent years. Cities also bring children into contact with people from many different backgrounds, which prepares them for adult life.\n\nIn conclusion, although the countryside offers fresh air and a close community, the educational and social opportunities of the city outweigh these benefits for most children. However, problems such as congestion and a lack of parks are real, so it would be advisable for city councils to create more safe green spaces where children can play."
+  },
+  {
+   "kind": "speak",
+   "i18n": {"ar":{"title":"المحادثة: الحياة في المدينة والريف"},"en":{"title":"Speaking: city and country life"}},
+   "title": "Konuşma: şehir ve kır hayatı",
+   "part1": [
+    "Do you live in a city, a town or a village?",
+    "What do you like most about the place where you live?",
+    "Would you like to live in the countryside in the future? Why or why not?",
+    "How do most people travel around in your hometown?"
+   ],
+   "card": {
+    "title": "Describe a place in the countryside that you have visited and enjoyed.",
+    "points": [
+     "where it is",
+     "when and why you went there",
+     "what you did there"
+    ],
+    "explain": "and explain whether you would like to live in a place like this."
+   },
+   "useful": [
+    "What struck me first was the pace of life: everything was so…",
+    "There was a real sense of community, for example…",
+    "On the other hand, it was quite remote, so…",
+    "Compared with the congestion in my city, it felt…",
+    "I'd love to spend holidays there, but to live there I'd need better amenities, such as…",
+    "Overall, I'd say it would be advisable to try it for a few months before relocating."
+   ]
+  }
+ ]
+}

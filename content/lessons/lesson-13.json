@@ -1,0 +1,750 @@
+{
+  "id": "lesson-13",
+  "number": 13,
+  "title": "Art and Culture",
+  "topic": "Art & culture",
+  "level": "B1+",
+  "goal": "Understand bookings and opinions about the arts, describe things vividly with the right adjective order and intensifiers, and write a full discussion essay.",
+  "steps": [
+    {
+      "kind": "words",
+      "i18n": {"ar":{"title":"المفردات: الفن والثقافة","intro":"في هذا الدرس 12 كلمة وتعبيرًا عن الفن والمتاحف والتراث الثقافي. ستحتاجها في التحدث Part 2 عند وصف مبنى أو معرض أو عرض فني، وفي Task 2 عند سؤال مثل \"هل ينبغي للدولة أن تنفق على الفن؟\"."},"en":{"title":"Vocabulary: art and culture","intro":"This lesson has 12 words and phrases about art, museums and cultural heritage. You will need them in Speaking Part 2 when describing a building, an exhibition or a show, and in Task 2 for questions like \"should the government spend money on the arts?\""}},
+      "title": "Kelimeler: sanat ve kültür",
+      "intro": "Bu derste sanat, müzeler ve kültürel miras hakkında 12 kelime ve kalıp var. Konuşma Part 2'de bir yapıyı, bir sergiyi ya da bir gösteriyi anlatırken; Task 2'de ise \"devlet sanata para harcamalı mı?\" sorusunda bu kelimelere ihtiyacın olacak.",
+      "words": [
+        {
+          "en": "exhibition",
+          "pos": "noun",
+          "tr": "sergi",
+          "ar": "معرض",
+          "example": "The museum is holding an exhibition of modern sculpture."
+        },
+        {
+          "en": "heritage",
+          "pos": "noun",
+          "tr": "(kültürel) miras",
+          "ar": "التراث",
+          "example": "Old buildings are an important part of a city's heritage."
+        },
+        {
+          "en": "contemporary",
+          "pos": "adjective",
+          "tr": "çağdaş",
+          "ar": "معاصر",
+          "example": "The gallery shows contemporary art by young local artists."
+        },
+        {
+          "en": "masterpiece",
+          "pos": "noun",
+          "tr": "başyapıt, şaheser",
+          "ar": "تحفة فنية",
+          "example": "Many critics consider the novel a masterpiece."
+        },
+        {
+          "en": "performing arts",
+          "pos": "phrase",
+          "tr": "sahne sanatları (tiyatro, müzik, dans)",
+          "ar": "فنون الأداء (المسرح والموسيقى والرقص)",
+          "example": "The city has opened a new centre for the performing arts."
+        },
+        {
+          "en": "creativity",
+          "pos": "noun",
+          "tr": "yaratıcılık",
+          "ar": "الإبداع",
+          "example": "Art lessons encourage creativity in children."
+        },
+        {
+          "en": "admission",
+          "pos": "noun",
+          "tr": "giriş (ücreti)",
+          "ar": "الدخول؛ رسم الدخول",
+          "example": "Admission to the national museum is free."
+        },
+        {
+          "en": "cultural identity",
+          "pos": "phrase",
+          "tr": "kültürel kimlik",
+          "ar": "الهوية الثقافية",
+          "example": "Traditional music is an important part of cultural identity."
+        },
+        {
+          "en": "subsidise",
+          "pos": "verb",
+          "tr": "sübvanse etmek, maddi destek vermek",
+          "ar": "يدعم ماليًا",
+          "example": "Many governments subsidise theatres so that tickets stay affordable."
+        },
+        {
+          "en": "appreciate",
+          "pos": "verb",
+          "tr": "değerini anlamak, takdir etmek",
+          "ar": "يقدّر قيمة الشيء",
+          "example": "You need time to really appreciate a great painting."
+        },
+        {
+          "en": "craft",
+          "pos": "noun",
+          "tr": "el sanatı, zanaat",
+          "ar": "الحِرفة؛ الصناعة اليدوية",
+          "example": "Pottery is a traditional craft in this region."
+        },
+        {
+          "en": "preserve",
+          "pos": "verb",
+          "tr": "korumak, muhafaza etmek",
+          "ar": "يحافظ على؛ يصون",
+          "example": "The town is working hard to preserve its historic centre."
+        }
+      ],
+      "practice": [
+        {
+          "type": "choice",
+          "id": "w1",
+          "prompt": "The museum's new ___ of old maps opens next month.",
+          "options": [
+            "exhibition",
+            "heritage",
+            "admission",
+            "creativity"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Müzede belirli bir süre gösterilen eser koleksiyonu \"exhibition\"dır (sergi). \"heritage\" miras demek, açılmaz.",
+            "ar": "مجموعة الأعمال التي تُعرض في المتحف مدة محددة هي exhibition (معرض). أما heritage فهي التراث ولا \"تُفتتح\".",
+            "en": "A show of works in a museum is an exhibition."
+          },
+          "example": "We went to an exhibition of Ottoman calligraphy."
+        },
+        {
+          "type": "choice",
+          "id": "w2",
+          "prompt": "Theatre, music and dance are all part of the ___ arts.",
+          "options": [
+            "contemporary",
+            "performing",
+            "cultural",
+            "creative"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "Seyirci önünde canlı yapılan sanatlara \"performing arts\" denir; sabit bir kalıptır.",
+            "ar": "الفنون التي تُقدَّم مباشرة أمام الجمهور تسمّى performing arts، وهو تعبير ثابت.",
+            "en": "\"The performing arts\" is a fixed phrase for theatre, music and dance."
+          },
+          "example": "She studied the performing arts at college."
+        },
+        {
+          "type": "gap",
+          "id": "w3",
+          "prompt": "Write the correct form of CREATE: Schools should do more to encourage ___ in young people.",
+          "answers": [
+            "creativity"
+          ],
+          "why": {
+            "tr": "\"encourage\" bir nesne ister; burada isim gerekir: create → creativity.",
+            "ar": "الفعل encourage يحتاج إلى مفعول، والمطلوب اسم: create تصبح creativity.",
+            "en": "A noun is needed after \"encourage\": creativity."
+          },
+          "example": "Music lessons can develop children's creativity."
+        },
+        {
+          "type": "choice",
+          "id": "w4",
+          "prompt": "Contemporary art is art that…",
+          "options": [
+            "is very old and valuable",
+            "was made by famous painters",
+            "is made in the present time",
+            "is shown only in museums"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "\"contemporary\" = çağdaş, günümüze ait. Eski ve değerli olan sanat için \"classical\" ya da \"historic\" denebilir.",
+            "ar": "contemporary تعني معاصر، أي من زمننا الحالي.",
+            "en": "Contemporary means belonging to the present time."
+          },
+          "example": "The festival shows contemporary dance from around the world."
+        },
+        {
+          "type": "gap",
+          "id": "w5",
+          "prompt": "Write ONE word: ___ to the gallery is free on the first Sunday of every month.",
+          "answers": [
+            "Admission"
+          ],
+          "why": {
+            "tr": "\"Admission to…\" = …e giriş. Cümlenin öznesi olduğu için isim: admission.",
+            "ar": "Admission to… تعني الدخول إلى…، وهي هنا فاعل الجملة فنحتاج إلى اسم.",
+            "en": "\"Admission to the gallery\" = the right to enter / entry."
+          },
+          "example": "Admission is free for children under twelve."
+        },
+        {
+          "type": "choice",
+          "id": "w6",
+          "prompt": "Which verb fits both: 'to ___ old buildings' and 'to ___ traditional crafts for the future'?",
+          "options": [
+            "appreciate",
+            "subsidise",
+            "exhibit",
+            "preserve"
+          ],
+          "answer": 3,
+          "why": {
+            "tr": "\"for the future\" ipucu: gelecek için korumak = preserve.",
+            "ar": "عبارة for the future هي المفتاح: الحفاظ على الشيء للمستقبل = preserve.",
+            "en": "\"For the future\" signals preserve (keep safe from damage or loss)."
+          },
+          "example": "Volunteers help to preserve the old castle."
+        }
+      ]
+    },
+    {
+      "kind": "listen",
+      "i18n": {"ar":{"title":"الاستماع · Part 1: حجز في مهرجان فني","intro":"رجل يتصل بشبّاك التذاكر في مركز فني ليحضر مع ابنته مهرجان \"Heritage Weekend\". اقرأ الاستمارة أولًا. يُشغَّل التسجيل مرة واحدة فقط.","tip":"في Part 1 الأسعار هي أكثر الفخاخ شيوعًا: سعر الفرد، سعر العائلة، السعر المخفّض… اقرأ ما يطلبه السؤال بالضبط. وانتبه إلى كلمة \"double\" (أي حرفان أو رقمان متكرران) في أرقام الهواتف والأسماء."},"en":{"title":"Listening · Part 1: booking an arts festival","intro":"A man calls the box office of an arts centre to attend its \"Heritage Weekend\" festival with his daughter. Read the form first. The recording plays once.","tip":"In Part 1 prices are the most common trap: price per person, family price, discounted price… Read exactly which one the question asks for. In phone numbers and names, listen for the word \"double\" (two of the same)."}},
+      "title": "Dinleme · Part 1: sanat festivali rezervasyonu",
+      "intro": "Bir adam, kızıyla birlikte bir sanat merkezinin \"Heritage Weekend\" festivaline katılmak için gişeyi arıyor. Önce formu oku. Kayıt bir kez çalar.",
+      "tip": "Part 1'de fiyatlar en sık tuzaktır: kişi başı fiyat, aile fiyatı, indirimli fiyat… Soru tam olarak hangisini soruyor, oku. Telefon numaraları ve isimlerde \"double\" (çift) kelimesine dikkat et.",
+      "audio": {
+        "type": "audio",
+        "id": "l-audio",
+        "speakers": {
+          "N": {
+            "name": "Narrator",
+            "voice": "en-NZ-MollyNeural"
+          },
+          "jenny": {
+            "name": "Jenny",
+            "voice": "en-GB-SoniaNeural"
+          },
+          "marcus": {
+            "name": "Marcus",
+            "voice": "en-AU-WilliamMultilingualNeural"
+          }
+        },
+        "lines": [
+          {
+            "speaker": "N",
+            "text": "You will hear a man phoning an arts centre to book places at a festival. First, you have some time to look at questions one to six.",
+            "pauseAfterMs": 2500
+          },
+          {
+            "speaker": "N",
+            "text": "Now listen carefully and answer questions one to six.",
+            "pauseAfterMs": 1200
+          },
+          {
+            "speaker": "jenny",
+            "text": "Good afternoon, Larchfield Arts Centre box office, Jenny speaking.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "marcus",
+            "text": "Hi. I'm calling about the Heritage Weekend next month. I'd like to book a few things, if that's possible.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "jenny",
+            "text": "Certainly. Is it the exhibition you're interested in, or the workshops?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "marcus",
+            "text": "Both, really. First of all, is there an admission charge for the exhibition?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "jenny",
+            "text": "The main exhibition, Hands and Time, is free. It's about traditional crafts from the region: weaving, pottery and woodcarving. There's also a smaller room of contemporary work by local artists. That costs four pounds, but it's free for under-sixteens.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "marcus",
+            "text": "Lovely. And the workshops?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "jenny",
+            "text": "On the Saturday, there's a pottery workshop at ten and a weaving workshop at two. The pottery one's very popular, I'm afraid; it's already full. But there are still places in the weaving workshop.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "marcus",
+            "text": "Weaving's fine. Two places, please: one for me and one for my daughter. She's twelve.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "jenny",
+            "text": "That's no problem; children over ten can take part. The workshop costs eighteen pounds per person, but there's a family price of thirty for two people.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "marcus",
+            "text": "Great, so thirty. Can I give you my name?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "jenny",
+            "text": "Please.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "marcus",
+            "text": "It's Marcus Tolliver. T-O-double L-I-V-E-R.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "jenny",
+            "text": "Thank you. Now, you might also like the evening programme. On Saturday night there's an evening of the performing arts: a folk music concert in the courtyard, with some dancing. It really shows the region's cultural identity.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "marcus",
+            "text": "That sounds good, but my daughter goes to bed quite early. Is there anything on Sunday?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "jenny",
+            "text": "On Sunday at eleven there's a talk by a historian about how the town has worked to preserve its old buildings. Some people find it a bit long for children, but there's also a free drawing trail for families, which starts at the main entrance.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "marcus",
+            "text": "The trail sounds perfect for her. She's been showing a lot of creativity lately; she draws all the time.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "jenny",
+            "text": "Then she'll love it. One last thing: please don't park at the front. During the festival, the car park there is only for staff. Visitors should use the one on Quarry Road, opposite the church.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "marcus",
+            "text": "Quarry Road, opposite the church. Got it. Thanks very much for your help.",
+            "pauseAfterMs": 1500
+          },
+          {
+            "speaker": "N",
+            "text": "That is the end of the recording.",
+            "pauseAfterMs": 0
+          }
+        ]
+      },
+      "questions": [
+        {
+          "type": "text",
+          "text": "Questions 1–4. Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer."
+        },
+        {
+          "type": "text",
+          "text": "Heritage Weekend: booking form"
+        },
+        {
+          "type": "gap",
+          "id": "l1",
+          "prompt": "1. Workshop chosen: ___",
+          "answers": [
+            "weaving"
+          ],
+          "why": {
+            "tr": "Çömlek atölyesi dolu (\"it's already full\"), \"there are still places in the weaving workshop\". Tuzak: pottery.",
+            "ar": "ورشة الفخار ممتلئة (it's already full)، و\"there are still places in the weaving workshop\". الفخّ: pottery.",
+            "en": "Pottery is \"already full\"; \"there are still places in the weaving workshop\"."
+          },
+          "example": "I'd love to learn weaving one day."
+        },
+        {
+          "type": "gap",
+          "id": "l2",
+          "prompt": "2. Total cost of the workshop: £___",
+          "answers": [
+            "30",
+            "thirty"
+          ],
+          "why": {
+            "tr": "Kişi başı on sekiz pound, ama iki kişi için aile fiyatı \"thirty\". Marcus: \"Great, so thirty.\" Tuzak: 18.",
+            "ar": "السعر للشخص ثمانية عشر جنيهًا، لكن سعر العائلة لشخصين \"thirty\"، ويقول Marcus: \"Great, so thirty.\" الفخّ: 18.",
+            "en": "£18 per person, but \"a family price of thirty for two people\"."
+          },
+          "example": "The tickets were £20 each, but there was a family price of £50."
+        },
+        {
+          "type": "gap",
+          "id": "l3",
+          "prompt": "3. Surname: ___",
+          "answers": [
+            "Tolliver"
+          ],
+          "why": {
+            "tr": "\"T-O-double L-I-V-E-R\": double L = LL. Tolliver.",
+            "ar": "\"T-O-double L-I-V-E-R\"، وdouble L تعني حرفي L: Tolliver.",
+            "en": "\"T-O-double L-I-V-E-R.\""
+          },
+          "example": "Is that spelled with a double L?"
+        },
+        {
+          "type": "gap",
+          "id": "l4",
+          "prompt": "4. Visitors' car park: on ___ Road",
+          "answers": [
+            "Quarry"
+          ],
+          "why": {
+            "tr": "Ön taraftaki otopark personel için. \"Visitors should use the one on Quarry Road, opposite the church.\"",
+            "ar": "الموقف الأمامي للموظفين فقط. \"Visitors should use the one on Quarry Road, opposite the church.\"",
+            "en": "\"Visitors should use the one on Quarry Road.\""
+          },
+          "example": "Please park on the road opposite the church."
+        },
+        {
+          "type": "text",
+          "text": "Questions 5–6. Choose the correct letter."
+        },
+        {
+          "type": "choice",
+          "id": "l5",
+          "prompt": "5. Who can visit the room of contemporary work for free?",
+          "options": [
+            "everyone at the festival",
+            "people under sixteen",
+            "families with two children"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "Çağdaş eserler odası dört pound, \"but it's free for under-sixteens\". Ücretsiz olan ana sergi; tuzak A.",
+            "ar": "غرفة الأعمال المعاصرة بأربعة جنيهات \"but it's free for under-sixteens\". المعرض الرئيسي هو المجاني، وهذا فخّ الخيار A.",
+            "en": "\"That costs four pounds, but it's free for under-sixteens.\""
+          },
+          "example": "Entry is free for anyone under sixteen."
+        },
+        {
+          "type": "choice",
+          "id": "l6",
+          "prompt": "6. Which Sunday event will Marcus's daughter probably go to?",
+          "options": [
+            "the historian's talk",
+            "the folk music concert",
+            "the drawing trail"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "Konser cumartesi akşamı ve kızı erken yatıyor; konuşma çocuklar için uzun. Marcus: \"The trail sounds perfect for her.\"",
+            "ar": "الحفل مساء السبت وابنته تنام مبكرًا، والمحاضرة طويلة على الأطفال. يقول Marcus: \"The trail sounds perfect for her.\"",
+            "en": "\"The trail sounds perfect for her.\""
+          },
+          "example": "The drawing trail is perfect for young children."
+        }
+      ]
+    },
+    {
+      "kind": "read",
+      "i18n": {"ar":{"title":"القراءة: Yes / No / Not Given","intro":"ستقرأ آراء كاتب حول ما إذا كان يجب أن تكون المتاحف مجانية. الأسئلة لا تسأل عن المعلومات في النص، بل عن رأي الكاتب.","tip":"فرّق بين رأي الكاتب وآراء الآخرين: \"Supporters of charging point out…\" و\"Some critics claim…\" آراء الآخرين؛ أما \"In my view\" و\"I believe\" و\"I do not think\" فهي رأي الكاتب نفسه. إذا لم يقل الكاتب شيئًا عن الأمر فالإجابة NOT GIVEN."},"en":{"title":"Reading: Yes / No / Not Given","intro":"You will read a writer's views on whether museums should be free. The questions ask about the writer's opinion, not the information in the text.","tip":"Separate the writer's opinion from other people's: \"Supporters of charging point out…\" and \"Some critics claim…\" are other people's views; \"In my view\", \"I believe\" and \"I do not think\" are the writer's own. If the writer says nothing about something, it is NOT GIVEN."}},
+      "title": "Okuma: Yes / No / Not Given",
+      "intro": "Bir yazarın müzelerin ücretsiz olup olmaması hakkındaki görüşlerini okuyacaksın. Sorular metindeki bilgiyi değil, yazarın görüşünü soruyor.",
+      "tip": "Yazarın görüşü ile başkalarının görüşünü ayır: \"Supporters of charging point out…\", \"Some critics claim…\" başkalarının görüşüdür; \"In my view\", \"I believe\", \"I do not think\" yazarın kendisidir. Yazar bir konuda hiçbir şey demiyorsa NOT GIVEN.",
+      "passage": [
+        {
+          "type": "heading",
+          "text": "Who Is Culture For?"
+        },
+        {
+          "type": "text",
+          "text": "Every few years, the same debate returns: should public museums and galleries charge for admission? Supporters of charging point out that maintaining historic buildings and caring for priceless collections is extremely expensive, and that visitors who enjoy an exhibition should contribute to its cost. In my view, however, the case for free entry to national collections is much stronger, and governments that subsidise it are making a sensible long-term investment."
+        },
+        {
+          "type": "text",
+          "text": "The first argument is simple fairness. A nation's heritage belongs to all of its citizens, not only to those who can afford a ticket. A family on a low income may happily spend an hour among paintings and sculptures if entry is free, but will rarely pay to do so. When a museum introduces charges, the people who stop coming are not usually wealthy tourists; they are local residents, students and children. Conversely, museums that have removed their charges have often reported a sharp rise in visitors, including many people who had never been inside one before."
+        },
+        {
+          "type": "text",
+          "text": "Free admission also changes the way people use a museum. When you have paid a high price, you feel you must see everything in a single exhausting visit. When entry costs nothing, you can drop in for twenty minutes to look at one masterpiece and return the following week to see another. I believe this is a far better way to learn to appreciate art: slowly, repeatedly and without pressure."
+        },
+        {
+          "type": "text",
+          "text": "That said, I do not think that every cultural institution should be free. Special exhibitions, which bring famous works from abroad, involve enormous costs for transport and insurance, and it is reasonable to charge for them. The same is true of the performing arts: a theatre or concert hall that receives public money should keep some tickets affordable, but it cannot give every seat away."
+        },
+        {
+          "type": "text",
+          "text": "Some critics claim that free museums mainly benefit people who would visit anyway, and that the money would be better spent on teaching children music or crafts at school. This is a serious point, and arts education certainly deserves more support. But the two are not alternatives. A child who has learned to draw in class is far more likely to want to see real drawings in a gallery, and a gallery that is free is far more likely to be visited."
+        },
+        {
+          "type": "text",
+          "text": "Finally, museums do more than display objects. They help communities to understand their history, to preserve traditions and to reflect on their cultural identity. Contemporary galleries, too, allow people to see how artists are responding to the world around them. These are public goods, in the same way as parks and libraries, and they should be funded in the same way."
+        }
+      ],
+      "questions": [
+        {
+          "type": "heading",
+          "text": "Questions 1–7: Yes, No or Not Given?"
+        },
+        {
+          "type": "text",
+          "text": "Do the following statements agree with the views of the writer? Choose YES if the statement agrees with the views of the writer, NO if it contradicts them, NOT GIVEN if it is impossible to say what the writer thinks about this."
+        },
+        {
+          "type": "choice",
+          "id": "r1",
+          "prompt": "1. Paying for free entry to national museums is a good use of public money.",
+          "options": [
+            "Yes",
+            "No",
+            "Not Given"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Paragraf 1: \"governments that subsidise it are making a sensible long-term investment\". Yazar bunu mantıklı bir yatırım olarak görüyor: YES.",
+            "ar": "الفقرة 1: \"governments that subsidise it are making a sensible long-term investment\"، أي يراه استثمارًا معقولًا: YES.",
+            "en": "\"Governments that subsidise it are making a sensible long-term investment.\""
+          },
+          "example": "Building parks is a good use of public money."
+        },
+        {
+          "type": "choice",
+          "id": "r2",
+          "prompt": "2. When museums start charging, foreign tourists are the main group who stop visiting.",
+          "options": [
+            "Yes",
+            "No",
+            "Not Given"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "Paragraf 2: gelmeyi bırakanlar \"not usually wealthy tourists; they are local residents, students and children\". İfade bununla çelişiyor: NO.",
+            "ar": "الفقرة 2: من يتوقفون عن الزيارة \"not usually wealthy tourists; they are local residents, students and children\". العبارة تناقض ذلك: NO.",
+            "en": "Those who stop coming are \"not usually wealthy tourists\" but locals, students and children."
+          },
+          "example": "When prices went up, local families stopped coming."
+        },
+        {
+          "type": "choice",
+          "id": "r3",
+          "prompt": "3. Short, repeated visits are a good way to learn to enjoy art.",
+          "options": [
+            "Yes",
+            "No",
+            "Not Given"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Paragraf 3: \"I believe this is a far better way to learn to appreciate art: slowly, repeatedly and without pressure\": YES.",
+            "ar": "الفقرة 3: \"I believe this is a far better way to learn to appreciate art: slowly, repeatedly and without pressure\": YES.",
+            "en": "\"A far better way to learn to appreciate art: slowly, repeatedly and without pressure.\""
+          },
+          "example": "It is better to visit a museum often for a short time."
+        },
+        {
+          "type": "choice",
+          "id": "r4",
+          "prompt": "4. Special exhibitions of famous works from abroad should also be free.",
+          "options": [
+            "Yes",
+            "No",
+            "Not Given"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "Paragraf 4: \"it is reasonable to charge for them\". Yazar bu sergilerin ücretli olmasını kabul ediyor: NO.",
+            "ar": "الفقرة 4: \"it is reasonable to charge for them\"، فالكاتب يقبل فرض رسوم عليها: NO.",
+            "en": "\"It is reasonable to charge for them.\""
+          },
+          "example": "It is reasonable to charge for a special concert."
+        },
+        {
+          "type": "choice",
+          "id": "r5",
+          "prompt": "5. Most theatres in the country are already too expensive for ordinary people.",
+          "options": [
+            "Yes",
+            "No",
+            "Not Given"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "Yazar tiyatroların bazı biletleri uygun fiyatlı tutması gerektiğini söylüyor ama bugünkü fiyatlar hakkında görüş bildirmiyor: NOT GIVEN.",
+            "ar": "يقول الكاتب إن على المسارح إبقاء بعض التذاكر بأسعار معقولة، لكنه لا يحكم على أسعارها الحالية: NOT GIVEN.",
+            "en": "The writer says some tickets should be affordable, but gives no view on current prices."
+          },
+          "example": "The article does not say whether theatre tickets are expensive."
+        },
+        {
+          "type": "choice",
+          "id": "r6",
+          "prompt": "6. The money for free museums should be spent on arts education instead.",
+          "options": [
+            "Yes",
+            "No",
+            "Not Given"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "Bu eleştirmenlerin görüşü. Yazar: \"But the two are not alternatives\" (ikisi birbirinin alternatifi değil): NO.",
+            "ar": "هذا رأي النقّاد، أما الكاتب فيقول: \"But the two are not alternatives\"، أي لا يجب الاختيار بينهما: NO.",
+            "en": "That is the critics' view; the writer says \"the two are not alternatives\"."
+          },
+          "example": "Sport and music are not alternatives; schools need both."
+        },
+        {
+          "type": "choice",
+          "id": "r7",
+          "prompt": "7. Museums attract more visitors than public parks and libraries.",
+          "options": [
+            "Yes",
+            "No",
+            "Not Given"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "Son paragraf müzeleri parklar ve kütüphanelerle karşılaştırıyor ama ziyaretçi sayısı açısından değil, kamu yararı açısından: NOT GIVEN.",
+            "ar": "تقارن الفقرة الأخيرة المتاحف بالحدائق والمكتبات من حيث المنفعة العامة، لا من حيث عدد الزوار: NOT GIVEN.",
+            "en": "Museums are compared with parks and libraries as public goods, not by visitor numbers."
+          },
+          "example": "The writer compares museums to libraries, but not by the number of visitors."
+        }
+      ]
+    },
+    {
+      "kind": "language",
+      "i18n": {"ar":{"title":"اللغة: ترتيب الصفات وأدوات التوكيد (الوصف)"},"en":{"title":"Language: adjective order and intensifiers (description)"}},
+      "title": "Dil: sıfat sırası ve yoğunlaştırıcılar (betimleme)",
+      "explain": {
+        "tr": "Bir isimden önce birden fazla sıfat varsa genel sıra şöyledir: görüş → boyut → yaş → şekil → renk → köken → malzeme → amaç + isim: a beautiful large old wooden table, a lovely red Turkish rug. Pratikte iki üç sıfattan fazlasını kullanma. Yoğunlaştırıcılar: derecelendirilebilen sıfatlarla (interesting, big, popular, expensive) very, extremely, really, fairly, quite kullanılır: extremely popular, fairly busy. Uç sıfatlarla (amazing, stunning, enormous, fascinating, unique) absolutely, completely, utterly, really kullanılır: absolutely stunning. \"very stunning\" ya da \"absolutely busy\" doğal değildir; \"unique\" zaten tek demek, \"very unique\" deme. Konuşma Part 2'de doğru eşleşmiş birkaç güçlü sıfat, kelime puanını (Lexical Resource) yükseltir.",
+        "ar": "إذا جاءت عدة صفات قبل الاسم فالترتيب العام هو: الرأي ← الحجم ← العمر ← الشكل ← اللون ← الأصل ← المادة ← الغرض + الاسم: a beautiful large old wooden table وa lovely red Turkish rug. وعمليًا لا تستخدم أكثر من صفتين أو ثلاث. أما المقوّيات: مع الصفات المتدرّجة (interesting, big, popular, expensive) نستخدم very وextremely وreally وfairly وquite: extremely popular, fairly busy. ومع الصفات القصوى (amazing, stunning, enormous, fascinating, unique) نستخدم absolutely وcompletely وutterly وreally: absolutely stunning. عبارات مثل very stunning أو absolutely busy غير طبيعية، وunique تعني «فريد» أصلًا فلا تقل very unique. في Part 2 من المحادثة ترفع بضع صفات قوية مع المقوّي المناسب درجة المفردات (Lexical Resource).",
+        "en": "When several adjectives come before a noun, the usual order is: opinion → size → age → shape → colour → origin → material → purpose + noun: a beautiful large old wooden table, a lovely red Turkish rug. In practice, use no more than two or three. Intensifiers: with gradable adjectives (interesting, big, popular, expensive) use very, extremely, really, fairly, quite: extremely popular, fairly busy. With extreme adjectives (amazing, stunning, enormous, fascinating, unique) use absolutely, completely, utterly, really: absolutely stunning. \"Very stunning\" and \"absolutely busy\" sound unnatural, and \"unique\" already means one of a kind, so avoid \"very unique\". In Speaking Part 2, a few strong adjectives with the right intensifier raise your Lexical Resource score."
+      },
+      "examples": [
+        "The museum has a stunning collection of small Chinese porcelain bowls.",
+        "The exhibition was absolutely fascinating, but the café was rather expensive.",
+        "My grandmother kept a beautiful old wooden chest full of hand-made textiles.",
+        "The new contemporary gallery is extremely popular with young people."
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "id": "g1",
+          "prompt": "Which order is correct?",
+          "options": [
+            "a wooden old beautiful box",
+            "a beautiful old wooden box",
+            "an old beautiful wooden box",
+            "a beautiful wooden old box"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "Sıra: görüş (beautiful) → yaş (old) → malzeme (wooden) + isim.",
+            "ar": "الترتيب: الرأي (beautiful) ← العمر (old) ← المادة (wooden) + الاسم.",
+            "en": "Opinion → age → material: a beautiful old wooden box."
+          },
+          "example": "She gave me a lovely old silver ring."
+        },
+        {
+          "type": "choice",
+          "id": "g2",
+          "prompt": "The final scene of the play was ___ amazing; the whole audience stood up.",
+          "options": [
+            "very",
+            "absolutely",
+            "fairly",
+            "a bit"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"amazing\" uç bir sıfat, bu yüzden \"absolutely\". \"very amazing\" doğal değil.",
+            "ar": "amazing صفة قصوى، لذلك نستخدم absolutely، أما very amazing فغير طبيعية.",
+            "en": "\"Amazing\" is an extreme adjective, so \"absolutely\"."
+          },
+          "example": "The view from the tower was absolutely amazing."
+        },
+        {
+          "type": "choice",
+          "id": "g3",
+          "prompt": "Which phrase is NOT natural?",
+          "options": [
+            "very interesting",
+            "extremely popular",
+            "very unique",
+            "absolutely enormous"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "\"unique\" zaten \"tek, benzersiz\" demek; derecelendirilemez. \"very unique\" yerine \"truly unique\" ya da sadece \"unique\" de.",
+            "ar": "unique تعني فريد ولا تقبل التدرّج، فبدل very unique قل truly unique أو unique فقط.",
+            "en": "\"Unique\" means one of a kind, so it is not used with \"very\"."
+          },
+          "example": "The building's design is truly unique."
+        },
+        {
+          "type": "gap",
+          "id": "g4",
+          "prompt": "Put the adjectives in order (THREE words): She bought a ___ rug. (Turkish / red / lovely)",
+          "answers": [
+            "lovely red Turkish"
+          ],
+          "why": {
+            "tr": "Sıra: görüş (lovely) → renk (red) → köken (Turkish).",
+            "ar": "الترتيب: الرأي (lovely) ← اللون (red) ← الأصل (Turkish).",
+            "en": "Opinion → colour → origin."
+          },
+          "example": "He was wearing a smart blue Italian suit."
+        },
+        {
+          "type": "choice",
+          "id": "g5",
+          "prompt": "The gallery was ___ busy, but we could still see most of the paintings.",
+          "options": [
+            "absolutely",
+            "fairly",
+            "utterly",
+            "completely"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"busy\" derecelendirilebilen bir sıfat; \"fairly busy\" = oldukça kalabalık. absolutely/utterly/completely uç sıfatlarla kullanılır.",
+            "ar": "busy صفة متدرّجة، وfairly busy تعني مزدحم إلى حدّ ما. أما absolutely وutterly وcompletely فللصفات القصوى.",
+            "en": "\"Busy\" is gradable, so \"fairly busy\"."
+          },
+          "example": "The museum was fairly quiet on Monday morning."
+        }
+      ]
+    },
+    {
+      "kind": "write",
+      "i18n": {"ar":{"title":"الكتابة · Task 2: مناقشة رأيين (مقال كامل)","tip":"في سؤال \"Discuss both views\" خصّص لكل رأي فقرة مستقلة، واكتب رأيك بوضوح في المقدمة والخاتمة معًا. اعرض الرأيين بإنصاف ولا تستخفّ بالرأي المخالف. اقرن الصفات بأدوات التوكيد المناسبة (extremely difficult، considerable benefits)، واستخدم كلمات مثل heritage وsubsidise وpreserve."},"en":{"title":"Writing · Task 2: discussing two views (full essay)","tip":"In a \"Discuss both views\" question, give each view its own paragraph and state your opinion clearly in both the introduction and the conclusion. Present both views fairly; don't belittle the opposing one. Match adjectives and intensifiers correctly (extremely difficult, considerable benefits) and use words like heritage, subsidise and preserve."}},
+      "title": "Yazma · Task 2: iki görüşü tartışma (tam deneme)",
+      "task": 2,
+      "prompt": "Some people think that governments should spend money on the arts, such as museums, theatres and music. Others believe this money would be better spent on public services such as health and education.\n\nDiscuss both views and give your own opinion. Write a full essay.",
+      "minutes": 40,
+      "minWords": 250,
+      "tip": "\"Discuss both views\" sorusunda her görüşe ayrı bir paragraf ayır ve kendi görüşünü hem girişte hem sonuçta açıkça yaz. İki görüşü de adil anlat; karşı görüşü küçümseme. Sıfatları ve yoğunlaştırıcıları doğru eşleştir (extremely difficult, considerable benefits) ve heritage, subsidise, preserve gibi kelimeleri kullan.",
+      "model": "Public budgets are limited, so every pound spent on a theatre or a gallery is a pound that is not spent on hospitals or schools. While some people believe that the arts are a luxury that governments cannot afford, others argue that culture is an essential public good. In my opinion, public services must come first, but a modest, carefully targeted arts budget is fully justified.\n\nThose who oppose arts funding have a strong case. Health and education meet basic needs, and when hospitals have long waiting lists or schools lack teachers, it can seem extremely difficult to defend subsidising an opera house. They also point out that audiences for the performing arts are often wealthier than average, so public money may end up supporting people who could easily pay the full price.\n\nOn the other hand, supporters of the arts argue that culture brings benefits which are harder to measure but no less real. Museums preserve a nation's heritage and help communities understand their cultural identity, while free exhibitions give children from all backgrounds the chance to appreciate a masterpiece they would otherwise never see. In addition, the arts can bring considerable economic benefits: a famous festival or a well-known gallery attracts tourists who spend money in local hotels, restaurants and shops.\n\nIn my view, the choice is not as simple as it first appears. Governments should clearly protect spending on health and education, but cutting the arts completely would save relatively little and lose a great deal. The most sensible approach is to fund the arts in ways that reach the widest possible public, such as free admission to national collections and music and craft lessons in schools, rather than subsidising expensive tickets for a small audience.\n\nIn conclusion, although public services must remain the priority, a well-designed arts budget is an investment in creativity and shared culture that a society would be unwise to abandon."
+    },
+    {
+      "kind": "speak",
+      "i18n": {"ar":{"title":"التحدث: الفن والثقافة"},"en":{"title":"Speaking: art and culture"}},
+      "title": "Konuşma: sanat ve kültür",
+      "part1": [
+        "Do you enjoy visiting museums or art galleries?",
+        "Did you learn to draw or play an instrument as a child?",
+        "What kind of music do you listen to most?",
+        "Are traditional crafts still popular in your country?"
+      ],
+      "card": {
+        "title": "Describe a piece of art, a building or a performance that impressed you.",
+        "points": [
+          "what it was",
+          "where and when you saw it",
+          "what it looked or sounded like"
+        ],
+        "explain": "and explain why it made such a strong impression on you."
+      },
+      "useful": [
+        "It was absolutely stunning; I'd never seen anything like it.",
+        "It was a huge old stone building with…",
+        "What struck me first was the…",
+        "The colours were fairly simple, but…",
+        "I didn't really appreciate it at first, but…",
+        "It made me think about our cultural heritage, because…"
+      ]
+    }
+  ]
+}

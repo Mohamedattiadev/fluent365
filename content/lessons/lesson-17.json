@@ -1,0 +1,337 @@
+{
+  "id": "lesson-17",
+  "number": 17,
+  "title": "A Connected World",
+  "topic": "Globalisation and trade",
+  "level": "B2",
+  "goal": "Follow a discussion about a company's supply chain, weigh the gains and losses of globalisation in an essay, and link ideas with participle clauses.",
+  "steps": [
+    {
+      "kind": "words",
+      "i18n": {"ar":{"title":"المفردات: العولمة والتجارة","intro":"في هذا الدرس 12 كلمة وتعبيرًا بمستوى B2 عن العولمة والتجارة الدولية. ستفيدك كثيرًا في مقالات Task 2 وفي Speaking Part 3 عندما تأتي موضوعات الاقتصاد. اقرأ كل كلمة مع جملتها المثال؛ فستصادفها جميعًا مرة أخرى في نصوص الاستماع والقراءة."},"en":{"title":"Vocabulary: globalisation and trade","intro":"This lesson has 12 B2-level words and phrases about globalisation and international trade. They are very useful in Task 2 essays and in Speaking Part 3 when economic topics come up. Read each one with its example sentence; you will meet them all again in the listening and reading texts."}},
+      "title": "Kelimeler: küreselleşme ve ticaret",
+      "intro": "Bu derste küreselleşme ve uluslararası ticaret hakkında B2 düzeyinde 12 kelime ve kalıp var. Bunlar Task 2 denemelerinde ve Speaking Part 3'te ekonomi konuları geldiğinde çok işine yarar. Her birini örnek cümlesiyle oku; dinleme ve okuma metinlerinde hepsiyle yeniden karşılaşacaksın.",
+      "words": [
+        { "en": "globalisation", "pos": "noun", "tr": "küreselleşme", "ar": "العولمة", "example": "Globalisation has made it possible to buy fruit from the other side of the world in any season." },
+        { "en": "multinational", "pos": "adjective", "tr": "çok uluslu (birçok ülkede faaliyet gösteren)", "ar": "متعدد الجنسيات", "example": "Many multinational companies have offices in more than fifty countries." },
+        { "en": "free trade", "pos": "phrase", "tr": "serbest ticaret", "ar": "التجارة الحرة", "example": "The two countries signed a free trade agreement that removed most taxes on goods." },
+        { "en": "supply chain", "pos": "phrase", "tr": "tedarik zinciri", "ar": "سلسلة الإمداد", "example": "A single broken link in the supply chain can leave shops without stock." },
+        { "en": "export", "pos": "noun / verb", "tr": "ihracat; ihraç etmek", "ar": "التصدير؛ يُصدِّر", "example": "Coffee is the country's most important export." },
+        { "en": "import", "pos": "noun / verb", "tr": "ithalat; ithal etmek", "ar": "الاستيراد؛ يستورد", "example": "The country has to import most of its oil." },
+        { "en": "tariff", "pos": "noun", "tr": "gümrük vergisi", "ar": "تعريفة جمركية", "example": "The government placed a tariff on imported steel to protect local factories." },
+        { "en": "outsource", "pos": "verb", "tr": "dış kaynak kullanmak, (işi) başka bir şirkete/ülkeye yaptırmak", "ar": "يُسند العمل إلى جهة خارجية", "example": "Many banks outsource their customer service to call centres abroad." },
+        { "en": "domestic", "pos": "adjective", "tr": "yurt içi, yerli", "ar": "محلي، داخلي", "example": "The company sells most of its products in the domestic market." },
+        { "en": "competitive", "pos": "adjective", "tr": "rekabetçi, rekabet gücü yüksek", "ar": "تنافسي، قادر على المنافسة", "example": "Lower costs helped the firm stay competitive against foreign rivals." },
+        { "en": "living standards", "pos": "phrase", "tr": "yaşam standartları", "ar": "مستويات المعيشة", "example": "Living standards have risen sharply in many Asian countries since the 1980s." },
+        { "en": "cultural identity", "pos": "phrase", "tr": "kültürel kimlik", "ar": "الهوية الثقافية", "example": "Some people worry that global brands threaten local cultural identity." }
+      ],
+      "practice": [
+        {
+          "type": "choice", "id": "w1",
+          "prompt": "To cut costs, many technology firms ___ their software testing to specialist companies in other countries.",
+          "options": ["outsource", "import", "compete", "export"],
+          "answer": 0,
+          "why": { "tr": "\"Outsource\" bir işi başka bir şirkete (çoğu zaman yurt dışına) yaptırmak demek. \"import\" ve \"export\" mal için kullanılır, iş için değil; \"compete\" ise geçişsiz bir fiildir ve nesne almaz.", "ar": "outsource تعني إسناد عمل إلى شركة أخرى (غالبًا في الخارج). أما import وexport فتُستخدمان مع البضائع لا مع الأعمال، وcompete فعل لازم لا يأخذ مفعولًا به.", "en": "\"Outsource\" means paying another company, often abroad, to do work. Import and export are for goods, and compete takes no object." },
+          "example": "The airline decided to outsource its cleaning and catering services."
+        },
+        {
+          "type": "gap", "id": "w2",
+          "prompt": "Write the correct form of COMPETE: After moving production abroad, the company's prices became far more ___.",
+          "answers": ["competitive"],
+          "why": { "tr": "\"became far more\" sonrasında bir sıfat gerekir: compete (fiil) → competition (isim) → competitive (sıfat).", "ar": "بعد became far more نحتاج إلى صفة: الفعل compete، والاسم competition، والصفة competitive.", "en": "An adjective is needed after \"became far more\": compete → competition → competitive." },
+          "example": "Small shops find it hard to remain competitive against online giants."
+        },
+        {
+          "type": "choice", "id": "w3",
+          "prompt": "Which word completes both phrases: \"a ___ chain\" and \"___ and demand\"?",
+          "options": ["supply", "trade", "market", "export"],
+          "answer": 0,
+          "why": { "tr": "\"supply chain\" (tedarik zinciri) ve \"supply and demand\" (arz ve talep) sabit kalıplardır. \"trade\" ve \"market\" bu iki kalıba birlikte uymaz.", "ar": "supply chain (سلسلة الإمداد) وsupply and demand (العرض والطلب) تعبيران ثابتان، ولا تناسب الكلمات الأخرى التعبيرين معًا.", "en": "\"Supply chain\" and \"supply and demand\" are both fixed phrases." },
+          "example": "Prices depend on supply and demand."
+        },
+        {
+          "type": "choice", "id": "w4",
+          "prompt": "A tariff is…",
+          "options": ["a tax that a government puts on imported goods", "an agreement between two private companies", "a limit on the number of foreign workers", "a type of large cargo ship"],
+          "answer": 0,
+          "why": { "tr": "\"Tariff\" ithal edilen mallara konan vergidir (gümrük vergisi). Hükümetler yerli üreticileri korumak için tarife koyar.", "ar": "tariff ضريبة تفرضها الحكومة على البضائع المستوردة، وتُستخدم غالبًا لحماية المنتجين المحليين.", "en": "A tariff is a tax on imported goods, often used to protect domestic producers." },
+          "example": "A new tariff made foreign cars more expensive."
+        },
+        {
+          "type": "gap", "id": "w5",
+          "prompt": "Write ONE word: Higher wages have improved living ___ in many developing countries.",
+          "answers": ["standards"],
+          "why": { "tr": "Kalıp \"living standards\" (yaşam standartları), çoğul kullanılır. \"living levels\" gibi bir kalıp yoktur.", "ar": "التعبير الثابت هو living standards بصيغة الجمع، ولا يُقال living levels.", "en": "The collocation is \"living standards\", usually plural." },
+          "example": "Better education usually leads to higher living standards."
+        },
+        {
+          "type": "choice", "id": "w6",
+          "prompt": "Which phrase means the opposite of \"the domestic market\"?",
+          "options": ["the international market", "the home market", "the national market", "the local market"],
+          "answer": 0,
+          "why": { "tr": "\"Domestic\" yurt içi demek; \"home\", \"national\" ve \"local\" aynı yöndedir. Zıt anlamlısı \"international\" (uluslararası) ya da \"overseas\".", "ar": "domestic تعني داخل البلد، وhome وnational وlocal قريبة من معناها. أما العكس فهو international أو overseas.", "en": "Domestic means inside the country; the opposite is international (or overseas)." },
+          "example": "The firm sells half its products at home and half on the international market."
+        }
+      ]
+    },
+    {
+      "kind": "listen",
+      "i18n": {"ar":{"title":"الاستماع · Part 3: سلسلة التوريد لدى شركة","intro":"طالبان، بريا وتوم، يناقشان مع أستاذهما دراسة الحالة التي أعدّاها عن شركة ملابس. اقرأ الأسئلة أولًا. في Part 3 انتبه إلى من يدافع عن أي رأي، وهل يغيّر رأيه أم لا.","tip":"في Part 3 كثيرًا ما يتفق المتحدثون أو يعترضون على بعضهم. عبارات مثل \"I agree with Tom about that\" و\"I'm less convinced\" و\"to be honest\" تدلّك على موضع الإجابة. ليس كل ما يقوله المتحدث هو الإجابة الصحيحة: فقد يذكر أولًا النتيجة المتوقعة ثم ما حدث فعلًا."},"en":{"title":"Listening · Part 3: a company's supply chain","intro":"Two students, Priya and Tom, discuss their case study of a clothing company with their tutor. Read the questions first. In Part 3, pay attention to who argues for which view and whether they change their mind.","tip":"In Part 3 the speakers often agree or disagree with each other. Phrases like \"I agree with Tom about that\", \"I'm less convinced\" and \"to be honest\" show where the answer is. Not everything a speaker says is the right answer: they may first say what was expected and then what actually happened."}},
+      "title": "Dinleme · Part 3: bir şirketin tedarik zinciri",
+      "intro": "İki öğrenci, Priya ve Tom, bir giyim şirketi hakkındaki vaka çalışmalarını hocalarıyla konuşuyor. Önce soruları oku. Part 3'te kimin hangi görüşü savunduğuna ve fikrini değiştirip değiştirmediğine dikkat et.",
+      "tip": "Part 3'te konuşmacılar sık sık birbirine katılır ya da itiraz eder. \"I agree with Tom about that\", \"I'm less convinced\", \"to be honest\" gibi ifadeler cevabın yerini gösterir. Bir konuşmacının söylediği her şey doğru cevap değildir: önce beklenen sonucu, sonra gerçekte olanı söyleyebilirler.",
+      "audio": {
+        "type": "audio", "id": "l-audio",
+        "speakers": {
+          "N": { "name": "Narrator", "voice": "en-GB-SoniaNeural" },
+          "marsh": { "name": "Dr Marsh", "voice": "en-GB-ThomasNeural" },
+          "priya": { "name": "Priya", "voice": "en-US-AvaNeural" },
+          "tom": { "name": "Tom", "voice": "en-NZ-MitchellNeural" }
+        },
+        "lines": [
+          { "speaker": "N", "text": "You will hear two students, Priya and Tom, talking to their tutor about a case study on a clothing company. First, you have some time to look at questions one to six.", "pauseAfterMs": 2500 },
+          { "speaker": "N", "text": "Now listen carefully and answer questions one to six.", "pauseAfterMs": 1200 },
+          { "speaker": "marsh", "text": "Come in, both of you. So, how's the case study on Harlow Threads going?", "pauseAfterMs": 400 },
+          { "speaker": "priya", "text": "Quite well, I think. We've decided to focus on how the company's supply chain has changed since the nineteen-nineties. Having read through ten years of their annual reports, we both felt it was by far the most interesting part of the story.", "pauseAfterMs": 400 },
+          { "speaker": "marsh", "text": "Good choice. Remind me, they started as a small domestic manufacturer, didn't they?", "pauseAfterMs": 400 },
+          { "speaker": "tom", "text": "That's right. Everything was made in one town in the north. Then, faced with much cheaper competitors, they decided to outsource most of their production to factories in three other countries. Only the design team stayed at home.", "pauseAfterMs": 400 },
+          { "speaker": "marsh", "text": "And what did you find out about the effects?", "pauseAfterMs": 400 },
+          { "speaker": "priya", "text": "In the short term, prices fell and the company became far more competitive. Their export sales roughly doubled in ten years. But what really surprised us was how fragile the system became. When one port closed for just three weeks, their shops had empty shelves for months.", "pauseAfterMs": 400 },
+          { "speaker": "marsh", "text": "That's a familiar pattern in globalisation, actually. Long chains are very efficient until something goes wrong. Did you look at the effect of the tariff changes?", "pauseAfterMs": 400 },
+          { "speaker": "tom", "text": "We did, briefly. In twenty eighteen a new tariff on cotton goods was introduced in one of their old markets. We expected it to hurt them badly, but in fact it made very little difference, because by then most of their customers were in Asia.", "pauseAfterMs": 400 },
+          { "speaker": "marsh", "text": "Interesting. Make sure you explain that clearly, because it's not what most readers would expect.", "pauseAfterMs": 400 },
+          { "speaker": "priya", "text": "We will. The part we can't agree on is the conclusion.", "pauseAfterMs": 400 },
+          { "speaker": "marsh", "text": "Go on.", "pauseAfterMs": 400 },
+          { "speaker": "priya", "text": "Well, I think the move abroad was mainly positive. Free trade gave the company access to huge new markets, and in the towns where the factories are now, wages and living standards have gone up. Not perfectly, but they have.", "pauseAfterMs": 400 },
+          { "speaker": "tom", "text": "I'm less convinced. The town where it all started lost about eight hundred jobs, and nothing really replaced them. Having spoken to some of the former workers, I can't call that a success.", "pauseAfterMs": 400 },
+          { "speaker": "marsh", "text": "Both points are valid. A good conclusion doesn't have to pick one side. You could set out the gains and the losses and show who carried each of them.", "pauseAfterMs": 400 },
+          { "speaker": "tom", "text": "That makes sense.", "pauseAfterMs": 400 },
+          { "speaker": "marsh", "text": "Now, sources. What are you using?", "pauseAfterMs": 400 },
+          { "speaker": "priya", "text": "The company's own reports, a book by an economist called Ruth Allender, and a television documentary about the old factory towns.", "pauseAfterMs": 400 },
+          { "speaker": "tom", "text": "The reports are full of useful figures, but obviously they're written to show the company in a good light. We'll need to check everything they claim.", "pauseAfterMs": 400 },
+          { "speaker": "priya", "text": "I agree with Tom about that. Allender's book is the opposite: very critical of multinational companies, and a bit dated, as it came out before the recent trade disputes. Still, her chapter on cultural identity in the factory towns is brilliant.", "pauseAfterMs": 400 },
+          { "speaker": "tom", "text": "Personally, I found the documentary the most useful of the three. Built around interviews rather than statistics, it showed what the changes actually meant for families.", "pauseAfterMs": 400 },
+          { "speaker": "priya", "text": "I thought it was rather one-sided, to be honest. They only interviewed people who'd lost their jobs, and nobody who'd found a new one.", "pauseAfterMs": 400 },
+          { "speaker": "marsh", "text": "Then use it, but say that. You might also mention how the import of cheap clothing changed what people expect to pay. Right, let's look at your plan for the presentation.", "pauseAfterMs": 1500 },
+          { "speaker": "N", "text": "That is the end of the recording.", "pauseAfterMs": 0 }
+        ]
+      },
+      "questions": [
+        { "type": "text", "text": "Questions 1–3. Choose the correct letter." },
+        {
+          "type": "choice", "id": "l1",
+          "prompt": "1. Why did the students decide to focus on the supply chain?",
+          "options": ["Their tutor recommended it.", "It seemed the most interesting topic after reading the reports.", "It was the only topic with enough published data."],
+          "answer": 1,
+          "why": { "tr": "Priya: \"Having read through ten years of their annual reports, we both felt it was by far the most interesting part of the story.\" Hoca konuyu önermedi, sadece \"Good choice\" diyor.", "ar": "تقول Priya: \"Having read through ten years of their annual reports, we both felt it was by far the most interesting part\". المشرف لم يقترح الموضوع، بل قال فقط Good choice.", "en": "\"Having read through ten years of their annual reports, we both felt it was by far the most interesting part of the story.\" The tutor only approves." },
+          "example": "Having read the reports, we chose the most interesting topic."
+        },
+        {
+          "type": "choice", "id": "l2",
+          "prompt": "2. What surprised the students about the company's new system?",
+          "options": ["how much prices fell", "how quickly export sales grew", "how easily it could be disrupted"],
+          "answer": 2,
+          "why": { "tr": "Fiyat düşüşü ve ihracatın ikiye katlanması söyleniyor ama şaşırtan bu değil: \"what really surprised us was how fragile the system became\". \"fragile\" = kolay bozulan.", "ar": "ذُكر انخفاض الأسعار وتضاعف الصادرات، لكن المفاجأة كانت: \"what really surprised us was how fragile the system became\"، وfragile تعني سهل التعطّل.", "en": "\"What really surprised us was how fragile the system became\": one port closure emptied the shops." },
+          "example": "The storm showed how easily the supply chain could be disrupted."
+        },
+        {
+          "type": "choice", "id": "l3",
+          "prompt": "3. What effect did the 2018 tariff on cotton goods have on the company?",
+          "options": ["It caused serious losses in its main market.", "It had little effect because most customers were elsewhere.", "It made the company bring production home."],
+          "answer": 1,
+          "why": { "tr": "Tom: \"We expected it to hurt them badly, but in fact it made very little difference, because by then most of their customers were in Asia.\" A beklenen sonuçtu, gerçekte olan değil.", "ar": "يقول Tom: \"We expected it to hurt them badly, but in fact it made very little difference\" لأن معظم الزبائن كانوا في آسيا. الخيار A هو ما توقّعوه لا ما حدث.", "en": "\"We expected it to hurt them badly, but in fact it made very little difference.\" A was the expectation, not the result." },
+          "example": "We expected the new tax to hurt sales, but in fact it made little difference."
+        },
+        { "type": "text", "text": "Questions 4–6. Who expresses each of these opinions? Choose the correct letter." },
+        {
+          "type": "choice", "id": "l4",
+          "prompt": "4. Moving production abroad was mainly a positive decision.",
+          "options": ["Priya", "Tom", "both Priya and Tom"],
+          "answer": 0,
+          "why": { "tr": "Priya: \"I think the move abroad was mainly positive.\" Tom ise \"I'm less convinced\" diyerek itiraz ediyor.", "ar": "تقول Priya: \"I think the move abroad was mainly positive\"، أما Tom فيعترض بقوله I'm less convinced.", "en": "Priya: \"the move abroad was mainly positive\". Tom: \"I'm less convinced.\"" },
+          "example": "I'm less convinced that the decision was a success."
+        },
+        {
+          "type": "choice", "id": "l5",
+          "prompt": "5. The company's own reports cannot be fully trusted.",
+          "options": ["Priya", "Tom", "both Priya and Tom"],
+          "answer": 2,
+          "why": { "tr": "Tom raporların şirketi iyi göstermek için yazıldığını, her iddianın kontrol edilmesi gerektiğini söylüyor; Priya: \"I agree with Tom about that.\" İkisi de aynı fikirde.", "ar": "يقول Tom إن التقارير كُتبت لإظهار الشركة بصورة جيدة ويجب التحقق منها، وتردّ Priya: \"I agree with Tom about that\"، فهما متفقان.", "en": "Tom says the reports show the company in a good light; Priya: \"I agree with Tom about that.\"" },
+          "example": "I agree with you about that: the figures need checking."
+        },
+        {
+          "type": "choice", "id": "l6",
+          "prompt": "6. The documentary was the most useful source.",
+          "options": ["Priya", "Tom", "both Priya and Tom"],
+          "answer": 1,
+          "why": { "tr": "Tom: \"I found the documentary the most useful of the three.\" Priya ise belgeseli \"rather one-sided\" (tek taraflı) buluyor.", "ar": "يقول Tom: \"I found the documentary the most useful of the three\"، بينما ترى Priya أنه rather one-sided أي منحاز لطرف واحد.", "en": "Tom: \"I found the documentary the most useful.\" Priya thought it \"rather one-sided\"." },
+          "example": "Personally, I found the interviews the most useful part."
+        }
+      ]
+    },
+    {
+      "kind": "read",
+      "i18n": {"ar":{"title":"القراءة: مطابقة عناوين الفقرات (Matching headings)","intro":"ستقرأ نصًا أكاديميًا عن كيف تجوب الأشياء اليومية العالم، وعن الرابحين والخاسرين من العولمة. هناك ست فقرات، A–F.","tip":"اقرأ أولًا الجملة الأولى والأخيرة من كل فقرة: فالفكرة الرئيسية غالبًا هناك. ثم انظر إلى العناوين. العنوان الذي يحتوي كلمة وردت في الفقرة ليس صحيحًا دائمًا؛ يجب أن يلخّص العنوان الفقرة كلها. في القائمة عناوين زائدة لن تُستخدم."},"en":{"title":"Reading: Matching headings","intro":"You will read an academic text about how everyday objects travel the world and about the winners and losers of globalisation. There are six paragraphs, A–F.","tip":"First read the first and last sentence of each paragraph: the main idea is often there. Then look at the headings. A heading that contains a word from the paragraph is not always right; the heading must sum up the whole paragraph. The list has extra headings that won't be used."}},
+      "title": "Okuma: paragraf başlıklarını eşleştirme (Matching headings)",
+      "intro": "Gündelik eşyaların dünyayı nasıl dolaştığını ve küreselleşmenin kazananlarını ve kaybedenlerini anlatan akademik bir metin okuyacaksın. Altı paragraf var, A–F.",
+      "tip": "Önce her paragrafın ilk ve son cümlesini oku: ana fikir çoğu zaman oradadır. Sonra başlıklara bak. Paragrafta geçen bir kelimeyi içeren başlık her zaman doğru değildir; başlık paragrafın tamamını özetlemeli. Listede kullanılmayacak fazladan başlıklar var.",
+      "passage": [
+        { "type": "heading", "text": "The Long Journey of Everyday Things" },
+        { "type": "text", "text": "A  Trade between distant regions is nothing new. Silk, spices and precious metals crossed continents for centuries before the modern era. What has changed is the scale and speed of exchange. Since the 1950s, the standard shipping container has made it far cheaper to move goods by sea, and later developments in computing and communications allowed firms to manage production across many countries at once. Economists usually use the word globalisation to describe this deepening connection between national economies, although the term also covers the movement of people, money and ideas." },
+        { "type": "text", "text": "B  A simple product shows how complex this connection has become. A cotton shirt bought in a European shop may be designed in one country, made from cotton grown in a second, spun and woven in a third, and sewn in a fourth. Each stage is a link in a supply chain that is often managed by a multinational company. Firms outsource each task to wherever it can be done most cheaply or efficiently, and the finished shirt may travel thousands of kilometres before anyone wears it. Few shoppers are aware of this journey, and even the brand that sells the shirt may not know every factory involved, because large suppliers often pass orders on to smaller workshops." },
+        { "type": "text", "text": "C  Supporters of free trade argue that this system has produced remarkable benefits. Consumers in wealthy countries pay less for clothing, electronics and food than earlier generations did. More importantly, several economies in East Asia grew rapidly by selling manufactured goods abroad, and hundreds of millions of people moved out of extreme poverty in the process. For countries with few natural resources, a strong export sector has often been the fastest route to higher living standards." },
+        { "type": "text", "text": "D  The gains, however, have not been shared evenly. In many older industrial regions of Europe and North America, factories closed when production moved overseas, and towns that had depended on a single employer struggled to recover. Retraining programmes helped some workers, but many of those who lost their jobs in middle age never found work that paid as well. Critics argue that a nation can become more competitive overall while particular communities become poorer, and that politicians underestimated this cost for decades. The anger felt in such places has since become a powerful force in elections in several countries, where promises to protect local jobs attract many voters." },
+        { "type": "text", "text": "E  Recent events have also exposed the weaknesses of long chains. During the COVID-19 pandemic, closed factories and crowded ports led to shortages of everything from medical equipment to bicycles. Trade disputes, in which governments raise a tariff on each other's products, have added further uncertainty. As a result, some companies are now moving part of their production closer to home or buying from several suppliers instead of one, accepting higher costs in return for greater security. Some governments have also encouraged domestic manufacturing of essential goods such as medicines." },
+        { "type": "text", "text": "F  The debate is not only economic. When the same brands, films and fast-food restaurants appear in every major city, some people fear that local cultural identity will gradually disappear. Others point out that the flow of influence is not in one direction only: global companies frequently adapt their products to local tastes, and the import of foreign food, music and fashion often leads to new combinations rather than simple copying. For many observers, the more likely outcome is not uniformity but a constant and sometimes uncomfortable blending of cultures." }
+      ],
+      "questions": [
+        { "type": "heading", "text": "Questions 1–6" },
+        { "type": "text", "text": "The passage has six paragraphs, A–F. Choose the correct heading for each paragraph from the list. There are more headings than paragraphs." },
+        {
+          "type": "choice", "id": "r1",
+          "prompt": "1. Paragraph A",
+          "options": ["An old activity on a new scale", "Many countries, one product", "Winners in the developing world", "A hidden cost for some communities", "A system under pressure", "Sameness or blending?", "Why governments prefer high taxes on trade"],
+          "answer": 0,
+          "why": { "tr": "Paragraf A ticaretin eski olduğunu (\"nothing new\") ama ölçeğinin ve hızının değiştiğini (\"What has changed is the scale and speed\") anlatıyor: An old activity on a new scale.", "ar": "تقول الفقرة A إن التجارة ليست جديدة (nothing new) لكن حجمها وسرعتها تغيّرا (What has changed is the scale and speed): An old activity on a new scale.", "en": "\"Trade between distant regions is nothing new … What has changed is the scale and speed of exchange.\"" },
+          "example": "Trade is nothing new; what has changed is its scale."
+        },
+        {
+          "type": "choice", "id": "r2",
+          "prompt": "2. Paragraph B",
+          "options": ["An old activity on a new scale", "Many countries, one product", "Winners in the developing world", "A hidden cost for some communities", "A system under pressure", "Sameness or blending?", "Why governments prefer high taxes on trade"],
+          "answer": 1,
+          "why": { "tr": "Paragraf B tek bir gömleğin dört farklı ülkeden geçtiğini anlatıyor: Many countries, one product.", "ar": "تشرح الفقرة B كيف يمرّ قميص واحد بأربعة بلدان مختلفة: Many countries, one product.", "en": "One cotton shirt is designed, grown, woven and sewn in four different countries." },
+          "example": "A single phone may contain parts from ten countries."
+        },
+        {
+          "type": "choice", "id": "r3",
+          "prompt": "3. Paragraph C",
+          "options": ["An old activity on a new scale", "Many countries, one product", "Winners in the developing world", "A hidden cost for some communities", "A system under pressure", "Sameness or blending?", "Why governments prefer high taxes on trade"],
+          "answer": 2,
+          "why": { "tr": "Paragraf C faydaları anlatıyor; en önemlisi Doğu Asya ekonomilerinin büyümesi ve yüz milyonlarca insanın aşırı yoksulluktan kurtulması: Winners in the developing world.", "ar": "تتحدث الفقرة C عن الفوائد، وأهمها نمو اقتصادات شرق آسيا وخروج مئات الملايين من الفقر المدقع: Winners in the developing world.", "en": "The key point (\"More importantly\") is the growth of East Asian economies and the fall in extreme poverty." },
+          "example": "Hundreds of millions of people moved out of poverty."
+        },
+        {
+          "type": "choice", "id": "r4",
+          "prompt": "4. Paragraph D",
+          "options": ["An old activity on a new scale", "Many countries, one product", "Winners in the developing world", "A hidden cost for some communities", "A system under pressure", "Sameness or blending?", "Why governments prefer high taxes on trade"],
+          "answer": 3,
+          "why": { "tr": "Paragraf D \"The gains, however, have not been shared evenly\" diye başlıyor ve fabrikaları kapanan kasabaları anlatıyor; politikacılar bu bedeli küçümsemiş: A hidden cost for some communities.", "ar": "تبدأ الفقرة D بعبارة The gains, however, have not been shared evenly وتصف بلدات أُغلقت مصانعها، وتقول إن السياسيين استهانوا بهذه الكلفة: A hidden cost for some communities.", "en": "\"The gains … have not been shared evenly\": towns lost factories, a cost politicians underestimated." },
+          "example": "The gains of trade have not been shared evenly."
+        },
+        {
+          "type": "choice", "id": "r5",
+          "prompt": "5. Paragraph E",
+          "options": ["An old activity on a new scale", "Many countries, one product", "Winners in the developing world", "A hidden cost for some communities", "A system under pressure", "Sameness or blending?", "Why governments prefer high taxes on trade"],
+          "answer": 4,
+          "why": { "tr": "Paragraf E salgın ve ticaret anlaşmazlıklarının uzun zincirlerin zayıflığını ortaya çıkardığını anlatıyor: A system under pressure. Gümrük vergisi geçiyor ama hükümetlerin neden yüksek vergiyi tercih ettiği anlatılmıyor; o başlık tuzak.", "ar": "تبيّن الفقرة E كيف كشفت الجائحة والنزاعات التجارية ضعف السلاسل الطويلة: A system under pressure. ذُكرت التعريفة الجمركية لكن الفقرة لا تشرح لماذا تفضّل الحكومات الضرائب العالية، فهذا العنوان فخّ.", "en": "Recent events \"have also exposed the weaknesses of long chains\". Tariffs are mentioned, but not why governments prefer them." },
+          "example": "The pandemic exposed the weaknesses of long supply chains."
+        },
+        {
+          "type": "choice", "id": "r6",
+          "prompt": "6. Paragraph F",
+          "options": ["An old activity on a new scale", "Many countries, one product", "Winners in the developing world", "A hidden cost for some communities", "A system under pressure", "Sameness or blending?", "Why governments prefer high taxes on trade"],
+          "answer": 5,
+          "why": { "tr": "Paragraf F kültürlerin aynılaşıp aynılaşmayacağını (uniformity) ya da karışıp karışmayacağını (blending) tartışıyor: Sameness or blending?", "ar": "تناقش الفقرة F هل ستتشابه الثقافات (uniformity) أم تمتزج (blending): Sameness or blending?", "en": "\"The more likely outcome is not uniformity but a constant … blending of cultures.\"" },
+          "example": "The result is not uniformity but a blending of cultures."
+        }
+      ]
+    },
+    {
+      "kind": "language",
+      "i18n": {"ar":{"title":"اللغة: أشباه الجمل الاسمية بالمشتقات (participle clauses)"},"en":{"title":"Language: participle clauses"}},
+      "title": "Dil: ortaç yapıları (participle clauses)",
+      "explain": {
+        "tr": "Ortaç yapıları iki cümleyi daha kısa ve akademik biçimde birleştirir. -ing ile başlayan yapı aynı anda olan ya da sebep bildiren bir eylemi anlatır: Facing cheaper competitors, the firm moved abroad (= Because it faced…). \"Having + V3\" önce olan eylemi anlatır: Having read the reports, we chose a topic (= After we had read…). V3 ile başlayan yapı edilgen anlam taşır: Driven by low costs, many firms outsource production (= Because they are driven by…). Kural: yapının öznesi ana cümlenin öznesiyle aynı olmalı. \"Having closed the factory, the workers lost their jobs\" yanlıştır, çünkü fabrikayı işçiler kapatmadı. Task 2'de paragraf başına bir iki tane yeterli; fazlası yapay görünür.",
+        "ar": "تربط جمل اسم الفاعل واسم المفعول (participle clauses) جملتين بطريقة أقصر وأكثر أكاديمية. الصيغة بـ -ing تصف فعلًا متزامنًا أو سببًا: Facing cheaper competitors, the firm moved abroad (أي Because it faced…). وصيغة Having + التصريف الثالث تصف فعلًا حدث أولًا: Having read the reports, we chose a topic (أي After we had read…). والصيغة التي تبدأ بالتصريف الثالث لها معنى المبني للمجهول: Driven by low costs, many firms outsource production. القاعدة: يجب أن يكون فاعل هذه الجملة هو فاعل الجملة الرئيسية نفسه، فجملة Having closed the factory, the workers lost their jobs خاطئة لأن العمال لم يغلقوا المصنع. في مقال Task 2 تكفي جملة أو جملتان في كل فقرة.",
+        "en": "Participle clauses join two ideas in a shorter, more academic way. An -ing clause shows a simultaneous action or a reason: Facing cheaper competitors, the firm moved abroad (= because it faced…). Having + past participle shows an earlier action: Having read the reports, we chose a topic (= after we had read…). A past participle clause has a passive meaning: Driven by low costs, many firms outsource production (= because they are driven by…). The rule: the subject of the participle clause must be the subject of the main clause. \"Having closed the factory, the workers lost their jobs\" is wrong, because the workers did not close it. One or two per paragraph is enough in Task 2."
+      },
+      "examples": [
+        "Having signed a free trade agreement, the two countries removed most taxes on each other's goods.",
+        "Driven by rising wages at home, many firms decided to outsource production overseas.",
+        "Facing a new tariff, exporters had to look for customers in other markets.",
+        "Made in four different countries, a single shirt depends on a long and fragile supply chain."
+      ],
+      "questions": [
+        {
+          "type": "choice", "id": "g1",
+          "prompt": "___ the factory in 1998, the company moved all production to Vietnam.",
+          "options": ["Having closed", "Closed", "Having been closed", "To close"],
+          "answer": 0,
+          "why": { "tr": "Şirket fabrikayı önce kapattı, sonra üretimi taşıdı: önce olan etken eylem için \"Having + V3\": Having closed. \"Having been closed\" edilgendir ve şirketin kapatıldığı anlamına gelir.", "ar": "أغلقت الشركة المصنع أولًا ثم نقلت الإنتاج، فنستخدم Having + التصريف الثالث لفعل مبني للمعلوم سبق غيره: Having closed. أما Having been closed فمبني للمجهول ويعني أن الشركة نفسها أُغلقت.", "en": "An earlier active action: Having + past participle. \"Having been closed\" would mean the company itself was closed." },
+          "example": "Having closed its last factory, the company now only designs products."
+        },
+        {
+          "type": "choice", "id": "g2",
+          "prompt": "___ by lower labour costs, many manufacturers moved to Asia in the 1990s.",
+          "options": ["Attracted", "Attracting", "Having attracted", "Attract"],
+          "answer": 0,
+          "why": { "tr": "Üreticileri düşük maliyetler çekti; yani anlam edilgen (\"were attracted by\"). Edilgen anlam için V3: Attracted. \"by\" edatı da edilgen yapıya işaret eder.", "ar": "المصنّعون هم من اجتذبتهم التكاليف المنخفضة، فالمعنى مبني للمجهول (were attracted by)، ولهذا نستخدم التصريف الثالث: Attracted. وحرف by دليل على ذلك.", "en": "The meaning is passive (they were attracted by low costs), so use the past participle." },
+          "example": "Attracted by the warm climate, many retired people move to the coast."
+        },
+        {
+          "type": "choice", "id": "g3",
+          "prompt": "Which sentence is correct?",
+          "options": ["Having lost their jobs, many workers retrained as nurses.", "Having lost their jobs, the government offered workers retraining.", "Having lost their jobs, retraining was offered to workers.", "Lost their jobs, many workers retrained as nurses."],
+          "answer": 0,
+          "why": { "tr": "İşini kaybedenler işçiler; bu yüzden ana cümlenin öznesi \"many workers\" olmalı. B'de özne hükümet, C'de \"retraining\": ikisi de yanlış. D'de \"Having\" eksik.", "ar": "الذين فقدوا وظائفهم هم العمال، فيجب أن يكون فاعل الجملة الرئيسية many workers. في B الفاعل هو الحكومة وفي C هو retraining وكلاهما خطأ، وفي D تنقص كلمة Having.", "en": "The workers lost their jobs, so they must be the subject of the main clause. B and C have the wrong subject; D lacks \"Having\"." },
+          "example": "Having lost his job, my uncle started his own business."
+        },
+        {
+          "type": "gap", "id": "g4",
+          "prompt": "Write ONE word (form of DEPEND): ___ on imported oil, the country is badly affected when prices rise.",
+          "answers": ["Depending"],
+          "why": { "tr": "Ülke ithal petrole bağımlı ve bu, ana cümlenin sebebi: aynı anda süren bir durum için -ing: Depending on… (= Because it depends on…). \"Dependent on\" da doğru olurdu ama soru DEPEND fiilinin biçimini istiyor.", "ar": "البلد يعتمد على النفط المستورد وهذا سبب ما في الجملة الرئيسية، فنستخدم صيغة -ing لحالة مستمرة: Depending on… أي Because it depends on…", "en": "A reason that is true at the same time: -ing clause, Depending on… (= because it depends on…)." },
+          "example": "Depending on tourism, the island suffered when flights stopped."
+        },
+        {
+          "type": "choice", "id": "g5",
+          "prompt": "Which is the best participle-clause version of: \"The agreement was signed in 2010. It removed most tariffs between the two countries.\"",
+          "options": ["Signed in 2010, the agreement removed most tariffs between the two countries.", "Signing in 2010, the agreement removed most tariffs between the two countries.", "Having signed in 2010, the agreement removed most tariffs.", "The agreement signing in 2010 removed most tariffs."],
+          "answer": 0,
+          "why": { "tr": "Anlaşma imzalandı, yani edilgen: V3 ile başlayan yapı: Signed in 2010, the agreement… B ve C etken anlamlı, sanki anlaşma bir şey imzalamış gibi.", "ar": "الاتفاقية وُقِّعت، فالمعنى مبني للمجهول ونبدأ بالتصريف الثالث: Signed in 2010, the agreement… أما B وC فمعناهما مبني للمعلوم كأن الاتفاقية هي التي وقّعت.", "en": "The agreement was signed (passive), so start with the past participle: Signed in 2010…" },
+          "example": "Built in 1890, the bridge is still used every day."
+        }
+      ]
+    },
+    {
+      "kind": "write",
+      "i18n": {"ar":{"title":"الكتابة · Task 2: ناقش الرأيين","tip":"في سؤال \"Discuss both views\" خصّص لكل رأي فقرة مستقلة واشرح كلًّا منهما بإنصاف. اذكر رأيك باختصار في المقدمة وكرّره في الخاتمة. يمكنك أن تميل إلى أحد الطرفين أو أن تقدّم رأيًا متوازنًا، لكن كن واضحًا. استخدم كلمات هذا الدرس (supply chain، living standards، competitive، outsource) وتركيبًا واحدًا بالمشتقات في كل فقرة (Having…، Driven by…)."},"en":{"title":"Writing · Task 2: discuss both views","tip":"In a \"Discuss both views\" question, give each view its own body paragraph and explain each one fairly. State your opinion briefly in the introduction and repeat it in the conclusion. You can side with one view or give a balanced opinion, but be clear. Use this lesson's words (supply chain, living standards, competitive, outsource) and one participle clause per paragraph (Having…, Driven by…)."}},
+      "title": "Yazma · Task 2: iki görüşü tartış",
+      "task": 2,
+      "prompt": "Some people believe that globalisation has brought more benefits than problems to ordinary people. Others argue that it has mainly benefited large multinational companies.\n\nDiscuss both views and give your own opinion.",
+      "minutes": 40,
+      "minWords": 250,
+      "tip": "\"Discuss both views\" sorusunda iki görüşe ayrı gövde paragrafı ayır ve her birini adil biçimde açıkla. Kendi görüşünü girişte kısaca söyle, sonuçta tekrar et. Görüşünü iki taraftan birine bağlayabilir ya da dengeli bir görüş verebilirsin, ama net ol. Bu dersin kelimelerini (supply chain, living standards, competitive, outsource) ve paragraf başına bir ortaç yapısı (Having…, Driven by…) kullan.",
+      "model": "Over the past fifty years, trade and communication between countries have expanded enormously. While some people think that this process of globalisation has improved the lives of ordinary people, others believe that the main winners have been large corporations. In my view, both groups have gained, but the benefits for individuals have been real and substantial, even if they have been unevenly distributed.\n\nThose who see multinational companies as the main beneficiaries have a strong case. Driven by the search for lower costs, many firms outsource production to countries where wages are low, and their profits have grown accordingly. At the same time, workers in older industrial regions have often lost secure jobs and struggled to find similar employment. Having moved factories abroad, companies rarely take responsibility for the communities they leave behind, so it is understandable that many people feel the system was designed for shareholders rather than for them.\n\nOn the other hand, it is difficult to deny that ordinary people have benefited in several ways. Consumers can now buy clothes, phones and food at prices that would have seemed impossible a generation ago, largely because global supply chains have made production more competitive. More importantly, in many developing countries, factory jobs linked to export industries have raised wages and living standards, allowing millions of families to afford education and health care for the first time. Free trade has also given small businesses access to customers all over the world through online platforms.\n\nIn conclusion, although large companies have clearly profited from globalisation, I believe ordinary people have also gained a great deal, particularly in poorer countries. The real challenge for governments is not to reverse the process but to support the workers and regions that have paid its costs."
+    },
+    {
+      "kind": "speak",
+      "i18n": {"ar":{"title":"التحدث: منتجات من كل أنحاء العالم"},"en":{"title":"Speaking: products from around the world"}},
+      "title": "Konuşma: dünyanın her yerinden ürünler",
+      "part1": [
+        "Do you prefer to buy products made in your own country or abroad? Why?",
+        "Are there many international shops and restaurants where you live?",
+        "Have you ever bought something online from another country?",
+        "Do you think the place where you live has changed because of international companies?"
+      ],
+      "card": {
+        "title": "Describe a product you own that was made in another country.",
+        "points": [
+          "what the product is",
+          "where it was made and how you got it",
+          "how often you use it"
+        ],
+        "explain": "and explain why you chose this product instead of a local one."
+      },
+      "useful": [
+        "Having looked at a few local options, I finally went for…",
+        "As far as I know, it was made in…, although it was designed in…",
+        "To be honest, the main reason was the price: imported goods are often more competitive.",
+        "I use it almost every day, so it was worth the money.",
+        "One thing I'd say against it is that it had to travel a very long way.",
+        "If there were a local version of the same quality, I'd probably choose that instead."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,709 @@
+{
+  "id": "lesson-37",
+  "number": 37,
+  "title": "Psychology and Decision-Making",
+  "topic": "Psychology & decision-making",
+  "level": "B2+",
+  "goal": "Follow a lecture and an academic text on how people make choices, and write with precise academic collocations (pose a threat, draw a conclusion, play a role).",
+  "steps": [
+    {
+      "kind": "words",
+      "i18n": {"ar":{"title":"المفردات: علم النفس واتخاذ القرار","intro":"كيف يتخذ الناس قراراتهم موضوع يقف خلف كثير من أسئلة Task 2 عن الإعلان والصحة والمال والتعليم. تتيح لك هذه الكلمات والتعابير الاثنا عشر استخدام لغة دقيقة وأكاديمية عند تفسير السلوك بدلًا من عبارات بسيطة مثل \"people are lazy\"."},"en":{"title":"Vocabulary: psychology and decision-making","intro":"How people make decisions lies behind many Task 2 questions on advertising, health, money and education. These 12 words and phrases let you use precise, academic language to explain behaviour instead of simple phrases like \"people are lazy\"."}},
+      "title": "Kelimeler: psikoloji ve karar verme",
+      "intro": "İnsanların nasıl karar verdiği; reklam, sağlık, para ve eğitim konularındaki pek çok Task 2 sorusunun arkasındaki konudur. Bu 12 kelime ve kalıp, davranışı açıklarken \"people are lazy\" gibi basit ifadeler yerine kesin ve akademik bir dil kullanmanı sağlar.",
+      "words": [
+        {
+          "en": "cognitive bias",
+          "pos": "phrase",
+          "tr": "bilişsel yanlılık (düşünme hatası)",
+          "ar": "التحيّز المعرفي",
+          "example": "A cognitive bias can lead even experts to make poor judgements."
+        },
+        {
+          "en": "rational",
+          "pos": "adjective",
+          "tr": "akılcı, mantıklı",
+          "ar": "عقلاني",
+          "example": "A rational investor would not sell everything after one bad day."
+        },
+        {
+          "en": "weigh up",
+          "pos": "phrasal verb",
+          "tr": "(artıları ve eksileri) tartmak",
+          "ar": "يوازن بين (الإيجابيات والسلبيات)",
+          "example": "Students should weigh up the costs and benefits of studying abroad."
+        },
+        {
+          "en": "trade-off",
+          "pos": "noun",
+          "tr": "ödünleşim, bir şeyden vazgeçip diğerini kazanma",
+          "ar": "مقايضة؛ موازنة بين مكسب وخسارة",
+          "example": "There is often a trade-off between price and quality."
+        },
+        {
+          "en": "impulsive",
+          "pos": "adjective",
+          "tr": "dürtüsel, düşünmeden hareket eden",
+          "ar": "اندفاعي",
+          "example": "Online shops are designed to encourage impulsive purchases."
+        },
+        {
+          "en": "confirmation bias",
+          "pos": "phrase",
+          "tr": "doğrulama yanlılığı",
+          "ar": "التحيّز التأكيدي",
+          "example": "Confirmation bias makes people read only news that supports their views."
+        },
+        {
+          "en": "peer pressure",
+          "pos": "phrase",
+          "tr": "akran baskısı",
+          "ar": "ضغط الأقران",
+          "example": "Teenagers often start smoking because of peer pressure."
+        },
+        {
+          "en": "self-control",
+          "pos": "noun",
+          "tr": "öz denetim, kendini kontrol",
+          "ar": "ضبط النفس",
+          "example": "Saving money requires a good deal of self-control."
+        },
+        {
+          "en": "default option",
+          "pos": "phrase",
+          "tr": "varsayılan seçenek",
+          "ar": "الخيار الافتراضي",
+          "example": "Most people never change the default option on their phones."
+        },
+        {
+          "en": "instant gratification",
+          "pos": "phrase",
+          "tr": "anlık haz, hemen tatmin olma isteği",
+          "ar": "الإشباع الفوري",
+          "example": "Social media offers instant gratification in the form of likes."
+        },
+        {
+          "en": "rule of thumb",
+          "pos": "phrase",
+          "tr": "pratik kural, kestirme yöntem",
+          "ar": "قاعدة عامة تقريبية",
+          "example": "A useful rule of thumb is to save at least ten per cent of your income."
+        },
+        {
+          "en": "make an informed decision",
+          "pos": "phrase",
+          "tr": "bilgiye dayalı karar vermek",
+          "ar": "يتخذ قرارًا مستنيرًا",
+          "example": "Patients need clear information to make an informed decision about treatment."
+        }
+      ],
+      "practice": [
+        {
+          "type": "choice",
+          "id": "w1",
+          "prompt": "Buying something you had not planned to buy, without thinking, is an ___ purchase.",
+          "options": [
+            "impulsive",
+            "rational",
+            "informed",
+            "default"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Düşünmeden yapılan alışveriş \"impulsive\"dir. \"rational\" ve \"informed\" tam tersine düşünülmüş karar anlamına gelir.",
+            "ar": "الشراء دون تفكير هو impulsive (اندفاعي). أما rational وinformed فتعنيان العكس: قرار مدروس.",
+            "en": "Without thinking = impulsive."
+          },
+          "example": "Sweets near the checkout encourage impulsive purchases."
+        },
+        {
+          "type": "choice",
+          "id": "w2",
+          "prompt": "Complete the phrasal verb: Before accepting the job, she carefully ___ up the advantages and disadvantages.",
+          "options": [
+            "weighed",
+            "made",
+            "took",
+            "put"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "\"weigh up\" = artıları ve eksileri tartmak. \"make up\", \"take up\", \"put up\" başka anlamlara gelir.",
+            "ar": "weigh up تعني يوازن بين الإيجابيات والسلبيات. أما make up وtake up وput up فلها معانٍ أخرى.",
+            "en": "\"Weigh up\" = consider carefully."
+          },
+          "example": "It's worth weighing up all the options before you sign a contract."
+        },
+        {
+          "type": "gap",
+          "id": "w3",
+          "prompt": "Write ONE word: There is often a trade-___ between convenience and privacy.",
+          "answers": [
+            "off"
+          ],
+          "why": {
+            "tr": "Kelime \"trade-off\" (ödünleşim). \"a trade-off between X and Y\" kalıbı çok yaygındır.",
+            "ar": "الكلمة هي trade-off، والتعبير الشائع a trade-off between X and Y.",
+            "en": "The noun is \"trade-off\"."
+          },
+          "example": "Every policy involves a trade-off between cost and benefit."
+        },
+        {
+          "type": "choice",
+          "id": "w4",
+          "prompt": "The tendency to look for information that supports what you already believe is called ___.",
+          "options": [
+            "confirmation bias",
+            "peer pressure",
+            "self-control",
+            "instant gratification"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "İnandığını destekleyen bilgiyi arama eğilimi \"confirmation bias\"tır. \"peer pressure\" arkadaş baskısı, \"self-control\" öz denetimdir.",
+            "ar": "الميل إلى البحث عن معلومات تدعم ما تؤمن به يسمى confirmation bias. أما peer pressure فهو ضغط الأقران، وself-control ضبط النفس.",
+            "en": "Seeking supporting evidence = confirmation bias."
+          },
+          "example": "Confirmation bias can make it hard to change our minds."
+        },
+        {
+          "type": "gap",
+          "id": "w5",
+          "prompt": "Write the correct form of RATIONAL: Advertisers often appeal to emotion rather than ___.",
+          "answers": [
+            "reason",
+            "rationality"
+          ],
+          "why": {
+            "tr": "\"rather than\" bir isimle tamamlanmalı: emotion ↔ reason (ya da rationality). Doğal olan \"emotion rather than reason\".",
+            "ar": "بعد rather than نحتاج إلى اسم يقابل emotion: reason أو rationality.",
+            "en": "A noun contrasting with emotion: reason / rationality."
+          },
+          "example": "Good decisions combine emotion and reason."
+        },
+        {
+          "type": "choice",
+          "id": "w6",
+          "prompt": "Which sentence uses \"default option\" correctly?",
+          "options": [
+            "Most users keep the default option instead of choosing their own settings.",
+            "He defaulted the option to win the game.",
+            "The default option was very angry about the decision.",
+            "She made a default option of her mistake."
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "\"default option\" = hiçbir şey yapmazsan geçerli olan seçenek. Diğer cümleler kelimeyi anlamsız biçimde kullanıyor.",
+            "ar": "default option هو الخيار الذي يسري إذا لم تفعل شيئًا. الجمل الأخرى تستخدم الكلمة بلا معنى.",
+            "en": "The default option is what happens if you do nothing."
+          },
+          "example": "Making organ donation the default option can change behaviour."
+        }
+      ]
+    },
+    {
+      "kind": "listen",
+      "i18n": {"ar":{"title":"الاستماع · Part 4: كيف يتخذ الناس قراراتهم فعلًا؟","intro":"يشرح محاضر موضوعًا يلتقي فيه علم النفس بالاقتصاد: كيف يتخذ الناس قراراتهم في الواقع. تسجيل Part 4 بطول الامتحان ومتحدث واحد. اقرأ الأسئلة أولًا؛ يُشغَّل التسجيل مرة واحدة فقط.","tip":"في أسئلة إكمال الملخص (summary completion) في Part 4 يتبع الملخص ترتيب المحاضرة لكنه يغيّر الكلمات. انظر إلى الكلمة قبل الفراغ وبعده: \"a ___ for cash\" تحتاج إلى اسم. عندما يقول المتحدث \"Let me give you three examples\" تابع الأمثلة وعدّها؛ فكل مثال يقابل عادةً سؤالًا."},"en":{"title":"Listening · Part 4: how do people really make decisions?","intro":"A lecturer explains a topic where psychology and economics meet: how people actually make decisions. An exam-length Part 4 recording with one speaker. Read the questions first; the recording plays once.","tip":"In Part 4 summary completion the summary follows the order of the lecture but changes the words. Look at the word before and after the gap: \"a ___ for cash\" needs a noun. When the speaker says \"Let me give you three examples\", follow and count them; each example usually matches a question."}},
+      "title": "Dinleme · Part 4: insanlar gerçekte nasıl karar verir?",
+      "intro": "Bir öğretim üyesi, psikoloji ve ekonominin kesiştiği bir konuyu anlatıyor: insanların gerçekte nasıl karar verdiği. Sınav uzunluğunda tek konuşmacılı bir Part 4 kaydı. Önce soruları oku; kayıt bir kez çalar.",
+      "tip": "Part 4'te özet tamamlama (summary completion) sorularında özet, dersin sırasını izler ama kelimeleri değiştirir. Boşluktan önceki ve sonraki kelimeye bak: \"a ___ for cash\" bir isim ister. Konuşmacı \"Let me give you three examples\" dediğinde örnekleri sayarak takip et; her örnek genellikle bir soruya karşılık gelir.",
+      "audio": {
+        "type": "audio",
+        "id": "l-audio",
+        "speakers": {
+          "N": {
+            "name": "Narrator",
+            "voice": "en-GB-SoniaNeural"
+          },
+          "lect": {
+            "name": "Professor Lindqvist",
+            "voice": "en-AU-WilliamMultilingualNeural"
+          }
+        },
+        "lines": [
+          {
+            "speaker": "N",
+            "text": "You will hear part of a lecture on psychology and decision-making. First, you have some time to look at questions one to six.",
+            "pauseAfterMs": 2500
+          },
+          {
+            "speaker": "N",
+            "text": "Now listen carefully and answer questions one to six.",
+            "pauseAfterMs": 1200
+          },
+          {
+            "speaker": "lect",
+            "text": "Today we're turning to a topic that sits between psychology and economics: how people actually make decisions, as opposed to how textbooks used to assume they make them.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "lect",
+            "text": "For much of the twentieth century, economic models were built on the idea of a rational decision-maker: someone who gathers all the relevant information, weighs up the costs and benefits of each option, and chooses whatever serves them best. It's a useful simplification. The trouble is that real people rarely behave like this.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "lect",
+            "text": "From the 1970s onwards, psychologists, most famously Daniel Kahneman and Amos Tversky, began to document systematic errors in human judgement, what we now call cognitive biases. The key word is systematic. These aren't random mistakes. They're predictable, which means they can be studied and, some would say, exploited.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "lect",
+            "text": "Let me give you three examples. The first is loss aversion. In experiments, most people feel the pain of losing a sum of money more strongly than the pleasure of gaining the same amount. That's why a shop that adds a surcharge for paying by card gets a different reaction from one that offers a discount for cash, even when the prices are identical.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "lect",
+            "text": "The second is confirmation bias: the tendency to notice evidence that supports what we already believe and to dismiss evidence that doesn't. It plays a significant role in politics, of course, but also in medicine. A doctor who makes an early diagnosis may unconsciously pay more attention to the symptoms that fit it.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "lect",
+            "text": "The third, and for policy perhaps the most important, is the power of the default option. When people face a choice, a large proportion simply accept whatever happens if they do nothing. Several countries have used this to increase saving for retirement. Instead of asking employees to join a pension scheme, employers enrol them automatically and let them leave if they wish. Very few leave.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "lect",
+            "text": "Nothing about the scheme has changed except the default, yet participation rises dramatically.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "lect",
+            "text": "Now, it would be easy to draw the conclusion that people are simply foolish. I think that would be a mistake. Many of these mental shortcuts, these rules of thumb, work perfectly well most of the time. If you had to calculate every decision from scratch, you'd never get out of the supermarket.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "lect",
+            "text": "The problem arises in situations our minds didn't evolve for: long-term financial planning, for example, where there's a trade-off between pleasure now and security decades later.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "lect",
+            "text": "This brings us to self-control. Why do people who sincerely intend to save, or exercise, or study, so often fail to do so? Part of the answer is that the costs are immediate and the benefits are distant. Instant gratification wins, not because people don't care about the future, but because the future feels abstract.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "lect",
+            "text": "So what's the ethical position? Designing choices to steer people towards better outcomes, sometimes called nudging, appeals to governments because it's cheap and leaves freedom of choice intact. Critics argue that it can be manipulative, especially when the same techniques are used by companies to encourage impulsive purchases.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "lect",
+            "text": "One useful test is transparency: would the nudge still work if people knew about it? If the answer is no, that should make us uneasy. Next week we'll look at peer pressure and group decisions, which pose a rather different set of problems.",
+            "pauseAfterMs": 1500
+          },
+          {
+            "speaker": "N",
+            "text": "That is the end of the recording.",
+            "pauseAfterMs": 0
+          }
+        ]
+      },
+      "questions": [
+        {
+          "type": "text",
+          "text": "Questions 1–2. Choose the correct letter."
+        },
+        {
+          "type": "choice",
+          "id": "l1",
+          "prompt": "1. What does the lecturer say about cognitive biases?",
+          "options": [
+            "They are random errors that cannot be studied.",
+            "They are predictable patterns in human judgement.",
+            "They were first identified by economists.",
+            "They mainly affect people with little education."
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"The key word is systematic. These aren't random mistakes. They're predictable, which means they can be studied\". A tam tersi; C yanlış: bunları psikologlar belgeledi.",
+            "ar": "\"These aren't random mistakes. They're predictable, which means they can be studied\". الخيار A عكس ذلك، وC خطأ لأن علماء النفس هم من وثّقوها.",
+            "en": "\"These aren't random mistakes. They're predictable.\""
+          },
+          "example": "These errors are predictable, so they can be studied."
+        },
+        {
+          "type": "choice",
+          "id": "l2",
+          "prompt": "2. What is the lecturer's view of rules of thumb?",
+          "options": [
+            "They usually lead people to poor decisions.",
+            "They work well in most cases but can fail in some modern situations.",
+            "They should be replaced by careful calculation.",
+            "They explain why people enjoy shopping."
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"Many of these mental shortcuts… work perfectly well most of the time… The problem arises in situations our minds didn't evolve for\". C ters: her kararı sıfırdan hesaplarsan \"you'd never get out of the supermarket\".",
+            "ar": "\"work perfectly well most of the time… The problem arises in situations our minds didn't evolve for\". الخيار C عكس كلامه: لو حسبنا كل قرار من الصفر لما خرجنا من السوبرماركت.",
+            "en": "\"Work perfectly well most of the time… The problem arises in situations our minds didn't evolve for.\""
+          },
+          "example": "Simple rules work well most of the time, but not always."
+        },
+        {
+          "type": "text",
+          "text": "Questions 3–6. Complete the summary below. Write ONE WORD ONLY for each answer."
+        },
+        {
+          "type": "gap",
+          "id": "l3",
+          "prompt": "3. Loss aversion: customers react differently to a surcharge for paying by card than to a ___ for paying in cash, even if prices are the same.",
+          "answers": [
+            "discount"
+          ],
+          "why": {
+            "tr": "\"a shop that adds a surcharge for paying by card gets a different reaction from one that offers a discount for cash\". Boşluk \"a\"dan sonra bir isim istiyor: discount.",
+            "ar": "\"a shop that adds a surcharge for paying by card gets a different reaction from one that offers a discount for cash\". بعد a نحتاج إلى اسم: discount.",
+            "en": "\"One that offers a discount for cash.\""
+          },
+          "example": "The shop offers a discount for cash payments."
+        },
+        {
+          "type": "gap",
+          "id": "l4",
+          "prompt": "4. Confirmation bias may lead a doctor who reaches an early ___ to focus on symptoms that support it.",
+          "answers": [
+            "diagnosis"
+          ],
+          "why": {
+            "tr": "\"A doctor who makes an early diagnosis may unconsciously pay more attention to the symptoms that fit it.\" \"reaches\" = \"makes\".",
+            "ar": "\"A doctor who makes an early diagnosis may unconsciously pay more attention to the symptoms that fit it\". reaches تعني makes هنا.",
+            "en": "\"A doctor who makes an early diagnosis…\""
+          },
+          "example": "The doctor made a quick diagnosis and later changed her mind."
+        },
+        {
+          "type": "gap",
+          "id": "l5",
+          "prompt": "5. In pension schemes, participation increases sharply when only the ___ is changed.",
+          "answers": [
+            "default"
+          ],
+          "why": {
+            "tr": "\"Nothing about the scheme has changed except the default, yet participation rises dramatically.\" \"rises dramatically\" = \"increases sharply\".",
+            "ar": "\"Nothing about the scheme has changed except the default, yet participation rises dramatically\". rises dramatically تعني increases sharply.",
+            "en": "\"Nothing… has changed except the default.\""
+          },
+          "example": "Changing the default can have a big effect on behaviour."
+        },
+        {
+          "type": "gap",
+          "id": "l6",
+          "prompt": "6. People often fail to save because the benefits are distant and the future seems ___.",
+          "answers": [
+            "abstract"
+          ],
+          "why": {
+            "tr": "\"not because people don't care about the future, but because the future feels abstract\". \"seems\" = \"feels\". A not: \"don't care\" tuzak, konuşmacı bunu reddediyor.",
+            "ar": "\"not because people don't care about the future, but because the future feels abstract\". seems تعني feels. عبارة don't care فخّ لأن المحاضر ينفيها.",
+            "en": "\"Because the future feels abstract.\""
+          },
+          "example": "Retirement can feel abstract when you are twenty."
+        }
+      ]
+    },
+    {
+      "kind": "read",
+      "i18n": {"ar":{"title":"القراءة: الاختيار من متعدد وإكمال الملخص","intro":"نص أكاديمي بطول الامتحان يناقش في ضوء الأبحاث سؤال: \"هل المزيد من الخيارات أفضل دائمًا؟\". ويذكر الكاتب أيضًا أن بعض النتائج الشهيرة صارت لاحقًا موضع جدل.","tip":"في أسئلة الاختيار من متعدد، الخيار الذي يكرر نتيجة شهيرة من النص حرفيًا قد لا يكون ما يقوله الكاتب فعلًا: فربما يقيّد الكاتب هذه النتيجة لاحقًا بقوله \"However, later studies…\". في إكمال الملخص حدّد أولًا الفقرات التي يغطيها الملخص، ثم توقّع نوع الكلمة المطلوبة في الفراغ."},"en":{"title":"Reading: multiple choice and summary completion","intro":"An exam-length academic text that discusses, in the light of research, the question \"Is more choice always better?\". The writer also explains that some famous findings later became disputed.","tip":"In multiple choice an option that repeats a famous finding from the text word for word may not be what the writer actually says: the writer may later limit it with \"However, later studies…\". In summary completion first find which paragraphs the summary covers, then predict the word type for the gap."}},
+      "title": "Okuma: çoktan seçmeli ve özet tamamlama",
+      "intro": "\"Daha fazla seçenek her zaman daha mı iyi?\" sorusunu araştırmalar ışığında tartışan, sınav uzunluğunda akademik bir metin. Yazar bazı ünlü bulguların sonradan tartışmalı hale geldiğini de anlatıyor.",
+      "tip": "Çoktan seçmeli sorularda metindeki ünlü bir bulguyu aynen tekrar eden seçenek, yazarın asıl söylediği şey olmayabilir: yazar sonra \"However, later studies…\" diye bulguyu sınırlıyor olabilir. Özet tamamlamada önce özetin hangi paragrafları kapsadığını bul, sonra boşluğun kelime türünü tahmin et.",
+      "passage": [
+        {
+          "type": "heading",
+          "text": "Too Much Choice? The Psychology of Deciding"
+        },
+        {
+          "type": "text",
+          "text": "A visitor to a large supermarket in a wealthy country may face several hundred varieties of breakfast cereal, dozens of brands of toothpaste and an almost endless range of mobile phone plans. For much of the twentieth century, economists would have regarded this abundance as an unambiguous good. If people are rational, the argument went, additional options can never make them worse off: they can simply ignore the ones they do not want. Choosing, in this older view, was a straightforward trade-off between costs and benefits, and more choice could only improve the outcome. Over the past few decades, however, psychologists have drawn attention to ways in which choice itself can become a burden."
+        },
+        {
+          "type": "text",
+          "text": "One of the best-known studies took place in an upmarket food shop. On some days, shoppers passed a tasting table offering a small selection of jams; on others, the table offered a much larger selection. The larger display attracted more visitors, but those who saw the small selection were considerably more likely to go on to buy a jar. The researchers drew the conclusion that too many options can discourage people from choosing at all, a phenomenon that became known as choice overload. The finding was widely reported and soon played a role in business advice, with consultants urging companies to cut their product ranges. Part of its appeal, some critics later suggested, may have been confirmation bias: the result fitted what many people already felt about modern consumer life."
+        },
+        {
+          "type": "text",
+          "text": "Later research has complicated the picture. When other teams attempted to repeat such experiments, some found similar effects, while others found none, and a number of reviews concluded that the overall effect is small and inconsistent. This does not mean that choice overload is imaginary, but rather that it appears only under particular conditions. It seems most likely when options are difficult to compare, when people do not have clear preferences before they start, and when they are under time pressure. In other words, the problem is not the number of options as such but the effort required to weigh them up."
+        },
+        {
+          "type": "text",
+          "text": "Personality also makes a difference. The economist and psychologist Herbert Simon distinguished between searching for the best possible option and accepting one that is good enough, a strategy he called satisficing. Satisficers typically rely on a simple rule of thumb, such as taking the first option that meets a few essential requirements. Later researchers have described people who habitually aim for the best as maximisers. In one study of university graduates looking for work, maximisers obtained jobs with somewhat higher starting salaries than satisficers, yet they reported feeling less satisfied with the outcome and more anxious during the search. Constantly wondering whether a better option exists, it appears, can undermine the pleasure of a good one."
+        },
+        {
+          "type": "text",
+          "text": "A related idea, decision fatigue, suggests that making many choices in a row gradually wears down our capacity for self-control, so that later decisions become more impulsive or more cautious. The concept is intuitively attractive and has been used to explain everything from shopping habits to the behaviour of judges. Yet here, too, attempts to replicate some of the original experiments have produced mixed results, and researchers continue to debate how strong the effect really is. Some link it to the growing appeal of instant gratification late in the day, when resisting a tempting option feels harder. What remains uncontroversial is that tired, hungry or stressed people tend to make poorer judgements, which is one reason why many busy professionals rely on fixed routines for minor matters."
+        },
+        {
+          "type": "text",
+          "text": "For organisations and governments, these findings carry practical lessons, though they should be applied with care. Presenting a limited number of well-explained options, choosing sensible defaults and describing costs in simple terms can all help people make an informed decision. At the same time, deciding on someone else's behalf which options they should see poses a risk of its own: those who design the choices may not share the interests of the people choosing. Choices are also rarely made in isolation: peer pressure, advertising and every other cognitive bias interact with the way the options are presented. The most defensible approach is probably to make choices easier without making them for people, so that individuals can still exercise judgement when it matters to them."
+        }
+      ],
+      "questions": [
+        {
+          "type": "heading",
+          "text": "Questions 1–3: Choose the correct letter."
+        },
+        {
+          "type": "choice",
+          "id": "r1",
+          "prompt": "1. According to the first paragraph, what did many twentieth-century economists believe?",
+          "options": [
+            "More options could never make people worse off.",
+            "Supermarkets offered too many products.",
+            "People usually make irrational choices.",
+            "Choice is a burden for most shoppers."
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "\"If people are rational, the argument went, additional options can never make them worse off\". D, psikologların sonraki görüşü; C ekonomistlerin varsayımının tersi.",
+            "ar": "\"additional options can never make them worse off\". الخيار D هو رأي علماء النفس لاحقًا، وC عكس افتراض الاقتصاديين.",
+            "en": "\"Additional options can never make them worse off.\""
+          },
+          "example": "Economists once assumed that extra options could never hurt."
+        },
+        {
+          "type": "choice",
+          "id": "r2",
+          "prompt": "2. What does the writer say about later research on choice overload?",
+          "options": [
+            "It proved that the original study was dishonest.",
+            "It found that the effect occurs only in certain circumstances.",
+            "It showed that choice overload affects everyone equally.",
+            "It confirmed that companies should always reduce their product ranges."
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "Paragraf 3: \"This does not mean that choice overload is imaginary, but rather that it appears only under particular conditions.\" A çok güçlü: sahtekârlık iddiası yok. D, paragraf 2'deki danışmanların tavsiyesi, yazarın sonucu değil.",
+            "ar": "الفقرة الثالثة: \"it appears only under particular conditions\". الخيار A مبالغ فيه فلا اتهام بالغش، وD نصيحة المستشارين في الفقرة الثانية لا استنتاج الكاتب.",
+            "en": "\"It appears only under particular conditions.\""
+          },
+          "example": "The effect appears only under particular conditions."
+        },
+        {
+          "type": "choice",
+          "id": "r3",
+          "prompt": "3. What did the study of university graduates suggest about maximisers?",
+          "options": [
+            "They found jobs more slowly than satisficers.",
+            "They earned less but enjoyed their work more.",
+            "They achieved slightly better results but felt worse about them.",
+            "They were more likely to accept the first job offered."
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "\"maximisers obtained jobs with somewhat higher starting salaries… yet they reported feeling less satisfied with the outcome\". \"slightly better results\" = \"somewhat higher salaries\"; \"felt worse\" = \"less satisfied, more anxious\".",
+            "ar": "\"maximisers obtained jobs with somewhat higher starting salaries… yet they reported feeling less satisfied\". slightly better results تعني somewhat higher salaries.",
+            "en": "\"Somewhat higher starting salaries… yet… less satisfied.\""
+          },
+          "example": "He earned more in the new job, yet he felt less satisfied."
+        },
+        {
+          "type": "text",
+          "text": "Questions 4–7. Complete the summary below. Write NO MORE THAN TWO WORDS from the passage for each answer."
+        },
+        {
+          "type": "text",
+          "text": "Decision fatigue and practical lessons"
+        },
+        {
+          "type": "gap",
+          "id": "r4",
+          "prompt": "4. Decision fatigue is the idea that making many choices one after another reduces people's ___.",
+          "answers": [
+            "self-control",
+            "capacity for self-control"
+          ],
+          "why": {
+            "tr": "Paragraf 5: \"making many choices in a row gradually wears down our capacity for self-control\". \"one after another\" = \"in a row\". İki kelime sınırı: self-control.",
+            "ar": "الفقرة الخامسة: \"making many choices in a row gradually wears down our capacity for self-control\". one after another تعني in a row.",
+            "en": "\"Wears down our capacity for self-control.\""
+          },
+          "example": "Long meetings can wear down people's self-control."
+        },
+        {
+          "type": "gap",
+          "id": "r5",
+          "prompt": "5. Some studies on decision fatigue could not be repeated successfully, so the evidence is described as ___.",
+          "answers": [
+            "mixed results",
+            "mixed"
+          ],
+          "why": {
+            "tr": "\"attempts to replicate some of the original experiments have produced mixed results\". \"repeated\" = \"replicate\".",
+            "ar": "\"attempts to replicate some of the original experiments have produced mixed results\". repeated تعني replicate.",
+            "en": "\"Have produced mixed results.\""
+          },
+          "example": "The new treatment has produced mixed results."
+        },
+        {
+          "type": "gap",
+          "id": "r6",
+          "prompt": "6. To avoid poor judgements, many busy professionals depend on fixed ___ for small decisions.",
+          "answers": [
+            "routines"
+          ],
+          "why": {
+            "tr": "\"many busy professionals rely on fixed routines for minor matters\". \"depend on\" = \"rely on\", \"small decisions\" = \"minor matters\".",
+            "ar": "\"many busy professionals rely on fixed routines for minor matters\". depend on تعني rely on، وsmall decisions تعني minor matters.",
+            "en": "\"Rely on fixed routines for minor matters.\""
+          },
+          "example": "Fixed routines save time and mental energy."
+        },
+        {
+          "type": "gap",
+          "id": "r7",
+          "prompt": "7. Organisations can help people by offering a limited number of options and choosing sensible ___.",
+          "answers": [
+            "defaults"
+          ],
+          "why": {
+            "tr": "Paragraf 6: \"Presenting a limited number of well-explained options, choosing sensible defaults…\". Çoğul: defaults.",
+            "ar": "الفقرة السادسة: \"Presenting a limited number of well-explained options, choosing sensible defaults\". الكلمة بصيغة الجمع: defaults.",
+            "en": "\"Choosing sensible defaults.\""
+          },
+          "example": "Good software comes with sensible defaults."
+        }
+      ]
+    },
+    {
+      "kind": "language",
+      "i18n": {"ar":{"title":"اللغة: متلازمات لفظية دقيقة للكتابة الأكاديمية (pose a threat, draw a conclusion, play a role)"},"en":{"title":"Language: precise collocations for academic writing (pose a threat, draw a conclusion, play a role)"}},
+      "title": "Dil: akademik yazı için kesin eşdizimler (pose a threat, draw a conclusion, play a role)",
+      "explain": {
+        "tr": "Band 7'de Lexical Resource puanı yalnızca \"zor kelime\" bilmeye değil, kelimeleri doğru eşdizimlerle (collocation) kullanmaya bağlıdır. Türkçeden ya da Arapçadan çeviri yapınca sık yanlışlar çıkar: \"make a conclusion\" değil \"draw/reach a conclusion\"; \"do a role\" değil \"play a role\"; \"make a threat to\" değil \"pose a threat to\". Akademik yazıda çok işe yarayan kalıplar: pose a threat/risk/challenge to; draw/reach a conclusion; play a (key/significant) role in; raise awareness of; conduct research/a study; meet a need/demand; have an impact/effect on; address an issue/a problem; make a decision; take steps/measures to. Yeni bir isim öğrenirken onunla kullanılan fiili de öğren ve not defterine öbek olarak yaz.",
+        "ar": "في Band 7 لا تعتمد درجة المفردات على معرفة كلمات صعبة فقط، بل على استخدامها مع التلازمات الصحيحة (collocations). الترجمة من التركية أو العربية تُنتج أخطاء شائعة: لا نقول make a conclusion بل draw/reach a conclusion، ولا do a role بل play a role، ولا make a threat to بل pose a threat to. تلازمات مفيدة جدًا في الكتابة الأكاديمية: pose a threat/risk/challenge to؛ draw/reach a conclusion؛ play a (key) role in؛ raise awareness of؛ conduct research/a study؛ meet a need/demand؛ have an impact on؛ address an issue؛ make a decision؛ take steps/measures to. عندما تتعلّم اسمًا جديدًا تعلّم الفعل الذي يأتي معه واكتبهما معًا في دفترك.",
+        "en": "At band 7, your Lexical Resource score depends not only on knowing advanced words but on using them in the right collocations. Translating from your first language often produces errors: not \"make a conclusion\" but \"draw/reach a conclusion\"; not \"do a role\" but \"play a role\"; not \"make a threat to\" but \"pose a threat to\". Useful academic collocations: pose a threat/risk/challenge to; draw/reach a conclusion; play a (key/significant) role in; raise awareness of; conduct research/a study; meet a need/demand; have an impact/effect on; address an issue/a problem; make a decision; take steps/measures to. When you learn a new noun, learn the verb that goes with it and record them together."
+      },
+      "examples": [
+        "Peer pressure plays a significant role in the decisions teenagers make about smoking.",
+        "Researchers conducted a study of two thousand shoppers and drew the conclusion that defaults matter.",
+        "Constant advertising for fast food poses a threat to children's health.",
+        "Governments could take steps to help people make informed decisions about saving."
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "id": "g1",
+          "prompt": "From these results, it is difficult to ___ a firm conclusion.",
+          "options": [
+            "draw",
+            "make",
+            "do",
+            "give"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Doğru eşdizim \"draw a conclusion\" (ya da \"reach a conclusion\"). \"make/do/give a conclusion\" doğal değildir.",
+            "ar": "التلازم الصحيح هو draw a conclusion (أو reach a conclusion). لا يقال make أو do أو give a conclusion.",
+            "en": "We draw (or reach) a conclusion."
+          },
+          "example": "We cannot draw a conclusion from such a small sample."
+        },
+        {
+          "type": "choice",
+          "id": "g2",
+          "prompt": "Social media ___ an important role in how young people form opinions.",
+          "options": [
+            "plays",
+            "does",
+            "makes",
+            "takes"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Kalıp \"play a role in\". \"take a role\" bir oyunda/filmde rol almak anlamına gelir; burada uygun değil.",
+            "ar": "التعبير هو play a role in. أما take a role فتعني أداء دور في مسرحية أو فيلم، وهي غير مناسبة هنا.",
+            "en": "\"Play a role in\"."
+          },
+          "example": "Parents play a key role in children's eating habits."
+        },
+        {
+          "type": "gap",
+          "id": "g3",
+          "prompt": "Write ONE word: Rising levels of debt among young people ___ a serious threat to their future security.",
+          "answers": [
+            "pose"
+          ],
+          "why": {
+            "tr": "Kalıp \"pose a threat to\". Özne çoğul (levels), bu yüzden \"pose\". \"poses\" yazarsan fiili \"debt\" ile uyumlu sanmış olursun; asıl özne \"levels\".",
+            "ar": "التعبير هو pose a threat to. الفاعل جمع (levels) لذلك pose هي الصحيحة نحويًا.",
+            "en": "\"Pose a threat to\"; the subject is plural, so \"pose\"."
+          },
+          "example": "Invasive species pose a threat to native wildlife."
+        },
+        {
+          "type": "choice",
+          "id": "g4",
+          "prompt": "Which sentence contains a collocation error?",
+          "options": [
+            "The researchers made a study of 500 volunteers.",
+            "The researchers conducted a study of 500 volunteers.",
+            "The campaign aims to raise awareness of the risks of gambling.",
+            "The new law addresses the problem of online fraud."
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Akademik eşdizim \"conduct/carry out a study\"dir; \"make a study\" doğal değil. Diğer üç cümle doğru eşdizimler içeriyor.",
+            "ar": "التلازم الأكاديمي هو conduct/carry out a study، أما make a study فغير طبيعي. الجمل الثلاث الأخرى صحيحة.",
+            "en": "\"Conduct (carry out) a study\" is the academic collocation."
+          },
+          "example": "The team conducted a study of sleep and memory."
+        },
+        {
+          "type": "gap",
+          "id": "g5",
+          "prompt": "Write ONE word: Governments should take ___ to protect consumers from misleading offers.",
+          "answers": [
+            "steps",
+            "measures",
+            "action"
+          ],
+          "why": {
+            "tr": "Kalıp \"take steps/measures to + fiil\" (önlem almak). \"take action to\" da doğru.",
+            "ar": "التعبير هو take steps/measures to + فعل (يتخذ إجراءات)، ويصح أيضًا take action to.",
+            "en": "\"Take steps / measures / action to\"."
+          },
+          "example": "The bank has taken steps to reduce fraud."
+        }
+      ]
+    },
+    {
+      "kind": "write",
+      "i18n": {"ar":{"title":"الكتابة · Task 2: مقال كامل (إلى أي مدى توافق؟)","tip":"في سؤال \"To what extent\" اذكر درجة موافقتك بوضوح في المقدمة (مثل \"largely agree\") والتزم بها حتى النهاية. استخدم أربعًا على الأقل من متلازمات هذا الدرس استخدامًا صحيحًا (play a role in, pose a risk to, take steps to, make an informed decision, draw a conclusion). تناول الرأي المخالف في فقرة واحدة وبيّن لماذا لا يقنع تمامًا."},"en":{"title":"Writing · Task 2: full essay (to what extent do you agree?)","tip":"In a \"To what extent\" question state the degree of your view clearly in the introduction (for example \"largely agree\") and keep it to the end. Use at least four of this lesson's collocations correctly (play a role in, pose a risk to, take steps to, make an informed decision, draw a conclusion). Deal with the opposing view in one paragraph and show why it is not fully convincing."}},
+      "title": "Yazma · Task 2: tam deneme (ne ölçüde katılıyorsun?)",
+      "task": 2,
+      "prompt": "Some people believe that governments should use psychological techniques, such as making the healthier or more environmentally friendly option the default, to influence people's behaviour.\n\nTo what extent do you agree or disagree?\n\nWrite at least 250 words.",
+      "minutes": 40,
+      "minWords": 250,
+      "tip": "\"To what extent\" sorusunda görüşünün derecesini girişte net söyle (örneğin \"largely agree\") ve sona kadar koru. Bu dersin eşdizimlerinden en az dördünü doğru kullan (play a role in, pose a risk to, take steps to, make an informed decision, draw a conclusion). Bir paragrafta karşı görüşü ele al ve neden tam ikna edici olmadığını göster.",
+      "model": "In recent years, several governments have begun to use insights from psychology to encourage healthier and more sustainable behaviour, for example by enrolling workers in pension schemes automatically. I largely agree that such techniques are justified, provided that they are transparent and that people remain free to choose otherwise.\n\nThe main argument in favour of this approach is that it works with human nature rather than against it. Research has shown that the default option plays a powerful role in decisions: when people are asked to opt out of a pension scheme rather than opt in, far more of them end up saving. Since many people sincerely intend to save, eat better or use less energy but struggle with self-control, a well-chosen default simply helps them do what they already want to do. Moreover, these measures are cheap compared with advertising campaigns or new taxes, which makes them an efficient use of public money.\n\nNevertheless, critics argue that such techniques pose a risk to individual freedom, since citizens may be influenced without realising it. This concern is legitimate, particularly when the same methods are used by companies to encourage impulsive spending. However, the solution is not to abandon these techniques but to apply them openly. If a government explains why a particular option has been made the default, and if changing it requires only a moment's effort, people can still make an informed decision.\n\nIn conclusion, I believe that governments should take steps to make beneficial choices easier, as long as they do so transparently. Used responsibly, psychological insights can improve public health and financial security without taking away anyone's right to decide for themselves."
+    },
+    {
+      "kind": "speak",
+      "i18n": {"ar":{"title":"المحادثة: القرارات والاختيارات"},"en":{"title":"Speaking: decisions and choices"}},
+      "title": "Konuşma: kararlar ve seçimler",
+      "part1": [
+        "Do you find it easy to make decisions?",
+        "Do you usually ask other people for advice before you decide something important?",
+        "Have you ever bought something on impulse and regretted it?",
+        "Do you prefer shops with lots of choice or just a few good options?"
+      ],
+      "card": {
+        "title": "Describe an important decision you made after thinking about it carefully.",
+        "points": [
+          "what the decision was and when you made it",
+          "what options you had",
+          "how you weighed them up"
+        ],
+        "explain": "and explain whether you think you made the right decision."
+      },
+      "useful": [
+        "It was one of the biggest decisions I've ever had to make.",
+        "I spent weeks weighing up the pros and cons.",
+        "My parents played quite a big role in the decision, to be honest.",
+        "There was a clear trade-off: more money, but much less free time.",
+        "In the end, I went with my gut feeling rather than the numbers.",
+        "Looking back, I've drawn the conclusion that it was the right choice."
+      ]
+    }
+  ]
+}

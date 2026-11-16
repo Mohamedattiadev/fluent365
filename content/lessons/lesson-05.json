@@ -1,0 +1,335 @@
+{
+  "id": "lesson-05",
+  "number": 5,
+  "title": "Health and Lifestyle",
+  "topic": "Health & lifestyle",
+  "level": "B1+",
+  "goal": "Talk and write about healthy habits with precise collocations, and give advice with should, ought to, have to and need to.",
+  "steps": [
+    {
+      "kind": "words",
+      "i18n": {"ar":{"title":"الكلمات: الصحة ونمط الحياة","intro":"في هذا الدرس 12 كلمة وعبارة عن الصحة ونمط الحياة تتكرر كثيرًا في IELTS. اقرأ كل واحدة مع جملتها المثال؛ وستصادف هذه الكلمات مجددًا في أقسام الاستماع والقراءة والكتابة والمحادثة."},"en":{"title":"Words: Health and lifestyle","intro":"This lesson has 12 words and phrases about health and lifestyle that come up very often in IELTS. Read each one with its example sentence; you will meet these words again in the listening, reading, writing and speaking sections."}},
+      "title": "Kelimeler: sağlık ve yaşam tarzı",
+      "intro": "Bu derste sağlık ve yaşam tarzı hakkında IELTS'te çok sık çıkan 12 kelime ve kalıp var. Her birini örnek cümlesiyle oku; dinleme, okuma, yazma ve konuşma bölümlerinde bu kelimelerle tekrar karşılaşacaksın.",
+      "words": [
+        { "en": "sedentary lifestyle", "pos": "phrase", "tr": "hareketsiz yaşam tarzı", "ar": "نمط حياة خامل (قليل الحركة)", "example": "Office workers who drive to work often have a sedentary lifestyle." },
+        { "en": "balanced diet", "pos": "phrase", "tr": "dengeli beslenme", "ar": "نظام غذائي متوازن", "example": "A balanced diet includes plenty of vegetables, fruit and whole grains." },
+        { "en": "moderate exercise", "pos": "phrase", "tr": "orta düzeyde egzersiz", "ar": "تمارين رياضية معتدلة", "example": "Brisk walking is a good example of moderate exercise." },
+        { "en": "well-being", "pos": "noun", "tr": "iyi oluş, esenlik (beden ve ruh sağlığı)", "ar": "العافية؛ الرفاهية الجسدية والنفسية", "example": "Spending time outdoors can improve your mental well-being." },
+        { "en": "chronic", "pos": "adjective", "tr": "kronik, süregen", "ar": "مزمن", "example": "Diabetes is a chronic condition that needs long-term care." },
+        { "en": "prevention", "pos": "noun", "tr": "önleme, korunma", "ar": "الوقاية", "example": "Many doctors say that prevention is better than cure." },
+        { "en": "consumption", "pos": "noun", "tr": "tüketim", "ar": "الاستهلاك", "example": "Reducing sugar consumption is one of the easiest ways to protect your teeth." },
+        { "en": "cut down on", "pos": "phrasal verb", "tr": "(bir şeyi) azaltmak", "ar": "يقلّل من", "example": "I'm trying to cut down on coffee because it keeps me awake." },
+        { "en": "life expectancy", "pos": "phrase", "tr": "ortalama yaşam süresi", "ar": "متوسط العمر المتوقع", "example": "Life expectancy has risen in most countries thanks to better health care." },
+        { "en": "obesity", "pos": "noun", "tr": "obezite, aşırı şişmanlık", "ar": "السمنة", "example": "Obesity increases the risk of heart disease." },
+        { "en": "take up", "pos": "phrasal verb", "tr": "(bir spora, hobiye) başlamak", "ar": "يبدأ ممارسة (رياضة أو هواية)", "example": "She decided to take up swimming after a back injury." },
+        { "en": "stress-related", "pos": "adjective", "tr": "stresle ilgili, stresten kaynaklanan", "ar": "مرتبط بالتوتر", "example": "Headaches and poor sleep are common stress-related problems." }
+      ],
+      "practice": [
+        {
+          "type": "choice", "id": "w1",
+          "prompt": "A ___ lifestyle involves a lot of sitting and very little physical activity.",
+          "options": ["sedentary", "balanced", "chronic", "moderate"],
+          "answer": 0,
+          "why": { "tr": "\"Sedentary\" çok oturan, az hareket eden demek. \"balanced\" beslenme için, \"chronic\" hastalık için, \"moderate\" egzersiz için kullanılır.", "ar": "كلمة sedentary تعني قليل الحركة وكثير الجلوس. أما balanced فتُستخدم مع الغذاء، وchronic مع المرض، وmoderate مع التمارين.", "en": "\"Sedentary\" means involving a lot of sitting. The other adjectives collocate with diet, illness and exercise." },
+          "example": "A sedentary lifestyle is common among people who work at a computer."
+        },
+        {
+          "type": "choice", "id": "w2",
+          "prompt": "Doctors advise people with high blood pressure to ___ down on salt.",
+          "options": ["cut", "take", "put", "break"],
+          "answer": 0,
+          "why": { "tr": "Kalıp \"cut down on something\" = bir şeyi azaltmak. \"take down\", \"put down\" ve \"break down\" başka anlamlara gelir.", "ar": "التعبير الصحيح هو cut down on something بمعنى يقلّل من الشيء. أما take down وput down وbreak down فلها معانٍ أخرى.", "en": "The phrasal verb is \"cut down on\" (= reduce). The others have different meanings." },
+          "example": "My father cut down on salt and his blood pressure improved."
+        },
+        {
+          "type": "gap", "id": "w3",
+          "prompt": "Write the correct form of PREVENT: Many illnesses can be avoided, so ___ should be a priority for health services.",
+          "answers": ["prevention"],
+          "why": { "tr": "\"should be\" öncesinde özne olarak bir isim gerekiyor: prevent (fiil) → prevention (isim).", "ar": "نحتاج إلى اسم في موقع الفاعل قبل should be: الفعل prevent يصبح الاسم prevention.", "en": "A noun is needed as the subject: prevent (verb) → prevention (noun)." },
+          "example": "Prevention costs much less than treatment."
+        },
+        {
+          "type": "choice", "id": "w4",
+          "prompt": "A chronic illness is one that…",
+          "options": ["lasts for a long time or keeps coming back", "starts suddenly and ends quickly", "only affects children", "is caused by an accident"],
+          "answer": 0,
+          "why": { "tr": "\"Chronic\" uzun süren ya da tekrar eden demek. Aniden başlayıp çabuk geçen hastalığa \"acute\" denir.", "ar": "chronic تعني مرضًا يستمر طويلًا أو يتكرر. أما المرض الذي يبدأ فجأة وينتهي بسرعة فيوصف بـ acute.", "en": "Chronic means long-lasting or recurring; the opposite is \"acute\"." },
+          "example": "Asthma is a chronic condition, but it can be controlled."
+        },
+        {
+          "type": "gap", "id": "w5",
+          "prompt": "Write ONE word: Average life ___ has risen in most countries over the last hundred years.",
+          "answers": ["expectancy"],
+          "why": { "tr": "Kalıp \"life expectancy\" = ortalama yaşam süresi. \"expectation\" (beklenti) burada yanlış olur.", "ar": "التعبير الثابت هو life expectancy أي متوسط العمر المتوقع. كلمة expectation (توقّع) خطأ هنا.", "en": "The fixed phrase is \"life expectancy\"; \"expectation\" is a different word." },
+          "example": "Life expectancy is often higher in countries with good public health care."
+        },
+        {
+          "type": "choice", "id": "w6",
+          "prompt": "Which word completes both phrases: \"sugar ___\" and \"energy ___\"?",
+          "options": ["consumption", "prevention", "expectancy", "obesity"],
+          "answer": 0,
+          "why": { "tr": "\"sugar consumption\" (şeker tüketimi) ve \"energy consumption\" (enerji tüketimi) doğal eşdizimlerdir. Diğerleri bu iki kelimeyle kullanılmaz.", "ar": "sugar consumption (استهلاك السكر) وenergy consumption (استهلاك الطاقة) تلازمان طبيعيان، والكلمات الأخرى لا تُستخدم معهما.", "en": "\"Sugar consumption\" and \"energy consumption\" are both natural collocations." },
+          "example": "Sugar consumption among teenagers is a concern for many parents."
+        }
+      ]
+    },
+    {
+      "kind": "listen",
+      "i18n": {"ar":{"title":"الاستماع · Part 1: برنامج الحياة الصحية","intro":"رجل يتصل بمركز صحي ليسجّل في برنامج للحياة الصحية نصحه به طبيبه. اقرأ الأسئلة أولًا. يُشغَّل التسجيل مرة واحدة كما في الامتحان.","tip":"في Part 1 تأتي الإجابات عادةً بترتيب الأسئلة. إذا ذكر المتحدث معلومة ثم صحّحها (مثلًا اختيار يوم آخر لأن الأول ممتلئ)، فاكتب المعلومة الثانية. لا تتجاوز حدّ الكلمات: إذا كان ONE WORD AND/OR A NUMBER فيمكنك كتابة \"30\"، ولا تكتب \"30 pounds\"."},"en":{"title":"Listening · Part 1: A healthy living programme","intro":"A man calls a health centre to sign up for a healthy living programme his doctor recommended. Read the questions first. The recording plays once, as in the exam.","tip":"In Part 1 the answers usually come in the order of the questions. If the speaker gives some information and then corrects it (for example, choosing another day because the first one is full), write the second piece of information. Don't go over the word limit: if it says ONE WORD AND/OR A NUMBER, you can write \"30\", but not \"30 pounds\"."}},
+      "title": "Dinleme · Part 1: sağlıklı yaşam programı",
+      "intro": "Bir adam, doktorunun önerdiği sağlıklı yaşam programına kaydolmak için bir sağlık merkezini arıyor. Önce soruları oku. Kayıt, sınavdaki gibi bir kez çalar.",
+      "tip": "Part 1'de cevaplar genelde soruların sırasıyla gelir. Konuşmacı önce bir bilgi verip sonra düzeltirse (örneğin bir gün dolu olduğu için başka gün seçilirse) ikinci bilgiyi yaz. Kelime sınırını aşma: ONE WORD AND/OR A NUMBER ise \"30\" yazabilirsin, \"30 pounds\" yazma.",
+      "audio": {
+        "type": "audio", "id": "l-audio",
+        "speakers": {
+          "N": { "name": "Narrator", "voice": "en-GB-SoniaNeural" },
+          "fiona": { "name": "Fiona", "voice": "en-GB-LibbyNeural" },
+          "daniel": { "name": "Daniel", "voice": "en-AU-WilliamMultilingualNeural" }
+        },
+        "lines": [
+          { "speaker": "N", "text": "You will hear a man phoning a health centre about a new programme. First, you have some time to look at questions one to six.", "pauseAfterMs": 2500 },
+          { "speaker": "N", "text": "Now listen carefully and answer questions one to six.", "pauseAfterMs": 1200 },
+          { "speaker": "fiona", "text": "Good afternoon, Ashgrove Wellbeing Centre, Fiona speaking.", "pauseAfterMs": 400 },
+          { "speaker": "daniel", "text": "Hi there. I picked up a leaflet about your Healthy Habits programme, and I'd like to sign up, if there's still space.", "pauseAfterMs": 400 },
+          { "speaker": "fiona", "text": "There is, yes. Let me just take a few details. Could I have your name?", "pauseAfterMs": 400 },
+          { "speaker": "daniel", "text": "It's Daniel Brannock. That's B-R-A-double N-O-C-K.", "pauseAfterMs": 400 },
+          { "speaker": "fiona", "text": "Thank you. And can I ask why you're interested in the programme? It helps us put people in the right group.", "pauseAfterMs": 400 },
+          { "speaker": "daniel", "text": "Well, I work in an office, and my doctor says I've got a very sedentary lifestyle. I sit at a desk all day and then on the sofa all evening. My blood pressure's a bit high. It's nothing chronic yet, but she said prevention is better than cure.", "pauseAfterMs": 400 },
+          { "speaker": "fiona", "text": "That's exactly what the programme is for. The idea is your general well-being, not just your weight. It runs for eight weeks, and each session has two parts: first a short talk, then about forty minutes of moderate exercise. Nothing too demanding, mostly brisk walking and some light circuit training.", "pauseAfterMs": 400 },
+          { "speaker": "daniel", "text": "That sounds manageable. What are the talks about?", "pauseAfterMs": 400 },
+          { "speaker": "fiona", "text": "The first week is about a balanced diet, then sleep, then stress-related problems, and so on. Most people say the week on sugar consumption surprises them the most.", "pauseAfterMs": 400 },
+          { "speaker": "daniel", "text": "I'm sure it will. I really need to cut down on fizzy drinks.", "pauseAfterMs": 400 },
+          { "speaker": "fiona", "text": "You won't be the only one! Now, the sessions. There's a group on Tuesday mornings, but I'm afraid that one's full. We've still got places on Thursday evenings, from half past six.", "pauseAfterMs": 400 },
+          { "speaker": "daniel", "text": "Thursday's fine. Half six suits me.", "pauseAfterMs": 400 },
+          { "speaker": "fiona", "text": "Lovely. And the cost: it's normally fifty-five pounds for the full eight weeks, but if your doctor referred you, it's thirty.", "pauseAfterMs": 400 },
+          { "speaker": "daniel", "text": "She did. She gave me a letter.", "pauseAfterMs": 400 },
+          { "speaker": "fiona", "text": "Then just bring the letter to the first session and you'll pay thirty pounds. You don't need to pay anything today.", "pauseAfterMs": 400 },
+          { "speaker": "daniel", "text": "Great. Is there anything else I should bring?", "pauseAfterMs": 400 },
+          { "speaker": "fiona", "text": "Comfortable shoes, and a water bottle, because we don't sell drinks here. Oh, and in the first week we ask everyone to keep a food diary, so our dietitian can give you some advice. Don't worry about that, though, we'll give you a notebook for it.", "pauseAfterMs": 400 },
+          { "speaker": "daniel", "text": "Right. And where exactly are you? The leaflet just says Ashgrove.", "pauseAfterMs": 400 },
+          { "speaker": "fiona", "text": "We're on Mill Lane, behind the library. People often go to the front of the library and get lost, but our entrance is round the side, beside the car park.", "pauseAfterMs": 400 },
+          { "speaker": "daniel", "text": "Got it. One more thing. My partner's been talking about taking up running. Could she join too?", "pauseAfterMs": 400 },
+          { "speaker": "fiona", "text": "This programme is only for people referred by a doctor, but we run a beginners' running club on Saturday mornings. I'll email you the details.", "pauseAfterMs": 400 },
+          { "speaker": "daniel", "text": "Perfect. Thanks very much for your help.", "pauseAfterMs": 1500 },
+          { "speaker": "N", "text": "That is the end of the recording.", "pauseAfterMs": 0 }
+        ]
+      },
+      "questions": [
+        { "type": "text", "text": "Questions 1–4. Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer." },
+        { "type": "text", "text": "Healthy Habits Programme: new member" },
+        {
+          "type": "gap", "id": "l1",
+          "prompt": "1. Surname: ___",
+          "answers": ["Brannock"],
+          "why": { "tr": "Daniel adını harf harf söylüyor: \"B-R-A-double N-O-C-K\". \"double N\" iki N demek: Brannock.", "ar": "يتهجّى Daniel اسمه: \"B-R-A-double N-O-C-K\"، وdouble N تعني حرفي N متتاليين: Brannock.", "en": "\"It's Daniel Brannock. That's B-R-A-double N-O-C-K.\" Double N = NN." },
+          "example": "My surname has a double N in the middle."
+        },
+        {
+          "type": "gap", "id": "l2",
+          "prompt": "2. Reason for joining: doctor says he has a very ___ lifestyle",
+          "answers": ["sedentary"],
+          "why": { "tr": "\"my doctor says I've got a very sedentary lifestyle\". \"chronic\" de geçiyor ama \"It's nothing chronic yet\" diyor; tuzak bu.", "ar": "يقول: \"my doctor says I've got a very sedentary lifestyle\". كلمة chronic فخّ، لأنه قال \"It's nothing chronic yet\".", "en": "\"My doctor says I've got a very sedentary lifestyle.\" Chronic is a trap: \"It's nothing chronic yet.\"" },
+          "example": "Her doctor told her that her sedentary lifestyle was affecting her health."
+        },
+        {
+          "type": "gap", "id": "l3",
+          "prompt": "3. Day of sessions: ___ evenings",
+          "answers": ["Thursday", "Thursdays"],
+          "why": { "tr": "Önce salı sabahı söyleniyor ama \"that one's full\". Sonra: \"We've still got places on Thursday evenings\". Tuzak: Tuesday.", "ar": "ذُكرت مجموعة صباح الثلاثاء أولًا لكنها \"full\"، ثم: \"We've still got places on Thursday evenings\". الفخّ: Tuesday.", "en": "The Tuesday group is \"full\"; \"We've still got places on Thursday evenings.\"" },
+          "example": "The Tuesday class was full, so I joined the Thursday one."
+        },
+        {
+          "type": "gap", "id": "l4",
+          "prompt": "4. Cost with a letter from the doctor: £___",
+          "answers": ["30", "thirty"],
+          "why": { "tr": "Normal fiyat elli beş pound, ama \"if your doctor referred you, it's thirty\". Daniel'ın mektubu var, yani 30. £ işareti verildiği için sadece sayıyı yaz.", "ar": "السعر العادي خمسة وخمسون جنيهًا، لكن \"if your doctor referred you, it's thirty\". لدى Daniel رسالة، فالجواب 30. اكتب الرقم فقط لأن علامة £ موجودة.", "en": "Normally £55, but \"if your doctor referred you, it's thirty\". He has a letter." },
+          "example": "The full price is fifty-five pounds, but it's thirty with a student card."
+        },
+        { "type": "text", "text": "Questions 5–6. Choose the correct letter." },
+        {
+          "type": "choice", "id": "l5",
+          "prompt": "5. What will the centre give Daniel?",
+          "options": ["a water bottle", "a notebook", "a pair of comfortable shoes"],
+          "answer": 1,
+          "why": { "tr": "Ayakkabı ve su şişesini Daniel getirmeli. Merkez ise yemek günlüğü için \"we'll give you a notebook for it\" diyor. A ve C getirmesi gereken şeyler.", "ar": "الحذاء وقارورة الماء على Daniel أن يحضرهما بنفسه، أما المركز فيقول: \"we'll give you a notebook for it\".", "en": "He must bring shoes and a water bottle; \"we'll give you a notebook for it\"." },
+          "example": "The teacher gave each student a notebook for their vocabulary."
+        },
+        {
+          "type": "choice", "id": "l6",
+          "prompt": "6. Where is the entrance to the centre?",
+          "options": ["at the front of the library", "on the main road", "next to the car park"],
+          "answer": 2,
+          "why": { "tr": "\"our entrance is round the side, beside the car park\". \"beside\" = \"next to\". A tuzak: insanlar kütüphanenin önüne gidip kayboluyor.", "ar": "\"our entrance is round the side, beside the car park\"، وbeside تعني next to. الخيار A فخّ: الناس يذهبون إلى واجهة المكتبة فيضيعون.", "en": "\"Our entrance is round the side, beside the car park.\" People wrongly go to the front of the library." },
+          "example": "The entrance is beside the car park, not on the main road."
+        }
+      ]
+    },
+    {
+      "kind": "read",
+      "i18n": {"ar":{"title":"القراءة: Yes / No / Not Given","intro":"ستقرأ آراء كاتب حول قلة الحركة والتغذية والتوتر. الأسئلة لا تسأل عن المعلومات الواردة في النص، بل عن رأي الكاتب.","tip":"أسئلة YES / NO / NOT GIVEN تسأل عن رأي الكاتب. ابحث عن عبارات مثل \"In my view\" و\"I believe\" و\"I think\". إذا لم يكن للكاتب رأي في المسألة أو لم يذكر عنها شيئًا، فالإجابة NOT GIVEN؛ لا تعتمد على معلوماتك."},"en":{"title":"Reading: Yes / No / Not Given","intro":"You will read a writer's views on inactive lifestyles, diet and stress. The questions ask about the writer's opinions, not the facts in the text.","tip":"YES / NO / NOT GIVEN asks about the writer's opinion. Look for phrases like \"In my view\", \"I believe\" and \"I think\". If the writer has no view on something or says nothing about it, the answer is NOT GIVEN; don't use your own knowledge."}},
+      "title": "Okuma: Yes / No / Not Given",
+      "intro": "Bir yazarın hareketsiz yaşam, beslenme ve stres hakkındaki görüşlerini okuyacaksın. Sorular metindeki bilgiyi değil, yazarın görüşünü soruyor.",
+      "tip": "YES / NO / NOT GIVEN, yazarın görüşünü sorar. \"In my view\", \"I believe\", \"I think\" gibi ifadeleri bul. Yazar bir konuda hiçbir şey düşünmüyorsa ya da söylemiyorsa cevap NOT GIVEN'dır; kendi bilgini kullanma.",
+      "passage": [
+        { "type": "heading", "text": "Sitting Still: The Limits of Exercise" },
+        { "type": "text", "text": "For most of human history, daily life involved a great deal of physical effort. Today, many people in wealthy countries spend most of their waking hours sitting: at a desk, in a car or in front of a screen. Doctors increasingly describe this sedentary lifestyle as a health risk in its own right, linked to obesity, heart disease and several other chronic conditions. In my view, it is one of the most serious public health issues of our time, yet it receives far less attention than smoking or alcohol." },
+        { "type": "text", "text": "The usual response has been to encourage people to take up a sport or join a gym. Public health guidelines in many countries recommend that adults do around 150 minutes of moderate exercise each week, such as brisk walking or cycling. This is sensible advice, and people who follow it tend to enjoy better well-being and a longer life expectancy. However, I believe that the emphasis on exercise sessions has led many people to a misleading conclusion: that an hour at the gym can cancel out a whole day spent sitting still." },
+        { "type": "text", "text": "Research on this question is still developing, but a number of studies suggest that long periods of uninterrupted sitting may be harmful even for people who exercise regularly. For this reason, prevention should focus not only on how much people exercise but also on how often they move. Short breaks to stand up or walk around every half an hour cost nothing, and they are far easier to fit into a working day than a trip to a sports centre." },
+        { "type": "text", "text": "Diet is the other half of the picture. A balanced diet is not a matter of avoiding a single \"bad\" food; it is about overall patterns. Many people would benefit more from cutting down on sugary drinks and processed snacks than from following a fashionable diet that bans whole food groups. Several governments have introduced taxes on sugary drinks to reduce consumption. Such taxes are sometimes criticised as unfair to people on low incomes, but I think they are justified when the money raised is spent on public sports facilities." },
+        { "type": "text", "text": "Finally, health is not only physical. Stress-related illness is a growing concern in many workplaces, and long hours, poor sleep and constant phone notifications all play a part. Employers who offer flexible hours or quiet rooms are not simply being generous; they are protecting the health of their staff. Individuals can do a great deal on their own, but a healthy lifestyle is much easier to maintain when the place where we spend most of our day is designed to support it." }
+      ],
+      "questions": [
+        { "type": "heading", "text": "Questions 1–7: Yes, No or Not Given?" },
+        { "type": "text", "text": "Do the following statements agree with the views of the writer? Choose YES if the statement agrees with the views of the writer, NO if it contradicts them, NOT GIVEN if it is impossible to say what the writer thinks about this." },
+        {
+          "type": "choice", "id": "r1",
+          "prompt": "1. A sedentary lifestyle gets less public attention than it deserves.",
+          "options": ["Yes", "No", "Not Given"],
+          "answer": 0,
+          "why": { "tr": "Paragraf 1: \"one of the most serious public health issues of our time, yet it receives far less attention than smoking or alcohol\". Yazar çok ciddi ama az ilgi gördüğünü düşünüyor: YES.", "ar": "الفقرة الأولى: \"one of the most serious public health issues of our time, yet it receives far less attention\". يرى الكاتب أنها مشكلة خطيرة لا تنال اهتمامًا كافيًا: YES.", "en": "\"One of the most serious public health issues of our time, yet it receives far less attention than smoking or alcohol.\"" },
+          "example": "In my view, mental health receives far less attention than it deserves."
+        },
+        {
+          "type": "choice", "id": "r2",
+          "prompt": "2. Regular gym sessions can fully make up for spending most of the day sitting.",
+          "options": ["Yes", "No", "Not Given"],
+          "answer": 1,
+          "why": { "tr": "Paragraf 2: yazar bu fikre \"a misleading conclusion\" diyor: spor salonunda bir saat, bütün gün oturmayı \"cancel out\" edemez. İfade yazarın görüşüyle çelişiyor: NO.", "ar": "الفقرة الثانية: يصف الكاتب هذه الفكرة بأنها \"a misleading conclusion\"، أي أن ساعة في النادي لا تلغي يومًا كاملًا من الجلوس: NO.", "en": "The writer calls this idea \"a misleading conclusion\": an hour at the gym cannot \"cancel out\" a day of sitting." },
+          "example": "One healthy meal cannot cancel out a week of fast food."
+        },
+        {
+          "type": "choice", "id": "r3",
+          "prompt": "3. Office workers sit for longer each day than any other group of workers.",
+          "options": ["Yes", "No", "Not Given"],
+          "answer": 2,
+          "why": { "tr": "Metin masada, arabada ve ekran başında oturmaktan söz ediyor ama meslek gruplarını karşılaştırmıyor. Yazarın bu konudaki görüşü yok: NOT GIVEN. \"desk\" kelimesi tuzak.", "ar": "يذكر النص الجلوس إلى المكتب وفي السيارة وأمام الشاشة، لكنه لا يقارن بين المهن. لا رأي للكاتب في ذلك: NOT GIVEN.", "en": "The text mentions desks, cars and screens but never compares groups of workers." },
+          "example": "The article does not say which workers sit the longest."
+        },
+        {
+          "type": "choice", "id": "r4",
+          "prompt": "4. For most people at work, short breaks to move are more practical than going to a sports centre.",
+          "options": ["Yes", "No", "Not Given"],
+          "answer": 0,
+          "why": { "tr": "Paragraf 3: kısa molalar \"are far easier to fit into a working day than a trip to a sports centre\". \"more practical\" = \"easier to fit into a working day\": YES.", "ar": "الفقرة الثالثة: الاستراحات القصيرة \"far easier to fit into a working day than a trip to a sports centre\"، وهذا معنى more practical: YES.", "en": "Short breaks \"are far easier to fit into a working day than a trip to a sports centre\"." },
+          "example": "A walk at lunchtime is easier to fit into a busy day than a gym class."
+        },
+        {
+          "type": "choice", "id": "r5",
+          "prompt": "5. Diets that ban whole food groups are the most effective way to improve health.",
+          "options": ["Yes", "No", "Not Given"],
+          "answer": 1,
+          "why": { "tr": "Paragraf 4: insanlar şekerli içecekleri azaltmaktan, \"a fashionable diet that bans whole food groups\" uygulamaktan daha çok fayda görür. Yazar bu diyetleri en iyi yol olarak görmüyor: NO.", "ar": "الفقرة الرابعة: يستفيد الناس من التقليل من المشروبات السكرية أكثر من \"a fashionable diet that bans whole food groups\". الكاتب لا يراها الأفضل: NO.", "en": "People \"would benefit more from cutting down on sugary drinks ... than from following a fashionable diet that bans whole food groups\"." },
+          "example": "Cutting down on snacks may help more than a strict fashionable diet."
+        },
+        {
+          "type": "choice", "id": "r6",
+          "prompt": "6. Taxes on sugary drinks are acceptable if the money is used for public sports facilities.",
+          "options": ["Yes", "No", "Not Given"],
+          "answer": 0,
+          "why": { "tr": "Paragraf 4: \"I think they are justified when the money raised is spent on public sports facilities\". \"justified\" = kabul edilebilir, haklı: YES. Eleştiri (\"unfair\") başkalarının görüşü.", "ar": "الفقرة الرابعة: \"I think they are justified when the money raised is spent on public sports facilities\". كلمة justified تعني مقبولة ومبرَّرة: YES. أما النقد فهو رأي آخرين.", "en": "\"I think they are justified when the money raised is spent on public sports facilities.\" The criticism is other people's view." },
+          "example": "The new tax is justified if the money is spent on schools."
+        },
+        {
+          "type": "choice", "id": "r7",
+          "prompt": "7. Most employers already provide quiet rooms for their staff.",
+          "options": ["Yes", "No", "Not Given"],
+          "answer": 2,
+          "why": { "tr": "Paragraf 5 sessiz oda sunan işverenlerden söz ediyor ama kaç işverenin bunu yaptığını söylemiyor. \"Most\" hakkında bilgi yok: NOT GIVEN.", "ar": "تذكر الفقرة الخامسة أصحاب العمل الذين يوفّرون غرفًا هادئة، لكنها لا تقول كم عددهم. لا معلومات عن most: NOT GIVEN.", "en": "Paragraph 5 mentions employers who offer quiet rooms, but not how many do." },
+          "example": "The text mentions quiet rooms, but it does not say how common they are."
+        }
+      ]
+    },
+    {
+      "kind": "language",
+      "i18n": {"ar":{"title":"اللغة: النصيحة والإلزام (should, ought to, have to, need to)"},"en":{"title":"Language: Advice and obligation (should, ought to, have to, need to)"}},
+      "title": "Dil: tavsiye ve zorunluluk (should, ought to, have to, need to)",
+      "explain": {
+        "tr": "Tavsiye vermek için \"should\" ve biraz daha resmî olan \"ought to\" kullanılır: People should / ought to sleep at least seven hours. Kural ya da dışarıdan gelen zorunluluk için \"have to\": Drivers have to wear a seat belt. Bir şeyin gerekli olduğunu söylemek için \"need to\": I need to cut down on sugar. Olumsuzda anlam değişir: \"don't have to / don't need to\" = gerekmez, zorunlu değil; \"shouldn't\" = yapmaman iyi olur. Yazma Task 2'de \"governments should…\", \"individuals need to…\" gibi yapılar önerini net gösterir; \"must\" ise çok güçlü olduğu için seyrek kullan.",
+        "ar": "للنصيحة نستخدم should، وought to وهي أكثر رسمية قليلًا: People should / ought to sleep at least seven hours. وللقاعدة أو الإلزام الخارجي نستخدم have to: Drivers have to wear a seat belt. ولقول إن شيئًا ضروري نستخدم need to: I need to cut down on sugar. في النفي يتغير المعنى: don't have to / don't need to تعني ليس ضروريًا، أما shouldn't فتعني من الأفضل ألا تفعل. في الكتابة (Task 2) تجعل عبارات مثل governments should وindividuals need to رأيك واضحًا، أما must فهي قوية جدًا فاستخدمها قليلًا.",
+        "en": "Use should, or the slightly more formal ought to, for advice: People should / ought to sleep at least seven hours. Use have to for rules and obligation from outside: Drivers have to wear a seat belt. Use need to for necessity: I need to cut down on sugar. In the negative the meaning changes: don't have to / don't need to = it is not necessary; shouldn't = it is a bad idea. In Task 2, phrases like \"governments should…\" and \"individuals need to…\" make your recommendation clear; use must sparingly, as it is very strong."
+      },
+      "examples": [
+        "People with a sedentary lifestyle should try to stand up and move every half an hour.",
+        "Children ought to learn about a balanced diet at primary school.",
+        "In many countries, food companies have to list the sugar content on their packaging.",
+        "You don't need to join a gym to get enough moderate exercise; walking is enough."
+      ],
+      "questions": [
+        {
+          "type": "choice", "id": "g1",
+          "prompt": "In many countries, restaurant staff ___ follow strict hygiene rules: it is the law.",
+          "options": ["should", "have to", "ought to", "could"],
+          "answer": 1,
+          "why": { "tr": "\"it is the law\" bir kural, yani dışarıdan gelen zorunluluk: \"have to\". \"should\" ve \"ought to\" sadece tavsiye.", "ar": "عبارة it is the law تدل على قاعدة أي إلزام خارجي، لذلك have to. أما should وought to فللنصيحة فقط.", "en": "\"It is the law\" signals a rule, so \"have to\". Should and ought to only give advice." },
+          "example": "Drivers have to stop at a red light."
+        },
+        {
+          "type": "choice", "id": "g2",
+          "prompt": "Members ___ bring towels; the centre provides them free of charge.",
+          "options": ["mustn't", "don't have to", "shouldn't", "ought not to"],
+          "answer": 1,
+          "why": { "tr": "Merkez havlu veriyor, yani getirmek gerekmez: \"don't have to\". \"mustn't\" yasak demek (getirmek yasak), anlam yanlış olur.", "ar": "المركز يوفّر المناشف، فلا داعي لإحضارها: don't have to. أما mustn't فتعني ممنوع، وهذا معنى خاطئ هنا.", "en": "Towels are provided, so it is not necessary: \"don't have to\". \"Mustn't\" would mean it is forbidden." },
+          "example": "You don't have to pay today; you can pay at the first session."
+        },
+        {
+          "type": "choice", "id": "g3",
+          "prompt": "Which sentence gives advice, not a rule?",
+          "options": ["Visitors have to sign in at reception.", "You should try to walk for at least twenty minutes a day.", "Staff must wash their hands before handling food.", "Passengers have to show their tickets."],
+          "answer": 1,
+          "why": { "tr": "\"should try to\" bir öneri. Diğer cümlelerde \"have to\" ve \"must\" kural bildiriyor.", "ar": "should try to نصيحة، أما الجمل الأخرى ففيها have to وmust وهما للقواعد والإلزام.", "en": "\"Should try to\" is advice; the others use have to and must for rules." },
+          "example": "You should try to drink more water during the day."
+        },
+        {
+          "type": "gap", "id": "g4",
+          "prompt": "Write ONE word: People who sit at a desk all day ought ___ take regular breaks.",
+          "answers": ["to"],
+          "why": { "tr": "\"ought\" her zaman \"to\" ile kullanılır: ought to + fiil. (should ise \"to\" almaz: should take.)", "ar": "تأتي ought دائمًا مع to: ought to + فعل. أما should فلا تأخذ to: should take.", "en": "Ought is always followed by to: ought to + verb (unlike should)." },
+          "example": "We ought to eat more vegetables."
+        },
+        {
+          "type": "gap", "id": "g5",
+          "prompt": "Write ONE word (necessity): I've been sleeping badly, so I ___ to cut down on coffee.",
+          "answers": ["need"],
+          "why": { "tr": "Boşluktan sonra \"to\" geliyor ve bir gereklilik anlatılıyor: \"need to\". (\"have to\" da \"to\" alır, ama burada dışarıdan bir kural yok, kişisel bir gereklilik var.)", "ar": "بعد الفراغ تأتي to والمعنى ضرورة شخصية: need to. (have to تأخذ to أيضًا، لكنها تدل غالبًا على قاعدة خارجية.)", "en": "The gap is followed by to and expresses personal necessity: \"need to\"." },
+          "example": "I need to go to bed earlier this week."
+        }
+      ]
+    },
+    {
+      "kind": "write",
+      "i18n": {"ar":{"title":"الكتابة · Task 2: المقدمة وفقرة عرض واحدة","tip":"في المقدمة أعد صياغة السؤال بكلماتك (paraphrase)، ثم اذكر الرأيين ورأيك الشخصي في جملة واحدة. ركّز فقرة العرض على فكرة واحدة: جملة موضوع، ثم شرح، ثم مثال ملموس. استخدم كلمات هذا الدرس (sedentary lifestyle, prevention, balanced diet) وتراكيب should / need to."},"en":{"title":"Writing · Task 2: Introduction and one body paragraph","tip":"In the introduction, rewrite the question in your own words (paraphrase), then state both views and your own opinion in one sentence. Keep the body paragraph focused on one idea: a topic sentence, an explanation, a concrete example. Use this lesson's words (sedentary lifestyle, prevention, balanced diet) and should / need to."}},
+      "title": "Yazma · Task 2: giriş ve bir gövde paragrafı",
+      "task": 2,
+      "prompt": "Some people believe that governments should be responsible for improving public health. Others think that individuals should take responsibility for their own health. Discuss both views and give your own opinion.\n\nIn this lesson, write the introduction and ONE body paragraph (about one of the two views).",
+      "minutes": 18,
+      "minWords": 150,
+      "tip": "Girişte soruyu kendi kelimelerinle yeniden yaz (paraphrase), sonra iki görüşü ve kendi görüşünü bir cümleyle söyle. Gövde paragrafı tek bir fikre odaklansın: konu cümlesi, açıklama, somut bir örnek. Bu dersin kelimelerini (sedentary lifestyle, prevention, balanced diet) ve should / need to yapılarını kullan.",
+      "model": "Rising rates of obesity and other chronic illnesses have led to a debate about who is mainly responsible for keeping people healthy. While some argue that this is the job of the state, others believe that each person should look after their own health. In my opinion, individuals have an important role, but governments are better placed to create the conditions for a healthy life.\n\nThose who favour government action point out that many health problems have causes that individuals cannot easily control. For example, a person living in an area with no parks and few shops selling fresh food will find it hard to eat a balanced diet or take up regular exercise, however motivated they are. Governments, by contrast, can invest in prevention on a large scale: they can build cycle lanes, fund sports facilities and require food companies to show clearly how much sugar their products contain. Such measures reach millions of people at once, including those who have little time or money. In this sense, public policy can change the environment that encourages a sedentary lifestyle, which individual effort alone cannot do."
+    },
+    {
+      "kind": "speak",
+      "i18n": {"ar":{"title":"المحادثة: العادات الصحية"},"en":{"title":"Speaking: Healthy habits"}},
+      "title": "Konuşma: sağlıklı alışkanlıklar",
+      "part1": [
+        "Do you do any sport or exercise these days?",
+        "What kind of food do you usually eat during the week?",
+        "Has your lifestyle changed in the last few years?",
+        "Do you think you get enough sleep? Why or why not?"
+      ],
+      "card": {
+        "title": "Describe a healthy habit you have or would like to start.",
+        "points": ["what the habit is", "when you started it, or when you plan to start it", "how easy or difficult it is to keep"],
+        "explain": "and explain how this habit affects, or could affect, your health and well-being."
+      },
+      "useful": [
+        "I've recently taken up…, and I try to do it at least twice a week.",
+        "I'm trying to cut down on…, because I noticed that…",
+        "The hardest part is finding the time, especially when…",
+        "It has made a real difference to my well-being: I feel…",
+        "To be honest, I probably ought to… more often.",
+        "If I had to give one piece of advice, I'd say you should…"
+      ]
+    }
+  ]
+}

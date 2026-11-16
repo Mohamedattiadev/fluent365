@@ -1,0 +1,666 @@
+{
+  "id": "lesson-10",
+  "number": 10,
+  "title": "Food and Farming",
+  "topic": "Food & farming",
+  "level": "B1+",
+  "goal": "Follow a talk on a working farm, describe a pie chart, and use countable and uncountable nouns with the right quantifiers.",
+  "steps": [
+    {
+      "kind": "words",
+      "i18n": {"ar":{"title":"الكلمات: الغذاء والزراعة","intro":"في هذا الدرس 12 كلمة وعبارة عن الزراعة وإنتاج الغذاء. يتكرر هذا الموضوع في نصوص القراءة في IELTS وفي أسئلة Task 2 (الأمن الغذائي، الزراعة العضوية، الهدر)."},"en":{"title":"Words: Food and farming","intro":"This lesson has 12 words and phrases about farming and food production. The topic comes up often in IELTS reading texts and Task 2 questions (food security, organic farming, waste)."}},
+      "title": "Kelimeler: gıda ve tarım",
+      "intro": "Bu derste tarım ve gıda üretimi hakkında 12 kelime ve kalıp var. Bu konu IELTS okuma metinlerinde ve Task 2 sorularında (gıda güvenliği, organik tarım, israf) sık çıkar.",
+      "words": [
+        {
+          "en": "crop",
+          "pos": "noun",
+          "tr": "ekin, mahsul",
+          "ar": "محصول زراعي",
+          "example": "Wheat is the main crop in this region."
+        },
+        {
+          "en": "harvest",
+          "pos": "noun / verb",
+          "tr": "hasat; hasat etmek",
+          "ar": "الحصاد؛ يحصد",
+          "example": "A very dry summer can ruin the harvest."
+        },
+        {
+          "en": "yield",
+          "pos": "noun",
+          "tr": "verim, rekolte",
+          "ar": "المردود؛ كمية المحصول",
+          "example": "New irrigation methods have increased yields on many farms."
+        },
+        {
+          "en": "organic",
+          "pos": "adjective",
+          "tr": "organik",
+          "ar": "عضوي",
+          "example": "Organic farmers do not use artificial fertilisers."
+        },
+        {
+          "en": "livestock",
+          "pos": "noun",
+          "tr": "çiftlik hayvanları",
+          "ar": "الماشية",
+          "example": "The farm keeps livestock such as cattle and sheep."
+        },
+        {
+          "en": "food security",
+          "pos": "phrase",
+          "tr": "gıda güvenliği",
+          "ar": "الأمن الغذائي",
+          "example": "Climate change is a serious threat to food security."
+        },
+        {
+          "en": "pesticide",
+          "pos": "noun",
+          "tr": "tarım ilacı, böcek ilacı",
+          "ar": "مبيد حشري",
+          "example": "Some pesticides harm bees as well as pests."
+        },
+        {
+          "en": "sustainable",
+          "pos": "adjective",
+          "tr": "sürdürülebilir",
+          "ar": "مستدام",
+          "example": "Sustainable farming protects the soil for future generations."
+        },
+        {
+          "en": "processed food",
+          "pos": "phrase",
+          "tr": "işlenmiş gıda",
+          "ar": "الأطعمة المصنّعة",
+          "example": "Processed food often contains a lot of salt."
+        },
+        {
+          "en": "locally grown",
+          "pos": "phrase",
+          "tr": "yerel olarak yetiştirilmiş",
+          "ar": "مزروع محليًا",
+          "example": "The café only serves locally grown vegetables."
+        },
+        {
+          "en": "shortage",
+          "pos": "noun",
+          "tr": "kıtlık, eksiklik",
+          "ar": "نقص؛ شُحّ",
+          "example": "A water shortage forced farmers to grow fewer crops."
+        },
+        {
+          "en": "soil",
+          "pos": "noun",
+          "tr": "toprak",
+          "ar": "التربة",
+          "example": "Healthy soil is full of tiny living organisms."
+        }
+      ],
+      "practice": [
+        {
+          "type": "choice",
+          "id": "w1",
+          "prompt": "Farmers had to bring in the ___ early because heavy rain was forecast.",
+          "options": [
+            "harvest",
+            "yield",
+            "soil",
+            "shortage"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "\"bring in the harvest\" = hasadı kaldırmak. \"yield\" verim miktarıdır, toplanmaz.",
+            "ar": "bring in the harvest تعني جمع المحصول. أما yield فهي كمية الإنتاج ولا تُجمع.",
+            "en": "We \"bring in the harvest\"; a yield is an amount, not something you collect."
+          },
+          "example": "The whole village helps to bring in the grape harvest."
+        },
+        {
+          "type": "choice",
+          "id": "w2",
+          "prompt": "Cattle, sheep and goats are all kinds of ___.",
+          "options": [
+            "crops",
+            "livestock",
+            "pesticides",
+            "harvests"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "Çiftlikte beslenen hayvanlara \"livestock\" denir. \"crops\" bitkilerdir.",
+            "ar": "الحيوانات التي تُربّى في المزرعة تسمّى livestock، أما crops فهي النباتات.",
+            "en": "Farm animals are livestock; crops are plants."
+          },
+          "example": "The family earns most of its money from livestock."
+        },
+        {
+          "type": "gap",
+          "id": "w3",
+          "prompt": "Write the correct form of SUSTAIN: Many shoppers now prefer food from ___ farms.",
+          "answers": [
+            "sustainable"
+          ],
+          "why": {
+            "tr": "İsimden (farms) önce sıfat gerekir: sustain → sustainable.",
+            "ar": "قبل الاسم farms نحتاج إلى صفة: sustain تصبح sustainable.",
+            "en": "An adjective is needed before the noun: sustainable."
+          },
+          "example": "Sustainable fishing keeps fish numbers stable."
+        },
+        {
+          "type": "choice",
+          "id": "w4",
+          "prompt": "Which phrase means 'having enough safe, nutritious food for everyone'?",
+          "options": [
+            "food shortage",
+            "processed food",
+            "food security",
+            "organic food"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "\"food security\" herkesin yeterli ve güvenli gıdaya erişebilmesidir. \"food shortage\" tam tersi: gıda kıtlığı.",
+            "ar": "food security تعني توفّر غذاء كافٍ وآمن للجميع، أما food shortage فهي العكس: نقص الغذاء.",
+            "en": "Food security means everyone has enough safe food; a food shortage is the opposite."
+          },
+          "example": "Droughts are a major threat to food security in the region."
+        },
+        {
+          "type": "gap",
+          "id": "w5",
+          "prompt": "Write ONE word: Thanks to better seeds, wheat ___ per hectare have risen.",
+          "answers": [
+            "yields"
+          ],
+          "why": {
+            "tr": "Fiil \"have risen\" çoğul özne ister: yields. \"yield\" burada hektar başına ürün miktarı.",
+            "ar": "الفعل have risen يحتاج إلى فاعل جمع: yields، أي كمية المحصول لكل هكتار.",
+            "en": "\"Have risen\" needs a plural subject: yields (the amount produced)."
+          },
+          "example": "Rice yields fell because of the floods."
+        },
+        {
+          "type": "choice",
+          "id": "w6",
+          "prompt": "Which word completes both phrases: 'a ___ of clean water' and 'a labour ___'?",
+          "options": [
+            "harvest",
+            "yield",
+            "shortage",
+            "crop"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "\"a shortage of clean water\" (temiz su sıkıntısı) ve \"a labour shortage\" (işgücü açığı) doğal eşdizimler.",
+            "ar": "a shortage of clean water (نقص المياه النظيفة) وa labour shortage (نقص الأيدي العاملة) تلازمان طبيعيان.",
+            "en": "\"A shortage of clean water\" and \"a labour shortage\" are both common collocations."
+          },
+          "example": "Many farms face a labour shortage at harvest time."
+        }
+      ]
+    },
+    {
+      "kind": "listen",
+      "i18n": {"ar":{"title":"الاستماع · Part 2: يوم مفتوح في مزرعة","intro":"مديرة مزرعة تعرّف الزوار في بداية اليوم المفتوح بالمزرعة وببرنامج اليوم. اقرأ الأسئلة أولًا. يُشغَّل التسجيل مرة واحدة.","tip":"Part 2 حديث لشخص واحد. إذا قارن المتحدث بين الماضي والحاضر (\"used to be… these days…\") فانتبه لأيهما يسأل عنه السؤال. قد تتغير الخطط: إذا سمعت \"It was meant to be… but it's been moved\" فاكتب المعلومة الجديدة."},"en":{"title":"Listening · Part 2: An open day at a farm","intro":"At the start of an open day, a farm manager tells visitors about the farm and the day's programme. Read the questions first. The recording plays once.","tip":"Part 2 is a talk by one person. If the speaker compares the past and the present (\"used to be… these days…\"), check which one the question asks about. Plans can change: if you hear \"It was meant to be… but it's been moved\", write the new information."}},
+      "title": "Dinleme · Part 2: çiftlikte açık gün",
+      "intro": "Bir çiftlik yöneticisi açık gün başında ziyaretçilere çiftliği ve günün programını anlatıyor. Önce soruları oku. Kayıt bir kez çalar.",
+      "tip": "Part 2 tek kişilik bir konuşmadır. Konuşmacı geçmişi ve şimdiyi karşılaştırırsa (\"used to be… these days…\") soruda hangisinin sorulduğuna dikkat et. Planlar değişebilir: \"It was meant to be… but it's been moved\" duyarsan yeni bilgiyi yaz.",
+      "audio": {
+        "type": "audio",
+        "id": "l-audio",
+        "speakers": {
+          "N": {
+            "name": "Narrator",
+            "voice": "en-GB-ThomasNeural"
+          },
+          "rosa": {
+            "name": "Rosa",
+            "voice": "en-AU-NatashaNeural"
+          }
+        },
+        "lines": [
+          {
+            "speaker": "N",
+            "text": "You will hear a farm manager talking to visitors at the start of an open day. First, you have some time to look at questions one to six.",
+            "pauseAfterMs": 2500
+          },
+          {
+            "speaker": "N",
+            "text": "Now listen carefully and answer questions one to six.",
+            "pauseAfterMs": 1200
+          },
+          {
+            "speaker": "rosa",
+            "text": "Good morning, everyone, and welcome to Hollowmere Farm. My name's Rosa, and I've managed the farm for about nine years. Before you set off, let me tell you a bit about what we do and how the day will work.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "rosa",
+            "text": "Hollowmere is a mixed farm, which means we grow crops and keep livestock. Our main crop used to be potatoes, and many people still think of us as a potato farm. These days, though, most of our land is used for barley, which we sell to a local brewery. We also have about two hundred sheep.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "rosa",
+            "text": "Since 2019, the farm has been fully organic. That means we don't use artificial fertilisers or chemical pesticides. Visitors often ask whether our yields are lower as a result. Honestly, for some crops they are, by around a fifth. But we save a great deal of money on chemicals, and customers will pay a little more for organic food, so overall the farm earns about the same.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "rosa",
+            "text": "The most important thing on an organic farm is the soil. Instead of chemicals, we rotate our crops, so the same field never grows the same thing two years in a row, and we let the sheep graze on fields after the harvest. Their manure feeds the soil naturally.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "rosa",
+            "text": "Right, the programme for today. At eleven, there's a talk on sustainable farming and food security. It was meant to be in the orchard, but the forecast is for rain, so it's been moved into the big barn.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "rosa",
+            "text": "At half past twelve, lunch will be served in the farm café. Everything on the menu is locally grown, much of it on this farm, and there's no processed food at all, so do try the soup.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "rosa",
+            "text": "In the afternoon, children can help feed the lambs. Please make sure they wash their hands afterwards. There are sinks next to the gate; you don't need to go back to the toilets.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "rosa",
+            "text": "Finally, our farm shop. Last year we had a shortage of eggs because a fox got into the henhouse, but I'm pleased to say we now have plenty, along with cheese, honey and vegetables. The shop takes cards, but not cash, I'm afraid.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "rosa",
+            "text": "Any questions? No? Then enjoy your day.",
+            "pauseAfterMs": 1500
+          },
+          {
+            "speaker": "N",
+            "text": "That is the end of the recording.",
+            "pauseAfterMs": 0
+          }
+        ]
+      },
+      "questions": [
+        {
+          "type": "text",
+          "text": "Questions 1–3. Choose the correct letter."
+        },
+        {
+          "type": "choice",
+          "id": "l1",
+          "prompt": "1. What is the farm's main crop now?",
+          "options": [
+            "potatoes",
+            "barley",
+            "vegetables"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"Our main crop used to be potatoes\" geçmiş. \"These days, though, most of our land is used for barley\": şimdi arpa. Tuzak: potatoes.",
+            "ar": "\"Our main crop used to be potatoes\" هذا في الماضي، أما الآن: \"most of our land is used for barley\". الفخّ: potatoes.",
+            "en": "Potatoes \"used to be\" the main crop; \"these days... most of our land is used for barley\"."
+          },
+          "example": "Our main crop used to be maize, but now it is sunflowers."
+        },
+        {
+          "type": "choice",
+          "id": "l2",
+          "prompt": "2. How has going organic affected the farm's income?",
+          "options": [
+            "It has fallen by about a fifth.",
+            "It has stayed roughly the same.",
+            "It has risen because of higher prices."
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"by around a fifth\" verimdeki düşüş, gelir değil. Sonuç: \"overall the farm earns about the same\".",
+            "ar": "عبارة by around a fifth تخصّ انخفاض المحصول لا الدخل. والنتيجة: \"overall the farm earns about the same\".",
+            "en": "The fifth refers to yields; \"overall the farm earns about the same\"."
+          },
+          "example": "Prices went up, but costs rose too, so we earned about the same."
+        },
+        {
+          "type": "choice",
+          "id": "l3",
+          "prompt": "3. Why do the sheep graze on fields after the harvest?",
+          "options": [
+            "to add natural fertiliser to the soil",
+            "to keep the grass short for visitors",
+            "to keep foxes away from the crops"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "\"Their manure feeds the soil naturally\": gübreleri toprağı doğal yolla besliyor. Tilki dükkân bölümünde geçiyor; tuzak.",
+            "ar": "\"Their manure feeds the soil naturally\" أي أن روثها سماد طبيعي للتربة. الثعلب ذُكر في حديث المتجر وهو فخّ.",
+            "en": "\"Their manure feeds the soil naturally.\""
+          },
+          "example": "Compost adds natural fertiliser to the soil."
+        },
+        {
+          "type": "text",
+          "text": "Questions 4–6. Complete the notes below. Write ONE WORD ONLY for each answer."
+        },
+        {
+          "type": "text",
+          "text": "Open day: practical information"
+        },
+        {
+          "type": "gap",
+          "id": "l4",
+          "prompt": "4. 11.00: talk on sustainable farming in the ___",
+          "answers": [
+            "barn"
+          ],
+          "why": {
+            "tr": "\"It was meant to be in the orchard, but... it's been moved into the big barn\". Plan değişti; tuzak: orchard.",
+            "ar": "\"It was meant to be in the orchard, but... it's been moved into the big barn\". تغيّر المكان، والفخّ: orchard.",
+            "en": "The talk was moved from the orchard \"into the big barn\"."
+          },
+          "example": "Because of the rain, the concert was moved into the barn."
+        },
+        {
+          "type": "gap",
+          "id": "l5",
+          "prompt": "5. After feeding the lambs, wash hands at the sinks next to the ___",
+          "answers": [
+            "gate"
+          ],
+          "why": {
+            "tr": "\"There are sinks next to the gate\". Tuvaletler tuzak: \"you don't need to go back to the toilets\".",
+            "ar": "\"There are sinks next to the gate\". الحمّامات فخّ لأنها قالت \"you don't need to go back to the toilets\".",
+            "en": "\"There are sinks next to the gate.\""
+          },
+          "example": "You can leave your bikes next to the gate."
+        },
+        {
+          "type": "gap",
+          "id": "l6",
+          "prompt": "6. Farm shop: payment by ___ only",
+          "answers": [
+            "card",
+            "cards"
+          ],
+          "why": {
+            "tr": "\"The shop takes cards, but not cash\": sadece kartla ödeme.",
+            "ar": "\"The shop takes cards, but not cash\" أي الدفع بالبطاقة فقط.",
+            "en": "\"The shop takes cards, but not cash.\""
+          },
+          "example": "The market stall only takes cash, not cards."
+        }
+      ]
+    },
+    {
+      "kind": "read",
+      "i18n": {"ar":{"title":"القراءة: True / False / Not Given","intro":"ستقرأ نصًا أكاديميًا عن طرق إطعام سكان العالم المتزايدين: الثورة الخضراء، والزراعة العضوية، والغذاء المحلي، وهدر الطعام.","tip":"لتكون الإجابة FALSE يجب أن يقول النص عكس العبارة. وفي NOT GIVEN لا يتطرق النص إلى الموضوع أبدًا. كلمات مثل \"only\" و\"most\" و\"always\" تحدد الإجابة عادةً؛ فابحث عمّا يقابلها في النص."},"en":{"title":"Reading: True / False / Not Given","intro":"You will read an academic text on ways to feed the world's growing population: the Green Revolution, organic farming, local food and food waste.","tip":"For FALSE, the text must say the opposite of the statement. For NOT GIVEN, the text doesn't mention the topic at all. Words like \"only\", \"most\" and \"always\" usually decide the answer; look for their equivalents in the text."}},
+      "title": "Okuma: True / False / Not Given",
+      "intro": "Dünyanın artan nüfusunu beslemenin yolları üzerine akademik bir metin okuyacaksın: Yeşil Devrim, organik tarım, yerel gıda ve gıda israfı.",
+      "tip": "FALSE için metin ifadenin tersini söylemeli. NOT GIVEN'da metin konuya hiç değinmez. \"only\", \"most\", \"always\" gibi kelimeler genelde cevabı belirler; metinde karşılıklarını ara.",
+      "passage": [
+        {
+          "type": "heading",
+          "text": "Feeding a Growing Planet"
+        },
+        {
+          "type": "text",
+          "text": "In the middle of the twentieth century, many experts feared that the world's population would soon grow faster than its food supply. Those fears were not realised, largely because of what became known as the Green Revolution. From the 1960s onwards, new varieties of wheat and rice, together with chemical fertilisers, pesticides and irrigation, allowed farmers in parts of Asia and Latin America to produce far higher yields from the same land. In many countries, food security improved dramatically within a single generation."
+        },
+        {
+          "type": "text",
+          "text": "These gains came at a price, however. Heavy use of fertilisers can damage the soil over time and pollute rivers, while some pesticides kill helpful insects as well as pests. Irrigation has also lowered the water table in a number of farming regions, so that farmers must dig ever deeper wells. Critics argue that a system which uses up its own resources cannot be called sustainable, however much food it produces in the short term."
+        },
+        {
+          "type": "text",
+          "text": "One response has been the growth of organic farming, which avoids artificial chemicals and relies instead on crop rotation, compost and animal manure. Organic farms often support a wider range of wildlife, and many consumers are willing to pay more for their produce. On the other hand, organic yields are usually lower than conventional ones, which means that more land may be needed to grow the same amount of food. For this reason, scientists remain divided over whether organic methods could feed the whole world."
+        },
+        {
+          "type": "text",
+          "text": "Another popular idea is that people should buy locally grown food. Shorter supply chains can support small farmers and reduce packaging. Yet researchers who have studied the environmental impact of food have generally found that transport accounts for a relatively small part of it. What is produced, and how, usually matters more than how far it travels: a vegetable grown in an open field abroad may have a smaller impact than one grown in a heated greenhouse nearby."
+        },
+        {
+          "type": "text",
+          "text": "Perhaps the simplest way to improve the system is to waste less. A widely quoted estimate suggests that roughly a third of the food produced in the world is lost or thrown away. In poorer countries, much of this happens on the farm or in storage, where a shortage of refrigeration means that crops rot before they reach the market. In richer countries, by contrast, most waste occurs in shops and homes, where processed food is often thrown away simply because it has passed the date on its label."
+        },
+        {
+          "type": "text",
+          "text": "None of these problems has a single solution. Feeding a growing population without exhausting the soil and water it depends on will probably require a mix of better technology, smarter farming and changes in the way people shop, cook and eat."
+        }
+      ],
+      "questions": [
+        {
+          "type": "heading",
+          "text": "Questions 1–7: True, False or Not Given?"
+        },
+        {
+          "type": "text",
+          "text": "Do the following statements agree with the information in the passage? Choose TRUE if the statement agrees with the information, FALSE if it contradicts the information, NOT GIVEN if there is no information on this."
+        },
+        {
+          "type": "tfng",
+          "id": "r1",
+          "statement": "1. In the mid-twentieth century, experts were worried about a future lack of food.",
+          "answer": "true",
+          "why": {
+            "tr": "Paragraf 1: \"many experts feared that the world's population would soon grow faster than its food supply\". Yani gıda yetmeyecek diye korkuyorlardı: TRUE.",
+            "ar": "الفقرة 1: \"many experts feared that the world's population would soon grow faster than its food supply\"، أي خافوا من نقص الغذاء: TRUE.",
+            "en": "\"Many experts feared that the world's population would soon grow faster than its food supply.\""
+          },
+          "example": "Experts feared that there would not be enough water for the city."
+        },
+        {
+          "type": "tfng",
+          "id": "r2",
+          "statement": "2. The new varieties of wheat and rice were developed by government scientists.",
+          "answer": "not given",
+          "why": {
+            "tr": "Metin yeni çeşitlerden söz ediyor ama onları kimin geliştirdiğini söylemiyor: NOT GIVEN.",
+            "ar": "يذكر النص الأصناف الجديدة لكنه لا يقول من طوّرها: NOT GIVEN.",
+            "en": "The passage mentions the new varieties but not who developed them."
+          },
+          "example": "The article does not say who invented the new seeds."
+        },
+        {
+          "type": "tfng",
+          "id": "r3",
+          "statement": "3. Irrigation has made water easier to reach in some farming areas.",
+          "answer": "false",
+          "why": {
+            "tr": "Paragraf 2: sulama yeraltı su seviyesini düşürdü, çiftçiler \"must dig ever deeper wells\". Suya ulaşmak zorlaştı: FALSE.",
+            "ar": "الفقرة 2: خفّض الريّ منسوب المياه الجوفية، فصار على المزارعين \"dig ever deeper wells\"، أي صار الوصول إلى الماء أصعب: FALSE.",
+            "en": "Irrigation \"lowered the water table\", so farmers \"must dig ever deeper wells\": water is harder to reach."
+          },
+          "example": "As the river dried up, villagers had to walk further to reach water."
+        },
+        {
+          "type": "tfng",
+          "id": "r4",
+          "statement": "4. Organic farms usually produce more food per hectare than conventional farms.",
+          "answer": "false",
+          "why": {
+            "tr": "Paragraf 3: \"organic yields are usually lower than conventional ones\". İfade bunun tersi: FALSE.",
+            "ar": "الفقرة 3: \"organic yields are usually lower than conventional ones\"، والعبارة تقول العكس: FALSE.",
+            "en": "\"Organic yields are usually lower than conventional ones.\""
+          },
+          "example": "Organic yields are often lower, but the soil stays healthier."
+        },
+        {
+          "type": "tfng",
+          "id": "r5",
+          "statement": "5. Organic food is healthier to eat than conventionally grown food.",
+          "answer": "not given",
+          "why": {
+            "tr": "Metin organik tarımın yaban hayatı, verim ve fiyatıyla ilgili konuşuyor ama sağlığa etkisinden hiç söz etmiyor: NOT GIVEN.",
+            "ar": "يتحدث النص عن أثر الزراعة العضوية في الحياة البرية والمحصول والسعر، لكنه لا يذكر فوائدها الصحية: NOT GIVEN.",
+            "en": "The passage discusses wildlife, yields and prices, but not health."
+          },
+          "example": "The report did not compare the health effects of the two diets."
+        },
+        {
+          "type": "tfng",
+          "id": "r6",
+          "statement": "6. Food from a heated greenhouse nearby can have a bigger environmental impact than food grown outdoors abroad.",
+          "answer": "true",
+          "why": {
+            "tr": "Paragraf 4: yurt dışında açık tarlada yetişen sebze \"may have a smaller impact than one grown in a heated greenhouse nearby\". Aynı fikir: TRUE.",
+            "ar": "الفقرة 4: الخضار المزروعة في حقل مكشوف في الخارج \"may have a smaller impact than one grown in a heated greenhouse nearby\": TRUE.",
+            "en": "\"A vegetable grown in an open field abroad may have a smaller impact than one grown in a heated greenhouse nearby.\""
+          },
+          "example": "Heating a greenhouse uses a great deal of energy."
+        },
+        {
+          "type": "tfng",
+          "id": "r7",
+          "statement": "7. In richer countries, most food waste happens in shops and homes.",
+          "answer": "true",
+          "why": {
+            "tr": "Paragraf 5: \"In richer countries, by contrast, most waste occurs in shops and homes\": TRUE. Yoksul ülkelerde ise çiftlik ve depoda.",
+            "ar": "الفقرة 5: \"In richer countries, by contrast, most waste occurs in shops and homes\": TRUE. أما في الدول الفقيرة ففي المزرعة والتخزين.",
+            "en": "\"In richer countries, by contrast, most waste occurs in shops and homes.\""
+          },
+          "example": "Most of the bread we waste is thrown away at home."
+        }
+      ]
+    },
+    {
+      "kind": "language",
+      "i18n": {"ar":{"title":"اللغة: الأسماء المعدودة وغير المعدودة وتعابير الكمية"},"en":{"title":"Language: Countable and uncountable nouns and quantity expressions"}},
+      "title": "Dil: sayılabilen/sayılamayan isimler ve miktar ifadeleri",
+      "explain": {
+        "tr": "Sayılabilen isimler (farm, crop, farmer, tonne) çoğul olur ve \"a large number of, many, a few, fewer\" ile kullanılır: a large number of farmers, fewer crops. Sayılamayan isimler (water, soil, food, land, research, information, advice, equipment) çoğul olmaz ve \"a great deal of, a large amount of, much, a little, less\" ile kullanılır: a great deal of water, less land. \"a lot of, plenty of, some, most of\" ikisiyle de kullanılır. Sık hatalar: \"informations\", \"advices\", \"researches\" (✗); resmî yazıda \"less farmers\" yerine \"fewer farmers\". Task 1'de \"a large number of\" ve \"a great deal of\" gibi ifadeler rakamları tekrar etmeden miktarı anlatmana yardım eder.",
+        "ar": "الأسماء المعدودة (farm, crop, farmer, tonne) تُجمع وتُستخدم مع a large number of وmany وa few وfewer: a large number of farmers, fewer crops. أما الأسماء غير المعدودة (water, soil, food, land, research, information, advice, equipment) فلا تُجمع وتُستخدم مع a great deal of وa large amount of وmuch وa little وless: a great deal of water, less land. وتصلح a lot of وplenty of وsome وmost of للنوعين. أخطاء شائعة: informations وadvices وresearches (✗)، وفي الكتابة الرسمية نقول fewer farmers لا less farmers. في Task 1 تساعدك a large number of وa great deal of على وصف الكميات دون تكرار الأرقام.",
+        "en": "Countable nouns (farm, crop, farmer, tonne) have plurals and go with a large number of, many, a few, fewer: a large number of farmers, fewer crops. Uncountable nouns (water, soil, food, land, research, information, advice, equipment) have no plural and go with a great deal of, a large amount of, much, a little, less: a great deal of water, less land. A lot of, plenty of, some and most of work with both. Common errors: \"informations\", \"advices\", \"researches\"; in formal writing, \"fewer farmers\", not \"less farmers\". In Task 1, phrases like a large number of and a great deal of help you describe quantities without repeating every figure."
+      },
+      "examples": [
+        "A large number of small farms have closed over the last thirty years.",
+        "Growing rice requires a great deal of water.",
+        "Fewer people work in farming today, but each farmer produces more food.",
+        "The farmer gave us some useful advice about how to improve the soil."
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "id": "g1",
+          "prompt": "Growing rice uses ___ water.",
+          "options": [
+            "a large number of",
+            "a great deal of",
+            "many",
+            "a few"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"water\" sayılamaz; \"a great deal of\" sayılamayan isimlerle kullanılır. Diğerleri sayılabilen isimler için.",
+            "ar": "water اسم غير معدود، وa great deal of تُستخدم مع غير المعدود. أما الخيارات الأخرى فللمعدود.",
+            "en": "Water is uncountable, so \"a great deal of\"; the others need countable nouns."
+          },
+          "example": "Building the dam cost a great deal of money."
+        },
+        {
+          "type": "choice",
+          "id": "g2",
+          "prompt": "___ farmers have switched to organic methods in recent years.",
+          "options": [
+            "A great deal of",
+            "Much",
+            "A little",
+            "A large number of"
+          ],
+          "answer": 3,
+          "why": {
+            "tr": "\"farmers\" sayılabilen çoğul isim: \"A large number of\". Diğerleri sayılamayan isimlerle kullanılır.",
+            "ar": "farmers اسم معدود جمع، لذلك A large number of. أما الباقي فلغير المعدود.",
+            "en": "\"Farmers\" is a countable plural, so \"A large number of\"."
+          },
+          "example": "A large number of students now study online."
+        },
+        {
+          "type": "choice",
+          "id": "g3",
+          "prompt": "Which sentence is correct?",
+          "options": [
+            "The farmer gave us some useful advices.",
+            "The farmer gave us a useful advice.",
+            "The farmer gave us some useful advice.",
+            "The farmer gave us many useful advice."
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "\"advice\" sayılamaz: çoğul olmaz, \"a\" ve \"many\" almaz. Doğrusu \"some useful advice\" (ya da \"a piece of advice\").",
+            "ar": "advice غير معدودة: لا تُجمع ولا تأتي مع a أو many. الصحيح some useful advice (أو a piece of advice).",
+            "en": "\"Advice\" is uncountable: no plural, no \"a\", no \"many\"."
+          },
+          "example": "My teacher gave me a useful piece of advice."
+        },
+        {
+          "type": "gap",
+          "id": "g4",
+          "prompt": "Write ONE word (fewer or less): Today ___ people work on farms than fifty years ago.",
+          "answers": [
+            "fewer"
+          ],
+          "why": {
+            "tr": "\"people\" sayılabilen bir isim, bu yüzden resmî İngilizcede \"fewer\". \"less\" sayılamayanlarla: less land.",
+            "ar": "people اسم معدود، لذلك نستخدم fewer في الإنجليزية الرسمية. أما less فلغير المعدود: less land.",
+            "en": "\"People\" is countable, so \"fewer\"; \"less\" goes with uncountable nouns."
+          },
+          "example": "Fewer tourists visited the island this year."
+        },
+        {
+          "type": "gap",
+          "id": "g5",
+          "prompt": "Write ONE word (much or many): How ___ research has been done on organic yields?",
+          "answers": [
+            "much"
+          ],
+          "why": {
+            "tr": "\"research\" sayılamaz (\"researches\" denmez), bu yüzden \"How much\".",
+            "ar": "research اسم غير معدود (لا نقول researches)، لذلك How much.",
+            "en": "\"Research\" is uncountable, so \"how much\"."
+          },
+          "example": "How much information do we have about the soil?"
+        }
+      ]
+    },
+    {
+      "kind": "write",
+      "i18n": {"ar":{"title":"الكتابة · Task 1: رسم دائري (الأراضي الزراعية)","tip":"لا تكتب رأيك في Task 1. في المقدمة عرّف بالرسم البياني بكلماتك، ثم اذكر مع \"Overall\" أهم تغييرين أو ثلاثة. في الرسم الدائري عبّر عن النسب المئوية بالكسور أيضًا، مثل \"almost half\" و\"just under a third\" و\"a tenth\"؛ ولا تسرد كل رقم على حدة، بل قارن."},"en":{"title":"Writing · Task 1: Pie charts (farmland)","tip":"Don't give your opinion in Task 1. In the introduction, present the chart in your own words, then use \"Overall\" to state the two or three most important changes. With pie charts, also express percentages as fractions such as \"almost half\", \"just under a third\" and \"a tenth\"; don't list every figure one by one, compare them."}},
+      "title": "Yazma · Task 1: pasta grafik (tarım arazisi)",
+      "task": 1,
+      "prompt": "The pie charts below show how farmland in Calderra, a fictional region, was used in 2000 and 2020.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "data": "Practice data (invented for this lesson; Calderra is a fictional region).\nShare of farmland by use (%)\nUse | 2000 | 2020\nCereal crops | 45 | 32\nGrazing for livestock | 30 | 26\nVegetables and fruit | 12 | 18\nBiofuel crops | 3 | 14\nUnused land | 10 | 10",
+      "minutes": 20,
+      "minWords": 150,
+      "tip": "Task 1'de kendi görüşünü yazma. Girişte grafiği kendi kelimelerinle tanıt, sonra \"Overall\" ile en önemli iki-üç değişikliği söyle. Pasta grafikte yüzdeleri \"almost half\", \"just under a third\", \"a tenth\" gibi kesirlerle de ifade et; her rakamı tek tek sıralama, karşılaştır.",
+      "model": "The two pie charts compare the proportions of farmland in Calderra that were used for five different purposes in 2000 and 2020.\n\nOverall, cereal crops occupied the largest share of land in both years, but their dominance declined considerably, while the areas devoted to biofuel crops and to vegetables and fruit grew. The proportion of unused land remained unchanged.\n\nIn 2000, almost half of all farmland (45%) was used for cereals, and a further 30% provided grazing for livestock. By 2020, the figure for cereals had fallen to just under a third (32%), and grazing land had decreased slightly to 26%.\n\nBy contrast, the most dramatic change was in biofuel crops, which accounted for only 3% of farmland in 2000 but 14% two decades later, more than four times as much. The share used for vegetables and fruit also rose, from 12% to 18%, so a larger amount of land was producing food for local markets. Finally, unused land made up a tenth of the total in both years."
+    },
+    {
+      "kind": "speak",
+      "i18n": {"ar":{"title":"المحادثة: الطعام"},"en":{"title":"Speaking: Food"}},
+      "title": "Konuşma: yemek",
+      "part1": [
+        "What do you usually eat for breakfast?",
+        "Do you prefer cooking at home or eating out?",
+        "Is there any food you didn't like as a child but enjoy now?",
+        "Have you ever grown fruit or vegetables yourself?"
+      ],
+      "card": {
+        "title": "Describe a traditional dish from your country.",
+        "points": [
+          "what it is and what is in it",
+          "when people usually eat it",
+          "how it is prepared"
+        ],
+        "explain": "and explain why it is important to you or to people in your country."
+      },
+      "useful": [
+        "It's made with a large amount of… and a few…",
+        "It's usually served at…, especially during…",
+        "Most of the ingredients are locally grown, for example…",
+        "It takes a great deal of time to prepare, because…",
+        "These days, many people buy a processed version, but…",
+        "For me, it's special because it reminds me of…"
+      ]
+    }
+  ]
+}

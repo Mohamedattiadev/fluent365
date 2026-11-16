@@ -1,0 +1,684 @@
+{
+  "id": "lesson-14",
+  "number": 14,
+  "title": "Sport and Fitness",
+  "topic": "Sport & fitness",
+  "level": "B1+",
+  "goal": "Follow a talk about a new sports centre and a text on whether watching sport makes people active, and make careful predictions with will, be going to and be likely to.",
+  "steps": [
+    {
+      "kind": "words",
+      "i18n": {"ar":{"title":"المفردات: الرياضة واللياقة","intro":"في هذا الدرس 12 كلمة وتعبيرًا عن الرياضة والنشاط البدني والرياضة الاحترافية. \"هل يكسب الرياضيون المحترفون أكثر من اللازم؟\" و\"كيف نجعل الناس أكثر نشاطًا؟\" من الأسئلة التي يحبها IELTS."},"en":{"title":"Vocabulary: sport and fitness","intro":"This lesson has 12 words and phrases about sport, physical activity and professional sport. \"Do professional athletes earn too much?\" and \"how can we make people more active?\" are questions IELTS loves."}},
+      "title": "Kelimeler: spor ve fitness",
+      "intro": "Bu derste spor, fiziksel aktivite ve profesyonel spor hakkında 12 kelime ve kalıp var. \"Profesyonel sporcular çok mu kazanıyor?\" ve \"insanları nasıl daha hareketli yaparız?\" IELTS'in sevdiği sorulardır.",
+      "words": [
+        {
+          "en": "physical activity",
+          "pos": "phrase",
+          "tr": "fiziksel aktivite",
+          "ar": "النشاط البدني",
+          "example": "Children need at least an hour of physical activity every day."
+        },
+        {
+          "en": "stamina",
+          "pos": "noun",
+          "tr": "dayanıklılık",
+          "ar": "القدرة على التحمّل",
+          "example": "Running long distances builds stamina."
+        },
+        {
+          "en": "professional",
+          "pos": "adjective / noun",
+          "tr": "profesyonel",
+          "ar": "محترف",
+          "example": "Only a few talented players become professional footballers."
+        },
+        {
+          "en": "spectator",
+          "pos": "noun",
+          "tr": "seyirci",
+          "ar": "متفرّج",
+          "example": "Thousands of spectators watched the final."
+        },
+        {
+          "en": "compete",
+          "pos": "verb",
+          "tr": "yarışmak",
+          "ar": "يتنافس",
+          "example": "Athletes from more than 200 countries compete in the Olympic Games."
+        },
+        {
+          "en": "injury",
+          "pos": "noun",
+          "tr": "sakatlık, yaralanma",
+          "ar": "إصابة",
+          "example": "A knee injury kept her out of the team for three months."
+        },
+        {
+          "en": "grassroots",
+          "pos": "adjective",
+          "tr": "tabandan, yerel/amatör düzeyde",
+          "ar": "على المستوى الشعبي (الأندية المحلية والهواة)",
+          "example": "Grassroots football clubs depend on volunteers."
+        },
+        {
+          "en": "take part in",
+          "pos": "phrase",
+          "tr": "katılmak",
+          "ar": "يشارك في",
+          "example": "Over a thousand runners took part in the charity race."
+        },
+        {
+          "en": "sponsorship",
+          "pos": "noun",
+          "tr": "sponsorluk",
+          "ar": "الرعاية التجارية",
+          "example": "The team signed a new sponsorship deal with a sportswear company."
+        },
+        {
+          "en": "motivation",
+          "pos": "noun",
+          "tr": "motivasyon, istek",
+          "ar": "الدافع؛ الحافز",
+          "example": "Training with a friend can increase your motivation."
+        },
+        {
+          "en": "facilities",
+          "pos": "noun (plural)",
+          "tr": "tesisler",
+          "ar": "المرافق",
+          "example": "The town has excellent sports facilities, including a pool."
+        },
+        {
+          "en": "performance-enhancing drugs",
+          "pos": "phrase",
+          "tr": "performans artırıcı ilaçlar, doping",
+          "ar": "المنشّطات (لتحسين الأداء)",
+          "example": "Athletes who use performance-enhancing drugs can be banned for years."
+        }
+      ],
+      "practice": [
+        {
+          "type": "choice",
+          "id": "w1",
+          "prompt": "Long-distance runners need a lot of ___ to keep going for hours.",
+          "options": [
+            "stamina",
+            "sponsorship",
+            "spectators",
+            "facilities"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Uzun süre yorulmadan devam edebilme gücü \"stamina\"dır.",
+            "ar": "القدرة على الاستمرار طويلًا دون تعب هي stamina.",
+            "en": "The ability to keep going for a long time is stamina."
+          },
+          "example": "Swimming is a great way to build stamina."
+        },
+        {
+          "type": "choice",
+          "id": "w2",
+          "prompt": "More than 500 runners ___ part in the race last Sunday.",
+          "options": [
+            "made",
+            "took",
+            "had",
+            "did"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "Kalıp \"take part in\" = katılmak; geçmiş zaman \"took part\".",
+            "ar": "التعبير الصحيح take part in بمعنى يشارك، وماضيه took part.",
+            "en": "The phrase is \"take part in\"; past tense \"took part\"."
+          },
+          "example": "Our school took part in a national competition."
+        },
+        {
+          "type": "gap",
+          "id": "w3",
+          "prompt": "Write the correct form of MOTIVATE: A lack of ___ is the main reason people stop going to the gym.",
+          "answers": [
+            "motivation"
+          ],
+          "why": {
+            "tr": "\"a lack of\" sonrasında isim gerekir: motivate → motivation.",
+            "ar": "بعد a lack of نحتاج إلى اسم: motivate تصبح motivation.",
+            "en": "A noun is needed after \"a lack of\": motivation."
+          },
+          "example": "Setting small goals can improve your motivation."
+        },
+        {
+          "type": "choice",
+          "id": "w4",
+          "prompt": "A spectator is someone who…",
+          "options": [
+            "trains athletes",
+            "plays in a team",
+            "watches a sports event",
+            "organises competitions"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "\"spectator\" bir spor olayını izleyen kişidir (seyirci). Antrenör \"coach\", oyuncu \"player\".",
+            "ar": "spectator هو من يشاهد حدثًا رياضيًا. أما المدرّب فهو coach واللاعب player.",
+            "en": "A spectator watches; a coach trains; a player plays."
+          },
+          "example": "The spectators cheered when the home team scored."
+        },
+        {
+          "type": "gap",
+          "id": "w5",
+          "prompt": "Write ONE word: The council plans to improve the sports ___ in the park, including new changing rooms.",
+          "answers": [
+            "facilities"
+          ],
+          "why": {
+            "tr": "\"sports facilities\" = spor tesisleri. Bu anlamda genelde çoğul kullanılır.",
+            "ar": "sports facilities تعني المرافق الرياضية، وتُستخدم عادةً بصيغة الجمع.",
+            "en": "\"Sports facilities\" (usually plural)."
+          },
+          "example": "The hotel has excellent facilities, including a gym."
+        },
+        {
+          "type": "choice",
+          "id": "w6",
+          "prompt": "Which word means 'at the level of ordinary people and local clubs, not professionals'?",
+          "options": [
+            "professional",
+            "competitive",
+            "spectator",
+            "grassroots"
+          ],
+          "answer": 3,
+          "why": {
+            "tr": "\"grassroots\" (kelime anlamı: otun kökleri) yerel, amatör, tabandan düzey demek: grassroots football.",
+            "ar": "grassroots (حرفيًا: جذور العشب) تعني المستوى المحلي والهواة: grassroots football.",
+            "en": "\"Grassroots\" sport is local, amateur sport."
+          },
+          "example": "The money will help grassroots clubs buy new equipment."
+        }
+      ]
+    },
+    {
+      "kind": "listen",
+      "i18n": {"ar":{"title":"الاستماع · Part 2: مركز رياضي جديد","intro":"مدير مركز رياضي سيُفتتح قريبًا يقدّم المركز في إذاعة محلية. اقرأ الأسئلة أولًا. يُشغَّل التسجيل مرة واحدة فقط.","tip":"في Part 2 يذكر المتحدث أرقامًا كثيرة (أسعار، مُدد، سعة). استمع إلى كل رقم مع ما يتعلق به: \"ten-minute check\" و\"fifteen pounds\" تخصّان سؤالين مختلفين. والجمل التي تقول إن شيئًا \"لن يحدث\" (\"that's not going to happen\") تكون فخًا في أسئلة الاختيار من متعدد."},"en":{"title":"Listening · Part 2: a new sports centre","intro":"The manager of a sports centre that is about to open introduces it on local radio. Read the questions first. The recording plays once.","tip":"In Part 2 the speaker gives lots of numbers (prices, times, capacity). Listen to each number together with what it refers to: \"ten-minute check\" and \"fifteen pounds\" belong to different questions. Sentences saying something \"won't happen\" (\"that's not going to happen\") are traps in multiple choice."}},
+      "title": "Dinleme · Part 2: yeni spor merkezi",
+      "intro": "Yeni açılacak bir spor merkezinin müdürü yerel radyoda merkezi tanıtıyor. Önce soruları oku. Kayıt bir kez çalar.",
+      "tip": "Part 2'de konuşmacı çok sayı söyler (fiyatlar, süreler, kapasite). Her sayıyı neyle ilgili olduğuyla birlikte dinle: \"ten-minute check\" ile \"fifteen pounds\" farklı sorulara aittir. Bir şeyin \"olmayacağını\" söyleyen cümleler (\"that's not going to happen\") çoktan seçmelide tuzak olur.",
+      "audio": {
+        "type": "audio",
+        "id": "l-audio",
+        "speakers": {
+          "N": {
+            "name": "Narrator",
+            "voice": "en-US-AvaNeural"
+          },
+          "owen": {
+            "name": "Owen",
+            "voice": "en-GB-ThomasNeural"
+          }
+        },
+        "lines": [
+          {
+            "speaker": "N",
+            "text": "You will hear the manager of a new sports centre talking on local radio. First, you have some time to look at questions one to six.",
+            "pauseAfterMs": 2500
+          },
+          {
+            "speaker": "N",
+            "text": "Now listen carefully and answer questions one to six.",
+            "pauseAfterMs": 1200
+          },
+          {
+            "speaker": "owen",
+            "text": "Thanks for having me. Yes, the Brackenford Sports Centre opens on the first of June, and we're really excited. It's taken almost three years to build, and it's the first public sports centre in the town for over twenty years.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "owen",
+            "text": "Let me tell you about the facilities. On the ground floor there's a twenty-five-metre pool and a smaller learner pool for children. Upstairs, there's a sports hall for basketball, badminton and five-a-side football, and a gym with about sixty machines.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "owen",
+            "text": "Now, a lot of people have asked whether we'll have a climbing wall. It was in the original plans, but it was too expensive, so that's not going to happen this year. We're likely to add one later, if we can find the money.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "owen",
+            "text": "Our main aim is to get more local people doing physical activity, especially people who don't think of themselves as sporty. We know that motivation is the biggest problem. People join a gym in January full of enthusiasm and stop going by March. So every new member will get a free session with a trainer, who'll help them set realistic goals.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "owen",
+            "text": "We're also keen to support grassroots sport. Local clubs will be able to hire the sports hall at half the normal price on weekday evenings. Several youth teams have already booked, and I think the hall's going to be very busy.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "owen",
+            "text": "We haven't forgotten about spectators, either. There's seating for around three hundred people in the sports hall, so clubs will be able to compete in proper tournaments here.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "owen",
+            "text": "Some people have asked about sponsorship. A local building company has paid for the new running track outside, and in return the track carries its name. But we've made sure that no advertising appears inside the pool area.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "owen",
+            "text": "And for anyone worried about injury, we'll have a physiotherapist on site on Tuesdays and Fridays. Members can book a ten-minute check for free; longer appointments are charged.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "owen",
+            "text": "As for prices, adult membership will be twenty-two pounds a month. Students and people over sixty-five will pay fifteen. And in our first month, anyone who wants to take part in a session can try every activity free of charge. So just come along and have a go.",
+            "pauseAfterMs": 1500
+          },
+          {
+            "speaker": "N",
+            "text": "That is the end of the recording.",
+            "pauseAfterMs": 0
+          }
+        ]
+      },
+      "questions": [
+        {
+          "type": "text",
+          "text": "Questions 1–3. Choose the correct letter."
+        },
+        {
+          "type": "choice",
+          "id": "l1",
+          "prompt": "1. What does Owen say about a climbing wall?",
+          "options": [
+            "It will open with the rest of the centre.",
+            "It may be built at a later date.",
+            "It was never part of the plans."
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"that's not going to happen this year. We're likely to add one later\". C yanlış: \"It was in the original plans\".",
+            "ar": "\"that's not going to happen this year. We're likely to add one later\". الخيار C خطأ لأن \"It was in the original plans\".",
+            "en": "\"We're likely to add one later, if we can find the money.\""
+          },
+          "example": "The new library may be built at a later date."
+        },
+        {
+          "type": "choice",
+          "id": "l2",
+          "prompt": "2. What will every new member receive?",
+          "options": [
+            "a free session with a trainer",
+            "a month of free membership",
+            "a free physiotherapy appointment"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "\"every new member will get a free session with a trainer\". İlk ay ücretsiz deneme herkes için, üyelik değil; fizyoterapide yalnızca kısa kontrol ücretsiz.",
+            "ar": "\"every new member will get a free session with a trainer\". التجربة المجانية في الشهر الأول للجميع وليست عضوية، والفحص القصير فقط مجاني عند المعالج.",
+            "en": "\"Every new member will get a free session with a trainer.\""
+          },
+          "example": "New members get a free session with a personal trainer."
+        },
+        {
+          "type": "choice",
+          "id": "l3",
+          "prompt": "3. When can local clubs hire the sports hall at a lower price?",
+          "options": [
+            "at weekends",
+            "on weekday mornings",
+            "on weekday evenings"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "\"at half the normal price on weekday evenings\". \"half the normal price\" = daha düşük fiyat.",
+            "ar": "\"at half the normal price on weekday evenings\"، أي بسعر أقل في أمسيات أيام الأسبوع.",
+            "en": "\"At half the normal price on weekday evenings.\""
+          },
+          "example": "The pool is cheaper on weekday evenings."
+        },
+        {
+          "type": "text",
+          "text": "Questions 4–6. Complete the sentences below. Write ONE WORD AND/OR A NUMBER for each answer."
+        },
+        {
+          "type": "gap",
+          "id": "l4",
+          "prompt": "4. The sports hall has seats for about ___ spectators.",
+          "answers": [
+            "300",
+            "three hundred"
+          ],
+          "why": {
+            "tr": "\"There's seating for around three hundred people in the sports hall\".",
+            "ar": "\"There's seating for around three hundred people in the sports hall\".",
+            "en": "\"Seating for around three hundred people.\""
+          },
+          "example": "The stadium has seating for about 40,000 fans."
+        },
+        {
+          "type": "gap",
+          "id": "l5",
+          "prompt": "5. Members can book a free physiotherapy check of ___ minutes.",
+          "answers": [
+            "10",
+            "ten"
+          ],
+          "why": {
+            "tr": "\"Members can book a ten-minute check for free\". On beş (fifteen) öğrenci üyelik fiyatı; tuzak.",
+            "ar": "\"Members can book a ten-minute check for free\". أما fifteen فهي سعر عضوية الطلاب، وهي فخّ.",
+            "en": "\"A ten-minute check for free.\" Fifteen is the student price."
+          },
+          "example": "The doctor gave me a ten-minute appointment."
+        },
+        {
+          "type": "gap",
+          "id": "l6",
+          "prompt": "6. Adult membership costs £___ a month.",
+          "answers": [
+            "22",
+            "twenty-two"
+          ],
+          "why": {
+            "tr": "\"adult membership will be twenty-two pounds a month\". 15 öğrenciler ve 65 yaş üstü için.",
+            "ar": "\"adult membership will be twenty-two pounds a month\"، أما 15 فللطلاب ومن تجاوزوا 65.",
+            "en": "\"Adult membership will be twenty-two pounds a month.\""
+          },
+          "example": "Membership costs thirty pounds a month."
+        }
+      ]
+    },
+    {
+      "kind": "read",
+      "i18n": {"ar":{"title":"القراءة: إكمال الملخّص والاختيار من متعدد","intro":"ستقرأ نصًا يناقش ما إذا كانت الأحداث الرياضية الكبرى تجعل الناس أكثر نشاطًا فعلًا.","tip":"في إكمال الملخّص يعيد الملخّص صياغة جزء من النص بكلمات أخرى. ابحث أولًا عن الفقرات التي يقابلها الملخّص، ثم انظر إلى ما يحتاجه الفراغ نحويًا (اسم، صفة، فعل)."},"en":{"title":"Reading: summary completion and multiple choice","intro":"You will read a text discussing whether major sporting events really make people more active.","tip":"In summary completion, the summary retells part of the text in other words. First find which paragraphs the summary matches, then check what the gap needs grammatically (a noun, an adjective or a verb)."}},
+      "title": "Okuma: özet tamamlama ve çoktan seçmeli",
+      "intro": "Büyük spor organizasyonlarının insanları gerçekten daha hareketli yapıp yapmadığını tartışan bir metin okuyacaksın.",
+      "tip": "Özet tamamlamada özet metnin bir bölümünü başka kelimelerle anlatır. Önce özetin hangi paragraflara karşılık geldiğini bul, sonra boşluğun dilbilgisi olarak ne istediğine (isim mi, sıfat mı, fiil mi) bak.",
+      "passage": [
+        {
+          "type": "heading",
+          "text": "Does Watching Sport Make Us Move?"
+        },
+        {
+          "type": "text",
+          "text": "When a country hosts a major sporting event, its organisers often promise more than a few weeks of excitement. They claim that the sight of professional athletes competing at the highest level will inspire ordinary people, especially children, to take part in sport themselves. This idea, sometimes called the 'demonstration effect', has been used to justify spending large sums of public money on stadiums and other facilities."
+        },
+        {
+          "type": "text",
+          "text": "It is an attractive argument, but the evidence for it is mixed. Researchers who have studied participation before and after large events have generally found that any increase in physical activity is small and short-lived. There is often a rise in interest in particular sports immediately after a tournament, with more people joining clubs or trying a new activity. Yet within a year or two, participation tends to return to its previous level."
+        },
+        {
+          "type": "text",
+          "text": "Why should this be? One explanation is that watching elite sport can be as discouraging as it is inspiring. Spectators see athletes with remarkable stamina and skill, the result of years of full-time training, and may conclude that sport is for a talented few rather than for them. For someone who has not exercised for years, the gap between the sofa and an Olympic final can seem enormous. Many adults also have unhappy memories of sport at school, where the most athletic pupils received most of the attention."
+        },
+        {
+          "type": "text",
+          "text": "Another problem is practical. A child who is inspired by a swimming race needs a pool nearby, a coach and a club that has space for beginners. If grassroots clubs lack volunteers, or local facilities are expensive or far away, that initial motivation quickly fades. In several countries, critics have pointed out that the money spent on a single stadium might have built dozens of local sports halls."
+        },
+        {
+          "type": "text",
+          "text": "None of this means that major events have no value. They can bring communities together, attract tourists and encourage sponsorship that supports smaller sports. Some studies suggest that the demonstration effect works best among people who are already fairly active, encouraging them to try a new sport or to train more seriously. For people who do little exercise, however, watching others is rarely enough."
+        },
+        {
+          "type": "text",
+          "text": "The lesson for governments seems clear. If the aim is to make a population healthier, the most effective investment is likely to be in cheap, local and welcoming opportunities to exercise: walking groups, beginners' classes and safe places to cycle. Such programmes are less glamorous than a gold medal, but they are more likely to change everyday habits. They also tend to reach groups that traditional sport often misses, such as older adults and people with busy working lives, who are unlikely ever to join a competitive team."
+        }
+      ],
+      "questions": [
+        {
+          "type": "heading",
+          "text": "Questions 1–4"
+        },
+        {
+          "type": "text",
+          "text": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer."
+        },
+        {
+          "type": "text",
+          "text": "The demonstration effect"
+        },
+        {
+          "type": "gap",
+          "id": "r1",
+          "prompt": "1. Organisers of major events claim that watching top athletes will ___ ordinary people to do sport.",
+          "answers": [
+            "inspire"
+          ],
+          "why": {
+            "tr": "Paragraf 1: \"the sight of professional athletes... will inspire ordinary people... to take part in sport\".",
+            "ar": "الفقرة 1: \"the sight of professional athletes... will inspire ordinary people... to take part in sport\".",
+            "en": "\"…will inspire ordinary people, especially children, to take part in sport.\""
+          },
+          "example": "Her success inspired many girls to take up running."
+        },
+        {
+          "type": "gap",
+          "id": "r2",
+          "prompt": "2. In reality, any increase in activity is usually small and ___.",
+          "answers": [
+            "short-lived"
+          ],
+          "why": {
+            "tr": "Paragraf 2: \"any increase in physical activity is small and short-lived\". \"short-lived\" tireli tek kelime sayılır.",
+            "ar": "الفقرة 2: \"any increase in physical activity is small and short-lived\"، وshort-lived كلمة واحدة بشرطة.",
+            "en": "\"Small and short-lived.\" A hyphenated word counts as one word."
+          },
+          "example": "The improvement was short-lived; prices rose again a month later."
+        },
+        {
+          "type": "gap",
+          "id": "r3",
+          "prompt": "3. For inactive people, watching elite athletes can be ___ rather than inspiring.",
+          "answers": [
+            "discouraging"
+          ],
+          "why": {
+            "tr": "Paragraf 3: \"watching elite sport can be as discouraging as it is inspiring\". Boşluk bir sıfat istiyor ve \"inspiring\"in karşıtı.",
+            "ar": "الفقرة 3: \"watching elite sport can be as discouraging as it is inspiring\". الفراغ يحتاج صفة عكس inspiring.",
+            "en": "\"Watching elite sport can be as discouraging as it is inspiring.\""
+          },
+          "example": "The bad results were discouraging for the whole team."
+        },
+        {
+          "type": "gap",
+          "id": "r4",
+          "prompt": "4. Inspired beginners also need practical support, such as a nearby pool and a ___.",
+          "answers": [
+            "coach",
+            "club"
+          ],
+          "why": {
+            "tr": "Paragraf 4: \"needs a pool nearby, a coach and a club that has space for beginners\". \"coach\" ya da \"club\" kabul edilir.",
+            "ar": "الفقرة 4: \"needs a pool nearby, a coach and a club that has space for beginners\"، وتُقبل coach أو club.",
+            "en": "\"A pool nearby, a coach and a club.\" Either coach or club is accepted."
+          },
+          "example": "Our coach helped us prepare for the tournament."
+        },
+        {
+          "type": "heading",
+          "text": "Questions 5–6"
+        },
+        {
+          "type": "text",
+          "text": "Choose the correct letter."
+        },
+        {
+          "type": "choice",
+          "id": "r5",
+          "prompt": "5. According to the fifth paragraph, who benefits most from the demonstration effect?",
+          "options": [
+            "children who have never played sport",
+            "people who are already quite active",
+            "professional athletes",
+            "tourists who visit the event"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"the demonstration effect works best among people who are already fairly active\". \"fairly active\" = \"quite active\".",
+            "ar": "\"the demonstration effect works best among people who are already fairly active\"، وfairly active تعني quite active.",
+            "en": "\"Works best among people who are already fairly active.\""
+          },
+          "example": "The course works best for students who already know some grammar."
+        },
+        {
+          "type": "choice",
+          "id": "r6",
+          "prompt": "6. What does the writer recommend in the last paragraph?",
+          "options": [
+            "building more large stadiums",
+            "paying athletes to visit schools",
+            "investing in cheap, local ways to exercise",
+            "showing more sport on television"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "\"the most effective investment is likely to be in cheap, local and welcoming opportunities to exercise\".",
+            "ar": "\"the most effective investment is likely to be in cheap, local and welcoming opportunities to exercise\".",
+            "en": "\"Cheap, local and welcoming opportunities to exercise.\""
+          },
+          "example": "The council invested in cheap, local sports classes."
+        }
+      ]
+    },
+    {
+      "kind": "language",
+      "i18n": {"ar":{"title":"اللغة: المستقبل للتنبؤ (will، be going to، be likely to)"},"en":{"title":"Language: the future for predictions (will, be going to, be likely to)"}},
+      "title": "Dil: tahmin için gelecek zaman (will, be going to, be likely to)",
+      "explain": {
+        "tr": "Kişisel görüşe dayanan tahminler için \"will\" kullanılır, çoğu zaman \"I think, probably, certainly\" ile: I think more people will cycle to work. Şu anki bir kanıta dayanan tahminler için \"be going to\": They're losing 4–0 with five minutes left; they're going to lose. Akademik ve temkinli tahminler için \"be likely to / be unlikely to + fiil\": Participation is likely to rise if facilities are cheaper. Sık hata: \"is likely open\" (✗) → \"is likely to open\" (✓). Task 2'de \"will\" bazen fazla kesin duyulur; \"is likely to\" ve \"may well\" daha dikkatli, daha akademik bir ton verir. Konuşma Part 3'te de gelecek hakkındaki sorularda bu üç yapıyı karıştırarak kullan.",
+        "ar": "نستخدم will للتنبؤ المبني على رأي شخصي، وغالبًا مع I think وprobably وcertainly: I think more people will cycle to work. ونستخدم be going to للتنبؤ المبني على دليل حاضر: They're losing 4–0 with five minutes left; they're going to lose. وللتنبؤ الأكاديمي الحذر نستخدم be likely to / be unlikely to + الفعل: Participation is likely to rise if facilities are cheaper. خطأ شائع: is likely open (✗) والصحيح is likely to open (✓). في Task 2 قد تبدو will قاطعة أكثر من اللازم، أما is likely to وmay well فتعطيان نبرة أكثر حذرًا وأكاديمية. وفي Part 3 من المحادثة نوّع بين هذه التراكيب الثلاثة في الأسئلة عن المستقبل.",
+        "en": "Use will for predictions based on opinion, often with I think, probably, certainly: I think more people will cycle to work. Use be going to for predictions based on present evidence: They're losing 4–0 with five minutes left; they're going to lose. Use be likely to / be unlikely to + verb for cautious, academic predictions: Participation is likely to rise if facilities are cheaper. A common error: \"is likely open\" (✗) → \"is likely to open\" (✓). In Task 2, will can sound too certain; is likely to and may well give a more careful, academic tone. In Speaking Part 3, mix all three when you answer questions about the future."
+      },
+      "examples": [
+        "I think more people will take up cycling as cities build safer bike lanes.",
+        "The team has lost its best player to injury, so it's going to be a difficult season.",
+        "Demand for sports facilities is likely to grow as doctors recommend more exercise.",
+        "Athletes in smaller sports are unlikely to earn much from sponsorship."
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "id": "g1",
+          "prompt": "Look at the score! They're losing 4–0 with five minutes left. They ___ lose this match.",
+          "options": [
+            "will probably",
+            "are going to",
+            "are likely",
+            "would"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "Şu anki açık bir kanıt var (skor), bu yüzden \"be going to\". \"are likely\" sonrasında \"to\" eksik.",
+            "ar": "هناك دليل واضح الآن (النتيجة)، لذلك be going to. أما are likely فينقصها to.",
+            "en": "Present evidence (the score), so \"are going to\"."
+          },
+          "example": "Look at those clouds. It's going to rain."
+        },
+        {
+          "type": "choice",
+          "id": "g2",
+          "prompt": "In academic writing, which is the most cautious prediction?",
+          "options": [
+            "Everyone will exercise more in future.",
+            "People are going to exercise more.",
+            "People are likely to exercise more in future.",
+            "People exercise more in future."
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "\"are likely to\" tahmini yumuşatır; \"Everyone will\" fazla kesin ve genelleyici.",
+            "ar": "are likely to تجعل التنبؤ أكثر حذرًا، أما Everyone will فقاطعة وعامة أكثر من اللازم.",
+            "en": "\"Are likely to\" is cautious; \"everyone will\" is too certain."
+          },
+          "example": "Prices are likely to rise next year."
+        },
+        {
+          "type": "gap",
+          "id": "g3",
+          "prompt": "Write ONE word: Young people are ___ to spend more time on screens and less on sport if nothing changes.",
+          "answers": [
+            "likely"
+          ],
+          "why": {
+            "tr": "\"be likely to + fiil\" = muhtemelen …ecek. Boşluktan sonra \"to\" var.",
+            "ar": "be likely to + فعل تعني من المحتمل أن. وبعد الفراغ توجد to.",
+            "en": "\"Be likely to + verb\"."
+          },
+          "example": "Children are likely to copy their parents' habits."
+        },
+        {
+          "type": "choice",
+          "id": "g4",
+          "prompt": "Which sentence is correct?",
+          "options": [
+            "The new pool is likely to open next year.",
+            "The new pool is likely open next year.",
+            "The new pool likely to open next year.",
+            "The new pool is likely opening next year."
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Doğru yapı: be + likely + to + fiil. \"is likely open\" ve \"is likely opening\" yanlış; üçüncüde \"is\" eksik.",
+            "ar": "التركيب الصحيح: be + likely + to + فعل. أما is likely open وis likely opening فخطأ، والجملة الثالثة ينقصها is.",
+            "en": "The pattern is be + likely + to + verb."
+          },
+          "example": "The match is likely to finish late."
+        },
+        {
+          "type": "gap",
+          "id": "g5",
+          "prompt": "Write ONE word: I don't think professional football ___ ever lose its popularity.",
+          "answers": [
+            "will"
+          ],
+          "why": {
+            "tr": "\"I don't think\" ile kişisel görüşe dayalı tahmin: \"will\".",
+            "ar": "مع I don't think يكون التنبؤ رأيًا شخصيًا: will.",
+            "en": "An opinion-based prediction after \"I don't think\": will."
+          },
+          "example": "I don't think it will rain tomorrow."
+        }
+      ]
+    },
+    {
+      "kind": "write",
+      "i18n": {"ar":{"title":"الكتابة · Task 2: مزايا أم عيوب؟","tip":"في سؤال \"Do the advantages outweigh the disadvantages?\" لا تكتفِ بسرد المزايا والعيوب؛ قل بوضوح في المقدمة والخاتمة أيّهما يرجح. وفي التنبؤات استخدم \"is likely to\" الأكثر تحفظًا بدل \"will\"، وجرّب كلمات مثل sponsorship وgrassroots وinjury."},"en":{"title":"Writing · Task 2: advantages or disadvantages?","tip":"In a \"Do the advantages outweigh the disadvantages?\" question, don't just list advantages and disadvantages; say clearly in the introduction and conclusion which one outweighs the other. For predictions, use the more cautious \"is likely to\" instead of \"will\"; try words like sponsorship, grassroots and injury."}},
+      "title": "Yazma · Task 2: avantaj mı dezavantaj mı?",
+      "task": 2,
+      "prompt": "Many professional athletes earn extremely high salaries and receive large amounts of money from sponsorship. Do the advantages of this outweigh the disadvantages?\n\nWrite a short essay with an introduction, two body paragraphs and a conclusion.",
+      "minutes": 30,
+      "minWords": 200,
+      "tip": "\"Do the advantages outweigh the disadvantages?\" sorusunda sadece avantaj ve dezavantajları listeleme; hangisinin ağır bastığını girişte ve sonuçta açıkça söyle. Tahminlerde \"will\" yerine daha temkinli \"is likely to\" kullan; sponsorship, grassroots, injury gibi kelimeleri dene.",
+      "model": "Top professional athletes are now among the best-paid people in the world, earning not only large salaries but also huge sums from sponsorship deals with sportswear and drinks companies. Although these rewards bring certain benefits, I believe that the disadvantages are likely to outweigh them in the long term.\n\nOn the positive side, high earnings reflect the fact that sport is a global entertainment industry. Millions of spectators pay to watch the best players compete, and it seems fair that the athletes who create this value should receive a share of it. Moreover, professional careers are short and often ended by injury, so a few years of high income can provide security for later life. The prospect of fame and wealth may also give talented young people the motivation to train hard.\n\nHowever, the drawbacks are more serious. When a small number of stars earn enormous sums, money tends to stay at the top of a sport rather than being shared with grassroots clubs, many of which struggle to pay for basic facilities. In addition, the huge rewards for winning can encourage some athletes to cheat, for example by using performance-enhancing drugs. Finally, sponsorship by companies selling unhealthy food and drink sends a confusing message to children who see sport as a symbol of good health.\n\nIn conclusion, while athletes deserve to be well paid for their skill, the current level of rewards is likely to damage sport as a whole unless more of the money is invested in physical activity for ordinary people."
+    },
+    {
+      "kind": "speak",
+      "i18n": {"ar":{"title":"التحدث: الرياضة"},"en":{"title":"Speaking: sport"}},
+      "title": "Konuşma: spor",
+      "part1": [
+        "What sports or exercise did you do at school?",
+        "Do you prefer playing sport or watching it?",
+        "Is there a sport you would like to try in the future?",
+        "Do you think people in your country are getting fitter or less fit?"
+      ],
+      "card": {
+        "title": "Describe a sports event you watched or took part in.",
+        "points": [
+          "what the event was",
+          "where and when it took place",
+          "who you were with"
+        ],
+        "explain": "and explain why you remember it so well."
+      },
+      "useful": [
+        "One event I'll never forget is…",
+        "I went with…, and the atmosphere was absolutely electric.",
+        "At half-time it looked as if they were going to lose, but…",
+        "I took part in…, even though I didn't have much stamina at the time.",
+        "Ever since then, I've been keen on…",
+        "I'm likely to remember it for the rest of my life, because…"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "licence": "Original content written for Fluent365. CC BY-SA 4.0.",
+  "topics": [
+    {
+      "id": "g-present-simple-continuous",
+      "title": "Present simple or present continuous?",
+      "level": "B1",
+      "summary": "Habits and facts vs. things happening now or around now.",
+      "notice": [
+        "I **work** in a bank, but this month I**'m working** from home.",
+        "Water **boils** at 100 degrees.",
+        "Look! It**'s snowing**.",
+        "I **don't understand** this question."
+      ],
+      "compare": {
+        "a": "I live in Ankara.",
+        "b": "I'm living in Ankara this year.",
+        "note": "A sounds permanent: this is your home. B sounds temporary: you will probably move later."
+      },
+      "explain": {
+        "en": "Use the present simple for habits, routines, facts and permanent situations (I work, she lives, it rains a lot here). Use the present continuous for actions happening now or around now, and for temporary situations (I'm reading, we're staying with friends this week). State verbs such as know, understand, like, want, need, believe, belong are normally not used in the continuous: say 'I know', not 'I'm knowing'.",
+        "tr": "Present simple: alışkanlıklar, rutinler, genel gerçekler ve kalıcı durumlar. Present continuous: şu anda ya da bu aralar olan geçici durumlar. know, understand, like, want, need gibi durum fiilleri genelde -ing almaz."
+      },
+      "exercises": [
+        { "type": "choose", "prompt": "Which sentence sounds natural?", "options": ["I'm knowing the answer.", "I know the answer."], "answer": 1, "why": "Know is a state verb, so it is not normally used in the continuous." },
+        { "type": "choose", "prompt": "Your friend calls you. You say:", "options": ["Sorry, I can't talk. I cook dinner.", "Sorry, I can't talk. I'm cooking dinner."], "answer": 1, "why": "The action is happening right now, so use the present continuous." },
+        { "type": "gap", "prompt": "My brother usually ___ (go) to work by bus.", "answers": ["goes"], "why": "Usually shows a routine: present simple, with -es for he/she/it." },
+        { "type": "gap", "prompt": "Be quiet, please. The baby ___ (sleep).", "answers": ["is sleeping", "'s sleeping"], "why": "Happening now: am/is/are + -ing." },
+        { "type": "fix", "wrong": "She is wanting a new phone.", "answers": ["She wants a new phone."], "why": "Want is a state verb: use the present simple." },
+        { "type": "fix", "wrong": "Every morning I am drinking a cup of tea.", "answers": ["Every morning I drink a cup of tea."], "why": "Every morning = a habit, so the present simple." },
+        { "type": "compare", "prompt": "Which one describes a temporary situation?", "options": ["He works in London.", "He's working in London until June."], "answer": 1, "why": "'Until June' shows the situation is temporary, so the continuous fits." },
+        { "type": "build", "blocks": ["at", "the", "moment", "I'm", "a", "novel", "reading"], "answer": "I'm reading a novel at the moment.", "alts": ["At the moment I'm reading a novel."], "why": "At the moment + present continuous." },
+        { "type": "find", "prompt": "Find the unnatural sentence.", "options": ["This soup tastes great.", "I'm believing you.", "We're staying at a hotel this week."], "answer": 1, "why": "Believe is a state verb: say 'I believe you'." },
+        { "type": "produce", "prompt": "Write one sentence about something you do every week and one thing you are doing these days.", "check": "\\b(every|usually|always|often)\\b[\\s\\S]*\\b(am|is|are|'m|'s|'re)\\s+\\w+ing\\b|\\b(am|is|are|'m|'s|'re)\\s+\\w+ing\\b[\\s\\S]*\\b(every|usually|always|often)\\b", "hint": "Use a frequency word (every, usually) for the habit and am/is/are + -ing for these days.", "model": "I play football every Saturday, and these days I'm learning to cook." }
+      ]
+    },
+    {
+      "id": "g-past-simple-continuous",
+      "title": "Past simple and past continuous in stories",
+      "level": "B1",
+      "summary": "The background action (was doing) and the event that interrupts it (did).",
+      "notice": [
+        "I **was walking** home when it **started** to rain.",
+        "While we **were having** dinner, the lights **went** out.",
+        "She **opened** the door, **looked** around and **left**."
+      ],
+      "compare": {
+        "a": "When she arrived, we had dinner.",
+        "b": "When she arrived, we were having dinner.",
+        "note": "In A dinner started after she arrived. In B dinner was already in progress when she arrived."
+      },
+      "explain": {
+        "en": "Use the past continuous (was/were + -ing) for a longer background action in progress at a past moment. Use the past simple for completed events, especially short actions that interrupt the background or happen one after another. 'While' usually goes with the continuous; 'when' often introduces the short event.",
+        "tr": "Past continuous (was/were + -ing): geçmişte bir anda süren arka plan eylemi. Past simple: biten olaylar, araya giren kısa eylemler, art arda olaylar."
+      },
+      "exercises": [
+        { "type": "gap", "prompt": "I ___ (read) when the phone rang.", "answers": ["was reading"], "why": "Reading was in progress; the phone interrupted it." },
+        { "type": "gap", "prompt": "While they were playing tennis, it ___ (start) to rain.", "answers": ["started"], "why": "The rain started at one moment: past simple." },
+        { "type": "choose", "prompt": "Which sentence sounds natural?", "options": ["I was seeing an accident yesterday.", "I saw an accident yesterday."], "answer": 1, "why": "A completed event at a finished time: past simple. See is rarely continuous in this meaning." },
+        { "type": "compare", "prompt": "In which sentence was the TV already on before he came in?", "options": ["When he came in, I turned on the TV.", "When he came in, I was watching TV."], "answer": 1, "why": "Was watching = already in progress." },
+        { "type": "fix", "wrong": "When I was arriving at the station, the train left.", "answers": ["When I arrived at the station, the train left.", "When I arrived at the station, the train had left."], "why": "Arrive is a short event here, so use the past simple." },
+        { "type": "fix", "wrong": "While I walked to work, I was meeting an old friend.", "answers": ["While I was walking to work, I met an old friend."], "why": "Background = past continuous; short event = past simple." },
+        { "type": "build", "blocks": ["was", "she", "cooking", "when", "the", "doorbell", "rang"], "answer": "She was cooking when the doorbell rang.", "alts": ["When the doorbell rang, she was cooking."], "why": "Background (was cooking) + interruption (rang)." },
+        { "type": "predict", "prompt": "Yesterday at 8 p.m. I ___ ... (what comes next naturally?)", "options": ["was studying for my exam", "study for my exam", "have studied for my exam"], "answer": 0, "why": "At a specific past time + an action in progress: past continuous." },
+        { "type": "find", "prompt": "Find the unnatural sentence.", "options": ["The sun was shining and the birds were singing.", "I was finishing the report at 5 p.m. and sent it at 5:30.", "We were watching a film when we were hearing a noise."], "answer": 2, "why": "Hear here is a short event: 'when we heard a noise'." },
+        { "type": "produce", "prompt": "Write one sentence about something that happened while you were doing something else.", "check": "\\b(was|were)\\s+\\w+ing\\b", "hint": "Use was/were + -ing for the background action and the past simple for the event.", "model": "I was waiting for the bus when I saw my old teacher." }
+      ]
+    },
+    {
+      "id": "g-articles",
+      "title": "Articles: a, an, the or nothing",
+      "level": "B1",
+      "summary": "New vs. known things, and when English uses no article at all.",
+      "notice": [
+        "I bought **a** new laptop. **The** laptop is very fast.",
+        "**The** sun rises in **the** east.",
+        "I love **music**, but **the** music at the party was too loud.",
+        "She is **an** engineer."
+      ],
+      "compare": {
+        "a": "Children need sleep.",
+        "b": "The children need sleep.",
+        "note": "A is about children in general. B is about specific children we both know (for example, my children)."
+      },
+      "explain": {
+        "en": "Use a/an for one thing mentioned for the first time, or one of many (a job, an idea). Use the when the listener knows which one: it was mentioned before, there is only one (the sun, the internet), or it is defined (the book on the table). Use no article for plural and uncountable nouns in general meaning (Dogs are loyal. Water is important.). Jobs take a/an: She's a doctor. A/an depends on sound: an hour, a university.",
+        "tr": "a/an: ilk kez söz edilen, herhangi bir tekil şey. the: dinleyenin bildiği, tek olan ya da tanımlanmış şey. Genel anlamda çoğul ve sayılamayan isimlerde artikel yok."
+      },
+      "exercises": [
+        { "type": "choose", "prompt": "Which sentence sounds natural?", "options": ["She is doctor.", "She is a doctor."], "answer": 1, "why": "Jobs need a/an in English." },
+        { "type": "choose", "prompt": "Which sentence talks about life in general?", "options": ["The life is short.", "Life is short."], "answer": 1, "why": "Abstract nouns in general meaning take no article." },
+        { "type": "gap", "prompt": "I waited for ___ hour.", "answers": ["an"], "why": "Hour starts with a vowel sound (/aʊ/), so 'an'." },
+        { "type": "gap", "prompt": "I saw a film last night. ___ film was about climate change.", "answers": ["The"], "why": "The film was already mentioned, so now it is 'the'." },
+        { "type": "fix", "wrong": "I think the money is not the most important thing in life.", "answers": ["I think money is not the most important thing in life.", "I think money isn't the most important thing in life."], "why": "Money in general: no article." },
+        { "type": "fix", "wrong": "He goes to the work by car.", "answers": ["He goes to work by car."], "why": "Fixed phrases: go to work, go to school, go to bed (no article)." },
+        { "type": "compare", "prompt": "Which sentence means all cats in general?", "options": ["Cats are independent animals.", "The cats are independent animals."], "answer": 0, "why": "Plural noun with no article = general meaning." },
+        { "type": "find", "prompt": "Find the unnatural sentence.", "options": ["Can you close the window?", "The Moon goes around the Earth.", "I need a advice."], "answer": 2, "why": "Advice is uncountable: 'some advice' or 'a piece of advice'." },
+        { "type": "build", "blocks": ["is", "university", "a", "she", "student"], "answer": "She is a university student.", "alts": [], "why": "University starts with a /j/ sound, so 'a', not 'an'." },
+        { "type": "produce", "prompt": "Write two sentences: introduce something with 'a' or 'an', then talk about it again with 'the'.", "check": "\\b(a|an)\\b[\\s\\S]+\\bthe\\b", "hint": "First mention: a/an. Second mention: the.", "model": "I found a wallet in the street. The wallet had no money in it." }
+      ]
+    },
+    {
+      "id": "g-agreement",
+      "title": "Subject–verb agreement",
+      "level": "B1",
+      "summary": "He goes, everyone is, there are many: matching the verb to its subject.",
+      "notice": [
+        "My sister **lives** in Izmir.",
+        "**Everyone** in my class **is** friendly.",
+        "**There are** a lot of people here.",
+        "**The number of** students **has** increased.",
+        "**A number of** students **have** complained."
+      ],
+      "compare": {
+        "a": "The price of these shoes is high.",
+        "b": "These shoes are expensive.",
+        "note": "In A the subject is 'the price' (singular), not 'shoes'. Find the real subject first."
+      },
+      "explain": {
+        "en": "In the present simple, he/she/it takes -s (she works, it doesn't). Everyone, someone, nobody, each and every are singular (Everyone knows). The verb agrees with the main noun, not the nearest noun (The quality of the roads is poor). 'There is' + singular/uncountable, 'there are' + plural. 'The number of' + singular verb; 'a number of' (= several) + plural verb.",
+        "tr": "Fiil, en yakın isme değil asıl özneye uyar. everyone/someone/each tekildir. There is + tekil, there are + çoğul."
+      },
+      "exercises": [
+        { "type": "gap", "prompt": "Nobody ___ (know) the answer.", "answers": ["knows"], "why": "Nobody is singular: knows." },
+        { "type": "choose", "prompt": "Which sentence sounds natural?", "options": ["The list of names are on the wall.", "The list of names is on the wall."], "answer": 1, "why": "The subject is 'the list' (singular)." },
+        { "type": "choose", "prompt": "Which is correct?", "options": ["There is many problems.", "There are many problems."], "answer": 1, "why": "Many problems is plural: there are." },
+        { "type": "fix", "wrong": "He don't like coffee.", "answers": ["He doesn't like coffee.", "He does not like coffee."], "why": "He/she/it: doesn't." },
+        { "type": "fix", "wrong": "The number of cars are increasing.", "answers": ["The number of cars is increasing."], "why": "The number of + singular verb." },
+        { "type": "gap", "prompt": "Each of the students ___ (have) a laptop.", "answers": ["has"], "why": "Each is singular: has." },
+        { "type": "find", "prompt": "Find the unnatural sentence.", "options": ["Everybody needs friends.", "My parents lives in a village.", "There is some milk in the fridge."], "answer": 1, "why": "Parents is plural: my parents live." },
+        { "type": "compare", "prompt": "Which sentence means 'several students'?", "options": ["A number of students have left.", "The number of students has fallen."], "answer": 0, "why": "A number of = several (plural). The number of = the amount (singular)." },
+        { "type": "build", "blocks": ["the", "quality", "of", "the", "roads", "is", "poor"], "answer": "The quality of the roads is poor.", "alts": [], "why": "Subject = the quality (singular) → is." },
+        { "type": "produce", "prompt": "Write a sentence that starts with 'Everyone in my family…'.", "check": "^\\s*everyone in my family\\s+\\w+(s|es)\\b|^\\s*everyone in my family\\s+(is|has|was|does|can|will|loves|likes)\\b", "hint": "Everyone is singular, so use is/has/likes…", "model": "Everyone in my family loves tea." }
+      ]
+    },
+    {
+      "id": "g-questions",
+      "title": "Questions and indirect questions",
+      "level": "B1",
+      "summary": "Word order in direct and polite indirect questions.",
+      "notice": [
+        "Where **do you** live?",
+        "What time **does the train** leave?",
+        "Could you tell me where **the station is**?",
+        "I wonder **if she knows**."
+      ],
+      "compare": {
+        "a": "Where is the bank?",
+        "b": "Do you know where the bank is?",
+        "note": "B is more polite. After 'Do you know…', the word order is like a normal statement: the bank is."
+      },
+      "explain": {
+        "en": "Direct questions: question word + auxiliary + subject + verb (Where does she work?). In the past simple use did + base verb (When did you arrive?). Indirect questions start with a polite phrase (Can you tell me…, Do you know…, I wonder…) and then use statement order with no do/does/did: Can you tell me where she works? For yes/no indirect questions use if or whether.",
+        "tr": "Dolaylı sorularda (Do you know…, Could you tell me…) cümle düz cümle sırasıyla devam eder ve do/does/did kullanılmaz."
+      },
+      "exercises": [
+        { "type": "choose", "prompt": "Which question is correct?", "options": ["Where you work?", "Where do you work?"], "answer": 1, "why": "Present simple questions need do/does." },
+        { "type": "choose", "prompt": "Which polite question is correct?", "options": ["Can you tell me where is the museum?", "Can you tell me where the museum is?"], "answer": 1, "why": "Indirect question: statement order (the museum is)." },
+        { "type": "gap", "prompt": "What time ___ the film start yesterday?", "answers": ["did"], "why": "Past simple question: did + base verb (start)." },
+        { "type": "fix", "wrong": "Do you know what time does the shop open?", "answers": ["Do you know what time the shop opens?"], "why": "No 'does' in an indirect question; normal order: the shop opens." },
+        { "type": "fix", "wrong": "Why she is angry?", "answers": ["Why is she angry?"], "why": "Direct question: verb before subject." },
+        { "type": "build", "blocks": ["could", "you", "tell", "me", "how", "much", "this", "costs"], "answer": "Could you tell me how much this costs?", "alts": [], "why": "Indirect question: statement order (this costs)." },
+        { "type": "gap", "prompt": "I wonder ___ the bus is late again. (yes/no question)", "answers": ["if", "whether"], "why": "Indirect yes/no questions use if or whether." },
+        { "type": "find", "prompt": "Find the unnatural question.", "options": ["How long have you lived here?", "What did you do last weekend?", "Where did you went on holiday?"], "answer": 2, "why": "After did, use the base verb: Where did you go?" },
+        { "type": "rewrite", "prompt": "Make it more polite: 'Where is the toilet?' Start with 'Could you tell me…'", "answers": ["Could you tell me where the toilet is?"], "why": "Statement order after the polite phrase." },
+        { "type": "produce", "prompt": "Write a polite question to a stranger starting with 'Do you know…'.", "check": "^\\s*do you know\\s+(where|what|when|how|if|whether|who|why|which)\\b(?![\\s\\S]*\\b(does|do|did)\\b)", "hint": "Do you know + question word + subject + verb (no do/does/did).", "model": "Do you know when the next train leaves?" }
+      ]
+    },
+    {
+      "id": "g-future-forms",
+      "title": "Future: will, going to and present continuous",
+      "level": "B1",
+      "summary": "Decisions, plans, arrangements and predictions.",
+      "notice": [
+        "The phone's ringing. I**'ll** get it!",
+        "I**'m going to** study medicine next year.",
+        "I**'m meeting** Ali at 6 tonight.",
+        "Look at those clouds. It**'s going to** rain."
+      ],
+      "compare": {
+        "a": "I'll call her.",
+        "b": "I'm going to call her.",
+        "note": "A sounds like a decision made right now. B sounds like a plan decided before."
+      },
+      "explain": {
+        "en": "Use will for decisions at the moment of speaking, offers and promises (I'll help you), and for opinions about the future (I think it will be fine). Use be going to for plans you have already decided and predictions based on what you can see now. Use the present continuous for fixed arrangements with a time and other people (We're flying to Rome on Friday).",
+        "tr": "will: o an verilen karar, teklif, söz, tahmin. going to: önceden verilmiş karar veya kanıta dayalı tahmin. present continuous: saati belli ayarlanmış planlar."
+      },
+      "exercises": [
+        { "type": "choose", "prompt": "Your friend says 'I'm thirsty.' You answer:", "options": ["I'm going to get you some water.", "I'll get you some water."], "answer": 1, "why": "A sudden decision/offer: will." },
+        { "type": "choose", "prompt": "You have a dentist appointment tomorrow at 10. You say:", "options": ["I see the dentist tomorrow at 10.", "I'm seeing the dentist tomorrow at 10."], "answer": 1, "why": "Fixed arrangement with a time: present continuous." },
+        { "type": "gap", "prompt": "Be careful! You ___ (fall)!", "answers": ["are going to fall", "'re going to fall", "re going to fall"], "why": "Prediction from what you see now: be going to." },
+        { "type": "gap", "prompt": "I've decided. I ___ (sell) my car.", "answers": ["am going to sell", "'m going to sell"], "why": "A decision made before speaking: going to." },
+        { "type": "fix", "wrong": "I will to visit my grandmother tomorrow.", "answers": ["I will visit my grandmother tomorrow.", "I'll visit my grandmother tomorrow.", "I'm going to visit my grandmother tomorrow.", "I'm visiting my grandmother tomorrow."], "why": "Will + base verb, without 'to'." },
+        { "type": "compare", "prompt": "Which sentence shows a plan made earlier?", "options": ["Okay, I'll take the blue one.", "I'm going to paint my room blue this weekend."], "answer": 1, "why": "Going to = a plan already decided." },
+        { "type": "predict", "prompt": "'What are you doing on Saturday?' — 'We ___ ...'", "options": ["are having a party", "have a party", "will having a party"], "answer": 0, "why": "An arrangement: present continuous." },
+        { "type": "find", "prompt": "Find the unnatural sentence.", "options": ["I think robots will do many jobs in the future.", "Don't worry, I'll help you.", "I'm promise I'm going to call you."], "answer": 2, "why": "Promises use will: I promise I'll call you." },
+        { "type": "build", "blocks": ["I", "think", "it", "will", "be", "a", "great", "day"], "answer": "I think it will be a great day.", "alts": [], "why": "Opinion about the future: I think + will." },
+        { "type": "produce", "prompt": "Write one plan you have for next month using 'going to'.", "check": "\\b(am|is|are|'m|'s|'re)\\s+going\\s+to\\s+\\w+", "hint": "am/is/are + going to + verb.", "model": "I'm going to start running three times a week." }
+      ]
+    }
+  ]
+}

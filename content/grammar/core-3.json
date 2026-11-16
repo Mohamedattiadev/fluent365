@@ -1,0 +1,206 @@
+{
+  "licence": "Original content written for Fluent365. CC BY-SA 4.0.",
+  "topics": [
+    {
+      "id": "g-zero-first-conditional",
+      "title": "If, when and unless: real conditions",
+      "level": "B1",
+      "summary": "Zero and first conditionals for facts and likely futures.",
+      "notice": [
+        "If you heat ice, it **melts**.",
+        "If it **rains** tomorrow, we**'ll stay** at home.",
+        "**Unless** you hurry, you'll miss the bus.",
+        "**When** I get home, I'll call you."
+      ],
+      "compare": {
+        "a": "If I see Ali, I'll tell him.",
+        "b": "When I see Ali, I'll tell him.",
+        "note": "A: maybe you will see him, maybe not. B: you are sure you will see him."
+      },
+      "explain": {
+        "en": "Zero conditional (if + present, present) for things that are always true. First conditional (if + present, will + verb) for real, likely situations in the future. Do not use will after if, when, unless, as soon as, before, until: say 'If it rains', not 'If it will rain'. Unless = if not. When = you are sure it will happen.",
+        "tr": "if/when/unless/as soon as sonrasında will kullanılmaz: If it rains… unless = if not."
+      },
+      "exercises": [
+        { "type": "choose", "prompt": "Which is natural?", "options": ["If it will rain, we'll stay in.", "If it rains, we'll stay in."], "answer": 1, "why": "No will after if." },
+        { "type": "gap", "prompt": "If you mix red and blue, you ___ (get) purple.", "answers": ["get"], "why": "A general fact: zero conditional, present + present." },
+        { "type": "gap", "prompt": "If she passes the exam, she ___ (go) to university.", "answers": ["will go", "'ll go"], "why": "Likely future result: will + verb." },
+        { "type": "fix", "wrong": "I'll call you as soon as I will arrive.", "answers": ["I'll call you as soon as I arrive.", "I will call you as soon as I arrive."], "why": "No will after as soon as." },
+        { "type": "fix", "wrong": "Unless you don't study, you'll fail.", "answers": ["Unless you study, you'll fail.", "If you don't study, you'll fail."], "why": "Unless already means 'if not'." },
+        { "type": "compare", "prompt": "Which speaker is sure the meeting will finish?", "options": ["If the meeting finishes early, I'll join you.", "When the meeting finishes, I'll join you."], "answer": 1, "why": "When = sure it will happen." },
+        { "type": "rewrite", "prompt": "Rewrite with 'unless': 'If you don't leave now, you'll be late.'", "answers": ["Unless you leave now, you'll be late.", "Unless you leave now, you will be late.", "You'll be late unless you leave now.", "You will be late unless you leave now."], "why": "Unless + positive verb = if + negative verb." },
+        { "type": "build", "blocks": ["if", "you", "need", "help,", "I'll", "be", "in", "my", "office"], "answer": "If you need help, I'll be in my office.", "alts": ["I'll be in my office if you need help."], "why": "If + present, will + verb." },
+        { "type": "find", "prompt": "Find the unnatural sentence.", "options": ["Water freezes if the temperature drops below zero.", "I'll wait here until you come back.", "If I will have time, I'll visit you."], "answer": 2, "why": "If I have time, I'll visit you." },
+        { "type": "produce", "prompt": "Finish this sentence about your plans: 'If I have free time this weekend, …'", "check": "\\b(will|'ll|won't|going to|might|may|can)\\b", "hint": "Use will (or might) + verb in the result.", "model": "If I have free time this weekend, I'll visit my grandparents." }
+      ]
+    },
+    {
+      "id": "g-second-conditional-wish",
+      "title": "Unreal present: second conditional and wish",
+      "level": "B1+",
+      "summary": "Imagining a different present: If I had…, I wish I were…",
+      "notice": [
+        "If I **had** more time, I **would learn** the piano.",
+        "If I **were** you, I**'d take** the job.",
+        "I **wish** I **lived** near the sea.",
+        "I wish I **could** speak Japanese."
+      ],
+      "compare": {
+        "a": "If I win the lottery, I'll buy a house.",
+        "b": "If I won the lottery, I'd buy a house.",
+        "note": "A sounds like you think winning is realistic. B is imaginary: it probably won't happen."
+      },
+      "explain": {
+        "en": "Second conditional (if + past simple, would + verb) for imaginary or unlikely situations now or in the future. The past form does not mean past time here. 'If I were you' is the usual way to give advice. Wish + past simple expresses a wish about the present (I wish I had a car = I don't have one). Wish + could for abilities.",
+        "tr": "Second conditional: if + V2, would + V1 (hayali durum). I wish + V2: şimdiki zaman için dilek."
+      },
+      "exercises": [
+        { "type": "gap", "prompt": "If I ___ (be) rich, I would travel around the world.", "answers": ["were", "was"], "why": "Unreal present: past form. 'Were' is preferred in formal English." },
+        { "type": "gap", "prompt": "If she studied more, she ___ (get) better marks.", "answers": ["would get", "'d get"], "why": "Result: would + verb." },
+        { "type": "choose", "prompt": "Giving advice:", "options": ["If I am you, I will apologise.", "If I were you, I'd apologise."], "answer": 1, "why": "Advice: If I were you, I'd…" },
+        { "type": "choose", "prompt": "You don't have a car. You say:", "options": ["I wish I have a car.", "I wish I had a car."], "answer": 1, "why": "Wish about the present: past simple." },
+        { "type": "fix", "wrong": "If I would have more money, I would buy a bike.", "answers": ["If I had more money, I would buy a bike.", "If I had more money, I'd buy a bike."], "why": "No would in the if-clause." },
+        { "type": "fix", "wrong": "I wish I can swim.", "answers": ["I wish I could swim."], "why": "Wish + could for ability." },
+        { "type": "compare", "prompt": "Which speaker thinks it is unlikely?", "options": ["If I get the job, I'll move to Izmir.", "If I got the job, I'd move to Izmir."], "answer": 1, "why": "Past form + would = imaginary/unlikely." },
+        { "type": "build", "blocks": ["what", "would", "you", "do", "if", "you", "lost", "your", "job?"], "answer": "What would you do if you lost your job?", "alts": [], "why": "Imaginary situation: would + past simple." },
+        { "type": "find", "prompt": "Find the unnatural sentence.", "options": ["I'd be happier if I lived closer to work.", "If I knew the answer, I'd tell you.", "If I had a dog, I will walk it every day."], "answer": 2, "why": "Second conditional result: I would walk it." },
+        { "type": "produce", "prompt": "IELTS Speaking style: If you could live in any country, where would you live and why?", "check": "\\b(would|'d)\\s+\\w+", "hint": "If I could…, I'd/I would…", "model": "If I could live anywhere, I'd live in Canada because I love nature and quiet cities." }
+      ]
+    },
+    {
+      "id": "g-purpose-reason-result",
+      "title": "Because, because of, so, so that, to",
+      "level": "B1",
+      "summary": "Linking reasons, results and purposes correctly.",
+      "notice": [
+        "I stayed at home **because** I was ill.",
+        "The match was cancelled **because of** the rain.",
+        "It was late, **so** we took a taxi.",
+        "I saved money **to buy** a laptop.",
+        "Speak slowly **so that** everyone can understand."
+      ],
+      "compare": {
+        "a": "because the traffic was heavy",
+        "b": "because of the heavy traffic",
+        "note": "Because + a clause (subject + verb). Because of + a noun phrase."
+      },
+      "explain": {
+        "en": "Reason: because + clause; because of / due to + noun. Result: so + clause (It was cold, so I wore a coat). Purpose: to + verb or in order to + verb (I came here to study); so that + subject + can/could/will/would (I left early so that I could catch the train). For purpose, do not say 'for + verb': say 'to learn', not 'for learn'.",
+        "tr": "because + cümle, because of + isim. so = sonuç. to / in order to / so that = amaç; 'for + fiil' yanlış."
+      },
+      "exercises": [
+        { "type": "gap", "prompt": "The flight was delayed ___ the storm.", "answers": ["because of", "due to"], "why": "A noun phrase follows: because of/due to." },
+        { "type": "gap", "prompt": "I went to the shop ___ buy some bread.", "answers": ["to", "in order to"], "why": "Purpose: to + verb." },
+        { "type": "choose", "prompt": "Which is natural?", "options": ["I'm learning English for get a better job.", "I'm learning English to get a better job."], "answer": 1, "why": "Purpose: to + verb, not for + verb." },
+        { "type": "choose", "prompt": "Which is natural?", "options": ["Because of it was expensive, I didn't buy it.", "Because it was expensive, I didn't buy it."], "answer": 1, "why": "A clause follows: because." },
+        { "type": "fix", "wrong": "I was tired, because I went to bed early.", "answers": ["I was tired, so I went to bed early.", "I went to bed early because I was tired."], "why": "Going to bed was the result: so." },
+        { "type": "fix", "wrong": "She whispered so that nobody hear her.", "answers": ["She whispered so that nobody could hear her.", "She whispered so that nobody would hear her."], "why": "so that + subject + could/would + verb." },
+        { "type": "rewrite", "prompt": "Join with 'so': 'It started to rain. We went inside.'", "answers": ["It started to rain, so we went inside.", "It started to rain so we went inside."], "why": "Cause, so + result." },
+        { "type": "build", "blocks": ["he", "set", "an", "alarm", "so", "that", "he", "wouldn't", "oversleep"], "answer": "He set an alarm so that he wouldn't oversleep.", "alts": [], "why": "Purpose: so that + would." },
+        { "type": "find", "prompt": "Find the unnatural sentence.", "options": ["Due to the strike, there were no buses.", "I called her to say sorry.", "She was happy because of she passed."], "answer": 2, "why": "Because she passed (a clause)." },
+        { "type": "produce", "prompt": "Why are you learning English? Write one sentence with 'to' or 'so that' and one with 'because'.", "check": "\\b(to\\s+\\w+|so that)\\b[\\s\\S]*\\bbecause\\b|\\bbecause\\b[\\s\\S]*\\b(to\\s+\\w+|so that)\\b", "hint": "Purpose: to + verb. Reason: because + clause.", "model": "I'm learning English to study abroad, because many good universities teach in English." }
+      ]
+    },
+    {
+      "id": "g-too-enough-so-such",
+      "title": "Too, enough, so and such",
+      "level": "B1",
+      "summary": "Saying 'more than needed', 'as much as needed' and adding emphasis.",
+      "notice": [
+        "This coffee is **too hot** to drink.",
+        "He isn't **old enough** to drive.",
+        "We don't have **enough time**.",
+        "It was **so cold** that the lake froze.",
+        "It was **such a good film** that I watched it twice."
+      ],
+      "compare": {
+        "a": "The bag is very heavy.",
+        "b": "The bag is too heavy.",
+        "note": "A: heavy, but maybe you can carry it. B: so heavy that there is a problem — you can't carry it."
+      },
+      "explain": {
+        "en": "Too + adjective = more than is good or possible (too expensive to buy). Adjective + enough (big enough) but enough + noun (enough money). So + adjective/adverb (so tired); such + (a/an) + adjective + noun (such a nice day, such kind people). Both can be followed by 'that' + result.",
+        "tr": "too + sıfat = gereğinden fazla. sıfat + enough, enough + isim. so + sıfat; such + (a) + sıfat + isim."
+      },
+      "exercises": [
+        { "type": "choose", "prompt": "Which is natural?", "options": ["He's enough tall to play basketball.", "He's tall enough to play basketball."], "answer": 1, "why": "Adjective + enough." },
+        { "type": "choose", "prompt": "Which is natural?", "options": ["It was so a beautiful day.", "It was such a beautiful day."], "answer": 1, "why": "such a + adjective + noun." },
+        { "type": "gap", "prompt": "I can't buy it. It's ___ expensive.", "answers": ["too"], "why": "More than you can pay: too." },
+        { "type": "gap", "prompt": "Do we have ___ chairs for everyone?", "answers": ["enough"], "why": "enough + noun." },
+        { "type": "fix", "wrong": "The film was too good. I loved it.", "answers": ["The film was very good. I loved it.", "The film was so good. I loved it.", "The film was really good. I loved it."], "why": "Too is negative (a problem). For something positive use very/so/really." },
+        { "type": "fix", "wrong": "They are so nice people.", "answers": ["They are such nice people."], "why": "such + adjective + plural noun." },
+        { "type": "rewrite", "prompt": "Join with 'so … that': 'I was very tired. I fell asleep on the sofa.'", "answers": ["I was so tired that I fell asleep on the sofa.", "I was so tired I fell asleep on the sofa."], "why": "so + adjective + that + result." },
+        { "type": "build", "blocks": ["the", "box", "is", "too", "heavy", "to", "lift"], "answer": "The box is too heavy to lift.", "alts": [], "why": "too + adjective + to + verb." },
+        { "type": "find", "prompt": "Find the unnatural sentence.", "options": ["She speaks so quickly that I can't follow.", "There isn't enough milk.", "The room isn't enough big."], "answer": 2, "why": "big enough: The room isn't big enough." },
+        { "type": "produce", "prompt": "Describe a problem in your city using too or not … enough.", "check": "\\btoo\\s+\\w+|\\benough\\b", "hint": "too + adjective / not + adjective + enough / not enough + noun.", "model": "There aren't enough parks, and the traffic is too heavy in the evenings." }
+      ]
+    },
+    {
+      "id": "g-question-tags-frequency",
+      "title": "Question tags and adverbs of frequency",
+      "level": "B1",
+      "summary": "isn't it? / don't you? and where to put always, never, usually.",
+      "notice": [
+        "It's cold today, **isn't it**?",
+        "You don't eat meat, **do you**?",
+        "She **always** arrives on time.",
+        "I **have never** been to Japan.",
+        "He **is usually** at home in the evening."
+      ],
+      "compare": {
+        "a": "You live near here, don't you?",
+        "b": "You live near here?",
+        "note": "A sounds natural and friendly: you expect 'yes'. Learn tags as a pattern: positive sentence → negative tag, negative → positive."
+      },
+      "explain": {
+        "en": "Question tags use the auxiliary from the sentence: positive sentence + negative tag (She's nice, isn't she?), negative sentence + positive tag (You can't swim, can you?). In the present/past simple use do/does/did (He works here, doesn't he?). 'I am' → aren't I? Adverbs of frequency (always, usually, often, sometimes, rarely, never) go before the main verb but after be and after the first auxiliary: I often walk / I'm often late / I've never seen.",
+        "tr": "Olumlu cümle → olumsuz etiket, olumsuz → olumlu. Sıklık zarfları ana fiilden önce, be ve yardımcı fiilden sonra gelir."
+      },
+      "exercises": [
+        { "type": "gap", "prompt": "She plays the piano, ___ she?", "answers": ["doesn't"], "why": "Present simple positive → doesn't." },
+        { "type": "gap", "prompt": "They haven't arrived yet, ___ they?", "answers": ["have"], "why": "Negative sentence → positive tag with the same auxiliary." },
+        { "type": "choose", "prompt": "Which tag is correct? 'I'm late, ___?'", "options": ["amn't I", "aren't I"], "answer": 1, "why": "I am → aren't I?" },
+        { "type": "choose", "prompt": "Which is natural?", "options": ["I go always to work by bus.", "I always go to work by bus."], "answer": 1, "why": "Frequency adverb before the main verb." },
+        { "type": "fix", "wrong": "She never is late.", "answers": ["She is never late.", "She's never late."], "why": "Adverb after be." },
+        { "type": "fix", "wrong": "You went to the party, wasn't you?", "answers": ["You went to the party, didn't you?"], "why": "Past simple → did." },
+        { "type": "build", "blocks": ["we", "usually", "have", "dinner", "at", "seven"], "answer": "We usually have dinner at seven.", "alts": [], "why": "usually before the main verb." },
+        { "type": "find", "prompt": "Find the unnatural sentence.", "options": ["He can drive, can't he?", "I have often thought about it.", "Let's go, don't we?"], "answer": 2, "why": "Let's … → shall we?" },
+        { "type": "predict", "prompt": "'It's a beautiful day, ___' ", "options": ["isn't it?", "is it?", "doesn't it?"], "answer": 0, "why": "Positive with is → isn't it?" },
+        { "type": "produce", "prompt": "Write two sentences about your habits using two different frequency adverbs.", "check": "\\b(always|usually|often|sometimes|rarely|seldom|never|hardly ever|normally)\\b[\\s\\S]*\\b(always|usually|often|sometimes|rarely|seldom|never|hardly ever|normally)\\b", "hint": "always / usually / often / sometimes / rarely / never.", "model": "I usually wake up at seven. I rarely drink coffee in the evening." }
+      ]
+    },
+    {
+      "id": "g-relative-pronouns-basic",
+      "title": "Who, which, that, whose, where",
+      "level": "B1",
+      "summary": "Joining information about people, things and places.",
+      "notice": [
+        "The woman **who** lives next door is a nurse.",
+        "This is the book **that** I told you about.",
+        "That's the café **where** we first met.",
+        "I have a friend **whose** father is a pilot."
+      ],
+      "compare": {
+        "a": "The man who I met was kind.",
+        "b": "The man I met was kind.",
+        "note": "Both are correct. When who/which/that is the object of the verb, you can leave it out."
+      },
+      "explain": {
+        "en": "Use who (or that) for people, which (or that) for things, where for places, whose for possession. When the pronoun is the object of the clause (the film that I watched), you can omit it: the film I watched. Do not repeat the pronoun: 'the man who I met him' is wrong.",
+        "tr": "who = insan, which = şey, that = ikisi, where = yer, whose = sahiplik. Nesne konumundaysa zamir atılabilir; zamiri tekrar etme."
+      },
+      "exercises": [
+        { "type": "gap", "prompt": "That's the hospital ___ I was born.", "answers": ["where"], "why": "A place: where." },
+        { "type": "gap", "prompt": "I met a girl ___ brother plays for Galatasaray.", "answers": ["whose"], "why": "Possession: whose." },
+        { "type": "choose", "prompt": "Which is natural?", "options": ["The phone which I bought it is broken.", "The phone which I bought is broken."], "answer": 1, "why": "Don't repeat the object (it)." },
+        { "type": "choose", "prompt": "Which is natural?", "options": ["She's the teacher which helped me.", "She's the teacher who helped me."], "answer": 1, "why": "People: who/that." },
+        { "type": "fix", "wrong": "This is the house who my grandfather built.", "answers": ["This is the house that my grandfather built.", "This is the house which my grandfather built.", "This is the house my grandfather built."], "why": "Things: which/that (or nothing)." },
+        { "type": "rewrite", "prompt": "Join with 'who': 'I have a cousin. She works in Dubai.'", "answers": ["I have a cousin who works in Dubai."], "why": "who replaces 'she'." },
+        { "type": "build", "blocks": ["the", "film", "we", "watched", "last", "night", "was", "boring"], "answer": "The film we watched last night was boring.", "alts": [], "why": "Object pronoun omitted: the film (that) we watched." },
+        { "type": "find", "prompt": "Find the unnatural sentence.", "options": ["The car that I wanted was sold.", "Is this the place where you work?", "The people which I met were friendly."], "answer": 2, "why": "People: who/that." },
+        { "type": "compare", "prompt": "Which word can be left out? 'The song (that) you sang was beautiful.'", "options": ["that — it can be left out", "that — it must stay"], "answer": 0, "why": "That is the object of 'sang', so it can go." },
+        { "type": "produce", "prompt": "Describe a person who is important to you using who or whose.", "check": "\\b(who|whose|that)\\b", "hint": "X is a person who… / X is someone whose…", "model": "My aunt is someone who always listens and whose advice is very practical." }
+      ]
+    }
+  ]
+}

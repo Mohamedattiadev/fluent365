@@ -1,0 +1,687 @@
+{
+ "id": "lesson-28",
+ "number": 28,
+ "title": "The Future of Energy",
+ "topic": "The future of energy",
+ "level": "B2",
+ "goal": "Follow a lecture on renewable energy, describe a table of energy data, and add emphasis with inversion after Not only, Rarely and Only recently.",
+ "steps": [
+  {
+   "kind": "words",
+   "i18n": {"ar":{"title":"المفردات: الطاقة والمستقبل","intro":"في هذا الدرس 12 كلمة وعبارة عن مصادر الطاقة والتحول الطاقي. يتكرر معظمها في رسوم Task 1 البيانية وفي مواضيع البيئة في Task 2: \"generate electricity\"، \"phase out coal\"، \"cut carbon emissions\"."},"en":{"title":"Vocabulary: energy and the future","intro":"This lesson has 12 words and phrases about energy sources and the energy transition. Most of them come up often in Task 1 graphs and Task 2 environment topics: \"generate electricity\", \"phase out coal\", \"cut carbon emissions\"."}},
+   "title": "Kelimeler: enerji ve gelecek",
+   "intro": "Bu derste enerji kaynakları ve enerji geçişi hakkında 12 kelime ve kalıp var. Çoğu Task 1 grafiklerinde ve Task 2 çevre konularında sık çıkar: \"generate electricity\", \"phase out coal\", \"cut carbon emissions\".",
+   "words": [
+    {
+     "en": "renewable",
+     "pos": "adjective",
+     "tr": "yenilenebilir",
+     "ar": "متجدّد",
+     "example": "Renewable sources such as wind and sunlight will not run out."
+    },
+    {
+     "en": "fossil fuels",
+     "pos": "phrase",
+     "tr": "fosil yakıtlar (kömür, petrol, doğal gaz)",
+     "ar": "الوقود الأحفوري (الفحم والنفط والغاز)",
+     "example": "Burning fossil fuels releases carbon dioxide into the atmosphere."
+    },
+    {
+     "en": "carbon emissions",
+     "pos": "phrase",
+     "tr": "karbon salımı, karbon emisyonu",
+     "ar": "انبعاثات الكربون",
+     "example": "The country has promised to halve its carbon emissions by 2040."
+    },
+    {
+     "en": "generate",
+     "pos": "verb",
+     "tr": "üretmek (elektrik, enerji)",
+     "ar": "يولّد (الكهرباء أو الطاقة)",
+     "example": "The new wind farm will generate enough electricity for 50,000 homes."
+    },
+    {
+     "en": "wind turbine",
+     "pos": "phrase",
+     "tr": "rüzgâr türbini",
+     "ar": "توربين رياح",
+     "example": "Wind turbines are often built out at sea, where the wind is stronger."
+    },
+    {
+     "en": "solar power",
+     "pos": "phrase",
+     "tr": "güneş enerjisi",
+     "ar": "الطاقة الشمسية",
+     "example": "Solar power is now cheap enough for many families to install panels on their roofs."
+    },
+    {
+     "en": "the grid",
+     "pos": "noun phrase",
+     "tr": "elektrik şebekesi",
+     "ar": "شبكة الكهرباء",
+     "example": "Homes with solar panels can sell extra electricity back to the grid."
+    },
+    {
+     "en": "energy storage",
+     "pos": "phrase",
+     "tr": "enerji depolama",
+     "ar": "تخزين الطاقة",
+     "example": "Energy storage allows power produced at midday to be used in the evening."
+    },
+    {
+     "en": "energy efficiency",
+     "pos": "phrase",
+     "tr": "enerji verimliliği",
+     "ar": "كفاءة الطاقة",
+     "example": "Better insulation is one of the cheapest ways to improve energy efficiency."
+    },
+    {
+     "en": "phase out",
+     "pos": "phrasal verb",
+     "tr": "aşamalı olarak kaldırmak",
+     "ar": "يُلغي تدريجيًا",
+     "example": "The government plans to phase out coal power stations over the next decade."
+    },
+    {
+     "en": "sustainable",
+     "pos": "adjective",
+     "tr": "sürdürülebilir",
+     "ar": "مستدام",
+     "example": "A sustainable energy system must not damage the environment for future generations."
+    },
+    {
+     "en": "nuclear power",
+     "pos": "phrase",
+     "tr": "nükleer enerji",
+     "ar": "الطاقة النووية",
+     "example": "Nuclear power produces very low carbon emissions but creates radioactive waste."
+    }
+   ],
+   "practice": [
+    {
+     "type": "choice",
+     "id": "w1",
+     "prompt": "Coal, oil and natural gas are all…",
+     "options": [
+      "fossil fuels",
+      "renewable sources",
+      "wind turbines",
+      "energy storage"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "Kömür, petrol ve doğal gaz milyonlarca yıl önceki canlılardan oluşur: fossil fuels. Bunlar yenilenebilir değildir.",
+      "ar": "الفحم والنفط والغاز الطبيعي وقود أحفوري تكوّن من كائنات قديمة، وهي ليست متجددة.",
+      "en": "Coal, oil and gas are fossil fuels, not renewable sources."
+     },
+     "example": "Most of the world's electricity still comes from fossil fuels."
+    },
+    {
+     "type": "choice",
+     "id": "w2",
+     "prompt": "Which verb collocates best? Solar panels on the roof ___ about half of the school's electricity.",
+     "options": [
+      "generate",
+      "make up",
+      "consume",
+      "phase out"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "\"generate electricity\" doğal eşdizimdir: elektrik üretmek. \"consume\" tüketmek demek, anlam ters olur.",
+      "ar": "التلازم الطبيعي generate electricity أي يولّد الكهرباء. أما consume فتعني يستهلك، وهو عكس المعنى.",
+      "en": "We \"generate\" electricity; \"consume\" means use."
+     },
+     "example": "The dam generates electricity for the whole region."
+    },
+    {
+     "type": "gap",
+     "id": "w3",
+     "prompt": "Write the correct form of SUSTAIN: Many companies now publish reports on the ___ of their products.",
+     "answers": [
+      "sustainability"
+     ],
+     "why": {
+      "tr": "\"the ___ of\" yapısında bir isim gerekir: sustain → sustainable (sıfat) → sustainability (isim).",
+      "ar": "بعد the وقبل of نحتاج إلى اسم: sustain ← sustainable (صفة) ← sustainability (اسم).",
+      "en": "A noun is needed: sustainable → sustainability."
+     },
+     "example": "The sustainability of the fishing industry depends on strict limits."
+    },
+    {
+     "type": "choice",
+     "id": "w4",
+     "prompt": "If a government decides to \"phase out\" petrol cars, it will…",
+     "options": [
+      "stop allowing them gradually over a period of time",
+      "ban them all immediately",
+      "make them cheaper",
+      "build more of them"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "\"phase out\" = bir şeyi aşama aşama, zamanla kaldırmak. Hemen yasaklamak değildir.",
+      "ar": "phase out تعني الإلغاء التدريجي على مراحل، لا المنع الفوري.",
+      "en": "\"Phase out\" means remove gradually, not immediately."
+     },
+     "example": "Plastic bags were phased out over three years."
+    },
+    {
+     "type": "gap",
+     "id": "w5",
+     "prompt": "Write ONE word: Power from homes with solar panels can be fed into the national ___.",
+     "answers": [
+      "grid"
+     ],
+     "why": {
+      "tr": "\"the national grid\" = ulusal elektrik şebekesi. \"fed into the grid\" yaygın bir kalıptır.",
+      "ar": "the national grid أي الشبكة الوطنية للكهرباء، وfed into the grid تعبير شائع.",
+      "en": "\"The (national) grid\" is the electricity network."
+     },
+     "example": "Extra electricity from the wind farm is sold to the grid."
+    },
+    {
+     "type": "choice",
+     "id": "w6",
+     "prompt": "Which phrase means \"using less energy to do the same job\"?",
+     "options": [
+      "energy efficiency",
+      "energy storage",
+      "carbon emissions",
+      "nuclear power"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "\"energy efficiency\" aynı işi daha az enerjiyle yapmaktır (örneğin LED ampuller). \"energy storage\" enerjiyi saklamaktır.",
+      "ar": "energy efficiency تعني إنجاز العمل نفسه بطاقة أقل (مثل مصابيح LED)، أما energy storage فهي تخزين الطاقة.",
+      "en": "Efficiency = the same result with less energy."
+     },
+     "example": "LED bulbs have greatly improved energy efficiency in homes."
+    }
+   ]
+  },
+  {
+   "kind": "listen",
+   "i18n": {"ar":{"title":"الاستماع · Part 4: مشكلة التوقيت في الطاقة المتجددة","intro":"في محاضرة عن هندسة الطاقة، يشرح أستاذ أكبر مشكلة تواجه طاقة الرياح والطاقة الشمسية وأربعة حلول ممكنة. اقرأ الملاحظات أولًا. يُشغَّل التسجيل مرة واحدة.","tip":"في Part 4 يعلن المتحدث البنية: \"let me outline four approaches… The first… The second…\". هذه الكلمات تبيّن لك موضعك في الملاحظات. في إكمال الملاحظات تكون الإجابة عادةً الكلمة نفسها التي تسمعها في المحاضرة، لكن جملة السؤال مكتوبة بكلمات مختلفة."},"en":{"title":"Listening · Part 4: renewable energy's timing problem","intro":"In an energy engineering lecture, a lecturer explains the biggest problem with wind and solar power and four possible solutions. Read the notes first. The recording plays once.","tip":"In Part 4 the speaker announces the structure: \"let me outline four approaches… The first… The second…\". These words show where you are in the notes. In note completion the answer is usually the same word you hear in the lecture, but the question sentence is written in different words."}},
+   "title": "Dinleme · Part 4: yenilenebilir enerjinin zamanlama sorunu",
+   "intro": "Enerji mühendisliği dersinde bir öğretim üyesi, rüzgâr ve güneş enerjisinin en büyük sorununu ve dört olası çözümü anlatıyor. Önce notları oku. Kayıt bir kez çalar.",
+   "tip": "Part 4'te konuşmacı yapıyı söyler: \"let me outline four approaches… The first… The second…\". Bu sözcükler notlarda nerede olduğunu gösterir. Not tamamlamada cevap genelde ders dinlerken duyduğun kelimenin aynısıdır, ama soru cümlesi farklı kelimelerle yazılmıştır.",
+   "audio": {
+    "type": "audio",
+    "id": "l-audio",
+    "speakers": {
+     "N": {
+      "name": "Narrator",
+      "voice": "en-GB-SoniaNeural"
+     },
+     "lecturer": {
+      "name": "Lecturer",
+      "voice": "en-AU-WilliamMultilingualNeural"
+     }
+    },
+    "lines": [
+     {
+      "speaker": "N",
+      "text": "You will hear part of a lecture about renewable energy. First, you have some time to look at questions one to six.",
+      "pauseAfterMs": 2500
+     },
+     {
+      "speaker": "N",
+      "text": "Now listen carefully and answer questions one to six.",
+      "pauseAfterMs": 1200
+     },
+     {
+      "speaker": "lecturer",
+      "text": "Good afternoon. Today I'm going to look at what is often called the central problem of renewable energy. Not only has the cost of solar power and wind turbines fallen dramatically over the past fifteen years or so, but in many places they are now the cheapest way to generate new electricity. So the problem is no longer price. The problem is timing.",
+      "pauseAfterMs": 500
+     },
+     {
+      "speaker": "lecturer",
+      "text": "Fossil fuels have one great advantage: you can burn coal or gas whenever you need power. The sun and the wind, by contrast, are intermittent. Solar panels produce nothing at night, and wind output can drop sharply on a still, cloudy day in winter, which is precisely when demand for heating and lighting is highest.",
+      "pauseAfterMs": 500
+     },
+     {
+      "speaker": "lecturer",
+      "text": "Engineers sometimes call such a period a dark calm. Rarely does a single technology solve this problem, so let me outline four approaches.",
+      "pauseAfterMs": 500
+     },
+     {
+      "speaker": "lecturer",
+      "text": "The first is energy storage. Most people think of batteries, and large battery sites are certainly being built. But batteries are best at storing power for a few hours, not for days or weeks.",
+      "pauseAfterMs": 500
+     },
+     {
+      "speaker": "lecturer",
+      "text": "The oldest and still the largest form of storage is actually water. In pumped storage schemes, spare electricity is used to pump water uphill into a reservoir, and when power is needed, the water flows back down through turbines. It's a simple idea, and it has been used for decades, but it needs hills or mountains, which not every country has.",
+      "pauseAfterMs": 500
+     },
+     {
+      "speaker": "lecturer",
+      "text": "Researchers are also testing other options, such as storing energy as heat or as hydrogen, but these are still expensive.",
+      "pauseAfterMs": 500
+     },
+     {
+      "speaker": "lecturer",
+      "text": "The second approach is to connect countries. The grid in one country can be linked by undersea cables to its neighbours, so that when the wind isn't blowing in one place, power can be imported from somewhere it is. Under no circumstances, however, should we imagine that this is easy: these projects take many years and involve difficult agreements between governments.",
+      "pauseAfterMs": 500
+     },
+     {
+      "speaker": "lecturer",
+      "text": "Third, demand itself can become more flexible. At present, the system adjusts supply to match demand. In future, demand will increasingly follow supply. Electric cars, for instance, can be charged automatically when electricity is plentiful and cheap, often during the night. Smart meters allow prices to change by the hour, encouraging people to run washing machines when the sun is shining.",
+      "pauseAfterMs": 500
+     },
+     {
+      "speaker": "lecturer",
+      "text": "The fourth approach is the least glamorous: energy efficiency. The cheapest unit of energy is the one you never use. Insulating old houses, for example, reduces the demand for heating in exactly those cold winter weeks when renewables struggle. Only recently have governments begun to treat efficiency as seriously as building new power stations.",
+      "pauseAfterMs": 500
+     },
+     {
+      "speaker": "lecturer",
+      "text": "Finally, a word on nuclear power. Some countries see it as a sustainable, low-carbon source of steady electricity; others plan to phase out their reactors because of concerns about cost, safety and waste. I'll leave that debate for next week's seminar. What is clear is that cutting carbon emissions will require a combination of all these approaches rather than one single technology.",
+      "pauseAfterMs": 1500
+     },
+     {
+      "speaker": "N",
+      "text": "That is the end of the recording.",
+      "pauseAfterMs": 0
+     }
+    ]
+   },
+   "questions": [
+    {
+     "type": "text",
+     "text": "Questions 1–6. Complete the notes below. Write ONE WORD ONLY for each answer."
+    },
+    {
+     "type": "text",
+     "text": "The timing problem of renewable energy"
+    },
+    {
+     "type": "gap",
+     "id": "l1",
+     "prompt": "1. Unlike fossil fuels, the sun and the wind are ___ (not always available).",
+     "answers": [
+      "intermittent"
+     ],
+     "why": {
+      "tr": "\"The sun and the wind, by contrast, are intermittent.\" \"intermittent\" = aralıklı, sürekli olmayan; parantezdeki açıklama bunu tanımlıyor.",
+      "ar": "\"The sun and the wind, by contrast, are intermittent.\" وكلمة intermittent تعني متقطّع وغير متوفر دائمًا.",
+      "en": "\"The sun and the wind, by contrast, are intermittent.\""
+     },
+     "example": "Wind power is intermittent, so it needs a back-up."
+    },
+    {
+     "type": "gap",
+     "id": "l2",
+     "prompt": "2. Hardest time for renewables: a still, cloudy day in ___",
+     "answers": [
+      "winter"
+     ],
+     "why": {
+      "tr": "\"on a still, cloudy day in winter, which is precisely when demand… is highest\". \"night\" de geçiyor ama soru \"day\" diyor.",
+      "ar": "\"on a still, cloudy day in winter\". كلمة night مذكورة لكن السؤال عن day.",
+      "en": "\"A still, cloudy day in winter.\""
+     },
+     "example": "Demand for electricity is highest on cold winter evenings."
+    },
+    {
+     "type": "gap",
+     "id": "l3",
+     "prompt": "3. Storage: the largest form of storage uses ___",
+     "answers": [
+      "water"
+     ],
+     "why": {
+      "tr": "\"Most people think of batteries… But… The oldest and still the largest form of storage is actually water.\" Piller (batteries) tuzak.",
+      "ar": "\"Most people think of batteries… The oldest and still the largest form of storage is actually water.\" البطاريات فخّ.",
+      "en": "\"The largest form of storage is actually water.\" Batteries are the trap."
+     },
+     "example": "Pumped storage uses water and two reservoirs."
+    },
+    {
+     "type": "gap",
+     "id": "l4",
+     "prompt": "4. Connecting countries: grids are linked by undersea ___",
+     "answers": [
+      "cables"
+     ],
+     "why": {
+      "tr": "\"linked by undersea cables to its neighbours\". Çoğul isim gerekir: cables.",
+      "ar": "\"linked by undersea cables to its neighbours\". نحتاج إلى اسم بصيغة الجمع: cables.",
+      "en": "\"Linked by undersea cables.\""
+     },
+     "example": "Undersea cables carry electricity between the two countries."
+    },
+    {
+     "type": "gap",
+     "id": "l5",
+     "prompt": "5. Flexible demand: electric cars are charged when electricity is ___ and cheap",
+     "answers": [
+      "plentiful"
+     ],
+     "why": {
+      "tr": "\"when electricity is plentiful and cheap, often during the night\". \"plentiful\" = bol.",
+      "ar": "\"when electricity is plentiful and cheap\"، وplentiful تعني وفيرًا.",
+      "en": "\"When electricity is plentiful and cheap.\""
+     },
+     "example": "Fruit is cheap in summer, when it is plentiful."
+    },
+    {
+     "type": "gap",
+     "id": "l6",
+     "prompt": "6. Efficiency: insulating old ___ reduces heating demand in winter",
+     "answers": [
+      "houses"
+     ],
+     "why": {
+      "tr": "\"Insulating old houses, for example, reduces the demand for heating\". Çoğul: houses.",
+      "ar": "\"Insulating old houses… reduces the demand for heating\"، بصيغة الجمع: houses.",
+      "en": "\"Insulating old houses.\""
+     },
+     "example": "Insulating old houses can cut heating bills by a large amount."
+    }
+   ]
+  },
+  {
+   "kind": "read",
+   "i18n": {"ar":{"title":"القراءة: الاختيار من متعدد وإكمال الملخص","intro":"ستقرأ نصًا عن كيف غيّرت البشرية مصادر طاقتها عبر التاريخ، ولماذا يختلف التحول الحالي.","tip":"في إكمال الملخص حدّد أولًا الفقرات التي يغطيها الملخص. انظر إلى الكلمات قبل الفراغ وبعده وخمّن نوع الكلمة المطلوبة (اسم، صفة، فعل). انقل الكلمة من النص كما هي ولا تخطئ في تهجئتها."},"en":{"title":"Reading: multiple choice and summary completion","intro":"You will read a text about how humanity has changed its energy sources through history and why today's transition is different.","tip":"In summary completion, first find which paragraphs the summary covers. Look at the words before and after the gap and guess what kind of word is needed (noun, adjective, verb). Copy the word exactly from the text and don't misspell it."}},
+   "title": "Okuma: çoktan seçmeli ve özet tamamlama",
+   "intro": "İnsanlığın enerji kaynaklarını tarih boyunca nasıl değiştirdiğini ve bugünkü geçişin neden farklı olduğunu anlatan bir metin okuyacaksın.",
+   "tip": "Özet tamamlamada önce özetin hangi paragrafları kapsadığını bul. Boşluğun önündeki ve arkasındaki kelimelere bakıp hangi tür kelime (isim, sıfat, fiil) gerektiğini tahmin et. Kelimeyi metinden aynen al ve yazım hatası yapma.",
+   "passage": [
+    {
+     "type": "heading",
+     "text": "Energy Transitions: Lessons from History"
+    },
+    {
+     "type": "text",
+     "text": "For most of human history, the main sources of energy were human and animal muscle, together with the burning of wood. The shift to coal, which began in Britain in the eighteenth century and spread across Europe and North America during the nineteenth, is often described as a sudden revolution. In reality it was remarkably slow. Coal had been used for centuries before steam engines made it essential, and worldwide it did not overtake wood and other traditional fuels until around the beginning of the twentieth century. The next great shift, from coal to oil, followed a similar pattern: oil was first used commercially in the nineteenth century, yet it took roughly another hundred years to become the world's leading source of energy."
+    },
+    {
+     "type": "text",
+     "text": "Historians suggest several reasons for this slow pace. Energy systems involve enormous investments in mines, pipelines, power stations and transport networks, and these are expected to operate for decades. Moreover, a new fuel rarely replaces an old one completely. Instead, it is added on top, as total demand grows. Never before, in fact, has humanity entirely abandoned a major source of energy: the world still burns more coal today than it did in the age of steam."
+    },
+    {
+     "type": "text",
+     "text": "The current transition to renewable energy differs from earlier ones in at least two important ways. First, previous shifts were driven by the advantages of the new fuel. Coal contained more energy than wood, and oil was easier to transport than coal. The move away from fossil fuels, by contrast, is driven largely by a problem that does not appear on any energy bill: the carbon emissions that are changing the climate. Second, past transitions happened without any deadline. This time, many governments have set targets for reaching net-zero emissions, often around the middle of this century, which would require change at an unprecedented speed."
+    },
+    {
+     "type": "text",
+     "text": "There are, nevertheless, reasons for cautious optimism. The cost of electricity from solar power and wind turbines has fallen dramatically, and in many regions they are now among the cheapest ways to generate new electricity. Unlike coal mines or oil fields, a solar farm can be built in months rather than years, and panels can be installed on individual roofs as well as in vast fields. Not only does this allow rapid growth, but it also gives households and small communities a direct role in producing energy. In several countries, farmers now earn a regular income by leasing land for wind turbines, and schools and hospitals cover part of their own needs with panels on their roofs. These local benefits have helped to build public support for renewable energy in places where large projects might otherwise have met strong opposition."
+    },
+    {
+     "type": "text",
+     "text": "The obstacles, however, are also considerable, and it would be naive to ignore them. Because sunshine and wind vary, a sustainable system needs large-scale energy storage and a stronger, more flexible grid that can move electricity over long distances. Heavy industries such as steel and cement production, as well as aviation and shipping, are difficult to run on electricity at all. Furthermore, the minerals needed for batteries and turbines must be mined somewhere, which raises its own environmental and social questions. Some countries regard nuclear power as a necessary source of steady, low-carbon electricity, while others have decided to phase out their reactors."
+    },
+    {
+     "type": "text",
+     "text": "Perhaps the most underrated tool is energy efficiency. Well-insulated buildings, efficient motors and modern lighting reduce demand without any loss of comfort, making every other part of the transition easier. History suggests that energy transitions are slow, but it also shows that they do happen, and that the decisions made by one generation shape the energy choices of the next."
+    }
+   ],
+   "questions": [
+    {
+     "type": "heading",
+     "text": "Questions 1–3: Choose the correct letter."
+    },
+    {
+     "type": "choice",
+     "id": "r1",
+     "prompt": "1. What does the writer say about the shift from wood to coal?",
+     "options": [
+      "It happened suddenly because of the steam engine.",
+      "It took much longer than is often believed.",
+      "It began in North America.",
+      "It ended the use of wood completely."
+     ],
+     "answer": 1,
+     "why": {
+      "tr": "Paragraf 1: \"is often described as a sudden revolution. In reality it was remarkably slow.\" Yani sanılandan çok daha uzun sürdü.",
+      "ar": "الفقرة الأولى: \"is often described as a sudden revolution. In reality it was remarkably slow.\" أي استغرق وقتًا أطول بكثير مما يُعتقد.",
+      "en": "\"Often described as a sudden revolution. In reality it was remarkably slow.\""
+     },
+     "example": "The change is often seen as sudden, but in reality it was slow."
+    },
+    {
+     "type": "choice",
+     "id": "r2",
+     "prompt": "2. According to the second paragraph, why do new energy sources not replace old ones completely?",
+     "options": [
+      "Old fuels are always cheaper.",
+      "Governments protect old industries.",
+      "New fuels are added as total energy use rises.",
+      "People do not trust new technology."
+     ],
+     "answer": 2,
+     "why": {
+      "tr": "Paragraf 2: \"a new fuel rarely replaces an old one completely. Instead, it is added on top, as total demand grows.\"",
+      "ar": "الفقرة الثانية: \"a new fuel rarely replaces an old one completely. Instead, it is added on top, as total demand grows.\"",
+      "en": "\"It is added on top, as total demand grows.\""
+     },
+     "example": "New technologies are often added on top of old ones."
+    },
+    {
+     "type": "choice",
+     "id": "r3",
+     "prompt": "3. How is the current transition different from earlier ones?",
+     "options": [
+      "It is driven mainly by the need to reduce emissions.",
+      "It is based on a fuel with more energy.",
+      "It has no time limit.",
+      "It is happening more slowly."
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "Paragraf 3: eski geçişler yeni yakıtın avantajlarıyla oldu; bugünkü ise \"driven largely by… the carbon emissions that are changing the climate\". C yanlış: bu kez hedefler (deadline) var.",
+      "ar": "الفقرة الثالثة: التحول الحالي \"driven largely by… the carbon emissions\". الخيار C خطأ لأن هناك مواعيد محددة هذه المرة.",
+      "en": "\"Driven largely by… the carbon emissions that are changing the climate.\""
+     },
+     "example": "This change is driven mainly by concern about the climate."
+    },
+    {
+     "type": "heading",
+     "text": "Questions 4–7: Complete the summary. Choose ONE WORD ONLY from the passage for each answer."
+    },
+    {
+     "type": "text",
+     "text": "Renewables: progress and problems"
+    },
+    {
+     "type": "gap",
+     "id": "r4",
+     "prompt": "4. Solar farms can be built quickly, in a matter of ___ rather than years.",
+     "answers": [
+      "months"
+     ],
+     "why": {
+      "tr": "Paragraf 4: \"a solar farm can be built in months rather than years\". \"years\" zaten verilmiş; cevap months.",
+      "ar": "الفقرة الرابعة: \"a solar farm can be built in months rather than years\"، والجواب months.",
+      "en": "\"Built in months rather than years.\""
+     },
+     "example": "The bridge was finished in months rather than years."
+    },
+    {
+     "type": "gap",
+     "id": "r5",
+     "prompt": "5. Because sunshine and wind vary, the system needs storage and a stronger, more flexible ___.",
+     "answers": [
+      "grid"
+     ],
+     "why": {
+      "tr": "Paragraf 5: \"large-scale energy storage and a stronger, more flexible grid\". Boşluktan önce \"more flexible\" var, aynı ifade.",
+      "ar": "الفقرة الخامسة: \"large-scale energy storage and a stronger, more flexible grid\".",
+      "en": "\"A stronger, more flexible grid.\""
+     },
+     "example": "The country needs a more flexible grid to use more wind power."
+    },
+    {
+     "type": "gap",
+     "id": "r6",
+     "prompt": "6. Sectors such as steel, cement, aviation and ___ are hard to run on electricity.",
+     "answers": [
+      "shipping"
+     ],
+     "why": {
+      "tr": "Paragraf 5: \"Heavy industries such as steel and cement production, as well as aviation and shipping, are difficult to run on electricity\".",
+      "ar": "الفقرة الخامسة: \"steel and cement production, as well as aviation and shipping, are difficult to run on electricity\".",
+      "en": "\"As well as aviation and shipping.\""
+     },
+     "example": "Shipping is one of the hardest industries to electrify."
+    },
+    {
+     "type": "gap",
+     "id": "r7",
+     "prompt": "7. Better ___, such as insulation and modern lighting, reduces demand without any loss of comfort.",
+     "answers": [
+      "efficiency"
+     ],
+     "why": {
+      "tr": "Paragraf 6: \"the most underrated tool is energy efficiency. Well-insulated buildings… reduce demand without any loss of comfort\".",
+      "ar": "الفقرة السادسة: \"the most underrated tool is energy efficiency… reduce demand without any loss of comfort\".",
+      "en": "\"Energy efficiency… reduce demand without any loss of comfort.\""
+     },
+     "example": "Better efficiency means lower bills."
+    }
+   ]
+  },
+  {
+   "kind": "language",
+   "i18n": {"ar":{"title":"اللغة: القلب بعد الظروف المنفية (Not only…, Rarely…)"},"en":{"title":"Language: inversion after negative adverbials (Not only…, Rarely…)"}},
+   "title": "Dil: olumsuz zarflardan sonra devrik yapı (Not only…, Rarely…)",
+   "explain": {
+    "tr": "Resmî yazıda ve sunumlarda vurgu yapmak için olumsuz ya da kısıtlayıcı bir zarfı cümlenin başına alıp soru düzenini (yardımcı fiil + özne) kullanırsın. Not only + yardımcı fiil + özne…, but (also)…: \"Not only is solar power cheap, but it is also quick to install.\" Rarely / Seldom / Never (before) + yardımcı fiil + özne: \"Rarely does one technology solve every problem.\" Only recently / Only then + yardımcı fiil + özne: \"Only recently have governments taken efficiency seriously.\" Under no circumstances + yardımcı fiil + özne: \"Under no circumstances should the plant be left unattended.\" Geniş zaman ve geçmişte yardımcı fiil yoksa do/does/did eklersin: \"Rarely does it…\", \"Not only did prices fall…\". Bu yapıyı bir denemede bir ya da iki kez kullan; fazlası doğal olmaz.",
+    "ar": "في الكتابة الرسمية والعروض نضع ظرفًا منفيًا أو مقيّدًا في أول الجملة ثم نقلب الترتيب كما في السؤال (فعل مساعد + فاعل) للتوكيد. Not only + فعل مساعد + فاعل…, but (also)…: Not only is solar power cheap, but it is also quick to install. وRarely / Seldom / Never (before) + فعل مساعد + فاعل: Rarely does one technology solve every problem. وOnly recently / Only then: Only recently have governments taken efficiency seriously. وUnder no circumstances: Under no circumstances should the plant be left unattended. في المضارع البسيط والماضي البسيط نضيف do/does/did: Rarely does it… / Not only did prices fall… استخدم هذا التركيب مرة أو مرتين في المقال فقط.",
+    "en": "In formal writing and presentations, you can put a negative or limiting adverbial first and then use question word order (auxiliary + subject) for emphasis. Not only + auxiliary + subject…, but (also)…: \"Not only is solar power cheap, but it is also quick to install.\" Rarely / Seldom / Never (before) + auxiliary + subject: \"Rarely does one technology solve every problem.\" Only recently / Only then + auxiliary + subject: \"Only recently have governments taken efficiency seriously.\" Under no circumstances + auxiliary + subject: \"Under no circumstances should the plant be left unattended.\" With the present or past simple, add do/does/did: \"Rarely does it…\", \"Not only did prices fall…\". Use it once or twice in an essay; more sounds unnatural."
+   },
+   "examples": [
+    "Not only has the price of solar panels fallen, but their efficiency has also improved.",
+    "Rarely does a country manage to phase out coal without investing heavily in alternatives.",
+    "Only recently have energy companies begun to take storage seriously.",
+    "Never before have so many households been able to generate their own electricity."
+   ],
+   "questions": [
+    {
+     "type": "choice",
+     "id": "g1",
+     "prompt": "Choose the correct sentence.",
+     "options": [
+      "Rarely the wind stops blowing for a whole week.",
+      "Rarely does the wind stop blowing for a whole week.",
+      "Rarely the wind does stop blowing for a whole week.",
+      "Rarely does the wind stops blowing for a whole week."
+     ],
+     "answer": 1,
+     "why": {
+      "tr": "\"Rarely\" başta ise soru düzeni gerekir: does + özne + yalın fiil (stop). Son seçenekte \"does\" ile \"stops\" birlikte kullanılmış: yanlış.",
+      "ar": "عندما تبدأ الجملة بـ Rarely نستخدم ترتيب السؤال: does + فاعل + فعل مجرد (stop). في الخيار الأخير does مع stops وهذا خطأ.",
+      "en": "Rarely + does + subject + base verb."
+     },
+     "example": "Rarely does it snow in this part of the country."
+    },
+    {
+     "type": "choice",
+     "id": "g2",
+     "prompt": "Complete: Not only ___ cheaper to run, but it also produces no emissions.",
+     "options": [
+      "is an electric car",
+      "an electric car is",
+      "does an electric car",
+      "an electric car does be"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "Not only + yardımcı fiil + özne: \"is an electric car\". Cümlede fiil \"be\" olduğu için \"does\" eklenmez.",
+      "ar": "Not only + فعل مساعد + فاعل: is an electric car. الفعل هنا be فلا نضيف does.",
+      "en": "With \"be\", invert the verb itself: Not only is…"
+     },
+     "example": "Not only is the train faster, but it is also cheaper."
+    },
+    {
+     "type": "gap",
+     "id": "g3",
+     "prompt": "Write ONE word: Only recently ___ scientists found a cheap way to store electricity for several days.",
+     "answers": [
+      "have"
+     ],
+     "why": {
+      "tr": "\"Only recently\" + yardımcı fiil + özne. \"recently\" ve \"found\" (V3) present perfect gösteriyor: have scientists found.",
+      "ar": "Only recently + فعل مساعد + فاعل. وجود recently وfound (التصريف الثالث) يدل على المضارع التام: have scientists found.",
+      "en": "Present perfect with inversion: Only recently have scientists found…"
+     },
+     "example": "Only recently have we started recycling batteries."
+    },
+    {
+     "type": "choice",
+     "id": "g4",
+     "prompt": "Which sentence is a correct inversion of: \"Visitors should not enter the power station under any circumstances.\"",
+     "options": [
+      "Under no circumstances should visitors enter the power station.",
+      "Under no circumstances visitors should enter the power station.",
+      "Under no circumstances visitors should not enter the power station.",
+      "Under no circumstances do visitors should enter the power station."
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "Under no circumstances + should + özne + fiil. \"no\" zaten olumsuz, bu yüzden \"not\" eklenmez; \"do\" ile \"should\" birlikte kullanılmaz.",
+      "ar": "Under no circumstances + should + فاعل + فعل. كلمة no منفية أصلًا فلا نضيف not، ولا نجمع do مع should.",
+      "en": "Under no circumstances + modal + subject; no extra \"not\" or \"do\"."
+     },
+     "example": "Under no circumstances should you open this door."
+    },
+    {
+     "type": "gap",
+     "id": "g5",
+     "prompt": "Write ONE word: Never before ___ electricity from wind been so cheap.",
+     "answers": [
+      "has"
+     ],
+     "why": {
+      "tr": "\"Never before\" + yardımcı fiil + özne. \"been\" present perfect gösteriyor, özne tekil (electricity): has.",
+      "ar": "Never before + فعل مساعد + فاعل. وجود been يدل على المضارع التام، والفاعل مفرد: has.",
+      "en": "Never before + has + singular subject + been…"
+     },
+     "example": "Never before has the city been so crowded."
+    }
+   ]
+  },
+  {
+   "kind": "write",
+   "i18n": {"ar":{"title":"الكتابة · Task 1: جدول (تقرير كامل)","tip":"لا تكتب كل رقم في الجدول: اختر أكبر التغيرات. في الـ overview اذكر الاتجاهين الرئيسيين (انخفض الفحم، وارتفعت الرياح والطاقة الشمسية). ثم جمّع المصادر: المنخفضة، والمرتفعة، والثابتة. اكتب الأرقام بالوحدة الصحيحة (\"48%\"، \"a quarter\") واستخدم الكلمات \"renewable\" و\"fossil fuels\" و\"generate\"."},"en":{"title":"Writing · Task 1: a table (full report)","tip":"Don't write every number in the table: pick the biggest changes. In the overview, state the two main trends (coal fell; wind and solar rose). Then group the sources: those that fell, those that rose, those that stayed steady. Write figures with the right unit (\"48%\", \"a quarter\") and use the words \"renewable\", \"fossil fuels\" and \"generate\"."}},
+   "title": "Yazma · Task 1: tablo (tam rapor)",
+   "task": 1,
+   "prompt": "The table below shows the percentage of electricity generated from six sources in the country of Darnovia in 2000, 2010 and 2020.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+   "data": "Practice data (invented for this lesson; Darnovia is a fictional country).\nShare of electricity generated, by source (%)\nSource | 2000 | 2010 | 2020\nCoal | 48 | 37 | 14\nNatural gas | 22 | 30 | 33\nNuclear | 18 | 17 | 15\nWind | 1 | 7 | 24\nSolar | 0 | 2 | 9\nHydro and other | 11 | 7 | 5",
+   "minutes": 20,
+   "minWords": 150,
+   "tip": "Tabloda her sayıyı yazma: en büyük değişimleri seç. Overview'da iki ana eğilimi söyle (kömür düştü, rüzgâr ve güneş yükseldi). Sonra kaynakları grupla: düşenler, yükselenler, sabit kalanlar. Rakamları doğru birimle yaz (\"48%\", \"a quarter\") ve \"renewable\", \"fossil fuels\", \"generate\" kelimelerini kullan.",
+   "model": "The table compares the proportion of electricity that Darnovia generated from six different sources in 2000, 2010 and 2020.\n\nOverall, the country moved away from coal and towards renewable sources over the period. Coal went from being the largest source to one of the smallest, while wind and solar power grew rapidly from almost nothing.\n\nIn 2000, fossil fuels dominated electricity production, with coal alone accounting for almost half (48%) and natural gas for a further 22%. Over the next two decades, however, the share of coal fell steadily, to 37% in 2010 and just 14% in 2020. Natural gas moved in the opposite direction, rising to 33%, which made it the leading source by the end of the period.\n\nThe most dramatic growth was in wind energy, which increased from only 1% to almost a quarter of all electricity (24%). Solar power, which played no part in 2000, reached 9% by 2020. By contrast, the remaining sources declined slightly: nuclear power fell from 18% to 15%, and hydro and other sources from 11% to 5%."
+  },
+  {
+   "kind": "speak",
+   "i18n": {"ar":{"title":"المحادثة: الطاقة والمستقبل"},"en":{"title":"Speaking: energy and the future"}},
+   "title": "Konuşma: enerji ve gelecek",
+   "part1": [
+    "Do you try to save energy at home? How?",
+    "Is electricity expensive where you live?",
+    "Have you ever seen a wind farm or solar panels?",
+    "Would you like to drive an electric car in the future?"
+   ],
+   "card": {
+    "title": "Describe a change you have made, or would like to make, to use less energy.",
+    "points": [
+     "what the change is",
+     "when you made it, or when you plan to make it",
+     "how difficult it is"
+    ],
+    "explain": "and explain why you think this change is important."
+   },
+   "useful": [
+    "Not only does it save money, but it also…",
+    "Rarely do I think about it now; it's become a habit.",
+    "The main reason I started was the cost of…",
+    "I'd love to install solar panels, but…",
+    "In my country, most electricity is still generated from…",
+    "I think governments should phase out… and invest in…"
+   ]
+  }
+ ]
+}

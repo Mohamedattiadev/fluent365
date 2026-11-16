@@ -1,0 +1,776 @@
+{
+  "id": "lesson-38",
+  "number": 38,
+  "title": "Innovation and Entrepreneurship",
+  "topic": "Innovation & entrepreneurship",
+  "level": "B2+",
+  "goal": "Follow a student discussion and an academic text on start-ups and innovation, and connect ideas without overusing linkers (lexical chains, substitution, ellipsis).",
+  "steps": [
+    {
+      "kind": "words",
+      "i18n": {"ar":{"title":"المفردات: الابتكار وريادة الأعمال","intro":"ريادة الأعمال والابتكار تظهر في Task 2 في أسئلة التعليم (\"Should schools teach business skills?\") وأسئلة الاقتصاد. تتيح لك هذه الكلمات الاثنتا عشرة أن تشرح كيف تتحول الفكرة إلى مشروع (prototype, market research, business model) وما المخاطر (venture capital, scale up, risk-taking)."},"en":{"title":"Vocabulary: innovation and entrepreneurship","intro":"Entrepreneurship and innovation appear in Task 2 in both education questions (\"Should schools teach business skills?\") and economics questions. These 12 words let you explain how an idea becomes a business (prototype, market research, business model) and the risks (venture capital, scale up, risk-taking)."}},
+      "title": "Kelimeler: yenilik ve girişimcilik",
+      "intro": "Girişimcilik ve yenilik, Task 2'de hem eğitim (\"Should schools teach business skills?\") hem de ekonomi sorularında karşına çıkar. Bu 12 kelime, bir fikrin nasıl işe dönüştüğünü (prototype, market research, business model) ve riskleri (venture capital, scale up, risk-taking) anlatmanı sağlar.",
+      "words": [
+        {
+          "en": "entrepreneur",
+          "pos": "noun",
+          "tr": "girişimci",
+          "ar": "رائد أعمال",
+          "example": "The young entrepreneur started her company with savings from a part-time job."
+        },
+        {
+          "en": "start-up",
+          "pos": "noun",
+          "tr": "yeni kurulan şirket, girişim",
+          "ar": "شركة ناشئة",
+          "example": "Many start-ups fail within their first few years."
+        },
+        {
+          "en": "venture capital",
+          "pos": "phrase",
+          "tr": "girişim sermayesi",
+          "ar": "رأس المال الاستثماري (الجريء)",
+          "example": "The firm raised venture capital to expand into new markets."
+        },
+        {
+          "en": "innovation",
+          "pos": "noun",
+          "tr": "yenilik, inovasyon",
+          "ar": "الابتكار",
+          "example": "Innovation often comes from combining existing ideas in new ways."
+        },
+        {
+          "en": "prototype",
+          "pos": "noun",
+          "tr": "prototip, ilk örnek",
+          "ar": "نموذج أولي",
+          "example": "The engineers tested the prototype for six months before production."
+        },
+        {
+          "en": "market research",
+          "pos": "phrase",
+          "tr": "pazar araştırması",
+          "ar": "أبحاث السوق",
+          "example": "Market research showed that customers wanted a cheaper version."
+        },
+        {
+          "en": "business model",
+          "pos": "phrase",
+          "tr": "iş modeli (şirketin nasıl para kazandığı)",
+          "ar": "نموذج العمل",
+          "example": "The company's business model depends on monthly subscriptions."
+        },
+        {
+          "en": "scale up",
+          "pos": "phrasal verb",
+          "tr": "büyütmek, ölçeği artırmak",
+          "ar": "يوسّع نطاق (الإنتاج أو العمل)",
+          "example": "It is hard to scale up production without losing quality."
+        },
+        {
+          "en": "competitive advantage",
+          "pos": "phrase",
+          "tr": "rekabet avantajı",
+          "ar": "ميزة تنافسية",
+          "example": "Lower prices gave the new airline a competitive advantage."
+        },
+        {
+          "en": "disruptive",
+          "pos": "adjective",
+          "tr": "(sektörü) kökten değiştiren, yıkıcı",
+          "ar": "مُزعزِع؛ يغيّر السوق جذريًا",
+          "example": "Streaming was a disruptive technology for the music industry."
+        },
+        {
+          "en": "risk-taking",
+          "pos": "noun",
+          "tr": "risk alma",
+          "ar": "المخاطرة",
+          "example": "Some cultures are more tolerant of risk-taking than others."
+        },
+        {
+          "en": "go bankrupt",
+          "pos": "phrase",
+          "tr": "iflas etmek",
+          "ar": "يُفلس",
+          "example": "The shop went bankrupt after only eighteen months."
+        }
+      ],
+      "practice": [
+        {
+          "type": "choice",
+          "id": "w1",
+          "prompt": "An early model of a product, built to test the idea, is a ___.",
+          "options": [
+            "prototype",
+            "start-up",
+            "business model",
+            "venture"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Fikri test etmek için yapılan ilk örnek \"prototype\"tir. \"start-up\" şirketin kendisi, \"business model\" para kazanma yöntemidir.",
+            "ar": "النموذج الأول الذي يُصنع لاختبار الفكرة هو prototype. أما start-up فهي الشركة نفسها، وbusiness model طريقة تحقيق الربح.",
+            "en": "An early test model = prototype."
+          },
+          "example": "The team built a cardboard prototype of the app's screen."
+        },
+        {
+          "type": "choice",
+          "id": "w2",
+          "prompt": "Choose the correct verb: Before launching the product, the company ___ market research in three cities.",
+          "options": [
+            "carried out",
+            "made up",
+            "took over",
+            "set off"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Eşdizim \"carry out / conduct market research\". \"make up\" uydurmak, \"take over\" devralmak, \"set off\" yola çıkmak demektir.",
+            "ar": "التلازم الصحيح هو carry out (أو conduct) market research. أما make up فتعني يختلق، وtake over يستولي، وset off ينطلق.",
+            "en": "We carry out (conduct) research."
+          },
+          "example": "We carried out market research before choosing a name."
+        },
+        {
+          "type": "gap",
+          "id": "w3",
+          "prompt": "Write the correct form of INNOVATE: The company is known for its ___ designs.",
+          "answers": [
+            "innovative"
+          ],
+          "why": {
+            "tr": "İsimden (designs) önce sıfat gerekir: innovate (fiil) → innovative (sıfat).",
+            "ar": "قبل الاسم designs نحتاج إلى صفة: الفعل innovate يصبح الصفة innovative.",
+            "en": "An adjective before a noun: innovative."
+          },
+          "example": "Innovative products often start in small companies."
+        },
+        {
+          "type": "choice",
+          "id": "w4",
+          "prompt": "Which phrasal verb means \"to make a business or production much larger\"?",
+          "options": [
+            "scale up",
+            "cut back",
+            "wind down",
+            "set aside"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "\"scale up\" = büyütmek. \"cut back\" azaltmak, \"wind down\" yavaş yavaş kapatmak, \"set aside\" ayırmak demektir.",
+            "ar": "scale up تعني يوسّع. أما cut back فتعني يقلّص، وwind down يُنهي تدريجيًا، وset aside يخصّص.",
+            "en": "Scale up = make larger."
+          },
+          "example": "The bakery scaled up quickly after winning a supermarket contract."
+        },
+        {
+          "type": "gap",
+          "id": "w5",
+          "prompt": "Write ONE word: The new café went ___ after a year because rents were too high.",
+          "answers": [
+            "bankrupt"
+          ],
+          "why": {
+            "tr": "Kalıp \"go bankrupt\" = iflas etmek. \"go\" burada \"become\" anlamında.",
+            "ar": "التعبير هو go bankrupt (يُفلس)، وgo هنا بمعنى become.",
+            "en": "\"Go bankrupt\" = become unable to pay debts."
+          },
+          "example": "Several airlines went bankrupt during the crisis."
+        },
+        {
+          "type": "choice",
+          "id": "w6",
+          "prompt": "A technology that completely changes how an industry works is described as ___.",
+          "options": [
+            "disruptive",
+            "competitive",
+            "profitable",
+            "sustainable"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Bir sektörü kökten değiştiren yenilik \"disruptive\"dir. \"competitive\" rekabetçi, \"profitable\" kârlı, \"sustainable\" sürdürülebilir demektir.",
+            "ar": "الابتكار الذي يغيّر الصناعة جذريًا يوصف بـ disruptive. أما competitive فتعني تنافسي، وprofitable مربح، وsustainable مستدام.",
+            "en": "Changing an industry completely = disruptive."
+          },
+          "example": "Online shopping has been disruptive for traditional bookshops."
+        }
+      ]
+    },
+    {
+      "kind": "listen",
+      "i18n": {"ar":{"title":"الاستماع · Part 3: دراسة حالة عن شركة ناشئة","intro":"طالبا إدارة أعمال، Leo وMaya، يخططان لدراسة حالة عن شركة ناشئة تصنع مواد تغليف من الأعشاب البحرية. تسجيل Part 3 بطول الامتحان. اقرأ الأسئلة أولًا؛ يُشغَّل التسجيل مرة واحدة فقط.","tip":"في أسئلة المطابقة في Part 3 يقترح أحد الطالبين شيئًا ويرفضه الآخر: \"We could take it out altogether…\" — \"I'd rather we…\". يتضح القرار النهائي عادةً باقتراح المتحدث الثاني يليه \"Fair enough\" أو \"Agreed\". ورود خيار ما في التسجيل لا يعني أنه الإجابة الصحيحة."},"en":{"title":"Listening · Part 3: a case study of a start-up","intro":"Two business students, Leo and Maya, plan a case study of a start-up that makes packaging from seaweed. An exam-length Part 3 recording. Read the questions first; the recording plays once.","tip":"In Part 3 matching questions one student suggests something and the other rejects it: \"We could take it out altogether…\" — \"I'd rather we…\". The final decision is usually the second speaker's suggestion followed by \"Fair enough\" or \"Agreed\". An option being mentioned in the recording does not mean it is the right answer."}},
+      "title": "Dinleme · Part 3: bir girişim üzerine vaka çalışması",
+      "intro": "İki işletme öğrencisi, Leo ve Maya, deniz yosunundan ambalaj üreten bir girişim hakkındaki vaka çalışmalarını planlıyor. Sınav uzunluğunda bir Part 3 kaydı. Önce soruları oku; kayıt bir kez çalar.",
+      "tip": "Part 3 eşleştirme sorularında bir öğrenci bir öneri yapar, diğeri reddeder: \"We could take it out altogether…\" — \"I'd rather we…\". Son karar genellikle ikinci konuşmacının önerisi ve ardından gelen \"Fair enough\" ya da \"Agreed\" ile netleşir. Bir seçeneğin kayıtta geçmesi doğru cevap olduğu anlamına gelmez.",
+      "audio": {
+        "type": "audio",
+        "id": "l-audio",
+        "speakers": {
+          "N": {
+            "name": "Narrator",
+            "voice": "en-GB-SoniaNeural"
+          },
+          "leo": {
+            "name": "Leo",
+            "voice": "en-GB-RyanNeural"
+          },
+          "maya": {
+            "name": "Maya",
+            "voice": "en-US-AvaNeural"
+          }
+        },
+        "lines": [
+          {
+            "speaker": "N",
+            "text": "You will hear two business students, Leo and Maya, discussing a case study they are writing. First, you have some time to look at questions one to six.",
+            "pauseAfterMs": 2500
+          },
+          {
+            "speaker": "N",
+            "text": "Now listen carefully and answer questions one to six.",
+            "pauseAfterMs": 1200
+          },
+          {
+            "speaker": "leo",
+            "text": "So, Maya, have you had a chance to look at the notes from the interview with Kelpwise's founder?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "maya",
+            "text": "I have. It's fascinating. I hadn't realised how close they came to going under in the first year.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "leo",
+            "text": "Me neither. I'd assumed that once they'd built the prototype, investors would be queuing up. But apparently nobody wanted to fund a packaging company. Investors wanted apps.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "maya",
+            "text": "Which is interesting for our report, because the assignment asks us to explain what made the business succeed, and the obvious answer is the product. Seaweed packaging that dissolves in water: it's clever. But I don't think that's really the answer.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "leo",
+            "text": "No? What would you say, then?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "maya",
+            "text": "I think it was the business model. They didn't try to sell to supermarkets, which is what everyone expected. They went to festival organisers and food markets first, small customers who'd pay a bit more to look green. That gave them an income while they improved the product.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "leo",
+            "text": "True. And their market research was much more modest than I'd imagined. The founder said they basically stood at three food markets for a weekend and asked stallholders what annoyed them about plastic.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "maya",
+            "text": "Which cost almost nothing. I think that's a useful point: innovation doesn't have to begin in a laboratory.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "leo",
+            "text": "OK, so let's make the business model the centre of the report. What about the section on the company's history? It's nearly a thousand words at the moment.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "maya",
+            "text": "It's far too long. Most of it is just dates. Let's cut it down to a paragraph or two and keep only what explains their decisions.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "leo",
+            "text": "Agreed. And the competitor analysis?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "maya",
+            "text": "That's the weakest part. We've only got one competitor in there, and the figures come from the company's own website, so they're hardly neutral.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "leo",
+            "text": "We could take it out altogether…",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "maya",
+            "text": "I'd rather we strengthened it. If we're arguing that Kelpwise had a competitive advantage, we need evidence. Let's find some independent data on the packaging industry.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "leo",
+            "text": "Fair enough. That'll take a day or two, but it's worth it. Now, the last section is meant to be about risk.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "maya",
+            "text": "Right. I thought we could look at how the founder talks about failure. She said something striking: that her previous start-up, which went bankrupt, taught her more than four years at university.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "leo",
+            "text": "It's a nice quote, but we should be careful not to romanticise failure. Most people who lose their savings in a failed business don't describe it as a learning experience. And not everyone can afford that kind of risk. She had family support, remember.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "maya",
+            "text": "Good point. Maybe that's our conclusion: that risk-taking is easier for some people than for others, and that's something policy could address. Some countries offer small loans to first-time entrepreneurs, for example, which reduces the personal cost of trying.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "leo",
+            "text": "I like that. It links the case study to a wider argument. What about the future? The founder talked a lot about scaling up.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "maya",
+            "text": "Yes, that's their big challenge now. Supermarkets are interested, but producing enough packaging at a low enough price is a completely different problem from making a few thousand units for festivals.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "leo",
+            "text": "And they've just had an offer from a venture capital firm, haven't they?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "maya",
+            "text": "They have, but she hasn't decided whether to accept it. She's worried about losing control of the company. I think we should mention it, but as an open question.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "leo",
+            "text": "OK. Shall we meet on Thursday to put it all together?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "maya",
+            "text": "Thursday's fine. I'll bring the industry data.",
+            "pauseAfterMs": 1500
+          },
+          {
+            "speaker": "N",
+            "text": "That is the end of the recording.",
+            "pauseAfterMs": 0
+          }
+        ]
+      },
+      "questions": [
+        {
+          "type": "text",
+          "text": "Questions 1–2. Choose the correct letter."
+        },
+        {
+          "type": "choice",
+          "id": "l1",
+          "prompt": "1. What had Leo expected to happen once the prototype was built?",
+          "options": [
+            "Investors would be eager to fund the company.",
+            "Supermarkets would place large orders.",
+            "The company would go bankrupt.",
+            "Festival organisers would lose interest."
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Leo: \"I'd assumed that once they'd built the prototype, investors would be queuing up.\" \"queuing up\" = \"eager\". Süpermarketler herkesin beklediği müşteriydi, Leo'nun bu cümledeki beklentisi değil.",
+            "ar": "يقول Leo: \"I'd assumed that once they'd built the prototype, investors would be queuing up\". عبارة queuing up تعني eager. المتاجر الكبرى كانت ما توقّعه الجميع، لا توقّع Leo في هذه الجملة.",
+            "en": "\"I'd assumed that… investors would be queuing up.\""
+          },
+          "example": "After the TV programme, investors were queuing up to meet her."
+        },
+        {
+          "type": "choice",
+          "id": "l2",
+          "prompt": "2. According to Maya, what was the main reason for the company's success?",
+          "options": [
+            "the originality of the product",
+            "its choice of first customers and way of earning money",
+            "expensive laboratory research",
+            "support from a venture capital firm"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "Maya: \"the obvious answer is the product… But I don't think that's really the answer… I think it was the business model.\" Sonra küçük müşterilerle başlamayı anlatıyor. A, \"obvious answer\" olarak reddedilen tuzak.",
+            "ar": "تقول Maya إن الجواب الواضح هو المنتج لكنها لا تراه الجواب الحقيقي: I think it was the business model، ثم تشرح البدء بعملاء صغار. الخيار A فخّ.",
+            "en": "\"I think it was the business model\": small first customers who gave them income."
+          },
+          "example": "Their business model, not their product, explains their success."
+        },
+        {
+          "type": "text",
+          "text": "Questions 3–4. What do the students decide to do about each section of their report? Choose the correct answer. There are more options than you need."
+        },
+        {
+          "type": "choice",
+          "id": "l3",
+          "prompt": "3. the history of the company",
+          "options": [
+            "shorten it",
+            "remove it",
+            "add independent evidence",
+            "ask the founder about it",
+            "move it to the end"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Maya: \"It's far too long… Let's cut it down to a paragraph or two\" ve Leo: \"Agreed.\" \"cut it down\" = \"shorten it\".",
+            "ar": "تقول Maya: \"It's far too long… Let's cut it down to a paragraph or two\" ويوافق Leo. cut it down تعني shorten it.",
+            "en": "\"Let's cut it down to a paragraph or two.\" \"Agreed.\""
+          },
+          "example": "We need to cut this section down to one paragraph."
+        },
+        {
+          "type": "choice",
+          "id": "l4",
+          "prompt": "4. the competitor analysis",
+          "options": [
+            "shorten it",
+            "remove it",
+            "add independent evidence",
+            "ask the founder about it",
+            "move it to the end"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "Leo çıkarmayı öneriyor (\"take it out altogether\") ama Maya: \"I'd rather we strengthened it… Let's find some independent data\". Leo kabul ediyor: \"Fair enough.\" \"remove it\" tuzak.",
+            "ar": "يقترح Leo حذفه لكن Maya تقول: \"I'd rather we strengthened it… Let's find some independent data\"، ويوافق Leo بقوله Fair enough. الخيار remove it فخّ.",
+            "en": "Leo suggests removing it, but they agree to find independent data."
+          },
+          "example": "The report needs independent evidence, not figures from the company itself."
+        },
+        {
+          "type": "text",
+          "text": "Questions 5–6. Complete the sentences below. Write NO MORE THAN TWO WORDS for each answer."
+        },
+        {
+          "type": "gap",
+          "id": "l5",
+          "prompt": "5. Leo points out that the founder could take risks partly because she had ___.",
+          "answers": [
+            "family support"
+          ],
+          "why": {
+            "tr": "Leo: \"not everyone can afford that kind of risk. She had family support, remember.\" İki kelime: family support.",
+            "ar": "يقول Leo: \"not everyone can afford that kind of risk. She had family support, remember\". الجواب كلمتان: family support.",
+            "en": "\"She had family support, remember.\""
+          },
+          "example": "Without family support, she could not have left her job."
+        },
+        {
+          "type": "gap",
+          "id": "l6",
+          "prompt": "6. The founder has not accepted the investment offer because she is worried about losing ___ of the company.",
+          "answers": [
+            "control"
+          ],
+          "why": {
+            "tr": "Maya: \"She's worried about losing control of the company.\"",
+            "ar": "تقول Maya: \"She's worried about losing control of the company\".",
+            "en": "\"She's worried about losing control of the company.\""
+          },
+          "example": "Founders who accept large investments may lose control of their company."
+        }
+      ]
+    },
+    {
+      "kind": "read",
+      "i18n": {"ar":{"title":"القراءة: إكمال الملاحظات وTrue / False / Not Given","intro":"نص أكاديمي بطول الامتحان يشكّك في أسطورة \"العبقري المنفرد\" ويشرح كيف يعمل الابتكار وريادة الأعمال في الواقع. يقلّ في النص استخدام أدوات الربط (however, moreover)؛ إذ ترتبط الأفكار بالمرادفات وبالإحالات مثل \"this approach\" و\"such firms\": وهذا موضوع اللغة في هذا الدرس.","tip":"في إكمال الملاحظات تتبع الملاحظات ترتيب النص. ابحث عن مرادفات الكلمات المحيطة بالفراغ: \"paid for by\" ← \"funded by\". في TFNG قارن الجملة العامة (\"Most innovation…\") بجملة في النص بالدرجة نفسها من التعميم؛ فالمثال أو الاستثناء لا يُثبت الجملة العامة."},"en":{"title":"Reading: note completion and True / False / Not Given","intro":"An exam-length academic text that questions the \"lone genius\" myth and explains how innovation and entrepreneurship really work. The text uses few linking words (however, moreover); ideas are linked by synonyms and references like \"this approach\" and \"such firms\": this lesson's language point.","tip":"In note completion the notes follow the order of the text. Look for synonyms of the words around the gap: \"paid for by\" → \"funded by\". In TFNG compare a general statement (\"Most innovation…\") with an equally general sentence in the text; an example or exception does not prove a general statement."}},
+      "title": "Okuma: not tamamlama ve True / False / Not Given",
+      "intro": "\"Yalnız deha\" efsanesini sorgulayan, yeniliğin ve girişimciliğin gerçekte nasıl işlediğini anlatan sınav uzunluğunda akademik bir metin. Metin bağlaçları (however, moreover) az kullanıyor; fikirler eş anlamlılar ve \"this approach\", \"such firms\" gibi göndermelerle bağlanıyor: bu dersin dil konusu.",
+      "tip": "Not tamamlamada notlar metnin sırasını izler. Boşluğun etrafındaki kelimelerin eş anlamlısını ara: \"paid for by\" → \"funded by\". TFNG'de genel bir cümleyi (\"Most innovation…\") metindeki aynı genellikteki cümleyle karşılaştır; bir örnek ya da istisna genel cümleyi kanıtlamaz.",
+      "passage": [
+        {
+          "type": "heading",
+          "text": "The Myth of the Lone Genius"
+        },
+        {
+          "type": "text",
+          "text": "The popular image of innovation is a familiar one. A brilliant young founder, working alone or with a single friend in a garage, has an idea that no one else has had, builds a product against the odds and becomes extraordinarily rich. Stories of this kind are inspiring, and a few of them are even broadly accurate. They also tend to leave out the failures: for every founder who becomes a household name, many others with equally good ideas disappear without trace. As a general account of where new products and businesses come from, however, the image is seriously misleading, and the policies it encourages may do more harm than good."
+        },
+        {
+          "type": "text",
+          "text": "To begin with, innovation is rarely the work of one mind. Almost every successful product combines ideas, components and techniques developed by many other people, often over decades. The modern smartphone is a striking example. Many of the technologies inside it, including the internet and satellite positioning, originated in research funded by governments, often for military purposes, long before any company thought of selling them to consumers. The entrepreneur's real contribution is frequently to see how existing pieces can be combined into something people will pay for. That contribution is valuable, but it depends on a foundation laid by others. Teams matter, too: many successful companies are founded by several people whose skills complement one another, such as an engineer and someone who understands sales."
+        },
+        {
+          "type": "text",
+          "text": "The founder in the story is also usually young. Here, too, the evidence points elsewhere. Large studies of new firms in the United States have found that the founders of the most successful companies are, on average, in their forties rather than their twenties. Experience appears to matter: older founders tend to understand an industry from the inside, have networks of contacts and, crucially, possess savings or assets that make risk-taking more affordable. A young graduate with a promising idea but no capital and no professional contacts faces obstacles that a determined attitude alone cannot remove. This does not mean that young people should be discouraged from starting businesses, only that their chances improve when they first gain some knowledge of the field."
+        },
+        {
+          "type": "text",
+          "text": "It is worth distinguishing, too, between different kinds of innovation. The great majority consists of gradual improvements to existing products: a more efficient engine, a cheaper battery, a simpler checkout process. Disruptive innovation, a term popularised by the business scholar Clayton Christensen, describes something rarer. Disruptive products often begin in niche markets that established companies consider too small or too unprofitable to matter, and they improve until they eventually threaten the leaders. Early digital cameras, which produced poor images and were largely dismissed by the makers of film, are often cited as an example. Such firms, in other words, are often defeated not because they are badly run, but because they make perfectly sensible decisions for their existing customers."
+        },
+        {
+          "type": "text",
+          "text": "Whatever its form, innovation involves a high probability of failure. A large proportion of new businesses close within a few years, and even carefully designed products can find no buyers. Investors are well aware of this. The venture capital model is built on the expectation that most investments will lose money or merely break even, while a small number of exceptional successes will pay for all the rest. Careful market research and early testing of a prototype can reduce the risk, but they cannot eliminate it, and the challenges of scaling up production frequently prove harder than inventing the product in the first place. Many founders also underestimate how long it will take before the business earns enough to pay their own salary."
+        },
+        {
+          "type": "text",
+          "text": "If the lone genius is largely a myth, what follows for policy? First, public investment in universities and basic research is not a rival to private enterprise but one of its foundations. Second, places matter: entrepreneurs benefit from being close to skilled workers, suppliers and other firms, which is why innovation tends to cluster in particular cities, and programmes that bring researchers and business people together can help ideas leave the laboratory. Finally, the consequences of failure deserve attention. Some researchers have argued that bankruptcy laws which allow failed entrepreneurs to make a fresh start encourage more people to try. Societies that treat an unsuccessful business as a disgrace, rather than as an ordinary part of economic life, may unintentionally discourage the very risk-taking on which future prosperity depends."
+        }
+      ],
+      "questions": [
+        {
+          "type": "heading",
+          "text": "Questions 1–4: Complete the notes below."
+        },
+        {
+          "type": "text",
+          "text": "Write ONE WORD ONLY from the passage for each answer."
+        },
+        {
+          "type": "text",
+          "text": "Innovation: myth and reality"
+        },
+        {
+          "type": "gap",
+          "id": "r1",
+          "prompt": "1. Popular image: a young founder working in a ___ with perhaps one friend",
+          "answers": [
+            "garage"
+          ],
+          "why": {
+            "tr": "Paragraf 1: \"A brilliant young founder, working alone or with a single friend in a garage\".",
+            "ar": "الفقرة الأولى: \"A brilliant young founder, working alone or with a single friend in a garage\".",
+            "en": "\"Working alone or with a single friend in a garage.\""
+          },
+          "example": "Several famous companies are said to have started in a garage."
+        },
+        {
+          "type": "gap",
+          "id": "r2",
+          "prompt": "2. Technologies such as satellite positioning began in research paid for by ___",
+          "answers": [
+            "governments"
+          ],
+          "why": {
+            "tr": "Paragraf 2: \"originated in research funded by governments\". \"paid for by\" = \"funded by\".",
+            "ar": "الفقرة الثانية: \"originated in research funded by governments\". paid for by تعني funded by.",
+            "en": "\"Originated in research funded by governments.\""
+          },
+          "example": "Much early computer research was funded by governments."
+        },
+        {
+          "type": "gap",
+          "id": "r3",
+          "prompt": "3. Founders of the most successful firms: on average in their ___",
+          "answers": [
+            "forties"
+          ],
+          "why": {
+            "tr": "Paragraf 3: \"the founders of the most successful companies are, on average, in their forties rather than their twenties\". \"twenties\" tuzak.",
+            "ar": "الفقرة الثالثة: \"in their forties rather than their twenties\". كلمة twenties فخّ.",
+            "en": "\"In their forties rather than their twenties.\""
+          },
+          "example": "Many successful founders start their companies in their forties."
+        },
+        {
+          "type": "gap",
+          "id": "r4",
+          "prompt": "4. Disruptive products often start in ___ markets that large companies ignore",
+          "answers": [
+            "niche"
+          ],
+          "why": {
+            "tr": "Paragraf 4: \"Disruptive products often begin in niche markets that established companies consider too small or too unprofitable to matter\". \"ignore\" = \"consider too small to matter\".",
+            "ar": "الفقرة الرابعة: \"Disruptive products often begin in niche markets that established companies consider too small… to matter\".",
+            "en": "\"Often begin in niche markets that established companies consider too small.\""
+          },
+          "example": "The company started by serving a small niche market."
+        },
+        {
+          "type": "heading",
+          "text": "Questions 5–7: True, False or Not Given?"
+        },
+        {
+          "type": "text",
+          "text": "TRUE if the statement agrees with the information, FALSE if it contradicts the information, NOT GIVEN if there is no information on this."
+        },
+        {
+          "type": "tfng",
+          "id": "r5",
+          "statement": "5. Most innovation consists of small improvements to products that already exist.",
+          "answer": "true",
+          "why": {
+            "tr": "Paragraf 4: \"The great majority consists of gradual improvements to existing products\". \"most\" = \"the great majority\", \"small\" = \"gradual\": TRUE.",
+            "ar": "الفقرة الرابعة: \"The great majority consists of gradual improvements to existing products\": TRUE.",
+            "en": "\"The great majority consists of gradual improvements to existing products.\""
+          },
+          "example": "Most progress comes from gradual improvements."
+        },
+        {
+          "type": "tfng",
+          "id": "r6",
+          "statement": "6. Venture capital investors expect the majority of their investments to be profitable.",
+          "answer": "false",
+          "why": {
+            "tr": "Paragraf 5: \"built on the expectation that most investments will lose money or merely break even\". İfade bunun tersini söylüyor: FALSE.",
+            "ar": "الفقرة الخامسة: \"built on the expectation that most investments will lose money or merely break even\". العبارة تقول العكس: FALSE.",
+            "en": "\"Most investments will lose money or merely break even.\""
+          },
+          "example": "Investors expect most start-ups to fail."
+        },
+        {
+          "type": "tfng",
+          "id": "r7",
+          "statement": "7. Countries with more forgiving bankruptcy laws have higher average incomes.",
+          "answer": "not given",
+          "why": {
+            "tr": "Paragraf 6, bu yasaların daha fazla insanı girişimciliğe teşvik edebileceğini söylüyor, ama ortalama gelir hakkında hiçbir bilgi vermiyor: NOT GIVEN.",
+            "ar": "تذكر الفقرة السادسة أن هذه القوانين قد تشجّع مزيدًا من الناس على المحاولة، لكنها لا تقول شيئًا عن متوسط الدخل: NOT GIVEN.",
+            "en": "The text links these laws to more people trying, not to income levels."
+          },
+          "example": "The article does not compare average incomes."
+        }
+      ]
+    },
+    {
+      "kind": "language",
+      "i18n": {"ar":{"title":"اللغة: الربط دون إغراق النص بأدوات الربط (سلاسل المفردات، الاستبدال، الحذف)"},"en":{"title":"Language: cohesion without overusing linking words (lexical chains, substitution, ellipsis)"}},
+      "title": "Dil: bağlaçlara boğmadan bağlantı kurmak (sözcük zinciri, yerine koyma, eksiltme)",
+      "explain": {
+        "tr": "Pek çok öğrenci her cümleye \"Moreover\", \"Furthermore\", \"In addition\" koyar; sınav görevlileri bunu \"mechanical\" (mekanik) bağlantı olarak görür ve Coherence and Cohesion puanı 6'da kalır. Band 7+ metinler fikirleri başka yollarla bağlar. 1) Sözcük zinciri (lexical chain): aynı şeyi eş anlamlılarla tekrar et: start-up → the firm → the young company → such businesses. 2) Özet ismi ile gönderme: önceki fikri \"this + isim\" ile özetle: \"This approach…\", \"This trend…\", \"Such policies…\". 3) Yerine koyma (substitution): tekrar etmek yerine \"one/ones\", \"do so\", \"so/not\" kullan: \"Some founders accept investment; others refuse to do so.\" 4) Eksiltme (ellipsis): tekrar eden kısmı at: \"Some start-ups grow quickly; most (grow) slowly.\" Bağlaçları tamamen bırakma: paragraf başında ya da gerçek bir zıtlıkta \"However\" çok doğaldır; sadece her cümlede kullanma.",
+        "ar": "يضع كثير من الطلاب Moreover وFurthermore وIn addition في بداية كل جملة، ويعدّ الممتحنون ذلك ربطًا آليًا فتبقى درجة الترابط عند 6. أما نصوص Band 7+ فتربط الأفكار بطرق أخرى. 1) السلسلة المعجمية: كرّر الشيء نفسه بمرادفات: start-up ← the firm ← the young company ← such businesses. 2) الإحالة باسم يلخّص: لخّص الفكرة السابقة بـ this + اسم: This approach… / This trend… / Such policies…. 3) الاستبدال: بدل التكرار استخدم one/ones وdo so وso/not: Some founders accept investment; others refuse to do so. 4) الحذف: احذف الجزء المكرر: Some start-ups grow quickly; most (grow) slowly. لا تتخلَّ عن أدوات الربط تمامًا؛ However طبيعية جدًا في بداية فقرة أو عند تضاد حقيقي، لكن لا تستخدمها في كل جملة.",
+        "en": "Many students begin every sentence with Moreover, Furthermore or In addition; examiners see this as mechanical cohesion, and Coherence and Cohesion stays at 6. Band 7+ writing connects ideas in other ways. 1) Lexical chains: refer to the same thing with synonyms: start-up → the firm → the young company → such businesses. 2) Summary nouns: sum up the previous idea with \"this + noun\": \"This approach…\", \"This trend…\", \"Such policies…\". 3) Substitution: avoid repetition with one/ones, do so, so/not: \"Some founders accept investment; others refuse to do so.\" 4) Ellipsis: leave out what is repeated: \"Some start-ups grow quickly; most (grow) slowly.\" Do not abandon linkers completely: \"However\" is natural at the start of a paragraph or for a real contrast; just do not use one in every sentence."
+      },
+      "examples": [
+        "Kelpwise began by selling to festivals. This approach gave the young firm an income while it improved its product.",
+        "Some governments offer loans to first-time entrepreneurs; others do not, and fewer people start businesses as a result.",
+        "Most new products are small improvements on existing ones; only a few are truly disruptive.",
+        "Investors expect most start-ups to fail. Such losses are covered by a handful of exceptional successes."
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "id": "g1",
+          "prompt": "Choose the best way to continue: \"Many cities now offer cheap office space to new businesses. ___ has helped hundreds of young companies to survive their first year.\"",
+          "options": [
+            "This policy",
+            "Moreover, it",
+            "Furthermore, offering cheap office space to new businesses",
+            "In addition, this"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "\"This policy\" önceki cümleyi bir özet ismiyle bağlıyor; ekstra bağlaç gerekmiyor. B ve D'de \"Moreover/In addition\" mantıksız (yeni bir ek bilgi değil, sonuç); C tüm ifadeyi gereksiz yere tekrar ediyor.",
+            "ar": "This policy تربط بالجملة السابقة باسم ملخِّص دون حاجة إلى أداة ربط. في B وD أداة الإضافة غير منطقية لأنها نتيجة لا إضافة، وC تكرر العبارة كلها بلا داعٍ.",
+            "en": "A summary noun (\"This policy\") links naturally; the others add an unnecessary linker or repeat."
+          },
+          "example": "Some banks lend to new firms at low rates. This approach has encouraged many people to start a business."
+        },
+        {
+          "type": "gap",
+          "id": "g2",
+          "prompt": "Write TWO words (substitution): Some entrepreneurs ask for outside investment, while others prefer not to ___ ___.",
+          "answers": [
+            "do so"
+          ],
+          "why": {
+            "tr": "Önceki fiil öbeğini (ask for outside investment) tekrar etmek yerine \"do so\" kullanılır.",
+            "ar": "بدل تكرار العبارة الفعلية ask for outside investment نستخدم do so.",
+            "en": "\"Do so\" replaces the repeated verb phrase."
+          },
+          "example": "Some students take a gap year, but most choose not to do so."
+        },
+        {
+          "type": "choice",
+          "id": "g3",
+          "prompt": "Which word best replaces the repeated noun? \"The first prototype was too heavy, so the team built a lighter prototype.\"",
+          "options": [
+            "one",
+            "it",
+            "this",
+            "that"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Aynı türden başka bir nesne için \"one\" kullanılır: \"a lighter one\". \"it\" aynı nesneyi gösterir, burada anlam yanlış olur.",
+            "ar": "نستخدم one لشيء آخر من النوع نفسه: a lighter one. أما it فتشير إلى الشيء نفسه، فيصبح المعنى خاطئًا.",
+            "en": "\"One\" replaces a countable noun of the same kind: a lighter one."
+          },
+          "example": "The old laptop was slow, so I bought a faster one."
+        },
+        {
+          "type": "choice",
+          "id": "g4",
+          "prompt": "Which sentence uses ellipsis correctly?",
+          "options": [
+            "Some start-ups grow quickly; most, slowly.",
+            "Some start-ups grow quickly; most start-ups grow slowly.",
+            "Some start-ups grow quickly; moreover, most grow slowly.",
+            "Some start-ups grow quickly; furthermore most start-ups slowly grow."
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "A, tekrar eden \"grow\" fiilini atıyor (virgül eksik kelimeyi gösterir). B doğru ama tekrar ediyor; C ve D'de \"moreover/furthermore\" zıtlık için yanlış bağlaç.",
+            "ar": "الخيار A يحذف الفعل المكرر grow (والفاصلة تدل على المحذوف). B صحيح لكنه مكرر، وفي C وD أداة الإضافة خاطئة للتضاد.",
+            "en": "A omits the repeated verb; C and D use an additive linker for a contrast."
+          },
+          "example": "Some customers paid by card; others, in cash."
+        },
+        {
+          "type": "choice",
+          "id": "g5",
+          "prompt": "Which sequence forms the best lexical chain to refer to the same company in three sentences?",
+          "options": [
+            "Kelpwise → the firm → the young company",
+            "Kelpwise → Kelpwise → Kelpwise",
+            "Kelpwise → it → it → it",
+            "Kelpwise → the industry → the market"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "A aynı şirketi farklı kelimelerle anıyor (sözcük zinciri). B mekanik tekrar; C çok fazla \"it\" belirsizlik yaratır; D farklı şeylerden (sektör, pazar) bahsediyor.",
+            "ar": "الخيار A يشير إلى الشركة نفسها بكلمات مختلفة (سلسلة معجمية). B تكرار آلي، وC كثرة it تسبب الغموض، وD يتحدث عن أشياء مختلفة.",
+            "en": "A refers to the same company with varied words; D changes the referent."
+          },
+          "example": "Kelpwise grew quickly. The firm now employs forty people, and the young company has offices in two cities."
+        }
+      ]
+    },
+    {
+      "kind": "write",
+      "i18n": {"ar":{"title":"الكتابة · Task 2: مقال كامل (بسؤالين)","tip":"في المقالات ذات السؤالين أجب عن كل سؤال في فقرة مستقلة. انتبه في هذا الدرس إلى الربط: لا تضع \"Moreover/Furthermore\" في كل جملة. استخدم بدلًا من ذلك أسماء تلخيصية ومرادفات مثل \"this trend\" و\"such ventures\" و\"these young entrepreneurs\". بعد الكتابة عُدّ الجمل التي تبدأ بأداة ربط؛ إذا تجاوزت النصف فاستبدل بعضها بأسماء تلخيصية."},"en":{"title":"Writing · Task 2: full essay (two-question)","tip":"In two-question essays answer each question in its own body paragraph. In this lesson pay attention to cohesion: don't put \"Moreover/Furthermore\" in every sentence. Instead use summary nouns and synonyms like \"this trend\", \"such ventures\", \"these young entrepreneurs\". After writing, count how many sentences start with a linking word; if it is more than half, replace some with summary nouns."}},
+      "title": "Yazma · Task 2: tam deneme (iki soruluk)",
+      "task": 2,
+      "prompt": "In many countries, a growing number of young people would prefer to start their own business rather than work for an employer.\n\nWhy is this the case? Is this a positive or negative development?\n\nWrite at least 250 words.",
+      "minutes": 40,
+      "minWords": 250,
+      "tip": "İki soruluk denemelerde iki soruyu da ayrı gövde paragraflarında cevapla. Bu derste bağlantıya dikkat et: her cümleye \"Moreover/Furthermore\" koyma. Bunun yerine \"this trend\", \"such ventures\", \"these young entrepreneurs\" gibi özet isimleri ve eş anlamlıları kullan. Yazdıktan sonra kaç cümlenin bir bağlaçla başladığını say; yarısından fazlaysa bazılarını özet isimleriyle değiştir.",
+      "model": "In recent years, more and more young people have expressed a wish to run their own company instead of joining an established organisation. This trend has several causes, and although it carries real risks, I believe it is a largely positive development.\n\nThe most obvious explanation is technological. Setting up a business once required premises, staff and substantial capital; today, a laptop and an internet connection are often enough to reach customers worldwide. Young people have also watched the careers of their parents' generation with some scepticism. Many saw relatives lose secure jobs during economic downturns, and as a result they no longer regard employment as the safe option it once seemed. Social media, finally, has made the success stories of young founders highly visible, which encourages others to follow their example, even if such stories rarely show how many ventures fail.\n\nThis shift brings clear benefits. Entrepreneurs create jobs not only for themselves but, if they succeed, for others, and new firms are an important source of innovation, since they are often willing to try ideas that larger companies ignore. Even when a business does not survive, its founder usually gains skills, contacts and resilience that prove valuable in later work. The main drawback is financial: a young person who invests their savings in a failed start-up may struggle for years afterwards. However, this risk can be reduced by sensible support, such as small loans for first-time founders and training in basic business skills.\n\nIn conclusion, the growing appeal of entrepreneurship reflects both new technology and a loss of faith in traditional careers. Provided that young founders are given realistic advice and a safety net, this development is likely to benefit both individuals and the wider economy."
+    },
+    {
+      "kind": "speak",
+      "i18n": {"ar":{"title":"المحادثة: أفكار المشاريع وريادة الأعمال"},"en":{"title":"Speaking: business ideas and entrepreneurship"}},
+      "title": "Konuşma: iş fikirleri ve girişimcilik",
+      "part1": [
+        "Would you like to run your own business one day? Why or why not?",
+        "Are there many small businesses in your area?",
+        "What kind of new product would make your daily life easier?",
+        "Do you think people are born creative, or can creativity be learned?"
+      ],
+      "card": {
+        "title": "Describe a person you know who started their own business.",
+        "points": [
+          "who the person is and what the business does",
+          "how they got the idea and started it",
+          "what difficulties they faced"
+        ],
+        "explain": "and explain what you have learned from this person's experience."
+      },
+      "useful": [
+        "She spotted a gap in the market when she realised that…",
+        "At first it was just a side project; then it gradually turned into a full-time business.",
+        "The hardest part, by her own account, was finding the money to scale up.",
+        "That was a real turning point for the business.",
+        "He took quite a big risk, and fortunately it paid off.",
+        "What I've taken from his story is that you don't need a perfect idea to start."
+      ]
+    }
+  ]
+}

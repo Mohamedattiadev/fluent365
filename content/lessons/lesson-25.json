@@ -1,0 +1,665 @@
+{
+ "id": "lesson-25",
+ "number": 25,
+ "title": "Living with Natural Hazards",
+ "topic": "Natural disasters and adaptation",
+ "level": "B2",
+ "goal": "Understand talks and texts about disasters and adaptation, and explain causes and results with nouns such as the main cause of, led to and resulted in.",
+ "steps": [
+  {
+   "kind": "words",
+   "i18n": {"ar":{"title":"المفردات: الكوارث الطبيعية والتكيّف","intro":"في هذا الدرس 12 كلمة وعبارة شائعة في IELTS عن الكوارث الطبيعية والحماية والتكيّف. اقرأ الجمل الأمثلة بعناية: المتلازمات اللفظية مثل \"adapt to\" و\"mitigate the risk\" مفيدة جدًا في Task 2."},"en":{"title":"Vocabulary: natural disasters and adaptation","intro":"This lesson has 12 common IELTS words and phrases about natural disasters, protection and adaptation. Read the example sentences carefully: collocations like \"adapt to\" and \"mitigate the risk\" are very useful in Task 2."}},
+   "title": "Kelimeler: doğal afetler ve uyum",
+   "intro": "Bu derste doğal afetler, korunma ve uyum hakkında IELTS'te sık çıkan 12 kelime ve kalıp var. Örnek cümleleri dikkatle oku: \"adapt to\", \"mitigate the risk\" gibi eşdizimler Task 2'de çok işine yarar.",
+   "words": [
+    {
+     "en": "natural hazard",
+     "pos": "phrase",
+     "tr": "doğal tehlike (deprem, sel, fırtına gibi)",
+     "ar": "خطر طبيعي (كالزلزال أو الفيضان)",
+     "example": "Earthquakes are the most serious natural hazard in this part of the country."
+    },
+    {
+     "en": "vulnerable",
+     "pos": "adjective",
+     "tr": "savunmasız, korunmasız, risk altında",
+     "ar": "مُعرَّض للخطر؛ ضعيف",
+     "example": "Older people living alone are especially vulnerable during a heatwave."
+    },
+    {
+     "en": "evacuate",
+     "pos": "verb",
+     "tr": "tahliye etmek, boşaltmak",
+     "ar": "يُخلي (مكانًا من السكان)",
+     "example": "Thousands of residents were evacuated before the storm reached the coast."
+    },
+    {
+     "en": "early warning system",
+     "pos": "phrase",
+     "tr": "erken uyarı sistemi",
+     "ar": "نظام إنذار مبكر",
+     "example": "An early warning system gives families time to leave before the water rises."
+    },
+    {
+     "en": "flood defences",
+     "pos": "phrase",
+     "tr": "sel savunma yapıları (set, duvar vb.)",
+     "ar": "حواجز الحماية من الفيضانات",
+     "example": "The town's flood defences were raised after the river overflowed."
+    },
+    {
+     "en": "resilience",
+     "pos": "noun",
+     "tr": "dayanıklılık, toparlanma gücü",
+     "ar": "المرونة؛ القدرة على الصمود والتعافي",
+     "example": "Local volunteers are a key part of a community's resilience."
+    },
+    {
+     "en": "devastating",
+     "pos": "adjective",
+     "tr": "yıkıcı, çok büyük zarar veren",
+     "ar": "مدمِّر",
+     "example": "The earthquake had a devastating effect on the old town centre."
+    },
+    {
+     "en": "relief effort",
+     "pos": "phrase",
+     "tr": "yardım çalışması (afet sonrası)",
+     "ar": "جهود الإغاثة",
+     "example": "Charities and the army joined the relief effort after the floods."
+    },
+    {
+     "en": "drought",
+     "pos": "noun",
+     "tr": "kuraklık",
+     "ar": "الجفاف",
+     "example": "A long drought destroyed most of the wheat harvest."
+    },
+    {
+     "en": "mitigate",
+     "pos": "verb",
+     "tr": "hafifletmek, etkisini azaltmak",
+     "ar": "يخفّف (من أثر شيء)",
+     "example": "Planting trees on the hills can mitigate the risk of landslides."
+    },
+    {
+     "en": "infrastructure",
+     "pos": "noun",
+     "tr": "altyapı (yol, köprü, elektrik, su)",
+     "ar": "البنية التحتية",
+     "example": "The storm damaged roads, bridges and other vital infrastructure."
+    },
+    {
+     "en": "adapt to",
+     "pos": "verb phrase",
+     "tr": "(bir şeye) uyum sağlamak",
+     "ar": "يتكيّف مع",
+     "example": "Farmers have had to adapt to hotter and drier summers."
+    }
+   ],
+   "practice": [
+    {
+     "type": "choice",
+     "id": "w1",
+     "prompt": "Older people and young children are often the most ___ during a heatwave.",
+     "options": [
+      "vulnerable",
+      "devastating",
+      "resilient",
+      "evacuated"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "\"Vulnerable\" = zarar görmeye açık, savunmasız. \"Devastating\" bir olayın etkisini anlatır, bir insanı değil; \"resilient\" tam tersi anlamdadır.",
+      "ar": "vulnerable تعني مُعرَّضًا للضرر. أما devastating فتصف أثر الحدث لا الإنسان، وresilient عكس المعنى المطلوب.",
+      "en": "\"Vulnerable\" means easily harmed. \"Devastating\" describes an event, and \"resilient\" means the opposite."
+     },
+     "example": "People with heart problems are vulnerable in very hot weather."
+    },
+    {
+     "type": "gap",
+     "id": "w2",
+     "prompt": "Write the noun form of EVACUATE: The ___ of the village took less than two hours.",
+     "answers": [
+      "evacuation"
+     ],
+     "why": {
+      "tr": "\"The ___ of\" yapısında bir isim gerekiyor: evacuate (fiil) → evacuation (isim).",
+      "ar": "بعد The وقبل of نحتاج إلى اسم: الفعل evacuate يصبح الاسم evacuation.",
+      "en": "A noun is needed after \"the\": evacuate → evacuation."
+     },
+     "example": "The evacuation of the coast began as soon as the warning was issued."
+    },
+    {
+     "type": "choice",
+     "id": "w3",
+     "prompt": "Which verb collocates best? Governments should take steps to ___ the effects of drought.",
+     "options": [
+      "mitigate",
+      "evacuate",
+      "suffer",
+      "rise"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "\"mitigate the effects / the risk\" = etkileri, riski azaltmak. \"evacuate\" insanlar ve yerler için kullanılır; \"suffer\" ve \"rise\" anlamı bozar.",
+      "ar": "التلازم الصحيح mitigate the effects أي يخفّف الآثار. evacuate تُستخدم مع الناس والأماكن، وsuffer وrise لا تناسبان المعنى.",
+      "en": "We \"mitigate the effects\" or \"mitigate the risk\". The other verbs do not fit."
+     },
+     "example": "Better forecasts can mitigate the effects of extreme weather."
+    },
+    {
+     "type": "choice",
+     "id": "w4",
+     "prompt": "\"Resilience\" in a community means…",
+     "options": [
+      "the ability to recover quickly after a shock",
+      "a refusal to accept help from outside",
+      "the number of people who leave after a disaster",
+      "a high wall that keeps water out"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "\"Resilience\" bir topluluğun darbeyi kaldırıp hızla toparlanabilmesidir. Duvar bir \"flood defence\" örneğidir, resilience'ın kendisi değil.",
+      "ar": "resilience هي قدرة المجتمع على تحمّل الصدمة والتعافي بسرعة. الجدار مثال على flood defences وليس هو المرونة نفسها.",
+      "en": "Resilience is the capacity to absorb a shock and recover quickly."
+     },
+     "example": "The town showed great resilience and reopened its schools within a week."
+    },
+    {
+     "type": "gap",
+     "id": "w5",
+     "prompt": "Write ONE word: Volunteers from across the country joined the relief ___ after the earthquake.",
+     "answers": [
+      "effort"
+     ],
+     "why": {
+      "tr": "Kalıp \"relief effort\" = afet sonrası yardım çalışması. \"relief work\" da vardır ama \"joined the relief ___\" ile en doğal olan \"effort\".",
+      "ar": "التعبير الثابت relief effort أي جهود الإغاثة بعد الكارثة.",
+      "en": "The fixed phrase is \"relief effort\"."
+     },
+     "example": "The relief effort focused first on clean water and shelter."
+    },
+    {
+     "type": "choice",
+     "id": "w6",
+     "prompt": "Choose the correct preposition: Many coastal towns are now trying to adapt ___ rising sea levels.",
+     "options": [
+      "to",
+      "with",
+      "for",
+      "on"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "\"adapt to something\" kalıbı sabittir: bir şeye uyum sağlamak. \"adapt with\" veya \"adapt for\" bu anlamda kullanılmaz.",
+      "ar": "الفعل adapt يأتي مع حرف الجر to: adapt to something أي يتكيّف مع شيء.",
+      "en": "The verb takes \"to\": adapt to something."
+     },
+     "example": "Wildlife has had to adapt to shorter winters."
+    }
+   ]
+  },
+  {
+   "kind": "listen",
+   "i18n": {"ar":{"title":"الاستماع · Part 2: خطة الفيضانات الجديدة","intro":"مسؤول في البلدية يشرح لسكان بلدة خطة الفيضانات الجديدة. اقرأ الأسئلة أولًا. يُشغَّل التسجيل مرة واحدة كما في الامتحان.","tip":"في Part 2 كثيرًا ما يذكر المتحدث اعتقادًا شائعًا ثم يصحّحه (\"Many people assume… In fact…\"). الإجابة تأتي بعد التصحيح. في إكمال الملاحظات انظر إلى الكلمات قبل الفراغ وبعده: \"a waterproof ___\" يتطلب اسمًا."},"en":{"title":"Listening · Part 2: the new flood plan","intro":"A council official explains the new flood plan to the residents of a town. Read the questions first. The recording plays once, as in the exam.","tip":"In Part 2 the speaker often states a common belief and then corrects it (\"Many people assume… In fact…\"). The answer comes after the correction. In note completion, look at the words before and after the gap: \"a waterproof ___\" needs a noun."}},
+   "title": "Dinleme · Part 2: yeni sel planı",
+   "intro": "Bir belediye yetkilisi, bir kasabanın sakinlerine yeni sel planını anlatıyor. Önce soruları oku. Kayıt, sınavdaki gibi bir kez çalar.",
+   "tip": "Part 2'de konuşmacı sık sık yaygın bir inancı söyleyip sonra düzeltir (\"Many people assume… In fact…\"). Cevap düzeltmeden sonra gelir. Not tamamlamada boşluktan önceki ve sonraki kelimelere bak: \"a waterproof ___\" bir isim ister.",
+   "audio": {
+    "type": "audio",
+    "id": "l-audio",
+    "speakers": {
+     "N": {
+      "name": "Narrator",
+      "voice": "en-GB-SoniaNeural"
+     },
+     "hale": {
+      "name": "Martin Hale",
+      "voice": "en-GB-ThomasNeural"
+     }
+    },
+    "lines": [
+     {
+      "speaker": "N",
+      "text": "You will hear an official talking to residents about a new flood plan. First, you have some time to look at questions one to six.",
+      "pauseAfterMs": 2500
+     },
+     {
+      "speaker": "N",
+      "text": "Now listen carefully and answer questions one to six.",
+      "pauseAfterMs": 1200
+     },
+     {
+      "speaker": "hale",
+      "text": "Good evening, everyone, and thank you for coming out on such a wet night, which is rather appropriate. My name is Martin Hale, and I'm the emergency planning officer for Brackwater District Council. Tonight I'd like to explain the new flood plan for Lower Brackwater and what it means for your households.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "hale",
+      "text": "The river burst its banks three winters ago. The damage was devastating for some families, and nearly two hundred homes had to be evacuated. Many people assume the main cause of that flood was the amount of rain. In fact, the rainfall was heavy but not unusual. The real problem was the old drainage infrastructure: drains under the high street were blocked, so the water had nowhere to go.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "hale",
+      "text": "So what has changed? First, the drains have been cleared and widened. Second, we've improved the flood defences along the eastern bank; you may have seen the new wall near the bridge. Some of you expected a much higher wall along the whole river, but the engineers advised against that, because it would simply push the water towards the villages downstream.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "hale",
+      "text": "Instead, the council has bought two fields to the north of the town, which will be allowed to flood when the river is high. Think of them as a giant sponge.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "hale",
+      "text": "Now, the early warning system. Until now, warnings were given on local radio and by a siren on the fire station. The siren is also tested every month, and frankly a lot of people have stopped paying attention to it. From next month, residents who register will receive a text message as soon as the river reaches a dangerous level. The siren will stay, but only as a back-up.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "hale",
+      "text": "Let me turn to what you can do at home to build your household's resilience. We're asking every family to prepare a flood kit and keep it upstairs if possible. It should include a torch, any medicines you need, and copies of important documents, such as insurance papers, kept in a waterproof bag.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "hale",
+      "text": "If you're doing any building work, we also recommend moving electrical sockets higher up the wall. It's a small change, but it can save thousands of pounds in repairs. The council offers a grant that covers half the cost for vulnerable residents, mainly older people living alone and families with very young children.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "hale",
+      "text": "If an evacuation is ordered, the reception centre will be the sports hall at Northfield School, not the community centre as in the past. The community centre is on low ground and was flooded itself last time. Buses will leave from the market square every twenty minutes.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "hale",
+      "text": "Finally, many of you volunteered in the relief effort after the last flood, and we couldn't have managed without you. We're now setting up a network of street volunteers who will check on neighbours during an emergency. No one can stop every flood, but we can adapt to them and mitigate the damage. Right, are there any questions?",
+      "pauseAfterMs": 1500
+     },
+     {
+      "speaker": "N",
+      "text": "That is the end of the recording.",
+      "pauseAfterMs": 0
+     }
+    ]
+   },
+   "questions": [
+    {
+     "type": "text",
+     "text": "Questions 1–3. Choose the correct letter."
+    },
+    {
+     "type": "choice",
+     "id": "l1",
+     "prompt": "1. According to the speaker, what was the main cause of the flood three years ago?",
+     "options": [
+      "exceptionally heavy rainfall",
+      "blocked drains under the high street",
+      "a weak wall near the bridge"
+     ],
+     "answer": 1,
+     "why": {
+      "tr": "\"Many people assume the main cause… was the amount of rain. In fact, the rainfall was heavy but not unusual.\" Gerçek sebep: \"the drains under the high street were blocked\". A yaygın inanç, yani tuzak.",
+      "ar": "يقول: \"Many people assume the main cause… was the amount of rain. In fact…\". السبب الحقيقي: \"the drains under the high street were blocked\". الخيار A هو الاعتقاد الشائع، أي فخّ.",
+      "en": "\"In fact, the rainfall was heavy but not unusual. The real problem was… the drains under the high street were blocked.\""
+     },
+     "example": "Many people blame the rain, but in fact the main cause was blocked drains."
+    },
+    {
+     "type": "choice",
+     "id": "l2",
+     "prompt": "2. Where will extra water go when the river is high?",
+     "options": [
+      "behind a higher wall along the whole river",
+      "into fields to the north of the town",
+      "towards the villages downstream"
+     ],
+     "answer": 1,
+     "why": {
+      "tr": "Yüksek duvar fikri reddediliyor (\"the engineers advised against that\"). Belediye kuzeydeki iki tarlayı satın aldı: \"which will be allowed to flood\". C, yüksek duvarın sonucu olurdu.",
+      "ar": "رُفضت فكرة الجدار العالي (\"the engineers advised against that\")، واشترى المجلس حقلين في الشمال \"which will be allowed to flood\". الخيار C كان سيحدث لو بُني الجدار.",
+      "en": "\"The council has bought two fields to the north of the town, which will be allowed to flood.\""
+     },
+     "example": "The fields north of the town will be allowed to flood when the river is high."
+    },
+    {
+     "type": "choice",
+     "id": "l3",
+     "prompt": "3. What is new about the warning system?",
+     "options": [
+      "Residents can receive text messages.",
+      "The siren will be tested less often.",
+      "Warnings will be given on local radio."
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "\"From next month, residents who register will receive a text message\". Radyo ve siren zaten vardı; siren artık sadece yedek (\"back-up\").",
+      "ar": "\"From next month, residents who register will receive a text message\". الراديو والصافرة موجودان من قبل، والصافرة ستبقى احتياطًا فقط.",
+      "en": "\"Residents who register will receive a text message.\" Radio and the siren are the old system."
+     },
+     "example": "If you register, you will receive a text message when the river rises."
+    },
+    {
+     "type": "text",
+     "text": "Questions 4–6. Complete the notes below. Write ONE WORD ONLY for each answer."
+    },
+    {
+     "type": "text",
+     "text": "Flood plan: advice for households"
+    },
+    {
+     "type": "gap",
+     "id": "l4",
+     "prompt": "4. Keep copies of documents such as insurance papers in a waterproof ___.",
+     "answers": [
+      "bag"
+     ],
+     "why": {
+      "tr": "\"copies of important documents, such as insurance papers, kept in a waterproof bag\". \"waterproof\" sıfatından sonra bir isim gerekiyor: bag.",
+      "ar": "\"copies of important documents… kept in a waterproof bag\". بعد الصفة waterproof نحتاج إلى اسم: bag.",
+      "en": "\"Kept in a waterproof bag.\""
+     },
+     "example": "I keep my passport in a waterproof bag when I go camping."
+    },
+    {
+     "type": "gap",
+     "id": "l5",
+     "prompt": "5. For vulnerable residents, the council grant pays ___ the cost of moving sockets.",
+     "answers": [
+      "half"
+     ],
+     "why": {
+      "tr": "\"a grant that covers half the cost for vulnerable residents\". \"pays\" = \"covers\". \"thousands of pounds\" tasarruf için söyleniyor, tuzak.",
+      "ar": "\"a grant that covers half the cost for vulnerable residents\"، وpays تعني covers. عبارة thousands of pounds تتعلق بالتوفير، فهي فخّ.",
+      "en": "\"A grant that covers half the cost for vulnerable residents.\""
+     },
+     "example": "The scheme covers half the cost of new windows."
+    },
+    {
+     "type": "gap",
+     "id": "l6",
+     "prompt": "6. Reception centre: the sports ___ at Northfield School",
+     "answers": [
+      "hall"
+     ],
+     "why": {
+      "tr": "\"the reception centre will be the sports hall at Northfield School, not the community centre as in the past\". Toplum merkezi eski yer, tuzak.",
+      "ar": "\"the reception centre will be the sports hall at Northfield School, not the community centre\". المركز المجتمعي هو المكان القديم، فهو فخّ.",
+      "en": "\"The sports hall at Northfield School, not the community centre.\""
+     },
+     "example": "The exams will be held in the sports hall this year."
+    }
+   ]
+  },
+  {
+   "kind": "read",
+   "i18n": {"ar":{"title":"القراءة: True / False / Not Given","intro":"ستقرأ نصًا أكاديميًا عن تغيّر نظرة المجتمعات إلى المخاطر الطبيعية: من الجدران في وجه الفيضانات إلى المرونة (resilience).","tip":"لتكون الإجابة FALSE يجب أن يقول النص عكس العبارة؛ ولتكون NOT GIVEN يجب ألا يحتوي النص أي معلومة عن الأمر. انتبه للعبارات المنفية مثل \"have not become weaker\": إذا ورد في السؤال \"less powerful\" فقد تكون الإجابة FALSE."},"en":{"title":"Reading: True / False / Not Given","intro":"You will read an academic text about how societies' view of natural hazards has changed: from walls against floods to resilience.","tip":"For FALSE the text must say the opposite of the statement; for NOT GIVEN the text must have no information about it at all. Watch for negative phrases like \"have not become weaker\": if the question says \"less powerful\", the answer may be FALSE."}},
+   "title": "Okuma: True / False / Not Given",
+   "intro": "Toplumların doğal tehlikelere bakışının nasıl değiştiğini anlatan akademik bir metin okuyacaksın: sellere karşı duvarlardan dayanıklılığa (resilience).",
+   "tip": "FALSE için metin ifadenin tersini söylemeli; NOT GIVEN için metinde bu konuda hiç bilgi olmamalı. \"have not become weaker\" gibi olumsuz ifadelere dikkat et: soruda \"less powerful\" geçiyorsa bu FALSE olabilir.",
+   "passage": [
+    {
+     "type": "heading",
+     "text": "From Resistance to Resilience: Rethinking Natural Hazards"
+    },
+    {
+     "type": "text",
+     "text": "Earthquakes, floods, storms and droughts have always been part of human life, but the way societies think about them has changed considerably. Specialists now draw a careful distinction between a natural hazard and a disaster. A hazard is the physical event itself, such as a cyclone, a landslide or a period of extreme heat. It becomes a disaster only when it meets a community that is unprepared or vulnerable. The same storm may cause little damage in one place and be devastating in another, depending on how homes are built, how quickly people receive warnings and how much help is available afterwards."
+    },
+    {
+     "type": "text",
+     "text": "For much of the twentieth century, the dominant approach was resistance. Engineers built higher river walls, larger dams and stronger sea barriers, with the aim of keeping nature out. Such flood defences have saved many lives, and they remain essential in densely populated areas. However, they also have weaknesses. A wall that protects one town can send water towards another further downstream. Moreover, when a barrier eventually fails, the consequences can be worse than if it had never existed, because people have built homes right up to its edge in the belief that they are safe."
+    },
+    {
+     "type": "text",
+     "text": "Partly as a result of such failures, many planners now speak of resilience: the capacity of a community to absorb a shock and recover quickly. In the Netherlands, a country with a long tradition of dykes, some rivers have been given more space to spread out onto farmland during high water, rather than being confined between ever higher banks. In parts of Japan, building regulations require structures that can move during an earthquake rather than collapse. The common idea is that societies should adapt to hazards instead of attempting to eliminate them completely."
+    },
+    {
+     "type": "text",
+     "text": "Some of the most effective measures are also among the cheapest. An early warning system, combined with clear plans for where people should go, can reduce the loss of life dramatically. Bangladesh, which is frequently struck by cyclones, is often cited as an example. Over several decades, a combination of warnings broadcast by radio and mobile phone, trained local volunteers and raised concrete shelters has led to a sharp fall in the number of deaths, even though the storms themselves have not become weaker. Warnings, however, are only useful if people trust them. Residents who have been told to evacuate several times without anything happening may decide to stay at home the next time."
+    },
+    {
+     "type": "text",
+     "text": "Slow-onset hazards present a different challenge, and they are often overlooked because they rarely make headlines in the way that an earthquake or a hurricane does. A drought does not arrive on a single day, and its effects on crops, animals and water supplies build up over months or even years. Because there is no dramatic moment, governments often respond late, when the relief effort has to focus on emergency food aid rather than on prevention. Farmers can mitigate the risk by storing rainwater, choosing crops that need less water and finding other sources of income, but they usually need financial support to make these changes."
+    },
+    {
+     "type": "text",
+     "text": "Finally, there is growing recognition that disasters are not equal in their impact. Poorer households tend to live in more exposed locations, such as floodplains or steep hillsides, and have fewer savings to rebuild with. Damage to infrastructure, such as roads, power lines and hospitals, can also cut off whole communities for weeks, and those without a car or a second home have nowhere else to go. For this reason, many specialists argue that reducing poverty and investing in basic public services are among the most important forms of disaster preparation, even if they are rarely described in those terms."
+    }
+   ],
+   "questions": [
+    {
+     "type": "heading",
+     "text": "Questions 1–7: True, False or Not Given?"
+    },
+    {
+     "type": "text",
+     "text": "Do the following statements agree with the information in the passage? Choose TRUE if the statement agrees with the information, FALSE if it contradicts the information, NOT GIVEN if there is no information on this."
+    },
+    {
+     "type": "tfng",
+     "id": "r1",
+     "statement": "Specialists use the words \"hazard\" and \"disaster\" to mean the same thing.",
+     "answer": "false",
+     "why": {
+      "tr": "Paragraf 1: \"Specialists now draw a careful distinction between a natural hazard and a disaster.\" Aralarında fark var, yani ifade metinle çelişiyor: FALSE.",
+      "ar": "الفقرة الأولى: \"Specialists now draw a careful distinction between a natural hazard and a disaster\". هناك فرق بينهما، فالعبارة تناقض النص: FALSE.",
+      "en": "\"Specialists now draw a careful distinction between a natural hazard and a disaster.\""
+     },
+     "example": "A hazard is the event; a disaster is what happens when people are unprepared."
+    },
+    {
+     "type": "tfng",
+     "id": "r2",
+     "statement": "Building a river wall in one place can increase flood risk somewhere else.",
+     "answer": "true",
+     "why": {
+      "tr": "Paragraf 2: \"A wall that protects one town can send water towards another further downstream.\" \"somewhere else\" = \"another [town] further downstream\": TRUE.",
+      "ar": "الفقرة الثانية: \"A wall that protects one town can send water towards another further downstream\"، أي يزيد الخطر في مكان آخر: TRUE.",
+      "en": "\"A wall that protects one town can send water towards another further downstream.\""
+     },
+     "example": "Protecting one area can push the problem somewhere else."
+    },
+    {
+     "type": "tfng",
+     "id": "r3",
+     "statement": "Dams built in the twentieth century were more expensive than modern flood defences.",
+     "answer": "not given",
+     "why": {
+      "tr": "Paragraf 2 barajlardan söz ediyor ama maliyetlerini karşılaştırmıyor. \"twentieth century\" ve \"dams\" metinde geçiyor; bu bir tuzak: NOT GIVEN.",
+      "ar": "تذكر الفقرة الثانية السدود لكنها لا تقارن تكاليفها بشيء. الكلمات نفسها موجودة في النص، وهذا فخّ: NOT GIVEN.",
+      "en": "Dams are mentioned, but their cost is never compared."
+     },
+     "example": "The text mentions dams but says nothing about how much they cost."
+    },
+    {
+     "type": "tfng",
+     "id": "r4",
+     "statement": "In some parts of the Netherlands, rivers are now allowed to flow over farmland when water levels are high.",
+     "answer": "true",
+     "why": {
+      "tr": "Paragraf 3: \"some rivers have been given more space to spread out onto farmland during high water\". \"spread out onto\" = \"flow over\": TRUE.",
+      "ar": "الفقرة الثالثة: \"some rivers have been given more space to spread out onto farmland during high water\"، وهذا يطابق العبارة: TRUE.",
+      "en": "\"Some rivers have been given more space to spread out onto farmland during high water.\""
+     },
+     "example": "During high water, the river is allowed to spread onto nearby fields."
+    },
+    {
+     "type": "tfng",
+     "id": "r5",
+     "statement": "Cyclones affecting Bangladesh have become less powerful over recent decades.",
+     "answer": "false",
+     "why": {
+      "tr": "Paragraf 4: ölümler azaldı \"even though the storms themselves have not become weaker\". Fırtınalar zayıflamadı, yani ifade metnin tersi: FALSE.",
+      "ar": "الفقرة الرابعة: انخفضت الوفيات \"even though the storms themselves have not become weaker\". العواصف لم تضعف، فالعبارة عكس النص: FALSE.",
+      "en": "\"Even though the storms themselves have not become weaker.\""
+     },
+     "example": "Deaths fell even though the storms did not become weaker."
+    },
+    {
+     "type": "tfng",
+     "id": "r6",
+     "statement": "Repeated warnings that turn out to be unnecessary may make people less likely to leave in future.",
+     "answer": "true",
+     "why": {
+      "tr": "Paragraf 4: \"Residents who have been told to evacuate several times without anything happening may decide to stay at home the next time.\" Anlam aynı: TRUE.",
+      "ar": "الفقرة الرابعة: السكان الذين طُلب منهم الإخلاء عدة مرات دون أن يحدث شيء \"may decide to stay at home the next time\": TRUE.",
+      "en": "\"Residents who have been told to evacuate several times without anything happening may decide to stay at home.\""
+     },
+     "example": "After several false alarms, some families ignored the warning."
+    },
+    {
+     "type": "tfng",
+     "id": "r7",
+     "statement": "Most governments now have a national plan for dealing with drought.",
+     "answer": "not given",
+     "why": {
+      "tr": "Paragraf 5 hükümetlerin kuraklığa \"often respond late\" dediğini söylüyor ama ulusal planlar hakkında bilgi vermiyor: NOT GIVEN. Geç tepki vermek, planları olmadığı anlamına gelmez.",
+      "ar": "تقول الفقرة الخامسة إن الحكومات \"often respond late\"، لكنها لا تذكر شيئًا عن الخطط الوطنية: NOT GIVEN.",
+      "en": "The passage says governments often respond late, but nothing about national plans."
+     },
+     "example": "The article criticises late responses but does not mention national plans."
+    }
+   ]
+  },
+  {
+   "kind": "language",
+   "i18n": {"ar":{"title":"اللغة: السبب والنتيجة بالأسماء (the main cause of, led to, resulted in)"},"en":{"title":"Language: cause and effect with nouns (the main cause of, led to, resulted in)"}},
+   "title": "Dil: isimlerle sebep ve sonuç (the main cause of, led to, resulted in)",
+   "explain": {
+    "tr": "B2 düzeyinde sebep ve sonucu sadece \"because\" ve \"so\" ile değil, isim grupları ve fiillerle anlatırsın; bu Task 2 ve Task 1'de daha akademik görünür. Sebep → sonuç: X led to Y / X resulted in Y / X caused Y. Sonuç ← sebep: Y resulted from X / Y was caused by X / Y was the result of X. İsimle: The main cause of Y was X. / One consequence of X is Y. Dikkat: \"lead to\" ve \"result in\" sonrasında isim ya da -ing gelir (led to the closure / resulted in people losing their homes), cümle gelmez. \"result in\" ile \"result from\" yön olarak terstir.",
+    "ar": "في مستوى B2 نعبّر عن السبب والنتيجة لا بـ because وso فقط، بل بالأسماء والأفعال أيضًا، وهذا أكثر أكاديمية في الكتابة. من السبب إلى النتيجة: X led to Y / X resulted in Y / X caused Y. ومن النتيجة إلى السبب: Y resulted from X / Y was caused by X / Y was the result of X. وبالأسماء: The main cause of Y was X / One consequence of X is Y. انتبه: بعد lead to وresult in يأتي اسم أو صيغة -ing (led to the closure / resulted in people losing their homes)، لا جملة كاملة. وresult in عكس result from في الاتجاه.",
+    "en": "At B2 you express cause and result not only with because and so, but with nouns and verbs, which sounds more academic. Cause → result: X led to Y / X resulted in Y / X caused Y. Result ← cause: Y resulted from X / Y was caused by X / Y was the result of X. With nouns: The main cause of Y was X. / One consequence of X is Y. Note: lead to and result in are followed by a noun or -ing (led to the closure / resulted in people losing their homes), not a clause. Result in and result from point in opposite directions."
+   },
+   "examples": [
+    "The main cause of the flood was a blocked drainage system, not the rain itself.",
+    "The long drought led to a sharp rise in food prices across the region.",
+    "Damage to the infrastructure resulted in thousands of homes being without power for a week.",
+    "Much of the destruction resulted from poorly built houses rather than from the earthquake's strength."
+   ],
+   "questions": [
+    {
+     "type": "choice",
+     "id": "g1",
+     "prompt": "Heavy rain over three days resulted ___ the closure of every road into the valley.",
+     "options": [
+      "in",
+      "from",
+      "to",
+      "by"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "Sebepten sonuca giderken \"result in\": yağmur → yolların kapanması. \"result from\" ters yön olurdu (kapanma yağmurdan kaynaklandı).",
+      "ar": "من السبب إلى النتيجة نستخدم result in: المطر ← أدى إلى إغلاق الطرق. أما result from فهي للاتجاه المعاكس.",
+      "en": "Cause → result: \"resulted in\". \"Resulted from\" goes from result to cause."
+     },
+     "example": "The storm resulted in the cancellation of all flights."
+    },
+    {
+     "type": "choice",
+     "id": "g2",
+     "prompt": "Which sentence is correct?",
+     "options": [
+      "The drought led to farmers lost their crops.",
+      "The drought led to many farmers losing their crops.",
+      "The drought led that farmers lost their crops.",
+      "The drought led for crop losses."
+     ],
+     "answer": 1,
+     "why": {
+      "tr": "\"lead to\" sonrasında isim ya da -ing gelir: \"led to many farmers losing\". Tam bir cümle (farmers lost) ya da \"that\" gelemez.",
+      "ar": "بعد lead to يأتي اسم أو صيغة -ing: led to many farmers losing. لا يأتي بعدها جملة كاملة ولا that.",
+      "en": "Lead to + noun / -ing, never a full clause."
+     },
+     "example": "The new road led to more people moving to the area."
+    },
+    {
+     "type": "gap",
+     "id": "g3",
+     "prompt": "Write ONE word: The main ___ of the fire was a faulty electrical cable.",
+     "answers": [
+      "cause"
+     ],
+     "why": {
+      "tr": "\"The main cause of X was Y\" kalıbı: X'in ana sebebi. \"reason\" da anlam olarak yakın ama \"the main reason for\" ile kullanılır, \"of\" ile değil.",
+      "ar": "التركيب The main cause of X was Y أي السبب الرئيسي لـ X. أما reason فتأتي غالبًا مع for لا مع of.",
+      "en": "\"The main cause of X\". (\"Reason\" normally takes \"for\".)"
+     },
+     "example": "The main cause of the accident was ice on the road."
+    },
+    {
+     "type": "choice",
+     "id": "g4",
+     "prompt": "Choose the sentence with the SAME meaning: \"Poor building standards caused most of the deaths.\"",
+     "options": [
+      "Most of the deaths resulted from poor building standards.",
+      "Most of the deaths resulted in poor building standards.",
+      "Poor building standards resulted from most of the deaths.",
+      "Most of the deaths led to poor building standards."
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "Sonuç (ölümler) başta olduğu için \"resulted from\" gerekir: ölümler kötü yapı standartlarından kaynaklandı. Diğerleri sebep ve sonucu ters çeviriyor.",
+      "ar": "بما أن النتيجة (الوفيات) في بداية الجملة، نحتاج resulted from. الخيارات الأخرى تعكس السبب والنتيجة.",
+      "en": "The result comes first, so \"resulted from\". The others reverse cause and effect."
+     },
+     "example": "Most of the damage resulted from strong winds."
+    },
+    {
+     "type": "gap",
+     "id": "g5",
+     "prompt": "Write ONE word: One ___ of rising sea levels is that coastal farmland becomes too salty for crops.",
+     "answers": [
+      "consequence",
+      "result"
+     ],
+     "why": {
+      "tr": "\"One consequence of X is that…\" = X'in sonuçlarından biri. \"result\" da kabul edilir: One result of X is that…",
+      "ar": "التركيب One consequence of X is that… أي إحدى نتائج X. وتُقبل كلمة result أيضًا.",
+      "en": "\"One consequence (or result) of X is that…\""
+     },
+     "example": "One consequence of the drought is that many families moved to the city."
+    }
+   ]
+  },
+  {
+   "kind": "write",
+   "i18n": {"ar":{"title":"الكتابة · Task 2: الأسباب والحلول (مقال كامل)","tip":"هذا سؤال أسباب وحلول: يجب أن تجيب عن السؤالين معًا. خصّص فقرة للأسباب وأخرى للحلول. عبّر عن الأسباب بالأسماء (the main cause of, has led to, results from)، واربط الحلول بالأسباب. استخدم كلمات هذا الدرس: vulnerable, infrastructure, early warning system, mitigate, adapt to."},"en":{"title":"Writing · Task 2: causes and solutions (full essay)","tip":"This is a causes-and-solutions question: you must answer both parts. Use one body paragraph for causes and one for solutions. Express causes with nouns (the main cause of, has led to, results from), and link the solutions to the causes. Use this lesson's words: vulnerable, infrastructure, early warning system, mitigate, adapt to."}},
+   "title": "Yazma · Task 2: sebepler ve çözümler (tam deneme)",
+   "task": 2,
+   "prompt": "In many parts of the world, natural disasters such as floods and storms are causing more damage than they did in the past.\n\nWhat are the main causes of this problem? What measures could be taken to reduce the damage?\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.",
+   "minutes": 40,
+   "minWords": 250,
+   "tip": "Bu bir sebep–çözüm sorusu: iki soruyu da cevaplamalısın. Bir gövde paragrafı sebepler, biri çözümler için olsun. Sebepleri isimlerle anlat (the main cause of, has led to, results from); çözümleri sebeplere bağla. Bu dersin kelimelerini kullan: vulnerable, infrastructure, early warning system, mitigate, adapt to.",
+   "model": "Floods, storms and other natural hazards seem to be causing greater destruction than ever before, with whole towns sometimes cut off for weeks. Although extreme weather itself is partly to blame, I would argue that the main causes are human ones, and that both governments and communities can do a great deal to reduce the damage.\n\nThe most obvious cause is where and how people live. Rapid population growth has led to the construction of homes on floodplains, coastlines and steep hillsides, places that were once avoided. In many cities, the infrastructure has not kept pace with this growth: drains, roads and power lines designed decades ago are unable to cope with modern demands. A second cause is a changing climate, which is widely believed to be making heavy rainfall and heatwaves more frequent. When these two factors combine, an ordinary storm can have devastating consequences, particularly for poorer households, which are often the most vulnerable and have the least money to rebuild.\n\nSeveral measures could mitigate these effects. First, planning laws should prevent new housing in high-risk areas, and existing buildings should be adapted, for instance by raising electrical systems above flood level. Second, governments should invest in an early warning system that reaches every household by mobile phone, since even a few hours' notice allows people to evacuate safely. Finally, rather than relying only on ever higher walls, authorities could give rivers more space by allowing certain fields to flood, an approach that protects towns downstream.\n\nIn conclusion, the growing damage from natural disasters results largely from human decisions about land and infrastructure. Societies cannot prevent every storm, but by building more carefully and warning people earlier, they can adapt to these hazards and greatly reduce their impact."
+  },
+  {
+   "kind": "speak",
+   "i18n": {"ar":{"title":"المحادثة: الطقس والظواهر الطبيعية"},"en":{"title":"Speaking: weather and natural events"}},
+   "title": "Konuşma: hava ve doğal olaylar",
+   "part1": [
+    "What kind of weather do you like most? Why?",
+    "Has the weather in your hometown changed since you were a child?",
+    "Do you usually check the weather forecast? How often?",
+    "Are there any natural hazards in the area where you live?"
+   ],
+   "card": {
+    "title": "Describe a time when extreme weather affected your plans.",
+    "points": [
+     "when and where it happened",
+     "what the weather was like",
+     "what you had planned to do and what you did instead"
+    ],
+    "explain": "and explain how you felt about the situation at the time."
+   },
+   "useful": [
+    "The main cause of the problem was that…, which led to…",
+    "As a result, we had no choice but to…",
+    "Looking back, I think we were lucky, because…",
+    "It made me realise how vulnerable we are to…",
+    "Since then, I've tried to adapt to… by…",
+    "In my country, people are generally well prepared for…, but…"
+   ]
+  }
+ ]
+}

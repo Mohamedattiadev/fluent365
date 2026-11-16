@@ -1,0 +1,784 @@
+{
+ "id": "lesson-26",
+ "number": 26,
+ "title": "Universities Today",
+ "topic": "Universities and higher education",
+ "level": "B2",
+ "goal": "Follow a tutorial and an academic text about higher education, and emphasise your main point with cleft sentences (What matters is…, It is … that…).",
+ "steps": [
+  {
+   "kind": "words",
+   "i18n": {"ar":{"title":"المفردات: الجامعة والتعليم العالي","intro":"في هذا الدرس 12 كلمة وعبارة عن الجامعة والرسوم والتعليم المهني. انتبه للفرق بين \"undergraduate\" و\"postgraduate\"، وبين \"scholarship\" و\"student loan\"؛ فهي كثيرًا ما تُخلط في IELTS."},"en":{"title":"Vocabulary: university and higher education","intro":"This lesson has 12 words and phrases about university, fees and vocational training. Pay attention to the difference between \"undergraduate\" and \"postgraduate\", and between \"scholarship\" and \"student loan\"; they are often confused in IELTS."}},
+   "title": "Kelimeler: üniversite ve yükseköğretim",
+   "intro": "Bu derste üniversite, ücretler ve meslek eğitimi hakkında 12 kelime ve kalıp var. \"undergraduate\" ile \"postgraduate\", \"scholarship\" ile \"student loan\" arasındaki farka dikkat et; IELTS'te sık karıştırılırlar.",
+   "words": [
+    {
+     "en": "tertiary education",
+     "pos": "phrase",
+     "tr": "yükseköğretim (lise sonrası eğitim)",
+     "ar": "التعليم العالي (بعد الثانوية)",
+     "example": "Access to tertiary education has grown rapidly in many countries."
+    },
+    {
+     "en": "undergraduate",
+     "pos": "noun / adjective",
+     "tr": "lisans öğrencisi; lisans düzeyinde",
+     "ar": "طالب في المرحلة الجامعية الأولى؛ جامعي (بكالوريوس)",
+     "example": "Most undergraduates live in university halls in their first year."
+    },
+    {
+     "en": "postgraduate",
+     "pos": "noun / adjective",
+     "tr": "lisansüstü (yüksek lisans, doktora)",
+     "ar": "دراسات عليا؛ طالب دراسات عليا",
+     "example": "She is planning to do a postgraduate course in public health."
+    },
+    {
+     "en": "tuition fees",
+     "pos": "phrase",
+     "tr": "öğrenim ücreti, okul harcı",
+     "ar": "الرسوم الدراسية",
+     "example": "Tuition fees have risen sharply over the last twenty years."
+    },
+    {
+     "en": "student loan",
+     "pos": "phrase",
+     "tr": "öğrenim kredisi",
+     "ar": "قرض طلابي",
+     "example": "He is still paying back his student loan ten years after graduating."
+    },
+    {
+     "en": "scholarship",
+     "pos": "noun",
+     "tr": "burs (başarı bursu)",
+     "ar": "منحة دراسية",
+     "example": "She won a scholarship that covers all her tuition fees."
+    },
+    {
+     "en": "vocational",
+     "pos": "adjective",
+     "tr": "mesleki",
+     "ar": "مهني",
+     "example": "Vocational courses prepare students for a specific trade, such as plumbing or nursing."
+    },
+    {
+     "en": "curriculum",
+     "pos": "noun",
+     "tr": "müfredat, ders programı",
+     "ar": "المنهج الدراسي",
+     "example": "The new curriculum includes a module on research skills."
+    },
+    {
+     "en": "employability",
+     "pos": "noun",
+     "tr": "istihdam edilebilirlik, iş bulma şansı",
+     "ar": "قابلية التوظيف",
+     "example": "Work placements can improve a graduate's employability."
+    },
+    {
+     "en": "campus",
+     "pos": "noun",
+     "tr": "kampüs, üniversite yerleşkesi",
+     "ar": "الحرم الجامعي",
+     "example": "The library is in the centre of the campus."
+    },
+    {
+     "en": "graduate",
+     "pos": "noun / verb",
+     "tr": "mezun; mezun olmak",
+     "ar": "خرّيج؛ يتخرّج",
+     "example": "Many graduates find their first job through an internship."
+    },
+    {
+     "en": "drop out",
+     "pos": "phrasal verb",
+     "tr": "(okulu) bırakmak, yarıda bırakmak",
+     "ar": "يترك الدراسة (قبل إكمالها)",
+     "example": "Some students drop out because they chose the wrong course."
+    }
+   ],
+   "practice": [
+    {
+     "type": "choice",
+     "id": "w1",
+     "prompt": "A ___ course trains students for a particular job, such as electrician or chef.",
+     "options": [
+      "vocational",
+      "postgraduate",
+      "tertiary",
+      "academic"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "\"Vocational\" belirli bir mesleğe hazırlayan demek. \"postgraduate\" lisansüstü düzeyi, \"tertiary\" lise sonrası eğitimi genel olarak anlatır; \"academic\" ise teorik çalışmayı.",
+      "ar": "vocational تعني مهنيًا يُعدّ لعمل محدد. postgraduate للدراسات العليا، وtertiary للتعليم بعد الثانوية عمومًا، وacademic للدراسة النظرية.",
+      "en": "\"Vocational\" means training for a specific job."
+     },
+     "example": "My cousin took a vocational course in hairdressing."
+    },
+    {
+     "type": "choice",
+     "id": "w2",
+     "prompt": "Which word completes both phrases: \"pay ___ fees\" and \"___ fees have risen\"?",
+     "options": [
+      "tuition",
+      "student",
+      "scholarship",
+      "campus"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "\"tuition fees\" sabit bir eşdizim: öğrenim ücreti. \"student fees\" pek kullanılmaz; \"scholarship\" ve \"campus\" ücret anlamı vermez.",
+      "ar": "التلازم الثابت tuition fees أي الرسوم الدراسية. الكلمات الأخرى لا تشكّل هذا المعنى.",
+      "en": "The fixed collocation is \"tuition fees\"."
+     },
+     "example": "International students often pay higher tuition fees."
+    },
+    {
+     "type": "gap",
+     "id": "w3",
+     "prompt": "Write the correct form of EMPLOY: Many universities now teach practical skills to improve their students' ___.",
+     "answers": [
+      "employability"
+     ],
+     "why": {
+      "tr": "\"students'\" iyelik yapısından sonra bir isim gerekiyor ve anlam \"iş bulabilme yeteneği\": employability. \"employment\" (istihdam) burada daha zayıf olur.",
+      "ar": "بعد students' نحتاج إلى اسم بمعنى القدرة على الحصول على عمل: employability.",
+      "en": "A noun meaning \"ability to get a job\": employability."
+     },
+     "example": "Internships are good for your employability."
+    },
+    {
+     "type": "choice",
+     "id": "w4",
+     "prompt": "Someone who is studying for a master's degree is a ___ student.",
+     "options": [
+      "postgraduate",
+      "undergraduate",
+      "vocational",
+      "graduate school"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "Yüksek lisans (master's) ve doktora \"postgraduate\" düzeyidir. \"undergraduate\" lisans (bachelor's) öğrencisidir.",
+      "ar": "الماجستير والدكتوراه من الدراسات العليا postgraduate، أما undergraduate فهو طالب البكالوريوس.",
+      "en": "Master's and doctoral students are postgraduates; bachelor's students are undergraduates."
+     },
+     "example": "Postgraduate students often work as teaching assistants."
+    },
+    {
+     "type": "choice",
+     "id": "w5",
+     "prompt": "Choose the correct phrasal verb: About one in ten students ___ in their first year.",
+     "options": [
+      "drop out",
+      "drop off",
+      "drop by",
+      "drop in"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "\"drop out (of university)\" = okulu bırakmak. \"drop by / drop in\" kısa ziyaret, \"drop off\" birini bir yere bırakmak ya da azalmak demek.",
+      "ar": "drop out تعني ترك الدراسة. أما drop by وdrop in فللزيارة القصيرة، وdrop off لإنزال شخص في مكان أو للانخفاض.",
+      "en": "\"Drop out\" means leave a course before finishing it."
+     },
+     "example": "He dropped out of university to start his own company."
+    },
+    {
+     "type": "gap",
+     "id": "w6",
+     "prompt": "Write ONE word: She could not afford the fees, but luckily she was awarded a ___ by the university.",
+     "answers": [
+      "scholarship"
+     ],
+     "why": {
+      "tr": "\"be awarded a scholarship\" = burs kazanmak. Para ödemeyi karşılayan, geri ödenmeyen destek: scholarship. \"loan\" geri ödenir.",
+      "ar": "be awarded a scholarship أي حصل على منحة دراسية لا تُردّ، بخلاف loan (القرض) الذي يُسدَّد.",
+      "en": "\"Awarded a scholarship\": money that is not paid back (unlike a loan)."
+     },
+     "example": "Only five students a year are awarded this scholarship."
+    }
+   ]
+  },
+  {
+   "kind": "listen",
+   "i18n": {"ar":{"title":"الاستماع · Part 3: الطلاب المنقطعون عن الدراسة","intro":"طالبان، Priya وTom، يناقشان مع أستاذهما مشروعهما البحثي عن الطلاب الذين ينقطعون عن الدراسة في السنة الأولى. اقرأ الأسئلة أولًا. يُشغَّل التسجيل مرة واحدة.","tip":"في Part 3 تتبّع من قال أي رأي. يطرح أحد الطالبين فكرة فيعترض الآخر بـ \"I disagree a bit\" أو \"To be fair\". غالبًا ما تختبئ الإجابة في هذا الاعتراض. انتبه لجمل التوكيد (cleft) مثل \"What came up… wasn't money. It was…\"."},"en":{"title":"Listening · Part 3: students who drop out","intro":"Two students, Priya and Tom, discuss with their tutor their research project on students who drop out in their first year. Read the questions first. The recording plays once.","tip":"In Part 3 keep track of who says which opinion. One student suggests an idea and the other objects with \"I disagree a bit\" or \"To be fair\". The answer is often hidden in that objection. Watch for emphasis (cleft) sentences like \"What came up… wasn't money. It was…\"."}},
+   "title": "Dinleme · Part 3: okulu bırakan öğrenciler",
+   "intro": "İki öğrenci, Priya ve Tom, birinci sınıfta okulu bırakan öğrenciler hakkındaki araştırma projelerini hocalarıyla konuşuyor. Önce soruları oku. Kayıt bir kez çalar.",
+   "tip": "Part 3'te kimin hangi görüşü söylediğini takip et. Bir öğrenci bir fikir söyler, diğeri \"I disagree a bit\" ya da \"To be fair\" ile karşı çıkar. Cevap çoğu zaman bu karşı çıkışta gizlidir. \"What came up… wasn't money. It was…\" gibi vurgu cümlelerine (cleft) dikkat et.",
+   "audio": {
+    "type": "audio",
+    "id": "l-audio",
+    "speakers": {
+     "N": {
+      "name": "Narrator",
+      "voice": "en-GB-SoniaNeural"
+     },
+     "tutor": {
+      "name": "Dr Marsh",
+      "voice": "en-US-AvaNeural"
+     },
+     "priya": {
+      "name": "Priya",
+      "voice": "en-AU-NatashaNeural"
+     },
+     "tom": {
+      "name": "Tom",
+      "voice": "en-NZ-MitchellNeural"
+     }
+    },
+    "lines": [
+     {
+      "speaker": "N",
+      "text": "You will hear two students, Priya and Tom, talking to their tutor about a research project. First, you have some time to look at questions one to six.",
+      "pauseAfterMs": 2500
+     },
+     {
+      "speaker": "N",
+      "text": "Now listen carefully and answer questions one to six.",
+      "pauseAfterMs": 1200
+     },
+     {
+      "speaker": "tutor",
+      "text": "Come in, both of you. So, you've chosen to look at why undergraduate students drop out in their first year. How far have you got?",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "priya",
+      "text": "We've done the survey, and we've interviewed eight students who left last year. Originally we wanted to compare our university with two others, but we couldn't get permission from them, so it's just ours.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "tutor",
+      "text": "That's fine for a project of this size. What did you find?",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "tom",
+      "text": "Well, we expected money to be the main reason. Tuition fees are high, and lots of people work twenty hours a week. But what came up again and again in the interviews wasn't money. It was loneliness. Students who hadn't made friends in the first six weeks were far more likely to leave.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "priya",
+      "text": "Money mattered, but mostly as a second problem. If you're working every evening, you miss the social events, and then you feel isolated on campus.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "tutor",
+      "text": "So it's the combination. What about the choice of course?",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "tom",
+      "text": "That was the other big one. Several people said the degree wasn't what they expected. One woman chose psychology because she liked a TV series, and then found the curriculum was mostly statistics.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "priya",
+      "text": "To be fair, the university website does describe every module. I just don't think people read it carefully.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "tom",
+      "text": "I disagree a bit. It's written for people who already understand how universities work. It's full of academic terms that mean nothing to a seventeen-year-old.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "tutor",
+      "text": "Both fair points. Now, for your recommendations, what are you thinking?",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "priya",
+      "text": "Our first idea is a mentoring scheme, where each new student is matched with a second-year student. What we like about it is that it's cheap. The university already pays student ambassadors, so it could use them.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "tutor",
+      "text": "Good. And would the mentors be trained in any way?",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "priya",
+      "text": "Just a short session at the start of the year. Tom thought they should meet their students every week, but I think once a fortnight is more realistic, because second-years have heavy workloads too.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "tom",
+      "text": "Fair enough. Fortnightly is probably fine.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "tutor",
+      "text": "Anything else?",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "tom",
+      "text": "We'd also suggest more vocational options, like shorter courses with work placements, for people who aren't sure a three-year degree is right for them. Some of the students who left went on to apprenticeships, and they feel their employability is actually better now.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "tutor",
+      "text": "I'd be careful there. It's what you can support with evidence that matters, and eight interviews isn't a lot. I'd present that as a question for further research rather than a firm recommendation.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "priya",
+      "text": "That makes sense. Should we include figures on student loans?",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "tutor",
+      "text": "Only national figures from a reliable source. Don't guess. And one more thing: your literature review is rather short. It's the postgraduate research on this topic that you should be reading; there's a lot of good recent work.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "tom",
+      "text": "OK. When do you need the draft?",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "tutor",
+      "text": "By the end of next week, please. Friday at the latest.",
+      "pauseAfterMs": 1500
+     },
+     {
+      "speaker": "N",
+      "text": "That is the end of the recording.",
+      "pauseAfterMs": 0
+     }
+    ]
+   },
+   "questions": [
+    {
+     "type": "text",
+     "text": "Questions 1–2. Choose the correct letter."
+    },
+    {
+     "type": "choice",
+     "id": "l1",
+     "prompt": "1. Why did the students study only their own university?",
+     "options": [
+      "They did not have enough time.",
+      "Other universities did not give them permission.",
+      "Their tutor advised them to."
+     ],
+     "answer": 1,
+     "why": {
+      "tr": "Priya: \"we couldn't get permission from them, so it's just ours\". Zaman ya da hocanın tavsiyesi söylenmiyor; hoca sadece \"That's fine\" diyor.",
+      "ar": "تقول Priya: \"we couldn't get permission from them, so it's just ours\". لم يُذكر الوقت، والمعلمة قالت فقط \"That's fine\".",
+      "en": "\"We couldn't get permission from them, so it's just ours.\""
+     },
+     "example": "We wanted to visit the factory, but we couldn't get permission."
+    },
+    {
+     "type": "choice",
+     "id": "l2",
+     "prompt": "2. According to the interviews, what was the main reason students left?",
+     "options": [
+      "the cost of tuition fees",
+      "loneliness",
+      "working long hours"
+     ],
+     "answer": 1,
+     "why": {
+      "tr": "Tom: \"what came up again and again in the interviews wasn't money. It was loneliness.\" Para ve çalışma saatleri \"a second problem\" olarak geçiyor: tuzak.",
+      "ar": "يقول Tom: \"what came up again and again… wasn't money. It was loneliness.\" المال وساعات العمل مشكلة ثانوية، فهما فخّ.",
+      "en": "\"What came up again and again… wasn't money. It was loneliness.\""
+     },
+     "example": "What surprised us wasn't the cost; it was the loneliness."
+    },
+    {
+     "type": "text",
+     "text": "Questions 3–4. Complete the sentences below. Write ONE WORD AND/OR A NUMBER for each answer."
+    },
+    {
+     "type": "gap",
+     "id": "l3",
+     "prompt": "3. Students with no friends after the first ___ weeks were more likely to leave.",
+     "answers": [
+      "six",
+      "6"
+     ],
+     "why": {
+      "tr": "\"Students who hadn't made friends in the first six weeks were far more likely to leave.\" \"twenty\" çalışma saati için söyleniyor, tuzak.",
+      "ar": "\"Students who hadn't made friends in the first six weeks were far more likely to leave.\" الرقم twenty يخص ساعات العمل، فهو فخّ.",
+      "en": "\"In the first six weeks.\" Twenty refers to working hours."
+     },
+     "example": "The first six weeks of university are the most important for making friends."
+    },
+    {
+     "type": "gap",
+     "id": "l4",
+     "prompt": "4. One student found that her psychology course was mainly ___.",
+     "answers": [
+      "statistics"
+     ],
+     "why": {
+      "tr": "\"found the curriculum was mostly statistics\". \"mainly\" = \"mostly\". TV dizisi onun seçim sebebi, cevap değil.",
+      "ar": "\"found the curriculum was mostly statistics\"، وmainly تعني mostly. المسلسل كان سبب اختيارها فقط.",
+      "en": "\"The curriculum was mostly statistics.\""
+     },
+     "example": "I didn't know the economics course was mainly statistics."
+    },
+    {
+     "type": "text",
+     "text": "Questions 5–6. Who expresses each opinion? Choose the correct answer."
+    },
+    {
+     "type": "choice",
+     "id": "l5",
+     "prompt": "5. The university website is hard for many new students to understand.",
+     "options": [
+      "Priya",
+      "Tom",
+      "the tutor"
+     ],
+     "answer": 1,
+     "why": {
+      "tr": "Priya web sitesini savunuyor (\"To be fair… I just don't think people read it carefully\"). Tom karşı çıkıyor: \"It's full of academic terms that mean nothing to a seventeen-year-old.\"",
+      "ar": "تدافع Priya عن الموقع، أما Tom فيعترض: \"It's full of academic terms that mean nothing to a seventeen-year-old.\"",
+      "en": "Tom: \"It's full of academic terms that mean nothing to a seventeen-year-old.\""
+     },
+     "example": "The instructions were full of technical terms that meant nothing to me."
+    },
+    {
+     "type": "choice",
+     "id": "l6",
+     "prompt": "6. The idea about vocational courses is not supported by enough evidence yet.",
+     "options": [
+      "Priya",
+      "Tom",
+      "the tutor"
+     ],
+     "answer": 2,
+     "why": {
+      "tr": "Fikri Tom öneriyor, ama hoca: \"It's what you can support with evidence that matters, and eight interviews isn't a lot.\"",
+      "ar": "Tom هو صاحب الفكرة، لكن المعلمة تقول: \"It's what you can support with evidence that matters, and eight interviews isn't a lot.\"",
+      "en": "The tutor: \"eight interviews isn't a lot… present that as a question for further research.\""
+     },
+     "example": "Ten interviews isn't a lot, so we can't make a firm recommendation."
+    }
+   ]
+  },
+  {
+   "kind": "read",
+   "i18n": {"ar":{"title":"القراءة: مطابقة العناوين (Matching headings)","intro":"ستقرأ نصًا أكاديميًا يناقش كيف تغيّرت الجامعات عبر التاريخ وما دورها اليوم. اختر العنوان الصحيح لكل فقرة.","tip":"العنوان يلخّص الفكرة الرئيسية للفقرة، لا تفصيلًا فيها. انظر أولًا إلى الجملة الأولى والأخيرة من الفقرة. العنوان الذي يحتوي كلمة وردت في الفقرة غالبًا ما يكون فخًا: في الفقرة F ترد \"drops out\" لكن الفقرة ليست عن الانقطاع عن الدراسة."},"en":{"title":"Reading: Matching headings","intro":"You will read an academic text discussing how universities have changed through history and what they are for today. Choose the right heading for each paragraph.","tip":"A heading sums up the paragraph's MAIN idea, not a detail. Look at the first and last sentences of the paragraph first. A heading that contains a word from the paragraph is often a trap: paragraph F mentions \"drops out\", but the paragraph is not about dropping out."}},
+   "title": "Okuma: başlık eşleştirme (Matching headings)",
+   "intro": "Üniversitelerin tarih içinde nasıl değiştiğini ve bugün ne işe yaradıklarını tartışan akademik bir metin okuyacaksın. Her paragraf için doğru başlığı seç.",
+   "tip": "Başlık, paragrafın ANA fikrini özetler, bir ayrıntıyı değil. Önce paragrafın ilk ve son cümlesine bak. Paragrafta geçen bir kelimeyi içeren başlık çoğu zaman tuzaktır: F paragrafında \"drops out\" geçiyor ama paragraf okulu bırakmakla ilgili değil.",
+   "passage": [
+    {
+     "type": "heading",
+     "text": "What Are Universities For?"
+    },
+    {
+     "type": "text",
+     "text": "A  The first European universities, which appeared in cities such as Bologna, Paris and Oxford in the twelfth and thirteenth centuries, had a fairly narrow purpose. They prepared a small number of young men for a handful of professions, above all the Church, law and medicine. The curriculum was based on a limited set of classical texts, teaching was in Latin, and most students came from wealthy families. Similar centres of learning had existed even earlier in the Islamic world, in cities such as Fez and Cairo, and they too trained scholars, judges and religious teachers. For centuries, a university education remained the privilege of a very small minority."
+    },
+    {
+     "type": "text",
+     "text": "B  This picture changed dramatically in the second half of the twentieth century. Governments in many countries came to see tertiary education as essential for economic growth, so they opened new universities, expanded existing ones and offered grants to students from ordinary backgrounds. In a number of countries, the proportion of young people going on to higher education rose from a small fraction to a third or even a half. Campuses that had once held a few thousand students grew into small towns, and the typical undergraduate was no longer the son of a wealthy family but a young man or woman from almost any background."
+    },
+    {
+     "type": "text",
+     "text": "C  Expansion, however, raised a difficult question: who should pay? When only a few people studied, it was relatively cheap for the state to cover the full cost. With millions of students, the bill became enormous. Some countries, particularly in northern Europe, have continued to fund higher education largely through taxation. Others have introduced tuition fees, usually supported by government student loans that are repaid only when graduates earn above a certain level. Supporters of fees argue that graduates benefit personally and should therefore contribute; critics fear that the prospect of debt discourages talented students from poorer families, even when a scholarship is available."
+    },
+    {
+     "type": "text",
+     "text": "D  Whoever pays, most students hope that a degree will improve their employability. On average, graduates in many countries do earn more than non-graduates, but economists disagree about why. One view is that universities teach valuable knowledge and skills. Another is that a degree works mainly as a signal: it tells employers that a person is intelligent and hard-working enough to complete a demanding course, whatever the subject. If the second view is correct, the growing number of graduates may simply lead employers to ask for degrees in jobs that never required them before."
+    },
+    {
+     "type": "text",
+     "text": "E  This concern has led to renewed interest in vocational routes. Germany and Switzerland, for example, have long combined classroom study with paid training in a company, and such apprenticeships enjoy considerable respect. Young people who follow this path can qualify as technicians, electricians or care workers without large debts, and many later continue to higher qualifications. Several other countries have tried to copy these systems, with mixed results, partly because their employers are less used to training young people themselves."
+    },
+    {
+     "type": "text",
+     "text": "F  Finally, it would be a mistake to judge universities only by the salaries of their former students. They are also major centres of research, from medicine to engineering, and much of what they discover benefits people who have never set foot on a campus. Postgraduate researchers, in particular, carry out much of the detailed laboratory and field work on which new discoveries depend. Many universities also see it as their role to encourage critical thinking and open public debate, which healthy democracies depend on. Whether a student who decides to drop out after one year has gained nothing, or has gained something that no certificate records, is a question that is rarely asked."
+    }
+   ],
+   "questions": [
+    {
+     "type": "heading",
+     "text": "Questions 1–6"
+    },
+    {
+     "type": "text",
+     "text": "The passage has six paragraphs, A–F. Choose the correct heading for each paragraph from the list. There are more headings than paragraphs, so you will not use them all."
+    },
+    {
+     "type": "choice",
+     "id": "r1",
+     "prompt": "1. Paragraph A",
+     "options": [
+      "A respected alternative route into work",
+      "Origins in training for a few professions",
+      "Why so many students drop out",
+      "Degrees as a signal to employers",
+      "The spread of higher education beyond a small elite",
+      "Benefits that reach beyond the student",
+      "Who should pay for a degree?",
+      "The rise of online learning"
+     ],
+     "answer": 1,
+     "why": {
+      "tr": "Paragraf A ilk üniversiteleri anlatıyor: \"They prepared a small number of young men for a handful of professions, above all the Church, law and medicine.\" Yani birkaç meslek için eğitim.",
+      "ar": "تصف الفقرة A أولى الجامعات: \"They prepared a small number of young men for a handful of professions\"، أي التدريب على مهن قليلة.",
+      "en": "\"They prepared a small number of young men for a handful of professions.\""
+     },
+     "example": "Early universities trained young men for a handful of professions."
+    },
+    {
+     "type": "choice",
+     "id": "r2",
+     "prompt": "2. Paragraph B",
+     "options": [
+      "A respected alternative route into work",
+      "Origins in training for a few professions",
+      "Why so many students drop out",
+      "Degrees as a signal to employers",
+      "The spread of higher education beyond a small elite",
+      "Benefits that reach beyond the student",
+      "Who should pay for a degree?",
+      "The rise of online learning"
+     ],
+     "answer": 4,
+     "why": {
+      "tr": "Paragraf B yükseköğretimin genişlemesini anlatıyor: oran \"rose from a small fraction to a third or even a half\" ve öğrenciler \"from almost any background\". Elit azınlıktan herkese.",
+      "ar": "تصف الفقرة B توسّع التعليم العالي: ارتفعت النسبة \"from a small fraction to a third or even a half\"، والطلاب \"from almost any background\".",
+      "en": "Participation \"rose from a small fraction to a third or even a half\", from \"almost any background\"."
+     },
+     "example": "Higher education spread from a small elite to the majority."
+    },
+    {
+     "type": "choice",
+     "id": "r3",
+     "prompt": "3. Paragraph C",
+     "options": [
+      "A respected alternative route into work",
+      "Origins in training for a few professions",
+      "Why so many students drop out",
+      "Degrees as a signal to employers",
+      "The spread of higher education beyond a small elite",
+      "Benefits that reach beyond the student",
+      "Who should pay for a degree?",
+      "The rise of online learning"
+     ],
+     "answer": 6,
+     "why": {
+      "tr": "Paragraf C bir soruyla başlıyor: \"who should pay?\" Sonra vergi, öğrenim ücreti ve kredi tartışılıyor. \"scholarship\" sadece bir ayrıntı.",
+      "ar": "تبدأ الفقرة C بسؤال: \"who should pay?\" ثم تناقش الضرائب والرسوم والقروض. أما scholarship فتفصيل فقط.",
+      "en": "It opens with \"who should pay?\" and compares taxation, fees and loans."
+     },
+     "example": "The main question in the debate is who should pay for higher education."
+    },
+    {
+     "type": "choice",
+     "id": "r4",
+     "prompt": "4. Paragraph D",
+     "options": [
+      "A respected alternative route into work",
+      "Origins in training for a few professions",
+      "Why so many students drop out",
+      "Degrees as a signal to employers",
+      "The spread of higher education beyond a small elite",
+      "Benefits that reach beyond the student",
+      "Who should pay for a degree?",
+      "The rise of online learning"
+     ],
+     "answer": 3,
+     "why": {
+      "tr": "Paragraf D'nin ana fikri: \"a degree works mainly as a signal: it tells employers that a person is intelligent and hard-working\". İşverene sinyal olarak diploma.",
+      "ar": "الفكرة الرئيسية في الفقرة D: \"a degree works mainly as a signal: it tells employers…\"، أي الشهادة إشارة لأصحاب العمل.",
+      "en": "\"A degree works mainly as a signal: it tells employers…\""
+     },
+     "example": "For many employers, a degree is a signal that someone can work hard."
+    },
+    {
+     "type": "choice",
+     "id": "r5",
+     "prompt": "5. Paragraph E",
+     "options": [
+      "A respected alternative route into work",
+      "Origins in training for a few professions",
+      "Why so many students drop out",
+      "Degrees as a signal to employers",
+      "The spread of higher education beyond a small elite",
+      "Benefits that reach beyond the student",
+      "Who should pay for a degree?",
+      "The rise of online learning"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "Paragraf E mesleki yolları anlatıyor: Almanya ve İsviçre'de çıraklık \"enjoy considerable respect\". \"respected alternative route\" = saygın bir alternatif yol.",
+      "ar": "تتحدث الفقرة E عن المسارات المهنية: التلمذة المهنية في ألمانيا وسويسرا \"enjoy considerable respect\"، أي طريق بديل محترم.",
+      "en": "Apprenticeships \"enjoy considerable respect\": a respected alternative to university."
+     },
+     "example": "In some countries, an apprenticeship is a respected alternative to a degree."
+    },
+    {
+     "type": "choice",
+     "id": "r6",
+     "prompt": "6. Paragraph F",
+     "options": [
+      "A respected alternative route into work",
+      "Origins in training for a few professions",
+      "Why so many students drop out",
+      "Degrees as a signal to employers",
+      "The spread of higher education beyond a small elite",
+      "Benefits that reach beyond the student",
+      "Who should pay for a degree?",
+      "The rise of online learning"
+     ],
+     "answer": 5,
+     "why": {
+      "tr": "Paragraf F: araştırmaların faydası \"people who have never set foot on a campus\" kişilere de ulaşıyor. \"Why so many students drop out\" tuzak: \"drop out\" geçiyor ama ana fikir değil.",
+      "ar": "الفقرة F: فوائد البحث تصل إلى \"people who have never set foot on a campus\". عنوان Why so many students drop out فخّ، فالعبارة مذكورة لكنها ليست الفكرة الرئيسية.",
+      "en": "Research \"benefits people who have never set foot on a campus\". The drop-out heading is a trap."
+     },
+     "example": "University research benefits people who have never studied there."
+    }
+   ]
+  },
+  {
+   "kind": "language",
+   "i18n": {"ar":{"title":"اللغة: جمل التوكيد cleft (What matters is…, It is … that…)"},"en":{"title":"Language: cleft sentences for emphasis (What matters is…, It is … that…)"}},
+   "title": "Dil: vurgu için cleft cümleler (What matters is…, It is … that…)",
+   "explain": {
+    "tr": "Cleft (bölünmüş) cümleler bir bilgiyi öne çıkarmak için kullanılır; Speaking'de ve Task 2'de görüşünü güçlü ve doğal gösterir. 1) What-cleft: What + özne + fiil + is/was + vurgulanan kısım: \"Students need support.\" → \"What students need is support.\" 2) It-cleft: It is/was + vurgulanan kısım + that/who + cümlenin geri kalanı: \"Loneliness causes most drop-outs.\" → \"It is loneliness that causes most drop-outs.\" Dikkat: What-cleft'te \"is\" fiilini unutma (What matters is…), It-cleft'te \"that\" kullan (insanlar için \"who\" da olur). Aynı paragrafta çok sık kullanma: bir ya da iki kez yeterli.",
+    "ar": "تُستخدم جمل التوكيد (cleft) لإبراز معلومة معيّنة، وهي تجعل رأيك أقوى وأكثر طبيعية في المحادثة والكتابة. 1) بـ What: What + فاعل + فعل + is/was + الجزء المؤكَّد: Students need support ← What students need is support. 2) بـ It: It is/was + الجزء المؤكَّد + that/who + بقية الجملة: Loneliness causes most drop-outs ← It is loneliness that causes most drop-outs. انتبه: لا تنسَ is في جملة What (What matters is…)، واستخدم that في جملة It (ويمكن who للأشخاص). لا تكثر منها: مرة أو مرتان في الفقرة تكفي.",
+    "en": "Cleft sentences highlight one piece of information; they make your opinion sound strong and natural in Speaking and Task 2. 1) What-cleft: What + subject + verb + is/was + focus: \"Students need support.\" → \"What students need is support.\" 2) It-cleft: It is/was + focus + that/who + rest: \"Loneliness causes most drop-outs.\" → \"It is loneliness that causes most drop-outs.\" Don't forget \"is\" in a what-cleft (What matters is…), and use \"that\" in an it-cleft (\"who\" is also possible for people). Use them once or twice in a paragraph, not in every sentence."
+   },
+   "examples": [
+    "What matters most to employers is not the name of the university but the skills a graduate can show.",
+    "It is the cost of tuition fees that discourages many students from poorer families.",
+    "What many undergraduates need in their first term is a friend, not more lectures.",
+    "It was only in the twentieth century that tertiary education became open to most social groups."
+   ],
+   "questions": [
+    {
+     "type": "choice",
+     "id": "g1",
+     "prompt": "Choose the correct sentence.",
+     "options": [
+      "What students want most is practical experience.",
+      "What students want most it is practical experience.",
+      "What students want most practical experience.",
+      "That students want most is practical experience."
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "What-cleft yapısı: What + özne + fiil + is + vurgu. İkinci seçenekte fazladan \"it\", üçüncüde \"is\" eksik, dördüncüde \"What\" yerine \"That\" yanlış.",
+      "ar": "تركيب What: What + فاعل + فعل + is + الجزء المؤكَّد. في الخيار الثاني it زائدة، وفي الثالث is ناقصة، وفي الرابع That خطأ.",
+      "en": "What + clause + is + focus. The others add \"it\", omit \"is\" or use \"That\"."
+     },
+     "example": "What I enjoy most is the freedom to choose my modules."
+    },
+    {
+     "type": "gap",
+     "id": "g2",
+     "prompt": "Write ONE word: It is the quality of teaching ___ really matters, not the size of the campus.",
+     "answers": [
+      "that"
+     ],
+     "why": {
+      "tr": "It-cleft: It is + vurgu + that + cümlenin geri kalanı. Vurgulanan şey bir insan değil (teaching), bu yüzden \"that\".",
+      "ar": "تركيب It: It is + الجزء المؤكَّد + that + بقية الجملة. المؤكَّد ليس شخصًا (teaching)، لذلك that.",
+      "en": "It is + focus + that…"
+     },
+     "example": "It is the teachers that make a school good."
+    },
+    {
+     "type": "choice",
+     "id": "g3",
+     "prompt": "Which sentence emphasises the SAME idea as: \"Money worries make many students leave.\"",
+     "options": [
+      "It is money worries that make many students leave.",
+      "It is many students that make money worries leave.",
+      "What money worries is many students leave.",
+      "Money worries are what many students make leave."
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "Vurgulanan özne \"money worries\": It is money worries that make… Diğerleri anlamı bozuyor ya da dil bilgisi yanlış.",
+      "ar": "الجزء المؤكَّد هو الفاعل money worries: It is money worries that make… الخيارات الأخرى تغيّر المعنى أو خاطئة نحويًا.",
+      "en": "The subject \"money worries\" is put in focus with It is… that."
+     },
+     "example": "It is money worries that keep many students awake at night."
+    },
+    {
+     "type": "gap",
+     "id": "g4",
+     "prompt": "Write ONE word: What universities should focus on ___ helping first-year students feel at home.",
+     "answers": [
+      "is"
+     ],
+     "why": {
+      "tr": "What-cleft'te iki kısmı \"is\" bağlar: What universities should focus on + is + vurgu. -ing ile başlayan vurgu tekil sayılır.",
+      "ar": "في جملة What يربط الفعل is بين الجزأين: What universities should focus on + is + الجزء المؤكَّد.",
+      "en": "\"Is\" links the what-clause to the focus."
+     },
+     "example": "What the city needs is more affordable housing."
+    },
+    {
+     "type": "choice",
+     "id": "g5",
+     "prompt": "Which is the best way to emphasise the time in: \"Women were admitted to the university in 1920.\"",
+     "options": [
+      "It was in 1920 that women were admitted to the university.",
+      "What was in 1920 women were admitted.",
+      "It was women that 1920 admitted the university.",
+      "In 1920 it was that women admitted."
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "Zamanı vurgulamak için: It was + in 1920 + that + cümlenin geri kalanı. Geçmiş zaman olduğu için \"It was\".",
+      "ar": "لتأكيد الزمن: It was + in 1920 + that + بقية الجملة، ونستخدم It was لأن الحدث في الماضي.",
+      "en": "To focus on the time: It was in 1920 that…"
+     },
+     "example": "It was in my final year that I decided to become a teacher."
+    }
+   ]
+  },
+  {
+   "kind": "write",
+   "i18n": {"ar":{"title":"الكتابة · Task 2: هل توافق؟ (مقال كامل)","tip":"في سؤال \"To what extent\" عبّر عن رأيك بوضوح في المقدمة والتزم به حتى النهاية. إذا كنت توافق جزئيًا (partly agree) فاكتب ذلك بوضوح أيضًا. استخدم جملة أو جملتي cleft (What matters is…, It is … that…). كلمات هذا الدرس: tuition fees, student loan, scholarship, tertiary education, vocational, graduate."},"en":{"title":"Writing · Task 2: do you agree? (full essay)","tip":"In a \"To what extent\" question, state your view clearly in the introduction and keep the same view to the end. If you partly agree, say that clearly too. Use one or two cleft sentences (What matters is…, It is … that…). This lesson's words: tuition fees, student loan, scholarship, tertiary education, vocational, graduate."}},
+   "title": "Yazma · Task 2: katılıyor musun? (tam deneme)",
+   "task": 2,
+   "prompt": "Some people believe that university education should be free for all students, with the full cost paid by the government.\n\nTo what extent do you agree or disagree?\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.",
+   "minutes": 40,
+   "minWords": 250,
+   "tip": "\"To what extent\" sorusunda görüşünü girişte açıkça söyle ve sonuna kadar aynı görüşü koru. Kısmen katılıyorsan (partly agree) bunu da net yaz. Bir ya da iki cleft cümle kullan (What matters is…, It is … that…). Bu dersin kelimeleri: tuition fees, student loan, scholarship, tertiary education, vocational, graduate.",
+   "model": "In many countries, the rising cost of tuition fees has made the question of who should pay for higher education a political issue. While I agree that no talented student should be prevented from studying by a lack of money, I do not believe that university should be entirely free for everyone.\n\nThere are strong arguments for free tertiary education. A well-educated population benefits the whole of society, not only the individual graduate: doctors, engineers and teachers serve millions of people who never went to university. Moreover, the fear of debt can discourage young people from poorer families, even when a student loan is available, and a country that loses this talent is wasting a valuable resource. It is this concern for fairness that leads many people to support free education.\n\nHowever, making every degree free has serious drawbacks. The cost to the state would be enormous, and the money would have to come from taxes paid partly by people who never benefited from a degree, including many on low incomes. Free places also tend to be limited in number, so universities may have to reject more applicants. In addition, graduates on average earn considerably more over their lifetimes, so it seems reasonable for them to make some contribution.\n\nIn my view, what matters most is not whether education is free but whether it is accessible. A fair system would combine modest fees with generous scholarships for students from low-income families and loans that are repaid only when graduates earn a good salary. Governments should also fund vocational courses properly, so that university is not seen as the only route to a good career.\n\nIn conclusion, although free university education is an attractive idea, a mixed system is both fairer and more sustainable."
+  },
+  {
+   "kind": "speak",
+   "i18n": {"ar":{"title":"المحادثة: الجامعة والتعليم العالي"},"en":{"title":"Speaking: university and higher education"}},
+   "title": "Konuşma: üniversite ve yükseköğretim",
+   "part1": [
+    "Are you a student, or do you work?",
+    "What subject did you enjoy most at school? Why?",
+    "Would you like to study abroad one day?",
+    "Do many young people in your country go to university?"
+   ],
+   "card": {
+    "title": "Describe a course or subject you would like to study in the future.",
+    "points": [
+     "what the course or subject is",
+     "where you would like to study it",
+     "how you found out about it"
+    ],
+    "explain": "and explain why you would like to study it."
+   },
+   "useful": [
+    "What really interests me about this subject is…",
+    "It was a teacher at my school who first made me interested in…",
+    "Ideally, I'd like to do it as a postgraduate course, because…",
+    "The main obstacle is the cost: tuition fees are…",
+    "I think it would improve my employability, especially in…",
+    "What I'm not sure about yet is whether…"
+   ]
+  }
+ ]
+}

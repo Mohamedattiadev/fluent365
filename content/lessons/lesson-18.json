@@ -1,0 +1,329 @@
+{
+  "id": "lesson-18",
+  "number": 18,
+  "title": "Living Longer",
+  "topic": "An ageing population",
+  "level": "B2",
+  "goal": "Understand a talk about a home-sharing scheme, weigh the effects of an ageing population in an essay, and use third and mixed conditionals to talk about the past.",
+  "steps": [
+    {
+      "kind": "words",
+      "i18n": {"ar":{"title":"المفردات: شيخوخة السكان","intro":"في هذا الدرس 12 كلمة وتعبيرًا عن شيخوخة السكان والتقاعد والرعاية. يتكرر هذا الموضوع في رسوم Task 1 البيانية (نِسب السكان) وفي Task 2 (سن التقاعد، مسؤولية الرعاية). اقرأ الكلمات مع جملها المثال وكرّرها بصوت عالٍ."},"en":{"title":"Vocabulary: an ageing population","intro":"This lesson has 12 words and phrases about an ageing population, retirement and care. The topic often appears in Task 1 charts (population percentages) and in Task 2 (retirement age, responsibility for care). Read the words with their example sentences and repeat them aloud."}},
+      "title": "Kelimeler: yaşlanan nüfus",
+      "intro": "Bu derste yaşlanan nüfus, emeklilik ve bakım hakkında 12 kelime ve kalıp var. Bu konu Task 1 grafiklerinde (nüfus oranları) ve Task 2'de (emeklilik yaşı, bakım sorumluluğu) sık çıkar. Kelimeleri örnek cümleleriyle oku ve sesli tekrar et.",
+      "words": [
+        { "en": "ageing population", "pos": "phrase", "tr": "yaşlanan nüfus", "ar": "شيخوخة السكان؛ مجتمع تتزايد فيه نسبة كبار السن", "example": "An ageing population puts pressure on hospitals and pension systems." },
+        { "en": "retirement", "pos": "noun", "tr": "emeklilik", "ar": "التقاعد", "example": "Many people take up a new hobby after retirement." },
+        { "en": "pension", "pos": "noun", "tr": "emekli maaşı", "ar": "معاش التقاعد", "example": "She receives a small state pension and some savings." },
+        { "en": "the elderly", "pos": "phrase", "tr": "yaşlılar", "ar": "كبار السن، المسنّون", "example": "The new bus service is free for the elderly and for disabled passengers." },
+        { "en": "care home", "pos": "phrase", "tr": "huzurevi, bakım evi", "ar": "دار رعاية المسنين", "example": "My grandmother moved into a care home when she could no longer live alone." },
+        { "en": "workforce", "pos": "noun", "tr": "işgücü, çalışan nüfus", "ar": "القوى العاملة", "example": "As people retire, the workforce in many countries is getting smaller." },
+        { "en": "birth rate", "pos": "phrase", "tr": "doğum oranı", "ar": "معدل المواليد", "example": "A low birth rate means there will be fewer young workers in the future." },
+        { "en": "dependent", "pos": "adjective", "tr": "bağımlı, (başkasına) muhtaç", "ar": "معتمِد على غيره، مُعال", "example": "Nobody wants to feel dependent on their children." },
+        { "en": "longevity", "pos": "noun", "tr": "uzun ömür, ömür uzunluğu", "ar": "طول العمر", "example": "Diet and exercise are linked to longevity." },
+        { "en": "carer", "pos": "noun", "tr": "bakıcı (hasta ya da yaşlıya bakan kişi)", "ar": "مقدّم الرعاية", "example": "He works as a carer for an elderly man with dementia." },
+        { "en": "burden", "pos": "noun", "tr": "yük, külfet", "ar": "عبء", "example": "Some older people worry about becoming a burden on their families." },
+        { "en": "loneliness", "pos": "noun", "tr": "yalnızlık", "ar": "الوحدة", "example": "Loneliness can be as harmful to health as smoking." }
+      ],
+      "practice": [
+        {
+          "type": "choice", "id": "w1",
+          "prompt": "When the ___ falls, each new generation is smaller than the one before.",
+          "options": ["birth rate", "workforce", "pension", "longevity"],
+          "answer": 0,
+          "why": { "tr": "Her neslin bir öncekinden küçük olması daha az bebek doğması demektir: birth rate (doğum oranı). \"longevity\" uzun yaşamak, \"workforce\" çalışanlar demek.", "ar": "أن يكون كل جيل أصغر من سابقه يعني ولادة أطفال أقل: birth rate. أما longevity فتعني طول العمر، وworkforce القوى العاملة.", "en": "Smaller generations come from fewer births: the birth rate." },
+          "example": "The birth rate has fallen in most European countries."
+        },
+        {
+          "type": "gap", "id": "w2",
+          "prompt": "Write the correct form of RETIRE: The government plans to raise the age of ___ to sixty-eight.",
+          "answers": ["retirement"],
+          "why": { "tr": "\"the age of\" sonrasında isim gerekir: retire (fiil) → retirement (isim). \"retired\" sıfattır: a retired teacher.", "ar": "بعد the age of نحتاج إلى اسم: الفعل retire يصبح الاسم retirement. أما retired فهي صفة: a retired teacher.", "en": "A noun is needed after \"the age of\": retire → retirement. Retired is an adjective." },
+          "example": "My father is looking forward to his retirement."
+        },
+        {
+          "type": "choice", "id": "w3",
+          "prompt": "Which word completes the phrase: \"to become a ___ on your family\"?",
+          "options": ["burden", "carer", "pension", "loneliness"],
+          "answer": 0,
+          "why": { "tr": "Kalıp \"a burden on someone\" = birine yük olmak. Diğer kelimeler \"on your family\" ile anlamlı değil.", "ar": "التعبير الثابت هو a burden on someone أي عبء على شخص ما، والكلمات الأخرى لا تستقيم مع on your family.", "en": "The collocation is \"a burden on someone\"." },
+          "example": "She refused to become a burden on her children."
+        },
+        {
+          "type": "choice", "id": "w4",
+          "prompt": "A carer is someone who…",
+          "options": ["looks after a person who is ill, disabled or old", "manages a pension fund", "has recently stopped working", "lives in a care home"],
+          "answer": 0,
+          "why": { "tr": "\"Carer\" hasta, engelli ya da yaşlı birine bakan kişidir; bu bir meslek ya da aile üyesi olabilir.", "ar": "carer هو من يعتني بشخص مريض أو معاق أو مسنّ، وقد يكون موظفًا أو أحد أفراد الأسرة.", "en": "A carer looks after someone who is ill, disabled or old, as a job or within the family." },
+          "example": "Many carers are family members who are not paid."
+        },
+        {
+          "type": "gap", "id": "w5",
+          "prompt": "Write the correct form of DEPEND: After her fall, she became completely ___ on her son for shopping and cooking.",
+          "answers": ["dependent"],
+          "why": { "tr": "\"became completely\" sonrasında sıfat gerekir: dependent on (bağımlı). İngiliz İngilizcesinde \"dependant\" isimdir (bakmakla yükümlü olunan kişi).", "ar": "بعد became completely نحتاج إلى صفة: dependent on. وفي الإنجليزية البريطانية dependant اسم بمعنى الشخص المُعال.", "en": "An adjective is needed: dependent on. (In British English, \"dependant\" is a noun.)" },
+          "example": "Young children are dependent on their parents."
+        },
+        {
+          "type": "choice", "id": "w6",
+          "prompt": "Which sentence uses \"the elderly\" correctly?",
+          "options": ["The city offers free transport to the elderly.", "An elderly is waiting for the bus.", "The elderlies need better services.", "She is an elderly of eighty."],
+          "answer": 0,
+          "why": { "tr": "\"the elderly\" bir grubu anlatır ve çoğul fiil alır; \"an elderly\" ya da \"elderlies\" denmez. Tek kişi için \"an elderly man/woman\" ya da \"an older person\" kullan.", "ar": "the elderly تدل على فئة وتأخذ فعلًا بصيغة الجمع، ولا يُقال an elderly ولا elderlies. للفرد الواحد نقول an elderly man/woman أو an older person.", "en": "\"The elderly\" describes a group; for one person say \"an elderly man\" or \"an older person\"." },
+          "example": "An older woman was waiting for the bus."
+        }
+      ]
+    },
+    {
+      "kind": "listen",
+      "i18n": {"ar":{"title":"الاستماع · Part 2: برنامج مشاركة السكن","intro":"منسّقة برنامج تشرح في اجتماع مشروعًا يجمع أصحاب بيوت مسنّين مع شباب في البيت نفسه. هناك متحدث واحد فقط. اقرأ الأسئلة أولًا؛ يُشغَّل التسجيل مرة واحدة فقط.","tip":"في Part 2 كثيرًا ما يصحّح المتحدث افتراضًا ما: \"we assumed…, but in fact…\"، \"people sometimes think…, but that's not the case\". الإجابة الصحيحة تأتي عادة بعد \"in fact\" أو \"actually\". وانتبه في الأرقام أيضًا: قد يُذكر الرقم السابق والحالي معًا."},"en":{"title":"Listening · Part 2: a home-sharing scheme","intro":"A programme coordinator describes, at a meeting, a project that matches older home owners with young people in the same house. There is one speaker. Read the questions first; the recording plays once.","tip":"In Part 2 the speaker often corrects an assumption: \"we assumed…, but in fact…\", \"people sometimes think…, but that's not the case\". The right answer usually comes after \"in fact\" or \"actually\". Be careful with numbers too: the earlier and the current figure may be given together."}},
+      "title": "Dinleme · Part 2: ev paylaşım programı",
+      "intro": "Bir program koordinatörü, yaşlı ev sahipleriyle genç insanları aynı evde buluşturan bir projeyi bir toplantıda anlatıyor. Tek bir konuşmacı var. Önce soruları oku; kayıt bir kez çalar.",
+      "tip": "Part 2'de konuşmacı sık sık bir varsayımı düzeltir: \"we assumed…, but in fact…\", \"people sometimes think…, but that's not the case\". Doğru cevap genellikle \"in fact\" ya da \"actually\" sonrasındadır. Sayılarda da dikkat: önceki ve şimdiki rakam birlikte söylenebilir.",
+      "audio": {
+        "type": "audio", "id": "l-audio",
+        "speakers": {
+          "N": { "name": "Narrator", "voice": "en-GB-SoniaNeural" },
+          "maggie": { "name": "Maggie Rowe", "voice": "en-AU-NatashaNeural" }
+        },
+        "lines": [
+          { "speaker": "N", "text": "You will hear a woman talking to a group of local residents about a home-sharing scheme. First, you have some time to look at questions one to six.", "pauseAfterMs": 2500 },
+          { "speaker": "N", "text": "Now listen carefully and answer questions one to six.", "pauseAfterMs": 1200 },
+          { "speaker": "maggie", "text": "Good evening, everyone, and thank you for coming. I'm Maggie Rowe, and I coordinate the Brindley Homeshare scheme. Tonight I'd like to explain how it works, because we're hoping to double the number of matches this year.", "pauseAfterMs": 500 },
+          { "speaker": "maggie", "text": "Like most towns in the region, Brindley has an ageing population. Around one in four residents is now over sixty-five, and many of them live alone in houses that were built for families. With a falling birth rate and greater longevity, that number is only going to grow.", "pauseAfterMs": 500 },
+          { "speaker": "maggie", "text": "At the same time, young people who are just joining the local workforce often can't afford the rents in town. Homeshare brings those two groups together.", "pauseAfterMs": 500 },
+          { "speaker": "maggie", "text": "The idea is simple. An older householder offers a spare room. In return, the younger person, who we call the sharer, gives around ten hours of practical help a week. People sometimes assume that the sharer is a kind of live-in carer, but that's not the case at all.", "pauseAfterMs": 500 },
+          { "speaker": "maggie", "text": "Sharers don't provide personal care, such as helping someone wash or giving medicine. What they do is help with shopping, cooking or the garden, and perhaps more importantly, keep someone company in the evenings.", "pauseAfterMs": 500 },
+          { "speaker": "maggie", "text": "So why do householders join? When we started, we assumed most of them would want help with jobs around the house. In fact, when we asked them, the most common reason by far was loneliness. Many had lost a partner, and their children had moved to other cities.", "pauseAfterMs": 500 },
+          { "speaker": "maggie", "text": "Very few mentioned money. Several told us that if they hadn't joined, they would have moved into a care home years earlier than they wanted to. For them, the scheme is really about staying independent.", "pauseAfterMs": 500 },
+          { "speaker": "maggie", "text": "Now, costs. There's no rent as such. Sharers pay us a fee of ninety pounds a month, which covers the checks and our support. Householders pay forty-five pounds, but we don't charge anyone whose only income is the state pension.", "pauseAfterMs": 500 },
+          { "speaker": "maggie", "text": "Every applicant has an interview at home, gives us two references and has a background check. When we began, the whole matching process took about eight weeks. We've made it faster since then, and it now takes about six.", "pauseAfterMs": 500 },
+          { "speaker": "maggie", "text": "Most of our sharers have been students at the college. This year, though, we've started accepting trainee nurses from the hospital, who work long shifts and need somewhere quiet near work. We'd also hoped to include young teachers, but most of the schools are simply too far from where our householders live.", "pauseAfterMs": 500 },
+          { "speaker": "maggie", "text": "Finally, a word to families, because I know some of you are here on behalf of a parent. You may worry that your mother or father would feel dependent on a stranger, or that they'd see themselves as a burden. In our experience, the opposite is usually true.", "pauseAfterMs": 500 },
+          { "speaker": "maggie", "text": "The match works best when the older person feels in charge. So please don't fill in the application for them. Talk to them about it first, and let them decide whether to apply. If my own father had been asked rather than told, his retirement would have been much happier.", "pauseAfterMs": 500 },
+          { "speaker": "maggie", "text": "One last thing: we try not to use the phrase the elderly, because it makes everyone over seventy sound the same, and our householders are anything but. Right, are there any questions?", "pauseAfterMs": 1500 },
+          { "speaker": "N", "text": "That is the end of the recording.", "pauseAfterMs": 0 }
+        ]
+      },
+      "questions": [
+        { "type": "text", "text": "Questions 1–2. Choose the correct letter." },
+        {
+          "type": "choice", "id": "l1",
+          "prompt": "1. What are sharers expected to do?",
+          "options": ["provide personal care such as giving medicine", "help around the house and keep the householder company", "pay rent at the normal market price"],
+          "answer": 1,
+          "why": { "tr": "Maggie paylaşımcının bakıcı olmadığını açıkça söylüyor: \"that's not the case at all\". Görevleri: alışveriş, yemek, bahçe ve \"keep someone company\". Kira da yok: \"There's no rent as such.\"", "ar": "توضح Maggie أن المشارك ليس مقدّم رعاية: \"that's not the case at all\". مهامه: التسوق والطبخ والحديقة و\"keep someone company\". ولا يوجد إيجار: There's no rent as such.", "en": "Sharers are not carers (\"that's not the case at all\"); they help with shopping, cooking and the garden and keep people company." },
+          "example": "Volunteers keep older residents company in the evenings."
+        },
+        {
+          "type": "choice", "id": "l2",
+          "prompt": "2. According to Maggie, what is the main reason older people join the scheme?",
+          "options": ["They want help with jobs around the house.", "They feel lonely.", "They need extra income."],
+          "answer": 1,
+          "why": { "tr": "\"we assumed most of them would want help with jobs around the house. In fact… the most common reason by far was loneliness.\" A sadece onların varsayımıydı; para ise \"Very few mentioned money\".", "ar": "\"we assumed most of them would want help with jobs around the house. In fact… the most common reason by far was loneliness\". الخيار A مجرد افتراض، والمال: Very few mentioned money.", "en": "\"We assumed … help with jobs around the house. In fact … the most common reason by far was loneliness.\"" },
+          "example": "We assumed it was about money, but in fact it was about loneliness."
+        },
+        { "type": "text", "text": "Questions 3–4. Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer." },
+        {
+          "type": "gap", "id": "l3",
+          "prompt": "3. Monthly fee for sharers: £___",
+          "answers": ["90", "ninety"],
+          "why": { "tr": "\"Sharers pay us a fee of ninety pounds a month.\" Kırk beş pound ev sahiplerinin ücreti; tuzak bu.", "ar": "\"Sharers pay us a fee of ninety pounds a month\". أما خمسة وأربعون جنيهًا فهي رسوم أصحاب البيوت، وهي الفخّ.", "en": "\"Sharers pay us a fee of ninety pounds a month.\" £45 is the householders' fee." },
+          "example": "The fee is ninety pounds a month for sharers."
+        },
+        {
+          "type": "gap", "id": "l4",
+          "prompt": "4. The matching process now takes about ___ weeks.",
+          "answers": ["6", "six"],
+          "why": { "tr": "Önce sekiz hafta sürüyormuş (\"When we began… eight weeks\"), ama \"it now takes about six\". Soru \"now\" diyor: 6.", "ar": "كانت العملية تستغرق ثمانية أسابيع في البداية، لكن \"it now takes about six\". السؤال يقول now، فالجواب 6.", "en": "It took eight weeks at first, but \"it now takes about six\"." },
+          "example": "The process used to take eight weeks; now it takes six."
+        },
+        { "type": "text", "text": "Questions 5–6. Choose the correct letter." },
+        {
+          "type": "choice", "id": "l5",
+          "prompt": "5. Which group of sharers has the scheme started to accept this year?",
+          "options": ["college students", "trainee nurses", "young teachers"],
+          "answer": 1,
+          "why": { "tr": "\"This year, though, we've started accepting trainee nurses.\" Öğrenciler zaten vardı; öğretmenler ise okullar uzak olduğu için kabul edilemedi.", "ar": "\"This year, though, we've started accepting trainee nurses\". الطلاب كانوا موجودين من قبل، والمعلمون لم يُقبلوا لأن المدارس بعيدة.", "en": "\"This year … we've started accepting trainee nurses.\" Students were already there; teachers were not possible." },
+          "example": "This year the scheme has started accepting trainee nurses."
+        },
+        {
+          "type": "choice", "id": "l6",
+          "prompt": "6. What does Maggie advise families to do?",
+          "options": ["fill in the application on their parent's behalf", "visit the house every week after the match", "let the older person make the decision"],
+          "answer": 2,
+          "why": { "tr": "\"please don't fill in the application for them… let them decide whether to apply.\" A tam tersi. Haftalık ziyaretten söz edilmiyor.", "ar": "\"please don't fill in the application for them… let them decide whether to apply\". الخيار A عكس النصيحة، والزيارات الأسبوعية لم تُذكر.", "en": "\"Please don't fill in the application for them … let them decide whether to apply.\"" },
+          "example": "Talk to your parents first and let them decide."
+        }
+      ]
+    },
+    {
+      "kind": "read",
+      "i18n": {"ar":{"title":"القراءة: True / False / Not Given وإكمال الملخّص","intro":"ستقرأ نصًا أكاديميًا عن آثار شيخوخة سكان العالم على الاقتصاد والأسرة والمجتمع.","tip":"لتفرّق بين FALSE وNOT GIVEN اسأل نفسك: هل يقول النص عكس هذه العبارة (FALSE)، أم لا يذكرها أصلًا (NOT GIVEN)؟ في إكمال الملخّص خذ الكلمة من النص كما هي والتزم بحد الكلمات؛ فالكلمات قبل الفراغ وبعده تبيّن الصيغة الصحيحة (مفرد/جمع، اسم/صفة)."},"en":{"title":"Reading: True / False / Not Given and summary completion","intro":"You will read an academic text about the effects of the world's ageing population on the economy, the family and society.","tip":"To tell FALSE from NOT GIVEN, ask: does the text say the opposite of this statement (FALSE), or does it not mention it at all (NOT GIVEN)? In summary completion, take the word from the text exactly and keep to the word limit; the words before and after the gap show the right form (singular/plural, noun/adjective)."}},
+      "title": "Okuma: True / False / Not Given ve özet tamamlama",
+      "intro": "Dünya nüfusunun yaşlanmasının ekonomiye, aileye ve topluma etkilerini anlatan akademik bir metin okuyacaksın.",
+      "tip": "FALSE ile NOT GIVEN'ı ayırmak için şunu sor: metin bu ifadenin tersini söylüyor mu (FALSE), yoksa hiç söz etmiyor mu (NOT GIVEN)? Özet tamamlamada kelimeyi metinden aynen al ve kelime sınırına uy; boşluktan önceki ve sonraki kelimeler doğru biçimi (tekil/çoğul, isim/sıfat) gösterir.",
+      "passage": [
+        { "type": "heading", "text": "Grey and Growing: Societies in an Age of Longevity" },
+        { "type": "text", "text": "For most of human history, only a small minority of people lived beyond the age of sixty-five. Today, in many countries, this is the normal experience. Two long-term trends explain the change. The first is longevity: better nutrition, cleaner water, vaccines and modern medicine mean that people live far longer than their grandparents did. The second is a falling birth rate. As women gain access to education and paid work, and as fewer children die young, families tend to become smaller. Together, these trends produce an ageing population, in which the share of older people rises and the share of children falls." },
+        { "type": "text", "text": "Japan is often described as the clearest example. Close to a third of its people are now over sixty-five, and its total population has been shrinking for more than a decade. However, the same process is under way across Europe and in much of East Asia, and it is beginning in parts of Latin America. Demographers expect almost every country to follow a similar path during this century, although at very different speeds. In some countries the change has taken more than a century; in others it is happening within two generations." },
+        { "type": "text", "text": "The economic consequences are widely debated. In most pension systems, the contributions of people who are working today pay for the pensions of those who have already retired. When the workforce shrinks while the number of retired people grows, this arrangement comes under strain. Governments have responded in several ways, most commonly by raising the age of retirement, but also by encouraging immigration and by persuading more women and older adults to stay in paid work. Each of these measures is politically sensitive, and none is likely to be enough on its own." },
+        { "type": "text", "text": "Health and social care face similar pressure. Older people are more likely to live with long-term conditions, and the number of people over eighty, who often need daily support, is growing fastest of all. Much of this support is not provided by professionals but by family members, usually women, who act as an unpaid carer for a parent or partner. Some economists argue that if this unpaid work were counted, it would be one of the largest sectors of the economy. In countries where families are smaller and children often live far from their parents, fewer relatives are available to share this responsibility, and demand for places in a care home is rising." },
+        { "type": "text", "text": "Yet it would be a mistake to see older people only as a burden. Many of them are healthy and active for decades after they stop working. They look after grandchildren, volunteer in their communities and spend money on travel and leisure, a market that businesses increasingly target. Researchers also point out that being dependent on others is far from inevitable in later life, and that good housing, accessible transport and opportunities to keep learning can help people remain independent for much longer." },
+        { "type": "text", "text": "Perhaps the most serious problem is a social one. Loneliness among the elderly has been linked to depression and poorer physical health, and it is often worse for those who have lost a partner. Some communities have experimented with new forms of housing that bring generations together. In one Dutch care home, for example, university students live rent-free in exchange for spending time with the residents each month. Such projects remain small, but they suggest that an older society need not be a more isolated one." }
+      ],
+      "questions": [
+        { "type": "heading", "text": "Questions 1–4: True, False or Not Given?" },
+        { "type": "text", "text": "TRUE if the statement agrees with the information, FALSE if it contradicts the information, NOT GIVEN if there is no information on this." },
+        {
+          "type": "tfng", "id": "r1",
+          "statement": "1. Smaller families are one of the causes of population ageing.",
+          "answer": "true",
+          "why": { "tr": "Paragraf 1: ikinci eğilim \"a falling birth rate\" ve \"families tend to become smaller\". İki eğilim birlikte yaşlanan nüfusu oluşturuyor: TRUE.", "ar": "الفقرة الأولى: الاتجاه الثاني هو انخفاض معدل المواليد و\"families tend to become smaller\"، والاتجاهان معًا ينتجان شيخوخة السكان: TRUE.", "en": "The second trend is a falling birth rate, as \"families tend to become smaller\"; together these produce an ageing population." },
+          "example": "Smaller families are one reason why the population is ageing."
+        },
+        {
+          "type": "tfng", "id": "r2",
+          "statement": "2. All countries are expected to age at roughly the same speed.",
+          "answer": "false",
+          "why": { "tr": "Paragraf 2: neredeyse her ülke benzer bir yol izleyecek, \"although at very different speeds\". İfade bunun tersini söylüyor: FALSE.", "ar": "الفقرة الثانية: ستسلك كل البلدان تقريبًا طريقًا مشابهًا \"although at very different speeds\"، والعبارة تقول العكس: FALSE.", "en": "\"…although at very different speeds.\" The statement contradicts this." },
+          "example": "Countries are ageing at very different speeds."
+        },
+        {
+          "type": "tfng", "id": "r3",
+          "statement": "3. Raising the retirement age is the most popular measure among voters.",
+          "answer": "not given",
+          "why": { "tr": "Paragraf 3 bunun en yaygın önlem olduğunu (\"most commonly\") ve tüm önlemlerin \"politically sensitive\" olduğunu söylüyor, ama seçmenler arasında en popüler olup olmadığını söylemiyor: NOT GIVEN. \"most commonly\" tuzak.", "ar": "تقول الفقرة الثالثة إنه الإجراء الأكثر شيوعًا (most commonly) وإن كل الإجراءات حساسة سياسيًا، لكنها لا تقول إنه الأكثر شعبية بين الناخبين: NOT GIVEN.", "en": "It is the most common measure, not necessarily the most popular one; voters' views are not given." },
+          "example": "A measure can be common without being popular."
+        },
+        {
+          "type": "tfng", "id": "r4",
+          "statement": "4. The group of people over eighty is increasing more quickly than any other age group.",
+          "answer": "true",
+          "why": { "tr": "Paragraf 4: \"the number of people over eighty… is growing fastest of all.\" \"fastest of all\" = diğer tüm gruplardan daha hızlı: TRUE.", "ar": "الفقرة الرابعة: \"the number of people over eighty… is growing fastest of all\"، أي أسرع من أي فئة أخرى: TRUE.", "en": "\"The number of people over eighty … is growing fastest of all.\"" },
+          "example": "The over-eighties are the fastest-growing age group."
+        },
+        { "type": "heading", "text": "Questions 5–7: Complete the summary." },
+        { "type": "text", "text": "Use ONE WORD ONLY from the passage for each answer." },
+        { "type": "text", "text": "Much daily support for older people comes from relatives who work as an unpaid (5) ___. However, many older people stay active for years: they care for grandchildren and (6) ___ in their communities. Good housing and transport can help them remain (7) ___ for longer." },
+        {
+          "type": "gap", "id": "r5",
+          "prompt": "5. Much daily support comes from relatives who work as an unpaid ___.",
+          "answers": ["carer"],
+          "why": { "tr": "Paragraf 4: \"family members… who act as an unpaid carer for a parent or partner.\" \"an unpaid\" sonrasında tekil isim gerekir: carer.", "ar": "الفقرة الرابعة: \"family members… who act as an unpaid carer\". بعد an unpaid نحتاج إلى اسم مفرد: carer.", "en": "\"…who act as an unpaid carer for a parent or partner.\"" },
+          "example": "She has been an unpaid carer for her mother for five years."
+        },
+        {
+          "type": "gap", "id": "r6",
+          "prompt": "6. They care for grandchildren and ___ in their communities.",
+          "answers": ["volunteer"],
+          "why": { "tr": "Paragraf 5: \"They look after grandchildren, volunteer in their communities…\" \"and\" iki fiili bağlıyor, yani bir fiil gerekir: volunteer.", "ar": "الفقرة الخامسة: \"They look after grandchildren, volunteer in their communities\". حرف and يربط فعلين، فنحتاج إلى فعل: volunteer.", "en": "\"They look after grandchildren, volunteer in their communities…\" A verb is needed after \"and\"." },
+          "example": "Many retired people volunteer in local schools."
+        },
+        {
+          "type": "gap", "id": "r7",
+          "prompt": "7. Good housing and transport can help them remain ___ for longer.",
+          "answers": ["independent"],
+          "why": { "tr": "Paragraf 5: \"good housing, accessible transport… can help people remain independent for much longer.\" \"remain\" sonrasında sıfat gelir. \"dependent\" tuzak: anlam tersi.", "ar": "الفقرة الخامسة: \"can help people remain independent for much longer\". بعد remain تأتي صفة، وكلمة dependent فخّ لأن معناها عكسي.", "en": "\"…can help people remain independent for much longer.\" Dependent is the opposite." },
+          "example": "Good public transport helps older people remain independent."
+        }
+      ]
+    },
+    {
+      "kind": "language",
+      "i18n": {"ar":{"title":"اللغة: الجمل الشرطية من النوع الثالث والمختلطة"},"en":{"title":"Language: third and mixed conditionals"}},
+      "title": "Dil: 3. tip ve karma koşul cümleleri",
+      "explain": {
+        "tr": "3. tip koşul cümlesi geçmişte olmamış bir durumu ve onun hayalî sonucunu anlatır: if + had + V3, would have + V3. If the government had planned earlier, the pension system would have been stronger (ama planlamadı). Pişmanlık ve eleştiri için çok kullanışlıdır. Karma (mixed) koşul cümlesi geçmişteki bir durumun şimdiki sonucunu anlatır: if + had + V3, would + fiil. If birth rates had not fallen, there would be more young workers today. Ya da tersi, şimdiki bir durumun geçmişteki sonucu: If I were more patient, I would have become a nurse. Dikkat: \"if\" bölümünde \"would\" kullanılmaz; \"If I would have known\" yanlıştır. Task 2'de geçmiş politikaları değerlendirmek için bir iki karma koşul cümlesi yüksek dil puanı getirir.",
+        "ar": "الجملة الشرطية من النوع الثالث تصف موقفًا لم يحدث في الماضي ونتيجته الخيالية: if + had + التصريف الثالث، would have + التصريف الثالث. If the government had planned earlier, the pension system would have been stronger (لكنها لم تخطط). وهي مفيدة للتعبير عن الندم والنقد. أما الجملة الشرطية المختلطة فتصف نتيجة حاضرة لموقف ماضٍ: if + had + التصريف الثالث، would + الفعل: If birth rates had not fallen, there would be more young workers today. أو العكس، نتيجة ماضية لصفة حاضرة: If I were more patient, I would have become a nurse. انتبه: لا نستخدم would في جزء if، فجملة If I would have known خاطئة.",
+        "en": "The third conditional describes a past situation that did not happen and its imaginary result: if + had + past participle, would have + past participle. If the government had planned earlier, the pension system would have been stronger (but it did not plan). It is useful for regret and criticism. A mixed conditional links a past condition to a present result: if + had + past participle, would + verb. If birth rates had not fallen, there would be more young workers today. Or a present condition to a past result: If I were more patient, I would have become a nurse. Never use would in the if-clause: \"If I would have known\" is wrong."
+      },
+      "examples": [
+        "If my grandfather had saved more before retirement, he would have had a more comfortable old age.",
+        "If the country had invested in care homes twenty years ago, there would not be such long waiting lists now.",
+        "If birth rates had stayed high, the workforce would be much larger today.",
+        "If she weren't so independent, she would have moved in with her children years ago."
+      ],
+      "questions": [
+        {
+          "type": "choice", "id": "g1",
+          "prompt": "If the government ___ the pension age earlier, the system would have saved billions.",
+          "options": ["had raised", "raised", "would raise", "has raised"],
+          "answer": 0,
+          "why": { "tr": "Sonuç bölümünde \"would have saved\" var: geçmişte olmamış bir durum, 3. tip. \"if\" bölümünde \"had + V3\": had raised.", "ar": "في جزء النتيجة توجد would have saved، فهو موقف ماضٍ لم يحدث (النوع الثالث)، وفي جزء if نستخدم had + التصريف الثالث: had raised.", "en": "Third conditional: if + had + past participle, would have + past participle." },
+          "example": "If they had started saving earlier, they would have retired sooner."
+        },
+        {
+          "type": "choice", "id": "g2",
+          "prompt": "If I had studied medicine, I ___ a doctor now.",
+          "options": ["would be", "would have been", "will be", "had been"],
+          "answer": 0,
+          "why": { "tr": "Koşul geçmişte (had studied), ama sonuç şimdi (\"now\"): karma koşul. Şimdiki sonuç için \"would + fiil\": would be.", "ar": "الشرط في الماضي (had studied) لكن النتيجة في الحاضر (now)، فهي جملة مختلطة، ونستخدم would + الفعل: would be.", "en": "Past condition, present result (\"now\"): mixed conditional, would + verb." },
+          "example": "If I had moved abroad, I would be living in Canada now."
+        },
+        {
+          "type": "choice", "id": "g3",
+          "prompt": "Which sentence is correct?",
+          "options": ["If I had known about the scheme, I would have applied.", "If I would have known about the scheme, I would have applied.", "If I knew about the scheme, I would have applied it.", "If I had known about the scheme, I applied."],
+          "answer": 0,
+          "why": { "tr": "3. tip: if + had known, would have applied. B'de \"if\" bölümünde \"would\" var: yanlış. C'de zaman uyumu bozuk ve \"apply\" burada \"for\" ister. D'de sonuç bölümü \"would have\" olmalı.", "ar": "النوع الثالث: if + had known، would have applied. في B توجد would في جزء if وهذا خطأ، وفي C الأزمنة غير متوافقة، وفي D يجب أن تكون النتيجة would have.", "en": "A is a correct third conditional. B puts would in the if-clause; C and D mix the forms incorrectly." },
+          "example": "If I had known about the course, I would have joined it."
+        },
+        {
+          "type": "gap", "id": "g4",
+          "prompt": "Write NO MORE THAN THREE WORDS: If people had not started living longer, the population ___ aged so quickly in the last fifty years.",
+          "answers": ["wouldn't have", "would not have"],
+          "why": { "tr": "Koşul geçmişte, sonuç da geçmişte (\"in the last fifty years\"): 3. tip. Olumsuz sonuç: wouldn't have + aged. \"would not have\" da kabul edilir.", "ar": "الشرط والنتيجة كلاهما في الماضي (in the last fifty years)، فهو النوع الثالث، والنتيجة المنفية: wouldn't have + aged.", "en": "Past condition, past result: third conditional, negative: wouldn't have aged." },
+          "example": "If it hadn't rained, the match wouldn't have been cancelled."
+        },
+        {
+          "type": "choice", "id": "g5",
+          "prompt": "\"My grandmother isn't very organised, so she didn't plan for her retirement.\" Which sentence means the same?",
+          "options": ["If my grandmother were more organised, she would have planned for her retirement.", "If my grandmother had been more organised, she would plan for her retirement.", "If my grandmother is more organised, she will plan for her retirement.", "If my grandmother was organised, she plans for her retirement."],
+          "answer": 0,
+          "why": { "tr": "Şimdiki bir özellik (düzenli değil) geçmişteki bir sonucu açıklıyor: karma koşul. \"if + past simple (were)\", \"would have + V3\".", "ar": "صفة حاضرة (ليست منظمة) تفسّر نتيجة في الماضي، فهي جملة مختلطة: if + الماضي البسيط (were)، would have + التصريف الثالث.", "en": "A present characteristic explains a past result: if + past simple, would have + past participle." },
+          "example": "If I were braver, I would have spoken to her."
+        }
+      ]
+    },
+    {
+      "kind": "write",
+      "i18n": {"ar":{"title":"الكتابة · Task 2: المزايا والعيوب","tip":"سؤال \"Do the advantages outweigh the disadvantages?\" يتطلب إجابة واضحة: قل في المقدمة إن المزايا أو العيوب هي الأرجح في رأيك. اعرض العيوب في فقرة والمزايا في أخرى، واجعل الفقرة التي تدعم رأيك هي الثانية. استخدم كلمات هذا الدرس (ageing population، workforce، pension، burden) وجملة شرطية واحدة على الأقل من النوع الثالث أو المختلط."},"en":{"title":"Writing · Task 2: advantages and disadvantages","tip":"The question \"Do the advantages outweigh the disadvantages?\" needs a clear answer: say in the introduction that, in your view, the advantages (or the disadvantages) outweigh the other side. Cover the disadvantages in one body paragraph and the advantages in the other; write the paragraph that supports your view second. Use this lesson's words (ageing population, workforce, pension, burden) and at least one third or mixed conditional."}},
+      "title": "Yazma · Task 2: avantajlar ve dezavantajlar",
+      "task": 2,
+      "prompt": "In many countries, the proportion of older people in the population is increasing steadily.\n\nDo the advantages of this development outweigh the disadvantages?",
+      "minutes": 40,
+      "minWords": 250,
+      "tip": "\"Do the advantages outweigh the disadvantages?\" sorusu net bir cevap ister: girişte \"Bence avantajlar/dezavantajlar daha ağır basıyor\" de. Bir gövde paragrafında dezavantajları, diğerinde avantajları anlat; görüşünü destekleyen paragrafı ikinci yaz. Bu dersin kelimelerini (ageing population, workforce, pension, burden) ve en az bir 3. tip ya da karma koşul cümlesi kullan.",
+      "model": "Thanks to better health care and smaller families, the average age of the population is rising in a large number of countries. This trend creates real difficulties, especially for public finances. However, I believe that its advantages, both for individuals and for society, outweigh the disadvantages, provided that governments plan carefully.\n\nThe most obvious drawback of an ageing population is economic. In most countries, the pensions of retired people are paid for by those who are still working, so a shrinking workforce means that each employee must support a growing number of pensioners. Health and care services also come under pressure, as older people are more likely to need long-term treatment. If many governments had prepared for these changes twenty years ago, they would not be facing such difficult choices now, such as raising taxes or cutting the value of the state pension.\n\nNevertheless, these problems should be seen alongside the considerable benefits. Longer lives are, first of all, a sign of social progress: millions of people now enjoy decades of active life that earlier generations never had. Far from being a burden, many older people make an enormous contribution. They look after grandchildren, which allows parents to work, they volunteer in hospitals and charities, and many continue to work part-time, passing on skills and experience to younger colleagues. In addition, older consumers create demand for new services in areas such as travel, leisure and health technology, which in turn create jobs.\n\nIn conclusion, although an older population places real strain on pension and health systems, I would argue that the benefits are greater. With sensible policies, such as flexible retirement ages and investment in preventive health care, longer lives can be a source of strength rather than a problem."
+    },
+    {
+      "kind": "speak",
+      "i18n": {"ar":{"title":"التحدث: كبار السن والأجيال"},"en":{"title":"Speaking: older people and generations"}},
+      "title": "Konuşma: yaşlılar ve nesiller",
+      "part1": [
+        "Do you spend much time with your grandparents or other older relatives?",
+        "What do older people in your country usually do after they retire?",
+        "Is there anything you would like to learn from older people?",
+        "At what age do you think people should stop working? Why?"
+      ],
+      "card": {
+        "title": "Describe an older person you admire.",
+        "points": [
+          "who this person is",
+          "how you know him or her",
+          "what this person does or used to do"
+        ],
+        "explain": "and explain why you admire this person."
+      },
+      "useful": [
+        "She's in her late seventies, but she's still remarkably independent.",
+        "What I admire most is the way he has handled…",
+        "Since his retirement, he has taken up…",
+        "If she hadn't encouraged me, I would never have…",
+        "She has never wanted to be dependent on anyone.",
+        "Looking back, I think I've learned more from her than from any teacher."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,703 @@
+{
+ "id": "lesson-31",
+ "number": 31,
+ "title": "Medicine and Public Health",
+ "topic": "Medicine and public health",
+ "level": "B2",
+ "goal": "Follow a lecture and an article about public health, answer a two-part essay question, and support ideas with examples using for instance, a case in point is and notably.",
+ "steps": [
+  {
+   "kind": "words",
+   "i18n": {"ar":{"title":"المفردات: الطب والصحة العامة","intro":"في هذا الدرس 12 كلمة وتعبيرًا عن الطب والصحة العامة. تعلّم التعابير المركّبة مثل \"side effect\" و\"clinical trial\" و\"infectious disease\" ككتلة واحدة؛ فهي تتكرر كثيرًا في القراءة والاستماع."},"en":{"title":"Vocabulary: medicine and public health","intro":"This lesson has 12 words and phrases about medicine and public health. Learn two-word phrases like \"side effect\", \"clinical trial\" and \"infectious disease\" as a whole; they come up often in reading and listening."}},
+   "title": "Kelimeler: tıp ve halk sağlığı",
+   "intro": "Bu derste tıp ve halk sağlığı hakkında 12 kelime ve kalıp var. \"side effect\", \"clinical trial\", \"infectious disease\" gibi ikili kalıpları bir bütün olarak öğren; okuma ve dinlemede sık çıkarlar.",
+   "words": [
+    {
+     "en": "public health",
+     "pos": "phrase",
+     "tr": "halk sağlığı",
+     "ar": "الصحة العامة",
+     "example": "Clean drinking water is one of the greatest achievements of public health."
+    },
+    {
+     "en": "infectious disease",
+     "pos": "phrase",
+     "tr": "bulaşıcı hastalık",
+     "ar": "مرض مُعدٍ",
+     "example": "Measles is a highly infectious disease that spreads through the air."
+    },
+    {
+     "en": "outbreak",
+     "pos": "noun",
+     "tr": "salgın, (hastalığın) patlak vermesi",
+     "ar": "تفشٍّ (لمرض)",
+     "example": "There was an outbreak of food poisoning at the school last week."
+    },
+    {
+     "en": "vaccination",
+     "pos": "noun",
+     "tr": "aşılama",
+     "ar": "التطعيم",
+     "example": "Vaccination has made many childhood diseases rare."
+    },
+    {
+     "en": "sanitation",
+     "pos": "noun",
+     "tr": "sanitasyon, temizlik ve kanalizasyon altyapısı",
+     "ar": "الصرف الصحي والنظافة العامة",
+     "example": "Poor sanitation allows diseases such as cholera to spread."
+    },
+    {
+     "en": "immune system",
+     "pos": "phrase",
+     "tr": "bağışıklık sistemi",
+     "ar": "الجهاز المناعي",
+     "example": "Sleep and a good diet help to keep the immune system strong."
+    },
+    {
+     "en": "antibiotics",
+     "pos": "noun (plural)",
+     "tr": "antibiyotikler",
+     "ar": "المضادات الحيوية",
+     "example": "Antibiotics do not work against viruses such as the common cold."
+    },
+    {
+     "en": "diagnose",
+     "pos": "verb",
+     "tr": "teşhis etmek",
+     "ar": "يشخّص (مرضًا)",
+     "example": "The disease is easier to treat if it is diagnosed early."
+    },
+    {
+     "en": "preventable",
+     "pos": "adjective",
+     "tr": "önlenebilir",
+     "ar": "يمكن الوقاية منه",
+     "example": "Many deaths from heart disease are preventable."
+    },
+    {
+     "en": "clinical trial",
+     "pos": "phrase",
+     "tr": "klinik deneme (ilacın insanlar üzerinde test edilmesi)",
+     "ar": "تجربة سريرية",
+     "example": "The new drug is being tested in a clinical trial with 3,000 patients."
+    },
+    {
+     "en": "side effect",
+     "pos": "phrase",
+     "tr": "yan etki",
+     "ar": "أثر جانبي",
+     "example": "A common side effect of this medicine is tiredness."
+    },
+    {
+     "en": "healthcare system",
+     "pos": "phrase",
+     "tr": "sağlık sistemi",
+     "ar": "نظام الرعاية الصحية",
+     "example": "An ageing population puts pressure on the healthcare system."
+    }
+   ],
+   "practice": [
+    {
+     "type": "choice",
+     "id": "w1",
+     "prompt": "A sudden increase in the number of cases of a disease in one place is called…",
+     "options": [
+      "an outbreak",
+      "a side effect",
+      "a vaccination",
+      "a diagnosis"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "\"outbreak\" bir hastalığın bir yerde aniden yayılmaya başlamasıdır. \"side effect\" ilacın istenmeyen etkisi; \"diagnosis\" teşhis.",
+      "ar": "outbreak تعني تفشّي المرض فجأة في مكان ما. أما side effect فأثر جانبي للدواء، وdiagnosis تشخيص.",
+      "en": "An outbreak is a sudden rise in cases."
+     },
+     "example": "The outbreak was traced to a restaurant in the city centre."
+    },
+    {
+     "type": "gap",
+     "id": "w2",
+     "prompt": "Write the noun form of DIAGNOSE: Early ___ of cancer greatly improves the chances of recovery.",
+     "answers": [
+      "diagnosis"
+     ],
+     "why": {
+      "tr": "\"Early ___ of\" yapısında isim gerekir: diagnose (fiil) → diagnosis (isim). Çoğulu \"diagnoses\".",
+      "ar": "بعد Early وقبل of نحتاج إلى اسم: diagnose ← diagnosis، وجمعها diagnoses.",
+      "en": "A noun: diagnose → diagnosis."
+     },
+     "example": "The doctor's diagnosis was confirmed by a blood test."
+    },
+    {
+     "type": "choice",
+     "id": "w3",
+     "prompt": "Which word completes both phrases: \"poor ___\" and \"improve ___ in rural areas\"?",
+     "options": [
+      "sanitation",
+      "outbreak",
+      "side effect",
+      "antibiotics"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "\"poor sanitation\" (yetersiz sanitasyon) ve \"improve sanitation\" doğal eşdizimlerdir. Diğerleri bu iki kalıba uymaz.",
+      "ar": "poor sanitation (صرف صحي سيئ) وimprove sanitation تلازمان طبيعيان، والخيارات الأخرى لا تناسب العبارتين.",
+      "en": "\"Poor sanitation\" and \"improve sanitation\" are natural collocations."
+     },
+     "example": "Better sanitation reduced child deaths in the region."
+    },
+    {
+     "type": "choice",
+     "id": "w4",
+     "prompt": "A \"preventable\" disease is one that…",
+     "options": [
+      "can be stopped before it happens",
+      "cannot be treated",
+      "only affects older people",
+      "is caused by antibiotics"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "\"preventable\" = önlenebilir, ortaya çıkmadan durdurulabilir. \"-able\" eki \"yapılabilir\" anlamı verir.",
+      "ar": "preventable تعني يمكن الوقاية منه قبل حدوثه، واللاحقة -able تعني ممكن.",
+      "en": "Preventable = it can be prevented."
+     },
+     "example": "Many road accidents are preventable."
+    },
+    {
+     "type": "gap",
+     "id": "w5",
+     "prompt": "Write ONE word: Headaches are a common side ___ of this medicine.",
+     "answers": [
+      "effect"
+     ],
+     "why": {
+      "tr": "Kalıp \"side effect\" = yan etki. \"affect\" fiildir; isim olarak \"effect\" kullanılır.",
+      "ar": "التعبير الثابت side effect أي أثر جانبي. effect اسم أما affect ففعل.",
+      "en": "\"Side effect\" (effect = noun; affect = verb)."
+     },
+     "example": "Feeling sleepy is a side effect of some allergy tablets."
+    },
+    {
+     "type": "choice",
+     "id": "w6",
+     "prompt": "Which sentence uses \"antibiotics\" correctly?",
+     "options": [
+      "Antibiotics are used to treat bacterial infections.",
+      "Antibiotics are the best treatment for a cold.",
+      "Antibiotics make the immune system weaker on purpose.",
+      "Antibiotics are a kind of vaccination."
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "Antibiyotikler bakteriyel enfeksiyonları tedavi eder; soğuk algınlığı gibi virüslere etki etmez. Aşı da değildir.",
+      "ar": "المضادات الحيوية تعالج العدوى البكتيرية ولا تعمل ضد الفيروسات كالزكام، وليست تطعيمًا.",
+      "en": "Antibiotics treat bacterial infections, not viruses."
+     },
+     "example": "The doctor prescribed antibiotics for my chest infection."
+    }
+   ]
+  },
+  {
+   "kind": "listen",
+   "i18n": {"ar":{"title":"الاستماع · Part 4: تاريخ الصحة العامة","intro":"يعرض محاضر ثلاثة أمثلة من تاريخ الصحة العامة: المياه النظيفة، والنظافة الشخصية، والتطعيم. اقرأ الملاحظات أولًا. يُشغَّل التسجيل مرة واحدة فقط.","tip":"في Part 4 يقدّم المتحدث أمثلته بعبارات مثل \"A case in point is…\" و\"For instance…\" و\"Notably…\"؛ وهذه العبارات تدل على الانتقال إلى عنوان جديد في الملاحظات. انتبه للأرقام (السنوات): قد تُذكر أكثر من سنة، مثل 1854 و1858 و1980."},"en":{"title":"Listening · Part 4: the history of public health","intro":"A lecturer gives three examples from the history of public health: clean water, hygiene and vaccination. Read the notes first. The recording plays once.","tip":"In Part 4 the speaker introduces examples with \"A case in point is…\", \"For instance…\" and \"Notably…\"; these phrases show a move to a new heading in the notes. Be careful with numbers (years): more than one year may be mentioned, such as 1854, 1858 and 1980."}},
+   "title": "Dinleme · Part 4: halk sağlığının tarihi",
+   "intro": "Bir öğretim üyesi halk sağlığının tarihinden üç örnek anlatıyor: temiz su, hijyen ve aşılama. Önce notları oku. Kayıt bir kez çalar.",
+   "tip": "Part 4'te konuşmacı örneklerini \"A case in point is…\", \"For instance…\", \"Notably…\" ile tanıtır; bu ifadeler yeni bir not başlığına geçtiğini gösterir. Rakamlarda (yıllar) dikkatli ol: 1854, 1858 ve 1980 gibi birden fazla yıl geçebilir.",
+   "audio": {
+    "type": "audio",
+    "id": "l-audio",
+    "speakers": {
+     "N": {
+      "name": "Narrator",
+      "voice": "en-GB-SoniaNeural"
+     },
+     "lecturer": {
+      "name": "Lecturer",
+      "voice": "en-NZ-MollyNeural"
+     }
+    },
+    "lines": [
+     {
+      "speaker": "N",
+      "text": "You will hear part of a lecture about the history of public health. First, you have some time to look at questions one to six.",
+      "pauseAfterMs": 2500
+     },
+     {
+      "speaker": "N",
+      "text": "Now listen carefully and answer questions one to six.",
+      "pauseAfterMs": 1200
+     },
+     {
+      "speaker": "lecturer",
+      "text": "Good morning. When we think about the history of medicine, we usually think of brilliant individuals and dramatic discoveries: new drugs, new operations. But if you ask which changes have done most to increase how long people live, many historians would give a less exciting answer. A case in point is clean water.",
+      "pauseAfterMs": 500
+     },
+     {
+      "speaker": "lecturer",
+      "text": "In this lecture I'll look at three areas of public health: sanitation, hygiene and vaccination, and I'll give you an example of each.",
+      "pauseAfterMs": 500
+     },
+     {
+      "speaker": "lecturer",
+      "text": "Let's start with sanitation. In the nineteenth century, European cities grew extremely fast, and infectious disease spread easily in crowded streets with no proper drains. Cholera was particularly feared. At the time, most doctors believed it was caused by bad air, which they called miasma.",
+      "pauseAfterMs": 500
+     },
+     {
+      "speaker": "lecturer",
+      "text": "In 1854, during an outbreak in the Soho district of London, a doctor called John Snow made a map of where the victims lived. He noticed that most of them had collected water from one particular public pump on Broad Street.",
+      "pauseAfterMs": 500
+     },
+     {
+      "speaker": "lecturer",
+      "text": "He persuaded the local authorities to remove the pump's handle. The outbreak was probably already declining by then, but his map became a famous early example of using data to find the source of a disease.",
+      "pauseAfterMs": 500
+     },
+     {
+      "speaker": "lecturer",
+      "text": "Snow's ideas were not widely accepted at first. Notably, it took a very hot summer in 1858, when the smell from the River Thames became so bad that it disturbed Parliament, to persuade the government to act. The result was a huge new system of sewers, which carried waste away from the city's water supply.",
+      "pauseAfterMs": 500
+     },
+     {
+      "speaker": "lecturer",
+      "text": "My second area is hygiene, and my example comes from a hospital in Vienna in the 1840s. A doctor named Ignaz Semmelweis noticed that far more mothers died after giving birth in the ward run by doctors than in the ward run by midwives. The doctors often came straight from examining dead bodies.",
+      "pauseAfterMs": 500
+     },
+     {
+      "speaker": "lecturer",
+      "text": "When he made them wash their hands in a chlorine solution, the death rate fell sharply. Surprisingly, many of his colleagues rejected his ideas, partly because they were offended by the suggestion that doctors themselves were spreading disease. Only later in the century, when scientists showed that germs cause infection, was his work fully recognised.",
+      "pauseAfterMs": 500
+     },
+     {
+      "speaker": "lecturer",
+      "text": "Finally, vaccination. Smallpox, for instance, killed hundreds of millions of people over the centuries. After a global vaccination campaign, it was declared eradicated in 1980, and it remains the only human disease to have been completely eliminated. Vaccines work by training the immune system to recognise a disease before a person is exposed to it.",
+      "pauseAfterMs": 500
+     },
+     {
+      "speaker": "lecturer",
+      "text": "Of course, vaccines, like all medicines, are tested in a clinical trial before they are approved, and any side effect is monitored carefully. However, public trust is essential: if too few people are vaccinated, preventable diseases such as measles can return.",
+      "pauseAfterMs": 500
+     },
+     {
+      "speaker": "lecturer",
+      "text": "So, in all three cases, the greatest gains came not from treating sick individuals but from protecting whole populations. That is the central idea of public health, and it's why a strong healthcare system needs to invest in prevention as well as treatment. Next week, we'll look at antibiotics and the growing problem of resistance.",
+      "pauseAfterMs": 1500
+     },
+     {
+      "speaker": "N",
+      "text": "That is the end of the recording.",
+      "pauseAfterMs": 0
+     }
+    ]
+   },
+   "questions": [
+    {
+     "type": "text",
+     "text": "Questions 1–6. Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer."
+    },
+    {
+     "type": "text",
+     "text": "Three examples from the history of public health"
+    },
+    {
+     "type": "text",
+     "text": "Sanitation: cholera in London"
+    },
+    {
+     "type": "gap",
+     "id": "l1",
+     "prompt": "1. In 1854, John Snow made a ___ showing where the victims lived.",
+     "answers": [
+      "map"
+     ],
+     "why": {
+      "tr": "\"a doctor called John Snow made a map of where the victims lived\". \"showing where\" = \"of where\".",
+      "ar": "\"a doctor called John Snow made a map of where the victims lived\".",
+      "en": "\"Made a map of where the victims lived.\""
+     },
+     "example": "The researchers made a map of where the cases were found."
+    },
+    {
+     "type": "gap",
+     "id": "l2",
+     "prompt": "2. Most victims had collected water from one public ___.",
+     "answers": [
+      "pump"
+     ],
+     "why": {
+      "tr": "\"most of them had collected water from one particular public pump on Broad Street\". \"handle\" pompanın parçası, tuzak.",
+      "ar": "\"most of them had collected water from one particular public pump\". كلمة handle جزء من المضخة، فهي فخّ.",
+      "en": "\"From one particular public pump on Broad Street.\""
+     },
+     "example": "In the past, villagers collected water from a public pump."
+    },
+    {
+     "type": "gap",
+     "id": "l3",
+     "prompt": "3. After the hot summer of 1858, the government built a new system of ___.",
+     "answers": [
+      "sewers"
+     ],
+     "why": {
+      "tr": "\"The result was a huge new system of sewers\". 1854 ve 1858'i karıştırma: kanalizasyon 1858'den sonra.",
+      "ar": "\"The result was a huge new system of sewers\". لا تخلط بين 1854 و1858.",
+      "en": "\"A huge new system of sewers.\""
+     },
+     "example": "The city's old sewers were built in the nineteenth century."
+    },
+    {
+     "type": "text",
+     "text": "Hygiene: a hospital in Vienna"
+    },
+    {
+     "type": "gap",
+     "id": "l4",
+     "prompt": "4. Doctors were made to wash their hands in a ___ solution.",
+     "answers": [
+      "chlorine"
+     ],
+     "why": {
+      "tr": "\"When he made them wash their hands in a chlorine solution, the death rate fell sharply.\" Boşluktan sonra \"solution\" geliyor; önündeki kelime: chlorine.",
+      "ar": "\"When he made them wash their hands in a chlorine solution\". الكلمة قبل solution هي chlorine.",
+      "en": "\"Wash their hands in a chlorine solution.\""
+     },
+     "example": "Swimming pools are cleaned with a chlorine solution."
+    },
+    {
+     "type": "text",
+     "text": "Vaccination"
+    },
+    {
+     "type": "gap",
+     "id": "l5",
+     "prompt": "5. Smallpox was declared eradicated in ___.",
+     "answers": [
+      "1980"
+     ],
+     "why": {
+      "tr": "\"it was declared eradicated in 1980\". 1840'lar ve 1858 başka olaylar için.",
+      "ar": "\"it was declared eradicated in 1980\". أما 1840s و1858 فلأحداث أخرى.",
+      "en": "\"Declared eradicated in 1980.\""
+     },
+     "example": "The disease was declared eradicated after a long campaign."
+    },
+    {
+     "type": "gap",
+     "id": "l6",
+     "prompt": "6. If vaccination rates fall, diseases such as ___ can return.",
+     "answers": [
+      "measles"
+     ],
+     "why": {
+      "tr": "\"preventable diseases such as measles can return\". \"smallpox\" tamamen yok edildi, geri dönemez.",
+      "ar": "\"preventable diseases such as measles can return\". أما smallpox فقد استُؤصل تمامًا.",
+      "en": "\"Preventable diseases such as measles can return.\""
+     },
+     "example": "Measles can spread quickly in schools."
+    }
+   ]
+  },
+  {
+   "kind": "read",
+   "i18n": {"ar":{"title":"القراءة: اختيار من متعدد وإكمال الملاحظات","intro":"ستقرأ نصًا يشرح لماذا تُعدّ الوقاية (prevention) مهمة في الصحة العامة، ولكن من الصعب \"تسويقها\".","tip":"في أسئلة الاختيار من متعدد تحتوي معظم الخيارات على كلمات وردت في النص، أما الإجابة الصحيحة فتعبّر عن الفكرة نفسها بكلمات مختلفة. وفي إكمال الملاحظات تتبع الملاحظات ترتيب النص: إذا وجدت إجابة، فالإجابة التالية تأتي بعدها."},"en":{"title":"Reading: multiple choice and note completion","intro":"You will read a text explaining why prevention is important in public health but hard to \"sell\".","tip":"In multiple choice questions most options contain words from the text; the correct answer says the same idea in different words. In note completion the notes follow the order of the text: once you find an answer, the next one comes after it."}},
+   "title": "Okuma: çoktan seçmeli ve not tamamlama",
+   "intro": "Halk sağlığında önlemenin (prevention) neden önemli ama \"satması\" zor olduğunu anlatan bir metin okuyacaksın.",
+   "tip": "Çoktan seçmeli sorularda seçeneklerin çoğu metinde geçen kelimeleri içerir; doğru cevap ise aynı fikri farklı kelimelerle söyler. Not tamamlamada notlar metnin sırasını izler: bir cevabı bulduysan, bir sonraki cevap ondan sonra gelir.",
+   "passage": [
+    {
+     "type": "heading",
+     "text": "The Invisible Success of Prevention"
+    },
+    {
+     "type": "text",
+     "text": "Public health has a strange problem: when it works, nothing seems to happen. A hospital that performs a difficult operation can point to a patient who walked out alive. By contrast, a vaccination programme that stops an outbreak before it begins, or a water treatment plant that keeps a city free of cholera, produces no visible patients at all. The people whose lives were saved will never know it, and neither will the politicians who must decide how to spend the health budget. As a result, prevention is frequently undervalued, even though it is often far cheaper than treatment."
+    },
+    {
+     "type": "text",
+     "text": "History offers plenty of evidence of what prevention can achieve. In many countries, the greatest increases in life expectancy came before most modern drugs existed, through improvements in sanitation, housing and nutrition. Clean water and effective sewers reduced deaths from infectious disease dramatically in the late nineteenth and early twentieth centuries. Vaccination then made illnesses such as diphtheria and polio rare in much of the world. Notably, these gains benefited the poorest groups most, since they had been the most exposed to the diseases in the first place."
+    },
+    {
+     "type": "text",
+     "text": "One reason prevention is difficult to sell is what epidemiologists call the prevention paradox. A measure that brings large benefits to a whole population may offer very little to each individual. For instance, reducing the amount of salt in processed food by a small amount will make almost no difference to any single person's health, yet across millions of people it can prevent thousands of strokes and heart attacks. Because no one feels the benefit personally, such policies rarely attract enthusiastic public support, and they may be opposed by industries whose products are affected."
+    },
+    {
+     "type": "text",
+     "text": "Screening programmes illustrate a different challenge. Testing large numbers of healthy people in order to diagnose a disease early sounds like an obvious good, and in some cases, such as certain cancers, it saves many lives. However, every test produces some false alarms, which can lead to anxiety and to further tests that carry their own risks. Before a screening programme is introduced, therefore, it is usually studied in a large clinical trial to check that its benefits clearly outweigh its harms. Doctors also need to explain these trade-offs honestly, so that people can make informed choices."
+    },
+    {
+     "type": "text",
+     "text": "Perhaps the clearest current example of the need for prevention is the rise of drug-resistant infections. Antibiotics have saved countless lives since the middle of the twentieth century, but each time they are used, bacteria have a chance to adapt. When these medicines are prescribed for illnesses they cannot treat, such as colds caused by viruses, or given routinely to healthy farm animals, resistance spreads more quickly. A case in point is a group of common infections that were once easily cured but now require stronger drugs, which may have a more serious side effect. Preventing infections in the first place, through hygiene and vaccination, reduces the need for antibiotics and so helps to keep them effective."
+    },
+    {
+     "type": "text",
+     "text": "None of this means that treatment is unimportant. A good healthcare system must care for people who are already ill, and no amount of prevention will remove that need. Strengthening the immune system through good nutrition and sleep, for example, cannot replace a skilled surgeon. But a system that spends almost all its money on treatment is, in the words of one common comparison, like a town that keeps buying ambulances to collect people who fall from a cliff, instead of building a fence at the top. Many deaths remain preventable, and the challenge is to make the invisible successes of public health visible enough to win the funding they deserve."
+    }
+   ],
+   "questions": [
+    {
+     "type": "heading",
+     "text": "Questions 1–3: Choose the correct letter."
+    },
+    {
+     "type": "choice",
+     "id": "r1",
+     "prompt": "1. Why, according to the writer, is prevention often undervalued?",
+     "options": [
+      "It is more expensive than treatment.",
+      "Its successes are not easy to see.",
+      "Politicians do not trust doctors.",
+      "It only helps a small number of people."
+     ],
+     "answer": 1,
+     "why": {
+      "tr": "Paragraf 1: \"when it works, nothing seems to happen\" ve önleme \"produces no visible patients at all\". A yanlış: önleme \"often far cheaper than treatment\".",
+      "ar": "الفقرة الأولى: \"when it works, nothing seems to happen\"، والوقاية \"produces no visible patients at all\". الخيار A خطأ لأن الوقاية أرخص غالبًا.",
+      "en": "\"When it works, nothing seems to happen\": its successes are invisible."
+     },
+     "example": "Good maintenance is undervalued because its success is invisible."
+    },
+    {
+     "type": "choice",
+     "id": "r2",
+     "prompt": "2. What is the \"prevention paradox\"?",
+     "options": [
+      "Prevention costs more than people expect.",
+      "A measure can help a population greatly but each person only slightly.",
+      "People prefer treatment to prevention.",
+      "Some preventive measures cause disease."
+     ],
+     "answer": 1,
+     "why": {
+      "tr": "Paragraf 3: \"A measure that brings large benefits to a whole population may offer very little to each individual.\" Tuz örneği bunu açıklıyor.",
+      "ar": "الفقرة الثالثة: \"A measure that brings large benefits to a whole population may offer very little to each individual.\"",
+      "en": "\"Large benefits to a whole population… very little to each individual.\""
+     },
+     "example": "A small change for each person can add up to a big change for the country."
+    },
+    {
+     "type": "choice",
+     "id": "r3",
+     "prompt": "3. What does the writer say about screening programmes?",
+     "options": [
+      "They should be introduced for every disease.",
+      "They have both benefits and risks.",
+      "They always reduce anxiety.",
+      "They have replaced clinical trials."
+     ],
+     "answer": 1,
+     "why": {
+      "tr": "Paragraf 4: bazı durumlarda \"it saves many lives\" ama \"every test produces some false alarms\" ve ek testlerin \"their own risks\" var. Yani hem fayda hem risk.",
+      "ar": "الفقرة الرابعة: الفحص \"saves many lives\" في بعض الحالات، لكن \"every test produces some false alarms\" وللفحوص الإضافية مخاطر.",
+      "en": "It saves lives but produces false alarms and further risks."
+     },
+     "example": "The new policy has both benefits and risks."
+    },
+    {
+     "type": "heading",
+     "text": "Questions 4–7: Complete the notes. Choose ONE WORD ONLY from the passage for each answer."
+    },
+    {
+     "type": "text",
+     "text": "Drug-resistant infections"
+    },
+    {
+     "type": "gap",
+     "id": "r4",
+     "prompt": "4. Antibiotics are sometimes prescribed for colds, which are caused by ___.",
+     "answers": [
+      "viruses"
+     ],
+     "why": {
+      "tr": "Paragraf 5: \"such as colds caused by viruses\". Antibiyotikler virüslere etki etmez, bu yüzden bu kullanım direnç yaratır.",
+      "ar": "الفقرة الخامسة: \"such as colds caused by viruses\". المضادات الحيوية لا تعمل ضد الفيروسات.",
+      "en": "\"Colds caused by viruses.\""
+     },
+     "example": "Most colds are caused by viruses, not bacteria."
+    },
+    {
+     "type": "gap",
+     "id": "r5",
+     "prompt": "5. They are also given routinely to healthy farm ___.",
+     "answers": [
+      "animals"
+     ],
+     "why": {
+      "tr": "Paragraf 5: \"or given routinely to healthy farm animals\".",
+      "ar": "الفقرة الخامسة: \"or given routinely to healthy farm animals\".",
+      "en": "\"Given routinely to healthy farm animals.\""
+     },
+     "example": "Some farms give medicine to healthy animals to make them grow faster."
+    },
+    {
+     "type": "gap",
+     "id": "r6",
+     "prompt": "6. Hygiene and ___ reduce the need for antibiotics by preventing infections.",
+     "answers": [
+      "vaccination"
+     ],
+     "why": {
+      "tr": "Paragraf 5: \"Preventing infections in the first place, through hygiene and vaccination, reduces the need for antibiotics\".",
+      "ar": "الفقرة الخامسة: \"through hygiene and vaccination, reduces the need for antibiotics\".",
+      "en": "\"Through hygiene and vaccination.\""
+     },
+     "example": "Vaccination and hand-washing prevent many infections."
+    },
+    {
+     "type": "gap",
+     "id": "r7",
+     "prompt": "7. Comparison: spending only on treatment is like buying ambulances instead of building a ___.",
+     "answers": [
+      "fence"
+     ],
+     "why": {
+      "tr": "Paragraf 6: \"keeps buying ambulances… instead of building a fence at the top\". Çit (önleme) ile ambulans (tedavi) karşılaştırması.",
+      "ar": "الفقرة السادسة: \"keeps buying ambulances… instead of building a fence at the top\".",
+      "en": "\"Instead of building a fence at the top.\""
+     },
+     "example": "It is better to build a fence than to buy more ambulances."
+    }
+   ]
+  },
+  {
+   "kind": "language",
+   "i18n": {"ar":{"title":"اللغة: إعطاء الأمثلة ودعم الأفكار (for instance, a case in point is, notably)"},"en":{"title":"Language: giving examples and support (for instance, a case in point is, notably)"}},
+   "title": "Dil: örnek vermek ve desteklemek (for instance, a case in point is, notably)",
+   "explain": {
+    "tr": "Task 2'de band 7 için her ana fikri somut bir örnekle desteklemelisin, ve örnek verme ifadelerini çeşitlendirmelisin. For example / For instance: cümlenin başında (virgülle) ya da ortasında: \"Smallpox, for instance, has been eradicated.\" such as + isim (cümle değil!): \"diseases such as measles\". A case in point is + isim: tek, çok uygun bir örneği öne çıkarır: \"A case in point is smallpox.\" Notably / in particular: bir grubun içinden en önemli örneği vurgular: \"Several diseases, notably polio, have become rare.\" To illustrate this, …: daha uzun bir örneğe giriş. Dikkat: \"such as\" sonrasında tam cümle gelmez (such as people are vaccinated ✗); \"for example\" ve \"for instance\" iki cümleyi virgülle birleştirmez.",
+    "ar": "في Task 2 للحصول على 7 يجب دعم كل فكرة رئيسية بمثال محدد، مع تنويع عبارات التمثيل. For example / For instance: في أول الجملة (مع فاصلة) أو في وسطها: Smallpox, for instance, has been eradicated. وsuch as + اسم (لا جملة!): diseases such as measles. وA case in point is + اسم: لإبراز مثال واحد مناسب جدًا: A case in point is smallpox. وNotably / in particular: لإبراز أهم مثال من مجموعة: Several diseases, notably polio, have become rare. وTo illustrate this, …: لتقديم مثال أطول. انتبه: لا تأتي جملة كاملة بعد such as، ولا تربط for example جملتين بفاصلة فقط.",
+    "en": "For band 7 in Task 2, support each main idea with a specific example and vary the way you introduce examples. For example / For instance: at the start of a sentence (with a comma) or in the middle: \"Smallpox, for instance, has been eradicated.\" Such as + noun (not a clause!): \"diseases such as measles\". A case in point is + noun: highlights one especially fitting example: \"A case in point is smallpox.\" Notably / in particular: picks out the most important example from a group: \"Several diseases, notably polio, have become rare.\" To illustrate this, …: introduces a longer example. Note: \"such as\" is not followed by a full clause, and \"for example\" cannot join two sentences with only a comma."
+   },
+   "examples": [
+    "Many infectious diseases, such as measles and diphtheria, are now preventable.",
+    "Prevention is often cheaper than treatment. A case in point is vaccination, which costs very little per person.",
+    "Several countries, notably those with strong public health systems, have reduced smoking rates sharply.",
+    "Clean water saves lives. In the nineteenth century, for instance, new sewers greatly reduced deaths from cholera."
+   ],
+   "questions": [
+    {
+     "type": "choice",
+     "id": "g1",
+     "prompt": "Choose the correct sentence.",
+     "options": [
+      "Some habits, such as smoking, damage the immune system.",
+      "Some habits, such as people smoke, damage the immune system.",
+      "Some habits, such as for example smoking, damage the immune system.",
+      "Some habits such as, smoking damage the immune system."
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "\"such as\" + isim/-ing: \"such as smoking\". Arkasından tam cümle (people smoke) gelmez; \"such as for example\" tekrar olur.",
+      "ar": "بعد such as يأتي اسم أو صيغة -ing: such as smoking، لا جملة كاملة، ولا نجمع such as مع for example.",
+      "en": "Such as + noun / -ing, never a clause."
+     },
+     "example": "Outdoor activities, such as cycling, are good for your health."
+    },
+    {
+     "type": "gap",
+     "id": "g2",
+     "prompt": "Write ONE word: Many diseases can be prevented. A case in ___ is polio, which is now very rare.",
+     "answers": [
+      "point"
+     ],
+     "why": {
+      "tr": "Kalıp \"a case in point\" = konuya çok uygun bir örnek.",
+      "ar": "التعبير الثابت a case in point أي مثال مناسب تمامًا للموضوع.",
+      "en": "The fixed phrase is \"a case in point\"."
+     },
+     "example": "Some old buildings are very energy efficient. A case in point is this library."
+    },
+    {
+     "type": "choice",
+     "id": "g3",
+     "prompt": "Which word best completes: \"Several European cities, ___ London and Paris, built new sewers in the nineteenth century.\"",
+     "options": [
+      "notably",
+      "however",
+      "conversely",
+      "therefore"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "\"notably\" bir gruptan önemli örnekleri öne çıkarır: London ve Paris. Diğerleri zıtlık ve sonuç bildirir.",
+      "ar": "notably تُبرز أمثلة مهمة من مجموعة: لندن وباريس. أما الكلمات الأخرى فللتضاد أو النتيجة.",
+      "en": "\"Notably\" picks out key examples from a group."
+     },
+     "example": "Several sports, notably football, are popular in my country."
+    },
+    {
+     "type": "choice",
+     "id": "g4",
+     "prompt": "Which is punctuated correctly?",
+     "options": [
+      "Prevention saves money. For instance, vaccines cost far less than hospital care.",
+      "Prevention saves money, for instance, vaccines cost far less than hospital care.",
+      "Prevention saves money for instance vaccines cost far less than hospital care.",
+      "Prevention saves money. For instance vaccines, cost far less than hospital care."
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "\"For instance\" iki tam cümleyi virgülle birleştiremez: önce nokta, sonra \"For instance,\".",
+      "ar": "لا تربط For instance جملتين كاملتين بفاصلة: نضع نقطة ثم For instance, …",
+      "en": "Full stop, then \"For instance,\" at the start of the new sentence."
+     },
+     "example": "Exercise helps the mind. For instance, a short walk can reduce stress."
+    },
+    {
+     "type": "gap",
+     "id": "g5",
+     "prompt": "Write ONE word: To ___ this, consider how hand-washing reduced deaths in nineteenth-century hospitals.",
+     "answers": [
+      "illustrate"
+     ],
+     "why": {
+      "tr": "\"To illustrate this\" = bunu örneklemek için. Daha uzun bir örneğe giriş yapar.",
+      "ar": "To illustrate this أي لتوضيح ذلك بمثال، وتُستخدم لتقديم مثال أطول.",
+      "en": "\"To illustrate this\" introduces a longer example."
+     },
+     "example": "To illustrate this, let me tell you about my grandmother's village."
+    }
+   ]
+  },
+  {
+   "kind": "write",
+   "i18n": {"ar":{"title":"الكتابة · Task 2: مقال بسؤالين (مقال كامل)","tip":"في الأسئلة المكوّنة من جزأين (two-part) خصّص لكل سؤال فقرة مستقلة في صلب المقال، وأجب عن كليهما إجابة كاملة. ادعم كل فكرة رئيسية بمثال: for instance, such as, a case in point is, notably. مفردات هذا الدرس: public health, vaccination, preventable, infectious disease, healthcare system, diagnose."},"en":{"title":"Writing · Task 2: two-question essay (full essay)","tip":"In two-part questions give each question its own body paragraph and answer both fully. Support each main idea with an example: for instance, such as, a case in point is, notably. This lesson's words: public health, vaccination, preventable, infectious disease, healthcare system, diagnose."}},
+   "title": "Yazma · Task 2: iki soruluk deneme (tam deneme)",
+   "task": 2,
+   "prompt": "In many countries, governments spend far more money on treating illness than on preventing it.\n\nWhy do you think this is the case? Should governments make prevention their priority?\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.",
+   "minutes": 40,
+   "minWords": 250,
+   "tip": "İki soruluk (two-part) sorularda her soruya ayrı bir gövde paragrafı ayır ve ikisini de tam cevapla. Her ana fikri bir örnekle destekle: for instance, such as, a case in point is, notably. Bu dersin kelimeleri: public health, vaccination, preventable, infectious disease, healthcare system, diagnose.",
+   "model": "In most countries, the bulk of health spending goes on hospitals, doctors and medicines for people who are already ill, while a much smaller share is used to prevent illness in the first place. In this essay I will explain why this imbalance exists and argue that prevention deserves a far higher priority.\n\nThere are several reasons why treatment receives more money. The first is visibility. When a hospital treats a seriously ill patient, the result is obvious and often emotional. By contrast, the success of prevention is invisible: nobody notices the heart attack that did not happen. A second reason is political. Governments are elected for only a few years, whereas many preventive measures, notably campaigns to reduce smoking or improve diet, take decades to show results. Finally, there is constant public pressure on the healthcare system to reduce waiting lists, so any extra money is usually spent where the demand is most urgent.\n\nNevertheless, I believe that prevention should be the priority, for both economic and moral reasons. Many of the most common causes of death are preventable, and preventing a disease is usually much cheaper than treating it. A case in point is vaccination: protecting a child against measles costs very little, whereas treating a serious infectious disease in hospital is expensive and sometimes unsuccessful. History supports this view. In the nineteenth century, for instance, clean water and sewers did more to extend life than any medicine available at the time. Investment in public health also helps the poorest groups most, since they are often the most exposed to illness.\n\nIn conclusion, treatment attracts more funding because its benefits are immediate and visible. However, since prevention saves both lives and money in the long run, governments should gradually shift their spending towards it, while still caring for those who are already ill."
+  },
+  {
+   "kind": "speak",
+   "i18n": {"ar":{"title":"المحادثة: الصحة والطب"},"en":{"title":"Speaking: health and medicine"}},
+   "title": "Konuşma: sağlık ve tıp",
+   "part1": [
+    "How often do you go to the doctor?",
+    "What do you usually do when you catch a cold?",
+    "Do people in your country prefer traditional remedies or modern medicine?",
+    "Would you like to work in medicine or health care? Why or why not?"
+   ],
+   "card": {
+    "title": "Describe a time when you or someone you know was ill and received good care.",
+    "points": [
+     "who was ill and what the illness was",
+     "where they were treated",
+     "who helped them and how"
+    ],
+    "explain": "and explain why you think the care they received was good."
+   },
+   "useful": [
+    "It turned out to be quite a common infectious disease, such as…",
+    "The doctor diagnosed it very quickly, which was important because…",
+    "What impressed me, notably, was the way the nurses…",
+    "The medicine had a side effect: for instance, …",
+    "In my country, the healthcare system is…, but…",
+    "A case in point is the time when…"
+   ]
+  }
+ ]
+}

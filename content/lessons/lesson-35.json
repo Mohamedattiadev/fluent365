@@ -1,0 +1,693 @@
+{
+  "id": "lesson-35",
+  "number": 35,
+  "title": "Biodiversity and Conservation Policy",
+  "topic": "Biodiversity & conservation",
+  "level": "B2+",
+  "goal": "Follow a site talk and an academic text on conservation policy, and build complex sentences with embedded clauses (what…, whether…, the fact that…).",
+  "steps": [
+    {
+      "kind": "words",
+      "i18n": {"ar":{"title":"المفردات: التنوع البيولوجي وحماية الطبيعة","intro":"مواضيع البيئة تتكرر كثيرًا في IELTS، لكن قول \"nature is important\" لا يكفي للحصول على Band 7. تتيح لك هذه الكلمات الاثنتا عشرة وصف أسباب المشكلة (habitat loss, invasive species) وحلولها (protected area, wildlife corridor, restoration) بلغة دقيقة."},"en":{"title":"Vocabulary: biodiversity and conservation","intro":"Environmental topics come up very often in IELTS, but saying \"nature is important\" is not enough for Band 7. These 12 words let you describe the causes of the problem (habitat loss, invasive species) and the solutions (protected area, wildlife corridor, restoration) precisely."}},
+      "title": "Kelimeler: biyolojik çeşitlilik ve koruma",
+      "intro": "Çevre konuları IELTS'te çok sık çıkar, ama Band 7 için \"nature is important\" demek yetmez. Bu 12 kelime sorunun nedenlerini (habitat loss, invasive species) ve çözümlerini (protected area, wildlife corridor, restoration) kesin bir dille anlatmanı sağlar.",
+      "words": [
+        {
+          "en": "biodiversity",
+          "pos": "noun",
+          "tr": "biyolojik çeşitlilik",
+          "ar": "التنوع البيولوجي",
+          "example": "Wetlands support a remarkable level of biodiversity."
+        },
+        {
+          "en": "habitat loss",
+          "pos": "phrase",
+          "tr": "yaşam alanı kaybı",
+          "ar": "فقدان الموائل",
+          "example": "Habitat loss caused by farming is the main threat to many bird species."
+        },
+        {
+          "en": "endangered species",
+          "pos": "phrase",
+          "tr": "nesli tükenmekte olan tür",
+          "ar": "نوع مهدَّد بالانقراض",
+          "example": "The snow leopard is an endangered species found in Central Asia."
+        },
+        {
+          "en": "ecosystem",
+          "pos": "noun",
+          "tr": "ekosistem",
+          "ar": "النظام البيئي",
+          "example": "Removing one predator can upset the balance of a whole ecosystem."
+        },
+        {
+          "en": "extinction",
+          "pos": "noun",
+          "tr": "neslin tükenmesi",
+          "ar": "الانقراض",
+          "example": "Several frog species have been pushed to the edge of extinction by disease."
+        },
+        {
+          "en": "conservation",
+          "pos": "noun",
+          "tr": "doğayı koruma",
+          "ar": "الحفاظ على الطبيعة",
+          "example": "Conservation projects are most successful when local people are involved."
+        },
+        {
+          "en": "invasive species",
+          "pos": "phrase",
+          "tr": "istilacı tür",
+          "ar": "نوع غازٍ (دخيل)",
+          "example": "Invasive species can spread quickly because they have no natural enemies."
+        },
+        {
+          "en": "protected area",
+          "pos": "phrase",
+          "tr": "koruma alanı",
+          "ar": "منطقة محمية",
+          "example": "Hunting is forbidden in the protected area."
+        },
+        {
+          "en": "restore",
+          "pos": "verb",
+          "tr": "eski haline getirmek, onarmak",
+          "ar": "يستعيد؛ يُعيد تأهيل",
+          "example": "The project aims to restore the river to its natural course."
+        },
+        {
+          "en": "pollinator",
+          "pos": "noun",
+          "tr": "tozlayıcı (arı, kelebek vb.)",
+          "ar": "المُلقِّح (كالنحل والفراشات)",
+          "example": "Bees are the best-known pollinators, but many flies and beetles also play a part."
+        },
+        {
+          "en": "wildlife corridor",
+          "pos": "phrase",
+          "tr": "yaban hayatı koridoru",
+          "ar": "ممر للحياة البرية",
+          "example": "A wildlife corridor lets animals move safely between two forests."
+        },
+        {
+          "en": "sustainable",
+          "pos": "adjective",
+          "tr": "sürdürülebilir",
+          "ar": "مستدام",
+          "example": "Sustainable fishing allows fish populations to recover each year."
+        }
+      ],
+      "practice": [
+        {
+          "type": "choice",
+          "id": "w1",
+          "prompt": "When a species no longer exists anywhere in the world, it has suffered ___.",
+          "options": [
+            "extinction",
+            "conservation",
+            "biodiversity",
+            "restoration"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Bir türün dünyada hiç kalmaması \"extinction\"dır. \"conservation\" koruma, \"biodiversity\" çeşitlilik, \"restoration\" eski haline getirmedir.",
+            "ar": "اختفاء النوع من العالم كله هو extinction (الانقراض). أما conservation فهي الحماية، وbiodiversity التنوع، وrestoration إعادة التأهيل.",
+            "en": "No longer existing = extinction."
+          },
+          "example": "The dodo was driven to extinction in the seventeenth century."
+        },
+        {
+          "type": "choice",
+          "id": "w2",
+          "prompt": "A plant or animal that has been brought to a new region and spreads there, harming local species, is ___.",
+          "options": [
+            "an invasive species",
+            "an endangered species",
+            "a pollinator",
+            "a protected area"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Yeni bir bölgeye getirilip yayılan ve yerel türlere zarar veren tür \"invasive species\"tir. \"endangered\" ise nesli tehlikede olan tür demektir; anlamca neredeyse tersidir.",
+            "ar": "النوع الذي يُنقل إلى منطقة جديدة فينتشر ويضرّ بالأنواع المحلية هو invasive species. أما endangered فهو المهدَّد بالانقراض، وهو معنى شبه معاكس.",
+            "en": "Spreading and harming local species = invasive."
+          },
+          "example": "Rabbits became an invasive species when they were introduced to Australia."
+        },
+        {
+          "type": "gap",
+          "id": "w3",
+          "prompt": "Write the correct form of RESTORE: The ___ of the wetland took more than ten years.",
+          "answers": [
+            "restoration"
+          ],
+          "why": {
+            "tr": "\"The … of\" arasında isim gerekir: restore (fiil) → restoration (isim).",
+            "ar": "بين The وof نحتاج إلى اسم: الفعل restore يصبح الاسم restoration.",
+            "en": "A noun is needed: restoration."
+          },
+          "example": "The restoration of the old forest has attracted many birds."
+        },
+        {
+          "type": "choice",
+          "id": "w4",
+          "prompt": "Which collocation is correct?",
+          "options": [
+            "pose a threat to biodiversity",
+            "make a threat to biodiversity",
+            "do a threat to biodiversity",
+            "give a threat on biodiversity"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Doğru eşdizim \"pose a threat to\" (tehdit oluşturmak). \"make/do/give a threat\" kullanılmaz.",
+            "ar": "التلازم الصحيح هو pose a threat to (يشكّل تهديدًا لـ). لا يقال make أو do أو give a threat.",
+            "en": "We say \"pose a threat to\"."
+          },
+          "example": "Plastic waste poses a serious threat to marine biodiversity."
+        },
+        {
+          "type": "gap",
+          "id": "w5",
+          "prompt": "Write the correct form of SUSTAIN: Many experts argue that current fishing levels are not ___.",
+          "answers": [
+            "sustainable"
+          ],
+          "why": {
+            "tr": "\"are not\" sonrasında sıfat gerekir: sustain (fiil) → sustainable (sıfat).",
+            "ar": "بعد are not نحتاج إلى صفة: الفعل sustain يصبح الصفة sustainable.",
+            "en": "An adjective is needed after \"are not\": sustainable."
+          },
+          "example": "Tourism in the national park must be kept at a sustainable level."
+        },
+        {
+          "type": "choice",
+          "id": "w6",
+          "prompt": "Why are wildlife corridors useful?",
+          "options": [
+            "They connect separate habitats so animals can move between them.",
+            "They keep tourists away from rare animals.",
+            "They are roads built for park rangers.",
+            "They prevent all animals from leaving a reserve."
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "\"wildlife corridor\" iki yaşam alanını birbirine bağlayan şerittir; hayvanlar güvenle geçebilir. Ziyaretçilerle ya da yollarla ilgisi yok.",
+            "ar": "wildlife corridor شريط يربط بين موئلين لتتمكن الحيوانات من التنقل بأمان، ولا علاقة له بالسياح أو الطرق.",
+            "en": "Corridors connect habitats."
+          },
+          "example": "The new bridge acts as a wildlife corridor over the motorway."
+        }
+      ]
+    },
+    {
+      "kind": "listen",
+      "i18n": {"ar":{"title":"الاستماع · Part 2: إحياء أرض رطبة من جديد","intro":"مدير محمية طبيعية يشرح للمتطوعين في يومهم الأول المشروعَ وأعمالَ الأسبوع. تسجيل Part 2 بطول الامتحان ومتحدث واحد. اقرأ الأسئلة أولًا؛ يُشغَّل التسجيل مرة واحدة فقط.","tip":"في Part 2 كثيرًا ما يذكر المتحدث اعتقادًا شائعًا ثم يصحّحه: \"People often assume… Actually…\". ما يُقال أولًا غالبًا فخ. في أسئلة المطابقة (5–6) عدد الخيارات أكبر من عدد الأسئلة؛ بعض الخيارات يرد في التسجيل لكنه ليس مهمة أي مجموعة (مثل إصلاح السقف)."},"en":{"title":"Listening · Part 2: a wetland brought back to life","intro":"The manager of a nature reserve tells volunteers on their first day about the project and the week's tasks. An exam-length Part 2 recording with one speaker. Read the questions first; the recording plays once.","tip":"In Part 2 the speaker often states a common belief and then corrects it: \"People often assume… Actually…\". What is said first is usually a trap. In the matching questions (5–6) there are more options than questions; some options are mentioned but are not any group's job (for example, repairing the roof)."}},
+      "title": "Dinleme · Part 2: bir sulak alanın yeniden doğuşu",
+      "intro": "Bir doğa koruma alanının müdürü, ilk gününe başlayan gönüllülere projeyi ve haftanın işlerini anlatıyor. Tek konuşmacılı, sınav uzunluğunda bir Part 2 kaydı. Önce soruları oku; kayıt bir kez çalar.",
+      "tip": "Part 2'de konuşmacı sık sık yaygın bir inancı verip düzeltir: \"People often assume… Actually…\". İlk söylenen genellikle tuzaktır. Eşleştirme sorularında (5–6) seçenek sayısı soru sayısından fazladır; bazı seçenekler kayıtta geçer ama hiçbir grubun işi değildir (örneğin çatı tamiri).",
+      "audio": {
+        "type": "audio",
+        "id": "l-audio",
+        "speakers": {
+          "N": {
+            "name": "Narrator",
+            "voice": "en-GB-SoniaNeural"
+          },
+          "hana": {
+            "name": "Hana Rewiti",
+            "voice": "en-NZ-MollyNeural"
+          }
+        },
+        "lines": [
+          {
+            "speaker": "N",
+            "text": "You will hear the manager of a nature reserve talking to a group of new volunteers. First, you have some time to look at questions one to six.",
+            "pauseAfterMs": 2500
+          },
+          {
+            "speaker": "N",
+            "text": "Now listen carefully and answer questions one to six.",
+            "pauseAfterMs": 1200
+          },
+          {
+            "speaker": "hana",
+            "text": "Good morning, and welcome to Fenwick Marshes. My name's Hana Rewiti, and I'm the site manager. Before you start your first day as volunteers, I'd like to give you some background on the project and explain what you'll be doing this week.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "hana",
+            "text": "Thirty years ago, most of this land was drained for farming. The wet meadows that had been here for centuries disappeared, and with them went much of the wildlife. Habitat loss on this scale is, in fact, the single biggest threat to biodiversity in this region, more serious than either pollution or hunting.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "hana",
+            "text": "When the trust bought the land, the aim was not to recreate an exact copy of the past, which would be impossible. It was to restore a working ecosystem: wet ground, reed beds and open water, so that plants and animals could return on their own.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "hana",
+            "text": "And many of them have. The bird that most visitors hope to see is the bittern, a shy brown heron that's very hard to spot. It had disappeared from the area completely, but last spring, for the first time, we recorded a pair nesting in the reeds. It's still an endangered species nationally, so you'll understand why we keep the exact location secret.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "hana",
+            "text": "People often assume that our biggest problem is visitors disturbing the birds. Actually, visitors are generally very respectful. The real headache is an invasive species: a water plant from another continent that was sold for garden ponds and escaped into the river. It grows so fast that it can cover a pond in a single summer, blocking out the light and killing the native plants underneath.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "hana",
+            "text": "That's where you come in. Removing it by hand is slow, but chemicals would harm everything else in the water, so there's really no alternative.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "hana",
+            "text": "Now, the practical arrangements. You'll be divided into three groups. Group one will be working at the West Pond, pulling out that invasive weed. You'll be given waders, which are waterproof trousers, so you don't need your own boots for that.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "hana",
+            "text": "Group two will be in the meadow, helping our botanist with a plant survey. We count the wildflowers every summer because they're vital for pollinators such as bees and butterflies, and the numbers tell us whether our grazing plan is working.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "hana",
+            "text": "Group three will be planting hedges along the northern edge of the reserve. This is part of a wildlife corridor, a strip of habitat that connects us to the woodland two kilometres away. Small mammals won't cross open fields, so without the hedge the populations on each side stay isolated, and isolated populations are far more vulnerable to extinction.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "hana",
+            "text": "A couple of reminders. Lunch is at half past twelve in the visitor centre, not in the barn as it says in your welcome pack, because the barn roof is being repaired. And please, whatever you do, don't feed the ducks. Bread is bad for them, and it pollutes the water.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "hana",
+            "text": "Finally, a word about why this matters. This is only a small protected area, but it's part of a network of sites across the country. Conservation isn't only about rare animals; it's about keeping the whole system healthy, including the soil and water that the farms around us depend on, and making sure that the way we manage the land is sustainable. Right, let's get you into your groups.",
+            "pauseAfterMs": 1500
+          },
+          {
+            "speaker": "N",
+            "text": "That is the end of the recording.",
+            "pauseAfterMs": 0
+          }
+        ]
+      },
+      "questions": [
+        {
+          "type": "text",
+          "text": "Questions 1–2. Choose the correct letter."
+        },
+        {
+          "type": "choice",
+          "id": "l1",
+          "prompt": "1. According to the speaker, what is the biggest threat to biodiversity in the region?",
+          "options": [
+            "pollution",
+            "hunting",
+            "the loss of habitat",
+            "visitors to the reserve"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "\"Habitat loss on this scale is, in fact, the single biggest threat to biodiversity in this region, more serious than either pollution or hunting.\" Kirlilik ve avcılık sadece karşılaştırma için geçiyor.",
+            "ar": "\"Habitat loss on this scale is, in fact, the single biggest threat to biodiversity in this region, more serious than either pollution or hunting\". التلوث والصيد ذُكرا للمقارنة فقط.",
+            "en": "\"The single biggest threat… more serious than either pollution or hunting.\""
+          },
+          "example": "The loss of habitat is the biggest threat to many species."
+        },
+        {
+          "type": "choice",
+          "id": "l2",
+          "prompt": "2. What was the trust's aim when it bought the land?",
+          "options": [
+            "to recreate exactly how the area looked in the past",
+            "to create conditions in which wildlife could return naturally",
+            "to bring the bittern back by releasing captive birds",
+            "to make the site more attractive to visitors"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"the aim was not to recreate an exact copy of the past\" → A tuzak. \"so that plants and animals could return on their own\" = \"return naturally\".",
+            "ar": "\"the aim was not to recreate an exact copy of the past\" لذلك A فخّ. وعبارة so that plants and animals could return on their own تعني return naturally.",
+            "en": "\"So that plants and animals could return on their own.\" A is explicitly rejected."
+          },
+          "example": "The aim is to let wildlife return on its own."
+        },
+        {
+          "type": "text",
+          "text": "Questions 3–4. Complete the sentences below. Write ONE WORD ONLY for each answer."
+        },
+        {
+          "type": "gap",
+          "id": "l3",
+          "prompt": "3. The invasive water plant was originally sold for garden ___.",
+          "answers": [
+            "ponds"
+          ],
+          "why": {
+            "tr": "\"a water plant from another continent that was sold for garden ponds and escaped into the river\". Çoğul: ponds.",
+            "ar": "\"a water plant… that was sold for garden ponds and escaped into the river\". الكلمة بصيغة الجمع: ponds.",
+            "en": "\"Sold for garden ponds.\""
+          },
+          "example": "Some plants sold for garden ponds can escape into rivers."
+        },
+        {
+          "type": "gap",
+          "id": "l4",
+          "prompt": "4. Chemicals are not used because they would ___ other life in the water.",
+          "answers": [
+            "harm"
+          ],
+          "why": {
+            "tr": "\"chemicals would harm everything else in the water\". \"everything else\" = \"other life\".",
+            "ar": "\"chemicals would harm everything else in the water\". عبارة everything else تعني other life.",
+            "en": "\"Chemicals would harm everything else in the water.\""
+          },
+          "example": "Strong chemicals can harm fish and insects."
+        },
+        {
+          "type": "text",
+          "text": "Questions 5–6. What will each group of volunteers do? Choose the correct answer. There are more options than you need."
+        },
+        {
+          "type": "choice",
+          "id": "l5",
+          "prompt": "5. Group two",
+          "options": [
+            "removing an invasive plant",
+            "counting wildflowers",
+            "planting hedges",
+            "repairing a roof",
+            "guiding visitors"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"Group two will be in the meadow, helping our botanist with a plant survey. We count the wildflowers…\" İstilacı bitkiyi 1. grup temizliyor; çatıyı gönüllüler değil, başkaları tamir ediyor.",
+            "ar": "\"Group two will be in the meadow… We count the wildflowers\". المجموعة الأولى تزيل النبات الغازي، وسقف الحظيرة يصلحه غير المتطوعين.",
+            "en": "\"Group two… plant survey. We count the wildflowers.\""
+          },
+          "example": "Volunteers count the wildflowers every summer."
+        },
+        {
+          "type": "choice",
+          "id": "l6",
+          "prompt": "6. Group three",
+          "options": [
+            "removing an invasive plant",
+            "counting wildflowers",
+            "planting hedges",
+            "repairing a roof",
+            "guiding visitors"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "\"Group three will be planting hedges along the northern edge of the reserve.\" Ziyaretçi rehberliği hiç geçmiyor; çatı tamiri sadece öğle yemeğinin yerini açıklamak için anılıyor.",
+            "ar": "\"Group three will be planting hedges along the northern edge\". إرشاد الزوار لم يُذكر، وإصلاح السقف ذُكر فقط لتوضيح مكان الغداء.",
+            "en": "\"Group three will be planting hedges.\""
+          },
+          "example": "The volunteers planted hedges to link the two woods."
+        }
+      ]
+    },
+    {
+      "kind": "read",
+      "i18n": {"ar":{"title":"القراءة: True / False / Not Given وإكمال الجمل","intro":"نص أكاديمي بطول الامتحان يقارن بين سياسات مختلفة لحماية الطبيعة (المحميات، والممرات، والدفع مقابل خدمات الطبيعة). الجمل طويلة وتحتوي على جمل فرعية متداخلة: وهذا بالضبط موضوع اللغة في هذا الدرس.","tip":"في الجمل الطويلة ابحث أولًا عن الفاعل الرئيسي والفعل الرئيسي؛ والجمل الفرعية بينهما (\"which…\", \"what…\", \"the fact that…\") تفاصيل. في TFNG تغيّر كلمات مثل \"main\" و\"only\" و\"mainly\" الإجابة. في إكمال الجمل انقل الكلمات من النص كما هي ولا تتجاوز حدّ الكلمتين."},"en":{"title":"Reading: True / False / Not Given and sentence completion","intro":"An exam-length academic text comparing different conservation policies (protected areas, corridors, payment for nature's services). The sentences are long and contain nested clauses: exactly this lesson's language point.","tip":"In long sentences first find the main subject and main verb; the clauses in between (\"which…\", \"what…\", \"the fact that…\") are detail. In TFNG words like \"main\", \"only\" and \"mainly\" change the answer. In sentence completion copy words exactly from the text and don't go over the two-word limit."}},
+      "title": "Okuma: True / False / Not Given ve cümle tamamlama",
+      "intro": "Doğa korumanın farklı politikalarını (koruma alanları, koridorlar, doğa hizmetleri için ödeme) karşılaştıran, sınav uzunluğunda akademik bir metin. Cümleler uzun ve iç içe yan cümleler içeriyor: tam bu dersin dil konusu.",
+      "tip": "Uzun cümlelerde önce ana özneyi ve ana fiili bul; aradaki yan cümleler (\"which…\", \"what…\", \"the fact that…\") ayrıntıdır. TFNG'de \"main\", \"only\", \"mainly\" gibi kelimeler cevabı değiştirir. Cümle tamamlamada kelimeleri metinden aynen al ve iki kelime sınırını aşma.",
+      "passage": [
+        {
+          "type": "heading",
+          "text": "Paying for Nature: Rethinking Conservation Policy"
+        },
+        {
+          "type": "text",
+          "text": "Scientists broadly agree that the current rate at which species are disappearing is far higher than it would be without human influence. What is driving this decline is also reasonably well understood. International assessments usually identify five main pressures: changes in how land and sea are used, the direct exploitation of animals and plants, climate change, pollution and invasive species. On land, the first of these, which in practice usually means habitat loss as forests, grasslands and wetlands are converted to farms and cities, has so far been the most important. Climate change is expected to become an increasingly serious threat, but it is the bulldozer and the plough, rather than rising temperatures, that have done most of the damage to date."
+        },
+        {
+          "type": "text",
+          "text": "The traditional response has been to set land aside. National parks and other protected areas now cover a significant share of the Earth's land surface, and many have saved endangered species that would otherwise have disappeared. Yet the record is uneven. Some reserves are so poorly funded that they exist largely on paper, with no rangers to stop illegal logging or hunting. Moreover, many reserves were originally chosen for their scenery, or simply because the land was cheap, rather than because they contained the richest wildlife. Others, although well managed, are simply too small. Ecologists have observed that isolated reserves tend to lose species over time, because populations trapped in a small area are vulnerable to disease, inbreeding and chance events such as a single severe winter."
+        },
+        {
+          "type": "text",
+          "text": "This insight has encouraged a shift from protecting individual sites to protecting connections between them. A wildlife corridor, which may be as modest as a line of hedges or as ambitious as a forested strip hundreds of kilometres long, allows animals to move, find mates and shift their range as the climate changes. In some regions, bridges covered with soil and vegetation have been built over motorways specifically so that deer and other large animals can cross safely, and monitoring suggests that many species use them regularly. Such corridors inevitably cross land that people live and work on, which means that conservation can no longer be treated as something that happens only inside a fence. Farmers, foresters and local communities become central to its success."
+        },
+        {
+          "type": "text",
+          "text": "One way of involving them is to pay for what are known as ecosystem services: the benefits that people receive from nature, such as clean water, flood protection and the work of pollinators in fields and orchards. Under such schemes, landowners receive regular payments in return for keeping forest standing or allowing wetlands to flood. Costa Rica, which began paying landowners to protect forest in the 1990s, is often cited as an early example, and similar programmes now exist in many countries. The logic is straightforward: if a standing forest earns its owner an income, the incentive to clear it is weaker."
+        },
+        {
+          "type": "text",
+          "text": "Critics, however, raise two objections. The first is practical. The fact that a landowner has been paid does not prove that the forest would otherwise have been cut down, so it is difficult to know whether the money has made any real difference. Answering that question requires careful comparison with similar land that was never enrolled in a scheme. The second objection is more philosophical. Putting a price on nature, they argue, risks suggesting that only useful species deserve protection, and that a beetle or a moss with no obvious market value may be ignored. Supporters reply that payments are not meant to replace other reasons for conservation, merely to make sustainable choices more attractive in a world where destruction is often more profitable."
+        },
+        {
+          "type": "text",
+          "text": "Perhaps the clearest lesson is that prevention is cheaper than cure. Once an invasive species has become established, removing it can take decades and cost enormous sums, whereas checking cargo and banning the sale of risky plants costs relatively little. In the same way, it is far easier to keep a healthy ecosystem than to restore a damaged one. Pollinators offer a striking illustration: protecting the wild insects that visit crops costs far less than replacing their work, as fruit growers in a few regions discovered when they were forced to pollinate their trees by hand. No single policy is sufficient on its own; what seems to work best is a combination of well-funded reserves, connected landscapes and economic incentives that make protecting nature the sensible choice for the people who live closest to it."
+        }
+      ],
+      "questions": [
+        {
+          "type": "heading",
+          "text": "Questions 1–4: True, False or Not Given?"
+        },
+        {
+          "type": "text",
+          "text": "TRUE if the statement agrees with the information, FALSE if it contradicts the information, NOT GIVEN if there is no information on this."
+        },
+        {
+          "type": "tfng",
+          "id": "r1",
+          "statement": "1. Climate change has so far been the main cause of biodiversity loss on land.",
+          "answer": "false",
+          "why": {
+            "tr": "Paragraf 1: karada şimdiye kadar en önemli neden habitat kaybı; \"it is the bulldozer and the plough, rather than rising temperatures, that have done most of the damage to date\". İklim değişikliği gelecekte daha ciddi olabilir ama şimdiye kadar ana neden değil: FALSE.",
+            "ar": "الفقرة الأولى: السبب الأهم على اليابسة حتى الآن هو فقدان الموائل، و\"the bulldozer and the plough, rather than rising temperatures\" هي ما سبّب معظم الضرر. قد يصبح تغيّر المناخ أخطر مستقبلًا لكنه ليس السبب الرئيسي حتى الآن: FALSE.",
+            "en": "\"The bulldozer and the plough, rather than rising temperatures, have done most of the damage to date.\""
+          },
+          "example": "So far, habitat loss rather than climate change has done most of the damage."
+        },
+        {
+          "type": "tfng",
+          "id": "r2",
+          "statement": "2. Some protected areas are not actively protected because of a lack of money.",
+          "answer": "true",
+          "why": {
+            "tr": "Paragraf 2: \"Some reserves are so poorly funded that they exist largely on paper, with no rangers…\". \"poorly funded\" = \"a lack of money\": TRUE.",
+            "ar": "الفقرة الثانية: \"Some reserves are so poorly funded that they exist largely on paper, with no rangers\". عبارة poorly funded تعني a lack of money: TRUE.",
+            "en": "\"So poorly funded that they exist largely on paper.\""
+          },
+          "example": "Some parks are so poorly funded that they have no rangers."
+        },
+        {
+          "type": "tfng",
+          "id": "r3",
+          "statement": "3. Small, isolated reserves tend to lose species as time passes.",
+          "answer": "true",
+          "why": {
+            "tr": "Paragraf 2: \"isolated reserves tend to lose species over time\". Neredeyse aynı bilgi, \"over time\" = \"as time passes\": TRUE.",
+            "ar": "الفقرة الثانية: \"isolated reserves tend to lose species over time\". المعلومة نفسها تقريبًا: TRUE.",
+            "en": "\"Isolated reserves tend to lose species over time.\""
+          },
+          "example": "Small islands tend to lose species over time."
+        },
+        {
+          "type": "tfng",
+          "id": "r4",
+          "statement": "4. Costa Rica's payment scheme was funded mainly by foreign governments.",
+          "answer": "not given",
+          "why": {
+            "tr": "Paragraf 4 Kosta Rika'nın 1990'larda toprak sahiplerine ödeme yapmaya başladığını söylüyor, ama paranın nereden geldiğinden hiç bahsetmiyor: NOT GIVEN.",
+            "ar": "تقول الفقرة الرابعة إن كوستاريكا بدأت تدفع لملّاك الأراضي في التسعينيات، لكنها لا تذكر مصدر المال: NOT GIVEN.",
+            "en": "The source of the money is not mentioned."
+          },
+          "example": "The text says when the scheme began, not who paid for it."
+        },
+        {
+          "type": "text",
+          "text": "Questions 5–7. Complete the sentences below. Write NO MORE THAN TWO WORDS from the passage for each answer."
+        },
+        {
+          "type": "gap",
+          "id": "r5",
+          "prompt": "5. Landowners can be paid in return for protecting ___, such as clean water and flood protection.",
+          "answers": [
+            "ecosystem services"
+          ],
+          "why": {
+            "tr": "Paragraf 4: \"pay for what are known as ecosystem services: the benefits that people receive from nature, such as clean water, flood protection…\". İki kelime: ecosystem services.",
+            "ar": "الفقرة الرابعة: \"pay for what are known as ecosystem services: the benefits… such as clean water, flood protection\". الجواب كلمتان: ecosystem services.",
+            "en": "\"What are known as ecosystem services… such as clean water, flood protection.\""
+          },
+          "example": "Wetlands provide valuable ecosystem services, such as flood protection."
+        },
+        {
+          "type": "gap",
+          "id": "r6",
+          "prompt": "6. Critics fear that species without any obvious ___ could be ignored.",
+          "answers": [
+            "market value"
+          ],
+          "why": {
+            "tr": "Paragraf 5: \"a beetle or a moss with no obvious market value may be ignored\". \"without any\" = \"with no\". İki kelime: market value.",
+            "ar": "الفقرة الخامسة: \"a beetle or a moss with no obvious market value may be ignored\". without any تعني with no. الجواب: market value.",
+            "en": "\"With no obvious market value may be ignored.\""
+          },
+          "example": "Many wild plants have no obvious market value."
+        },
+        {
+          "type": "gap",
+          "id": "r7",
+          "prompt": "7. Checking cargo and banning risky plants is much cheaper than ___ an invasive species once it has become established.",
+          "answers": [
+            "removing"
+          ],
+          "why": {
+            "tr": "Paragraf 6: \"Once an invasive species has become established, removing it can take decades and cost enormous sums, whereas checking cargo… costs relatively little.\" Boşluk \"than\"dan sonra -ing ister: removing.",
+            "ar": "الفقرة السادسة: \"removing it can take decades and cost enormous sums, whereas checking cargo… costs relatively little\". بعد than نحتاج إلى صيغة -ing: removing.",
+            "en": "\"Removing it can take decades… whereas checking cargo… costs relatively little.\""
+          },
+          "example": "Preventing a problem is cheaper than removing it later."
+        }
+      ]
+    },
+    {
+      "kind": "language",
+      "i18n": {"ar":{"title":"اللغة: الجمل المركّبة ذات الجمل الفرعية المتداخلة (what…, whether…, the fact that…)"},"en":{"title":"Language: complex sentences with embedded clauses (what…, whether…, the fact that…)"}},
+      "title": "Dil: iç içe yan cümleli karmaşık cümleler (what…, whether…, the fact that…)",
+      "explain": {
+        "tr": "Band 7 için \"karmaşık cümle yapıları\" gerekir, ama bu çok uzun cümle yazmak demek değildir: doğru yerde bir yan cümleyi ana cümlenin içine yerleştirmek demektir. 1) İsim cümlesi özne ya da nesne olarak: \"What drives species loss is mainly habitat destruction.\" / \"Scientists are unsure whether the population will recover.\" 2) \"The fact that…\": \"The fact that bees are declining worries farmers.\" (\"The fact\"ten sonra \"that\" unutulmaz.) 3) Araya giren ilgi cümlesi, iki virgülle: \"The bittern, which had disappeared from the area, has returned.\" 4) Kısaltılmış (participle) yan cümle: \"Forests protected by law can still be damaged.\" (= which are protected). İpucu: ana özneyle ana fiil arasına çok uzun bir yan cümle koyma; okuyucu cümlenin yönünü kaybetmesin.",
+        "ar": "يتطلّب Band 7 تراكيب جمل معقدة، وهذا لا يعني جملًا طويلة جدًا، بل إدخال جملة تابعة داخل الجملة الرئيسية في المكان الصحيح. 1) جملة اسمية في موقع الفاعل أو المفعول: What drives species loss is mainly habitat destruction. / Scientists are unsure whether the population will recover. 2) The fact that…: The fact that bees are declining worries farmers (لا تنسَ that بعد The fact). 3) جملة وصل معترضة بين فاصلتين: The bittern, which had disappeared from the area, has returned. 4) جملة مختصرة بالتصريف (participle): Forests protected by law can still be damaged (أي which are protected). نصيحة: لا تضع جملة تابعة طويلة جدًا بين الفاعل والفعل الرئيسيين حتى لا يضيع القارئ.",
+        "en": "Band 7 asks for complex structures, which does not mean very long sentences: it means embedding a clause inside the main sentence in the right place. 1) A noun clause as subject or object: \"What drives species loss is mainly habitat destruction.\" / \"Scientists are unsure whether the population will recover.\" 2) \"The fact that…\": \"The fact that bees are declining worries farmers.\" (Never drop \"that\" after \"the fact\".) 3) An embedded relative clause between two commas: \"The bittern, which had disappeared from the area, has returned.\" 4) A reduced (participle) clause: \"Forests protected by law can still be damaged.\" (= which are protected). Tip: avoid putting a very long clause between the main subject and the main verb."
+      },
+      "examples": [
+        "What worries conservationists most is not hunting but the steady loss of habitat.",
+        "The fact that pollinators are declining could have serious consequences for food production.",
+        "The wetland, which had been drained for farming in the 1990s, is now home to rare birds again.",
+        "It is still unclear whether paying landowners actually prevents forests from being cleared."
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "id": "g1",
+          "prompt": "___ people choose to protect is often influenced by which animals they find attractive.",
+          "options": [
+            "What",
+            "That",
+            "Which",
+            "It"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Burada özne bir isim cümlesi: \"What people choose to protect\" (insanların korumayı seçtiği şey). \"That\" ve \"Which\" bu konumda anlam vermez; \"It\" ile cümle eksik kalır.",
+            "ar": "الفاعل هنا جملة اسمية: What people choose to protect (ما يختار الناس حمايته). أما That وWhich فلا تعطيان معنى في هذا الموقع، ومع It تبقى الجملة ناقصة.",
+            "en": "A noun clause is the subject: \"What people choose to protect\"."
+          },
+          "example": "What surprised the researchers was how quickly the forest recovered."
+        },
+        {
+          "type": "gap",
+          "id": "g2",
+          "prompt": "Write ONE word: The fact ___ many insects are declining is a serious concern for farmers.",
+          "answers": [
+            "that"
+          ],
+          "why": {
+            "tr": "Kalıp \"The fact that + cümle\". \"that\" atlanamaz.",
+            "ar": "التعبير هو The fact that + جملة، ولا يجوز حذف that.",
+            "en": "\"The fact that + clause\"; that cannot be dropped."
+          },
+          "example": "The fact that the river is cleaner has brought back the otters."
+        },
+        {
+          "type": "choice",
+          "id": "g3",
+          "prompt": "Which sentence is punctuated correctly?",
+          "options": [
+            "The snow leopard, which lives in high mountains, is rarely seen.",
+            "The snow leopard which lives in high mountains, is rarely seen.",
+            "The snow leopard, which lives in high mountains is rarely seen.",
+            "The snow leopard, that lives in high mountains, is rarely seen."
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Araya giren (ek bilgi veren) ilgi cümlesi iki virgülle ayrılır: \", which …,\". B ve C'de virgüllerden biri eksik; D'de virgüllü ilgi cümlesinde \"that\" kullanılamaz.",
+            "ar": "الجملة المعترضة التي تضيف معلومة تُحاط بفاصلتين: , which …,. في B وC تنقص فاصلة، وفي D لا يجوز استخدام that في جملة وصل بين فاصلتين.",
+            "en": "A non-defining clause needs two commas and cannot use \"that\"."
+          },
+          "example": "The bittern, which is very shy, is hard to photograph."
+        },
+        {
+          "type": "choice",
+          "id": "g4",
+          "prompt": "Scientists do not yet know ___ the new reserve will be large enough.",
+          "options": [
+            "whether",
+            "what",
+            "which",
+            "that"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Evet/hayır sorusunu nesne olarak gömmek için \"whether\" (ya da \"if\") kullanılır. \"what\" ve \"which\" bir eksik öğe ister; \"that\" belirsizlik bildirmez.",
+            "ar": "لإدخال سؤال جوابه نعم أو لا كمفعول نستخدم whether (أو if). أما what وwhich فتحتاجان إلى عنصر ناقص، وthat لا تدل على عدم اليقين.",
+            "en": "An embedded yes/no question uses whether (or if)."
+          },
+          "example": "Nobody knows whether the species will survive the next decade."
+        },
+        {
+          "type": "gap",
+          "id": "g5",
+          "prompt": "Write the correct form of PROTECT: Forests ___ by law can still be damaged by illegal logging.",
+          "answers": [
+            "protected"
+          ],
+          "why": {
+            "tr": "Kısaltılmış yan cümle: \"Forests (which are) protected by law\". Edilgen anlam olduğu için past participle: protected.",
+            "ar": "جملة مختصرة: Forests (which are) protected by law. المعنى مبني للمجهول لذا نستخدم التصريف الثالث: protected.",
+            "en": "Reduced passive clause: (which are) protected."
+          },
+          "example": "Animals kept in small enclosures often show signs of stress."
+        }
+      ]
+    },
+    {
+      "kind": "write",
+      "i18n": {"ar":{"title":"الكتابة · Task 2: مقال كامل (المشكلة والحل)","tip":"أعطِ السؤالين وزنًا متساويًا: فقرة للأسباب، وفقرة للحلول. اجعل كل حل يقابل سببًا (فقدان الموائل ← المحميات والممرات). استخدم بنيتين على الأقل من بنى هذا الدرس: \"What… is…\" و\"The fact that…\" وجملة وصل بين فاصلتين. لكن لا تُطِل كل جملة؛ فالجملة القصيرة الواضحة بعد جملة مركّبة مؤثرة جدًا."},"en":{"title":"Writing · Task 2: full essay (problem and solution)","tip":"Give both questions equal weight: one paragraph on causes, one on solutions. Match each solution to a cause (habitat loss → protected areas and corridors). Use at least two of this lesson's structures: \"What… is…\", \"The fact that…\", a relative clause between commas. But don't make every sentence long; a short, clear sentence after a complex one is very effective."}},
+      "title": "Yazma · Task 2: tam deneme (sorun ve çözüm)",
+      "task": 2,
+      "prompt": "Many species of plants and animals are in decline, and some are at risk of disappearing completely.\n\nWhat are the main causes of this problem, and what measures could be taken to solve it?\n\nWrite at least 250 words.",
+      "minutes": 40,
+      "minWords": 250,
+      "tip": "İki soruya da eşit ağırlık ver: bir paragraf nedenler, bir paragraf çözümler. Her çözüm bir nedene karşılık gelsin (habitat kaybı → koruma alanları ve koridorlar). Bu dersin yapısından en az iki tane kullan: \"What… is…\", \"The fact that…\", virgüllü bir ilgi cümlesi. Ama her cümleyi uzatma; kısa ve net bir cümle karmaşık bir cümleden sonra çok etkilidir.",
+      "model": "In many parts of the world, wildlife populations are shrinking, and a growing number of species face extinction. This essay will argue that the destruction of natural habitats is the principal cause of this decline, and that a combination of protected land and economic incentives offers the most realistic solution.\n\nWhat drives most species loss on land is the conversion of forests, grasslands and wetlands into farms, roads and cities. When a habitat is cleared, the animals that depend on it have nowhere to go. A second major cause is the spread of invasive species, which are often carried unintentionally by trade and which compete with or prey on native wildlife. In addition, pollution and, increasingly, climate change put further pressure on ecosystems that have already been weakened. The fact that these threats often act together explains why some species decline so rapidly.\n\nSeveral measures could address these problems. First, governments should expand protected areas and, crucially, fund them properly, since a reserve without rangers offers little real protection. These areas should also be linked by wildlife corridors, so that animals can move between them rather than being trapped in isolated fragments. Second, landowners could be paid to keep forests standing or to restore wetlands. Such schemes, which have been tried in a number of countries, make conservation financially attractive for the people whose decisions matter most. Finally, stricter checks on imported goods and plants would reduce the risk of new invasive species arriving, which is far cheaper than removing them later.\n\nIn conclusion, although biodiversity loss has several causes, habitat destruction remains the most serious. Protecting and connecting habitats, while giving local people a reason to value them, is the most effective way to reverse the decline."
+    },
+    {
+      "kind": "speak",
+      "i18n": {"ar":{"title":"المحادثة: الطبيعة والحياة البرية"},"en":{"title":"Speaking: nature and wildlife"}},
+      "title": "Konuşma: doğa ve yaban hayatı",
+      "part1": [
+        "Do you enjoy spending time in nature? Where do you usually go?",
+        "Are there any wild animals near where you live?",
+        "Did you learn much about plants and animals at school?",
+        "Do you think zoos are a good idea? Why or why not?"
+      ],
+      "card": {
+        "title": "Describe a natural place you have visited that you think should be protected.",
+        "points": [
+          "where it is and when you went there",
+          "what you saw and did there",
+          "what threats it faces"
+        ],
+        "explain": "and explain why you think it is important to protect it."
+      },
+      "useful": [
+        "What struck me most was how quiet it was.",
+        "The fact that it's so close to the city makes it quite vulnerable.",
+        "The lake, which used to be full of fish, has become noticeably polluted.",
+        "I'm not sure whether the local authorities are doing enough to protect it.",
+        "If nothing changes, I'm afraid some of the wildlife could disappear altogether.",
+        "It's the kind of place that you can't really put a price on."
+      ]
+    }
+  ]
+}

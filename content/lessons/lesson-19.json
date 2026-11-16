@@ -1,0 +1,326 @@
+{
+  "id": "lesson-19",
+  "number": 19,
+  "title": "Every Drop Counts",
+  "topic": "Water and natural resources",
+  "level": "B2",
+  "goal": "Take notes on a lecture about groundwater, explain causes of and solutions to water scarcity in an essay, and contrast ideas with although, despite, whereas and while.",
+  "steps": [
+    {
+      "kind": "words",
+      "i18n": {"ar":{"title":"المفردات: المياه والموارد الطبيعية","intro":"في هذا الدرس 12 كلمة وتعبيرًا عن موارد المياه والحفاظ على الموارد الطبيعية. موضوعات البيئة تتكرر كثيرًا في كل أقسام IELTS، وهذه الكلمات تفيدك خاصة في محاضرات Part 4 ومقالات المشكلة والحل."},"en":{"title":"Vocabulary: water and natural resources","intro":"This lesson has 12 words and phrases about water resources and protecting natural resources. Environmental topics come up very often in every part of IELTS; these words are especially useful in Part 4 lectures and problem–solution essays."}},
+      "title": "Kelimeler: su ve doğal kaynaklar",
+      "intro": "Bu derste su kaynakları ve doğal kaynakların korunması hakkında 12 kelime ve kalıp var. Çevre konuları IELTS'in her bölümünde çok sık çıkar; bu kelimeler özellikle Part 4 derslerinde ve problem–çözüm denemelerinde işine yarar.",
+      "words": [
+        { "en": "water scarcity", "pos": "phrase", "tr": "su kıtlığı", "ar": "شُحّ المياه", "example": "Water scarcity already affects millions of people in dry regions." },
+        { "en": "drought", "pos": "noun", "tr": "kuraklık", "ar": "الجفاف", "example": "The drought lasted three years and destroyed most of the harvest." },
+        { "en": "irrigation", "pos": "noun", "tr": "sulama (tarımda)", "ar": "الري", "example": "Without irrigation, nothing would grow in this valley in summer." },
+        { "en": "groundwater", "pos": "noun", "tr": "yeraltı suyu", "ar": "المياه الجوفية", "example": "The village gets its drinking water from groundwater, not from the river." },
+        { "en": "desalination", "pos": "noun", "tr": "deniz suyunu arıtma (tuzdan arındırma)", "ar": "تحلية المياه", "example": "Several Gulf states rely on desalination for most of their drinking water." },
+        { "en": "reservoir", "pos": "noun", "tr": "baraj gölü, su deposu", "ar": "خزّان مياه، بحيرة سدّ", "example": "After a dry winter, the reservoir was only a third full." },
+        { "en": "deplete", "pos": "verb", "tr": "tüketmek, azaltıp bitirmek", "ar": "يستنزف", "example": "Overfishing can deplete fish stocks in just a few years." },
+        { "en": "water table", "pos": "phrase", "tr": "yeraltı su seviyesi", "ar": "منسوب المياه الجوفية", "example": "In dry summers the water table falls and shallow wells run dry." },
+        { "en": "shortage", "pos": "noun", "tr": "kıtlık, eksiklik", "ar": "نقص", "example": "The city faced a serious water shortage last summer." },
+        { "en": "conservation", "pos": "noun", "tr": "koruma, tasarruflu kullanım", "ar": "الحفاظ على الموارد، الترشيد", "example": "Water conservation starts with fixing leaking pipes." },
+        { "en": "rainfall", "pos": "noun", "tr": "yağış miktarı", "ar": "كمية الأمطار", "example": "Annual rainfall in the desert is less than 100 millimetres." },
+        { "en": "finite", "pos": "adjective", "tr": "sınırlı, tükenebilir", "ar": "محدود، قابل للنفاد", "example": "Oil and gas are finite resources that will eventually run out." }
+      ],
+      "practice": [
+        {
+          "type": "choice", "id": "w1",
+          "prompt": "A long period with little or no rain is called a ___.",
+          "options": ["drought", "reservoir", "shortage", "rainfall"],
+          "answer": 0,
+          "why": { "tr": "\"Drought\" uzun süre yağmur yağmaması, kuraklıktır. \"shortage\" herhangi bir şeyin eksikliği; \"rainfall\" yağış miktarı; \"reservoir\" su deposu.", "ar": "drought هي فترة طويلة بلا مطر تقريبًا. أما shortage فتعني نقص أي شيء، وrainfall كمية المطر، وreservoir خزّان مياه.", "en": "A drought is a long period without rain. A shortage can be of anything." },
+          "example": "The drought forced farmers to sell their animals."
+        },
+        {
+          "type": "gap", "id": "w2",
+          "prompt": "Write ONE word: When too much groundwater is pumped out, the water ___ falls and wells have to be dug deeper.",
+          "answers": ["table"],
+          "why": { "tr": "Kalıp \"water table\" = yeraltı su seviyesi, yani yer altındaki suyun üst sınırı. \"water level\" daha genel; nehir ve göller için de kullanılır.", "ar": "التعبير الثابت water table يعني منسوب المياه الجوفية، أي الحد الأعلى للماء تحت الأرض. أما water level فأعمّ ويُستخدم للأنهار والبحيرات أيضًا.", "en": "The water table is the level below which the ground is full of water." },
+          "example": "The water table has fallen by several metres in ten years."
+        },
+        {
+          "type": "choice", "id": "w3",
+          "prompt": "Which verb collocates best: \"Farmers are ___ the aquifer faster than rain can refill it.\"",
+          "options": ["depleting", "saving", "conserving", "irrigating"],
+          "answer": 0,
+          "why": { "tr": "\"deplete\" bir kaynağı azaltıp tüketmek demek ve \"faster than rain can refill it\" ile uyumlu. \"save\" ve \"conserve\" ters anlamlı; \"irrigate\" tarlayı sulamaktır, kaynağı değil.", "ar": "deplete تعني استنزاف المورد، وتناسب faster than rain can refill it. أما save وconserve فمعناهما معاكس، وirrigate تعني ري الأرض لا المورد.", "en": "To deplete a resource is to use it up; the context (faster than rain can refill it) requires this." },
+          "example": "Mining has depleted the region's water supplies."
+        },
+        {
+          "type": "choice", "id": "w4",
+          "prompt": "A finite resource is one that…",
+          "options": ["exists in a limited amount and can run out", "is renewed every year by rainfall", "is found only underground", "is too expensive for most people"],
+          "answer": 0,
+          "why": { "tr": "\"Finite\" sınırlı demek: bittiğinde yenisi gelmez. Zıt anlamlısı \"renewable\" (yenilenebilir).", "ar": "finite تعني محدودة الكمية وقد تنفد، وعكسها renewable أي متجددة.", "en": "Finite means limited; it can run out. The opposite is renewable." },
+          "example": "Fossil water is a finite resource."
+        },
+        {
+          "type": "gap", "id": "w5",
+          "prompt": "Write ONE word: Turning sea water into drinking water is called ___.",
+          "answers": ["desalination"],
+          "why": { "tr": "\"salt\" (tuz) kökünden: de- (gidermek) + salin + -ation = desalination, tuzdan arındırma.", "ar": "الكلمة desalination مكوّنة من de- (إزالة) وsalin (ملح) و-ation: تحلية المياه.", "en": "Desalination: removing salt from sea water." },
+          "example": "Desalination plants use large amounts of energy."
+        },
+        {
+          "type": "choice", "id": "w6",
+          "prompt": "Which word completes both phrases: \"water ___\" and \"wildlife ___\"?",
+          "options": ["conservation", "scarcity", "drought", "irrigation"],
+          "answer": 0,
+          "why": { "tr": "\"water conservation\" (suyu tasarruflu kullanma) ve \"wildlife conservation\" (yaban hayatını koruma) doğal eşdizimlerdir. \"scarcity\" ile \"wildlife scarcity\" denmez.", "ar": "water conservation (ترشيد المياه) وwildlife conservation (حماية الحياة البرية) تلازمان طبيعيان، ولا يُقال wildlife scarcity.", "en": "Water conservation and wildlife conservation are both natural collocations." },
+          "example": "The charity works in wildlife conservation."
+        }
+      ]
+    },
+    {
+      "kind": "listen",
+      "i18n": {"ar":{"title":"الاستماع · Part 4: أزمة المياه الخفية","intro":"محاضِرة تلقي محاضرة عن كيفية نضوب المياه الجوفية وما يمكن فعله لمواجهة ذلك. هناك متحدث واحد ولا توجد استراحة. اقرأ الملاحظات مسبقًا وتوقّع نوع الكلمة التي ستملأ كل فراغ (اسم، صفة).","tip":"في Part 4 تتبع الملاحظات ترتيب المحاضرة، لكن المتحدث لا يستخدم كلمات الملاحظات بل مرادفاتها (\"goes up\" بدل \"rises\" مثلًا). ركّز على الكلمات المحيطة بالفراغ، وإذا انتقل المتحدث إلى العنوان التالي فاترك ذلك الفراغ. وإذا كان المطلوب ONE WORD ONLY فلا تكتب كلمتين."},"en":{"title":"Listening · Part 4: the hidden water crisis","intro":"A lecturer gives a talk on how groundwater is running out and what can be done about it. There is one speaker and no break. Read the notes in advance and predict what type of word (noun, adjective) goes in each gap.","tip":"In Part 4 the notes follow the order of the lecture, but the speaker uses synonyms rather than the words in the notes (\"goes up\" instead of \"rises\", for example). Focus on the words around each gap, and if the speaker has moved on to the next heading, leave that gap. If it says ONE WORD ONLY, don't write two words."}},
+      "title": "Dinleme · Part 4: görünmeyen su krizi",
+      "intro": "Bir öğretim görevlisi, yeraltı sularının nasıl tükendiğini ve buna karşı neler yapılabileceğini anlatan bir ders veriyor. Tek konuşmacı var ve ara verilmiyor. Notları önceden oku ve her boşluğa ne tür bir kelime (isim, sıfat) geleceğini tahmin et.",
+      "tip": "Part 4'te notlar dersin sırasını izler, ama konuşmacı nottaki kelimeleri değil eş anlamlılarını kullanır (\"rises\" yerine \"goes up\" gibi). Bir boşluğun etrafındaki kelimelere odaklan ve konuşmacı bir sonraki başlığa geçtiyse o boşluğu bırak. ONE WORD ONLY ise iki kelime yazma.",
+      "audio": {
+        "type": "audio", "id": "l-audio",
+        "speakers": {
+          "N": { "name": "Narrator", "voice": "en-GB-SoniaNeural" },
+          "lecturer": { "name": "Lecturer", "voice": "en-US-AndrewNeural" }
+        },
+        "lines": [
+          { "speaker": "N", "text": "You will hear part of a lecture on water resources. First, you have some time to look at questions one to six.", "pauseAfterMs": 2500 },
+          { "speaker": "N", "text": "Now listen carefully and answer questions one to six.", "pauseAfterMs": 1200 },
+          { "speaker": "lecturer", "text": "Good morning. Last week we looked at rivers and lakes, which is where most people imagine our fresh water comes from. Today I want to talk about a resource that's far less visible, but in many regions far more important: groundwater, the water held in the rock and soil beneath our feet.", "pauseAfterMs": 500 },
+          { "speaker": "lecturer", "text": "Although it can seem unlimited, groundwater is in many places a finite resource. Some of it has been underground for thousands of years, since a time when the climate was much wetter. Scientists call this fossil water, because, like oil, once it's gone it won't be replaced in any human lifetime.", "pauseAfterMs": 500 },
+          { "speaker": "lecturer", "text": "So who uses it? Drinking water is part of the story, of course, but by far the largest share goes on irrigation. Since the nineteen-sixties, cheap pumps have allowed farmers to grow crops in dry regions that were once used only for grazing animals. In many ways this has been a great success. It has fed hundreds of millions of people.", "pauseAfterMs": 500 },
+          { "speaker": "lecturer", "text": "The difficulty is that pumping is invisible. A reservoir that's running low is obvious to everyone: you can see the exposed banks. But when farmers deplete an underground supply, nobody sees the water table falling, except the families who have to dig their wells a little deeper every year.", "pauseAfterMs": 500 },
+          { "speaker": "lecturer", "text": "And the consequences go beyond a simple shortage. Near the coast, when fresh groundwater is removed, sea water moves in to take its place, and once the water is salty, it's useless for crops. In some cities, the ground itself has sunk by several metres, damaging roads and buildings.", "pauseAfterMs": 500 },
+          { "speaker": "lecturer", "text": "There's an economic effect as well. Whereas the water itself is usually free to the farmer, lifting it from a greater depth is not. As the water table drops, the bill for the electricity that runs the pumps goes up, and small farmers are often the first to give up.", "pauseAfterMs": 500 },
+          { "speaker": "lecturer", "text": "So what can be done? The answer many people give is desalination, turning sea water into fresh water. While it certainly has a role in wealthy coastal cities, it uses a great deal of energy, and it does very little for farmers hundreds of kilometres inland.", "pauseAfterMs": 500 },
+          { "speaker": "lecturer", "text": "A more promising approach is what's known as managed recharge. Despite its technical name, the idea is simple. In the wet season, water from floods is directed into shallow basins, where it soaks slowly back into the ground. It can then be pumped up again during a drought. Some regions have done this successfully for decades.", "pauseAfterMs": 500 },
+          { "speaker": "lecturer", "text": "Even though recharge helps, most experts agree that we also need to use less. Drip irrigation, which delivers water directly to the roots of plants, can reduce use dramatically, although farmers often need financial help to install it. Conservation also depends on what we choose to grow in the first place.", "pauseAfterMs": 500 },
+          { "speaker": "lecturer", "text": "This brings me to the idea of virtual water, which was introduced by the geographer Tony Allan in the nineteen-nineties. Every product contains, in a sense, the water that was used to make it. So a dry country that imports grain is, in effect, importing water too, and protecting its own groundwater.", "pauseAfterMs": 500 },
+          { "speaker": "lecturer", "text": "Some economists argue that this is the most sustainable way for countries facing water scarcity to feed their people. Of course, it depends on trade, and on reliable rainfall somewhere else, and in a changing climate that's something none of us can take for granted. Next week, we'll look at that question in more detail.", "pauseAfterMs": 1500 },
+          { "speaker": "N", "text": "That is the end of the recording.", "pauseAfterMs": 0 }
+        ]
+      },
+      "questions": [
+        { "type": "text", "text": "Questions 1–6. Complete the notes below. Write ONE WORD ONLY for each answer." },
+        { "type": "text", "text": "Groundwater: the hidden water crisis" },
+        {
+          "type": "gap", "id": "l1",
+          "prompt": "1. Very old groundwater is known as ___ water, as it cannot be replaced in a human lifetime.",
+          "answers": ["fossil"],
+          "why": { "tr": "\"Scientists call this fossil water, because, like oil, once it's gone it won't be replaced in any human lifetime.\" Notlardaki \"is known as\", konuşmadaki \"call\" ile eşleşiyor.", "ar": "\"Scientists call this fossil water, because… it won't be replaced in any human lifetime\". عبارة is known as في الملاحظات تقابل call في المحاضرة.", "en": "\"Scientists call this fossil water … it won't be replaced in any human lifetime.\"" },
+          "example": "Fossil water has been underground for thousands of years."
+        },
+        {
+          "type": "gap", "id": "l2",
+          "prompt": "2. The main use of groundwater is ___.",
+          "answers": ["irrigation"],
+          "why": { "tr": "\"Drinking water is part of the story… but by far the largest share goes on irrigation.\" İçme suyu tuzak: en büyük pay sulamanın.", "ar": "\"Drinking water is part of the story… but by far the largest share goes on irrigation\". مياه الشرب فخّ، فالحصة الأكبر للري.", "en": "\"By far the largest share goes on irrigation.\" Drinking water is the distractor." },
+          "example": "Most of the river's water is used for irrigation."
+        },
+        {
+          "type": "gap", "id": "l3",
+          "prompt": "3. Near the coast, ___ water replaces the fresh water that has been pumped out.",
+          "answers": ["sea"],
+          "why": { "tr": "\"Near the coast, when fresh groundwater is removed, sea water moves in to take its place.\" \"replaces\" = \"take its place\".", "ar": "\"Near the coast, when fresh groundwater is removed, sea water moves in to take its place\"، وreplaces تساوي take its place.", "en": "\"Sea water moves in to take its place.\" Replaces = takes its place." },
+          "example": "Sea water has entered the wells near the beach."
+        },
+        {
+          "type": "gap", "id": "l4",
+          "prompt": "4. As water levels fall, farmers pay more for ___ to run the pumps.",
+          "answers": ["electricity"],
+          "why": { "tr": "\"the bill for the electricity that runs the pumps goes up\". Su ücretsiz (\"free to the farmer\"), artan maliyet elektrik.", "ar": "\"the bill for the electricity that runs the pumps goes up\". الماء نفسه مجاني، والكلفة المتزايدة هي الكهرباء.", "en": "\"The bill for the electricity that runs the pumps goes up.\" The water itself is free." },
+          "example": "The cost of electricity for the pumps has doubled."
+        },
+        {
+          "type": "gap", "id": "l5",
+          "prompt": "5. Managed recharge: water from ___ is sent into basins and soaks into the ground.",
+          "answers": ["floods", "flood"],
+          "why": { "tr": "\"In the wet season, water from floods is directed into shallow basins, where it soaks slowly back into the ground.\" \"is sent\" = \"is directed\".", "ar": "\"In the wet season, water from floods is directed into shallow basins\"، وis sent تقابل is directed.", "en": "\"Water from floods is directed into shallow basins.\"" },
+          "example": "Water from winter floods can be stored underground."
+        },
+        {
+          "type": "gap", "id": "l6",
+          "prompt": "6. Virtual water: a dry country that imports ___ is also importing water.",
+          "answers": ["grain"],
+          "why": { "tr": "\"a dry country that imports grain is, in effect, importing water too\". Tahıl üretmek çok su gerektirir; onu ithal etmek kendi suyunu korur.", "ar": "\"a dry country that imports grain is, in effect, importing water too\"، فزراعة الحبوب تحتاج إلى ماء كثير، واستيرادها يحمي المياه المحلية.", "en": "\"A dry country that imports grain is, in effect, importing water too.\"" },
+          "example": "By importing grain, the country saves its own water."
+        }
+      ]
+    },
+    {
+      "kind": "read",
+      "i18n": {"ar":{"title":"القراءة: Yes / No / Not Given والاختيار من متعدد","intro":"ستقرأ آراء كاتب حول تسعير المياه وحلول شحّ المياه. الأسئلة الأربعة الأولى عن رأي الكاتب، والثلاثة الأخيرة عن تفاصيل النص.","tip":"في النصوص التي تعبّر عن رأي، تدل عبارات مثل \"I would argue\" و\"in my view\" و\"it seems to me\" وظروف مثل \"unfortunately\" و\"rightly\" على موقف الكاتب. في الاختيار من متعدد قارن كل خيار بالنص: فالخيار الذي يحتوي كلمة وردت في النص كثيرًا ما يكون فخًا."},"en":{"title":"Reading: Yes / No / Not Given and multiple choice","intro":"You will read a writer's views on water pricing and solutions to water shortages. The first four questions ask about the writer's opinion; the last three ask about details in the text.","tip":"In opinion texts, phrases like \"I would argue\", \"in my view\" and \"it seems to me\" and adverbs like \"unfortunately\" and \"rightly\" show the writer's attitude. In multiple choice, compare each option with the text: an option containing a word from the text is often a trap."}},
+      "title": "Okuma: Yes / No / Not Given ve çoktan seçmeli",
+      "intro": "Bir yazarın suyun fiyatlandırılması ve su kıtlığına çözümler hakkındaki görüşlerini okuyacaksın. İlk dört soru yazarın görüşünü, son üç soru metnin ayrıntılarını soruyor.",
+      "tip": "Görüş bildiren metinlerde \"I would argue\", \"in my view\", \"it seems to me\" gibi ifadeler ve \"unfortunately\", \"rightly\" gibi zarflar yazarın tutumunu gösterir. Çoktan seçmeli sorularda her seçeneği metinle karşılaştır: metinde geçen bir kelimeyi içeren seçenek sıklıkla tuzaktır.",
+      "passage": [
+        { "type": "heading", "text": "The True Cost of Water" },
+        { "type": "text", "text": "Water is the most essential of all natural resources, yet in much of the world it is treated as if it were almost free. Households in many cities pay far less for the water they use than it costs to collect, clean and deliver it, and farmers often pay nothing at all for the groundwater they pump from beneath their land. In my view, this is one of the main reasons why water scarcity has become so widespread. When something costs little, people have little reason to use it carefully." },
+        { "type": "text", "text": "The usual response to a shortage is to search for new supplies. Governments build a new dam and reservoir, transfer water from one river basin to another, or invest in desalination. These projects can be valuable, but they are expensive, and they tend to attract far more political attention than the less glamorous task of managing existing supplies. In many older cities, a large share of treated water is lost through leaking pipes before it ever reaches a tap. Repairing those pipes rarely makes headlines, but it is often the cheapest new source of water available." },
+        { "type": "text", "text": "A more sustainable approach would start by charging prices that reflect the real cost of water. Critics object that this would be unfair to poor families, and they are right to raise the concern. Access to clean water was recognised by the United Nations as a human right in 2010, and no pricing system should make it unaffordable. However, the solution is not to keep all water cheap. Several cities use a system in which the first amount of water each household uses, enough for drinking, cooking and washing, is very cheap or free, while additional water becomes progressively more expensive. Such a system protects basic needs while discouraging waste, such as watering large gardens during a drought." },
+        { "type": "text", "text": "Households, however, are only part of the picture. Across the world, agriculture uses far more fresh water than homes and industry combined, mostly for irrigation. Campaigns that encourage people to take shorter showers are useful, but they can give the misleading impression that conservation is mainly a matter of personal habits. It seems to me that real progress depends on helping farmers to waste less, through efficient technology, better information about soil moisture and, above all, an end to subsidies that make pumping artificially cheap." },
+        { "type": "text", "text": "Farmers themselves are often blamed unfairly. Many would prefer to use water more efficiently but cannot afford the equipment, and they are frequently encouraged to grow thirsty crops because those are the crops that pay. In regions where farmers deplete underground supplies year after year, the problem is usually a failure of policy rather than of individual responsibility. Where governments have offered farmers advice, affordable loans for new equipment and a fair price for less thirsty crops, water use has often fallen without any loss of income." },
+        { "type": "text", "text": "Finally, we need to stop thinking of water as a local issue. Rainfall patterns are changing, and regions that were once reliably wet are experiencing longer dry periods. Water is also traded indirectly in the form of food and manufactured goods. A country that imports wheat or cotton is, in effect, importing the water that was used to grow it, while a country that exports fruit grown in the desert may be exporting its most precious resource without realising it. No country can manage this finite resource in isolation, and the sooner governments accept this, the better prepared they will be." }
+      ],
+      "questions": [
+        { "type": "heading", "text": "Questions 1–4: Yes, No or Not Given?" },
+        { "type": "text", "text": "Do the following statements agree with the views of the writer? Choose YES if the statement agrees with the views of the writer, NO if it contradicts them, NOT GIVEN if it is impossible to say what the writer thinks about this." },
+        {
+          "type": "choice", "id": "r1",
+          "prompt": "1. Low prices are an important cause of water scarcity.",
+          "options": ["Yes", "No", "Not Given"],
+          "answer": 0,
+          "why": { "tr": "Paragraf 1: suyun neredeyse bedava olması \"In my view, this is one of the main reasons why water scarcity has become so widespread.\" Yazar katılıyor: YES.", "ar": "الفقرة الأولى: \"In my view, this is one of the main reasons why water scarcity has become so widespread\"، والكاتب يوافق: YES.", "en": "\"In my view, this is one of the main reasons why water scarcity has become so widespread.\"" },
+          "example": "In my view, low prices encourage waste."
+        },
+        {
+          "type": "choice", "id": "r2",
+          "prompt": "2. Desalination is too expensive to play any useful role.",
+          "options": ["Yes", "No", "Not Given"],
+          "answer": 1,
+          "why": { "tr": "Paragraf 2: bu projeler pahalı ama \"These projects can be valuable\". Yazar hiçbir rolü olmadığını söylemiyor, tersine değerli olabileceğini söylüyor: NO.", "ar": "الفقرة الثانية: هذه المشاريع مكلفة لكن \"These projects can be valuable\"، فالكاتب لا يقول إنها بلا فائدة بل العكس: NO.", "en": "\"These projects can be valuable, but they are expensive.\" The writer does not say they are useless." },
+          "example": "The project was expensive, but it was valuable."
+        },
+        {
+          "type": "choice", "id": "r3",
+          "prompt": "3. People who worry that higher prices could harm poor families have a fair point.",
+          "options": ["Yes", "No", "Not Given"],
+          "answer": 0,
+          "why": { "tr": "Paragraf 3: \"they are right to raise the concern\". Yazar endişeyi haklı buluyor (ama çözümün her suyu ucuz tutmak olmadığını düşünüyor): YES.", "ar": "الفقرة الثالثة: \"they are right to raise the concern\"، فالكاتب يرى أن القلق مشروع: YES.", "en": "\"They are right to raise the concern.\"" },
+          "example": "The critics are right to raise this concern."
+        },
+        {
+          "type": "choice", "id": "r4",
+          "prompt": "4. Farmers who grow thirsty crops should pay heavy fines.",
+          "options": ["Yes", "No", "Not Given"],
+          "answer": 1,
+          "why": { "tr": "Paragraf 5: \"Farmers themselves are often blamed unfairly\" ve sorun \"a failure of policy rather than of individual responsibility\". Yazar çiftçileri cezalandırmak değil, politikayı değiştirmek istiyor: NO.", "ar": "الفقرة الخامسة: \"Farmers themselves are often blamed unfairly\"، والمشكلة \"a failure of policy\". الكاتب لا يريد معاقبة المزارعين: NO.", "en": "\"Farmers themselves are often blamed unfairly\"; the problem is \"a failure of policy\"." },
+          "example": "The problem is a failure of policy, not of individuals."
+        },
+        { "type": "heading", "text": "Questions 5–7: Choose the correct letter." },
+        {
+          "type": "choice", "id": "r5",
+          "prompt": "5. According to the writer, repairing leaking pipes",
+          "options": ["receives more attention than building dams.", "is often the cheapest way to gain more water.", "is too difficult in older cities.", "should be paid for by households."],
+          "answer": 1,
+          "why": { "tr": "Paragraf 2: \"Repairing those pipes rarely makes headlines, but it is often the cheapest new source of water available.\" A tam tersi: barajlar daha çok ilgi görüyor.", "ar": "الفقرة الثانية: \"it is often the cheapest new source of water available\". والخيار A عكس النص: السدود تجذب اهتمامًا أكبر.", "en": "\"It is often the cheapest new source of water available.\" Dams attract more attention, not less." },
+          "example": "Fixing leaks is often cheaper than building a new reservoir."
+        },
+        {
+          "type": "choice", "id": "r6",
+          "prompt": "6. In the pricing system the writer describes,",
+          "options": ["all water is free for poor families.", "every household pays the same price per litre.", "basic amounts are cheap but extra water costs more.", "farmers pay higher prices than households."],
+          "answer": 2,
+          "why": { "tr": "Paragraf 3: \"the first amount of water each household uses… is very cheap or free, while additional water becomes progressively more expensive.\"", "ar": "الفقرة الثالثة: الكمية الأولى \"is very cheap or free, while additional water becomes progressively more expensive\".", "en": "\"The first amount … is very cheap or free, while additional water becomes progressively more expensive.\"" },
+          "example": "The first ten cubic metres are cheap, but extra water costs more."
+        },
+        {
+          "type": "choice", "id": "r7",
+          "prompt": "7. What is the writer's view of campaigns for shorter showers?",
+          "options": ["They are useful but may give the wrong idea about where water is wasted.", "They are the most effective form of conservation.", "They have had no effect on household use.", "They should be replaced by higher prices."],
+          "answer": 0,
+          "why": { "tr": "Paragraf 4: kampanyalar \"useful\", ama tasarrufun esas olarak kişisel alışkanlık meselesi olduğu yönünde \"misleading impression\" verebilir; suyun çoğunu tarım kullanıyor.", "ar": "الفقرة الرابعة: الحملات useful لكنها قد تعطي misleading impression بأن الترشيد مسألة عادات شخصية، بينما الزراعة تستهلك معظم المياه.", "en": "They \"are useful, but they can give the misleading impression\" that conservation is mainly about personal habits." },
+          "example": "The campaign was useful, but it gave a misleading impression."
+        }
+      ]
+    },
+    {
+      "kind": "language",
+      "i18n": {"ar":{"title":"اللغة: التضاد والاستدراك (although، despite، whereas، while، even though)"},"en":{"title":"Language: contrast and concession (although, despite, whereas, while, even though)"}},
+      "title": "Dil: karşıtlık ve kabul (although, despite, whereas, while, even though)",
+      "explain": {
+        "tr": "Bir fikri kabul edip yine de karşı çıkmak (concession) Band 7 için çok önemlidir. \"Although / even though\" sonrasında tam bir cümle (özne + fiil) gelir: Although desalination is expensive, some cities rely on it. \"Even though\" daha güçlü bir şaşkınlık bildirir. \"Despite / in spite of\" sonrasında isim ya da -ing gelir, cümle gelmez: Despite the drought, the city had enough water. / Despite having little rain… \"Despite of\" diye bir yapı yoktur. \"Whereas\" ve \"while\" iki şeyi karşılaştırır: Farmers pay nothing, whereas households pay a lot. \"While\" ayrıca \"although\" anlamında cümle başında da kullanılır. Dikkat: \"Although\" ile başlayan cümlede \"but\" kullanılmaz.",
+        "ar": "قبول فكرة ثم معارضتها (concession) مهم جدًا للدرجة 7. بعد although وeven though تأتي جملة كاملة (فاعل + فعل): Although desalination is expensive, some cities rely on it، وeven though أقوى في التعبير عن المفارقة. وبعد despite وin spite of يأتي اسم أو صيغة -ing لا جملة: Despite the drought, the city had enough water / Despite having little rain… ولا يوجد تعبير despite of. أما whereas وwhile فتقارنان بين شيئين: Farmers pay nothing, whereas households pay a lot، وتأتي while أيضًا في بداية الجملة بمعنى although. انتبه: لا نستخدم but في جملة تبدأ بـ although.",
+        "en": "Conceding a point before disagreeing is important for Band 7. Although and even though are followed by a full clause (subject + verb): Although desalination is expensive, some cities rely on it. Even though is more emphatic. Despite and in spite of are followed by a noun or -ing form, not a clause: Despite the drought, the city had enough water. / Despite having little rain… (never \"despite of\"). Whereas and while contrast two things: Farmers pay nothing, whereas households pay a lot. While can also mean although at the start of a sentence. Do not use but in a sentence that begins with although."
+      },
+      "examples": [
+        "Although desalination produces reliable supplies, it uses a great deal of energy.",
+        "Despite heavy rainfall in the north, the south of the country is suffering from drought.",
+        "Households pay for every litre they use, whereas many farmers pump groundwater for free.",
+        "While repairing pipes is not exciting, it is often the cheapest way to deal with a shortage."
+      ],
+      "questions": [
+        {
+          "type": "choice", "id": "g1",
+          "prompt": "___ the long drought, the reservoir still holds enough water for the summer.",
+          "options": ["Despite", "Although", "Whereas", "Even though"],
+          "answer": 0,
+          "why": { "tr": "Boşluktan sonra bir isim öbeği var (the long drought), cümle yok. İsimden önce \"Despite\" kullanılır; \"Although\", \"Whereas\" ve \"Even though\" özne + fiil ister.", "ar": "بعد الفراغ عبارة اسمية (the long drought) لا جملة، فنستخدم Despite. أما Although وWhereas وEven though فتحتاج إلى فاعل وفعل.", "en": "A noun phrase follows, so use Despite. The others need a clause." },
+          "example": "Despite the heavy rain, the match continued."
+        },
+        {
+          "type": "choice", "id": "g2",
+          "prompt": "___ the city has built a desalination plant, water is still rationed in summer.",
+          "options": ["Although", "Despite", "In spite of", "However"],
+          "answer": 0,
+          "why": { "tr": "Boşluktan sonra tam bir cümle var (the city has built…). Cümle bağlamak için \"Although\". \"Despite\" ve \"In spite of\" isim ister; \"However\" iki cümleyi virgülle bu şekilde bağlayamaz.", "ar": "بعد الفراغ جملة كاملة (the city has built…)، فنستخدم Although. أما Despite وIn spite of فتحتاجان إلى اسم، وHowever لا تربط جملتين بهذه الطريقة.", "en": "A full clause follows, so use Although. However cannot join two clauses with a comma." },
+          "example": "Although the town has a new reservoir, there are still shortages."
+        },
+        {
+          "type": "choice", "id": "g3",
+          "prompt": "Which sentence is correct?",
+          "options": ["Despite of the cost, the government repaired the pipes.", "Although the cost was high, but the government repaired the pipes.", "Despite the high cost, the government repaired the pipes.", "Despite the cost was high, the government repaired the pipes."],
+          "answer": 2,
+          "why": { "tr": "\"Despite + isim öbeği\" doğru. A: \"despite of\" yoktur. B: \"although\" ile \"but\" birlikte kullanılmaz. D: \"despite\" sonrasında cümle gelmez.", "ar": "Despite + عبارة اسمية هو الصحيح. في A لا يوجد despite of، وفي B لا نجمع although وbut، وفي D لا تأتي جملة بعد despite.", "en": "Despite + noun phrase is correct. No \"despite of\"; no \"although… but\"; no clause after despite." },
+          "example": "Despite the high cost, the project went ahead."
+        },
+        {
+          "type": "gap", "id": "g4",
+          "prompt": "Write ONE word: Northern regions receive plenty of rainfall, ___ the south is extremely dry.",
+          "answers": ["whereas", "while"],
+          "why": { "tr": "İki bölgeyi karşılaştırıyoruz: \"whereas\" ya da \"while\" iki zıt durumu bağlar. \"but\" de anlamca olur, ama bu dersin hedefi karşılaştırma bağlaçları.", "ar": "نقارن بين منطقتين، فنستخدم whereas أو while لربط حالتين متعاكستين.", "en": "Two contrasting facts are compared: whereas or while." },
+          "example": "The north is green, whereas the south is mostly desert."
+        },
+        {
+          "type": "gap", "id": "g5",
+          "prompt": "Write ONE word: Even ___ farmers know the water is running out, many continue to pump as much as before.",
+          "answers": ["though"],
+          "why": { "tr": "\"Even though\" = although, ama daha vurgulu. \"Even if\" varsayım bildirir; burada çiftçiler gerçekten biliyor, bu yüzden \"though\".", "ar": "Even though تعني although مع تأكيد أقوى. أما even if فتعبّر عن افتراض، وهنا المزارعون يعرفون فعلًا، فالجواب though.", "en": "Even though = although, more emphatic. \"Even if\" would be hypothetical." },
+          "example": "Even though it was raining, they went for a walk."
+        }
+      ]
+    },
+    {
+      "kind": "write",
+      "i18n": {"ar":{"title":"الكتابة · Task 2: مقال الأسباب والحلول","tip":"في أسئلة الأسباب والحلول خصّص فقرة للأسباب وأخرى للحلول؛ ويُفضَّل أن يقابل كل حل سببًا. تجنّب الجمل العامة: أعطِ مثالًا ملموسًا لكل سبب. استخدم كلمات هذا الدرس (irrigation، groundwater، drought، conservation) وتركيبين على الأقل للتضاد (although، despite، whereas)."},"en":{"title":"Writing · Task 2: causes and solutions essay","tip":"In cause–solution questions, give one body paragraph to causes and the other to solutions; if possible, each solution should match a cause. Avoid general statements: give a concrete example for each cause. Use this lesson's words (irrigation, groundwater, drought, conservation) and at least two contrast structures (although, despite, whereas)."}},
+      "title": "Yazma · Task 2: neden ve çözüm denemesi",
+      "task": 2,
+      "prompt": "In many parts of the world, fresh water is becoming increasingly scarce.\n\nWhat are the main causes of this problem, and what measures could be taken to solve it?",
+      "minutes": 40,
+      "minWords": 250,
+      "tip": "Neden–çözüm sorularında bir gövde paragrafını nedenlere, diğerini çözümlere ayır; mümkünse her çözüm bir nedene karşılık gelsin. Genel cümlelerden kaçın: her neden için somut bir örnek ver. Bu dersin kelimelerini (irrigation, groundwater, drought, conservation) ve en az iki karşıtlık yapısı (although, despite, whereas) kullan.",
+      "model": "Access to clean, fresh water is essential for human life, yet a growing number of regions now face serious shortages. In this essay, I will argue that the problem is caused mainly by the way water is used in agriculture and by climate change, and that better pricing and more efficient technology are the most effective solutions.\n\nThe most important cause of water scarcity is agriculture. Although households are often asked to save water, farms use far more fresh water than homes and factories combined, mostly for irrigation. In many dry regions, farmers pump groundwater faster than rainfall can replace it, so wells have to be dug deeper every year. This is made worse by the fact that water is often free or very cheap for farmers, which gives them little reason to use it carefully. A second cause is climate change. Rising temperatures increase evaporation, and many regions now experience longer and more severe periods of drought, while growing cities demand ever larger supplies.\n\nSeveral measures could ease the problem. First, governments should charge prices that reflect the real cost of water, while keeping a basic amount for drinking and cooking free or very cheap. Second, despite the high initial cost, modern methods such as drip irrigation, which deliver water directly to the roots of plants, can cut agricultural use significantly; subsidies could help farmers to install them. Finally, cities should invest in repairing leaking pipes and in storing rainwater, whereas expensive options such as desalination should be reserved for coastal areas with no alternative.\n\nIn conclusion, water scarcity results largely from wasteful farming and a changing climate. Although no single measure will solve it, fair pricing, efficient technology and careful conservation could ensure that this vital resource is available for future generations."
+    },
+    {
+      "kind": "speak",
+      "i18n": {"ar":{"title":"التحدث: الماء والطبيعة"},"en":{"title":"Speaking: water and nature"}},
+      "title": "Konuşma: su ve doğa",
+      "part1": [
+        "Do you drink a lot of water every day?",
+        "Is water expensive where you live?",
+        "Do you like rainy weather? Why or why not?",
+        "Have you ever experienced a water shortage at home?"
+      ],
+      "card": {
+        "title": "Describe a river, lake or sea that is important to you.",
+        "points": [
+          "where it is",
+          "how often you go there",
+          "what you do there"
+        ],
+        "explain": "and explain why this place is important to you."
+      },
+      "useful": [
+        "It's a lake about an hour's drive from where I grew up.",
+        "Although it's not particularly famous, it means a lot to me because…",
+        "Despite the crowds in summer, it's still a very peaceful place.",
+        "Sadly, the water level has dropped a lot in recent years because of drought.",
+        "Whereas the city feels stressful, being near the water helps me relax.",
+        "I really hope it will be protected for future generations."
+      ]
+    }
+  ]
+}

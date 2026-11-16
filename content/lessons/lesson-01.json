@@ -1,0 +1,703 @@
+{
+  "id": "lesson-01",
+  "number": 1,
+  "title": "Learning for Life",
+  "topic": "Education and learning",
+  "level": "B1",
+  "goal": "Talk and write about how people learn, using the present perfect and past simple correctly.",
+  "steps": [
+    {
+      "kind": "words",
+      "i18n": {"tr":{"title":"Kelimeler: eğitim ve öğrenme"},"ar":{"title":"الكلمات: التعليم والتعلّم","intro":"في هذا الدرس اثنتا عشرة كلمة وعبارة مهمة عن التعليم والتعلّم، وستصادفها كلها مجددًا في أقسام الاستماع والقراءة والكتابة والمحادثة. اقرأ الجمل الأمثلة بصوت عالٍ، ثم حلّ التمارين."},"en":{"title":"Words: Education and learning","intro":"This lesson has twelve important words and phrases about education and learning. You will meet all of them again in the listening, reading, writing and speaking sections. Read the example sentences aloud, then do the exercises."}},
+      "title": "Words: Education and learning",
+      "intro": "Bu derste eğitim ve öğrenme üzerine on iki önemli kelime ve kalıp var. Hepsi dinleme, okuma, yazma ve konuşma bölümlerinde tekrar karşına çıkacak. Örnek cümleleri sesli oku, sonra alıştırmaları yap.",
+      "words": [
+        {
+          "en": "acquire a skill",
+          "pos": "phrase",
+          "tr": "bir beceri edinmek",
+          "ar": "يكتسب مهارة",
+          "example": "Most adults acquire a new skill faster when they practise a little every day."
+        },
+        {
+          "en": "tuition fees",
+          "pos": "noun",
+          "tr": "öğrenim ücreti, okul harcı",
+          "ar": "الرسوم الدراسية",
+          "example": "Some students take a part-time job to help pay their tuition fees."
+        },
+        {
+          "en": "attend classes",
+          "pos": "phrase",
+          "tr": "derslere katılmak, derslere devam etmek",
+          "ar": "يحضر الدروس",
+          "example": "Students who attend classes regularly usually get better results."
+        },
+        {
+          "en": "hands-on",
+          "pos": "adjective",
+          "tr": "uygulamalı, yaparak öğrenilen",
+          "ar": "عملي، تطبيقي",
+          "example": "The course is very hands-on, so you spend most of the time in the workshop."
+        },
+        {
+          "en": "motivated",
+          "pos": "adjective",
+          "tr": "istekli, motivasyonu yüksek",
+          "ar": "متحمّس، لديه دافع",
+          "example": "Learners stay motivated when they can see their own progress."
+        },
+        {
+          "en": "distance learning",
+          "pos": "noun",
+          "tr": "uzaktan eğitim",
+          "ar": "التعلّم عن بُعد",
+          "example": "Distance learning allows people in small towns to study at a university far away."
+        },
+        {
+          "en": "curriculum",
+          "pos": "noun",
+          "tr": "müfredat, öğretim programı",
+          "ar": "المنهج الدراسي",
+          "example": "Many schools have added computer programming to the curriculum."
+        },
+        {
+          "en": "qualification",
+          "pos": "noun",
+          "tr": "yeterlilik belgesi, diploma",
+          "ar": "مؤهّل (شهادة)",
+          "example": "A nursing qualification takes about three years to complete."
+        },
+        {
+          "en": "make progress",
+          "pos": "phrase",
+          "tr": "ilerleme kaydetmek",
+          "ar": "يحرز تقدّمًا",
+          "example": "She has made a lot of progress with her English since the summer."
+        },
+        {
+          "en": "fall behind",
+          "pos": "phrasal verb",
+          "tr": "geride kalmak, geri düşmek",
+          "ar": "يتأخّر عن الآخرين",
+          "example": "If you miss two weeks of lessons, it is easy to fall behind."
+        },
+        {
+          "en": "lifelong learning",
+          "pos": "noun",
+          "tr": "yaşam boyu öğrenme",
+          "ar": "التعلّم مدى الحياة",
+          "example": "Lifelong learning has become important because jobs change so quickly."
+        },
+        {
+          "en": "memorise",
+          "pos": "verb",
+          "tr": "ezberlemek",
+          "ar": "يحفظ عن ظهر قلب",
+          "example": "It is more useful to understand a formula than to memorise it."
+        }
+      ],
+      "practice": [
+        {
+          "type": "choice",
+          "id": "w1",
+          "prompt": "She wants to ___ a new skill before she applies for the job.",
+          "options": [
+            "acquire",
+            "do",
+            "make",
+            "take"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "\"Skill\" ile en doğal fiil \"acquire\" (edinmek): acquire a skill. \"Make a skill\" ya da \"do a skill\" İngilizcede kullanılmaz.",
+            "ar": "الفعل الطبيعي مع skill هو acquire: acquire a skill. لا يقال make a skill أو do a skill.",
+            "en": "The natural collocation is \"acquire a skill\"; \"make\", \"do\" and \"take\" are not used with \"skill\"."
+          },
+          "example": "Volunteering is a good way to acquire a skill that employers value."
+        },
+        {
+          "type": "gap",
+          "id": "w2",
+          "prompt": "If you miss too many lessons, you may ___ behind the rest of the group. (one word)",
+          "answers": [
+            "fall"
+          ],
+          "why": {
+            "tr": "\"Fall behind\" = geride kalmak. Fiil \"fall\"dır; \"stay behind\" ise \"geride, okulda kalmak (ders sonrası)\" anlamına gelir.",
+            "ar": "fall behind تعني يتأخّر عن الآخرين. أما stay behind فتعني يبقى بعد انتهاء الدرس.",
+            "en": "\"Fall behind\" means to fail to keep up with others."
+          },
+          "example": "He fell behind in maths after he was ill for a month."
+        },
+        {
+          "type": "choice",
+          "id": "w3",
+          "prompt": "\"Hands-on\" training is training that…",
+          "options": [
+            "is done mainly online",
+            "involves doing things yourself",
+            "is given by a famous expert",
+            "takes place at the weekend"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"Hands-on\" = uygulamalı; bir şeyi kendin yaparak öğrenirsin, yalnızca dinleyerek ya da okuyarak değil.",
+            "ar": "hands-on تعني عمليًا: تتعلّم بأن تفعل الشيء بنفسك، لا بالاستماع أو القراءة فقط.",
+            "en": "\"Hands-on\" means learning by actually doing something, not just reading or listening."
+          },
+          "example": "The science museum offers hands-on activities for children."
+        },
+        {
+          "type": "gap",
+          "id": "w4",
+          "prompt": "Most universities in the country charge tuition ___ every year. (one word)",
+          "answers": [
+            "fees"
+          ],
+          "why": {
+            "tr": "Kalıp \"tuition fees\" (öğrenim ücreti). Genellikle çoğul kullanılır: fees.",
+            "ar": "التعبير هو tuition fees (الرسوم الدراسية)، ويُستخدم عادة بصيغة الجمع fees.",
+            "en": "The collocation is \"tuition fees\", usually plural."
+          },
+          "example": "Tuition fees are paid at the start of each term."
+        },
+        {
+          "type": "choice",
+          "id": "w5",
+          "prompt": "Which sentence uses \"make progress\" correctly?",
+          "options": [
+            "She has made a lot of progress with her English.",
+            "She has done many progresses in English.",
+            "She made a progress in English.",
+            "She has progressed a lot of English."
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "\"Progress\" sayılamayan bir isimdir: \"a progress\" ya da \"progresses\" denmez. Fiil \"make\": make (a lot of) progress.",
+            "ar": "كلمة progress اسم غير معدود، فلا نقول a progress ولا progresses، والفعل معها make: make a lot of progress.",
+            "en": "\"Progress\" is uncountable (no \"a\", no plural) and goes with \"make\"."
+          },
+          "example": "The class is making good progress with its reading."
+        },
+        {
+          "type": "choice",
+          "id": "w6",
+          "prompt": "What is the \"curriculum\" of a school?",
+          "options": [
+            "the building where lessons take place",
+            "the subjects and content that are taught",
+            "the money that students pay",
+            "the dates of the exams"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"Curriculum\" = müfredat, yani okulda hangi derslerin ve konuların öğretildiği.",
+            "ar": "curriculum هو المنهج الدراسي، أي المواد والموضوعات التي تُدرَّس في المدرسة.",
+            "en": "The curriculum is the set of subjects and content a school teaches."
+          },
+          "example": "History is a compulsory part of the curriculum until the age of fourteen."
+        }
+      ]
+    },
+    {
+      "kind": "listen",
+      "i18n": {"tr":{"title":"Dinleme · Part 1: akşam kursuna kayıt"},"ar":{"title":"الاستماع، الجزء 1: التسجيل في دورة مسائية","intro":"رجل يتصل بمركز لتعليم الكبار ليستفسر عن دورة مسائية. اقرأ الأسئلة أولًا. يُشغَّل التسجيل مرة واحدة كما في الامتحان، فاكتب أثناء الاستماع.","tip":"عند ملء النماذج، توقّع أولًا نوع المعلومة المطلوبة في كل فراغ: اسم أم يوم أم رقم؟ كثيرًا ما يصحّح المتحدثون أنفسهم (\"Tuesday… sorry, Wednesday\")، فلا تكتب أول ما تسمعه فورًا، بل انتظر التصحيح. وفي الأسماء التي تُتهجّى حرفًا حرفًا، اكتب كل حرف وانتبه إلى الحروف المكررة."},"en":{"title":"Listening Part 1: Enrolling on an evening course","intro":"A man calls an adult education centre to ask about an evening course. Read the questions first. The recording plays once, as in the exam; write while you listen.","tip":"When completing a form, first predict what kind of information goes in each gap: a name, a day, a number? Speakers often correct themselves (\"Tuesday… sorry, Wednesday\"), so don't write the first thing you hear straight away; wait for the correction. For names that are spelled out, write every letter and watch for double letters."}},
+      "title": "Listening Part 1: Enrolling on an evening course",
+      "intro": "Bir adam, yetişkinler için bir eğitim merkezini arayıp akşam kursu hakkında bilgi alıyor. Önce soruları oku. Kayıt sınavdaki gibi bir kez çalar; dinlerken yaz.",
+      "tip": "Form doldurmada önce her boşluğa ne tür bir bilgi geleceğini tahmin et: isim mi, gün mü, sayı mı? Konuşmacılar sık sık kendini düzeltir (\"Tuesday… sorry, Wednesday\"); ilk duyduğunu hemen yazma, düzeltmeyi bekle. Harf harf söylenen isimlerde her harfi yaz, çift harflere dikkat et.",
+      "audio": {
+        "type": "audio",
+        "id": "l-audio",
+        "speakers": {
+          "N": {
+            "name": "Narrator",
+            "voice": "en-GB-SoniaNeural"
+          },
+          "helen": {
+            "name": "Helen",
+            "voice": "en-GB-LibbyNeural"
+          },
+          "sam": {
+            "name": "Sam",
+            "voice": "en-AU-WilliamMultilingualNeural"
+          }
+        },
+        "lines": [
+          {
+            "speaker": "N",
+            "text": "Part one. You will hear a man phoning an adult learning centre to ask about an evening course. First, you have some time to look at questions one to six.",
+            "pauseAfterMs": 2500
+          },
+          {
+            "speaker": "helen",
+            "text": "Good afternoon, Millbrook Adult Learning Centre, Helen speaking.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "sam",
+            "text": "Hi. I'm calling about your evening courses. I work in an office, but I'd really like to acquire a new skill, something practical, and a friend said you run a course on repairing old furniture.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "helen",
+            "text": "We do, yes. It's called Furniture Restoration for Beginners. It's very hands-on, so you spend most of the time in the workshop rather than taking notes.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "sam",
+            "text": "That's exactly what I'm after. I'm not very good at sitting still and memorising facts.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "helen",
+            "text": "Well, there's nothing to memorise here, I promise. Classes are on Tuesday evenings, from seven till nine. Oh, sorry, I'm looking at last year's timetable. This year it's Wednesday evenings, same times.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "sam",
+            "text": "Wednesday's fine. And what about the tuition fees?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "helen",
+            "text": "The full price is two hundred and forty pounds for twelve weeks. If you're over sixty or a full-time student, it's one hundred and eighty.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "sam",
+            "text": "I'm neither, unfortunately. Does that include materials?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "helen",
+            "text": "The tools are provided, but you buy your own wood and paint. Most people spend about thirty pounds on that.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "sam",
+            "text": "OK. And is there a qualification at the end?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "helen",
+            "text": "Not a formal one. You get a certificate if you attend classes at least ten times out of the twelve. Our advanced course does lead to a qualification, though.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "sam",
+            "text": "Right. And if I miss a session because of work? I'd hate to fall behind.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "helen",
+            "text": "That's a common worry. The tutor puts a short video online each week, so you can catch up at home. It isn't a distance learning course, of course, you still have to come in for the practical work, but it helps.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "sam",
+            "text": "That sounds sensible. Who's the tutor?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "helen",
+            "text": "Her name's Ruth Calloway. That's C-A-L-L-O-W-A-Y. She plans the curriculum so that everyone can make progress at their own speed. By week six, most people are working on a piece of their own, usually a small chair.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "sam",
+            "text": "Brilliant. Honestly, I'm very motivated. I've been talking about doing something like this for years.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "helen",
+            "text": "Well, that's what we're here for. Lifelong learning is the whole idea of the centre. Our oldest student this year is eighty-two!",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "sam",
+            "text": "Great. So how do I enrol?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "helen",
+            "text": "Online, or in person at the main office. If you come in, please bring some photo ID.",
+            "pauseAfterMs": 2000
+          },
+          {
+            "speaker": "N",
+            "text": "That is the end of part one.",
+            "pauseAfterMs": 0
+          }
+        ]
+      },
+      "questions": [
+        {
+          "type": "heading",
+          "text": "Questions 1–4"
+        },
+        {
+          "type": "text",
+          "text": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer."
+        },
+        {
+          "type": "gap",
+          "id": "l1",
+          "prompt": "1. Name of course: Furniture ___ for Beginners",
+          "answers": [
+            "Restoration"
+          ],
+          "why": {
+            "tr": "Helen: \"It's called Furniture Restoration for Beginners.\" Sam önce \"repairing old furniture\" diyor; ama formdaki adı Helen veriyor.",
+            "ar": "تقول Helen: \"It's called Furniture Restoration for Beginners.\" يقول Sam أولًا repairing old furniture، لكن الاسم الرسمي هو Restoration.",
+            "en": "\"It's called Furniture Restoration for Beginners.\""
+          },
+          "example": "The museum is closed for the restoration of an old painting."
+        },
+        {
+          "type": "gap",
+          "id": "l2",
+          "prompt": "2. Day of classes: ___ evenings",
+          "answers": [
+            "Wednesday"
+          ],
+          "why": {
+            "tr": "Tuzak: önce \"Tuesday evenings\" deniyor, sonra düzeltiliyor: \"Oh, sorry, I'm looking at last year's timetable. This year it's Wednesday evenings.\" İlk duyduğunu hemen yazma.",
+            "ar": "الفخّ: تقول أولًا Tuesday ثم تصحّح: \"This year it's Wednesday evenings.\" لا تكتب أول ما تسمعه.",
+            "en": "\"Sorry, I'm looking at last year's timetable. This year it's Wednesday evenings.\""
+          },
+          "example": "Sorry, I meant Wednesday, not Tuesday."
+        },
+        {
+          "type": "gap",
+          "id": "l3",
+          "prompt": "3. Full tuition fee: £___",
+          "answers": [
+            "240",
+            "two hundred and forty"
+          ],
+          "why": {
+            "tr": "\"The full price is two hundred and forty pounds.\" 180 sterlin yalnızca 60 yaş üstü ve tam zamanlı öğrenciler için; Sam ikisi de değil (\"I'm neither\").",
+            "ar": "\"The full price is two hundred and forty pounds.\" أما 180 فهو لمن تجاوز الستين أو للطلاب بدوام كامل، وSam ليس منهم (\"I'm neither\").",
+            "en": "\"The full price is two hundred and forty pounds\"; £180 is a discount Sam cannot get."
+          },
+          "example": "The full fee is £240, but students pay less."
+        },
+        {
+          "type": "gap",
+          "id": "l4",
+          "prompt": "4. Tutor's surname: ___",
+          "answers": [
+            "Calloway"
+          ],
+          "why": {
+            "tr": "Helen soyadını harf harf söylüyor: \"C-A-L-L-O-W-A-Y\". Çift L'ye dikkat et; yazım hatası cevabı yanlış yapar.",
+            "ar": "تتهجّى Helen الاسم: \"C-A-L-L-O-W-A-Y\". انتبه إلى حرفي L؛ الخطأ الإملائي يجعل الإجابة خاطئة.",
+            "en": "The name is spelled out: \"C-A-L-L-O-W-A-Y\"."
+          },
+          "example": "Could you spell your surname for me, please?"
+        },
+        {
+          "type": "heading",
+          "text": "Questions 5–6"
+        },
+        {
+          "type": "text",
+          "text": "Choose the correct letter."
+        },
+        {
+          "type": "choice",
+          "id": "l5",
+          "prompt": "5. What will Sam need to pay for himself?",
+          "options": [
+            "the tools",
+            "wood and paint",
+            "the certificate",
+            "the online videos"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"The tools are provided, but you buy your own wood and paint.\" Aletler veriliyor; kendi alacağı şey ahşap ve boya.",
+            "ar": "\"The tools are provided, but you buy your own wood and paint.\" الأدوات متوفّرة، وعليه شراء الخشب والطلاء.",
+            "en": "\"The tools are provided, but you buy your own wood and paint.\""
+          },
+          "example": "Paper is provided, but you need to bring your own pens."
+        },
+        {
+          "type": "choice",
+          "id": "l6",
+          "prompt": "6. What do learners need to do to receive a certificate?",
+          "options": [
+            "pass a practical test",
+            "attend at least ten classes",
+            "finish a small chair",
+            "watch all the weekly videos"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"You get a certificate if you attend classes at least ten times out of the twelve.\" Sandalye ve videolar konuşmada geçiyor ama sertifika şartı değil.",
+            "ar": "\"You get a certificate if you attend classes at least ten times out of the twelve.\" الكرسي والفيديوهات مذكورة لكنها ليست شرطًا للشهادة.",
+            "en": "\"You get a certificate if you attend classes at least ten times out of the twelve.\""
+          },
+          "example": "You must attend at least ten classes to pass the course."
+        }
+      ]
+    },
+    {
+      "kind": "read",
+      "i18n": {"tr":{"title":"Okuma: True / False / Not Given"},"ar":{"title":"القراءة: True / False / Not Given","intro":"نص قصير بأسلوب أكاديمي: لماذا لا يجدي الحفظ الآلي ولا المذاكرة في الليلة الأخيرة. اقرأ النص، ثم قيّم العبارات الست.","tip":"TRUE: يقدّم النص المعلومة نفسها بكلمات أخرى. FALSE: يقول النص عكسها. NOT GIVEN: لا يذكر النص شيئًا عن هذا الأمر. الكلمات القاطعة مثل \"never\" و\"only\" و\"every\" و\"immediately\" تجعل الإجابة في الغالب FALSE أو NOT GIVEN. لا تعتمد على معلوماتك العامة؛ انظر فقط إلى ما هو مكتوب في النص."},"en":{"title":"Reading: True, False or Not Given","intro":"A short academic-style text: why rote learning and last-minute cramming don't work. Read the text, then judge the six statements.","tip":"TRUE: the text gives the same information in other words. FALSE: the text says the opposite. NOT GIVEN: the text says nothing about it. Absolute words such as \"never\", \"only\", \"every\" and \"immediately\" often make the answer FALSE or NOT GIVEN. Don't use your general knowledge; look only at what the text says."}},
+      "title": "Reading: True, False or Not Given",
+      "intro": "Akademik tarzda kısa bir metin: ezberlemenin ve son gece çalışmanın neden işe yaramadığı. Metni oku, sonra altı ifadeyi değerlendir.",
+      "tip": "TRUE: metin aynı bilgiyi başka kelimelerle veriyor. FALSE: metin tam tersini söylüyor. NOT GIVEN: metin bu konuda hiçbir şey söylemiyor. \"never\", \"only\", \"every\", \"immediately\" gibi kesin kelimeler çoğu zaman cevabı FALSE ya da NOT GIVEN yapar. Kendi genel bilgini kullanma; yalnızca metinde yazana bak.",
+      "passage": [
+        {
+          "type": "heading",
+          "text": "Why Cramming Fails"
+        },
+        {
+          "type": "text",
+          "text": "Almost every student has done it: left revision until the night before an exam and then tried to memorise a whole term's work in a few hours. Cramming can sometimes produce a pass, and for students who have fallen behind it can feel like the only option. However, more than a century of research suggests that information learned in this way is forgotten remarkably quickly."
+        },
+        {
+          "type": "text",
+          "text": "The first systematic studies of forgetting were carried out in the 1880s by the German psychologist Hermann Ebbinghaus, who tested his own memory using lists of meaningless syllables. He found that much of what he had learned disappeared within a day or two, but that reviewing the material at increasing intervals slowed this loss considerably. This pattern later became known as the spacing effect, and it has since been observed in learners of all ages, from young children to adults studying for professional qualifications."
+        },
+        {
+          "type": "text",
+          "text": "A second finding concerns how students review. Many simply reread their notes, which feels productive because the material looks familiar. Studies of what is often called retrieval practice show that it is usually more effective to close the book and try to recall the information, for example by answering questions or explaining an idea aloud. The effort of remembering appears to strengthen memory, even when learners get some answers wrong."
+        },
+        {
+          "type": "text",
+          "text": "These ideas apply not only to facts but also to practical abilities. People who want to acquire a skill such as playing an instrument or speaking a foreign language tend to make more progress with short, regular sessions than with occasional long ones. This is one reason why many hands-on courses meet once or twice a week over several months rather than in a single intensive block."
+        },
+        {
+          "type": "text",
+          "text": "Despite the evidence, spacing is not always easy to build into a busy curriculum, and it rarely feels as satisfying as a long evening of revision. Some teachers therefore set brief weekly quizzes that count for very little, so that students stay motivated without feeling under pressure. For adults involved in lifelong learning, or those on a distance learning programme with no regular classes to attend, the lesson is simpler still: a little and often works better than everything at once."
+        }
+      ],
+      "questions": [
+        {
+          "type": "heading",
+          "text": "Questions 1–6"
+        },
+        {
+          "type": "text",
+          "text": "Do the following statements agree with the information in the passage? Choose TRUE if the statement agrees with the information, FALSE if it contradicts the information, NOT GIVEN if there is no information on this."
+        },
+        {
+          "type": "tfng",
+          "id": "r1",
+          "statement": "1. Cramming never allows students to pass an exam.",
+          "answer": "false",
+          "why": {
+            "tr": "Metin \"Cramming can sometimes produce a pass\" diyor: bazen geçmeyi sağlayabilir. \"Never\" bununla çelişiyor, cevap FALSE.",
+            "ar": "يقول النص \"Cramming can sometimes produce a pass\"، أي قد يؤدي أحيانًا إلى النجاح. كلمة never تناقض ذلك، فالإجابة FALSE.",
+            "en": "\"Cramming can sometimes produce a pass\" contradicts \"never\"."
+          },
+          "example": "Studying the night before can sometimes get you a pass, but you soon forget."
+        },
+        {
+          "type": "tfng",
+          "id": "r2",
+          "statement": "2. Ebbinghaus used himself as the subject of his experiments.",
+          "answer": "true",
+          "why": {
+            "tr": "\"...who tested his own memory\": kendi hafızasını test etti, yani deneyin öznesi kendisiydi. Aynı bilgi başka kelimelerle verilmiş: TRUE.",
+            "ar": "\"...who tested his own memory\": اختبر ذاكرته هو، أي كان هو موضوع التجربة. المعنى نفسه بكلمات أخرى: TRUE.",
+            "en": "\"who tested his own memory\" means he was his own subject."
+          },
+          "example": "The scientist tested the new method on herself first."
+        },
+        {
+          "type": "tfng",
+          "id": "r3",
+          "statement": "3. Other scientists of the time immediately accepted Ebbinghaus's results.",
+          "answer": "not given",
+          "why": {
+            "tr": "Metin yalnızca bu örüntünün daha sonra \"spacing effect\" olarak adlandırıldığını söylüyor; o dönemin bilim insanlarının tepkisinden hiç bahsetmiyor. Bilgi yok: NOT GIVEN.",
+            "ar": "يذكر النص فقط أن الظاهرة سُمّيت لاحقًا spacing effect، ولا يقول شيئًا عن ردّ فعل علماء عصره. لا معلومات: NOT GIVEN.",
+            "en": "The passage says nothing about how other scientists reacted at the time."
+          },
+          "example": "The article does not say how his colleagues reacted."
+        },
+        {
+          "type": "tfng",
+          "id": "r4",
+          "statement": "4. Rereading notes seems useful to students because the content looks familiar.",
+          "answer": "true",
+          "why": {
+            "tr": "\"Many simply reread their notes, which feels productive because the material looks familiar.\" \"Feels productive\" = \"seems useful\": TRUE.",
+            "ar": "\"which feels productive because the material looks familiar\"، وfeels productive تعني seems useful، فالإجابة TRUE.",
+            "en": "\"which feels productive because the material looks familiar\"."
+          },
+          "example": "Rereading feels useful, but testing yourself works better."
+        },
+        {
+          "type": "tfng",
+          "id": "r5",
+          "statement": "5. Retrieval practice only helps if learners answer every question correctly.",
+          "answer": "false",
+          "why": {
+            "tr": "Metin \"even when learners get some answers wrong\" diyor: bazı cevaplar yanlış olsa bile işe yarıyor. \"Only if... every question correctly\" bununla çelişiyor: FALSE.",
+            "ar": "يقول النص \"even when learners get some answers wrong\"، أي أنها تفيد حتى مع بعض الأخطاء. هذا يناقض العبارة: FALSE.",
+            "en": "\"even when learners get some answers wrong\" contradicts \"only if... every question correctly\"."
+          },
+          "example": "Testing yourself helps, even when you make mistakes."
+        },
+        {
+          "type": "tfng",
+          "id": "r6",
+          "statement": "6. Most music teachers recommend practising for at least an hour a day.",
+          "answer": "not given",
+          "why": {
+            "tr": "Metin enstrüman çalmayı yalnızca örnek olarak veriyor ve kısa, düzenli çalışmanın daha iyi olduğunu söylüyor; müzik öğretmenlerinin önerisinden ya da \"bir saat\"ten hiç bahsetmiyor: NOT GIVEN.",
+            "ar": "يذكر النص العزف مثالًا فقط ويقول إن الجلسات القصيرة المنتظمة أفضل، ولا يذكر نصيحة معلّمي الموسيقى أو \"ساعة يوميًا\": NOT GIVEN.",
+            "en": "Music teachers and \"an hour a day\" are never mentioned."
+          },
+          "example": "The text gives no advice about how long to practise each day."
+        }
+      ]
+    },
+    {
+      "kind": "language",
+      "i18n": {"tr":{"title":"Dil: present perfect mi past simple mı?"},"ar":{"title":"القواعد: present perfect أم past simple؟"},"en":{"title":"Grammar: Present perfect or past simple?"}},
+      "title": "Grammar: Present perfect or past simple?",
+      "explain": {
+        "tr": "Past simple (studied, became) bitmiş, belirli bir geçmiş zaman için kullanılır: in 2019, last year, when I was at school. Present perfect (have studied, has become) bugüne bağlanan durumlar içindir: deneyim (I have never…), bugüne kadar süren eğilimler (in recent years, since 2010, so far). Yazmada eğilimleri anlatırken present perfect, belirli bir tarihten söz ederken past simple kullan.",
+        "ar": "نستخدم past simple (studied, became) لزمن ماضٍ محدّد ومنتهٍ: in 2019, last year. ونستخدم present perfect (have studied, has become) لما يرتبط بالحاضر: التجربة (I have never…) والاتجاهات المستمرة حتى الآن (in recent years, since 2010, so far). في الكتابة: present perfect للاتجاهات، وpast simple للتواريخ المحدّدة.",
+        "en": "Use the past simple for a finished, stated time (in 2019, last year). Use the present perfect for experience (I have never…) and for trends that continue up to now (in recent years, since 2010, so far). In essays, describe trends with the present perfect and dated events with the past simple."
+      },
+      "examples": [
+        "Distance learning has become far more common in recent years.",
+        "When my grandfather was at school, pupils memorised long poems by heart.",
+        "I have attended evening classes twice, and both times I made real progress.",
+        "Last year I acquired a new skill: I learned to edit videos."
+      ],
+      "questions": [
+        {
+          "type": "gap",
+          "id": "g1",
+          "prompt": "I ___ (attend) three online courses so far this year.",
+          "answers": [
+            "have attended",
+            "'ve attended"
+          ],
+          "why": {
+            "tr": "\"So far this year\" henüz bitmemiş bir zaman dilimidir; bu yüzden present perfect: have attended.",
+            "ar": "so far this year فترة لم تنتهِ بعد، لذلك نستخدم present perfect: have attended.",
+            "en": "\"So far this year\" is an unfinished period, so we use the present perfect."
+          },
+          "example": "I have read four books so far this month."
+        },
+        {
+          "type": "choice",
+          "id": "g2",
+          "prompt": "In 2019, my sister ___ a degree in engineering.",
+          "options": [
+            "has completed",
+            "completed",
+            "has been completing",
+            "have completed"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"In 2019\" bitmiş, belirli bir geçmiş zamandır. Belirli bir geçmiş zamanla present perfect kullanılmaz: past simple \"completed\".",
+            "ar": "in 2019 زمن ماضٍ محدّد ومنتهٍ، ولا يُستخدم معه present perfect، بل past simple: completed.",
+            "en": "A finished time (\"in 2019\") needs the past simple."
+          },
+          "example": "He finished his degree in 2021."
+        },
+        {
+          "type": "choice",
+          "id": "g3",
+          "prompt": "Choose the best sentence for a Task 2 essay.",
+          "options": [
+            "Online learning became more popular in recent years.",
+            "Online learning has become more popular in recent years.",
+            "Online learning is becoming popular since years.",
+            "Online learning become more popular recently."
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"In recent years\" bugüne kadar süren bir eğilimi anlatır, bu yüzden present perfect: has become. Yazmada eğilimler için çok kullanışlı bir kalıp.",
+            "ar": "in recent years تصف اتجاهًا مستمرًا حتى الآن، لذا نستخدم present perfect: has become، وهو تركيب مفيد جدًا في الكتابة.",
+            "en": "\"In recent years\" describes a trend up to now, so the present perfect fits."
+          },
+          "example": "The cost of higher education has risen in recent years."
+        },
+        {
+          "type": "gap",
+          "id": "g4",
+          "prompt": "She ___ (never / study) abroad, but she would like to.",
+          "answers": [
+            "has never studied",
+            "'s never studied"
+          ],
+          "why": {
+            "tr": "Hayat boyunca deneyim (\"never\", \"ever\") present perfect ile anlatılır: has never studied. Zaman belirtilmez.",
+            "ar": "التجربة في الحياة (never وever) نعبّر عنها بـ present perfect: has never studied، من دون ذكر زمن محدّد.",
+            "en": "Life experience with \"never\" uses the present perfect."
+          },
+          "example": "I have never taken an online exam."
+        },
+        {
+          "type": "choice",
+          "id": "g5",
+          "prompt": "\"When ___ your first qualification?\" \"In 2018.\"",
+          "options": [
+            "have you got",
+            "did you get",
+            "have you gotten",
+            "you got"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"When\" ile sorulan sorular belirli bir geçmiş zamanı sorar; present perfect ile kullanılmaz. Doğrusu: When did you get…?",
+            "ar": "السؤال بـ when يسأل عن زمن محدّد في الماضي، فلا يُستخدم معه present perfect. الصحيح: When did you get…?",
+            "en": "Questions with \"when\" ask about a finished time, so use the past simple."
+          },
+          "example": "When did you start learning English?"
+        }
+      ]
+    },
+    {
+      "kind": "write",
+      "i18n": {"tr":{"title":"Yazma · Task 2: tek bir görüş paragrafı"},"ar":{"title":"الكتابة، Task 2: فقرة رأي واحدة","tip":"ابنِ فقرة العرض بهذا الترتيب: (1) جملة الفكرة الرئيسية، أي رأيك؛ (2) الشرح: لماذا؟؛ (3) مثال ملموس؛ (4) جملة ختامية تربط الفقرة بالسؤال. فكرة رئيسية واحدة لكل فقرة. استخدم بشكل طبيعي ثلاث كلمات على الأقل مما تعلّمته في الدرس (hands-on, motivated, fall behind, acquire a skill…)."},"en":{"title":"Writing Task 2: One opinion paragraph","tip":"Build the body paragraph in this order: (1) a topic sentence, that is, your opinion; (2) an explanation: why?; (3) a concrete example; (4) a concluding sentence that links the paragraph back to the question. One main idea per paragraph. Use at least three words from this lesson (hands-on, motivated, fall behind, acquire a skill…) naturally."}},
+      "title": "Writing Task 2: One opinion paragraph",
+      "task": 2,
+      "prompt": "Some people believe that schools should give practical, hands-on skills more time in the curriculum than academic subjects. To what extent do you agree or disagree?\n\nIn this lesson, write ONE body paragraph that gives your opinion and supports it with a reason and an example.",
+      "minutes": 12,
+      "minWords": 100,
+      "tip": "Gövde paragrafını şu sırayla kur: (1) ana fikir cümlesi, yani görüşün; (2) açıklama: neden?; (3) somut bir örnek; (4) paragrafı soruya bağlayan bir sonuç cümlesi. Tek paragrafta tek ana fikir olsun. Derste öğrendiğin kelimelerden en az üçünü (hands-on, motivated, fall behind, acquire a skill…) doğal biçimde kullan.",
+      "model": "In my view, giving practical skills a larger place in the curriculum would benefit most students. The main reason is that many young people learn more effectively when they can see the purpose of what they are studying. A pupil who is asked to memorise formulas for an exam may forget them within weeks, whereas one who uses the same formulas to build a model bridge in a hands-on project is far more likely to remember them, because the knowledge has actually been applied. Activities of this kind also keep learners motivated, which matters greatly for those who tend to fall behind in traditional lessons. Furthermore, the ability to acquire a skill independently is the basis of lifelong learning, something most adults now need as jobs change. Practical work should therefore be seen not as a break from real education but as one of the most effective ways of delivering it."
+    },
+    {
+      "kind": "speak",
+      "i18n": {"tr":{"title":"Konuşma: öğrenmek ve ders çalışmak"},"ar":{"title":"المحادثة: التعلّم والدراسة"},"en":{"title":"Speaking: Learning and studying"}},
+      "title": "Speaking: Learning and studying",
+      "part1": [
+        "Do you work, or are you a student?",
+        "What subject did you enjoy most at school? Why?",
+        "Do you prefer to study alone or with other people?",
+        "Is there a new skill you would like to learn in the future?"
+      ],
+      "card": {
+        "title": "Describe a skill you learned that has been useful to you.",
+        "points": [
+          "what the skill is",
+          "when and how you learned it",
+          "who helped you to learn it"
+        ],
+        "explain": "and explain why this skill has been useful to you."
+      },
+      "useful": [
+        "I picked it up when I was about…",
+        "At first I found it quite hard, but after a while I got the hang of it.",
+        "What really helped me was…",
+        "I'd say the main reason it's useful is that…",
+        "Looking back, I'm really glad I made the effort to…",
+        "To be honest, I'm still making progress with it."
+      ]
+    }
+  ]
+}

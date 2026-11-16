@@ -1,0 +1,2821 @@
+{
+  "id": "ielts-listening-tests",
+  "title": "IELTS Listening: Practice Tests",
+  "level": "B2",
+  "track": "ielts",
+  "exam": "listening",
+  "description": "Two full Listening practice tests in the real four-part format, 40 questions each: an everyday conversation, a talk about local services, a discussion between students and a tutor, and a short academic lecture. Read the questions first; the recording plays once, as in the exam, so write while you listen. About 30/40 is often around band 7; this is a rough guide, not official. Written for Bo-ok.",
+  "units": [
+    {
+      "id": "t1-part1",
+      "title": "Test 1 · Part 1: Booking a Holiday Cottage",
+      "timeMinutes": 10,
+      "goal": "Questions 1–10: form completion from a phone call; a name spelled letter by letter, a date, prices and a self-correction.",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "You will hear a woman phoning a holiday letting agency to book a cottage. Read the questions first. The recording plays once, as in the exam, with a short pause before questions 6–10."
+        },
+        {
+          "type": "audio",
+          "id": "t1p1-audio",
+          "speakers": {
+            "N": {
+              "name": "Narrator",
+              "voice": "en-GB-SoniaNeural"
+            },
+            "graham": {
+              "name": "Graham",
+              "voice": "en-GB-ThomasNeural"
+            },
+            "joanna": {
+              "name": "Joanna",
+              "voice": "en-GB-LibbyNeural"
+            }
+          },
+          "lines": [
+            {
+              "speaker": "N",
+              "text": "Test one. Part one. You will hear a woman phoning a holiday letting agency to book a cottage. First, you have some time to look at questions one to five.",
+              "pauseAfterMs": 2500
+            },
+            {
+              "speaker": "N",
+              "text": "Now listen carefully and answer questions one to five.",
+              "pauseAfterMs": 1200
+            },
+            {
+              "speaker": "graham",
+              "text": "Good morning, Brackenfield Holiday Cottages, Graham speaking. How can I help?",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "joanna",
+              "text": "Oh, hello. I'd like to book a cottage for a family holiday in August, if you've still got anything free.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "graham",
+              "text": "We've got a few left, yes. Can I start with your name?",
+              "pauseAfterMs": 300
+            },
+            {
+              "speaker": "joanna",
+              "text": "Of course. It's Joanna Pendry.",
+              "pauseAfterMs": 300
+            },
+            {
+              "speaker": "graham",
+              "text": "Is that P-E-N-D-R-E-Y?",
+              "pauseAfterMs": 300
+            },
+            {
+              "speaker": "joanna",
+              "text": "No, there's no E near the end. It's P-E-N-D-R-Y. Pendry.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "graham",
+              "text": "Got it, thanks. And how many of you will there be?",
+              "pauseAfterMs": 300
+            },
+            {
+              "speaker": "joanna",
+              "text": "Four adults and two children. My parents are coming with us this year.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "graham",
+              "text": "Right, so six people. I was going to suggest Willow Cottage, but that only sleeps four, so that's out. The one that'd suit you best is Heron Cottage. It's got three bedrooms and a big garden at the back.",
+              "pauseAfterMs": 500
+            },
+            {
+              "speaker": "joanna",
+              "text": "Heron, like the bird?",
+              "pauseAfterMs": 300
+            },
+            {
+              "speaker": "graham",
+              "text": "Exactly. H-E-R-O-N. It's right by the stream.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "joanna",
+              "text": "That sounds lovely. We were hoping to arrive on the thirteenth of August.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "graham",
+              "text": "Let me just check. Hmm, I'm afraid Heron's booked until the morning of the fourteenth.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "joanna",
+              "text": "Oh. Well, the fourteenth's fine, actually. That's a Saturday, isn't it? It'll be easier for the drive anyway.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "graham",
+              "text": "It is a Saturday. So that's arrival on the fourteenth of August. And how long would you like to stay?",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "joanna",
+              "text": "We'd thought about a week, but my husband can only get five days off work, so let's say five nights.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "graham",
+              "text": "Five nights, lovely. Now, the price. Normally it's a hundred and ten pounds a night, but in August we've got a special rate for stays of five nights or more, so it comes down to ninety-five a night.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "joanna",
+              "text": "Ninety-five. That's very reasonable.",
+              "pauseAfterMs": 2500
+            },
+            {
+              "speaker": "N",
+              "text": "Before you hear the rest of the conversation, you have some time to look at questions six to ten.",
+              "pauseAfterMs": 2500
+            },
+            {
+              "speaker": "N",
+              "text": "Now listen and answer questions six to ten.",
+              "pauseAfterMs": 1200
+            },
+            {
+              "speaker": "graham",
+              "text": "Is there anything else you'll be bringing with you? Some families bring bikes, for example.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "joanna",
+              "text": "No bikes this time, but we'd like to bring our dog. Is that allowed?",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "graham",
+              "text": "Dogs are welcome at Heron, yes. There's an extra charge of fifteen pounds for a dog. That's for the whole stay, not per night.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "joanna",
+              "text": "That's fine. And what about shops? I'd rather not drive every time we need milk.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "graham",
+              "text": "There's a big supermarket in Dunmore, but that's a twenty-minute drive. The nearest shop is in Ashcombe, the next village, about a mile away. That's A-S-H-C-O-M-B-E.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "joanna",
+              "text": "Ashcombe. OK. And do we need to bring any bedding?",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "graham",
+              "text": "No, the beds are made up for you and bed linen's included. You'll need to bring your own towels, though. We used to supply them, but we stopped last year.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "joanna",
+              "text": "Towels. I'll make a note of that. And how do we get in when we arrive?",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "graham",
+              "text": "Normally there's a key box by the front door, but it's being replaced at the moment, so this summer you'll need to collect the key from the farmhouse. It's the big white house at the end of the lane, where the owners live.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "joanna",
+              "text": "The farmhouse, fine. And how much do you need now to confirm the booking?",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "graham",
+              "text": "We ask for a deposit. It's usually a hundred pounds, but for six guests and a dog it's a hundred and fifty pounds. The rest is due four weeks before you arrive.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "joanna",
+              "text": "OK, a hundred and fifty. Can I pay that by card now?",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "graham",
+              "text": "Of course. I'll just take the details.",
+              "pauseAfterMs": 1500
+            },
+            {
+              "speaker": "N",
+              "text": "That is the end of Part one.",
+              "pauseAfterMs": 0
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer."
+        },
+        {
+          "type": "text",
+          "text": "Holiday Cottage Booking Form"
+        },
+        {
+          "type": "gap",
+          "id": "t1q1",
+          "prompt": "1. Customer's surname: ___",
+          "answers": [
+            "Pendry"
+          ],
+          "why": {
+            "tr": "Görevli \"P-E-N-D-R-E-Y?\" diye soruyor, kadın düzeltiyor: \"No, there's no E near the end. It's P-E-N-D-R-Y. Pendry.\" diyor. Tuzak: ilk söylenen yanlış yazım (Pendrey). Harfleri dinlerken düzeltmeyi bekle.",
+            "ar": "يسأل الموظف \"P-E-N-D-R-E-Y?\" فتصحّح المرأة: \"No, there's no E near the end. It's P-E-N-D-R-Y. Pendry.\" الفخّ هو التهجئة الأولى الخاطئة (Pendrey)؛ انتظر التصحيح.",
+            "en": "\"No, there's no E near the end. It's P-E-N-D-R-Y. Pendry.\" The first spelling, Pendrey, is wrong."
+          },
+          "example": "Could you spell your surname for me, please?"
+        },
+        {
+          "type": "gap",
+          "id": "t1q2",
+          "prompt": "2. Cottage chosen: ___ Cottage",
+          "answers": [
+            "Heron",
+            "Heron Cottage"
+          ],
+          "why": {
+            "tr": "Önce Willow Cottage öneriliyor ama \"that only sleeps four, so that's out\". Sonra: \"The one that'd suit you best is Heron Cottage... H-E-R-O-N.\" Tuzak: Willow, reddedilen ilk seçenek.",
+            "ar": "اقتُرح أولاً Willow Cottage لكن \"that only sleeps four, so that's out\". ثم: \"The one that'd suit you best is Heron Cottage... H-E-R-O-N.\" الفخّ: Willow، الخيار الأول المرفوض.",
+            "en": "Willow \"only sleeps four, so that's out\"; \"The one that'd suit you best is Heron Cottage.\""
+          },
+          "example": "We stayed in a small cottage that only sleeps four."
+        },
+        {
+          "type": "gap",
+          "id": "t1q3",
+          "prompt": "3. Arrival date: ___",
+          "answers": [
+            "14 August",
+            "14th August",
+            "August 14",
+            "August 14th",
+            "14th of August",
+            "the 14th of August",
+            "fourteenth of August",
+            "the fourteenth of August",
+            "14 Aug",
+            "14/8",
+            "14.8"
+          ],
+          "why": {
+            "tr": "Kadın önce \"the thirteenth of August\" diyor ama ev o gün dolu. Sonra: \"arrival on the fourteenth of August\". Tarih yazarken 14 August ya da 14th August yazabilirsin. Tuzak: 13 Ağustos.",
+            "ar": "قالت المرأة أولاً \"the thirteenth of August\" لكن البيت محجوز، ثم: \"arrival on the fourteenth of August\". يمكنك كتابة 14 August أو 14th August. الفخّ: الثالث عشر.",
+            "en": "She wanted the 13th, but the cottage is booked; \"arrival on the fourteenth of August\"."
+          },
+          "example": "Our flight arrives on the fourteenth of August."
+        },
+        {
+          "type": "gap",
+          "id": "t1q4",
+          "prompt": "4. Number of nights: ___",
+          "answers": [
+            "5",
+            "five"
+          ],
+          "why": {
+            "tr": "\"We'd thought about a week, but my husband can only get five days off work, so let's say five nights.\" Tuzak: \"a week\" (yedi gece), sonra vazgeçiliyor.",
+            "ar": "\"We'd thought about a week, but ... so let's say five nights.\" الفخّ: \"a week\" ثم تراجعت عنه.",
+            "en": "\"We'd thought about a week, but ... let's say five nights.\""
+          },
+          "example": "We booked the hotel for five nights."
+        },
+        {
+          "type": "gap",
+          "id": "t1q5",
+          "prompt": "5. Price per night: £___",
+          "answers": [
+            "95",
+            "£95",
+            "ninety-five",
+            "ninety five",
+            "95 pounds"
+          ],
+          "why": {
+            "tr": "\"Normally it's a hundred and ten pounds a night, but ... it comes down to ninety-five a night.\" Tuzak: 110 normal fiyat; Ağustos'ta beş gece ve üstü için 95.",
+            "ar": "\"Normally it's a hundred and ten pounds a night, but ... it comes down to ninety-five a night.\" الفخّ: 110 هو السعر العادي.",
+            "en": "\"Normally it's a hundred and ten pounds ... it comes down to ninety-five a night.\""
+          },
+          "example": "The price comes down to ninety-five pounds if you stay longer."
+        },
+        {
+          "type": "gap",
+          "id": "t1q6",
+          "prompt": "6. Extra charge: £15 for a ___",
+          "answers": [
+            "dog",
+            "pet"
+          ],
+          "why": {
+            "tr": "\"There's an extra charge of fifteen pounds for a dog.\" Bisiklet (bikes) sadece örnek olarak geçiyor, getirmiyorlar.",
+            "ar": "\"There's an extra charge of fifteen pounds for a dog.\" الدراجات (bikes) مجرد مثال ولن يحضروها.",
+            "en": "\"There's an extra charge of fifteen pounds for a dog.\" Bikes are only an example."
+          },
+          "example": "Is there an extra charge for bringing a dog?"
+        },
+        {
+          "type": "gap",
+          "id": "t1q7",
+          "prompt": "7. Nearest shop: in the village of ___",
+          "answers": [
+            "Ashcombe"
+          ],
+          "why": {
+            "tr": "\"The nearest shop is in Ashcombe ... A-S-H-C-O-M-B-E.\" Tuzak: Dunmore, büyük süpermarket ama yirmi dakika uzakta, en yakın değil.",
+            "ar": "\"The nearest shop is in Ashcombe ... A-S-H-C-O-M-B-E.\" الفخّ: Dunmore فيه سوبرماركت كبير لكنه على بُعد عشرين دقيقة.",
+            "en": "\"The nearest shop is in Ashcombe.\" Dunmore has a supermarket but is twenty minutes away."
+          },
+          "example": "The nearest chemist is in the next village."
+        },
+        {
+          "type": "gap",
+          "id": "t1q8",
+          "prompt": "8. Guests must bring their own ___",
+          "answers": [
+            "towels",
+            "towel"
+          ],
+          "why": {
+            "tr": "\"bed linen's included. You'll need to bring your own towels, though.\" Tuzak: çarşaf (bed linen) dahil, getirmeye gerek yok.",
+            "ar": "\"bed linen's included. You'll need to bring your own towels, though.\" الفخّ: أغطية السرير متوفرة.",
+            "en": "\"Bed linen's included. You'll need to bring your own towels, though.\""
+          },
+          "example": "Remember to pack your towels; the campsite doesn't provide them."
+        },
+        {
+          "type": "gap",
+          "id": "t1q9",
+          "prompt": "9. Collect the key from the ___",
+          "answers": [
+            "farmhouse",
+            "farm house",
+            "the farmhouse"
+          ],
+          "why": {
+            "tr": "\"Normally there's a key box ... but it's being replaced ... you'll need to collect the key from the farmhouse.\" Tuzak: anahtar kutusu (key box) normalde var ama bu yaz kullanılamıyor.",
+            "ar": "\"Normally there's a key box ... but it's being replaced ... collect the key from the farmhouse.\" الفخّ: صندوق المفاتيح غير متاح هذا الصيف.",
+            "en": "\"Normally there's a key box ... but ... collect the key from the farmhouse.\""
+          },
+          "example": "We collected the key from the farmhouse at the end of the lane."
+        },
+        {
+          "type": "gap",
+          "id": "t1q10",
+          "prompt": "10. Deposit to pay now: £___",
+          "answers": [
+            "150",
+            "£150",
+            "a hundred and fifty",
+            "one hundred and fifty",
+            "hundred and fifty",
+            "150 pounds"
+          ],
+          "why": {
+            "tr": "\"It's usually a hundred pounds, but for six guests and a dog it's a hundred and fifty pounds.\" Tuzak: 100 normal depozito.",
+            "ar": "\"It's usually a hundred pounds, but for six guests and a dog it's a hundred and fifty pounds.\" الفخّ: 100 هو المبلغ المعتاد.",
+            "en": "\"It's usually a hundred pounds, but ... it's a hundred and fifty pounds.\""
+          },
+          "example": "We paid a deposit of a hundred and fifty pounds to confirm the booking."
+        }
+      ]
+    },
+    {
+      "id": "t1-part2",
+      "title": "Test 1 · Part 2: A Morning at Kestrel Water Country Park",
+      "timeMinutes": 10,
+      "goal": "Questions 11–20: multiple choice and a map in words, from a ranger's talk; listen for places that have moved.",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "You will hear a park ranger talking to visitors. Read the questions first. The recording plays once, as in the exam, with a short pause before questions 15–20."
+        },
+        {
+          "type": "audio",
+          "id": "t1p2-audio",
+          "speakers": {
+            "N": {
+              "name": "Narrator",
+              "voice": "en-GB-SoniaNeural"
+            },
+            "liam": {
+              "name": "Liam",
+              "voice": "en-AU-WilliamMultilingualNeural"
+            }
+          },
+          "lines": [
+            {
+              "speaker": "N",
+              "text": "Part two. You will hear a park ranger talking to a group of visitors at Kestrel Water Country Park. First, you have some time to look at questions eleven to fourteen.",
+              "pauseAfterMs": 2500
+            },
+            {
+              "speaker": "N",
+              "text": "Now listen carefully and answer questions eleven to fourteen.",
+              "pauseAfterMs": 1200
+            },
+            {
+              "speaker": "liam",
+              "text": "Morning, everyone, and welcome to Kestrel Water. My name's Liam and I'm one of the rangers here. I'll just give you a quick introduction before you head off and explore.",
+              "pauseAfterMs": 500
+            },
+            {
+              "speaker": "liam",
+              "text": "First, a bit of history. A lot of visitors assume this was always farmland, and there were a couple of farms here a long time ago. But for most of the last century the whole site was a gravel quarry. When the digging stopped in nineteen ninety-four, the pits slowly filled with water, and that's how we got our lakes.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "liam",
+              "text": "You might also hear people mention the old airfield, but that's a few miles further north, not here.",
+              "pauseAfterMs": 600
+            },
+            {
+              "speaker": "liam",
+              "text": "Now, the visitor centre, which is the building right behind me. It's open every day from nine till five. People often think we close early in winter, but we don't; the hours are the same all year round. It was extended last spring, so there's now a big room for school groups and a little exhibition about the quarry.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "liam",
+              "text": "One thing to remember: parking isn't free. It's three pounds for the day, and you pay at the machine.",
+              "pauseAfterMs": 600
+            },
+            {
+              "speaker": "liam",
+              "text": "A word about the wildlife. Dogs are welcome on all the paths as long as they're on a lead. What we do ask is that you don't give the ducks and swans bread. It's actually bad for them. If you'd like to feed them, you can buy a bag of bird seed in the centre for a pound.",
+              "pauseAfterMs": 600
+            },
+            {
+              "speaker": "liam",
+              "text": "And if you're keen on birds, come along to our guided walk on Sunday. It used to start at seven, which was a bit early for most people, so now it starts at half past eight. Don't confuse it with the children's pond-dipping session, which is at ten.",
+              "pauseAfterMs": 2500
+            },
+            {
+              "speaker": "N",
+              "text": "Before you hear the rest of the talk, you have some time to look at questions fifteen to twenty.",
+              "pauseAfterMs": 2500
+            },
+            {
+              "speaker": "N",
+              "text": "Now listen and answer questions fifteen to twenty.",
+              "pauseAfterMs": 1200
+            },
+            {
+              "speaker": "liam",
+              "text": "OK, let me tell you where everything is. We're at the main entrance, on the south side of the park.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "liam",
+              "text": "Let's start with the café. Some of you might remember the old café beside the car park, but that building's used for staff offices now. The new café is just behind the visitor centre, so you'll find it in less than a minute.",
+              "pauseAfterMs": 600
+            },
+            {
+              "speaker": "liam",
+              "text": "Next, the bird hide. You might expect it to be on the island in the middle of the big lake, but the island's closed to visitors to protect the nests. Instead, the hide's at the end of the boardwalk, which goes out over the reed beds on the east side.",
+              "pauseAfterMs": 600
+            },
+            {
+              "speaker": "liam",
+              "text": "If you've brought lunch, the picnic area is up at the top of the park, next to the north lake. There are tables there and plenty of shade.",
+              "pauseAfterMs": 500
+            },
+            {
+              "speaker": "liam",
+              "text": "Families with young children usually want the play area. It was down by the boathouse for years, but we moved it because of the water. It's now near the west gate, well away from the lakes, and it's fenced in.",
+              "pauseAfterMs": 600
+            },
+            {
+              "speaker": "liam",
+              "text": "If anyone feels unwell or has an accident, there's a first aid point. You'll find it opposite the boathouse, in the small green hut. There's always a member of staff there at weekends.",
+              "pauseAfterMs": 600
+            },
+            {
+              "speaker": "liam",
+              "text": "And finally, the sculpture trail. It's about two kilometres long and the start is beside the main car park, so a lot of people walk it at the end of their visit, on the way back to their cars. Right, that's everything. Enjoy your day.",
+              "pauseAfterMs": 1500
+            },
+            {
+              "speaker": "N",
+              "text": "That is the end of Part two.",
+              "pauseAfterMs": 0
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Questions 11–14. Choose the correct letter, A, B or C."
+        },
+        {
+          "type": "choice",
+          "id": "t1q11",
+          "prompt": "11. Before it became a park, the site was mainly",
+          "options": [
+            "farmland",
+            "a gravel quarry",
+            "a military airfield"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"for most of the last century the whole site was a gravel quarry\". Tuzak: farmland (\"a couple of farms here a long time ago\") ve airfield (\"a few miles further north, not here\").",
+            "ar": "\"for most of the last century the whole site was a gravel quarry\". الفخّان: farmland (مزارع قديمة جداً) وairfield (\"a few miles further north, not here\").",
+            "en": "\"For most of the last century the whole site was a gravel quarry.\" The airfield is \"further north, not here\"."
+          },
+          "example": "The lake was once a gravel quarry that filled with water."
+        },
+        {
+          "type": "choice",
+          "id": "t1q12",
+          "prompt": "12. What does the speaker say about the visitor centre?",
+          "options": [
+            "It was made bigger recently.",
+            "It closes early in winter.",
+            "Parking there is free."
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "\"It was extended last spring\": extended = made bigger. B yanlış: \"People often think we close early in winter, but we don't.\" C yanlış: \"parking isn't free\".",
+            "ar": "\"It was extended last spring\" أي أصبح أكبر. B خطأ: \"but we don't\". C خطأ: \"parking isn't free\".",
+            "en": "\"It was extended last spring.\" B: \"but we don't\". C: \"parking isn't free\"."
+          },
+          "example": "The library was extended last year, so it has a new study room."
+        },
+        {
+          "type": "choice",
+          "id": "t1q13",
+          "prompt": "13. Visitors are asked not to",
+          "options": [
+            "give bread to the birds.",
+            "walk dogs off the paths.",
+            "buy food in the visitor centre."
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "\"What we do ask is that you don't give the ducks and swans bread.\" B tuzak: köpekler tasmalı olarak yollarda serbest; yol dışı yasağı söylenmiyor. C tersine: kuş yemi merkezde satılıyor.",
+            "ar": "\"What we do ask is that you don't give the ducks and swans bread.\" B فخّ: الكلاب مسموحة مع المقود ولم يُذكر منع خارج الممرات. C عكس ما قيل.",
+            "en": "\"What we do ask is that you don't give the ducks and swans bread.\""
+          },
+          "example": "Please don't give the ducks bread; it's bad for them."
+        },
+        {
+          "type": "choice",
+          "id": "t1q14",
+          "prompt": "14. The guided bird walk on Sunday now starts at",
+          "options": [
+            "7 a.m.",
+            "8.30 a.m.",
+            "10 a.m."
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"It used to start at seven ... so now it starts at half past eight.\" 7 eski saat; 10 çocukların etkinliği (pond-dipping).",
+            "ar": "\"It used to start at seven ... so now it starts at half past eight.\" السابعة موعد قديم، والعاشرة نشاط الأطفال.",
+            "en": "\"It used to start at seven ... now it starts at half past eight.\" Ten is the pond-dipping."
+          },
+          "example": "The class used to start at seven, but now it starts at half past eight."
+        },
+        {
+          "type": "text",
+          "text": "Questions 15–20. Label the map of the park in words. Where is each place? Choose from A–G. You may not need every letter."
+        },
+        {
+          "type": "choice",
+          "id": "t1q15",
+          "prompt": "15. the café",
+          "options": [
+            "beside the main car park",
+            "at the end of the boardwalk",
+            "opposite the boathouse",
+            "next to the north lake",
+            "behind the visitor centre",
+            "on the island",
+            "near the west gate"
+          ],
+          "answer": 4,
+          "why": {
+            "tr": "\"The new café is just behind the visitor centre.\" Tuzak: eski kafe \"beside the car park\" idi, o bina artık ofis.",
+            "ar": "\"The new café is just behind the visitor centre.\" الفخّ: المقهى القديم كان بجانب موقف السيارات.",
+            "en": "\"The new café is just behind the visitor centre.\" The old one was beside the car park."
+          },
+          "example": "There's a small shop just behind the station."
+        },
+        {
+          "type": "choice",
+          "id": "t1q16",
+          "prompt": "16. the bird hide",
+          "options": [
+            "beside the main car park",
+            "at the end of the boardwalk",
+            "opposite the boathouse",
+            "next to the north lake",
+            "behind the visitor centre",
+            "on the island",
+            "near the west gate"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"You might expect it to be on the island ... but the island's closed ... the hide's at the end of the boardwalk.\" Tuzak: island (F).",
+            "ar": "\"You might expect it to be on the island ... the hide's at the end of the boardwalk.\" الفخّ: الجزيرة (F).",
+            "en": "\"The hide's at the end of the boardwalk.\" The island is closed."
+          },
+          "example": "We walked to the end of the boardwalk to watch the birds."
+        },
+        {
+          "type": "choice",
+          "id": "t1q17",
+          "prompt": "17. the picnic area",
+          "options": [
+            "beside the main car park",
+            "at the end of the boardwalk",
+            "opposite the boathouse",
+            "next to the north lake",
+            "behind the visitor centre",
+            "on the island",
+            "near the west gate"
+          ],
+          "answer": 3,
+          "why": {
+            "tr": "\"the picnic area is up at the top of the park, next to the north lake.\"",
+            "ar": "\"the picnic area is up at the top of the park, next to the north lake.\"",
+            "en": "\"The picnic area is ... next to the north lake.\""
+          },
+          "example": "We had lunch at a table next to the lake."
+        },
+        {
+          "type": "choice",
+          "id": "t1q18",
+          "prompt": "18. the children's play area",
+          "options": [
+            "beside the main car park",
+            "at the end of the boardwalk",
+            "opposite the boathouse",
+            "next to the north lake",
+            "behind the visitor centre",
+            "on the island",
+            "near the west gate"
+          ],
+          "answer": 6,
+          "why": {
+            "tr": "\"It was down by the boathouse for years, but we moved it ... It's now near the west gate.\" Tuzak: boathouse yakını eski yer.",
+            "ar": "\"It was down by the boathouse for years, but we moved it ... It's now near the west gate.\" الفخّ: المكان القديم قرب بيت القوارب.",
+            "en": "\"It was down by the boathouse ... It's now near the west gate.\""
+          },
+          "example": "The bus stop has moved; it's now near the west gate."
+        },
+        {
+          "type": "choice",
+          "id": "t1q19",
+          "prompt": "19. the first aid point",
+          "options": [
+            "beside the main car park",
+            "at the end of the boardwalk",
+            "opposite the boathouse",
+            "next to the north lake",
+            "behind the visitor centre",
+            "on the island",
+            "near the west gate"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "\"You'll find it opposite the boathouse, in the small green hut.\" Dikkat: boathouse 18. soruda eski oyun alanı için de geçti; burada \"opposite\" önemli.",
+            "ar": "\"You'll find it opposite the boathouse, in the small green hut.\" انتبه: كلمة boathouse ذُكرت أيضاً في السؤال 18.",
+            "en": "\"You'll find it opposite the boathouse.\""
+          },
+          "example": "The pharmacy is opposite the bank."
+        },
+        {
+          "type": "choice",
+          "id": "t1q20",
+          "prompt": "20. the start of the sculpture trail",
+          "options": [
+            "beside the main car park",
+            "at the end of the boardwalk",
+            "opposite the boathouse",
+            "next to the north lake",
+            "behind the visitor centre",
+            "on the island",
+            "near the west gate"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "\"the start is beside the main car park\". Car park 15. soruda da geçti (eski kafe), ama heykel yolunun başlangıcı gerçekten orada.",
+            "ar": "\"the start is beside the main car park\". ذُكر موقف السيارات في السؤال 15 أيضاً، لكن بداية المسار هناك فعلاً.",
+            "en": "\"The start is beside the main car park.\""
+          },
+          "example": "The walking trail starts beside the main car park."
+        }
+      ]
+    },
+    {
+      "id": "t1-part3",
+      "title": "Test 1 · Part 3: Planning a Survey on Student Sleep",
+      "timeMinutes": 10,
+      "goal": "Questions 21–30: multiple choice and matching opinions in a tutorial; ideas are suggested, then rejected.",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "You will hear two students and their tutor discussing a research project. Read the questions first. The recording plays once, as in the exam, with a short pause before questions 26–30."
+        },
+        {
+          "type": "audio",
+          "id": "t1p3-audio",
+          "speakers": {
+            "N": {
+              "name": "Narrator",
+              "voice": "en-GB-SoniaNeural"
+            },
+            "ferris": {
+              "name": "Dr Ferris",
+              "voice": "en-AU-NatashaNeural"
+            },
+            "kirsty": {
+              "name": "Kirsty",
+              "voice": "en-NZ-MollyNeural"
+            },
+            "dan": {
+              "name": "Dan",
+              "voice": "en-US-AndrewNeural"
+            }
+          },
+          "lines": [
+            {
+              "speaker": "N",
+              "text": "Part three. You will hear two students, Kirsty and Dan, talking to their tutor, Dr Ferris, about a research project on student sleep. First, you have some time to look at questions twenty-one to twenty-five.",
+              "pauseAfterMs": 2500
+            },
+            {
+              "speaker": "N",
+              "text": "Now listen carefully and answer questions twenty-one to twenty-five.",
+              "pauseAfterMs": 1200
+            },
+            {
+              "speaker": "ferris",
+              "text": "Come in, both of you. So, you've chosen sleep for your project. Was that one of the topics on the list I gave out?",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "kirsty",
+              "text": "It wasn't on your list, actually. We picked it because so many people on our course look exhausted in the morning lectures. Half the room is yawning by ten o'clock.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "dan",
+              "text": "And we did worry a bit, because there's loads written about student sleep already. But we thought we could focus on our own university.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "kirsty",
+              "text": "We've also got until the end of term, so we thought there'd be enough time to collect some proper data, not just read about it.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "ferris",
+              "text": "That's fine. A lot of existing research just means you'll have plenty to read. Now, who are you planning to ask?",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "dan",
+              "text": "My idea was to survey people living in the halls of residence, because that's where the noise problems are.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "ferris",
+              "text": "Hmm, I think that's too narrow. Most second- and third-years live in shared houses in town.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "kirsty",
+              "text": "First-years only, then? They're the easiest to reach.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "ferris",
+              "text": "You could, but it'd be far more interesting to compare the years. Do sleep habits change as people go through the course?",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "dan",
+              "text": "OK, that makes sense. So, students from every year of the course, then.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "kirsty",
+              "text": "Agreed. And for collecting the data, we'd thought about an online questionnaire.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "ferris",
+              "text": "The trouble with a one-off questionnaire is that people don't really remember how long they slept last Tuesday.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "dan",
+              "text": "We did think about face-to-face interviews, but they'd take far too long for a project this size.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "kirsty",
+              "text": "So what about a sleep diary? Each person fills it in every morning for a week.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "ferris",
+              "text": "That would give you much better data. I'd go with that.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "dan",
+              "text": "Some people suggested we just use the sleep apps on their phones. They record everything automatically.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "ferris",
+              "text": "They do, and most of them are free, and they're reasonably accurate for total hours. My worry is privacy. You'd be collecting very personal data from people's phones, and that raises all sorts of questions about who can see it.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "kirsty",
+              "text": "Fair enough, the diary it is. So, should we start by writing the instructions for it?",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "ferris",
+              "text": "You'll need those, of course. But the very first thing is to try the diary out on three or four friends, as a small pilot. Then fix any problems, and after that send in the ethics form.",
+              "pauseAfterMs": 2500
+            },
+            {
+              "speaker": "N",
+              "text": "Before you hear the rest of the conversation, you have some time to look at questions twenty-six to thirty.",
+              "pauseAfterMs": 2500
+            },
+            {
+              "speaker": "N",
+              "text": "Now listen and answer questions twenty-six to thirty.",
+              "pauseAfterMs": 1200
+            },
+            {
+              "speaker": "ferris",
+              "text": "Now, your reading list. You've got five sources here. Let's go through them.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "dan",
+              "text": "The first is the article by Marlow and Chen. It's got some striking results.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "ferris",
+              "text": "It has, but look at how many people they studied: only forty students, all at one college. I wouldn't build too much on it.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "kirsty",
+              "text": "Then there's the national health report.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "ferris",
+              "text": "That was very thorough in its day, but it's from two thousand and nine, before most students had smartphones in bed with them. A lot has changed since then.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "dan",
+              "text": "What about Okafor's textbook? It looked a bit scientific when I flicked through it.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "ferris",
+              "text": "It's not as technical as you'd think. The early chapters explain the basics clearly, and the references will lead you to everything else. I'd read that before anything else.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "kirsty",
+              "text": "And we found a survey the student union did last year about well-being.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "ferris",
+              "text": "The results are a bit general, but look at how they worded their questions. They're short and clear. You could borrow some of that style for your own diary.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "dan",
+              "text": "Last one is a podcast series. It's really entertaining.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "ferris",
+              "text": "I'm sure it is, but as far as I know the presenters are just sharing their own opinions and experiences. There's no study behind it, so I wouldn't quote it as evidence.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "kirsty",
+              "text": "OK. Thanks, Dr Ferris, that's really helpful.",
+              "pauseAfterMs": 1500
+            },
+            {
+              "speaker": "N",
+              "text": "That is the end of Part three.",
+              "pauseAfterMs": 0
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Questions 21–25. Choose the correct letter, A, B or C."
+        },
+        {
+          "type": "choice",
+          "id": "t1q21",
+          "prompt": "21. Why did the students choose sleep as their topic?",
+          "options": [
+            "Their tutor suggested it.",
+            "They noticed that classmates seemed tired.",
+            "Very little has been written about it."
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "Kirsty: \"It wasn't on your list ... We picked it because so many people on our course look exhausted.\" A yanlış: listede değildi. C tersi: \"there's loads written about student sleep already\".",
+            "ar": "Kirsty: \"It wasn't on your list ... so many people on our course look exhausted\". A خطأ: لم يكن في القائمة. C عكس ما قيل: \"there's loads written\".",
+            "en": "\"We picked it because so many people on our course look exhausted.\" It wasn't on the list; there's \"loads written\"."
+          },
+          "example": "I chose this topic because so many of my friends seemed stressed."
+        },
+        {
+          "type": "choice",
+          "id": "t1q22",
+          "prompt": "22. Which students will they include in the study?",
+          "options": [
+            "first-year students only",
+            "students from every year of the course",
+            "students living in halls of residence"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "Dan önce yurtları öneriyor, hoca \"too narrow\" diyor; Kirsty \"First-years only?\" diyor, hoca yılları karşılaştırmayı öneriyor. Karar: \"students from every year of the course\". A ve C reddedilen öneriler.",
+            "ar": "اقترح Dan السكن الجامعي فقالت المعلمة \"too narrow\"، واقترحت Kirsty طلاب السنة الأولى، ثم اتفقوا: \"students from every year of the course\". A وC اقتراحان مرفوضان.",
+            "en": "Halls are \"too narrow\"; first-years are rejected; \"students from every year of the course\"."
+          },
+          "example": "We decided to include students from every year, not just the first-years."
+        },
+        {
+          "type": "choice",
+          "id": "t1q23",
+          "prompt": "23. How will the students collect most of their data?",
+          "options": [
+            "an online questionnaire",
+            "a diary kept for a week",
+            "face-to-face interviews"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"what about a sleep diary? Each person fills it in every morning for a week.\" Hoca: \"I'd go with that.\" A: insanlar hatırlamıyor; C: \"take far too long\".",
+            "ar": "\"what about a sleep diary? ... every morning for a week.\" والمعلمة: \"I'd go with that.\" A: الناس لا يتذكرون؛ C: \"take far too long\".",
+            "en": "\"A sleep diary ... every morning for a week.\" \"I'd go with that.\""
+          },
+          "example": "She kept a diary of her meals for a week."
+        },
+        {
+          "type": "choice",
+          "id": "t1q24",
+          "prompt": "24. What is the tutor's main concern about sleep apps?",
+          "options": [
+            "They are not accurate.",
+            "They are too expensive.",
+            "They raise privacy issues."
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "\"My worry is privacy.\" A ve B tuzak: \"most of them are free\" ve \"reasonably accurate\" diyor; yani pahalı ya da hatalı değiller.",
+            "ar": "\"My worry is privacy.\" A وB فخّان: قالت إنها \"free\" و\"reasonably accurate\".",
+            "en": "\"My worry is privacy.\" She says they're \"free\" and \"reasonably accurate\"."
+          },
+          "example": "My main worry about the app is privacy."
+        },
+        {
+          "type": "choice",
+          "id": "t1q25",
+          "prompt": "25. What will the students do first?",
+          "options": [
+            "send in the ethics form",
+            "write instructions for the diary",
+            "test the diary on a few friends"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "\"the very first thing is to try the diary out on three or four friends, as a small pilot.\" B: \"You'll need those, of course. But...\"; A en son: \"after that send in the ethics form\".",
+            "ar": "\"the very first thing is to try the diary out on three or four friends\". B: \"You'll need those, of course. But...\"، وA في النهاية.",
+            "en": "\"The very first thing is to try the diary out on three or four friends.\" The ethics form comes after."
+          },
+          "example": "Before the real survey, we tested it on a few friends."
+        },
+        {
+          "type": "text",
+          "text": "Questions 26–30. What does the tutor say about each source? Choose the correct letter, A–F. You will not use every letter."
+        },
+        {
+          "type": "choice",
+          "id": "t1q26",
+          "prompt": "26. the article by Marlow and Chen",
+          "options": [
+            "It is out of date.",
+            "It is a good place to start.",
+            "It is too technical for this project.",
+            "Its sample was too small.",
+            "It is useful for writing the questions.",
+            "It is not based on research."
+          ],
+          "answer": 3,
+          "why": {
+            "tr": "\"only forty students, all at one college. I wouldn't build too much on it.\" Kırk kişi = küçük örneklem (D). \"striking results\" övgüsü tuzak.",
+            "ar": "\"only forty students, all at one college\" أي عيّنة صغيرة (D). عبارة \"striking results\" فخّ.",
+            "en": "\"Only forty students, all at one college.\""
+          },
+          "example": "The study only had forty people, so the sample was too small."
+        },
+        {
+          "type": "choice",
+          "id": "t1q27",
+          "prompt": "27. the national health report",
+          "options": [
+            "It is out of date.",
+            "It is a good place to start.",
+            "It is too technical for this project.",
+            "Its sample was too small.",
+            "It is useful for writing the questions.",
+            "It is not based on research."
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "\"very thorough in its day, but it's from two thousand and nine ... A lot has changed since then.\" = out of date (A).",
+            "ar": "\"very thorough in its day, but it's from two thousand and nine ... A lot has changed\" أي قديم (A).",
+            "en": "\"It's from two thousand and nine ... A lot has changed since then.\""
+          },
+          "example": "This map is out of date; the new road isn't on it."
+        },
+        {
+          "type": "choice",
+          "id": "t1q28",
+          "prompt": "28. Okafor's textbook",
+          "options": [
+            "It is out of date.",
+            "It is a good place to start.",
+            "It is too technical for this project.",
+            "Its sample was too small.",
+            "It is useful for writing the questions.",
+            "It is not based on research."
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"It's not as technical as you'd think ... I'd read that before anything else.\" = iyi bir başlangıç (B). C tuzak: Dan \"scientific\" dedi ama hoca reddetti.",
+            "ar": "\"It's not as technical as you'd think ... I'd read that before anything else\" أي نقطة بداية جيدة (B). C فخّ.",
+            "en": "\"Not as technical as you'd think ... I'd read that before anything else.\""
+          },
+          "example": "This short guide is a good place to start."
+        },
+        {
+          "type": "choice",
+          "id": "t1q29",
+          "prompt": "29. the student union survey",
+          "options": [
+            "It is out of date.",
+            "It is a good place to start.",
+            "It is too technical for this project.",
+            "Its sample was too small.",
+            "It is useful for writing the questions.",
+            "It is not based on research."
+          ],
+          "answer": 4,
+          "why": {
+            "tr": "\"look at how they worded their questions ... You could borrow some of that style for your own diary.\" = soruları yazmada faydalı (E).",
+            "ar": "\"look at how they worded their questions ... borrow some of that style\" أي مفيد لصياغة الأسئلة (E).",
+            "en": "\"Look at how they worded their questions ... borrow some of that style.\""
+          },
+          "example": "Look at how the questions are worded before you answer."
+        },
+        {
+          "type": "choice",
+          "id": "t1q30",
+          "prompt": "30. the podcast series",
+          "options": [
+            "It is out of date.",
+            "It is a good place to start.",
+            "It is too technical for this project.",
+            "Its sample was too small.",
+            "It is useful for writing the questions.",
+            "It is not based on research."
+          ],
+          "answer": 5,
+          "why": {
+            "tr": "\"the presenters are just sharing their own opinions ... There's no study behind it\" = araştırmaya dayanmıyor (F).",
+            "ar": "\"just sharing their own opinions ... There's no study behind it\" أي ليس مبنياً على بحث (F).",
+            "en": "\"Just sharing their own opinions ... There's no study behind it.\""
+          },
+          "example": "The article is interesting, but there's no study behind it."
+        }
+      ]
+    },
+    {
+      "id": "t1-part4",
+      "title": "Test 1 · Part 4: Ice Houses Before the Refrigerator",
+      "timeMinutes": 10,
+      "goal": "Questions 31–40: note completion, ONE WORD ONLY, from a history lecture; follow the signposts and watch for the word limit.",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "You will hear part of a lecture. Read the notes first. In Part 4 there is no pause in the middle, and the recording plays once."
+        },
+        {
+          "type": "audio",
+          "id": "t1p4-audio",
+          "speakers": {
+            "N": {
+              "name": "Narrator",
+              "voice": "en-GB-SoniaNeural"
+            },
+            "lect": {
+              "name": "Lecturer",
+              "voice": "en-GB-RyanNeural"
+            }
+          },
+          "lines": [
+            {
+              "speaker": "N",
+              "text": "Part four. You will hear a lecture on how people kept ice before refrigerators. First, you have some time to look at questions thirty-one to forty.",
+              "pauseAfterMs": 3000
+            },
+            {
+              "speaker": "N",
+              "text": "Now listen carefully and answer questions thirty-one to forty.",
+              "pauseAfterMs": 1200
+            },
+            {
+              "speaker": "lect",
+              "text": "Good afternoon. Today's lecture is about something we take completely for granted: keeping things cold. Long before the electric fridge, people found ways to store ice through the summer, and the building they used was the ice house.",
+              "pauseAfterMs": 600
+            },
+            {
+              "speaker": "lect",
+              "text": "The idea itself is very old. There are records of ice pits in Persia and China more than two thousand years ago. In Britain, though, ice houses only became fashionable in the seventeenth century, when wealthy landowners copied what they had seen on their travels in Italy and France. By the eighteen hundreds, almost every large country estate had one.",
+              "pauseAfterMs": 600
+            },
+            {
+              "speaker": "lect",
+              "text": "Let's begin with where the ice came from. In northern Europe, it was usually cut by hand in the depths of winter. Some estates had rivers nearby, but river ice was often dirty and broke up quickly in moving water. So most ice was cut from ponds and lakes, where the water was still and the ice grew thick. Some landowners even dug shallow ponds specially for this purpose.",
+              "pauseAfterMs": 600
+            },
+            {
+              "speaker": "lect",
+              "text": "The next challenge was keeping it. The key enemy of stored ice isn't really the warm air; it's water. Once ice starts to melt, the water around it speeds up the melting. That's why an ice house was almost always built on a slope, so that meltwater could drain away downhill through a channel at the bottom.",
+              "pauseAfterMs": 600
+            },
+            {
+              "speaker": "lect",
+              "text": "Most ice houses were partly underground, with a domed roof. The walls were very thick. On some estates in rocky areas you'll find stone, but by far the most common material was brick, often two or three layers of it, with a gap between the layers to hold air.",
+              "pauseAfterMs": 600
+            },
+            {
+              "speaker": "lect",
+              "text": "Inside, the ice was packed in tightly, and every layer was covered with straw, which acted as insulation. In the nineteenth century some owners switched to sawdust, but straw remained the usual choice on country estates because it cost almost nothing.",
+              "pauseAfterMs": 600
+            },
+            {
+              "speaker": "lect",
+              "text": "How well did all this work? Surprisingly well. A small or badly built ice house might be empty by midsummer, but a good one could keep ice for up to two years. Records from one estate show ice cut in one winter still being used the winter after next.",
+              "pauseAfterMs": 600
+            },
+            {
+              "speaker": "lect",
+              "text": "Getting the ice out was a job in itself. A servant would climb down a ladder through a small door, often wearing a thick coat even in August, and break off what was needed with a pick. The door was kept shut as much as possible, because every time it opened, warm air got in.",
+              "pauseAfterMs": 600
+            },
+            {
+              "speaker": "lect",
+              "text": "So what was all this ice used for? You might imagine it was mainly for keeping meat fresh, and it was used that way, but the records tell a different story. Doctors valued it highly. Ice was used to bring down a fever, and this was probably its most important use in the early period.",
+              "pauseAfterMs": 600
+            },
+            {
+              "speaker": "lect",
+              "text": "For wealthy families, of course, ice was also a luxury and a way of showing off. At dinner parties, cooks used it to make sorbet, flavoured with fruit from the estate's own gardens, and guests were expected to be impressed.",
+              "pauseAfterMs": 600
+            },
+            {
+              "speaker": "lect",
+              "text": "In the nineteenth century, things changed dramatically. Home-grown ice was never enough for the growing cities, so ice began to be imported. Huge blocks were shipped across the North Sea from Norway, where the lakes froze hard and the ice was very clean. It was stored in large warehouses near the docks and then delivered to shops and hospitals.",
+              "pauseAfterMs": 600
+            },
+            {
+              "speaker": "lect",
+              "text": "But imported natural ice didn't last long as a business either. By the end of the century, ice could be made artificially, all year round, in factories, using machines that compressed gas. This ice was cheaper and more reliable, and the import trade declined quickly. Then, in the twentieth century, the electric refrigerator brought cold into every kitchen, and the ice houses were simply abandoned.",
+              "pauseAfterMs": 600
+            },
+            {
+              "speaker": "lect",
+              "text": "Many have collapsed, but some survive, and a few have found an unexpected new purpose. Because they're cool, dark and stay at a steady temperature, they make ideal winter homes for bats, and several are now protected for exactly that reason.",
+              "pauseAfterMs": 600
+            },
+            {
+              "speaker": "lect",
+              "text": "Next week we'll look at how refrigeration changed the way cities were fed. Thank you.",
+              "pauseAfterMs": 1500
+            },
+            {
+              "speaker": "N",
+              "text": "That is the end of Part four.",
+              "pauseAfterMs": 0
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Complete the notes below. Write ONE WORD ONLY for each answer."
+        },
+        {
+          "type": "text",
+          "text": "Ice houses: keeping ice before the refrigerator"
+        },
+        {
+          "type": "gap",
+          "id": "t1q31",
+          "prompt": "31. Sources of ice: usually cut from ___ and lakes, where the water was still.",
+          "answers": [
+            "ponds",
+            "pond"
+          ],
+          "why": {
+            "tr": "\"most ice was cut from ponds and lakes, where the water was still\". Tuzak: rivers, \"river ice was often dirty\".",
+            "ar": "\"most ice was cut from ponds and lakes, where the water was still\". الفخّ: الأنهار، فجليدها كان متسخاً.",
+            "en": "\"Most ice was cut from ponds and lakes.\" River ice was dirty."
+          },
+          "example": "In winter the children skated on the frozen pond."
+        },
+        {
+          "type": "gap",
+          "id": "t1q32",
+          "prompt": "32. Building: placed on a ___ so that meltwater could drain away.",
+          "answers": [
+            "slope",
+            "hill",
+            "hillside"
+          ],
+          "why": {
+            "tr": "\"an ice house was almost always built on a slope, so that meltwater could drain away\". Not \"drain away\" metindekinin aynısı; boşluktan önceki kelimeyi dinle.",
+            "ar": "\"built on a slope, so that meltwater could drain away\". العبارة drain away نفسها في النص، فاستمع للكلمة قبلها.",
+            "en": "\"Built on a slope, so that meltwater could drain away.\""
+          },
+          "example": "The house is built on a slope, so the rain runs away quickly."
+        },
+        {
+          "type": "gap",
+          "id": "t1q33",
+          "prompt": "33. Walls: most commonly made of ___, often in layers with air between.",
+          "answers": [
+            "brick",
+            "bricks"
+          ],
+          "why": {
+            "tr": "\"you'll find stone, but by far the most common material was brick\". Tuzak: stone, sadece kayalık bölgelerde.",
+            "ar": "\"you'll find stone, but by far the most common material was brick\". الفخّ: الحجر في المناطق الصخرية فقط.",
+            "en": "\"By far the most common material was brick.\" Stone is only in rocky areas."
+          },
+          "example": "The old school is built of red brick."
+        },
+        {
+          "type": "gap",
+          "id": "t1q34",
+          "prompt": "34. Each layer of ice covered with ___ for insulation.",
+          "answers": [
+            "straw"
+          ],
+          "why": {
+            "tr": "\"every layer was covered with straw, which acted as insulation\". Tuzak: sawdust, bazı sahiplerin sonradan geçtiği malzeme; ama \"straw remained the usual choice\".",
+            "ar": "\"every layer was covered with straw, which acted as insulation\". الفخّ: sawdust، لكن \"straw remained the usual choice\".",
+            "en": "\"Covered with straw, which acted as insulation.\" Sawdust was used by only some owners."
+          },
+          "example": "The farmer put straw on the floor of the barn."
+        },
+        {
+          "type": "gap",
+          "id": "t1q35",
+          "prompt": "35. A well-built ice house could keep ice for up to two ___.",
+          "answers": [
+            "years"
+          ],
+          "why": {
+            "tr": "\"a good one could keep ice for up to two years\". Tuzak: \"empty by midsummer\" kötü yapılmış evler için.",
+            "ar": "\"a good one could keep ice for up to two years\". الفخّ: \"empty by midsummer\" للبيوت الرديئة.",
+            "en": "\"A good one could keep ice for up to two years.\""
+          },
+          "example": "A good pair of boots can last for years."
+        },
+        {
+          "type": "gap",
+          "id": "t1q36",
+          "prompt": "36. Main early use: by doctors, to bring down a ___.",
+          "answers": [
+            "fever",
+            "temperature"
+          ],
+          "why": {
+            "tr": "\"Ice was used to bring down a fever, and this was probably its most important use\". Tuzak: et saklamak (\"keeping meat fresh\"), ama \"the records tell a different story\".",
+            "ar": "\"Ice was used to bring down a fever\". الفخّ: حفظ اللحم، لكن \"the records tell a different story\".",
+            "en": "\"Ice was used to bring down a fever.\" Meat is the distractor."
+          },
+          "example": "The nurse gave him water and tried to bring down his fever."
+        },
+        {
+          "type": "gap",
+          "id": "t1q37",
+          "prompt": "37. Wealthy families: cooks made ___ for dinner parties.",
+          "answers": [
+            "sorbet",
+            "sorbets"
+          ],
+          "why": {
+            "tr": "\"cooks used it to make sorbet, flavoured with fruit\". Tek kelime: sorbet.",
+            "ar": "\"cooks used it to make sorbet, flavoured with fruit\". كلمة واحدة: sorbet.",
+            "en": "\"Cooks used it to make sorbet.\""
+          },
+          "example": "For dessert we had a lemon sorbet."
+        },
+        {
+          "type": "gap",
+          "id": "t1q38",
+          "prompt": "38. 19th century: ice shipped across the North Sea from ___.",
+          "answers": [
+            "Norway"
+          ],
+          "why": {
+            "tr": "\"Huge blocks were shipped across the North Sea from Norway\".",
+            "ar": "\"Huge blocks were shipped across the North Sea from Norway\".",
+            "en": "\"Shipped across the North Sea from Norway.\""
+          },
+          "example": "The timber was shipped from Norway."
+        },
+        {
+          "type": "gap",
+          "id": "t1q39",
+          "prompt": "39. Later, artificial ice was made all year round in ___.",
+          "answers": [
+            "factories",
+            "factory"
+          ],
+          "why": {
+            "tr": "\"ice could be made artificially, all year round, in factories\". Tuzak: \"warehouses\" ithal buzun depolandığı yer, üretildiği yer değil.",
+            "ar": "\"ice could be made artificially, all year round, in factories\". الفخّ: warehouses كانت لتخزين الجليد المستورد.",
+            "en": "\"Made artificially, all year round, in factories.\" Warehouses only stored imported ice."
+          },
+          "example": "Most bread is now made in factories."
+        },
+        {
+          "type": "gap",
+          "id": "t1q40",
+          "prompt": "40. Today: some ice houses are protected as winter homes for ___.",
+          "answers": [
+            "bats",
+            "bat"
+          ],
+          "why": {
+            "tr": "\"they make ideal winter homes for bats, and several are now protected for exactly that reason\".",
+            "ar": "\"they make ideal winter homes for bats\".",
+            "en": "\"Ideal winter homes for bats.\""
+          },
+          "example": "Bats sleep in the old church tower during the winter."
+        }
+      ]
+    },
+    {
+      "id": "t2-part1",
+      "title": "Test 2 · Part 1: Joining a Sports Centre",
+      "timeMinutes": 10,
+      "goal": "Questions 1–10: form completion and multiple choice from a conversation at a desk; spelled names, a number heard wrong, options rejected one by one.",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "You will hear a woman joining a sports centre. Read the questions first. The recording plays once, as in the exam, with a short pause before questions 7–10."
+        },
+        {
+          "type": "audio",
+          "id": "t2p1-audio",
+          "speakers": {
+            "N": {
+              "name": "Narrator",
+              "voice": "en-GB-SoniaNeural"
+            },
+            "josh": {
+              "name": "Josh",
+              "voice": "en-NZ-MitchellNeural"
+            },
+            "sophie": {
+              "name": "Sophie",
+              "voice": "en-AU-NatashaNeural"
+            }
+          },
+          "lines": [
+            {
+              "speaker": "N",
+              "text": "Test two. Part one. You will hear a woman asking about membership at a sports centre. First, you have some time to look at questions one to six.",
+              "pauseAfterMs": 2500
+            },
+            {
+              "speaker": "N",
+              "text": "Now listen carefully and answer questions one to six.",
+              "pauseAfterMs": 1200
+            },
+            {
+              "speaker": "josh",
+              "text": "Hi there, welcome to Larchmont Leisure Centre. I'm Josh. How can I help?",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "sophie",
+              "text": "Hi. I've just moved to the area and I'm thinking of joining. Could you tell me about membership?",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "josh",
+              "text": "Sure. I can sign you up now if you like and explain as we go. What's your name?",
+              "pauseAfterMs": 300
+            },
+            {
+              "speaker": "sophie",
+              "text": "Sophie Dunstan.",
+              "pauseAfterMs": 300
+            },
+            {
+              "speaker": "josh",
+              "text": "Is that D-U-N-S-T-O-N?",
+              "pauseAfterMs": 300
+            },
+            {
+              "speaker": "sophie",
+              "text": "Nearly. It's A, not O, at the end. D-U-N-S-T-A-N.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "josh",
+              "text": "Thanks. And your address?",
+              "pauseAfterMs": 300
+            },
+            {
+              "speaker": "sophie",
+              "text": "It's eighteen Copley Road.",
+              "pauseAfterMs": 300
+            },
+            {
+              "speaker": "josh",
+              "text": "Eighty?",
+              "pauseAfterMs": 300
+            },
+            {
+              "speaker": "sophie",
+              "text": "No, eighteen. One-eight. And Copley's C-O-P-L-E-Y.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "josh",
+              "text": "Lovely, I know it. That's only about ten minutes' walk from here.",
+              "pauseAfterMs": 300
+            },
+            {
+              "speaker": "sophie",
+              "text": "That's partly why I'm thinking of joining. I don't have a car at the moment, so it needs to be close.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "josh",
+              "text": "Well, if you ever do drive, parking's free for members. Right, we've got two main types of membership. Full membership lets you come any time. Off-peak is weekdays before four, and weekends.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "sophie",
+              "text": "I was going to go for full, but actually I work evenings, so I'd be coming in the daytime anyway. I'll take off-peak.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "josh",
+              "text": "Good choice. Full's thirty-nine pounds a month, but off-peak's only twenty-eight. And there's no joining fee this month.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "sophie",
+              "text": "Twenty-eight a month, great. Oh, and I should say what I'm mostly here for. I was really hoping to play tennis.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "josh",
+              "text": "Ah, I'm sorry, the tennis courts are being resurfaced, and they won't open again until the autumn.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "sophie",
+              "text": "Oh, that's a shame. Well, I'll mainly be swimming, then. I used to swim a lot.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "josh",
+              "text": "No problem. Just one more question for our records. How did you hear about us? Was it the website?",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "sophie",
+              "text": "I looked at the website later, but it was a leaflet that came through my door that first told me about you.",
+              "pauseAfterMs": 2500
+            },
+            {
+              "speaker": "N",
+              "text": "Before you hear the rest of the conversation, you have some time to look at questions seven to ten.",
+              "pauseAfterMs": 2500
+            },
+            {
+              "speaker": "N",
+              "text": "Now listen and answer questions seven to ten.",
+              "pauseAfterMs": 1200
+            },
+            {
+              "speaker": "josh",
+              "text": "Now, all new members have an induction before they use the gym. Someone shows you round and explains the equipment.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "sophie",
+              "text": "Do I need to bring anything? A passport photo or something?",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "josh",
+              "text": "No, we take your photo here at the desk for your card. A doctor's letter's only needed if you've got a heart condition or something like that.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "sophie",
+              "text": "No, nothing like that.",
+              "pauseAfterMs": 300
+            },
+            {
+              "speaker": "josh",
+              "text": "Then just bring some ID, like a driving licence. That's all.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "sophie",
+              "text": "Fine. When are the inductions?",
+              "pauseAfterMs": 300
+            },
+            {
+              "speaker": "josh",
+              "text": "There's one on Monday at six in the evening.",
+              "pauseAfterMs": 300
+            },
+            {
+              "speaker": "sophie",
+              "text": "I'll be at work then, unfortunately.",
+              "pauseAfterMs": 300
+            },
+            {
+              "speaker": "josh",
+              "text": "Tuesday at ten in the morning?",
+              "pauseAfterMs": 300
+            },
+            {
+              "speaker": "sophie",
+              "text": "Ah, I've got the dentist on Tuesday morning.",
+              "pauseAfterMs": 300
+            },
+            {
+              "speaker": "josh",
+              "text": "Then there's Thursday at eleven.",
+              "pauseAfterMs": 300
+            },
+            {
+              "speaker": "sophie",
+              "text": "Thursday's perfect. Put me down for that one.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "josh",
+              "text": "Done. It takes about forty-five minutes, so wear something you can move in.",
+              "pauseAfterMs": 300
+            },
+            {
+              "speaker": "sophie",
+              "text": "Will do.",
+              "pauseAfterMs": 300
+            },
+            {
+              "speaker": "josh",
+              "text": "A couple of other things. You can hire a towel here for a pound, and the lockers take a fifty-pence coin, which you don't get back, I'm afraid. But every new member gets one free session with a personal trainer, so do book that.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "sophie",
+              "text": "Oh, nice. And is there anything I need to know about the pool? Do I have to wear a swimming cap?",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "josh",
+              "text": "Caps used to be compulsory, but they aren't any more. And you don't need to book a lane; just turn up. The only thing is that the pool's closed on Sunday afternoons, because the swimming club trains then.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "sophie",
+              "text": "Sunday afternoons, OK. Thanks so much, Josh.",
+              "pauseAfterMs": 1500
+            },
+            {
+              "speaker": "N",
+              "text": "That is the end of Part one.",
+              "pauseAfterMs": 0
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Questions 1–6. Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer."
+        },
+        {
+          "type": "text",
+          "text": "Larchmont Leisure Centre: New Member Form"
+        },
+        {
+          "type": "gap",
+          "id": "t2q1",
+          "prompt": "1. Name: Sophie ___",
+          "answers": [
+            "Dunstan"
+          ],
+          "why": {
+            "tr": "Josh \"D-U-N-S-T-O-N?\" diye soruyor; Sophie: \"It's A, not O, at the end. D-U-N-S-T-A-N.\" Tuzak: Dunston yazımı.",
+            "ar": "سأل Josh \"D-U-N-S-T-O-N?\" فصحّحت: \"It's A, not O, at the end. D-U-N-S-T-A-N.\" الفخّ: Dunston.",
+            "en": "\"It's A, not O, at the end. D-U-N-S-T-A-N.\""
+          },
+          "example": "My surname ends in A-N, not O-N."
+        },
+        {
+          "type": "gap",
+          "id": "t2q2",
+          "prompt": "2. Address: 18 ___ Road",
+          "answers": [
+            "Copley"
+          ],
+          "why": {
+            "tr": "\"And Copley's C-O-P-L-E-Y.\" Numara da yanlış duyuluyor (\"Eighty?\" \"No, eighteen\"), ama formda 18 zaten yazılı; boşluk sokak adı.",
+            "ar": "\"And Copley's C-O-P-L-E-Y.\" الرقم سُمع خطأً (\"Eighty?\") لكنه مكتوب 18 في النموذج؛ الفراغ هو اسم الشارع.",
+            "en": "\"Copley's C-O-P-L-E-Y.\""
+          },
+          "example": "She lives at eighteen Copley Road."
+        },
+        {
+          "type": "gap",
+          "id": "t2q3",
+          "prompt": "3. Membership type: ___",
+          "answers": [
+            "off-peak",
+            "off peak",
+            "offpeak"
+          ],
+          "why": {
+            "tr": "\"I was going to go for full, but actually I work evenings ... I'll take off-peak.\" Tuzak: full, ilk düşündüğü.",
+            "ar": "\"I was going to go for full, but actually I work evenings ... I'll take off-peak.\" الفخّ: full.",
+            "en": "\"I was going to go for full, but ... I'll take off-peak.\""
+          },
+          "example": "Off-peak train tickets are cheaper."
+        },
+        {
+          "type": "gap",
+          "id": "t2q4",
+          "prompt": "4. Monthly fee: £___",
+          "answers": [
+            "28",
+            "£28",
+            "twenty-eight",
+            "twenty eight",
+            "28 pounds"
+          ],
+          "why": {
+            "tr": "\"Full's thirty-nine pounds a month, but off-peak's only twenty-eight.\" Tuzak: 39, tam üyelik fiyatı.",
+            "ar": "\"Full's thirty-nine pounds a month, but off-peak's only twenty-eight.\" الفخّ: 39.",
+            "en": "\"Full's thirty-nine ... off-peak's only twenty-eight.\""
+          },
+          "example": "The monthly fee is twenty-eight pounds."
+        },
+        {
+          "type": "gap",
+          "id": "t2q5",
+          "prompt": "5. Main activity: ___",
+          "answers": [
+            "swimming",
+            "swim"
+          ],
+          "why": {
+            "tr": "Tenis istiyordu ama kortlar \"being resurfaced\"; sonra: \"I'll mainly be swimming, then.\" Tuzak: tennis.",
+            "ar": "أرادت التنس لكن الملاعب \"being resurfaced\"، ثم قالت: \"I'll mainly be swimming, then.\" الفخّ: tennis.",
+            "en": "Tennis courts are closed; \"I'll mainly be swimming, then.\""
+          },
+          "example": "I mainly go to the sports centre for swimming."
+        },
+        {
+          "type": "gap",
+          "id": "t2q6",
+          "prompt": "6. Heard about the centre from: a ___",
+          "answers": [
+            "leaflet",
+            "flyer"
+          ],
+          "why": {
+            "tr": "\"I looked at the website later, but it was a leaflet that came through my door that first told me about you.\" Tuzak: website, sonradan baktı.",
+            "ar": "\"I looked at the website later, but it was a leaflet ...\" الفخّ: الموقع الإلكتروني نظرت إليه لاحقاً.",
+            "en": "\"I looked at the website later, but it was a leaflet that ... first told me.\""
+          },
+          "example": "A leaflet about the new café came through our door."
+        },
+        {
+          "type": "text",
+          "text": "Questions 7–10. Choose the correct letter, A, B or C."
+        },
+        {
+          "type": "choice",
+          "id": "t2q7",
+          "prompt": "7. What must Sophie bring to her induction?",
+          "options": [
+            "a passport photo",
+            "some identification",
+            "a letter from her doctor"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"just bring some ID, like a driving licence\". A: fotoğraf masada çekiliyor. C: doktor mektubu sadece kalp rahatsızlığı gibi durumlarda; onun yok.",
+            "ar": "\"just bring some ID, like a driving licence\". A: الصورة تؤخذ عند المكتب. C: رسالة الطبيب لحالات القلب فقط.",
+            "en": "\"Just bring some ID, like a driving licence.\""
+          },
+          "example": "Please bring some ID, such as a passport or driving licence."
+        },
+        {
+          "type": "choice",
+          "id": "t2q8",
+          "prompt": "8. When will Sophie have her induction?",
+          "options": [
+            "Monday at 6 p.m.",
+            "Tuesday at 10 a.m.",
+            "Thursday at 11 a.m."
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "Pazartesi işte (\"I'll be at work then\"), salı sabahı dişçi; \"Thursday's perfect.\" Seçenekler sırayla eleniyor.",
+            "ar": "الاثنين في العمل، والثلاثاء عند طبيب الأسنان؛ \"Thursday's perfect.\"",
+            "en": "Monday: at work; Tuesday: dentist; \"Thursday's perfect.\""
+          },
+          "example": "Monday's no good for me, but Thursday's perfect."
+        },
+        {
+          "type": "choice",
+          "id": "t2q9",
+          "prompt": "9. What do new members get free of charge?",
+          "options": [
+            "towel hire",
+            "a session with a personal trainer",
+            "use of a locker"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"every new member gets one free session with a personal trainer\". A: havlu bir pound; C: dolap elli peni ve geri verilmiyor.",
+            "ar": "\"every new member gets one free session with a personal trainer\". A: المنشفة بجنيه؛ C: الخزانة بخمسين بنساً.",
+            "en": "\"One free session with a personal trainer.\" Towels cost a pound; lockers fifty pence."
+          },
+          "example": "New customers get one free lesson."
+        },
+        {
+          "type": "choice",
+          "id": "t2q10",
+          "prompt": "10. What does Josh say about the pool?",
+          "options": [
+            "Swimmers must wear a cap.",
+            "Lanes must be booked in advance.",
+            "It is closed on Sunday afternoons."
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "\"the pool's closed on Sunday afternoons, because the swimming club trains then.\" A: \"Caps used to be compulsory, but they aren't any more.\" B: \"you don't need to book a lane\".",
+            "ar": "\"the pool's closed on Sunday afternoons\". A: \"they aren't any more\". B: \"you don't need to book a lane\".",
+            "en": "\"The pool's closed on Sunday afternoons.\" Caps \"aren't any more\" compulsory; no booking needed."
+          },
+          "example": "The museum is closed on Monday mornings."
+        }
+      ]
+    },
+    {
+      "id": "t2-part2",
+      "title": "Test 2 · Part 2: Volunteering at the Riverside Food Market",
+      "timeMinutes": 10,
+      "goal": "Questions 11–20: multiple choice and matching from a talk to volunteers; separate what people assume from what is true.",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "You will hear a volunteer coordinator talking to new volunteers. Read the questions first. The recording plays once, as in the exam, with a short pause before questions 16–20."
+        },
+        {
+          "type": "audio",
+          "id": "t2p2-audio",
+          "speakers": {
+            "N": {
+              "name": "Narrator",
+              "voice": "en-GB-SoniaNeural"
+            },
+            "megan": {
+              "name": "Megan",
+              "voice": "en-US-AvaNeural"
+            }
+          },
+          "lines": [
+            {
+              "speaker": "N",
+              "text": "Part two. You will hear a woman talking to new volunteers at the Riverside Food Market. First, you have some time to look at questions eleven to fifteen.",
+              "pauseAfterMs": 2500
+            },
+            {
+              "speaker": "N",
+              "text": "Now listen carefully and answer questions eleven to fifteen.",
+              "pauseAfterMs": 1200
+            },
+            {
+              "speaker": "megan",
+              "text": "Hi, everyone, and thanks so much for coming tonight. I'm Megan, and I coordinate the volunteers for the Riverside Food Market. It's great to see so many new faces.",
+              "pauseAfterMs": 500
+            },
+            {
+              "speaker": "megan",
+              "text": "Let me start with a bit of background. A lot of people assume the city council runs the market. The council does let us use the land by the river, which is very generous of them, but the market was actually started eight years ago by a group of local farmers who wanted to sell directly to the public. And it's still run by them today.",
+              "pauseAfterMs": 600
+            },
+            {
+              "speaker": "megan",
+              "text": "It's grown a lot since then. In the first year there were just twelve stalls. This year we're expecting over a hundred, selling everything from cheese and bread to spices and fresh fish, and around fifteen thousand visitors over the weekend.",
+              "pauseAfterMs": 600
+            },
+            {
+              "speaker": "megan",
+              "text": "So what's different this year? Well, the children's area was such a success last year that it's coming back. We'd also planned a cooking stage with local chefs, but sadly that's been put off until next year. What is new this time is that on the Friday we're staying open until ten at night, with music and street food.",
+              "pauseAfterMs": 600
+            },
+            {
+              "speaker": "megan",
+              "text": "Now, what we need from you. Some of you asked if you have to work a lot of shifts. You don't; even one shift is a big help. And you don't need to bring food, because lunch is provided for all volunteers. The one thing that everyone must do is come to a short training session on Thursday evening. It only takes an hour.",
+              "pauseAfterMs": 600
+            },
+            {
+              "speaker": "megan",
+              "text": "What to wear. We'll print a name badge for each of you, so don't worry about that. The forecast is warm, so you won't need a heavy jacket. But please do wear the green T-shirt we're giving you tonight, so that visitors can see who to ask for help.",
+              "pauseAfterMs": 600
+            },
+            {
+              "speaker": "megan",
+              "text": "And when you arrive on the day, please don't go straight to the main stage, even if that's where your friends are. Come to the information tent first and sign in, so we know who's here.",
+              "pauseAfterMs": 2500
+            },
+            {
+              "speaker": "N",
+              "text": "Before you hear the rest of the talk, you have some time to look at questions sixteen to twenty.",
+              "pauseAfterMs": 2500
+            },
+            {
+              "speaker": "N",
+              "text": "Now listen and answer questions sixteen to twenty.",
+              "pauseAfterMs": 1200
+            },
+            {
+              "speaker": "megan",
+              "text": "OK, you've all been put into teams, and each team has a colour. Let me explain what each one does.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "megan",
+              "text": "The Blue team will be in the car park. It gets very busy, so your job is to direct drivers to the empty spaces and keep the entrance clear.",
+              "pauseAfterMs": 500
+            },
+            {
+              "speaker": "megan",
+              "text": "Now, people always think the Green team does the recycling, because of the colour. Actually, the Green team starts very early, at six, setting up the stalls for the farmers before the gates open.",
+              "pauseAfterMs": 500
+            },
+            {
+              "speaker": "megan",
+              "text": "The Yellow team will walk around the market selling raffle tickets. All the money goes to the river clean-up project, and the prizes are donated by the stallholders.",
+              "pauseAfterMs": 500
+            },
+            {
+              "speaker": "megan",
+              "text": "The Red team. Again, people sometimes assume red means first aid, but first aid is provided by trained paramedics. The Red team will be helping visitors with disabilities, for example pushing wheelchairs up the steep path from the bus stop.",
+              "pauseAfterMs": 500
+            },
+            {
+              "speaker": "megan",
+              "text": "And the Orange team is in charge of recycling. You'll empty the bins and sort everything into the right containers.",
+              "pauseAfterMs": 500
+            },
+            {
+              "speaker": "megan",
+              "text": "In previous years volunteers also counted visitors at the gates, but now we use electronic counters, so nobody needs to do that. And if you find a lost child, please take them to the family point, which is run by the Harbour Rescue volunteers, not by us.",
+              "pauseAfterMs": 500
+            },
+            {
+              "speaker": "megan",
+              "text": "Right, any questions before we hand out the T-shirts?",
+              "pauseAfterMs": 1500
+            },
+            {
+              "speaker": "N",
+              "text": "That is the end of Part two.",
+              "pauseAfterMs": 0
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Questions 11–15. Choose the correct letter, A, B or C."
+        },
+        {
+          "type": "choice",
+          "id": "t2q11",
+          "prompt": "11. Who started the Riverside Food Market?",
+          "options": [
+            "the city council",
+            "a group of local farmers",
+            "a river charity"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"the market was actually started eight years ago by a group of local farmers\". Tuzak: council, sadece araziyi veriyor (\"does let us use the land\").",
+            "ar": "\"the market was actually started ... by a group of local farmers\". الفخّ: المجلس البلدي يمنح الأرض فقط.",
+            "en": "\"Actually started eight years ago by a group of local farmers.\" The council only lends the land."
+          },
+          "example": "The festival was started by a group of local musicians."
+        },
+        {
+          "type": "choice",
+          "id": "t2q12",
+          "prompt": "12. What is new at this year's market?",
+          "options": [
+            "a children's area",
+            "a cooking stage",
+            "late opening on Friday"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "\"What is new this time is that on the Friday we're staying open until ten at night\". A geçen yıl da vardı (\"coming back\"); B ertelendi (\"put off until next year\").",
+            "ar": "\"What is new this time is that on the Friday we're staying open until ten\". A كانت العام الماضي، وB تأجّلت.",
+            "en": "\"What is new this time is ... staying open until ten.\" The children's area is \"coming back\"; the stage is \"put off\"."
+          },
+          "example": "The shop is staying open late on Fridays."
+        },
+        {
+          "type": "choice",
+          "id": "t2q13",
+          "prompt": "13. All volunteers must",
+          "options": [
+            "work at least two shifts.",
+            "bring their own lunch.",
+            "attend a training session."
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "\"The one thing that everyone must do is come to a short training session on Thursday evening.\" A: \"even one shift is a big help\"; B: \"lunch is provided\".",
+            "ar": "\"The one thing that everyone must do is come to a short training session\". A: \"even one shift\"؛ B: \"lunch is provided\".",
+            "en": "\"The one thing that everyone must do is come to a short training session.\""
+          },
+          "example": "Everyone must attend a short safety talk before the trip."
+        },
+        {
+          "type": "choice",
+          "id": "t2q14",
+          "prompt": "14. What should volunteers wear?",
+          "options": [
+            "a T-shirt from the organisers",
+            "a warm jacket",
+            "a badge they have made"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "\"please do wear the green T-shirt we're giving you tonight\". C: rozetler basılıyor (\"We'll print a name badge\"); B: hava sıcak.",
+            "ar": "\"please do wear the green T-shirt we're giving you tonight\". C: الشارات تُطبع لهم؛ B: الطقس دافئ.",
+            "en": "\"Please do wear the green T-shirt we're giving you.\""
+          },
+          "example": "Please wear the T-shirt we give you so people know who you are."
+        },
+        {
+          "type": "choice",
+          "id": "t2q15",
+          "prompt": "15. Where should volunteers go first when they arrive?",
+          "options": [
+            "the main stage",
+            "the information tent",
+            "the car park entrance"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"please don't go straight to the main stage ... Come to the information tent first and sign in\". Tuzak: main stage.",
+            "ar": "\"don't go straight to the main stage ... Come to the information tent first\". الفخّ: المسرح الرئيسي.",
+            "en": "\"Don't go straight to the main stage ... Come to the information tent first.\""
+          },
+          "example": "When you arrive, sign in at the information desk first."
+        },
+        {
+          "type": "text",
+          "text": "Questions 16–20. What will each team do? Choose the correct letter, A–G. You will not use every letter."
+        },
+        {
+          "type": "choice",
+          "id": "t2q16",
+          "prompt": "16. Blue team",
+          "options": [
+            "setting up the stalls",
+            "collecting recycling",
+            "directing cars in the car park",
+            "helping visitors with disabilities",
+            "counting visitors at the gates",
+            "selling raffle tickets",
+            "looking after lost children"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "\"The Blue team will be in the car park ... direct drivers to the empty spaces\" (C).",
+            "ar": "\"The Blue team will be in the car park ... direct drivers to the empty spaces\" (C).",
+            "en": "\"In the car park ... direct drivers to the empty spaces.\""
+          },
+          "example": "A man in a yellow jacket directed us to an empty space."
+        },
+        {
+          "type": "choice",
+          "id": "t2q17",
+          "prompt": "17. Green team",
+          "options": [
+            "setting up the stalls",
+            "collecting recycling",
+            "directing cars in the car park",
+            "helping visitors with disabilities",
+            "counting visitors at the gates",
+            "selling raffle tickets",
+            "looking after lost children"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "\"people always think the Green team does the recycling ... Actually, the Green team ... setting up the stalls\" (A). Tuzak: recycling (B).",
+            "ar": "\"people always think the Green team does the recycling ... Actually ... setting up the stalls\" (A). الفخّ: B.",
+            "en": "\"Actually, the Green team ... setting up the stalls.\" Recycling is a trap."
+          },
+          "example": "We arrived early to help set up the stalls."
+        },
+        {
+          "type": "choice",
+          "id": "t2q18",
+          "prompt": "18. Yellow team",
+          "options": [
+            "setting up the stalls",
+            "collecting recycling",
+            "directing cars in the car park",
+            "helping visitors with disabilities",
+            "counting visitors at the gates",
+            "selling raffle tickets",
+            "looking after lost children"
+          ],
+          "answer": 5,
+          "why": {
+            "tr": "\"The Yellow team will walk around the market selling raffle tickets\" (F).",
+            "ar": "\"The Yellow team will walk around the market selling raffle tickets\" (F).",
+            "en": "\"Selling raffle tickets.\""
+          },
+          "example": "I bought five raffle tickets and won a cake."
+        },
+        {
+          "type": "choice",
+          "id": "t2q19",
+          "prompt": "19. Red team",
+          "options": [
+            "setting up the stalls",
+            "collecting recycling",
+            "directing cars in the car park",
+            "helping visitors with disabilities",
+            "counting visitors at the gates",
+            "selling raffle tickets",
+            "looking after lost children"
+          ],
+          "answer": 3,
+          "why": {
+            "tr": "\"people sometimes assume red means first aid ... The Red team will be helping visitors with disabilities\" (D). İlk yardım seçeneklerde yok ama tuzak olarak söyleniyor.",
+            "ar": "\"people sometimes assume red means first aid ... The Red team will be helping visitors with disabilities\" (D).",
+            "en": "\"The Red team will be helping visitors with disabilities.\""
+          },
+          "example": "Volunteers helped visitors with disabilities up the steep path."
+        },
+        {
+          "type": "choice",
+          "id": "t2q20",
+          "prompt": "20. Orange team",
+          "options": [
+            "setting up the stalls",
+            "collecting recycling",
+            "directing cars in the car park",
+            "helping visitors with disabilities",
+            "counting visitors at the gates",
+            "selling raffle tickets",
+            "looking after lost children"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"the Orange team is in charge of recycling\" (B). E (counting) artık elektronik; G (lost children) başka bir grubun işi.",
+            "ar": "\"the Orange team is in charge of recycling\" (B). E أصبح إلكترونياً، وG تتولاه جهة أخرى.",
+            "en": "\"The Orange team is in charge of recycling.\" E and G are done by others."
+          },
+          "example": "Our class is in charge of recycling this month."
+        }
+      ]
+    },
+    {
+      "id": "t2-part3",
+      "title": "Test 2 · Part 3: Feedback on a Presentation",
+      "timeMinutes": 10,
+      "goal": "Questions 21–30: multiple choice and matching decisions in a feedback meeting; listen for what the tutor finally recommends.",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "You will hear two students talking to their tutor about a presentation they gave. Read the questions first. The recording plays once, as in the exam, with a short pause before questions 25–30."
+        },
+        {
+          "type": "audio",
+          "id": "t2p3-audio",
+          "speakers": {
+            "N": {
+              "name": "Narrator",
+              "voice": "en-GB-SoniaNeural"
+            },
+            "lang": {
+              "name": "Dr Lang",
+              "voice": "en-AU-WilliamMultilingualNeural"
+            },
+            "rosa": {
+              "name": "Rosa",
+              "voice": "en-GB-LibbyNeural"
+            },
+            "tom": {
+              "name": "Tom",
+              "voice": "en-US-AndrewNeural"
+            }
+          },
+          "lines": [
+            {
+              "speaker": "N",
+              "text": "Part three. You will hear two students, Rosa and Tom, getting feedback from their tutor, Dr Lang, on a presentation about food packaging. First, you have some time to look at questions twenty-one to twenty-four.",
+              "pauseAfterMs": 2500
+            },
+            {
+              "speaker": "N",
+              "text": "Now listen carefully and answer questions twenty-one to twenty-four.",
+              "pauseAfterMs": 1200
+            },
+            {
+              "speaker": "lang",
+              "text": "Thanks for coming in, both of you. I wanted to talk about your presentation on food packaging while it's still fresh.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "rosa",
+              "text": "We were a bit nervous about it, to be honest.",
+              "pauseAfterMs": 300
+            },
+            {
+              "speaker": "lang",
+              "text": "It didn't show. Your slides were clear, if a little crowded in places. But what really stood out for me was the examples you collected from shops here in town. Bringing in real packets from the high street made it feel very concrete.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "tom",
+              "text": "That was Rosa's idea. She spent a whole Saturday going round the shops.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "rosa",
+              "text": "It was fun, actually. What about the audience? Did they follow it?",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "lang",
+              "text": "Mostly. Nobody had trouble hearing you, and you finished just under twenty minutes, which was right. The main thing on the feedback forms was that you used terms like compostable and bio-based without explaining them. Several people got lost there.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "tom",
+              "text": "Fair point. We'd been reading about it for so long that we forgot other people hadn't.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "lang",
+              "text": "It happens. How did you find the research side, Rosa?",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "rosa",
+              "text": "I thought the survey would be the hard part, but we got plenty of responses in a week. The real problem was the packaging companies. We emailed eleven of them and most never replied, and the two that did wouldn't share any figures.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "tom",
+              "text": "Which was frustrating, because we wanted to compare what they say on their websites with what actually happens.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "lang",
+              "text": "That's very common, I'm afraid. Companies are often careful about what they share. You did the right thing by saying so in the presentation. And Tom, you looked less comfortable than Rosa up there. What would you do differently?",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "tom",
+              "text": "I think I read too much from my note cards. I've tried practising with a timer before, and it didn't really help. This time I'm going to record myself on video and watch it back, so I can see what the audience sees.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "lang",
+              "text": "Good idea. It's painful, but it works.",
+              "pauseAfterMs": 2500
+            },
+            {
+              "speaker": "N",
+              "text": "Before you hear the rest of the conversation, you have some time to look at questions twenty-five to thirty.",
+              "pauseAfterMs": 2500
+            },
+            {
+              "speaker": "N",
+              "text": "Now listen and answer questions twenty-five to thirty.",
+              "pauseAfterMs": 1200
+            },
+            {
+              "speaker": "lang",
+              "text": "Now, you're giving this again at the department open day, so let's go through it section by section.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "tom",
+              "text": "Will the audience be the same kind of people?",
+              "pauseAfterMs": 300
+            },
+            {
+              "speaker": "lang",
+              "text": "No, it'll be mostly school students and their parents, so a general audience. That's another reason to explain the technical terms. You'll have the same twenty minutes, though.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "rosa",
+              "text": "Shall we rewrite the introduction? I wasn't sure about it.",
+              "pauseAfterMs": 300
+            },
+            {
+              "speaker": "lang",
+              "text": "No, honestly, the introduction was spot on. Short, with a clear question. I wouldn't change a word.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "tom",
+              "text": "What about the history of plastic packaging? I thought that went well.",
+              "pauseAfterMs": 300
+            },
+            {
+              "speaker": "lang",
+              "text": "It was interesting, but it took nearly five minutes. If you get that down to one minute, you'll have time for the parts that matter more.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "rosa",
+              "text": "Then there's the supermarket case study.",
+              "pauseAfterMs": 300
+            },
+            {
+              "speaker": "lang",
+              "text": "That was the best part, and it came right at the end, when people were getting tired. I'd open with it. Start with the story of that one supermarket and then go into the background.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "tom",
+              "text": "OK. And the survey results? We put them in a big table.",
+              "pauseAfterMs": 300
+            },
+            {
+              "speaker": "lang",
+              "text": "The numbers are good, but nobody can read a table of thirty figures from the back of a room. Turn them into a simple bar chart and people will see the pattern at once.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "rosa",
+              "text": "And the section on edible packaging? I was worried people would think it sounded like science fiction.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "lang",
+              "text": "Some did, because you made big claims without any evidence. Find some real numbers, like how much it costs or how many products already use it, and it'll be much more convincing.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "tom",
+              "text": "Last one is the bit about glass bottles.",
+              "pauseAfterMs": 300
+            },
+            {
+              "speaker": "lang",
+              "text": "To be honest, that wasn't really about food packaging at all. It was mainly about drinks and recycling. I'd take it out altogether.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "rosa",
+              "text": "That's really useful. Thank you.",
+              "pauseAfterMs": 1500
+            },
+            {
+              "speaker": "N",
+              "text": "That is the end of Part three.",
+              "pauseAfterMs": 0
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Questions 21–24. Choose the correct letter, A, B or C."
+        },
+        {
+          "type": "choice",
+          "id": "t2q21",
+          "prompt": "21. What did the tutor like most about the presentation?",
+          "options": [
+            "the design of the slides",
+            "the examples from local shops",
+            "the way the students shared the speaking"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"what really stood out for me was the examples you collected from shops here in town\". A tuzak: slaytlar \"clear, if a little crowded\", en çok beğenilen değil. C hiç övülmüyor.",
+            "ar": "\"what really stood out for me was the examples you collected from shops here in town\". A فخّ: الشرائح \"clear, if a little crowded\".",
+            "en": "\"What really stood out for me was the examples you collected from shops.\""
+          },
+          "example": "What really stood out for me was the music."
+        },
+        {
+          "type": "choice",
+          "id": "t2q22",
+          "prompt": "22. According to the feedback forms, what was the main problem for the audience?",
+          "options": [
+            "They could not hear the speakers.",
+            "The presentation was too long.",
+            "Some words were not explained."
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "\"you used terms like compostable and bio-based without explaining them\". A: \"Nobody had trouble hearing you\"; B: \"just under twenty minutes, which was right\".",
+            "ar": "\"you used terms like compostable and bio-based without explaining them\". A وB نفاهما المعلم صراحة.",
+            "en": "\"You used terms ... without explaining them.\" Hearing and timing were fine."
+          },
+          "example": "The teacher used a lot of technical terms without explaining them."
+        },
+        {
+          "type": "choice",
+          "id": "t2q23",
+          "prompt": "23. What did Rosa find most difficult about the research?",
+          "options": [
+            "getting enough survey responses",
+            "getting information from companies",
+            "finding examples in shops"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"I thought the survey would be the hard part, but ... The real problem was the packaging companies.\" A tuzak: zor sanıyordu ama değildi. C: \"It was fun, actually.\"",
+            "ar": "\"I thought the survey would be the hard part, but ... The real problem was the packaging companies.\" A فخّ.",
+            "en": "\"I thought the survey would be the hard part, but ... The real problem was the packaging companies.\""
+          },
+          "example": "The real problem was getting the companies to reply."
+        },
+        {
+          "type": "choice",
+          "id": "t2q24",
+          "prompt": "24. What will Tom do to improve his speaking?",
+          "options": [
+            "practise with a timer",
+            "use more note cards",
+            "film himself and watch it"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "\"I'm going to record myself on video and watch it back\". A: denedi ve \"didn't really help\"; B: tersine, kartlardan çok okuduğunu söylüyor.",
+            "ar": "\"I'm going to record myself on video and watch it back\". A جرّبه و\"didn't really help\"؛ B عكس مشكلته.",
+            "en": "\"Record myself on video and watch it back.\" The timer \"didn't really help\"."
+          },
+          "example": "She recorded herself on video to check her pronunciation."
+        },
+        {
+          "type": "text",
+          "text": "Questions 25–30. What do they decide to do with each section of the presentation? Choose the correct letter, A–G. You will not use every letter."
+        },
+        {
+          "type": "choice",
+          "id": "t2q25",
+          "prompt": "25. the introduction",
+          "options": [
+            "remove it completely",
+            "make it shorter",
+            "add more figures",
+            "move it to the beginning",
+            "keep it as it is",
+            "show it as a chart",
+            "split it into two parts"
+          ],
+          "answer": 4,
+          "why": {
+            "tr": "Rosa yeniden yazmayı öneriyor, hoca: \"the introduction was spot on ... I wouldn't change a word.\" = olduğu gibi kalsın (E).",
+            "ar": "اقترحت Rosa إعادة الكتابة، فقال المعلم: \"spot on ... I wouldn't change a word\" أي يبقى كما هو (E).",
+            "en": "\"The introduction was spot on ... I wouldn't change a word.\""
+          },
+          "example": "Your answer was spot on; I wouldn't change a word."
+        },
+        {
+          "type": "choice",
+          "id": "t2q26",
+          "prompt": "26. the history of plastic packaging",
+          "options": [
+            "remove it completely",
+            "make it shorter",
+            "add more figures",
+            "move it to the beginning",
+            "keep it as it is",
+            "show it as a chart",
+            "split it into two parts"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"it took nearly five minutes. If you get that down to one minute\" = kısalt (B).",
+            "ar": "\"it took nearly five minutes. If you get that down to one minute\" أي اختصره (B).",
+            "en": "\"Get that down to one minute.\""
+          },
+          "example": "Try to get your speech down to two minutes."
+        },
+        {
+          "type": "choice",
+          "id": "t2q27",
+          "prompt": "27. the supermarket case study",
+          "options": [
+            "remove it completely",
+            "make it shorter",
+            "add more figures",
+            "move it to the beginning",
+            "keep it as it is",
+            "show it as a chart",
+            "split it into two parts"
+          ],
+          "answer": 3,
+          "why": {
+            "tr": "\"it came right at the end ... I'd open with it.\" = başa al (D).",
+            "ar": "\"it came right at the end ... I'd open with it\" أي انقله إلى البداية (D).",
+            "en": "\"It came right at the end ... I'd open with it.\""
+          },
+          "example": "Open your essay with a short story to catch the reader's attention."
+        },
+        {
+          "type": "choice",
+          "id": "t2q28",
+          "prompt": "28. the survey results",
+          "options": [
+            "remove it completely",
+            "make it shorter",
+            "add more figures",
+            "move it to the beginning",
+            "keep it as it is",
+            "show it as a chart",
+            "split it into two parts"
+          ],
+          "answer": 5,
+          "why": {
+            "tr": "\"Turn them into a simple bar chart\" (F). \"The numbers are good\": veri eklemeye gerek yok, C tuzak.",
+            "ar": "\"Turn them into a simple bar chart\" (F). \"The numbers are good\" لذا C فخّ.",
+            "en": "\"Turn them into a simple bar chart.\""
+          },
+          "example": "The bar chart shows the pattern much more clearly than the table."
+        },
+        {
+          "type": "choice",
+          "id": "t2q29",
+          "prompt": "29. edible packaging",
+          "options": [
+            "remove it completely",
+            "make it shorter",
+            "add more figures",
+            "move it to the beginning",
+            "keep it as it is",
+            "show it as a chart",
+            "split it into two parts"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "\"you made big claims without any evidence. Find some real numbers\" = rakam ekle (C).",
+            "ar": "\"you made big claims without any evidence. Find some real numbers\" أي أضف أرقاماً (C).",
+            "en": "\"Find some real numbers ... it'll be much more convincing.\""
+          },
+          "example": "Add some real figures to make your argument more convincing."
+        },
+        {
+          "type": "choice",
+          "id": "t2q30",
+          "prompt": "30. glass bottles",
+          "options": [
+            "remove it completely",
+            "make it shorter",
+            "add more figures",
+            "move it to the beginning",
+            "keep it as it is",
+            "show it as a chart",
+            "split it into two parts"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "\"that wasn't really about food packaging at all ... I'd take it out altogether.\" = tamamen çıkar (A).",
+            "ar": "\"that wasn't really about food packaging at all ... I'd take it out altogether\" أي احذفه (A).",
+            "en": "\"I'd take it out altogether.\""
+          },
+          "example": "That paragraph is off topic, so take it out altogether."
+        }
+      ]
+    },
+    {
+      "id": "t2-part4",
+      "title": "Test 2 · Part 4: How Desert Plants Survive",
+      "timeMinutes": 10,
+      "goal": "Questions 31–40: note completion, ONE WORD ONLY, from a biology lecture; follow the three parts of the talk.",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "You will hear part of a lecture. Read the notes first. In Part 4 there is no pause in the middle, and the recording plays once."
+        },
+        {
+          "type": "audio",
+          "id": "t2p4-audio",
+          "speakers": {
+            "N": {
+              "name": "Narrator",
+              "voice": "en-GB-SoniaNeural"
+            },
+            "lect": {
+              "name": "Lecturer",
+              "voice": "en-NZ-MollyNeural"
+            }
+          },
+          "lines": [
+            {
+              "speaker": "N",
+              "text": "Part four. You will hear a lecture on how desert plants survive with very little water. First, you have some time to look at questions thirty-one to forty.",
+              "pauseAfterMs": 3000
+            },
+            {
+              "speaker": "N",
+              "text": "Now listen carefully and answer questions thirty-one to forty.",
+              "pauseAfterMs": 1200
+            },
+            {
+              "speaker": "lect",
+              "text": "Good morning, everyone. In today's lecture I want to look at one of the toughest problems in nature: how plants survive in deserts, where it may not rain for months, sometimes years. I'll look at three areas: roots, stems and leaves, and finally timing.",
+              "pauseAfterMs": 600
+            },
+            {
+              "speaker": "lect",
+              "text": "First, though, a quick definition. When we say desert, we don't necessarily mean somewhere hot and sandy. Scientists usually define a desert as any place that gets less than about two hundred and fifty millimetres of rain a year. So parts of Antarctica count as desert too, although today I'll be talking about the hot ones.",
+              "pauseAfterMs": 600
+            },
+            {
+              "speaker": "lect",
+              "text": "Let's start underground. Many desert plants have two quite different root systems. The first is a wide network of fine roots that spread out sideways, often several metres, just below the surface. When rain does come, it usually doesn't soak in very far, so these roots are there to catch it quickly before it evaporates.",
+              "pauseAfterMs": 600
+            },
+            {
+              "speaker": "lect",
+              "text": "The second system goes in the opposite direction. Some shrubs send a single root straight down, sometimes more than fifty metres, until it reaches groundwater. This gives the plant a steady supply even in the driest years, although it takes a long time to grow.",
+              "pauseAfterMs": 600
+            },
+            {
+              "speaker": "lect",
+              "text": "Now to the parts above ground. Cacti are the obvious example. Their stems store water, and many of them are covered in vertical folds. After rain, these folds open out, rather like an accordion, so the stem can swell and hold much more. In a dry period the stem slowly shrinks again.",
+              "pauseAfterMs": 400
+            },
+            {
+              "speaker": "lect",
+              "text": "A large cactus can take in hundreds of litres after a single storm, and some of the biggest weigh several tonnes when they're full.",
+              "pauseAfterMs": 600
+            },
+            {
+              "speaker": "lect",
+              "text": "What about the spines? People usually say they're there to stop animals eating the plant. That's partly true, but it isn't their main job. Thousands of spines together provide shade, and that keeps the surface of the stem cooler and reduces water loss.",
+              "pauseAfterMs": 600
+            },
+            {
+              "speaker": "lect",
+              "text": "Plants that do have leaves tend to keep them small. And the leaves are often covered with a thin layer of wax. You can sometimes see it as a grey or shiny coating, and it works a bit like a raincoat in reverse: it keeps water in rather than out.",
+              "pauseAfterMs": 600
+            },
+            {
+              "speaker": "lect",
+              "text": "Some shrubs go even further and simply drop their leaves when the dry season starts. They stand there looking bare and lifeless for months, but as soon as it rains, new leaves appear, sometimes within a few days. It's a bit like a tree in a northern winter, except the problem is drought rather than cold.",
+              "pauseAfterMs": 600
+            },
+            {
+              "speaker": "lect",
+              "text": "Next, and this is the clever part, timing. Plants take in carbon dioxide through tiny holes called stomata, but every time the holes open, water escapes. Most plants open them during the day. Many desert plants, however, keep them shut in the heat and open them only at night, when it's cooler, and store the carbon dioxide until morning.",
+              "pauseAfterMs": 600
+            },
+            {
+              "speaker": "lect",
+              "text": "This saves a huge amount of water, but there's a price. Plants that work this way have much slower growth than ordinary plants, which is one reason a cactus can take decades to reach full size.",
+              "pauseAfterMs": 600
+            },
+            {
+              "speaker": "lect",
+              "text": "Timing matters for seeds too. In a dry year, many desert seeds don't germinate at all. It was once thought they could only survive for a few months like this, and later people said a few years. We now know that some can stay dormant for decades, waiting for one good rain.",
+              "pauseAfterMs": 600
+            },
+            {
+              "speaker": "lect",
+              "text": "The most extreme case is the so-called resurrection plant. It can lose almost all of its water and look completely dead, brown and curled up. But give it water and it turns green again. People expect this to take days, but in fact it recovers within hours.",
+              "pauseAfterMs": 600
+            },
+            {
+              "speaker": "lect",
+              "text": "Why does all this matter beyond the desert? As droughts become more common, scientists are studying the genes behind these features. The hope is to develop food crops that need less irrigation, which would make a real difference to farmers in dry regions.",
+              "pauseAfterMs": 600
+            },
+            {
+              "speaker": "lect",
+              "text": "In the next session we'll look at desert animals. Thank you.",
+              "pauseAfterMs": 1500
+            },
+            {
+              "speaker": "N",
+              "text": "That is the end of Part four.",
+              "pauseAfterMs": 0
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Complete the notes below. Write ONE WORD ONLY for each answer."
+        },
+        {
+          "type": "text",
+          "text": "Desert plants: surviving with little water"
+        },
+        {
+          "type": "gap",
+          "id": "t2q31",
+          "prompt": "31. Roots: a wide network of fine roots spreads out just below the ___.",
+          "answers": [
+            "surface"
+          ],
+          "why": {
+            "tr": "\"fine roots that spread out sideways ... just below the surface\".",
+            "ar": "\"fine roots that spread out sideways ... just below the surface\".",
+            "en": "\"Spread out sideways ... just below the surface.\""
+          },
+          "example": "The fish swam just below the surface of the water."
+        },
+        {
+          "type": "gap",
+          "id": "t2q32",
+          "prompt": "32. Some shrubs have a single root that goes down more than 50 metres to reach ___.",
+          "answers": [
+            "groundwater",
+            "ground water",
+            "water"
+          ],
+          "why": {
+            "tr": "\"send a single root straight down ... until it reaches groundwater\".",
+            "ar": "\"send a single root straight down ... until it reaches groundwater\".",
+            "en": "\"Until it reaches groundwater.\""
+          },
+          "example": "In dry years the farmers depend on groundwater."
+        },
+        {
+          "type": "gap",
+          "id": "t2q33",
+          "prompt": "33. Stems: folds open out like an ___ so the cactus can swell after rain.",
+          "answers": [
+            "accordion"
+          ],
+          "why": {
+            "tr": "\"these folds open out, rather like an accordion, so the stem can swell\". Not \"like\" kelimesini koruyor; sadece benzetilen nesneyi yaz.",
+            "ar": "\"these folds open out, rather like an accordion\". اكتب الشيء المشبَّه به فقط.",
+            "en": "\"These folds open out, rather like an accordion.\""
+          },
+          "example": "The old man played a tune on his accordion."
+        },
+        {
+          "type": "gap",
+          "id": "t2q34",
+          "prompt": "34. The main job of spines is to provide ___, which reduces water loss.",
+          "answers": [
+            "shade"
+          ],
+          "why": {
+            "tr": "\"That's partly true, but it isn't their main job. Thousands of spines together provide shade\". Tuzak: hayvanlardan korunma, \"partly true\" ama asıl görev değil.",
+            "ar": "\"it isn't their main job. Thousands of spines together provide shade\". الفخّ: الحماية من الحيوانات.",
+            "en": "\"It isn't their main job. Thousands of spines together provide shade.\""
+          },
+          "example": "The trees provide shade in the hottest part of the day."
+        },
+        {
+          "type": "gap",
+          "id": "t2q35",
+          "prompt": "35. Leaves are small and often covered with a thin layer of ___.",
+          "answers": [
+            "wax"
+          ],
+          "why": {
+            "tr": "\"the leaves are often covered with a thin layer of wax\". \"raincoat\" bir benzetme, cevap değil.",
+            "ar": "\"the leaves are often covered with a thin layer of wax\". كلمة raincoat تشبيه فقط.",
+            "en": "\"Covered with a thin layer of wax.\" Raincoat is only a comparison."
+          },
+          "example": "Apples from the shop are often covered with a thin layer of wax."
+        },
+        {
+          "type": "gap",
+          "id": "t2q36",
+          "prompt": "36. Many desert plants open their stomata only at ___.",
+          "answers": [
+            "night",
+            "nighttime",
+            "night-time"
+          ],
+          "why": {
+            "tr": "\"Most plants open them during the day. Many desert plants, however, ... open them only at night\". Tuzak: day, çoğu bitki için.",
+            "ar": "\"Most plants open them during the day. Many desert plants, however, ... only at night\". الفخّ: day.",
+            "en": "\"Most plants ... during the day. Many desert plants ... only at night.\""
+          },
+          "example": "Owls hunt only at night."
+        },
+        {
+          "type": "gap",
+          "id": "t2q37",
+          "prompt": "37. The cost: these plants have much slower ___.",
+          "answers": [
+            "growth"
+          ],
+          "why": {
+            "tr": "\"Plants that work this way have much slower growth\". \"grow\" fiil; boşluk isim istiyor: growth.",
+            "ar": "\"have much slower growth\". الفراغ يحتاج اسماً: growth وليس grow.",
+            "en": "\"Much slower growth than ordinary plants.\""
+          },
+          "example": "Cold weather leads to slower growth in young trees."
+        },
+        {
+          "type": "gap",
+          "id": "t2q38",
+          "prompt": "38. Some seeds can stay dormant for ___.",
+          "answers": [
+            "decades"
+          ],
+          "why": {
+            "tr": "\"It was once thought ... a few months ... later people said a few years. We now know that some can stay dormant for decades\". Tuzak: months ve years, eski görüşler.",
+            "ar": "\"once thought ... a few months ... later ... a few years. We now know ... for decades\". الفخّ: months وyears.",
+            "en": "\"Once thought ... months ... years. We now know ... for decades.\""
+          },
+          "example": "Some of these trees have been here for decades."
+        },
+        {
+          "type": "gap",
+          "id": "t2q39",
+          "prompt": "39. The resurrection plant turns green again within ___.",
+          "answers": [
+            "hours"
+          ],
+          "why": {
+            "tr": "\"People expect this to take days, but in fact it recovers within hours.\" Tuzak: days.",
+            "ar": "\"People expect this to take days, but in fact it recovers within hours.\" الفخّ: days.",
+            "en": "\"People expect ... days, but in fact it recovers within hours.\""
+          },
+          "example": "The flowers recovered within hours of being watered."
+        },
+        {
+          "type": "gap",
+          "id": "t2q40",
+          "prompt": "40. Aim of research: food crops that need less ___.",
+          "answers": [
+            "irrigation"
+          ],
+          "why": {
+            "tr": "\"The hope is to develop food crops that need less irrigation\". Tek kelime: irrigation (sulama).",
+            "ar": "\"develop food crops that need less irrigation\". كلمة واحدة: irrigation (الري).",
+            "en": "\"Food crops that need less irrigation.\""
+          },
+          "example": "Rice needs a lot of irrigation in dry areas."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,343 @@
+{
+  "id": "lesson-23",
+  "number": 23,
+  "title": "Growing Up",
+  "topic": "Children and parenting",
+  "level": "B2",
+  "goal": "Follow students discussing a study of parents and children, discuss strict and relaxed parenting in an essay, and make deductions about the present and past with must, might and can't (have).",
+  "steps": [
+    {
+      "kind": "words",
+      "i18n": {"ar":{"title":"المفردات: الأطفال والتربية","intro":"في هذا الدرس 12 كلمة وعبارة عن تربية الأطفال والعلاقات الأسرية ومرحلة الشباب. تتكرر ذكريات الطفولة كثيرًا في Speaking Part 2، والانضباط ووقت الشاشة ودور الوالدين في Task 2."},"en":{"title":"Vocabulary: children and parenting","intro":"This lesson has 12 words and phrases about raising children, family relationships and adolescence. Childhood memories come up a lot in Speaking Part 2, and discipline, screen time and the role of parents in Task 2."}},
+      "title": "Kelimeler: çocuklar ve ebeveynlik",
+      "intro": "Bu derste çocuk yetiştirme, aile ilişkileri ve gençlik dönemi hakkında 12 kelime ve kalıp var. Speaking Part 2'de çocukluk anıları, Task 2'de ise disiplin, ekran süresi ve ebeveynlerin rolü çok sık çıkar.",
+      "words": [
+        { "en": "upbringing", "pos": "noun", "tr": "yetiştirilme tarzı, terbiye", "ar": "التنشئة، التربية", "example": "She had a strict upbringing in a small village." },
+        { "en": "discipline", "pos": "noun / verb", "tr": "disiplin; disiplin altına almak", "ar": "الانضباط؛ يؤدِّب", "example": "Teachers need to maintain discipline in the classroom." },
+        { "en": "role model", "pos": "phrase", "tr": "rol model, örnek alınan kişi", "ar": "قدوة", "example": "Parents are the most important role model for young children." },
+        { "en": "peer pressure", "pos": "phrase", "tr": "akran baskısı", "ar": "ضغط الأقران", "example": "Many teenagers start smoking because of peer pressure." },
+        { "en": "overprotective", "pos": "adjective", "tr": "aşırı korumacı", "ar": "مُفرط في الحماية", "example": "Overprotective parents may prevent children from learning to take risks." },
+        { "en": "praise", "pos": "noun / verb", "tr": "övgü; övmek", "ar": "المديح؛ يمدح", "example": "Children respond well to praise for their effort." },
+        { "en": "nurture", "pos": "noun / verb", "tr": "yetiştirme, besleyip büyütme; yetiştirmek", "ar": "الرعاية والتنشئة؛ يرعى", "example": "Good teachers nurture their students' curiosity." },
+        { "en": "childcare", "pos": "noun", "tr": "çocuk bakımı (kreş, bakıcı vb.)", "ar": "رعاية الأطفال", "example": "The cost of childcare makes it hard for some parents to return to work." },
+        { "en": "self-esteem", "pos": "noun", "tr": "özsaygı, kendine güven", "ar": "تقدير الذات", "example": "Sport can help to build children's self-esteem." },
+        { "en": "boundaries", "pos": "noun (plural)", "tr": "sınırlar (davranış kuralları)", "ar": "الحدود (قواعد السلوك)", "example": "Children feel safer when parents set clear boundaries." },
+        { "en": "adolescence", "pos": "noun", "tr": "ergenlik dönemi", "ar": "المراهقة", "example": "Adolescence is a time of rapid physical and emotional change." },
+        { "en": "sibling", "pos": "noun", "tr": "kardeş (kız ya da erkek)", "ar": "أخ أو أخت", "example": "Do you have any siblings, or are you an only child?" }
+      ],
+      "practice": [
+        {
+          "type": "choice", "id": "w1",
+          "prompt": "Parents who never let their children climb trees or walk to school alone may be too ___.",
+          "options": ["overprotective", "independent", "disciplined", "nurtured"],
+          "answer": 0,
+          "why": { "tr": "Çocuğun her riskten uzak tutulması aşırı korumacılıktır: overprotective. \"independent\" çocuğun kendisini anlatır, ebeveyni değil.", "ar": "منع الطفل من كل خطر هو إفراط في الحماية: overprotective. أما independent فتصف الطفل نفسه لا الوالدين.", "en": "Never allowing any risk means being overprotective." },
+          "example": "My mother was a little overprotective when I was young."
+        },
+        {
+          "type": "gap", "id": "w2",
+          "prompt": "Write ONE word: Teenagers often feel ___ pressure to wear the same clothes as their friends.",
+          "answers": ["peer"],
+          "why": { "tr": "Kalıp \"peer pressure\" = akran baskısı. \"peer\" yaşıt, akran demek.", "ar": "التعبير الثابت peer pressure أي ضغط الأقران، وpeer تعني النظير في العمر.", "en": "\"Peer pressure\": pressure from people of your own age." },
+          "example": "Peer pressure can be positive as well as negative."
+        },
+        {
+          "type": "choice", "id": "w3",
+          "prompt": "Which verb collocates best: \"Parents should ___ clear boundaries for young children.\"",
+          "options": ["set", "make up", "do", "take"],
+          "answer": 0,
+          "why": { "tr": "Kalıp \"set boundaries / set limits / set rules\" = sınır koymak. \"make up\" uydurmak anlamına gelir.", "ar": "التعبير الثابت set boundaries أو set rules أي يضع حدودًا، أما make up فتعني يختلق.", "en": "We \"set\" boundaries, limits and rules." },
+          "example": "Good teachers set clear boundaries from the first day."
+        },
+        {
+          "type": "choice", "id": "w4",
+          "prompt": "Someone's upbringing is…",
+          "options": ["the way they were cared for and taught as a child", "the age at which they become an adult", "the job their parents do", "the house where they grew up"],
+          "answer": 0,
+          "why": { "tr": "\"Upbringing\" çocuklukta nasıl yetiştirildiğin, aldığın terbiye ve değerlerdir (\"bring up\" = yetiştirmek fiilinden).", "ar": "upbringing هي الطريقة التي رُبّي بها الشخص في طفولته والقيم التي تعلّمها، من الفعل bring up أي يربّي.", "en": "Upbringing comes from \"bring up\": how you were raised." },
+          "example": "His religious upbringing influenced his values."
+        },
+        {
+          "type": "gap", "id": "w5",
+          "prompt": "Write the correct form of ADOLESCENT: Many mental health problems first appear during ___.",
+          "answers": ["adolescence"],
+          "why": { "tr": "\"during\" sonrasında dönem bildiren bir isim gerekir: adolescent (ergen, kişi) → adolescence (ergenlik dönemi).", "ar": "بعد during نحتاج إلى اسم يدل على مرحلة: adolescent (المراهق) تصبح adolescence (المراهقة).", "en": "A noun for the period of life: adolescence (an adolescent is a person)." },
+          "example": "Friendships become very important during adolescence."
+        },
+        {
+          "type": "choice", "id": "w6",
+          "prompt": "\"Nature or nurture?\" In this question, \"nurture\" means…",
+          "options": ["the influence of upbringing and environment", "the genes we are born with", "the natural world", "medical care for babies"],
+          "answer": 0,
+          "why": { "tr": "\"Nature vs nurture\" tartışmasında \"nature\" doğuştan gelen genler, \"nurture\" ise yetiştirilme ve çevrenin etkisidir.", "ar": "في نقاش nature أم nurture تعني nature الجينات الموروثة، وnurture تأثير التربية والبيئة.", "en": "Nature = genes; nurture = upbringing and environment." },
+          "example": "Intelligence depends on both nature and nurture."
+        }
+      ]
+    },
+    {
+      "kind": "listen",
+      "i18n": {"ar":{"title":"الاستماع · Part 3: دراسة ملاحظة في ملعب أطفال","intro":"طالبا علم نفس، Kirsty وJosh، يناقشان مع أستاذهما دراستهما عن طريقة تفاعل الآباء مع أطفالهم في ملاعب الأطفال. اقرأ الأسئلة أولًا.","tip":"في أسئلة المطابقة في Part 3 قد تُذكر كل الخيارات بشكل ما في الحوار. انتبه لاستنتاج الطالبين عن كل نتيجة: \"we expected that\" (متوقعة)، \"that really surprised us\" (مفاجئة)، \"it's hard to tell\" (صعبة القياس). تتبع الأسئلة ترتيب الحوار."},"en":{"title":"Listening · Part 3: an observation study in a playground","intro":"Two psychology students, Kirsty and Josh, discuss with their tutor their study of how parents respond to children in playgrounds. Read the questions first.","tip":"In Part 3 matching questions all the options may be mentioned somehow in the conversation. For each finding, notice the students' conclusion: \"we expected that\" (expected), \"that really surprised us\" (surprising), \"it's hard to tell\" (hard to measure). The questions follow the order of the conversation."}},
+      "title": "Dinleme · Part 3: oyun parkında bir gözlem çalışması",
+      "intro": "İki psikoloji öğrencisi, Kirsty ve Josh, oyun parklarında ebeveynlerin çocuklara nasıl tepki verdiğini inceleyen çalışmalarını hocalarıyla konuşuyor. Önce soruları oku.",
+      "tip": "Part 3 eşleştirme sorularında seçeneklerin hepsi konuşmada bir şekilde geçebilir. Her bulgu için öğrencilerin vardığı sonuca dikkat et: \"we expected that\" (beklenen), \"that really surprised us\" (şaşırtıcı), \"it's hard to tell\" (ölçmesi zor). Sorular konuşma sırasını izler.",
+      "audio": {
+        "type": "audio", "id": "l-audio",
+        "speakers": {
+          "N": { "name": "Narrator", "voice": "en-GB-SoniaNeural" },
+          "vance": { "name": "Dr Vance", "voice": "en-GB-RyanNeural" },
+          "kirsty": { "name": "Kirsty", "voice": "en-NZ-MollyNeural" },
+          "josh": { "name": "Josh", "voice": "en-US-AndrewNeural" }
+        },
+        "lines": [
+          { "speaker": "N", "text": "You will hear two psychology students, Kirsty and Josh, discussing their research project with their tutor. First, you have some time to look at questions one to six.", "pauseAfterMs": 2500 },
+          { "speaker": "N", "text": "Now listen carefully and answer questions one to six.", "pauseAfterMs": 1200 },
+          { "speaker": "vance", "text": "Right, Kirsty, Josh, let's talk about your observation project. Remind me what you actually did.", "pauseAfterMs": 400 },
+          { "speaker": "kirsty", "text": "We spent six afternoons in two city playgrounds, watching how parents reacted when young children got into difficulty. Being stuck at the top of a climbing frame, for example, or an argument with a sibling over a toy.", "pauseAfterMs": 400 },
+          { "speaker": "josh", "text": "We didn't record any names or faces, of course. We just made notes every five minutes.", "pauseAfterMs": 400 },
+          { "speaker": "vance", "text": "Good. Why playgrounds, though, rather than a nursery? You might have got more consistent data from a childcare centre.", "pauseAfterMs": 400 },
+          { "speaker": "kirsty", "text": "We did consider it. Getting permission from every family would have taken a while, but that wasn't really the issue. Mainly, nursery staff are trained professionals, and we wanted to see how ordinary parents behave.", "pauseAfterMs": 400 },
+          { "speaker": "vance", "text": "Fair enough. And what were you expecting to find?", "pauseAfterMs": 400 },
+          { "speaker": "josh", "text": "We'd read a lot about overprotective parenting, so we assumed parents would rush in the moment a child was in trouble. In fact, most of them waited. On average it was nearly a minute before they stepped in.", "pauseAfterMs": 400 },
+          { "speaker": "vance", "text": "Interesting. Why do you think that was?", "pauseAfterMs": 400 },
+          { "speaker": "kirsty", "text": "Some of them must have been giving the children a chance to solve the problem themselves. One mother told us afterwards that she was trying to build her son's self-esteem by not helping too quickly. But we can't be sure about the others. Some might not have noticed at all, because they were on their phones.", "pauseAfterMs": 400 },
+          { "speaker": "vance", "text": "That's a sensible level of caution. Now, your three main findings. Phones first.", "pauseAfterMs": 400 },
+          { "speaker": "josh", "text": "Parents were looking at a phone about a third of the time. Honestly, we expected that. It's very close to what earlier studies have found, so it wasn't news.", "pauseAfterMs": 400 },
+          { "speaker": "vance", "text": "And the difference between mothers and fathers?", "pauseAfterMs": 400 },
+          { "speaker": "kirsty", "text": "That's the one that really surprised us. Fathers stepped in more quickly than mothers, which is the opposite of what we'd predicted. We wondered whether the rain on two of the days might have kept some parents at home, but the pattern was the same on dry days too.", "pauseAfterMs": 400 },
+          { "speaker": "vance", "text": "And how often children asked for help?", "pauseAfterMs": 400 },
+          { "speaker": "josh", "text": "That's our weakest result. With very small children, it's often impossible to tell whether a child is asking for help or just making noise. So that figure was really hard to measure, and we're not confident in it.", "pauseAfterMs": 400 },
+          { "speaker": "vance", "text": "Good, say so. I also noticed you wrote a lot about praise. Parents who praise every tiny success, setting clear boundaries, being a role model and so on.", "pauseAfterMs": 400 },
+          { "speaker": "kirsty", "text": "Yes, we may have got a bit carried away. We read a lot about discipline and upbringing, but we didn't actually observe much of it.", "pauseAfterMs": 400 },
+          { "speaker": "vance", "text": "Then cut most of it. What I'd really like to see in the report is a proper section on limitations. You couldn't have known what the parents were thinking, and two playgrounds can't represent a whole city. Interviews would have been ideal, but don't try to add them now. You simply haven't got time.", "pauseAfterMs": 400 },
+          { "speaker": "josh", "text": "OK. A section on limitations, and less on the background reading.", "pauseAfterMs": 1500 },
+          { "speaker": "N", "text": "That is the end of the recording.", "pauseAfterMs": 0 }
+        ]
+      },
+      "questions": [
+        { "type": "text", "text": "Questions 1–2. Choose the correct letter." },
+        {
+          "type": "choice", "id": "l1",
+          "prompt": "1. Why did the students choose playgrounds rather than a nursery?",
+          "options": ["They could not get permission from a nursery in time.", "They wanted to observe parents rather than trained staff.", "Their tutor recommended playgrounds."],
+          "answer": 1,
+          "why": { "tr": "İzin almak zaman alırdı ama \"that wasn't really the issue\". Asıl neden: \"nursery staff are trained professionals, and we wanted to see how ordinary parents behave\". Hoca ise kreşi düşünmelerini önerdi.", "ar": "الحصول على الإذن كان سيستغرق وقتًا لكن \"that wasn't really the issue\". السبب الحقيقي: \"we wanted to see how ordinary parents behave\". والمشرف اقترح الحضانة لا الملعب.", "en": "Permission \"wasn't really the issue\"; \"we wanted to see how ordinary parents behave\"." },
+          "example": "Time wasn't really the issue; we mainly wanted to watch parents."
+        },
+        {
+          "type": "choice", "id": "l2",
+          "prompt": "2. What did the students find about how parents reacted?",
+          "options": ["Most parents helped their children immediately.", "Most parents waited before helping.", "Most parents did not notice the problem."],
+          "answer": 1,
+          "why": { "tr": "Beklenti hemen müdahale etmeleriydi ama \"In fact, most of them waited… nearly a minute\". Bazılarının fark etmemiş olabileceği sadece bir olasılık (\"might not have noticed\"), çoğunluk değil.", "ar": "كانوا يتوقعون تدخلًا فوريًا، لكن \"In fact, most of them waited\". أما عدم الانتباه فمجرد احتمال لبعضهم (might not have noticed) لا للأغلبية.", "en": "\"In fact, most of them waited.\" Not noticing was only a possibility for some." },
+          "example": "We expected them to rush in, but in fact most of them waited."
+        },
+        { "type": "text", "text": "Questions 3–5. What comment do the students make about each finding? Choose the correct letter." },
+        {
+          "type": "choice", "id": "l3",
+          "prompt": "3. how often parents looked at phones",
+          "options": ["It surprised them.", "It matched earlier research.", "It may have been affected by the weather.", "It was difficult to measure."],
+          "answer": 1,
+          "why": { "tr": "Josh: \"we expected that. It's very close to what earlier studies have found\". Önceki araştırmalarla uyumlu.", "ar": "يقول Josh: \"we expected that. It's very close to what earlier studies have found\"، أي أنه يتوافق مع الأبحاث السابقة.", "en": "\"It's very close to what earlier studies have found.\"" },
+          "example": "Our result was very close to what earlier studies found."
+        },
+        {
+          "type": "choice", "id": "l4",
+          "prompt": "4. the difference between mothers and fathers",
+          "options": ["It surprised them.", "It matched earlier research.", "It may have been affected by the weather.", "It was difficult to measure."],
+          "answer": 0,
+          "why": { "tr": "Kirsty: \"That's the one that really surprised us.\" Yağmuru düşündüler ama \"the pattern was the same on dry days too\": hava etkisi değil. Tuzak C.", "ar": "تقول Kirsty: \"That's the one that really surprised us\". فكّروا في المطر لكن \"the pattern was the same on dry days too\"، فالخيار C فخّ.", "en": "\"That's the one that really surprised us.\" The weather idea was rejected." },
+          "example": "That was the result that really surprised us."
+        },
+        {
+          "type": "choice", "id": "l5",
+          "prompt": "5. how often children asked for help",
+          "options": ["It surprised them.", "It matched earlier research.", "It may have been affected by the weather.", "It was difficult to measure."],
+          "answer": 3,
+          "why": { "tr": "Josh: \"it's often impossible to tell whether a child is asking for help… that figure was really hard to measure\".", "ar": "يقول Josh: \"it's often impossible to tell whether a child is asking for help… that figure was really hard to measure\".", "en": "\"That figure was really hard to measure.\"" },
+          "example": "Children's feelings are hard to measure."
+        },
+        { "type": "text", "text": "Question 6. Choose the correct letter." },
+        {
+          "type": "choice", "id": "l6",
+          "prompt": "6. What does the tutor want the students to add to their report?",
+          "options": ["interviews with some of the parents", "more background reading on discipline", "a section on the limitations of the study"],
+          "answer": 2,
+          "why": { "tr": "\"What I'd really like to see in the report is a proper section on limitations.\" Görüşmeler ideal olurdu ama \"don't try to add them now\"; okuma bölümünü ise kısaltmalarını istiyor.", "ar": "\"What I'd really like to see in the report is a proper section on limitations\". المقابلات كانت ستكون مثالية لكن \"don't try to add them now\"، ويطلب تقليص القراءات الخلفية.", "en": "\"A proper section on limitations.\" Interviews: \"don't try to add them now\"; the reading should be cut." },
+          "example": "Your report needs a section on the limitations of the study."
+        }
+      ]
+    },
+    {
+      "kind": "read",
+      "i18n": {"ar":{"title":"القراءة: عناوين الفقرات والاختيار من متعدد","intro":"ستقرأ نصًا أكاديميًا عما يشكّل شخصية الأطفال وسلوكهم: الجينات والوالدان والأقران واللعب. الفقرات A–E.","tip":"في مطابقة العناوين اختر العنوان الذي يناسب الفكرة الرئيسية للفقرة، لا مثالًا واحدًا أو تفصيلًا فيها. في الاختيار من متعدد، عبارة \"according to the writer\" تسأل عن رأي الكاتب نفسه، لا عن رأي الباحثين."},"en":{"title":"Reading: paragraph headings and multiple choice","intro":"You will read an academic text about what shapes children's personality and behaviour: genes, parents, peers and play. Paragraphs A–E.","tip":"In heading matching, choose the heading that fits the paragraph's main idea, not a single example or detail in it. In multiple choice, \"according to the writer\" asks for the writer's own opinion, not the researchers'."}},
+      "title": "Okuma: paragraf başlıkları ve çoktan seçmeli",
+      "intro": "Çocukların kişiliğini ve davranışlarını neyin şekillendirdiğini anlatan akademik bir metin okuyacaksın: genler, ebeveynler, akranlar ve oyun. Paragraflar A–E.",
+      "tip": "Başlık eşleştirmede paragrafın tek bir örneğine ya da ayrıntısına değil, ana fikrine uyan başlığı seç. Çoktan seçmeli sorularda \"according to the writer\" ifadesi yazarın kendi görüşünü sorar; araştırmacıların görüşünü sormaz.",
+      "passage": [
+        { "type": "heading", "text": "What Shapes a Child?" },
+        { "type": "text", "text": "A  Few questions have been argued about for longer than the relative importance of nature and nurture. Are children's personalities mainly the result of the genes they inherit, or of the way they are raised? Studies of twins have provided some of the clearest evidence. Identical twins share all their genes, whereas non-identical twins share about half, so comparing the two groups allows researchers to estimate how much of a trait is inherited. Such studies consistently suggest that genes play a substantial part in characteristics such as temperament, although they never explain everything. Most researchers now agree that the question is not nature or nurture, but how the two interact." },
+        { "type": "text", "text": "B  Within the home, one of the most influential frameworks was developed by the psychologist Diana Baumrind in the 1960s. She described three broad styles of parenting. Authoritarian parents demand obedience and rely on strict discipline, with little explanation. Permissive parents are warm but set few boundaries. Authoritative parents combine warmth with clear rules, and explain the reasons behind them. Later research has often linked the authoritative style with better outcomes, including higher self-esteem and greater success at school, although the effects vary between cultures and families. In some societies, for example, strict rules are seen as a sign of care rather than coldness, and children raised in this way do not appear to suffer the same disadvantages. Researchers have therefore become more cautious about recommending a single ideal style for every family." },
+        { "type": "text", "text": "C  The way parents use praise has also attracted attention. Research associated with the psychologist Carol Dweck suggests that children who are praised for their intelligence may become anxious about failure and avoid difficult tasks, whereas those who are praised for effort are more willing to try again after making mistakes. Some later studies have found smaller effects than the original work, and the debate continues. Nevertheless, many teachers and parents now try to praise the process of learning rather than a child's fixed abilities, commenting on a clever strategy or hard work instead of simply saying \"You're so clever\"." },
+        { "type": "text", "text": "D  Parents are not the only influence. In 1998, the writer Judith Rich Harris caused controversy by arguing that the influence of peers, rather than parents, is what most shapes a child's personality outside the home. Her argument was strongly criticised, but few researchers would deny that friends become increasingly important as children grow older. During adolescence, peer pressure can encourage risky behaviour, but friends can also be a positive role model, motivating each other to study or take up sport. Even a sibling can have more influence on daily habits than either parent." },
+        { "type": "text", "text": "E  Finally, many experts are concerned about the decline of unstructured play. In many countries, children now spend more time in organised activities, in childcare or indoors in front of screens, and less time playing freely outdoors with other children. Some psychologists argue that overprotective adults, worried about traffic and strangers, have removed opportunities for children to take small risks, solve problems and manage their own conflicts. Such skills, they suggest, cannot easily be taught directly; they have to be learned through experience. Others reply that the dangers are real and that modern children have opportunities their parents never had. What is clear is that a child's upbringing is shaped not only by parents, but by the whole environment in which they grow up." }
+      ],
+      "questions": [
+        { "type": "heading", "text": "Questions 1–5" },
+        { "type": "text", "text": "The passage has five paragraphs, A–E. Choose the correct heading for each paragraph from the list. There are more headings than paragraphs." },
+        {
+          "type": "choice", "id": "r1",
+          "prompt": "1. Paragraph A",
+          "options": ["Learning from what twins share", "Three ways of raising children", "The words adults choose", "Influences beyond the family", "Less freedom, fewer skills?", "Why teenagers rebel"],
+          "answer": 0,
+          "why": { "tr": "Paragraf A doğa–yetiştirme tartışmasını ve ikiz araştırmalarının bu konuda nasıl kanıt sağladığını anlatıyor: Learning from what twins share.", "ar": "تتناول الفقرة A نقاش الطبيعة والتنشئة، وكيف قدّمت دراسات التوائم أدلة على ذلك: Learning from what twins share.", "en": "A explains how twin studies estimate the role of genes." },
+          "example": "Twin studies help us understand the role of genes."
+        },
+        {
+          "type": "choice", "id": "r2",
+          "prompt": "2. Paragraph B",
+          "options": ["Learning from what twins share", "Three ways of raising children", "The words adults choose", "Influences beyond the family", "Less freedom, fewer skills?", "Why teenagers rebel"],
+          "answer": 1,
+          "why": { "tr": "Paragraf B, Baumrind'in üç ebeveynlik stilini anlatıyor: authoritarian, permissive, authoritative.", "ar": "تصف الفقرة B أساليب التربية الثلاثة عند Baumrind: المتسلط، والمتساهل، والحازم الدافئ.", "en": "B describes Baumrind's three parenting styles." },
+          "example": "The psychologist described three styles of parenting."
+        },
+        {
+          "type": "choice", "id": "r3",
+          "prompt": "3. Paragraph C",
+          "options": ["Learning from what twins share", "Three ways of raising children", "The words adults choose", "Influences beyond the family", "Less freedom, fewer skills?", "Why teenagers rebel"],
+          "answer": 2,
+          "why": { "tr": "Paragraf C övgünün türünü anlatıyor: zekâyı mı çabayı mı övmek. Yetişkinlerin seçtiği sözler: The words adults choose.", "ar": "تتناول الفقرة C نوع المديح: مدح الذكاء أم الجهد، أي الكلمات التي يختارها الكبار: The words adults choose.", "en": "C is about how adults praise: intelligence or effort." },
+          "example": "Praising effort rather than intelligence can help children."
+        },
+        {
+          "type": "choice", "id": "r4",
+          "prompt": "4. Paragraph D",
+          "options": ["Learning from what twins share", "Three ways of raising children", "The words adults choose", "Influences beyond the family", "Less freedom, fewer skills?", "Why teenagers rebel"],
+          "answer": 3,
+          "why": { "tr": "Paragraf D \"Parents are not the only influence\" diye başlıyor ve akranlar ile kardeşlerin etkisini anlatıyor. Ergenlik geçiyor ama paragraf gençlerin neden isyan ettiğini açıklamıyor; F tuzak.", "ar": "تبدأ الفقرة D بعبارة Parents are not the only influence وتتحدث عن الأقران والإخوة. ذُكرت المراهقة لكن الفقرة لا تشرح سبب تمرد المراهقين، فهذا فخّ.", "en": "\"Parents are not the only influence\": peers and siblings. Adolescence is mentioned, but not rebellion." },
+          "example": "Friends become more important as children grow older."
+        },
+        {
+          "type": "choice", "id": "r5",
+          "prompt": "5. Paragraph E",
+          "options": ["Learning from what twins share", "Three ways of raising children", "The words adults choose", "Influences beyond the family", "Less freedom, fewer skills?", "Why teenagers rebel"],
+          "answer": 4,
+          "why": { "tr": "Paragraf E serbest oyunun azalmasını ve bunun risk alma, problem çözme gibi becerilere etkisini tartışıyor: Less freedom, fewer skills?", "ar": "تناقش الفقرة E تراجع اللعب الحر وأثره في مهارات مثل المخاطرة وحل المشكلات: Less freedom, fewer skills?", "en": "E: less free play may mean fewer chances to learn skills." },
+          "example": "Children who play freely learn to solve their own problems."
+        },
+        { "type": "heading", "text": "Questions 6–7: Choose the correct letter." },
+        {
+          "type": "choice", "id": "r6",
+          "prompt": "6. What does the writer say about Carol Dweck's research?",
+          "options": ["It has been completely disproved.", "Some later studies found weaker effects.", "It only applies to very young children.", "Teachers have mostly ignored it."],
+          "answer": 1,
+          "why": { "tr": "Paragraf C: \"Some later studies have found smaller effects than the original work, and the debate continues.\" Tamamen çürütüldüğü söylenmiyor; öğretmenler de bu fikri uyguluyor.", "ar": "الفقرة C: \"Some later studies have found smaller effects than the original work\". لم يُقل إنها دُحضت تمامًا، والمعلمون يطبقونها.", "en": "\"Some later studies have found smaller effects than the original work.\"" },
+          "example": "Later studies found smaller effects than the original research."
+        },
+        {
+          "type": "choice", "id": "r7",
+          "prompt": "7. What is the writer's conclusion in the final paragraph?",
+          "options": ["Parents are the only important influence on children.", "Modern children have fewer opportunities than their parents had.", "Children are shaped by their whole environment.", "Organised activities are better than free play."],
+          "answer": 2,
+          "why": { "tr": "Son cümle: \"a child's upbringing is shaped not only by parents, but by the whole environment in which they grow up.\" B bazı insanların görüşü; yazarın kendi sonucu C.", "ar": "الجملة الأخيرة: \"a child's upbringing is shaped not only by parents, but by the whole environment\". أما B فرأي بعض الناس، واستنتاج الكاتب هو C.", "en": "\"…shaped not only by parents, but by the whole environment in which they grow up.\"" },
+          "example": "Children are shaped by their whole environment, not only their parents."
+        }
+      ]
+    },
+    {
+      "kind": "language",
+      "i18n": {"ar":{"title":"اللغة: أفعال الاستنتاج في الماضي (must have, might have, can't have)"},"en":{"title":"Language: modals of deduction in the past (must have, might have, can't have)"}},
+      "title": "Dil: çıkarım kipleri ve geçmiş kipler (must have, might have, can't have)",
+      "explain": {
+        "tr": "Kanıta dayanarak tahmin yürütmek için kipler kullanılır. Şimdi için: must (kesine yakın: eminim öyle), might / may / could (olabilir), can't (kesinlikle değil): He must be tired; he's been awake all night. Geçmiş için kip + have + V3: She must have forgotten (unuttuğundan eminim), They might have missed the bus (kaçırmış olabilirler), He can't have seen us (bizi görmüş olamaz). Dikkat: \"must\"ın olumsuz çıkarımı \"mustn't\" değil \"can't\"tır. \"Should have + V3\" ise geçmiş için eleştiri ya da pişmanlık bildirir: I should have listened to my parents. Speaking Part 3'te ve Task 2'de \"This might have been caused by…\" gibi yapılar temkinli ve olgun bir üslup verir.",
+        "ar": "نستخدم أفعال الاحتمال للاستنتاج من الأدلة. للحاضر: must (شبه يقين)، might / may / could (احتمال)، can't (مستحيل): He must be tired; he's been awake all night. وللماضي: الفعل الناقص + have + التصريف الثالث: She must have forgotten (أنا متأكد أنها نسيت)، They might have missed the bus (ربما فاتتهم الحافلة)، He can't have seen us (من المستحيل أنه رآنا). انتبه: النفي في الاستنتاج هو can't لا mustn't. أما should have + التصريف الثالث فتعبّر عن النقد أو الندم على الماضي: I should have listened to my parents.",
+        "en": "Modals express deductions from evidence. For the present: must (almost certain), might / may / could (possible), can't (certainly not): He must be tired; he's been awake all night. For the past, use modal + have + past participle: She must have forgotten. They might have missed the bus. He can't have seen us. The negative of deductive must is can't, not mustn't. Should have + past participle expresses criticism or regret about the past: I should have listened to my parents. In Speaking Part 3 and Task 2, phrases like \"This might have been caused by…\" sound cautious and mature."
+      },
+      "examples": [
+        "The children must have been playing outside; their shoes are covered in mud.",
+        "Some parents might not have noticed the problem because they were on their phones.",
+        "She can't have been more than twelve when she started looking after her younger sibling.",
+        "My parents were quite overprotective, but looking back, they must have been worried about the traffic."
+      ],
+      "questions": [
+        {
+          "type": "choice", "id": "g1",
+          "prompt": "The baby is crying and won't eat anything. She ___ be tired.",
+          "options": ["must", "mustn't", "can't", "should have"],
+          "answer": 0,
+          "why": { "tr": "Kanıta dayanan güçlü bir şimdiki çıkarım: must + fiil. \"mustn't\" yasak bildirir, çıkarım değil.", "ar": "استنتاج قوي في الحاضر مبني على دليل: must + الفعل. أما mustn't فتعني المنع لا الاستنتاج.", "en": "A strong present deduction: must + verb. Mustn't expresses prohibition." },
+          "example": "You've been working all day; you must be exhausted."
+        },
+        {
+          "type": "choice", "id": "g2",
+          "prompt": "Tom ___ broken the window: he was at school all day.",
+          "options": ["can't have", "mustn't have", "must have", "should have"],
+          "answer": 0,
+          "why": { "tr": "Tom bütün gün okuldaydı, yani bu imkânsız: geçmiş için olumsuz çıkarım \"can't have + V3\". \"mustn't have\" bu anlamda kullanılmaz.", "ar": "كان Tom في المدرسة طوال اليوم، فهذا مستحيل: الاستنتاج المنفي في الماضي can't have + التصريف الثالث، ولا تُستخدم mustn't have بهذا المعنى.", "en": "Impossible in the past: can't have + past participle." },
+          "example": "She can't have seen the film; it only came out today."
+        },
+        {
+          "type": "gap", "id": "g3",
+          "prompt": "Write ONE word: I'm not sure why Sara was late. She ___ have missed the bus, or perhaps she overslept.",
+          "answers": ["might", "may", "could"],
+          "why": { "tr": "Konuşmacı emin değil ve başka bir olasılık da veriyor (\"or perhaps\"): olasılık için might / may / could + have + V3.", "ar": "المتحدث غير متأكد ويذكر احتمالًا آخر (or perhaps)، فنستخدم might / may / could + have + التصريف الثالث.", "en": "Uncertain possibility in the past: might/may/could have." },
+          "example": "He might have left his phone at home."
+        },
+        {
+          "type": "choice", "id": "g4",
+          "prompt": "Which sentence expresses regret about the past?",
+          "options": ["I should have spent more time with my children when they were young.", "I must have spent a lot of time with my children.", "I might spend more time with my children.", "I can't have spent much time with my children."],
+          "answer": 0,
+          "why": { "tr": "\"should have + V3\" geçmişte yapılmayan ama yapılması gereken şeyi, yani pişmanlığı anlatır. B ve D çıkarım; C gelecekteki olasılık.", "ar": "should have + التصريف الثالث تعبّر عن ندم على شيء لم يحدث وكان ينبغي أن يحدث. B وD استنتاج، وC احتمال مستقبلي.", "en": "Should have + past participle = regret/criticism. B and D are deductions; C is a future possibility." },
+          "example": "I should have studied harder for the exam."
+        },
+        {
+          "type": "choice", "id": "g5",
+          "prompt": "The kitchen floor is wet and there's an empty glass next to the dog. The dog ___ the glass over.",
+          "options": ["must have knocked", "must knock", "can't have knocked", "should have knocked"],
+          "answer": 0,
+          "why": { "tr": "Kanıtlar güçlü (ıslak zemin, köpeğin yanında boş bardak) ve olay geçmişte: must have + V3.", "ar": "الأدلة قوية (أرض مبللة وكأس فارغة بجانب الكلب) والحدث في الماضي: must have + التصريف الثالث.", "en": "Strong evidence about a past event: must have + past participle." },
+          "example": "The road is wet; it must have rained last night."
+        }
+      ]
+    },
+    {
+      "kind": "write",
+      "i18n": {"ar":{"title":"الكتابة · Task 2: ناقش الرأيين","tip":"اعرض كل رأي في فقرته الخاصة مع أقوى حججه ومثال. قد يقع رأيك بين الطرفين (مثلًا توازن يتغير حسب العمر)، لكن عبّر عن الرأي نفسه بوضوح في المقدمة والخاتمة. استخدم كلمات هذا الدرس (boundaries, discipline, self-esteem, overprotective) وتركيبًا واحدًا على الأقل لأفعال الاستنتاج في الماضي (might have, must have)."},"en":{"title":"Writing · Task 2: discuss both views","tip":"Present each view in its own paragraph, with its strongest reason and an example. Your own view can sit between the two extremes (for example, a balance that changes with age), but state the same view clearly in the introduction and the conclusion. Use this lesson's words (boundaries, discipline, self-esteem, overprotective) and at least one past modal structure (might have, must have)."}},
+      "title": "Yazma · Task 2: iki görüşü tartış",
+      "task": 2,
+      "prompt": "Some people believe that parents should be strict with their children and set firm rules. Others think that children should be given the freedom to make their own decisions and learn from their mistakes.\n\nDiscuss both views and give your own opinion.",
+      "minutes": 40,
+      "minWords": 250,
+      "tip": "Her görüşü kendi paragrafında, en güçlü gerekçesi ve bir örnekle anlat. Kendi görüşün iki uç arasında olabilir (örneğin yaşa göre değişen bir denge), ama girişte ve sonuçta aynı görüşü net söyle. Bu dersin kelimelerini (boundaries, discipline, self-esteem, overprotective) ve en az bir geçmiş kip yapısı (might have, must have) kullan.",
+      "model": "How much freedom children should have is one of the oldest debates about family life. While some people believe that firm rules and strict discipline produce responsible adults, others argue that children develop best when they are allowed to make their own choices. In my view, children need clear boundaries when they are young, but these should gradually give way to greater independence as they grow older.\n\nSupporters of strict parenting argue that young children are not yet able to judge risks or understand the long-term consequences of their actions. A child who is allowed to stay up late or eat whatever they want may develop habits that harm their health and their progress at school. Clear rules also give children a sense of security, because they know what is expected of them. Many adults who had a strict upbringing say that, although they resented the rules at the time, their parents must have taught them the self-control they rely on today.\n\nOn the other hand, those who favour freedom point out that children learn most effectively from experience. A teenager who is never allowed to make a decision may become anxious or dependent, and may struggle to cope when they leave home. Overprotective parents might also damage a child's self-esteem, by suggesting that the child cannot be trusted. Making small mistakes, such as spending all their pocket money in one day, teaches children lessons that no lecture could.\n\nIn conclusion, both views contain some truth. I believe the best approach is to combine warmth with firm but reasonable rules for younger children, explaining the reasons behind them, and to allow teenagers more and more freedom to choose for themselves. In this way, children can learn both self-discipline and independence."
+    },
+    {
+      "kind": "speak",
+      "i18n": {"ar":{"title":"المحادثة: الطفولة والعائلة"},"en":{"title":"Speaking: childhood and family"}},
+      "title": "Konuşma: çocukluk ve aile",
+      "part1": [
+        "Do you have any brothers or sisters?",
+        "What games did you play when you were a child?",
+        "Were your parents strict when you were growing up?",
+        "Do you think childhood today is better or worse than in the past?"
+      ],
+      "card": {
+        "title": "Describe a person who had an important influence on you when you were a child.",
+        "points": [
+          "who the person was",
+          "how you knew him or her",
+          "what this person did"
+        ],
+        "explain": "and explain how this person influenced you."
+      },
+      "useful": [
+        "The person who comes to mind straight away is…",
+        "She was a real role model for me, because…",
+        "He was quite strict, but he was always fair, and he set clear boundaries.",
+        "Looking back, she must have known that I was going through a difficult time.",
+        "If it hadn't been for him, I might never have…",
+        "I think I should have thanked her properly, but I was too young to realise."
+      ]
+    }
+  ]
+}

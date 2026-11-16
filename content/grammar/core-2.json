@@ -1,0 +1,203 @@
+{
+  "licence": "Original content written for Fluent365. CC BY-SA 4.0.",
+  "topics": [
+    {
+      "id": "g-prepositions-time-place",
+      "title": "In, on, at for time and place",
+      "level": "B1",
+      "summary": "From big to small: in a month, on a day, at a time.",
+      "notice": [
+        "I was born **in** 1998, **in** April.",
+        "The meeting is **on** Monday, **on** 3 May.",
+        "The film starts **at** 8 o'clock.",
+        "She lives **in** Istanbul, **on** Bağdat Street, **at** number 12."
+      ],
+      "compare": {
+        "a": "I'm at the cinema.",
+        "b": "I'm in the cinema.",
+        "note": "A means 'at that place' (maybe outside, maybe watching a film). B stresses being inside the building."
+      },
+      "explain": {
+        "en": "Time: in for long periods (in 2025, in July, in the morning, in winter); on for days and dates (on Friday, on 5 June, on my birthday); at for exact times and some fixed expressions (at 7:30, at night, at the weekend in British English). Place: in for inside an area or space (in a room, in Turkey); on for surfaces and streets (on the table, on Main Street); at for a point or event (at the bus stop, at work, at a party).",
+        "tr": "Zaman: in = uzun dönemler, on = gün ve tarih, at = saat. Yer: in = içinde/bölge, on = yüzey/cadde, at = nokta/etkinlik."
+      },
+      "exercises": [
+        { "type": "gap", "prompt": "My birthday is ___ 14 March.", "answers": ["on"], "why": "Dates take on." },
+        { "type": "gap", "prompt": "I usually get up ___ 7 o'clock.", "answers": ["at"], "why": "Exact times take at." },
+        { "type": "gap", "prompt": "It's very cold here ___ winter.", "answers": ["in"], "why": "Seasons take in." },
+        { "type": "choose", "prompt": "Which is natural?", "options": ["See you in Monday!", "See you on Monday!"], "answer": 1, "why": "Days take on." },
+        { "type": "choose", "prompt": "Which is natural?", "options": ["I'll wait for you at the bus stop.", "I'll wait for you on the bus stop."], "answer": 0, "why": "A point/place where something happens: at." },
+        { "type": "fix", "wrong": "I'll call you in the evening on 6 o'clock.", "answers": ["I'll call you in the evening at 6 o'clock.", "I'll call you at 6 o'clock in the evening."], "why": "Exact time: at 6 o'clock." },
+        { "type": "fix", "wrong": "There is a picture in the wall.", "answers": ["There is a picture on the wall."], "why": "Surfaces take on." },
+        { "type": "find", "prompt": "Find the unnatural sentence.", "options": ["We met at a party.", "He works in a hospital.", "I was born at 2001."], "answer": 2, "why": "Years take in: in 2001." },
+        { "type": "build", "blocks": ["the", "shop", "closes", "at", "six", "on", "Saturdays"], "answer": "The shop closes at six on Saturdays.", "alts": ["On Saturdays the shop closes at six."], "why": "at + time, on + day." },
+        { "type": "produce", "prompt": "Write a sentence about when and where you were born. Use in and on or at.", "check": "\\b(in|on|at)\\b[\\s\\S]*\\b(in|on|at)\\b", "hint": "in + year/month/city, on + date.", "model": "I was born in Bursa on 12 May 2000." }
+      ]
+    },
+    {
+      "id": "g-adjectives-adverbs",
+      "title": "Adjectives, adverbs and -ed / -ing adjectives",
+      "level": "B1",
+      "summary": "quick vs. quickly, bored vs. boring.",
+      "notice": [
+        "She is a **careful** driver. She drives **carefully**.",
+        "The film was **boring**, so I was **bored**.",
+        "He works **hard** and arrives **late**.",
+        "You speak English **well**."
+      ],
+      "compare": {
+        "a": "I'm boring.",
+        "b": "I'm bored.",
+        "note": "A means other people find you dull! B means you feel there is nothing interesting to do."
+      },
+      "explain": {
+        "en": "Adjectives describe nouns (a quick answer) and come after be, feel, look, seem (You look tired). Adverbs describe verbs: how you do something (answer quickly). Most adverbs = adjective + -ly, but good → well, and fast, hard, late, early stay the same. -ing adjectives describe the thing that causes the feeling (an interesting book); -ed adjectives describe how a person feels (I'm interested).",
+        "tr": "Sıfat ismi, zarf fiili niteler (good → well). -ing: duyguya sebep olan şey; -ed: kişinin hissettiği."
+      },
+      "exercises": [
+        { "type": "choose", "prompt": "Which is natural?", "options": ["She sings beautiful.", "She sings beautifully."], "answer": 1, "why": "How she sings: adverb." },
+        { "type": "choose", "prompt": "After a long day at work you say:", "options": ["I'm exhausting.", "I'm exhausted."], "answer": 1, "why": "Your feeling: -ed." },
+        { "type": "gap", "prompt": "He plays the guitar very ___ (good).", "answers": ["well"], "why": "Good → well as an adverb." },
+        { "type": "gap", "prompt": "The news was really ___ (surprise).", "answers": ["surprising"], "why": "The news causes the feeling: -ing." },
+        { "type": "fix", "wrong": "I was very interesting in the lecture.", "answers": ["I was very interested in the lecture."], "why": "Your feeling: interested." },
+        { "type": "fix", "wrong": "He drives very dangerous.", "answers": ["He drives very dangerously."], "why": "How he drives: adverb." },
+        { "type": "fix", "wrong": "She works very hardly.", "answers": ["She works very hard."], "why": "Hard is already an adverb. 'Hardly' means 'almost not'." },
+        { "type": "find", "prompt": "Find the unnatural sentence.", "options": ["This soup smells delicious.", "You look happily today.", "They walked slowly home."], "answer": 1, "why": "After look (= seem) use an adjective: You look happy." },
+        { "type": "build", "blocks": ["the", "children", "were", "excited", "about", "the", "trip"], "answer": "The children were excited about the trip.", "alts": [], "why": "How the children felt: excited." },
+        { "type": "produce", "prompt": "Write a sentence about a film or book you found boring or interesting, and how you felt.", "check": "\\b\\w+ing\\b[\\s\\S]*\\b\\w+ed\\b|\\b\\w+ed\\b[\\s\\S]*\\b\\w+ing\\b", "hint": "Use one -ing adjective for the film/book and one -ed adjective for you.", "model": "The documentary was fascinating, and I was amazed by the photography." }
+      ]
+    },
+    {
+      "id": "g-present-perfect-for-since",
+      "title": "Present perfect with for, since, already, yet, just",
+      "level": "B1",
+      "summary": "Connecting the past to now.",
+      "notice": [
+        "I**'ve lived** here **for** five years.",
+        "She**'s worked** at the hospital **since** 2020.",
+        "Have you finished **yet**? — Yes, I**'ve just** finished.",
+        "I**'ve already** eaten, thanks."
+      ],
+      "compare": {
+        "a": "I lived in Paris for two years.",
+        "b": "I've lived in Paris for two years.",
+        "note": "A: you don't live there now. B: you still live there."
+      },
+      "explain": {
+        "en": "Use the present perfect (have/has + past participle) for situations that started in the past and continue now: for + a period (for three weeks), since + a starting point (since Monday, since 2019). Just = a very short time ago; already = earlier than expected (both go before the participle). Yet = up to now, in questions and negatives, at the end of the sentence.",
+        "tr": "for + süre, since + başlangıç noktası. just/already fiilden önce, yet olumsuz ve soru cümlesinin sonunda."
+      },
+      "exercises": [
+        { "type": "gap", "prompt": "I've known her ___ we were children.", "answers": ["since"], "why": "A starting point: since." },
+        { "type": "gap", "prompt": "They've been married ___ ten years.", "answers": ["for"], "why": "A period of time: for." },
+        { "type": "choose", "prompt": "Which is natural?", "options": ["I live here since 2018.", "I've lived here since 2018."], "answer": 1, "why": "Started in the past and continues: present perfect." },
+        { "type": "choose", "prompt": "Which is natural?", "options": ["Have you done your homework yet?", "Have you done yet your homework?"], "answer": 0, "why": "Yet goes at the end." },
+        { "type": "fix", "wrong": "I have seen him yesterday.", "answers": ["I saw him yesterday."], "why": "Yesterday is a finished time: past simple." },
+        { "type": "fix", "wrong": "I work here for three years.", "answers": ["I've worked here for three years.", "I have worked here for three years.", "I've been working here for three years.", "I have been working here for three years."], "why": "Up to now: present perfect." },
+        { "type": "compare", "prompt": "In which sentence does she still teach?", "options": ["She taught for twenty years.", "She has taught for twenty years."], "answer": 1, "why": "Present perfect: the situation continues." },
+        { "type": "build", "blocks": ["I've", "just", "finished", "my", "report"], "answer": "I've just finished my report.", "alts": [], "why": "Just goes between have and the participle." },
+        { "type": "find", "prompt": "Find the unnatural sentence.", "options": ["We've already booked the tickets.", "She hasn't called yet.", "I've been to London last year."], "answer": 2, "why": "Last year is finished: I went to London last year." },
+        { "type": "produce", "prompt": "How long have you studied English? Answer with for or since.", "check": "\\b(have|has|'ve|'s)\\s+(been\\s+)?\\w+(ed|en|ied|ying|ing|t)?\\b[\\s\\S]*\\b(for|since)\\b", "hint": "I've + participle … for/since …", "model": "I've studied English since I was twelve." }
+      ]
+    },
+    {
+      "id": "g-past-perfect",
+      "title": "Past perfect: the earlier past",
+      "level": "B1+",
+      "summary": "had + participle when one past event happened before another.",
+      "notice": [
+        "When we arrived, the film **had** already **started**.",
+        "She was nervous because she **had** never **flown** before.",
+        "I realised I **had left** my keys at home."
+      ],
+      "compare": {
+        "a": "When I got to the station, the train left.",
+        "b": "When I got to the station, the train had left.",
+        "note": "A: the train left as you arrived. B: the train was already gone before you arrived."
+      },
+      "explain": {
+        "en": "Use the past perfect (had + past participle) to show that one past action happened before another past action or time. It is common with because, when, by the time, already, never…before, and after verbs like realise, discover, find out. If the order is already clear (with after or before), the past simple is often enough.",
+        "tr": "Past perfect (had + V3): geçmişteki bir olaydan daha önce olan olay."
+      },
+      "exercises": [
+        { "type": "gap", "prompt": "By the time the police arrived, the thief ___ (escape).", "answers": ["had escaped"], "why": "The escape happened before the police arrived." },
+        { "type": "gap", "prompt": "I didn't recognise him because he ___ (change) a lot.", "answers": ["had changed"], "why": "The change happened before the moment of not recognising." },
+        { "type": "compare", "prompt": "In which sentence had the guests gone before she arrived?", "options": ["When she arrived, the guests left.", "When she arrived, the guests had left."], "answer": 1, "why": "Had left = before her arrival." },
+        { "type": "choose", "prompt": "Which is natural?", "options": ["I had visited Rome last summer.", "I visited Rome last summer."], "answer": 1, "why": "One simple past event: past simple." },
+        { "type": "fix", "wrong": "She told me she has lost her passport.", "answers": ["She told me she had lost her passport."], "why": "Earlier than 'told' in the past: had lost." },
+        { "type": "fix", "wrong": "It was the first time I ever saw snow.", "answers": ["It was the first time I had ever seen snow."], "why": "After 'It was the first time', use the past perfect." },
+        { "type": "build", "blocks": ["I", "realised", "that", "I", "had", "forgotten", "my", "phone"], "answer": "I realised that I had forgotten my phone.", "alts": ["I realised I had forgotten my phone."], "why": "Forgetting came before realising." },
+        { "type": "predict", "prompt": "The exam was easy because I ___ ...", "options": ["had studied hard", "have studied hard", "study hard"], "answer": 0, "why": "Studying happened before the exam (past)." },
+        { "type": "find", "prompt": "Find the unnatural sentence.", "options": ["He had never seen the sea before that trip.", "When I woke up, it had stopped raining.", "Yesterday I had gone to the gym."], "answer": 2, "why": "No earlier past here: Yesterday I went to the gym." },
+        { "type": "produce", "prompt": "Write about a time you arrived somewhere late. What had already happened?", "check": "\\bhad\\s+(already\\s+|just\\s+|never\\s+)?\\w+", "hint": "When I arrived, … had (already) + participle.", "model": "When I got to the meeting, my manager had already started the presentation." }
+      ]
+    },
+    {
+      "id": "g-modals-certainty",
+      "title": "Must, might, can't: how sure are you?",
+      "level": "B1+",
+      "summary": "Guessing about the present with modal verbs.",
+      "notice": [
+        "She's not answering. She **might be** asleep.",
+        "You've been travelling all day. You **must be** tired.",
+        "That **can't be** Ali. He's in Germany.",
+        "It **could be** true, but I'm not sure."
+      ],
+      "compare": {
+        "a": "He must be at home.",
+        "b": "He might be at home.",
+        "note": "A: you are almost sure (the lights are on, his car is there). B: it's possible, about 50%."
+      },
+      "explain": {
+        "en": "Use must when you are almost certain something is true (You must be hungry). Use might, may or could when it is possible (It may rain later). Use can't when you are almost certain something is not true (That can't be right). Do not use mustn't for this meaning: mustn't means 'it is not allowed'. After a modal, use the base verb (must be, might know).",
+        "tr": "must = neredeyse eminim (doğru); might/may/could = mümkün; can't = neredeyse eminim (doğru değil). mustn't bu anlamda kullanılmaz."
+      },
+      "exercises": [
+        { "type": "choose", "prompt": "Her car isn't here and the lights are off. She ___ at home.", "options": ["mustn't be", "can't be"], "answer": 1, "why": "Almost sure it's not true: can't. Mustn't means prohibition." },
+        { "type": "choose", "prompt": "You've won the lottery! You ___ very happy.", "options": ["must be", "might be"], "answer": 0, "why": "Almost certain: must." },
+        { "type": "gap", "prompt": "Take an umbrella. It ___ rain later. (it's possible)", "answers": ["might", "may", "could"], "why": "Possibility: might/may/could." },
+        { "type": "fix", "wrong": "He must to be very rich.", "answers": ["He must be very rich."], "why": "Modal + base verb, no 'to'." },
+        { "type": "fix", "wrong": "This mustn't be the right address. There's no house here.", "answers": ["This can't be the right address. There's no house here.", "This can't be the right address."], "why": "Logical 'not possible' = can't." },
+        { "type": "compare", "prompt": "Which speaker is more certain?", "options": ["The keys could be in the car.", "The keys must be in the car."], "answer": 1, "why": "Must shows strong certainty." },
+        { "type": "find", "prompt": "Find the unnatural sentence.", "options": ["She may know the answer.", "It can't be 10 o'clock already!", "He might be work late."], "answer": 2, "why": "Might be + -ing or might + verb: He might be working late." },
+        { "type": "build", "blocks": ["you", "must", "be", "very", "proud", "of", "your", "son"], "answer": "You must be very proud of your son.", "alts": [], "why": "Strong logical certainty: must be." },
+        { "type": "predict", "prompt": "Someone is knocking. It's 9 p.m. and we're not expecting anyone. It ___ ...", "options": ["might be a neighbour", "must a neighbour", "can a neighbour"], "answer": 0, "why": "A possibility: might be." },
+        { "type": "produce", "prompt": "Your friend hasn't replied to your messages all day. Write two guesses: one with might and one with can't or must.", "check": "\\b(might|may|could)\\b[\\s\\S]*\\b(must|can't|cannot)\\b|\\b(must|can't|cannot)\\b[\\s\\S]*\\b(might|may|could)\\b", "hint": "might/may = possible; must = almost sure; can't = almost sure it's not.", "model": "She might be busy at work. She can't be angry with me — we talked yesterday." }
+      ]
+    },
+    {
+      "id": "g-verb-prepositions",
+      "title": "Verbs and adjectives with prepositions",
+      "level": "B1+",
+      "summary": "depend on, interested in, good at: fixed partner words.",
+      "notice": [
+        "It **depends on** the weather.",
+        "She's very **good at** maths.",
+        "I'm **interested in** history.",
+        "We **talked about** the plan.",
+        "Are you **afraid of** spiders?"
+      ],
+      "compare": {
+        "a": "I'm listening music.",
+        "b": "I'm listening to music.",
+        "note": "Listen always needs 'to' before its object. These partner words must be learned as chunks."
+      },
+      "explain": {
+        "en": "Many verbs and adjectives are followed by a fixed preposition: depend on, listen to, wait for, look forward to, belong to, apply for, agree with (someone), good at, interested in, afraid of, responsible for, different from, married to. After a preposition, use a noun or the -ing form: I'm good at cooking. Learn them as chunks, not word by word.",
+        "tr": "Bazı fiil ve sıfatlar sabit edatlarla gelir; parça (chunk) olarak öğren. Edattan sonra isim veya -ing gelir."
+      },
+      "exercises": [
+        { "type": "gap", "prompt": "I'm waiting ___ the bus.", "answers": ["for"], "why": "wait for." },
+        { "type": "gap", "prompt": "She's responsible ___ the marketing team.", "answers": ["for"], "why": "responsible for." },
+        { "type": "gap", "prompt": "I'm looking forward ___ seeing you.", "answers": ["to"], "why": "look forward to + -ing." },
+        { "type": "choose", "prompt": "Which is natural?", "options": ["It depends of the price.", "It depends on the price."], "answer": 1, "why": "depend on." },
+        { "type": "choose", "prompt": "Which is natural?", "options": ["He's married with a doctor.", "He's married to a doctor."], "answer": 1, "why": "married to someone." },
+        { "type": "fix", "wrong": "I'm not good in sports.", "answers": ["I'm not good at sports.", "I am not good at sports."], "why": "good at." },
+        { "type": "fix", "wrong": "I'm interested to learn Spanish.", "answers": ["I'm interested in learning Spanish.", "I am interested in learning Spanish."], "why": "interested in + -ing." },
+        { "type": "find", "prompt": "Find the unnatural sentence.", "options": ["This book belongs to me.", "I agree with you.", "Let's discuss about the problem."], "answer": 2, "why": "Discuss has no preposition: discuss the problem." },
+        { "type": "build", "blocks": ["she", "applied", "for", "a", "job", "in", "Berlin"], "answer": "She applied for a job in Berlin.", "alts": [], "why": "apply for a job." },
+        { "type": "produce", "prompt": "Write a sentence about something you are good at and something you are afraid of.", "check": "\\bgood at\\b[\\s\\S]*\\bafraid of\\b|\\bafraid of\\b[\\s\\S]*\\bgood at\\b", "hint": "good at + noun/-ing; afraid of + noun/-ing.", "model": "I'm good at drawing, but I'm afraid of speaking in public." }
+      ]
+    }
+  ]
+}

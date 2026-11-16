@@ -1,0 +1,718 @@
+{
+ "id": "lesson-29",
+ "number": 29,
+ "title": "Museums and the Past",
+ "topic": "Museums and history",
+ "level": "B2",
+ "goal": "Understand a guided talk and a text about museums, describe changes on a map, and link ideas across sentences with this trend, such measures and the former/the latter.",
+ "steps": [
+  {
+   "kind": "words",
+   "i18n": {"ar":{"title":"المفردات: المتاحف والتاريخ","intro":"في هذا الدرس 12 كلمة وعبارة عن المتاحف والتراث والتاريخ. انتبه للفرق بين \"historic\" و\"historical\"، ولعبارات مثل \"on display\" و\"preserve for future generations\"."},"en":{"title":"Vocabulary: museums and history","intro":"This lesson has 12 words and phrases about museums, heritage and history. Pay attention to the difference between \"historic\" and \"historical\", and to phrases like \"on display\" and \"preserve for future generations\"."}},
+   "title": "Kelimeler: müzeler ve tarih",
+   "intro": "Bu derste müzeler, miras ve tarih hakkında 12 kelime ve kalıp var. \"historic\" ile \"historical\" farkına ve \"on display\", \"preserve for future generations\" gibi kalıplara dikkat et.",
+   "words": [
+    {
+     "en": "heritage",
+     "pos": "noun",
+     "tr": "miras (kültürel, tarihî)",
+     "ar": "التراث",
+     "example": "The old harbour is an important part of the town's heritage."
+    },
+    {
+     "en": "artefact",
+     "pos": "noun",
+     "tr": "eser, tarihî obje (insan yapımı)",
+     "ar": "قطعة أثرية",
+     "example": "The museum has over ten thousand artefacts from the Roman period."
+    },
+    {
+     "en": "exhibition",
+     "pos": "noun",
+     "tr": "sergi",
+     "ar": "معرض",
+     "example": "The new exhibition explores the history of medicine."
+    },
+    {
+     "en": "curator",
+     "pos": "noun",
+     "tr": "küratör, müze koleksiyon sorumlusu",
+     "ar": "أمين المتحف؛ القيّم على المعرض",
+     "example": "The curator chose every object in the exhibition herself."
+    },
+    {
+     "en": "on display",
+     "pos": "phrase",
+     "tr": "sergilenen, teşhirde",
+     "ar": "معروض",
+     "example": "Only a small part of the collection is on display at any one time."
+    },
+    {
+     "en": "preserve",
+     "pos": "verb",
+     "tr": "korumak, muhafaza etmek",
+     "ar": "يحافظ على؛ يصون",
+     "example": "The paintings are kept in low light to preserve their colours."
+    },
+    {
+     "en": "restoration",
+     "pos": "noun",
+     "tr": "restorasyon, onarım ve eski hâline getirme",
+     "ar": "الترميم",
+     "example": "The restoration of the castle took fifteen years."
+    },
+    {
+     "en": "archive",
+     "pos": "noun",
+     "tr": "arşiv",
+     "ar": "الأرشيف",
+     "example": "Historians spent months in the city archive reading old letters."
+    },
+    {
+     "en": "historic",
+     "pos": "adjective",
+     "tr": "tarihî, tarihsel önemi olan",
+     "ar": "تاريخي (ذو أهمية تاريخية)",
+     "example": "The museum is housed in a historic building in the old town."
+    },
+    {
+     "en": "interactive",
+     "pos": "adjective",
+     "tr": "etkileşimli",
+     "ar": "تفاعلي",
+     "example": "Interactive displays let children try things for themselves."
+    },
+    {
+     "en": "admission",
+     "pos": "noun",
+     "tr": "giriş (ücreti), kabul",
+     "ar": "الدخول؛ رسم الدخول",
+     "example": "Admission to the national museums is free in some countries."
+    },
+    {
+     "en": "cultural identity",
+     "pos": "phrase",
+     "tr": "kültürel kimlik",
+     "ar": "الهوية الثقافية",
+     "example": "Museums can help communities to understand their cultural identity."
+    }
+   ],
+   "practice": [
+    {
+     "type": "choice",
+     "id": "w1",
+     "prompt": "A ___ is the person who looks after a museum's collection and plans its exhibitions.",
+     "options": [
+      "curator",
+      "visitor",
+      "guide",
+      "collector"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "\"Curator\" koleksiyondan ve sergilerden sorumlu uzmandır. \"guide\" ziyaretçileri gezdirir; \"collector\" kendi için eser toplar.",
+      "ar": "curator هو المختص المسؤول عن مجموعة المتحف ومعارضه. أما guide فيرافق الزوار، وcollector يجمع القطع لنفسه.",
+      "en": "A curator manages the collection; a guide shows visitors around."
+     },
+     "example": "The curator explained why the painting had been moved."
+    },
+    {
+     "type": "choice",
+     "id": "w2",
+     "prompt": "Choose the correct word: Istanbul's ___ peninsula contains buildings from many different periods.",
+     "options": [
+      "historic",
+      "historical",
+      "history",
+      "historian"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "\"historic\" = tarihî önemi olan (yer, bina, olay). \"historical\" = tarihle ilgili (historical novel, historical records). Bina ve yerler için çoğunlukla \"historic\".",
+      "ar": "historic تعني ذا أهمية تاريخية (للأماكن والمباني والأحداث)، أما historical فتعني متعلقًا بالتاريخ (historical records).",
+      "en": "\"Historic\" = important in history (places, events); \"historical\" = about history."
+     },
+     "example": "The historic centre of the city is protected by law."
+    },
+    {
+     "type": "gap",
+     "id": "w3",
+     "prompt": "Write the noun form of RESTORE: The ___ of the old theatre was paid for by local businesses.",
+     "answers": [
+      "restoration"
+     ],
+     "why": {
+      "tr": "\"The ___ of\" yapısında isim gerekir: restore (fiil) → restoration (isim).",
+      "ar": "بعد The وقبل of نحتاج إلى اسم: restore ← restoration.",
+      "en": "A noun: restore → restoration."
+     },
+     "example": "The restoration of the mosaic took three years."
+    },
+    {
+     "type": "gap",
+     "id": "w4",
+     "prompt": "Write ONE word: Only about five per cent of the museum's collection is on ___; the rest is in storage.",
+     "answers": [
+      "display"
+     ],
+     "why": {
+      "tr": "Kalıp \"on display\" = sergilenen. \"on show\" da benzer ama burada istenen \"display\".",
+      "ar": "التعبير الثابت on display أي معروض للجمهور.",
+      "en": "The fixed phrase is \"on display\"."
+     },
+     "example": "The crown jewels are on display in the tower."
+    },
+    {
+     "type": "choice",
+     "id": "w5",
+     "prompt": "Which verb collocates best? We must ___ these old photographs for future generations.",
+     "options": [
+      "preserve",
+      "exhibit",
+      "display",
+      "admit"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "\"preserve something for future generations\" = gelecek nesiller için korumak. \"exhibit/display\" sergilemek demek, \"for future generations\" ile uyuşmaz.",
+      "ar": "preserve something for future generations أي يحافظ عليه للأجيال القادمة. أما exhibit وdisplay فمعناهما يعرض.",
+      "en": "We \"preserve\" things for future generations."
+     },
+     "example": "The village has worked hard to preserve its traditions."
+    },
+    {
+     "type": "choice",
+     "id": "w6",
+     "prompt": "\"Admission is free\" means…",
+     "options": [
+      "you do not have to pay to enter",
+      "you have to book in advance",
+      "you are allowed to take photographs",
+      "the museum is open every day"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "\"admission\" burada giriş (izni ya da ücreti) demek: \"Admission is free\" = giriş ücretsiz.",
+      "ar": "admission هنا تعني الدخول أو رسمه: Admission is free أي الدخول مجاني.",
+      "en": "Admission = entry; \"free\" = no charge."
+     },
+     "example": "Admission is free on the first Sunday of every month."
+    }
+   ]
+  },
+  {
+   "kind": "listen",
+   "i18n": {"ar":{"title":"الاستماع · Part 2: متطوعون في متحف مصنع","intro":"منسقة المتطوعين في متحف داخل مصنع قطن قديم تشرح للمتطوعين الجدد المبنى وتاريخ المتحف. اقرأ الأسئلة أولًا. يُشغَّل التسجيل مرة واحدة.","tip":"في أسئلة المطابقة (4–6) يكون عدد الخيارات أكبر من عدد الأسئلة. قد يذكر المتحدث أين كان شيء ما \"سابقًا\" ثم يقول إنه نُقل: \"There used to be… but we moved it\". اختر الوضع الحالي."},"en":{"title":"Listening · Part 2: volunteers at a mill museum","intro":"The volunteer coordinator at a museum in an old cotton mill tells new volunteers about the building and the museum's history. Read the questions first. The recording plays once.","tip":"In the matching questions (4–6) there are more options than questions. The speaker may say where something \"used to be\" and then that it was moved: \"There used to be… but we moved it\". Choose the current situation."}},
+   "title": "Dinleme · Part 2: bir fabrika müzesinde gönüllüler",
+   "intro": "Eski bir pamuk fabrikasındaki müzenin gönüllü koordinatörü, yeni gönüllülere binayı ve müzenin tarihini anlatıyor. Önce soruları oku. Kayıt bir kez çalar.",
+   "tip": "Eşleştirme sorularında (4–6) seçenek sayısı sorudan fazladır. Konuşmacı bir şeyin \"eskiden\" nerede olduğunu söyleyip sonra yerini değiştirebilir: \"There used to be… but we moved it\". Şimdiki durumu seç.",
+   "audio": {
+    "type": "audio",
+    "id": "l-audio",
+    "speakers": {
+     "N": {
+      "name": "Narrator",
+      "voice": "en-GB-SoniaNeural"
+     },
+     "simon": {
+      "name": "Simon Teale",
+      "voice": "en-GB-RyanNeural"
+     }
+    },
+    "lines": [
+     {
+      "speaker": "N",
+      "text": "You will hear a man talking to a group of new volunteers at a museum. First, you have some time to look at questions one to six.",
+      "pauseAfterMs": 2500
+     },
+     {
+      "speaker": "N",
+      "text": "Now listen carefully and answer questions one to six.",
+      "pauseAfterMs": 1200
+     },
+     {
+      "speaker": "simon",
+      "text": "Good morning, and welcome to Pellingford Mill Museum. I'm Simon Teale, the volunteer coordinator. Thank you all for giving up your time. I'll start with a bit of background, then take you through the building and explain what you'll be doing.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "simon",
+      "text": "The mill was built in 1820 to spin cotton, and at its peak it employed over four hundred people, many of them children. It closed in 1968, and for years the building stood empty. It was nearly demolished to make way for a supermarket, but that plan was stopped by a campaign of local residents.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "simon",
+      "text": "The restoration then took almost ten years. The families of the former owners donated some money, but most of the funding came from a national heritage grant.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "simon",
+      "text": "Now, what makes this museum different? Most industrial museums put their machines behind glass. Here, the curator decided from the start that this should be an interactive museum: visitors can operate some of the smaller machines themselves, under supervision. That's where many of you will be working.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "simon",
+      "text": "Admission is free for local residents and children; other adults pay six pounds. People ask about this a lot, so please be ready to explain it. The town council owns the building, and free entry for residents was a condition of the funding it gave us.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "simon",
+      "text": "Let me take you through the building. On the ground floor you'll find the restored machines: the big looms and the steam engine that powered the whole mill. The engine runs every Saturday at eleven, which is always popular, so we need extra volunteers on Saturday mornings. If you can help then, please put your name on the list in the staff room.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "simon",
+      "text": "The first floor used to be the café, but we moved it out to the old stable block by the entrance, together with the shop, so that people can visit it without paying. The first floor now has our temporary exhibitions. The current one is about childhood in the mill, with letters and photographs that local families have lent us.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "simon",
+      "text": "The second floor holds our archive: thousands of documents, wage books and photographs. It isn't open to the general public, but researchers can book an appointment. Many of the artefacts on display downstairs were discovered in the archive during the restoration.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "simon",
+      "text": "And the top floor, under the roof, is the children's activity room, where school groups do hands-on workshops. Its large windows give the best view of the river. Some of you with teaching experience may be asked to help there during school visits.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "simon",
+      "text": "Finally, a few practical points. Please wear your badge at all times, and never let visitors touch the oldest looms, even if they ask. Those machines are original and very fragile, and our job is to preserve them for future generations. This building is part of the town's cultural identity. Right, let's start with a coffee, and then I'll show you the engine.",
+      "pauseAfterMs": 1500
+     },
+     {
+      "speaker": "N",
+      "text": "That is the end of the recording.",
+      "pauseAfterMs": 0
+     }
+    ]
+   },
+   "questions": [
+    {
+     "type": "text",
+     "text": "Questions 1–3. Choose the correct letter."
+    },
+    {
+     "type": "choice",
+     "id": "l1",
+     "prompt": "1. What saved the mill building from being demolished?",
+     "options": [
+      "a campaign by local people",
+      "a national heritage grant",
+      "money from the former owners' families"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "\"that plan was stopped by a campaign of local residents\". Hibe ve ailelerin parası restorasyon için, binayı yıkımdan kurtarmak için değil.",
+      "ar": "\"that plan was stopped by a campaign of local residents\". المنحة وأموال العائلات كانت للترميم لا لإنقاذ المبنى من الهدم.",
+      "en": "\"Stopped by a campaign of local residents.\" The grant and donations paid for the restoration."
+     },
+     "example": "The old cinema was saved by a campaign of local residents."
+    },
+    {
+     "type": "choice",
+     "id": "l2",
+     "prompt": "2. What is unusual about this museum?",
+     "options": [
+      "It has the largest collection of machines.",
+      "Visitors can use some of the machines.",
+      "All the machines are kept behind glass."
+     ],
+     "answer": 1,
+     "why": {
+      "tr": "\"visitors can operate some of the smaller machines themselves\". C, diğer müzelerin yaptığı şey (\"Most industrial museums put their machines behind glass\"); A hiç söylenmiyor.",
+      "ar": "\"visitors can operate some of the smaller machines themselves\". الخيار C هو ما تفعله المتاحف الأخرى، وA لم يُذكر.",
+      "en": "\"Visitors can operate some of the smaller machines themselves.\""
+     },
+     "example": "In this science museum, visitors can operate the machines themselves."
+    },
+    {
+     "type": "choice",
+     "id": "l3",
+     "prompt": "3. Why is admission free for local residents?",
+     "options": [
+      "Most visitors are tourists.",
+      "It was a condition of the council's funding.",
+      "Local families lent the museum objects."
+     ],
+     "answer": 1,
+     "why": {
+      "tr": "\"free entry for residents was a condition of the funding it gave us\". \"it\" = the town council. C sergi için söyleniyor.",
+      "ar": "\"free entry for residents was a condition of the funding it gave us\"، وit تعود إلى مجلس البلدة. الخيار C يخص المعرض.",
+      "en": "\"Free entry for residents was a condition of the funding it gave us.\""
+     },
+     "example": "Free parking was a condition of the planning permission."
+    },
+    {
+     "type": "text",
+     "text": "Questions 4–6. What can be found on each floor of the museum? Choose the correct answer. There are more options than you need."
+    },
+    {
+     "type": "choice",
+     "id": "l4",
+     "prompt": "4. the ground floor",
+     "options": [
+      "the café and shop",
+      "the restored machines",
+      "the archive",
+      "the children's activity room",
+      "temporary exhibitions"
+     ],
+     "answer": 1,
+     "why": {
+      "tr": "\"On the ground floor you'll find the restored machines\". Kafe ve dükkân binanın içinde değil, \"the old stable block by the entrance\" içinde.",
+      "ar": "\"On the ground floor you'll find the restored machines\". المقهى والمتجر في مبنى الإسطبل القديم عند المدخل.",
+      "en": "\"On the ground floor you'll find the restored machines.\""
+     },
+     "example": "The ground floor is where you'll find the oldest machines."
+    },
+    {
+     "type": "choice",
+     "id": "l5",
+     "prompt": "5. the first floor",
+     "options": [
+      "the café and shop",
+      "the restored machines",
+      "the archive",
+      "the children's activity room",
+      "temporary exhibitions"
+     ],
+     "answer": 4,
+     "why": {
+      "tr": "\"The first floor used to be the café, but we moved it out… The first floor now has our temporary exhibitions.\" Kafe eski durum, tuzak.",
+      "ar": "\"The first floor used to be the café, but we moved it out… now has our temporary exhibitions\". المقهى هو الوضع القديم، فهو فخّ.",
+      "en": "\"The first floor now has our temporary exhibitions.\" The café was moved."
+     },
+     "example": "The room used to be a library, but now it holds temporary exhibitions."
+    },
+    {
+     "type": "choice",
+     "id": "l6",
+     "prompt": "6. the second floor",
+     "options": [
+      "the café and shop",
+      "the restored machines",
+      "the archive",
+      "the children's activity room",
+      "temporary exhibitions"
+     ],
+     "answer": 2,
+     "why": {
+      "tr": "\"The second floor holds our archive\". Çocuk etkinlik odası en üst katta (\"the top floor, under the roof\").",
+      "ar": "\"The second floor holds our archive\". غرفة أنشطة الأطفال في الطابق الأعلى تحت السقف.",
+      "en": "\"The second floor holds our archive.\" The children's room is on the top floor."
+     },
+     "example": "The archive is on the second floor and is open by appointment."
+    }
+   ]
+  },
+  {
+   "kind": "read",
+   "i18n": {"ar":{"title":"القراءة: مطابقة المعلومات (Matching information)","intro":"ستقرأ نصًا عن كيف تغيّرت المتاحف عبر التاريخ والجدل الذي تواجهه اليوم. الفقرات مرقّمة A–F.","tip":"في أسئلة Matching information لا تأتي العبارات بترتيب النص. حدّد الفكرة المفتاحية في العبارة (مثلًا \"a reason\"، \"an example\"، \"a criticism\")، ثم ابحث في النص عن الموضع الذي يعبّر عن الفكرة نفسها بكلمات مختلفة. عبارات الإحالة مثل \"this trend\" و\"the latter\" تساعدك على فهم ما تتحدث عنه كل فقرة."},"en":{"title":"Reading: Matching information","intro":"You will read a text about how museums have changed through history and the debates they face today. The paragraphs are labelled A–F.","tip":"In Matching information questions the statements are not in text order. Find the key idea in the statement (for example \"a reason\", \"an example\", \"a criticism\"), then look in the text for the place that expresses the same idea in different words. Reference phrases like \"this trend\" and \"the latter\" help you see what each paragraph is talking about."}},
+   "title": "Okuma: bilgi eşleştirme (Matching information)",
+   "intro": "Müzelerin tarih içinde nasıl değiştiğini ve bugün karşılaştıkları tartışmaları anlatan bir metin okuyacaksın. Paragraflar A–F olarak işaretli.",
+   "tip": "Matching information sorularında ifadeler metin sırasında değildir. İfadedeki anahtar fikri (örneğin \"a reason\", \"an example\", \"a criticism\") bul, sonra metinde aynı fikri farklı kelimelerle anlatan yeri ara. \"this trend\", \"the latter\" gibi gönderme ifadeleri hangi paragrafın neyden söz ettiğini anlamana yardım eder.",
+   "passage": [
+    {
+     "type": "heading",
+     "text": "Who Are Museums For?"
+    },
+    {
+     "type": "text",
+     "text": "A  The modern museum has its roots in the private collections of wealthy Europeans in the sixteenth and seventeenth centuries. These \"cabinets of curiosities\" mixed shells, coins, ancient artefacts and preserved animals with little attempt at order, and they were shown only to invited guests. Their purpose was as much to display the owner's wealth and learning as to educate anyone. It was not until the eighteenth century that some of these collections began to be opened to the public, and even then access was often limited to respectable visitors who had applied in advance. Ordinary working people, who made up the majority of the population, were rarely able to see these treasures, and many collections were still regarded as the personal property of their owners."
+    },
+    {
+     "type": "text",
+     "text": "B  The great national museums of the eighteenth and nineteenth centuries changed this picture. The British Museum opened in 1759, and the Louvre in Paris became a public museum in 1793, during the French Revolution. The latter was presented as a symbol of the idea that the nation's treasures belonged to its citizens rather than to a king. This idea spread quickly, and by the end of the nineteenth century most large cities had at least one public museum, often housed in a grand historic building designed to inspire respect. Entrance halls with marble columns and wide staircases were meant to remind visitors that they were entering a place of serious learning, not simply a building for entertainment."
+    },
+    {
+     "type": "text",
+     "text": "C  Many of these collections, however, had been formed during periods of empire, and a considerable number of objects were taken from other countries in circumstances that would not be accepted today. In recent decades, several governments and communities have asked for such items to be returned, arguing that they are an essential part of their cultural identity. Some museums have agreed to these requests, while others argue that their collections allow visitors to compare world cultures in one place. This debate is unlikely to be settled soon, but it has made curators far more open about where their objects came from."
+    },
+    {
+     "type": "text",
+     "text": "D  A second major change concerns how museums communicate. Traditional exhibitions placed objects in glass cases with short labels written by experts for other experts. Since the late twentieth century, museums have increasingly introduced interactive displays, films, reconstructions and activities for children. Supporters of this trend argue that it has attracted new audiences, particularly families and young people. Critics, on the other hand, worry that such measures can turn a museum into a theme park, where entertainment matters more than the real objects on display."
+    },
+    {
+     "type": "text",
+     "text": "E  The question of cost is equally controversial. In some countries, admission to national museums is free, on the grounds that heritage belongs to everyone and that charges discourage people on low incomes. In others, visitors pay to enter, and the income helps to fund the care and restoration of the collection. Free entry tends to increase visitor numbers, although research suggests that it attracts more repeat visits by people who already go to museums than first visits by those who do not."
+    },
+    {
+     "type": "text",
+     "text": "F  Finally, museums have become more interested in ordinary lives. Alongside paintings and royal treasures, many now collect everyday objects, family photographs and recorded interviews with local people, which are kept in an archive and used in exhibitions. Small community museums, often run by volunteers, play an important part in this work. They may preserve the history of a single factory, a fishing village or a group of migrants, stories that larger institutions would probably never tell, and in doing so they help people see their own history as worth remembering."
+    }
+   ],
+   "questions": [
+    {
+     "type": "heading",
+     "text": "Questions 1–6: Which paragraph contains the following information?"
+    },
+    {
+     "type": "text",
+     "text": "Choose A, B, C, D, E or F. The statements are not in the order of the text. You may use any letter more than once."
+    },
+    {
+     "type": "choice",
+     "id": "r1",
+     "prompt": "1. a concern that some modern displays put fun before real objects",
+     "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+     ],
+     "answer": 3,
+     "why": {
+      "tr": "Paragraf D: eleştirmenler \"such measures can turn a museum into a theme park, where entertainment matters more than the real objects on display\" diye endişe ediyor. \"fun\" = \"entertainment\".",
+      "ar": "الفقرة D: يخشى النقاد أن \"such measures can turn a museum into a theme park, where entertainment matters more than the real objects\".",
+      "en": "Paragraph D: \"entertainment matters more than the real objects on display\"."
+     },
+     "example": "Some critics fear that museums are becoming theme parks."
+    },
+    {
+     "type": "choice",
+     "id": "r2",
+     "prompt": "2. a reference to a museum that represented a political idea",
+     "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+     ],
+     "answer": 1,
+     "why": {
+      "tr": "Paragraf B: Louvre (\"The latter\") \"was presented as a symbol of the idea that the nation's treasures belonged to its citizens rather than to a king\".",
+      "ar": "الفقرة B: متحف اللوفر (The latter) \"was presented as a symbol of the idea that the nation's treasures belonged to its citizens\".",
+      "en": "Paragraph B: the Louvre was \"a symbol of the idea that the nation's treasures belonged to its citizens\"."
+     },
+     "example": "The new parliament building was a symbol of democracy."
+    },
+    {
+     "type": "choice",
+     "id": "r3",
+     "prompt": "3. a finding that free entry mainly brings back existing museum visitors",
+     "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+     ],
+     "answer": 4,
+     "why": {
+      "tr": "Paragraf E: \"it attracts more repeat visits by people who already go to museums than first visits by those who do not\".",
+      "ar": "الفقرة E: \"it attracts more repeat visits by people who already go to museums than first visits by those who do not\".",
+      "en": "Paragraph E: free entry \"attracts more repeat visits by people who already go to museums\"."
+     },
+     "example": "Free events often attract people who already attend similar events."
+    },
+    {
+     "type": "choice",
+     "id": "r4",
+     "prompt": "4. a description of early collections that had no clear organisation",
+     "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "Paragraf A: \"cabinets of curiosities\" çeşitli eşyaları \"with little attempt at order\" karıştırıyordu. \"no clear organisation\" = \"little attempt at order\".",
+      "ar": "الفقرة A: كانت \"cabinets of curiosities\" تخلط الأشياء \"with little attempt at order\"، أي دون تنظيم واضح.",
+      "en": "Paragraph A: \"with little attempt at order\"."
+     },
+     "example": "His books were piled up with little attempt at order."
+    },
+    {
+     "type": "choice",
+     "id": "r5",
+     "prompt": "5. an example of the kinds of local history that small museums record",
+     "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+     ],
+     "answer": 5,
+     "why": {
+      "tr": "Paragraf F: küçük müzeler \"the history of a single factory, a fishing village or a group of migrants\" korur. Bunlar örnekler.",
+      "ar": "الفقرة F: تحفظ المتاحف الصغيرة \"the history of a single factory, a fishing village or a group of migrants\".",
+      "en": "Paragraph F: \"a single factory, a fishing village or a group of migrants\"."
+     },
+     "example": "The village museum records the history of its fishing families."
+    },
+    {
+     "type": "choice",
+     "id": "r6",
+     "prompt": "6. an effect of requests to return objects to their countries of origin",
+     "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+     ],
+     "answer": 2,
+     "why": {
+      "tr": "Paragraf C: iade talepleri tartışması \"has made curators far more open about where their objects came from\". Bu bir sonuç (effect).",
+      "ar": "الفقرة C: هذا النقاش \"has made curators far more open about where their objects came from\"، وهذه نتيجة.",
+      "en": "Paragraph C: the debate \"has made curators far more open about where their objects came from\"."
+     },
+     "example": "The debate has made companies more open about their supply chains."
+    }
+   ]
+  },
+  {
+   "kind": "language",
+   "i18n": {"ar":{"title":"اللغة: ربط الفقرات والإحالة (this trend, such measures, the former / the latter)"},"en":{"title":"Language: linking paragraphs and reference (this trend, such measures, the former / the latter)"}},
+   "title": "Dil: paragrafları bağlamak ve gönderme (this trend, such measures, the former / the latter)",
+   "explain": {
+    "tr": "Band 7'de \"Coherence and Cohesion\" için paragrafları ve cümleleri sadece \"Firstly, Secondly\" ile değil, önceki fikre gönderme yaparak bağlarsın. 1) this/these + özet isim: Önceki cümledeki fikri tek bir isimle özetle: \"Many museums now offer free entry. This policy…\" / \"This trend…\" / \"These changes…\". 2) such + isim: önceki örneklerin türünü anlatır: \"interactive screens and films… Such measures…\". 3) the former / the latter: iki şey söyledikten sonra birincisi (the former) ve ikincisi (the latter): \"Some museums charge for entry, while others are free. The latter tend to attract more visitors.\" Dikkat: \"the latter\" sadece iki şey varsa kullanılır; tek başına \"this\" (This is…) belirsiz olabilir, mümkünse bir isim ekle: \"This decision…\".",
+    "ar": "للحصول على 7 في الترابط والتماسك لا تربط الفقرات بـ Firstly وSecondly فقط، بل بالإحالة إلى الفكرة السابقة. 1) this/these + اسم ملخِّص: لخّص فكرة الجملة السابقة باسم واحد: Many museums now offer free entry. This policy… / This trend… / These changes… 2) such + اسم: يشير إلى نوع الأمثلة السابقة: interactive screens and films… Such measures… 3) the former / the latter: بعد ذكر شيئين، الأول the former والثاني the latter: Some museums charge for entry, while others are free. The latter tend to attract more visitors. انتبه: the latter تُستخدم مع شيئين فقط، وكلمة This وحدها قد تكون غامضة، فأضف اسمًا إن أمكن: This decision…",
+    "en": "For band 7 in Coherence and Cohesion, link paragraphs and sentences by referring back to earlier ideas, not only with Firstly and Secondly. 1) this/these + summary noun: sum up the previous idea in one noun: \"Many museums now offer free entry. This policy…\" / \"This trend…\" / \"These changes…\". 2) such + noun: refers to the type of thing just described: \"interactive screens and films… Such measures…\". 3) the former / the latter: after naming two things, the first and the second: \"Some museums charge for entry, while others are free. The latter tend to attract more visitors.\" Use the latter only when there are exactly two items, and add a noun to a bare \"This\" when it might be unclear: \"This decision…\"."
+   },
+   "examples": [
+    "Many museums have added interactive displays for children. This trend has brought in more families.",
+    "Some museums charge for admission, while others are free; the former can spend more on restoration.",
+    "Films, games and reconstructions are now common in exhibitions. Such measures are popular with young visitors.",
+    "Several countries have asked for historic artefacts to be returned. These requests have divided curators."
+   ],
+   "questions": [
+    {
+     "type": "choice",
+     "id": "g1",
+     "prompt": "Museums in the city are free on Sundays and Tuesdays. Visitor numbers on ___ days are three times higher than on other days.",
+     "options": [
+      "these",
+      "this",
+      "the latter",
+      "such"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "İki gün var ve çoğul isim \"days\": \"these days\". \"this\" tekil; \"the latter\" ikincisini (Tuesday) gösterirdi ve \"days\" ile kullanılmaz.",
+      "ar": "هناك يومان والاسم جمع days، فنستخدم these. أما this فللمفرد، وthe latter تشير إلى الثاني فقط.",
+      "en": "Plural noun \"days\" → \"these\"."
+     },
+     "example": "The museum is free on Mondays and Fridays. On these days it is very busy."
+    },
+    {
+     "type": "choice",
+     "id": "g2",
+     "prompt": "The city has a science museum and an art gallery. ___ attracts mainly school groups, while the latter is popular with tourists.",
+     "options": [
+      "The former",
+      "The latter",
+      "This trend",
+      "Such"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "İki şey var; \"the latter\" (ikincisi = art gallery) zaten kullanılmış, bu yüzden birincisi için \"The former\" (science museum).",
+      "ar": "هناك شيئان، وthe latter (الثاني) مستخدمة للمعرض الفني، فنحتاج The former للأول (متحف العلوم).",
+      "en": "Two items: the former = the first (science museum)."
+     },
+     "example": "I have a sister and a brother; the former is a doctor and the latter is a teacher."
+    },
+    {
+     "type": "gap",
+     "id": "g3",
+     "prompt": "Write ONE word: Many museums now allow visitors to touch objects and use machines. ___ measures are especially popular with children.",
+     "answers": [
+      "Such",
+      "These"
+     ],
+     "why": {
+      "tr": "\"Such measures\" = bu tür önlemler/uygulamalar; önceki cümledeki örneklere gönderme yapar. \"These\" da kabul edilir.",
+      "ar": "Such measures أي مثل هذه الإجراءات، وتشير إلى الأمثلة في الجملة السابقة. وتُقبل These أيضًا.",
+      "en": "\"Such measures\" refers back to the examples."
+     },
+     "example": "Free buses and cheap tickets were introduced. Such measures reduced traffic."
+    },
+    {
+     "type": "choice",
+     "id": "g4",
+     "prompt": "Which sentence links best to: \"More and more people are visiting museums online rather than in person.\"",
+     "options": [
+      "This trend has been accelerated by better digital technology.",
+      "The latter has been accelerated by better digital technology.",
+      "Such has been accelerated by better digital technology.",
+      "The former trend has been accelerated by better digital technology."
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "Önceki cümle bir eğilimi anlatıyor; \"This trend\" onu tek kelimeyle özetliyor. \"The latter/former\" iki şey gerektirir; \"Such\" tek başına isimsiz kullanılmaz.",
+      "ar": "الجملة السابقة تصف اتجاهًا، وThis trend تلخّصه. أما the latter/the former فتحتاجان شيئين، وSuch لا تُستخدم وحدها دون اسم.",
+      "en": "\"This trend\" sums up the previous sentence."
+     },
+     "example": "Young people are reading fewer newspapers. This trend began in the 2000s."
+    },
+    {
+     "type": "gap",
+     "id": "g5",
+     "prompt": "Write ONE word: Some people visit museums to learn, others to relax. The ___ often spend more time reading the labels.",
+     "answers": [
+      "former"
+     ],
+     "why": {
+      "tr": "\"to learn\" birinci grup: \"the former\". Öğrenmek için gelenlerin etiketleri okuması mantıklı.",
+      "ar": "المجموعة الأولى (to learn) هي the former، ومن المنطقي أن يقرؤوا البطاقات أكثر.",
+      "en": "The first group (those who come to learn) = the former."
+     },
+     "example": "Some students prefer exams and others prefer projects; the former like clear deadlines."
+    }
+   ]
+  },
+  {
+   "kind": "write",
+   "i18n": {"ar":{"title":"الكتابة · Task 1: تحوّل منطقة ميناء (خريطة، تقرير كامل)","tip":"في سؤال الخريطة اذكر في الـ overview التغيير العام: من الصناعة إلى الثقافة والترفيه. جمّع التغيرات حسب المنطقة (الواجهة الشمالية، الشرق، الجنوب…) واستخدم المبني للمجهول: has been converted into, was replaced by, has been kept. اذكر أيضًا شيئًا لم يتغير. اربط الجمل بإحالات مثل \"The former… the latter\" و\"This area…\"."},"en":{"title":"Writing · Task 1: how a harbour area changed (map, full report)","tip":"In a map question, give the overall change in the overview: from industry to culture and leisure. Group the changes by area (north shore, east, south…) and use the passive: has been converted into, was replaced by, has been kept. Also mention something that has not changed. Link sentences with references like \"The former… the latter\" and \"This area…\"."}},
+   "title": "Yazma · Task 1: bir liman bölgesinin değişimi (harita, tam rapor)",
+   "task": 1,
+   "prompt": "The information below describes the riverside area of the town of Varrow in 1990 and today.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+   "data": "Practice data (an invented town, given in words instead of two maps)\n\nVarrow riverside in 1990\n• North bank: a working dockyard with three warehouses and a crane.\n• East: a railway line running along the river to a goods yard.\n• Centre: a large car park for dock workers.\n• South bank: rough grassland; no way to cross the river except the road bridge to the far west.\n• West: the road bridge and a row of terraced houses.\n\nVarrow riverside today\n• North bank: the dockyard has closed; the largest warehouse is now a maritime museum, and the other two have been converted into a café and artists' studios; the crane has been kept as a landmark.\n• East: the railway line has been removed and replaced by a cycle path; the goods yard is now a hotel.\n• Centre: the car park has become a public square used for markets.\n• South bank: a park with a children's playground; a new footbridge links it to the museum.\n• West: the road bridge and the terraced houses are unchanged.",
+   "minutes": 20,
+   "minWords": 150,
+   "tip": "Harita sorusunda overview'da genel değişimi söyle: endüstriyelden kültür ve eğlenceye. Değişimleri bölgeye göre grupla (kuzey kıyı, doğu, güney…) ve edilgen yapı kullan: has been converted into, was replaced by, has been kept. Değişmeyen bir şeyi de belirt. \"The former… the latter\" ve \"This area…\" gibi göndermelerle cümleleri bağla.",
+   "model": "The information shows how the riverside area of Varrow has changed between 1990 and the present day.\n\nOverall, the area has been transformed from an industrial zone into a place for culture and leisure. Almost all the dockyard and railway facilities have been given new uses, although the western part of the area has remained the same.\n\nThe most significant changes have taken place on the north bank. In 1990 this was a working dockyard with three warehouses and a crane. The dockyard has since closed, and the largest warehouse has been turned into a maritime museum, where objects from the town's heritage are on display, while the other two now house a café and artists' studios. The crane, however, has been preserved as a historic landmark. To the east, the railway line has been replaced by a cycle path, and the former goods yard is now a hotel.\n\nIn the centre, the workers' car park has become a public square for markets. On the south bank, the rough grassland has been developed into a park with a playground, and this is now linked to the museum by a new footbridge. By contrast, the road bridge and the terraced houses in the west are unchanged."
+  },
+  {
+   "kind": "speak",
+   "i18n": {"ar":{"title":"المحادثة: المتاحف والتاريخ"},"en":{"title":"Speaking: museums and history"}},
+   "title": "Konuşma: müzeler ve tarih",
+   "part1": [
+    "Do you often go to museums? Why or why not?",
+    "What kind of museum do you find most interesting?",
+    "Did you visit museums with your school when you were a child?",
+    "Is there a historic building in your hometown that you like?"
+   ],
+   "card": {
+    "title": "Describe a museum or historic place you have visited.",
+    "points": [
+     "where it is and when you went there",
+     "who you went with",
+     "what you saw there"
+    ],
+    "explain": "and explain what you learned from the visit and whether you would recommend it."
+   },
+   "useful": [
+    "It's housed in a historic building that used to be…",
+    "What impressed me most was an artefact from…",
+    "There were some interactive displays, and these made it…",
+    "The museum has two sections; the former is about…, and the latter…",
+    "I think places like this are important for our cultural identity, because…",
+    "Admission was free, which surprised me, because…"
+   ]
+  }
+ ]
+}

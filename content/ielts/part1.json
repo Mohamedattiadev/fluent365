@@ -1,0 +1,125 @@
+{
+ "note": "Original IELTS Speaking Part 1 style questions written for Bo-ok.",
+ "topics": [
+  {
+   "id": "home",
+   "name": "Home",
+   "questions": [
+    "Do you live in a house or a flat?",
+    "What is your favourite room in your home? Why?",
+    "Would you like to move to a different home in the future?",
+    "Who do you live with?"
+   ]
+  },
+  {
+   "id": "work-study",
+   "name": "Work or study",
+   "questions": [
+    "Do you work or are you a student?",
+    "What do you like most about your work or studies?",
+    "Is there anything you would like to change about it?",
+    "What did you want to be when you were a child?"
+   ]
+  },
+  {
+   "id": "hometown",
+   "name": "Your hometown",
+   "questions": [
+    "Where is your hometown?",
+    "What is it famous for?",
+    "Has your hometown changed much in recent years?",
+    "Would you like to live there in the future?"
+   ]
+  },
+  {
+   "id": "reading",
+   "name": "Reading",
+   "questions": [
+    "Do you like reading? Why or why not?",
+    "What did you read when you were a child?",
+    "Do you prefer paper books or e-books?",
+    "Where do you usually read?"
+   ]
+  },
+  {
+   "id": "phone",
+   "name": "Mobile phones",
+   "questions": [
+    "How often do you use your phone?",
+    "What do you mostly use it for?",
+    "Could you live without a mobile phone for a week?",
+    "When did you get your first phone?"
+   ]
+  },
+  {
+   "id": "free-time",
+   "name": "Free time",
+   "questions": [
+    "What do you do in your free time?",
+    "Do you prefer to relax alone or with other people?",
+    "Do you have more free time now than in the past?",
+    "Is there a hobby you would like to try?"
+   ]
+  },
+  {
+   "id": "food",
+   "name": "Food",
+   "questions": [
+    "What is your favourite food?",
+    "Do you like cooking?",
+    "Do you usually eat at home or in restaurants?",
+    "Has your diet changed since you were a child?"
+   ]
+  },
+  {
+   "id": "travel",
+   "name": "Travel",
+   "questions": [
+    "Do you like travelling?",
+    "Where did you go on your last holiday?",
+    "Do you prefer to travel alone or with others?",
+    "What is one place you would really like to visit?"
+   ]
+  },
+  {
+   "id": "weather",
+   "name": "Weather",
+   "questions": [
+    "What is the weather like in your country?",
+    "What kind of weather do you like most?",
+    "Does the weather change your mood?",
+    "Do you check the weather forecast every day?"
+   ]
+  },
+  {
+   "id": "music",
+   "name": "Music",
+   "questions": [
+    "What kind of music do you like?",
+    "Did you learn a musical instrument at school?",
+    "Do you listen to music while you study or work?",
+    "Is music important in your culture?"
+   ]
+  },
+  {
+   "id": "sleep",
+   "name": "Sleep",
+   "questions": [
+    "How many hours do you usually sleep?",
+    "Do you ever sleep during the day?",
+    "What do you do when you can't sleep?",
+    "Do you think people today sleep enough?"
+   ]
+  },
+  {
+   "id": "friends",
+   "name": "Friends",
+   "questions": [
+    "Do you have many friends?",
+    "How do you usually spend time with your friends?",
+    "Is it easy to make new friends where you live?",
+    "Do you prefer one close friend or many friends?"
+   ]
+  }
+ ]
+}

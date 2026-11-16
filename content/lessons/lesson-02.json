@@ -1,0 +1,696 @@
+{
+  "id": "lesson-02",
+  "number": 2,
+  "title": "Work and Careers",
+  "topic": "Work and careers",
+  "level": "B1",
+  "goal": "Understand talks about jobs, describe a bar chart and compare data with comparatives and superlatives.",
+  "steps": [
+    {
+      "kind": "words",
+      "i18n": {"tr":{"title":"Kelimeler: iş ve kariyer"},"ar":{"title":"الكلمات: العمل والمسيرة المهنية","intro":"العمل والمسيرة المهنية من أكثر الموضوعات تكرارًا في كل أقسام IELTS. تعلّم هذه الكلمات الاثنتي عشرة مع جملها الأمثلة؛ وستسمعها وتقرؤها كلها مجددًا في بقية الدرس."},"en":{"title":"Words: Work and careers","intro":"Work and careers come up very often in every part of IELTS. Learn these twelve words with their example sentences; you will hear and read all of them again in the rest of the lesson."}},
+      "title": "Words: Work and careers",
+      "intro": "İş ve kariyer, IELTS'in her bölümünde çok sık çıkan bir konu. Bu on iki kelimeyi örnek cümleleriyle öğren; dersin geri kalanında hepsini tekrar duyacak ve okuyacaksın.",
+      "words": [
+        {
+          "en": "apply for a job",
+          "pos": "phrase",
+          "tr": "bir işe başvurmak",
+          "ar": "يتقدّم لوظيفة",
+          "example": "Before you apply for a job, read the description carefully."
+        },
+        {
+          "en": "career path",
+          "pos": "noun",
+          "tr": "kariyer yolu",
+          "ar": "المسار المهني",
+          "example": "Her career path has taken her from teaching to software design."
+        },
+        {
+          "en": "job satisfaction",
+          "pos": "noun",
+          "tr": "iş tatmini, işten duyulan memnuniyet",
+          "ar": "الرضا الوظيفي",
+          "example": "For many nurses, job satisfaction comes from helping patients."
+        },
+        {
+          "en": "work-life balance",
+          "pos": "noun",
+          "tr": "iş-özel yaşam dengesi",
+          "ar": "التوازن بين العمل والحياة",
+          "example": "Long working hours can make a healthy work-life balance difficult."
+        },
+        {
+          "en": "promotion",
+          "pos": "noun",
+          "tr": "terfi",
+          "ar": "ترقية",
+          "example": "After three years in sales, he was offered a promotion to manager."
+        },
+        {
+          "en": "colleague",
+          "pos": "noun",
+          "tr": "iş arkadaşı, meslektaş",
+          "ar": "زميل في العمل",
+          "example": "I often have lunch with my colleagues on Fridays."
+        },
+        {
+          "en": "salary",
+          "pos": "noun",
+          "tr": "maaş (aylık/yıllık)",
+          "ar": "راتب",
+          "example": "Engineers usually earn a higher salary than shop assistants."
+        },
+        {
+          "en": "flexible working hours",
+          "pos": "noun",
+          "tr": "esnek çalışma saatleri",
+          "ar": "ساعات عمل مرنة",
+          "example": "Flexible working hours allow parents to take their children to school."
+        },
+        {
+          "en": "gain experience",
+          "pos": "phrase",
+          "tr": "deneyim kazanmak",
+          "ar": "يكتسب خبرة",
+          "example": "Many students do part-time work to gain experience before they graduate."
+        },
+        {
+          "en": "be responsible for",
+          "pos": "phrase",
+          "tr": "-den sorumlu olmak",
+          "ar": "يكون مسؤولًا عن",
+          "example": "In my last job, I was responsible for training new staff."
+        },
+        {
+          "en": "take on",
+          "pos": "phrasal verb",
+          "tr": "(görev, sorumluluk) üstlenmek",
+          "ar": "يتولّى (مسؤولية أو مهمة)",
+          "example": "She was happy to take on more responsibility at work."
+        },
+        {
+          "en": "unemployment",
+          "pos": "noun",
+          "tr": "işsizlik",
+          "ar": "البطالة",
+          "example": "Unemployment often rises when factories close."
+        }
+      ],
+      "practice": [
+        {
+          "type": "choice",
+          "id": "w1",
+          "prompt": "Which preposition completes the phrase? \"I'm going to apply ___ a job at the bank.\"",
+          "options": [
+            "to",
+            "for",
+            "at",
+            "on"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "Bir iş ya da pozisyon için \"apply for\" kullanılır: apply for a job. Şirket için ise \"apply to a company\" denir.",
+            "ar": "مع الوظيفة نقول apply for: apply for a job، ومع الشركة نقول apply to a company.",
+            "en": "We apply for a job or a position, but apply to a company."
+          },
+          "example": "She applied for three jobs last month."
+        },
+        {
+          "type": "gap",
+          "id": "w2",
+          "prompt": "Working part-time while you study is a good way to ___ experience. (one word)",
+          "answers": [
+            "gain",
+            "get"
+          ],
+          "why": {
+            "tr": "Deneyim için en doğal fiiller \"gain\" ve \"get\": gain experience. Yazmada \"gain\" daha akademik durur.",
+            "ar": "الفعلان الطبيعيان مع experience هما gain وget، وgain أكثر رسمية في الكتابة.",
+            "en": "We gain (or get) experience; \"gain\" sounds more formal."
+          },
+          "example": "Volunteering helped me gain experience of working with children."
+        },
+        {
+          "type": "choice",
+          "id": "w3",
+          "prompt": "\"Work-life balance\" means…",
+          "options": [
+            "earning the same salary as your colleagues",
+            "having enough time for both your job and your private life",
+            "working in two different jobs",
+            "moving between jobs every year"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"Work-life balance\" = iş ile özel yaşam arasındaki denge; ikisine de yeterli zaman ayırabilmek.",
+            "ar": "work-life balance تعني التوازن بين العمل والحياة الخاصة، أي وجود وقت كافٍ لكليهما.",
+            "en": "It means having enough time and energy for both work and your personal life."
+          },
+          "example": "Working from home twice a week has improved my work-life balance."
+        },
+        {
+          "type": "choice",
+          "id": "w4",
+          "prompt": "Which word is closest in meaning to \"promotion\" at work?",
+          "options": [
+            "a move to a higher position",
+            "a holiday from work",
+            "a change of colleagues",
+            "a reduction in salary"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "\"Promotion\" = terfi, yani daha üst bir pozisyona yükselmek. Genellikle daha fazla sorumluluk ve daha yüksek maaş getirir.",
+            "ar": "promotion تعني الترقية، أي الانتقال إلى منصب أعلى، وغالبًا مع مسؤولية أكبر وراتب أعلى.",
+            "en": "A promotion is a move to a higher, usually better-paid, position."
+          },
+          "example": "He got a promotion after only eighteen months."
+        },
+        {
+          "type": "gap",
+          "id": "w5",
+          "prompt": "As team leader, she is responsible ___ the weekly budget. (one word)",
+          "answers": [
+            "for"
+          ],
+          "why": {
+            "tr": "Kalıp \"be responsible for\" (-den sorumlu olmak). Arkasından isim ya da -ing gelir: responsible for training staff.",
+            "ar": "التعبير هو be responsible for، ويأتي بعده اسم أو فعل بـ -ing: responsible for training staff.",
+            "en": "The phrase is \"be responsible for\" + noun or -ing."
+          },
+          "example": "Who is responsible for checking the accounts?"
+        },
+        {
+          "type": "choice",
+          "id": "w6",
+          "prompt": "\"When the manager left, Leyla agreed to take on her duties.\" Here, \"take on\" means…",
+          "options": [
+            "refuse",
+            "accept and do",
+            "criticise",
+            "forget"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"Take on\" (görev, sorumluluk) üstlenmek demektir: Leyla müdürün görevlerini kabul edip yapıyor.",
+            "ar": "take on تعني يتولّى أو يقبل القيام بمهمة أو مسؤولية.",
+            "en": "To take on duties or work is to accept them and start doing them."
+          },
+          "example": "I can't take on any more projects this month."
+        }
+      ]
+    },
+    {
+      "kind": "listen",
+      "i18n": {"tr":{"title":"Dinleme · Part 2: yaz dönemi iş programı"},"ar":{"title":"الاستماع، الجزء 2: برنامج عمل صيفي","intro":"امرأة تشرح برنامج العمل الصيفي للشباب الذين أنهوا دراستهم المدرسية للتو. هناك متحدثة واحدة فقط. اقرأ الأسئلة أولًا؛ يُشغَّل التسجيل مرة واحدة.","tip":"في الجزء 2 هناك متحدث واحد، وتأتي الإجابات بترتيب الأسئلة. كلمات الخيارات لا ترد في التسجيل بلفظها غالبًا، بل بمرادف (\"shops\" = \"retail\"). قد يذكر المتحدث معلومة ثم يتراجع عنها فورًا (\"Last year we started in late June, but…\")، فإذا سمعت \"but\" أو \"however\" أو \"actually\" فزد انتباهك. وإذا كان المطلوب \"ONE WORD AND/OR A NUMBER\" فاكتب السعر بالأرقام: 9.50."},"en":{"title":"Listening Part 2: A summer work scheme","intro":"A woman describes a summer work scheme for young people who have just left school. There is only one speaker. Read the questions first; the recording plays once.","tip":"Part 2 has one speaker and the answers come in the same order as the questions. Words from the options are usually not repeated exactly in the recording but replaced with a synonym (\"shops\" = \"retail\"). The speaker may give a piece of information and then take it back (\"Last year we started in late June, but…\"): pay extra attention when you hear \"but\", \"however\" or \"actually\". If it says \"ONE WORD AND/OR A NUMBER\", write the price in figures: 9.50."}},
+      "title": "Listening Part 2: A summer work scheme",
+      "intro": "Bir kadın, okulu yeni bitiren gençlere yaz dönemi iş programını anlatıyor. Tek bir konuşmacı var. Önce soruları oku; kayıt bir kez çalar.",
+      "tip": "Bölüm 2'de tek konuşmacı vardır ve cevaplar soruların sırasıyla gelir. Seçenekteki kelimeler kayıtta çoğu zaman aynen değil, eş anlamlıyla geçer (\"shops\" = \"retail\"). Konuşmacı bir bilgiyi verip hemen geri alabilir (\"Last year we started in late June, but…\"): \"but\", \"however\", \"actually\" duyunca dikkatini artır. \"ONE WORD AND/OR A NUMBER\" diyorsa fiyatı rakamla yaz: 9.50.",
+      "audio": {
+        "type": "audio",
+        "id": "l-audio",
+        "speakers": {
+          "N": {
+            "name": "Narrator",
+            "voice": "en-GB-SoniaNeural"
+          },
+          "carla": {
+            "name": "Carla Dunmore",
+            "voice": "en-AU-NatashaNeural"
+          }
+        },
+        "lines": [
+          {
+            "speaker": "N",
+            "text": "Part two. You will hear a woman talking to a group of school leavers about a summer work scheme. First, you have some time to look at questions one to six.",
+            "pauseAfterMs": 2500
+          },
+          {
+            "speaker": "carla",
+            "text": "Good morning, everyone, and thanks for coming. My name's Carla Dunmore, and I run Work Start, a summer scheme that places school leavers with local employers for six weeks. Most of you have never applied for a job before, and that's fine. The point of the scheme is to help you gain experience before you choose a career path.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "carla",
+            "text": "Let me start with the practical details. Placements begin on the first Monday in July. Last year we started in late June, but students told us that clashed with their exams, so we've moved it. You'll work four days a week, and on Fridays you'll come to our centre for training in writing a CV and preparing for interviews.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "carla",
+            "text": "Now, pay. This isn't voluntary work; every placement comes with a salary. The rate is nine pounds fifty an hour, and the employer pays you directly, not us.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "carla",
+            "text": "There are placements in three areas this year. The largest group is in hotels and cafés. Then there's retail, so shops of all sizes. And, new this year, we have a small number of places at the hospital, mainly in the offices rather than on the wards.",
+            "pauseAfterMs": 600
+          },
+          {
+            "speaker": "carla",
+            "text": "I want to be honest about what to expect. You won't be responsible for anything major in the first week. Your supervisor will introduce you to your colleagues and show you how things work. But by the end, many students take on real tasks, like training the next new person.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "carla",
+            "text": "Some employers can offer flexible working hours, which is useful if you already have a part-time job, but please don't assume this. Ask about it at your interview.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "carla",
+            "text": "People often ask whether Work Start leads to a permanent job. Sometimes it does. A few employers have offered a full-time position, and one former student even got a promotion within her first year. ",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "carla",
+            "text": "But for most of you, the real benefit is something else. When we survey students at the end, the thing they mention most isn't the money. It's job satisfaction, the feeling that they did something useful. And for many, it's the first time they've thought about work-life balance, because a long shift teaches you a lot about how you want to live.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "carla",
+            "text": "Youth unemployment is a real problem in this area, so anything that gives you an advantage is worth having. The deadline for applications is the twentieth of May, and you'll find the form on our website.",
+            "pauseAfterMs": 1500
+          },
+          {
+            "speaker": "N",
+            "text": "That is the end of part two.",
+            "pauseAfterMs": 0
+          }
+        ]
+      },
+      "questions": [
+        {
+          "type": "heading",
+          "text": "Questions 1–3"
+        },
+        {
+          "type": "text",
+          "text": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer."
+        },
+        {
+          "type": "gap",
+          "id": "l1",
+          "prompt": "1. Placements start on the first Monday in ___",
+          "answers": [
+            "July"
+          ],
+          "why": {
+            "tr": "\"Placements begin on the first Monday in July.\" Tuzak: \"Last year we started in late June\" geçen yılın tarihi; sınavlarla çakıştığı için değiştirilmiş.",
+            "ar": "\"Placements begin on the first Monday in July.\" الفخّ: June هو موعد العام الماضي، وقد تغيّر بسبب الامتحانات.",
+            "en": "\"Placements begin on the first Monday in July\"; June was last year."
+          },
+          "example": "The course begins in July, not in June."
+        },
+        {
+          "type": "gap",
+          "id": "l2",
+          "prompt": "2. Friday training: writing a CV and preparing for ___",
+          "answers": [
+            "interviews",
+            "interview"
+          ],
+          "why": {
+            "tr": "\"...training in writing a CV and preparing for interviews.\" Boşluğa bir isim gerekiyor; notlardaki \"writing a CV\" sana nerede dinleyeceğini gösteriyor.",
+            "ar": "\"...training in writing a CV and preparing for interviews.\" الفراغ يحتاج إلى اسم، وعبارة writing a CV تدلّك على مكان الإجابة.",
+            "en": "\"training in writing a CV and preparing for interviews\"."
+          },
+          "example": "It is a good idea to prepare for interviews with a friend."
+        },
+        {
+          "type": "gap",
+          "id": "l3",
+          "prompt": "3. Pay: £___ an hour",
+          "answers": [
+            "9.50",
+            "9.5",
+            "nine pounds fifty",
+            "nine fifty"
+          ],
+          "why": {
+            "tr": "\"The rate is nine pounds fifty an hour\": yani £9.50. Sayıyı rakamla yazmak (9.50) en güvenli yoldur ve kelime sınırını aşmaz.",
+            "ar": "\"The rate is nine pounds fifty an hour\"، أي £9.50. كتابة الرقم بالأرقام (9.50) أسلم ولا تتجاوز حدّ الكلمات.",
+            "en": "\"nine pounds fifty an hour\" is £9.50."
+          },
+          "example": "The job pays £9.50 an hour."
+        },
+        {
+          "type": "heading",
+          "text": "Questions 4–6"
+        },
+        {
+          "type": "text",
+          "text": "Choose the correct letter."
+        },
+        {
+          "type": "choice",
+          "id": "l4",
+          "prompt": "4. Which kind of placement is new this year?",
+          "options": [
+            "hotels and cafés",
+            "shops",
+            "the hospital",
+            "a school"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "\"And, new this year, we have a small number of places at the hospital.\" Oteller ve kafeler en büyük grup, mağazalar (retail) da var ama yeni değil.",
+            "ar": "\"new this year, we have a small number of places at the hospital\". الفنادق والمقاهي هي المجموعة الأكبر، والمتاجر موجودة لكنها ليست جديدة.",
+            "en": "\"New this year, we have a small number of places at the hospital.\""
+          },
+          "example": "This year, for the first time, there are places at the hospital."
+        },
+        {
+          "type": "choice",
+          "id": "l5",
+          "prompt": "5. What does Carla say about flexible working hours?",
+          "options": [
+            "All employers offer them.",
+            "Students should ask about them at interview.",
+            "They are only available in shops.",
+            "They are not allowed on the scheme."
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"Some employers can offer flexible working hours... but please don't assume this. Ask about it at your interview.\" \"Some\" dediği için \"All employers\" yanlış.",
+            "ar": "\"Some employers can offer flexible working hours... Ask about it at your interview.\" قالت some، لذا All employers خاطئة.",
+            "en": "\"Some employers can offer flexible working hours... Ask about it at your interview.\""
+          },
+          "example": "Ask at your interview whether the hours are flexible."
+        },
+        {
+          "type": "choice",
+          "id": "l6",
+          "prompt": "6. According to Carla's survey, what do students value most?",
+          "options": [
+            "the money they earn",
+            "the chance of a permanent job",
+            "the feeling of doing something useful",
+            "the training on Fridays"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "\"The thing they mention most isn't the money. It's job satisfaction, the feeling that they did something useful.\" Para açıkça eleniyor; kalıcı iş ise yalnızca \"sometimes\" oluyor.",
+            "ar": "\"The thing they mention most isn't the money. It's job satisfaction, the feeling that they did something useful.\" المال مستبعد صراحة.",
+            "en": "\"isn't the money. It's job satisfaction, the feeling that they did something useful.\""
+          },
+          "example": "For me, job satisfaction matters more than a high salary."
+        }
+      ]
+    },
+    {
+      "kind": "read",
+      "i18n": {"tr":{"title":"Okuma: başlık eşleştirme (Matching headings)"},"ar":{"title":"القراءة: مطابقة العناوين (Matching headings)","intro":"نص عن تغيّر المسارات المهنية منذ القرن العشرين حتى اليوم. اختر العنوان الأنسب لكل فقرة من الفقرات الست.","tip":"العنوان يلخّص الفكرة الرئيسية للفقرة، لا تفصيلة واحدة منها. انظر أولًا إلى الجملة الأولى والأخيرة في الفقرة؛ فالفكرة الرئيسية غالبًا هناك. العنوان الذي يكرر كلمة وردت في الفقرة بلفظها (\"Teachers\"، \"technology\") يكون في الغالب فخًّا: اسأل نفسك \"ماذا تقول هذه الفقرة ككل؟\"."},"en":{"title":"Reading: Matching headings","intro":"A text about how careers have changed from the twentieth century to today. Choose the best heading for each of the six paragraphs.","tip":"A heading sums up the main idea of a paragraph, not a single detail. Look first at the first and last sentences of the paragraph; the main idea is usually there. A heading that repeats a word from the paragraph exactly (\"Teachers\", \"technology\") is often a trap: ask yourself, \"What is this paragraph about as a whole?\""}},
+      "title": "Reading: Matching headings",
+      "intro": "Kariyerlerin yirminci yüzyıldan bugüne nasıl değiştiğini anlatan bir metin. Altı paragrafın her biri için en uygun başlığı seç.",
+      "tip": "Başlık paragrafın ana fikrini özetler, tek bir ayrıntıyı değil. Önce paragrafın ilk ve son cümlesine bak; ana fikir çoğunlukla oradadır. Paragrafta geçen bir kelimeyi aynen tekrar eden başlık (\"Teachers\", \"technology\") genellikle tuzaktır: kendine \"Bu paragraf bütün olarak ne anlatıyor?\" diye sor.",
+      "passage": [
+        {
+          "type": "heading",
+          "text": "The Changing Shape of a Career"
+        },
+        {
+          "type": "text",
+          "text": "A  In the middle of the twentieth century, many workers in industrialised countries expected to stay with one employer for most of their working lives. A young person would apply for a job at a bank or a factory, gain experience slowly and wait for a promotion every few years. The career path was a ladder: each step brought more responsibility and a higher salary, and leaving the company was often seen as a sign of failure."
+        },
+        {
+          "type": "text",
+          "text": "B  Today that pattern is far less common. Workers change employers more often, and many change field entirely, retraining as teachers, programmers or nurses in their thirties or forties. Economists explain this partly by the speed of technological change. Jobs that once seemed secure can disappear within a decade, while new ones appear that did not exist before."
+        },
+        {
+          "type": "text",
+          "text": "C  Some people now combine several kinds of work at once. A graphic designer might take on short projects for three different companies, teach an evening class and sell her own prints online. Supporters of these so-called portfolio careers say they offer variety and freedom. Critics point out that they rarely come with sick pay or a pension, and that income can be unpredictable."
+        },
+        {
+          "type": "text",
+          "text": "D  Ideas about what makes work worthwhile have changed too. Surveys in many countries suggest that younger employees place a high value on job satisfaction and work-life balance, and some will accept a lower salary in exchange for flexible working hours or the chance to work from home. Employers who ignore these priorities may find it harder to keep good staff."
+        },
+        {
+          "type": "text",
+          "text": "E  These changes have not affected everyone equally. In regions where traditional industries have closed, unemployment can remain high for many years, because the skills of older workers do not always match the jobs that are available. Retraining helps, but it requires time and money that not every family has."
+        },
+        {
+          "type": "text",
+          "text": "F  Perhaps the most useful skill in such a labour market is the ability to keep learning. Colleagues, mentors and short courses all play a part, but each worker is increasingly responsible for planning his or her own development. A career today is less like a ladder and more like a series of connected projects."
+        }
+      ],
+      "questions": [
+        {
+          "type": "heading",
+          "text": "Questions 1–6"
+        },
+        {
+          "type": "text",
+          "text": "The passage has six paragraphs, A–F. Choose the correct heading for each paragraph."
+        },
+        {
+          "type": "choice",
+          "id": "r1",
+          "prompt": "1. Paragraph A",
+          "options": [
+            "A predictable climb",
+            "The end of the factory",
+            "Why young people leave home",
+            "Rising salaries for everyone"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Paragraf A eski kariyer modelini anlatıyor: tek işveren, yavaş deneyim, düzenli terfi, \"The career path was a ladder\". Merdiven = öngörülebilir bir yükseliş. Fabrika ve maaş yalnızca ayrıntı.",
+            "ar": "تصف الفقرة A النموذج القديم: صاحب عمل واحد وترقيات منتظمة، \"The career path was a ladder\"، أي صعود متوقَّع. المصنع والراتب مجرد تفاصيل.",
+            "en": "\"The career path was a ladder\": each step was expected and predictable."
+          },
+          "example": "In the past, a career was often a predictable climb from one level to the next."
+        },
+        {
+          "type": "choice",
+          "id": "r2",
+          "prompt": "2. Paragraph B",
+          "options": [
+            "Teachers in short supply",
+            "Why moving between jobs is now normal",
+            "The history of technology",
+            "Several jobs at the same time"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "Ana fikir: \"Today that pattern is far less common. Workers change employers more often\" ve nedeni teknolojik değişim. \"Teachers\" ve \"technology\" paragrafta geçen kelimeler ama ana fikri vermiyor; bunlar tuzak.",
+            "ar": "الفكرة الرئيسة: \"Workers change employers more often\" وسبب ذلك التغيّر التكنولوجي. كلمتا teachers وtechnology موجودتان لكنهما فخّ.",
+            "en": "The paragraph explains why people now change employers and fields more often."
+          },
+          "example": "Changing jobs several times is now a normal part of working life."
+        },
+        {
+          "type": "choice",
+          "id": "r3",
+          "prompt": "3. Paragraph C",
+          "options": [
+            "Selling art online",
+            "The value of a pension",
+            "Several jobs at the same time",
+            "Why moving between jobs is now normal"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "\"Some people now combine several kinds of work at once\": aynı anda birkaç iş. Sanat satışı ve emeklilik maaşı yalnızca örnek ve ayrıntı.",
+            "ar": "\"Some people now combine several kinds of work at once\"، أي عدة أعمال في الوقت نفسه. بيع اللوحات والتقاعد مجرد تفاصيل.",
+            "en": "\"combine several kinds of work at once\"."
+          },
+          "example": "My cousin has several jobs at the same time: she teaches, writes and designs websites."
+        },
+        {
+          "type": "choice",
+          "id": "r4",
+          "prompt": "4. Paragraph D",
+          "options": [
+            "Money is no longer the only goal",
+            "How to keep good staff",
+            "Working from home is unpopular",
+            "Older workers need new skills"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Paragraf, genç çalışanların iş tatminine ve dengeye önem verdiğini, \"some will accept a lower salary\" dediğini anlatıyor: para tek hedef değil. \"Keep good staff\" yalnızca son cümledeki bir sonuç.",
+            "ar": "تقول الفقرة إن الشباب يقدّرون الرضا الوظيفي والتوازن و\"some will accept a lower salary\"، أي أن المال لم يعد الهدف الوحيد.",
+            "en": "Younger workers \"will accept a lower salary\" for other benefits: money is not everything."
+          },
+          "example": "For many young employees, money is no longer the only goal."
+        },
+        {
+          "type": "choice",
+          "id": "r5",
+          "prompt": "5. Paragraph E",
+          "options": [
+            "New industries in old regions",
+            "Those left behind",
+            "The cost of a university degree",
+            "Families who move abroad"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"These changes have not affected everyone equally\": eski sanayi bölgelerinde işsizlik yüksek kalıyor, yaşlı çalışanların becerileri uymuyor. Yani değişimin dışında kalanlar.",
+            "ar": "\"These changes have not affected everyone equally\": تبقى البطالة مرتفعة في المناطق الصناعية القديمة، أي الذين تخلّفوا عن الركب.",
+            "en": "\"not affected everyone equally\": some workers and regions are left behind."
+          },
+          "example": "Retraining programmes try to help workers who have been left behind."
+        },
+        {
+          "type": "choice",
+          "id": "r6",
+          "prompt": "6. Paragraph F",
+          "options": [
+            "The importance of mentors",
+            "Taking charge of your own development",
+            "Why ladders are dangerous",
+            "Moving to a new company"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"Each worker is increasingly responsible for planning his or her own development\": kişi kendi gelişiminden sorumlu. Mentorlar yalnızca bir örnek; \"ladder\" mecaz.",
+            "ar": "\"each worker is increasingly responsible for planning his or her own development\": أي أن يتولّى الفرد تطوير نفسه. المرشدون مثال فقط.",
+            "en": "\"each worker is increasingly responsible for planning his or her own development\"."
+          },
+          "example": "Today, workers have to take charge of their own careers."
+        }
+      ]
+    },
+    {
+      "kind": "language",
+      "i18n": {"tr":{"title":"Dil: verileri karşılaştırmak"},"ar":{"title":"القواعد: مقارنة البيانات"},"en":{"title":"Grammar: Comparing data"}},
+      "title": "Grammar: Comparing data",
+      "explain": {
+        "tr": "Kısa sıfatlar: long → longer than → the longest. Uzun sıfatlar: popular → more popular than → the most popular (azlık için less / the least). Farkın büyüklüğünü göstermek için comparative'den önce much, far, slightly kullan (\"much higher\", \"slightly lower\"); \"very\" kullanılmaz. Katlar için: twice as high as. Task 1'de en büyük ve en küçük değerleri superlative ile, aradaki farkları comparative ile anlat.",
+        "ar": "الصفات القصيرة: long → longer than → the longest. والطويلة: popular → more popular than → the most popular (وللأقل: less / the least). لبيان حجم الفرق نستخدم much وfar وslightly قبل صيغة المقارنة (much higher)، ولا نستخدم very. وللأضعاف: twice as high as. في Task 1 صِف أعلى وأدنى قيمة بصيغة التفضيل، والفروق بصيغة المقارنة.",
+        "en": "Short adjectives: long → longer than → the longest. Long adjectives: popular → more popular than → the most popular (less / the least for smaller amounts). Show the size of a difference with much, far or slightly before a comparative (not \"very\"), and use \"twice as high as\" for multiples. In Task 1, use superlatives for the highest and lowest figures and comparatives for differences."
+      },
+      "examples": [
+        "In the chart, healthcare had the highest level of job satisfaction in 2005.",
+        "The average salary in finance was much higher than in retail.",
+        "Part-time work was slightly less common among men than among women.",
+        "By 2025, the number of applications was almost twice as high as in 2005."
+      ],
+      "questions": [
+        {
+          "type": "gap",
+          "id": "g1",
+          "prompt": "Of the four sectors, education had ___ (short) working week.",
+          "answers": [
+            "the shortest"
+          ],
+          "why": {
+            "tr": "Dörtten fazla şeyi karşılaştırınca superlative kullanılır: kısa sıfatlarda \"the + -est\": the shortest.",
+            "ar": "عند المقارنة بين أكثر من شيئين نستخدم صيغة التفضيل: the + -est مع الصفات القصيرة: the shortest.",
+            "en": "Comparing more than two things needs the superlative: the shortest."
+          },
+          "example": "Hospitality had the longest working week of all four sectors."
+        },
+        {
+          "type": "choice",
+          "id": "g2",
+          "prompt": "Which sentence is correct?",
+          "options": [
+            "Salaries in finance were much more higher than in retail.",
+            "Salaries in finance were much higher than in retail.",
+            "Salaries in finance were very higher than in retail.",
+            "Salaries in finance were higher that in retail."
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"Higher\" zaten karşılaştırmalıdır; önüne \"more\" gelmez. Farkı büyütmek için \"much\" kullanılır, \"very\" değil. Ve \"than\", \"that\" değil.",
+            "ar": "higher صيغة مقارنة بالفعل، فلا نضيف more. للتأكيد نستخدم much لا very، ونقول than لا that.",
+            "en": "Use \"much\" (not \"very\" or \"more\") before a comparative, and \"than\" after it."
+          },
+          "example": "Rents in the capital were much higher than in other cities."
+        },
+        {
+          "type": "gap",
+          "id": "g3",
+          "prompt": "Working hours in hospitality were longer ___ in education. (one word)",
+          "answers": [
+            "than"
+          ],
+          "why": {
+            "tr": "Karşılaştırmalı sıfattan sonra \"than\" gelir: longer than.",
+            "ar": "بعد صيغة المقارنة نستخدم than: longer than.",
+            "en": "A comparative is followed by \"than\"."
+          },
+          "example": "Finance workers worked longer than teachers."
+        },
+        {
+          "type": "choice",
+          "id": "g4",
+          "prompt": "The number of applications in 2025 was twice ___ in 2005.",
+          "options": [
+            "as high as",
+            "higher as",
+            "as higher than",
+            "more high than"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Kat karşılaştırmasında kalıp: twice / three times + as + sıfat + as. \"Twice as high as\".",
+            "ar": "في المقارنة بالأضعاف نقول: twice / three times + as + صفة + as، أي twice as high as.",
+            "en": "The pattern is \"twice as + adjective + as\"."
+          },
+          "example": "The number of online jobs was three times as high as ten years earlier."
+        },
+        {
+          "type": "choice",
+          "id": "g5",
+          "prompt": "Choose the best sentence for a Task 1 overview.",
+          "options": [
+            "Teaching was the most popular career choice, while farming was the least popular.",
+            "Teaching was the more popular career, farming was the less.",
+            "Teaching most popular and farming least popular.",
+            "Teaching was the popularest career choice."
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Uzun sıfatlarda \"the most / the least + sıfat\" kullanılır (popularest yok). \"While\" iki zıt bilgiyi tek cümlede bağlar; overview için ideal.",
+            "ar": "مع الصفات الطويلة نقول the most / the least + الصفة (لا يوجد popularest)، وwhile تربط معلومتين متقابلتين في جملة واحدة.",
+            "en": "Long adjectives take \"the most / the least\"; \"while\" links the contrast."
+          },
+          "example": "Healthcare was the most popular choice, while finance was the least popular."
+        }
+      ]
+    },
+    {
+      "kind": "write",
+      "i18n": {"tr":{"title":"Yazma · Task 1: genel özet (overview) ve bir gövde paragrafı"},"ar":{"title":"الكتابة، Task 1: الملخص العام (overview) وفقرة عرض واحدة","tip":"في المقدمة أعد صياغة السؤال بكلماتك (\"The bar chart compares…\"). الـ overview هو أهم جزء: اكتب الاتجاهات الرئيسية والتغيّر اللافت دون ذكر أرقام (\"Overall, …\"). في فقرة العرض قارن الأرقام: \"the highest\"، \"seven percentage points\"، \"slightly higher than\". لا تفسّر الرسم البياني ولا تخمّن الأسباب؛ صِف البيانات فقط."},"en":{"title":"Writing Task 1: Overview and one body paragraph","tip":"In the introduction, rewrite the question in your own words (\"The bar chart compares…\"). The overview is the most important part: describe the main trends and the most striking change without giving numbers (\"Overall, …\"). In the body paragraph, compare the figures: \"the highest\", \"seven percentage points\", \"slightly higher than\". Don't interpret the chart or guess the reasons; just describe the data."}},
+      "title": "Writing Task 1: Overview and one body paragraph",
+      "task": 1,
+      "prompt": "The bar chart below shows the percentage of full-time employees in four sectors in the country of Veloria who said they had high job satisfaction in 2005 and 2025.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\nIn this lesson, write an introduction, an overview and ONE body paragraph.",
+      "data": "Practice data (invented for this lesson; Veloria is a fictional country).\nFull-time employees reporting high job satisfaction (%)\nSector | 2005 | 2025\nHealthcare | 71 | 66\nEducation | 65 | 70\nFinance | 62 | 58\nHospitality | 48 | 55",
+      "minutes": 12,
+      "minWords": 100,
+      "tip": "Girişte soruyu kendi kelimelerinle yeniden yaz (\"The bar chart compares…\"). Overview en önemli kısımdır: sayı vermeden ana eğilimleri ve dikkat çeken değişikliği yaz (\"Overall, …\"). Gövde paragrafında sayıları karşılaştır: \"the highest\", \"seven percentage points\", \"slightly higher than\". Grafiği yorumlama, nedenini tahmin etme; yalnızca verileri anlat.",
+      "model": "The bar chart compares the proportion of full-time employees in four sectors in Veloria who reported high job satisfaction in 2005 and 2025.\n\nOverall, job satisfaction rose in education and hospitality but fell in healthcare and finance. Hospitality had the lowest figure in both years, while education replaced healthcare as the sector with the most satisfied staff.\n\nIn 2005, healthcare had the highest proportion of satisfied workers, at 71%, followed by education (65%) and finance (62%). Hospitality was far behind, at only 48%. Over the next twenty years, the figure for hospitality grew by seven percentage points to 55%, and education saw a smaller rise to 70%, which made it the leading sector. By contrast, satisfaction in healthcare dropped to 66%, and finance recorded a similar fall of four points to 58%, although this was still slightly higher than the figure for hospitality."
+    },
+    {
+      "kind": "speak",
+      "i18n": {"tr":{"title":"Konuşma: meslekler ve kariyer"},"ar":{"title":"المحادثة: الوظائف والمسيرة المهنية"},"en":{"title":"Speaking: Jobs and careers"}},
+      "title": "Speaking: Jobs and careers",
+      "part1": [
+        "What job do you do, or what job would you like to do?",
+        "What do you like most about your work or your studies?",
+        "Would you rather work for a large company or a small one? Why?",
+        "Is it common in your country for people to change jobs often?"
+      ],
+      "card": {
+        "title": "Describe a job you would like to do in the future.",
+        "points": [
+          "what the job is",
+          "what skills or qualifications it needs",
+          "how you could prepare for it"
+        ],
+        "explain": "and explain why you would like to do this job."
+      },
+      "useful": [
+        "I've always been drawn to…",
+        "One thing that really appeals to me is…",
+        "I'd need to gain some experience in… first.",
+        "The salary isn't the main thing for me; it's more about…",
+        "The downside would probably be the long hours, but…",
+        "If everything goes to plan, I'd like to…"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,685 @@
+{
+  "id": "lesson-04",
+  "number": 4,
+  "title": "Living with Technology",
+  "topic": "Technology in daily life",
+  "level": "B1",
+  "goal": "Follow a short lecture, write a full advantages and disadvantages essay and add detail with relative clauses.",
+  "steps": [
+    {
+      "kind": "words",
+      "i18n": {"tr":{"title":"Kelimeler: günlük hayatta teknoloji"},"ar":{"title":"الكلمات: التكنولوجيا في الحياة اليومية","intro":"التكنولوجيا موضوع شائع في IELTS، في قسمي المحادثة والكتابة على حد سواء. تعلّم هذه الكلمات والعبارات الاثنتي عشرة مع جملها الأمثلة؛ فستصادفها مجددًا في كل أقسام الدرس."},"en":{"title":"Words: Technology in daily life","intro":"Technology comes up often in IELTS, in both the speaking and the writing sections. Learn these twelve words and phrases with their example sentences; you will meet them again in every part of the lesson."}},
+      "title": "Words: Technology in daily life",
+      "intro": "Teknoloji, IELTS'te hem konuşma hem yazma bölümünde sık çıkan bir konu. Bu on iki kelime ve kalıbı örnek cümleleriyle öğren; dersin her bölümünde tekrar karşına çıkacaklar.",
+      "words": [
+        {
+          "en": "rely on",
+          "pos": "phrasal verb",
+          "tr": "-e güvenmek, -e bağlı olmak",
+          "ar": "يعتمد على",
+          "example": "Many people rely on their phones to find their way around a city."
+        },
+        {
+          "en": "screen time",
+          "pos": "noun",
+          "tr": "ekran süresi",
+          "ar": "الوقت أمام الشاشات",
+          "example": "Some parents limit their children's screen time to an hour a day."
+        },
+        {
+          "en": "access information",
+          "pos": "phrase",
+          "tr": "bilgiye erişmek",
+          "ar": "يصل إلى المعلومات",
+          "example": "The internet allows students to access information from all over the world."
+        },
+        {
+          "en": "device",
+          "pos": "noun",
+          "tr": "cihaz, aygıt",
+          "ar": "جهاز",
+          "example": "Most families now own several electronic devices."
+        },
+        {
+          "en": "user-friendly",
+          "pos": "adjective",
+          "tr": "kullanımı kolay, kullanıcı dostu",
+          "ar": "سهل الاستخدام",
+          "example": "The new banking app is very user-friendly, even for older customers."
+        },
+        {
+          "en": "keep in touch",
+          "pos": "phrase",
+          "tr": "iletişimi sürdürmek, görüşmeye devam etmek",
+          "ar": "يبقى على تواصل",
+          "example": "Video calls help me keep in touch with my family abroad."
+        },
+        {
+          "en": "privacy",
+          "pos": "noun",
+          "tr": "gizlilik, mahremiyet",
+          "ar": "الخصوصية",
+          "example": "Many users worry about their privacy when they shop online."
+        },
+        {
+          "en": "artificial intelligence",
+          "pos": "noun",
+          "tr": "yapay zekâ",
+          "ar": "الذكاء الاصطناعي",
+          "example": "Artificial intelligence is used to translate texts in seconds."
+        },
+        {
+          "en": "time-consuming",
+          "pos": "adjective",
+          "tr": "çok zaman alan",
+          "ar": "يستغرق وقتًا طويلًا",
+          "example": "Filling in paper forms used to be slow and time-consuming."
+        },
+        {
+          "en": "addicted to",
+          "pos": "phrase",
+          "tr": "-e bağımlı",
+          "ar": "مدمن على",
+          "example": "Some teenagers say they feel addicted to social media."
+        },
+        {
+          "en": "convenient",
+          "pos": "adjective",
+          "tr": "kullanışlı, elverişli, pratik",
+          "ar": "مريح، مناسب",
+          "example": "Online shopping is convenient because you can do it at any time."
+        },
+        {
+          "en": "digital skills",
+          "pos": "noun",
+          "tr": "dijital beceriler",
+          "ar": "المهارات الرقمية",
+          "example": "Basic digital skills are now needed in almost every job."
+        }
+      ],
+      "practice": [
+        {
+          "type": "gap",
+          "id": "w1",
+          "prompt": "Older people often have to ___ on their children to help them with new apps. (one word)",
+          "answers": [
+            "rely",
+            "depend"
+          ],
+          "why": {
+            "tr": "\"Rely on\" = -e güvenmek, -e bağlı olmak. Edat her zaman \"on\"dur; \"depend on\" da aynı anlamda kullanılır.",
+            "ar": "rely on تعني يعتمد على، وحرف الجرّ دائمًا on، وdepend on بالمعنى نفسه.",
+            "en": "\"Rely on\" (or \"depend on\") means to need someone or something."
+          },
+          "example": "I rely on my calendar app to remember appointments."
+        },
+        {
+          "type": "choice",
+          "id": "w2",
+          "prompt": "Which word completes the sentence? \"She is completely addicted ___ her phone.\"",
+          "options": [
+            "on",
+            "to",
+            "with",
+            "of"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "Kalıp \"addicted to\" + isim ya da -ing: addicted to her phone, addicted to playing games.",
+            "ar": "التعبير هو addicted to + اسم أو فعل بـ -ing: addicted to her phone.",
+            "en": "The adjective \"addicted\" is followed by \"to\"."
+          },
+          "example": "He was addicted to online games as a teenager."
+        },
+        {
+          "type": "choice",
+          "id": "w3",
+          "prompt": "A \"user-friendly\" website is one that…",
+          "options": [
+            "is easy to use",
+            "collects a lot of user data",
+            "is only for friends",
+            "is free of charge"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "\"User-friendly\" = kullanımı kolay. \"Friend\" kelimesine aldanma; arkadaşlarla ilgisi yok.",
+            "ar": "user-friendly تعني سهل الاستخدام، ولا علاقة لها بالأصدقاء.",
+            "en": "\"User-friendly\" means easy to use."
+          },
+          "example": "The library's new catalogue is much more user-friendly."
+        },
+        {
+          "type": "gap",
+          "id": "w4",
+          "prompt": "Social media helps me keep in ___ with old school friends. (one word)",
+          "answers": [
+            "touch"
+          ],
+          "why": {
+            "tr": "Kalıp \"keep in touch (with sb)\": biriyle iletişimi sürdürmek.",
+            "ar": "التعبير هو keep in touch (with sb)، أي يبقى على تواصل مع شخص.",
+            "en": "The phrase is \"keep in touch with someone\"."
+          },
+          "example": "Let's keep in touch after the course ends."
+        },
+        {
+          "type": "choice",
+          "id": "w5",
+          "prompt": "Which is the opposite of \"time-consuming\"?",
+          "options": [
+            "quick",
+            "expensive",
+            "modern",
+            "difficult"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "\"Time-consuming\" = çok zaman alan; zıttı \"quick\" (hızlı). Pahalı ya da zor olmak farklı anlamlar.",
+            "ar": "time-consuming تعني يستغرق وقتًا طويلًا، وعكسها quick (سريع).",
+            "en": "Something time-consuming takes a long time; the opposite is quick."
+          },
+          "example": "Paying bills online is quick, but queuing at the bank was time-consuming."
+        },
+        {
+          "type": "choice",
+          "id": "w6",
+          "prompt": "\"Privacy\" is…",
+          "options": [
+            "the price of a device",
+            "the right to keep your personal life and information to yourself",
+            "a type of computer program",
+            "the speed of an internet connection"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"Privacy\" = gizlilik, mahremiyet: kişisel bilgilerini ve özel hayatını başkalarından saklama hakkı.",
+            "ar": "privacy تعني الخصوصية: حقّ الإنسان في إبقاء معلوماته وحياته الشخصية لنفسه.",
+            "en": "Privacy is the right to keep your personal information to yourself."
+          },
+          "example": "Always check the privacy settings on a new app."
+        }
+      ]
+    },
+    {
+      "kind": "listen",
+      "i18n": {"tr":{"title":"Dinleme · Part 4: teknoloji zaman kazandırır mı?"},"ar":{"title":"الاستماع، الجزء 4: هل توفّر التكنولوجيا الوقت؟","intro":"محاضرة أكاديمية قصيرة حول ما إذا كانت التكنولوجيا توفّر الوقت فعلًا في الحياة اليومية. هناك متحدث واحد ولا توقّف في الوسط. اقرأ الأسئلة أولًا؛ يُشغَّل التسجيل مرة واحدة.","tip":"الجزء 4 محاضرة متواصلة. العناوين في الملاحظات تبيّن بنية المحاضرة، وعبارات الانتقال التي يقولها المحاضر مثل \"Let's start with…\" و\"Smartphones add another layer\" و\"Finally\" تنبّهك إلى أنه انتقل إلى قسم جديد، أي إلى سؤال جديد. إذا كُتب \"ONE WORD ONLY\" فاكتب كلمة واحدة: كتابة \"the constant\" أو \"a day\" تجعل الإجابة خاطئة."},"en":{"title":"Listening Part 4: Does technology save time?","intro":"A short academic lecture on whether technology really saves time in daily life. There is one speaker and no pause in the middle. Read the questions first; the recording plays once.","tip":"Part 4 is a continuous lecture. The headings in the notes show the structure of the lecture, and the lecturer's signposts such as \"Let's start with…\", \"Smartphones add another layer\" and \"Finally\" tell you they are moving to a new section, and so to a new question. If it says \"ONE WORD ONLY\", write one word: writing \"the constant\" or \"a day\" makes the answer wrong."}},
+      "title": "Listening Part 4: Does technology save time?",
+      "intro": "Teknolojinin günlük hayatta gerçekten zaman kazandırıp kazandırmadığı üzerine kısa bir akademik ders. Tek konuşmacı var ve arada duraklama yok. Önce soruları oku; kayıt bir kez çalar.",
+      "tip": "Bölüm 4 kesintisiz bir derstir. Notlardaki başlıklar dersin yapısını gösterir; hocanın \"Let's start with…\", \"Smartphones add another layer\", \"Finally\" gibi geçiş ifadeleri yeni bir bölüme, yani yeni bir soruya geçtiğini haber verir. \"ONE WORD ONLY\" yazıyorsa tek kelime yaz: \"the constant\" ya da \"a day\" yazmak cevabı yanlış yapar.",
+      "audio": {
+        "type": "audio",
+        "id": "l-audio",
+        "speakers": {
+          "N": {
+            "name": "Narrator",
+            "voice": "en-GB-SoniaNeural"
+          },
+          "lect": {
+            "name": "Lecturer",
+            "voice": "en-GB-RyanNeural"
+          }
+        },
+        "lines": [
+          {
+            "speaker": "N",
+            "text": "Part four. You will hear a lecture about technology and time in everyday life. First, you have some time to look at questions one to six.",
+            "pauseAfterMs": 2500
+          },
+          {
+            "speaker": "lect",
+            "text": "Good morning. Today I want to look at a question that sounds simple: does technology actually save us time? Most of us rely on dozens of devices every day, from washing machines to smartphones, and we tend to assume that each new one gives us a few extra minutes. The history of household technology suggests that the answer is more complicated.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "lect",
+            "text": "Let's start with the washing machine. Before machines became common in homes, laundry was one of the most time-consuming jobs in the house, often taking a whole day each week. Machines certainly made it less physically demanding. However, historians have pointed out that the time people spent on housework did not fall as much as expected. One reason is that standards rose.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "lect",
+            "text": "Once washing became easy, people washed their clothes far more often, so the time saved on each load was partly used up by doing more loads.",
+            "pauseAfterMs": 600
+          },
+          {
+            "speaker": "lect",
+            "text": "We can see a similar pattern with digital technology. Email is more convenient than writing letters, and it's certainly faster. But because sending a message costs almost nothing, we send and receive many more of them. A task that was once occasional has become constant.",
+            "pauseAfterMs": 600
+          },
+          {
+            "speaker": "lect",
+            "text": "Smartphones add another layer. They allow us to access information instantly and to keep in touch with friends and family anywhere in the world, which are real benefits. Yet many users also say they feel almost addicted to checking their phones, and researchers are studying how high levels of screen time affect sleep and concentration.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "lect",
+            "text": "The evidence here is still developing, so I'd urge you to be careful about making strong claims in your essays.",
+            "pauseAfterMs": 600
+          },
+          {
+            "speaker": "lect",
+            "text": "There's also the question of what we give in exchange. Many of the most user-friendly online services are free because they collect data about their users. So convenience often comes at a cost to privacy, and most people accept that trade-off without reading the terms.",
+            "pauseAfterMs": 600
+          },
+          {
+            "speaker": "lect",
+            "text": "Finally, artificial intelligence is now being built into everyday tools, from email programs that suggest replies to apps that plan our journeys. Whether these tools free up time or simply raise our expectations again is one of the most interesting questions for the next decade.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "lect",
+            "text": "What seems clear is that people will need strong digital skills, not only to use these tools, but to judge when not to use them.",
+            "pauseAfterMs": 1500
+          },
+          {
+            "speaker": "N",
+            "text": "That is the end of part four.",
+            "pauseAfterMs": 0
+          }
+        ]
+      },
+      "questions": [
+        {
+          "type": "heading",
+          "text": "Questions 1–4"
+        },
+        {
+          "type": "text",
+          "text": "Complete the notes below. Write ONE WORD ONLY for each answer."
+        },
+        {
+          "type": "gap",
+          "id": "l1",
+          "prompt": "1. Before washing machines, laundry often took a whole ___ every week.",
+          "answers": [
+            "day"
+          ],
+          "why": {
+            "tr": "\"...laundry was one of the most time-consuming jobs in the house, often taking a whole day each week.\" \"Every week\" = \"each week\".",
+            "ar": "\"...often taking a whole day each week.\" وevery week تعني each week.",
+            "en": "\"often taking a whole day each week\"."
+          },
+          "example": "Cleaning the old house took a whole day."
+        },
+        {
+          "type": "gap",
+          "id": "l2",
+          "prompt": "2. Time spent on housework fell less than expected because ___ rose.",
+          "answers": [
+            "standards"
+          ],
+          "why": {
+            "tr": "\"One reason is that standards rose.\" Sonra açıklıyor: insanlar çamaşırları çok daha sık yıkamaya başladı.",
+            "ar": "\"One reason is that standards rose.\" ثم يشرح أن الناس صاروا يغسلون الملابس أكثر.",
+            "en": "\"One reason is that standards rose.\""
+          },
+          "example": "As living standards rose, people expected cleaner homes."
+        },
+        {
+          "type": "gap",
+          "id": "l3",
+          "prompt": "3. Email: because messages cost almost nothing, a once occasional task is now ___.",
+          "answers": [
+            "constant"
+          ],
+          "why": {
+            "tr": "\"A task that was once occasional has become constant.\" Notlar aynı cümleyi kısaltarak veriyor; \"ONE WORD ONLY\" olduğu için yalnızca \"constant\" yaz.",
+            "ar": "\"A task that was once occasional has become constant.\" والمطلوب كلمة واحدة فقط: constant.",
+            "en": "\"A task that was once occasional has become constant.\""
+          },
+          "example": "The noise from the road is constant."
+        },
+        {
+          "type": "gap",
+          "id": "l4",
+          "prompt": "4. Researchers are studying how screen time affects sleep and ___.",
+          "answers": [
+            "concentration"
+          ],
+          "why": {
+            "tr": "\"...how high levels of screen time affect sleep and concentration.\" Boşluk \"sleep\" gibi bir isim istiyor.",
+            "ar": "\"...how high levels of screen time affect sleep and concentration.\" الفراغ يحتاج إلى اسم مثل sleep.",
+            "en": "\"affect sleep and concentration\"."
+          },
+          "example": "Too little sleep can affect your concentration."
+        },
+        {
+          "type": "heading",
+          "text": "Questions 5–6"
+        },
+        {
+          "type": "text",
+          "text": "Choose the correct letter."
+        },
+        {
+          "type": "choice",
+          "id": "l5",
+          "prompt": "5. What does the lecturer say about research on screen time?",
+          "options": [
+            "It proves that smartphones are harmful.",
+            "It is still developing.",
+            "It has mainly studied children.",
+            "It shows no effect on sleep."
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"The evidence here is still developing, so I'd urge you to be careful about making strong claims.\" Hoca kesin bir sonuç söylemiyor; \"proves\" ve \"no effect\" çok kesin.",
+            "ar": "\"The evidence here is still developing\"، فالمحاضر لا يقدّم نتيجة قاطعة، وproves وno effect قاطعتان أكثر من اللازم.",
+            "en": "\"The evidence here is still developing.\""
+          },
+          "example": "Research on this question is still developing."
+        },
+        {
+          "type": "choice",
+          "id": "l6",
+          "prompt": "6. According to the lecturer, why are many user-friendly online services free?",
+          "options": [
+            "Governments pay for them.",
+            "They collect data about their users.",
+            "Volunteers run them.",
+            "They are still being tested."
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"Many of the most user-friendly online services are free because they collect data about their users.\" Bunun bedeli gizlilik: \"convenience often comes at a cost to privacy\".",
+            "ar": "\"Many of the most user-friendly online services are free because they collect data about their users.\" والثمن هو الخصوصية.",
+            "en": "\"free because they collect data about their users\"."
+          },
+          "example": "The app is free because it collects data about its users."
+        }
+      ]
+    },
+    {
+      "kind": "read",
+      "i18n": {"tr":{"title":"Okuma: çoktan seçmeli ve özet tamamlama"},"ar":{"title":"القراءة: الاختيار من متعدد وإكمال الملخص","intro":"نص أكاديمي عن كيف تتغيّر ذاكرتنا في عصر محركات البحث والهواتف الذكية. أجب أولًا عن أسئلة الاختيار من متعدد، ثم أكمل الملخص.","tip":"في أسئلة الاختيار من متعدد قارن كل خيار بالنص على حدة: الخيارات الخاطئة تستخدم غالبًا كلمات من النص لكنها تغيّر المعنى (\"always\"، \"mainly\"، \"forget both\"). في الملخص توقّع أولًا نوع الكلمة المطلوبة في الفراغ (اسم، ظرف، فعل)، ثم حدّد الفقرة التي يتحدث عنها الملخص؛ فالملخص يتبع عادةً ترتيب النص نفسه."},"en":{"title":"Reading: Multiple choice and summary completion","intro":"An academic text about how our memory is changing in the age of search engines and smartphones. Do the multiple-choice questions first, then complete the summary.","tip":"In multiple-choice questions, compare each option with the text one by one: wrong options often use words from the text but change the meaning (\"always\", \"mainly\", \"forget both\"). In the summary, first predict what kind of word fits the gap (noun, adverb, verb), then find which paragraph the summary describes; the summary usually follows the same order as the text."}},
+      "title": "Reading: Multiple choice and summary completion",
+      "intro": "Arama motorları ve akıllı telefonlar çağında hafızamızın nasıl değiştiğini anlatan akademik bir metin. Önce çoktan seçmeli soruları, sonra özeti tamamla.",
+      "tip": "Çoktan seçmeli sorularda her seçeneği metinle tek tek karşılaştır: yanlış seçenekler çoğunlukla metindeki kelimeleri kullanır ama anlamı değiştirir (\"always\", \"mainly\", \"forget both\"). Özette önce boşluğa ne tür kelime geleceğini tahmin et (isim, zarf, fiil), sonra özetin hangi paragrafı anlattığını bul; özet genellikle metinle aynı sırayı izler.",
+      "passage": [
+        {
+          "type": "heading",
+          "text": "Remembering in the Age of Search"
+        },
+        {
+          "type": "text",
+          "text": "Not long ago, most people could recite the phone numbers of their closest friends and family. Today, many cannot remember even their partner's number, because their phone remembers it for them and the apps they use to keep in touch store every contact automatically. Psychologists use the term cognitive offloading for this habit of relying on an external device, rather than on our own memory, to store information."
+        },
+        {
+          "type": "text",
+          "text": "Offloading is not new. Writing itself is a form of it, and people have long used calendars, notebooks and shopping lists. What has changed is the scale. With a smartphone, we can access information on almost any subject in seconds, so there is less reason to keep it in our heads. Experiments have suggested that when people expect information to remain available, they are less likely to remember the information itself, although they often remember where to find it."
+        },
+        {
+          "type": "text",
+          "text": "Some commentators see this as a worrying sign that technology is making us forgetful, or that people are becoming addicted to their screens. Many researchers take a more balanced view. They argue that offloading routine details frees up mental effort for more demanding tasks, such as understanding ideas and solving problems. In this sense, a user-friendly search tool works rather like a convenient reference book on a shelf: it is useful precisely because we do not have to memorise its contents."
+        },
+        {
+          "type": "text",
+          "text": "There are, however, real risks. Information that is stored on only one device can be lost, and personal data held online raises concerns about privacy. More importantly, we cannot think critically about a subject we know nothing about. A student who looks up every fact may find it time-consuming to build the background knowledge that makes new information meaningful."
+        },
+        {
+          "type": "text",
+          "text": "The growth of artificial intelligence makes these questions more pressing, since such tools can now summarise texts and draft replies as well as find facts. Educators increasingly argue that digital skills should include knowing when to rely on a tool and when to think for oneself. Limiting screen time may help, but the deeper goal is to use technology deliberately rather than out of habit, so that it supports our memory instead of replacing it."
+        }
+      ],
+      "questions": [
+        {
+          "type": "heading",
+          "text": "Questions 1–3"
+        },
+        {
+          "type": "text",
+          "text": "Choose the correct letter."
+        },
+        {
+          "type": "choice",
+          "id": "r1",
+          "prompt": "1. What does the writer say about cognitive offloading in the second paragraph?",
+          "options": [
+            "It began with the invention of the smartphone.",
+            "It has existed for a long time but now happens on a much larger scale.",
+            "It is mainly a habit of older people.",
+            "It always damages our memory."
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"Offloading is not new. Writing itself is a form of it... What has changed is the scale.\" Yani eskiden beri var, değişen ölçeği. A seçeneği metinle çelişiyor (\"not new\").",
+            "ar": "\"Offloading is not new... What has changed is the scale.\" أي أنه قديم، لكن حجمه تغيّر. الخيار الأول يناقض النص.",
+            "en": "\"Offloading is not new... What has changed is the scale.\""
+          },
+          "example": "People have always written things down; what has changed is the scale."
+        },
+        {
+          "type": "choice",
+          "id": "r2",
+          "prompt": "2. According to the experiments mentioned, people who expect information to stay available…",
+          "options": [
+            "remember the information better",
+            "forget both the information and where it is",
+            "tend to remember where to find it rather than the information itself",
+            "stop using search engines"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "\"...they are less likely to remember the information itself, although they often remember where to find it.\" B seçeneği yarı doğru gibi görünüyor ama metin yerini hatırladıklarını söylüyor.",
+            "ar": "\"...they are less likely to remember the information itself, although they often remember where to find it.\" الخيار B يبدو قريبًا لكنه يناقض الجزء الثاني.",
+            "en": "\"less likely to remember the information itself, although they often remember where to find it\"."
+          },
+          "example": "I don't remember the date, but I know where to find it."
+        },
+        {
+          "type": "choice",
+          "id": "r3",
+          "prompt": "3. Why does the writer compare a search tool to a reference book?",
+          "options": [
+            "to show that books are more reliable than websites",
+            "to suggest that we do not need to memorise everything ourselves",
+            "to explain how search tools were invented",
+            "to encourage people to buy more books"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"...it is useful precisely because we do not have to memorise its contents.\" Karşılaştırma, her şeyi ezberlemek zorunda olmadığımızı göstermek için yapılıyor.",
+            "ar": "\"...it is useful precisely because we do not have to memorise its contents.\" أي أننا لا نحتاج إلى حفظ كل شيء.",
+            "en": "\"useful precisely because we do not have to memorise its contents\"."
+          },
+          "example": "A dictionary is useful because you do not have to memorise every word."
+        },
+        {
+          "type": "heading",
+          "text": "Questions 4–6"
+        },
+        {
+          "type": "text",
+          "text": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+        },
+        {
+          "type": "text",
+          "text": "Offloading also has risks. Information kept on a single device may be (4) ___, and online data raises privacy concerns. Without background knowledge, we cannot think (5) ___ about a subject. Educators say that digital skills should include knowing when to (6) ___ a tool and when to think for ourselves."
+        },
+        {
+          "type": "gap",
+          "id": "r4",
+          "prompt": "4. Information kept on a single device may be ___.",
+          "answers": [
+            "lost"
+          ],
+          "why": {
+            "tr": "Paragraf 4: \"Information that is stored on only one device can be lost.\" \"A single device\" = \"only one device\". Özet metinle aynı sırayı izliyor.",
+            "ar": "الفقرة 4: \"Information that is stored on only one device can be lost.\" وa single device تعني only one device.",
+            "en": "\"Information that is stored on only one device can be lost.\""
+          },
+          "example": "Back up your photos, or they may be lost."
+        },
+        {
+          "type": "gap",
+          "id": "r5",
+          "prompt": "5. Without background knowledge, we cannot think ___ about a subject.",
+          "answers": [
+            "critically"
+          ],
+          "why": {
+            "tr": "\"We cannot think critically about a subject we know nothing about.\" Boşluk fiili niteleyen bir zarf istiyor: critically.",
+            "ar": "\"We cannot think critically about a subject we know nothing about.\" الفراغ يحتاج إلى ظرف يصف الفعل: critically.",
+            "en": "\"we cannot think critically about a subject we know nothing about\"."
+          },
+          "example": "University students are expected to think critically about what they read."
+        },
+        {
+          "type": "gap",
+          "id": "r6",
+          "prompt": "6. Digital skills should include knowing when to ___ a tool.",
+          "answers": [
+            "rely on"
+          ],
+          "why": {
+            "tr": "Son paragraf: \"knowing when to rely on a tool and when to think for oneself.\" İki kelime: rely on.",
+            "ar": "الفقرة الأخيرة: \"knowing when to rely on a tool and when to think for oneself\". كلمتان: rely on.",
+            "en": "\"knowing when to rely on a tool\"."
+          },
+          "example": "Don't rely on a translation app for every word."
+        }
+      ]
+    },
+    {
+      "kind": "language",
+      "i18n": {"tr":{"title":"Dil: ilgi cümlecikleri (relative clauses)"},"ar":{"title":"القواعد: جمل الصلة (relative clauses)"},"en":{"title":"Grammar: Relative clauses"}},
+      "title": "Grammar: Relative clauses",
+      "explain": {
+        "tr": "İlgi cümleleri bir isme bilgi ekler ve iki kısa cümleyi tek, daha akademik bir cümle yapar. who = insanlar, which = şeyler, whose = sahiplik (kimin), that = who/which yerine yalnızca tanımlayıcı cümlelerde. Tanımlayıcı cümle hangi şeyi kastettiğimizi söyler, virgül almaz (People who work online…). Ek bilgi veren cümle iki virgül arasına girer ve \"that\" ile kullanılmaz (Email, which is fast, …).",
+        "ar": "الجمل الموصولة تضيف معلومة إلى اسم وتجمع جملتين قصيرتين في جملة واحدة أكثر أكاديمية. who للأشخاص، وwhich للأشياء، وwhose للملكية، وthat بدل who/which في الجمل التعريفية فقط. الجملة التعريفية تحدّد المقصود ولا تأخذ فواصل (People who work online…). أما الجملة التي تضيف معلومة فتوضع بين فاصلتين ولا تُستخدم فيها that (Email, which is fast, …).",
+        "en": "Relative clauses add information to a noun and join two short sentences into one more academic sentence. who = people, which = things, whose = possession, that = who/which in defining clauses only. A defining clause tells us which one we mean and has no commas (People who work online…). A non-defining clause adds extra information between commas and cannot use \"that\" (Email, which is fast, …)."
+      },
+      "examples": [
+        "People who rely on their phones for directions may never learn the way themselves.",
+        "Smartphones, which many people carry everywhere, have changed how we keep in touch.",
+        "A user whose data is stolen may lose money as well as privacy.",
+        "The app that I use most is a dictionary."
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "id": "g1",
+          "prompt": "Children ___ spend many hours online may sleep less.",
+          "options": [
+            "which",
+            "who",
+            "whose",
+            "where"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "İnsanlar için \"who\" kullanılır: children who… \"Which\" şeyler içindir, \"whose\" sahiplik bildirir.",
+            "ar": "نستخدم who للأشخاص: children who… أما which فللأشياء، وwhose للملكية.",
+            "en": "Use \"who\" for people."
+          },
+          "example": "Students who use flashcards often remember more words."
+        },
+        {
+          "type": "gap",
+          "id": "g2",
+          "prompt": "Artificial intelligence is a technology ___ is developing very quickly. (one word)",
+          "answers": [
+            "which",
+            "that"
+          ],
+          "why": {
+            "tr": "Şeyler için \"which\" ya da \"that\" kullanılır. Bu cümle hangi teknolojiden söz ettiğimizi tanımlıyor (virgül yok), bu yüzden ikisi de doğru.",
+            "ar": "للأشياء نستخدم which أو that، وهذه الجملة تعريفية (بلا فواصل) فكلاهما صحيح.",
+            "en": "Use \"which\" or \"that\" for things in a defining clause."
+          },
+          "example": "This is the app that I use every day."
+        },
+        {
+          "type": "choice",
+          "id": "g3",
+          "prompt": "My neighbour, ___ son repairs computers, fixed my laptop.",
+          "options": [
+            "who",
+            "which",
+            "whose",
+            "that"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "\"Whose\" sahiplik bildirir: komşumun oğlu = my neighbour, whose son… \"Who son\" denmez.",
+            "ar": "whose تدلّ على الملكية: ابن جاري = my neighbour, whose son… ولا يقال who son.",
+            "en": "\"Whose\" shows possession: the neighbour's son."
+          },
+          "example": "I met a woman whose job is testing new phones."
+        },
+        {
+          "type": "choice",
+          "id": "g4",
+          "prompt": "Which sentence is punctuated correctly?",
+          "options": [
+            "Email which is faster than letters, is now used everywhere.",
+            "Email, which is faster than letters, is now used everywhere.",
+            "Email, that is faster than letters, is now used everywhere.",
+            "Email which, is faster than letters is now used everywhere."
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "Ek bilgi veren (non-defining) ilgi cümlesi iki virgül arasına alınır ve \"that\" ile kullanılmaz: Email, which…, is…",
+            "ar": "الجملة الوصفية غير التعريفية توضع بين فاصلتين ولا تُستخدم معها that: Email, which…, is…",
+            "en": "A non-defining clause goes between two commas and cannot use \"that\"."
+          },
+          "example": "My phone, which is five years old, still works well."
+        },
+        {
+          "type": "gap",
+          "id": "g5",
+          "prompt": "Join the sentences: \"Some apps collect a lot of data. These apps are often free.\" → Apps ___ collect a lot of data are often free. (one word)",
+          "answers": [
+            "which",
+            "that"
+          ],
+          "why": {
+            "tr": "İkinci cümledeki \"these apps\" yerine ilgi zamiri gelir: Apps which/that collect a lot of data… Bu tanımlayıcı bir cümle olduğu için virgül yok.",
+            "ar": "نضع اسم الموصول بدل these apps: Apps which/that collect a lot of data… وهي جملة تعريفية بلا فواصل.",
+            "en": "\"Which\" or \"that\" replaces \"these apps\" in a defining clause."
+          },
+          "example": "Websites which sell your data should tell you clearly."
+        }
+      ]
+    },
+    {
+      "kind": "write",
+      "i18n": {"tr":{"title":"Yazma · Task 2: avantajlar ve dezavantajlar"},"ar":{"title":"الكتابة، Task 2: المزايا والعيوب","tip":"خطّط لأربع فقرات: المقدمة (إعادة صياغة الموضوع + رأيك)، المزايا، العيوب، الخاتمة. بما أن السؤال يستخدم \"outweigh\"، فقل بوضوح في المقدمة أيّ الجانبين يرجح، وكرّر ذلك في الخاتمة. في كل فقرة عرض فكرتان ومثال ملموس واحد على الأقل. خصّص أول 5 دقائق من الثلاثين للتخطيط، وآخر 3 دقائق للمراجعة."},"en":{"title":"Writing Task 2: Advantages and disadvantages","tip":"Plan four paragraphs: introduction (restate the topic + your opinion), advantages, disadvantages, conclusion. Because the question asks about \"outweigh\", say clearly in the introduction which side is stronger and repeat it in the conclusion. Each body paragraph should have two ideas and at least one concrete example. Spend the first 5 of your 30 minutes planning and the last 3 checking."}},
+      "title": "Writing Task 2: Advantages and disadvantages",
+      "task": 2,
+      "prompt": "Many everyday tasks, such as shopping, banking and booking appointments, can now be done online.\n\nDo the advantages of this development outweigh the disadvantages?\n\nWrite a complete short essay with an introduction, two body paragraphs and a conclusion.",
+      "minutes": 30,
+      "minWords": 220,
+      "tip": "Dört paragraf planla: giriş (konuyu yeniden yaz + görüşün), avantajlar, dezavantajlar, sonuç. Soru \"outweigh\" diye sorduğu için hangisinin daha ağır bastığını girişte açıkça söyle ve sonuçta tekrar et. Her gövde paragrafında iki fikir ve en az bir somut örnek olsun. 30 dakikanın ilk 5 dakikasını plana, son 3 dakikasını kontrol etmeye ayır.",
+      "model": "In recent years, a growing number of daily activities have moved online, from paying bills to seeing a doctor by video call. In my opinion, although this shift has some drawbacks, its benefits are considerably greater.\n\nThe most obvious advantage is convenience. Tasks that were once time-consuming, such as queuing at a bank or travelling to a government office, can now be completed in minutes from home. This is particularly valuable for people who live far from towns or who have limited mobility, since they no longer need to rely on others to take them to appointments. In addition, online services allow people to access information about prices and opening times instantly, which makes it easier to compare options and make sensible decisions.\n\nOn the other hand, there are genuine disadvantages. Older people and those without strong digital skills may struggle with services that are not user-friendly, and they can feel excluded when face-to-face options disappear. There are also concerns about privacy, because every online transaction creates data which can be stolen or misused. Furthermore, when everything can be done through a device, some people meet others less often, and their screen time can rise to unhealthy levels. However, most of these problems can be reduced: governments and companies can keep at least one offline option for essential services, offer free training to those who need it, and enforce strict rules on how personal data is stored.\n\nIn conclusion, while moving daily tasks online creates real challenges for some groups, I believe the advantages outweigh the disadvantages, provided that no one is left without an alternative."
+    },
+    {
+      "kind": "speak",
+      "i18n": {"tr":{"title":"Konuşma: teknoloji ve sen"},"ar":{"title":"المحادثة: أنت والتكنولوجيا"},"en":{"title":"Speaking: Technology and you"}},
+      "title": "Speaking: Technology and you",
+      "part1": [
+        "How much time do you spend on your phone each day?",
+        "Which apps do you find most useful? Why?",
+        "Do you think you spend too much time looking at screens?",
+        "Did you use computers much when you were a child?"
+      ],
+      "card": {
+        "title": "Describe a piece of technology that you find very useful.",
+        "points": [
+          "what it is",
+          "when you got it",
+          "how often you use it and what you use it for"
+        ],
+        "explain": "and explain why it is so useful to you."
+      },
+      "useful": [
+        "I'd be lost without my…",
+        "I use it for all sorts of things, for example…",
+        "What I like most about it is that it's so convenient.",
+        "The only drawback is that…",
+        "Before I had it, I used to…",
+        "I suppose I rely on it more than I'd like to admit."
+      ]
+    }
+  ]
+}

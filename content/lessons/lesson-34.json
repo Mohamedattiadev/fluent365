@@ -1,0 +1,766 @@
+{
+  "id": "lesson-34",
+  "number": 34,
+  "title": "Migration and Multicultural Societies",
+  "topic": "Migration & multicultural societies",
+  "level": "B2+",
+  "goal": "Follow a tutorial discussion and an academic text on migration, and paraphrase ideas accurately with synonyms, changes of word class and changes of structure.",
+  "steps": [
+    {
+      "kind": "words",
+      "i18n": {"ar":{"title":"المفردات: الهجرة والمجتمع متعدد الثقافات","intro":"الهجرة من أكثر المواضيع تكرارًا في IELTS Writing Task 2. تتيح لك هذه الكلمات الاثنتا عشرة وصف الجانب الاقتصادي (labour shortage, remittances, brain drain) والجانب الاجتماعي (integration, social cohesion, discrimination). تحتاج إليها للتعبير عن رأيك بلغة محايدة وأكاديمية."},"en":{"title":"Vocabulary: migration and multicultural society","intro":"Migration is one of the most common topics in IELTS Writing Task 2. These 12 words let you describe both the economic side (labour shortage, remittances, brain drain) and the social side (integration, social cohesion, discrimination). You need them to express your view in neutral, academic language."}},
+      "title": "Kelimeler: göç ve çok kültürlü toplum",
+      "intro": "Göç, IELTS Writing Task 2'de en sık çıkan konulardan biri. Bu 12 kelime hem ekonomik tarafı (labour shortage, remittances, brain drain) hem de toplumsal tarafı (integration, social cohesion, discrimination) anlatmanı sağlar. Görüşünü tarafsız ve akademik bir dille ifade etmek için bunlara ihtiyacın var.",
+      "words": [
+        {
+          "en": "integration",
+          "pos": "noun",
+          "tr": "uyum, entegrasyon",
+          "ar": "الاندماج",
+          "example": "Successful integration depends on both newcomers and the host society."
+        },
+        {
+          "en": "cultural diversity",
+          "pos": "phrase",
+          "tr": "kültürel çeşitlilik",
+          "ar": "التنوع الثقافي",
+          "example": "Cultural diversity can make a city more creative and attractive to visitors."
+        },
+        {
+          "en": "host country",
+          "pos": "phrase",
+          "tr": "ev sahibi ülke (göç edilen ülke)",
+          "ar": "البلد المضيف",
+          "example": "Many migrants learn the language of their host country within a few years."
+        },
+        {
+          "en": "labour shortage",
+          "pos": "phrase",
+          "tr": "işgücü açığı",
+          "ar": "نقص الأيدي العاملة",
+          "example": "Hospitals facing a labour shortage often recruit nurses from abroad."
+        },
+        {
+          "en": "brain drain",
+          "pos": "phrase",
+          "tr": "beyin göçü",
+          "ar": "هجرة العقول",
+          "example": "The brain drain of young doctors is a serious problem for some poorer countries."
+        },
+        {
+          "en": "remittances",
+          "pos": "noun (plural)",
+          "tr": "yurt dışındaki işçilerin ülkelerine gönderdiği para",
+          "ar": "التحويلات المالية (من المهاجرين إلى بلدانهم)",
+          "example": "Remittances from relatives abroad pay for many children's education."
+        },
+        {
+          "en": "social cohesion",
+          "pos": "phrase",
+          "tr": "toplumsal bütünlük, kaynaşma",
+          "ar": "التماسك الاجتماعي",
+          "example": "Shared public spaces such as parks can strengthen social cohesion."
+        },
+        {
+          "en": "language barrier",
+          "pos": "phrase",
+          "tr": "dil engeli",
+          "ar": "حاجز اللغة",
+          "example": "The language barrier made it difficult for her to explain her symptoms to the doctor."
+        },
+        {
+          "en": "discrimination",
+          "pos": "noun",
+          "tr": "ayrımcılık",
+          "ar": "التمييز",
+          "example": "Laws against discrimination in the workplace protect all employees."
+        },
+        {
+          "en": "assimilation",
+          "pos": "noun",
+          "tr": "asimilasyon, benzeşme (kendi kültürünü bırakma)",
+          "ar": "الاستيعاب؛ الذوبان في الثقافة السائدة",
+          "example": "Assimilation policies once required migrants to abandon their own traditions."
+        },
+        {
+          "en": "economic migrant",
+          "pos": "phrase",
+          "tr": "ekonomik göçmen (iş için göç eden)",
+          "ar": "مهاجر اقتصادي",
+          "example": "An economic migrant moves mainly to find better-paid work."
+        },
+        {
+          "en": "settle in",
+          "pos": "phrasal verb",
+          "tr": "(yeni bir yere) alışmak, yerleşmek",
+          "ar": "يستقر ويتأقلم",
+          "example": "It took the family about a year to settle in after they arrived."
+        }
+      ],
+      "practice": [
+        {
+          "type": "choice",
+          "id": "w1",
+          "prompt": "When highly trained professionals leave a country to work abroad, this is called ___.",
+          "options": [
+            "brain drain",
+            "assimilation",
+            "remittances",
+            "social cohesion"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Eğitimli kişilerin ülkeyi terk etmesi \"brain drain\" (beyin göçü). \"remittances\" gönderilen para, \"assimilation\" kültürel benzeşme, \"social cohesion\" toplumsal kaynaşmadır.",
+            "ar": "مغادرة المتعلّمين والمهنيين لبلدهم تسمّى brain drain (هجرة العقول). أما remittances فهي الأموال المحوَّلة، وassimilation الذوبان الثقافي، وsocial cohesion التماسك الاجتماعي.",
+            "en": "Skilled people leaving = brain drain."
+          },
+          "example": "The brain drain has left some rural hospitals without enough doctors."
+        },
+        {
+          "type": "gap",
+          "id": "w2",
+          "prompt": "Write the correct form of INTEGRATE: Free language classes can help the ___ of new arrivals.",
+          "answers": [
+            "integration"
+          ],
+          "why": {
+            "tr": "\"the … of\" arasında bir isim gerekir: integrate (fiil) → integration (isim).",
+            "ar": "بين the وof نحتاج إلى اسم: الفعل integrate يصبح الاسم integration.",
+            "en": "A noun is needed between \"the\" and \"of\": integration."
+          },
+          "example": "Sport can play an important part in the integration of young newcomers."
+        },
+        {
+          "type": "choice",
+          "id": "w3",
+          "prompt": "Which word completes both phrases: \"face ___\" and \"racial ___\"?",
+          "options": [
+            "discrimination",
+            "integration",
+            "diversity",
+            "barrier"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "\"face discrimination\" (ayrımcılığa maruz kalmak) ve \"racial discrimination\" (ırk ayrımcılığı) doğal eşdizimlerdir.",
+            "ar": "face discrimination (يتعرّض للتمييز) وracial discrimination (التمييز العنصري) تلازمان طبيعيان.",
+            "en": "\"Face discrimination\" and \"racial discrimination\" are both natural collocations."
+          },
+          "example": "Some job applicants still face discrimination because of their names."
+        },
+        {
+          "type": "choice",
+          "id": "w4",
+          "prompt": "Choose the correct preposition: It took us a few months to settle ___ after we moved to Lisbon.",
+          "options": [
+            "in",
+            "on",
+            "at",
+            "over"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Kalıp \"settle in\" = yeni bir yere alışmak. \"settle on\" bir şeye karar vermek demektir, burada anlam farklı.",
+            "ar": "التعبير settle in يعني يتأقلم مع مكان جديد. أما settle on فتعني يقرّر أو يختار، وهو معنى مختلف.",
+            "en": "\"Settle in\" = adapt to a new place; \"settle on\" = choose."
+          },
+          "example": "The school helps new pupils settle in during their first week."
+        },
+        {
+          "type": "gap",
+          "id": "w5",
+          "prompt": "Write ONE word: Without workers from abroad, farms would face a serious labour ___ at harvest time.",
+          "answers": [
+            "shortage"
+          ],
+          "why": {
+            "tr": "Sabit kalıp \"labour shortage\" = işgücü açığı. \"lack\" de anlamca yakın ama \"labour lack\" kullanılmaz.",
+            "ar": "التعبير الثابت هو labour shortage (نقص الأيدي العاملة). كلمة lack قريبة في المعنى لكن لا يقال labour lack.",
+            "en": "The collocation is \"labour shortage\"."
+          },
+          "example": "The building industry is facing a labour shortage."
+        },
+        {
+          "type": "choice",
+          "id": "w6",
+          "prompt": "Which statement best describes remittances?",
+          "options": [
+            "Money that migrants send to their families in their home country",
+            "Taxes that migrants pay in the host country",
+            "Loans that governments give to new arrivals",
+            "Fees paid to cross a border"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "\"remittances\" göçmenlerin memleketlerindeki ailelerine gönderdiği paradır; vergi ya da kredi değildir.",
+            "ar": "remittances هي الأموال التي يرسلها المهاجرون إلى أسرهم في بلدهم الأصلي، وليست ضرائب أو قروضًا.",
+            "en": "Remittances = money sent home by migrants."
+          },
+          "example": "Remittances are an important source of income for many villages."
+        }
+      ]
+    },
+    {
+      "kind": "listen",
+      "i18n": {"ar":{"title":"الاستماع · Part 3: نقاش حول عرض تقديمي عن الهجرة","intro":"طالبان، Ines وKwame، يناقشان مع أستاذهما عرضهما التقديمي عن الهجرة وسوق العمل. تسجيل Part 3 بطول الامتحان: ثلاثة متحدثين والأفكار تتغير كثيرًا. اقرأ الأسئلة أولًا؛ يُشغَّل التسجيل مرة واحدة فقط.","tip":"في أسئلة \"من قال ذلك؟\" في Part 3 ترد أفكار المتحدثين في التسجيل بكلمات أخرى: في السؤال \"the way employers behave\"، وفي التسجيل تسمع \"employers' attitudes\". عندما يقترح أحد الطلاب فكرة، انتبه إلى ردّ الآخر بـ\"I agree, but…\" أو \"I'm less convinced\": فالرأي الحقيقي يأتي عادةً بعد \"but\"."},"en":{"title":"Listening · Part 3: tutorial on a migration presentation","intro":"Two students, Ines and Kwame, discuss their presentation on migration and the job market with their tutor. An exam-length Part 3 recording: three speakers, and the ideas change often. Read the questions first; the recording plays once.","tip":"In Part 3 \"who said it?\" questions the speakers' ideas appear in other words: the question says \"the way employers behave\", the recording says \"employers' attitudes\". When one student suggests an idea, watch for the other replying \"I agree, but…\" or \"I'm less convinced\": the real view usually comes after \"but\"."}},
+      "title": "Dinleme · Part 3: göç sunumu üzerine tutorial",
+      "intro": "İki öğrenci, Ines ve Kwame, göç ve iş piyasası hakkındaki sunumlarını hocalarıyla tartışıyor. Sınav uzunluğunda bir Part 3 kaydı: üç konuşmacı var ve fikirler sık sık değişiyor. Önce soruları oku; kayıt bir kez çalar.",
+      "tip": "Part 3'te \"kim söyledi?\" sorularında konuşmacıların fikirleri kayıtta başka kelimelerle geçer: soruda \"the way employers behave\", kayıtta \"employers' attitudes\" duyarsın. Bir öğrenci bir fikir önerdiğinde diğerinin \"I agree, but…\" ya da \"I'm less convinced\" diye cevap vermesine dikkat et: asıl görüş genelde \"but\"tan sonra gelir.",
+      "audio": {
+        "type": "audio",
+        "id": "l-audio",
+        "speakers": {
+          "N": {
+            "name": "Narrator",
+            "voice": "en-GB-SoniaNeural"
+          },
+          "tutor": {
+            "name": "Dr Brennan",
+            "voice": "en-GB-ThomasNeural"
+          },
+          "ines": {
+            "name": "Ines",
+            "voice": "en-AU-NatashaNeural"
+          },
+          "kwame": {
+            "name": "Kwame",
+            "voice": "en-US-AndrewNeural"
+          }
+        },
+        "lines": [
+          {
+            "speaker": "N",
+            "text": "You will hear two students, Ines and Kwame, discussing their presentation on migration with their tutor. First, you have some time to look at questions one to six.",
+            "pauseAfterMs": 2500
+          },
+          {
+            "speaker": "N",
+            "text": "Now listen carefully and answer questions one to six.",
+            "pauseAfterMs": 1200
+          },
+          {
+            "speaker": "tutor",
+            "text": "Right, Ines, Kwame, come in. You wanted to talk through your presentation on migration and the labour market before Friday?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "ines",
+            "text": "Yes, thanks. We've got the structure, but we're not sure we've got the balance right. At the moment it's mostly about the economic side.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "kwame",
+            "text": "Our main argument is that many host countries depend on migrants far more than public debate suggests. In nursing and agriculture, for example, there's a serious labour shortage in a lot of places, and without workers from abroad some hospitals would struggle to stay open.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "tutor",
+            "text": "Fine, but be careful. If you only present the benefits, it'll sound like a campaign leaflet rather than an academic analysis. What about the countries people leave?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "ines",
+            "text": "That's the section I wanted to ask about. We'd mentioned brain drain, when trained doctors and engineers emigrate, but Kwame thinks we should also talk about remittances.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "kwame",
+            "text": "Because the picture isn't one-sided. For some smaller economies, the money migrants send home is a major source of income. So a country may lose skilled people but also gain something substantial in return.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "tutor",
+            "text": "Good, that's a much more nuanced point. Make sure you cite a reliable source for it, though, rather than a newspaper headline.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "ines",
+            "text": "We will. Then the second half is about integration. I wanted to focus on the language barrier, because it seems to affect everything else: finding work, dealing with doctors, even helping children with homework.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "kwame",
+            "text": "I agree it's important, but I'm less convinced it should be the main focus. Plenty of people speak the language well and still face discrimination when they apply for jobs. I think employers' attitudes matter just as much as language.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "tutor",
+            "text": "Could you combine the two? Language is something the newcomer can work on; discrimination is something the host society has to deal with. Integration is a two-way process, after all. Both sides have to make an effort.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "ines",
+            "text": "Oh, I like that. It also lets us contrast integration with assimilation, where people are expected to give up their own culture completely.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "tutor",
+            "text": "Exactly. Now, what about your case study?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "kwame",
+            "text": "We invented a town for the role-play part, Dunmore Bay, where a fish-processing plant recruited workers from abroad. In the first few years there was some tension. People assumed it would be about jobs, but in our version it's mainly over housing, because rents went up.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "ines",
+            "text": "Then the council set up a community kitchen, where newcomers and long-term residents cooked together once a week. It sounds small, but in our story it does more for social cohesion than any official campaign.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "tutor",
+            "text": "And the community kitchen idea, is that from a real study?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "ines",
+            "text": "The town is fictional, but it's based on the kind of projects described in the reading list. We'll make that clear on the slide.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "tutor",
+            "text": "Good. Honesty about sources is always appreciated. And how do you end?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "kwame",
+            "text": "With cultural diversity as a strength: new food, new festivals, new ideas in business.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "tutor",
+            "text": "Hmm. I'd be cautious about finishing on food and festivals. It can sound a little superficial. Perhaps end with what helps economic migrants and their families settle in over the long term. That's where your evidence is strongest.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "ines",
+            "text": "So schools, language classes and fair recruitment, rather than just celebrations.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "kwame",
+            "text": "That makes sense. I'll rewrite the conclusion tonight.",
+            "pauseAfterMs": 1500
+          },
+          {
+            "speaker": "N",
+            "text": "That is the end of the recording.",
+            "pauseAfterMs": 0
+          }
+        ]
+      },
+      "questions": [
+        {
+          "type": "text",
+          "text": "Questions 1–2. Choose the correct letter."
+        },
+        {
+          "type": "choice",
+          "id": "l1",
+          "prompt": "1. What does the tutor warn the students about?",
+          "options": [
+            "Their presentation is likely to be too long.",
+            "Presenting only the advantages would make it sound one-sided.",
+            "They have chosen too few examples from agriculture.",
+            "Their slides contain too many newspaper headlines."
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "Hoca: \"If you only present the benefits, it'll sound like a campaign leaflet rather than an academic analysis.\" \"benefits\" = \"advantages\", \"campaign leaflet\" = tek taraflı. Uzunluktan söz edilmiyor; \"newspaper headline\" başka bir bağlamda (kaynak) geçiyor.",
+            "ar": "يقول المعلّم: \"If you only present the benefits, it'll sound like a campaign leaflet\". benefits تعني advantages، وcampaign leaflet توحي بالانحياز. لم يُذكر طول العرض، وnewspaper headline جاءت في سياق آخر (المصادر).",
+            "en": "\"If you only present the benefits, it'll sound like a campaign leaflet.\""
+          },
+          "example": "If you only mention the benefits, your essay will sound one-sided."
+        },
+        {
+          "type": "choice",
+          "id": "l2",
+          "prompt": "2. Why does Kwame want to include remittances?",
+          "options": [
+            "They show that countries of origin can gain as well as lose.",
+            "They are larger than foreign aid in every country.",
+            "They help to stop the brain drain.",
+            "They are the main reason people emigrate."
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Kwame: \"a country may lose skilled people but also gain something substantial in return\". Yani kayıp da kazanç da var. B aşırı genelleme: sadece \"some smaller economies\" deniyor.",
+            "ar": "يقول Kwame: \"a country may lose skilled people but also gain something substantial in return\" أي هناك خسارة ومكسب. الخيار B تعميم مبالغ فيه: قال some smaller economies فقط.",
+            "en": "\"A country may lose skilled people but also gain something substantial in return.\""
+          },
+          "example": "Migration can bring gains as well as losses for the countries people leave."
+        },
+        {
+          "type": "text",
+          "text": "Questions 3–4. Who expresses each of these opinions? Choose the correct answer."
+        },
+        {
+          "type": "choice",
+          "id": "l3",
+          "prompt": "3. The way employers behave is as important as a newcomer's language skills.",
+          "options": [
+            "Ines",
+            "Kwame",
+            "the tutor"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "Kwame: \"I think employers' attitudes matter just as much as language.\" \"the way employers behave\" = \"employers' attitudes\". Ines ise dil engeline odaklanmak istiyor.",
+            "ar": "يقول Kwame: \"I think employers' attitudes matter just as much as language\". عبارة the way employers behave إعادة صياغة لـ employers' attitudes. أما Ines فتريد التركيز على حاجز اللغة.",
+            "en": "Kwame: \"Employers' attitudes matter just as much as language.\""
+          },
+          "example": "Kwame believes employers' attitudes matter as much as language."
+        },
+        {
+          "type": "choice",
+          "id": "l4",
+          "prompt": "4. Integration requires effort from both new arrivals and the host society.",
+          "options": [
+            "Ines",
+            "Kwame",
+            "the tutor"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "Hoca: \"Integration is a two-way process, after all. Both sides have to make an effort.\" Ines bu fikri beğeniyor (\"Oh, I like that\") ama fikri ortaya atan hocadır.",
+            "ar": "المعلّم: \"Integration is a two-way process, after all. Both sides have to make an effort\". أعجبت Ines بالفكرة لكن صاحبها هو المعلّم.",
+            "en": "The tutor: \"Integration is a two-way process… Both sides have to make an effort.\""
+          },
+          "example": "Integration is a two-way process that needs effort from everyone."
+        },
+        {
+          "type": "text",
+          "text": "Questions 5–6. Complete the sentences below. Write NO MORE THAN TWO WORDS for each answer."
+        },
+        {
+          "type": "gap",
+          "id": "l5",
+          "prompt": "5. In the case study, the early tension in Dunmore Bay was mainly about ___.",
+          "answers": [
+            "housing"
+          ],
+          "why": {
+            "tr": "\"People assumed it would be about jobs, but in our version it's mainly over housing\". \"jobs\" tuzak: insanların varsaydığı şey, gerçek neden değil.",
+            "ar": "\"People assumed it would be about jobs, but in our version it's mainly over housing\". كلمة jobs فخّ: هي ما افترضه الناس لا السبب الحقيقي.",
+            "en": "\"Mainly over housing\"; \"jobs\" is what people assumed."
+          },
+          "example": "The tension was mainly about housing, not jobs."
+        },
+        {
+          "type": "gap",
+          "id": "l6",
+          "prompt": "6. The council started a weekly ___ for newcomers and long-term residents.",
+          "answers": [
+            "community kitchen",
+            "kitchen"
+          ],
+          "why": {
+            "tr": "\"the council set up a community kitchen, where newcomers and long-term residents cooked together once a week\". \"once a week\" = \"weekly\". İki kelime: community kitchen.",
+            "ar": "\"the council set up a community kitchen… once a week\". once a week تعني weekly. الجواب كلمتان: community kitchen.",
+            "en": "\"The council set up a community kitchen… once a week.\""
+          },
+          "example": "The community kitchen brought neighbours together every Thursday."
+        }
+      ]
+    },
+    {
+      "kind": "read",
+      "i18n": {"ar":{"title":"القراءة: مطابقة عناوين الفقرات (Matching headings)","intro":"نص أكاديمي بطول الامتحان يتناول الآثار الاقتصادية والاجتماعية للهجرة. اختر العنوان الأنسب لكل فقرة من الفقرات الست (A–F). هذا النوع من الأسئلة يقيس بالضبط موضوع اللغة في هذا الدرس: إعادة الصياغة (paraphrase).","tip":"العنوان الصحيح يعبّر عن الفكرة الرئيسية للفقرة بكلمات أخرى: \"brain drain and remittances\" ← \"losses and gains\". أما العنوان الذي يكرر كلمة وردت في الفقرة حرفيًا (\"passports\", \"festivals\", \"children\") فغالبًا يصف تفصيلًا فقط وهو فخ. بعد قراءة الفقرة لخّص فكرتها الرئيسية في سطر واحد بكلماتك، ثم انظر إلى العناوين."},"en":{"title":"Reading: matching paragraph headings (Matching headings)","intro":"An exam-length academic text on the economic and social effects of migration. Choose the best heading for each of the six paragraphs (A–F). This question type tests exactly this lesson's language point: paraphrase.","tip":"The right heading states the paragraph's main idea in other words: \"brain drain and remittances\" → \"losses and gains\". A heading that repeats a word from the paragraph exactly (\"passports\", \"festivals\", \"children\") usually describes only a detail and is a trap. After reading a paragraph, say its main idea in one line in your own words, then look at the headings."}},
+      "title": "Okuma: paragraf başlıklarını eşleştirme (Matching headings)",
+      "intro": "Göçün ekonomik ve toplumsal etkilerini ele alan, sınav uzunluğunda akademik bir metin. Altı paragrafın (A–F) her biri için en uygun başlığı seç. Bu soru türü tam olarak bu dersin dil konusunu, paraphrase'i ölçer.",
+      "tip": "Doğru başlık paragrafın ana fikrini başka kelimelerle söyler: \"brain drain and remittances\" → \"losses and gains\". Paragrafta geçen kelimeyi aynen tekrar eden başlık (\"passports\", \"festivals\", \"children\") genellikle sadece bir ayrıntıyı anlatır ve tuzaktır. Paragrafı okuduktan sonra ana fikri kendi kelimelerinle bir satırda söyle, sonra başlıklara bak.",
+      "passage": [
+        {
+          "type": "heading",
+          "text": "Who Belongs? Migration and the Multicultural City"
+        },
+        {
+          "type": "text",
+          "text": "A  Human beings have always moved. Long before passports existed, people crossed mountains and seas in search of land, safety or work, and many of the world's great cities were built largely by newcomers. What has changed in recent decades is not the fact of migration but its scale and visibility. Cheaper travel and instant communication mean that a person can settle in a host country thousands of kilometres away while remaining in daily contact with family at home. As a result, questions that were once mainly local, such as who belongs to a community and on what terms, have become central to national politics in many parts of the world."
+        },
+        {
+          "type": "text",
+          "text": "B  Much of the public debate focuses on economics. Supporters of immigration point out that many wealthy countries have ageing populations and persistent labour shortages, particularly in healthcare, construction and agriculture. Economic migrants, who are often of working age, can fill these gaps and pay taxes that help to fund pensions. Critics respond that a large supply of workers may hold down wages for people already doing low-paid jobs. Economists have studied this question for decades, and a common conclusion is that the overall effect on wages is small, although it may be larger for particular groups or regions. In other words, the evidence does not fully support either the most optimistic or the most pessimistic claims."
+        },
+        {
+          "type": "text",
+          "text": "C  The countries that people leave experience migration very differently. When doctors, nurses and engineers emigrate, their home countries lose the benefit of years of expensive training, a process widely described as brain drain. Yet the story does not end there. Migrants frequently send part of their earnings home, and for several smaller economies these remittances are a major source of income, paying for children's education, housing and small businesses. Some migrants also return after a number of years, bringing savings, contacts and skills that are difficult to acquire at home. Whether the gains outweigh the losses depends heavily on the country and the profession concerned."
+        },
+        {
+          "type": "text",
+          "text": "D  Ideas about how newcomers should fit into society have also shifted. For much of the twentieth century, many governments expected assimilation: migrants were supposed to adopt the language, customs and sometimes even the names of the majority, leaving their own traditions behind. Later, some countries adopted policies of multiculturalism, which aimed to protect and celebrate cultural diversity. Critics argued that this could encourage separate communities living side by side with little contact, while supporters saw it as a matter of basic respect. More recently, many researchers have preferred the term integration, understood as a two-way process. Newcomers are expected to learn the language and respect the law, while the host society is expected to remove barriers that prevent them from taking a full part in economic and civic life."
+        },
+        {
+          "type": "text",
+          "text": "E  Of all these barriers, language is the one most frequently mentioned by migrants themselves. Without it, routine tasks such as visiting a doctor, renting a flat or speaking to a child's teacher become sources of anxiety. Children usually overcome the language barrier quickly at school, but adults who work long hours may have little time or energy for evening classes. For this reason, some employers now offer lessons during working hours, an approach that appears to benefit both sides: workers progress faster, and companies gain staff who can communicate safely and take on more responsibility. Language alone, however, does not guarantee acceptance. Studies in several countries have found that job applicants with foreign-sounding names receive fewer invitations to interview than equally qualified applicants, which suggests that discrimination remains a serious obstacle."
+        },
+        {
+          "type": "text",
+          "text": "F  If formal policies set the framework, everyday contact may determine whether a diverse community actually holds together. Social psychologists have long argued that prejudice tends to decline when people from different groups meet regularly as equals and work towards shared goals. Sports clubs, parents' associations and community gardens provide precisely these opportunities, and local authorities can support them at little cost, for example by keeping libraries and youth centres open in the evenings. Such places rarely make headlines, but they may contribute more to social cohesion than national campaigns, because trust is built through repeated, ordinary encounters rather than official statements. The multicultural city, in this view, is not something a government can simply declare; it is something its residents create, slowly, in the course of daily life."
+        }
+      ],
+      "questions": [
+        {
+          "type": "heading",
+          "text": "Questions 1–6: Matching headings"
+        },
+        {
+          "type": "text",
+          "text": "The passage has six paragraphs, A–F. Choose the correct heading for each paragraph."
+        },
+        {
+          "type": "choice",
+          "id": "r1",
+          "prompt": "1. Paragraph A",
+          "options": [
+            "The invention of the passport",
+            "An ancient movement on a new scale",
+            "Why cities grow too quickly",
+            "Families divided by distance"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "Paragrafın ana fikri: göç her zaman vardı, değişen \"its scale and visibility\". \"ancient\" = \"always\", \"new scale\" = \"scale and visibility\". Pasaport ve aile sadece ayrıntı.",
+            "ar": "الفكرة الرئيسية: الهجرة قديمة دائمًا، والجديد هو حجمها ووضوحها (scale and visibility). جوازات السفر والعائلات مجرد تفاصيل.",
+            "en": "Migration is old; what has changed is \"its scale and visibility\"."
+          },
+          "example": "Trade is an ancient activity that now happens on a new scale."
+        },
+        {
+          "type": "choice",
+          "id": "r2",
+          "prompt": "2. Paragraph B",
+          "options": [
+            "Migrants as the main cause of low wages",
+            "The rising cost of pensions",
+            "Mixed conclusions about economic effects",
+            "A shortage of nurses in rural hospitals"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "Paragraf iki tarafı veriyor ve şöyle bitiyor: \"the evidence does not fully support either the most optimistic or the most pessimistic claims\". Bu \"mixed conclusions\". A sadece eleştirmenlerin görüşü.",
+            "ar": "تعرض الفقرة الرأيين وتنتهي بأن الأدلة لا تدعم تمامًا أكثر الآراء تفاؤلًا أو تشاؤمًا، أي mixed conclusions. الخيار A رأي المنتقدين فقط.",
+            "en": "The evidence supports neither extreme: mixed conclusions."
+          },
+          "example": "Research on the policy has produced mixed conclusions."
+        },
+        {
+          "type": "choice",
+          "id": "r3",
+          "prompt": "3. Paragraph C",
+          "options": [
+            "Training doctors for export",
+            "Why migrants rarely return",
+            "Small businesses in rural areas",
+            "Losses and gains for the countries people leave"
+          ],
+          "answer": 3,
+          "why": {
+            "tr": "Beyin göçü (kayıp) + para transferi ve geri dönüş (kazanç): \"Whether the gains outweigh the losses depends…\". B metne ters: bazı göçmenler geri dönüyor.",
+            "ar": "هجرة العقول (خسارة) مع التحويلات والعودة (مكسب): Whether the gains outweigh the losses. الخيار B يناقض النص لأن بعض المهاجرين يعودون.",
+            "en": "Brain drain (loss) versus remittances and returns (gains)."
+          },
+          "example": "Tourism brings both losses and gains to small islands."
+        },
+        {
+          "type": "choice",
+          "id": "r4",
+          "prompt": "4. Paragraph D",
+          "options": [
+            "Changing expectations of newcomers",
+            "The disappearance of national traditions",
+            "The meaning of family names",
+            "Celebrating festivals together"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Paragraf assimilation → multiculturalism → integration değişimini anlatıyor: yeni gelenlerden beklenenlerin değişmesi. \"names\" ve \"traditions\" sadece birer ayrıntı.",
+            "ar": "تصف الفقرة التحوّل من assimilation إلى multiculturalism ثم integration، أي تغيّر ما يُتوقَّع من القادمين الجدد. الأسماء والتقاليد تفاصيل فقط.",
+            "en": "Assimilation, then multiculturalism, then integration: changing expectations."
+          },
+          "example": "Expectations of new employees have changed a great deal."
+        },
+        {
+          "type": "choice",
+          "id": "r5",
+          "prompt": "5. Paragraph E",
+          "options": [
+            "Lessons for children at school",
+            "Communication: necessary but not sufficient",
+            "Employers who refuse to teach languages",
+            "How to rent a flat in a new country"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "Dil en büyük engel, ama \"Language alone, however, does not guarantee acceptance\" (ayrımcılık devam ediyor). Yani dil gerekli ama yeterli değil. C metne ters: bazı işverenler ders veriyor.",
+            "ar": "اللغة أكبر عائق، لكن \"Language alone, however, does not guarantee acceptance\". أي أن اللغة ضرورية لكنها غير كافية. الخيار C يناقض النص.",
+            "en": "Language matters most, but \"alone… does not guarantee acceptance\"."
+          },
+          "example": "A good degree is necessary but not sufficient for a good job."
+        },
+        {
+          "type": "choice",
+          "id": "r6",
+          "prompt": "6. Paragraph F",
+          "options": [
+            "The importance of national campaigns",
+            "Why prejudice is increasing",
+            "Building trust through everyday contact",
+            "Sport as a professional career"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "\"trust is built through repeated, ordinary encounters rather than official statements\". A ters: ulusal kampanyalar daha az etkili olabilir. B ters: önyargı azalabiliyor.",
+            "ar": "\"trust is built through repeated, ordinary encounters rather than official statements\". الخيار A عكس النص، وB أيضًا لأن التحيّز يمكن أن يتراجع.",
+            "en": "\"Trust is built through repeated, ordinary encounters.\""
+          },
+          "example": "Trust between neighbours is built through everyday contact."
+        }
+      ]
+    },
+    {
+      "kind": "language",
+      "i18n": {"ar":{"title":"اللغة: تقنيات إعادة الصياغة (المرادفات، نوع الكلمة، البنية)"},"en":{"title":"Language: paraphrasing techniques (synonyms, word form, structure)"}},
+      "title": "Dil: paraphrase teknikleri (eş anlamlı, kelime türü, yapı)",
+      "explain": {
+        "tr": "IELTS'te paraphrase iki yerde puan getirir: Writing'de soruyu girişte kendi kelimelerinle yazarken, Reading ve Listening'de ise soruların metindeki karşılığını tanırken. Üç temel teknik var. 1) Eş anlamlı kelime: rely heavily on → depend greatly on; a growing number of → an increasing number of. 2) Kelime türünü değiştirmek: Many people emigrate → There is a high level of emigration; integrate successfully → successful integration. 3) Yapıyı değiştirmek: aktif → edilgen, yan cümle → isim öbeği: Because rents rose, families moved → The rise in rents led families to move. En iyi paraphrase genellikle bu tekniklerden ikisini birlikte kullanır. Dikkat: anlam değişmemeli. \"some\" → \"all\", \"may\" → \"will\" gibi değişiklikler paraphrase değil, hatadır. Teknik terimleri (migration, tax) değiştirmeye çalışma; doğal eşanlamlısı yoksa aynen kullan.",
+        "ar": "في IELTS تمنحك إعادة الصياغة (paraphrase) نقاطًا في موضعين: في الكتابة عند إعادة كتابة السؤال بكلماتك في المقدمة، وفي القراءة والاستماع عند التعرّف على ما يقابل السؤال في النص. هناك ثلاث تقنيات أساسية. 1) المرادف: rely heavily on ← depend greatly on. 2) تغيير نوع الكلمة: Many people emigrate ← There is a high level of emigration. 3) تغيير البنية: من المبني للمعلوم إلى المجهول، أو من جملة إلى عبارة اسمية: Because rents rose, families moved ← The rise in rents led families to move. أفضل إعادة صياغة تجمع عادة بين تقنيتين. انتبه: يجب ألا يتغير المعنى؛ فتحويل some إلى all أو may إلى will خطأ وليس إعادة صياغة. ولا تحاول تغيير المصطلحات التقنية (migration, tax) إذا لم يكن لها مرادف طبيعي.",
+        "en": "Paraphrasing earns marks in two places: in Writing, when you restate the question in your introduction, and in Reading and Listening, when you recognise how a question rewords the text. There are three main techniques. 1) Synonyms: rely heavily on → depend greatly on. 2) Changing word class: Many people emigrate → There is a high level of emigration. 3) Changing structure: active → passive, or a clause → a noun phrase: Because rents rose, families moved → The rise in rents led families to move. The best paraphrases usually combine two techniques. The meaning must not change: some → all or may → will is an error, not a paraphrase. Do not force synonyms for technical terms (migration, tax) that have no natural equivalent."
+      },
+      "examples": [
+        "Many countries rely heavily on foreign workers → Numerous nations depend to a great extent on labour from abroad.",
+        "Migrants often find it hard to integrate → Successful integration is often difficult for new arrivals.",
+        "Because housing became more expensive, tension grew → The rising cost of housing led to increased tension.",
+        "Governments should help newcomers learn the language → Language support for new arrivals ought to be provided by the state."
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "id": "g1",
+          "prompt": "Which is the best paraphrase of: \"The number of people moving abroad has risen sharply\"?",
+          "options": [
+            "There has been a sharp increase in emigration.",
+            "Nobody wants to move abroad any more.",
+            "Moving abroad is sharply risen by people.",
+            "The number of people abroad has fallen slightly."
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "A hem kelime türünü değiştiriyor (risen sharply → a sharp increase) hem de eş anlamlı kullanıyor (people moving abroad → emigration). B ve D anlamı değiştiriyor; C dil bilgisi olarak yanlış.",
+            "ar": "الخيار A يغيّر نوع الكلمة (risen sharply ← a sharp increase) ويستخدم مرادفًا (people moving abroad ← emigration). أما B وD فيغيّران المعنى، وC خطأ نحويًا.",
+            "en": "A changes word class and uses a synonym; B and D change the meaning; C is ungrammatical."
+          },
+          "example": "There has been a sharp increase in the number of international students."
+        },
+        {
+          "type": "gap",
+          "id": "g2",
+          "prompt": "Change the word class. Write ONE word: \"Many skilled workers emigrate.\" → \"There is a high level of ___ among skilled workers.\"",
+          "answers": [
+            "emigration"
+          ],
+          "why": {
+            "tr": "\"a high level of\" sonrasında isim gerekir: emigrate (fiil) → emigration (isim).",
+            "ar": "بعد a high level of نحتاج إلى اسم: الفعل emigrate يصبح الاسم emigration.",
+            "en": "A noun follows \"a high level of\": emigration."
+          },
+          "example": "There is a high level of emigration from some rural areas."
+        },
+        {
+          "type": "choice",
+          "id": "g3",
+          "prompt": "Which phrase is the closest paraphrase of \"rely heavily on\" in: \"Some industries rely heavily on migrant labour\"?",
+          "options": [
+            "depend greatly on",
+            "are slightly interested in",
+            "have completely replaced",
+            "are strongly opposed to"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "\"rely on\" = \"depend on\"; \"heavily\" = \"greatly\". Diğerleri anlamı değiştiriyor.",
+            "ar": "rely on تعني depend on، وheavily تعني greatly. الخيارات الأخرى تغيّر المعنى.",
+            "en": "Rely on = depend on; heavily = greatly."
+          },
+          "example": "Many farms depend greatly on seasonal workers."
+        },
+        {
+          "type": "choice",
+          "id": "g4",
+          "prompt": "Which sentence changes the structure but keeps the meaning of: \"Because rents rose, many newcomers moved to the suburbs.\"?",
+          "options": [
+            "The rise in rents led many newcomers to move to the suburbs.",
+            "Many newcomers moved to the suburbs, so rents rose.",
+            "Rents rose because newcomers moved to the suburbs.",
+            "Some newcomers might move to the suburbs if rents rise."
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "A yan cümleyi isim öbeğine çeviriyor (rents rose → the rise in rents) ve neden-sonuç aynı kalıyor. B ve C neden ile sonucu ters çeviriyor; D anlamı varsayıma dönüştürüyor.",
+            "ar": "الخيار A يحوّل الجملة إلى عبارة اسمية (rents rose ← the rise in rents) مع بقاء السبب والنتيجة. أما B وC فيعكسان السبب والنتيجة، وD يحوّل المعنى إلى افتراض.",
+            "en": "A keeps cause and effect; B and C reverse them; D makes it hypothetical."
+          },
+          "example": "The rise in prices led many families to change their shopping habits."
+        },
+        {
+          "type": "choice",
+          "id": "g5",
+          "prompt": "Which is NOT an accurate paraphrase of \"Some migrants may face discrimination when applying for jobs\"?",
+          "options": [
+            "All migrants are discriminated against by employers.",
+            "Certain migrants can experience unfair treatment in recruitment.",
+            "Discrimination is a possible problem for some migrant job seekers.",
+            "A number of migrants might be treated unfairly when looking for work."
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "A, \"some\" kelimesini \"all\"a, \"may\" kelimesini kesinliğe çeviriyor: anlam değişmiş, bu bir paraphrase değil. Diğer üçü anlamı koruyor.",
+            "ar": "الخيار A يحوّل some إلى all ويحوّل may إلى يقين، فيتغيّر المعنى وهذا ليس إعادة صياغة. الخيارات الأخرى تحافظ على المعنى.",
+            "en": "A turns \"some\" into \"all\" and \"may\" into certainty: the meaning has changed."
+          },
+          "example": "Certain applicants can experience unfair treatment in recruitment."
+        }
+      ]
+    },
+    {
+      "kind": "write",
+      "i18n": {"ar":{"title":"الكتابة · Task 2: مقال كامل (المزايا والعيوب)","tip":"أعد صياغة السؤال في المقدمة: \"the number of people who move from abroad… has increased\" ← \"there has been a marked rise in immigration\". السؤال يطلب حكمًا: هل ترجح المزايا أم العيوب؟ أعطِ إجابتك في المقدمة وكرّرها في الخاتمة. فقرة للمزايا، وفقرة للعيوب (وكيف يمكن الحدّ منها). لا تنسخ السؤال حرفيًا؛ استخدم تقنيات إعادة الصياغة الثلاث في هذا الدرس."},"en":{"title":"Writing · Task 2: full essay (advantages and disadvantages)","tip":"Paraphrase the question in the introduction: \"the number of people who move from abroad… has increased\" → \"there has been a marked rise in immigration\". The question asks for a judgement: do the advantages outweigh the disadvantages? Give your answer in the introduction and repeat it in the conclusion. One paragraph on advantages, one on disadvantages (and how they could be reduced). Don't copy the question; use this lesson's three paraphrasing techniques."}},
+      "title": "Yazma · Task 2: tam deneme (avantajlar ve dezavantajlar)",
+      "task": 2,
+      "prompt": "In many countries, the number of people who move from abroad to live and work has increased in recent decades.\n\nDo the advantages of this development outweigh the disadvantages?\n\nWrite at least 250 words.",
+      "minutes": 40,
+      "minWords": 250,
+      "tip": "Girişte soruyu paraphrase et: \"the number of people who move from abroad… has increased\" → \"there has been a marked rise in immigration\". Soru bir karar istiyor: avantajlar mı ağır basıyor, dezavantajlar mı? Cevabını girişte ver ve sonuçta tekrarla. Bir paragraf avantajlar, bir paragraf dezavantajlar (ve nasıl azaltılabileceği). Soruyu aynen kopyalama; bu dersin üç paraphrase tekniğini kullan.",
+      "model": "Over the past few decades, many nations have seen a marked rise in the number of people arriving from other countries to settle and work. Although this trend creates certain challenges, I would argue that its benefits clearly outweigh its drawbacks, provided that newcomers are given proper support.\n\nThe most obvious advantage is economic. Many wealthy countries have ageing populations and a growing labour shortage in sectors such as healthcare, construction and agriculture. Workers from abroad, who are often young and highly motivated, fill these gaps and pay taxes that help to fund public services and pensions. In addition, cultural diversity can bring new ideas into business and the arts: many successful companies have been founded by immigrants or their children. Countries that welcome talent from abroad are therefore often more innovative and more competitive.\n\nThat said, rapid immigration can cause genuine difficulties. If large numbers of people arrive in one area within a short period, pressure on housing, schools and hospitals may increase, and long-term residents may feel that their concerns are being ignored. Newcomers themselves may struggle with the language barrier or face discrimination, which can leave them isolated and reduce social cohesion. These problems, however, result mainly from poor planning rather than from migration itself. Investment in housing and local services, together with free language classes and strong laws against unfair treatment in recruitment, can reduce them considerably.\n\nIn conclusion, while the arrival of large numbers of migrants can put pressure on communities in the short term, the long-term economic and cultural gains are substantial. The key is not to limit movement as such, but to manage integration well, so that both newcomers and existing residents share in the benefits."
+    },
+    {
+      "kind": "speak",
+      "i18n": {"ar":{"title":"المحادثة: الهجرة والثقافات المختلفة"},"en":{"title":"Speaking: migration and different cultures"}},
+      "title": "Konuşma: göç ve farklı kültürler",
+      "part1": [
+        "Are there many people from other countries living in your city?",
+        "Have you ever thought about living abroad? Why or why not?",
+        "What do you think is the hardest part of moving to a new country?",
+        "Do you enjoy trying food from other cultures?"
+      ],
+      "card": {
+        "title": "Describe a person you know who has moved to live in another country or city.",
+        "points": [
+          "who the person is and where they moved to",
+          "why they decided to move",
+          "how they settled in during the first months"
+        ],
+        "explain": "and explain how the move has changed their life."
+      },
+      "useful": [
+        "He moved abroad mainly for work; there was a real shortage of engineers there.",
+        "The biggest challenge, at least at first, was the language barrier.",
+        "To put it another way, she had to start from scratch.",
+        "It took him a good year to really settle in.",
+        "What helped most was that the local community was very welcoming.",
+        "Looking back, I'd say the move has broadened his horizons enormously."
+      ]
+    }
+  ]
+}

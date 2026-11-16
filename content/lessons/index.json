@@ -1,0 +1,324 @@
+{
+ "lessons": [
+  {
+   "id": "lesson-01",
+   "number": 1,
+   "title": "Learning for Life",
+   "topic": "Education and learning",
+   "level": "B1",
+   "goal": "Talk and write about how people learn, using the present perfect and past simple correctly."
+  },
+  {
+   "id": "lesson-02",
+   "number": 2,
+   "title": "Work and Careers",
+   "topic": "Work and careers",
+   "level": "B1",
+   "goal": "Understand talks about jobs, describe a bar chart and compare data with comparatives and superlatives."
+  },
+  {
+   "id": "lesson-03",
+   "number": 3,
+   "title": "Our Changing Planet",
+   "topic": "The environment",
+   "level": "B1",
+   "goal": "Follow a discussion about an environmental project and explain causes, effects and solutions in writing."
+  },
+  {
+   "id": "lesson-04",
+   "number": 4,
+   "title": "Living with Technology",
+   "topic": "Technology in daily life",
+   "level": "B1",
+   "goal": "Follow a short lecture, write a full advantages and disadvantages essay and add detail with relative clauses."
+  },
+  {
+   "id": "lesson-05",
+   "number": 5,
+   "title": "Health and Lifestyle",
+   "topic": "Health & lifestyle",
+   "level": "B1+",
+   "goal": "Talk and write about healthy habits with precise collocations, and give advice with should, ought to, have to and need to."
+  },
+  {
+   "id": "lesson-06",
+   "number": 6,
+   "title": "Cities and Housing",
+   "topic": "Cities & housing",
+   "level": "B1+",
+   "goal": "Describe how a place has changed, in speech and in a Task 1 map report, using the passive and precise words for cities and housing."
+  },
+  {
+   "id": "lesson-07",
+   "number": 7,
+   "title": "Travel and Tourism",
+   "topic": "Travel & tourism",
+   "level": "B1+",
+   "goal": "Discuss the benefits and costs of tourism, follow a three-person discussion, and speculate with first and second conditionals."
+  },
+  {
+   "id": "lesson-08",
+   "number": 8,
+   "title": "Media and Advertising",
+   "topic": "Media & advertising",
+   "level": "B1+",
+   "goal": "Follow a short lecture and an academic text on advertising, and write a careful opinion essay using hedging language."
+  },
+  {
+   "id": "lesson-09",
+   "number": 9,
+   "title": "Family and Relationships",
+   "topic": "Family & relationships",
+   "level": "B1+",
+   "goal": "Follow conversations and texts about family life, and describe past habits naturally with used to and would."
+  },
+  {
+   "id": "lesson-10",
+   "number": 10,
+   "title": "Food and Farming",
+   "topic": "Food & farming",
+   "level": "B1+",
+   "goal": "Follow a talk on a working farm, describe a pie chart, and use countable and uncountable nouns with the right quantifiers."
+  },
+  {
+   "id": "lesson-11",
+   "number": 11,
+   "title": "Crime and the Law",
+   "topic": "Crime & the law",
+   "level": "B1+",
+   "goal": "Follow a discussion and a text about punishment and crime prevention, and report other people's views with reported speech."
+  },
+  {
+   "id": "lesson-12",
+   "number": 12,
+   "title": "Science and Research",
+   "topic": "Science & research",
+   "level": "B1+",
+   "goal": "Follow a short lecture on how science checks itself, describe a table of figures, and choose correctly between -ing and to-infinitive after verbs."
+  },
+  {
+   "id": "lesson-13",
+   "number": 13,
+   "title": "Art and Culture",
+   "topic": "Art & culture",
+   "level": "B1+",
+   "goal": "Understand bookings and opinions about the arts, describe things vividly with the right adjective order and intensifiers, and write a full discussion essay."
+  },
+  {
+   "id": "lesson-14",
+   "number": 14,
+   "title": "Sport and Fitness",
+   "topic": "Sport & fitness",
+   "level": "B1+",
+   "goal": "Follow a talk about a new sports centre and a text on whether watching sport makes people active, and make careful predictions with will, be going to and be likely to."
+  },
+  {
+   "id": "lesson-15",
+   "number": 15,
+   "title": "Space Exploration",
+   "topic": "Space exploration",
+   "level": "B1+",
+   "goal": "Follow a tutorial discussion and an academic text about space, talk about ongoing activities with the present perfect continuous, and answer a two-part essay question."
+  },
+  {
+   "id": "lesson-16",
+   "number": 16,
+   "title": "Language and Communication",
+   "topic": "Language & communication",
+   "level": "B1+",
+   "goal": "Follow a lecture on endangered languages and a text on age and language learning, and write a formal opinion essay using nominalisation for an academic style."
+  },
+  {
+   "id": "lesson-17",
+   "number": 17,
+   "title": "A Connected World",
+   "topic": "Globalisation and trade",
+   "level": "B2",
+   "goal": "Follow a discussion about a company's supply chain, weigh the gains and losses of globalisation in an essay, and link ideas with participle clauses."
+  },
+  {
+   "id": "lesson-18",
+   "number": 18,
+   "title": "Living Longer",
+   "topic": "An ageing population",
+   "level": "B2",
+   "goal": "Understand a talk about a home-sharing scheme, weigh the effects of an ageing population in an essay, and use third and mixed conditionals to talk about the past."
+  },
+  {
+   "id": "lesson-19",
+   "number": 19,
+   "title": "Every Drop Counts",
+   "topic": "Water and natural resources",
+   "level": "B2",
+   "goal": "Take notes on a lecture about groundwater, explain causes of and solutions to water scarcity in an essay, and contrast ideas with although, despite, whereas and while."
+  },
+  {
+   "id": "lesson-20",
+   "number": 20,
+   "title": "Built to Last",
+   "topic": "Architecture and design",
+   "level": "B2",
+   "goal": "Book a guided walk and catch details on the phone, argue whether new buildings should match old ones, and report beliefs and claims with It is said that… and X is thought to…"
+  },
+  {
+   "id": "lesson-21",
+   "number": 21,
+   "title": "Wild Neighbours",
+   "topic": "Animals and wildlife",
+   "level": "B2",
+   "goal": "Follow a lecture on bringing lost species back, describe a natural life cycle in a Task 1 process report, and use defining and non-defining relative clauses with the right punctuation."
+  },
+  {
+   "id": "lesson-22",
+   "number": 22,
+   "title": "Buying Happiness?",
+   "topic": "Money and consumer society",
+   "level": "B2",
+   "goal": "Catch details in a call about a repair service, discuss why people buy so much in a two-part essay, and pack information into complex noun phrases."
+  },
+  {
+   "id": "lesson-23",
+   "number": 23,
+   "title": "Growing Up",
+   "topic": "Children and parenting",
+   "level": "B2",
+   "goal": "Follow students discussing a study of parents and children, discuss strict and relaxed parenting in an essay, and make deductions about the present and past with must, might and can't (have)."
+  },
+  {
+   "id": "lesson-24",
+   "number": 24,
+   "title": "Getting Around",
+   "topic": "Transport and infrastructure",
+   "level": "B2",
+   "goal": "Understand a talk about changes to a city's transport, describe a line graph with two lines, and report trends precisely with verbs and adverbs such as rose sharply and levelled off."
+  },
+  {
+   "id": "lesson-25",
+   "number": 25,
+   "title": "Living with Natural Hazards",
+   "topic": "Natural disasters and adaptation",
+   "level": "B2",
+   "goal": "Understand talks and texts about disasters and adaptation, and explain causes and results with nouns such as the main cause of, led to and resulted in."
+  },
+  {
+   "id": "lesson-26",
+   "number": 26,
+   "title": "Universities Today",
+   "topic": "Universities and higher education",
+   "level": "B2",
+   "goal": "Follow a tutorial and an academic text about higher education, and emphasise your main point with cleft sentences (What matters is…, It is … that…)."
+  },
+  {
+   "id": "lesson-27",
+   "number": 27,
+   "title": "Social Media and Well-being",
+   "topic": "Social media and well-being",
+   "level": "B2",
+   "goal": "Understand opinions about social media and mental health, and adjust how strongly you state a view with arguably, undoubtedly and to some extent."
+  },
+  {
+   "id": "lesson-28",
+   "number": 28,
+   "title": "The Future of Energy",
+   "topic": "The future of energy",
+   "level": "B2",
+   "goal": "Follow a lecture on renewable energy, describe a table of energy data, and add emphasis with inversion after Not only, Rarely and Only recently."
+  },
+  {
+   "id": "lesson-29",
+   "number": 29,
+   "title": "Museums and the Past",
+   "topic": "Museums and history",
+   "level": "B2",
+   "goal": "Understand a guided talk and a text about museums, describe changes on a map, and link ideas across sentences with this trend, such measures and the former/the latter."
+  },
+  {
+   "id": "lesson-30",
+   "number": 30,
+   "title": "Automation and Work",
+   "topic": "Automation and jobs",
+   "level": "B2",
+   "goal": "Follow a student discussion and an article about automation, weigh advantages and disadvantages, and contrast ideas across sentences with By contrast, Conversely and On the other hand."
+  },
+  {
+   "id": "lesson-31",
+   "number": 31,
+   "title": "Medicine and Public Health",
+   "topic": "Medicine and public health",
+   "level": "B2",
+   "goal": "Follow a lecture and an article about public health, answer a two-part essay question, and support ideas with examples using for instance, a case in point is and notably."
+  },
+  {
+   "id": "lesson-32",
+   "number": 32,
+   "title": "City or Country?",
+   "topic": "City life versus country life",
+   "level": "B2",
+   "goal": "Understand a rental enquiry and an article about leaving the city, discuss two views in an essay, and end with a clear conclusion and recommendation."
+  },
+  {
+   "id": "lesson-33",
+   "number": 33,
+   "title": "The Ethics of Technology",
+   "topic": "Ethics of technology",
+   "level": "B2+",
+   "goal": "Follow a full-length lecture and a writer's argument on technology ethics, and make claims with careful caveats (while it is true that…, this is not to say…)."
+  },
+  {
+   "id": "lesson-34",
+   "number": 34,
+   "title": "Migration and Multicultural Societies",
+   "topic": "Migration & multicultural societies",
+   "level": "B2+",
+   "goal": "Follow a tutorial discussion and an academic text on migration, and paraphrase ideas accurately with synonyms, changes of word class and changes of structure."
+  },
+  {
+   "id": "lesson-35",
+   "number": 35,
+   "title": "Biodiversity and Conservation Policy",
+   "topic": "Biodiversity & conservation",
+   "level": "B2+",
+   "goal": "Follow a site talk and an academic text on conservation policy, and build complex sentences with embedded clauses (what…, whether…, the fact that…)."
+  },
+  {
+   "id": "lesson-36",
+   "number": 36,
+   "title": "Government and Public Spending",
+   "topic": "Government & public spending",
+   "level": "B2+",
+   "goal": "Follow a detailed enquiry and an academic text on public spending, report a bar chart and a pie chart together, and evaluate arguments with counter-arguments (It could be argued…, However, this overlooks…)."
+  },
+  {
+   "id": "lesson-37",
+   "number": 37,
+   "title": "Psychology and Decision-Making",
+   "topic": "Psychology & decision-making",
+   "level": "B2+",
+   "goal": "Follow a lecture and an academic text on how people make choices, and write with precise academic collocations (pose a threat, draw a conclusion, play a role)."
+  },
+  {
+   "id": "lesson-38",
+   "number": 38,
+   "title": "Innovation and Entrepreneurship",
+   "topic": "Innovation & entrepreneurship",
+   "level": "B2+",
+   "goal": "Follow a student discussion and an academic text on start-ups and innovation, and connect ideas without overusing linkers (lexical chains, substitution, ellipsis)."
+  },
+  {
+   "id": "lesson-39",
+   "number": 39,
+   "title": "Food Security",
+   "topic": "Food security",
+   "level": "B2+",
+   "goal": "Follow a guided tour and an argument about feeding a growing population, describe a process in a Task 1 report, and check articles and prepositions in academic writing."
+  },
+  {
+   "id": "lesson-40",
+   "number": 40,
+   "title": "The Future of Work and Society",
+   "topic": "Future of work",
+   "level": "B2+",
+   "goal": "Follow a seminar planning discussion and an academic text on automation and work, use idiomatic language naturally in Speaking, and know when to keep it out of Writing."
+  }
+ ]
+}

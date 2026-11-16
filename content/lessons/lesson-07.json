@@ -1,0 +1,334 @@
+{
+  "id": "lesson-07",
+  "number": 7,
+  "title": "Travel and Tourism",
+  "topic": "Travel & tourism",
+  "level": "B1+",
+  "goal": "Discuss the benefits and costs of tourism, follow a three-person discussion, and speculate with first and second conditionals.",
+  "steps": [
+    {
+      "kind": "words",
+      "i18n": {"ar":{"title":"الكلمات: السفر والسياحة","intro":"السياحة موضوع شائع جدًا في IELTS، في Speaking Part 1 و3 وفي Writing Task 2 كذلك. تحتاج إلى هذه الكلمات والعبارات الاثنتي عشرة لمناقشة فوائد السياحة وأضرارها."},"en":{"title":"Words: Travel and tourism","intro":"Tourism comes up very often in IELTS, both in Speaking Parts 1 and 3 and in Writing Task 2. You need these 12 words and phrases to discuss the benefits and harms of tourism."}},
+      "title": "Kelimeler: seyahat ve turizm",
+      "intro": "Turizm, IELTS'te hem Speaking Part 1 ve 3'te hem de Writing Task 2'de çok sık çıkan bir konu. Bu 12 kelime ve kalıp, turizmin faydalarını ve zararlarını tartışmak için gerekiyor.",
+      "words": [
+        { "en": "mass tourism", "pos": "phrase", "tr": "kitle turizmi", "ar": "السياحة الجماعية", "example": "Mass tourism has changed many small coastal villages." },
+        { "en": "destination", "pos": "noun", "tr": "gidilecek yer, varış noktası (turistik yer)", "ar": "وجهة (سياحية)", "example": "The island has become a popular destination for families." },
+        { "en": "off the beaten track", "pos": "phrase", "tr": "turistlerin pek gitmediği, ücra", "ar": "بعيد عن الأماكن السياحية المعتادة", "example": "We stayed in a small village off the beaten track." },
+        { "en": "itinerary", "pos": "noun", "tr": "seyahat planı, güzergâh", "ar": "خطة الرحلة؛ برنامج الرحلة", "example": "Our itinerary includes three days in the mountains." },
+        { "en": "sustainable tourism", "pos": "phrase", "tr": "sürdürülebilir turizm", "ar": "السياحة المستدامة", "example": "Sustainable tourism tries to protect both nature and local culture." },
+        { "en": "local economy", "pos": "phrase", "tr": "yerel ekonomi", "ar": "الاقتصاد المحلي", "example": "Small family hotels keep money in the local economy." },
+        { "en": "peak season", "pos": "phrase", "tr": "yoğun sezon, en kalabalık dönem", "ar": "موسم الذروة", "example": "Flights are much more expensive in peak season." },
+        { "en": "cultural heritage", "pos": "phrase", "tr": "kültürel miras", "ar": "التراث الثقافي", "example": "The old mosques and markets are part of the city's cultural heritage." },
+        { "en": "accommodation", "pos": "noun (uncountable)", "tr": "konaklama (yeri)", "ar": "مكان الإقامة؛ السكن", "example": "Accommodation near the beach is hard to find in August." },
+        { "en": "broaden your horizons", "pos": "phrase", "tr": "ufkunu genişletmek", "ar": "يوسّع آفاقه", "example": "Living abroad for a year really broadened my horizons." },
+        { "en": "tourist attraction", "pos": "phrase", "tr": "turistik yer, turistlerin ilgisini çeken yer", "ar": "معلم سياحي؛ مكان جذب سياحي", "example": "The castle is the region's main tourist attraction." },
+        { "en": "boost", "pos": "verb / noun", "tr": "artırmak, canlandırmak; artış", "ar": "يعزّز؛ ينعش؛ دفعة", "example": "The film festival boosts the local economy every summer." }
+      ],
+      "practice": [
+        {
+          "type": "choice", "id": "w1",
+          "prompt": "A plan of a journey, showing the places you will visit and when, is an ___.",
+          "options": ["itinerary", "accommodation", "destination", "attraction"],
+          "answer": 0,
+          "why": { "tr": "\"itinerary\" = yolculuğun gün gün planı. \"destination\" sadece gidilecek yer, \"accommodation\" kalınacak yer.", "ar": "itinerary تعني خطة الرحلة يومًا بيوم، أما destination فهي المكان المقصود فقط، وaccommodation مكان الإقامة.", "en": "An itinerary is the plan of a trip; a destination is only the place you go to." },
+          "example": "The travel agent sent us a detailed itinerary for the tour."
+        },
+        {
+          "type": "choice", "id": "w2",
+          "prompt": "Travelling to other countries can ___ your horizons.",
+          "options": ["broaden", "enlarge", "increase", "raise"],
+          "answer": 0,
+          "why": { "tr": "Sabit kalıp: \"broaden your horizons\". Diğer fiiller \"horizons\" ile kullanılmaz.", "ar": "التعبير الثابت هو broaden your horizons، والأفعال الأخرى لا تُستخدم مع horizons.", "en": "The fixed phrase is \"broaden your horizons\"." },
+          "example": "Reading books from other cultures can broaden your horizons."
+        },
+        {
+          "type": "gap", "id": "w3",
+          "prompt": "Write the correct form of SUSTAIN: Many travellers now look for ___ tourism that protects nature and local culture.",
+          "answers": ["sustainable"],
+          "why": { "tr": "\"tourism\" isminden önce sıfat gerekiyor: sustain (fiil) → sustainable (sıfat).", "ar": "قبل الاسم tourism نحتاج إلى صفة: sustain (فعل) تصبح sustainable (صفة).", "en": "An adjective is needed before tourism: sustain → sustainable." },
+          "example": "The hotel was built in a sustainable way, using local materials."
+        },
+        {
+          "type": "choice", "id": "w4",
+          "prompt": "Hotels on the coast are usually most expensive during the ___ season.",
+          "options": ["peak", "summit", "maximum", "upper"],
+          "answer": 0,
+          "why": { "tr": "Kalıp \"peak season\" = en yoğun dönem. (\"high season\" da doğru ama seçeneklerde yok.) \"summit\" dağ zirvesi için kullanılır.", "ar": "التعبير هو peak season أي موسم الذروة (وhigh season صحيح أيضًا لكنه ليس من الخيارات). كلمة summit تعني قمة الجبل.", "en": "The collocation is \"peak season\" (or high season, not offered here)." },
+          "example": "We avoid travelling in peak season because everywhere is crowded."
+        },
+        {
+          "type": "choice", "id": "w5",
+          "prompt": "A village that is \"off the beaten track\" is…",
+          "options": ["far from the places most tourists visit", "very easy to reach by train", "famous for its old roads", "closed to visitors"],
+          "answer": 0,
+          "why": { "tr": "\"off the beaten track\" = turistlerin pek gitmediği, kalabalıktan uzak yer. Kelimenin tam anlamı \"çok kullanılan yolun dışında\".", "ar": "off the beaten track تعني مكانًا بعيدًا عن الطرق التي يسلكها معظم السياح، أي قليل الزوار.", "en": "Off the beaten track means away from the places most people visit." },
+          "example": "We found a quiet beach off the beaten track."
+        },
+        {
+          "type": "gap", "id": "w6",
+          "prompt": "Write ONE word beginning with B: The new airport is expected to ___ the local economy by creating thousands of jobs.",
+          "answers": ["boost", "benefit"],
+          "why": { "tr": "\"boost the economy\" = ekonomiyi canlandırmak, çok sık kullanılan bir eşdizim. \"benefit\" de anlamca uygun.", "ar": "boost the economy تعني ينعش الاقتصاد، وهو تلازم شائع جدًا. وbenefit مناسبة أيضًا في المعنى.", "en": "\"Boost the economy\" is a very common collocation; benefit also fits." },
+          "example": "Tourism has boosted the economy of the whole region."
+        }
+      ]
+    },
+    {
+      "kind": "listen",
+      "i18n": {"ar":{"title":"الاستماع · Part 3: عرض عن السياحة","intro":"طالبان، Lena وOmar، يناقشان مع أستاذهما عرضهما التقديمي عن السياحة في بلدة ساحلية. استمع جيدًا لتعرف من يدافع عن أي رأي.","tip":"في Part 3 يتفق المتحدثون أو يعترض بعضهم على بعض. عبارات مثل \"I agree, but…\" و\"I'm less sure\" و\"I'm not convinced\" تدل على تغيّر في الرأي. في أسئلة \"Who says…?\" الإجابة هي من يدافع عن ذلك الرأي، لا من نطق الكلمة أولًا."},"en":{"title":"Listening · Part 3: A tourism presentation","intro":"Two students, Lena and Omar, talk to their tutor about the presentation they have prepared on tourism in a seaside town. Listen carefully for who holds which view.","tip":"In Part 3 the speakers agree or disagree with each other. Phrases like \"I agree, but…\", \"I'm less sure\" and \"I'm not convinced\" signal a change of opinion. In \"Who says…?\" questions, the answer is the person who holds that view, not the one who says the word first."}},
+      "title": "Dinleme · Part 3: turizm sunumu",
+      "intro": "İki öğrenci, Lena ve Omar, bir kıyı kasabasında turizm üzerine hazırladıkları sunumu hocalarıyla konuşuyor. Kimin hangi görüşü savunduğunu dikkatle dinle.",
+      "tip": "Part 3'te konuşmacılar birbirine katılır ya da itiraz eder. \"I agree, but…\", \"I'm less sure\", \"I'm not convinced\" gibi ifadeler görüş değişikliğini gösterir. \"Who says…?\" sorularında kelimeyi ilk söyleyen değil, o görüşü savunan kişi cevaptır.",
+      "audio": {
+        "type": "audio", "id": "l-audio",
+        "speakers": {
+          "N": { "name": "Narrator", "voice": "en-GB-SoniaNeural" },
+          "tutor": { "name": "Dr Hale", "voice": "en-AU-NatashaNeural" },
+          "lena": { "name": "Lena", "voice": "en-US-AvaNeural" },
+          "omar": { "name": "Omar", "voice": "en-GB-RyanNeural" }
+        },
+        "lines": [
+          { "speaker": "N", "text": "You will hear two students, Lena and Omar, discussing their presentation with their tutor. First, you have some time to look at questions one to six.", "pauseAfterMs": 2500 },
+          { "speaker": "N", "text": "Now listen carefully and answer questions one to six.", "pauseAfterMs": 1200 },
+          { "speaker": "tutor", "text": "So, you're presenting next week on tourism in Kestlemouth. How far have you got?", "pauseAfterMs": 400 },
+          { "speaker": "omar", "text": "We've done most of the background. Kestlemouth was a fishing village until the nineteen-seventies, and now it's one of the most popular destinations on that part of the coast.", "pauseAfterMs": 400 },
+          { "speaker": "lena", "text": "And our main question is whether mass tourism has done more good than harm there.", "pauseAfterMs": 400 },
+          { "speaker": "tutor", "text": "Good. What did you find out about the local economy?", "pauseAfterMs": 400 },
+          { "speaker": "omar", "text": "Well, tourism has definitely boosted it. Most of the jobs in the town depend on visitors now: cafés, hotels, boat trips. Without tourism, I think the town would be empty.", "pauseAfterMs": 400 },
+          { "speaker": "lena", "text": "I agree that it brings money in, but I'm not convinced the money stays there. A lot of the hotels are owned by companies from outside the area, so the profits leave. And most of the jobs only last for the summer.", "pauseAfterMs": 400 },
+          { "speaker": "tutor", "text": "That's an important distinction. Did you find any figures on who owns the businesses?", "pauseAfterMs": 400 },
+          { "speaker": "lena", "text": "Not reliable ones. The council's report only covers visitor numbers. So we're going to say that clearly in the presentation, rather than guess.", "pauseAfterMs": 400 },
+          { "speaker": "tutor", "text": "Now, housing came up in your outline.", "pauseAfterMs": 400 },
+          { "speaker": "omar", "text": "Yes, and this is the part we both feel strongly about. So many houses have been turned into holiday accommodation that young local people simply can't afford to live there. In winter, whole streets are dark.", "pauseAfterMs": 400 },
+          { "speaker": "lena", "text": "It came up in every interview we did. Even the people who run guest houses said it was a problem.", "pauseAfterMs": 400 },
+          { "speaker": "tutor", "text": "And what about cultural heritage? The harbour, the old fish market?", "pauseAfterMs": 400 },
+          { "speaker": "lena", "text": "Actually, I think tourism has helped there. If visitors didn't come, I doubt anyone would have paid to repair the harbour wall or turn the fish market into a museum.", "pauseAfterMs": 400 },
+          { "speaker": "omar", "text": "Hmm, I'm less sure. The museum's nice, but it's become a tourist attraction rather than a part of local life. The fishermen I spoke to said it feels like a theme park.", "pauseAfterMs": 400 },
+          { "speaker": "tutor", "text": "That's a fair point to raise. Presenting two views is fine. So what are you going to recommend?", "pauseAfterMs": 400 },
+          { "speaker": "omar", "text": "We looked at sustainable tourism schemes in other places. The main idea is to spread visitors more evenly through the year, so the town isn't so crowded in peak season.", "pauseAfterMs": 400 },
+          { "speaker": "lena", "text": "We thought about suggesting a tourist tax as well, but we've decided to leave that out. It's too complicated to explain in ten minutes.", "pauseAfterMs": 400 },
+          { "speaker": "tutor", "text": "I'd agree. How would you spread them out?", "pauseAfterMs": 400 },
+          { "speaker": "omar", "text": "By promoting walking routes and villages off the beaten track inland, in spring and autumn, when the beaches are quiet.", "pauseAfterMs": 400 },
+          { "speaker": "tutor", "text": "Good. One last piece of advice: start with the interviews. A real voice will catch your audience's attention far more than a chart of visitor numbers.", "pauseAfterMs": 400 },
+          { "speaker": "lena", "text": "So, the interviews first, and then the data?", "pauseAfterMs": 400 },
+          { "speaker": "tutor", "text": "Exactly.", "pauseAfterMs": 1500 },
+          { "speaker": "N", "text": "That is the end of the recording.", "pauseAfterMs": 0 }
+        ]
+      },
+      "questions": [
+        { "type": "text", "text": "Questions 1–2. Choose the correct letter." },
+        {
+          "type": "choice", "id": "l1",
+          "prompt": "1. What is the main question of the students' presentation?",
+          "options": ["how Kestlemouth changed from a fishing village", "whether mass tourism has been good or bad for the town", "why visitor numbers have fallen"],
+          "answer": 1,
+          "why": { "tr": "Lena: \"our main question is whether mass tourism has done more good than harm there\". A sadece arka plan bilgisi (\"background\"); C hiç söylenmiyor.", "ar": "تقول Lena: \"our main question is whether mass tourism has done more good than harm there\". الخيار A مجرد خلفية (background)، وC لم يُذكر.", "en": "\"Our main question is whether mass tourism has done more good than harm there.\" A is only background." },
+          "example": "Our main question is whether the new law has done more good than harm."
+        },
+        {
+          "type": "choice", "id": "l2",
+          "prompt": "2. Why will the students not give figures on who owns local businesses?",
+          "options": ["The tutor told them not to.", "They could not find reliable information.", "The presentation is too short."],
+          "answer": 1,
+          "why": { "tr": "\"Not reliable ones. The council's report only covers visitor numbers.\" C tuzak: \"too complicated to explain in ten minutes\" turist vergisi için söyleniyor.", "ar": "\"Not reliable ones. The council's report only covers visitor numbers.\" الخيار C فخّ: عبارة ten minutes قيلت عن ضريبة السياحة.", "en": "\"Not reliable ones.\" The ten-minute limit was the reason for leaving out the tourist tax." },
+          "example": "We couldn't find reliable figures, so we didn't guess."
+        },
+        { "type": "text", "text": "Question 3. Complete the sentence. Write ONE WORD ONLY." },
+        {
+          "type": "gap", "id": "l3",
+          "prompt": "3. The tutor advises the students to begin the presentation with the ___.",
+          "answers": ["interviews"],
+          "why": { "tr": "Hoca: \"start with the interviews\". Lena da doğruluyor: \"the interviews first, and then the data\". \"chart\" ve \"data\" tuzak: onlar sonra gelecek.", "ar": "تقول المعلمة: \"start with the interviews\"، وتؤكد Lena: \"the interviews first, and then the data\". كلمتا chart وdata فخّ لأنهما تأتيان لاحقًا.", "en": "\"Start with the interviews.\" The chart and data come after." },
+          "example": "Start with a short story, and then show the data."
+        },
+        { "type": "text", "text": "Questions 4–6. Who expresses each of these opinions? Choose the correct letter." },
+        {
+          "type": "choice", "id": "l4",
+          "prompt": "4. Money from tourism does not always stay in the town.",
+          "options": ["Lena", "Omar", "both Lena and Omar"],
+          "answer": 0,
+          "why": { "tr": "Lena: \"I'm not convinced the money stays there… the profits leave.\" Omar ise turizmin ekonomiyi canlandırdığını söylüyor.", "ar": "تقول Lena: \"I'm not convinced the money stays there… the profits leave.\" أما Omar فيقول إن السياحة أنعشت الاقتصاد.", "en": "Lena: \"I'm not convinced the money stays there.\" Omar stresses the jobs tourism brings." },
+          "example": "I'm not convinced that the money stays in the village."
+        },
+        {
+          "type": "choice", "id": "l5",
+          "prompt": "5. Holiday homes have made it too expensive for young people to live in the town.",
+          "options": ["Lena", "Omar", "both Lena and Omar"],
+          "answer": 2,
+          "why": { "tr": "Omar: \"this is the part we both feel strongly about\", Lena da \"It came up in every interview we did\" diyerek katılıyor. \"we both\" ikisi demek.", "ar": "يقول Omar: \"this is the part we both feel strongly about\"، وتوافقه Lena: \"It came up in every interview we did\". عبارة we both تعني كليهما.", "en": "Omar: \"this is the part we both feel strongly about\"; Lena adds that it came up in every interview." },
+          "example": "This is a point we both feel strongly about."
+        },
+        {
+          "type": "choice", "id": "l6",
+          "prompt": "6. The old fish market now matters more to visitors than to local people.",
+          "options": ["Lena", "Omar", "both Lena and Omar"],
+          "answer": 1,
+          "why": { "tr": "Omar: \"it's become a tourist attraction rather than a part of local life\". Lena ise turizmin mirası korumaya yardım ettiğini düşünüyor: ikisi aynı fikirde değil.", "ar": "يقول Omar: \"it's become a tourist attraction rather than a part of local life\". أما Lena فترى أن السياحة ساعدت في حماية التراث، فهما مختلفان.", "en": "Omar: \"it's become a tourist attraction rather than a part of local life\". Lena disagrees." },
+          "example": "The old market has become a tourist attraction rather than a place for locals."
+        }
+      ]
+    },
+    {
+      "kind": "read",
+      "i18n": {"ar":{"title":"القراءة: True / False / Not Given وإكمال الجمل","intro":"نص أكاديمي عن الفوائد والمشكلات التي تجلبها السياحة إلى الأماكن التي يزورها الناس.","tip":"في TRUE/FALSE/NOT GIVEN تكون FALSE هي العبارة التي تقول عكس النص، أما NOT GIVEN فهي معلومة لم يتطرق إليها النص أصلًا. انتبه لكلمات مثل \"only\" و\"all\" و\"invented\": كلمة واحدة قد تغيّر الإجابة. في إكمال الجمل خذ الكلمة من النص كما هي ولا تتجاوز حدّ الكلمات."},"en":{"title":"Reading: True / False / Not Given and sentence completion","intro":"An academic text about the benefits and problems tourism brings to the places people visit.","tip":"In TRUE/FALSE/NOT GIVEN, FALSE is a statement that says the opposite of the text; NOT GIVEN is information the text doesn't mention at all. Watch words like \"only\", \"all\" and \"invented\": a single word can change the answer. In sentence completion, copy the word exactly from the text and stay within the word limit."}},
+      "title": "Okuma: True / False / Not Given ve cümle tamamlama",
+      "intro": "Turizmin ziyaret edilen yerlere getirdiği faydaları ve sorunları anlatan akademik bir metin.",
+      "tip": "TRUE/FALSE/NOT GIVEN'da FALSE, metnin tersini söyleyen ifadedir; NOT GIVEN ise metnin hiç değinmediği bilgidir. \"only\", \"all\", \"invented\" gibi kelimelere dikkat: tek bir kelime cevabı değiştirebilir. Cümle tamamlamada kelimeyi metinden aynen al ve kelime sınırını aşma.",
+      "passage": [
+        { "type": "heading", "text": "The Price of a Popular Place" },
+        { "type": "text", "text": "International travel has grown enormously since the middle of the twentieth century. Cheaper flights, package holidays and, more recently, online booking have made it possible for millions of people to visit places that their grandparents only saw in pictures. For many travellers, a trip abroad is a way to broaden their horizons: to taste unfamiliar food, hear other languages and see how other people live." },
+        { "type": "text", "text": "For the places they visit, tourism can bring clear benefits. Visitors spend money on accommodation, meals, transport and souvenirs, and this spending can boost the local economy, creating jobs in areas where there may be few other opportunities. In some regions, tourism is the main source of employment, and the money spent in hotels and restaurants also supports farmers, builders and other local suppliers. Income from entrance tickets can also pay for the protection of cultural heritage, such as historic buildings, religious sites and traditional crafts, which might otherwise be neglected." },
+        { "type": "text", "text": "However, mass tourism also has costs. In the late 2010s, the word \"overtourism\" became widely used to describe destinations where the number of visitors had grown beyond what the place could comfortably handle. Residents of some historic city centres complain of crowded streets, rising rents and shops that sell only to tourists. In peak season, a single famous tourist attraction may receive so many visitors that the experience becomes unpleasant for everyone, including the visitors themselves." },
+        { "type": "text", "text": "Several cities have responded with new rules. Some have introduced fees for day visitors, limited the number of large cruise ships allowed to stop, or restricted the conversion of homes into short-term holiday rentals. Supporters say these measures protect both residents and the places that tourists come to see; critics argue that they make travel more expensive and could reduce the income of small businesses. Other cities have tried to attract visitors to less famous neighbourhoods, so that crowds are spread across a wider area." },
+        { "type": "text", "text": "Supporters of sustainable tourism suggest that travellers themselves can also make a difference. Visiting outside the busiest months, staying longer in one place rather than following a crowded itinerary, and spending money in locally owned businesses all spread the benefits more widely. Even small choices, such as using public transport instead of hiring a car, can reduce the pressure on a busy place. Some travellers deliberately go off the beaten track, visiting smaller towns that receive few tourists. This can be rewarding, although it carries a risk of its own: if such a place becomes fashionable, it may face the same pressures as the cities that visitors were trying to avoid." }
+      ],
+      "questions": [
+        { "type": "heading", "text": "Questions 1–4: True, False or Not Given?" },
+        { "type": "text", "text": "TRUE if the statement agrees with the information, FALSE if it contradicts the information, NOT GIVEN if there is no information on this." },
+        {
+          "type": "tfng", "id": "r1",
+          "statement": "1. Cheaper flights were the only reason for the growth of international travel.",
+          "answer": "false",
+          "why": { "tr": "Paragraf 1 üç neden sayıyor: \"Cheaper flights, package holidays and, more recently, online booking\". \"only\" metinle çelişiyor: FALSE.", "ar": "تذكر الفقرة الأولى ثلاثة أسباب: \"Cheaper flights, package holidays and, more recently, online booking\". كلمة only تناقض النص: FALSE.", "en": "Paragraph 1 lists cheaper flights, package holidays and online booking, so \"only\" is wrong." },
+          "example": "Cheap flights were one reason, but not the only reason, for the change."
+        },
+        {
+          "type": "tfng", "id": "r2",
+          "statement": "2. Money from tourists can help to look after historic buildings.",
+          "answer": "true",
+          "why": { "tr": "Paragraf 2: \"Income from entrance tickets can also pay for the protection of cultural heritage, such as historic buildings\". \"look after\" = \"protection\": TRUE.", "ar": "الفقرة الثانية: \"Income from entrance tickets can also pay for the protection of cultural heritage, such as historic buildings\". look after تعني protection: TRUE.", "en": "\"Income from entrance tickets can also pay for the protection of cultural heritage, such as historic buildings.\"" },
+          "example": "Ticket money helps to look after the old palace."
+        },
+        {
+          "type": "tfng", "id": "r3",
+          "statement": "3. The word \"overtourism\" was invented by people living in historic city centres.",
+          "answer": "not given",
+          "why": { "tr": "Paragraf 3 kelimenin 2010'ların sonunda yaygınlaştığını söylüyor ama kimin bulduğunu söylemiyor. Sakinlerin şikâyetleri ayrı bir bilgi: NOT GIVEN.", "ar": "تقول الفقرة الثالثة إن الكلمة انتشرت في أواخر العقد الثاني من هذا القرن، لكنها لا تقول من ابتكرها. شكاوى السكان معلومة أخرى: NOT GIVEN.", "en": "The text says when the word became widely used, not who invented it." },
+          "example": "The article does not say who first used the word."
+        },
+        {
+          "type": "tfng", "id": "r4",
+          "statement": "4. Some people believe that limits on tourism may harm small businesses.",
+          "answer": "true",
+          "why": { "tr": "Paragraf 4: \"critics argue that they… could reduce the income of small businesses\". \"Some people\" = critics, \"harm\" = reduce the income: TRUE.", "ar": "الفقرة الرابعة: \"critics argue that they… could reduce the income of small businesses\". Some people = critics، وharm = تقليل الدخل: TRUE.", "en": "\"Critics argue that they … could reduce the income of small businesses.\"" },
+          "example": "Critics argue that the new fee could hurt small shops."
+        },
+        { "type": "heading", "text": "Questions 5–7: Complete the sentences." },
+        { "type": "text", "text": "Write NO MORE THAN TWO WORDS from the passage for each answer." },
+        {
+          "type": "gap", "id": "r5",
+          "prompt": "5. In peak season, very large numbers of visitors can make a visit to a famous place ___ for everyone.",
+          "answers": ["unpleasant"],
+          "why": { "tr": "Paragraf 3: \"the experience becomes unpleasant for everyone, including the visitors themselves\". \"make something + sıfat\" yapısı: make a visit unpleasant.", "ar": "الفقرة الثالثة: \"the experience becomes unpleasant for everyone\". البنية: make something + صفة، أي make a visit unpleasant.", "en": "\"The experience becomes unpleasant for everyone, including the visitors themselves.\"" },
+          "example": "The noise made the evening unpleasant for everyone."
+        },
+        {
+          "type": "gap", "id": "r6",
+          "prompt": "6. Some cities have restricted turning homes into short-term ___.",
+          "answers": ["holiday rentals"],
+          "why": { "tr": "Paragraf 4: \"restricted the conversion of homes into short-term holiday rentals\". \"turning… into\" = \"conversion… into\". İki kelime: holiday rentals.", "ar": "الفقرة الرابعة: \"restricted the conversion of homes into short-term holiday rentals\". turning into تعني conversion into، والجواب كلمتان: holiday rentals.", "en": "\"Restricted the conversion of homes into short-term holiday rentals.\"" },
+          "example": "Many flats in the old town are now holiday rentals."
+        },
+        {
+          "type": "gap", "id": "r7",
+          "prompt": "7. Tourists can spread the benefits more widely by spending money in ___ businesses.",
+          "answers": ["locally owned", "locally-owned"],
+          "why": { "tr": "Paragraf 5: \"spending money in locally owned businesses all spread the benefits more widely\". İki kelime: locally owned.", "ar": "الفقرة الخامسة: \"spending money in locally owned businesses all spread the benefits more widely\". الجواب كلمتان: locally owned.", "en": "\"Spending money in locally owned businesses … spread the benefits more widely.\"" },
+          "example": "We always eat in locally owned restaurants when we travel."
+        }
+      ]
+    },
+    {
+      "kind": "language",
+      "i18n": {"ar":{"title":"اللغة: الجمل الشرطية من النوع الأول والثاني للتوقّع والافتراض"},"en":{"title":"Language: First and second conditionals for predictions and hypotheses"}},
+      "title": "Dil: tahmin ve varsayım için 1. ve 2. tip koşul cümleleri",
+      "explain": {
+        "tr": "1. tip koşul (if + present, will + fiil) gerçekten olabilecek bir durumu ve sonucunu anlatır: If the city limits cruise ships, the old town will be less crowded. 2. tip koşul (if + past, would + fiil) hayalî, olası olmayan ya da şu an gerçek olmayan bir durumu anlatır: If I had more money, I would travel around the world. 2. tipte \"be\" fiili için \"were\" daha resmîdir: If I were a tour guide… Speaking Part 3'te \"If governments did…, …would…\" gibi cümleler fikirleri tartışmanı kolaylaştırır. Dikkat: \"if\" ile başlayan bölümde \"will\" ya da \"would\" kullanılmaz.",
+        "ar": "الجملة الشرطية من النوع الأول (if + المضارع، will + الفعل) تصف موقفًا ممكنًا فعلًا ونتيجته: If the city limits cruise ships, the old town will be less crowded. والنوع الثاني (if + الماضي، would + الفعل) يصف موقفًا خياليًا أو غير مرجّح أو غير حقيقي الآن: If I had more money, I would travel around the world. في النوع الثاني تُعدّ were أكثر رسمية مع الفعل be: If I were a tour guide… في الجزء الثالث من المحادثة تساعدك جمل مثل If governments did…, …would… على مناقشة الأفكار. انتبه: لا نستخدم will أو would في جزء if.",
+        "en": "The first conditional (if + present, will + verb) describes a real possibility and its result: If the city limits cruise ships, the old town will be less crowded. The second conditional (if + past, would + verb) describes an imaginary, unlikely or unreal situation: If I had more money, I would travel around the world. With be, \"were\" is more formal in the second conditional: If I were a tour guide… In Speaking Part 3, sentences like \"If governments did…, …would…\" help you discuss ideas. Do not use will or would in the if-clause."
+      },
+      "examples": [
+        "If tourists stay in locally owned guest houses, more money will stay in the local economy.",
+        "If fewer people travelled in peak season, the beaches would be much less crowded.",
+        "If the town introduces a tourist tax, some visitors will probably go elsewhere.",
+        "If I could visit any destination in the world, I would choose somewhere off the beaten track."
+      ],
+      "questions": [
+        {
+          "type": "choice", "id": "g1",
+          "prompt": "If the government ___ a tourist tax next year, hotel prices will probably rise.",
+          "options": ["introduces", "introduced", "will introduce", "would introduce"],
+          "answer": 0,
+          "why": { "tr": "Sonuç bölümünde \"will\" var ve durum gerçekten olabilir: 1. tip. \"if\" bölümünde present simple kullanılır: introduces. \"if\" bölümüne \"will\" gelmez.", "ar": "في جزء النتيجة توجد will والموقف ممكن فعلًا، فهو النوع الأول. في جزء if نستخدم المضارع البسيط: introduces، ولا نضع will بعد if.", "en": "First conditional: if + present simple (introduces), will in the result. No will in the if-clause." },
+          "example": "If the museum opens later, more people will visit in the evening."
+        },
+        {
+          "type": "choice", "id": "g2",
+          "prompt": "If I ___ more free time, I would travel around South America.",
+          "options": ["had", "have", "will have", "would have"],
+          "answer": 0,
+          "why": { "tr": "Sonuçta \"would\" var: 2. tip, hayalî durum. \"if\" bölümünde past simple: had. (Anlam şimdiki zaman: şu an boş zamanım yok.)", "ar": "في النتيجة توجد would، فهو النوع الثاني لموقف خيالي. في جزء if نستخدم الماضي البسيط: had، والمعنى عن الحاضر.", "en": "Second conditional: if + past simple (had), would in the result. It refers to now." },
+          "example": "If I had a car, I would drive to the mountains every weekend."
+        },
+        {
+          "type": "choice", "id": "g3",
+          "prompt": "Which sentence describes an imaginary or unlikely situation?",
+          "options": ["If it rains tomorrow, we'll visit the museum.", "If I won a free ticket, I would fly to Iceland.", "If you book early, you'll get a cheaper room.", "If the train is late, we'll miss the tour."],
+          "answer": 1,
+          "why": { "tr": "B 2. tip (won… would): bedava bilet kazanmak olası değil, hayalî. Diğerleri 1. tip: gerçekten olabilecek durumlar.", "ar": "B من النوع الثاني (won… would): الفوز بتذكرة مجانية أمر غير مرجّح. أما البقية فمن النوع الأول لمواقف ممكنة فعلًا.", "en": "B is a second conditional (won … would) for an unlikely situation; the others are real possibilities." },
+          "example": "If I won the lottery, I would buy a house by the sea."
+        },
+        {
+          "type": "gap", "id": "g4",
+          "prompt": "Write ONE word: If more tourists came in winter, the town ___ be less crowded in summer.",
+          "answers": ["would", "might", "could"],
+          "why": { "tr": "\"if\" bölümünde past simple (came) var: 2. tip. Sonuç bölümünde would (ya da daha az kesin might/could) + fiil gelir.", "ar": "في جزء if يوجد الماضي البسيط (came)، فهو النوع الثاني، وفي النتيجة would (أو might/could للاحتمال الأضعف) + الفعل.", "en": "Past simple in the if-clause (came) → would (or might/could) + verb." },
+          "example": "If the fees were lower, more students would apply."
+        },
+        {
+          "type": "gap", "id": "g5",
+          "prompt": "Write the correct form of BE: If I ___ a tour guide, I would show visitors places off the beaten track.",
+          "answers": ["were", "was"],
+          "why": { "tr": "2. tip, hayalî durum: if + past. \"be\" için resmî biçim \"were\" (If I were…); konuşmada \"was\" da kullanılır.", "ar": "النوع الثاني لموقف خيالي: if + الماضي. الصيغة الرسمية مع be هي were (If I were…)، وتُستخدم was في الكلام أيضًا.", "en": "Second conditional: \"If I were…\" is the formal form; \"was\" is common in speech." },
+          "example": "If I were the mayor, I would build more cycle lanes."
+        }
+      ]
+    },
+    {
+      "kind": "write",
+      "i18n": {"ar":{"title":"الكتابة · Task 2: مقال بسؤالين","tip":"في الأسئلة ذات الشقّين (two-part) أجب عن كل سؤال على حدة: فقرة عرض عن \"لماذا\"، وفقرة عن \"هل هو إيجابي أم سلبي\". اذكر إجابتيك باختصار في المقدمة. لا تضف فكرة جديدة في الخاتمة. استخدم كلمات هذا الدرس (destination, local economy, broaden horizons, peak season) وجملة شرطية واحدة على الأقل."},"en":{"title":"Writing · Task 2: A two-question essay","tip":"In two-part questions, answer each question separately: one body paragraph on \"why\", one on \"positive or negative\". Give both answers briefly in the introduction. Don't add a new idea in the conclusion. Use this lesson's words (destination, local economy, broaden horizons, peak season) and at least one conditional sentence."}},
+      "title": "Yazma · Task 2: iki soruluk deneme",
+      "task": 2,
+      "prompt": "In many countries, more and more people now prefer to travel abroad for their holidays rather than visit places in their own country.\n\nWhy is this?\nIs it a positive or negative development?\n\nWrite a short essay.",
+      "minutes": 30,
+      "minWords": 220,
+      "tip": "İki soruluk (two-part) sorularda iki soruya da ayrı ayrı cevap ver: bir gövde paragrafı \"neden\", bir paragraf \"olumlu mu olumsuz mu\". Girişte iki cevabını da kısaca söyle. Sonuçta yeni bir fikir ekleme. Bu dersin kelimelerini (destination, local economy, broaden horizons, peak season) ve en az bir koşul cümlesi kullan.",
+      "model": "In recent decades, a growing number of people have chosen to spend their holidays abroad instead of exploring their own country. In my view, this trend is mainly the result of lower costs and easier booking, and although it brings real benefits, it can also be a missed opportunity.\n\nThe most obvious reason is price. Budget airlines and online booking sites mean that a weekend in a foreign city can cost less than a train journey and two nights' accommodation at home. In addition, foreign destinations are heavily promoted on social media, where images of famous beaches and tourist attractions make travel abroad seem more exciting and more fashionable than a trip to a nearby region.\n\nThis development is largely positive for individuals. Travelling abroad can broaden people's horizons, as they meet speakers of other languages, try unfamiliar food and see how other societies are organised. Such experiences may make people more tolerant and curious. However, there are drawbacks. If people always leave the country for their holidays, smaller towns at home lose income that would otherwise boost the local economy, and some areas off the beaten track receive almost no visitors at all. Moreover, short flights in peak season add to crowding in popular places and to pollution.\n\nIn conclusion, cheap flights and the appeal of foreign places explain why many people now holiday abroad. I believe this is generally a positive change, but it would be better balanced if people also took time to discover their own country."
+    },
+    {
+      "kind": "speak",
+      "i18n": {"ar":{"title":"المحادثة: السفر"},"en":{"title":"Speaking: Travel"}},
+      "title": "Konuşma: seyahat",
+      "part1": [
+        "Do you enjoy travelling? Why or why not?",
+        "What kind of places do you like to visit on holiday?",
+        "Do many tourists come to your hometown?",
+        "Do you prefer travelling alone or with other people?"
+      ],
+      "card": {
+        "title": "Describe a place you have visited that you would like to go back to.",
+        "points": ["where it is", "when you went there and who you went with", "what you did there"],
+        "explain": "and explain why you would like to go back."
+      },
+      "useful": [
+        "It's a small town, a little off the beaten track, about two hours from…",
+        "I went there a couple of years ago with…, in the middle of the peak season.",
+        "What struck me most was…",
+        "If I went back, I would definitely spend more time…",
+        "It really broadened my horizons, because I had never…",
+        "The main reason I'd like to return is that…"
+      ]
+    }
+  ]
+}

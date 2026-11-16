@@ -1,0 +1,326 @@
+{
+  "id": "lesson-21",
+  "number": 21,
+  "title": "Wild Neighbours",
+  "topic": "Animals and wildlife",
+  "level": "B2",
+  "goal": "Follow a lecture on bringing lost species back, describe a natural life cycle in a Task 1 process report, and use defining and non-defining relative clauses with the right punctuation.",
+  "steps": [
+    {
+      "kind": "words",
+      "i18n": {"ar":{"title":"المفردات: الحيوانات والحياة البرية","intro":"في هذا الدرس 12 كلمة عن الحياة البرية وحماية الأنواع والموائل الطبيعية. تظهر هذه الكلمات كثيرًا في نصوص القراءة (هجرة الحيوانات، الأنواع المهددة بالانقراض) وفي مخططات العمليات في Task 1 (دورات الحياة)."},"en":{"title":"Vocabulary: animals and wildlife","intro":"This lesson has 12 words about wildlife, protecting species and natural habitats. They come up very often in reading passages (animal migration, endangered species) and in Task 1 process diagrams (life cycles)."}},
+      "title": "Kelimeler: hayvanlar ve yaban hayatı",
+      "intro": "Bu derste yaban hayatı, türlerin korunması ve doğal yaşam alanları hakkında 12 kelime var. Bu kelimeler okuma metinlerinde (hayvan göçü, nesli tükenen türler) ve Task 1 süreç diyagramlarında (yaşam döngüleri) çok sık çıkar.",
+      "words": [
+        { "en": "habitat", "pos": "noun", "tr": "doğal yaşam alanı", "ar": "الموطن الطبيعي", "example": "Cutting down forests destroys the habitat of thousands of animals." },
+        { "en": "endangered", "pos": "adjective", "tr": "nesli tükenmekte olan", "ar": "مهدَّد بالانقراض", "example": "The mountain gorilla is an endangered animal." },
+        { "en": "species", "pos": "noun", "tr": "tür (canlı türü)", "ar": "نوع (من الكائنات الحية)", "example": "Scientists discover hundreds of new species every year." },
+        { "en": "extinction", "pos": "noun", "tr": "neslin tükenmesi", "ar": "الانقراض", "example": "Hunting drove the bird to extinction in the nineteenth century." },
+        { "en": "biodiversity", "pos": "noun", "tr": "biyolojik çeşitlilik", "ar": "التنوع البيولوجي", "example": "Tropical rainforests have the highest biodiversity on Earth." },
+        { "en": "ecosystem", "pos": "noun", "tr": "ekosistem", "ar": "النظام البيئي", "example": "Removing one species can change the whole ecosystem." },
+        { "en": "predator", "pos": "noun", "tr": "yırtıcı hayvan, avcı", "ar": "حيوان مفترس", "example": "Without any natural predator, the rabbit population grew very fast." },
+        { "en": "poaching", "pos": "noun", "tr": "kaçak avcılık", "ar": "الصيد الجائر غير القانوني", "example": "Poaching for ivory has reduced elephant numbers in many countries." },
+        { "en": "captivity", "pos": "noun", "tr": "esaret, kafeste/hayvanat bahçesinde yaşam", "ar": "الأَسر (العيش في حديقة حيوان أو قفص)", "example": "Some animals live longer in captivity than in the wild." },
+        { "en": "migrate", "pos": "verb", "tr": "göç etmek", "ar": "يهاجر", "example": "Many birds migrate south for the winter." },
+        { "en": "breed", "pos": "verb", "tr": "üremek, yavrulamak", "ar": "يتكاثر", "example": "Turtles return to the same beach to breed." },
+        { "en": "native", "pos": "adjective", "tr": "yerli, bir bölgeye özgü", "ar": "أصلي، محلي (موطنه الأصلي)", "example": "The red squirrel is native to Britain, but the grey squirrel is not." }
+      ],
+      "practice": [
+        {
+          "type": "choice", "id": "w1",
+          "prompt": "When the last member of a species dies, the species has reached ___.",
+          "options": ["extinction", "captivity", "biodiversity", "poaching"],
+          "answer": 0,
+          "why": { "tr": "Bir türün son bireyi ölünce tür tükenir: extinction (neslin tükenmesi). \"captivity\" esaret, \"poaching\" kaçak avcılıktır.", "ar": "عندما يموت آخر فرد من نوع ما، ينقرض النوع: extinction. أما captivity فتعني الأسر، وpoaching الصيد غير القانوني.", "en": "When the last individual dies, the species is extinct: extinction." },
+          "example": "Many island birds were driven to extinction by rats."
+        },
+        {
+          "type": "gap", "id": "w2",
+          "prompt": "Write the correct form of DANGER: The snow leopard is listed as an ___ animal.",
+          "answers": ["endangered"],
+          "why": { "tr": "\"an\" ve \"animal\" arasında sıfat gerekir. \"endangered\" nesli tükenme tehlikesi altında olan demek. \"dangerous\" (tehlikeli) farklı bir anlam: hayvan başkası için tehlikeli olur.", "ar": "بين an وanimal نحتاج إلى صفة: endangered أي مهدَّد بالانقراض. أما dangerous (خطير) فمعناها مختلف.", "en": "Endangered = at risk of extinction. Dangerous means it can harm others." },
+          "example": "The tiger is an endangered species."
+        },
+        {
+          "type": "choice", "id": "w3",
+          "prompt": "Every autumn, millions of birds ___ thousands of kilometres to warmer regions.",
+          "options": ["migrate", "breed", "hunt", "native"],
+          "answer": 0,
+          "why": { "tr": "Mevsime göre uzak bir yere gitmek: migrate (göç etmek). \"breed\" üremek demek; \"native\" sıfattır, fiil olamaz.", "ar": "الانتقال إلى مكان بعيد حسب الموسم: migrate. أما breed فتعني يتكاثر، وnative صفة لا فعل.", "en": "Moving to another region with the seasons is to migrate." },
+          "example": "Whales migrate to warm waters to give birth."
+        },
+        {
+          "type": "choice", "id": "w4",
+          "prompt": "Which phrase describes the meaning of \"biodiversity\"?",
+          "options": ["the variety of plants and animals in an area", "the study of animal behaviour", "the protection of a single species", "the number of animals in zoos"],
+          "answer": 0,
+          "why": { "tr": "\"Biodiversity\" bir bölgedeki bitki ve hayvan çeşitliliğidir: bio (yaşam) + diversity (çeşitlilik).", "ar": "biodiversity هو تنوّع النباتات والحيوانات في منطقة ما: bio (حياة) + diversity (تنوّع).", "en": "Biodiversity = the variety of living things in a place." },
+          "example": "Coral reefs are famous for their biodiversity."
+        },
+        {
+          "type": "gap", "id": "w5",
+          "prompt": "Write ONE word: Pandas rarely breed when they are kept in ___, so zoos work hard to help them.",
+          "answers": ["captivity"],
+          "why": { "tr": "Kalıp \"in captivity\" = hayvanat bahçesinde ya da kafeste (doğada değil). Zıttı: \"in the wild\".", "ar": "التعبير in captivity يعني في الأسر (حديقة حيوان أو قفص)، وعكسه in the wild.", "en": "\"In captivity\" (in a zoo or cage) is the opposite of \"in the wild\"." },
+          "example": "The bird has never been seen to breed in captivity."
+        },
+        {
+          "type": "choice", "id": "w6",
+          "prompt": "A species that is \"native\" to Australia…",
+          "options": ["has always lived there naturally", "was brought there by people", "can only survive in zoos", "is hunted by the local people"],
+          "answer": 0,
+          "why": { "tr": "\"Native\" bir bölgede doğal olarak yaşayan, oraya özgü demek. İnsanların getirdiği türlere \"introduced\" ya da \"non-native\" denir.", "ar": "native تعني أن النوع يعيش في المنطقة بشكل طبيعي منذ القدم. أما الأنواع التي جلبها البشر فتُسمى introduced أو non-native.", "en": "Native = naturally found there; species brought by people are \"introduced\"." },
+          "example": "Kangaroos are native to Australia."
+        }
+      ]
+    },
+    {
+      "kind": "listen",
+      "i18n": {"ar":{"title":"الاستماع · Part 4: إعادة الأنواع المختفية","intro":"محاضر يلقي درسًا عن إعادة أنواع حيوانية انقرضت من منطقة ما إليها من جديد. اقرأ الملاحظات والخيارات أولًا.","tip":"في محاضرات Part 4 يعلن المتحدث عن العناوين: \"Let's start with…\"، \"My second example…\"، \"Finally…\". هذه الإشارات تبيّن لك أي مجموعة أسئلة وصلت إليها. انتبه للأرقام (السنوات): قد تُذكر عدة سنوات في المحاضرة الواحدة."},"en":{"title":"Listening · Part 4: bringing back lost species","intro":"A lecturer gives a talk about bringing animal species that have died out in an area back to it. Read the notes and options first.","tip":"In Part 4 lectures the speaker announces the headings: \"Let's start with…\", \"My second example…\", \"Finally…\". These signals show which group of questions you have reached. Be careful with numbers (years): several years may be mentioned in one lecture."}},
+      "title": "Dinleme · Part 4: kaybolan türleri geri getirmek",
+      "intro": "Bir öğretim görevlisi, bir bölgede yok olmuş hayvan türlerinin oraya geri getirilmesini anlatan bir ders veriyor. Önce notları ve seçenekleri oku.",
+      "tip": "Part 4 derslerinde konuşmacı başlıkları duyurur: \"Let's start with…\", \"My second example…\", \"Finally…\". Bu sinyaller hangi soru grubuna geldiğini gösterir. Sayılarda (yıllar) dikkatli ol: bir dersin içinde birden çok yıl geçebilir.",
+      "audio": {
+        "type": "audio", "id": "l-audio",
+        "speakers": {
+          "N": { "name": "Narrator", "voice": "en-GB-SoniaNeural" },
+          "lecturer": { "name": "Lecturer", "voice": "en-NZ-MollyNeural" }
+        },
+        "lines": [
+          { "speaker": "N", "text": "You will hear part of a lecture on wildlife conservation. First, you have some time to look at questions one to six.", "pauseAfterMs": 2500 },
+          { "speaker": "N", "text": "Now listen carefully and answer questions one to six.", "pauseAfterMs": 1200 },
+          { "speaker": "lecturer", "text": "Good afternoon. In the last two lectures we looked at why species decline: loss of habitat, poaching, pollution, and so on. Today I want to look at something more hopeful, which is reintroduction. That means returning a species to an area where it used to live but has become extinct.", "pauseAfterMs": 500 },
+          { "speaker": "lecturer", "text": "I should say straight away that this isn't the same as releasing animals that were born in captivity just anywhere. A reintroduction only makes sense in a place where the animal is native, and where the original cause of its disappearance has been dealt with.", "pauseAfterMs": 500 },
+          { "speaker": "lecturer", "text": "Let's start with the best-known example. Grey wolves had been hunted out of Yellowstone National Park in the United States by the nineteen-twenties. After many years of debate, wolves were brought back in nineteen ninety-five, and more the following year.", "pauseAfterMs": 500 },
+          { "speaker": "lecturer", "text": "Without a predator, the number of elk in the park had grown very large, and they had been eating young trees along the rivers. Once the wolves returned, the elk began to avoid open valleys, where they could easily be caught, and in some places the trees began to grow again.", "pauseAfterMs": 500 },
+          { "speaker": "lecturer", "text": "That's the popular version of the story, and you'll find it in many documentaries. In fact, scientists still disagree about how large the effect has been, because other things changed at the same time. But it's a useful reminder that one species can change a whole ecosystem.", "pauseAfterMs": 500 },
+          { "speaker": "lecturer", "text": "My second example is smaller, but in some ways more surprising: the beaver. Beavers were hunted to extinction in Britain several centuries ago, mainly for their fur. Over the last twenty years they've been returned to a number of rivers, first in official trials and sometimes, it has to be said, by people acting without permission.", "pauseAfterMs": 500 },
+          { "speaker": "lecturer", "text": "Beavers build dams, and those dams create wetlands, areas of shallow water and wet ground. These are excellent for biodiversity: insects, fish and birds all benefit. The dams also slow the flow of water after heavy rain, which may help to reduce flooding in villages further down the river.", "pauseAfterMs": 500 },
+          { "speaker": "lecturer", "text": "Now, reintroductions are rarely popular with everyone. You might expect the main objection to be cost, or the fear that wild animals are dangerous to people. Those concerns do exist. But the opposition that is most often heard comes from farmers, who worry about losing sheep and cattle to wolves, or fields to beaver dams.", "pauseAfterMs": 500 },
+          { "speaker": "lecturer", "text": "Many schemes now pay compensation for animals that are killed, and that has helped to some extent, although not every farmer is persuaded.", "pauseAfterMs": 500 },
+          { "speaker": "lecturer", "text": "So what makes a reintroduction succeed? People often assume that the key is the number of animals released, and of course you need enough to breed. But reviews of past projects suggest that the single most important factor is whether there is enough suitable habitat for the population to grow. Without that, even a large release will fail.", "pauseAfterMs": 500 },
+          { "speaker": "lecturer", "text": "This is why reintroduction can never replace protecting the endangered animals we still have. It's far easier to keep a species than to bring it back. Next time, we'll look at how wildlife can migrate safely through landscapes that are crowded with roads and towns.", "pauseAfterMs": 1500 },
+          { "speaker": "N", "text": "That is the end of the recording.", "pauseAfterMs": 0 }
+        ]
+      },
+      "questions": [
+        { "type": "text", "text": "Questions 1–4. Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer." },
+        { "type": "text", "text": "Reintroducing species" },
+        {
+          "type": "gap", "id": "l1",
+          "prompt": "1. Reintroduction: returning a species to an area where it has become ___",
+          "answers": ["extinct"],
+          "why": { "tr": "\"returning a species to an area where it used to live but has become extinct\". \"has become\" sonrasında sıfat gelir: extinct (isim hâli extinction).", "ar": "\"returning a species to an area where it used to live but has become extinct\". بعد has become تأتي صفة: extinct.", "en": "\"…where it used to live but has become extinct.\" An adjective is needed." },
+          "example": "The bird has become extinct in this region."
+        },
+        {
+          "type": "gap", "id": "l2",
+          "prompt": "2. Wolves returned to Yellowstone in ___",
+          "answers": ["1995", "nineteen ninety-five"],
+          "why": { "tr": "\"wolves were brought back in nineteen ninety-five\". 1920'ler kurtların yok edildiği dönem; tuzak.", "ar": "\"wolves were brought back in nineteen ninety-five\". أما عشرينيات القرن الماضي فهي فترة القضاء على الذئاب، وهي الفخّ.", "en": "\"Wolves were brought back in nineteen ninety-five.\" The 1920s is when they disappeared." },
+          "example": "The animals were brought back in 1995."
+        },
+        {
+          "type": "gap", "id": "l3",
+          "prompt": "3. Elk stayed away from open valleys, so young ___ grew again in some places.",
+          "answers": ["trees"],
+          "why": { "tr": "Geyikler (elk) nehir kenarındaki genç ağaçları yiyordu; kurtlar dönünce \"the trees began to grow again\".", "ar": "كان الأيل يأكل الأشجار الصغيرة على ضفاف الأنهار، وبعد عودة الذئاب \"the trees began to grow again\".", "en": "The elk had been eating young trees; then \"the trees began to grow again\"." },
+          "example": "Once the deer left, the young trees began to grow again."
+        },
+        {
+          "type": "gap", "id": "l4",
+          "prompt": "4. Beaver dams create ___, which support insects, fish and birds.",
+          "answers": ["wetlands", "wetland"],
+          "why": { "tr": "\"those dams create wetlands, areas of shallow water and wet ground\". Konuşmacı kelimeyi hemen tanımlıyor: bu bir ipucu.", "ar": "\"those dams create wetlands, areas of shallow water and wet ground\". يشرح المحاضر الكلمة مباشرة، وهذا دليل.", "en": "\"Those dams create wetlands, areas of shallow water and wet ground.\"" },
+          "example": "Wetlands are home to many birds."
+        },
+        { "type": "text", "text": "Questions 5–6. Choose the correct letter." },
+        {
+          "type": "choice", "id": "l5",
+          "prompt": "5. According to the lecturer, the most common objection to reintroductions is",
+          "options": ["the cost of the projects.", "the danger to people.", "the risk to farm animals and land."],
+          "answer": 2,
+          "why": { "tr": "Maliyet ve insanlara tehlike \"do exist\", ama \"the opposition that is most often heard comes from farmers, who worry about losing sheep and cattle\".", "ar": "الكلفة والخطر على الناس موجودان، لكن \"the opposition that is most often heard comes from farmers, who worry about losing sheep and cattle\".", "en": "Cost and danger exist, but \"the opposition that is most often heard comes from farmers\"." },
+          "example": "The most common objection comes from farmers."
+        },
+        {
+          "type": "choice", "id": "l6",
+          "prompt": "6. What does the lecturer say is the most important factor for success?",
+          "options": ["the number of animals released", "the amount of suitable habitat", "the payment of compensation"],
+          "answer": 1,
+          "why": { "tr": "\"People often assume that the key is the number of animals released\" (tuzak), ama \"the single most important factor is whether there is enough suitable habitat\".", "ar": "\"People often assume that the key is the number of animals released\" (فخّ)، لكن \"the single most important factor is whether there is enough suitable habitat\".", "en": "People assume it is numbers, but \"the single most important factor is whether there is enough suitable habitat\"." },
+          "example": "The most important factor is enough suitable habitat."
+        }
+      ]
+    },
+    {
+      "kind": "read",
+      "i18n": {"ar":{"title":"القراءة: True / False / Not Given وإكمال الملاحظات","intro":"ستقرأ نصًا أكاديميًا عن رحلات الهجرة الطويلة للحيوانات، وكيف تهتدي إلى طريقها، والمخاطر التي تواجهها.","tip":"في أسئلة إكمال الملاحظات تتبع الملاحظات ترتيب النص. حدّد أولًا نوع الكلمة المطلوبة في الفراغ (اسم أم صفة، مفرد أم جمع). في TFNG انتبه للكلمات القاطعة مثل \"only\" و\"all\" و\"always\": إذا كان النص أكثر تحفظًا فالإجابة غالبًا FALSE أو NOT GIVEN."},"en":{"title":"Reading: True / False / Not Given and note completion","intro":"You will read an academic text about animals' long migration journeys, how they find their way and the dangers they face.","tip":"In note completion questions the notes follow the order of the text. First decide what kind of word the gap needs (noun or adjective, singular or plural). In TFNG watch out for absolute words like \"only\", \"all\", \"always\": if the text is more cautious, the answer is usually FALSE or NOT GIVEN."}},
+      "title": "Okuma: True / False / Not Given ve not tamamlama",
+      "intro": "Hayvanların uzun göç yolculuklarını, yollarını nasıl bulduklarını ve karşılaştıkları tehlikeleri anlatan akademik bir metin okuyacaksın.",
+      "tip": "Not tamamlama sorularında notlar metnin sırasını izler. Önce boşluğa ne tür kelime gerektiğini (isim mi, sıfat mı, tekil mi çoğul mu) belirle. TFNG'de \"only\", \"all\", \"always\" gibi kesin kelimelere dikkat et: metin daha temkinliyse cevap genellikle FALSE ya da NOT GIVEN'dır.",
+      "passage": [
+        { "type": "heading", "text": "Journeys Without Maps" },
+        { "type": "text", "text": "Every year, billions of animals travel across continents and oceans. Birds, fish, insects, whales and turtles all migrate, often covering distances that seem almost impossible for their size. The Arctic tern, a seabird which weighs little more than a hundred grams, is thought to make the longest regular journey of any animal, flying between the Arctic and the Antarctic and back again each year. Over a lifetime of thirty years, a single bird may travel a distance equal to several trips to the Moon and back." },
+        { "type": "text", "text": "Animals migrate for a simple reason: the place where conditions are best for feeding is often not the place where conditions are best for raising young. Many birds breed in the far north, where summer days are long and insects are plentiful, but they cannot survive the winter there. Grey whales feed in cold northern waters, which are rich in food, and then travel to warm, sheltered lagoons to give birth. For these species, migration is not an unusual event but a basic part of life." },
+        { "type": "text", "text": "How animals find their way has puzzled scientists for centuries, and the answer appears to involve several systems at once. Some birds use the position of the sun during the day and the pattern of the stars at night. Many species, including sea turtles, can detect the Earth's magnetic field, which provides a kind of natural compass. Salmon, which return from the ocean to the river where they hatched, are believed to recognise its particular smell. Young animals of some species learn routes by following older ones, while others, which travel alone on their first journey, seem to be born with the knowledge." },
+        { "type": "text", "text": "The monarch butterfly offers one of the most remarkable examples. Each autumn, monarchs from eastern North America fly up to several thousand kilometres to forests in the mountains of central Mexico. No individual butterfly completes the full round trip. The journey north in spring takes several generations, so the butterflies that arrive in Mexico in autumn are the great-grandchildren of those that left. How they find the same small area of forest remains only partly understood." },
+        { "type": "text", "text": "Unfortunately, migration also makes animals vulnerable. A species that depends on several different places is only as safe as the weakest of them. Many shorebirds stop to feed at a small number of coastal sites, and when one of these is drained or built on, whole populations can decline. Bright lights in cities confuse birds that travel at night, and dams block the rivers that fish need to swim up. Climate change creates a further problem: if insects appear earlier in spring than they used to, birds that arrive at the usual time may find that the food their chicks need has already gone. Along some routes, exhausted birds also face poaching at their resting places, and a predator such as the domestic cat can kill large numbers of them in coastal towns." },
+        { "type": "text", "text": "Protecting migratory animals therefore requires cooperation between countries. Several international agreements now aim to protect important habitat along migration routes, and some cities switch off decorative lights during peak migration periods. Such measures can make a real difference to biodiversity, because an endangered species can recover only if every stage of its journey is safe. Where a migratory population has already disappeared, birds raised in captivity have sometimes been taught a new route, in one well-known case by following a light aircraft. Such projects are expensive, however, and they work best for species that are native to the region and whose ecosystem is still largely intact. They are a last defence against extinction, not a replacement for protection." }
+      ],
+      "questions": [
+        { "type": "heading", "text": "Questions 1–4: True, False or Not Given?" },
+        { "type": "text", "text": "TRUE if the statement agrees with the information, FALSE if it contradicts the information, NOT GIVEN if there is no information on this." },
+        {
+          "type": "tfng", "id": "r1",
+          "statement": "1. Animals usually migrate because the best places for feeding and for raising young are different.",
+          "answer": "true",
+          "why": { "tr": "Paragraf 2: \"the place where conditions are best for feeding is often not the place where conditions are best for raising young.\" İfade aynı bilgiyi veriyor: TRUE.", "ar": "الفقرة الثانية: \"the place where conditions are best for feeding is often not the place where conditions are best for raising young\": TRUE.", "en": "\"The place where conditions are best for feeding is often not the place … for raising young.\"" },
+          "example": "The best place to feed is often not the best place to raise young."
+        },
+        {
+          "type": "tfng", "id": "r2",
+          "statement": "2. All migrating animals learn their routes from older members of their species.",
+          "answer": "false",
+          "why": { "tr": "Paragraf 3: bazı türler yaşlılardan öğreniyor, \"while others, which travel alone on their first journey, seem to be born with the knowledge\". \"All\" metinle çelişiyor: FALSE.", "ar": "الفقرة الثالثة: بعض الأنواع تتعلم من الأكبر سنًا، \"while others… seem to be born with the knowledge\". كلمة All تناقض النص: FALSE.", "en": "Some learn from older animals, \"while others … seem to be born with the knowledge\"." },
+          "example": "Some birds learn the route; others are born knowing it."
+        },
+        {
+          "type": "tfng", "id": "r3",
+          "statement": "3. Monarch butterflies that arrive in Mexico have made the journey there before.",
+          "answer": "false",
+          "why": { "tr": "Paragraf 4: \"No individual butterfly completes the full round trip\" ve Meksika'ya gelenler, oradan ayrılanların torunlarının çocukları. Daha önce gitmemişler: FALSE.", "ar": "الفقرة الرابعة: \"No individual butterfly completes the full round trip\"، والتي تصل إلى المكسيك هي أحفاد التي غادرتها، فلم تقم بالرحلة من قبل: FALSE.", "en": "\"No individual butterfly completes the full round trip\"; they are the great-grandchildren of those that left." },
+          "example": "None of the butterflies has made the journey before."
+        },
+        {
+          "type": "tfng", "id": "r4",
+          "statement": "4. Switching off city lights has doubled the survival rate of migrating birds.",
+          "answer": "not given",
+          "why": { "tr": "Paragraf 6 bazı şehirlerin ışıkları kapattığını ve önlemlerin \"a real difference\" yapabileceğini söylüyor, ama bir oran (iki katı) vermiyor: NOT GIVEN.", "ar": "تذكر الفقرة السادسة أن بعض المدن تطفئ الأضواء وأن الإجراءات قد تُحدث فرقًا حقيقيًا، لكنها لا تذكر أي نسبة: NOT GIVEN.", "en": "The text mentions switching off lights but gives no figures on survival." },
+          "example": "The article does not give any figures about survival."
+        },
+        { "type": "heading", "text": "Questions 5–7: Complete the notes." },
+        { "type": "text", "text": "Write ONE WORD ONLY from the passage for each answer." },
+        { "type": "text", "text": "How animals find their way: the sun and stars (some birds); the Earth's magnetic field (e.g. sea turtles), which acts like a (5) ___; the (6) ___ of the home river (salmon). Dangers: loss of coastal feeding sites, bright city lights and (7) ___ that block rivers." },
+        {
+          "type": "gap", "id": "r5",
+          "prompt": "5. The Earth's magnetic field acts like a natural ___.",
+          "answers": ["compass"],
+          "why": { "tr": "Paragraf 3: \"the Earth's magnetic field, which provides a kind of natural compass\". \"a\" sonrasında tekil isim: compass (pusula).", "ar": "الفقرة الثالثة: \"the Earth's magnetic field, which provides a kind of natural compass\". بعد a نحتاج إلى اسم مفرد: compass.", "en": "\"…which provides a kind of natural compass.\"" },
+          "example": "Some animals use the magnetic field like a compass."
+        },
+        {
+          "type": "gap", "id": "r6",
+          "prompt": "6. Salmon recognise the ___ of the river where they hatched.",
+          "answers": ["smell"],
+          "why": { "tr": "Paragraf 3: salmonların \"are believed to recognise its particular smell\". \"its\" nehri gösteriyor.", "ar": "الفقرة الثالثة: يُعتقد أن السلمون \"recognise its particular smell\"، والضمير its يعود إلى النهر.", "en": "Salmon \"are believed to recognise its particular smell\"." },
+          "example": "Salmon find their home river by its smell."
+        },
+        {
+          "type": "gap", "id": "r7",
+          "prompt": "7. Dangers include ___ that block the rivers fish need to swim up.",
+          "answers": ["dams"],
+          "why": { "tr": "Paragraf 5: \"dams block the rivers that fish need to swim up\". Notta \"that block\" var, yani çoğul isim: dams.", "ar": "الفقرة الخامسة: \"dams block the rivers that fish need to swim up\". في الملاحظة that block، فنحتاج إلى اسم جمع: dams.", "en": "\"Dams block the rivers that fish need to swim up.\"" },
+          "example": "Dams block the rivers that salmon need to swim up."
+        }
+      ]
+    },
+    {
+      "kind": "language",
+      "i18n": {"ar":{"title":"اللغة: جمل الصلة المحدِّدة وغير المحدِّدة (الفاصلة)"},"en":{"title":"Language: defining and non-defining relative clauses (commas)"}},
+      "title": "Dil: tanımlayıcı ve tanımlayıcı olmayan sıfat cümleleri (virgül)",
+      "explain": {
+        "tr": "Tanımlayıcı (defining) sıfat cümlesi hangi kişi ya da şeyden söz ettiğimizi belirler; onsuz cümlenin anlamı eksik kalır ve virgül kullanılmaz: Animals that are born in captivity often struggle in the wild. Tanımlayıcı olmayan (non-defining) cümle zaten bilinen bir şeye ek bilgi verir; virgüllerle ayrılır ve \"that\" kullanılamaz, \"which\" ya da \"who\" gerekir: The Arctic tern, which weighs about 100 grams, flies to Antarctica. Virgül anlamı değiştirir: \"The farmers who lost sheep opposed the plan\" (yalnızca koyun kaybeden çiftçiler), \"The farmers, who lost sheep, opposed the plan\" (çiftçilerin hepsi). Tanımlayıcı cümlede nesne konumundaki \"that/which\" atlanabilir: the habitat (that) they need. B2 için \"which\" ile bütün cümleye yorum eklemeyi de dene: Wolves returned, which changed the ecosystem.",
+        "ar": "جملة الصلة المحدِّدة (defining) تحدد الشخص أو الشيء المقصود، ومن دونها ينقص المعنى، ولا نضع فواصل: Animals that are born in captivity often struggle in the wild. أما جملة الصلة غير المحدِّدة (non-defining) فتضيف معلومة إلى شيء معروف أصلًا، وتُفصل بفواصل، ولا نستخدم فيها that بل which أو who: The Arctic tern, which weighs about 100 grams, flies to Antarctica. الفاصلة تغيّر المعنى: The farmers who lost sheep opposed the plan (فقط من فقدوا أغنامًا) مقابل The farmers, who lost sheep, opposed the plan (كل المزارعين). وفي الجملة المحدِّدة يمكن حذف that/which إذا كانت مفعولًا به: the habitat (that) they need.",
+        "en": "A defining relative clause identifies which person or thing we mean; without it the meaning is incomplete, and it has no commas: Animals that are born in captivity often struggle in the wild. A non-defining clause adds extra information about something already identified; it goes between commas and cannot use that, only which or who: The Arctic tern, which weighs about 100 grams, flies to Antarctica. Commas change meaning: \"The farmers who lost sheep opposed the plan\" (only those farmers) vs \"The farmers, who lost sheep, opposed the plan\" (all of them). In defining clauses an object pronoun can be left out: the habitat (that) they need. At B2, also try which to comment on a whole clause: Wolves returned, which changed the ecosystem."
+      },
+      "examples": [
+        "Species that cannot adapt to warmer temperatures are at the greatest risk of extinction.",
+        "The giant panda, which was once close to extinction, is no longer classed as endangered.",
+        "Rangers who work in national parks often risk their lives to stop poaching.",
+        "Beavers were returned to several rivers, which has created new wetlands for birds and fish."
+      ],
+      "questions": [
+        {
+          "type": "choice", "id": "g1",
+          "prompt": "Which sentence is punctuated correctly?",
+          "options": ["The blue whale, which is the largest animal on Earth, feeds mainly on krill.", "The blue whale which is the largest animal on Earth feeds mainly on krill.", "The blue whale, that is the largest animal on Earth, feeds mainly on krill.", "The blue whale which is the largest animal on Earth, feeds mainly on krill."],
+          "answer": 0,
+          "why": { "tr": "Mavi balina zaten belli; cümle ek bilgi veriyor: non-defining, iki virgül ve \"which\". C'de virgülle \"that\" kullanılmış; B ve D'de virgüller eksik.", "ar": "الحوت الأزرق معروف، والجملة تضيف معلومة، فهي غير محدِّدة: فاصلتان وwhich. في C استُخدمت that مع الفواصل، وفي B وD تنقص الفواصل.", "en": "Extra information about an identified noun: two commas and which. Never that after a comma." },
+          "example": "Mount Everest, which is the highest mountain in the world, is in Nepal."
+        },
+        {
+          "type": "choice", "id": "g2",
+          "prompt": "\"The tigers that live in the north are smaller.\" What does this sentence mean?",
+          "options": ["Only some tigers live in the north, and those ones are smaller.", "All tigers live in the north, and they are smaller.", "Tigers are smaller than other animals in the north.", "The north has fewer tigers than before."],
+          "answer": 0,
+          "why": { "tr": "Virgül yok: defining. \"that live in the north\" hangi kaplanları kastettiğimizi belirliyor, yani sadece kuzeydekiler. Virgüllü olsaydı tüm kaplanlar kuzeyde yaşıyor anlamı çıkardı.", "ar": "لا توجد فواصل فهي جملة محدِّدة: that live in the north تحدد أي النمور نقصد، أي التي في الشمال فقط. لو وُضعت فواصل لكان المعنى أن كل النمور تعيش في الشمال.", "en": "No commas = defining: only the tigers in the north. With commas it would mean all tigers live there." },
+          "example": "The students who passed the test got a certificate (not all of them passed)."
+        },
+        {
+          "type": "gap", "id": "g3",
+          "prompt": "Write ONE word: Poaching, ___ is often carried out by organised gangs, is the main threat to rhinos.",
+          "answers": ["which"],
+          "why": { "tr": "Virgüller var: non-defining. Şey için \"which\" kullanılır; virgülden sonra \"that\" olmaz.", "ar": "توجد فواصل فهي جملة غير محدِّدة، ونستخدم which لغير العاقل، ولا تأتي that بعد الفاصلة.", "en": "Non-defining clause (commas) about a thing: which, not that." },
+          "example": "The river, which flows into the sea, is full of fish."
+        },
+        {
+          "type": "choice", "id": "g4",
+          "prompt": "In which sentence can the relative pronoun be left out?",
+          "options": ["The habitat that these birds need is disappearing.", "The birds that live on the island are protected.", "The island, which is very small, has no predators.", "My uncle, who is a vet, works at the zoo."],
+          "answer": 0,
+          "why": { "tr": "A'da \"that\" nesne (these birds need the habitat) ve cümle defining: atlanabilir: The habitat these birds need… B'de \"that\" özne; C ve D non-defining: atlanamaz.", "ar": "في A تكون that مفعولًا به (these birds need the habitat) والجملة محدِّدة، فيمكن حذفها. في B هي فاعل، وC وD غير محدِّدتين، فلا يجوز الحذف.", "en": "Only an object pronoun in a defining clause can be omitted: \"the habitat these birds need\"." },
+          "example": "The book I borrowed was about whales."
+        },
+        {
+          "type": "choice", "id": "g5",
+          "prompt": "Choose the best way to join: \"Wolves were reintroduced to the park. This reduced the number of elk.\"",
+          "options": ["Wolves were reintroduced to the park, which reduced the number of elk.", "Wolves were reintroduced to the park that reduced the number of elk.", "Wolves were reintroduced to the park, what reduced the number of elk.", "Wolves were reintroduced to the park, who reduced the number of elk."],
+          "answer": 0,
+          "why": { "tr": "\"which\" virgülden sonra bütün cümleye yorum ekleyebilir: geri getirme olayı geyik sayısını azalttı. B'de \"that\" parkı tanımlıyor gibi; \"what\" bu kullanımda yanlış; \"who\" insanlar içindir.", "ar": "يمكن أن تعلّق which بعد الفاصلة على الجملة كلها: إعادة الذئاب قلّلت عدد الأيائل. في B تبدو that وصفًا للحديقة، وwhat خطأ هنا، وwho للعاقل.", "en": "Comma + which can refer to the whole previous clause. \"What\" is wrong here; \"who\" is for people." },
+          "example": "The river was cleaned, which brought the otters back."
+        }
+      ]
+    },
+    {
+      "kind": "write",
+      "i18n": {"ar":{"title":"الكتابة · Task 1: دورة حياة (عملية)","tip":"عند وصف عملية، اكتب جملة المقدمة بإعادة صياغة السؤال بكلماتك، ثم قدّم overview: كم مرحلة هناك، وأين تبدأ، وهل هي دورية؟ صف المراحل بالترتيب واستخدم عبارات التسلسل (initially, after this, once…, eventually). في العمليات الطبيعية يناسب المبني للمعلوم أيضًا. جملة صلة أو اثنتان (the river where they hatched, which…) تجعل جملك أكثر سلاسة. لا تضف تعليقًا أو رأيًا شخصيًا."},"en":{"title":"Writing · Task 1: a life cycle (process)","tip":"When describing a process, write the opening sentence by paraphrasing the question, then give an overview: how many stages are there, where does it start, is it a cycle? Describe the stages in order and use sequencing phrases (initially, after this, once…, eventually). For natural processes the active voice works well too. One or two relative clauses (the river where they hatched, which…) make your sentences flow. Don't add comments or personal opinions."}},
+      "title": "Yazma · Task 1: bir yaşam döngüsü (süreç)",
+      "task": 1,
+      "prompt": "The information below shows the life cycle of the Atlantic salmon.\n\nSummarise the information by selecting and reporting the main features.",
+      "data": "Practice data (a natural life cycle, described in words instead of a diagram)\n\nStage 1 – Eggs: laid in gravel on the bed of a freshwater river, upstream; hatch after a few months.\nStage 2 – Alevin: tiny fish stay hidden in the gravel and feed on a yolk sac attached to their body.\nStage 3 – Fry and parr: leave the gravel, feed on insects; stay in the river for 1–3 years.\nStage 4 – Smolt: body changes so it can survive in salt water; swims downstream to the sea.\nStage 5 – Adult: lives and feeds in the ocean for 1–4 years; grows to 3–6 kg.\nStage 6 – Return: adults swim back up the same river where they hatched, using smell to find it.\nStage 7 – Spawning: adults breed in the gravel; most die afterwards; a few return to the sea.\nThe cycle then begins again.",
+      "minutes": 20,
+      "minWords": 150,
+      "tip": "Süreç anlatımında giriş cümlesini soruyu kendi kelimelerinle yaz, sonra bir overview ver: kaç aşama var, nerede başlıyor, döngüsel mi? Aşamaları sırayla anlat ve sıralama ifadeleri kullan (initially, after this, once…, eventually). Doğal süreçlerde etken yapı da uygundur. Bir iki sıfat cümlesi (the river where they hatched, which…) cümlelerini akıcı yapar. Yorum ya da kişisel görüş ekleme.",
+      "model": "The information describes the life cycle of the Atlantic salmon, a fish which spends part of its life in fresh water and part in the sea.\n\nOverall, there are seven main stages, beginning and ending in the same river. The cycle is circular: the young fish grow in fresh water, migrate to the ocean to mature, and then return to their home river to breed.\n\nThe process begins when eggs are laid in gravel on the bed of a river, where they hatch after a few months. The tiny fish, which are known as alevins, remain hidden in the gravel and feed on a yolk sac attached to their bodies. After this, they leave the gravel as fry and later parr, feeding on insects in the river for between one and three years.\n\nAt the next stage, the young salmon, now called smolts, undergo changes that allow them to survive in salt water, and they swim downstream to the sea. They spend one to four years feeding in the ocean, growing to between three and six kilograms. Eventually, the adults swim back up the same river where they hatched, finding it by its smell. Finally, they spawn in the gravel, after which most of them die, although a few return to the sea, and the cycle begins again."
+    },
+    {
+      "kind": "speak",
+      "i18n": {"ar":{"title":"المحادثة: الحيوانات والطبيعة"},"en":{"title":"Speaking: animals and nature"}},
+      "title": "Konuşma: hayvanlar ve doğa",
+      "part1": [
+        "Do you have a pet, or did you have one as a child?",
+        "Are there many wild animals where you live?",
+        "Do you enjoy watching documentaries about animals?",
+        "Have you ever been to a zoo? What did you think of it?"
+      ],
+      "card": {
+        "title": "Describe a wild animal that you find interesting.",
+        "points": [
+          "what the animal is",
+          "where it lives",
+          "how you learned about it"
+        ],
+        "explain": "and explain why you find this animal interesting."
+      },
+      "useful": [
+        "The animal I'd like to talk about is the…, which lives in…",
+        "I first learned about it from a documentary that I watched as a child.",
+        "What fascinates me is the way it…",
+        "Sadly, it's now an endangered species, mainly because of habitat loss.",
+        "People who see it in the wild say it's an unforgettable experience.",
+        "I'd love to see one one day, ideally in the wild rather than in captivity."
+      ]
+    }
+  ]
+}

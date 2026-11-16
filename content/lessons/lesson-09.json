@@ -1,0 +1,751 @@
+{
+  "id": "lesson-09",
+  "number": 9,
+  "title": "Family and Relationships",
+  "topic": "Family & relationships",
+  "level": "B1+",
+  "goal": "Follow conversations and texts about family life, and describe past habits naturally with used to and would.",
+  "steps": [
+    {
+      "kind": "words",
+      "i18n": {"ar":{"title":"الكلمات: الأسرة والعلاقات","intro":"في هذا الدرس 12 كلمة وعبارة عن الأسرة والعلاقات تتكرر كثيرًا في IELTS. اقرأ الجمل الأمثلة بعناية، وتعلّم خصوصًا الأفعال المركّبة (phrasal verbs) مثل \"get on with\" و\"bring up\" كعبارات كاملة."},"en":{"title":"Words: Family and relationships","intro":"This lesson has 12 words and phrases about family and relationships that are common in IELTS. Read the example sentences carefully, and learn phrasal verbs such as \"get on with\" and \"bring up\" as whole phrases."}},
+      "title": "Kelimeler: aile ve ilişkiler",
+      "intro": "Bu derste aile ve ilişkiler hakkında IELTS'te sık geçen 12 kelime ve kalıp var. Örnek cümleleri dikkatle oku; özellikle \"get on with\" ve \"bring up\" gibi phrasal verb'leri kalıp olarak öğren.",
+      "words": [
+        {
+          "en": "extended family",
+          "pos": "phrase",
+          "tr": "geniş aile (büyükanne, amca, kuzen vb.)",
+          "ar": "العائلة الممتدة",
+          "example": "In many cultures, the extended family lives close together and shares childcare."
+        },
+        {
+          "en": "nuclear family",
+          "pos": "phrase",
+          "tr": "çekirdek aile (anne, baba ve çocuklar)",
+          "ar": "الأسرة النووية (الوالدان والأبناء)",
+          "example": "The nuclear family of two parents and their children became common in industrial cities."
+        },
+        {
+          "en": "upbringing",
+          "pos": "noun",
+          "tr": "yetiştirilme, terbiye",
+          "ar": "التنشئة؛ التربية",
+          "example": "Her strict upbringing taught her to value hard work."
+        },
+        {
+          "en": "bring up",
+          "pos": "phrasal verb",
+          "tr": "(çocuk) yetiştirmek, büyütmek",
+          "ar": "يُربّي (الأطفال)",
+          "example": "My grandparents brought up five children on a farmer's income."
+        },
+        {
+          "en": "get on with",
+          "pos": "phrasal verb",
+          "tr": "(biriyle) iyi geçinmek",
+          "ar": "ينسجم مع؛ على وفاق مع",
+          "example": "I get on well with my older brother, although we argue about football."
+        },
+        {
+          "en": "sibling",
+          "pos": "noun",
+          "tr": "kardeş",
+          "ar": "الأخ أو الأخت (الشقيق)",
+          "example": "Having a sibling close in age can be a great source of support."
+        },
+        {
+          "en": "household",
+          "pos": "noun",
+          "tr": "hane, ev halkı",
+          "ar": "الأسرة المعيشية؛ أهل البيت",
+          "example": "The average household in the city now has fewer than three people."
+        },
+        {
+          "en": "role model",
+          "pos": "phrase",
+          "tr": "rol model, örnek alınan kişi",
+          "ar": "قدوة",
+          "example": "Parents are often a child's first role model."
+        },
+        {
+          "en": "generation gap",
+          "pos": "phrase",
+          "tr": "kuşak farkı, kuşaklar arası uçurum",
+          "ar": "الفجوة بين الأجيال",
+          "example": "The generation gap is clear when grandparents and teenagers talk about technology."
+        },
+        {
+          "en": "elderly",
+          "pos": "adjective",
+          "tr": "yaşlı",
+          "ar": "مُسنّ؛ كبير السن",
+          "example": "Many elderly people prefer to stay in their own homes."
+        },
+        {
+          "en": "strengthen",
+          "pos": "verb",
+          "tr": "güçlendirmek",
+          "ar": "يقوّي؛ يعزّز",
+          "example": "Eating dinner together can strengthen family bonds."
+        },
+        {
+          "en": "childcare",
+          "pos": "noun",
+          "tr": "çocuk bakımı",
+          "ar": "رعاية الأطفال",
+          "example": "The cost of childcare is a major concern for working parents."
+        }
+      ],
+      "practice": [
+        {
+          "type": "choice",
+          "id": "w1",
+          "prompt": "Your ___ family includes grandparents, aunts, uncles and cousins.",
+          "options": [
+            "nuclear",
+            "extended",
+            "single",
+            "elderly"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "Büyükanne, teyze, amca ve kuzenleri de içeren aile \"extended family\"dir. \"nuclear family\" sadece anne, baba ve çocuklardır.",
+            "ar": "العائلة التي تشمل الأجداد والأعمام والأخوال وأبناءهم هي extended family، أما nuclear family فهي الوالدان والأبناء فقط.",
+            "en": "The family that includes grandparents, aunts, uncles and cousins is the extended family; the nuclear family is only parents and children."
+          },
+          "example": "We see my extended family every year at a big summer party."
+        },
+        {
+          "type": "choice",
+          "id": "w2",
+          "prompt": "I ___ on really well with my cousin; we hardly ever argue.",
+          "options": [
+            "get",
+            "take",
+            "bring",
+            "go"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Kalıp \"get on (well) with someone\" = biriyle iyi geçinmek. \"take on\", \"bring on\", \"go on\" başka anlamlara gelir.",
+            "ar": "التعبير الصحيح هو get on (well) with someone بمعنى ينسجم مع شخص. أما take on وbring on وgo on فلها معانٍ أخرى.",
+            "en": "The phrasal verb is \"get on (well) with someone\" (= have a good relationship)."
+          },
+          "example": "Do you get on well with your neighbours?"
+        },
+        {
+          "type": "gap",
+          "id": "w3",
+          "prompt": "Write the correct form of STRONG: Regular family meals can ___ the relationship between parents and children.",
+          "answers": [
+            "strengthen"
+          ],
+          "why": {
+            "tr": "\"can\" sonrasında yalın fiil gerekir: strong (sıfat) → strengthen (fiil, güçlendirmek).",
+            "ar": "بعد can نحتاج إلى فعل: الصفة strong تصبح الفعل strengthen (يقوّي).",
+            "en": "After \"can\" we need a verb: strong (adjective) → strengthen (verb)."
+          },
+          "example": "Shared hobbies can strengthen a friendship."
+        },
+        {
+          "type": "choice",
+          "id": "w4",
+          "prompt": "A role model is someone who…",
+          "options": [
+            "is paid to look after children",
+            "makes the rules in a household",
+            "others look up to and try to copy",
+            "belongs to an older generation"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "\"Role model\" insanların hayranlık duyup örnek aldığı kişidir. Para alıp çocuk bakan kişi \"childminder\" ya da \"nanny\"dir.",
+            "ar": "role model هو الشخص الذي يُعجب به الآخرون ويقتدون به. أما من يرعى الأطفال مقابل أجر فهو childminder أو nanny.",
+            "en": "A role model is a person others admire and try to copy."
+          },
+          "example": "My aunt, a doctor, was my role model when I was at school."
+        },
+        {
+          "type": "gap",
+          "id": "w5",
+          "prompt": "Write ONE word: My aunt was brought ___ by her grandmother in a small village.",
+          "answers": [
+            "up"
+          ],
+          "why": {
+            "tr": "\"bring up\" = (çocuk) yetiştirmek; edilgen yapıda \"was brought up\" olur.",
+            "ar": "bring up تعني يربّي، وفي المبني للمجهول تصبح was brought up.",
+            "en": "\"Bring up\" means raise a child; the passive is \"was brought up\"."
+          },
+          "example": "I was brought up in a house full of books."
+        },
+        {
+          "type": "choice",
+          "id": "w6",
+          "prompt": "Which word completes both phrases: \"single-person ___\" and \"___ income\"?",
+          "options": [
+            "sibling",
+            "upbringing",
+            "childcare",
+            "household"
+          ],
+          "answer": 3,
+          "why": {
+            "tr": "\"single-person household\" (tek kişilik hane) ve \"household income\" (hane geliri) doğal eşdizimlerdir.",
+            "ar": "single-person household (أسرة من شخص واحد) وhousehold income (دخل الأسرة) تلازمان لفظيان طبيعيان.",
+            "en": "\"Single-person household\" and \"household income\" are both natural collocations."
+          },
+          "example": "Household income has not kept up with the cost of housing."
+        }
+      ]
+    },
+    {
+      "kind": "listen",
+      "i18n": {"ar":{"title":"الاستماع · Part 1: برنامج صيفي بين الأجيال","intro":"امرأة تريد حجز مكان لوالدها وأطفالها في برنامج للأجداد والأحفاد في مركز مجتمعي. اقرأ الأسئلة أولًا. يُشغَّل التسجيل مرة واحدة.","tip":"في Part 1 قد يذكر المتحدث معلومة ثم يغيّرها (مثلًا خمسة أشخاص ← أربعة أشخاص). اكتب دائمًا المعلومة الأخيرة المؤكدة. وفي الأسماء التي تُتهجّى حرفًا حرفًا، \"double R\" تعني حرفَي R متتاليين."},"en":{"title":"Listening · Part 1: An intergenerational summer programme","intro":"A woman wants to book places for her father and her children on a grandparents-and-grandchildren programme at a community centre. Read the questions first. The recording plays once.","tip":"In Part 1 the speaker may give some information and then change it (for example, five people → four people). Always write the final, confirmed information. In names spelled letter by letter, \"double R\" means two Rs."}},
+      "title": "Dinleme · Part 1: kuşaklar arası yaz programı",
+      "intro": "Bir kadın, babası ve çocukları için bir toplum merkezindeki büyükanne-büyükbaba ve torun programına yer ayırtmak istiyor. Önce soruları oku. Kayıt bir kez çalar.",
+      "tip": "Part 1'de konuşmacı bir bilgiyi verip sonra değiştirebilir (örneğin beş kişi → dört kişi). Her zaman son, kesin bilgiyi yaz. Harf harf söylenen isimlerde \"double R\" iki R demek.",
+      "audio": {
+        "type": "audio",
+        "id": "l-audio",
+        "speakers": {
+          "N": {
+            "name": "Narrator",
+            "voice": "en-NZ-MitchellNeural"
+          },
+          "tom": {
+            "name": "Tom",
+            "voice": "en-GB-RyanNeural"
+          },
+          "leila": {
+            "name": "Leila",
+            "voice": "en-US-AvaNeural"
+          }
+        },
+        "lines": [
+          {
+            "speaker": "N",
+            "text": "You will hear a woman phoning a community centre about a family programme. First, you have some time to look at questions one to six.",
+            "pauseAfterMs": 2500
+          },
+          {
+            "speaker": "N",
+            "text": "Now listen carefully and answer questions one to six.",
+            "pauseAfterMs": 1200
+          },
+          {
+            "speaker": "tom",
+            "text": "Good morning, Kestrel Park Community Centre, Tom speaking. How can I help?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "leila",
+            "text": "Hello. I saw a poster about your Generations Together programme, and I wondered if I could book places for my family.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "tom",
+            "text": "Of course. It's a summer programme for grandparents and grandchildren to do activities together. Can I start with your name?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "leila",
+            "text": "Yes, it's Leila Ferrand. That's F-E-double R-A-N-D.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "tom",
+            "text": "Thanks, Ms Ferrand. And how many people would be coming?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "leila",
+            "text": "Well, I was hoping for five: my father, my two children and my sister's son. But my sister has just told me her son will be away at camp, so it'll be four of us, including me.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "tom",
+            "text": "Four, then. Can I ask what made you interested? We like to know a little about each household.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "leila",
+            "text": "Of course. My father is elderly now, he's eighty-one, and he moved in with us last year. My children love him, but there's quite a generation gap. They're always on their phones, and he doesn't really know how to talk to them. I'd like them to spend proper time together.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "tom",
+            "text": "That's exactly why we set it up. Some people think it's a childcare service for the holidays, but it isn't really. Parents or carers stay for the sessions.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "leila",
+            "text": "No, that's fine. I've already sorted out childcare for the weekdays. This is about the family.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "tom",
+            "text": "Good. Now, we run two groups. The Wednesday afternoon group is full, I'm afraid, but there are places on Saturday mornings.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "leila",
+            "text": "Saturday's actually better for us.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "tom",
+            "text": "Great. The programme lasts six weeks. In the first session everyone makes a family tree, so the children can see how the extended family fits together: cousins, great-aunts and so on. In week two, people put together a photo album, and later there's cooking and gardening.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "leila",
+            "text": "A family tree. My son keeps asking which cousin belongs to which aunt, so that's perfect.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "tom",
+            "text": "It's also a good way to strengthen the bond between grandparents and grandchildren. Often the grandparent becomes a kind of role model, because they're the expert on the family's story.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "leila",
+            "text": "Lovely. Do we need to bring anything? Food, or art materials?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "tom",
+            "text": "Lunch is provided, and we have all the paper and pens. The only thing we ask is that each family brings one old photograph, ideally of the grandparent as a child. It helps to start the conversation.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "leila",
+            "text": "My dad's got boxes of them. He'll enjoy choosing one.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "tom",
+            "text": "Perfect. And do the children get on with each other? Sometimes siblings prefer to be in different teams.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "leila",
+            "text": "They argue at home, but they're fine in public!",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "tom",
+            "text": "That's usually the way. I'll send you a confirmation email this afternoon.",
+            "pauseAfterMs": 1500
+          },
+          {
+            "speaker": "N",
+            "text": "That is the end of the recording.",
+            "pauseAfterMs": 0
+          }
+        ]
+      },
+      "questions": [
+        {
+          "type": "text",
+          "text": "Questions 1–4. Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer."
+        },
+        {
+          "type": "text",
+          "text": "Generations Together: booking"
+        },
+        {
+          "type": "gap",
+          "id": "l1",
+          "prompt": "1. Caller's surname: ___",
+          "answers": [
+            "Ferrand"
+          ],
+          "why": {
+            "tr": "Leila soyadını harf harf söylüyor: \"F-E-double R-A-N-D\". \"double R\" = RR: Ferrand.",
+            "ar": "تتهجّى Leila اسمها: \"F-E-double R-A-N-D\"، وdouble R تعني حرفي R متتاليين: Ferrand.",
+            "en": "\"That's F-E-double R-A-N-D.\" Double R = RR."
+          },
+          "example": "Her surname is spelled with a double R."
+        },
+        {
+          "type": "gap",
+          "id": "l2",
+          "prompt": "2. Number of people in the group: ___",
+          "answers": [
+            "4",
+            "four"
+          ],
+          "why": {
+            "tr": "Önce \"I was hoping for five\" diyor, ama kız kardeşinin oğlu kampa gidiyor: \"so it'll be four of us\". Tuzak: five.",
+            "ar": "قالت أولًا \"I was hoping for five\"، لكن ابن أختها سيذهب إلى المخيم: \"so it'll be four of us\". الفخّ: five.",
+            "en": "She first says five, then corrects it: \"so it'll be four of us\"."
+          },
+          "example": "We booked a table for five, but in the end only four of us came."
+        },
+        {
+          "type": "gap",
+          "id": "l3",
+          "prompt": "3. Day of sessions: ___ mornings",
+          "answers": [
+            "Saturday",
+            "Saturdays"
+          ],
+          "why": {
+            "tr": "Çarşamba grubu dolu (\"is full\"), \"there are places on Saturday mornings\". Tuzak: Wednesday.",
+            "ar": "مجموعة الأربعاء ممتلئة (is full)، و\"there are places on Saturday mornings\". الفخّ: Wednesday.",
+            "en": "The Wednesday group \"is full\"; \"there are places on Saturday mornings\"."
+          },
+          "example": "The Wednesday class was full, so we chose Saturday."
+        },
+        {
+          "type": "gap",
+          "id": "l4",
+          "prompt": "4. First session: each family makes a family ___",
+          "answers": [
+            "tree"
+          ],
+          "why": {
+            "tr": "\"In the first session everyone makes a family tree\". Fotoğraf albümü ikinci haftada; tuzak bu.",
+            "ar": "\"In the first session everyone makes a family tree\". ألبوم الصور في الأسبوع الثاني، وهو الفخّ.",
+            "en": "\"In the first session everyone makes a family tree.\" The photo album is in week two."
+          },
+          "example": "My grandfather helped me draw our family tree."
+        },
+        {
+          "type": "text",
+          "text": "Questions 5–6. Choose the correct letter."
+        },
+        {
+          "type": "choice",
+          "id": "l5",
+          "prompt": "5. Why is Leila interested in the programme?",
+          "options": [
+            "Her children do not get on with each other.",
+            "She wants her children to spend time with their grandfather.",
+            "She needs childcare during the summer."
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"I'd like them to spend proper time together\" (çocuklar ve dedeleri). Çocuk bakımı tuzak: \"I've already sorted out childcare\".",
+            "ar": "تقول: \"I'd like them to spend proper time together\" أي الأطفال وجدّهم. رعاية الأطفال فخّ لأنها قالت \"I've already sorted out childcare\".",
+            "en": "\"I'd like them to spend proper time together.\" Childcare is a trap: she has \"already sorted out childcare\"."
+          },
+          "example": "I'd like my children to spend more time with their grandparents."
+        },
+        {
+          "type": "choice",
+          "id": "l6",
+          "prompt": "6. What should each family bring?",
+          "options": [
+            "lunch",
+            "art materials",
+            "an old photograph"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "Öğle yemeği ve kâğıt-kalem merkezden: \"Lunch is provided, and we have all the paper and pens\". Getirilmesi gereken tek şey \"one old photograph\".",
+            "ar": "الغداء والأوراق والأقلام يوفّرها المركز. الشيء الوحيد المطلوب هو \"one old photograph\".",
+            "en": "\"Lunch is provided, and we have all the paper and pens. The only thing we ask is that each family brings one old photograph.\""
+          },
+          "example": "Please bring an old photograph of yourself as a child."
+        }
+      ]
+    },
+    {
+      "kind": "read",
+      "i18n": {"ar":{"title":"القراءة: مطابقة العناوين (Matching headings)","intro":"ستقرأ نصًا أكاديميًا عن تغيّر الأسرة عبر الزمن. اختر العنوان الأنسب لكل فقرة.","tip":"في مطابقة العناوين ابحث عن الفكرة الرئيسية للفقرة، لا عن تفصيلة واحدة. كثيرًا ما تعطي الجملة الأولى والأخيرة الفكرة الرئيسية. والعنوان الذي يحتوي كلمة وردت في الفقرة يكون عادةً فخًّا."},"en":{"title":"Reading: Matching headings","intro":"You will read an academic text about how the family has changed over time. Choose the best heading for each paragraph.","tip":"In matching headings, look for the main idea of the paragraph, not a single detail. The first and last sentences often give the main idea. A heading that contains a word from the paragraph is usually a trap."}},
+      "title": "Okuma: başlık eşleştirme (Matching headings)",
+      "intro": "Ailenin zaman içinde nasıl değiştiğini anlatan akademik bir metin okuyacaksın. Her paragraf için en uygun başlığı seç.",
+      "tip": "Başlık eşleştirmede paragrafın ana fikrini ara, tek bir ayrıntıyı değil. Paragrafın ilk ve son cümlesi çoğu zaman ana fikri verir. Paragrafta geçen bir kelimeyi içeren başlık genelde tuzaktır.",
+      "passage": [
+        {
+          "type": "heading",
+          "text": "Who Counts as Family?"
+        },
+        {
+          "type": "text",
+          "text": "A  For most of human history, people lived in large groups of relatives. Grandparents, parents, children, aunts and uncles often shared a home or lived within walking distance of one another, and the work of farming, cooking and childcare was divided among them. In this kind of extended family, a child was brought up not only by a mother and father but by a whole network of adults, each of whom could act as a teacher or a role model."
+        },
+        {
+          "type": "text",
+          "text": "B  Industrialisation changed this pattern in many parts of the world. As people moved from villages to cities in search of factory work, they often left older relatives behind. The nuclear family, made up of two parents and their children, became the typical household in many industrial societies. City homes were smaller, and a family that moved for work could not easily take three generations with it."
+        },
+        {
+          "type": "text",
+          "text": "C  Over the last century, households in many countries have become smaller still. People are marrying later, having fewer children and living longer, and far more adults now live alone than in the past. One result is that many children grow up with only one sibling, or none at all. Some researchers argue that this gives each child more attention and resources; others worry that children miss out on learning how to share and to settle arguments with brothers and sisters."
+        },
+        {
+          "type": "text",
+          "text": "D  Grandparents, however, have not disappeared from family life. In many places they provide a large share of informal childcare, collecting children from school or looking after them during the holidays so that both parents can work. For the grandparents themselves, this role can be tiring, but many describe it as one of the most rewarding parts of later life, and some studies link it to better mental health."
+        },
+        {
+          "type": "text",
+          "text": "E  In recent years, there are signs that the multigenerational home is returning in some countries. High housing costs mean that young adults stay with their parents for longer, and some families choose to care for elderly relatives at home rather than in a care home. Living together can strengthen relationships and save money, but it can also create tension, especially when people have to share kitchens, bathrooms and televisions."
+        },
+        {
+          "type": "text",
+          "text": "F  The generation gap is perhaps most visible in the way people communicate. Teenagers may message their friends dozens of times a day, while their grandparents may prefer a phone call or a visit. Yet technology can also bring families closer: video calls allow relatives in different countries to see each other every week. Whether a family gets on well seems to depend less on how its members live and more on how much time they make for one another."
+        }
+      ],
+      "questions": [
+        {
+          "type": "heading",
+          "text": "Questions 1–6"
+        },
+        {
+          "type": "text",
+          "text": "The passage has six paragraphs, A–F. Choose the correct heading for each paragraph."
+        },
+        {
+          "type": "choice",
+          "id": "r1",
+          "prompt": "1. Paragraph A",
+          "options": [
+            "Raised by many adults",
+            "The first factories",
+            "Why children leave home",
+            "A shortage of teachers"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Paragraf A: çocuk \"was brought up not only by a mother and father but by a whole network of adults\". Ana fikir: çocuğu birçok yetişkin büyütürdü.",
+            "ar": "الفقرة A: كان الطفل \"brought up not only by a mother and father but by a whole network of adults\". الفكرة الرئيسية: يربّيه كثير من البالغين.",
+            "en": "A child \"was brought up not only by a mother and father but by a whole network of adults\"."
+          },
+          "example": "In my village, children were raised by many adults, not just their parents."
+        },
+        {
+          "type": "choice",
+          "id": "r2",
+          "prompt": "2. Paragraph B",
+          "options": [
+            "Life on the farm",
+            "Larger homes for larger families",
+            "The pull of the city",
+            "Grandparents as carers"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "Paragraf B: insanlar fabrika işi için köylerden şehirlere taşındı ve çekirdek aile yaygınlaştı. \"Larger homes\" yanlış: \"City homes were smaller\".",
+            "ar": "الفقرة B: انتقل الناس من القرى إلى المدن بحثًا عن عمل في المصانع فانتشرت الأسرة النووية. أما Larger homes فخطأ لأن \"City homes were smaller\".",
+            "en": "People \"moved from villages to cities in search of factory work\"; \"Larger homes\" contradicts \"City homes were smaller\"."
+          },
+          "example": "The pull of the city was strong for young people looking for work."
+        },
+        {
+          "type": "choice",
+          "id": "r3",
+          "prompt": "3. Paragraph C",
+          "options": [
+            "The cost of weddings",
+            "Fewer brothers and sisters",
+            "Why people live longer",
+            "Children who argue too much"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "Paragraf C'nin ana fikri: haneler küçüldü, birçok çocuğun \"only one sibling, or none at all\" var. Evlilik ve uzun yaşam sadece neden olarak geçiyor.",
+            "ar": "الفكرة الرئيسية في الفقرة C: صغرت الأسر، وكثير من الأطفال لديهم \"only one sibling, or none at all\". الزواج وطول العمر مجرد أسباب.",
+            "en": "The main idea: smaller households, so many children have \"only one sibling, or none at all\"."
+          },
+          "example": "Many of my friends have no brothers or sisters."
+        },
+        {
+          "type": "choice",
+          "id": "r4",
+          "prompt": "4. Paragraph D",
+          "options": [
+            "The end of grandparents' influence",
+            "Problems in care homes",
+            "Schools take over childcare",
+            "A demanding but valued role"
+          ],
+          "answer": 3,
+          "why": {
+            "tr": "Paragraf D: büyükanne ve büyükbabaların çocuk bakımı rolü \"can be tiring\" ama \"one of the most rewarding parts of later life\". Yorucu ama değerli. A ise metinle çelişiyor: \"have not disappeared\".",
+            "ar": "الفقرة D: دور الأجداد في رعاية الأحفاد \"can be tiring\" لكنه \"one of the most rewarding parts of later life\"، أي متعب لكنه ثمين. الخيار A يناقض \"have not disappeared\".",
+            "en": "The role \"can be tiring\" but is \"one of the most rewarding parts of later life\"."
+          },
+          "example": "Teaching is a demanding job, but it is also very rewarding."
+        },
+        {
+          "type": "choice",
+          "id": "r5",
+          "prompt": "5. Paragraph E",
+          "options": [
+            "Three generations under one roof again",
+            "Building more care homes",
+            "Young adults buy their first homes",
+            "Arguments about money"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Paragraf E: \"the multigenerational home is returning\": gençler evde daha uzun kalıyor, yaşlı akrabalar evde bakılıyor. \"under one roof\" = aynı evde.",
+            "ar": "الفقرة E: \"the multigenerational home is returning\"، فالشباب يبقون مع أهلهم مدة أطول، والمسنّون يُرعَون في البيت. under one roof تعني في بيت واحد.",
+            "en": "\"The multigenerational home is returning\": several generations living under one roof."
+          },
+          "example": "My grandmother, my parents and I all live under one roof."
+        },
+        {
+          "type": "choice",
+          "id": "r6",
+          "prompt": "6. Paragraph F",
+          "options": [
+            "Teenagers and their friends",
+            "The cost of phone calls",
+            "Communication across the generations",
+            "Families in different countries"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "Paragraf F kuşak farkını iletişim üzerinden anlatıyor: gençler mesaj atıyor, büyükler telefon ya da ziyaret istiyor; görüntülü aramalar aileleri yakınlaştırıyor. Diğer seçenekler sadece ayrıntı.",
+            "ar": "تتناول الفقرة F الفجوة بين الأجيال في التواصل: المراهقون يرسلون الرسائل والأجداد يفضّلون الاتصال أو الزيارة. الخيارات الأخرى مجرد تفاصيل.",
+            "en": "The paragraph is about how different generations communicate; the other options are details."
+          },
+          "example": "Video calls have made communication across the generations much easier."
+        }
+      ]
+    },
+    {
+      "kind": "language",
+      "i18n": {"ar":{"title":"اللغة: العادات في الماضي (used to وwould)"},"en":{"title":"Language: Past habits (used to and would)"}},
+      "title": "Dil: geçmişteki alışkanlıklar (used to ve would)",
+      "explain": {
+        "tr": "Geçmişte düzenli olarak yapılan ama artık yapılmayan şeyler için \"used to + fiil\" kullanılır: My grandmother used to bake bread every Friday. \"would + fiil\" de geçmişte tekrar eden eylemler için kullanılır, ama yalnızca eylemlerle; durum fiilleriyle (be, have, live, know, like) kullanılmaz: We used to live in a village (✓), We would live in a village (✗). Olumsuz ve soru: didn't use to, Did you use to…? (\"used\" değil, \"use\"). Dikkat: \"be used to + -ing\" (bir şeye alışkın olmak) bambaşka bir yapıdır. Konuşmada geçmişi anlatırken used to ile başlayıp would ile devam etmek doğal ve akıcı duyulur.",
+        "ar": "نستخدم used to + الفعل للعادات التي كنا نفعلها بانتظام في الماضي ولم نعد نفعلها: My grandmother used to bake bread every Friday. ونستخدم would + الفعل أيضًا للأفعال المتكررة في الماضي، لكن مع الأفعال الحركية فقط، لا مع أفعال الحالة (be, have, live, know, like): We used to live in a village (✓) وWe would live in a village (✗). في النفي والسؤال: didn't use to وDid you use to…? (use وليس used). انتبه: be used to + -ing تعني «معتاد على» وهي تركيب مختلف تمامًا. في المحادثة يبدو طبيعيًا أن تبدأ بـ used to ثم تكمل بـ would.",
+        "en": "Use used to + verb for past habits and states that are no longer true: My grandmother used to bake bread every Friday. Would + verb also describes repeated past actions, but only actions, not states (be, have, live, know, like): We used to live in a village (✓), We would live in a village (✗). Negatives and questions: didn't use to, Did you use to…? (use, not used). Note that be used to + -ing (= be accustomed to) is a different structure. When speaking about the past, starting with used to and continuing with would sounds natural and fluent."
+      },
+      "examples": [
+        "When I was a child, my extended family used to meet at my grandparents' house every Sunday.",
+        "My grandfather would tell us stories about his village while my grandmother cooked.",
+        "In the past, elderly parents usually used to live with one of their children.",
+        "We didn't use to have a television, so in the evenings we would play cards."
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "id": "g1",
+          "prompt": "My parents ___ in a small flat before my sister was born.",
+          "options": [
+            "would live",
+            "used to live",
+            "were used to live",
+            "use to live"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"live\" bir durum fiili, bu yüzden \"would\" olmaz: \"used to live\". \"were used to\" -ing ister, \"use to\" olumlu cümlede yanlış.",
+            "ar": "live فعل حالة، فلا نستخدم معه would، والصحيح used to live. أما were used to فتحتاج -ing، وuse to خطأ في الجملة المثبتة.",
+            "en": "\"Live\" is a state, so not \"would\": \"used to live\"."
+          },
+          "example": "We used to live next to a park."
+        },
+        {
+          "type": "choice",
+          "id": "g2",
+          "prompt": "Every summer, my cousins ___ stay with us for a whole month.",
+          "options": [
+            "were",
+            "are used to",
+            "use",
+            "would"
+          ],
+          "answer": 3,
+          "why": {
+            "tr": "Geçmişte her yaz tekrar eden bir eylem (stay), bu yüzden \"would\" doğru. (\"used to stay\" da olurdu ama seçeneklerde yok.)",
+            "ar": "فعل متكرر في الماضي كل صيف (stay)، لذا would صحيحة. (used to stay صحيحة أيضًا لكنها ليست بين الخيارات.)",
+            "en": "A repeated past action, so \"would stay\" (used to stay would also be correct)."
+          },
+          "example": "Every winter, we would go skiing in the mountains."
+        },
+        {
+          "type": "gap",
+          "id": "g3",
+          "prompt": "Write ONE word: Did you ___ to share a bedroom with your brother?",
+          "answers": [
+            "use"
+          ],
+          "why": {
+            "tr": "Soru cümlesinde \"did\" geçmiş zamanı taşır, bu yüzden \"use to\" olur, \"used to\" olmaz.",
+            "ar": "في السؤال تحمل did معنى الماضي، لذلك نقول use to وليس used to.",
+            "en": "After \"did\", the verb is in the base form: \"Did you use to…?\""
+          },
+          "example": "Did you use to walk to school?"
+        },
+        {
+          "type": "choice",
+          "id": "g4",
+          "prompt": "Which sentence is NOT correct?",
+          "options": [
+            "We would have a big garden behind the house.",
+            "We used to have a big garden behind the house.",
+            "My father would read to us every night.",
+            "My father used to read to us every night."
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Burada \"have\" sahip olmak (durum) anlamında; durum fiilleriyle \"would\" kullanılmaz. \"read\" bir eylem olduğu için \"would read\" doğru.",
+            "ar": "have هنا بمعنى يملك، وهي حالة، فلا نستخدم معها would. أما read ففعل حركي، فـ would read صحيحة.",
+            "en": "\"Have\" (= possess) is a state, so \"would have\" is wrong here; \"would read\" is fine because reading is an action."
+          },
+          "example": "We used to have a dog called Max."
+        },
+        {
+          "type": "gap",
+          "id": "g5",
+          "prompt": "Write ONE word: My brother and I ___ use to get on, but now we are close friends.",
+          "answers": [
+            "didn't"
+          ],
+          "why": {
+            "tr": "Olumsuz geçmiş alışkanlık: \"didn't use to\". \"use\" zaten cümlede var, eksik olan \"didn't\".",
+            "ar": "العادة المنفية في الماضي: didn't use to. كلمة use موجودة في الجملة، والناقص هو didn't.",
+            "en": "The negative is \"didn't use to\"."
+          },
+          "example": "I didn't use to like vegetables, but now I love them."
+        }
+      ]
+    },
+    {
+      "kind": "write",
+      "i18n": {"ar":{"title":"الكتابة · Task 2: المقدمة وفقرة عرض واحدة","tip":"في المقدمة أعد صياغة السؤال بكلماتك وقل بوضوح إلى أي مدى توافق (\"I largely disagree\"). في فقرة العرض اعترف أولًا بالرأي المخالف (It is true that…)، ثم دافع عن رأيك بمثال مستخدمًا \"However\". استخدم used to وwould عند الحديث عن الماضي، وجرّب كلمات مثل extended family وchildcare وrole model."},"en":{"title":"Writing · Task 2: Introduction and one body paragraph","tip":"In the introduction, rewrite the question in your own words and say clearly how far you agree (\"I largely disagree\"). In the body paragraph, first acknowledge the opposing view (It is true that…), then defend your own view with an example using \"However\". Use used to and would when describing the past; try words like extended family, childcare and role model."}},
+      "title": "Yazma · Task 2: giriş ve bir gövde paragrafı",
+      "task": 2,
+      "prompt": "Some people say that grandparents today play a less important role in family life than they did in the past. To what extent do you agree or disagree?\n\nIn this lesson, write the introduction and ONE body paragraph.",
+      "minutes": 20,
+      "minWords": 150,
+      "tip": "Girişte soruyu kendi kelimelerinle yeniden yaz ve ne ölçüde katıldığını net söyle (\"I largely disagree\"). Gövde paragrafında önce karşı görüşü kabul et (It is true that…), sonra \"However\" ile kendi görüşünü örnekle savun. Geçmişi anlatırken used to ve would kullan; extended family, childcare, role model gibi kelimeleri dene.",
+      "model": "In the past, grandparents were often at the centre of family life, and many people assume that this is no longer the case. It is true that families have changed, but I largely disagree with the claim that grandparents matter less today; in many households, their role has simply changed shape.\n\nIt is easy to see why some people hold this view. A few generations ago, the extended family used to live under one roof or in the same village, and grandparents would pass on skills, stories and values every day. Today, by contrast, many grandparents live in another city, and the generation gap in technology can make conversation with teenagers difficult. However, this does not mean that their influence has disappeared. In many countries, grandparents provide a great deal of informal childcare, which allows both parents to work. A grandmother who collects her grandchildren from school three times a week is not a distant figure; she is a daily role model who helps to bring them up. Their contribution may be less visible than it used to be, but it is no less important."
+    },
+    {
+      "kind": "speak",
+      "i18n": {"ar":{"title":"المحادثة: الأسرة"},"en":{"title":"Speaking: Family"}},
+      "title": "Konuşma: aile",
+      "part1": [
+        "Do you come from a large family or a small one?",
+        "Who are you closest to in your family?",
+        "How often do you see your relatives?",
+        "What did your family use to do together when you were a child?"
+      ],
+      "card": {
+        "title": "Describe a family member you admire.",
+        "points": [
+          "who this person is",
+          "what he or she is like",
+          "what you used to do together"
+        ],
+        "explain": "and explain why you admire this person."
+      },
+      "useful": [
+        "Someone I've always looked up to is my…",
+        "When I was little, we used to…, and she would always…",
+        "What I admire most about him is the way he…",
+        "We get on really well, even though…",
+        "She was a real role model for me, because…",
+        "Looking back, I think he taught me that…"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "source": "linking",
+  "licence": "Original Fluent365 content, CC BY-SA 4.0.",
+  "items": [
+    { "w": "however", "d": "used to add a contrasting idea (start of sentence + comma)", "ex": "The plan is cheap. However, it will take years.", "pos": "linking word", "lvl": "B1" },
+    { "w": "although", "d": "despite the fact that (+ clause)", "ex": "Although it was raining, we went for a walk.", "pos": "linking word", "lvl": "B1" },
+    { "w": "despite", "d": "without being affected by (+ noun / -ing)", "ex": "Despite the rain, we went for a walk.", "pos": "linking word", "lvl": "B2" },
+    { "w": "whereas", "d": "used to compare two different facts", "ex": "City life is fast, whereas village life is calm.", "pos": "linking word", "lvl": "B2" },
+    { "w": "on the other hand", "d": "used to give the other side of an argument", "ex": "Cars are convenient. On the other hand, they pollute the air.", "pos": "linking word", "lvl": "B1" },
+    { "w": "moreover", "d": "in addition (formal)", "ex": "The scheme is popular. Moreover, it saves money.", "pos": "linking word", "lvl": "B2" },
+    { "w": "furthermore", "d": "in addition (formal)", "ex": "Furthermore, online courses are often cheaper.", "pos": "linking word", "lvl": "B2" },
+    { "w": "in addition", "d": "also; as well as this", "ex": "In addition, the city plans to build new parks.", "pos": "linking word", "lvl": "B1" },
+    { "w": "therefore", "d": "for that reason (formal)", "ex": "The roads are full; therefore, we need better trains.", "pos": "linking word", "lvl": "B2" },
+    { "w": "as a result", "d": "because of this", "ex": "Prices rose. As a result, sales fell.", "pos": "linking word", "lvl": "B1" },
+    { "w": "consequently", "d": "as a result (formal)", "ex": "Many factories closed; consequently, unemployment rose.", "pos": "linking word", "lvl": "C1" },
+    { "w": "for instance", "d": "for example", "ex": "Some jobs, for instance nursing, cannot be done from home.", "pos": "linking word", "lvl": "B1" },
+    { "w": "such as", "d": "used to introduce examples (+ noun)", "ex": "Sports such as swimming are good for your back.", "pos": "linking word", "lvl": "B1" },
+    { "w": "in conclusion", "d": "used to begin the final paragraph", "ex": "In conclusion, the benefits outweigh the drawbacks.", "pos": "linking word", "lvl": "B1" },
+    { "w": "overall", "d": "considering everything (useful in Task 1 overviews)", "ex": "Overall, the number of visitors increased.", "pos": "linking word", "lvl": "B2" },
+    { "w": "nevertheless", "d": "despite what was just said (formal)", "ex": "The task was difficult. Nevertheless, she finished it.", "pos": "linking word", "lvl": "C1" },
+    { "w": "in contrast", "d": "used to show a clear difference", "ex": "In contrast, rural areas saw a decline.", "pos": "linking word", "lvl": "B2" },
+    { "w": "similarly", "d": "in the same way", "ex": "Similarly, older people benefit from regular exercise.", "pos": "linking word", "lvl": "B2" },
+    { "w": "in my opinion", "d": "used to give your view", "ex": "In my opinion, schools should teach cooking.", "pos": "linking word", "lvl": "A2" },
+    { "w": "to some extent", "d": "partly", "ex": "I agree with this view to some extent.", "pos": "linking word", "lvl": "B2" },
+    { "w": "I am writing to", "d": "standard first line of a formal letter", "ex": "I am writing to complain about the service I received.", "pos": "letter phrase", "lvl": "B1" },
+    { "w": "I would be grateful if", "d": "polite formal request in a letter", "ex": "I would be grateful if you could send me a refund.", "pos": "letter phrase", "lvl": "B2" },
+    { "w": "Yours faithfully", "d": "letter ending when you don't know the name (Dear Sir or Madam)", "ex": "Yours faithfully, Ali Demir", "pos": "letter phrase", "lvl": "B1" },
+    { "w": "Yours sincerely", "d": "letter ending when you know the name (Dear Mr Smith)", "ex": "Yours sincerely, Ali Demir", "pos": "letter phrase", "lvl": "B1" },
+    { "w": "Best wishes", "d": "informal letter ending to a friend", "ex": "Hope to see you soon. Best wishes, Ali", "pos": "letter phrase", "lvl": "A2" }
+  ]
+}

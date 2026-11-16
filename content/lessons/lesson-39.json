@@ -1,0 +1,727 @@
+{
+  "id": "lesson-39",
+  "number": 39,
+  "title": "Food Security",
+  "topic": "Food security",
+  "level": "B2+",
+  "goal": "Follow a guided tour and an argument about feeding a growing population, describe a process in a Task 1 report, and check articles and prepositions in academic writing.",
+  "steps": [
+    {
+      "kind": "words",
+      "i18n": {"ar":{"title":"المفردات: الأمن الغذائي","intro":"يجمع الأمن الغذائي بين مواضيع المناخ والسكان والتجارة والتكنولوجيا، ولذلك قد يظهر في Task 2 بأشكال مختلفة. تتيح لك هذه الكلمات الاثنتا عشرة وصف المشكلة (drought, malnutrition, food shortage) والحلول (crop yield, irrigation, resilient supply chain) بلغة دقيقة."},"en":{"title":"Vocabulary: food security","intro":"Food security brings together climate, population, trade and technology, so it can appear in Task 2 in different forms. These 12 words let you describe the problem (drought, malnutrition, food shortage) and the solutions (crop yield, irrigation, resilient supply chain) precisely."}},
+      "title": "Kelimeler: gıda güvenliği",
+      "intro": "Gıda güvenliği; iklim, nüfus, ticaret ve teknoloji konularını birleştirir, bu yüzden Task 2'de farklı biçimlerde karşına çıkabilir. Bu 12 kelime sorunu (drought, malnutrition, food shortage) ve çözümleri (crop yield, irrigation, resilient supply chain) kesin bir dille anlatmanı sağlar.",
+      "words": [
+        {
+          "en": "food security",
+          "pos": "phrase",
+          "tr": "gıda güvenliği (herkesin yeterli gıdaya erişimi)",
+          "ar": "الأمن الغذائي",
+          "example": "Food security depends on prices as much as on harvests."
+        },
+        {
+          "en": "crop yield",
+          "pos": "phrase",
+          "tr": "ürün verimi (birim alandan alınan ürün)",
+          "ar": "إنتاجية المحاصيل",
+          "example": "Better seeds have increased crop yields in many regions."
+        },
+        {
+          "en": "staple crop",
+          "pos": "phrase",
+          "tr": "temel gıda ürünü (buğday, pirinç, mısır)",
+          "ar": "محصول أساسي",
+          "example": "Rice is the staple crop for more than half of the world's population."
+        },
+        {
+          "en": "drought",
+          "pos": "noun",
+          "tr": "kuraklık",
+          "ar": "الجفاف",
+          "example": "The drought destroyed most of the wheat harvest."
+        },
+        {
+          "en": "malnutrition",
+          "pos": "noun",
+          "tr": "yetersiz ya da dengesiz beslenme",
+          "ar": "سوء التغذية",
+          "example": "Malnutrition in early childhood can affect development for life."
+        },
+        {
+          "en": "supply chain",
+          "pos": "phrase",
+          "tr": "tedarik zinciri",
+          "ar": "سلسلة الإمداد",
+          "example": "The pandemic exposed weaknesses in global supply chains."
+        },
+        {
+          "en": "self-sufficient",
+          "pos": "adjective",
+          "tr": "kendi kendine yeten",
+          "ar": "مكتفٍ ذاتيًا",
+          "example": "Few countries are completely self-sufficient in food."
+        },
+        {
+          "en": "irrigation",
+          "pos": "noun",
+          "tr": "sulama",
+          "ar": "الري",
+          "example": "Modern irrigation systems deliver water directly to the roots."
+        },
+        {
+          "en": "arable land",
+          "pos": "phrase",
+          "tr": "ekilebilir arazi",
+          "ar": "الأراضي الصالحة للزراعة",
+          "example": "As cities grow, arable land is lost to housing and roads."
+        },
+        {
+          "en": "fertiliser",
+          "pos": "noun",
+          "tr": "gübre",
+          "ar": "السماد",
+          "example": "Too much fertiliser can pollute rivers and lakes."
+        },
+        {
+          "en": "resilient",
+          "pos": "adjective",
+          "tr": "dayanıklı, (krizlere karşı) esnek",
+          "ar": "مَرِن؛ قادر على الصمود",
+          "example": "A resilient food system can recover quickly from a poor harvest."
+        },
+        {
+          "en": "food shortage",
+          "pos": "phrase",
+          "tr": "gıda kıtlığı",
+          "ar": "نقص الغذاء",
+          "example": "The war led to serious food shortages in the cities."
+        }
+      ],
+      "practice": [
+        {
+          "type": "choice",
+          "id": "w1",
+          "prompt": "A long period with little or no rain is a ___.",
+          "options": [
+            "drought",
+            "flood",
+            "harvest",
+            "shortage"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Uzun süre yağmur yağmaması \"drought\" (kuraklık). \"shortage\" genel olarak bir şeyin eksikliğidir; kuraklık bir gıda kıtlığına (food shortage) yol açabilir.",
+            "ar": "فترة طويلة بلا أمطار هي drought (الجفاف). أما shortage فتعني النقص عمومًا، وقد يؤدي الجفاف إلى food shortage.",
+            "en": "A long period without rain = drought."
+          },
+          "example": "The drought lasted for three years."
+        },
+        {
+          "type": "choice",
+          "id": "w2",
+          "prompt": "Wheat, rice and maize are examples of ___.",
+          "options": [
+            "staple crops",
+            "fertilisers",
+            "supply chains",
+            "food shortages"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Buğday, pirinç ve mısır temel gıda ürünleridir: \"staple crops\".",
+            "ar": "القمح والأرز والذرة أمثلة على staple crops (المحاصيل الأساسية).",
+            "en": "Wheat, rice and maize are staple crops."
+          },
+          "example": "Maize is a staple crop in much of southern Africa."
+        },
+        {
+          "type": "gap",
+          "id": "w3",
+          "prompt": "Write the correct form of IRRIGATE: Around a fifth of the world's farmland depends on ___.",
+          "answers": [
+            "irrigation"
+          ],
+          "why": {
+            "tr": "\"depends on\" sonrasında isim gerekir: irrigate (fiil) → irrigation (isim).",
+            "ar": "بعد depends on نحتاج إلى اسم: الفعل irrigate يصبح الاسم irrigation.",
+            "en": "A noun after \"depends on\": irrigation."
+          },
+          "example": "Irrigation allows farmers to grow crops in dry seasons."
+        },
+        {
+          "type": "choice",
+          "id": "w4",
+          "prompt": "A country that produces all the food it needs without imports is ___ in food.",
+          "options": [
+            "self-sufficient",
+            "resilient",
+            "arable",
+            "malnourished"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "İthalata ihtiyaç duymadan kendi gıdasını üreten ülke \"self-sufficient\"tir. \"resilient\" krizlere dayanıklı demektir; anlam farklı.",
+            "ar": "البلد الذي ينتج كل غذائه دون استيراد هو self-sufficient. أما resilient فتعني قادرًا على الصمود أمام الأزمات، وهو معنى مختلف.",
+            "en": "Producing everything you need = self-sufficient."
+          },
+          "example": "The island is almost self-sufficient in fruit and vegetables."
+        },
+        {
+          "type": "gap",
+          "id": "w5",
+          "prompt": "Write ONE word: New varieties of rice have helped farmers increase their crop ___.",
+          "answers": [
+            "yields",
+            "yield"
+          ],
+          "why": {
+            "tr": "Eşdizim \"crop yield(s)\" = ürün verimi. \"increase\" ile çok sık kullanılır.",
+            "ar": "التلازم هو crop yield(s) أي إنتاجية المحاصيل، ويأتي كثيرًا مع increase.",
+            "en": "The collocation is \"crop yield(s)\"."
+          },
+          "example": "Crop yields fell sharply during the dry summer."
+        },
+        {
+          "type": "choice",
+          "id": "w6",
+          "prompt": "Which word describes a system that can recover quickly from a shock?",
+          "options": [
+            "resilient",
+            "fragile",
+            "staple",
+            "arable"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "\"resilient\" = bir şoktan sonra hızla toparlanabilen. \"fragile\" (kırılgan) tam tersidir.",
+            "ar": "resilient تعني القدرة على التعافي بسرعة بعد صدمة، وfragile (هشّ) عكسها.",
+            "en": "Resilient = able to recover; fragile is the opposite."
+          },
+          "example": "Local markets can make the food system more resilient."
+        }
+      ]
+    },
+    {
+      "kind": "listen",
+      "i18n": {"ar":{"title":"الاستماع · Part 2: مزرعة عمودية داخل مبنى","intro":"مرشد يشرح لزوار مزرعة عمودية أُقيمت داخل مستودع طبيعةَ المزرعة وبرنامجَ الجولة. تسجيل Part 2 بطول الامتحان ومتحدث واحد. اقرأ الأسئلة أولًا؛ يُشغَّل التسجيل مرة واحدة فقط.","tip":"في Part 2 يعترف المتحدث أحيانًا بنقطة ضعف صراحةً: \"I'll be honest about this…\" و\"The weak point is…\". هذه الجمل تكون عادةً إجابة لسؤال. انتبه لحدّ الأرقام والكلمات: في فراغ \"between four and ___ weeks\" يُكتب رقم واحد فقط."},"en":{"title":"Listening · Part 2: an indoor vertical farm","intro":"A guide tells visitors to a vertical farm set up in a warehouse about the farm and the tour. An exam-length Part 2 recording with one speaker. Read the questions first; the recording plays once.","tip":"In Part 2 the speaker sometimes openly admits a weakness: \"I'll be honest about this…\", \"The weak point is…\". These sentences usually answer a question. Watch the number and word limit: in the gap \"between four and ___ weeks\" write only a number."}},
+      "title": "Dinleme · Part 2: kapalı alanda dikey bir çiftlik",
+      "intro": "Bir rehber, bir depo binasına kurulmuş dikey bir çiftliğin ziyaretçilerine çiftliği ve turu anlatıyor. Sınav uzunluğunda tek konuşmacılı bir Part 2 kaydı. Önce soruları oku; kayıt bir kez çalar.",
+      "tip": "Part 2'de konuşmacı bazen bir zayıflığı açıkça kabul eder: \"I'll be honest about this…\", \"The weak point is…\". Bu cümleler genellikle bir soruya cevap olur. Sayı ve kelime sınırına dikkat: \"between four and ___ weeks\" boşluğuna sadece bir sayı yazılır.",
+      "audio": {
+        "type": "audio",
+        "id": "l-audio",
+        "speakers": {
+          "N": {
+            "name": "Narrator",
+            "voice": "en-GB-SoniaNeural"
+          },
+          "tess": {
+            "name": "Tess",
+            "voice": "en-AU-NatashaNeural"
+          }
+        },
+        "lines": [
+          {
+            "speaker": "N",
+            "text": "You will hear a guide talking to visitors at an indoor farm. First, you have some time to look at questions one to six.",
+            "pauseAfterMs": 2500
+          },
+          {
+            "speaker": "N",
+            "text": "Now listen carefully and answer questions one to six.",
+            "pauseAfterMs": 1200
+          },
+          {
+            "speaker": "tess",
+            "text": "Hello everyone, and welcome to Greenhollow Farm. I'm Tess, and I'll be showing you round this morning. Now, I know some of you were expecting fields and tractors, so let me explain straight away: everything we grow here is grown indoors, in a converted warehouse, on shelves stacked eight levels high.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "tess",
+            "text": "Why do this? The short answer is food security. This region imports most of its fresh vegetables, many of them from thousands of kilometres away. When a drought hit two of the main growing areas a few years ago, prices in local shops rose sharply, and some salad crops disappeared from the shelves altogether. The supply chain turned out to be far more fragile than people had assumed.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "tess",
+            "text": "Let me be clear, though: a farm like this can't make a city self-sufficient. We grow leafy greens and herbs, which are light, perishable and quick to grow. We don't grow staple crops such as wheat or rice, and we never will. They need far too much space, and they store well, so there's no real advantage in growing them indoors near the customer.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "tess",
+            "text": "What we can do is make part of the food supply more resilient. Our crop yield per square metre is many times higher than in a field, because we stack the plants vertically and harvest all year round. And because there's no soil, pests are rarely a problem, so we don't use any pesticides at all.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "tess",
+            "text": "People often ask about water. You might expect an indoor farm to use more water than a field, but it's actually the opposite. The water circulates in a closed loop: whatever the roots don't absorb is collected, filtered and pumped back up.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "tess",
+            "text": "Compared with conventional irrigation, we use only a small fraction. We add fertiliser to the water in carefully measured amounts, so nothing runs off into rivers.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "tess",
+            "text": "The weak point, and I'll be honest about this, is energy. Plants need light, and here that light comes from LEDs, which use a lot of electricity. At the moment about half our power comes from solar panels on the roof, and the rest we buy from the grid. Until that's all renewable, our carbon footprint per lettuce isn't as low as we'd like.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "tess",
+            "text": "Right, the tour itself. We'll start on the ground floor, which is where the seeds are planted. They're sown in small cubes made from coconut fibre rather than soil. After about ten days, the seedlings move upstairs to the growing rooms. You'll need to put on a hairnet and overshoes before we go in, to keep the rooms clean. You'll find them in the boxes by the door.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "tess",
+            "text": "The growing rooms take up the first and second floors. The plants stay there for between four and five weeks, depending on the variety. Then they come back down to the packing area, also on the ground floor, where they're harvested, washed and packed within an hour.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "tess",
+            "text": "On the top floor there's a small classroom, where we run sessions for local schools. Many of the children we meet have never seen how food grows, and malnutrition is still a problem in some parts of this city, which surprises a lot of visitors. We'll finish up there with a tasting, so you can judge the results for yourselves.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "tess",
+            "text": "One last thing: photos are fine everywhere except in the seed room, because we're testing some new varieties there for a partner company, and that work is confidential. Right, shall we go?",
+            "pauseAfterMs": 1500
+          },
+          {
+            "speaker": "N",
+            "text": "That is the end of the recording.",
+            "pauseAfterMs": 0
+          }
+        ]
+      },
+      "questions": [
+        {
+          "type": "text",
+          "text": "Questions 1–2. Choose the correct letter."
+        },
+        {
+          "type": "choice",
+          "id": "l1",
+          "prompt": "1. According to Tess, what showed that the region's food supply was fragile?",
+          "options": [
+            "Bad weather elsewhere led to shortages and higher prices.",
+            "A fire destroyed a local warehouse.",
+            "Transport workers went on strike.",
+            "Demand for salad suddenly fell."
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "\"When a drought hit two of the main growing areas… prices in local shops rose sharply, and some salad crops disappeared from the shelves… The supply chain turned out to be far more fragile\". \"bad weather\" = \"drought\".",
+            "ar": "\"When a drought hit two of the main growing areas… prices… rose sharply, and some salad crops disappeared\". عبارة bad weather تعني drought هنا.",
+            "en": "A drought elsewhere caused higher prices and empty shelves."
+          },
+          "example": "Bad weather in Spain led to shortages of tomatoes."
+        },
+        {
+          "type": "choice",
+          "id": "l2",
+          "prompt": "2. Why does the farm not grow crops such as wheat or rice?",
+          "options": [
+            "They need too much space and keep well anyway.",
+            "They need too much water indoors.",
+            "Local customers rarely buy them.",
+            "They are often attacked by pests indoors."
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "\"They need far too much space, and they store well, so there's no real advantage in growing them indoors\". \"keep well\" = \"store well\". Su ve zararlılar başka bağlamlarda geçiyor.",
+            "ar": "\"They need far too much space, and they store well\". keep well تعني store well. الماء والآفات ذُكرا في سياق آخر.",
+            "en": "\"They need far too much space, and they store well.\""
+          },
+          "example": "Rice keeps well, so it can be transported over long distances."
+        },
+        {
+          "type": "text",
+          "text": "Questions 3–4. Complete the sentences below. Write ONE WORD AND/OR A NUMBER for each answer."
+        },
+        {
+          "type": "gap",
+          "id": "l3",
+          "prompt": "3. Seeds are planted in small cubes made of coconut ___.",
+          "answers": [
+            "fibre",
+            "fiber"
+          ],
+          "why": {
+            "tr": "\"They're sown in small cubes made from coconut fibre rather than soil.\" \"soil\" tuzak: \"rather than\" onu dışlıyor.",
+            "ar": "\"They're sown in small cubes made from coconut fibre rather than soil\". كلمة soil فخّ لأن rather than تستبعدها.",
+            "en": "\"Made from coconut fibre rather than soil.\""
+          },
+          "example": "Coconut fibre holds water well."
+        },
+        {
+          "type": "gap",
+          "id": "l4",
+          "prompt": "4. Plants stay in the growing rooms for between four and ___ weeks.",
+          "answers": [
+            "five",
+            "5"
+          ],
+          "why": {
+            "tr": "\"The plants stay there for between four and five weeks, depending on the variety.\" Fideler ilk 10 gün zemin kattadır; bu sayı tuzak.",
+            "ar": "\"The plants stay there for between four and five weeks\". أما العشرة أيام فهي مدة البذور في الطابق الأرضي، وهي فخّ.",
+            "en": "\"Between four and five weeks.\" Ten days is the seedling stage."
+          },
+          "example": "The course lasts between four and five weeks."
+        },
+        {
+          "type": "text",
+          "text": "Questions 5–6. Choose the correct letter."
+        },
+        {
+          "type": "choice",
+          "id": "l5",
+          "prompt": "5. What does Tess admit about the farm's energy use?",
+          "options": [
+            "All of its electricity comes from solar panels.",
+            "It is currently a weakness of the farm.",
+            "It is lower than that of a traditional farm.",
+            "It will be reduced by switching off the LEDs at night."
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"The weak point, and I'll be honest about this, is energy.\" A yanlış: elektriğin sadece yarısı güneşten geliyor.",
+            "ar": "\"The weak point, and I'll be honest about this, is energy\". الخيار A خطأ: نصف الكهرباء فقط من الألواح الشمسية.",
+            "en": "\"The weak point… is energy.\" Only about half comes from solar panels."
+          },
+          "example": "The main weakness of the plan is its cost."
+        },
+        {
+          "type": "choice",
+          "id": "l6",
+          "prompt": "6. Where are visitors not allowed to take photographs?",
+          "options": [
+            "in the growing rooms",
+            "in the classroom",
+            "in the seed room",
+            "in the packing area"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "\"photos are fine everywhere except in the seed room, because… that work is confidential\".",
+            "ar": "\"photos are fine everywhere except in the seed room\" لأن العمل فيها سرّي.",
+            "en": "\"Everywhere except in the seed room.\""
+          },
+          "example": "Photography is not allowed in the laboratory."
+        }
+      ]
+    },
+    {
+      "kind": "read",
+      "i18n": {"ar":{"title":"القراءة: Yes / No / Not Given والاختيار من متعدد","intro":"مقال رأي بطول الامتحان يناقش ما إذا كانت المشكلة الحقيقية في إطعام سكان العالم المتزايدين هي الإنتاج أم الوصول إلى الغذاء.","tip":"في مقالات الرأي ميّز بين رأي الكاتب نفسه وآراء الآخرين التي ينقلها: \"Some argue that…\" ليس رأي الكاتب؛ أما \"I would argue…\" و\"This seems to me…\" فهما رأيه. في أسئلة Yes/No/Not Given قيّم رأي الكاتب وحده."},"en":{"title":"Reading: Yes / No / Not Given and multiple choice","intro":"An exam-length opinion piece on whether the real problem in feeding the world's growing population is production or access.","tip":"In opinion pieces separate the writer's own view from other people's views that they report: \"Some argue that…\" is not the writer's view; \"I would argue…\" and \"This seems to me…\" are. In Yes/No/Not Given questions judge only the writer's view."}},
+      "title": "Okuma: Yes / No / Not Given ve çoktan seçmeli",
+      "intro": "Büyüyen dünya nüfusunu beslemenin asıl sorununun üretim mi yoksa erişim mi olduğunu tartışan, sınav uzunluğunda bir görüş yazısı.",
+      "tip": "Görüş yazılarında yazarın kendi fikri ile aktardığı başkalarının fikirlerini ayır: \"Some argue that…\" yazarın görüşü değildir; \"I would argue…\", \"This seems to me…\" ise yazarın görüşüdür. Yes/No/Not Given sorularında yalnızca yazarın görüşünü değerlendir.",
+      "passage": [
+        {
+          "type": "heading",
+          "text": "Feeding Ten Billion: A Question of Access"
+        },
+        {
+          "type": "text",
+          "text": "By the middle of this century, the world's population is expected to approach ten billion. A common response to this projection is alarm: how can farmers possibly produce enough to feed so many people? The question is understandable, but I would argue that it points in the wrong direction. Food security, as it is usually defined by international agencies, exists when all people, at all times, have physical and economic access to sufficient, safe and nutritious food. The emphasis on access is deliberate. Hunger today is primarily a problem not of global production but of poverty, conflict and distribution. Framing the challenge purely as one of output risks producing solutions that look impressive on paper but leave the hungry no better off."
+        },
+        {
+          "type": "text",
+          "text": "The world already produces more than enough calories to feed every person on the planet. Yet hundreds of millions of people regularly go hungry, while in many of the same countries malnutrition takes another form: diets high in cheap calories but low in essential nutrients. A family may live close to fields full of crops and still be unable to afford a balanced diet. Increasing the total amount of food grown, therefore, will not on its own solve the problem, although it will certainly be necessary as populations and incomes rise. Wealthier consumers tend to eat more meat and dairy products, which require far more land and grain per calorie than plant foods, so demand for crops is likely to grow faster than the population itself."
+        },
+        {
+          "type": "text",
+          "text": "This is not to dismiss the achievements of agricultural science. During the second half of the twentieth century, new high-yielding varieties of wheat and rice, combined with irrigation and chemical fertiliser, transformed crop yields across much of Asia and Latin America, a change often called the Green Revolution. It almost certainly prevented famine on a vast scale. Its success, however, came at an environmental price that is now becoming clear: depleted groundwater, polluted rivers and soils that have lost much of their natural fertility. Repeating the same approach on the same arable land is unlikely to produce the same results. Moreover, the gains were uneven: regions with poor soils, little rainfall and weak infrastructure, including much of sub-Saharan Africa, benefited far less."
+        },
+        {
+          "type": "text",
+          "text": "Climate change adds a further layer of uncertainty. Higher temperatures, less predictable rainfall and more frequent drought are expected to reduce harvests in some of the regions that are already most vulnerable. Plant breeders are developing varieties of staple crops that tolerate heat and dry conditions, and some of these have shown encouraging results in field trials. Yet new seeds are of little use to farmers who cannot afford them, or who lack the roads and storage facilities needed to sell their produce before it spoils. Technology, in other words, works only when the surrounding conditions allow farmers to use it."
+        },
+        {
+          "type": "text",
+          "text": "A recurring debate concerns trade. Some governments argue that the safest strategy is to become self-sufficient, growing as much as possible of their own food. The appeal is obvious, but I find the argument largely unconvincing. Few countries have the climate and land to grow everything their populations eat, and a nation that relies entirely on its own harvests is exposed whenever that harvest fails. Trade spreads risk across many regions: a drought in one exporting country can be offset by good harvests in others, provided that markets remain open. The danger lies rather in sudden restrictions. During the food price crisis of 2007 and 2008, several exporting countries limited sales of rice and other grains abroad to protect their own consumers, and these measures pushed international prices even higher, harming poorer importing nations most."
+        },
+        {
+          "type": "text",
+          "text": "What, then, would make the global food system more resilient? In my view, the priorities lie less in spectacular technology than in unglamorous improvements: better roads and storage, so that fewer crops are lost after harvest; reliable information about prices for small farmers; social protection that allows poor families to buy food when prices rise; and international agreements that discourage panic export bans. Reducing waste in wealthy countries would also help, although its effect on hunger elsewhere is less direct than is sometimes claimed. None of these measures is as dramatic as a new miracle crop, but together they would do more to prevent the next food shortage."
+        }
+      ],
+      "questions": [
+        {
+          "type": "heading",
+          "text": "Questions 1–4: Yes, No or Not Given?"
+        },
+        {
+          "type": "text",
+          "text": "Do the following statements agree with the views of the writer? Choose YES if the statement agrees with the views of the writer, NO if it contradicts them, NOT GIVEN if it is impossible to say what the writer thinks about this."
+        },
+        {
+          "type": "choice",
+          "id": "r1",
+          "prompt": "1. Hunger in the world today is mainly caused by insufficient food production.",
+          "options": [
+            "Yes",
+            "No",
+            "Not Given"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "Paragraf 1: \"Hunger today is primarily a problem not of global production but of poverty, conflict and distribution.\" İfade yazarın görüşüyle çelişiyor: NO.",
+            "ar": "الفقرة الأولى: \"Hunger today is primarily a problem not of global production but of poverty, conflict and distribution\". العبارة تناقض رأي الكاتب: NO.",
+            "en": "\"Primarily a problem not of global production but of poverty, conflict and distribution.\""
+          },
+          "example": "The problem is not production but access."
+        },
+        {
+          "type": "choice",
+          "id": "r2",
+          "prompt": "2. The higher crop yields of the Green Revolution were achieved at a cost to the environment.",
+          "options": [
+            "Yes",
+            "No",
+            "Not Given"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Paragraf 3: \"Its success, however, came at an environmental price… depleted groundwater, polluted rivers…\": YES.",
+            "ar": "الفقرة الثالثة: \"Its success, however, came at an environmental price\": YES.",
+            "en": "\"Came at an environmental price.\""
+          },
+          "example": "The new dam brought electricity, but at a cost to the environment."
+        },
+        {
+          "type": "choice",
+          "id": "r3",
+          "prompt": "3. Countries should aim to grow all of their own food.",
+          "options": [
+            "Yes",
+            "No",
+            "Not Given"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "Paragraf 5: yazar bu fikri \"largely unconvincing\" buluyor ve ticaretin riski dağıttığını savunuyor: NO.",
+            "ar": "الفقرة الخامسة: يجد الكاتب هذه الفكرة largely unconvincing ويرى أن التجارة توزّع المخاطر: NO.",
+            "en": "The writer finds self-sufficiency \"largely unconvincing\"."
+          },
+          "example": "I find the argument for complete self-sufficiency unconvincing."
+        },
+        {
+          "type": "choice",
+          "id": "r4",
+          "prompt": "4. Genetically modified crops are the most promising solution to future food shortages.",
+          "options": [
+            "Yes",
+            "No",
+            "Not Given"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "Yazar ısıya dayanıklı yeni çeşitlerden söz ediyor ama genetiği değiştirilmiş ürünlerden hiç bahsetmiyor ve hiçbir teknolojiyi \"en umut verici\" çözüm olarak sunmuyor: NOT GIVEN.",
+            "ar": "يذكر الكاتب أصنافًا جديدة تتحمّل الحرارة، لكنه لا يتحدث عن المحاصيل المعدّلة وراثيًا ولا يقدّم أي تقنية بوصفها الحل الأكثر وعدًا: NOT GIVEN.",
+            "en": "Genetic modification is never discussed."
+          },
+          "example": "The article does not discuss genetically modified food."
+        },
+        {
+          "type": "heading",
+          "text": "Questions 5–7: Choose the correct letter."
+        },
+        {
+          "type": "choice",
+          "id": "r5",
+          "prompt": "5. What does the writer say happened during the food price crisis of 2007–2008?",
+          "options": [
+            "Importing countries stopped buying rice.",
+            "Restrictions on exports made prices rise further.",
+            "Self-sufficient countries suffered the most.",
+            "International agreements prevented a famine."
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "Paragraf 5: \"several exporting countries limited sales… and these measures pushed international prices even higher\". A tuzak: kısıtlamayı ithalatçılar değil ihracatçılar yaptı.",
+            "ar": "الفقرة الخامسة: \"several exporting countries limited sales… and these measures pushed international prices even higher\". الخيار A فخّ: المصدِّرون هم من فرضوا القيود لا المستوردون.",
+            "en": "\"These measures pushed international prices even higher.\""
+          },
+          "example": "Export restrictions pushed world prices even higher."
+        },
+        {
+          "type": "choice",
+          "id": "r6",
+          "prompt": "6. Why does the writer mention farmers who lack roads and storage?",
+          "options": [
+            "to show that new seeds alone cannot solve the problem",
+            "to criticise plant breeders",
+            "to argue that climate change is exaggerated",
+            "to explain why field trials failed"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Paragraf 4: \"new seeds are of little use to farmers who cannot afford them, or who lack the roads and storage facilities…\". Yani tohum tek başına yetmez. Yazar ıslahçıları eleştirmiyor; denemeler \"encouraging\".",
+            "ar": "الفقرة الرابعة: \"new seeds are of little use to farmers who… lack the roads and storage facilities\" أي أن البذور وحدها لا تكفي. الكاتب لا ينتقد المربّين، والتجارب كانت مشجعة.",
+            "en": "\"New seeds are of little use to farmers who… lack the roads and storage facilities.\""
+          },
+          "example": "A new tractor is of little use without fuel."
+        },
+        {
+          "type": "choice",
+          "id": "r7",
+          "prompt": "7. What is the writer's main recommendation in the final paragraph?",
+          "options": [
+            "investing mainly in new miracle crops",
+            "practical improvements to infrastructure, information and social protection",
+            "banning food exports during a crisis",
+            "making wealthy countries eliminate food waste"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"the priorities lie less in spectacular technology than in unglamorous improvements: better roads and storage… information about prices… social protection\". C metne ters (yazar ihracat yasaklarına karşı); D'nin etkisi \"less direct\" olarak sınırlanıyor.",
+            "ar": "\"the priorities lie less in spectacular technology than in unglamorous improvements\" مثل الطرق والتخزين والمعلومات والحماية الاجتماعية. الخيار C عكس رأيه، وD يقلّل الكاتب من أثره.",
+            "en": "\"Unglamorous improvements\": roads, storage, information, social protection."
+          },
+          "example": "The report recommends practical improvements rather than dramatic new technology."
+        }
+      ]
+    },
+    {
+      "kind": "language",
+      "i18n": {"ar":{"title":"اللغة: التدقيق: أدوات التعريف (articles) وحروف الجر في الكتابة الأكاديمية"},"en":{"title":"Language: accuracy check: articles and prepositions in academic writing"}},
+      "title": "Dil: doğruluk kontrolü: akademik yazıda article ve edatlar",
+      "explain": {
+        "tr": "Türkçede ve Arapçada article sistemi İngilizceden farklı olduğu için \"a/an/the\" ve edat hataları Band 7'ye ulaşmayı en çok engelleyen küçük hatalardır. Article: 1) Genel anlamda sayılamayan ya da çoğul isimde article yok: \"Food security is…\", \"Farmers need water.\" (\"The food security is…\" yanlış). 2) Belirli, bilinen şey için \"the\": \"the Green Revolution\", \"the world's population\", \"the number of…\". 3) Tekil sayılabilir isim tek başına durmaz: \"a drought\", \"the drought\", ama asla sadece \"drought caused…\" değil (kuraklık genel kavram olarak sayılamayan da kullanılabilir: \"Drought is common here\"). Grafik dili: \"an increase in sales\" (neyde artış), \"an increase of 5%\" (ne kadar), \"the number of farms\" ama \"a number of farms\" (= several). Edatlar: depend on, access to, impact/effect on, rely on, invest in, in 2020, by 2050 (en geç), at the end of, from 2000 to 2020, between X and Y.",
+        "ar": "لأن نظام أدوات التعريف في التركية والعربية يختلف عن الإنجليزية، فإن أخطاء a/an/the وحروف الجر من أكثر الأخطاء الصغيرة التي تمنع الوصول إلى Band 7. أدوات التعريف: 1) لا أداة مع الاسم غير المعدود أو الجمع بالمعنى العام: Food security is… / Farmers need water (و The food security is… خطأ، رغم أن العربية تقول \"الأمن الغذائي\"). 2) the لشيء محدد معروف: the Green Revolution، the world's population، the number of…. 3) الاسم المفرد المعدود لا يقف وحده: a drought أو the drought. لغة الرسوم: an increase in sales (الزيادة في ماذا)، an increase of 5% (بكم)، the number of farms، أما a number of farms فتعني \"عدة\". حروف الجر: depend on، access to، impact/effect on، rely on، invest in، in 2020، by 2050 (في موعد أقصاه)، at the end of، from 2000 to 2020، between X and Y.",
+        "en": "Because Turkish and Arabic article systems work differently from English, small errors with a/an/the and prepositions are among the main barriers to band 7. Articles: 1) No article with uncountable or plural nouns used generally: \"Food security is…\", \"Farmers need water.\" (\"The food security is…\" is wrong.) 2) \"The\" for something specific or known: \"the Green Revolution\", \"the world's population\", \"the number of…\". 3) A singular countable noun cannot stand alone: \"a drought\", \"the drought\". In data language: \"an increase in sales\" (in what), \"an increase of 5%\" (by how much), \"the number of farms\" but \"a number of farms\" (= several). Prepositions: depend on, access to, impact/effect on, rely on, invest in, in 2020, by 2050 (no later than), at the end of, from 2000 to 2020, between X and Y."
+      },
+      "examples": [
+        "Food security depends on access to food as well as on production.",
+        "The number of people affected by drought rose between 2010 and 2020.",
+        "There was an increase of 12% in crop yields after the new irrigation system was introduced.",
+        "By 2050, the world's population is expected to approach ten billion."
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "id": "g1",
+          "prompt": "Which sentence is correct?",
+          "options": [
+            "Food security is a major concern for many governments.",
+            "The food security is a major concern for many governments.",
+            "A food security is a major concern for many governments.",
+            "Food security is major concern for the many governments."
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "\"food security\" genel anlamda sayılamayan bir isim: article almaz. \"a major concern\" ise tekil sayılabilir isim olduğu için \"a\" ister. D'de \"a\" eksik ve \"the many\" yanlış.",
+            "ar": "food security اسم غير معدود بالمعنى العام فلا يأخذ أداة. أما a major concern فاسم مفرد معدود يحتاج إلى a. في D تنقص a وthe many خطأ.",
+            "en": "Uncountable noun in general: no article; singular countable \"concern\" needs \"a\"."
+          },
+          "example": "Water scarcity is a serious problem in the region."
+        },
+        {
+          "type": "gap",
+          "id": "g2",
+          "prompt": "Write ONE word: There was a sharp increase ___ the price of rice in 2008.",
+          "answers": [
+            "in"
+          ],
+          "why": {
+            "tr": "\"an increase in + şey\" (neyin arttığı). Miktar için \"of\" kullanılır: \"an increase of 50%\".",
+            "ar": "an increase in + الشيء الذي زاد. أما المقدار فنستخدم له of: an increase of 50%.",
+            "en": "\"An increase in\" + what increased; \"of\" + the amount."
+          },
+          "example": "There was an increase in demand for fresh vegetables."
+        },
+        {
+          "type": "choice",
+          "id": "g3",
+          "prompt": "Many small farmers lack access ___ credit and reliable markets.",
+          "options": [
+            "to",
+            "for",
+            "of",
+            "at"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Kalıp \"access to something\" (bir şeye erişim). \"access for/of\" yanlış.",
+            "ar": "التعبير هو access to something (الوصول إلى). أما access for أو access of فخطأ.",
+            "en": "\"Access to\"."
+          },
+          "example": "Everyone should have access to clean water."
+        },
+        {
+          "type": "choice",
+          "id": "g4",
+          "prompt": "Choose the correct option: ___ farms in the region has fallen by a third since 2000.",
+          "options": [
+            "The number of",
+            "A number of",
+            "Number of",
+            "The amount of"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Tekil fiil (has fallen) ve belirli bir sayı anlamı: \"The number of\". \"A number of\" = birkaç, çoğul fiil ister (have). \"amount\" sayılamayan isimlerle kullanılır; \"farms\" sayılabilir.",
+            "ar": "الفعل مفرد (has fallen) والمعنى عدد محدد: The number of. أما A number of فتعني \"عدة\" وتأخذ فعلًا جمعًا (have). وamount للأسماء غير المعدودة، وfarms معدودة.",
+            "en": "\"The number of\" + singular verb; \"a number of\" means several; \"amount\" is for uncountable nouns."
+          },
+          "example": "The number of food banks has doubled in five years."
+        },
+        {
+          "type": "gap",
+          "id": "g5",
+          "prompt": "Write ONE word: The government has promised to halve child malnutrition ___ 2035 (= no later than 2035).",
+          "answers": [
+            "by"
+          ],
+          "why": {
+            "tr": "\"by + tarih\" = en geç o tarihe kadar. \"until\" bir durumun o tarihe kadar sürdüğünü anlatır; burada anlam farklı.",
+            "ar": "by + تاريخ تعني في موعد أقصاه. أما until فتعني استمرار الحال حتى ذلك التاريخ، وهو معنى مختلف.",
+            "en": "\"By\" + date = no later than."
+          },
+          "example": "The new irrigation system will be finished by next spring."
+        }
+      ]
+    },
+    {
+      "kind": "write",
+      "i18n": {"ar":{"title":"الكتابة · Task 1: وصف عملية (process)","tip":"في وصف العمليات تُستخدم صيغة المبني للمجهول (are sown, is pumped) وعبارات الترتيب (first, once, after this, finally)، لكن لا تبدأ كل جملة بـ\"Then\": نوّع بين بنى مثل \"Once the seeds have germinated…\" و\"At this stage…\". في النظرة العامة اذكر عدد المراحل، والبداية والنهاية، والدورة المتكررة (الماء). تدقيق أدوات التعريف: \"the seeds\" و\"a tank\" و\"the top shelf\"."},"en":{"title":"Writing · Task 1: describing a process","tip":"Process descriptions use the passive (are sown, is pumped) and sequencing words (first, once, after this, finally), but don't start every sentence with \"Then\": vary it with structures like \"Once the seeds have germinated…\" and \"At this stage…\". In the overview give the number of stages, the start and end, and the repeating cycle (water). Article check: \"the seeds\", \"a tank\", \"the top shelf\"."}},
+      "title": "Yazma · Task 1: bir sürecin anlatımı (process)",
+      "task": 1,
+      "prompt": "The information below shows how lettuce is produced in an indoor vertical farm.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words.",
+      "data": "Practice data (a simplified process invented for this lesson, given in words instead of a diagram).\n\nHow lettuce is produced in an indoor vertical farm\n1. Seeds are sown in small cubes of coconut fibre in the seed room.\n2. The seeds germinate under LED lights for about 10 days.\n3. The seedlings are moved to growing towers, eight shelves high.\n4. A solution of water and fertiliser is pumped from a tank to the top shelf and flows down past the roots.\n5. Water that is not absorbed is collected at the bottom, filtered and returned to the tank (and used again).\n6. After 4–5 weeks, the plants are harvested.\n7. The lettuces are washed, packed and delivered to local shops within 24 hours.",
+      "minutes": 20,
+      "minWords": 150,
+      "tip": "Süreç anlatımında edilgen yapı (are sown, is pumped) ve sıralama ifadeleri (first, once, after this, finally) kullanılır, ama her cümleyi \"Then\" ile başlatma: \"Once the seeds have germinated…\", \"At this stage…\" gibi çeşitli yapılar kullan. Genel bakışta adım sayısını, başlangıç ve bitişi ve tekrar eden döngüyü (su) söyle. Article kontrolü: \"the seeds\", \"a tank\", \"the top shelf\".",
+      "model": "The diagram illustrates the stages involved in growing lettuce in an indoor vertical farm, from the sowing of seeds to the delivery of the finished product.\n\nOverall, the process consists of seven main stages and takes roughly five to six weeks. A notable feature is that the water used to feed the plants is recycled in a continuous loop rather than being used only once.\n\nAt the beginning of the process, seeds are sown in small cubes of coconut fibre in a seed room, where they germinate under LED lights for about ten days. The young plants are then transferred to growing towers that are eight shelves high. At this stage, a mixture of water and fertiliser is pumped from a tank up to the top shelf, from where it flows down past the roots. Any water that the plants do not absorb is collected at the base of the tower, filtered and returned to the tank to be used again.\n\nOnce the lettuces have grown for four to five weeks, they are harvested. Finally, they are washed and packed before being delivered to local shops, a stage that is completed within 24 hours."
+    },
+    {
+      "kind": "speak",
+      "i18n": {"ar":{"title":"المحادثة: الطعام والزراعة"},"en":{"title":"Speaking: food and farming"}},
+      "title": "Konuşma: yiyecek ve tarım",
+      "part1": [
+        "Where does most of the food you eat come from?",
+        "Do you know how to cook any traditional dishes?",
+        "Have food prices changed much in your country recently?",
+        "Would you like to grow your own vegetables? Why or why not?"
+      ],
+      "card": {
+        "title": "Describe a food that is traditionally grown or produced in your country or region.",
+        "points": [
+          "what the food is and where it is produced",
+          "how it is grown or made",
+          "how people usually eat it"
+        ],
+        "explain": "and explain why this food is important to people in your region."
+      },
+      "useful": [
+        "It's grown mainly in the south, where the climate is warm and dry.",
+        "The whole process depends heavily on the weather.",
+        "In recent years, the harvest has been affected by drought.",
+        "It's a staple in most households; we eat it almost every day.",
+        "There's been a sharp increase in the price of it over the last few years.",
+        "For a lot of families in the region, it's an important source of income."
+      ]
+    }
+  ]
+}

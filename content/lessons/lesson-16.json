@@ -1,0 +1,670 @@
+{
+  "id": "lesson-16",
+  "number": 16,
+  "title": "Language and Communication",
+  "topic": "Language & communication",
+  "level": "B1+",
+  "goal": "Follow a lecture on endangered languages and a text on age and language learning, and write a formal opinion essay using nominalisation for an academic style.",
+  "steps": [
+    {
+      "kind": "words",
+      "i18n": {"ar":{"title":"المفردات: اللغة والتواصل","intro":"في هذا الدرس 12 كلمة وتعبيرًا عن تعلّم اللغات والتواصل. أنت أيضًا تتعلم لغة جديدة، وهذه الكلمات ستفيدك كثيرًا في اختبار التحدث عندما تتحدث عن تجربتك الخاصة."},"en":{"title":"Vocabulary: language and communication","intro":"This lesson has 12 words and phrases about language learning and communication. You are learning a new language yourself, so these words will also be very useful in the Speaking test when you talk about your own experience."}},
+      "title": "Kelimeler: dil ve iletişim",
+      "intro": "Bu derste dil öğrenme ve iletişim hakkında 12 kelime ve kalıp var. Sen de iki dil konuşuyorsun ve üçüncüsünü öğreniyorsun; bu kelimeler Konuşma sınavında kendi deneyimini anlatırken de çok işine yarayacak.",
+      "words": [
+        {
+          "en": "bilingual",
+          "pos": "adjective",
+          "tr": "iki dilli",
+          "ar": "ثنائي اللغة",
+          "example": "Children who grow up bilingual can switch easily between languages."
+        },
+        {
+          "en": "mother tongue",
+          "pos": "phrase",
+          "tr": "ana dil",
+          "ar": "اللغة الأم",
+          "example": "Her mother tongue is Arabic, but she studied in English."
+        },
+        {
+          "en": "fluent",
+          "pos": "adjective",
+          "tr": "akıcı",
+          "ar": "طليق (في اللغة)",
+          "example": "He became fluent in German after living in Berlin for three years."
+        },
+        {
+          "en": "acquire",
+          "pos": "verb",
+          "tr": "edinmek",
+          "ar": "يكتسب",
+          "example": "Young children acquire language without formal lessons."
+        },
+        {
+          "en": "dialect",
+          "pos": "noun",
+          "tr": "lehçe, ağız",
+          "ar": "لهجة",
+          "example": "The village has its own dialect, which visitors find hard to follow."
+        },
+        {
+          "en": "endangered language",
+          "pos": "phrase",
+          "tr": "tehlike altındaki dil",
+          "ar": "لغة مهدّدة بالانقراض",
+          "example": "When the last speakers of an endangered language die, the language is lost."
+        },
+        {
+          "en": "lingua franca",
+          "pos": "phrase",
+          "tr": "ortak dil (farklı dilleri konuşanlar arasında)",
+          "ar": "لغة مشتركة للتواصل بين متحدثي لغات مختلفة",
+          "example": "English is often used as a lingua franca in international business."
+        },
+        {
+          "en": "non-verbal",
+          "pos": "adjective",
+          "tr": "sözsüz, sözel olmayan",
+          "ar": "غير لفظي",
+          "example": "Gestures and facial expressions are forms of non-verbal communication."
+        },
+        {
+          "en": "proficiency",
+          "pos": "noun",
+          "tr": "yeterlilik, dil düzeyi",
+          "ar": "الكفاءة اللغوية",
+          "example": "Universities ask for proof of English proficiency."
+        },
+        {
+          "en": "misunderstanding",
+          "pos": "noun",
+          "tr": "yanlış anlama",
+          "ar": "سوء فهم",
+          "example": "A small misunderstanding about the date caused a big problem."
+        },
+        {
+          "en": "accent",
+          "pos": "noun",
+          "tr": "aksan",
+          "ar": "لكنة",
+          "example": "She speaks English with a slight Turkish accent."
+        },
+        {
+          "en": "translate",
+          "pos": "verb",
+          "tr": "çevirmek",
+          "ar": "يترجم",
+          "example": "The novel has been translated into more than forty languages."
+        }
+      ],
+      "practice": [
+        {
+          "type": "choice",
+          "id": "w1",
+          "prompt": "My ___ is Turkish, but I use English at work every day.",
+          "options": [
+            "mother tongue",
+            "lingua franca",
+            "dialect",
+            "accent"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "İnsanın ilk öğrendiği dil \"mother tongue\"dur (ana dil). \"lingua franca\" farklı dilleri konuşanların ortak dilidir.",
+            "ar": "اللغة التي يتعلّمها الإنسان أولًا هي mother tongue (اللغة الأم)، أما lingua franca فهي لغة مشتركة بين متحدثي لغات مختلفة.",
+            "en": "Your first language is your mother tongue."
+          },
+          "example": "Many children in the city speak a different mother tongue at home."
+        },
+        {
+          "type": "choice",
+          "id": "w2",
+          "prompt": "She is ___ in three languages: Arabic, French and English.",
+          "options": [
+            "bilingual",
+            "verbal",
+            "fluent",
+            "translated"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "\"fluent in + dil\" kalıbı = o dilde akıcı. \"bilingual\" zaten iki dil demek, üç dille çelişir.",
+            "ar": "التعبير fluent in + لغة يعني يتحدثها بطلاقة. أما bilingual فتعني لغتين فقط.",
+            "en": "\"Fluent in\" + language; bilingual means two languages only."
+          },
+          "example": "He is fluent in Spanish and Portuguese."
+        },
+        {
+          "type": "gap",
+          "id": "w3",
+          "prompt": "Write the correct form of PROFICIENT: Many universities require a certificate of English ___.",
+          "answers": [
+            "proficiency"
+          ],
+          "why": {
+            "tr": "\"a certificate of\" sonrasında isim gerekir: proficient → proficiency.",
+            "ar": "بعد a certificate of نحتاج إلى اسم: proficient تصبح proficiency.",
+            "en": "A noun is needed: proficiency."
+          },
+          "example": "The job requires a high level of proficiency in French."
+        },
+        {
+          "type": "choice",
+          "id": "w4",
+          "prompt": "A lingua franca is…",
+          "options": [
+            "a language that only a few old people speak",
+            "a language used between people with different first languages",
+            "the language you learn first as a child",
+            "a regional form of a language"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"lingua franca\" farklı ana dilleri olan insanların anlaşmak için kullandığı ortak dildir. Bölgesel biçim \"dialect\", ilk dil \"mother tongue\".",
+            "ar": "lingua franca لغة مشتركة يستخدمها أشخاص لغاتهم الأم مختلفة. أما الشكل الإقليمي فهو dialect، واللغة الأولى mother tongue.",
+            "en": "A lingua franca is a shared language between speakers of different first languages."
+          },
+          "example": "Swahili is a lingua franca in much of East Africa."
+        },
+        {
+          "type": "gap",
+          "id": "w5",
+          "prompt": "Write ONE word: Body language is a type of ___-verbal communication.",
+          "answers": [
+            "non"
+          ],
+          "why": {
+            "tr": "\"non-verbal\" = sözsüz (kelimeler olmadan) iletişim: jestler, yüz ifadeleri.",
+            "ar": "non-verbal تعني التواصل بلا كلمات: الإيماءات وتعابير الوجه.",
+            "en": "\"Non-verbal\" = without words."
+          },
+          "example": "A smile is the simplest form of non-verbal communication."
+        },
+        {
+          "type": "choice",
+          "id": "w6",
+          "prompt": "Which word completes both: 'a strong regional ___' and 'speak with a foreign ___'?",
+          "options": [
+            "dialect",
+            "translation",
+            "proficiency",
+            "accent"
+          ],
+          "answer": 3,
+          "why": {
+            "tr": "\"speak with a foreign accent\" sabit bir kalıp; \"dialect\" ikinci ifadeye uymaz. Aksan telaffuzla ilgilidir.",
+            "ar": "speak with a foreign accent تعبير ثابت، وdialect لا تناسب العبارة الثانية. اللكنة تتعلق بالنطق.",
+            "en": "\"Speak with a foreign accent\" is fixed; dialect does not fit the second phrase."
+          },
+          "example": "He has a strong regional accent from the north."
+        }
+      ]
+    },
+    {
+      "kind": "listen",
+      "i18n": {"ar":{"title":"الاستماع · Part 4: لغات مهدّدة بالانقراض","intro":"محاضر جامعي يلقي محاضرة عن اللغات المهدّدة بالانقراض: لماذا تختفي، وهل يمكن إنقاذها؟ اقرأ الملاحظات أولًا. يُشغَّل التسجيل مرة واحدة فقط.","tip":"في Part 4 قد يذكر المتحدث اعتقادًا شائعًا ثم يصحّحه (\"a common misunderstanding is…, in fact…\"). الإجابة تأتي بعد \"in fact\". وفي أسئلة الاختيار من متعدد انتبه إلى الجمل القصيرة التي تعطي الفكرة الرئيسية للمتحدث."},"en":{"title":"Listening · Part 4: endangered languages","intro":"A lecturer gives a talk on languages in danger of dying out: why are they disappearing, and can they be saved? Read the notes first. The recording plays once.","tip":"In Part 4 the speaker may state a common belief and then correct it (\"a common misunderstanding is…, in fact…\"). The answer comes after \"in fact\". In multiple choice questions, pay attention to short sentences that give the speaker's main idea."}},
+      "title": "Dinleme · Part 4: tehlikedeki diller",
+      "intro": "Bir öğretim üyesi, yok olma tehlikesindeki diller hakkında ders veriyor: neden kayboluyorlar ve kurtarılabilirler mi? Önce notları oku. Kayıt bir kez çalar.",
+      "tip": "Part 4'te konuşmacı yaygın bir inancı söyleyip sonra düzeltebilir (\"a common misunderstanding is…, in fact…\"). Cevap \"in fact\"ten sonra gelir. Çoktan seçmeli sorularda konuşmacının ana fikrini veren kısa cümlelere dikkat et.",
+      "audio": {
+        "type": "audio",
+        "id": "l-audio",
+        "speakers": {
+          "N": {
+            "name": "Narrator",
+            "voice": "en-NZ-MollyNeural"
+          },
+          "lecturer": {
+            "name": "Lecturer",
+            "voice": "en-AU-WilliamMultilingualNeural"
+          }
+        },
+        "lines": [
+          {
+            "speaker": "N",
+            "text": "You will hear part of a lecture about languages in danger of disappearing. First, you have some time to look at questions one to six.",
+            "pauseAfterMs": 2500
+          },
+          {
+            "speaker": "N",
+            "text": "Now listen carefully and answer questions one to six.",
+            "pauseAfterMs": 1200
+          },
+          {
+            "speaker": "lecturer",
+            "text": "Good afternoon. Today's topic is endangered languages: what they are, why they disappear, and whether anything can be done to save them.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "lecturer",
+            "text": "Linguists estimate that around seven thousand languages are spoken in the world today. That sounds like a lot, but the distribution is very uneven. A small number of large languages are used by most of the world's population, while thousands of others have only a few thousand speakers, or even a few hundred. By some estimates, over a third of all languages are now endangered.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "lecturer",
+            "text": "So what makes a language endangered? The number of speakers matters, but the most important sign is whether children are still learning it. A language with only five thousand speakers can be quite safe if every child in the community acquires it as their mother tongue. On the other hand, a language with a hundred thousand speakers is in serious danger if they are all over sixty.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "lecturer",
+            "text": "Why do families stop passing a language on? Usually, it isn't a single decision. Parents notice that school, jobs and the media all use a dominant language, perhaps a national language or a lingua franca such as English, and they want their children to succeed. In some cases, earlier generations were punished for speaking their own language at school, so they came to feel it had no value.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "lecturer",
+            "text": "Now, a common misunderstanding is that a disappearing language is simply replaced by another one, with nothing lost. In fact, each language carries knowledge that may not translate easily: names for local plants and animals, ways of describing family relationships, songs and stories. When a language disappears, much of that goes with it.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "lecturer",
+            "text": "Can languages be revived? Sometimes, yes. The best-known example is probably Hebrew, which for centuries was used mainly for religious and written purposes before it became the everyday language of millions of people. Welsh is another interesting case: after a long decline, schools that teach mainly in Welsh have helped many more children to grow up bilingual in Welsh and English.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "lecturer",
+            "text": "Modern technology can also help. Recordings, online dictionaries and apps allow young people to hear older speakers, including different dialects and accents.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "lecturer",
+            "text": "But technology alone cannot save a language. Recordings preserve a language; only speakers keep it alive. The communities that succeed are the ones where children reach real proficiency and use the language every day: at home, with their friends and, increasingly, online.",
+            "pauseAfterMs": 1500
+          },
+          {
+            "speaker": "N",
+            "text": "That is the end of the recording.",
+            "pauseAfterMs": 0
+          }
+        ]
+      },
+      "questions": [
+        {
+          "type": "text",
+          "text": "Questions 1–4. Complete the notes below. Write ONE WORD ONLY for each answer."
+        },
+        {
+          "type": "text",
+          "text": "Endangered languages"
+        },
+        {
+          "type": "gap",
+          "id": "l1",
+          "prompt": "1. Most important sign of danger: whether ___ are still learning the language",
+          "answers": [
+            "children"
+          ],
+          "why": {
+            "tr": "\"the most important sign is whether children are still learning it\". Konuşan sayısı önemli ama en önemli işaret bu.",
+            "ar": "\"the most important sign is whether children are still learning it\". عدد المتحدثين مهم، لكن هذا هو المؤشر الأهم.",
+            "en": "\"The most important sign is whether children are still learning it.\""
+          },
+          "example": "The most important sign of a healthy language is that children speak it."
+        },
+        {
+          "type": "gap",
+          "id": "l2",
+          "prompt": "2. Families often switch because school, jobs and the ___ use a dominant language",
+          "answers": [
+            "media"
+          ],
+          "why": {
+            "tr": "\"Parents notice that school, jobs and the media all use a dominant language\".",
+            "ar": "\"Parents notice that school, jobs and the media all use a dominant language\".",
+            "en": "\"School, jobs and the media all use a dominant language.\""
+          },
+          "example": "The media has a strong influence on how young people speak."
+        },
+        {
+          "type": "gap",
+          "id": "l3",
+          "prompt": "3. Knowledge carried by a language: names of local plants and animals, family relationships, songs and ___",
+          "answers": [
+            "stories"
+          ],
+          "why": {
+            "tr": "\"names for local plants and animals, ways of describing family relationships, songs and stories\".",
+            "ar": "\"names for local plants and animals, ways of describing family relationships, songs and stories\".",
+            "en": "\"…songs and stories.\""
+          },
+          "example": "My grandmother knew hundreds of old songs and stories."
+        },
+        {
+          "type": "gap",
+          "id": "l4",
+          "prompt": "4. Recordings, online dictionaries and ___ let young people hear older speakers",
+          "answers": [
+            "apps"
+          ],
+          "why": {
+            "tr": "\"Recordings, online dictionaries and apps allow young people to hear older speakers\".",
+            "ar": "\"Recordings, online dictionaries and apps allow young people to hear older speakers\".",
+            "en": "\"Recordings, online dictionaries and apps.\""
+          },
+          "example": "There are many apps for learning new words."
+        },
+        {
+          "type": "text",
+          "text": "Questions 5–6. Choose the correct letter."
+        },
+        {
+          "type": "choice",
+          "id": "l5",
+          "prompt": "5. According to the lecturer, which language is in the most danger?",
+          "options": [
+            "a language with 5,000 speakers of all ages",
+            "a language with 100,000 speakers who are all over sixty",
+            "a language used as a lingua franca"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "Çocuklar öğreniyorsa 5.000 konuşanlı dil \"quite safe\"; ama 100.000 konuşan \"all over sixty\" ise \"in serious danger\". Sayı değil, çocuklar önemli.",
+            "ar": "اللغة ذات الخمسة آلاف متحدث \"quite safe\" إذا تعلّمها الأطفال، أما مئة ألف متحدث \"all over sixty\" فهي \"in serious danger\". المهم الأطفال لا العدد.",
+            "en": "A language with 100,000 speakers \"is in serious danger if they are all over sixty\"."
+          },
+          "example": "A language is in danger if only old people speak it."
+        },
+        {
+          "type": "choice",
+          "id": "l6",
+          "prompt": "6. What is the lecturer's main point about technology?",
+          "options": [
+            "It is the best way to save a language.",
+            "It is mainly useful for recording dialects.",
+            "It cannot replace people using the language every day."
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "\"technology alone cannot save a language. Recordings preserve a language; only speakers keep it alive\". A bunun tersi.",
+            "ar": "\"technology alone cannot save a language. Recordings preserve a language; only speakers keep it alive\". والخيار A عكس ذلك.",
+            "en": "\"Recordings preserve a language; only speakers keep it alive.\""
+          },
+          "example": "A dictionary can preserve words, but only speakers keep a language alive."
+        }
+      ]
+    },
+    {
+      "kind": "read",
+      "i18n": {"ar":{"title":"القراءة: True / False / Not Given وإكمال الملاحظات","intro":"ستقرأ نصًا عن دور العمر في تعلّم اللغات: هل يتعلم الأطفال فعلًا بسرعة أكبر؟ هناك أولًا أسئلة TFNG، ثم أسئلة إكمال الملاحظات.","tip":"في إكمال الملاحظات تختصر الملاحظات جزءًا من النص؛ خذ الإجابة من النص كما هي والتزم بحد الكلمات. وفي TFNG، إذا وردت كلمات قاطعة مثل \"never\" و\"always\" فابحث في النص عن عبارة تنقضها."},"en":{"title":"Reading: True / False / Not Given and note completion","intro":"You will read a text about the role of age in language learning: do children really learn faster? First come TFNG questions, then note completion.","tip":"In note completion the notes shorten part of the text; take the answer from the text exactly and keep to the word limit. In TFNG, if there are absolute words like \"never\" or \"always\", look for something in the text that contradicts them."}},
+      "title": "Okuma: True / False / Not Given ve not tamamlama",
+      "intro": "Yaşın dil öğrenmedeki rolü üzerine bir metin okuyacaksın: çocuklar gerçekten daha mı hızlı öğreniyor? Önce TFNG, sonra not tamamlama soruları var.",
+      "tip": "Not tamamlamada notlar metnin bir bölümünü kısaltarak verir; cevabı metinden aynen al ve kelime sınırına uy. TFNG'de \"never\", \"always\" gibi kesin kelimeler varsa metinde bunları çürüten bir ifade ara.",
+      "passage": [
+        {
+          "type": "heading",
+          "text": "Is Younger Always Better? Age and Language Learning"
+        },
+        {
+          "type": "text",
+          "text": "It is widely believed that children learn languages more easily than adults. Parents who move abroad often notice that their young children become fluent in the new language within a year or two, while they themselves struggle with basic conversations. This observation has encouraged many countries to introduce foreign language lessons at primary school, sometimes from the age of six or seven."
+        },
+        {
+          "type": "text",
+          "text": "The idea has a scientific background. In the 1960s, some researchers proposed that there is a 'critical period' for language, after which it becomes much harder to acquire a language to a native-like level. There is good evidence for this in one area at least: people who start learning a language after their early teens rarely lose their foreign accent completely, however proficient they become in other respects."
+        },
+        {
+          "type": "text",
+          "text": "Yet age is not the whole story. Studies comparing learners in classrooms have often found that older children and adults make faster progress at first, especially in grammar and vocabulary. They can use what they know about their mother tongue, they are better at studying systematically, and they can understand explanations of how the language works. Young children's advantage seems to appear mainly over the long term, and mainly when they are surrounded by the language, not when they have two short lessons a week."
+        },
+        {
+          "type": "text",
+          "text": "This difference matters. A child who moves to a new country hears the language for many hours every day, at school, in the playground and on television, and has a strong reason to use it: making friends. Gestures and other non-verbal signals help at first, but they soon stop being enough. A child who studies a language for an hour a week at school receives only a tiny fraction of that input. For this reason, some researchers argue that starting early in school is less important than the total amount and quality of exposure."
+        },
+        {
+          "type": "text",
+          "text": "Motivation and opportunity also play a large part. Adults who need a language for work, study or family life often reach a high level of proficiency, even if their accent shows that they started late. In most real situations, a slight accent causes little difficulty, especially when English is used as a lingua franca between speakers from many countries. Misunderstandings usually come from vocabulary or cultural differences rather than pronunciation."
+        },
+        {
+          "type": "text",
+          "text": "Finally, research on bilingual people has challenged the old fear that learning two languages confuses children. Children who grow up with two languages may mix them occasionally, but this is a normal stage, and most go on to separate them without difficulty. Whether being bilingual brings wider benefits, such as better concentration, is still debated, but there is little evidence that it causes harm."
+        }
+      ],
+      "questions": [
+        {
+          "type": "heading",
+          "text": "Questions 1–4: True, False or Not Given?"
+        },
+        {
+          "type": "text",
+          "text": "Do the following statements agree with the information in the passage? Choose TRUE if the statement agrees with the information, FALSE if it contradicts the information, NOT GIVEN if there is no information on this."
+        },
+        {
+          "type": "tfng",
+          "id": "r1",
+          "statement": "1. Some countries begin teaching foreign languages at primary school.",
+          "answer": "true",
+          "why": {
+            "tr": "Paragraf 1: \"many countries... introduce foreign language lessons at primary school, sometimes from the age of six or seven\": TRUE.",
+            "ar": "الفقرة 1: \"many countries... introduce foreign language lessons at primary school\": TRUE.",
+            "en": "\"…encouraged many countries to introduce foreign language lessons at primary school.\""
+          },
+          "example": "In many countries, children start learning English at primary school."
+        },
+        {
+          "type": "tfng",
+          "id": "r2",
+          "statement": "2. People who start a language as adults can never become highly proficient in it.",
+          "answer": "false",
+          "why": {
+            "tr": "Paragraf 5: yetişkinler \"often reach a high level of proficiency, even if their accent shows that they started late\". \"never\" metinle çelişiyor: FALSE.",
+            "ar": "الفقرة 5: البالغون \"often reach a high level of proficiency, even if their accent shows that they started late\". كلمة never تناقض النص: FALSE.",
+            "en": "Adults \"often reach a high level of proficiency\"."
+          },
+          "example": "She started learning Japanese at forty and is now fluent."
+        },
+        {
+          "type": "tfng",
+          "id": "r3",
+          "statement": "3. In classrooms, older learners often make quicker progress than young children at the beginning.",
+          "answer": "true",
+          "why": {
+            "tr": "Paragraf 3: \"older children and adults make faster progress at first, especially in grammar and vocabulary\": TRUE.",
+            "ar": "الفقرة 3: \"older children and adults make faster progress at first, especially in grammar and vocabulary\": TRUE.",
+            "en": "\"Older children and adults make faster progress at first.\""
+          },
+          "example": "Adults often learn grammar faster at first."
+        },
+        {
+          "type": "tfng",
+          "id": "r4",
+          "statement": "4. Children who grow up with two languages usually start speaking later than other children.",
+          "answer": "not given",
+          "why": {
+            "tr": "Son paragraf iki dilli çocukların dilleri bazen karıştırdığını söylüyor ama konuşmaya ne zaman başladıklarından söz etmiyor: NOT GIVEN.",
+            "ar": "تقول الفقرة الأخيرة إن الأطفال ثنائيي اللغة يخلطون بين اللغتين أحيانًا، لكنها لا تذكر متى يبدؤون الكلام: NOT GIVEN.",
+            "en": "The passage mentions mixing languages, not when bilingual children start to speak."
+          },
+          "example": "The article does not say when bilingual children start to talk."
+        },
+        {
+          "type": "heading",
+          "text": "Questions 5–7"
+        },
+        {
+          "type": "text",
+          "text": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer."
+        },
+        {
+          "type": "text",
+          "text": "Why children who move abroad learn well"
+        },
+        {
+          "type": "gap",
+          "id": "r5",
+          "prompt": "5. They hear the language for many hours a day and need it for making ___.",
+          "answers": [
+            "friends"
+          ],
+          "why": {
+            "tr": "Paragraf 4: \"has a strong reason to use it: making friends\".",
+            "ar": "الفقرة 4: \"has a strong reason to use it: making friends\".",
+            "en": "\"A strong reason to use it: making friends.\""
+          },
+          "example": "Joining a club is a good way of making friends."
+        },
+        {
+          "type": "gap",
+          "id": "r6",
+          "prompt": "6. Some researchers say the amount and quality of ___ matter more than an early start at school.",
+          "answers": [
+            "exposure"
+          ],
+          "why": {
+            "tr": "Paragraf 4: \"starting early in school is less important than the total amount and quality of exposure\". \"exposure\" = dile maruz kalma.",
+            "ar": "الفقرة 4: \"starting early in school is less important than the total amount and quality of exposure\"، وexposure تعني التعرّض للغة.",
+            "en": "\"…less important than the total amount and quality of exposure.\""
+          },
+          "example": "Daily exposure to English helped her improve quickly."
+        },
+        {
+          "type": "gap",
+          "id": "r7",
+          "prompt": "7. Misunderstandings usually come from vocabulary or cultural differences, not from ___.",
+          "answers": [
+            "pronunciation"
+          ],
+          "why": {
+            "tr": "Paragraf 5: \"Misunderstandings usually come from vocabulary or cultural differences rather than pronunciation\".",
+            "ar": "الفقرة 5: \"Misunderstandings usually come from vocabulary or cultural differences rather than pronunciation\".",
+            "en": "\"…rather than pronunciation.\""
+          },
+          "example": "Clear pronunciation matters, but vocabulary matters more."
+        }
+      ]
+    },
+    {
+      "kind": "language",
+      "i18n": {"ar":{"title":"اللغة: الأسلوب الأكاديمي بالتحويل إلى أسماء (decide → decision)"},"en":{"title":"Language: academic style through nominalisation (decide → decision)"}},
+      "title": "Dil: isimleştirme ile akademik üslup (decide → decision)",
+      "explain": {
+        "tr": "Akademik yazıda fiil ve sıfatları isme çevirmek (nominalisation) metni daha resmî ve yoğun yapar: \"The government decided to cut funding, and this affected schools\" → \"The government's decision to cut funding affected schools.\" Yaygın ekler: -tion/-sion (decide → decision, translate → translation, introduce → introduction), -ment (develop → development), -ance/-ence (perform → performance, different → difference), -ity/-cy (able → ability, proficient → proficiency), -ure (fail → failure). Task 1'de de işe yarar: \"It increased sharply\" yerine \"There was a sharp increase in…\". Ama abartma: her cümleyi isimleştirirsen metin ağırlaşır; açıklık her zaman önce gelir.",
+        "ar": "في الكتابة الأكاديمية يجعل تحويل الأفعال والصفات إلى أسماء (nominalisation) النص أكثر رسمية وكثافة: \"The government decided to cut funding, and this affected schools\" ← \"The government's decision to cut funding affected schools.\" اللواحق الشائعة: -tion/-sion (decide → decision، translate → translation، introduce → introduction)، و-ment (develop → development)، و-ance/-ence (perform → performance، different → difference)، و-ity/-cy (able → ability، proficient → proficiency)، و-ure (fail → failure). ويفيد في Task 1 أيضًا: بدل It increased sharply نكتب There was a sharp increase in…. لكن لا تبالغ: إن حوّلت كل جملة إلى أسماء صار النص ثقيلًا، والوضوح يأتي أولًا.",
+        "en": "In academic writing, turning verbs and adjectives into nouns (nominalisation) makes a text more formal and dense: \"The government decided to cut funding, and this affected schools\" → \"The government's decision to cut funding affected schools.\" Common endings: -tion/-sion (decide → decision, translate → translation, introduce → introduction), -ment (develop → development), -ance/-ence (perform → performance, different → difference), -ity/-cy (able → ability, proficient → proficiency), -ure (fail → failure). It helps in Task 1 too: \"There was a sharp increase in…\" instead of \"It increased sharply\". But do not overdo it: if every sentence is nominalised, the text becomes heavy; clarity always comes first."
+      },
+      "examples": [
+        "The disappearance of an endangered language means the loss of local knowledge.",
+        "The introduction of English at primary school has had mixed results.",
+        "There has been a significant increase in the number of bilingual children.",
+        "A lack of proficiency in the local language can make it difficult to find a job."
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "id": "g1",
+          "prompt": "Which sentence uses nominalisation to sound more academic?",
+          "options": [
+            "Because people moved to cities, many small languages disappeared.",
+            "The movement of people to cities led to the disappearance of many small languages.",
+            "People moved to cities and so lots of small languages died out.",
+            "Many small languages died because people went to cities."
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"moved\" → \"the movement\", \"disappeared\" → \"the disappearance\". İki fiil isme dönüşmüş ve \"led to\" ile bağlanmış.",
+            "ar": "moved ← the movement وdisappeared ← the disappearance، فقد تحوّل الفعلان إلى اسمين ورُبطا بـ led to.",
+            "en": "Moved → the movement; disappeared → the disappearance."
+          },
+          "example": "The growth of cities led to the decline of village life."
+        },
+        {
+          "type": "gap",
+          "id": "g2",
+          "prompt": "Write the noun form of DECIDE: The government's ___ to teach English from age six was controversial.",
+          "answers": [
+            "decision"
+          ],
+          "why": {
+            "tr": "\"The government's\" sonrasında isim gerekir: decide → decision.",
+            "ar": "بعد The government's نحتاج إلى اسم: decide تصبح decision.",
+            "en": "decide → decision."
+          },
+          "example": "Her decision to study abroad changed her life."
+        },
+        {
+          "type": "gap",
+          "id": "g3",
+          "prompt": "Write the noun form of FAIL: The ___ of the programme was mainly due to a lack of teachers.",
+          "answers": [
+            "failure"
+          ],
+          "why": {
+            "tr": "\"The ___ of\" bir isim ister: fail → failure.",
+            "ar": "التركيب The ___ of يحتاج إلى اسم: fail تصبح failure.",
+            "en": "fail → failure."
+          },
+          "example": "The failure of the plan surprised everyone."
+        },
+        {
+          "type": "choice",
+          "id": "g4",
+          "prompt": "\"Children acquire language quickly, and this surprises many parents.\" Which is the best nominalised version?",
+          "options": [
+            "Children acquiring language quickly, this surprises many parents.",
+            "Children's quickly acquire of language surprises many parents.",
+            "The speed with which children acquire language surprises many parents.",
+            "The quick of children's language surprises many parents."
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "\"quickly\" → \"the speed\": özne artık bir isim öbeği (The speed with which…). Diğerleri dilbilgisi olarak yanlış.",
+            "ar": "quickly ← the speed، فأصبح الفاعل مركّبًا اسميًا (The speed with which…). والخيارات الأخرى خاطئة نحويًا.",
+            "en": "\"Quickly\" becomes \"the speed\", giving a noun-phrase subject."
+          },
+          "example": "The speed of the change surprised researchers."
+        },
+        {
+          "type": "gap",
+          "id": "g5",
+          "prompt": "Write the noun form of DIFFERENT: There is a clear ___ between learning a language at school and living abroad.",
+          "answers": [
+            "difference"
+          ],
+          "why": {
+            "tr": "\"a clear ___\" bir isim ister: different → difference.",
+            "ar": "a clear ___ تحتاج إلى اسم: different تصبح difference.",
+            "en": "different → difference."
+          },
+          "example": "There is a big difference between reading a language and speaking it."
+        }
+      ]
+    },
+    {
+      "kind": "write",
+      "i18n": {"ar":{"title":"الكتابة · Task 2: مقال رأي (مقال كامل)","tip":"في سؤال \"To what extent\" اذكر رأيك بوضوح في المقدمة (strongly disagree / partly agree) والتزم بالخط نفسه طوال المقال. ولأسلوب أكاديمي حوّل بعض الأفعال إلى أسماء (spread → the spread of، decide → decision)، لكن لا تفعل ذلك في كل جملة؛ فالوضوح مهم. جرّب كلمات lingua franca وproficiency وfluency وtranslation."},"en":{"title":"Writing · Task 2: opinion essay (full essay)","tip":"In a \"To what extent\" question, state your opinion clearly in the introduction (strongly disagree / partly agree) and keep to the same line throughout the essay. For an academic style, turn some verbs into nouns (spread → the spread of, decide → decision), but not in every sentence; clarity matters. Try the words lingua franca, proficiency, fluency and translation."}},
+      "title": "Yazma · Task 2: görüş denemesi (tam deneme)",
+      "task": 2,
+      "prompt": "As English becomes more widely used around the world, some people believe that learning other foreign languages is a waste of time.\n\nTo what extent do you agree or disagree? Write a full essay.",
+      "minutes": 40,
+      "minWords": 250,
+      "tip": "\"To what extent\" sorusunda görüşünü girişte net söyle (strongly disagree / partly agree) ve tüm deneme boyunca aynı çizgide kal. Akademik bir üslup için bazı fiilleri isimleştir (spread → the spread of, decide → decision), ama her cümleyi değil; açıklık önemli. lingua franca, proficiency, fluency, translation kelimelerini dene.",
+      "model": "The spread of English as a lingua franca in business, science and the internet has led some people to question the value of learning any other foreign language. Although English is undoubtedly the most useful second language for many learners, I strongly disagree with the view that studying other languages is a waste of time.\n\nIt is true that English offers unique advantages. Proficiency in English opens the door to international universities, global companies and a vast amount of information online. For a student with limited time, the decision to concentrate on English is therefore understandable. Moreover, improvements in machine translation mean that people can now read a menu or a website in almost any language without studying it.\n\nHowever, this argument overlooks several important points. First, the dominance of English is not the same as universal knowledge of it. In many regions, from Latin America to the Middle East, the ability to speak Spanish or Arabic is far more useful for work and travel than English. Second, communication is more than the exchange of information. A translation app can help a tourist order food, but it cannot build trust with a business partner or friendship with a neighbour; that requires real fluency and an understanding of non-verbal communication and culture. Finally, learning a language changes the learner. The experience of struggling with a new grammar or accent leads to a greater appreciation of other cultures and, many teachers believe, of one's own mother tongue.\n\nIn conclusion, English is clearly an essential tool in today's world, but it is not the only valuable language. Far from being a waste of time, the study of other languages is an investment in deeper communication, wider opportunities and a better understanding of the world."
+    },
+    {
+      "kind": "speak",
+      "i18n": {"ar":{"title":"التحدث: اللغة والتواصل"},"en":{"title":"Speaking: language and communication"}},
+      "title": "Konuşma: dil ve iletişim",
+      "part1": [
+        "How many languages can you speak?",
+        "What do you find most difficult about learning English?",
+        "Do you prefer to keep in touch with people by message or by phone?",
+        "Are there different dialects or accents in your country?"
+      ],
+      "card": {
+        "title": "Describe a time when you had difficulty understanding someone or being understood.",
+        "points": [
+          "who you were talking to",
+          "where and when it happened",
+          "what the misunderstanding was"
+        ],
+        "explain": "and explain how you solved the problem."
+      },
+      "useful": [
+        "The situation that comes to mind happened when I…",
+        "The problem was that he had a very strong accent, so…",
+        "It turned out that there had been a misunderstanding about…",
+        "In the end, we used gestures and other non-verbal signals to…",
+        "Looking back, the main reason for the confusion was…",
+        "Since then, I've always tried to…"
+      ]
+    }
+  ]
+}

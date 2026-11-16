@@ -1,0 +1,339 @@
+{
+  "id": "lesson-22",
+  "number": 22,
+  "title": "Buying Happiness?",
+  "topic": "Money and consumer society",
+  "level": "B2",
+  "goal": "Catch details in a call about a repair service, discuss why people buy so much in a two-part essay, and pack information into complex noun phrases.",
+  "steps": [
+    {
+      "kind": "words",
+      "i18n": {"ar":{"title":"المفردات: المال والمجتمع الاستهلاكي","intro":"في هذا الدرس 12 كلمة وعبارة عن المال والتسوق وعادات الاستهلاك. يتكرر هذا الموضوع كثيرًا في Speaking Part 1 (التسوق، ادخار المال) وفي Task 2 (ثقافة الاستهلاك، الديون)."},"en":{"title":"Vocabulary: money and consumer society","intro":"This lesson has 12 words and phrases about money, shopping and spending habits. The topic comes up very often in Speaking Part 1 (shopping, saving money) and Task 2 (consumer culture, debt)."}},
+      "title": "Kelimeler: para ve tüketim toplumu",
+      "intro": "Bu derste para, alışveriş ve tüketim alışkanlıkları hakkında 12 kelime ve kalıp var. Bu konu Speaking Part 1'de (alışveriş, para biriktirme) ve Task 2'de (tüketim kültürü, borç) çok sık çıkar.",
+      "words": [
+        { "en": "consumerism", "pos": "noun", "tr": "tüketim kültürü, tüketicilik", "ar": "النزعة الاستهلاكية", "example": "Some people blame consumerism for the huge amount of waste we produce." },
+        { "en": "materialistic", "pos": "adjective", "tr": "maddiyatçı, eşyaya ve paraya çok önem veren", "ar": "مادّي (يهتم بالمال والممتلكات كثيرًا)", "example": "He became less materialistic after travelling with only a backpack." },
+        { "en": "disposable income", "pos": "phrase", "tr": "harcanabilir gelir (vergi ve zorunlu giderlerden sonra kalan para)", "ar": "الدخل المتاح للإنفاق", "example": "Young professionals often have a high disposable income." },
+        { "en": "budget", "pos": "noun", "tr": "bütçe", "ar": "ميزانية", "example": "We planned a monthly budget so that we could save for a car." },
+        { "en": "debt", "pos": "noun", "tr": "borç", "ar": "دَين", "example": "She worked two jobs to pay off her debt." },
+        { "en": "bargain", "pos": "noun", "tr": "kelepir, çok uygun fiyatlı alışveriş", "ar": "صفقة رابحة، شيء رخيص الثمن", "example": "The jacket was a real bargain at half price." },
+        { "en": "second-hand", "pos": "adjective", "tr": "ikinci el", "ar": "مستعمَل", "example": "Students often buy second-hand textbooks to save money." },
+        { "en": "throwaway culture", "pos": "phrase", "tr": "kullan-at kültürü", "ar": "ثقافة الاستعمال ثم الرمي", "example": "Cheap fashion is part of our throwaway culture." },
+        { "en": "status symbol", "pos": "phrase", "tr": "statü sembolü", "ar": "رمز للمكانة الاجتماعية", "example": "For many people, an expensive car is a status symbol." },
+        { "en": "savings", "pos": "noun", "tr": "birikim, tasarruf edilen para", "ar": "المدَّخرات", "example": "They used their savings to start a small business." },
+        { "en": "afford", "pos": "verb", "tr": "(parası) yetmek, karşılayabilmek", "ar": "يستطيع تحمّل كلفة شيء", "example": "Many young people cannot afford to buy a home." },
+        { "en": "possessions", "pos": "noun (plural)", "tr": "eşyalar, sahip olunan şeyler", "ar": "الممتلكات، المقتنيات", "example": "The fire destroyed most of their possessions." }
+      ],
+      "practice": [
+        {
+          "type": "choice", "id": "w1",
+          "prompt": "After paying rent and bills, he has very little ___ left to spend on hobbies.",
+          "options": ["disposable income", "status symbol", "throwaway culture", "debt"],
+          "answer": 0,
+          "why": { "tr": "Kira ve faturalardan sonra kalan, istediğin gibi harcayabileceğin para: disposable income. \"debt\" borçtur; \"left to spend\" ile uyumlu değil.", "ar": "المال المتبقي بعد الإيجار والفواتير للإنفاق الحر هو disposable income. أما debt فدَين ولا يناسب left to spend.", "en": "Money left after essential costs is disposable income." },
+          "example": "A rise in rent leaves families with less disposable income."
+        },
+        {
+          "type": "gap", "id": "w2",
+          "prompt": "Write the correct form of MATERIAL: Critics say that advertising makes children more ___.",
+          "answers": ["materialistic"],
+          "why": { "tr": "\"more\" sonrasında sıfat gerekir ve anlam \"paraya ve eşyaya düşkün\": materialistic. \"material\" (madde, malzeme) burada yanlış.", "ar": "بعد more نحتاج إلى صفة بمعنى المهتم بالمال والممتلكات: materialistic. أما material (مادة) فخطأ هنا.", "en": "An adjective meaning too interested in money and possessions: materialistic." },
+          "example": "Our society has become more materialistic."
+        },
+        {
+          "type": "choice", "id": "w3",
+          "prompt": "Which verb collocates with \"debt\": \"It took her five years to ___ off her debt.\"",
+          "options": ["pay", "make", "do", "spend"],
+          "answer": 0,
+          "why": { "tr": "Kalıp \"pay off a debt\" = borcu tamamen ödemek. \"get into debt\" (borca girmek) de sık kullanılır.", "ar": "التعبير الثابت pay off a debt أي يسدد الدين بالكامل، ويُقال أيضًا get into debt أي يقع في الدين.", "en": "The collocation is \"pay off a debt\" (also \"get into debt\")." },
+          "example": "He finally paid off his student debt."
+        },
+        {
+          "type": "choice", "id": "w4",
+          "prompt": "A status symbol is something that…",
+          "options": ["people own to show that they are rich or important", "is very cheap to buy", "has been used before by someone else", "is thrown away after one use"],
+          "answer": 0,
+          "why": { "tr": "\"Status symbol\" zengin ya da önemli olduğunu göstermek için sahip olunan şeydir (pahalı saat, araba gibi).", "ar": "status symbol شيء يمتلكه الناس لإظهار ثرائهم أو أهميتهم، مثل الساعة الفاخرة أو السيارة.", "en": "A status symbol is owned to show wealth or importance." },
+          "example": "Designer handbags are a status symbol for some people."
+        },
+        {
+          "type": "gap", "id": "w5",
+          "prompt": "Write ONE word: We can't ___ a holiday this year, so we're staying at home.",
+          "answers": ["afford"],
+          "why": { "tr": "\"can't afford something\" = bir şeye parası yetmemek. \"afford\" genellikle can/can't ile kullanılır.", "ar": "can't afford something تعني لا يستطيع تحمّل كلفة شيء، وتأتي afford عادة مع can أو can't.", "en": "\"Can't afford\" = not have enough money for something." },
+          "example": "Many families can't afford new school uniforms."
+        },
+        {
+          "type": "choice", "id": "w6",
+          "prompt": "Which word is closest in meaning to \"second-hand\" in \"a second-hand bike\"?",
+          "options": ["used", "cheap", "broken", "borrowed"],
+          "answer": 0,
+          "why": { "tr": "\"Second-hand\" daha önce başkası tarafından kullanılmış demek: used. Ucuz olabilir ama \"cheap\" aynı anlam değil; \"borrowed\" ödünç alınmış demek.", "ar": "second-hand تعني استعمله شخص آخر من قبل: used. قد يكون رخيصًا لكن cheap ليست بالمعنى نفسه، وborrowed تعني مُستعار.", "en": "Second-hand = previously owned, used." },
+          "example": "I bought a used car from a neighbour."
+        }
+      ]
+    },
+    {
+      "kind": "listen",
+      "i18n": {"ar":{"title":"الاستماع · Part 1: مقهى الإصلاح","intro":"رجل يتصل للتسجيل في فعالية \"Repair Café\" حيث يصلح متطوعون الأغراض المعطلة مجانًا. اقرأ الأسئلة أولًا. يُشغَّل التسجيل مرة واحدة.","tip":"في Part 1 قد يقول المتحدث شيئًا ثم يصحّحه (\"Actually, it's not the… it's the…\"). اكتب دائمًا المعلومة الأخيرة المؤكدة. في أسئلة الاختيار من متعدد قد تُذكر الخيارات الثلاثة كلها في التسجيل؛ استمع لتعرف أيها يجيب فعلًا عن السؤال."},"en":{"title":"Listening · Part 1: a repair café","intro":"A man calls to sign up for a \"Repair Café\" event, where volunteers fix broken items for free. Read the questions first. The recording plays once.","tip":"In Part 1 the speaker may say something and then correct it (\"Actually, it's not the… it's the…\"). Always write the final, definite information. In multiple-choice questions all three options may be mentioned in the recording; listen for the one that really answers the question."}},
+      "title": "Dinleme · Part 1: tamir kafesi",
+      "intro": "Bir adam, gönüllülerin bozuk eşyaları ücretsiz tamir ettiği bir \"Repair Café\" etkinliğine kayıt olmak için arıyor. Önce soruları oku. Kayıt bir kez çalar.",
+      "tip": "Part 1'de konuşmacı önce bir şey söyleyip sonra düzeltebilir (\"Actually, it's not the… it's the…\"). Her zaman son ve kesin bilgiyi yaz. Çoktan seçmeli sorularda üç seçeneğin üçü de kayıtta geçebilir; hangisinin gerçekten soruya cevap verdiğini dinle.",
+      "audio": {
+        "type": "audio", "id": "l-audio",
+        "speakers": {
+          "N": { "name": "Narrator", "voice": "en-GB-SoniaNeural" },
+          "hannah": { "name": "Hannah", "voice": "en-GB-LibbyNeural" },
+          "ben": { "name": "Ben", "voice": "en-AU-WilliamMultilingualNeural" }
+        },
+        "lines": [
+          { "speaker": "N", "text": "You will hear a man phoning to book a place at a repair event. First, you have some time to look at questions one to six.", "pauseAfterMs": 2500 },
+          { "speaker": "N", "text": "Now listen carefully and answer questions one to six.", "pauseAfterMs": 1200 },
+          { "speaker": "hannah", "text": "Hello, Thornbury Repair Café, Hannah speaking.", "pauseAfterMs": 400 },
+          { "speaker": "ben", "text": "Oh, hi. A neighbour told me about your repair sessions. I'd like to bring something in, if that's possible. Do I need to book?", "pauseAfterMs": 400 },
+          { "speaker": "hannah", "text": "It's a good idea, yes, because some of our volunteers only fix certain things. What would you like to bring?", "pauseAfterMs": 400 },
+          { "speaker": "ben", "text": "Well, I was going to bring a kettle, but to be honest I found a bargain online and bought a new one. So it's actually an old radio. It's from the nineteen-seventies, I think.", "pauseAfterMs": 400 },
+          { "speaker": "hannah", "text": "A radio, lovely. Our electrical team enjoy those. What seems to be the problem with it?", "pauseAfterMs": 400 },
+          { "speaker": "ben", "text": "It turns on, and the light comes on, but there's no sound at all.", "pauseAfterMs": 400 },
+          { "speaker": "hannah", "text": "OK, I'll write that down. Could I have your name?", "pauseAfterMs": 400 },
+          { "speaker": "ben", "text": "Ben Pritchard. That's P-R-I-T-C-H-A-R-D.", "pauseAfterMs": 400 },
+          { "speaker": "hannah", "text": "Thanks, Ben. Our next session is on Saturday the ninth, from ten until one.", "pauseAfterMs": 400 },
+          { "speaker": "ben", "text": "Is that at the library? That's where my neighbour went.", "pauseAfterMs": 400 },
+          { "speaker": "hannah", "text": "We used to be at the library, but it got too small for us. We're now at the community centre on Harbour Road, opposite the supermarket.", "pauseAfterMs": 400 },
+          { "speaker": "ben", "text": "Harbour Road, fine. And how much does it cost?", "pauseAfterMs": 400 },
+          { "speaker": "hannah", "text": "Some repair cafés charge a fee of five pounds, but we don't. The repair itself is free. We only ask you to pay for any spare parts, if we need them. There's also a box for donations, but that's entirely up to you.", "pauseAfterMs": 400 },
+          { "speaker": "ben", "text": "That's very generous. My neighbour said she'd have spent half her savings on a new sewing machine if you hadn't fixed hers. Can I ask why you do it? It must take a lot of time.", "pauseAfterMs": 400 },
+          { "speaker": "hannah", "text": "It does, but we enjoy it. We started because we were fed up with the throwaway culture. People throw out perfectly good possessions because one small part has broken, and then buy new ones, often on a credit card, so they end up in debt for something they didn't need.", "pauseAfterMs": 400 },
+          { "speaker": "hannah", "text": "We're not against consumerism exactly. We just think things should last. And for a lot of families, especially those on a tight budget, a free repair makes a real difference. Our volunteers are a real mix: retired engineers, students, a couple of tailors. The older ones grew up when people mended things as a matter of course.", "pauseAfterMs": 400 },
+          { "speaker": "ben", "text": "I can see that. In my case, I'm lucky, I could afford a new radio. I do care about waste, and I buy a lot of second-hand things anyway. But honestly, the main reason is that this radio belonged to my grandfather. He listened to it every morning, and I'd love to hear it working again.", "pauseAfterMs": 400 },
+          { "speaker": "hannah", "text": "That's the best reason of all. We see a lot of that. One last thing: please bring the plug and any cables, and if you have the original box, don't worry about that, we don't need it.", "pauseAfterMs": 400 },
+          { "speaker": "ben", "text": "Great. Thanks very much, Hannah. See you on the ninth.", "pauseAfterMs": 1500 },
+          { "speaker": "N", "text": "That is the end of the recording.", "pauseAfterMs": 0 }
+        ]
+      },
+      "questions": [
+        { "type": "text", "text": "Questions 1–4. Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer." },
+        { "type": "text", "text": "Thornbury Repair Café: booking" },
+        {
+          "type": "gap", "id": "l1",
+          "prompt": "1. Item to be repaired: an old ___",
+          "answers": ["radio"],
+          "why": { "tr": "Önce su ısıtıcısı (kettle) söyleniyor ama Ben yenisini almış: \"So it's actually an old radio.\" Tuzak: kettle.", "ar": "ذُكر الغلاية (kettle) أولًا لكن Ben اشترى واحدة جديدة: \"So it's actually an old radio\". الفخّ: kettle.", "en": "He bought a new kettle, \"so it's actually an old radio\"." },
+          "example": "I was going to bring the kettle, but actually it's the radio."
+        },
+        {
+          "type": "gap", "id": "l2",
+          "prompt": "2. Problem: turns on, but there is no ___",
+          "answers": ["sound"],
+          "why": { "tr": "\"It turns on, and the light comes on, but there's no sound at all.\" Işık çalışıyor; sorun ses.", "ar": "\"It turns on, and the light comes on, but there's no sound at all\". الضوء يعمل، والمشكلة في الصوت.", "en": "\"The light comes on, but there's no sound at all.\"" },
+          "example": "The TV turns on, but there's no sound."
+        },
+        {
+          "type": "gap", "id": "l3",
+          "prompt": "3. Surname: ___",
+          "answers": ["Pritchard"],
+          "why": { "tr": "Ben soyadını harf harf söylüyor: \"P-R-I-T-C-H-A-R-D\". T ile C arasındaki harfe dikkat.", "ar": "يتهجّى Ben اسم عائلته: \"P-R-I-T-C-H-A-R-D\". انتبه إلى الحرفين T وC.", "en": "\"Ben Pritchard. That's P-R-I-T-C-H-A-R-D.\"" },
+          "example": "Could you spell your surname for me?"
+        },
+        {
+          "type": "gap", "id": "l4",
+          "prompt": "4. Venue: the community centre on ___ Road",
+          "answers": ["Harbour"],
+          "why": { "tr": "Kütüphane eski yer: \"We used to be at the library\". Şimdi: \"the community centre on Harbour Road\".", "ar": "المكتبة هي المكان القديم (We used to be at the library)، أما الآن: \"the community centre on Harbour Road\".", "en": "They used to be at the library; now \"the community centre on Harbour Road\"." },
+          "example": "We used to meet at the library, but now we meet at the school."
+        },
+        { "type": "text", "text": "Questions 5–6. Choose the correct letter." },
+        {
+          "type": "choice", "id": "l5",
+          "prompt": "5. What will Ben have to pay for?",
+          "options": ["a fee of five pounds", "any spare parts that are needed", "a donation for the volunteers"],
+          "answer": 1,
+          "why": { "tr": "Beş pound başka kafelerin ücreti (\"but we don't\"). Bağış isteğe bağlı (\"entirely up to you\"). Ödenmesi gereken: \"We only ask you to pay for any spare parts.\"", "ar": "الخمسة جنيهات رسوم مقاهٍ أخرى (but we don't)، والتبرع اختياري (entirely up to you). المطلوب: \"We only ask you to pay for any spare parts\".", "en": "Other cafés charge £5; donations are optional; \"We only ask you to pay for any spare parts.\"" },
+          "example": "The repair is free; you only pay for the parts."
+        },
+        {
+          "type": "choice", "id": "l6",
+          "prompt": "6. Why does Ben mainly want to repair the radio?",
+          "options": ["He cannot afford a new one.", "It has family importance for him.", "He wants to reduce waste."],
+          "answer": 1,
+          "why": { "tr": "Ben yenisini alabileceğini söylüyor (\"I could afford a new radio\"); israfı da önemsiyor ama \"the main reason is that this radio belonged to my grandfather\".", "ar": "يقول Ben إنه يستطيع شراء جهاز جديد، ويهتم بتقليل الهدر، لكن \"the main reason is that this radio belonged to my grandfather\".", "en": "He could afford a new one and cares about waste, but \"the main reason is that this radio belonged to my grandfather\"." },
+          "example": "The main reason I kept the watch is that it was my father's."
+        }
+      ]
+    },
+    {
+      "kind": "read",
+      "i18n": {"ar":{"title":"القراءة: الاختيار من متعدد وYes / No / Not Given","intro":"ستقرأ نصًا يناقش لماذا لا يجعل المزيد من المال والممتلكات الناس أكثر سعادة. الأسئلة الثلاثة الأولى عن تفاصيل النص، والأربعة الأخيرة عن رأي الكاتب.","tip":"في الاختيار من متعدد اقرأ جذع السؤال أولًا وحدّد الموضع المتعلق به في النص، ثم استبعد الخيارات واحدًا واحدًا. الخيار الصحيح يعبّر عن فكرة النص بكلمات مختلفة. في أسئلة Y/N/NG ميّز رأي الكاتب نفسه (\"I suspect\"، \"this seems to me\") عن آراء الآخرين (\"critics claim\")."},"en":{"title":"Reading: multiple choice and Yes / No / Not Given","intro":"You will read a text discussing why more money and possessions don't make people happier. The first three questions ask about details in the text; the last four ask about the writer's opinion.","tip":"In multiple choice, read the question stem first and find the relevant place in the text; then rule out the options one by one. The correct option says the text's idea in different words. In Y/N/NG questions, separate the writer's own opinion (\"I suspect\", \"this seems to me\") from other people's views (\"critics claim\")."}},
+      "title": "Okuma: çoktan seçmeli ve Yes / No / Not Given",
+      "intro": "Daha fazla para ve eşyanın insanları neden daha mutlu yapmadığını tartışan bir metin okuyacaksın. İlk üç soru metnin ayrıntılarını, son dört soru yazarın görüşünü soruyor.",
+      "tip": "Çoktan seçmeli sorularda önce soru kökünü oku ve metinde ilgili yeri bul; sonra seçenekleri tek tek ele. Doğru seçenek metindeki fikri farklı kelimelerle söyler. Y/N/NG sorularında yazarın kendi görüşünü (\"I suspect\", \"this seems to me\") başkalarının görüşünden (\"critics claim\") ayır.",
+      "passage": [
+        { "type": "heading", "text": "Why More Is Not Always Better" },
+        { "type": "text", "text": "In most wealthy countries, the average person owns far more than their grandparents did. Homes are larger, wardrobes are fuller, and the range of goods available to anyone with a little disposable income would have astonished earlier generations. Yet surveys of life satisfaction in many of these countries have shown surprisingly little change over the same period. In the 1970s, the economist Richard Easterlin pointed out that although richer people within a country tend to report greater happiness than poorer people, rising national income over time did not appear to make the population as a whole much happier. His conclusions are still debated, but the puzzle he identified has never quite gone away. Later studies using more recent data have found a stronger link between income and happiness in some countries, which suggests that the relationship is more complicated than either side of the debate once assumed." },
+        { "type": "text", "text": "Psychologists have offered several explanations. One is adaptation: we quickly get used to new possessions, so the pleasure of a new phone or car fades within weeks, and we begin to want the next one. Another is comparison. Much of the satisfaction we get from what we own depends on what other people own. When everyone in a neighbourhood buys a bigger car, nobody feels richer, and an item that was once a status symbol simply becomes normal. In this sense, consumerism can resemble a race in which the finishing line keeps moving." },
+        { "type": "text", "text": "There is also evidence that strongly materialistic values are linked to lower well-being. People who say that wealth and possessions are among their most important goals tend, on average, to report more anxiety and less satisfaction with their relationships. It is not clear which comes first: insecure people may turn to shopping for comfort, or a focus on buying may crowd out the activities that make people happy. I suspect that both are true." },
+        { "type": "text", "text": "Research on how people spend their money offers a more practical lesson. A number of studies suggest that spending on experiences, such as a trip, a concert or a meal with friends, brings more lasting satisfaction than spending on objects. Experiences are shared with others, they become part of our personal story, and they are harder to compare directly with what our neighbours have. Spending money on other people, rather than on ourselves, also appears to increase happiness, even when the amounts are small." },
+        { "type": "text", "text": "None of this means that money is unimportant. For people struggling with debt or living on a tight budget, more income clearly makes life better, and it is easy for comfortable commentators to forget this. Losing one's savings or being unable to afford rent is a source of real misery. The question is not whether money matters, but whether, beyond a reasonable standard of living, buying more things is an effective way to buy a better life. Here, the evidence is far from encouraging." },
+        { "type": "text", "text": "Some people are responding by changing their habits. Second-hand clothing has become fashionable among young shoppers, repair workshops are appearing in many towns, and a growing number of consumers say they want to own fewer, better things. Critics claim that this is merely another trend that marketers will soon turn into a product. Perhaps, but it seems to me that any movement against our throwaway culture deserves to be taken seriously." }
+      ],
+      "questions": [
+        { "type": "heading", "text": "Questions 1–3: Choose the correct letter." },
+        {
+          "type": "choice", "id": "r1",
+          "prompt": "1. What did Richard Easterlin observe?",
+          "options": ["Richer people within a country are always less happy.", "National happiness did not rise much as countries grew richer.", "Life satisfaction surveys are unreliable.", "Poorer countries are happier than richer ones."],
+          "answer": 1,
+          "why": { "tr": "Paragraf 1: \"rising national income over time did not appear to make the population as a whole much happier\". A tam tersi: ülke içinde zenginler daha mutlu. C ve D metinde yok.", "ar": "الفقرة الأولى: \"rising national income over time did not appear to make the population as a whole much happier\". الخيار A عكس النص، وC وD غير مذكورين.", "en": "\"Rising national income over time did not appear to make the population as a whole much happier.\"" },
+          "example": "Higher national income did not make people much happier."
+        },
+        {
+          "type": "choice", "id": "r2",
+          "prompt": "2. According to the second paragraph, why does a status symbol lose its value?",
+          "options": ["It becomes common when many people own it.", "It breaks more quickly than other items.", "Its price falls after a few weeks.", "Advertisers stop promoting it."],
+          "answer": 0,
+          "why": { "tr": "\"When everyone in a neighbourhood buys a bigger car… an item that was once a status symbol simply becomes normal.\" Herkes sahip olunca sıradanlaşıyor.", "ar": "\"When everyone in a neighbourhood buys a bigger car… an item that was once a status symbol simply becomes normal\"، أي يصبح عاديًا حين يملكه الجميع.", "en": "When everyone has it, \"an item that was once a status symbol simply becomes normal\"." },
+          "example": "Once everyone had a smartphone, it was no longer a status symbol."
+        },
+        {
+          "type": "choice", "id": "r3",
+          "prompt": "3. Which reason is NOT given for why experiences bring more satisfaction than objects?",
+          "options": ["They are usually cheaper than objects.", "They are shared with other people.", "They become part of our personal story.", "They are difficult to compare with what others have."],
+          "answer": 0,
+          "why": { "tr": "Paragraf 4 üç neden veriyor: paylaşılıyor, kişisel hikâyemizin parçası oluyor, karşılaştırılması zor. Daha ucuz oldukları söylenmiyor.", "ar": "تذكر الفقرة الرابعة ثلاثة أسباب: تُشارَك مع الآخرين، وتصبح جزءًا من قصتنا، ويصعب مقارنتها. ولم يُذكر أنها أرخص.", "en": "Paragraph 4 gives B, C and D; cost is never mentioned." },
+          "example": "Experiences are shared, memorable and hard to compare."
+        },
+        { "type": "heading", "text": "Questions 4–7: Yes, No or Not Given?" },
+        { "type": "text", "text": "Do the following statements agree with the views of the writer? Choose YES if the statement agrees with the views of the writer, NO if it contradicts them, NOT GIVEN if it is impossible to say what the writer thinks about this." },
+        {
+          "type": "choice", "id": "r4",
+          "prompt": "4. Materialistic values and unhappiness probably influence each other.",
+          "options": ["Yes", "No", "Not Given"],
+          "answer": 0,
+          "why": { "tr": "Paragraf 3: iki yönlü açıklama veriliyor ve yazar \"I suspect that both are true\" diyor; yani birbirini etkiliyor: YES.", "ar": "الفقرة الثالثة: يذكر الكاتب تفسيرين في الاتجاهين ثم يقول: \"I suspect that both are true\"، أي أن كلًّا منهما يؤثر في الآخر: YES.", "en": "Both directions are possible, and the writer says \"I suspect that both are true\"." },
+          "example": "I suspect that both explanations are true."
+        },
+        {
+          "type": "choice", "id": "r5",
+          "prompt": "5. Extra money makes little difference to people who are in debt.",
+          "options": ["Yes", "No", "Not Given"],
+          "answer": 1,
+          "why": { "tr": "Paragraf 5: \"For people struggling with debt or living on a tight budget, more income clearly makes life better.\" İfade bunun tersi: NO.", "ar": "الفقرة الخامسة: \"For people struggling with debt… more income clearly makes life better\"، والعبارة تقول العكس: NO.", "en": "\"For people struggling with debt … more income clearly makes life better.\"" },
+          "example": "For families in debt, extra income clearly makes life better."
+        },
+        {
+          "type": "choice", "id": "r6",
+          "prompt": "6. Second-hand clothing is better quality than most new clothing.",
+          "options": ["Yes", "No", "Not Given"],
+          "answer": 2,
+          "why": { "tr": "Paragraf 6 ikinci el giysilerin moda olduğunu söylüyor ama kalitesi hakkında yazarın bir görüşü yok: NOT GIVEN. \"fewer, better things\" tuzak.", "ar": "تقول الفقرة السادسة إن الملابس المستعملة أصبحت رائجة، لكن الكاتب لا يبدي رأيًا في جودتها: NOT GIVEN.", "en": "The writer says it is fashionable, but gives no view on its quality." },
+          "example": "The article says nothing about the quality of second-hand clothes."
+        },
+        {
+          "type": "choice", "id": "r7",
+          "prompt": "7. The movement against the throwaway culture is just a passing fashion.",
+          "options": ["Yes", "No", "Not Given"],
+          "answer": 1,
+          "why": { "tr": "Bu görüş eleştirmenlerin: \"Critics claim that this is merely another trend\". Yazar ise \"deserves to be taken seriously\" diyor: görüşüyle çelişiyor, NO.", "ar": "هذا رأي النقّاد: \"Critics claim that this is merely another trend\"، أما الكاتب فيقول deserves to be taken seriously، فالعبارة تناقض رأيه: NO.", "en": "Critics say so, but the writer thinks it \"deserves to be taken seriously\"." },
+          "example": "Critics call it a trend, but I think it deserves to be taken seriously."
+        }
+      ]
+    },
+    {
+      "kind": "language",
+      "i18n": {"ar":{"title":"اللغة: المركبات الاسمية المعقدة (complex noun phrases)"},"en":{"title":"Language: complex noun phrases"}},
+      "title": "Dil: karmaşık isim öbekleri (complex noun phrases)",
+      "explain": {
+        "tr": "Akademik İngilizce bilgiyi fiillerle değil, uzun isim öbekleriyle taşır. Bir isim öbeği şu parçalardan oluşur: belirleyici + sıfat/isim (önde) + ana isim + edat öbeği / ortaç / sıfat cümlesi (arkada). Örnek: \"the rapid growth in online shopping over the past decade\" (ana isim: growth). Fiilden isim yapmak (nominalisation) da önemlidir: \"People spend more, so they get into debt\" → \"Higher spending leads to rising levels of debt.\" İki kural: (1) Fiil ana isimle uyuşur, sondaki isimle değil: The number of shoppers who buy second-hand goods IS rising. (2) Önde kullanılan isimler tekil olur: a three-year plan (three-years değil). Task 1 ve Task 2'de bu yapılar Grammatical Range puanını yükseltir, ama bir cümlede ikiden fazla uzun öbek okumayı zorlaştırır.",
+        "ar": "تنقل الإنجليزية الأكاديمية المعلومات بعبارات اسمية طويلة أكثر من الأفعال. تتكوّن العبارة الاسمية من: أداة + صفة/اسم (قبل الاسم) + الاسم الرئيسي + شبه جملة/اسم مفعول/جملة صلة (بعده). مثال: the rapid growth in online shopping over the past decade (الاسم الرئيسي growth). وتحويل الفعل إلى اسم (nominalisation) مهم أيضًا: People spend more, so they get into debt تصبح Higher spending leads to rising levels of debt. قاعدتان: (1) يتطابق الفعل مع الاسم الرئيسي لا مع آخر اسم: The number of shoppers who buy second-hand goods IS rising. (2) الاسم الذي يأتي قبل اسم آخر يكون مفردًا: a three-year plan لا three-years.",
+        "en": "Academic English carries information in long noun phrases rather than verbs. A noun phrase has a determiner + adjectives/nouns before the head noun, then prepositional phrases, participles or relative clauses after it: \"the rapid growth in online shopping over the past decade\" (head noun: growth). Nominalisation turns verbs into nouns: \"People spend more, so they get into debt\" → \"Higher spending leads to rising levels of debt.\" Two rules: (1) the verb agrees with the head noun, not the last noun: The number of shoppers who buy second-hand goods IS rising. (2) Nouns used before another noun are singular: a three-year plan, not three-years. These structures raise your Grammatical Range score, but more than two long phrases in one sentence become hard to read."
+      },
+      "examples": [
+        "The steady rise in household debt over the last twenty years worries many economists.",
+        "A growing number of young people living in large cities now buy second-hand clothes.",
+        "The widespread belief that possessions bring happiness is not supported by research.",
+        "The government's decision to cut taxes on luxury goods was strongly criticised."
+      ],
+      "questions": [
+        {
+          "type": "choice", "id": "g1",
+          "prompt": "The number of families who use food banks ___ risen sharply.",
+          "options": ["has", "have", "are", "were"],
+          "answer": 0,
+          "why": { "tr": "Ana isim \"number\" (tekil); \"families\" ana isim değil. Bu yüzden tekil fiil: has risen.", "ar": "الاسم الرئيسي هو number وهو مفرد، وليس families، لذلك نستخدم فعلًا مفردًا: has risen.", "en": "The head noun is \"number\" (singular), so: has risen." },
+          "example": "The number of shops in the town has fallen."
+        },
+        {
+          "type": "choice", "id": "g2",
+          "prompt": "Which is the best academic version of: \"Prices went up quickly, and this made people spend less.\"",
+          "options": ["The rapid increase in prices led to a fall in spending.", "Prices went up quick and people spend less.", "Because of prices quickly, spending was less.", "The prices rapid increasing made less spending."],
+          "answer": 0,
+          "why": { "tr": "Fiiller isme dönüştürülmüş (go up → increase, spend → spending) ve iki isim öbeği \"led to\" ile bağlanmış. Diğer seçeneklerde dilbilgisi hataları var.", "ar": "تحوّلت الأفعال إلى أسماء (go up ← increase، spend ← spending) ورُبطت العبارتان بـ led to. الخيارات الأخرى فيها أخطاء نحوية.", "en": "Nominalisation: increase, spending, linked by \"led to\". The others are ungrammatical." },
+          "example": "The sharp rise in rents led to a fall in the number of young homeowners."
+        },
+        {
+          "type": "choice", "id": "g3",
+          "prompt": "Which phrase is correct?",
+          "options": ["a five-year savings plan", "a five-years savings plan", "a five-years' saving plans", "a savings plan of five-year"],
+          "answer": 0,
+          "why": { "tr": "Önde sıfat gibi kullanılan isimler tekil olur: five-year (five-years değil). \"savings plan\" ise sabit bir kalıp.", "ar": "الأسماء التي تأتي قبل اسم آخر كصفة تكون مفردة: five-year لا five-years، وsavings plan تعبير ثابت.", "en": "Nouns used as modifiers are singular: a five-year plan." },
+          "example": "She took a two-week holiday."
+        },
+        {
+          "type": "gap", "id": "g4",
+          "prompt": "Write ONE word (noun form of GROW): The ___ in online shopping has changed town centres.",
+          "answers": ["growth"],
+          "why": { "tr": "\"The\" ile \"in\" arasında isim gerekir: grow → growth. \"growth in something\" (bir şeydeki artış) doğal bir kalıp.", "ar": "بين The وin نحتاج إلى اسم: grow تصبح growth، وgrowth in something تعبير طبيعي.", "en": "A noun is needed: grow → growth (growth in something)." },
+          "example": "The growth in tourism has created many jobs."
+        },
+        {
+          "type": "choice", "id": "g5",
+          "prompt": "In \"The shoppers queuing outside the new store on Saturday morning were mostly teenagers\", what is the head noun of the subject?",
+          "options": ["shoppers", "store", "morning", "teenagers"],
+          "answer": 0,
+          "why": { "tr": "Özne \"The shoppers queuing outside the new store on Saturday morning\"; ana isim \"shoppers\". Geri kalanı onu tanımlıyor. Fiil de \"were\" (çoğul) çünkü \"shoppers\" çoğul.", "ar": "الفاعل هو The shoppers queuing outside the new store on Saturday morning، والاسم الرئيسي shoppers، والباقي يصفه، ولهذا جاء الفعل were بالجمع.", "en": "The head noun is \"shoppers\"; the rest describes it, so the verb is plural (were)." },
+          "example": "The people waiting at the bus stop were getting cold."
+        }
+      ]
+    },
+    {
+      "kind": "write",
+      "i18n": {"ar":{"title":"الكتابة · Task 2: مقال بسؤالين","tip":"في مقال السؤالين خصّص لكل سؤال فقرة مستقلة، واذكر إجابتيك باختصار في المقدمة. كن واضحًا في \"Positive or negative\"؛ لكن الاعتراف بالرأي الآخر في جملة واحدة (\"Admittedly…\") يدل على رأي ناضج. استخدم كلمات هذا الدرس (consumerism, status symbol, debt, throwaway culture) ومركبين اسميين معقدين على الأقل (the rapid growth in…, the number of…)."},"en":{"title":"Writing · Task 2: a two-question essay","tip":"In a two-question essay give each question its own body paragraph, and state both answers briefly in the introduction. Be clear on \"Positive or negative\", but admitting the other side in one sentence (\"Admittedly…\") shows a mature view. Use this lesson's words (consumerism, status symbol, debt, throwaway culture) and at least two complex noun phrases (the rapid growth in…, the number of…)."}},
+      "title": "Yazma · Task 2: iki soruluk deneme",
+      "task": 2,
+      "prompt": "In many countries, people are buying more goods than ever before, even though many of these items are rarely used.\n\nWhy do people buy so many things?\nIs this a positive or negative development?",
+      "minutes": 40,
+      "minWords": 250,
+      "tip": "İki soruluk denemede her soruya ayrı bir gövde paragrafı ayır ve girişte iki cevabını da kısaca söyle. \"Positive or negative\" için net ol; ama karşı tarafı bir cümleyle kabul etmek (\"Admittedly…\") olgun bir görüş gösterir. Bu dersin kelimelerini (consumerism, status symbol, debt, throwaway culture) ve en az iki karmaşık isim öbeği (the rapid growth in…, the number of…) kullan.",
+      "model": "Over recent decades, the amount of clothing, electronic devices and household goods bought by the average family has increased dramatically, even though much of it is hardly used. In my view, this pattern is driven by cheap production, constant advertising and social pressure, and it is, on balance, a negative development.\n\nThere are several reasons why people buy so much. The first is price: the globalisation of manufacturing has made many products remarkably cheap, so buying a new item often seems easier than repairing an old one. Second, people are exposed to a constant stream of advertising, much of it on social media, which encourages them to see shopping as entertainment rather than as a response to a need. Finally, possessions are closely linked to social status. A new phone or a designer bag can work as a status symbol, and the desire to keep up with friends and neighbours leads many people to replace items that still work perfectly well.\n\nAdmittedly, high levels of spending support jobs in shops, factories and transport, and the ability to buy affordable goods has improved many people's quality of life. However, I believe the disadvantages are more serious. The rapid growth in consumption is producing enormous quantities of waste, much of which ends up in landfill or is shipped to poorer countries. This throwaway culture also uses up raw materials and energy at an unsustainable rate. At a personal level, the habit of buying on credit leaves many households in debt, while research suggests that more possessions do not make people significantly happier.\n\nIn conclusion, people buy more than they need mainly because goods are cheap, heavily advertised and socially important. Although consumerism brings some economic benefits, its environmental and personal costs make it, in my opinion, a largely negative trend."
+    },
+    {
+      "kind": "speak",
+      "i18n": {"ar":{"title":"المحادثة: التسوق والمال"},"en":{"title":"Speaking: shopping and money"}},
+      "title": "Konuşma: alışveriş ve para",
+      "part1": [
+        "Do you enjoy shopping? Why or why not?",
+        "Do you prefer shopping online or in shops?",
+        "Have you ever bought something second-hand?",
+        "Is it easy for young people in your country to save money?"
+      ],
+      "card": {
+        "title": "Describe something you saved money to buy.",
+        "points": [
+          "what it was",
+          "how long it took you to save for it",
+          "how you saved the money"
+        ],
+        "explain": "and explain whether it was worth the effort."
+      },
+      "useful": [
+        "It took me about six months to save up for it, which felt like forever at the time.",
+        "I had to stick to a strict budget and cut back on…",
+        "I couldn't afford it at first, so I…",
+        "Looking back, it was definitely worth it, because…",
+        "I managed to find it at a bargain price in the sales.",
+        "To be honest, I'm not a very materialistic person, but this was different."
+      ]
+    }
+  ]
+}

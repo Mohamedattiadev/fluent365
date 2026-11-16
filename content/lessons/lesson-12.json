@@ -1,0 +1,695 @@
+{
+  "id": "lesson-12",
+  "number": 12,
+  "title": "Science and Research",
+  "topic": "Science & research",
+  "level": "B1+",
+  "goal": "Follow a short lecture on how science checks itself, describe a table of figures, and choose correctly between -ing and to-infinitive after verbs.",
+  "steps": [
+    {
+      "kind": "words",
+      "i18n": {"ar":{"title":"المفردات: العلم والبحث","intro":"في هذا الدرس 12 كلمة وتعبيرًا عن البحث العلمي. معظم نصوص القراءة في IELTS تصف بحثًا ما، ومعرفة كلمات مثل \"findings\" و\"evidence\" و\"sample\" تجعلك تفهم النص أسرع بكثير."},"en":{"title":"Vocabulary: science and research","intro":"This lesson has 12 words and phrases about scientific research. Most IELTS reading texts describe a piece of research; recognising words like \"findings\", \"evidence\" and \"sample\" helps you understand the text much faster."}},
+      "title": "Kelimeler: bilim ve araştırma",
+      "intro": "Bu derste bilimsel araştırma hakkında 12 kelime ve kalıp var. IELTS okuma metinlerinin çoğu bir araştırmayı anlatır; \"findings\", \"evidence\", \"sample\" gibi kelimeleri tanımak metni çok daha hızlı anlamanı sağlar.",
+      "words": [
+        {
+          "en": "hypothesis",
+          "pos": "noun",
+          "tr": "hipotez",
+          "ar": "فرضيّة",
+          "example": "The scientists tested their hypothesis with a series of experiments."
+        },
+        {
+          "en": "carry out",
+          "pos": "phrasal verb",
+          "tr": "yürütmek, gerçekleştirmek",
+          "ar": "يُجري؛ ينفّذ",
+          "example": "The team carried out the experiment three times to check the results."
+        },
+        {
+          "en": "findings",
+          "pos": "noun (plural)",
+          "tr": "bulgular",
+          "ar": "نتائج البحث",
+          "example": "The findings were published in a respected journal."
+        },
+        {
+          "en": "evidence",
+          "pos": "noun",
+          "tr": "kanıt",
+          "ar": "دليل؛ أدلّة",
+          "example": "There is strong evidence that regular sleep improves memory."
+        },
+        {
+          "en": "breakthrough",
+          "pos": "noun",
+          "tr": "çığır açan buluş, atılım",
+          "ar": "اختراق علمي؛ إنجاز كبير",
+          "example": "The first vaccines were a major breakthrough in medicine."
+        },
+        {
+          "en": "funding",
+          "pos": "noun",
+          "tr": "fon, finansman",
+          "ar": "التمويل",
+          "example": "The project lost its funding after two years."
+        },
+        {
+          "en": "peer review",
+          "pos": "phrase",
+          "tr": "hakem değerlendirmesi",
+          "ar": "مراجعة الأقران (التحكيم العلمي)",
+          "example": "Peer review helps to catch mistakes before a study is published."
+        },
+        {
+          "en": "sample",
+          "pos": "noun",
+          "tr": "örneklem",
+          "ar": "عيّنة",
+          "example": "The study used a sample of 2,000 adults."
+        },
+        {
+          "en": "conduct research",
+          "pos": "phrase",
+          "tr": "araştırma yapmak",
+          "ar": "يُجري بحثًا",
+          "example": "She conducts research on how crops respond to drought."
+        },
+        {
+          "en": "reliable",
+          "pos": "adjective",
+          "tr": "güvenilir",
+          "ar": "موثوق",
+          "example": "A larger sample usually gives more reliable results."
+        },
+        {
+          "en": "laboratory",
+          "pos": "noun",
+          "tr": "laboratuvar",
+          "ar": "مختبر",
+          "example": "The samples were analysed in a university laboratory."
+        },
+        {
+          "en": "reproduce",
+          "pos": "verb",
+          "tr": "(sonucu) tekrar elde etmek",
+          "ar": "يكرّر (النتائج) ويحصل عليها مرة أخرى",
+          "example": "Other scientists could not reproduce the results."
+        }
+      ],
+      "practice": [
+        {
+          "type": "choice",
+          "id": "w1",
+          "prompt": "Before starting an experiment, a scientist usually forms a ___ that can be tested.",
+          "options": [
+            "breakthrough",
+            "hypothesis",
+            "funding",
+            "sample"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "Test edilecek fikir \"hypothesis\"tir. \"breakthrough\" sonuçta gelen büyük buluştur.",
+            "ar": "الفكرة التي تُختبر هي hypothesis، أما breakthrough فهو الاكتشاف الكبير الذي قد يأتي لاحقًا.",
+            "en": "An idea to be tested is a hypothesis."
+          },
+          "example": "Our hypothesis was that students learn more after a good night's sleep."
+        },
+        {
+          "type": "choice",
+          "id": "w2",
+          "prompt": "The team ___ out a survey of 500 farmers.",
+          "options": [
+            "made",
+            "did",
+            "carried",
+            "took"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "Kalıp \"carry out a survey / an experiment / research\" = yürütmek, yapmak.",
+            "ar": "التعبير الصحيح carry out a survey / an experiment / research أي يُجري.",
+            "en": "The phrasal verb is \"carry out\" (a survey, an experiment)."
+          },
+          "example": "The researchers carried out interviews in three cities."
+        },
+        {
+          "type": "gap",
+          "id": "w3",
+          "prompt": "Write the correct form of RELY: The results are not ___, because the sample was very small.",
+          "answers": [
+            "reliable"
+          ],
+          "why": {
+            "tr": "\"are not\" sonrasında sıfat gerekir: rely → reliable.",
+            "ar": "بعد are not نحتاج إلى صفة: rely تصبح reliable.",
+            "en": "An adjective is needed: reliable."
+          },
+          "example": "Is this website a reliable source of information?"
+        },
+        {
+          "type": "choice",
+          "id": "w4",
+          "prompt": "In 'peer review', who checks a study before it is published?",
+          "options": [
+            "the journalists who report it",
+            "other experts in the same field",
+            "the people who took part in it",
+            "the government that paid for it"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"peer\" = eşit düzeydeki kişi, meslektaş. Peer review'da çalışmayı aynı alandaki diğer uzmanlar inceler.",
+            "ar": "peer تعني النظير أو الزميل، وفي peer review يراجع الدراسة خبراء آخرون في المجال نفسه.",
+            "en": "\"Peers\" are other experts in the same field."
+          },
+          "example": "The paper was rejected after peer review."
+        },
+        {
+          "type": "gap",
+          "id": "w5",
+          "prompt": "Write ONE word: The university received new ___ from the government to study ocean plastic.",
+          "answers": [
+            "funding"
+          ],
+          "why": {
+            "tr": "\"receive funding\" = fon almak. \"funding\" sayılamaz, çoğul olmaz.",
+            "ar": "receive funding تعني يحصل على تمويل، وfunding غير معدودة فلا تُجمع.",
+            "en": "\"Receive funding\"; funding is uncountable."
+          },
+          "example": "The project needs more funding to continue."
+        },
+        {
+          "type": "choice",
+          "id": "w6",
+          "prompt": "Which word completes both phrases: 'a major scientific ___' and 'a ___ in cancer treatment'?",
+          "options": [
+            "evidence",
+            "hypothesis",
+            "laboratory",
+            "breakthrough"
+          ],
+          "answer": 3,
+          "why": {
+            "tr": "\"a major breakthrough\" ve \"a breakthrough in…\" doğal eşdizimler. \"evidence\" sayılamaz, \"a\" almaz.",
+            "ar": "a major breakthrough وa breakthrough in… تلازمان طبيعيان. أما evidence فغير معدودة ولا تأتي مع a.",
+            "en": "\"A major breakthrough\" and \"a breakthrough in\" are common; \"evidence\" is uncountable."
+          },
+          "example": "There has been a breakthrough in battery technology."
+        }
+      ]
+    },
+    {
+      "kind": "listen",
+      "i18n": {"ar":{"title":"الاستماع · Part 4: نتائج لا يمكن تكرارها","intro":"محاضر جامعي يشرح لماذا من المهم أن تكرّر فرق أخرى الدراسة العلمية. اقرأ الملاحظات أولًا. يُشغَّل التسجيل مرة واحدة فقط.","tip":"Part 4 محاضرة لمتحدث واحد، والإجابات تأتي بالترتيب. عناوين الملاحظات (\"Small samples\"، \"Pre-registration\") تبيّن أقسام المحاضرة؛ وعندما يقول المتحدث \"The first reason…\" أو \"The second reason…\" أو \"What's being done?\" اعرف أنه انتقل إلى ملاحظة جديدة."},"en":{"title":"Listening · Part 4: results that can't be repeated","intro":"A lecturer explains why it matters in science for a study to be repeated by other teams. Read the notes first. The recording plays once.","tip":"Part 4 is a lecture by one speaker and the answers come in order. The note headings (\"Small samples\", \"Pre-registration\") show the sections of the lecture; when the speaker says \"The first reason…\", \"The second reason…\" or \"What's being done?\", notice which note they have moved to."}},
+      "title": "Dinleme · Part 4: tekrarlanamayan sonuçlar",
+      "intro": "Bir öğretim üyesi, bilimde bir çalışmanın başka ekipler tarafından tekrarlanmasının neden önemli olduğunu anlatıyor. Önce notları oku. Kayıt bir kez çalar.",
+      "tip": "Part 4 tek kişilik bir derstir ve cevaplar sırayla gelir. Not başlıkları (\"Small samples\", \"Pre-registration\") dersin bölümlerini gösterir; konuşmacı \"The first reason…\", \"The second reason…\", \"What's being done?\" dediğinde hangi nota geçtiğini anla.",
+      "audio": {
+        "type": "audio",
+        "id": "l-audio",
+        "speakers": {
+          "N": {
+            "name": "Narrator",
+            "voice": "en-US-AndrewNeural"
+          },
+          "lecturer": {
+            "name": "Lecturer",
+            "voice": "en-GB-LibbyNeural"
+          }
+        },
+        "lines": [
+          {
+            "speaker": "N",
+            "text": "You will hear part of a lecture on scientific research. First, you have some time to look at questions one to six.",
+            "pauseAfterMs": 2500
+          },
+          {
+            "speaker": "N",
+            "text": "Now listen carefully and answer questions one to six.",
+            "pauseAfterMs": 1200
+          },
+          {
+            "speaker": "lecturer",
+            "text": "Good morning. Today I want to talk about a problem that has worried scientists for more than a decade: what happens when other researchers try to reproduce a famous result and simply can't.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "lecturer",
+            "text": "Let's start with the basic idea. In science, a single study is never enough. A team forms a hypothesis, carries out an experiment and publishes its findings. But the result only becomes reliable when other teams, in other laboratories, repeat the work and get the same answer. This is called replication, and it's one of the foundations of science.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "lecturer",
+            "text": "In the 2010s, several large projects tried to replicate well-known studies, especially in psychology. Many results held up, but a surprisingly large number did not. The press began to talk about a 'replication crisis', although many scientists prefer a less dramatic word, and so do I.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "lecturer",
+            "text": "Why does this happen? The first reason is size. Many of the original studies used a very small sample, perhaps thirty or forty students. With a small sample, a result can appear by chance.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "lecturer",
+            "text": "The second reason is pressure. Universities and funding bodies tend to reward exciting new discoveries, and journals are more likely to publish a positive result than a study which found nothing. So a researcher who wants a career has a strong reason to look for a breakthrough rather than check someone else's work.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "lecturer",
+            "text": "Now, you might think that peer review should catch these problems. Peer review is valuable: experts read a paper before it's published and point out weaknesses. But reviewers usually don't have the raw data, and they certainly don't repeat the experiment. So peer review checks the argument, not the result.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "lecturer",
+            "text": "What's being done? One popular solution is pre-registration. Before they conduct research, scientists publish their plan: their hypothesis, the size of their sample and how they'll analyse the data. This makes it much harder to change the question after seeing the answer.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "lecturer",
+            "text": "Another change is that many journals now ask authors to share their data, so others can check it. And some funders have begun to pay specifically for replication studies, which was almost unheard of twenty years ago.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "lecturer",
+            "text": "I want to be clear about one thing. None of this means that science is broken. Quite the opposite. The fact that scientists found these problems themselves, and are fixing them, is evidence that the system works. In the next session, we'll look at a case study from medicine.",
+            "pauseAfterMs": 1500
+          },
+          {
+            "speaker": "N",
+            "text": "That is the end of the recording.",
+            "pauseAfterMs": 0
+          }
+        ]
+      },
+      "questions": [
+        {
+          "type": "text",
+          "text": "Questions 1–4. Complete the notes below. Write ONE WORD ONLY for each answer."
+        },
+        {
+          "type": "text",
+          "text": "Replication in science"
+        },
+        {
+          "type": "gap",
+          "id": "l1",
+          "prompt": "1. A result is seen as reliable only when other teams get the same ___.",
+          "answers": [
+            "answer"
+          ],
+          "why": {
+            "tr": "\"the result only becomes reliable when other teams... repeat the work and get the same answer\".",
+            "ar": "\"the result only becomes reliable when other teams... repeat the work and get the same answer\".",
+            "en": "\"…repeat the work and get the same answer.\""
+          },
+          "example": "We did the calculation twice and got the same answer."
+        },
+        {
+          "type": "gap",
+          "id": "l2",
+          "prompt": "2. Large replication projects in the 2010s focused especially on ___.",
+          "answers": [
+            "psychology"
+          ],
+          "why": {
+            "tr": "\"several large projects tried to replicate well-known studies, especially in psychology\". \"especially\" anahtar kelime.",
+            "ar": "\"several large projects tried to replicate well-known studies, especially in psychology\"، وespecially هي الكلمة المفتاحية.",
+            "en": "\"…well-known studies, especially in psychology.\""
+          },
+          "example": "She studied psychology at university."
+        },
+        {
+          "type": "gap",
+          "id": "l3",
+          "prompt": "3. Small samples: a result may appear by ___.",
+          "answers": [
+            "chance"
+          ],
+          "why": {
+            "tr": "\"With a small sample, a result can appear by chance\". \"by chance\" = tesadüfen.",
+            "ar": "\"With a small sample, a result can appear by chance\"، وby chance تعني بالصدفة.",
+            "en": "\"With a small sample, a result can appear by chance.\""
+          },
+          "example": "We met by chance at the station."
+        },
+        {
+          "type": "gap",
+          "id": "l4",
+          "prompt": "4. Pre-registration: scientists publish their ___ before they start.",
+          "answers": [
+            "plan"
+          ],
+          "why": {
+            "tr": "\"Before they conduct research, scientists publish their plan\". Hipotez ve örneklem büyüklüğü planın parçaları.",
+            "ar": "\"Before they conduct research, scientists publish their plan\"، والفرضية وحجم العيّنة جزء من الخطة.",
+            "en": "\"Before they conduct research, scientists publish their plan.\""
+          },
+          "example": "The team published its plan before collecting any data."
+        },
+        {
+          "type": "text",
+          "text": "Questions 5–6. Choose the correct letter."
+        },
+        {
+          "type": "choice",
+          "id": "l5",
+          "prompt": "5. According to the lecturer, peer review…",
+          "options": [
+            "is no longer useful for scientists.",
+            "usually includes repeating the experiment.",
+            "checks the argument rather than the result."
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "\"peer review checks the argument, not the result\". Hakemler deneyi tekrarlamaz (\"they certainly don't repeat the experiment\"); ama \"Peer review is valuable\".",
+            "ar": "\"peer review checks the argument, not the result\". المراجعون لا يكرّرون التجربة، لكن المحاضِرة تقول \"Peer review is valuable\".",
+            "en": "\"Peer review checks the argument, not the result\"; it is still \"valuable\"."
+          },
+          "example": "The editor checks the argument, not every number in the report."
+        },
+        {
+          "type": "choice",
+          "id": "l6",
+          "prompt": "6. What is the lecturer's view of the 'replication crisis'?",
+          "options": [
+            "It shows that science is correcting itself.",
+            "It proves that most psychology research is wrong.",
+            "It is mainly a problem invented by the press."
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "\"scientists found these problems themselves, and are fixing them, is evidence that the system works\": bilim kendini düzeltiyor. B yanlış: \"Many results held up\".",
+            "ar": "\"scientists found these problems themselves, and are fixing them, is evidence that the system works\" أي العلم يصحّح نفسه. الخيار B خطأ لأن \"Many results held up\".",
+            "en": "\"The fact that scientists found these problems themselves, and are fixing them, is evidence that the system works.\""
+          },
+          "example": "Good science corrects its own mistakes."
+        }
+      ]
+    },
+    {
+      "kind": "read",
+      "i18n": {"ar":{"title":"القراءة: إكمال الجمل والاختيار من متعدد","intro":"ستقرأ نصًا عن \"المصادفات السعيدة\" في العلم: البنسلين وفرن الميكروويف وتمويل الأبحاث. هناك أولًا أسئلة إكمال الجمل، ثم أسئلة اختيار من متعدد.","tip":"في إكمال الجمل تُؤخذ كلمات الإجابة من النص كما هي، ويجب ألا تتجاوز الحد المسموح من الكلمات. وفي الاختيار من متعدد، إذا سأل السؤال عن \"main point\" لفقرة ما، فاختر ما تقوله الفقرة كلها لا تفصيلًا واحدًا منها."},"en":{"title":"Reading: sentence completion and multiple choice","intro":"You will read a text about \"lucky accidents\" in science: penicillin, the microwave oven and research funding. First come sentence completion questions, then multiple choice.","tip":"In sentence completion the answer words are taken from the text exactly and must not exceed the word limit. In multiple choice, when a question asks for the \"main point\" of a paragraph, choose what the whole paragraph says, not a single detail."}},
+      "title": "Okuma: cümle tamamlama ve çoktan seçmeli",
+      "intro": "Bilimdeki \"şanslı tesadüfler\" üzerine bir metin okuyacaksın: penisilin, mikrodalga fırın ve araştırma fonları. Önce cümle tamamlama, sonra çoktan seçmeli sorular var.",
+      "tip": "Cümle tamamlamada cevap kelimeleri metinden aynen alınır ve kelime sınırını aşmamalı. Çoktan seçmelide bir paragrafın \"main point\"ini soran sorularda tek bir ayrıntıyı değil, paragrafın tamamının ne söylediğini seç.",
+      "passage": [
+        {
+          "type": "heading",
+          "text": "Lucky Accidents? Chance and Discovery in Science"
+        },
+        {
+          "type": "text",
+          "text": "The history of science is full of stories about lucky accidents. Perhaps the most famous is that of Alexander Fleming, who returned to his laboratory in London in 1928 after a holiday and noticed that a mould had grown on one of his dishes of bacteria. Around the mould, the bacteria had died. Fleming's observation led, eventually, to penicillin, one of the most important medical breakthroughs of the twentieth century."
+        },
+        {
+          "type": "text",
+          "text": "Stories like this are appealing because they suggest that discovery is a matter of luck. Yet the evidence from the history of science points to a more complicated picture. Mould had probably spoiled many experiments before Fleming's, but other scientists had simply thrown the dishes away. What made the difference was that Fleming recognised that something unusual had happened and was curious enough to investigate it. As the French scientist Louis Pasteur put it, chance favours the prepared mind."
+        },
+        {
+          "type": "text",
+          "text": "It is also worth remembering how much work followed the moment of discovery. Fleming himself found it difficult to produce penicillin in useful quantities, and it was more than a decade later that a team at Oxford, led by Howard Florey and Ernst Chain, carried out the experiments that turned it into a medicine. Their findings, and the large-scale production that followed during the Second World War, depended on years of careful research and on substantial funding."
+        },
+        {
+          "type": "text",
+          "text": "A similar pattern can be seen in technology. The microwave oven is often said to have been invented after an engineer working on radar equipment in the 1940s noticed that a chocolate bar in his pocket had melted. The observation was accidental, but turning it into a reliable product took years of development by a team of engineers, and the first commercial models were large, heavy and extremely expensive."
+        },
+        {
+          "type": "text",
+          "text": "For people who decide how research money is spent, these stories raise a difficult question. Governments and companies understandably prefer to fund projects with clear goals and predictable results. However, many important discoveries have come from research that was not aimed at any practical use at all. When the laser was first built, for example, it was sometimes described as a solution looking for a problem; today it is used in everything from surgery to supermarket checkouts. If scientists are only allowed to test a narrow hypothesis chosen in advance, they may have fewer opportunities to notice the unexpected."
+        },
+        {
+          "type": "text",
+          "text": "None of this means that luck can replace method. An accidental observation is only the beginning; it must be tested on a proper sample, written up, checked through peer review and reproduced by other researchers before it can be trusted. Chance may open the door, but it is the slow, shared work of science that decides what lies behind it."
+        }
+      ],
+      "questions": [
+        {
+          "type": "heading",
+          "text": "Questions 1–4"
+        },
+        {
+          "type": "text",
+          "text": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+        },
+        {
+          "type": "gap",
+          "id": "r1",
+          "prompt": "1. Fleming noticed that the bacteria around a ___ had died.",
+          "answers": [
+            "mould"
+          ],
+          "why": {
+            "tr": "Paragraf 1: \"a mould had grown on one of his dishes... Around the mould, the bacteria had died\".",
+            "ar": "الفقرة 1: \"a mould had grown on one of his dishes... Around the mould, the bacteria had died\".",
+            "en": "\"Around the mould, the bacteria had died.\""
+          },
+          "example": "There was green mould on the old bread."
+        },
+        {
+          "type": "gap",
+          "id": "r2",
+          "prompt": "2. According to Pasteur, chance favours the ___.",
+          "answers": [
+            "prepared mind"
+          ],
+          "why": {
+            "tr": "Paragraf 2: \"chance favours the prepared mind\". İki kelime: prepared mind.",
+            "ar": "الفقرة 2: \"chance favours the prepared mind\"، والإجابة كلمتان: prepared mind.",
+            "en": "\"Chance favours the prepared mind.\""
+          },
+          "example": "Good luck usually comes to people who are ready for it."
+        },
+        {
+          "type": "gap",
+          "id": "r3",
+          "prompt": "3. The team that turned penicillin into a medicine worked at ___.",
+          "answers": [
+            "Oxford"
+          ],
+          "why": {
+            "tr": "Paragraf 3: \"a team at Oxford, led by Howard Florey and Ernst Chain\". Londra tuzak: Fleming'in laboratuvarı oradaydı.",
+            "ar": "الفقرة 3: \"a team at Oxford, led by Howard Florey and Ernst Chain\". لندن فخّ لأنها مكان مختبر Fleming.",
+            "en": "\"A team at Oxford, led by Howard Florey and Ernst Chain.\" London was Fleming's laboratory."
+          },
+          "example": "She did her research at a university in Oxford."
+        },
+        {
+          "type": "gap",
+          "id": "r4",
+          "prompt": "4. The idea for the microwave oven came from an engineer working on ___ equipment.",
+          "answers": [
+            "radar"
+          ],
+          "why": {
+            "tr": "Paragraf 4: \"an engineer working on radar equipment in the 1940s\".",
+            "ar": "الفقرة 4: \"an engineer working on radar equipment in the 1940s\".",
+            "en": "\"An engineer working on radar equipment.\""
+          },
+          "example": "Ships use radar to find their way in fog."
+        },
+        {
+          "type": "heading",
+          "text": "Questions 5–7"
+        },
+        {
+          "type": "text",
+          "text": "Choose the correct letter."
+        },
+        {
+          "type": "choice",
+          "id": "r5",
+          "prompt": "5. What is the main point of the second paragraph?",
+          "options": [
+            "Fleming was luckier than other scientists.",
+            "Noticing and investigating an accident matters more than the accident itself.",
+            "Mould often spoils experiments in laboratories.",
+            "Pasteur and Fleming worked together."
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "Paragraf 2: başka bilim insanları da küf görmüş ama tabakları atmış; fark, Fleming'in olayı fark edip araştırması. C sadece bir ayrıntı; D yanlış.",
+            "ar": "الفقرة 2: رأى علماء آخرون العفن لكنهم رموا الأطباق؛ الفرق أن Fleming انتبه وبحث. الخيار C مجرد تفصيل، وD خطأ.",
+            "en": "Others threw the dishes away; \"What made the difference was that Fleming recognised that something unusual had happened\"."
+          },
+          "example": "What matters is not the mistake, but what you learn from it."
+        },
+        {
+          "type": "choice",
+          "id": "r6",
+          "prompt": "6. What does the writer suggest in the fifth paragraph?",
+          "options": [
+            "Research should always have a clear practical goal.",
+            "Companies spend too much money on research.",
+            "Funding only narrow projects may reduce the chance of unexpected discoveries.",
+            "Governments should stop funding science."
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "\"If scientists are only allowed to test a narrow hypothesis... they may have fewer opportunities to notice the unexpected.\" A bunun tersi.",
+            "ar": "\"If scientists are only allowed to test a narrow hypothesis... they may have fewer opportunities to notice the unexpected.\" والخيار A عكس ذلك.",
+            "en": "Testing only \"a narrow hypothesis\" may mean \"fewer opportunities to notice the unexpected\"."
+          },
+          "example": "If you only follow the plan, you may miss something interesting."
+        },
+        {
+          "type": "choice",
+          "id": "r7",
+          "prompt": "7. According to the last paragraph, an accidental observation…",
+          "options": [
+            "is enough to prove a new idea.",
+            "must be tested and checked before it is trusted.",
+            "is usually ignored by other researchers.",
+            "should not be published."
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"it must be tested on a proper sample, written up, checked through peer review and reproduced... before it can be trusted\".",
+            "ar": "\"it must be tested on a proper sample, written up, checked through peer review and reproduced... before it can be trusted\".",
+            "en": "\"It must be tested… checked through peer review and reproduced… before it can be trusted.\""
+          },
+          "example": "A new result must be checked before anyone can rely on it."
+        }
+      ]
+    },
+    {
+      "kind": "language",
+      "i18n": {"ar":{"title":"اللغة: بعد الفعل -ing أم to + فعل؟"},"en":{"title":"Language: -ing or to + verb after a verb?"}},
+      "title": "Dil: fiilden sonra -ing mi, to + fiil mi?",
+      "explain": {
+        "tr": "Bazı fiillerden sonra \"to + fiil\" gelir: decide, hope, plan, aim, fail, manage, agree, refuse, attempt, tend, seem (The team decided to repeat the test). Bazılarından sonra \"-ing\" gelir: avoid, consider, involve, suggest, recommend, risk, enjoy, finish, keep, delay, admit (The project involves collecting data). Bazı fiillerde anlam değişir: stop doing (bırakmak) / stop to do (bir şey yapmak için durmak); remember doing (yaptığını hatırlamak) / remember to do (yapmayı unutmamak); try doing (deneme olarak yapmak) / try to do (yapmaya çalışmak). begin, start, continue, prefer ile ikisi de olur. Task 2'de ve süreç anlatırken bu kalıplar çok sık gerekir; \"suggest to do\" en yaygın hatalardan biri.",
+        "ar": "بعض الأفعال يتبعها to + الفعل: decide, hope, plan, aim, fail, manage, agree, refuse, attempt, tend, seem (The team decided to repeat the test). وبعضها يتبعه الفعل بصيغة -ing: avoid, consider, involve, suggest, recommend, risk, enjoy, finish, keep, delay, admit (The project involves collecting data). وفي بعضها يتغير المعنى: stop doing (يتوقف عن) / stop to do (يتوقف لكي يفعل)؛ remember doing (يتذكر أنه فعل) / remember to do (لا ينسى أن يفعل)؛ try doing (يجرّب كحلّ) / try to do (يحاول). ومع begin وstart وcontinue وprefer يصح الاثنان. تحتاج هذه الأنماط كثيرًا في Task 2 ووصف العمليات، ومن الأخطاء الشائعة قول suggest to do.",
+        "en": "Some verbs are followed by to + verb: decide, hope, plan, aim, fail, manage, agree, refuse, attempt, tend, seem (The team decided to repeat the test). Others are followed by -ing: avoid, consider, involve, suggest, recommend, risk, enjoy, finish, keep, delay, admit (The project involves collecting data). With some verbs the meaning changes: stop doing (quit) / stop to do (stop in order to do); remember doing (a memory) / remember to do (a task); try doing (as an experiment) / try to do (make an effort). Begin, start, continue and prefer take both. You need these patterns constantly in Task 2 and when describing processes; \"suggest to do\" is one of the commonest errors."
+      },
+      "examples": [
+        "The researchers decided to repeat the experiment with a larger sample.",
+        "Good scientists avoid drawing conclusions from a single study.",
+        "The project involves collecting soil samples from fifty farms.",
+        "Many young scientists hope to make a breakthrough, but few manage to do so."
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "id": "g1",
+          "prompt": "The team managed ___ the results in a second laboratory.",
+          "options": [
+            "reproducing",
+            "to reproduce",
+            "reproduce",
+            "reproduced"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"manage\" sonrasında \"to + fiil\" gelir: managed to reproduce.",
+            "ar": "بعد manage يأتي to + الفعل: managed to reproduce.",
+            "en": "\"Manage\" is followed by to + verb."
+          },
+          "example": "We finally managed to finish the report."
+        },
+        {
+          "type": "choice",
+          "id": "g2",
+          "prompt": "The professor suggested ___ a larger sample next time.",
+          "options": [
+            "to use",
+            "use",
+            "using",
+            "used"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "\"suggest\" sonrasında \"-ing\" gelir: suggested using. \"suggest to use\" yaygın bir hatadır.",
+            "ar": "بعد suggest يأتي الفعل بصيغة -ing: suggested using. وقول suggest to use خطأ شائع.",
+            "en": "\"Suggest\" is followed by -ing, never to + verb."
+          },
+          "example": "My tutor suggested reading the article twice."
+        },
+        {
+          "type": "choice",
+          "id": "g3",
+          "prompt": "Which sentence means that the scientist no longer smokes?",
+          "options": [
+            "She stopped to smoke.",
+            "She stopped smoking.",
+            "She stopped to have a cigarette."
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"stop doing\" = bir şeyi bırakmak. \"stop to smoke\" = sigara içmek için durmak (işine ara vermek).",
+            "ar": "stop doing تعني يتوقف عن الشيء نهائيًا، أما stop to smoke فتعني توقف عن عمله لكي يدخّن.",
+            "en": "\"Stop doing\" = quit; \"stop to do\" = stop in order to do it."
+          },
+          "example": "He stopped drinking coffee last year."
+        },
+        {
+          "type": "gap",
+          "id": "g4",
+          "prompt": "Write the correct form of TEST: The experiment involves ___ the water every hour.",
+          "answers": [
+            "testing"
+          ],
+          "why": {
+            "tr": "\"involve\" sonrasında \"-ing\" gelir: involves testing.",
+            "ar": "بعد involve يأتي الفعل بصيغة -ing: involves testing.",
+            "en": "\"Involve\" is followed by -ing."
+          },
+          "example": "The job involves travelling to different countries."
+        },
+        {
+          "type": "gap",
+          "id": "g5",
+          "prompt": "Write the correct form of CHECK (TWO words): Please remember ___ the temperature before you leave the laboratory.",
+          "answers": [
+            "to check"
+          ],
+          "why": {
+            "tr": "Yapılacak bir görev (unutma!) için \"remember to do\": remember to check. \"remember checking\" geçmişte yaptığını hatırlamak demek.",
+            "ar": "للمهمة التي يجب ألا تُنسى نستخدم remember to do: remember to check. أما remember checking فتعني يتذكر أنه فعل ذلك في الماضي.",
+            "en": "A task to do = remember to do; remember doing = a memory of the past."
+          },
+          "example": "Remember to switch off the lights when you leave."
+        }
+      ]
+    },
+    {
+      "kind": "write",
+      "i18n": {"ar":{"title":"الكتابة · Task 1: جدول (تمويل الأبحاث)","tip":"في الجدول أرقام كثيرة؛ لا تكتبها كلها. اذكر أولًا المجموع وأكبر تغيّر في فقرة \"Overall\"، ثم اجمع الصفوف المتشابهة في سلوكها (ما ارتفع / ما انخفض). قارن بعبارات مثل \"more than tripled\" و\"fell slightly\" و\"the gap widened\"."},"en":{"title":"Writing · Task 1: a table (research funding)","tip":"The table has a lot of numbers; don't write them all. First state the total and the biggest change in the \"Overall\" paragraph, then group rows that behave similarly (rising / falling). Compare with phrases like \"more than tripled\", \"fell slightly\" and \"the gap widened\"."}},
+      "title": "Yazma · Task 1: tablo (araştırma fonları)",
+      "task": 1,
+      "prompt": "The table below shows how much research funding Norbridge University, a fictional institution, spent on four fields in 2010 and 2020.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "data": "Practice data (invented for this lesson; Norbridge University is fictional).\nResearch funding by field (millions of euros)\nField | 2010 | 2020\nMedicine | 42 | 58\nEngineering | 35 | 33\nEnvironmental science | 8 | 27\nSocial sciences | 15 | 12\nTotal | 100 | 130",
+      "minutes": 20,
+      "minWords": 150,
+      "tip": "Tabloda çok sayı var; hepsini yazma. Önce toplamı ve en büyük değişimi \"Overall\" paragrafında söyle, sonra benzer davranan satırları grupla (artanlar / azalanlar). \"more than tripled\", \"fell slightly\", \"the gap widened\" gibi ifadelerle karşılaştır.",
+      "model": "The table compares the amount of research funding that Norbridge University spent on four fields of study in 2010 and 2020.\n\nOverall, total funding rose from €100 million to €130 million over the decade. Medicine received the most money in both years, while environmental science saw the largest increase.\n\nIn 2010, medicine attracted €42 million, more than any other field, followed by engineering with €35 million. Ten years later, spending on medical research had grown to €58 million, whereas the figure for engineering had fallen slightly to €33 million. As a result, the gap between these two fields widened considerably.\n\nThe most striking change was in environmental science. Funding for this field more than tripled, from just €8 million to €27 million, so that by 2020 the money available to conduct research in this area was almost as much as that for engineering. The social sciences, by contrast, also lost funding, with their budget falling from €15 million to €12 million, which made them the smallest of the four fields by the end of the period."
+    },
+    {
+      "kind": "speak",
+      "i18n": {"ar":{"title":"التحدث: العلم والاختراعات"},"en":{"title":"Speaking: science and inventions"}},
+      "title": "Konuşma: bilim ve buluşlar",
+      "part1": [
+        "Did you enjoy science lessons at school?",
+        "Which invention do you use most in your daily life?",
+        "Do you like watching documentaries about science?",
+        "Would you like to work in a laboratory? Why or why not?"
+      ],
+      "card": {
+        "title": "Describe a scientific discovery or invention that has changed people's lives.",
+        "points": [
+          "what it is",
+          "when and how it was discovered or invented, if you know",
+          "who uses it and how"
+        ],
+        "explain": "and explain why you think it is so important."
+      },
+      "useful": [
+        "One breakthrough that I find really impressive is…",
+        "As far as I know, it was developed in…, although I'm not completely sure.",
+        "Before it existed, people had to…",
+        "These days, most people can't imagine living without…",
+        "There's a lot of evidence that it has helped…",
+        "What I find most interesting is that scientists managed to…"
+      ]
+    }
+  ]
+}

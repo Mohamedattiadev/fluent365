@@ -1,0 +1,726 @@
+{
+ "id": "lesson-30",
+ "number": 30,
+ "title": "Automation and Work",
+ "topic": "Automation and jobs",
+ "level": "B2",
+ "goal": "Follow a student discussion and an article about automation, weigh advantages and disadvantages, and contrast ideas across sentences with By contrast, Conversely and On the other hand.",
+ "steps": [
+  {
+   "kind": "words",
+   "i18n": {"ar":{"title":"المفردات: الأتمتة والوظائف","intro":"في هذا الدرس 12 كلمة وعبارة عن الأتمتة والذكاء الاصطناعي وسوق العمل. عبارات مثل \"be made redundant\" و\"retrain as\" و\"a skills gap\" مفيدة جدًا في أسئلة Task 2 عن العمل والتكنولوجيا."},"en":{"title":"Vocabulary: automation and jobs","intro":"This lesson has 12 words and phrases about automation, artificial intelligence and the job market. Phrases like \"be made redundant\", \"retrain as\" and \"a skills gap\" are very useful in Task 2 questions on work and technology."}},
+   "title": "Kelimeler: otomasyon ve işler",
+   "intro": "Bu derste otomasyon, yapay zekâ ve iş piyasası hakkında 12 kelime ve kalıp var. \"be made redundant\", \"retrain as\", \"a skills gap\" gibi kalıplar Task 2 iş ve teknoloji sorularında çok işe yarar.",
+   "words": [
+    {
+     "en": "automation",
+     "pos": "noun",
+     "tr": "otomasyon, işlerin makinelerle yapılması",
+     "ar": "الأتمتة",
+     "example": "Automation has changed the way cars are built."
+    },
+    {
+     "en": "artificial intelligence",
+     "pos": "phrase",
+     "tr": "yapay zekâ",
+     "ar": "الذكاء الاصطناعي",
+     "example": "Artificial intelligence can now translate simple texts in seconds."
+    },
+    {
+     "en": "workforce",
+     "pos": "noun",
+     "tr": "işgücü, bir şirketteki ya da ülkedeki çalışanlar",
+     "ar": "القوى العاملة",
+     "example": "Women now make up almost half of the country's workforce."
+    },
+    {
+     "en": "repetitive",
+     "pos": "adjective",
+     "tr": "tekrarlayan, monoton",
+     "ar": "متكرّر؛ رتيب",
+     "example": "Robots are ideal for repetitive tasks on a production line."
+    },
+    {
+     "en": "manual",
+     "pos": "adjective",
+     "tr": "el ile yapılan, bedensel (iş)",
+     "ar": "يدوي (عمل بدني)",
+     "example": "Manual jobs such as packing boxes are easier to automate."
+    },
+    {
+     "en": "productivity",
+     "pos": "noun",
+     "tr": "verimlilik, üretkenlik",
+     "ar": "الإنتاجية",
+     "example": "New software has increased productivity in the office."
+    },
+    {
+     "en": "labour market",
+     "pos": "phrase",
+     "tr": "iş piyasası, emek piyasası",
+     "ar": "سوق العمل",
+     "example": "Young graduates are entering a very competitive labour market."
+    },
+    {
+     "en": "redundant",
+     "pos": "adjective",
+     "tr": "(işten) çıkarılmış; gereksiz hâle gelmiş",
+     "ar": "مُسرَّح من العمل؛ زائد عن الحاجة",
+     "example": "Two hundred workers were made redundant when the factory closed."
+    },
+    {
+     "en": "retrain",
+     "pos": "verb",
+     "tr": "yeniden eğitim almak, yeni bir meslek öğrenmek",
+     "ar": "يُعيد التدريب؛ يتدرّب على مهنة جديدة",
+     "example": "After losing his job, he retrained as a computer technician."
+    },
+    {
+     "en": "job security",
+     "pos": "phrase",
+     "tr": "iş güvencesi",
+     "ar": "الأمان الوظيفي",
+     "example": "Many young people value job security more than a high salary."
+    },
+    {
+     "en": "skills gap",
+     "pos": "phrase",
+     "tr": "beceri açığı (işverenin istediği beceriler ile çalışanlarınki arasındaki fark)",
+     "ar": "فجوة المهارات",
+     "example": "There is a skills gap in engineering: companies cannot find enough qualified staff."
+    },
+    {
+     "en": "obsolete",
+     "pos": "adjective",
+     "tr": "modası geçmiş, kullanılmaz hâle gelmiş",
+     "ar": "عفا عليه الزمن؛ متقادم",
+     "example": "Typewriters became obsolete when computers arrived."
+    }
+   ],
+   "practice": [
+    {
+     "type": "choice",
+     "id": "w1",
+     "prompt": "Lifting boxes, cleaning floors and packing goods are examples of ___ work.",
+     "options": [
+      "manual",
+      "obsolete",
+      "redundant",
+      "artificial"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "\"manual work\" = el ile, bedensel olarak yapılan iş. \"obsolete\" ve \"redundant\" işin kalmadığını anlatır; \"artificial\" yapay demek.",
+      "ar": "manual work أي العمل اليدوي البدني. أما obsolete وredundant فتدلان على انتهاء الحاجة، وartificial تعني اصطناعي.",
+      "en": "\"Manual work\" is physical work done with the hands."
+     },
+     "example": "Many manual jobs in farming have been replaced by machines."
+    },
+    {
+     "type": "choice",
+     "id": "w2",
+     "prompt": "When a company no longer needs a worker and ends their job, the worker is…",
+     "options": [
+      "made redundant",
+      "made obsolete",
+      "retrained",
+      "automated"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "Kalıp \"be made redundant\" = işten çıkarılmak (iş artık gerekli olmadığı için). \"obsolete\" insanlar için değil, teknoloji ve beceriler için kullanılır.",
+      "ar": "التعبير be made redundant يعني التسريح من العمل لعدم الحاجة إلى الوظيفة. أما obsolete فتُستخدم للأشياء والمهارات لا للأشخاص.",
+      "en": "People are \"made redundant\"; technologies become \"obsolete\"."
+     },
+     "example": "She was made redundant after twenty years at the bank."
+    },
+    {
+     "type": "gap",
+     "id": "w3",
+     "prompt": "Write the correct form of PRODUCE: The new machines have raised ___ by allowing each worker to make more in an hour.",
+     "answers": [
+      "productivity"
+     ],
+     "why": {
+      "tr": "\"raised ___\" sonrasında bir isim gerekiyor ve anlam \"saat başına daha fazla üretim\": productivity. \"production\" toplam üretimdir, kişi başı verimlilik değil.",
+      "ar": "بعد raised نحتاج إلى اسم بمعنى إنتاج أكثر في الساعة: productivity. أما production فهي الإنتاج الكلي.",
+      "en": "Output per worker per hour = productivity (not production)."
+     },
+     "example": "Productivity rose after the company introduced flexible hours."
+    },
+    {
+     "type": "choice",
+     "id": "w4",
+     "prompt": "Which word completes both phrases: \"a ___ gap\" and \"digital ___\"?",
+     "options": [
+      "skills",
+      "labour",
+      "job",
+      "market"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "\"a skills gap\" (beceri açığı) ve \"digital skills\" (dijital beceriler) doğal eşdizimlerdir.",
+      "ar": "a skills gap (فجوة المهارات) وdigital skills (المهارات الرقمية) تلازمان طبيعيان.",
+      "en": "\"A skills gap\" and \"digital skills\"."
+     },
+     "example": "Schools can help to close the skills gap by teaching coding."
+    },
+    {
+     "type": "gap",
+     "id": "w5",
+     "prompt": "Write ONE word: When the mine closed, many workers decided to ___ as electricians or builders.",
+     "answers": [
+      "retrain"
+     ],
+     "why": {
+      "tr": "\"retrain as + meslek\" = yeni bir meslek için eğitim almak. Önek \"re-\" yeniden anlamı verir.",
+      "ar": "retrain as + مهنة أي يتدرّب على مهنة جديدة، والبادئة re- تعني من جديد.",
+      "en": "\"Retrain as\" + a new job."
+     },
+     "example": "My uncle retrained as a nurse at the age of forty."
+    },
+    {
+     "type": "choice",
+     "id": "w6",
+     "prompt": "A skill that is \"obsolete\" is one that…",
+     "options": [
+      "is no longer needed because something newer has replaced it",
+      "is very difficult to learn",
+      "is only used in factories",
+      "is paid very well"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "\"obsolete\" = yerine daha yenisi geldiği için artık kullanılmayan.",
+      "ar": "obsolete تعني أنه لم يعد مستخدمًا لأن شيئًا أحدث حلّ محله.",
+      "en": "Obsolete = no longer used because something newer exists."
+     },
+     "example": "Fax machines are almost obsolete in most offices."
+    }
+   ]
+  },
+  {
+   "kind": "listen",
+   "i18n": {"ar":{"title":"الاستماع · Part 3: عرض عن الأتمتة","intro":"طالبان، Amira وJake، يراجعان للمرة الأخيرة عرضهما عن الأتمتة والوظائف قبيل الندوة مباشرة. اقرأ الأسئلة أولًا. يُشغَّل التسجيل مرة واحدة.","tip":"في Part 3 يقترح الطلاب فكرة ثم يغيّرونها، مثل: \"Should we leave it till the end?\" – \"No, I think it works better at the very beginning\". القرار يكون في الجملة الأخيرة التي يتفق عليها الاثنان. عبارات \"By contrast\" و\"On the other hand\" و\"Conversely\" تدل على أن المتحدث يغيّر الاتجاه."},"en":{"title":"Listening · Part 3: an automation presentation","intro":"Two students, Amira and Jake, go over their presentation on automation and jobs one last time just before the seminar. Read the questions first. The recording plays once.","tip":"In Part 3 the students suggest an idea and then change it, e.g. \"Should we leave it till the end?\" – \"No, I think it works better at the very beginning\". The decision is in the last sentence they both agree on. \"By contrast\", \"On the other hand\" and \"Conversely\" show the speaker is changing direction."}},
+   "title": "Dinleme · Part 3: otomasyon sunumu",
+   "intro": "İki öğrenci, Amira ve Jake, seminerden hemen önce otomasyon ve işler hakkındaki sunumlarını son kez gözden geçiriyor. Önce soruları oku. Kayıt bir kez çalar.",
+   "tip": "Part 3'te öğrenciler bir fikri önerir, sonra değiştirir. \"Should we leave it till the end?\" – \"No, I think it works better at the very beginning\" gibi. Karar, ikisinin de kabul ettiği son cümlededir. \"By contrast\", \"On the other hand\", \"Conversely\" konuşmacının yön değiştirdiğini gösterir.",
+   "audio": {
+    "type": "audio",
+    "id": "l-audio",
+    "speakers": {
+     "N": {
+      "name": "Narrator",
+      "voice": "en-GB-SoniaNeural"
+     },
+     "amira": {
+      "name": "Amira",
+      "voice": "en-GB-LibbyNeural"
+     },
+     "jake": {
+      "name": "Jake",
+      "voice": "en-US-AndrewNeural"
+     }
+    },
+    "lines": [
+     {
+      "speaker": "N",
+      "text": "You will hear two students, Amira and Jake, preparing a presentation about automation. First, you have some time to look at questions one to six.",
+      "pauseAfterMs": 2500
+     },
+     {
+      "speaker": "N",
+      "text": "Now listen carefully and answer questions one to six.",
+      "pauseAfterMs": 1200
+     },
+     {
+      "speaker": "amira",
+      "text": "Right, Jake, we've got about fifteen minutes before the seminar. Shall we go through the presentation one more time?",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "jake",
+      "text": "Sure. So we start with the main question: will automation create more jobs than it destroys? I still think history gives a fairly positive answer. When farming was mechanised, millions of people left the land, and yet employment overall kept rising.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "amira",
+      "text": "That's true of the past. By contrast, what worries economists now is the speed of change. Artificial intelligence isn't only replacing manual work; it's starting to do things like checking contracts or writing reports. Those were supposed to be safe jobs.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "jake",
+      "text": "Fair point. On the other hand, the interview we did with the warehouse manager was quite reassuring, wasn't it? She said the robots took over the repetitive lifting, productivity went up a lot, and nobody was made redundant.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "amira",
+      "text": "Yes, though she also said they hired fewer new staff. So the workforce shrank gradually rather than suddenly. I think we should mention that, otherwise it sounds too optimistic.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "jake",
+      "text": "Agreed. Now, timing. I'm worried we're going to run over. The history of automation section is nearly four minutes on its own.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "amira",
+      "text": "It's interesting, but Dr Clarke said she wanted us to focus on the present. Let's cut it down to about one minute, just the farming example.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "jake",
+      "text": "OK, so we shorten the history. What about the interview? Should we leave it till the end, as a kind of case study?",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "amira",
+      "text": "No, I think it works better at the very beginning. It's a real story about real people, and it gets the audience's attention. Then we can bring in the theory.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "jake",
+      "text": "Good idea. We'll move it to the start. And the statistics on job losses from that newspaper article?",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "amira",
+      "text": "I'd drop those completely. We never found out where the figures originally came from, and Dr Clarke is always telling us to check our sources.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "jake",
+      "text": "True. We'll leave them out, then. That gives us more time for the section on retraining.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "amira",
+      "text": "Which is the most important part, in my view. If people are going to lose jobs, they need to retrain, and the skills gap is already a real problem. Employers say they can't find people with digital skills, while at the same time thousands of workers have skills that are becoming obsolete.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "jake",
+      "text": "Conversely, some of the jobs that are hardest to automate are badly paid, like care work. We should say that too. And job security matters: in the labour market now, people may change careers three or four times in their lives.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "amira",
+      "text": "Good point. Shall we finish with a question for the audience, then? Something like: which jobs in this room do you think will still exist in twenty years?",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "jake",
+      "text": "I like that. It's a bit risky, because nobody might answer, but Dr Clarke did say she wanted more discussion this term. If it goes quiet, I'll start by giving my own answer.",
+      "pauseAfterMs": 400
+     },
+     {
+      "speaker": "amira",
+      "text": "Perfect. OK, I think we're ready. Let's go.",
+      "pauseAfterMs": 1500
+     },
+     {
+      "speaker": "N",
+      "text": "That is the end of the recording.",
+      "pauseAfterMs": 0
+     }
+    ]
+   },
+   "questions": [
+    {
+     "type": "text",
+     "text": "Questions 1–3. Choose the correct letter."
+    },
+    {
+     "type": "choice",
+     "id": "l1",
+     "prompt": "1. According to Amira, what is different about automation today?",
+     "options": [
+      "the speed of the change",
+      "the number of farms affected",
+      "the cost of new machines"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "Amira: \"By contrast, what worries economists now is the speed of change.\" Çiftlikler sadece Jake'in tarihî örneği.",
+      "ar": "تقول Amira: \"By contrast, what worries economists now is the speed of change.\" المزارع مجرد مثال تاريخي ذكره Jake.",
+      "en": "\"What worries economists now is the speed of change.\""
+     },
+     "example": "What worries me is not the change itself but its speed."
+    },
+    {
+     "type": "choice",
+     "id": "l2",
+     "prompt": "2. What did the warehouse manager say?",
+     "options": [
+      "Some staff lost their jobs.",
+      "Robots now do the repetitive lifting.",
+      "Productivity fell at first."
+     ],
+     "answer": 1,
+     "why": {
+      "tr": "\"the robots took over the repetitive lifting, productivity went up a lot, and nobody was made redundant\". A ve C bu bilgiyle çelişiyor.",
+      "ar": "\"the robots took over the repetitive lifting, productivity went up a lot, and nobody was made redundant\". الخياران A وC يناقضان ذلك.",
+      "en": "\"The robots took over the repetitive lifting… nobody was made redundant.\""
+     },
+     "example": "Machines took over the heavy lifting, so the workers were less tired."
+    },
+    {
+     "type": "choice",
+     "id": "l3",
+     "prompt": "3. What does Amira want to add about the warehouse?",
+     "options": [
+      "The company employed fewer new workers.",
+      "The robots were very expensive.",
+      "The staff needed to retrain."
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "Amira: \"she also said they hired fewer new staff. So the workforce shrank gradually\". \"retrain\" konuşmanın sonunda genel bir konu olarak geçiyor, depo için değil.",
+      "ar": "تقول Amira: \"they hired fewer new staff. So the workforce shrank gradually\". أما retrain فتُذكر لاحقًا كموضوع عام لا يخص المستودع.",
+      "en": "\"They hired fewer new staff. So the workforce shrank gradually.\""
+     },
+     "example": "Nobody lost their job, but the company hired fewer new staff."
+    },
+    {
+     "type": "text",
+     "text": "Questions 4–6. What do the students decide to do with each part of the presentation? Choose the correct answer. There are more options than you need."
+    },
+    {
+     "type": "choice",
+     "id": "l4",
+     "prompt": "4. the history of automation",
+     "options": [
+      "make it shorter",
+      "move it to the start",
+      "leave it out",
+      "add more examples"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "\"Let's cut it down to about one minute\" – Jake: \"OK, so we shorten the history.\" \"make it shorter\" = \"shorten / cut it down\".",
+      "ar": "\"Let's cut it down to about one minute\"، ويقول Jake: \"so we shorten the history\"، أي نجعله أقصر.",
+      "en": "\"Cut it down to about one minute… we shorten the history.\""
+     },
+     "example": "The introduction was too long, so we cut it down to one minute."
+    },
+    {
+     "type": "choice",
+     "id": "l5",
+     "prompt": "5. the interview with the warehouse manager",
+     "options": [
+      "make it shorter",
+      "move it to the start",
+      "leave it out",
+      "add more examples"
+     ],
+     "answer": 1,
+     "why": {
+      "tr": "Jake sonda koymayı öneriyor ama Amira: \"No, I think it works better at the very beginning.\" Jake: \"We'll move it to the start.\" Son karar başa almak.",
+      "ar": "يقترح Jake وضعها في النهاية، لكن Amira تقول: \"it works better at the very beginning\"، فيوافق: \"We'll move it to the start.\"",
+      "en": "\"It works better at the very beginning… We'll move it to the start.\""
+     },
+     "example": "Let's move the funny story to the start to get people's attention."
+    },
+    {
+     "type": "choice",
+     "id": "l6",
+     "prompt": "6. the statistics on job losses",
+     "options": [
+      "make it shorter",
+      "move it to the start",
+      "leave it out",
+      "add more examples"
+     ],
+     "answer": 2,
+     "why": {
+      "tr": "\"I'd drop those completely… We'll leave them out, then.\" Kaynağı bulunamadığı için çıkarıyorlar.",
+      "ar": "\"I'd drop those completely… We'll leave them out, then.\" لأنهما لم يعرفا مصدر الأرقام.",
+      "en": "\"I'd drop those completely… We'll leave them out.\""
+     },
+     "example": "We couldn't check the figures, so we left them out."
+    }
+   ]
+  },
+  {
+   "kind": "read",
+   "i18n": {"ar":{"title":"القراءة: True / False / Not Given وإكمال الجمل","intro":"ستقرأ نصًا يتناول أثر الأتمتة على الوظائف من منظور تاريخي واقتصادي. هناك نوعان من الأسئلة: TFNG وإكمال الجمل.","tip":"في إكمال الجمل تحقّق من حد الكلمات (ONE WORD ONLY) وتأكد أن الجملة صحيحة نحويًا. أدوات المقابلة في النص مثل \"By contrast\" و\"Conversely\" تبيّن في أي جانب تقع الإجابة."},"en":{"title":"Reading: True / False / Not Given and sentence completion","intro":"You will read a text examining the effect of automation on jobs from a historical and economic angle. There are two question types: TFNG and sentence completion.","tip":"In sentence completion check the word limit (ONE WORD ONLY) and make sure the sentence is grammatically correct. Contrast linkers in the text like \"By contrast\" and \"Conversely\" show which side the answer is on."}},
+   "title": "Okuma: True / False / Not Given ve cümle tamamlama",
+   "intro": "Otomasyonun işler üzerindeki etkisini tarih ve ekonomi açısından inceleyen bir metin okuyacaksın. İki tür soru var: TFNG ve cümle tamamlama.",
+   "tip": "Cümle tamamlamada kelime sınırını kontrol et (ONE WORD ONLY) ve cümlenin dil bilgisi olarak doğru olduğundan emin ol. Metinde \"By contrast\", \"Conversely\" gibi zıtlık bağlaçları, cevabın hangi tarafta olduğunu gösterir.",
+   "passage": [
+    {
+     "type": "heading",
+     "text": "Will Machines Take Our Jobs?"
+    },
+    {
+     "type": "text",
+     "text": "Fear that machines will put people out of work is far from new. In the early nineteenth century, groups of English textile workers known as Luddites broke into factories and destroyed the new mechanical looms that threatened their livelihoods. Their protests were suppressed, and the machines spread. Yet in the long run, the industrial revolution created far more jobs than it destroyed, and living standards eventually rose dramatically. Ever since, economists have tended to treat warnings about automation with some scepticism. Similar fears were expressed when tractors replaced farm workers, when telephone exchanges became automatic and when computers arrived in offices, and each time the total number of jobs continued to grow, even though particular occupations almost disappeared."
+    },
+    {
+     "type": "text",
+     "text": "One reason for this optimism is that machines usually take over tasks rather than whole jobs. A frequently cited example is the cash machine. When these machines were introduced, many people expected bank clerks to disappear. Instead, because each branch became cheaper to run, banks opened more branches, and for many years the number of clerks did not fall; their work simply shifted from counting cash towards advising customers. Similarly, higher productivity in one industry tends to make its products cheaper, which leaves consumers with more money to spend on other goods and services, creating new work elsewhere."
+    },
+    {
+     "type": "text",
+     "text": "Nevertheless, the benefits of automation have never been evenly shared. Workers whose skills became obsolete did not always find new jobs, and when they did, the new jobs were often worse paid or located in different regions. Over the past few decades, researchers in several wealthy countries have described a pattern sometimes called the polarisation of the labour market. Jobs at the top, requiring advanced education, and many jobs at the bottom, such as cleaning or care work, have grown. By contrast, routine middle-income jobs in offices and factories, which involve repetitive tasks that are easy to describe in a set of rules, have declined."
+    },
+    {
+     "type": "text",
+     "text": "Artificial intelligence may change this pattern again. Earlier waves of automation mainly affected manual and routine work, while tasks that required judgement, language or creativity seemed safe. Modern software, however, can now write simple reports, summarise documents and answer customer questions. Conversely, some physical jobs that people assumed would be automated long ago, such as plumbing or caring for elderly people, remain extremely difficult for machines. The workers most exposed to the next wave may therefore be very different from those affected in the past."
+    },
+    {
+     "type": "text",
+     "text": "How societies respond will matter as much as the technology itself. Governments can help workers to retrain, although such programmes have a mixed record: they work best when they are designed together with local employers and lead to recognised qualifications. Some economists propose that education systems should focus less on memorising information and more on skills that complement machines, such as communication, problem-solving and teamwork. Others argue that, in a labour market where people may change careers several times, job security will increasingly depend on the ability to keep learning rather than on staying with one employer."
+    },
+    {
+     "type": "text",
+     "text": "What is clear is that the outcome is not decided by technology alone. A company that introduces automation can use it to cut its workforce or to free staff from dull tasks so that they can do more valuable work. The choice between these paths depends on managers, unions and governments as much as on engineers. History offers examples of both. Some firms have used new equipment mainly to reduce costs, while others have trained their employees to operate, repair and improve the machines, and in doing so have kept experienced staff whose knowledge would otherwise have been lost."
+    }
+   ],
+   "questions": [
+    {
+     "type": "heading",
+     "text": "Questions 1–4: True, False or Not Given?"
+    },
+    {
+     "type": "text",
+     "text": "Do the following statements agree with the information in the passage? Choose TRUE, FALSE or NOT GIVEN."
+    },
+    {
+     "type": "tfng",
+     "id": "r1",
+     "statement": "The Luddites succeeded in stopping the spread of new machines.",
+     "answer": "false",
+     "why": {
+      "tr": "Paragraf 1: \"Their protests were suppressed, and the machines spread.\" Makineler yayıldı, yani başaramadılar: FALSE.",
+      "ar": "الفقرة الأولى: \"Their protests were suppressed, and the machines spread.\" أي لم ينجحوا: FALSE.",
+      "en": "\"Their protests were suppressed, and the machines spread.\""
+     },
+     "example": "The protests failed, and the new law was introduced anyway."
+    },
+    {
+     "type": "tfng",
+     "id": "r2",
+     "statement": "After cash machines were introduced, the number of bank clerks fell immediately.",
+     "answer": "false",
+     "why": {
+      "tr": "Paragraf 2: \"for many years the number of clerks did not fall\". İfade bunun tersini söylüyor: FALSE.",
+      "ar": "الفقرة الثانية: \"for many years the number of clerks did not fall\". العبارة تقول العكس: FALSE.",
+      "en": "\"For many years the number of clerks did not fall.\""
+     },
+     "example": "Contrary to expectations, the number of clerks did not fall."
+    },
+    {
+     "type": "tfng",
+     "id": "r3",
+     "statement": "Routine middle-income jobs have declined in some wealthy countries.",
+     "answer": "true",
+     "why": {
+      "tr": "Paragraf 3: \"By contrast, routine middle-income jobs in offices and factories… have declined.\" TRUE.",
+      "ar": "الفقرة الثالثة: \"By contrast, routine middle-income jobs in offices and factories… have declined.\" TRUE.",
+      "en": "\"Routine middle-income jobs… have declined.\""
+     },
+     "example": "Middle-income office jobs have declined in many countries."
+    },
+    {
+     "type": "tfng",
+     "id": "r4",
+     "statement": "Most retraining programmes for workers have been successful.",
+     "answer": "not given",
+     "why": {
+      "tr": "Paragraf 5: programların \"a mixed record\" olduğunu ve ne zaman en iyi çalıştığını söylüyor, ama çoğunun başarılı olup olmadığını söylemiyor: NOT GIVEN.",
+      "ar": "الفقرة الخامسة تقول إن للبرامج \"a mixed record\" وتذكر متى تنجح، لكنها لا تقول إن معظمها ناجح: NOT GIVEN.",
+      "en": "\"A mixed record\" does not tell us whether most succeeded."
+     },
+     "example": "The article says the results were mixed but gives no overall figure."
+    },
+    {
+     "type": "heading",
+     "text": "Questions 5–7: Complete the sentences. Choose ONE WORD ONLY from the passage for each answer."
+    },
+    {
+     "type": "gap",
+     "id": "r5",
+     "prompt": "5. Higher productivity can make products ___, so people have more money to spend elsewhere.",
+     "answers": [
+      "cheaper"
+     ],
+     "why": {
+      "tr": "Paragraf 2: \"higher productivity in one industry tends to make its products cheaper, which leaves consumers with more money\".",
+      "ar": "الفقرة الثانية: \"higher productivity… tends to make its products cheaper, which leaves consumers with more money\".",
+      "en": "\"Tends to make its products cheaper.\""
+     },
+     "example": "Mass production made cars much cheaper."
+    },
+    {
+     "type": "gap",
+     "id": "r6",
+     "prompt": "6. Some physical jobs, such as caring for elderly people or ___, are still very hard for machines to do.",
+     "answers": [
+      "plumbing"
+     ],
+     "why": {
+      "tr": "Paragraf 4: \"some physical jobs… such as plumbing or caring for elderly people, remain extremely difficult for machines\".",
+      "ar": "الفقرة الرابعة: \"such as plumbing or caring for elderly people, remain extremely difficult for machines\".",
+      "en": "\"Such as plumbing or caring for elderly people.\""
+     },
+     "example": "Jobs like plumbing are hard to automate."
+    },
+    {
+     "type": "gap",
+     "id": "r7",
+     "prompt": "7. Retraining works best when it is designed with local employers and leads to recognised ___.",
+     "answers": [
+      "qualifications"
+     ],
+     "why": {
+      "tr": "Paragraf 5: \"they work best when they are designed together with local employers and lead to recognised qualifications\".",
+      "ar": "الفقرة الخامسة: \"they work best when they are designed together with local employers and lead to recognised qualifications\".",
+      "en": "\"Lead to recognised qualifications.\""
+     },
+     "example": "The course leads to a recognised qualification in accounting."
+    }
+   ]
+  },
+  {
+   "kind": "language",
+   "i18n": {"ar":{"title":"اللغة: المقابلة بين الجمل (By contrast, Conversely, On the other hand)"},"en":{"title":"Language: contrast between sentences (By contrast, Conversely, On the other hand)"}},
+   "title": "Dil: cümleler arası zıtlık (By contrast, Conversely, On the other hand)",
+   "explain": {
+    "tr": "Bu bağlaçlar iki ayrı cümle arasında kullanılır: genelde yeni cümlenin başında, ardından virgül. Anlamları birbirinden biraz farklıdır. By contrast / In contrast: iki farklı şeyi karşılaştırır (Task 1'de çok kullanışlı): \"Factory jobs fell. By contrast, care jobs rose.\" On the other hand: aynı konunun diğer tarafını, bir argümanın karşı görüşünü verir (Task 2): \"Robots are expensive. On the other hand, they can work all day.\" Conversely: ilişki tersine döndüğünde: \"Some jobs that seemed hard to automate were automated. Conversely, some that seemed easy were not.\" However / Nevertheless: önceki cümleye rağmen beklenmedik bir şey söyler. Dikkat: \"whereas\" ve \"while\" iki cümleyi TEK cümlede birleştirir; \"By contrast\" ise yeni bir cümle başlatır. \"On the other hand\" için önce \"On the one hand\" kullanmak zorunlu değildir.",
+    "ar": "تُستخدم هذه الروابط بين جملتين منفصلتين، عادةً في أول الجملة الجديدة تليها فاصلة، ومعانيها مختلفة قليلًا. By contrast / In contrast: للمقارنة بين شيئين مختلفين (مفيدة جدًا في Task 1): Factory jobs fell. By contrast, care jobs rose. On the other hand: لتقديم الجانب الآخر من الموضوع أو الرأي المقابل (Task 2): Robots are expensive. On the other hand, they can work all day. Conversely: عندما تنعكس العلاقة: Some jobs that seemed hard to automate were automated. Conversely, some that seemed easy were not. However / Nevertheless: لقول شيء غير متوقع رغم ما سبق. انتبه: whereas وwhile تربطان جملتين في جملة واحدة، أما By contrast فتبدأ جملة جديدة. ولا يلزم استخدام On the one hand قبل On the other hand.",
+    "en": "These linkers connect two separate sentences, usually at the start of the second one, followed by a comma. Their meanings differ slightly. By contrast / In contrast compares two different things (very useful in Task 1): \"Factory jobs fell. By contrast, care jobs rose.\" On the other hand gives the other side of an argument (Task 2): \"Robots are expensive. On the other hand, they can work all day.\" Conversely shows that the relationship is reversed: \"Some jobs that seemed hard to automate were automated. Conversely, some that seemed easy were not.\" However / Nevertheless introduce something unexpected after what came before. Note: whereas and while join two clauses in ONE sentence; By contrast starts a new sentence. You do not need \"On the one hand\" before \"On the other hand\"."
+   },
+   "examples": [
+    "Manual jobs in factories have declined. By contrast, jobs in health care have grown steadily.",
+    "Automation can raise productivity. On the other hand, it may reduce job security for many workers.",
+    "Tasks that are easy for people, such as folding laundry, are hard for robots. Conversely, tasks that are hard for people, such as complex calculations, are easy for computers.",
+    "Retraining programmes have a mixed record. Nevertheless, they remain the most realistic option for many workers."
+   ],
+   "questions": [
+    {
+     "type": "choice",
+     "id": "g1",
+     "prompt": "In 2000, 30% of workers were in manufacturing. ___, only 12% worked in technology.",
+     "options": [
+      "By contrast",
+      "Conversely",
+      "Therefore",
+      "For instance"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "İki farklı sektör karşılaştırılıyor (Task 1 tarzı): \"By contrast\". \"Conversely\" tersine dönen bir ilişki için; \"Therefore\" sonuç, \"For instance\" örnek bildirir.",
+      "ar": "نقارن بين قطاعين مختلفين: By contrast. أما Conversely فلعلاقة معكوسة، وTherefore للنتيجة، وFor instance للمثال.",
+      "en": "Comparing two different sectors: By contrast."
+     },
+     "example": "Prices rose in the north. By contrast, they fell in the south."
+    },
+    {
+     "type": "choice",
+     "id": "g2",
+     "prompt": "Which sentence is punctuated correctly?",
+     "options": [
+      "Robots never get tired. On the other hand, they cannot deal with unexpected problems.",
+      "Robots never get tired, on the other hand they cannot deal with unexpected problems.",
+      "Robots never get tired on the other hand, they cannot deal with unexpected problems.",
+      "Robots never get tired. On the other hand they, cannot deal with unexpected problems."
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "\"On the other hand\" yeni bir cümle başlatır ve ardından virgül gelir. İki cümleyi sadece virgülle birleştirmek (seçenek B) yanlıştır.",
+      "ar": "On the other hand تبدأ جملة جديدة وتليها فاصلة. ولا يصح ربط جملتين بفاصلة فقط كما في الخيار B.",
+      "en": "Full stop before, comma after: \". On the other hand, …\""
+     },
+     "example": "The flat is small. On the other hand, it is very close to the station."
+    },
+    {
+     "type": "gap",
+     "id": "g3",
+     "prompt": "Write ONE word: People who earn more tend to spend more. ___, people who earn less tend to save a smaller share of their income.",
+     "answers": [
+      "Conversely"
+     ],
+     "why": {
+      "tr": "İlişki tersine dönüyor: çok kazanan → çok harcar; az kazanan → az biriktirir. Bu \"Conversely\" ile anlatılır.",
+      "ar": "العلاقة معكوسة: من يكسب أكثر ينفق أكثر، ومن يكسب أقل يدّخر أقل، فنستخدم Conversely.",
+      "en": "The relationship is reversed: Conversely."
+     },
+     "example": "Cold weather increases demand for gas. Conversely, warm weather reduces it."
+    },
+    {
+     "type": "choice",
+     "id": "g4",
+     "prompt": "Choose the sentence that uses \"whereas\" correctly.",
+     "options": [
+      "Some jobs are easy to automate, whereas others require human judgement.",
+      "Some jobs are easy to automate. Whereas, others require human judgement.",
+      "Whereas, some jobs are easy to automate. Others require human judgement.",
+      "Some jobs are easy to automate whereas. Others require human judgement."
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "\"whereas\" iki cümleciği TEK cümlede birleştirir ve arkasından virgül gelmez. \"Whereas,\" ile yeni cümle başlatmak yanlış; bunun için \"By contrast,\" kullanılır.",
+      "ar": "whereas تربط جملتين في جملة واحدة ولا تأتي بعدها فاصلة. لا نبدأ جملة جديدة بـ Whereas, بل نستخدم By contrast,",
+      "en": "Whereas joins two clauses in one sentence; it is not a sentence linker."
+     },
+     "example": "My brother loves maths, whereas I prefer languages."
+    },
+    {
+     "type": "gap",
+     "id": "g5",
+     "prompt": "Write ONE word: Automation has made many products cheaper. ___ the other hand, it has made some workers' skills obsolete.",
+     "answers": [
+      "On"
+     ],
+     "why": {
+      "tr": "Kalıp \"On the other hand\" (\"In the other hand\" değil). \"the other hand\" verilmiş, eksik olan sadece \"On\".",
+      "ar": "التعبير الثابت On the other hand (وليس In the other hand)، والناقص هنا كلمة On فقط.",
+      "en": "The fixed phrase is \"On the other hand\" (not \"In\")."
+     },
+     "example": "On the other hand, working from home can be lonely."
+    }
+   ]
+  },
+  {
+   "kind": "write",
+   "i18n": {"ar":{"title":"الكتابة · Task 2: المزايا والعيوب (مقال كامل)","tip":"في سؤال \"Outweigh\" لا تكتفِ بسرد المزايا والعيوب: قل بوضوح في المقدمة والخاتمة أيّها يرجح. أظهر المقابلة بين الفقرات بـ \"On the other hand\" و\"By contrast\" و\"Nevertheless\". كلمات هذا الدرس: productivity, repetitive, workforce, retrain, skills gap, job security."},"en":{"title":"Writing · Task 2: advantages and disadvantages (full essay)","tip":"In an \"Outweigh\" question don't just list advantages and disadvantages: say clearly in the introduction and the conclusion which side outweighs the other. Show contrast between paragraphs with \"On the other hand\", \"By contrast\" and \"Nevertheless\". This lesson's words: productivity, repetitive, workforce, retrain, skills gap, job security."}},
+   "title": "Yazma · Task 2: avantajlar ve dezavantajlar (tam deneme)",
+   "task": 2,
+   "prompt": "Automation and artificial intelligence are increasingly being used to do jobs that were once done by people.\n\nDo the advantages of this development outweigh the disadvantages?\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.",
+   "minutes": 40,
+   "minWords": 250,
+   "tip": "\"Outweigh\" sorusunda sadece avantaj ve dezavantajları sıralama: hangisinin daha ağır bastığını girişte ve sonuçta açıkça söyle. Paragraflar arası zıtlığı \"On the other hand\", \"By contrast\", \"Nevertheless\" ile göster. Bu dersin kelimeleri: productivity, repetitive, workforce, retrain, skills gap, job security.",
+   "model": "Machines and computer programs now perform many tasks that used to require human workers, from assembling cars to answering customer enquiries. Although this development causes real hardship for some people, I believe that its advantages outweigh its disadvantages, provided that governments manage the transition carefully.\n\nThe main benefit of automation is higher productivity. When machines take over repetitive or dangerous work, such as lifting heavy goods or handling chemicals, goods can be produced more cheaply and safely. Lower prices leave consumers with more money to spend on other things, which creates demand for new kinds of work. Historically, this is exactly what happened when agriculture was mechanised: millions of people left the land, yet overall employment continued to grow. Moreover, artificial intelligence can help professionals such as doctors to analyse information faster, freeing them to spend more time with patients.\n\nOn the other hand, the costs of automation fall unevenly. Workers whose skills become obsolete may struggle to find new jobs, especially if they are older or live in regions where a single industry dominated. Even those who keep their jobs may experience less job security, as companies reduce their workforce gradually by hiring fewer new staff. By contrast, the profits from automation often go mainly to company owners and highly skilled employees, which can increase inequality.\n\nNevertheless, these problems can be reduced by sensible policies. Governments could fund programmes that help people retrain for growing sectors, designed together with local employers to close the skills gap. Schools, meanwhile, should focus on abilities that machines find difficult, such as communication and problem-solving.\n\nIn conclusion, while automation undoubtedly creates losers as well as winners, its overall benefits in productivity, safety and new opportunities are greater, as long as societies support the workers most affected."
+  },
+  {
+   "kind": "speak",
+   "i18n": {"ar":{"title":"المحادثة: التكنولوجيا والحياة المهنية"},"en":{"title":"Speaking: technology and working life"}},
+   "title": "Konuşma: teknoloji ve iş hayatı",
+   "part1": [
+    "What job would you like to have in ten years?",
+    "Do you think your job, or the job you want, could be done by a machine one day?",
+    "Do you prefer talking to a person or using a machine, for example in a shop or a bank?",
+    "What technology do you use most at work or school?"
+   ],
+   "card": {
+    "title": "Describe a job that you think will change a lot in the future because of technology.",
+    "points": [
+     "what the job is",
+     "what people in this job do now",
+     "how technology might change it"
+    ],
+    "explain": "and explain whether you think this change will be good or bad for the people who do this job."
+   },
+   "useful": [
+    "At the moment, most of the work is quite repetitive, for example…",
+    "By contrast, in the future I imagine that…",
+    "On the other hand, there are some parts of the job that a machine could never do, such as…",
+    "People in this job might need to retrain in…",
+    "It would probably increase productivity, but it might reduce job security.",
+    "Overall, I'd say the change will be positive, as long as…"
+   ]
+  }
+ ]
+}

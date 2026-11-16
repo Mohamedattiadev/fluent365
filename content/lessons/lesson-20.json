@@ -1,0 +1,339 @@
+{
+  "id": "lesson-20",
+  "number": 20,
+  "title": "Built to Last",
+  "topic": "Architecture and design",
+  "level": "B2",
+  "goal": "Book a guided walk and catch details on the phone, argue whether new buildings should match old ones, and report beliefs and claims with It is said that… and X is thought to…",
+  "steps": [
+    {
+      "kind": "words",
+      "i18n": {"ar":{"title":"المفردات: العمارة والتصميم","intro":"في هذا الدرس 12 كلمة وتعبيرًا عن المباني ونسيج المدينة والتصميم. بطاقة \"صِف مبنى\" تتكرر كثيرًا في Speaking Part 2، كما تُناقَش العمارة الحديثة والتقليدية في Task 2. اقرأ الكلمات مع جملها المثال."},"en":{"title":"Vocabulary: architecture and design","intro":"This lesson has 12 words and phrases about buildings, the fabric of the city and design. The \"describe a building\" card comes up very often in Speaking Part 2, and modern versus traditional architecture is discussed in Task 2. Read the words with their example sentences."}},
+      "title": "Kelimeler: mimari ve tasarım",
+      "intro": "Bu derste binalar, şehir dokusu ve tasarım hakkında 12 kelime ve kalıp var. Speaking Part 2'de \"bir bina anlat\" kartı çok sık çıkar; Task 2'de de modern ve geleneksel mimari tartışılır. Kelimeleri örnek cümleleriyle oku.",
+      "words": [
+        { "en": "skyline", "pos": "noun", "tr": "şehrin silueti (gökyüzüne karşı binaların görüntüsü)", "ar": "أفق المدينة (صورة المباني على خلفية السماء)", "example": "The new towers have completely changed the city's skyline." },
+        { "en": "skyscraper", "pos": "noun", "tr": "gökdelen", "ar": "ناطحة سحاب", "example": "The city's first skyscraper was built in the 1960s." },
+        { "en": "heritage", "pos": "noun", "tr": "miras, kültürel miras", "ar": "التراث", "example": "The old market is an important part of the city's heritage." },
+        { "en": "restore", "pos": "verb", "tr": "restore etmek, eski hâline getirmek", "ar": "يرمِّم، يعيد إلى حالته الأصلية", "example": "It took ten years to restore the damaged cathedral." },
+        { "en": "contemporary", "pos": "adjective", "tr": "çağdaş, günümüze ait", "ar": "معاصر", "example": "The museum combines a historic building with a contemporary glass extension." },
+        { "en": "aesthetic", "pos": "adjective", "tr": "estetik, görsel güzellikle ilgili", "ar": "جمالي", "example": "The bridge was built for practical reasons, but its aesthetic value is also important." },
+        { "en": "functional", "pos": "adjective", "tr": "işlevsel, kullanışlı", "ar": "عملي، وظيفي", "example": "The kitchen is small but very functional." },
+        { "en": "layout", "pos": "noun", "tr": "yerleşim, plan (odaların düzeni)", "ar": "التصميم الداخلي، توزيع المساحات", "example": "The open-plan layout makes the flat feel larger." },
+        { "en": "natural light", "pos": "phrase", "tr": "gün ışığı, doğal ışık", "ar": "الضوء الطبيعي", "example": "Large windows let plenty of natural light into the classroom." },
+        { "en": "energy-efficient", "pos": "adjective", "tr": "enerji verimli", "ar": "موفِّر للطاقة", "example": "New homes must be more energy-efficient than older ones." },
+        { "en": "eyesore", "pos": "noun", "tr": "göze batan çirkin yapı", "ar": "مبنى أو منظر قبيح يؤذي العين", "example": "Many residents think the multi-storey car park is an eyesore." },
+        { "en": "blend in", "pos": "phrasal verb", "tr": "uyum sağlamak, çevreye uymak", "ar": "يندمج مع ما حوله", "example": "The new houses were built from local stone so that they would blend in." }
+      ],
+      "practice": [
+        {
+          "type": "choice", "id": "w1",
+          "prompt": "Most residents hate the new car park; they say it is an ___ that spoils the view of the river.",
+          "options": ["eyesore", "landmark", "heritage", "layout"],
+          "answer": 0,
+          "why": { "tr": "\"Eyesore\" göze batan çirkin yapı demek ve \"spoils the view\" (manzarayı bozuyor) ile uyumlu. \"landmark\" olumlu bir simge yapıdır. Ayrıca \"an\" sesli harfle başlayan kelime ister.", "ar": "eyesore تعني مبنى قبيحًا يؤذي العين، وتنسجم مع spoils the view. أما landmark فمعلم إيجابي، كما أن an تحتاج إلى كلمة تبدأ بصوت متحرك.", "en": "An eyesore is an ugly building that spoils a view; \"an\" also points to a vowel sound." },
+          "example": "The old factory had become an eyesore."
+        },
+        {
+          "type": "gap", "id": "w2",
+          "prompt": "Write the correct form of RESTORE: The ___ of the old theatre cost over two million pounds.",
+          "answers": ["restoration"],
+          "why": { "tr": "\"The\" ile \"of\" arasında isim gerekir: restore (fiil) → restoration (isim), restorasyon.", "ar": "بين The وof نحتاج إلى اسم: الفعل restore يصبح الاسم restoration أي الترميم.", "en": "A noun is needed between \"the\" and \"of\": restore → restoration." },
+          "example": "The restoration of the castle took eight years."
+        },
+        {
+          "type": "choice", "id": "w3",
+          "prompt": "The architects used local stone so that the new library would ___ with the older buildings around it.",
+          "options": ["blend in", "stand out", "put up", "take over"],
+          "answer": 0,
+          "why": { "tr": "Yerel taş kullanmanın amacı çevreye uymak: \"blend in (with)\". \"stand out\" tam tersi, dikkat çekmek demek. \"put up\" bina dikmek; burada anlamsız.", "ar": "الهدف من استخدام الحجر المحلي هو الاندماج مع المحيط: blend in with. أما stand out فعكسها، أي أن يلفت الانتباه، وput up تعني يبني.", "en": "Using local stone helps it blend in; \"stand out\" is the opposite." },
+          "example": "The extension blends in well with the old house."
+        },
+        {
+          "type": "choice", "id": "w4",
+          "prompt": "A building that is functional is…",
+          "options": ["designed mainly to be practical and useful", "very old and historically important", "decorated in an unusual style", "too large for its surroundings"],
+          "answer": 0,
+          "why": { "tr": "\"Functional\" işlevsel, kullanışlı demek; görünüşten çok kullanışa odaklanır. Tarihî önem \"heritage\" ile anlatılır.", "ar": "functional تعني عمليًا ومفيدًا، ويركّز على الاستخدام أكثر من المظهر. أما الأهمية التاريخية فيعبّر عنها heritage.", "en": "Functional means designed to be practical and useful." },
+          "example": "The office is functional rather than beautiful."
+        },
+        {
+          "type": "gap", "id": "w5",
+          "prompt": "Write ONE word: Large windows on the south side let in plenty of natural ___.",
+          "answers": ["light"],
+          "why": { "tr": "Kalıp \"natural light\" = gün ışığı. \"let in light\" (ışık almak) da doğal bir eşdizim.", "ar": "التعبير الثابت هو natural light أي الضوء الطبيعي، وlet in light تلازم طبيعي أيضًا.", "en": "The collocation is \"natural light\"; we \"let in\" light." },
+          "example": "The studio gets a lot of natural light in the morning."
+        },
+        {
+          "type": "choice", "id": "w6",
+          "prompt": "Which word is closest in meaning to \"contemporary\" in \"a contemporary design\"?",
+          "options": ["modern", "temporary", "traditional", "expensive"],
+          "answer": 0,
+          "why": { "tr": "\"Contemporary\" günümüze ait, çağdaş demek: modern. \"temporary\" (geçici) benzer görünür ama anlamı farklı; tuzak bu.", "ar": "contemporary تعني معاصرًا أي modern. أما temporary (مؤقت) فتشبهها في الشكل لكن معناها مختلف، وهي الفخّ.", "en": "Contemporary means modern, of the present time. \"Temporary\" only looks similar." },
+          "example": "The gallery shows contemporary art."
+        }
+      ]
+    },
+    {
+      "kind": "listen",
+      "i18n": {"ar":{"title":"الاستماع · Part 1: جولة معمارية سيرًا على الأقدام","intro":"امرأة تتصل بمكتب مهرجان معماري لتحجز مكانًا في جولة مشي بصحبة مرشد. اقرأ الأسئلة أولًا. يُشغَّل التسجيل مرة واحدة فقط.","tip":"في Part 1 أكثر الفخاخ شيوعًا معلومة تُذكر أولًا ثم تتغيّر: جولة ممتلئة، تاريخ غير مناسب، \"most of our walks start at…, but this one…\". استمع حتى نهاية الجملة. عند كتابة التاريخ يمكنك كتابة \"14\" أو \"14th\". والأسماء تُتهجّى حرفًا حرفًا: \"double\" تعني حرفين متماثلين."},"en":{"title":"Listening · Part 1: an architecture walking tour","intro":"A woman calls the office of an architecture festival to book a place on a guided walking tour. Read the questions first. The recording plays once.","tip":"In Part 1 the most common trap is information that is given first and then changes: a full tour, a date that doesn't work, \"most of our walks start at…, but this one…\". Listen to the end of the sentence. When writing a date you can write \"14\" or \"14th\". Names are spelled letter by letter: \"double\" means two of the same letter."}},
+      "title": "Dinleme · Part 1: mimari yürüyüş turu",
+      "intro": "Bir kadın, bir mimari festivalinin rehberli yürüyüş turuna yer ayırtmak için festival ofisini arıyor. Önce soruları oku. Kayıt bir kez çalar.",
+      "tip": "Part 1'de en sık tuzak, önce söylenen ama sonra değişen bilgidir: dolu tur, uymayan tarih, \"most of our walks start at…, but this one…\". Cümlenin sonuna kadar dinle. Tarih yazarken \"14\" ya da \"14th\" yazabilirsin. İsimler harf harf söylenir: \"double\" iki aynı harf demek.",
+      "audio": {
+        "type": "audio", "id": "l-audio",
+        "speakers": {
+          "N": { "name": "Narrator", "voice": "en-GB-SoniaNeural" },
+          "owen": { "name": "Owen", "voice": "en-GB-RyanNeural" },
+          "grace": { "name": "Grace", "voice": "en-NZ-MollyNeural" }
+        },
+        "lines": [
+          { "speaker": "N", "text": "You will hear a woman phoning the office of an architecture festival to book a guided walk. First, you have some time to look at questions one to six.", "pauseAfterMs": 2500 },
+          { "speaker": "N", "text": "Now listen carefully and answer questions one to six.", "pauseAfterMs": 1200 },
+          { "speaker": "owen", "text": "Hello, Carrow Architecture Festival, Owen speaking. How can I help?", "pauseAfterMs": 400 },
+          { "speaker": "grace", "text": "Hi. I'm calling about the guided walks. I saw the programme online, but I'd rather book over the phone, if that's all right.", "pauseAfterMs": 400 },
+          { "speaker": "owen", "text": "Of course. Which walk were you interested in?", "pauseAfterMs": 400 },
+          { "speaker": "grace", "text": "Well, I was hoping to do the Old Town one, the heritage walk, but the website says it's sold out.", "pauseAfterMs": 400 },
+          { "speaker": "owen", "text": "I'm afraid it is. It always goes first. But a lot of people who wanted that one are choosing the Riverside Trail instead. It covers the old warehouses along the river, several of which have been restored and turned into flats and offices, and then the new business district.", "pauseAfterMs": 400 },
+          { "speaker": "grace", "text": "Oh, that sounds good. Is that where the new skyscraper is? The glass one?", "pauseAfterMs": 400 },
+          { "speaker": "owen", "text": "The Pellam Tower, yes. It's changed the whole skyline, though not everyone likes it. The council wanted to restore the warehouses next to it, but the developers knocked two of them down instead. When it went up, the local paper called it an eyesore. It's said to be one of the most energy-efficient office buildings in the country, though, so people have softened a bit.", "pauseAfterMs": 400 },
+          { "speaker": "grace", "text": "I'll be interested to see it. OK, the Riverside Trail, please.", "pauseAfterMs": 400 },
+          { "speaker": "owen", "text": "Lovely. Can I take your name?", "pauseAfterMs": 400 },
+          { "speaker": "grace", "text": "Grace Feltham. That's F-E-L-T-H-A-M.", "pauseAfterMs": 400 },
+          { "speaker": "owen", "text": "Thank you. And which date would you like? We're running it on the tenth and the fourteenth of May.", "pauseAfterMs": 400 },
+          { "speaker": "grace", "text": "I'm working on the tenth, so it'll have to be the fourteenth.", "pauseAfterMs": 400 },
+          { "speaker": "owen", "text": "The fourteenth, then. It starts at ten in the morning and lasts about two and a half hours.", "pauseAfterMs": 400 },
+          { "speaker": "grace", "text": "And where do we meet? At the museum?", "pauseAfterMs": 400 },
+          { "speaker": "owen", "text": "Most of our walks start at the museum, yes, but this one meets at the old fire station on Quay Street. It's a contemporary arts centre now. You can't miss it, it's painted bright red.", "pauseAfterMs": 400 },
+          { "speaker": "grace", "text": "Great. And what does the ticket include?", "pauseAfterMs": 400 },
+          { "speaker": "owen", "text": "It's twelve pounds, and that includes a short printed guidebook. People often ask whether it includes going up the Pellam Tower, but the viewing floor is closed for repairs until the summer. There is a café at the fire station, but drinks aren't included, I'm afraid.", "pauseAfterMs": 400 },
+          { "speaker": "grace", "text": "That's fine. To be honest, I've got a particular reason for going. A friend who writes for an architecture magazine recommended the walk, but the real reason is that my partner and I are thinking of buying one of the flats in a converted warehouse.", "pauseAfterMs": 400 },
+          { "speaker": "grace", "text": "I'd like to see how they've managed the layout, and whether the flats get enough natural light. Old warehouses tend to have quite small windows, don't they? I was worried they might feel dark inside.", "pauseAfterMs": 400 },
+          { "speaker": "owen", "text": "Then you're in luck. The developers let us into one of the show flats on the way. People are always surprised how spacious they are. The architects kept the original brick walls, so the outside blends in with its neighbours, but the interiors are very functional and modern.", "pauseAfterMs": 400 },
+          { "speaker": "grace", "text": "Perfect. That's exactly what I want to see.", "pauseAfterMs": 1500 },
+          { "speaker": "N", "text": "That is the end of the recording.", "pauseAfterMs": 0 }
+        ]
+      },
+      "questions": [
+        { "type": "text", "text": "Questions 1–4. Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer." },
+        { "type": "text", "text": "Carrow Architecture Festival: walk booking" },
+        {
+          "type": "gap", "id": "l1",
+          "prompt": "1. Surname: ___",
+          "answers": ["Feltham"],
+          "why": { "tr": "Grace soyadını harf harf söylüyor: \"F-E-L-T-H-A-M\".", "ar": "تتهجّى Grace اسم عائلتها: \"F-E-L-T-H-A-M\".", "en": "\"Grace Feltham. That's F-E-L-T-H-A-M.\"" },
+          "example": "Could you spell your surname, please?"
+        },
+        {
+          "type": "gap", "id": "l2",
+          "prompt": "2. Name of walk: the ___ Trail",
+          "answers": ["Riverside"],
+          "why": { "tr": "Old Town (heritage) yürüyüşü dolu: \"it's sold out\". Grace \"OK, the Riverside Trail, please\" diyor.", "ar": "جولة Old Town ممتلئة (sold out)، فتختار Grace: \"OK, the Riverside Trail, please\".", "en": "The heritage walk is sold out; she chooses \"the Riverside Trail\"." },
+          "example": "The heritage walk was sold out, so we chose another one."
+        },
+        {
+          "type": "gap", "id": "l3",
+          "prompt": "3. Date: ___ May",
+          "answers": ["14", "14th", "fourteenth"],
+          "why": { "tr": "İki tarih var: onu ve on dördü. \"I'm working on the tenth, so it'll have to be the fourteenth.\" Tuzak: 10.", "ar": "هناك تاريخان: العاشر والرابع عشر. \"I'm working on the tenth, so it'll have to be the fourteenth\". الفخّ: 10.", "en": "She is working on the tenth, \"so it'll have to be the fourteenth\"." },
+          "example": "I'm busy on the tenth, so the fourteenth is better."
+        },
+        {
+          "type": "gap", "id": "l4",
+          "prompt": "4. Meeting point: the old ___ station, Quay Street",
+          "answers": ["fire"],
+          "why": { "tr": "Grace müzeyi soruyor; Owen: \"Most of our walks start at the museum, yes, but this one meets at the old fire station.\" Tuzak: museum.", "ar": "تسأل Grace عن المتحف، فيجيب Owen: \"Most of our walks start at the museum, yes, but this one meets at the old fire station\".", "en": "\"Most of our walks start at the museum … but this one meets at the old fire station.\"" },
+          "example": "Most tours start at the museum, but this one meets at the station."
+        },
+        { "type": "text", "text": "Questions 5–6. Choose the correct letter." },
+        {
+          "type": "choice", "id": "l5",
+          "prompt": "5. What is included in the price of the walk?",
+          "options": ["a printed guidebook", "a visit to the tower's viewing floor", "a drink at the café"],
+          "answer": 0,
+          "why": { "tr": "\"that includes a short printed guidebook\". Seyir terası tamirde kapalı; kafede içecekler \"aren't included\".", "ar": "\"that includes a short printed guidebook\". أما منصة المشاهدة فمغلقة للإصلاح، والمشروبات في المقهى aren't included.", "en": "\"That includes a short printed guidebook.\" The viewing floor is closed; drinks are not included." },
+          "example": "The ticket includes a guidebook but not drinks."
+        },
+        {
+          "type": "choice", "id": "l6",
+          "prompt": "6. Why does Grace mainly want to go on the walk?",
+          "options": ["She is writing an article for a magazine.", "She may buy a flat in one of the buildings.", "She is studying architecture."],
+          "answer": 1,
+          "why": { "tr": "Dergi için yazan kişi arkadaşı; Grace \"the real reason is that my partner and I are thinking of buying one of the flats in a converted warehouse\" diyor.", "ar": "صديقتها هي التي تكتب لمجلة، أما Grace فتقول: \"the real reason is that my partner and I are thinking of buying one of the flats\".", "en": "A friend writes for a magazine; \"the real reason is that my partner and I are thinking of buying one of the flats\"." },
+          "example": "The real reason I went was to look at the flats."
+        }
+      ]
+    },
+    {
+      "kind": "read",
+      "i18n": {"ar":{"title":"القراءة: مطابقة المعلومات وإكمال الجمل","intro":"ستقرأ نصًا أكاديميًا عن مبانٍ تقليدية وحديثة تبقى باردة في المناخات الحارة دون مكيّفات. الفقرات مرقّمة A–F.","tip":"في أسئلة Matching information لا تأتي المعلومات بترتيب النص، وقد تكون الفقرة الواحدة إجابة لأكثر من سؤال. يسأل السؤال عن أنواع من المعلومات مثل \"an example\" و\"a reason\" و\"a comparison\": حدّد أولًا نوع المعلومة التي تبحث عنها، ثم امسح الفقرات. وفي إكمال الجمل انسخ الكلمات من النص كما هي."},"en":{"title":"Reading: matching information and sentence completion","intro":"You will read an academic text about traditional and modern buildings that stay cool in hot climates without air conditioning. The paragraphs are labelled A–F.","tip":"In Matching information questions, the information is not in text order and one paragraph can be the answer more than once. The question asks for types of information like \"an example\", \"a reason\" or \"a comparison\": first decide what type of information you are looking for, then scan the paragraphs. In sentence completion, copy the words from the text exactly."}},
+      "title": "Okuma: bilgi eşleştirme ve cümle tamamlama",
+      "intro": "Sıcak iklimlerde klima olmadan serin kalan geleneksel ve modern binaları anlatan akademik bir metin okuyacaksın. Paragraflar A–F diye işaretli.",
+      "tip": "Matching information sorularında bilgiler metin sırasında değildir ve bir paragraf birden fazla kez cevap olabilir. Soru \"an example\", \"a reason\", \"a comparison\" gibi bilgi türlerini sorar: önce ne tür bilgiyi aradığını belirle, sonra paragrafları tara. Cümle tamamlamada kelimeleri metinden aynen kopyala.",
+      "passage": [
+        { "type": "heading", "text": "Keeping Cool Without Machines" },
+        { "type": "text", "text": "A  For most of the twentieth century, the solution to a hot climate seemed obvious: build what you like and install air conditioning. Glass towers appeared in desert cities and tropical capitals, looking much the same as their equivalents in cooler countries. Such buildings can be striking, and some have transformed a city's skyline, but they depend on enormous amounts of electricity. Air conditioning is now thought to account for a significant share of global electricity demand, and that share is expected to grow as temperatures rise and incomes increase." },
+        { "type": "text", "text": "B  Traditional builders had no such option, and their solutions are now attracting fresh interest. In parts of Iran and the Gulf, houses were topped with windcatchers, tall towers that catch passing breezes and direct them down into the rooms below. Thick walls of mud or stone absorbed heat during the day and released it slowly at night. Narrow streets kept walls in shade, and many homes were arranged around a courtyard with a pool or plants, which cooled the air through evaporation." },
+        { "type": "text", "text": "C  These methods are not simply a matter of heritage. Engineers who have measured old buildings have found that they often perform remarkably well. A windcatcher combined with a shaded courtyard can keep indoor temperatures several degrees below the temperature outside, without using any power at all. For this reason, some architects argue that the knowledge of earlier builders should be studied as seriously as modern technology, and that efforts to restore historic houses should include recording how they work, not just how they look." },
+        { "type": "text", "text": "D  One of the best-known modern examples is the Eastgate Centre, an office and shopping complex in Harare, Zimbabwe, designed by the architect Mick Pearce and completed in 1996. Its design was inspired by the mounds that termites build, which stay at a fairly steady temperature even in hot weather. The building stores the coolness of the night in its heavy structure and uses chimneys to draw warm air out. It is reported to use far less energy than conventional buildings of a similar size, although such comparisons are difficult to make precisely." },
+        { "type": "text", "text": "E  Not everyone is convinced that these ideas can be applied widely. Critics point out that traditional designs worked for low buildings with a small number of occupants, whereas modern cities need dense housing for millions. A courtyard house takes up a great deal of land, and a skyscraper cannot easily be cooled by the wind alone. Furthermore, people's expectations have changed: many office workers now regard a constant indoor temperature as normal, and few developers are willing to take risks with buildings that may not attract tenants. There is also the question of cost: a heavy structure that stores coolness requires more material and more careful engineering than a light frame covered in glass, and the savings on electricity are only felt over many years." },
+        { "type": "text", "text": "F  The most promising approach may be a combination of old and new. Contemporary architects are using careful layout, shading and natural light to reduce the need for cooling, while relying on efficient machines only when necessary. Planners in several cities now require new buildings to be energy-efficient, and some encourage designs that blend in with the local climate rather than ignore it. The result need not be a return to the past, but a recognition that a building's aesthetic qualities and its comfort can come from the same source." }
+      ],
+      "questions": [
+        { "type": "heading", "text": "Questions 1–4: Which paragraph contains the following information?" },
+        { "type": "text", "text": "Choose A, B, C, D, E or F. The statements are not in the order of the text. A paragraph may be the answer more than once." },
+        {
+          "type": "choice", "id": "r1",
+          "prompt": "1. a reason why traditional methods may not suit large modern cities",
+          "options": ["A", "B", "C", "D", "E", "F"],
+          "answer": 4,
+          "why": { "tr": "Paragraf E: geleneksel tasarımlar alçak ve az kişilik binalar içindi, \"whereas modern cities need dense housing for millions\".", "ar": "الفقرة E: التصاميم التقليدية كانت لمبانٍ منخفضة قليلة السكان \"whereas modern cities need dense housing for millions\".", "en": "E: traditional designs suited low buildings, \"whereas modern cities need dense housing for millions\"." },
+          "example": "The design works for small houses but not for large cities."
+        },
+        {
+          "type": "choice", "id": "r2",
+          "prompt": "2. an example of a building whose design copied something found in nature",
+          "options": ["A", "B", "C", "D", "E", "F"],
+          "answer": 3,
+          "why": { "tr": "Paragraf D: Eastgate Centre'ın tasarımı \"was inspired by the mounds that termites build\" (termit yuvaları).", "ar": "الفقرة D: تصميم مركز Eastgate \"was inspired by the mounds that termites build\" أي تلال النمل الأبيض.", "en": "D: the Eastgate Centre \"was inspired by the mounds that termites build\"." },
+          "example": "The design was inspired by the shape of a shell."
+        },
+        {
+          "type": "choice", "id": "r3",
+          "prompt": "3. a description of features that cooled homes in the past",
+          "options": ["A", "B", "C", "D", "E", "F"],
+          "answer": 1,
+          "why": { "tr": "Paragraf B rüzgâr kuleleri, kalın duvarlar, dar sokaklar ve avlulu evleri anlatıyor: geçmişte evleri serinleten özellikler.", "ar": "تصف الفقرة B أبراج الرياح والجدران السميكة والشوارع الضيقة والبيوت ذات الفناء، وهي ميزات كانت تبرّد البيوت قديمًا.", "en": "B describes windcatchers, thick walls, narrow streets and courtyards." },
+          "example": "Thick walls kept the house cool in summer."
+        },
+        {
+          "type": "choice", "id": "r4",
+          "prompt": "4. a prediction that the demand for cooling will increase",
+          "options": ["A", "B", "C", "D", "E", "F"],
+          "answer": 0,
+          "why": { "tr": "Paragraf A: \"that share is expected to grow as temperatures rise and incomes increase\". \"is expected to\" bir tahmin bildirir.", "ar": "الفقرة A: \"that share is expected to grow as temperatures rise and incomes increase\"، وis expected to تعبّر عن توقّع.", "en": "A: \"that share is expected to grow as temperatures rise and incomes increase\"." },
+          "example": "Demand for electricity is expected to grow."
+        },
+        { "type": "heading", "text": "Questions 5–7: Complete the sentences." },
+        { "type": "text", "text": "Write NO MORE THAN TWO WORDS from the passage for each answer." },
+        {
+          "type": "gap", "id": "r5",
+          "prompt": "5. In many traditional homes, a courtyard with a pool or plants cooled the air through ___.",
+          "answers": ["evaporation"],
+          "why": { "tr": "Paragraf B: \"a courtyard with a pool or plants, which cooled the air through evaporation\". Buharlaşma havayı serinletir.", "ar": "الفقرة B: \"a courtyard with a pool or plants, which cooled the air through evaporation\"، فالتبخّر يبرّد الهواء.", "en": "\"…which cooled the air through evaporation.\"" },
+          "example": "Water cools the air through evaporation."
+        },
+        {
+          "type": "gap", "id": "r6",
+          "prompt": "6. Some architects believe that when people restore historic houses, they should record how the buildings ___.",
+          "answers": ["work"],
+          "why": { "tr": "Paragraf C: \"efforts to restore historic houses should include recording how they work, not just how they look\". Görünüşü değil, nasıl çalıştığını kaydetmek.", "ar": "الفقرة C: \"should include recording how they work, not just how they look\"، أي كيف تعمل لا كيف تبدو فقط.", "en": "\"…recording how they work, not just how they look.\"" },
+          "example": "We should record how old buildings work, not just how they look."
+        },
+        {
+          "type": "gap", "id": "r7",
+          "prompt": "7. Many office workers now regard a constant indoor ___ as normal.",
+          "answers": ["temperature"],
+          "why": { "tr": "Paragraf E: \"many office workers now regard a constant indoor temperature as normal\". Boşluğa tek kelime yeter: temperature.", "ar": "الفقرة E: \"many office workers now regard a constant indoor temperature as normal\". الجواب كلمة واحدة: temperature.", "en": "\"Many office workers now regard a constant indoor temperature as normal.\"" },
+          "example": "Office workers expect a constant indoor temperature all year."
+        }
+      ]
+    },
+    {
+      "kind": "language",
+      "i18n": {"ar":{"title":"اللغة: المبني للمجهول مع أفعال النقل (It is believed that… / X is said to…)"},"en":{"title":"Language: the passive with reporting verbs (It is believed that… / X is said to…)"}},
+      "title": "Dil: rapor fiilleriyle edilgen yapı (It is believed that… / X is said to…)",
+      "explain": {
+        "tr": "Akademik yazıda bir bilginin kaynağını belirtmeden aktarmak için rapor fiilleriyle edilgen yapı kullanılır (say, believe, think, report, expect, know, consider). İki kalıp var: (1) It + is/was + V3 + that + cümle: It is believed that the tower is the tallest in Europe. (2) Özne + is/was + V3 + to + fiil: The tower is believed to be the tallest in Europe. Geçmişteki bir olay için \"to have + V3\": The bridge is said to have cost millions. Bu yapılar hem resmîdir hem de iddiaya temkinli bir mesafe koyar; Task 2'de \"Everybody knows\" yerine \"It is widely believed that…\" çok daha iyi görünür. Dikkat: \"It is said to…\" değil, \"It is said that…\" ya da \"The building is said to…\".",
+        "ar": "في الكتابة الأكاديمية نستخدم المبني للمجهول مع أفعال النقل (say, believe, think, report, expect, know, consider) لنقل معلومة دون ذكر مصدرها. هناك صيغتان: (1) It + is/was + التصريف الثالث + that + جملة: It is believed that the tower is the tallest in Europe. (2) فاعل + is/was + التصريف الثالث + to + الفعل: The tower is believed to be the tallest in Europe. ولحدث ماضٍ نستخدم to have + التصريف الثالث: The bridge is said to have cost millions. هذه الصيغ رسمية وتضع مسافة حذرة من الادعاء، ففي Task 2 تبدو It is widely believed that… أفضل بكثير من Everybody knows.",
+        "en": "In academic writing, reporting verbs (say, believe, think, report, expect, know, consider) are used in the passive to report information without naming the source. There are two patterns: (1) It + is/was + past participle + that + clause: It is believed that the tower is the tallest in Europe. (2) Subject + is/was + past participle + to + verb: The tower is believed to be the tallest in Europe. For an earlier event use to have + past participle: The bridge is said to have cost millions. These forms are formal and keep a cautious distance from the claim: \"It is widely believed that…\" is far better than \"Everybody knows\" in Task 2."
+      },
+      "examples": [
+        "It is widely believed that green spaces improve the well-being of people who live in cities.",
+        "The new skyscraper is said to be the most energy-efficient building in the region.",
+        "The cathedral is thought to have taken more than a century to build.",
+        "It has been reported that the council plans to restore the old market hall."
+      ],
+      "questions": [
+        {
+          "type": "choice", "id": "g1",
+          "prompt": "It ___ that the old station will be turned into a museum.",
+          "options": ["is expected", "expects", "is expected to", "has expected"],
+          "answer": 0,
+          "why": { "tr": "Kalıp: It + is + V3 + that + cümle. \"It expects\" etken ve anlamsız; \"is expected to\" sonrasında \"that\" değil fiil gelir.", "ar": "الصيغة: It + is + التصريف الثالث + that + جملة. أما It expects فمبني للمعلوم ولا معنى له، وبعد is expected to يأتي فعل لا that.", "en": "Pattern 1: It + is + past participle + that + clause." },
+          "example": "It is expected that the bridge will open next year."
+        },
+        {
+          "type": "choice", "id": "g2",
+          "prompt": "The palace is believed ___ in the fourteenth century.",
+          "options": ["to have been built", "to be built", "that it was built", "having built"],
+          "answer": 0,
+          "why": { "tr": "Bina geçmişte yapıldı (inşa eylemi şimdiki inançtan önce) ve edilgen: \"to have been + V3\". \"to be built\" şimdi ya da gelecek anlamı verir.", "ar": "بُني القصر في الماضي (قبل وقت الاعتقاد الحالي) والمعنى مبني للمجهول: to have been + التصريف الثالث. أما to be built فتدل على الحاضر أو المستقبل.", "en": "An earlier, passive action: to have been + past participle." },
+          "example": "The bridge is thought to have been designed by a local engineer."
+        },
+        {
+          "type": "choice", "id": "g3",
+          "prompt": "Which sentence is correct?",
+          "options": ["The tower is said to be the tallest in the country.", "It is said to the tower is the tallest in the country.", "The tower is said that it is the tallest in the country.", "The tower says to be the tallest in the country."],
+          "answer": 0,
+          "why": { "tr": "Kalıp 2: Özne + is said + to + fiil. B ve C iki kalıbı karıştırıyor. D etken: kule bir şey söylemiyor.", "ar": "الصيغة الثانية: فاعل + is said + to + فعل. في B وC خلط بين الصيغتين، وD مبني للمعلوم كأن البرج يقول شيئًا.", "en": "Pattern 2: subject + is said + to + verb. B and C mix the patterns; D is active." },
+          "example": "The museum is said to be the best in Europe."
+        },
+        {
+          "type": "gap", "id": "g4",
+          "prompt": "Write ONE word: It is widely ___ (KNOW) that traditional houses stay cool in summer.",
+          "answers": ["known"],
+          "why": { "tr": "It + is + V3 + that: know → known. \"widely known\" (yaygın olarak bilinen) doğal bir eşdizim.", "ar": "It + is + التصريف الثالث + that: الفعل know يصبح known، وwidely known تلازم طبيعي.", "en": "It + is + past participle: known. \"Widely known\" is a natural collocation." },
+          "example": "It is widely known that the area floods in winter."
+        },
+        {
+          "type": "choice", "id": "g5",
+          "prompt": "\"People say that the architect designed the building in just three weeks.\" Which sentence has the same meaning?",
+          "options": ["The architect is said to have designed the building in just three weeks.", "The architect is said to design the building in just three weeks.", "The building is said to design in just three weeks.", "It says that the architect designed the building in three weeks."],
+          "answer": 0,
+          "why": { "tr": "Söyleme şimdi, tasarım geçmişte: \"is said to have + V3\". B şimdiki zaman anlamı verir; C'de bina tasarım yapıyormuş gibi; D'de \"It says\" etken.", "ar": "القول في الحاضر والتصميم في الماضي: is said to have + التصريف الثالث. B تعطي معنى الحاضر، وC كأن المبنى هو المصمِّم، وD مبني للمعلوم.", "en": "Present report, past action: is said to have + past participle." },
+          "example": "The painter is said to have finished the picture in one night."
+        }
+      ]
+    },
+    {
+      "kind": "write",
+      "i18n": {"ar":{"title":"الكتابة · Task 2: مقال رأي","tip":"في مقال الرأي أجب عن عبارة \"to what extent\": أوافق تمامًا، أو إلى حد كبير، أو جزئيًا. وإذا قدّمت رأيًا جزئيًا ففرّق بوضوح بين الحالات التي توافق فيها والتي لا توافق فيها. استخدم كلمات هذا الدرس (heritage، blend in، contemporary، eyesore، skyline) وتركيبًا واحدًا على الأقل للمبني للمجهول مع فعل نقل (It is often argued that…)."},"en":{"title":"Writing · Task 2: opinion essay","tip":"In an opinion essay, answer the \"to what extent\" part: you agree completely, largely or partly. If you give a partial view, clearly separate the cases where you agree from those where you don't. Use this lesson's words (heritage, blend in, contemporary, eyesore, skyline) and at least one passive with a reporting verb (It is often argued that…)."}},
+      "title": "Yazma · Task 2: görüş denemesi",
+      "task": 2,
+      "prompt": "Some people think that new buildings in a town or city should be designed to match the traditional style of the area.\n\nTo what extent do you agree or disagree?",
+      "minutes": 40,
+      "minWords": 250,
+      "tip": "Görüş denemesinde \"to what extent\" ifadesine cevap ver: tamamen, büyük ölçüde ya da kısmen katılıyorum. Kısmi bir görüş verirsen hangi durumlarda katıldığını, hangilerinde katılmadığını net ayır. Bu dersin kelimelerini (heritage, blend in, contemporary, eyesore, skyline) ve en az bir rapor fiilli edilgen yapı (It is often argued that…) kullan.",
+      "model": "As cities grow, planners must decide whether new buildings should follow the traditional character of a place or express a modern style. It is often argued that every new building should match its historic surroundings. I agree with this view only partly: in historic districts, new buildings should respect the existing style, but elsewhere architects should be free to design in a contemporary way.\n\nThere are strong reasons for protecting the traditional appearance of older areas. The heritage of a town is part of its identity, and residents often feel a strong attachment to familiar streets and materials. A large glass office block placed in the middle of a medieval square can easily become an eyesore, damaging the very qualities that attract visitors. Old town centres are also believed to bring significant income from tourism in many countries, so it makes economic as well as cultural sense to ensure that new buildings blend in. This does not mean copying the past exactly; using local stone, similar heights and familiar roof shapes is often enough.\n\nHowever, requiring all new buildings to imitate old styles would be a mistake. Modern needs are very different from those of the past: hospitals, stations and apartment blocks for thousands of people cannot be built in the same way as a village house. Contemporary design also allows buildings to be far more energy-efficient, with better insulation and more natural light. Moreover, many structures that are now loved as a landmark, such as the Eiffel Tower, were controversial when they were built. If every city had insisted on traditional styles, these buildings would never have existed.\n\nIn conclusion, I believe that new buildings in historic areas should match their surroundings, while other parts of a city should be open to modern architecture. A balanced approach of this kind protects the past without preventing the future."
+    },
+    {
+      "kind": "speak",
+      "i18n": {"ar":{"title":"التحدث: المباني والمدن"},"en":{"title":"Speaking: buildings and cities"}},
+      "title": "Konuşma: binalar ve şehirler",
+      "part1": [
+        "What kind of building do you live in?",
+        "Is there a building in your town that you particularly like?",
+        "Do you prefer modern or old buildings? Why?",
+        "Would you like to live in a very tall building? Why or why not?"
+      ],
+      "card": {
+        "title": "Describe a building you find beautiful or interesting.",
+        "points": [
+          "where it is",
+          "what it looks like",
+          "what it is used for"
+        ],
+        "explain": "and explain why you find this building beautiful or interesting."
+      },
+      "useful": [
+        "It's something of a landmark in my city; everyone knows it.",
+        "It is said to have been built in the…, although nobody is completely sure.",
+        "What strikes you first is the way it…",
+        "Inside, the layout is very open, and there's a lot of natural light.",
+        "Unlike most modern buildings, it really blends in with its surroundings.",
+        "I suppose what I love about it is that it's both beautiful and functional."
+      ]
+    }
+  ]
+}

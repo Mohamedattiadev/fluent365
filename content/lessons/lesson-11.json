@@ -1,0 +1,741 @@
+{
+  "id": "lesson-11",
+  "number": 11,
+  "title": "Crime and the Law",
+  "topic": "Crime & the law",
+  "level": "B1+",
+  "goal": "Follow a discussion and a text about punishment and crime prevention, and report other people's views with reported speech.",
+  "steps": [
+    {
+      "kind": "words",
+      "i18n": {"ar":{"title":"المفردات: الجريمة والقانون","intro":"في هذا الدرس 12 كلمة وتعبيرًا عن الجريمة والعقوبة والعدالة. كثيرًا ما تظهر في IELTS Task 2 أسئلة مثل \"السجن أم الخدمة المجتمعية؟\" أو \"كيف نقلّل جرائم الشباب؟\"، وهذه الكلمات تخدمك في مثل هذه الأسئلة."},"en":{"title":"Vocabulary: crime and law","intro":"This lesson has 12 words and phrases about crime, punishment and justice. IELTS Task 2 often asks questions like \"prison or community service?\" or \"how can youth crime be reduced?\"; these words are for those questions."}},
+      "title": "Kelimeler: suç ve hukuk",
+      "intro": "Bu derste suç, ceza ve adalet hakkında 12 kelime ve kalıp var. IELTS Task 2'de \"hapis cezası mı, kamu hizmeti mi?\" ya da \"gençlik suçları nasıl azaltılır?\" gibi sorular sık çıkar; bu kelimeler o sorular için.",
+      "words": [
+        {
+          "en": "offender",
+          "pos": "noun",
+          "tr": "suçlu, fail",
+          "ar": "مرتكب الجريمة؛ الجاني",
+          "example": "Young offenders are often given community service instead of prison."
+        },
+        {
+          "en": "commit a crime",
+          "pos": "phrase",
+          "tr": "suç işlemek",
+          "ar": "يرتكب جريمة",
+          "example": "People who commit a crime for the first time may receive a lighter sentence."
+        },
+        {
+          "en": "sentence",
+          "pos": "noun / verb",
+          "tr": "ceza (mahkeme kararı); ceza vermek",
+          "ar": "حُكم قضائي؛ يحكم على",
+          "example": "The judge sentenced him to two years in prison."
+        },
+        {
+          "en": "rehabilitation",
+          "pos": "noun",
+          "tr": "rehabilitasyon, topluma yeniden kazandırma",
+          "ar": "إعادة التأهيل",
+          "example": "Education in prison plays a key role in rehabilitation."
+        },
+        {
+          "en": "deterrent",
+          "pos": "noun",
+          "tr": "caydırıcı unsur",
+          "ar": "رادع",
+          "example": "Some people believe that long prison sentences act as a deterrent."
+        },
+        {
+          "en": "reoffend",
+          "pos": "verb",
+          "tr": "yeniden suç işlemek",
+          "ar": "يعود إلى ارتكاب الجريمة",
+          "example": "Prisoners who find a job after release are less likely to reoffend."
+        },
+        {
+          "en": "law enforcement",
+          "pos": "phrase",
+          "tr": "kolluk, yasaların uygulanması",
+          "ar": "إنفاذ القانون",
+          "example": "Law enforcement agencies are using new technology to track online fraud."
+        },
+        {
+          "en": "juvenile",
+          "pos": "adjective",
+          "tr": "çocuk/genç (suçlu) ile ilgili",
+          "ar": "خاص بالأحداث (القاصرين)",
+          "example": "Juvenile crime has fallen in many cities over the past decade."
+        },
+        {
+          "en": "community service",
+          "pos": "phrase",
+          "tr": "kamu hizmeti cezası",
+          "ar": "الخدمة المجتمعية (عقوبة)",
+          "example": "He was ordered to do 100 hours of community service."
+        },
+        {
+          "en": "victim",
+          "pos": "noun",
+          "tr": "mağdur, kurban",
+          "ar": "الضحية",
+          "example": "The victim reported the theft to the police the next day."
+        },
+        {
+          "en": "crime rate",
+          "pos": "phrase",
+          "tr": "suç oranı",
+          "ar": "معدّل الجريمة",
+          "example": "The crime rate in the city centre dropped after street lighting was improved."
+        },
+        {
+          "en": "surveillance",
+          "pos": "noun",
+          "tr": "gözetim, izleme",
+          "ar": "المراقبة",
+          "example": "Surveillance cameras are now common in shopping centres."
+        }
+      ],
+      "practice": [
+        {
+          "type": "choice",
+          "id": "w1",
+          "prompt": "Prisoners who learn a trade are less likely to ___ after they are released.",
+          "options": [
+            "reoffend",
+            "sentence",
+            "commit",
+            "deter"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "\"reoffend\" = yeniden suç işlemek. \"commit\" bir nesne ister (commit a crime); \"sentence\" hâkimin yaptığı iştir.",
+            "ar": "reoffend تعني يعود إلى الجريمة. أما commit فتحتاج إلى مفعول (commit a crime)، وsentence عمل القاضي.",
+            "en": "\"Reoffend\" means commit another crime; \"commit\" needs an object."
+          },
+          "example": "Training programmes help prisoners not to reoffend."
+        },
+        {
+          "type": "choice",
+          "id": "w2",
+          "prompt": "Most people who ___ a crime are caught within a few days.",
+          "options": [
+            "make",
+            "do",
+            "commit",
+            "take"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "Doğru eşdizim \"commit a crime\". Türkçedeki \"suç yapmak\" gibi \"make/do a crime\" denmez.",
+            "ar": "التلازم الصحيح هو commit a crime، ولا نقول make أو do a crime.",
+            "en": "The collocation is \"commit a crime\"."
+          },
+          "example": "He was only sixteen when he committed his first crime."
+        },
+        {
+          "type": "gap",
+          "id": "w3",
+          "prompt": "Write the correct form of REHABILITATE: Many experts think prisons should focus on ___ rather than punishment.",
+          "answers": [
+            "rehabilitation"
+          ],
+          "why": {
+            "tr": "\"focus on\" sonrasında isim gerekir: rehabilitate → rehabilitation.",
+            "ar": "بعد focus on نحتاج إلى اسم: rehabilitate تصبح rehabilitation.",
+            "en": "A noun is needed after \"focus on\": rehabilitation."
+          },
+          "example": "Rehabilitation programmes include education and job training."
+        },
+        {
+          "type": "choice",
+          "id": "w4",
+          "prompt": "A deterrent is something that…",
+          "options": [
+            "helps victims after a crime",
+            "records what happens in a street",
+            "decides the length of a sentence",
+            "makes people decide not to do something"
+          ],
+          "answer": 3,
+          "why": {
+            "tr": "\"deterrent\" insanları bir şeyi yapmaktan vazgeçiren şeydir (caydırıcı). Kayıt yapan şey \"surveillance camera\".",
+            "ar": "deterrent هو ما يجعل الناس يمتنعون عن فعل شيء (رادع). أما ما يسجّل ما يحدث فهو surveillance camera.",
+            "en": "A deterrent makes people decide not to do something."
+          },
+          "example": "High fines are a strong deterrent to dangerous driving."
+        },
+        {
+          "type": "gap",
+          "id": "w5",
+          "prompt": "Write ONE word: Instead of prison, the teenager was ordered to do 80 hours of community ___.",
+          "answers": [
+            "service"
+          ],
+          "why": {
+            "tr": "Kalıp \"community service\" = kamu hizmeti cezası (park temizliği gibi ücretsiz iş).",
+            "ar": "التعبير الثابت community service يعني الخدمة المجتمعية كعقوبة (مثل تنظيف الحدائق دون أجر).",
+            "en": "The fixed phrase is \"community service\"."
+          },
+          "example": "She did her community service at a local charity shop."
+        },
+        {
+          "type": "choice",
+          "id": "w6",
+          "prompt": "Which word completes both phrases: '___ court' and '___ crime' (involving young people)?",
+          "options": [
+            "criminal",
+            "juvenile",
+            "victim",
+            "deterrent"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"juvenile court\" (çocuk mahkemesi) ve \"juvenile crime\" (çocuk/genç suçları) doğal eşdizimler; ikisi de gençlerle ilgili.",
+            "ar": "juvenile court (محكمة الأحداث) وjuvenile crime (جرائم الأحداث) تلازمان طبيعيان يخصّان القاصرين.",
+            "en": "\"Juvenile court\" and \"juvenile crime\" both refer to young people."
+          },
+          "example": "Cases involving children are heard in a juvenile court."
+        }
+      ]
+    },
+    {
+      "kind": "listen",
+      "i18n": {"ar":{"title":"الاستماع · Part 3: عرض عن الجريمة والعقوبة","intro":"طالبان يدرسان علم الجريمة، هانا وكالوم، يتحدثان عن العرض التقديمي الذي أعدّاه. انتبه إلى رأي كل منهما وإلى ما يقرّرانه في النهاية. يُشغَّل التسجيل مرة واحدة فقط.","tip":"في Part 3 يتناقش شخصان أو ثلاثة، وقد لا يُقبل الاقتراح فورًا. عبارات مثل \"Actually, I'd rather…\" و\"I'm less sure\" و\"sorry, it was…\" تدل على تغيّر الرأي؛ انتظر القرار النهائي."},"en":{"title":"Listening · Part 3: a crime and punishment presentation","intro":"Two criminology students, Hana and Callum, are discussing the presentation they have prepared. Pay attention to who thinks what and what they decide. The recording plays once.","tip":"In Part 3 two or three people discuss, and a suggestion may not be accepted straight away. Phrases like \"Actually, I'd rather…\", \"I'm less sure\" and \"sorry, it was…\" signal a change of mind; wait for the final decision."}},
+      "title": "Dinleme · Part 3: suç ve ceza sunumu",
+      "intro": "Kriminoloji okuyan iki öğrenci, Hana ve Callum, hazırladıkları sunumu konuşuyor. Kimin neyi düşündüğüne ve neye karar verdiklerine dikkat et. Kayıt bir kez çalar.",
+      "tip": "Part 3'te iki üç kişi tartışır; bir öneri hemen kabul edilmeyebilir. \"Actually, I'd rather…\", \"I'm less sure\", \"sorry, it was…\" gibi ifadeler fikir değişikliğini gösterir; nihai kararı bekle.",
+      "audio": {
+        "type": "audio",
+        "id": "l-audio",
+        "speakers": {
+          "N": {
+            "name": "Narrator",
+            "voice": "en-GB-SoniaNeural"
+          },
+          "hana": {
+            "name": "Hana",
+            "voice": "en-NZ-MollyNeural"
+          },
+          "callum": {
+            "name": "Callum",
+            "voice": "en-GB-RyanNeural"
+          }
+        },
+        "lines": [
+          {
+            "speaker": "N",
+            "text": "You will hear two criminology students, Hana and Callum, talking about a presentation they are preparing. First, you have some time to look at questions one to six.",
+            "pauseAfterMs": 2500
+          },
+          {
+            "speaker": "N",
+            "text": "Now listen carefully and answer questions one to six.",
+            "pauseAfterMs": 1200
+          },
+          {
+            "speaker": "callum",
+            "text": "So, Hana, have you had a chance to look at the reading list for our presentation?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "hana",
+            "text": "I have. I thought we'd agreed to focus on juvenile offenders, but the lecturer said in her email that we could look at adults as well.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "callum",
+            "text": "Did she? I think adults would be too big a topic. Let's keep to young people, aged fourteen to eighteen.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "hana",
+            "text": "Fine by me. So our question is whether community service works better than short prison sentences.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "callum",
+            "text": "Right. The report from the Halvern Institute was really useful. It found that young people who did community service were less likely to reoffend within two years than those who went to prison for a few months.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "hana",
+            "text": "Yes, but I wasn't sure how much we can trust it. The two groups weren't the same. The judges probably sent the more serious offenders to prison, so of course they did worse.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "callum",
+            "text": "That's a fair point. We should mention it as a limitation. What about the idea that prison is a deterrent?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "hana",
+            "text": "The evidence there is quite weak, I think. Most of the articles say that what really stops people from committing a crime is the chance of being caught, not the length of the sentence.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "callum",
+            "text": "Which links to law enforcement. More police on the streets, more surveillance cameras…",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "hana",
+            "text": "Although cameras seem to move crime to other streets rather than stop it. One study said the crime rate in a town centre fell, but it rose in the areas around it.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "callum",
+            "text": "Interesting. So for the structure, I'll start with the background, and then you could present the Halvern data?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "hana",
+            "text": "Actually, I'd rather do the section on victims. There's a project in Scotland… no, sorry, it was in New Zealand, where young offenders meet the victim of their crime and apologise. It's called restorative justice.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "callum",
+            "text": "OK, so I'll do the data, and you do restorative justice. And what about rehabilitation more generally, like education and job training?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "hana",
+            "text": "Let's put that in the conclusion. It's the strongest argument, really: if young people have skills and a job, they have something to lose.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "callum",
+            "text": "Agreed. Shall we meet on Thursday to practise?",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "hana",
+            "text": "Thursday's fine, but not in the library; the group rooms are always booked. Let's use the café on the second floor.",
+            "pauseAfterMs": 1500
+          },
+          {
+            "speaker": "N",
+            "text": "That is the end of the recording.",
+            "pauseAfterMs": 0
+          }
+        ]
+      },
+      "questions": [
+        {
+          "type": "text",
+          "text": "Questions 1–3. Choose the correct letter."
+        },
+        {
+          "type": "choice",
+          "id": "l1",
+          "prompt": "1. Which offenders will the presentation focus on?",
+          "options": [
+            "adults only",
+            "young people aged 14 to 18",
+            "both adults and young people"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "Hoca yetişkinlere de bakabileceklerini söylemiş, ama Callum \"Let's keep to young people, aged fourteen to eighteen\" diyor ve Hana kabul ediyor.",
+            "ar": "قالت المحاضِرة إنه يمكنهم دراسة البالغين أيضًا، لكن Callum يقول \"Let's keep to young people, aged fourteen to eighteen\" وتوافق Hana.",
+            "en": "\"Let's keep to young people, aged fourteen to eighteen.\" – \"Fine by me.\""
+          },
+          "example": "Let's keep to one topic, or the talk will be too long."
+        },
+        {
+          "type": "choice",
+          "id": "l2",
+          "prompt": "2. What problem does Hana see with the Halvern Institute report?",
+          "options": [
+            "The two groups of offenders were not similar.",
+            "It is too old to be useful.",
+            "It only studied a small number of people."
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "\"The two groups weren't the same\": hâkimler daha ciddi suçluları hapse göndermiş olabilir. Raporun yaşı ya da örneklem büyüklüğü konuşulmuyor.",
+            "ar": "\"The two groups weren't the same\"، فربما أرسل القضاة المجرمين الأخطر إلى السجن. لم يُذكر عمر التقرير ولا حجم العيّنة.",
+            "en": "\"The two groups weren't the same\": more serious offenders probably went to prison."
+          },
+          "example": "You can't compare the two classes because the students were not the same."
+        },
+        {
+          "type": "choice",
+          "id": "l3",
+          "prompt": "3. According to the articles Hana has read, what stops people from committing a crime?",
+          "options": [
+            "long prison sentences",
+            "more surveillance cameras",
+            "the risk of being caught"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "\"what really stops people... is the chance of being caught, not the length of the sentence\". Kameralar suçu sadece başka sokaklara taşıyor.",
+            "ar": "\"what really stops people... is the chance of being caught, not the length of the sentence\". أما الكاميرات فتنقل الجريمة إلى شوارع أخرى فقط.",
+            "en": "\"The chance of being caught, not the length of the sentence.\""
+          },
+          "example": "The risk of being caught stops most drivers from speeding."
+        },
+        {
+          "type": "text",
+          "text": "Questions 4–6. Complete the sentences below. Write NO MORE THAN TWO WORDS for each answer."
+        },
+        {
+          "type": "gap",
+          "id": "l4",
+          "prompt": "4. The restorative justice project that Hana will describe took place in ___.",
+          "answers": [
+            "New Zealand"
+          ],
+          "why": {
+            "tr": "Hana önce \"Scotland\" diyor, sonra düzeltiyor: \"no, sorry, it was in New Zealand\". Tuzak: Scotland.",
+            "ar": "قالت Hana أولًا Scotland ثم صحّحت: \"no, sorry, it was in New Zealand\". الفخّ: Scotland.",
+            "en": "She corrects herself: \"no, sorry, it was in New Zealand\"."
+          },
+          "example": "The conference was in Wellington, New Zealand."
+        },
+        {
+          "type": "gap",
+          "id": "l5",
+          "prompt": "5. Education and job training will be discussed in the ___ of the presentation.",
+          "answers": [
+            "conclusion"
+          ],
+          "why": {
+            "tr": "\"Let's put that in the conclusion\": eğitim ve meslek kursları sonuç bölümünde.",
+            "ar": "\"Let's put that in the conclusion\" أي التعليم والتدريب المهني في الخاتمة.",
+            "en": "\"Let's put that in the conclusion.\""
+          },
+          "example": "Put your strongest argument in the conclusion."
+        },
+        {
+          "type": "gap",
+          "id": "l6",
+          "prompt": "6. The students will practise on Thursday in the ___ on the second floor.",
+          "answers": [
+            "café",
+            "cafe"
+          ],
+          "why": {
+            "tr": "Kütüphane tuzak: grup odaları hep dolu. \"Let's use the café on the second floor.\"",
+            "ar": "المكتبة فخّ لأن الغرف محجوزة دائمًا. \"Let's use the café on the second floor.\"",
+            "en": "Not the library: \"Let's use the café on the second floor.\""
+          },
+          "example": "We met in the café because the library was full."
+        }
+      ]
+    },
+    {
+      "kind": "read",
+      "i18n": {"ar":{"title":"القراءة: مطابقة المعلومات (Matching information)","intro":"ستقرأ نصًا من ست فقرات عن أهداف العقوبة وطرق الحدّ من الجريمة. ابحث عن الفقرة التي تحتوي كل معلومة.","tip":"في مطابقة المعلومات لا تأتي الأسئلة بترتيب النص. احتفظ في ذهنك بالفكرة الأساسية في السؤال (سبب، مثال، اعتراض) ثم امسح الفقرات. كلمات مثل \"an objection\" و\"an example\" و\"a list\" تخبرك بنوع المعلومة التي تبحث عنها."},"en":{"title":"Reading: Matching information","intro":"You will read a six-paragraph text about the aims of punishment and ways to reduce crime. Find which paragraph contains each piece of information.","tip":"In matching information, the questions do not follow the order of the text. Keep the key idea of the question in mind (a reason, an example, an objection) and scan the paragraphs. Words like \"an objection\", \"an example\" and \"a list\" tell you what type of information you are looking for."}},
+      "title": "Okuma: bilgi eşleştirme (Matching information)",
+      "intro": "Cezanın amaçları ve suçu azaltmanın yolları üzerine altı paragraflık bir metin okuyacaksın. Her bilginin hangi paragrafta olduğunu bul.",
+      "tip": "Bilgi eşleştirmede sorular metnin sırasıyla gelmez. Sorudaki anahtar fikri (bir neden, bir örnek, bir itiraz) aklında tut ve paragrafları tara. \"an objection\", \"an example\", \"a list\" gibi kelimeler aradığın bilginin türünü söyler.",
+      "passage": [
+        {
+          "type": "heading",
+          "text": "Does Prison Work?"
+        },
+        {
+          "type": "text",
+          "text": "A  For centuries, the main purpose of punishment was to make offenders suffer for what they had done. Public punishments were designed to shame the guilty and to warn others. Prison as the standard response to serious crime is a relatively modern idea: in many countries it only became common in the nineteenth century, when reformers argued that locking people away was more humane than physical punishment."
+        },
+        {
+          "type": "text",
+          "text": "B  Today, most legal systems try to balance several aims at once. A sentence may be intended to punish, to protect the public, to act as a deterrent to others who might commit a crime, and to help the offender change. These aims do not always fit together. A long prison term may protect the public for a time, yet it can also cut people off from their families and from work, which makes a normal life after release harder to achieve."
+        },
+        {
+          "type": "text",
+          "text": "C  The argument that harsh punishment deters crime is popular, but researchers have found it difficult to prove. Many crimes are committed on impulse, often under the influence of alcohol or in moments of anger, when people are unlikely to think about the possible sentence. Criminologists have more often suggested that the certainty of being caught has a greater effect than the severity of the punishment, which is one reason why some governments have invested in law enforcement and surveillance rather than longer sentences."
+        },
+        {
+          "type": "text",
+          "text": "D  Rehabilitation focuses on what happens to offenders after they are caught. Prisons in several Scandinavian countries are known for offering education, job training and comfortable living conditions, and they are often reported to have relatively low rates of people who reoffend. Critics argue that comparisons between countries are misleading, because societies differ in many other ways, but supporters believe that treating prisoners with respect makes them more likely to respect the law."
+        },
+        {
+          "type": "text",
+          "text": "E  For juvenile offenders, many countries now avoid prison wherever possible. Young people may instead be given community service, such as cleaning parks or helping in charity shops, or take part in programmes where they meet the victim of their crime. The idea is that a teenager who understands the harm he or she has caused, and who is not labelled a criminal at an early age, has a better chance of building a law-abiding life."
+        },
+        {
+          "type": "text",
+          "text": "F  Whatever approach a society chooses, the crime rate is shaped by much more than punishment. Poverty, unemployment, poor housing and a lack of opportunities for young people are all closely linked to crime. For this reason, many experts argue that the most effective crime policy may not be found in courts and prisons at all, but in schools, youth clubs and job centres."
+        }
+      ],
+      "questions": [
+        {
+          "type": "heading",
+          "text": "Questions 1–6: Which paragraph contains the following information?"
+        },
+        {
+          "type": "text",
+          "text": "Choose A, B, C, D, E or F. The statements are not in the order of the text."
+        },
+        {
+          "type": "choice",
+          "id": "r1",
+          "prompt": "1. a reason why some people may not think about punishment before acting",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "Paragraf C: birçok suç \"on impulse\" (anlık) işlenir, insanlar \"are unlikely to think about the possible sentence\".",
+            "ar": "الفقرة C: كثير من الجرائم تُرتكب \"on impulse\" فلا يفكّر الناس \"about the possible sentence\".",
+            "en": "C: crimes committed \"on impulse\", when people \"are unlikely to think about the possible sentence\"."
+          },
+          "example": "He acted on impulse and did not think about the consequences."
+        },
+        {
+          "type": "choice",
+          "id": "r2",
+          "prompt": "2. a list of social problems that are connected with crime",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ],
+          "answer": 5,
+          "why": {
+            "tr": "Paragraf F: \"Poverty, unemployment, poor housing and a lack of opportunities... are all closely linked to crime\". Bir liste.",
+            "ar": "الفقرة F: \"Poverty, unemployment, poor housing and a lack of opportunities... are all closely linked to crime\"، وهذه قائمة.",
+            "en": "F lists poverty, unemployment, poor housing and a lack of opportunities."
+          },
+          "example": "Poverty and unemployment are closely linked to crime."
+        },
+        {
+          "type": "choice",
+          "id": "r3",
+          "prompt": "3. the period when prison became the usual punishment in many places",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Paragraf A: hapis \"only became common in the nineteenth century\". \"the usual punishment\" = \"the standard response\".",
+            "ar": "الفقرة A: أصبح السجن \"only became common in the nineteenth century\"، وthe usual punishment تعني the standard response.",
+            "en": "A: prison \"only became common in the nineteenth century\"."
+          },
+          "example": "Prison only became the standard punishment quite recently."
+        },
+        {
+          "type": "choice",
+          "id": "r4",
+          "prompt": "4. an objection to comparing prison systems in different countries",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ],
+          "answer": 3,
+          "why": {
+            "tr": "Paragraf D: \"Critics argue that comparisons between countries are misleading\". \"objection\" = itiraz.",
+            "ar": "الفقرة D: \"Critics argue that comparisons between countries are misleading\"، وobjection تعني اعتراض.",
+            "en": "D: \"Critics argue that comparisons between countries are misleading.\""
+          },
+          "example": "One objection to the plan is that it costs too much."
+        },
+        {
+          "type": "choice",
+          "id": "r5",
+          "prompt": "5. a disadvantage of keeping someone in prison for a long time",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "Paragraf B: uzun hapis \"can also cut people off from their families and from work\": tahliyeden sonra normal hayatı zorlaştırır.",
+            "ar": "الفقرة B: السجن الطويل \"can also cut people off from their families and from work\"، فيصعب العيش الطبيعي بعد الإفراج.",
+            "en": "B: a long prison term \"can also cut people off from their families and from work\"."
+          },
+          "example": "Living far away cut him off from his old friends."
+        },
+        {
+          "type": "choice",
+          "id": "r6",
+          "prompt": "6. an example of work that young offenders may be asked to do",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ],
+          "answer": 4,
+          "why": {
+            "tr": "Paragraf E: kamu hizmeti örnekleri: \"cleaning parks or helping in charity shops\".",
+            "ar": "الفقرة E: أمثلة على الخدمة المجتمعية: \"cleaning parks or helping in charity shops\".",
+            "en": "E: community service \"such as cleaning parks or helping in charity shops\"."
+          },
+          "example": "Volunteers spent the morning cleaning the park."
+        }
+      ]
+    },
+    {
+      "kind": "language",
+      "i18n": {"ar":{"title":"اللغة: الكلام المنقول (reported speech)"},"en":{"title":"Language: reported speech"}},
+      "title": "Dil: dolaylı anlatım (reported speech)",
+      "explain": {
+        "tr": "Birinin söylediğini geçmiş zamanlı bir fiille aktarırken (said, told, explained) zaman genelde bir adım geriye kayar: is → was, are studying → were studying, has seen → had seen, will → would, can → could. Zamir ve zaman ifadeleri de değişir: tomorrow → the next day, here → there. \"say\" nesne almaz (said that…), \"tell\" kişi ister (told me that…). Soru aktarırken soru düzeni kalkar: She asked where I had seen him (where had I seen ✗); evet/hayır sorularında \"if/whether\". Task 2'de görüşleri şimdiki zamanlı fiillerle aktarırız ve zaman kaymaz: Some people argue that prison is the best deterrent. Critics claim that…, Experts suggest that…",
+        "ar": "عند نقل كلام شخص بفعل ماضٍ (said, told, explained) يرجع الزمن عادةً خطوة إلى الوراء: is → was، are studying → were studying، has seen → had seen، will → would، can → could. وتتغير الضمائر وكلمات الزمان: tomorrow → the next day، here → there. الفعل say لا يأخذ مفعولًا (said that…)، أما tell فيحتاج إلى شخص (told me that…). في نقل السؤال نلغي ترتيب السؤال: She asked where I had seen him (وليس where had I seen)، ومع أسئلة نعم/لا نستخدم if أو whether. في Task 2 ننقل الآراء بأفعال مضارعة فلا يتغير الزمن: Some people argue that prison is the best deterrent، وكذلك Critics claim that… وExperts suggest that…",
+        "en": "When we report words with a past reporting verb (said, told, explained), the tense usually moves back: is → was, are studying → were studying, has seen → had seen, will → would, can → could. Pronouns and time words change too: tomorrow → the next day, here → there. Say has no person object (said that…); tell needs one (told me that…). Reported questions use statement word order: She asked where I had seen him (not where had I seen); yes/no questions use if or whether. In Task 2 we report views with present-tense verbs, so there is no backshift: Some people argue that prison is the best deterrent. Critics claim that…, Experts suggest that…"
+      },
+      "examples": [
+        "The officer said that the number of burglaries had fallen that year.",
+        "The judge told the young offender that he would do community service instead of going to prison.",
+        "Some researchers argue that surveillance cameras simply move crime to other areas.",
+        "The victim asked whether the police had found her stolen bike."
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "id": "g1",
+          "prompt": "\"We are studying juvenile crime.\" → She said that they ___ juvenile crime.",
+          "options": [
+            "are studying",
+            "were studying",
+            "have studied",
+            "will study"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"said\" geçmiş zamanda, bu yüzden \"are studying\" → \"were studying\" olur.",
+            "ar": "الفعل said في الماضي، لذلك are studying تصبح were studying.",
+            "en": "After \"said\", the present continuous moves back to the past continuous."
+          },
+          "example": "He said that he was working late that night."
+        },
+        {
+          "type": "choice",
+          "id": "g2",
+          "prompt": "\"I will appeal against the sentence.\" → He said that he ___ appeal against the sentence.",
+          "options": [
+            "will",
+            "is going",
+            "would",
+            "can"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "Dolaylı anlatımda \"will\" → \"would\". \"is going\" sonrasında \"to\" gerekir ve zaman da kaymamış olur.",
+            "ar": "في الكلام المنقول تصبح will ← would. أما is going فتحتاج to ولم يرجع زمنها.",
+            "en": "In reported speech, will → would."
+          },
+          "example": "She said that she would call the police."
+        },
+        {
+          "type": "choice",
+          "id": "g3",
+          "prompt": "Which reported question is correct?",
+          "options": [
+            "She asked me where did I see the man.",
+            "She asked me where I had seen the man.",
+            "She asked me where had I seen the man.",
+            "She asked me where I have seen the man?"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "Aktarılan soruda soru düzeni ve \"did\" olmaz, soru işareti de olmaz: \"where I had seen the man\".",
+            "ar": "في السؤال المنقول لا نستخدم ترتيب السؤال ولا did ولا علامة الاستفهام: where I had seen the man.",
+            "en": "Reported questions use statement word order and no question mark."
+          },
+          "example": "The detective asked me what time I had left the house."
+        },
+        {
+          "type": "gap",
+          "id": "g4",
+          "prompt": "Write ONE word: \"Did you see the car?\" → The officer asked me ___ I had seen the car.",
+          "answers": [
+            "whether",
+            "if"
+          ],
+          "why": {
+            "tr": "Evet/hayır sorusu aktarılırken \"if\" ya da \"whether\" kullanılır.",
+            "ar": "عند نقل سؤال جوابه نعم أو لا نستخدم if أو whether.",
+            "en": "Yes/no questions are reported with if or whether."
+          },
+          "example": "She asked whether the shop was still open."
+        },
+        {
+          "type": "choice",
+          "id": "g5",
+          "prompt": "In a Task 2 essay, which sentence reports a view correctly?",
+          "options": [
+            "Some people told that prison is the best deterrent.",
+            "Some people said me that prison is the best deterrent.",
+            "Some people argue prison was the best deterrent yesterday.",
+            "Some people argue that prison is the best deterrent."
+          ],
+          "answer": 3,
+          "why": {
+            "tr": "Task 2'de genel görüşler şimdiki zamanlı \"argue that\" ile aktarılır. \"told\" kişi ister, \"said me\" yanlış.",
+            "ar": "في Task 2 تُنقل الآراء العامة بـ argue that في المضارع. أما told فتحتاج إلى شخص، وsaid me خطأ.",
+            "en": "General views are reported with a present verb: \"Some people argue that…\". Tell needs a person; \"said me\" is wrong."
+          },
+          "example": "Many experts argue that education reduces crime."
+        }
+      ]
+    },
+    {
+      "kind": "write",
+      "i18n": {"ar":{"title":"الكتابة · Task 2: مقال الأسباب والحلول","tip":"هذا السؤال يطلب أمرين: الأسباب والحلول. خصّص لكل منهما فقرة مستقلة، واربط كل حل بسبب (مراكز الشباب تُغلق ← على الإدارة المحلية أن تستثمر). عند نقل الآراء استخدم أفعالًا مثل \"Some experts argue that…\"، وجرّب كلمات offender وreoffend وcommunity service وrehabilitation."},"en":{"title":"Writing · Task 2: causes and solutions essay","tip":"This question asks two things: causes and solutions. Give each one its own paragraph and link every solution to a cause (youth centres are closing → local government should invest). When reporting opinions, use verbs like \"Some experts argue that…\"; try the words offender, reoffend, community service and rehabilitation."}},
+      "title": "Yazma · Task 2: neden ve çözüm denemesi",
+      "task": 2,
+      "prompt": "In many cities, there is concern about the number of crimes committed by young people. What are the causes of this problem, and what measures could be taken to reduce it?\n\nWrite a short essay: an introduction, one paragraph on causes, one on solutions and a brief conclusion.",
+      "minutes": 35,
+      "minWords": 220,
+      "tip": "Bu soruda iki şey soruluyor: nedenler ve çözümler. Her birine ayrı bir paragraf ayır ve her çözümü bir nedene bağla (gençlik merkezleri kapanıyor → yerel yönetim yatırım yapmalı). Görüş aktarırken \"Some experts argue that…\" gibi fiiller kullan; offender, reoffend, community service, rehabilitation kelimelerini dene.",
+      "model": "In a number of cities, there is growing concern about the involvement of young people in crime. This essay will argue that the problem is largely caused by a lack of opportunities and weak family support, and that it can best be tackled through early intervention rather than harsher punishment.\n\nThe main causes are social rather than individual. Teenagers who grow up in poor neighbourhoods often have few safe places to spend their free time, and when youth clubs and sports centres close, the street becomes the only option. In addition, young people who have little support at home or who leave school early may be drawn into gangs, which offer a sense of belonging and quick money. Once a teenager has committed a crime and been labelled an offender, it becomes even harder to find a job, so many reoffend.\n\nSeveral measures could reduce juvenile crime. First, local governments should invest in youth services, because activities such as sport and music give teenagers a purpose and keep them away from danger. Second, schools could identify pupils at risk earlier and offer mentoring, so that each young person has a positive role model. Finally, when young people do break the law, courts should consider community service and meetings with the victim rather than prison, since these approaches focus on rehabilitation and help offenders understand the harm they have caused.\n\nIn conclusion, youth crime is mainly a symptom of wider social problems. Better law enforcement has a place, but the long-term solution lies in giving young people opportunities before they turn to crime."
+    },
+    {
+      "kind": "speak",
+      "i18n": {"ar":{"title":"التحدث: القواعد والسلامة"},"en":{"title":"Speaking: rules and safety"}},
+      "title": "Konuşma: kurallar ve güvenlik",
+      "part1": [
+        "Do you feel safe in the area where you live?",
+        "Have you ever lost something valuable?",
+        "Do you enjoy crime dramas or detective stories?",
+        "Are there many police officers in your town?"
+      ],
+      "card": {
+        "title": "Describe a rule or law in your country that you think is useful.",
+        "points": [
+          "what the rule or law is",
+          "who it affects",
+          "how people feel about it"
+        ],
+        "explain": "and explain why you think it is useful."
+      },
+      "useful": [
+        "One law that I think makes a real difference is…",
+        "It mainly affects…, for example…",
+        "When it was introduced, a lot of people said that it would…",
+        "At first people complained, but now most of them…",
+        "I think it works as a deterrent, because…",
+        "Without it, I imagine the crime rate would…"
+      ]
+    }
+  ]
+}

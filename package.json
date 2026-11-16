@@ -1,0 +1,14 @@
+{
+  "name": "fluent365",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "content": "node scripts/build-content.mjs",
+    "dev": "pnpm content && pnpm --filter pocket dev",
+    "build": "pnpm content && pnpm --filter pocket build",
+    "preview": "pnpm --filter pocket preview",
+    "test": "pnpm --filter pocket test",
+    "e2e": "node tests/e2e.mjs"
+  },
+  "packageManager": "pnpm@11.23.0"
+}

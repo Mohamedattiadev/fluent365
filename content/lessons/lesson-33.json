@@ -1,0 +1,710 @@
+{
+  "id": "lesson-33",
+  "number": 33,
+  "title": "The Ethics of Technology",
+  "topic": "Ethics of technology",
+  "level": "B2+",
+  "goal": "Follow a full-length lecture and a writer's argument on technology ethics, and make claims with careful caveats (while it is true that…, this is not to say…).",
+  "steps": [
+    {
+      "kind": "words",
+      "i18n": {"ar":{"title":"المفردات: أخلاقيات التكنولوجيا","intro":"في هذا الدرس 12 كلمة وتعبيرًا عن أخلاقيات التكنولوجيا تتكرر في إجابات Band 7. معظمها أسماء مجردة: accountability, transparency, autonomy. استخدامها في مقالات Task 2 مع المتلازمات اللفظية الصحيحة (ensure transparency, raise an ethical dilemma) يرفع درجتك مباشرة."},"en":{"title":"Vocabulary: technology ethics","intro":"This lesson has 12 words and phrases on technology ethics that often appear in Band 7 answers. Most are abstract nouns: accountability, transparency, autonomy. Using them in Task 2 essays with the right collocations (ensure transparency, raise an ethical dilemma) directly raises your score."}},
+      "title": "Kelimeler: teknoloji etiği",
+      "intro": "Bu derste teknoloji etiği hakkında Band 7 cevaplarında sık kullanılan 12 kelime ve kalıp var. Çoğu soyut isim: accountability, transparency, autonomy. Bunları Task 2 denemelerinde doğru eşdizimlerle (ensure transparency, raise an ethical dilemma) kullanmak puanını doğrudan yükseltir.",
+      "words": [
+        {
+          "en": "accountability",
+          "pos": "noun",
+          "tr": "hesap verebilirlik",
+          "ar": "المساءلة",
+          "example": "There must be clear accountability when an automated system makes a mistake."
+        },
+        {
+          "en": "transparency",
+          "pos": "noun",
+          "tr": "şeffaflık",
+          "ar": "الشفافية",
+          "example": "Greater transparency about how apps use data would help users make better choices."
+        },
+        {
+          "en": "surveillance",
+          "pos": "noun",
+          "tr": "gözetim, izleme",
+          "ar": "المراقبة",
+          "example": "The growth of camera surveillance in city centres has divided public opinion."
+        },
+        {
+          "en": "informed consent",
+          "pos": "phrase",
+          "tr": "bilgilendirilmiş onam (bilerek verilen izin)",
+          "ar": "الموافقة المستنيرة",
+          "example": "Patients must give informed consent before their data is used in research."
+        },
+        {
+          "en": "algorithmic bias",
+          "pos": "phrase",
+          "tr": "algoritmik önyargı",
+          "ar": "التحيّز الخوارزمي",
+          "example": "Algorithmic bias can lead to some job applicants being rejected unfairly."
+        },
+        {
+          "en": "invasion of privacy",
+          "pos": "phrase",
+          "tr": "özel hayatın ihlali",
+          "ar": "انتهاك الخصوصية",
+          "example": "Many people regard reading employees' private messages as an invasion of privacy."
+        },
+        {
+          "en": "unintended consequences",
+          "pos": "phrase",
+          "tr": "istenmeyen (öngörülmeyen) sonuçlar",
+          "ar": "عواقب غير مقصودة",
+          "example": "Social media has had unintended consequences for teenagers' sleep."
+        },
+        {
+          "en": "regulation",
+          "pos": "noun",
+          "tr": "düzenleme, yasal kural",
+          "ar": "التنظيم؛ اللوائح",
+          "example": "Stricter regulation of facial recognition is being discussed in several countries."
+        },
+        {
+          "en": "safeguard",
+          "pos": "noun / verb",
+          "tr": "güvence, koruma önlemi; korumak",
+          "ar": "ضمانة؛ يحمي",
+          "example": "Strong safeguards are needed to stop personal data being sold."
+        },
+        {
+          "en": "autonomy",
+          "pos": "noun",
+          "tr": "özerklik, kendi kararını verebilme",
+          "ar": "الاستقلالية؛ حرية القرار",
+          "example": "Some critics argue that constant recommendations reduce our autonomy as consumers."
+        },
+        {
+          "en": "ethical dilemma",
+          "pos": "phrase",
+          "tr": "etik ikilem",
+          "ar": "معضلة أخلاقية",
+          "example": "Self-driving cars raise an ethical dilemma: whose safety should come first?"
+        },
+        {
+          "en": "misuse",
+          "pos": "noun / verb",
+          "tr": "kötüye kullanım; kötüye kullanmak",
+          "ar": "إساءة الاستخدام؛ يُسيء استخدام",
+          "example": "The misuse of personal data can damage trust in a company for years."
+        }
+      ],
+      "practice": [
+        {
+          "type": "choice",
+          "id": "w1",
+          "prompt": "If nobody can be held responsible for a system's decisions, there is a lack of ___.",
+          "options": [
+            "accountability",
+            "autonomy",
+            "surveillance",
+            "misuse"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Sorumluluğu üstlenecek, hesap verecek kimse yoksa eksik olan \"accountability\"dir. \"autonomy\" bir kişinin kendi kararını verebilmesi, \"surveillance\" izleme, \"misuse\" kötüye kullanmadır.",
+            "ar": "إذا لم يكن هناك من يُحاسَب على قرارات النظام فالناقص هو accountability (المساءلة). أما autonomy فهي استقلالية القرار، وsurveillance المراقبة، وmisuse إساءة الاستخدام.",
+            "en": "Being held responsible = accountability. Autonomy is self-direction; surveillance is monitoring; misuse is wrong use."
+          },
+          "example": "The new law aims to increase accountability in public decision-making."
+        },
+        {
+          "type": "choice",
+          "id": "w2",
+          "prompt": "Which verb collocates most naturally? Companies should ___ informed consent before collecting health data.",
+          "options": [
+            "obtain",
+            "make",
+            "do",
+            "take part"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Doğal eşdizim \"obtain/seek consent\" (onay almak/istemek). \"make consent\" ya da \"do consent\" İngilizcede kullanılmaz.",
+            "ar": "التلازم الطبيعي هو obtain consent أو seek consent (الحصول على الموافقة). لا يقال make consent أو do consent.",
+            "en": "We obtain or seek consent; \"make\" and \"do\" do not collocate with consent."
+          },
+          "example": "Researchers must obtain informed consent from every participant."
+        },
+        {
+          "type": "gap",
+          "id": "w3",
+          "prompt": "Write the correct form of TRANSPARENT: The company was criticised for its lack of ___ about how it trains its software.",
+          "answers": [
+            "transparency"
+          ],
+          "why": {
+            "tr": "\"lack of\" sonrasında bir isim gerekir: transparent (sıfat) → transparency (isim).",
+            "ar": "بعد lack of نحتاج إلى اسم: الصفة transparent تصبح الاسم transparency.",
+            "en": "After \"lack of\" we need a noun: transparent → transparency."
+          },
+          "example": "Transparency about data use builds trust."
+        },
+        {
+          "type": "choice",
+          "id": "w4",
+          "prompt": "\"Unintended consequences\" are results that…",
+          "options": [
+            "were not planned or expected",
+            "were the main aim of a plan",
+            "happen only in the distant future",
+            "are always negative and illegal"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "\"unintended\" = istenmeden, plansız. Sonuçlar olumsuz olabilir ama her zaman yasa dışı değildir; ayrıca uzak gelecekte olmaları gerekmez.",
+            "ar": "unintended تعني غير مقصود أو غير مخطَّط له. قد تكون العواقب سلبية لكنها ليست دائمًا غير قانونية، ولا يُشترط أن تحدث في المستقبل البعيد.",
+            "en": "Unintended = not planned. They are often negative, but not necessarily illegal or distant."
+          },
+          "example": "Cheap flights had the unintended consequence of crowding historic city centres."
+        },
+        {
+          "type": "gap",
+          "id": "w5",
+          "prompt": "Write ONE word: Reading someone's emails without permission is a serious invasion of ___.",
+          "answers": [
+            "privacy"
+          ],
+          "why": {
+            "tr": "Sabit kalıp \"invasion of privacy\" = özel hayatın ihlali.",
+            "ar": "التعبير الثابت هو invasion of privacy أي انتهاك الخصوصية.",
+            "en": "The fixed phrase is \"invasion of privacy\"."
+          },
+          "example": "Installing hidden cameras in changing rooms is a clear invasion of privacy."
+        },
+        {
+          "type": "choice",
+          "id": "w6",
+          "prompt": "Which sentence uses \"safeguard\" correctly?",
+          "options": [
+            "The law includes safeguards to protect children's data.",
+            "The hackers safeguarded the bank's accounts and stole money.",
+            "She safeguarded about the dangers of the internet.",
+            "A safeguard of people use social media every day."
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "\"safeguard\" isim olarak \"koruma önlemi\" demek: \"safeguards to protect…\". B anlamca yanlış (çalmak korumak değildir); C'de \"about\" ile kullanılmaz; D'de kelime \"çok sayıda\" anlamına gelmez.",
+            "ar": "safeguard كاسم تعني ضمانة أو إجراء حماية: safeguards to protect. الخيار B خطأ في المعنى، وC لا تأتي فيه الكلمة مع about، وD لا تعني الكلمة \"عدد كبير\".",
+            "en": "A safeguard is a protective measure; the other sentences misuse the word's meaning or grammar."
+          },
+          "example": "Independent checks are an important safeguard against algorithmic bias."
+        }
+      ]
+    },
+    {
+      "kind": "listen",
+      "i18n": {"ar":{"title":"الاستماع · Part 4: القرارات الآلية في الخدمات العامة","intro":"ستستمع إلى محاضرة عن القرارات التي تتخذها الأنظمة الحاسوبية في الخدمات العامة. هذا تسجيل Part 4 بطول الامتحان الحقيقي ومتحدث واحد. اقرأ الأسئلة أولًا؛ يُشغَّل التسجيل مرة واحدة فقط.","tip":"في Part 4 كثيرًا ما يطرح المتحدث فكرة ثم يقيّدها فورًا: \"while it is true that…\" و\"this is not to say…\" و\"necessary, but not sufficient\". في أسئلة الاختيار من متعدد تتضمن الإجابة الصحيحة عادةً هذا القيد. وفي إكمال الملاحظات تأتي الكلمة غالبًا كما سمعتها، لكن الجملة المحيطة بها مكتوبة بكلمات مختلفة (paraphrase)."},"en":{"title":"Listening · Part 4: automated decisions in public services","intro":"You will hear a lecture about decisions made by computer systems in public services. This is an exam-length Part 4 recording with one speaker. Read the questions first; the recording plays once.","tip":"In Part 4 the speaker often states an idea and then limits it at once: \"while it is true that…\", \"this is not to say…\", \"necessary, but not sufficient\". In multiple choice the correct answer usually includes this limitation. In note completion the word usually comes as you heard it, but the sentence around it is reworded (paraphrase)."}},
+      "title": "Dinleme · Part 4: kamu hizmetlerinde otomatik kararlar",
+      "intro": "Bir öğretim üyesinin, kamu hizmetlerinde bilgisayar sistemlerinin verdiği kararlar hakkındaki dersini dinleyeceksin. Bu, sınav uzunluğunda tek konuşmacılı bir Part 4 kaydı. Önce soruları oku; kayıt bir kez çalar.",
+      "tip": "Part 4'te konuşmacı sık sık bir fikri verip hemen sınırlar: \"while it is true that…\", \"this is not to say…\", \"necessary, but not sufficient\". Çoktan seçmeli sorularda doğru cevap genellikle bu sınırlamayı içerir. Not tamamlamada kelime genellikle duyduğun haliyle gelir ama çevresindeki cümle farklı kelimelerle (paraphrase) yazılmıştır.",
+      "audio": {
+        "type": "audio",
+        "id": "l-audio",
+        "speakers": {
+          "N": {
+            "name": "Narrator",
+            "voice": "en-GB-SoniaNeural"
+          },
+          "lect": {
+            "name": "Dr Okonkwo-Hale",
+            "voice": "en-US-AvaNeural"
+          }
+        },
+        "lines": [
+          {
+            "speaker": "N",
+            "text": "You will hear part of a lecture about automated decisions in public services. First, you have some time to look at questions one to six.",
+            "pauseAfterMs": 2500
+          },
+          {
+            "speaker": "N",
+            "text": "Now listen carefully and answer questions one to six.",
+            "pauseAfterMs": 1200
+          },
+          {
+            "speaker": "lect",
+            "text": "Good morning, everyone. Today I want to look at a question that sounds simple but turns out to be anything but: who is responsible when a decision about a person's life is made, or at least shaped, by a computer system? I'll focus on public services, because that is where the ethical dilemma is sharpest.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "lect",
+            "text": "Let's start with a familiar example. Many local authorities now use software to help decide which families should be visited first by social workers, or which benefit claims should be checked more closely. The appeal is obvious. A system can sort thousands of cases in seconds, and in principle it applies the same rules to everyone.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "lect",
+            "text": "However, while it is true that a machine does not get tired or have a bad day, this is not to say that it is neutral. These systems learn from past records, and past records reflect past decisions. If one neighbourhood was inspected more often in the past, the data will show more problems there, and the system may conclude that the area deserves even more attention.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "lect",
+            "text": "This is a classic case of algorithmic bias. Notice that nobody in this story intended to treat anyone unfairly. That is why I prefer to talk about unintended consequences rather than bad intentions. The harm comes from the design, not from a villain.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "lect",
+            "text": "So what can be done? The first answer most people give is transparency: publish how the system works. I would argue that this is necessary, but not sufficient. Some of these models are so complex that even their designers struggle to explain a single result. Telling the public that a model with two hundred variables made a decision does not really explain anything.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "lect",
+            "text": "A more useful idea, in my view, is accountability. A named official or department must be able to explain and defend each decision, and must have the power to overturn it. In other words, the computer can advise, but a person decides. Some countries already require a human review of certain automated decisions, although how meaningful that review is varies a great deal.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "lect",
+            "text": "The third issue is consent. In the commercial world we are constantly asked to accept terms and conditions, and almost nobody reads them. Can we really call that informed consent? With public services the problem is even harder, because citizens cannot simply choose another provider. If you need housing support, you cannot opt out of the council's system.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "lect",
+            "text": "This leads to a broader worry about surveillance. When data from schools, hospitals and the police is linked together, the state can build a remarkably detailed picture of a family. Each link may be justified on its own, but taken together they may amount to an invasion of privacy that no one ever voted for.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "lect",
+            "text": "Now, I don't want to give the impression that the answer is simply to ban these tools. That would arguably be a mistake. Human decision-makers have biases too, and they are often harder to detect, because nobody writes them down. A well-designed system with proper safeguards could, in some cases, be fairer than what we have now.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "lect",
+            "text": "So the question is not whether to use technology, but on what terms. Regulation tends to focus on the moment a system is bought. I would suggest that what matters more is what happens afterwards: regular checks of the results, and a simple way for people to complain.",
+            "pauseAfterMs": 400
+          },
+          {
+            "speaker": "lect",
+            "text": "Finally, there is autonomy. People are not just cases to be sorted. A decision that is accurate on average may still feel deeply unfair to the individual who receives it. For next week, please read the two articles on the list and come prepared to discuss one real case of misuse.",
+            "pauseAfterMs": 1500
+          },
+          {
+            "speaker": "N",
+            "text": "That is the end of the recording.",
+            "pauseAfterMs": 0
+          }
+        ]
+      },
+      "questions": [
+        {
+          "type": "text",
+          "text": "Questions 1–4. Complete the notes below. Write ONE WORD ONLY for each answer."
+        },
+        {
+          "type": "text",
+          "text": "Automated decisions in public services"
+        },
+        {
+          "type": "gap",
+          "id": "l1",
+          "prompt": "1. Systems learn from past ___, which reflect earlier human decisions.",
+          "answers": [
+            "records"
+          ],
+          "why": {
+            "tr": "\"These systems learn from past records, and past records reflect past decisions.\" Boşluk \"past\"tan sonra çoğul bir isim istiyor: records.",
+            "ar": "\"These systems learn from past records, and past records reflect past decisions\". الفراغ بعد past يحتاج إلى اسم جمع: records.",
+            "en": "\"These systems learn from past records, and past records reflect past decisions.\""
+          },
+          "example": "The model was trained on past records from three hospitals."
+        },
+        {
+          "type": "gap",
+          "id": "l2",
+          "prompt": "2. The harm comes from the system's ___ rather than from anyone's bad intentions.",
+          "answers": [
+            "design"
+          ],
+          "why": {
+            "tr": "\"The harm comes from the design, not from a villain.\" Notta \"rather than from anyone's bad intentions\" yazıyor: aynı fikrin paraphrase'i.",
+            "ar": "\"The harm comes from the design, not from a villain\". عبارة rather than from anyone's bad intentions إعادة صياغة للفكرة نفسها.",
+            "en": "\"The harm comes from the design, not from a villain.\""
+          },
+          "example": "The problem lay in the design of the form, not in the people who filled it in."
+        },
+        {
+          "type": "gap",
+          "id": "l3",
+          "prompt": "3. Some models are so complex that even their ___ cannot easily explain one result.",
+          "answers": [
+            "designers"
+          ],
+          "why": {
+            "tr": "\"even their designers struggle to explain a single result\". \"struggle to\" = \"cannot easily\"; \"a single result\" = \"one result\". Çoğul olmalı: designers.",
+            "ar": "\"even their designers struggle to explain a single result\". struggle to تعني cannot easily، وa single result تعني one result. الكلمة بصيغة الجمع: designers.",
+            "en": "\"Even their designers struggle to explain a single result.\""
+          },
+          "example": "Even the designers of the game could not explain the strange result."
+        },
+        {
+          "type": "gap",
+          "id": "l4",
+          "prompt": "4. Unlike customers, citizens cannot switch to a different ___.",
+          "answers": [
+            "provider"
+          ],
+          "why": {
+            "tr": "\"citizens cannot simply choose another provider\". \"switch to a different\" = \"choose another\".",
+            "ar": "\"citizens cannot simply choose another provider\". عبارة switch to a different تعني choose another.",
+            "en": "\"Citizens cannot simply choose another provider.\""
+          },
+          "example": "If the service is poor, customers can switch to a different provider."
+        },
+        {
+          "type": "text",
+          "text": "Questions 5–6. Choose the correct letter."
+        },
+        {
+          "type": "choice",
+          "id": "l5",
+          "prompt": "5. What is the lecturer's view of transparency?",
+          "options": [
+            "It is the most effective protection against unfair decisions.",
+            "It is needed, but it does not solve the problem on its own.",
+            "It is impossible to achieve with complex systems.",
+            "It matters less than the cost of the software."
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "\"I would argue that this is necessary, but not sufficient.\" = gerekli ama tek başına yeterli değil. A tuzak: şeffaflık \"the first answer most people give\", yani en etkili çözüm değil. C çok güçlü: modeller karmaşık ama şeffaflık imkânsız denmiyor.",
+            "ar": "\"I would argue that this is necessary, but not sufficient\" أي ضرورية لكنها غير كافية وحدها. الخيار A فخّ: الشفافية هي أول جواب يقدمه الناس، لا أفضل حل. والخيار C مبالغ فيه.",
+            "en": "\"Necessary, but not sufficient.\" A is what most people say first, not the lecturer's view; C goes too far."
+          },
+          "example": "Good data is necessary, but not sufficient, for a fair decision."
+        },
+        {
+          "type": "choice",
+          "id": "l6",
+          "prompt": "6. Why does the lecturer think banning these tools could be a mistake?",
+          "options": [
+            "Human decision-makers are biased too, often in less visible ways.",
+            "The tools are already required by law in most countries.",
+            "Banning them would make public services too expensive.",
+            "Most citizens prefer decisions made by computers."
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "\"Human decision-makers have biases too, and they are often harder to detect, because nobody writes them down.\" \"less visible\" = \"harder to detect\". Yasa, maliyet ya da vatandaşların tercihi hakkında bir şey söylenmiyor.",
+            "ar": "\"Human decision-makers have biases too, and they are often harder to detect\". عبارة less visible تعني harder to detect. لم تذكر المحاضِرة القانون أو التكلفة أو تفضيل المواطنين.",
+            "en": "\"Human decision-makers have biases too, and they are often harder to detect.\""
+          },
+          "example": "Human bias is often less visible than bias in a machine, because nobody writes it down."
+        }
+      ]
+    },
+    {
+      "kind": "read",
+      "i18n": {"ar":{"title":"القراءة: Yes / No / Not Given (رأي الكاتب)","intro":"مقال رأي بطول الامتحان يناقش كيف ينبغي تنظيم التقنيات الجديدة. يقبل الكاتب فكرة ما ثم يقيّدها فورًا في أحيان كثيرة، ومعظم الأسئلة تقيس هذه القيود بالذات.","tip":"في YES / NO / NOT GIVEN تهمّ لغة الكاتب الحذرة. في جملة \"While it is true that X, it is not clear that Y\" يقبل الكاتب X لكنه يشكّ في Y. وعبارات مثل \"At best, mixed\" تقييم سلبي. وإذا لم يُبدِ الكاتب رأيًا في مسألة ما (مثل من يجب أن يتحمّل تكلفة شيء ما) فالإجابة NOT GIVEN."},"en":{"title":"Reading: Yes / No / Not Given (the writer's views)","intro":"An exam-length opinion piece on how new technologies should be regulated. The writer often accepts an idea and then limits it at once; most questions test exactly these limitations.","tip":"In YES / NO / NOT GIVEN the writer's cautious language matters. In \"While it is true that X, it is not clear that Y\" the writer accepts X but doubts Y. Phrases like \"At best, mixed\" are a negative judgement. If the writer gives no view on a point (for example, who should pay for something), the answer is NOT GIVEN."}},
+      "title": "Okuma: Yes / No / Not Given (yazarın görüşü)",
+      "intro": "Yeni teknolojilerin nasıl düzenlenmesi gerektiğini tartışan, sınav uzunluğunda bir görüş yazısı. Yazar sık sık bir fikri kabul edip hemen sınırlıyor; soruların çoğu tam da bu sınırlamaları ölçüyor.",
+      "tip": "YES / NO / NOT GIVEN'da yazarın temkinli dili önemlidir. \"While it is true that X, it is not clear that Y\" cümlesinde yazar X'i kabul eder ama Y'den şüphe eder. \"At best, mixed\" gibi ifadeler olumsuz bir değerlendirmedir. Yazar bir konuda görüş bildirmiyorsa (örneğin bir şeyin bedelini kimin ödemesi gerektiği) cevap NOT GIVEN'dır.",
+      "passage": [
+        {
+          "type": "heading",
+          "text": "Moving Fast, Thinking Slowly"
+        },
+        {
+          "type": "text",
+          "text": "Every major technology arrives with a promise and a price. The printing press spread knowledge and, at the same time, propaganda; the car gave people extraordinary freedom of movement and also filled cities with noise and danger. What seems different about the present moment is not that new technologies carry risks, but the speed at which they reach billions of people. A messaging app or a recommendation system can be adopted worldwide within months, long before anyone has had time to study its unintended consequences. In my view, this mismatch between the pace of invention and the pace of reflection is the central ethical problem of our age, and it deserves far more public attention than any single gadget."
+        },
+        {
+          "type": "text",
+          "text": "One popular response is the so-called precautionary principle: if an innovation might cause serious harm, the burden of proof should fall on those who wish to introduce it. While it is true that this principle has protected people in fields such as medicine, where new drugs must pass lengthy trials, it is not clear that it can be applied to software in the same way. A medicine is a fixed product; an online platform changes every week. Demanding proof of safety before launch would, I suspect, simply push development to countries with weaker rules, without making anyone safer. Moreover, many of the harms associated with digital technology, such as the effect of certain apps on teenagers' sleep, only become visible after years of use; no trial before launch could reveal them."
+        },
+        {
+          "type": "text",
+          "text": "This is not to say that companies should be left to police themselves. The record of voluntary codes of conduct is, at best, mixed. Firms have repeatedly promised to protect users' privacy, only for it to emerge later that personal data had been shared far more widely than customers realised. The difficulty is that a company's commercial interests and the public interest do not always point in the same direction. Ethical dilemmas, by their nature, involve choices between competing goods, and it is unreasonable to ask the party that profits from one side to act as the judge. Some form of external regulation is therefore unavoidable, although its design matters enormously."
+        },
+        {
+          "type": "text",
+          "text": "What might better regulation look like? Rather than trying to predict every risk in advance, governments could focus on accountability after the fact. If a system causes harm, there should be a clear answer to the question \"who is responsible?\", and that answer should not be \"the algorithm\". Requirements for transparency, such as independent audits of how a system treats different groups of people, could make algorithmic bias easier to detect. Admittedly, audits are expensive, and smaller firms may struggle to pay for them. Even so, I would argue that the cost is modest compared with the damage that an unchecked system can cause. Regulators could also be given the power to suspend a product quickly when clear evidence of harm appears, rather than waiting years for a court to decide."
+        },
+        {
+          "type": "text",
+          "text": "A harder question concerns consent. Most digital services rely on users clicking \"I agree\" to terms that few people read and fewer understand. To describe this as informed consent stretches the meaning of the phrase almost to breaking point. Yet it would be unrealistic to expect every citizen to become an expert in data protection. A more promising approach might be to limit what can be agreed to in the first place, in the same way that consumer law does not allow a shop to sell dangerous goods simply because the buyer signed a form. Certain kinds of surveillance, for instance, could be ruled out regardless of what a user has accepted."
+        },
+        {
+          "type": "text",
+          "text": "Finally, it is worth remembering that ethical questions about technology are rarely only about technology. A facial recognition camera raises different concerns in a country with independent courts than in one without them. The same tool that helps to find a missing child could also be used to monitor peaceful protesters; the risk of misuse depends less on the device than on the institutions that control it. For this reason, I am sceptical of debates that treat each new invention as uniquely dangerous. The more important task is to build safeguards that will still work for technologies we cannot yet imagine, and to protect the autonomy of the people who will live with them."
+        }
+      ],
+      "questions": [
+        {
+          "type": "heading",
+          "text": "Questions 1–7: Yes, No or Not Given?"
+        },
+        {
+          "type": "text",
+          "text": "Do the following statements agree with the views of the writer? Choose YES if the statement agrees with the views of the writer, NO if it contradicts them, NOT GIVEN if it is impossible to say what the writer thinks about this."
+        },
+        {
+          "type": "choice",
+          "id": "r1",
+          "prompt": "1. The speed at which new technologies spread is a more serious ethical issue than any individual device.",
+          "options": [
+            "Yes",
+            "No",
+            "Not Given"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Paragraf 1: \"this mismatch between the pace of invention and the pace of reflection is the central ethical problem of our age, and it deserves far more public attention than any single gadget\". \"single gadget\" = \"individual device\": YES.",
+            "ar": "الفقرة الأولى: يرى الكاتب أن الفجوة بين سرعة الاختراع وسرعة التفكير هي المشكلة الأخلاقية المركزية، وتستحق اهتمامًا أكبر من any single gadget: YES.",
+            "en": "\"The central ethical problem of our age… deserves far more public attention than any single gadget.\""
+          },
+          "example": "In my view, the speed of change is a bigger issue than any single invention."
+        },
+        {
+          "type": "choice",
+          "id": "r2",
+          "prompt": "2. The precautionary principle has failed to protect people in medicine.",
+          "options": [
+            "Yes",
+            "No",
+            "Not Given"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "Paragraf 2: \"this principle has protected people in fields such as medicine\". Yazar ilkenin tıpta işe yaradığını kabul ediyor; şüphesi yazılım için. İfade çelişiyor: NO.",
+            "ar": "الفقرة الثانية: \"this principle has protected people in fields such as medicine\". الكاتب يعترف بنجاح المبدأ في الطب، وشكّه يتعلق بالبرمجيات فقط: NO.",
+            "en": "\"This principle has protected people in fields such as medicine.\" The writer's doubt is about software."
+          },
+          "example": "While it is true that the rule works in medicine, it may not work for software."
+        },
+        {
+          "type": "choice",
+          "id": "r3",
+          "prompt": "3. Requiring software to be proved safe before launch would probably lead companies to develop it elsewhere.",
+          "options": [
+            "Yes",
+            "No",
+            "Not Given"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "\"Demanding proof of safety before launch would, I suspect, simply push development to countries with weaker rules\". \"I suspect\" temkinli ama bu yazarın görüşü; \"probably\" ile uyumlu: YES.",
+            "ar": "\"would, I suspect, simply push development to countries with weaker rules\". عبارة I suspect حذِرة لكنها رأي الكاتب، وتتوافق مع probably: YES.",
+            "en": "\"Would, I suspect, simply push development to countries with weaker rules.\""
+          },
+          "example": "Strict rules might push some firms to move abroad."
+        },
+        {
+          "type": "choice",
+          "id": "r4",
+          "prompt": "4. Most large technology companies now publish voluntary codes of conduct.",
+          "options": [
+            "Yes",
+            "No",
+            "Not Given"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "Yazar gönüllü davranış kurallarının sonuçlarının \"at best, mixed\" olduğunu söylüyor ama kaç şirketin böyle kurallar yayınladığından hiç bahsetmiyor: NOT GIVEN.",
+            "ar": "يقول الكاتب إن نتائج المدوّنات الطوعية \"at best, mixed\" لكنه لا يذكر عدد الشركات التي تنشرها: NOT GIVEN.",
+            "en": "The writer judges the codes' record but says nothing about how many companies publish them."
+          },
+          "example": "The article evaluates the codes but does not say how common they are."
+        },
+        {
+          "type": "choice",
+          "id": "r5",
+          "prompt": "5. Independent audits should be paid for by governments rather than by companies.",
+          "options": [
+            "Yes",
+            "No",
+            "Not Given"
+          ],
+          "answer": 2,
+          "why": {
+            "tr": "Paragraf 4'te denetimlerin pahalı olduğu ve küçük firmaların zorlanabileceği söyleniyor, ama yazar bedeli kimin ödemesi gerektiği konusunda görüş bildirmiyor: NOT GIVEN.",
+            "ar": "تذكر الفقرة الرابعة أن التدقيق مكلف وأن الشركات الصغيرة قد تواجه صعوبة، لكن الكاتب لا يقول من يجب أن يدفع: NOT GIVEN.",
+            "en": "Costs are mentioned, but not who should pay them."
+          },
+          "example": "The report mentions the cost of audits but not who should cover it."
+        },
+        {
+          "type": "choice",
+          "id": "r6",
+          "prompt": "6. Ordinary citizens can reasonably be expected to become experts in data protection.",
+          "options": [
+            "Yes",
+            "No",
+            "Not Given"
+          ],
+          "answer": 1,
+          "why": {
+            "tr": "Paragraf 5: \"it would be unrealistic to expect every citizen to become an expert in data protection\". \"unrealistic\" ifadeyle çelişiyor: NO.",
+            "ar": "الفقرة الخامسة: \"it would be unrealistic to expect every citizen to become an expert in data protection\". كلمة unrealistic تناقض العبارة: NO.",
+            "en": "\"It would be unrealistic to expect every citizen to become an expert in data protection.\""
+          },
+          "example": "It is unrealistic to expect every user to read fifty pages of terms."
+        },
+        {
+          "type": "choice",
+          "id": "r7",
+          "prompt": "7. The danger of a technology depends mainly on who controls it.",
+          "options": [
+            "Yes",
+            "No",
+            "Not Given"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Paragraf 6: \"the risk of misuse depends less on the device than on the institutions that control it\". \"depends less on X than on Y\" = esas olarak Y'ye bağlı: YES.",
+            "ar": "الفقرة السادسة: \"the risk of misuse depends less on the device than on the institutions that control it\" أي أن الخطر يعتمد أساسًا على الجهة المتحكمة: YES.",
+            "en": "\"The risk of misuse depends less on the device than on the institutions that control it.\""
+          },
+          "example": "The risk depends less on the tool than on the people who use it."
+        }
+      ]
+    },
+    {
+      "kind": "language",
+      "i18n": {"ar":{"title":"اللغة: التحفّظ والاستدراك المتقدّم (while it is true that…, this is not to say…)"},"en":{"title":"Language: advanced hedging and concession (while it is true that…, this is not to say…)"}},
+      "title": "Dil: ileri düzey temkin ve çekinceler (while it is true that…, this is not to say…)",
+      "explain": {
+        "tr": "Band 7+ denemelerde güçlü bir görüş, karşı tarafı da kabul eden çekincelerle (caveats) birlikte verilir. Bir fikri kabul edip sonra sınırlamak için: \"While it is true that X, Y\" (X doğru olsa da Y). Az önce söylediğin şeyin yanlış anlaşılmasını önlemek için: \"This is not to say that…\" (Bu, … demek değildir). Karşı fikri kabul edip yine de görüşünü korumak için: \"Admittedly, X. Even so, Y\" ya da \"X. That said, Y\". İddianın kapsamını daraltmak için: \"to a certain extent\", \"in some cases\", \"necessary, but not sufficient\". Dikkat: her cümleyi temkinli yapma; ana görüşünü girişte ve sonuçta açıkça söyle, çekinceleri gövde paragraflarında kullan.",
+        "ar": "في مقالات Band 7+ يُقدَّم الرأي القوي مع تحفّظات تعترف بالطرف الآخر. لقبول فكرة ثم تقييدها: While it is true that X, Y (مع أن X صحيح، فإن Y). ولمنع سوء فهم ما قلته للتو: This is not to say that… (هذا لا يعني أن…). ولقبول الرأي المعارض مع الحفاظ على رأيك: Admittedly, X. Even so, Y أو X. That said, Y. ولتضييق نطاق الادعاء: to a certain extent وin some cases وnecessary, but not sufficient. انتبه: لا تجعل كل جملة متحفّظة؛ قل رأيك الرئيسي بوضوح في المقدمة والخاتمة، واستخدم التحفّظات في فقرات العرض.",
+        "en": "At band 7+, a strong opinion comes with caveats that acknowledge the other side. To accept a point and then limit it: \"While it is true that X, Y\". To stop the reader misunderstanding what you have just said: \"This is not to say that…\". To concede a point but keep your position: \"Admittedly, X. Even so, Y\" or \"X. That said, Y\". To narrow a claim: \"to a certain extent\", \"in some cases\", \"necessary, but not sufficient\". Do not hedge every sentence: state your main position clearly in the introduction and conclusion, and use caveats in the body paragraphs."
+      },
+      "examples": [
+        "While it is true that surveillance cameras can deter crime, they also raise serious questions about privacy.",
+        "Stricter regulation is needed. This is not to say that every new app should require government approval.",
+        "Admittedly, independent audits are expensive. Even so, they are a valuable safeguard against algorithmic bias.",
+        "Transparency is necessary, but not sufficient: people also need a way to challenge a decision."
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "id": "g1",
+          "prompt": "___ automated systems can process cases quickly, they may repeat the unfairness of past decisions.",
+          "options": [
+            "While it is true that",
+            "Despite",
+            "As a result of",
+            "Due to"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "Boşluktan sonra tam bir cümle (özne + fiil) geliyor ve iki fikir zıt: \"While it is true that\". \"Despite\" ve \"due to\" isimle kullanılır; \"as a result of\" neden-sonuç bildirir.",
+            "ar": "بعد الفراغ جملة كاملة (فاعل + فعل) والفكرتان متعارضتان، لذلك While it is true that. أما Despite وDue to فتأتيان قبل اسم، وAs a result of للسبب والنتيجة.",
+            "en": "A full clause follows and the ideas contrast, so \"While it is true that\". Despite and due to take a noun; \"as a result of\" shows cause."
+          },
+          "example": "While it is true that apps are convenient, they collect a great deal of data."
+        },
+        {
+          "type": "gap",
+          "id": "g2",
+          "prompt": "Write ONE word: Some regulation is essential. This is not to ___ that innovation should be stopped.",
+          "answers": [
+            "say",
+            "suggest"
+          ],
+          "why": {
+            "tr": "Kalıp \"This is not to say that…\" (Bu, … demek değildir). \"This is not to suggest that…\" da doğrudur.",
+            "ar": "التعبير هو This is not to say that… (هذا لا يعني أن…)، ويصح أيضًا This is not to suggest that….",
+            "en": "The pattern is \"This is not to say (suggest) that…\"."
+          },
+          "example": "Phones can be distracting. This is not to say that they should be banned from schools."
+        },
+        {
+          "type": "choice",
+          "id": "g3",
+          "prompt": "Admittedly, the new rules will cost companies money. ___, they will protect millions of users.",
+          "options": [
+            "Even so",
+            "Therefore",
+            "For instance",
+            "Similarly"
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "\"Admittedly\" karşı fikri kabul eder; ardından gelen \"Even so\" (yine de) yazarın görüşüne geri döner. \"Therefore\" sonuç, \"For instance\" örnek, \"Similarly\" benzerlik bildirir.",
+            "ar": "Admittedly تعترف بالرأي المعارض، ثم Even so (ومع ذلك) تعود إلى رأي الكاتب. أما Therefore فللنتيجة، وFor instance للمثال، وSimilarly للتشابه.",
+            "en": "\"Admittedly… Even so…\" concedes, then returns to the writer's view."
+          },
+          "example": "Admittedly, the policy is unpopular. Even so, it is the right decision."
+        },
+        {
+          "type": "choice",
+          "id": "g4",
+          "prompt": "Which sentence is the most appropriate thesis for a band 7 essay?",
+          "options": [
+            "While surveillance may reduce some crimes, I believe its spread in public spaces should be strictly limited.",
+            "Surveillance might perhaps possibly be somewhat harmful in certain cases, maybe.",
+            "Surveillance is always evil and must be banned everywhere immediately.",
+            "There are many opinions about surveillance."
+          ],
+          "answer": 0,
+          "why": {
+            "tr": "A hem karşı tarafı kabul ediyor hem de net bir görüş veriyor. B gereğinden fazla temkinli (görüş kayboluyor), C hiç çekince içermeyen aşırı genelleme, D görüş bildirmiyor.",
+            "ar": "الخيار A يعترف بالطرف الآخر ويقدّم رأيًا واضحًا. B متحفّظ أكثر من اللازم فيضيع الرأي، وC تعميم مبالغ فيه بلا تحفّظ، وD لا يقدّم رأيًا.",
+            "en": "A concedes and still takes a clear position; B over-hedges, C over-generalises, D has no position."
+          },
+          "example": "While technology brings risks, I believe its benefits clearly outweigh them."
+        },
+        {
+          "type": "gap",
+          "id": "g5",
+          "prompt": "Write ONE word: Online privacy settings help users, at least to a certain ___.",
+          "answers": [
+            "extent",
+            "degree"
+          ],
+          "why": {
+            "tr": "\"to a certain extent\" (bir dereceye kadar) iddiayı sınırlayan kalıptır. \"to a certain degree\" da doğrudur.",
+            "ar": "to a certain extent (إلى حدّ ما) تعبير يقيّد الادعاء، ويصح أيضًا to a certain degree.",
+            "en": "\"To a certain extent/degree\" limits a claim."
+          },
+          "example": "I agree with this view to a certain extent."
+        }
+      ]
+    },
+    {
+      "kind": "write",
+      "i18n": {"ar":{"title":"الكتابة · Task 2: مقال كامل (ناقش الرأيين)","tip":"هذا مقال امتحان كامل: 40 دقيقة، و250 كلمة على الأقل. في المقدمة اعرض الرأيين بكلماتك الخاصة واذكر رأيك في جملة واحدة. خصّص فقرة لكل رأي، وفقرة لرأيك. عند الدفاع عن رأيك استخدم استدراكًا واحدًا على الأقل (while it is true that…, this is not to say…, admittedly… even so…). حاول استخدام خمس كلمات على الأقل من مفردات هذا الدرس."},"en":{"title":"Writing · Task 2: full essay (discuss both views)","tip":"This is a full exam essay: 40 minutes, at least 250 words. In the introduction give both views in your own words and state your opinion in one sentence. Give one body paragraph to each view and one to your own opinion. When defending your view use at least one concession (while it is true that…, this is not to say…, admittedly… even so…). Try to use at least five words from this lesson."}},
+      "title": "Yazma · Task 2: tam deneme (iki görüşü tartış)",
+      "task": 2,
+      "prompt": "Some people believe that new technologies should be strictly tested and regulated before they are made available to the public. Others argue that this would slow down progress and that problems are better dealt with as they arise.\n\nDiscuss both views and give your own opinion.\n\nWrite at least 250 words.",
+      "minutes": 40,
+      "minWords": 250,
+      "tip": "Bu tam bir sınav denemesi: 40 dakika, en az 250 kelime. Girişte iki görüşü kendi kelimelerinle ver ve kendi görüşünü bir cümleyle söyle. Her görüşe bir gövde paragrafı, kendi görüşüne bir paragraf ayır. Görüşünü savunurken en az bir çekince kullan (while it is true that…, this is not to say…, admittedly… even so…). Bu dersin kelimelerinden en az beşini kullanmaya çalış.",
+      "model": "New technologies now reach millions of people within months of their launch, which has led to a debate about whether they should be tested and regulated in advance or released first and corrected later. While both positions have merit, I believe that the level of control should depend on the level of risk.\n\nThose who favour strict testing point to the potential for serious harm. A medical device or a self-driving car that fails can injure people, and once a product is in millions of homes, recalling it is slow and costly. Moreover, some unintended consequences, such as the misuse of personal data, are almost impossible to reverse: once private information has been shared, it cannot be taken back. From this perspective, preventing damage is clearly preferable to repairing it.\n\nOn the other hand, it is argued that heavy regulation would slow innovation. Many digital products are updated every week, so an approval process designed for a fixed product would quickly become outdated. Critics also note that if one country imposes strict rules, companies may simply move their research elsewhere, which would not make anyone safer.\n\nIn my view, both arguments are partly correct. While it is true that no test can predict every problem, this is not to say that testing is pointless. Technologies that affect health or physical safety should be checked thoroughly before launch. For lower-risk products, however, the emphasis should be on transparency and accountability: companies should be required to explain how their systems work and to answer for any harm they cause.\n\nIn conclusion, the choice is not simply between caution and progress. Sensible safeguards, matched to the degree of risk, would allow society to benefit from innovation without accepting unnecessary dangers."
+    },
+    {
+      "kind": "speak",
+      "i18n": {"ar":{"title":"المحادثة: التكنولوجيا والخصوصية"},"en":{"title":"Speaking: technology and privacy"}},
+      "title": "Konuşma: teknoloji ve mahremiyet",
+      "part1": [
+        "Do you usually read the terms and conditions before you accept them? Why or why not?",
+        "Are there any apps you have decided not to use? Why?",
+        "How do you feel about security cameras in public places?",
+        "Do you think people share too much personal information online?"
+      ],
+      "card": {
+        "title": "Describe a piece of technology that you think has both good and bad effects.",
+        "points": [
+          "what it is and how you first started using it",
+          "how you or people you know use it",
+          "what problems it can cause"
+        ],
+        "explain": "and explain whether, overall, you think it has made life better."
+      },
+      "useful": [
+        "While it's true that it saves me a lot of time, I sometimes feel it…",
+        "That's not to say I'd stop using it; it's more that…",
+        "Admittedly, I've never really read the privacy settings, but…",
+        "I suppose it depends on who's in control of the data.",
+        "On balance, I'd say it has made my life easier, with a few reservations.",
+        "One thing that worries me a little is how much it knows about…"
+      ]
+    }
+  ]
+}

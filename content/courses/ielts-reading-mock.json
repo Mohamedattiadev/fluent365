@@ -1,0 +1,918 @@
+{
+ "id": "ielts-reading-mock",
+ "title": "IELTS Reading: Full Practice Test",
+ "level": "B2",
+ "track": "ielts",
+ "description": "A complete Academic Reading practice test: three passages from easier to harder and 40 questions of the real types, from True/False/Not Given to matching headings and summary completion. Allow about 20 minutes per passage, 60 minutes in all. About 30/40 is often around band 7; this is a rough guide, not official. Written for Bo-ok.",
+ "units": [
+  {
+   "id": "passage-1",
+   "title": "Passage 1: The Story of the Pencil",
+   "goal": "Questions 1–13: True/False/Not Given, note completion and multiple choice on an easier, factual passage.",
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Reading Passage 1"
+    },
+    {
+     "type": "text",
+     "text": "You should spend about 20 minutes on Questions 1–13, which are based on Reading Passage 1 below. In the real test you have 60 minutes for all three passages and no extra time to copy your answers, so keep an eye on the clock."
+    },
+    {
+     "type": "heading",
+     "text": "The Story of the Pencil"
+    },
+    {
+     "type": "text",
+     "text": "Few objects are as ordinary as the pencil. It is cheap, it needs no electricity, and unlike many pens it will write upside down, in freezing weather and on slightly damp paper. Yet the pencil has a surprisingly long history, and the story of how it became the simple tool we know today involves shepherds, chemists, wars and a long debate about rubber."
+    },
+    {
+     "type": "text",
+     "text": "The story usually begins in the sixteenth century in Borrowdale, a valley in the north-west of England. There, people discovered a large deposit of an unusually pure, solid form of graphite. Local shepherds are said to have used lumps of it to mark their sheep. At the time, nobody understood what the material was. Because it left a dark grey mark, rather like the mark left by lead, people called it \"black lead\" or \"plumbago\", and the name stuck. Even today, English speakers talk about the \"lead\" in a pencil, although pencils have never contained lead at all."
+    },
+    {
+     "type": "text",
+     "text": "The Borrowdale graphite was so valuable that access to the mine was strictly limited, and stealing from it was severely punished. Pure graphite, however, is soft and brittle, and it leaves marks on the fingers, so people soon began to wrap the sticks in string or sheepskin. Later, craftsmen placed them inside hollowed-out pieces of wood. This basic design, a thin rod of writing material inside a wooden case, has changed very little since."
+    },
+    {
+     "type": "text",
+     "text": "The next important step came from France at the end of the eighteenth century. At war with Britain, France could no longer import English graphite, and the graphite available elsewhere was of poorer quality. In 1795 the French engineer Nicolas-Jacques Conté found a solution. He ground graphite into a powder, mixed it with clay and water, pressed the mixture into rods and heated them in a kiln. The method had a great advantage: by changing the amount of clay, he could make the pencil harder or softer. More clay produced a harder pencil and a lighter line; less clay produced a softer pencil and a darker line. Pencils are still made in essentially the same way."
+    },
+    {
+     "type": "text",
+     "text": "This is where the letters printed on many pencils come from. In the system widely used in Europe, H stands for \"hard\" and B for \"black\", so a 2H pencil is harder than an H, while a 4B is soft and very dark. HB is in the middle, which is why it is the usual choice for everyday writing. In North America a number system is more common, and a No. 2 pencil is roughly equal to an HB. However, there is no single international standard, so an HB from one company may not be exactly the same as an HB from another."
+    },
+    {
+     "type": "text",
+     "text": "The wooden case developed too. In the nineteenth century, factories in Germany and the United States began to make pencils by machine. They cut grooves in two thin boards, laid the leads in the grooves and glued the boards together, so that many pencils could be made at once. Cedar became a popular wood because it is soft enough to sharpen easily and does not split. Many pencils were given six sides instead of a round shape, partly because a hexagonal pencil is less likely to roll off a desk."
+    },
+    {
+     "type": "text",
+     "text": "Then there was the problem of mistakes. For a long time, people rubbed out pencil marks with pieces of bread. In 1770 the English scientist Joseph Priestley noted that a substance from South America was excellent for removing pencil marks, and the material came to be known in English as \"rubber\" because of this use. In 1858 an American, Hymen Lipman, received a patent for a pencil with an eraser fixed to one end. His patent was later cancelled by a court, which decided that joining two existing objects together was not a new invention. The combination itself, though, became very popular, especially in the United States, although in many other countries pencils without erasers are still common."
+    },
+    {
+     "type": "text",
+     "text": "Despite the arrival of ballpoint pens and computers, the pencil has not disappeared. Artists value the range of tones it can produce, carpenters and builders use it to mark measurements on wood, and many students still prefer it for mathematics, where mistakes are common and easy to correct. Its simple design, almost unchanged for more than two centuries, may be the main reason it has survived."
+    },
+    {
+     "type": "heading",
+     "text": "Questions 1–5"
+    },
+    {
+     "type": "text",
+     "text": "Do the following statements agree with the information given in Reading Passage 1? TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, NOT GIVEN if there is no information on this."
+    },
+    {
+     "type": "tfng",
+     "id": "q1",
+     "statement": "1. Shepherds in Borrowdale used graphite before anyone knew what it really was.",
+     "answer": "true",
+     "why": {
+      "tr": "İkinci paragraf: çobanların grafitle koyunlarını işaretlediği söyleniyor ve hemen ardından \"At the time, nobody understood what the material was.\" Yani malzemenin ne olduğu bilinmeden kullanılıyordu: TRUE.",
+      "ar": "تقول الفقرة الثانية إن الرعاة استخدموا الغرافيت لوسم أغنامهم، ثم: \"At the time, nobody understood what the material was\"، أي أنه استُخدم قبل أن يُعرف ما هو. لذلك TRUE.",
+      "en": "Shepherds used it to mark sheep, and \"at the time, nobody understood what the material was\"."
+     },
+     "example": "People used the plant as medicine long before anyone understood how it worked."
+    },
+    {
+     "type": "tfng",
+     "id": "q2",
+     "statement": "2. The first pencils contained a small amount of lead.",
+     "answer": "false",
+     "why": {
+      "tr": "Metin açıkça \"pencils have never contained lead at all\" diyor. \"Lead\" sadece bir isim; izi kurşuna benzediği için verilmiş. İfade metinle çelişiyor: FALSE.",
+      "ar": "يقول النص صراحة: \"pencils have never contained lead at all\"، والاسم جاء فقط لأن الأثر يشبه أثر الرصاص. العبارة تناقض النص، لذلك FALSE.",
+      "en": "The passage says pencils \"have never contained lead at all\"."
+     },
+     "example": "Despite its name, the pencil \"lead\" is made of graphite and clay."
+    },
+    {
+     "type": "tfng",
+     "id": "q3",
+     "statement": "3. Conté's method made it possible to produce pencils of different hardness.",
+     "answer": "true",
+     "why": {
+      "tr": "\"by changing the amount of clay, he could make the pencil harder or softer\": kil miktarını değiştirerek sertliği ayarlayabiliyordu. \"made it possible\" = \"could\": TRUE.",
+      "ar": "\"by changing the amount of clay, he could make the pencil harder or softer\": بتغيير كمية الطين صار ممكنًا التحكم في الصلابة. لذلك TRUE.",
+      "en": "\"By changing the amount of clay, he could make the pencil harder or softer.\""
+     },
+     "example": "The new method made it possible to change the strength of the glass."
+    },
+    {
+     "type": "tfng",
+     "id": "q4",
+     "statement": "4. Graphite from outside England was more expensive than Borrowdale graphite.",
+     "answer": "not given",
+     "why": {
+      "tr": "Metin diğer grafitin sadece \"of poorer quality\" (daha düşük kaliteli) olduğunu söylüyor; fiyatını karşılaştırmıyor. Kalite ≠ fiyat. Bilgi yoksa NOT GIVEN.",
+      "ar": "يذكر النص أن الغرافيت الآخر \"of poorer quality\" أي أقل جودة، ولا يقارن الأسعار. الجودة ليست السعر، لذلك NOT GIVEN.",
+      "en": "The passage compares quality (\"poorer quality\"), not price."
+     },
+     "example": "The article says the cheaper phone is of poorer quality, but not where it is made."
+    },
+    {
+     "type": "tfng",
+     "id": "q5",
+     "statement": "5. An HB pencil has exactly the same hardness whichever company makes it.",
+     "answer": "false",
+     "why": {
+      "tr": "Metin: \"there is no single international standard, so an HB from one company may not be exactly the same as an HB from another\". İfade bunun tam tersini söylüyor: FALSE.",
+      "ar": "النص: \"there is no single international standard, so an HB from one company may not be exactly the same\". العبارة تقول العكس، لذلك FALSE.",
+      "en": "With no international standard, one company's HB \"may not be exactly the same\" as another's."
+     },
+     "example": "There is no single standard, so a size 38 shoe may differ from one brand to another."
+    },
+    {
+     "type": "heading",
+     "text": "Questions 6–10"
+    },
+    {
+     "type": "text",
+     "text": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer."
+    },
+    {
+     "type": "text",
+     "text": "Making the pencil — notes"
+    },
+    {
+     "type": "gap",
+     "id": "q6",
+     "prompt": "6. Early users wrapped graphite sticks in string or ___ to protect their fingers.",
+     "answers": [
+      "sheepskin",
+      "sheep skin"
+     ],
+     "why": {
+      "tr": "Üçüncü paragraf: \"people soon began to wrap the sticks in string or sheepskin\". Not tamamlamada kelimeyi metinden aynen al; tek kelime sınırına dikkat.",
+      "ar": "الفقرة الثالثة: \"wrap the sticks in string or sheepskin\". في إكمال الملاحظات انقل الكلمة من النص كما هي، والتزم بحدّ الكلمة الواحدة.",
+      "en": "\"people soon began to wrap the sticks in string or sheepskin\"."
+     },
+     "example": "In winter the shepherd wore a coat made of sheepskin."
+    },
+    {
+     "type": "gap",
+     "id": "q7",
+     "prompt": "7. Conté heated the rods of graphite and clay in a ___.",
+     "answers": [
+      "kiln"
+     ],
+     "why": {
+      "tr": "\"pressed the mixture into rods and heated them in a kiln\". \"kiln\" = fırın (tuğla, seramik pişirmek için). \"oven\" metinde yok; cevap metinden gelmeli.",
+      "ar": "\"heated them in a kiln\". الكلمة kiln تعني فرن الحرق (للفخار والطوب). كلمة oven غير موجودة في النص، والإجابة يجب أن تؤخذ من النص.",
+      "en": "\"pressed the mixture into rods and heated them in a kiln\"."
+     },
+     "example": "The pots are fired in a kiln at a very high temperature."
+    },
+    {
+     "type": "gap",
+     "id": "q8",
+     "prompt": "8. More clay gives a harder pencil and a ___ line.",
+     "answers": [
+      "lighter"
+     ],
+     "why": {
+      "tr": "\"More clay produced a harder pencil and a lighter line\". \"light\" değil \"lighter\": metin karşılaştırma yapıyor (daha açık renkli çizgi).",
+      "ar": "\"More clay produced a harder pencil and a lighter line\". الإجابة lighter بصيغة المقارنة كما في النص، لا light.",
+      "en": "\"More clay produced a harder pencil and a lighter line.\""
+     },
+     "example": "A harder pencil gives a lighter line than a soft one."
+    },
+    {
+     "type": "gap",
+     "id": "q9",
+     "prompt": "9. ___ was a popular wood because it is easy to sharpen and does not split.",
+     "answers": [
+      "cedar"
+     ],
+     "why": {
+      "tr": "\"Cedar became a popular wood because it is soft enough to sharpen easily and does not split.\" Notta \"easy to sharpen\" metindeki \"sharpen easily\" ifadesinin başka sözcüklerle söylenişi.",
+      "ar": "\"Cedar became a popular wood because it is soft enough to sharpen easily and does not split\". عبارة easy to sharpen في الملاحظة إعادة صياغة لـ sharpen easily.",
+      "en": "\"Cedar became a popular wood because it is soft enough to sharpen easily.\""
+     },
+     "example": "The box is made of cedar, so it smells pleasant."
+    },
+    {
+     "type": "gap",
+     "id": "q10",
+     "prompt": "10. Before rubber was used, people removed pencil marks with ___.",
+     "answers": [
+      "bread",
+      "pieces of bread"
+     ],
+     "why": {
+      "tr": "\"people rubbed out pencil marks with pieces of bread\". Tek kelime sınırı olduğu için \"bread\" yazmak en güvenlisi.",
+      "ar": "\"people rubbed out pencil marks with pieces of bread\". بما أن الحدّ كلمة واحدة فالأسلم كتابة bread.",
+      "en": "\"people rubbed out pencil marks with pieces of bread\"."
+     },
+     "example": "Artists sometimes still use soft bread to lift charcoal from paper."
+    },
+    {
+     "type": "heading",
+     "text": "Questions 11–13"
+    },
+    {
+     "type": "text",
+     "text": "Choose the correct letter, A, B, C or D."
+    },
+    {
+     "type": "choice",
+     "id": "q11",
+     "prompt": "11. Why did France need a new way of making pencils?",
+     "options": [
+      "It wanted cheaper pencils for its schools.",
+      "It could not obtain English graphite because of the war.",
+      "Its own graphite was too hard to use.",
+      "Conté wanted to sell pencils in Britain."
+     ],
+     "answer": 1,
+     "why": {
+      "tr": "Dördüncü paragraf: \"At war with Britain, France could no longer import English graphite\". B bunu başka sözcüklerle söylüyor (import → obtain). A ve D metinde yok; C yanlış: diğer grafit \"poorer quality\", \"too hard\" değil.",
+      "ar": "الفقرة الرابعة: \"At war with Britain, France could no longer import English graphite\"، والخيار B يعيد صياغتها (import ← obtain). A وD غير مذكورين، وC خطأ لأن النص يقول \"poorer quality\" لا \"too hard\".",
+      "en": "\"At war with Britain, France could no longer import English graphite.\" B paraphrases this."
+     },
+     "example": "Because of the strike, the factory could not obtain the parts it needed."
+    },
+    {
+     "type": "choice",
+     "id": "q12",
+     "prompt": "12. What does the writer say about Hymen Lipman's pencil?",
+     "options": [
+      "It was the first time rubber had been used to remove pencil marks.",
+      "Teachers in every country refused to use it.",
+      "The legal protection for the idea did not last.",
+      "It was invented in South America."
+     ],
+     "answer": 2,
+     "why": {
+      "tr": "\"His patent was later cancelled by a court\": patent (yasal koruma) iptal edildi, yani kalıcı olmadı. A yanlış: lastik 1770'te zaten kullanılıyordu. D tuzak: Güney Amerika lastiğin geldiği yer, kalemin icat edildiği yer değil.",
+      "ar": "\"His patent was later cancelled by a court\": أُلغيت براءة الاختراع، أي أن الحماية القانونية لم تستمر. A خطأ لأن المطاط استُخدم منذ 1770، وD فخّ: أمريكا الجنوبية مصدر المادة لا مكان الاختراع.",
+      "en": "The patent \"was later cancelled by a court\" — the legal protection did not last."
+     },
+     "example": "The company's patent was cancelled, so others could copy the design."
+    },
+    {
+     "type": "choice",
+     "id": "q13",
+     "prompt": "13. What is the writer's main purpose in Reading Passage 1?",
+     "options": [
+      "to explain how a simple object developed over time",
+      "to argue that pencils are better than pens",
+      "to describe how graphite is mined today",
+      "to compare the pencil grading systems of different countries"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "Metin 16. yüzyıldan bugüne kalemin gelişimini sırayla anlatıyor: grafit, Conté, ahşap gövde, silgi. B'de bir tartışma yok; C ve D metnin sadece küçük bir kısmı ya da hiç yok. Ana amaç sorusunda tüm metni kapsayan seçeneği seç.",
+      "ar": "يروي النص تطور القلم بالترتيب من القرن السادس عشر حتى اليوم: الغرافيت، ثم كونتيه، ثم الغلاف الخشبي، ثم الممحاة. لا يوجد جدال كما في B، وC وD تفاصيل جزئية أو غير موجودة. في سؤال الهدف الرئيسي اختر ما يغطي النص كله.",
+      "en": "The passage traces the pencil's development from the 1500s to today; the other options cover a detail or nothing."
+     },
+     "example": "The article explains how the bicycle developed over two hundred years."
+    }
+   ],
+   "timeMinutes": 20
+  },
+  {
+   "id": "passage-2",
+   "title": "Passage 2: Islands of Heat",
+   "goal": "Questions 14–26: matching headings, summary completion and multiple choice on a longer passage.",
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Reading Passage 2"
+    },
+    {
+     "type": "text",
+     "text": "You should spend about 20 minutes on Questions 14–26, which are based on Reading Passage 2 below. Passage 2 is usually a little harder than Passage 1, so try not to spend more than about 20 minutes on it."
+    },
+    {
+     "type": "heading",
+     "text": "Islands of Heat"
+    },
+    {
+     "type": "text",
+     "text": "A  On a calm summer evening, a cyclist riding from the countryside into the centre of a large city may notice the air growing warmer as fields give way to streets and buildings. This is not imagination. Cities are usually warmer than the land around them, a pattern known as the urban heat island. During the day the difference is often small, perhaps a degree or two, but after sunset it can grow to several degrees, because the countryside cools quickly while the city holds on to its heat."
+    },
+    {
+     "type": "text",
+     "text": "B  The effect is not a new discovery. In the early nineteenth century the English amateur scientist Luke Howard, better known today for the names he gave to the different types of cloud, kept careful temperature records in and around London. He noticed that the city was regularly warmer than the surrounding country, especially at night, and suggested that the extra heat came partly from the city itself: from its fires, its crowded population and its buildings. Since then, the effect has been measured in cities on every inhabited continent, and scientists can now explain it in much more detail."
+    },
+    {
+     "type": "text",
+     "text": "C  The main cause lies in the materials that cities are made of. Asphalt roads, dark roofs and stone or concrete walls absorb a large share of the sunlight that falls on them and store it as heat. In the evening they slowly release that heat into the air. Tall buildings standing close together make matters worse: they trap warm air in the narrow \"canyons\" between them and block the view of the open sky, which slows down cooling at night. Cities also produce heat directly. Engines, factories and air conditioners all give off waste heat, and air conditioners create a vicious circle, cooling the inside of buildings by pumping heat outside, which makes the streets hotter and increases the demand for cooling."
+    },
+    {
+     "type": "text",
+     "text": "D  What cities lack is just as important as what they contain. In the countryside, plants and moist soil cool the air through evaporation, in much the same way that sweat cools the skin. Trees also provide shade, keeping the ground beneath them cool. In a city, much of the ground is covered with hard surfaces from which rain runs off quickly into drains, so less water is left to evaporate. Measurements in many cities have shown that neighbourhoods with few trees and little green space are often noticeably hotter than leafier areas nearby, and these are frequently the areas where poorer residents live."
+    },
+    {
+     "type": "text",
+     "text": "E  The consequences go beyond discomfort. Higher temperatures raise the demand for electricity, especially for air conditioning, which can put power networks under strain at the hottest times of day. Heat can also worsen air quality, because some pollutants form more quickly in hot, sunny conditions. Most seriously, extreme heat is a danger to health. During heatwaves the number of deaths tends to rise, and the people most at risk include older people, those with long-term illnesses and people who live alone. Because cities stay warm at night, their residents may get little relief, and the body has less chance to recover before the next hot day. As heatwaves become more frequent in many regions, these problems are expected to grow."
+    },
+    {
+     "type": "text",
+     "text": "F  Fortunately, the urban heat island is one of the few climate-related problems that cities can do a great deal about by themselves. One approach is to make surfaces lighter. \"Cool roofs\", painted white or covered with reflective material, stay much cooler than dark roofs in strong sun, which also reduces the energy needed to cool the rooms below. Planting street trees and creating parks adds both shade and evaporation, while green roofs covered with plants help to keep buildings cool and hold back rainwater. Some cities have even brought hidden rivers back to the surface. In Seoul, for example, a busy elevated road was removed in the 2000s and the stream that had been covered beneath it was restored as a long, green public space."
+    },
+    {
+     "type": "text",
+     "text": "G  None of these measures is perfect. Light-coloured pavements reflect sunlight back up towards people walking on them, which can make a street feel hotter even when the ground itself is cooler. Trees take years to grow, need water during dry periods and must be planted with care so that they do not block breezes that would otherwise carry heat away. For these reasons, many specialists argue that there is no single answer, and that the best results come from combining several measures, chosen to suit each city's climate, buildings and budget."
+    },
+    {
+     "type": "heading",
+     "text": "Questions 14–19"
+    },
+    {
+     "type": "text",
+     "text": "Reading Passage 2 has seven paragraphs, A–G. Choose the correct heading for paragraphs B–G from the list of headings. There are more headings than paragraphs, so you will not use them all. Example: Paragraph A — iii. A difference that grows after dark."
+    },
+    {
+     "type": "choice",
+     "id": "q14",
+     "prompt": "14. Paragraph B",
+     "options": [
+      "i. Changes cities can make on their own",
+      "ii. An early observation now widely confirmed",
+      "iv. Why air conditioning is the best answer",
+      "v. The natural cooling that cities have lost",
+      "vi. More than a question of comfort",
+      "vii. Heat that is stored and heat that is produced",
+      "viii. The countryside is warming faster than cities",
+      "ix. No single solution"
+     ],
+     "answer": 1,
+     "why": {
+      "tr": "Paragraf B Luke Howard'ın 19. yüzyılda Londra'da yaptığı gözlemi (early observation) ve bugün etkinin her kıtada ölçüldüğünü (widely confirmed) anlatıyor. Bulutlar bir ayrıntı, ana fikir değil.",
+      "ar": "تتحدث الفقرة B عن ملاحظة لوك هوارد في لندن في القرن التاسع عشر (ملاحظة مبكرة)، ثم عن قياس الظاهرة في كل القارات اليوم (تأكيد واسع). ذكر السحب تفصيل وليس الفكرة الرئيسة.",
+      "en": "Howard's nineteenth-century records (early observation) and measurements on every continent since (widely confirmed)."
+     },
+     "example": "The doctor's early observation was later confirmed by many studies."
+    },
+    {
+     "type": "choice",
+     "id": "q15",
+     "prompt": "15. Paragraph C",
+     "options": [
+      "i. Changes cities can make on their own",
+      "ii. An early observation now widely confirmed",
+      "iv. Why air conditioning is the best answer",
+      "v. The natural cooling that cities have lost",
+      "vi. More than a question of comfort",
+      "vii. Heat that is stored and heat that is produced",
+      "viii. The countryside is warming faster than cities",
+      "ix. No single solution"
+     ],
+     "answer": 5,
+     "why": {
+      "tr": "Paragraf C iki neden veriyor: malzemeler güneş ışığını ısı olarak depoluyor (stored) ve motorlar, klimalar doğrudan ısı üretiyor (\"Cities also produce heat directly\"). iv tuzak: klima burada sorunun parçası, çözüm değil.",
+      "ar": "تقدّم الفقرة C سببين: المواد تخزّن ضوء الشمس حرارةً (stored)، والمحركات والمكيّفات تُنتج الحرارة مباشرة (\"Cities also produce heat directly\"). العنوان iv فخّ: المكيّف هنا جزء من المشكلة لا الحل.",
+      "en": "Materials store heat, and \"cities also produce heat directly\". Heading iv is a trap: air conditioning is part of the problem here."
+     },
+     "example": "The battery stores energy, while the panel produces it."
+    },
+    {
+     "type": "choice",
+     "id": "q16",
+     "prompt": "16. Paragraph D",
+     "options": [
+      "i. Changes cities can make on their own",
+      "ii. An early observation now widely confirmed",
+      "iv. Why air conditioning is the best answer",
+      "v. The natural cooling that cities have lost",
+      "vi. More than a question of comfort",
+      "vii. Heat that is stored and heat that is produced",
+      "viii. The countryside is warming faster than cities",
+      "ix. No single solution"
+     ],
+     "answer": 3,
+     "why": {
+      "tr": "\"What cities lack\": kırsalda bitkiler ve nemli toprak buharlaşmayla havayı serinletir, şehirde bu su ve gölge eksik. Yani doğal serinleme kaybolmuş: v.",
+      "ar": "\"What cities lack\": في الريف تبرّد النباتات والتربة الرطبة الهواء بالتبخّر، وفي المدينة يقلّ الماء والظل. أي أن التبريد الطبيعي مفقود: العنوان v.",
+      "en": "The paragraph is about what cities lack: evaporation and shade, nature's own cooling."
+     },
+     "example": "Without trees, the street has lost its natural shade."
+    },
+    {
+     "type": "choice",
+     "id": "q17",
+     "prompt": "17. Paragraph E",
+     "options": [
+      "i. Changes cities can make on their own",
+      "ii. An early observation now widely confirmed",
+      "iv. Why air conditioning is the best answer",
+      "v. The natural cooling that cities have lost",
+      "vi. More than a question of comfort",
+      "vii. Heat that is stored and heat that is produced",
+      "viii. The countryside is warming faster than cities",
+      "ix. No single solution"
+     ],
+     "answer": 4,
+     "why": {
+      "tr": "İlk cümle başlığı veriyor: \"The consequences go beyond discomfort.\" Ardından elektrik, hava kalitesi ve sağlık riskleri geliyor. \"beyond discomfort\" ≈ \"more than a question of comfort\".",
+      "ar": "الجملة الأولى تعطي العنوان: \"The consequences go beyond discomfort\"، ثم تأتي الكهرباء وجودة الهواء والصحة. فـ beyond discomfort تساوي more than a question of comfort.",
+      "en": "\"The consequences go beyond discomfort\" — electricity, air quality and health follow."
+     },
+     "example": "For many families, the price of food is more than a question of comfort."
+    },
+    {
+     "type": "choice",
+     "id": "q18",
+     "prompt": "18. Paragraph F",
+     "options": [
+      "i. Changes cities can make on their own",
+      "ii. An early observation now widely confirmed",
+      "iv. Why air conditioning is the best answer",
+      "v. The natural cooling that cities have lost",
+      "vi. More than a question of comfort",
+      "vii. Heat that is stored and heat that is produced",
+      "viii. The countryside is warming faster than cities",
+      "ix. No single solution"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "\"one of the few climate-related problems that cities can do a great deal about by themselves\" → \"on their own\". Paragraf ardından çözümleri sıralıyor: açık renkli çatılar, ağaçlar, yeşil çatılar, nehirler.",
+      "ar": "\"cities can do a great deal about by themselves\" تعني on their own، ثم تعدّد الفقرة الحلول: الأسطح الفاتحة والأشجار والأسطح الخضراء والأنهار.",
+      "en": "\"cities can do a great deal about by themselves\", followed by a list of measures."
+     },
+     "example": "Small towns can make many of these changes on their own."
+    },
+    {
+     "type": "choice",
+     "id": "q19",
+     "prompt": "19. Paragraph G",
+     "options": [
+      "i. Changes cities can make on their own",
+      "ii. An early observation now widely confirmed",
+      "iv. Why air conditioning is the best answer",
+      "v. The natural cooling that cities have lost",
+      "vi. More than a question of comfort",
+      "vii. Heat that is stored and heat that is produced",
+      "viii. The countryside is warming faster than cities",
+      "ix. No single solution"
+     ],
+     "answer": 7,
+     "why": {
+      "tr": "Paragraf her önlemin sorununu anlatıyor ve şöyle bitiyor: \"there is no single answer\". Başlık sorularında son cümle çoğu zaman ana fikri özetler, ama bunu tüm paragrafla kontrol et.",
+      "ar": "تشرح الفقرة عيوب كل إجراء وتنتهي بـ \"there is no single answer\". في أسئلة العناوين كثيرًا ما تلخّص الجملة الأخيرة الفكرة، لكن تحقّق منها بالفقرة كلها.",
+      "en": "Every measure has a drawback, and \"there is no single answer\"."
+     },
+     "example": "There is no single solution to traffic; cities need several."
+    },
+    {
+     "type": "heading",
+     "text": "Questions 20–23"
+    },
+    {
+     "type": "text",
+     "text": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer."
+    },
+    {
+     "type": "text",
+     "text": "Why cities stay warm: Roads, roofs and walls absorb sunlight and release the heat in the evening. Air conditioners make the problem worse because they create a (20) ___. In the countryside, by contrast, plants and wet soil lower the temperature through (21) ___. In cities, rain quickly disappears into (22) ___, so less water is available. Heat also affects the air we breathe, as some pollutants form faster in hot and (23) ___ weather."
+    },
+    {
+     "type": "gap",
+     "id": "q20",
+     "prompt": "20. Air conditioners make the problem worse because they create a ___.",
+     "answers": [
+      "vicious circle"
+     ],
+     "why": {
+      "tr": "Paragraf C: \"air conditioners create a vicious circle\" = kısır döngü: serinletmek için dışarıya ısı veriyorlar, sokak ısınıyor, daha çok serinletme gerekiyor. İki kelime sınırına uyuyor.",
+      "ar": "الفقرة C: \"air conditioners create a vicious circle\" أي حلقة مفرغة: تبرّد الداخل بإخراج الحرارة، فتسخن الشوارع ويزيد الطلب على التبريد. كلمتان، ضمن الحد.",
+      "en": "Paragraph C: \"air conditioners create a vicious circle\"."
+     },
+     "example": "Debt can become a vicious circle: you borrow to pay what you borrowed."
+    },
+    {
+     "type": "gap",
+     "id": "q21",
+     "prompt": "21. In the countryside, plants and wet soil lower the temperature through ___.",
+     "answers": [
+      "evaporation"
+     ],
+     "why": {
+      "tr": "Paragraf D: \"plants and moist soil cool the air through evaporation\". Özetteki \"wet soil\" metindeki \"moist soil\" ifadesinin eş anlamlısı.",
+      "ar": "الفقرة D: \"plants and moist soil cool the air through evaporation\". وwet soil في الملخص مرادف لـ moist soil.",
+      "en": "Paragraph D: \"cool the air through evaporation\"."
+     },
+     "example": "Sweat cools the body through evaporation."
+    },
+    {
+     "type": "gap",
+     "id": "q22",
+     "prompt": "22. In cities, rain quickly disappears into ___, so less water is available.",
+     "answers": [
+      "drains",
+      "the drains"
+     ],
+     "why": {
+      "tr": "Paragraf D: \"rain runs off quickly into drains, so less water is left to evaporate\". Boşluktan önce \"into\" var, sonra isim gelmeli: drains.",
+      "ar": "الفقرة D: \"rain runs off quickly into drains\". بعد into يأتي اسم: drains (مصارف المياه).",
+      "en": "Paragraph D: \"rain runs off quickly into drains\"."
+     },
+     "example": "After the storm, the water ran into the drains."
+    },
+    {
+     "type": "gap",
+     "id": "q23",
+     "prompt": "23. Some pollutants form faster in hot and ___ weather.",
+     "answers": [
+      "sunny"
+     ],
+     "why": {
+      "tr": "Paragraf E: \"some pollutants form more quickly in hot, sunny conditions\". \"more quickly\" → \"faster\", \"conditions\" → \"weather\": özet metni farklı sözcüklerle anlatır, cevap kelimesi aynı kalır.",
+      "ar": "الفقرة E: \"some pollutants form more quickly in hot, sunny conditions\". الملخص يعيد الصياغة (more quickly ← faster)، لكن كلمة الإجابة تبقى كما هي: sunny.",
+      "en": "Paragraph E: \"in hot, sunny conditions\"."
+     },
+     "example": "The forecast is for hot and sunny weather all week."
+    },
+    {
+     "type": "heading",
+     "text": "Questions 24–26"
+    },
+    {
+     "type": "text",
+     "text": "Choose the correct letter, A, B, C or D."
+    },
+    {
+     "type": "choice",
+     "id": "q24",
+     "prompt": "24. According to the passage, Luke Howard believed that London's extra warmth came partly from",
+     "options": [
+      "the clouds that formed over the city.",
+      "the city's fires, people and buildings.",
+      "the river that runs through London.",
+      "the fast cooling of the countryside."
+     ],
+     "answer": 1,
+     "why": {
+      "tr": "Paragraf B: \"the extra heat came partly from the city itself: from its fires, its crowded population and its buildings\". A tuzak: Howard bulutları adlandırmasıyla tanınıyor, ama ısının nedeni olarak bulut demiyor. D paragraf A'daki genel bir açıklama, Howard'ın fikri değil.",
+      "ar": "الفقرة B: \"from its fires, its crowded population and its buildings\". A فخّ: اشتهر هوارد بتسمية السحب، لكنه لم يجعلها سبب الحرارة. وD شرح عام من الفقرة A وليس رأي هوارد.",
+      "en": "Paragraph B: \"from its fires, its crowded population and its buildings\". The clouds are a distractor."
+     },
+     "example": "Much of the noise comes from the traffic, the crowds and the building work."
+    },
+    {
+     "type": "choice",
+     "id": "q25",
+     "prompt": "25. Why, according to paragraph E, are heatwaves especially dangerous in cities?",
+     "options": [
+      "Pollution levels are highest at night.",
+      "Cities stay warm at night, so the body has less time to recover.",
+      "Power networks always fail during heatwaves.",
+      "Most older people live in city centres."
+     ],
+     "answer": 1,
+     "why": {
+      "tr": "\"Because cities stay warm at night, their residents may get little relief, and the body has less chance to recover\". C aşırı genelleme: metin \"can put ... under strain\" diyor, \"always fail\" değil. A ve D metinde yok.",
+      "ar": "\"Because cities stay warm at night ... the body has less chance to recover\". C مبالغة: النص يقول \"can put ... under strain\" لا \"always fail\"، وA وD غير مذكورين.",
+      "en": "\"Because cities stay warm at night ... the body has less chance to recover.\" C overstates \"can put under strain\"."
+     },
+     "example": "Because the room stayed hot all night, she could not recover from the long day."
+    },
+    {
+     "type": "choice",
+     "id": "q26",
+     "prompt": "26. What disadvantage of light-coloured pavements does the writer mention?",
+     "options": [
+      "They cost more than dark ones.",
+      "They become dirty very quickly.",
+      "They can make walking in the street feel hotter.",
+      "They stop breezes from carrying heat away."
+     ],
+     "answer": 2,
+     "why": {
+      "tr": "Paragraf G: açık renkli kaldırımlar güneşi yayalara geri yansıtıyor ve \"can make a street feel hotter\". D tuzak: rüzgârı engelleme sorunu ağaçlar için söyleniyor, kaldırımlar için değil.",
+      "ar": "الفقرة G: الأرصفة الفاتحة تعكس الشمس نحو المارّة و\"can make a street feel hotter\". D فخّ: حجب النسيم مذكور عن الأشجار لا الأرصفة.",
+      "en": "Paragraph G: they reflect sunlight onto people and \"can make a street feel hotter\". D is about trees."
+     },
+     "example": "The white walls reflect the sun and make the square feel even hotter."
+    }
+   ],
+   "timeMinutes": 20
+  },
+  {
+   "id": "passage-3",
+   "title": "Passage 3: The Uses of Forgetting",
+   "goal": "Questions 27–40: Yes/No/Not Given, matching features, multiple choice and summary completion on a harder, argument-based passage.",
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Reading Passage 3"
+    },
+    {
+     "type": "text",
+     "text": "You should spend about 20 minutes on Questions 27–40, which are based on Reading Passage 3 below. Passage 3 is the longest and most difficult, and it presents the writer's views, so read for the argument as well as the facts."
+    },
+    {
+     "type": "heading",
+     "text": "The Uses of Forgetting"
+    },
+    {
+     "type": "text",
+     "text": "A  We tend to think of forgetting as a failure. We forget names at parties, lose track of where we have parked, and stare at exam questions whose answers we knew perfectly well the night before. The language we use reflects this attitude: memory \"fails\", it has \"gaps\", and it \"lets us down\". A number of psychologists, however, argue that this picture is incomplete. Forgetting, they suggest, is not simply what happens when memory breaks down; it is also part of how a healthy memory works."
+    },
+    {
+     "type": "text",
+     "text": "B  The scientific study of forgetting began in the 1880s with the German psychologist Hermann Ebbinghaus. Using himself as his only subject, he learned long lists of meaningless syllables and then measured how many he could still recall after different periods of time. His results produced what is now called the forgetting curve: much of what is learned is lost quickly, within the first hours and days, after which the rate of loss slows down. Ebbinghaus also found that reviewing material at intervals made it last far longer, an observation that later research has confirmed many times and that lies behind the spaced-repetition methods used in many language-learning apps."
+    },
+    {
+     "type": "text",
+     "text": "C  Ebbinghaus deliberately used nonsense so that meaning would not affect his results. Half a century later, the British psychologist Frederic Bartlett took the opposite approach. He asked people to read an unfamiliar folk tale and to retell it later, sometimes several times over long periods. Their versions grew shorter, and details that seemed strange from their own cultural point of view were dropped or turned into something more familiar. Bartlett concluded that remembering is not like taking a recording off a shelf. Instead, we rebuild the past each time we recall it, using our general knowledge to fill the gaps. Memory, in this view, is reconstructive."
+    },
+    {
+     "type": "text",
+     "text": "D  If memory is a reconstruction, then the loss of some details may be less damaging than it seems. Consider what a perfect memory would actually involve. Every time you parked your car, the memory of that particular parking space would be kept as clearly as all the others, and picking out today's space from hundreds of almost identical memories would become harder, not easier. Psychologists call this interference: old memories compete with new ones, and similar memories compete with each other. From this angle, forgetting what is unimportant is precisely what allows the important to be found."
+    },
+    {
+     "type": "text",
+     "text": "E  A second argument concerns generalisation. To act sensibly in a changing world, people need to draw general lessons from particular experiences, such as that a certain kind of sky usually means rain, rather than store each experience in full. Some researchers suggest that letting go of specific details helps the brain to keep the pattern that many experiences share. On this account, a memory that kept everything would be better at describing the past but worse at preparing for the future. This idea receives some support from computer models of learning, in which systems that store every example perfectly often cope badly with new cases. It remains, however, a hypothesis rather than an established fact."
+    },
+    {
+     "type": "text",
+     "text": "F  The rare cases of people with exceptional autobiographical memory are sometimes mentioned in this debate. A small number of people have been described who can recall what they did on almost any day of their adult lives. Such abilities are remarkable, but those who have them do not always describe them as a gift; some report that unpleasant memories return with the same force as pleasant ones. Yet it would be unwise to draw firm conclusions from so few individuals, especially as their performance on ordinary laboratory memory tests is often unremarkable."
+    },
+    {
+     "type": "text",
+     "text": "G  None of this means that all forgetting is welcome. Memory loss caused by illnesses such as dementia is deeply harmful, and the everyday frustration of forgetting something we need is real. The argument is rather that forgetting should be seen as a process with its own functions, not merely as the absence of remembering. This change of perspective has practical consequences. A student who cannot recall last week's lesson has not necessarily wasted her time, since forgotten material is usually relearned faster than it was learned at first, an effect that Ebbinghaus himself measured and called \"savings\". Moreover, trying to recall information, even with effort and some mistakes, strengthens memory more than simply reading it again."
+    },
+    {
+     "type": "text",
+     "text": "H  Perhaps the most useful lesson is that memory is shaped by use. What we return to, we tend to keep; what we never need again tends to fade. Seen in this way, forgetting is less a flaw in the system than a sign that the system is working, keeping our minds organised around what matters now."
+    },
+    {
+     "type": "heading",
+     "text": "Questions 27–31"
+    },
+    {
+     "type": "text",
+     "text": "Do the following statements agree with the claims of the writer in Reading Passage 3? Choose YES if the statement agrees with the claims of the writer, NO if the statement contradicts the claims of the writer, NOT GIVEN if it is impossible to say what the writer thinks about this."
+    },
+    {
+     "type": "choice",
+     "id": "q27",
+     "prompt": "27. The words people use about memory show that they usually see forgetting as something negative.",
+     "options": [
+      "YES",
+      "NO",
+      "NOT GIVEN"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "Paragraf A: \"The language we use reflects this attitude: memory 'fails', it has 'gaps'...\". \"this attitude\" = unutmayı başarısızlık olarak görmek. Yazar bunu söylüyor: YES.",
+      "ar": "الفقرة A: \"The language we use reflects this attitude\"، والموقف هو اعتبار النسيان فشلًا. الكاتب يقول ذلك، لذلك YES.",
+      "en": "Paragraph A: \"The language we use reflects this attitude\" — that forgetting is a failure."
+     },
+     "example": "The words we choose often reflect our attitude to a subject."
+    },
+    {
+     "type": "choice",
+     "id": "q28",
+     "prompt": "28. Ebbinghaus should have tested a larger number of people.",
+     "options": [
+      "YES",
+      "NO",
+      "NOT GIVEN"
+     ],
+     "answer": 2,
+     "why": {
+      "tr": "Metin Ebbinghaus'un kendini tek denek olarak kullandığını söylüyor ama yazar bunu eleştirmiyor ya da övmüyor. Yazarın görüşü yoksa NOT GIVEN. Kendi düşünceni (\"tek kişi az\") cevaba katma.",
+      "ar": "يذكر النص أن إبنغهاوس جرّب على نفسه فقط، لكن الكاتب لا ينتقد ذلك ولا يمدحه. إن لم يُعرف رأي الكاتب فالإجابة NOT GIVEN، ولا تُدخل رأيك الشخصي.",
+      "en": "The writer reports that Ebbinghaus tested only himself but never judges this choice."
+     },
+     "example": "The report describes the method, but it does not say whether it was a good one."
+    },
+    {
+     "type": "choice",
+     "id": "q29",
+     "prompt": "29. A memory that kept every detail equally clearly would make it easier to find recent information.",
+     "options": [
+      "YES",
+      "NO",
+      "NOT GIVEN"
+     ],
+     "answer": 1,
+     "why": {
+      "tr": "Paragraf D: mükemmel bir hafızada bugünkü park yerini bulmak \"would become harder, not easier\". İfade yazarın söylediğinin tersi: NO.",
+      "ar": "الفقرة D: مع الذاكرة الكاملة يصبح إيجاد مكان السيارة اليوم \"harder, not easier\". العبارة عكس كلام الكاتب، لذلك NO.",
+      "en": "Paragraph D: finding today's memory \"would become harder, not easier\"."
+     },
+     "example": "Keeping every old email makes it harder, not easier, to find the one you need."
+    },
+    {
+     "type": "choice",
+     "id": "q30",
+     "prompt": "30. It has been proven that forgetting details helps people to generalise.",
+     "options": [
+      "YES",
+      "NO",
+      "NOT GIVEN"
+     ],
+     "answer": 1,
+     "why": {
+      "tr": "Paragraf E'nin son cümlesi: \"It remains, however, a hypothesis rather than an established fact.\" \"proven\" = kanıtlanmış; yazar bunun henüz bir hipotez olduğunu söylüyor: NO.",
+      "ar": "آخر جملة في الفقرة E: \"It remains ... a hypothesis rather than an established fact\". كلمة proven تناقض ذلك، لذلك NO.",
+      "en": "Paragraph E: \"a hypothesis rather than an established fact\" contradicts \"proven\"."
+     },
+     "example": "The theory is interesting, but it has not been proven."
+    },
+    {
+     "type": "choice",
+     "id": "q31",
+     "prompt": "31. Language-learning apps are more effective than classroom teaching.",
+     "options": [
+      "YES",
+      "NO",
+      "NOT GIVEN"
+     ],
+     "answer": 2,
+     "why": {
+      "tr": "Uygulamalar paragraf B'de sadece aralıklı tekrar yöntemini kullandıkları için anılıyor. Yazar onları sınıf eğitimiyle karşılaştırmıyor: NOT GIVEN. Metinde geçen bir kelime (apps) cevabın orada olduğu anlamına gelmez.",
+      "ar": "ذُكرت التطبيقات في الفقرة B فقط لأنها تستخدم التكرار المتباعد، والكاتب لا يقارنها بالتعليم في الصف. لذلك NOT GIVEN؛ وجود الكلمة في النص لا يعني وجود الإجابة.",
+      "en": "Apps are mentioned only as users of spaced repetition; there is no comparison with classrooms."
+     },
+     "example": "The article mentions online courses but does not compare them with lessons in class."
+    },
+    {
+     "type": "heading",
+     "text": "Questions 32–34"
+    },
+    {
+     "type": "text",
+     "text": "Look at the following findings and the list of people below. Match each finding with the correct person or group, A, B, C or D."
+    },
+    {
+     "type": "choice",
+     "id": "q32",
+     "prompt": "32. People change parts of a story so that it fits what they already know.",
+     "options": [
+      "Hermann Ebbinghaus",
+      "Frederic Bartlett",
+      "people with exceptional autobiographical memory",
+      "researchers who build computer models of learning"
+     ],
+     "answer": 1,
+     "why": {
+      "tr": "Paragraf C, Bartlett: anlatılarda garip gelen ayrıntılar \"dropped or turned into something more familiar\" ve boşluklar \"general knowledge\" ile dolduruluyor. Bu, hikâyeyi bildiklerine uydurmak demek.",
+      "ar": "الفقرة C، بارتليت: التفاصيل الغريبة \"dropped or turned into something more familiar\"، والفراغات تُملأ بالمعرفة العامة، أي تعديل القصة لتوافق ما يعرفه الناس.",
+      "en": "Paragraph C: Bartlett found strange details were \"turned into something more familiar\"."
+     },
+     "example": "When we retell a story, we often change it to fit what we expect."
+    },
+    {
+     "type": "choice",
+     "id": "q33",
+     "prompt": "33. Material that has been forgotten can be learned again more quickly.",
+     "options": [
+      "Hermann Ebbinghaus",
+      "Frederic Bartlett",
+      "people with exceptional autobiographical memory",
+      "researchers who build computer models of learning"
+     ],
+     "answer": 0,
+     "why": {
+      "tr": "Paragraf G: \"forgotten material is usually relearned faster ... an effect that Ebbinghaus himself measured and called 'savings'\". Bilgi G paragrafında ama kişi Ebbinghaus: eşleştirme sorularında cevaplar metnin sırasına göre gelmeyebilir.",
+      "ar": "الفقرة G: \"an effect that Ebbinghaus himself measured and called 'savings'\". المعلومة في الفقرة G لكن صاحبها إبنغهاوس؛ وفي أسئلة المطابقة لا تأتي الإجابات بترتيب النص دائمًا.",
+      "en": "Paragraph G: relearning is faster, \"an effect that Ebbinghaus himself measured\"."
+     },
+     "example": "I had forgotten my school French, but I relearned it quickly."
+    },
+    {
+     "type": "choice",
+     "id": "q34",
+     "prompt": "34. Unpleasant events may be remembered as strongly as pleasant ones.",
+     "options": [
+      "Hermann Ebbinghaus",
+      "Frederic Bartlett",
+      "people with exceptional autobiographical memory",
+      "researchers who build computer models of learning"
+     ],
+     "answer": 2,
+     "why": {
+      "tr": "Paragraf F: olağanüstü otobiyografik hafızası olan bazı kişiler \"unpleasant memories return with the same force as pleasant ones\" diyor. \"with the same force\" → \"as strongly as\".",
+      "ar": "الفقرة F: بعض أصحاب الذاكرة الاستثنائية يقولون إن \"unpleasant memories return with the same force as pleasant ones\"، وwith the same force تساوي as strongly as.",
+      "en": "Paragraph F: \"unpleasant memories return with the same force as pleasant ones\"."
+     },
+     "example": "Bad news is often remembered as strongly as good news."
+    },
+    {
+     "type": "heading",
+     "text": "Questions 35–37"
+    },
+    {
+     "type": "text",
+     "text": "Choose the correct letter, A, B, C or D."
+    },
+    {
+     "type": "choice",
+     "id": "q35",
+     "prompt": "35. In paragraph D, the writer uses the example of parking a car to show that",
+     "options": [
+      "people usually forget unimportant information.",
+      "similar memories can make it harder to recall the one we need.",
+      "most drivers have a poor memory for places.",
+      "memory improves with regular practice."
+     ],
+     "answer": 1,
+     "why": {
+      "tr": "Örnek \"interference\" kavramını açıklıyor: yüzlerce benzer park anısı bugünküyü bulmayı zorlaştırırdı (\"similar memories compete with each other\"). A doğru gibi görünse de örneğin amacı bu değil; soru \"neden bu örnek?\" diye soruyor.",
+      "ar": "المثال يشرح مفهوم التداخل (interference): مئات الذكريات المتشابهة تجعل إيجاد ذكرى اليوم أصعب (\"similar memories compete with each other\"). قد يبدو A صحيحًا، لكن السؤال عن هدف المثال.",
+      "en": "The example illustrates interference: \"similar memories compete with each other\"."
+     },
+     "example": "The writer gives the example of passwords to show how similar memories interfere."
+    },
+    {
+     "type": "choice",
+     "id": "q36",
+     "prompt": "36. What does the writer say about people with exceptional autobiographical memory?",
+     "options": [
+      "They prove that forgetting is useful.",
+      "They do extremely well on all laboratory memory tests.",
+      "There are too few of them to support firm conclusions.",
+      "All of them wish that they could forget."
+     ],
+     "answer": 2,
+     "why": {
+      "tr": "Paragraf F: \"it would be unwise to draw firm conclusions from so few individuals\". A çok güçlü (\"prove\"); B tersi: laboratuvar testlerinde \"often unremarkable\"; D \"all\" aşırı genelleme, metin \"some report\" diyor.",
+      "ar": "الفقرة F: \"it would be unwise to draw firm conclusions from so few individuals\". A مبالغة (prove)، وB عكس النص (\"often unremarkable\")، وD تعميم بـ all بينما النص يقول \"some report\".",
+      "en": "\"It would be unwise to draw firm conclusions from so few individuals.\" A and D overstate; B contradicts."
+     },
+     "example": "With only five people in the study, it is unwise to draw firm conclusions."
+    },
+    {
+     "type": "choice",
+     "id": "q37",
+     "prompt": "37. Which statement best expresses the writer's overall view?",
+     "options": [
+      "Forgetting is usually a sign of illness.",
+      "Forgetting is a normal process that has useful functions.",
+      "People should try to remember everything they learn.",
+      "Memory research has made little progress since Ebbinghaus."
+     ],
+     "answer": 1,
+     "why": {
+      "tr": "Yazar A'da fikri açıyor, G'de toparlıyor: \"forgetting should be seen as a process with its own functions\", H'de de \"a sign that the system is working\". A yanlış: hastalık kaynaklı unutma ayrı tutuluyor. C ve D metnin görüşüne ters.",
+      "ar": "يقدّم الكاتب فكرته في A ويلخّصها في G: \"forgetting should be seen as a process with its own functions\"، وفي H: \"a sign that the system is working\". A خطأ لأن النسيان المرضي استثناء، وC وD ضد رأيه.",
+      "en": "Paragraph G: \"a process with its own functions\"; paragraph H: \"a sign that the system is working\"."
+     },
+     "example": "The writer's view is that mistakes are a normal and useful part of learning."
+    },
+    {
+     "type": "heading",
+     "text": "Questions 38–40"
+    },
+    {
+     "type": "text",
+     "text": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer."
+    },
+    {
+     "type": "text",
+     "text": "Bartlett argued that memory is (38) ___: we rebuild events each time we recall them. When old and new memories compete with each other, psychologists call this (39) ___. Forgetting is not always a waste, because forgotten material can be relearned quickly, a benefit that Ebbinghaus called (40) ___."
+    },
+    {
+     "type": "gap",
+     "id": "q38",
+     "prompt": "38. Bartlett argued that memory is ___: we rebuild events each time we recall them.",
+     "answers": [
+      "reconstructive"
+     ],
+     "why": {
+      "tr": "Paragraf C'nin son cümlesi: \"Memory, in this view, is reconstructive.\" Boşluk \"is\"ten sonra geliyor, yani sıfat gerekiyor: reconstructive (\"reconstruction\" isimdir, burada uymaz).",
+      "ar": "آخر جملة في الفقرة C: \"Memory, in this view, is reconstructive\". بعد is نحتاج صفة: reconstructive، أما reconstruction فاسم ولا يناسب.",
+      "en": "Paragraph C: \"Memory, in this view, is reconstructive.\" A noun (reconstruction) does not fit after \"is\" here."
+     },
+     "example": "Memory is reconstructive, so two witnesses may describe the same event differently."
+    },
+    {
+     "type": "gap",
+     "id": "q39",
+     "prompt": "39. When old and new memories compete with each other, psychologists call this ___.",
+     "answers": [
+      "interference"
+     ],
+     "why": {
+      "tr": "Paragraf D: \"Psychologists call this interference: old memories compete with new ones\". Özet metnin sırasını izliyor (C → D → G); bu, cevabı aradığın yeri daraltır.",
+      "ar": "الفقرة D: \"Psychologists call this interference\". الملخص يتبع ترتيب النص (C ثم D ثم G)، وهذا يساعدك على تحديد مكان الإجابة.",
+      "en": "Paragraph D: \"Psychologists call this interference.\""
+     },
+     "example": "Learning two similar languages at once can cause interference."
+    },
+    {
+     "type": "gap",
+     "id": "q40",
+     "prompt": "40. Forgotten material can be relearned quickly, a benefit that Ebbinghaus called ___.",
+     "answers": [
+      "savings"
+     ],
+     "why": {
+      "tr": "Paragraf G: \"an effect that Ebbinghaus himself measured and called 'savings'\". Kelimeyi metindeki gibi çoğul yaz; \"saving\" yazmak gerçek sınavda yanlış sayılabilir.",
+      "ar": "الفقرة G: \"an effect that Ebbinghaus himself measured and called 'savings'\". اكتب الكلمة بالجمع كما في النص؛ فكتابة saving قد تُحسب خطأ في الامتحان.",
+      "en": "Paragraph G: Ebbinghaus \"called 'savings'\". Copy the spelling exactly."
+     },
+     "example": "Ebbinghaus measured savings: the time saved when learning a list for the second time."
+    }
+   ],
+   "timeMinutes": 20
+  }
+ ],
+ "exam": "reading"
+}
