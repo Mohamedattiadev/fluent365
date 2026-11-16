@@ -34,7 +34,7 @@ export function GrammarScreen({ c, path }: { c: Content; path: string[] }) {
       <li>
         <button className="rowbtn" onClick={() => navigate(`/grammar/${id}`)}>
           <span className="grow"><b>{title}</b><br /><span className="small muted">{level}{m?.learnedAt ? ` · practised ${m.attempts}×` : " · not started"}</span></span>
-          {score !== null && <span className="pill blue">{score}%</span>}
+          {score !== null && <span className="pill blue" title="Average of recognition, practice, production and automatic use">mastery {score}%</span>}
           <Icon name="arrow" />
         </button>
       </li>
@@ -115,7 +115,7 @@ function WordList({ c }: { c: Content }) {
           return (
             <li key={v.id}>
               <button className="rowbtn" onClick={() => setOpen(open === v.id ? null : v.id)} aria-expanded={open === v.id}>
-                <span className="grow"><b>{v.w}</b> <span className="small muted">{v.d?.slice(0, 80)}</span></span>
+                <span className="grow"><b>{v.w}</b> <span className="small muted">{v.d?.slice(0, 80) ?? (v.tr ? `TR: ${v.tr}` : "")}</span></span>
                 {card ? <span className="pill blue">{statusOf(card.card)}</span> : known[String(v.id)] ? <span className="pill">known</span> : null}
               </button>
               {open === v.id && (

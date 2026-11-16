@@ -56,6 +56,7 @@ export function GrammarLesson({ topic, onDone }: { topic: GrammarTopic; onDone: 
   const key = `fluent365:grammar:${topic.id}`;
   const [stage, setStage] = usePersisted<"notice" | "compare" | "explain" | "practice" | "result">(key, "notice");
   const [acc, setAcc] = useState(0);
+  const [revealed, setRevealed] = useState(false);
   // Order: recognition first, then controlled practice, then production last.
   const items = useMemo(() => {
     const rank = (e: Ex) => (["choose", "compare", "find", "predict", "tfng"].includes(e.type) ? 0 : e.type === "produce" ? 2 : 1);
@@ -86,11 +87,11 @@ export function GrammarLesson({ topic, onDone }: { topic: GrammarTopic; onDone: 
           <div className="card"><p className="pill">A</p><p style={{ fontSize: "1.2rem", fontWeight: 700 }}>{topic.compare.a}</p></div>
           <div className="card"><p className="pill">B</p><p style={{ fontSize: "1.2rem", fontWeight: 700 }}>{topic.compare.b}</p></div>
         </div>
-        <details className="card soft">
-          <summary>Think first, then tap to see</summary>
-          <p>{topic.compare.note}</p>
-        </details>
-        <ActionBar><button className="btn big primary" onClick={() => setStage("explain")}>Next <Icon name="arrow" /></button></ActionBar>
+        {revealed ? <div className="feedback info"><p style={{ margin: 0 }}>{topic.compare.note}</p></div> : <p className="muted">Say the difference to yourself first.</p>}
+        <ActionBar>
+          {revealed ? <button className="btn big primary" onClick={() => setStage("explain")}>Next <Icon name="arrow" /></button>
+            : <button className="btn big primary" onClick={() => setRevealed(true)}>Show the difference</button>}
+        </ActionBar>
       </div>
     );
 

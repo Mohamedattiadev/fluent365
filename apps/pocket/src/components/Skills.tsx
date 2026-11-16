@@ -7,7 +7,7 @@ import { getState, uid, update, useApp } from "../lib/store";
 import { diffWords, matches, shuffle, wordCount } from "../lib/text";
 import type { AudioBlock, Block, CueCard, Exercise as Ex, Lang, VocabItem } from "../lib/types";
 import { ExerciseRunner } from "./Grammar";
-import { ActionBar, Icon, mmss, Progress, speak, SpeakButton, stopSpeaking, toast, useTimer } from "./ui";
+import { ActionBar, Icon, mmss, Progress, speak, SpeakButton, stopSpeaking, toast, useTimer, voices } from "./ui";
 import type { Content } from "../lib/content";
 
 // ---------- Blocks ----------
@@ -93,17 +93,21 @@ export function InputTask({ title, intro, tip, passage, audio, questions, once, 
   const lang = useApp((s) => s.settings.explainLang);
   const [stage, setStage] = useState<"input" | "questions" | "after">("input");
   const [acc, setAcc] = useState(0);
+  const canSpeak = typeof speechSynthesis !== "undefined" && voices().length > 0;
+  const [played, setPlayed] = useState(!audio || !canSpeak);
   const items = questions.map((b) => blockToExercise(b, lang)).filter((x): x is Ex => !!x).map((ex) => ({ ex }));
   return (
     <div>
       <h2>{title}</h2>
       {intro && <p className="muted">{intro}</p>}
       {tip && stage === "input" && <div className="feedback info"><strong className="title">Tip</strong>{tip}</div>}
-      {audio && stage !== "after" && <AudioPlayer audio={audio} once={once} />}
+      {audio && stage !== "after" && <AudioPlayer audio={audio} once={once} onPlayed={() => setPlayed(true)} />}
+      {audio && !canSpeak && stage === "input" && <p className="small muted">This device has no English voice installed, so you'll read the transcript instead (see Troubleshooting to add a voice).</p>}
       {passage && stage !== "after" && <div className="card"><Passage blocks={passage} /></div>}
       {stage === "input" && (
-        <ActionBar><button className="btn big primary" onClick={() => setStage("questions")}>{audio ? "I'm ready for the questions" : "Answer the questions"} <Icon name="arrow" /></button></ActionBar>
+        <ActionBar><button className="btn big primary" disabled={!played} onClick={() => setStage("questions")}>{audio ? (played ? "Answer the questions" : "Play the recording first") : "Answer the questions"} <Icon name="arrow" /></button></ActionBar>
       )}
+      {stage === "questions" && audio && !canSpeak && <Transcript audio={audio} />}
       {stage === "questions" && items.length > 0 && (
         <div className="card">
           <ExerciseRunner items={items} onFinish={(a) => { setAcc(a); setStage("after"); }} />
