@@ -478,15 +478,21 @@ pre { font-family: inherit; }
 :root[data-accent="orange"] { --accent: #d65a00; --accent-soft: #fdeee2; --accent-text: #a94700; }
 :root[data-accent="mono"] { --accent: #000000; --accent-soft: #ececec; --accent-text: #000000; }
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) { --accent: #a995ff; --on-accent: #1a0f4d; --accent-soft: #2a2347; --accent-text: #c3b5ff; }
-  :root:not([data-theme="light"])[data-accent="blue"] { --accent: #8ab4ff; --on-accent: #0b2350; --accent-soft: #1d2a42; --accent-text: #a9c7ff; }
-  :root:not([data-theme="light"])[data-accent="orange"] { --accent: #ffab6e; --on-accent: #4a1d00; --accent-soft: #3a2a1f; --accent-text: #ffc196; }
-  :root:not([data-theme="light"])[data-accent="mono"] { --accent: #ffffff; --on-accent: #000000; --accent-soft: #2c2c2c; --accent-text: #ffffff; }
+  :root:not([data-theme="light"]) { --accent: #7552f5; --on-accent: #ffffff; --accent-soft: #1d1a29; --accent-text: #b9a8ff; --accent-line: #2c2640; }
+  :root:not([data-theme="light"])[data-accent="blue"] { --accent: #2f6fe0; --on-accent: #ffffff; --accent-soft: #171d29; --accent-text: #9cc0ff; --accent-line: #243049; }
+  :root:not([data-theme="light"])[data-accent="orange"] { --accent: #ff9a4d; --on-accent: #2a1200; --accent-soft: #241b14; --accent-text: #ffbb88; --accent-line: #3d2c1f; }
+  :root:not([data-theme="light"])[data-accent="mono"] { --accent: #ffffff; --on-accent: #000000; --accent-soft: #1f1f1f; --accent-text: #ffffff; --accent-line: #333333; }
 }
-:root[data-theme="dark"] { --accent: #a995ff; --on-accent: #1a0f4d; --accent-soft: #2a2347; --accent-text: #c3b5ff; }
-:root[data-theme="dark"][data-accent="blue"] { --accent: #8ab4ff; --on-accent: #0b2350; --accent-soft: #1d2a42; --accent-text: #a9c7ff; }
-:root[data-theme="dark"][data-accent="orange"] { --accent: #ffab6e; --on-accent: #4a1d00; --accent-soft: #3a2a1f; --accent-text: #ffc196; }
-:root[data-theme="dark"][data-accent="mono"] { --accent: #ffffff; --on-accent: #000000; --accent-soft: #2c2c2c; --accent-text: #ffffff; }
+:root[data-theme="dark"] { --accent: #7552f5; --on-accent: #ffffff; --accent-soft: #1d1a29; --accent-text: #b9a8ff; --accent-line: #2c2640; }
+:root[data-theme="dark"][data-accent="blue"] { --accent: #2f6fe0; --on-accent: #ffffff; --accent-soft: #171d29; --accent-text: #9cc0ff; --accent-line: #243049; }
+:root[data-theme="dark"][data-accent="orange"] { --accent: #ff9a4d; --on-accent: #2a1200; --accent-soft: #241b14; --accent-text: #ffbb88; --accent-line: #3d2c1f; }
+:root[data-theme="dark"][data-accent="mono"] { --accent: #ffffff; --on-accent: #000000; --accent-soft: #1f1f1f; --accent-text: #ffffff; --accent-line: #333333; }
+/* Dark mode: cards get a quiet border instead of a tinted fill; the ring track stays neutral. */
+:root { --accent-line: transparent; }
+.wotd { border: 1px solid var(--accent-line); }
+.wd .dot.is-today:not(.on) { background: transparent; }
+.ring .track { stroke: color-mix(in srgb, var(--accent) 20%, var(--md-surface)); }
+.nav a[aria-current="page"] .ind, .topnav a.link[aria-current="page"], .gear[aria-current="page"] { background: color-mix(in srgb, var(--accent) 22%, var(--md-surface)); }
 .btn.primary { background: var(--accent); color: var(--on-accent); }
 .btn.outline { color: var(--accent-text); border-color: color-mix(in srgb, var(--accent) 45%, var(--md-outline)); }
 .btn.quiet, .btn.link { color: var(--accent-text); }
