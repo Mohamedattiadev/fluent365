@@ -1,0 +1,13 @@
+{
+  "about": "Reading ladder for Pocket: public-domain books, easiest first, about 530,000 words for the 365-day plan. Texts copied from the owner's Bo-ok project (cleaned Project Gutenberg transcriptions; all authors died more than 70 years ago). Levels are rough estimates for a learner, not official CEFR ratings.",
+  "books": [
+    { "id": "wizard-of-oz", "level": "B1", "year": 1900, "gutenberg": 55 },
+    { "id": "the-secret-garden", "level": "B1+", "year": 1911, "gutenberg": 113 },
+    { "id": "call-of-the-wild", "level": "B2", "year": 1903, "gutenberg": 215 },
+    { "id": "time-machine", "level": "B2", "year": 1895, "gutenberg": 35 },
+    { "id": "around-the-world", "level": "B2", "year": 1873, "gutenberg": 103, "note": "English translation by George Makepeace Towle (1873)" },
+    { "id": "sherlock-holmes", "level": "B2+", "year": 1892, "gutenberg": 1661 },
+    { "id": "hound-of-the-baskervilles", "level": "C1", "year": 1902, "gutenberg": 2852 },
+    { "id": "pride-and-prejudice", "level": "C1", "year": 1813, "gutenberg": 1342 }
+  ]
+}

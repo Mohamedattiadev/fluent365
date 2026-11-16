@@ -4,6 +4,7 @@
 // 2–3 days in B1, daily input + pushed output + a fluency block, IELTS format mostly late.
 import type { Content } from "./content";
 import { dueCardKeys, dueTopics, recentAccuracy } from "./learning";
+import { currentBook, dailyTarget, READING_WPM } from "./reading";
 import { getState, today, uid } from "./store";
 import type { AppState } from "./store";
 import type { DaySession, LessonInfo, LessonStep, SessionStep, Skill } from "./types";
@@ -138,6 +139,13 @@ export function buildSession(c: Content, s: AppState = getState(), minutes: 30 |
     if (pick) add({ kind: "input", title: pick.title, why: phase === "IELTS" ? "Exam-format practice with the real timing." : "Reading or listening for meaning: the biggest source of new language.", minutes: b.input, ref: { course: pick.course, unit: pick.unit } });
   }
 
+  // 4b. Book reading: today's share of the reading ladder (finishes all 8 books within the 365-day plan).
+  const book = currentBook(s, c.books ?? []);
+  if (book) {
+    const left = Math.max(0, dailyTarget(s, c.books ?? []) - (s.reading?.log[today()] ?? 0));
+    if (left > 0) add({ kind: "book", title: `Book · ${book.title}`, why: `Reading a whole book is how vocabulary and grammar become natural. ${left.toLocaleString()} words today keeps you on track to finish all 8 books within the year.`, minutes: Math.min(20, Math.max(4, Math.round(left / READING_WPM))), ref: { book: book.id } });
+  }
+
   // 5. Dictation: decoding fast speech.
   if (b.dictation > 0) add({ kind: "dictation", title: "Listen and write", why: "Writing down exactly what you hear trains your ear for fast, connected speech.", minutes: b.dictation });
 
@@ -212,6 +220,7 @@ export function skillOf(step: SessionStep): Skill | undefined {
     case "recall": case "review": case "pretech": return "words";
     case "grammar": case "grammar-review": case "mistakes": return "grammar";
     case "dictation": return "listening";
+    case "book": return "reading";
     case "fluency": case "speak": return "speaking";
     case "input": return /listening/i.test(step.title) || r.course?.includes("listening") ? "listening" : "reading";
     case "output": return r.prompt || /writing/i.test(step.title) ? "writing" : "speaking";

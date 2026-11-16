@@ -4,6 +4,9 @@ import { GrammarLesson, GrammarReview } from "../components/Grammar";
 import { CourseUnitView, LessonStepView } from "../components/Lessons";
 import { FixMistakes, SpeakingTask, WritingTask } from "../components/Skills";
 import { cardView, NewWords, ReviewSession, WordFace, viewOf } from "../components/Vocab";
+import { Reader } from "../components/Reader";
+import { Progress as Bar } from "../components/ui";
+import { currentBook, dailyTarget, readToday, remainingWords, setPosition } from "../lib/reading";
 import { Icon, SkillBadge, SkillLabel, skillStyle, SpeakButton, toast, type Skill } from "../components/ui";
 import { COURSES, loadCourse, type Content } from "../lib/content";
 import { addCards, dueCardKeys, markKnown } from "../lib/learning";
@@ -170,9 +173,33 @@ function WordList({ c }: { c: Content }) {
 // ---------- Reading & lessons ----------
 export function ReadingScreen({ c, path }: { c: Content; path: string[] }) {
   const lessons = useApp((s) => s.lessons);
+  const reading = useApp((s) => s.reading);
+  const st = useApp((s) => s);
   const coursework = useApp((s) => s.coursework);
   const [course, setCourse] = useState<Course | null>(null);
   useEffect(() => { if (path[0] === "course" && path[1]) loadCourse(path[1]).then(setCourse); }, [path]);
+  if (path[0] === "book" && path[1]) {
+    const info = c.books.find((b) => b.id === path[1]);
+    if (!info) return <p>Book not found.</p>;
+    return <div><Back to="/reading" /><Reader c={c} info={info} target={dailyTarget(st, c.books)} onDone={() => navigate("/reading")} /></div>;
+  }
+  if (path[0] === "chapters" && path[1]) {
+    const info = c.books.find((b) => b.id === path[1]);
+    if (!info) return <p>Book not found.</p>;
+    const at = reading.books[info.id]?.block ?? 0;
+    return (
+      <div>
+        <Back to="/reading" />
+        <h1>{info.title}</h1>
+        <p className="lede">{info.author} · {info.year} · ≈ {info.level} · {info.words.toLocaleString()} words</p>
+        <ul className="list">{info.chapters.map((ch) => (
+          <li key={ch.start}><button className="rowbtn" onClick={() => { setPosition(info.id, ch.start); navigate(`/reading/book/${info.id}`); }}>
+            <span className="grow">{ch.title}</span>{ch.start <= at && at > 0 && <span className="small muted">read</span>}<Icon name="chevron" />
+          </button></li>
+        ))}</ul>
+      </div>
+    );
+  }
   if (path[0] === "lesson" && path[1]) {
     const n = Number(path[1]);
     if (path[2] != null) return <div><Back to={`/reading/lesson/${n}`} label={`Lesson ${n}`} /><LessonStepView c={c} lesson={n} step={Number(path[2])} onDone={() => navigate(`/reading/lesson/${n}`)} /></div>;
@@ -215,9 +242,10 @@ export function ReadingScreen({ c, path }: { c: Content; path: string[] }) {
   return (
     <div>
       <SkillLabel skill="reading" />
-      <h1>Reading and lessons</h1>
-      <p className="lede">{c.lessons.length} topic lessons, each with words, listening, reading and grammar. Your daily session goes through them in order.</p>
+      <h1>Reading</h1>
+      <BookLadder c={c} />
       <h2 className="section-title">Lessons</h2>
+      <p className="small muted">{c.lessons.length} topic lessons, each with words, listening, reading and grammar. Your daily session goes through them in order.</p>
       <ul className="list">
         {c.lessons.map((l) => {
           const p = lessons[l.number];
@@ -382,5 +410,47 @@ function MistakeList() {
         ))}
       </ul>
     </div>
+  );
+}
+
+// ---------- Book ladder ----------
+function BookLadder({ c }: { c: Content }) {
+  const s = useApp((x) => x);
+  if (!c.books.length) return null;
+  const cur = currentBook(s, c.books);
+  const target = dailyTarget(s, c.books);
+  const today = readToday(s);
+  const total = c.books.reduce((n, b) => n + b.words, 0);
+  const done = total - remainingWords(s, c.books);
+  return (
+    <section>
+      <p className="small muted">Your reading ladder: {c.books.length} classic books, easiest first, about {Math.round(total / 1000)},000 words in the 365-day plan. {done.toLocaleString()} words read so far · today {today.toLocaleString()} / {target.toLocaleString()} words.</p>
+      {cur && (
+        <div className="card">
+          <p className="overline">Now reading · ≈ {cur.level}</p>
+          <h2 style={{ margin: 0 }}>{cur.title}</h2>
+          <p className="small muted">{cur.author} · {Math.round(((s.reading.books[cur.id]?.words ?? 0) / cur.words) * 100)}% read</p>
+          <Bar value={(s.reading.books[cur.id]?.words ?? 0) / cur.words} />
+          <div className="row" style={{ marginTop: 12 }}>
+            <button className="btn primary" onClick={() => navigate(`/reading/book/${cur.id}`)}>{s.reading.books[cur.id] ? "Continue reading" : "Start reading"}</button>
+            <button className="btn quiet" onClick={() => navigate(`/reading/chapters/${cur.id}`)}>Chapters</button>
+          </div>
+        </div>
+      )}
+      <ul className="list">
+        {c.books.map((b, i) => {
+          const p = s.reading.books[b.id];
+          return (
+            <li key={b.id}><button className="rowbtn" onClick={() => navigate(`/reading/chapters/${b.id}`)}>
+              <span className="num muted" style={{ width: 20 }}>{i + 1}</span>
+              <span className="grow"><span style={{ display: "block" }}>{b.title}</span><span className="small muted">{b.author} · ≈ {b.level} · {Math.round(b.words / 1000)}k words</span></span>
+              {p?.finished ? <Done /> : p ? <span className="small muted num">{Math.round((p.words / b.words) * 100)}%</span> : null}
+              <Icon name="chevron" />
+            </button></li>
+          );
+        })}
+      </ul>
+      <p className="small muted">Public-domain texts (Project Gutenberg transcriptions, taken from Bo-ok). Levels are rough estimates. The English is 100+ years old: good for reading volume, while the lessons cover modern IELTS-style texts.</p>
+    </section>
   );
 }

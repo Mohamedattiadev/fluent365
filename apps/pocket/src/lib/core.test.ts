@@ -21,7 +21,7 @@ function content(): Content {
     grammar: g, grammarById: new Map(g.map((t) => [t.id, t])),
     vocab: v.items, vocabById: new Map(v.items.map((x) => [x.id, x])),
     lessons: read<{ lessons: LessonInfo[] }>("lessons.json").lessons,
-    ielts: read<IeltsContent>("ielts.json"), licence: v.licence,
+    ielts: read<IeltsContent>("ielts.json"), licence: v.licence, books: read<{ books: Content["books"] }>("books.json").books,
   };
 }
 
@@ -189,5 +189,33 @@ describe("design: skill of each session step", () => {
     expect(skillOf(step("output", "Speaking practice", { cue: "c1" }))).toBe("speaking");
     expect(skillOf(step("fluency"))).toBe("speaking");
     expect(skillOf(step("wrap"))).toBeUndefined();
+  });
+});
+
+describe("reading ladder", () => {
+  const para = (n: number) => ({ type: "p" as const, text: Array.from({ length: n }, (_, i) => `word${i}`).join(" ") });
+  const book = { id: "b1", title: "B", author: "A", blocks: [{ type: "h2" as const, text: "Chapter I" }, para(200), para(200), para(200), { type: "h2" as const, text: "Chapter II" }, para(100)] };
+  const info = { id: "b1", title: "B", author: "A", level: "B1", year: 1900, words: 704, blocks: 6, chapters: [] };
+  it("splits pages at about 350 words and at chapter headings", async () => {
+    const { pageAt } = await import("./reading");
+    expect(pageAt(book, 0)).toEqual({ start: 0, end: 3, words: 402 });
+    expect(pageAt(book, 3).end).toBe(4); // stops before the next chapter heading
+  });
+  it("counts words once, even after going back a page, and tracks today", async () => {
+    const { recordPage, setPosition, readToday, progressOf } = await import("./reading");
+    await replaceState(emptyState());
+    recordPage(book, info, 0, 3);
+    setPosition("b1", 0);
+    recordPage(book, info, 0, 3);
+    expect(progressOf(getState(), "b1").words).toBe(402);
+    expect(readToday()).toBe(402);
+    recordPage(book, info, 3, 6);
+    expect(progressOf(getState(), "b1").finished).toBeTruthy();
+  });
+  it("sets a daily target that finishes the ladder within the plan", async () => {
+    const { dailyTarget } = await import("./reading");
+    await replaceState(emptyState());
+    const books = [{ ...info, words: 365_000 }];
+    expect(dailyTarget(getState(), books)).toBe(1000);
   });
 });

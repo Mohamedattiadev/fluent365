@@ -157,5 +157,25 @@ write("vocab.json", {
 });
 
 const counts = { grammar: grammar.length, coreGrammar: core.length, lessons: lessonIndex.length, vocab: items.length, writing: ielts.writing.length, cueCards: ielts.cueCards.length, official: ielts.official.length };
+// ---------- Books (reading ladder) ----------
+mkdirSync(join(out, "books"), { recursive: true });
+const ladder = read("books/ladder.json");
+const countWords = (t) => (t.match(/[\p{L}\p{N}'’-]+/gu) ?? []).length;
+const books = ladder.books.map((meta) => {
+  const book = read(join("books", `${meta.id}.json`));
+  const blocks = book.blocks.filter((b) => b.text && b.text.trim()).map((b) => ({ type: b.type === "h2" ? "h2" : "p", text: b.text.trim() }));
+  write(join("books", `${meta.id}.json`), { id: book.id, title: book.title, author: book.author, blocks });
+  let words = 0;
+  const chapters = [];
+  blocks.forEach((b, i) => {
+    if (b.type === "h2") chapters.push({ title: b.text, start: i, startWord: words });
+    words += countWords(b.text);
+  });
+  return { ...meta, title: book.title, author: book.author, words, blocks: blocks.length, chapters };
+});
+write("books.json", { about: ladder.about, books });
+counts.books = books.length;
+counts.bookWords = books.reduce((n, b) => n + b.words, 0);
+
 write("manifest.json", { built: new Date().toISOString(), counts });
 console.log("content built:", counts);

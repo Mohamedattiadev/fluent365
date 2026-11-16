@@ -5,6 +5,8 @@ import { GrammarLesson, GrammarReview } from "../components/Grammar";
 import { Dictation, dictationSentences, FixMistakes, Fluency, Recall, SpeakPrompt, SpeakingTask, WritingTask } from "../components/Skills";
 import { NewWords, ReviewSession } from "../components/Vocab";
 import { ActionBar, Icon, Progress, SkillLabel, SKILLS } from "../components/ui";
+import { Reader } from "../components/Reader";
+import { dailyTarget } from "../lib/reading";
 import type { Content } from "../lib/content";
 import { buildSession, dayNumber, phaseOf, skillOf } from "../lib/session";
 import { bumpDay, getState, today, update, useApp } from "../lib/store";
@@ -105,6 +107,10 @@ function StepView({ c, step, onDone }: { c: Content; step: SessionStep; onDone: 
     case "fluency": {
       const cue = c.ielts.cueCards.find((x) => x.id === ref.cue) ?? c.ielts.cueCards[0];
       return <Fluency cue={cue} minutes={step.minutes} onDone={onDone} />;
+    }
+    case "book": {
+      const info = c.books.find((b) => b.id === ref.book);
+      return info ? <Reader c={c} info={info} target={dailyTarget(getState(), c.books)} onDone={onDone} /> : <Skip onDone={onDone} />;
     }
     case "speak":
       return <SpeakPrompt c={c} cueId={ref.cue} onDone={onDone} />;

@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Icon } from "../components/ui";
 import type { Content } from "../lib/content";
 import { dueCardKeys, dueTopics } from "../lib/learning";
+import { currentBook, dailyTarget, readToday } from "../lib/reading";
 import { dayNumber, phaseOf, skillOf } from "../lib/session";
 import { getState, today, update, useApp } from "../lib/store";
 import type { DayLog } from "../lib/types";
@@ -28,6 +29,7 @@ export function Home({ c }: { c: Content }) {
   const grammarDue = dueTopics().length;
   const grammarNew = session.steps.some((x) => x.kind === "grammar") ? 1 : 0;
   const reading = session.steps.filter((x) => skillOf(x) === "reading").length;
+  const bookNow = currentBook(s, c.books);
   const listening = session.steps.filter((x) => skillOf(x) === "listening").length;
   const spokeToday = s.external.some((e) => e.at.startsWith(today()));
   const now = new Date();
@@ -36,14 +38,14 @@ export function Home({ c }: { c: Content }) {
   const decks: { name: string; icon: string; to: string; due?: number; fresh?: number; note?: string }[] = [
     { name: "Words", icon: "words", to: "/words", due, fresh: newWords },
     { name: "Grammar", icon: "grammar", to: "/grammar", due: grammarDue, fresh: grammarNew },
-    { name: "Reading", icon: "reading", to: "/reading", fresh: reading },
+    { name: "Reading", icon: "reading", to: bookNow ? `/reading/book/${bookNow.id}` : "/reading", note: bookNow ? `Book: ${readToday(s).toLocaleString()} / ${dailyTarget(s, c.books).toLocaleString()} words` : undefined, fresh: reading },
     { name: "Listening", icon: "listening", to: "/listening", fresh: listening },
     { name: "Speaking", icon: "speaking", to: "/speak", note: spokeToday ? "Logged today" : "Today's topic" },
     { name: "Mistakes", icon: "again", to: "/practice/mistakes", due: openMistakes },
   ];
 
   return (
-    <div>
+    <div className="home">
       <p className="overline">{now.toLocaleDateString(undefined, { weekday: "long", day: "numeric", month: "long" })} · Day {dayNumber(s)} · {phase === "IELTS" ? "IELTS" : phase}</p>
       <h1>{settings.name ? `Hi, ${settings.name}` : "Today"}</h1>
 

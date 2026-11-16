@@ -2,6 +2,7 @@
 
 | Content | Source | Licence | Notes |
 |---|---|---|---|
+| Reading ladder: *The Wonderful Wizard of Oz* (Baum), *The Secret Garden* (Burnett), *The Call of the Wild* (London), *The Time Machine* (Wells), *Around the World in Eighty Days* (Verne, tr. G. M. Towle 1873), *The Adventures of Sherlock Holmes* and *The Hound of the Baskervilles* (Conan Doyle), *Pride and Prejudice* (Austen) — `content/books/` | Project Gutenberg transcriptions (ebooks 55, 113, 215, 35, 103, 1661, 2852, 1342), cleaned and split into chapters in the owner's Bo-ok project; copied from `bo-ok/web/public/books/` | Public domain (published before 1929; all authors and the translator died more than 70 years ago) | Project Gutenberg licence header/footer and trademark removed; plain public-domain text only. Levels in `ladder.json` are rough estimates. |
 | NGSL 1.2, NGSL-Spoken 1.2, NAWL 1.2, TSL 1.2 word lists + definitions | Browne, C., Culligan, B. & Phillips, J. — newgeneralservicelist.com (downloaded 2026-11-05 / 2026-11-16) | CC BY-SA 4.0 | Converted to CSV, otherwise unchanged. Derived `vocab.json` shared under CC BY-SA 4.0. |
 | Word frequency ranks | wordfreq 3.1.1 (Robyn Speer) | CC BY-SA 4.0 (word lists) | Ranks only. |
 | Example quotes in `daily-en.json` | Public-domain books (Project Gutenberg), selected for Bo-ok | Public domain | |

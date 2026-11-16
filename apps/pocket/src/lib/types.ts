@@ -79,6 +79,12 @@ export interface CueCard { id: string; title: string; points: string[]; explain:
 export interface OfficialTest { id: string; provider: string; title: string; module: string; skill: string; url: string; free: boolean; login: boolean; minutes?: number; questions?: number; notes?: string }
 export interface IeltsContent { part1: { id: string; name: string; questions: string[] }[]; cueCards: CueCard[]; writing: WritingPrompt[]; official: OfficialTest[] }
 
+// ---------- Books (reading ladder) ----------
+export interface BookChapter { title: string; start: number; startWord: number }
+export interface BookInfo { id: string; title: string; author: string; level: string; year: number; words: number; blocks: number; chapters: BookChapter[]; note?: string; gutenberg?: number }
+export interface Book { id: string; title: string; author: string; blocks: { type: "h2" | "p"; text: string }[] }
+export interface ReadingState { current?: string; books: Record<string, { block: number; max?: number; words: number; finished?: string }>; log: Record<string, number> }
+
 // ---------- Learner state ----------
 export type Level = "A2" | "B1" | "B2" | "C1";
 export interface Settings {
@@ -167,11 +173,11 @@ export interface ImportItem {
 
 export interface SessionStep {
   id: string;
-  kind: "recall" | "review" | "pretech" | "grammar" | "grammar-review" | "input" | "dictation" | "output" | "fluency" | "speak" | "mistakes" | "wrap";
+  kind: "recall" | "review" | "pretech" | "grammar" | "grammar-review" | "input" | "book" | "dictation" | "output" | "fluency" | "speak" | "mistakes" | "wrap";
   title: string;
   why: string;
   minutes: number;
-  ref?: { lesson?: number; step?: number; topic?: string; topics?: string[]; course?: string; unit?: string; prompt?: string; cue?: string; words?: number[]; sentences?: string[] };
+  ref?: { book?: string; lesson?: number; step?: number; topic?: string; topics?: string[]; course?: string; unit?: string; prompt?: string; cue?: string; words?: number[]; sentences?: string[] };
 }
 
 export interface DaySession { date: string; minutes: number; steps: SessionStep[]; index: number; started: string; finished?: string }
