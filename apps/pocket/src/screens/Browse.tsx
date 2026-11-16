@@ -7,7 +7,7 @@ import { NewWords, ReviewSession, WordFace, viewOf } from "../components/Vocab";
 import { Icon, SkillBadge, SkillLabel, skillStyle, SpeakButton, toast, type Skill } from "../components/ui";
 import { COURSES, loadCourse, type Content } from "../lib/content";
 import { addCards, dueCardKeys, markKnown } from "../lib/learning";
-import { kindName } from "../lib/session";
+import { kindName, POCKET_KINDS, pocketStepCount } from "../lib/session";
 import { statusOf } from "../lib/srs";
 import { update, useApp } from "../lib/store";
 import type { Course } from "../lib/types";
@@ -161,6 +161,7 @@ export function ReadingScreen({ c, path }: { c: Content; path: string[] }) {
         <p className="lede">{info.level} · {info.topic}. {info.goal}</p>
         <ul className="plan">
           {info.kinds.map((k, i) => {
+            if (!POCKET_KINDS.includes(k)) return null; // writing and speaking tasks live in the Local app
             const sk = KIND_SKILL[k];
             return (
               <li key={i} style={skillStyle(sk)} className={done.has(i) ? "done" : undefined}>
@@ -190,7 +191,7 @@ export function ReadingScreen({ c, path }: { c: Content; path: string[] }) {
     <div>
       <SkillLabel skill="reading" />
       <h1>Reading and lessons</h1>
-      <p className="lede">{c.lessons.length} topic lessons, each with words, listening, reading, grammar, writing and speaking. Your daily session goes through them in order.</p>
+      <p className="lede">{c.lessons.length} topic lessons, each with words, listening, reading and grammar. Your daily session goes through them in order.</p>
       <h2 className="section-title">Lessons</h2>
       <ul className="list">
         {c.lessons.map((l) => {
@@ -198,14 +199,14 @@ export function ReadingScreen({ c, path }: { c: Content; path: string[] }) {
           return (
             <li key={l.number}><button className="rowbtn" onClick={() => navigate(`/reading/lesson/${l.number}`)}>
               <span className="grow"><b>{l.number}. {l.title}</b><br /><span className="small muted">{l.level} · {l.topic}</span></span>
-              {p?.finished ? <Done /> : p?.done.length ? <span className="small muted num">{p.done.length} of {l.kinds.length}</span> : null}
+              {p?.finished ? <Done /> : p?.done.length ? <span className="small muted num">{Math.min(p.done.length, pocketStepCount(l.kinds))} of {pocketStepCount(l.kinds)}</span> : null}
               <Icon name="arrow" />
             </button></li>
           );
         })}
       </ul>
       <h2 className="section-title">Courses</h2>
-      <ul className="list">{COURSES.map((id) => <li key={id}><button className="rowbtn" onClick={() => navigate(`/reading/course/${id}`)}><span className="grow"><b>{courseName(id)}</b></span><Icon name="chevron" /></button></li>)}</ul>
+      <ul className="list">{COURSES.filter((id) => !id.includes("writing")).map((id) => <li key={id}><button className="rowbtn" onClick={() => navigate(`/reading/course/${id}`)}><span className="grow"><b>{courseName(id)}</b></span><Icon name="chevron" /></button></li>)}</ul>
     </div>
   );
 }

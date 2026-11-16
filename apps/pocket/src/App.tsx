@@ -5,7 +5,8 @@ import { loadAll, type Content } from "./lib/content";
 import * as db from "./lib/db";
 import { isLoaded, loadState, useApp } from "./lib/store";
 import type { GrammarTopic } from "./lib/types";
-import { useRoute } from "./router";
+import { navigate, useRoute } from "./router";
+import { SpeakPrompt } from "./components/Skills";
 import { GrammarScreen, ListeningScreen, PracticeScreen, ReadingScreen, WordsScreen } from "./screens/Browse";
 import { Home } from "./screens/Home";
 import { ProgressScreen } from "./screens/Progress";
@@ -14,21 +15,20 @@ import { SettingsScreen } from "./screens/Settings";
 import { Setup } from "./screens/Setup";
 
 // Bottom navigation bar (Pocket is a phone app; on wide screens it stays in a centred column).
-// Top navigation on the web layout (laptop/tablet).
+// Top navigation on the web layout (laptop/tablet). Pocket = words, grammar, reading, listening, a speaking prompt.
 const TOP = [
   { to: "/", label: "Today", icon: "today" },
   { to: "/words", label: "Words", icon: "words" },
   { to: "/grammar", label: "Grammar", icon: "grammar" },
   { to: "/reading", label: "Reading", icon: "reading" },
   { to: "/listening", label: "Listening", icon: "listening" },
-  { to: "/practice/writing", label: "Writing", icon: "writing" },
-  { to: "/practice/speaking", label: "Speaking", icon: "speaking" },
-  { to: "/practice", label: "Practice", icon: "practice" },
+  { to: "/speak", label: "Speaking", icon: "speaking" },
   { to: "/progress", label: "Progress", icon: "progress" },
 ];
+// Phone bottom bar: four items only.
 const BOTTOM = [
   { to: "/", label: "Today", icon: "today" },
-  { to: "/practice", label: "Practice", icon: "practice" },
+  { to: "/listening", label: "Listen", icon: "listening" },
   { to: "/progress", label: "Progress", icon: "progress" },
   { to: "/settings", label: "Settings", icon: "settings" },
 ];
@@ -64,7 +64,6 @@ export function App() {
     if (settings.theme === "system") delete r.dataset.theme;
     r.dataset.size = SIZE[settings.textSize] ?? settings.textSize;
     r.dataset.contrast = settings.highContrast ? "high" : "";
-    r.dataset.seed = settings.seed ?? "violet";
     r.dataset.comfortable = String(settings.comfortable);
     r.dataset.motion = settings.reduceMotion ? "reduce" : "";
   }, [settings]);
@@ -90,6 +89,7 @@ export function App() {
     case "words": page = <WordsScreen c={content} path={rest} />; break;
     case "reading": page = <ReadingScreen c={content} path={rest} />; break;
     case "listening": page = <ListeningScreen c={content} />; break;
+    case "speak": page = <div><SpeakPrompt c={content} onDone={() => navigate("/")} /></div>; break;
     case "practice": page = <PracticeScreen c={content} path={rest} />; break;
     case "progress": page = <ProgressScreen c={content} />; break;
     case "settings": page = <SettingsScreen c={content} path={rest} />; break;
@@ -98,7 +98,7 @@ export function App() {
   // Highlight the most specific matching item (e.g. "Writing" rather than "All practice").
   const match = (items: { to: string }[]) => items.filter((n) => n.to !== "-" && (n.to === "/" ? section === "" : route === n.to || route.startsWith(`${n.to}/`))).sort((x, y) => y.to.length - x.to.length)[0]?.to;
   const top = match(TOP);
-  const bottom = ["words", "grammar", "reading", "listening", "practice"].includes(section) ? "/practice" : match(BOTTOM);
+  const bottom = ["words", "grammar", "reading", "practice", "speak"].includes(section) ? "/" : match(BOTTOM);
 
   return (
     <div className={`app ${focus ? "focus-mode" : ""}`}>

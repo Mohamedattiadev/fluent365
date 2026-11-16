@@ -15,7 +15,6 @@ export const DEFAULT_SETTINGS: Settings = {
   explainLang: "en",
   textSize: "m",
   highContrast: false,
-  seed: "violet",
   theme: "system",
   reduceMotion: false,
   comfortable: false,

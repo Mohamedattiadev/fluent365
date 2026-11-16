@@ -42,6 +42,13 @@
   --elev-3: 0 4px 8px 3px rgb(0 0 0 / .15), 0 1px 3px rgb(0 0 0 / .3);
   --ease: cubic-bezier(.2, 0, 0, 1); --dur: 200ms;
   --gap: 16px;
+  /* Black and white: skills are told apart by icon and name, not colour. */
+  --sk-words: var(--md-on-surface); --sk-grammar: var(--md-on-surface); --sk-reading: var(--md-on-surface);
+  --sk-listening: var(--md-on-surface); --sk-writing: var(--md-on-surface); --sk-speaking: var(--md-on-surface);
+  --sk-words-container: var(--md-surface-container-high); --sk-grammar-container: var(--md-surface-container-high); --sk-reading-container: var(--md-surface-container-high);
+  --sk-listening-container: var(--md-surface-container-high); --sk-writing-container: var(--md-surface-container-high); --sk-speaking-container: var(--md-surface-container-high);
+  --sk-words-on: var(--md-on-surface); --sk-grammar-on: var(--md-on-surface); --sk-reading-on: var(--md-on-surface);
+  --sk-listening-on: var(--md-on-surface); --sk-writing-on: var(--md-on-surface); --sk-speaking-on: var(--md-on-surface);
   /* Aliases used by older inline styles. */
   --text: var(--md-on-surface); --text-muted: var(--md-on-surface-variant); --text-faint: var(--md-on-surface-variant);
   --primary: var(--md-primary); --error: var(--md-error); --success: var(--md-success);
@@ -308,6 +315,7 @@ button.tile:hover { background: var(--md-surface-container-high); }
 .blocks { display: flex; flex-wrap: wrap; gap: 8px; }
 .chip { height: 40px; padding: 0 16px; border-radius: var(--r-sm); border: 1px solid var(--md-outline); background: transparent; font: 500 var(--fs-sm)/1 var(--font); cursor: pointer; color: var(--md-on-surface-variant); }
 .chip.used { opacity: .38; }
+.chip.on { background: var(--md-secondary-container); color: var(--md-on-secondary-container); border-color: transparent; }
 .answer-line .chip { background: var(--md-secondary-container); color: var(--md-on-secondary-container); border-color: transparent; }
 .chip:disabled:not(.used) { cursor: default; }
 .answer-line { min-height: 64px; border: 1px dashed var(--md-outline); border-radius: var(--r-md); padding: 8px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
@@ -431,3 +439,47 @@ pre { font-family: inherit; }
   .plan li > .rowbtn { border-radius: var(--r-lg); min-height: 80px; }
   .compare { grid-template-columns: 1fr 1fr; }
 }
+
+/* ---------- Pocket home: Study now + deck table (Anki-like, black and white) ---------- */
+:root { --md-on-primary: #ffffff; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --md-on-primary: #000000; } }
+:root[data-theme="dark"] { --md-on-primary: #000000; }
+.study { margin: 16px 0 8px; }
+.study .btn.big.primary { height: 56px; border-radius: var(--r-md); font-size: var(--fs-md); }
+.study-sub { color: var(--md-on-surface-variant); font-size: var(--fs-sm); margin: 8px 0 0; }
+.study .btn.quiet { padding-left: 0; margin-top: 4px; }
+.decks { width: 100%; border-collapse: collapse; margin: 16px 0 24px; font-size: var(--fs-md); }
+.decks thead th { font-size: var(--fs-xs); font-weight: 500; color: var(--md-on-surface-variant); text-align: left; padding: 8px; border-bottom: 1px solid var(--md-outline); letter-spacing: .04em; text-transform: uppercase; }
+.decks tbody tr { cursor: pointer; }
+.decks tbody tr:hover { background: var(--md-surface-container-low); }
+.decks tbody th, .decks td { padding: 0 8px; height: 56px; border-bottom: 1px solid var(--md-outline-variant); vertical-align: middle; font-weight: 400; text-align: left; }
+.decks tbody th a { display: flex; align-items: center; gap: 14px; color: var(--md-on-surface); text-decoration: none; min-height: 48px; }
+.decks .n { text-align: right; width: 64px; font-variant-numeric: tabular-nums; }
+.decks td.n { font-weight: 500; }
+.decks td.note { text-align: right; color: var(--md-on-surface-variant); font-size: var(--fs-sm); }
+.decks td.go { width: 32px; color: var(--md-on-surface-variant); }
+.weekbox { padding: 16px 0; }
+.weekbox .week { max-width: 360px; }
+@media (min-width: 900px) {
+  .study, .decks, .weekbox, .main > div > h1, .main > div > .overline { max-width: 880px; margin-left: auto; margin-right: auto; }
+  .study { display: grid; grid-template-columns: 320px 1fr; gap: 0 24px; align-items: center; }
+  .study .study-sub { margin: 0; }
+  .study .btn.quiet { grid-column: 2; justify-self: start; }
+}
+
+/* Black and white answers: shape, icon and word carry right/wrong, not red/green. */
+.option.right { background: var(--md-surface-container-high); border: 2px solid var(--md-on-surface); color: var(--md-on-surface); }
+.option.right::after { border-color: var(--md-on-surface); background: var(--md-on-surface); }
+.option.wrong { background: transparent; border: 2px dashed var(--md-outline); color: var(--md-on-surface-variant); }
+.option.wrong .opt-text { text-decoration: line-through; }
+.option.wrong::after { border-color: var(--md-outline); background: transparent; box-shadow: inset 0 0 0 4px var(--md-surface), inset 0 0 0 10px var(--md-outline); }
+.feedback.ok, .feedback.no, .feedback.warn { background: var(--md-surface-container-high); color: var(--md-on-surface); }
+.feedback.ok { border-left: 4px solid var(--md-on-surface); }
+.feedback.no { border-left: 4px dashed var(--md-on-surface); }
+.diff .del { color: var(--md-on-surface-variant); }
+.diff .add { color: var(--md-on-surface); }
+.grades .g-again, .grades .g-easy { background: var(--md-surface-container-high); color: var(--md-on-surface); }
+.status { color: var(--md-on-surface); }
+.plan li.done .badge { background: var(--md-on-surface); color: var(--md-surface); }
+.plan li.done .badge .icon { color: var(--md-surface); }
+.record-btn.on { background: var(--md-on-surface); color: var(--md-surface); }

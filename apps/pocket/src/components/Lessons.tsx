@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { loadCourse, loadLesson, type Content } from "../lib/content";
 import { addCards } from "../lib/learning";
+import { pocketStepCount } from "../lib/session";
 import { update, useApp } from "../lib/store";
 import type { Course, Lesson, Unit } from "../lib/types";
 import { ExerciseRunner, GrammarLesson } from "./Grammar";
@@ -24,7 +25,7 @@ export function LessonStepView({ c, lesson: n, step, onDone }: { c: Content; les
   if (error) return <p>Could not load this lesson. Check your connection once, then it will work offline.</p>;
   if (!lesson) return <Loading />;
   const st = lesson.steps[step];
-  const finish = () => { markLessonStep(n, step, lesson.steps.length); onDone(); };
+  const finish = () => { markLessonStep(n, step, pocketStepCount(lesson.steps.map((x) => x.kind))); onDone(); };
   const t = st.i18n?.[lang] ?? st.i18n?.en ?? {};
   const title = t.title ?? st.i18n?.en?.title ?? st.title;
   const intro = "intro" in st ? (t.intro ?? st.i18n?.en?.intro ?? st.intro) : undefined;

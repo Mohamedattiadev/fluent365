@@ -90,7 +90,6 @@ export interface Settings {
   explainLang: Lang;
   textSize: "s" | "m" | "l" | "xl";
   highContrast: boolean;
-  seed: "violet" | "blue" | "green" | "orange";
   theme: "system" | "light" | "dark";
   reduceMotion: boolean;
   comfortable: boolean;
@@ -152,7 +151,7 @@ export interface LessonProgress { done: number[]; finished?: string }
 export interface WritingEntry { id: string; at: string; promptId: string; prompt: string; text: string; words: number; seconds: number; selfCheck: string[]; rewriteOf?: string }
 export interface SpeakingEntry { id: string; at: string; prompt: string; seconds: number; audioKey?: string; selfCheck: string[] }
 export interface TestResult { id: string; at: string; kind: "listening" | "reading" | "official" | "checkpoint"; ref: string; title: string; score: number; of: number; band?: number }
-export interface ExternalSession { id: string; at: string; source: "praktika" | "other"; topic: string; minutes?: number; method: string }
+export interface ExternalSession { id: string; at: string; source: "praktika" | "hellotalk" | "other"; topic: string; minutes?: number; method: string }
 
 export interface ImportItem {
   id: string;
@@ -168,7 +167,7 @@ export interface ImportItem {
 
 export interface SessionStep {
   id: string;
-  kind: "recall" | "review" | "pretech" | "grammar" | "grammar-review" | "input" | "dictation" | "output" | "fluency" | "mistakes" | "wrap";
+  kind: "recall" | "review" | "pretech" | "grammar" | "grammar-review" | "input" | "dictation" | "output" | "fluency" | "speak" | "mistakes" | "wrap";
   title: string;
   why: string;
   minutes: number;

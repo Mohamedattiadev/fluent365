@@ -7,7 +7,7 @@ import { getState, uid, update, useApp } from "../lib/store";
 import { diffWords, matches, shuffle, wordCount } from "../lib/text";
 import type { AudioBlock, Block, CueCard, Exercise as Ex, Lang, VocabItem } from "../lib/types";
 import { ExerciseRunner } from "./Grammar";
-import { ActionBar, Icon, mmss, skillStyle, Progress, Segmented, speak, SpeakButton, stopSpeaking, toast, useTimer, voices } from "./ui";
+import { ActionBar, Bold, Icon, mmss, skillStyle, Progress, Segmented, speak, SpeakButton, stopSpeaking, toast, useTimer, voices } from "./ui";
 import type { Content } from "../lib/content";
 
 // ---------- Blocks ----------
@@ -433,4 +433,55 @@ export function FixMistakes({ onDone, max = 5 }: { onDone: () => void; max?: num
   const items = list.map((m) => ({ ex: { type: "rewrite", prompt: m.prompt.startsWith("Correct:") ? m.prompt : `${m.prompt}`, answers: [m.expected], why: m.why ? `${m.why} (You wrote: "${m.given}")` : `You wrote: "${m.given}"` } as Ex, topic: m.topic }));
   if (!items.length) return <div><h2>No open mistakes</h2><ActionBar><button className="btn big primary" onClick={onDone}>Continue</button></ActionBar></div>;
   return <ExerciseRunner items={items} review onFinish={() => onDone()} />;
+}
+
+// ---------- Speaking prompt (the speaking itself happens in HelloTalk / Praktika) ----------
+export function SpeakPrompt({ c, cueId, onDone }: { c: Content; cueId?: string; onDone: () => void }) {
+  const s = getState();
+  const day = Object.keys(s.days).length;
+  const cue = c.ielts.cueCards.find((x) => x.id === cueId) ?? c.ielts.cueCards[day % c.ielts.cueCards.length];
+  const part1 = c.ielts.part1[day % c.ielts.part1.length];
+  // Five recent words to use, newest first (only words with a meaning).
+  const words = Object.entries(s.cards)
+    .sort((a, b) => (a[1].added < b[1].added ? 1 : -1))
+    .map(([k, mc]): { w: string; d?: string } | undefined => (mc.custom ? { w: mc.custom.w, d: mc.custom.d } : c.vocabById.get(Number(k))))
+    .filter((v): v is { w: string; d: string } => !!v?.d)
+    .slice(0, 5);
+  const pattern = Object.entries(s.grammar).filter(([, m]) => m.learnedAt).sort((a, b) => (a[1].learnedAt! < b[1].learnedAt! ? 1 : -1)).map(([id]) => c.grammarById.get(id)).find((t) => t && t.notice.length);
+  const [app, setApp] = useState<"hellotalk" | "praktika" | "other">("hellotalk");
+  const [minutes, setMinutes] = useState("");
+  function save() {
+    update((st) => ({ external: [{ id: uid(), at: new Date().toISOString(), source: app, topic: cue.title, minutes: Number(minutes), method: "manual" }, ...st.external] }));
+    toast(`${minutes} min of speaking logged`);
+    onDone();
+  }
+  return (
+    <div>
+      <h2>Today's topic: {cue.title.replace(/^Describe /, "")}</h2>
+      <p className="muted small">Read this on the way, then talk about it in HelloTalk (a voice message or call) or Praktika. Try to use the words and the pattern.</p>
+      <h3 style={{ marginTop: 16 }}>Part 1 · {part1.name}</h3>
+      <ul>{part1.questions.slice(0, 3).map((q) => <li key={q}>{q}</li>)}</ul>
+      <h3>Part 2 · Talk for 2 minutes</h3>
+      <div className="prompt-box"><p style={{ margin: 0 }}><b>{cue.title}</b></p><ul>{cue.points.map((p) => <li key={p}>{p}</li>)}</ul></div>
+      <h3>Part 3 · Discuss</h3>
+      <ul>{cue.followUp.slice(0, 3).map((q) => <li key={q}>{q}</li>)}</ul>
+      {words.length > 0 && (<><h3>Use these words</h3><ul>{words.map((w) => <li key={w.w}><b>{w.w}</b> <span className="muted">· {w.d}</span></li>)}</ul></>)}
+      {pattern && (<><h3>Use this pattern: {pattern.title}</h3><p className="muted"><Bold text={pattern.notice[0]} /></p></>)}
+      <div className="card" style={{ marginTop: 16 }}>
+        <h3>After you speak, log it</h3>
+        <div className="row" style={{ marginBottom: 12 }}>
+          <Segmented label="App" value={app} onChange={setApp} options={[["hellotalk", "HelloTalk"], ["praktika", "Praktika"], ["other", "Other"]]} />
+        </div>
+        <div className="row">
+          {[10, 15, 20, 30].map((m) => <button key={m} className={`chip ${minutes === String(m) ? "on" : ""}`} aria-pressed={minutes === String(m)} onClick={() => setMinutes(String(m))}>{m} min</button>)}
+          <input type="number" min={1} max={300} value={minutes} onChange={(e) => setMinutes(e.target.value)} placeholder="Minutes" aria-label="Minutes you spoke" style={{ width: 120, minHeight: 40, padding: "0 12px" }} />
+        </div>
+        <p className="small muted" style={{ marginTop: 8 }}>Kept separate from Fluent365's own active time. Fluent365 is not connected to these apps; you type the minutes yourself.</p>
+      </div>
+      <ActionBar>
+        <button className="btn big primary" disabled={!(Number(minutes) > 0)} onClick={save}>Save and continue</button>
+        <button className="btn quiet" style={{ width: "100%" }} onClick={onDone}>I'll speak later</button>
+      </ActionBar>
+    </div>
+  );
 }

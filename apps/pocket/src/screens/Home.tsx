@@ -1,8 +1,8 @@
-// "Today": one obvious action (Start), the plan as a quiet list, and a forgiving week view.
+// "Today", Anki-style: one Study now button (the guided session), then the decks with their counts.
 import { useEffect, useState } from "react";
-import { Icon, SkillBadge, SKILLS } from "../components/ui";
+import { Icon } from "../components/ui";
 import type { Content } from "../lib/content";
-import { dueCardKeys } from "../lib/learning";
+import { dueCardKeys, dueTopics } from "../lib/learning";
 import { dayNumber, phaseOf, skillOf } from "../lib/session";
 import { getState, today, update, useApp } from "../lib/store";
 import type { DayLog } from "../lib/types";
@@ -12,7 +12,6 @@ import { ensureSession } from "./Session";
 export function Home({ c }: { c: Content }) {
   const settings = useApp((s) => s.settings);
   const session = useApp((s) => s.session);
-  const day = useApp((s) => s.days[today()]);
   const days = useApp((s) => s.days);
   const openMistakes = useApp((s) => s.mistakes.filter((m) => !m.fixed && m.expected).length);
   const [, force] = useState(0);
@@ -24,109 +23,69 @@ export function Home({ c }: { c: Content }) {
   const started = session.index > 0 && !finished;
   const steps = session.steps.filter((x) => x.kind !== "wrap");
   const total = session.steps.reduce((n, x) => n + x.minutes, 0);
-  const skills = [...new Set(steps.map(skillOf).filter(Boolean))].map((k) => SKILLS[k!].label.toLowerCase());
-  const n = dayNumber(s);
-  const now = new Date();
-  const hello = now.getHours() < 12 ? "Good morning" : now.getHours() < 18 ? "Good afternoon" : "Good evening";
   const due = dueCardKeys().length;
+  const newWords = session.steps.find((x) => x.kind === "pretech")?.ref?.words?.length ?? (session.steps.some((x) => x.kind === "pretech") ? 8 : 0);
+  const grammarDue = dueTopics().length;
+  const grammarNew = session.steps.some((x) => x.kind === "grammar") ? 1 : 0;
+  const reading = session.steps.filter((x) => skillOf(x) === "reading").length;
+  const listening = session.steps.filter((x) => skillOf(x) === "listening").length;
+  const spokeToday = s.external.some((e) => e.at.startsWith(today()));
+  const now = new Date();
   const phase = phaseOf(s);
 
-  const doneSteps = finished ? steps.length : Math.min(session.index, steps.length);
-  const weekCount = weekStudied(days);
+  const decks: { name: string; icon: string; to: string; due?: number; fresh?: number; note?: string }[] = [
+    { name: "Words", icon: "words", to: due ? "/words/review" : "/words", due, fresh: newWords },
+    { name: "Grammar", icon: "grammar", to: "/grammar", due: grammarDue, fresh: grammarNew },
+    { name: "Reading", icon: "reading", to: "/reading", fresh: reading },
+    { name: "Listening", icon: "listening", to: "/listening", fresh: listening },
+    { name: "Speaking", icon: "speaking", to: "/speak", note: spokeToday ? "Logged today" : "Today's topic" },
+    { name: "Mistakes", icon: "again", to: "/practice/mistakes", due: openMistakes },
+  ];
 
   return (
     <div>
-      <p className="overline">{now.toLocaleDateString(undefined, { weekday: "long", day: "numeric", month: "long" })}</p>
-      <div className="home-head"><h1>{finished ? "Done for today" : `${hello}${settings.name ? `, ${settings.name}` : ""}`}</h1></div>
+      <p className="overline">{now.toLocaleDateString(undefined, { weekday: "long", day: "numeric", month: "long" })} · Day {dayNumber(s)} · {phase === "IELTS" ? "IELTS" : phase}</p>
+      <h1>{settings.name ? `Hi, ${settings.name}` : "Today"}</h1>
 
-      <div className="home-top">
-      <section className="hero" aria-labelledby="today-h">
-        <div className="top">
-          <Ring value={steps.length ? doneSteps / steps.length : 0} label={`${doneSteps}/${steps.length}`} />
-          <div className="grow">
-            <h2 id="today-h">{finished ? "Today's session is complete" : started ? "Session in progress" : "Today's session"}</h2>
-            <p className="sub">{finished ? `${Math.round((day?.active ?? 0) / 60)} active minutes today` : `About ${total} min · ${joinList(skills)}`}</p>
-          </div>
-        </div>
-        {!finished ? (
+      <section className="study">
+        {finished ? (
           <>
-            <button className="btn primary" onClick={() => navigate("/session")} autoFocus>
-              <Icon name="play" filled /> {started ? `Continue · step ${session.index + 1} of ${steps.length}` : "Start today's session"}
-            </button>
-            {!started && settings.minutes !== 30 && (
-              <button className="btn quiet" onClick={() => { ensureSession(c, 30); navigate("/session"); }}>Short on time? Do a 25-minute day</button>
-            )}
+            <p className="study-sub">Today's session is done. {due ? `${due} words are still due.` : "Nothing is due."}</p>
+            {due > 0 && <button className="btn big primary" onClick={() => navigate("/words/review")}>Review {due} words</button>}
+            <button className="btn quiet" onClick={() => { update(() => ({ session: null })); ensureSession(c); navigate("/session"); }}>Study more</button>
           </>
         ) : (
           <>
-            {due > 0 && <button className="btn primary" onClick={() => navigate("/words/review")}><Icon name="words" /> Review {due} words</button>}
-            <button className="btn quiet" onClick={() => { update(() => ({ session: null })); ensureSession(c); navigate("/session"); }}>Do another session</button>
+            <button className="btn big primary" onClick={() => navigate("/session")} autoFocus>
+              {started ? `Continue · ${session.index + 1} of ${steps.length}` : "Study now"}
+            </button>
+            <p className="study-sub">About {total} min · {due} reviews · {newWords} new words</p>
+            {!started && settings.minutes !== 30 && <button className="btn quiet" onClick={() => { ensureSession(c, 30); navigate("/session"); }}>Short day (25 min)</button>}
           </>
         )}
       </section>
 
-      <div className="tiles">
-        <div className="tile"><Icon name="flag" size={20} /><span className="v">{n}</span><span className="k">Day of 365 · {phase === "IELTS" ? "IELTS" : phase}</span></div>
-        <button className="tile" onClick={() => navigate("/words")}><Icon name="words" size={20} /><span className="v">{due}</span><span className="k">words due</span></button>
-        <button className="tile" onClick={() => navigate("/progress")}><Icon name="today" size={20} /><span className="v">{weekCount}/7</span><span className="k">days this week</span></button>
-      </div>
-      </div>
+      <table className="decks">
+        <thead><tr><th scope="col">Deck</th><th scope="col" className="n">Due</th><th scope="col" className="n">New</th><th aria-hidden /></tr></thead>
+        <tbody>
+          {decks.map((d) => (
+            <tr key={d.name} onClick={() => navigate(d.to)}>
+              <th scope="row"><a href={`#${d.to}`} onClick={(e) => e.stopPropagation()}><Icon name={d.icon} size={20} />{d.name}</a></th>
+              {d.note ? <td colSpan={2} className="note">{d.note}</td> : (<><td className="n">{d.due ?? "–"}</td><td className="n">{d.fresh ?? "–"}</td></>)}
+              <td className="go" aria-hidden><Icon name="chevron" size={20} /></td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
 
-      <div className="home-grid">
-        <section aria-labelledby="plan-h">
-          <h2 className="section-title" id="plan-h">Today's plan</h2>
-          <ul className="plan">
-            {steps.map((x, i) => {
-              const sk = skillOf(x);
-              const done = i < session.index || finished;
-              const current = i === session.index && !finished;
-              return (
-                <li key={x.id} className={done ? "done" : current ? "now" : undefined} aria-current={current ? "step" : undefined}>
-                  <SkillBadge skill={sk} icon={done ? "check" : undefined} />
-                  <span className="grow"><span className="name">{sk ? SKILLS[sk].label : "Review"}</span><span className="detail">{sk && x.title.startsWith(`${SKILLS[sk].label} · `) ? x.title.slice(SKILLS[sk].label.length + 3) : x.title}</span></span>
-                  {current ? <span className="next-chip">Up next</span> : <span className="mins">{done ? "Done" : `${x.minutes} min`}</span>}
-                </li>
-              );
-            })}
-          </ul>
-        </section>
-        <aside>
-          <h2 className="section-title">This week</h2>
-          <div className="card"><WeekStrip days={days} /></div>
-          {openMistakes > 0 && (
-            <button className="navrow card" style={{ padding: "8px 16px" }} onClick={() => navigate("/practice/mistakes")}>
-              <SkillBadge skill="grammar" icon="again" />
-              <span className="grow"><span className="setting-label">Fix old mistakes</span><span className="setting-hint">{openMistakes} waiting in your notebook</span></span>
-              <Icon name="chevron" />
-            </button>
-          )}
-        </aside>
-      </div>
+      <WeekStrip days={days} />
     </div>
   );
 }
-
-function Ring({ value, label }: { value: number; label: string }) {
-  const r = 26, c = 2 * Math.PI * r;
-  return (
-    <div className="ring" role="img" aria-label={`${label} steps done`}>
-      <svg width="64" height="64" viewBox="0 0 64 64"><circle className="track" cx="32" cy="32" r={r} fill="none" strokeWidth="6" />{value > 0 && <circle className="val" cx="32" cy="32" r={r} fill="none" strokeWidth="6" strokeLinecap="round" strokeDasharray={c} strokeDashoffset={c * (1 - value)} />}</svg>
-      <span>{label}</span>
-    </div>
-  );
-}
-
-function weekStudied(days: Record<string, DayLog>) {
-  const now = new Date();
-  const monday = new Date(now.getFullYear(), now.getMonth(), now.getDate() - ((now.getDay() + 6) % 7));
-  return Array.from({ length: 7 }, (_, i) => today(new Date(monday.getFullYear(), monday.getMonth(), monday.getDate() + i))).filter((k) => studied(days[k])).length;
-}
-
-const joinList = (xs: string[]) => (xs.length <= 1 ? xs.join("") : `${xs.slice(0, -1).join(", ")} and ${xs[xs.length - 1]}`);
 
 export const studied = (d?: DayLog) => !!d && (d.active >= 300 || d.sessionDone);
 
-/** Monday–Sunday. Studied days are filled; missed days are rest days (no guilt, no streak to lose). */
+/** Monday–Sunday. Studied days are filled; missed days are just rest days (nothing to lose). */
 export function WeekStrip({ days }: { days: Record<string, DayLog> }) {
   const now = new Date();
   const monday = new Date(now.getFullYear(), now.getMonth(), now.getDate() - ((now.getDay() + 6) % 7));
@@ -138,16 +97,16 @@ export function WeekStrip({ days }: { days: Record<string, DayLog> }) {
   });
   const count = week.filter((d) => d.on).length;
   return (
-    <>
+    <div className="weekbox">
       <div className="week" role="list" aria-label="Days studied this week">
         {week.map((d) => (
           <div key={d.k} className="day" role="listitem" aria-label={`${d.long}: ${d.on ? "studied" : d.isToday ? "today" : d.past ? "rest day" : "coming up"}`}>
-            <span className={`dot ${d.on ? "on" : ""} ${d.isToday ? "today" : ""} ${!d.on && d.past ? "rest" : ""}`}>{d.on ? <Icon name="check" size={18} /> : !d.on && d.past ? <Icon name="rest" size={16} /> : null}</span>
+            <span className={`dot ${d.on ? "on" : ""} ${d.isToday ? "today" : ""}`}>{d.on ? <Icon name="check" size={16} /> : null}</span>
             <span aria-hidden>{d.label}</span>
           </div>
         ))}
       </div>
-      <p className="small muted" style={{ margin: 0 }}>{count} of 7 days · rest days are fine</p>
-    </>
+      <p className="small muted" style={{ margin: 0 }}>{count} of 7 days this week · rest days are fine</p>
+    </div>
   );
 }

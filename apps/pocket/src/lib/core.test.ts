@@ -108,12 +108,15 @@ describe("grammar mastery and mistakes", () => {
 
 describe("guided session", () => {
   const c = content();
-  it("builds a balanced first session with input, output and a wrap-up", () => {
+  it("builds a Pocket session: words, grammar, input, a speaking prompt and a wrap-up", () => {
     const s = buildSession(c, getState(), 60);
     const kinds = s.steps.map((x) => x.kind);
     expect(kinds).toContain("pretech");
     expect(kinds).toContain("input");
-    expect(kinds).toContain("output");
+    expect(kinds).toContain("speak");
+    // Writing and speaking tasks belong to the Local app.
+    expect(kinds).not.toContain("output");
+    expect(kinds).not.toContain("fluency");
     expect(kinds).toContain("grammar");
     expect(kinds.at(-1)).toBe("wrap");
     expect(s.steps.every((x) => x.why.length > 10)).toBe(true);

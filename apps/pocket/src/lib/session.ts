@@ -20,6 +20,11 @@ export function phaseOf(s: AppState): Phase {
 /** Where the path starts for a learner's stated level. */
 export const startLesson = (s: AppState) => ({ A2: 1, B1: 1, B2: 17, C1: 29 })[s.settings.level] ?? 1;
 
+/** Lesson step kinds Pocket teaches. Writing and speaking tasks belong to the Local app (PLAN.md §3);
+ * Pocket's speaking is a short prompt before HelloTalk/Praktika. */
+export const POCKET_KINDS: LessonStep["kind"][] = ["words", "listen", "read", "language"];
+export const pocketStepCount = (kinds: LessonStep["kind"][]) => kinds.filter((k) => POCKET_KINDS.includes(k)).length;
+
 /** Next lesson steps in order: [lesson number, step index, kind]. */
 export function nextLessonSteps(s: AppState, lessons: LessonInfo[], max = 12) {
   const out: { lesson: number; step: number; kind: LessonStep["kind"] }[] = [];
@@ -27,7 +32,7 @@ export function nextLessonSteps(s: AppState, lessons: LessonInfo[], max = 12) {
     if (l.number < startLesson(s)) continue;
     const done = new Set(s.lessons[l.number]?.done ?? []);
     l.kinds.forEach((k, i) => {
-      if (!done.has(i) && out.length < max) out.push({ lesson: l.number, step: i, kind: k });
+      if (POCKET_KINDS.includes(k) && !done.has(i) && out.length < max) out.push({ lesson: l.number, step: i, kind: k });
     });
     if (out.length >= max) break;
   }
@@ -136,17 +141,8 @@ export function buildSession(c: Content, s: AppState = getState(), minutes: 30 |
   // 5. Dictation: decoding fast speech.
   if (b.dictation > 0) add({ kind: "dictation", title: "Listen and write", why: "Writing down exactly what you hear trains your ear for fast, connected speech.", minutes: b.dictation });
 
-  // 6. Output if no lesson step gave one.
-  if (!taken.has("output")) {
-    const p = pickOutput(s, c, phase);
-    add({ kind: "output", title: p.title, why: "Speaking or writing every day turns what you know into what you can use.", minutes: b.output, ref: p.ref });
-  }
-
-  // 7. Fluency with known material.
-  if (b.fluency > 0) {
-    const cue = repeatCue(s, c);
-    add({ kind: "fluency", title: b.fluency >= 9 ? "Fluency: 4 · 3 · 2" : "Fluency: 3 · 2 · 1", why: "Telling the same story three times, faster each time, builds smooth speaking without new words.", minutes: b.fluency, ref: { cue } });
-  }
+  // 6. Speaking happens in HelloTalk / Praktika: Pocket gives today's topic, words and pattern, then logs it.
+  add({ kind: "speak", title: "Today's speaking topic", why: "Prepare here in 3 minutes, then speak in HelloTalk or Praktika and log it. Real conversation is where speaking grows.", minutes: 3, ref: { cue: repeatCue(s, c) } });
 
   // 8. Mistakes, then wrap-up.
   const open = s.mistakes.filter((m) => !m.fixed && m.expected);
@@ -175,10 +171,10 @@ const INPUT_UNITS: [string, string][] = [
   ...["education", "environment", "technology", "health", "work", "crime-law", "cities-housing", "media-advertising"].map((u) => ["ielts-vocabulary-topics", u] as [string, string]),
 ];
 const IELTS_ROTATION: [string, string][] = [
+  // Writing units are practised in the Local app; Pocket rotates reading and listening only.
   ["ielts-listening-tests", "t1-part1"], ["ielts-reading-mock", "passage-1"], ["ielts-listening-tests", "t1-part2"], ["ielts-reading-mock", "passage-2"],
-  ["ielts-listening-tests", "t1-part3"], ["ielts-reading-mock", "passage-3"], ["ielts-listening-tests", "t1-part4"], ["ielts-writing-foundations", "opinion-essay"],
-  ["ielts-listening-tests", "t2-part1"], ["ielts-writing-foundations", "discussion-essay"], ["ielts-listening-tests", "t2-part2"], ["ielts-writing-foundations", "problem-solution"],
-  ["ielts-listening-tests", "t2-part3"], ["ielts-writing-foundations", "advantages-disadvantages"], ["ielts-listening-tests", "t2-part4"],
+  ["ielts-listening-tests", "t1-part3"], ["ielts-reading-mock", "passage-3"], ["ielts-listening-tests", "t1-part4"],
+  ["ielts-listening-tests", "t2-part1"], ["ielts-listening-tests", "t2-part2"], ["ielts-listening-tests", "t2-part3"], ["ielts-listening-tests", "t2-part4"],
 ];
 
 export function nextCourseUnit(s: AppState, phase: Phase): { course: string; unit: string; title: string } | null {
@@ -187,18 +183,6 @@ export function nextCourseUnit(s: AppState, phase: Phase): { course: string; uni
   const pick = list.find((x) => !done(x)) ?? list[Object.keys(s.days).length % list.length];
   const title = pick[0].includes("listening") ? "IELTS Listening practice" : pick[0].includes("mock") ? "IELTS Reading practice" : pick[0].includes("writing") ? "IELTS Writing skills" : "Reading for meaning";
   return { course: pick[0], unit: pick[1], title };
-}
-
-function pickOutput(s: AppState, c: Content, phase: Phase): { title: string; ref: SessionStep["ref"] } {
-  const day = Object.keys(s.days).length;
-  const gt = s.settings.goal !== "ielts-ac";
-  const prompts = c.ielts.writing.filter((p) => (gt ? p.module === "general" || p.task === 2 : p.module === "academic"));
-  const written = new Set(s.writing.map((w) => w.promptId));
-  if (phase !== "B1" && day % 2 === 0 && prompts.length) {
-    const p = prompts.find((x) => !written.has(x.id)) ?? prompts[day % prompts.length];
-    return { title: `Writing · Task ${p.task}`, ref: { prompt: p.id } };
-  }
-  return { title: "Speaking practice", ref: { cue: c.ielts.cueCards[day % c.ielts.cueCards.length].id } };
 }
 
 /** Task repetition: reuse a cue card from 2 or 7 days ago, else a fresh one. */
@@ -228,7 +212,7 @@ export function skillOf(step: SessionStep): Skill | undefined {
     case "recall": case "review": case "pretech": return "words";
     case "grammar": case "grammar-review": case "mistakes": return "grammar";
     case "dictation": return "listening";
-    case "fluency": return "speaking";
+    case "fluency": case "speak": return "speaking";
     case "input": return /listening/i.test(step.title) || r.course?.includes("listening") ? "listening" : "reading";
     case "output": return r.prompt || /writing/i.test(step.title) ? "writing" : "speaking";
     default: return undefined;

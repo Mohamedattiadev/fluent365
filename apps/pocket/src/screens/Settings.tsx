@@ -36,15 +36,6 @@ function Main() {
           <Row label="Text size"><Segmented label="Text size" value={size} onChange={(v) => set({ textSize: v })} options={[["s", "S"], ["m", "M"], ["l", "L"], ["xl", "XL"]]} /></Row>
           <p className="size-preview">Preview: I have lived in this city since 2015.</p>
         </div>
-        <Row label="Colour">
-          <div className="swatches" role="radiogroup" aria-label="Colour">
-            {(["violet", "blue", "green", "orange"] as const).map((k) => (
-              <button key={k} type="button" role="radio" aria-checked={(s.seed ?? "violet") === k} aria-label={k} className="swatch" style={{ "--c": `var(--seed-${k})` } as React.CSSProperties} onClick={() => set({ seed: k })}>
-                {(s.seed ?? "violet") === k && <Icon name="check" size={20} />}
-              </button>
-            ))}
-          </div>
-        </Row>
         <Row label="Theme"><Segmented label="Theme" value={s.theme} onChange={(v) => set({ theme: v })} options={[["system", "System"], ["light", "Light"], ["dark", "Dark"]]} /></Row>
         <Toggle label="High contrast" hint="Darker text and stronger borders" checked={!!s.highContrast} onChange={(v) => set({ highContrast: v })} />
         <Toggle label="Reduce motion" hint="Also follows your device setting" checked={s.reduceMotion} onChange={(v) => set({ reduceMotion: v })} />
@@ -64,7 +55,6 @@ function Main() {
       <p className="overline">Your data</p>
       <div className="settings-group">
         <button className="navrow" onClick={() => navigate("/settings/backup")}><Icon name="download" size={20} /><span className="grow">Backup, restore and Anki</span><Icon name="arrow" size={20} /></button>
-        <button className="navrow" onClick={() => navigate("/settings/import")}><Icon name="upload" size={20} /><span className="grow">Import Centre (Praktika, PDF, text)</span><Icon name="arrow" size={20} /></button>
         <button className="navrow" onClick={() => navigate("/settings/about")}><Icon name="info" size={20} /><span className="grow">How Fluent365 works · privacy · licences</span><Icon name="arrow" size={20} /></button>
       </div>
 

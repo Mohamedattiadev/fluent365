@@ -117,11 +117,13 @@ export function ProgressScreen({ c }: { c: Content }) {
       </section>
 
       <section className="section">
-        <h2 className="section-title">Writing and speaking</h2>
-        <p>{s.writing.length} writing pieces · {s.speaking.length} speaking sessions · {s.mistakes.filter((m) => !m.fixed).length} open mistakes</p>
-        {s.writing.slice(0, 5).map((w) => (
-          <details key={w.id} className="card soft"><summary>{new Date(w.at).toLocaleDateString()} · {w.words} words{w.rewriteOf ? " · rewrite" : ""}</summary><p className="small muted">{w.prompt}</p><p style={{ whiteSpace: "pre-wrap" }}>{w.text}</p></details>
-        ))}
+        <h2 className="section-title">Speaking in HelloTalk and Praktika</h2>
+        <p>{s.external.length} sessions logged · {extMin} minutes in total</p>
+        <ul className="list">
+          {s.external.slice(0, 8).map((e) => <li key={e.id}><span className="small">{new Date(e.at).toLocaleDateString()} · {e.source === "hellotalk" ? "HelloTalk" : e.source === "praktika" ? "Praktika" : "Other"} · {e.minutes ?? "?"} min · {e.topic}</span></li>)}
+          {s.external.length === 0 && <li className="muted small">Nothing logged yet. Log your minutes after speaking (Today → Speaking).</li>}
+        </ul>
+        <p className="small muted">Typed in by you. Fluent365 is not connected to these apps.</p>
       </section>
     </div>
   );
