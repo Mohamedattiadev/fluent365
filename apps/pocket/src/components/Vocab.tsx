@@ -1,5 +1,5 @@
 // Vocabulary: FSRS review (recall first, then reveal, then rate) and new-word introduction.
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import type { Content } from "../lib/content";
 import { addCards, dueCardKeys, reviewWord } from "../lib/learning";
 import { preview, Rating, type Grade } from "../lib/srs";
@@ -46,6 +46,59 @@ export function WordFace({ v, showWord = true }: { v: CardView; showWord?: boole
       {v.ex && <Example ex={v.ex} w={v.w} />}
       {v.source && <p className="small faint">From: {v.source}</p>}
     </>
+  );
+}
+
+/** Anki-style swipes. Before the answer: tap or swipe to flip. After: right = Good, left = Again.
+ *  The card follows the finger; a short swipe springs back. Buttons keep working the same. */
+function SwipeCard({ shown, onFlip, onLeft, onRight, children }: { shown: boolean; onFlip: () => void; onLeft: () => void; onRight: () => void; children: React.ReactNode }) {
+  const [dx, setDx] = useState(0);
+  const [leaving, setLeaving] = useState(0);
+  const start = useRef<{ x: number; y: number; id: number; horizontal: boolean | null } | null>(null);
+  const width = () => Math.min(window.innerWidth, 720);
+  const done = (dir: -1 | 1) => {
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches || document.documentElement.dataset.motion === "reduce";
+    const act = () => { setDx(0); setLeaving(0); if (!shown) onFlip(); else if (dir > 0) onRight(); else onLeft(); };
+    if (reduce || !shown) return act();
+    setLeaving(dir);
+    setTimeout(act, 160);
+  };
+  const onDown = (e: React.PointerEvent) => {
+    if ((e.target as HTMLElement).closest("button, a")) return;
+    start.current = { x: e.clientX, y: e.clientY, id: e.pointerId, horizontal: null };
+  };
+  const onMove = (e: React.PointerEvent) => {
+    const st = start.current;
+    if (!st || st.id !== e.pointerId) return;
+    const mx = e.clientX - st.x, my = e.clientY - st.y;
+    if (st.horizontal === null && Math.hypot(mx, my) > 8) {
+      st.horizontal = Math.abs(mx) > Math.abs(my);
+      if (st.horizontal) (e.currentTarget as HTMLElement).setPointerCapture(e.pointerId);
+    }
+    if (st.horizontal) setDx(mx);
+  };
+  const onUp = (e: React.PointerEvent) => {
+    const st = start.current;
+    start.current = null;
+    if (!st) return;
+    const mx = e.clientX - st.x, my = e.clientY - st.y;
+    if (st.horizontal && Math.abs(mx) > Math.max(80, width() * 0.22)) done(mx > 0 ? 1 : -1);
+    else { setDx(0); if (!st.horizontal && Math.hypot(mx, my) < 8 && !shown) onFlip(); }
+  };
+  const x = leaving ? leaving * width() * 1.2 : dx;
+  const strength = Math.min(1, Math.abs(dx) / 90);
+  const label = !shown ? "Show answer" : dx > 0 ? "Good" : "Again";
+  return (
+    <div className="swipe-wrap">
+      <div
+        className={`swipe ${dx || leaving ? "moving" : ""} ${leaving ? "leaving" : ""}`}
+        style={{ transform: x ? `translateX(${x}px) rotate(${x / 40}deg)` : undefined }}
+        onPointerDown={onDown} onPointerMove={onMove} onPointerUp={onUp} onPointerCancel={() => { start.current = null; setDx(0); }}
+      >
+        {Math.abs(dx) > 12 && <span className={`swipe-label ${dx > 0 ? "right" : "left"}`} style={{ opacity: strength }} aria-hidden>{label}</span>}
+        {children}
+      </div>
+    </div>
   );
 }
 
@@ -98,6 +151,7 @@ export function ReviewSession({ c, limit = 60, onDone }: { c: Content; limit?: n
         <span>{i + 1} / {all.length}</span>
         <div className="grow"><Progress value={i / all.length} label={`Card ${i + 1} of ${all.length}`} /></div>
       </div>
+      <SwipeCard key={key} shown={shown} onFlip={() => { setShown(true); ping("vocabulary"); }} onLeft={() => void rate(Rating.Again as Grade)} onRight={() => void rate(Rating.Good as Grade)}>
       <div className="flash" key={`${key}-${shown}`} aria-live="polite">
         {!shown ? (
           recallFromMeaning && view.d ? (
@@ -120,6 +174,8 @@ export function ReviewSession({ c, limit = 60, onDone }: { c: Content; limit?: n
           </>
         )}
       </div>
+      </SwipeCard>
+      <p className="swipe-hint">{shown ? "Swipe right: Good · left: Again" : "Tap the card to see the answer"}</p>
       <ActionBar>
         {!shown ? (
           <button className="btn big primary" onClick={() => { setShown(true); ping("vocabulary"); }} autoFocus>Show answer</button>

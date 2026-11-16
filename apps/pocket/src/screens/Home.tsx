@@ -34,7 +34,7 @@ export function Home({ c }: { c: Content }) {
   const phase = phaseOf(s);
 
   const decks: { name: string; icon: string; to: string; due?: number; fresh?: number; note?: string }[] = [
-    { name: "Words", icon: "words", to: due ? "/words/review" : "/words", due, fresh: newWords },
+    { name: "Words", icon: "words", to: "/words", due, fresh: newWords },
     { name: "Grammar", icon: "grammar", to: "/grammar", due: grammarDue, fresh: grammarNew },
     { name: "Reading", icon: "reading", to: "/reading", fresh: reading },
     { name: "Listening", icon: "listening", to: "/listening", fresh: listening },

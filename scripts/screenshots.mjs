@@ -42,6 +42,10 @@ async function seed(page, extra = {}) {
     }
     const past = new Date(Date.now() - 3600_000).toISOString();
     const cards = Object.fromEntries(picks.map((v) => [String(v.id), { card: { dueAt: past, stability: 0, difficulty: 0, state: 0, reps: 0, lapses: 0, lastReviewAt: null, fresh: true }, added: today }]));
+    // A few older words the learner already knows well (learned) and one that keeps slipping (difficult).
+    const later = (d) => new Date(Date.now() + d * 86400000).toISOString();
+    for (const [i, v] of vocab.items.filter((x) => x.d && x.r > 300 && x.r < 700 && !x.w.includes(" ")).slice(0, 9).entries())
+      cards[String(v.id)] = { card: { dueAt: later(5 + i * 3), stability: i < 6 ? 25 + i * 4 : 6, difficulty: i === 8 ? 8 : 4, state: 2, reps: 6, lapses: i === 8 ? 2 : 0, lastReviewAt: past }, added: today };
     const settings = { name: "", level: "B1", goal: "ielts-gt", target: 7.5, minutes: 60, explainLang: "en", textSize: "m", highContrast: false, theme: "system", reduceMotion: true, comfortable: false, newWords: 15, setupDone: true, startDate: key(new Date(now.getTime() - 40 * 86400000)), ...extra };
     const mistakes = [
       { id: "m1", at: past, kind: "grammar", prompt: "I ___ in Cairo since 2015.", given: "lived", expected: "have lived", why: "since + a point in time: present perfect.", fixed: false },
@@ -85,8 +89,19 @@ try {
     await page.goto(`${BASE}#/session`);
     await page.waitForTimeout(600);
     await shot(page, `${tag}-02-session-flashcard`);
-    await page.getByRole("button", { name: "Show answer" }).click();
+    // Tap the card to flip it (Anki-style), then swipe right = Good.
+    const card = page.locator(".swipe");
+    const box = await card.boundingBox();
+    await page.mouse.click(box.x + box.width / 2, box.y + 40);
     await shot(page, `${tag}-03-flashcard-answer`);
+    const before = await page.locator(".counter span").first().textContent();
+    await page.mouse.move(box.x + box.width / 2, box.y + 60);
+    await page.mouse.down();
+    for (let i = 1; i <= 8; i++) { await page.mouse.move(box.x + box.width / 2 + i * 30, box.y + 60); if (i === 5) await shot(page, `${tag}-03b-swiping-right`); }
+    await page.mouse.up();
+    await page.waitForTimeout(500);
+    const after = await page.locator(".counter span").first().textContent();
+    console.log(`swipe right: ${before} -> ${after}`);
 
     if (topic) {
       await page.goto(`${BASE}#/grammar/${topic.id}`);

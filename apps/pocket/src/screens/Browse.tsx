@@ -3,12 +3,12 @@ import { useEffect, useMemo, useState } from "react";
 import { GrammarLesson, GrammarReview } from "../components/Grammar";
 import { CourseUnitView, LessonStepView } from "../components/Lessons";
 import { FixMistakes, SpeakingTask, WritingTask } from "../components/Skills";
-import { NewWords, ReviewSession, WordFace, viewOf } from "../components/Vocab";
+import { cardView, NewWords, ReviewSession, WordFace, viewOf } from "../components/Vocab";
 import { Icon, SkillBadge, SkillLabel, skillStyle, SpeakButton, toast, type Skill } from "../components/ui";
 import { COURSES, loadCourse, type Content } from "../lib/content";
 import { addCards, dueCardKeys, markKnown } from "../lib/learning";
 import { kindName, POCKET_KINDS, pocketStepCount } from "../lib/session";
-import { statusOf } from "../lib/srs";
+import { interval, statusOf } from "../lib/srs";
 import { update, useApp } from "../lib/store";
 import type { Course } from "../lib/types";
 import { navigate } from "../router";
@@ -64,80 +64,105 @@ export function WordsScreen({ c, path }: { c: Content; path: string[] }) {
   return <WordList c={c} />;
 }
 
+type WordTab = "learning" | "learned" | "known" | "hard" | "all";
+
+/** Your words, sorted into Learning / Learned / Known / Difficult, plus the whole dictionary. */
 function WordList({ c }: { c: Content }) {
   const cards = useApp((s) => s.cards);
   const known = useApp((s) => s.known);
   const [q, setQ] = useState("");
   const [band, setBand] = useState("all");
   const [list, setList] = useState("all");
-  const [mine, setMine] = useState("all");
-  const [open, setOpen] = useState<number | null>(null);
+  const [open, setOpen] = useState<string | null>(null);
   const due = dueCardKeys().length;
 
-  const results = useMemo(() => {
-    const needle = q.trim().toLowerCase();
-    const out = [];
-    for (const v of c.vocab) {
-      if (band !== "all" && String(v.band) !== band) continue;
-      if (list !== "all" && !v.src.includes(list)) continue;
-      const card = cards[String(v.id)];
-      if (mine === "saved" && !card) continue;
-      if (mine === "hard" && !(card && (card.card.lapses > 0 || card.card.difficulty >= 7))) continue;
-      if (mine === "known" && !known[String(v.id)]) continue;
-      if (needle && !v.w.toLowerCase().includes(needle) && !(v.d ?? "").toLowerCase().includes(needle) && !(v.tr ?? "").toLowerCase().includes(needle)) continue;
-      out.push(v);
-      if (out.length >= 80) break;
+  // Every card you have, with its view and status. Imported/Anki words (custom cards) are included.
+  const mine = useMemo(() => Object.entries(cards).map(([key, mc]) => {
+    const view = cardView(key, mc, c);
+    const status = statusOf(mc.card.fresh ? undefined : mc.card);
+    return view ? { key, view, mc, learned: status === "learned", hard: mc.card.lapses > 0 || mc.card.difficulty >= 7 } : null;
+  }).filter((x): x is NonNullable<typeof x> => !!x), [cards, c]);
+  const knownList = useMemo(() => Object.keys(known).map((k) => c.vocabById.get(Number(k))).filter((v): v is NonNullable<typeof v> => !!v).sort((a, b) => a.w.localeCompare(b.w)), [known, c]);
+  const counts = { learning: mine.filter((x) => !x.learned).length, learned: mine.filter((x) => x.learned).length, known: knownList.length, hard: mine.filter((x) => x.hard).length };
+  const [tab, setTab] = useState<WordTab>(() => (Object.keys(cards).length ? "learning" : "all"));
+  const needle = q.trim().toLowerCase();
+  const hit = (w: string, d?: string, tr?: string) => !needle || w.toLowerCase().includes(needle) || (d ?? "").toLowerCase().includes(needle) || (tr ?? "").toLowerCase().includes(needle);
+
+  type Row = { key: string; w: string; d?: string; right: string; vocabId?: number };
+  const rows: Row[] = useMemo(() => {
+    const now = Date.now();
+    const when = (dueAt: string) => { const ms = new Date(dueAt).getTime() - now; return ms <= 0 ? "due now" : `in ${interval(ms)}`; };
+    if (tab === "known") return knownList.filter((v) => hit(v.w, v.d, v.tr)).map((v) => ({ key: String(v.id), w: v.w, d: v.d, right: "known", vocabId: v.id }));
+    if (tab === "all") {
+      const out: Row[] = [];
+      for (const v of c.vocab) {
+        if (band !== "all" && String(v.band) !== band) continue;
+        if (list !== "all" && !v.src.includes(list)) continue;
+        if (!hit(v.w, v.d, v.tr)) continue;
+        const card = cards[String(v.id)];
+        out.push({ key: String(v.id), w: v.w, d: v.d, right: card ? (statusOf(card.card) === "learned" ? "learned" : "learning") : known[String(v.id)] ? "known" : "", vocabId: v.id });
+        if (out.length >= 80) break;
+      }
+      return out;
     }
-    return out;
-  }, [c, q, band, list, mine, cards, known]);
-  const counts = useMemo(() => {
-    const vals = Object.values(cards);
-    return { total: vals.length, learned: vals.filter((x) => statusOf(x.card) === "learned").length };
-  }, [cards]);
+    const pick = mine.filter((x) => (tab === "learned" ? x.learned : tab === "hard" ? x.hard : !x.learned) && hit(x.view.w, x.view.d, x.view.tr));
+    pick.sort((a, b) => (tab === "learned" ? (a.mc.card.lastReviewAt ?? "") < (b.mc.card.lastReviewAt ?? "") ? 1 : -1 : new Date(a.mc.card.dueAt).getTime() - new Date(b.mc.card.dueAt).getTime()));
+    return pick.map((x) => ({ key: x.key, w: x.view.w, d: x.view.d, right: x.mc.card.fresh ? "new" : when(x.mc.card.dueAt), vocabId: Number.isNaN(Number(x.key)) ? undefined : Number(x.key) }));
+  }, [tab, mine, knownList, c, band, list, needle, cards, known]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  const TABS: [WordTab, string][] = [["learning", `Learning ${counts.learning}`], ["learned", `Learned ${counts.learned}`], ["known", `Known ${counts.known}`], ["hard", `Difficult ${counts.hard}`], ["all", "All words"]];
+  const explain: Record<WordTab, string> = {
+    learning: "Words in your reviews that are not solid yet. Sorted by when they come back.",
+    learned: "The review scheduler estimates you will still remember these after 3 weeks or more. They still come back now and then.",
+    known: "Words you marked as already known. They are never shown as new words.",
+    hard: "Words you forgot at least once or found hard. They come back more often.",
+    all: `All ${c.vocab.length.toLocaleString()} words in Fluent365. Tap one to add it to your reviews.`,
+  };
 
   return (
     <div>
       <SkillLabel skill="words" />
       <h1>Words</h1>
-      <div className="stats">
-        <div><p className="big-number">{counts.total}</p><p className="label">words in your cards · {counts.learned} learned well</p></div>
-        <div><p className="big-number">{due}</p><p className="label">due for review now</p></div>
+      {due > 0 && <button className="btn big primary" style={{ marginBottom: 16 }} onClick={() => navigate("/words/review")}>Review {due} words now <Icon name="arrow" /></button>}
+      <div className="tabs" role="tablist" aria-label="Word lists">
+        {TABS.map(([k, label]) => <button key={k} role="tab" aria-selected={tab === k} className={`chip ${tab === k ? "on" : ""}`} onClick={() => { setTab(k); setOpen(null); }}>{label}</button>)}
       </div>
-      {due > 0 && <button className="btn big primary" style={{ marginBottom: 32 }} onClick={() => navigate("/words/review")}>Review {due} words now <Icon name="arrow" /></button>}
-      <div>
-        <label className="field"><span>Search words or meanings</span><input type="search" value={q} onChange={(e) => setQ(e.target.value)} placeholder="e.g. improve, decision, look forward to" /></label>
+      <p className="small muted" style={{ margin: "8px 0 12px" }}>{explain[tab]}</p>
+      <label className="field"><span className="sr-only">Search</span><input type="search" value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search words or meanings" /></label>
+      {tab === "all" && (
         <div className="grid2">
           <label className="field"><span>Frequency</span><select value={band} onChange={(e) => setBand(e.target.value)}><option value="all">All</option><option value="1">Top 1,000</option><option value="2">1,000–2,000</option><option value="3">2,000–3,000</option><option value="5">3,000–5,000</option><option value="9">5,000+</option></select></label>
           <label className="field"><span>Collection</span><select value={list} onChange={(e) => setList(e.target.value)}><option value="all">All</option><option value="ngsl">General (NGSL)</option><option value="nawl">Academic (NAWL)</option><option value="spoken">Spoken</option><option value="tsl">Work & business (TSL)</option><option value="lesson">IELTS lesson words</option><option value="phrasal">Phrasal verbs</option><option value="collocation">Collocations</option><option value="linking">Linking words</option></select></label>
-          <label className="field"><span>Show</span><select value={mine} onChange={(e) => setMine(e.target.value)}><option value="all">Everything</option><option value="saved">My cards</option><option value="hard">Difficult cards</option><option value="known">Marked as known</option></select></label>
         </div>
-      </div>
+      )}
       <ul className="list" aria-live="polite">
-        {results.length === 0 && <li className="muted">No words found.</li>}
-        {results.map((v) => {
-          const card = cards[String(v.id)];
+        {rows.length === 0 && <li className="muted small">{tab === "all" || needle ? "No words found." : tab === "learned" ? "No learned words yet. Keep reviewing: words move here after about 3 weeks of remembering them." : "Nothing here yet."}</li>}
+        {rows.map((r) => {
+          const v = r.vocabId != null ? c.vocabById.get(r.vocabId) : undefined;
+          const card = cards[r.key];
+          const view = card ? cardView(r.key, card, c) : v ? viewOf(v) : null;
           return (
-            <li key={v.id}>
-              <button className="rowbtn" onClick={() => setOpen(open === v.id ? null : v.id)} aria-expanded={open === v.id}>
-                <span className="grow"><b>{v.w}</b> <span className="small muted">{v.d?.slice(0, 80) ?? (v.tr ? `TR: ${v.tr}` : "")}</span></span>
-                {card ? <span className="small muted">{statusOf(card.card)}</span> : known[String(v.id)] ? <span className="small muted">known</span> : null}
+            <li key={r.key}>
+              <button className="rowbtn" onClick={() => setOpen(open === r.key ? null : r.key)} aria-expanded={open === r.key}>
+                <span className="grow"><span style={{ display: "block" }}>{r.w}</span><span className="small muted">{r.d ? (r.d.length > 70 ? `${r.d.slice(0, 70)}…` : r.d) : ""}</span></span>
+                {r.right && <span className="small muted num" style={{ whiteSpace: "nowrap" }}>{r.right}</span>}
               </button>
-              {open === v.id && (
-                <div className="card soft" style={{ marginTop: 8 }}>
-                  <WordFace v={viewOf(v)} showWord={false} />
-                  <p className="small muted">Collections: {v.src.join(", ")} · frequency rank ≈ {v.r}</p>
+              {open === r.key && view && (
+                <div className="card soft" style={{ margin: "0 16px 12px" }}>
+                  <WordFace v={view} showWord={false} />
                   <div className="row">
-                    <SpeakButton text={v.ex ? `${v.w}. ${v.ex}` : v.w} />
-                    {!card && <button className="btn outline" onClick={() => { addCards([String(v.id)]); toast(`"${v.w}" added to your cards`); }}>Add to my cards</button>}
-                    {!known[String(v.id)] ? <button className="btn quiet" onClick={() => markKnown(String(v.id))}>I know it</button> : <button className="btn quiet" onClick={() => markKnown(String(v.id), false)}>Not known</button>}
+                    <SpeakButton text={view.ex ? `${view.w}. ${view.ex}` : view.w} />
+                    {!card && v && <button className="btn outline" onClick={() => { addCards([String(v.id)]); toast(`"${v.w}" added to your reviews`); }}>Add to my reviews</button>}
+                    {v && (!known[String(v.id)] ? <button className="btn quiet" onClick={() => markKnown(String(v.id))}>I know it</button> : <button className="btn quiet" onClick={() => markKnown(String(v.id), false)}>Not known</button>)}
                   </div>
+                  {card && !card.card.fresh && <p className="small muted" style={{ margin: "8px 0 0" }}>Reviewed {card.card.reps}× · forgotten {card.card.lapses}× · next review {new Date(card.card.dueAt).toLocaleDateString()}</p>}
                 </div>
               )}
             </li>
           );
         })}
       </ul>
-      <p className="small muted">{c.licence}</p>
+      {tab === "all" && <p className="small muted">{c.licence}</p>}
     </div>
   );
 }

@@ -483,3 +483,16 @@ pre { font-family: inherit; }
 .plan li.done .badge { background: var(--md-on-surface); color: var(--md-surface); }
 .plan li.done .badge .icon { color: var(--md-surface); }
 .record-btn.on { background: var(--md-on-surface); color: var(--md-surface); }
+
+/* Swipeable flashcard (Anki-style). */
+.swipe-wrap { overflow-x: clip; padding: 4px 0; }
+.swipe { position: relative; touch-action: pan-y; user-select: none; -webkit-user-select: none; cursor: grab; transition: transform var(--dur) var(--ease); }
+.swipe.moving { transition: none; cursor: grabbing; }
+.swipe.leaving { transition: transform 160ms ease-in; }
+.swipe-label { position: absolute; top: 16px; z-index: 2; padding: 4px 12px; border: 2px solid var(--md-on-surface); border-radius: var(--r-sm); background: var(--md-surface); color: var(--md-on-surface); font-weight: 700; font-size: var(--fs-md); letter-spacing: .04em; text-transform: uppercase; pointer-events: none; }
+.swipe-label.right { left: 16px; transform: rotate(-8deg); }
+.swipe-label.left { right: 16px; transform: rotate(8deg); border-style: dashed; }
+.swipe-hint { text-align: center; color: var(--md-on-surface-variant); font-size: var(--fs-xs); margin: 8px 0 0; }
+@media (hover: hover) and (pointer: fine) { .swipe-hint::after { content: " · keys 1–4, Space"; } }
+.tabs { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px; scrollbar-width: none; }
+.tabs .chip { flex-shrink: 0; height: 36px; }
