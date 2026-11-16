@@ -106,12 +106,9 @@ try {
     if (topic) {
       await page.goto(`${BASE}#/grammar/${topic.id}`);
       await page.waitForTimeout(400);
-      await shot(page, `${tag}-04-grammar-notice`);
-      await page.getByRole("button", { name: /^Next/ }).click();
-      await page.getByRole("button", { name: "Show the difference" }).click();
-      await shot(page, `${tag}-05-grammar-compare`);
-      await page.getByRole("button", { name: /^Next/ }).click();
-      await page.getByRole("button", { name: /Start practice/ }).click();
+      await shot(page, `${tag}-04-grammar-page`);
+      await shot(page, `${tag}-05-grammar-page-full`, true);
+      await page.getByRole("button", { name: /^Practise/ }).click();
       const options = page.getByRole("radio");
       if (await options.count()) {
         const ex = [...topic.exercises].sort((a, b) => rank(a) - rank(b))[0];

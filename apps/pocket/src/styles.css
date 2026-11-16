@@ -485,3 +485,10 @@ pre { font-family: inherit; }
 @media (hover: hover) and (pointer: fine) { .swipe-hint::after { content: " · or use the keyboard"; } }
 .tabs { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px; scrollbar-width: none; }
 .tabs .chip { flex-shrink: 0; height: 36px; }
+
+/* Grammar topic page. */
+.grammar-page { max-width: 72ch; }
+.g-h { margin: 24px 0 8px; font-size: var(--fs-md); font-weight: 500; }
+.rules { margin: 0 0 12px; padding-left: 1.2em; }
+.rules li { margin-bottom: 8px; line-height: 1.6; }
+.rules b { font-weight: 700; }

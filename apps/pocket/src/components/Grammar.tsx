@@ -56,51 +56,50 @@ export function GrammarLesson({ topic, onDone }: { topic: GrammarTopic; onDone: 
   const key = `fluent365:grammar:${topic.id}`;
   const [stage, setStage] = usePersisted<"notice" | "compare" | "explain" | "practice" | "result">(key, "notice");
   const [acc, setAcc] = useState(0);
-  const [revealed, setRevealed] = useState(false);
   // Order: recognition first, then controlled practice, then production last.
   const items = useMemo(() => {
     const rank = (e: Ex) => (["choose", "compare", "find", "predict", "tfng"].includes(e.type) ? 0 : e.type === "produce" ? 2 : 1);
     return [...topic.exercises].sort((a, b) => rank(a) - rank(b)).map((ex) => ({ ex, topic: topic.id }));
   }, [topic]);
-  const explanation = topic.explain[lang] ?? topic.explain.en;
+  const own = lang !== "en" ? topic.explain[lang] : undefined;
+  const rules = splitRules(topic.explain.en);
 
-  if (stage === "notice")
+  if (stage !== "practice" && stage !== "result")
     return (
-      <div>
-        <p className="overline">Notice</p>
+      <div className="grammar-page">
         <h2>{topic.title}</h2>
-        <p className="muted">Read these sentences out loud. Look at the <mark>marked</mark> words. Don't think about rules yet. Just notice.</p>
-        <ul className="notice-list">{topic.notice.map((n, i) => <li key={i}><Bold text={n} /></li>)}</ul>
-        <SpeakButton text={topic.notice.map((n) => n.replace(/\*\*/g, "")).join(" ")} label="Listen to all" />
-        <ActionBar><button className="btn big primary" onClick={() => setStage(topic.compare ? "compare" : "explain")}>Next <Icon name="arrow" /></button></ActionBar>
-      </div>
-    );
+        {topic.summary && !topic.summary.startsWith("From lesson") && <p className="lede">{topic.summary}</p>}
 
-  if (stage === "compare" && topic.compare)
-    return (
-      <div>
-        <p className="overline">Compare</p>
-        <h2>What's the difference?</h2>
-        <div className="compare">
-          <div><span className="head">A</span><p className="sent">{topic.compare.a}</p></div>
-          <div><span className="head">B</span><p className="sent">{topic.compare.b}</p></div>
-        </div>
-        {revealed ? <div className="feedback info"><strong className="title"><Icon name="hint" size={22} /> The difference</strong><p>{topic.compare.note}</p></div> : <p className="muted">Say the difference to yourself first.</p>}
-        <ActionBar>
-          {revealed ? <button className="btn big primary" onClick={() => setStage("explain")}>Next <Icon name="arrow" /></button>
-            : <button className="btn big primary" onClick={() => setRevealed(true)}>Show the difference</button>}
-        </ActionBar>
-      </div>
-    );
+        <h3 className="g-h">How it works</h3>
+        <ul className="rules">{rules.map((r, i) => <li key={i}><Bold text={r} /></li>)}</ul>
+        {own && (
+          <details className="card soft" open={lang === "tr" || lang === "ar"}>
+            <summary>{lang === "tr" ? "Türkçe açıklama" : "الشرح بالعربية"}</summary>
+            <p dir={lang === "ar" ? "rtl" : undefined} style={{ margin: 0 }}>{own}</p>
+          </details>
+        )}
 
-  if (stage === "explain")
-    return (
-      <div>
-        <p className="overline">Why it works</p>
-        <h2>{topic.title}</h2>
-        <div className="rule-box"><p className="overline">Rule</p><p dir={lang === "ar" && topic.explain.ar ? "rtl" : undefined} style={{ whiteSpace: "pre-line" }}>{explanation}</p></div>
-        <p className="muted">Now practise. First you choose, then you build, then you write your own.</p>
-        <ActionBar><button className="btn big primary" onClick={() => setStage("practice")}>Start practice <Icon name="arrow" /></button></ActionBar>
+        {topic.notice.length > 0 && (
+          <>
+            <h3 className="g-h">Examples</h3>
+            <p className="small muted">Read them out loud. The <mark>marked</mark> words show the pattern.</p>
+            <ul className="notice-list">{topic.notice.map((n, i) => <li key={i}><Bold text={n} /></li>)}</ul>
+            <SpeakButton text={topic.notice.map((n) => n.replace(/\*\*/g, "")).join(" ")} label="Listen to the examples" />
+          </>
+        )}
+
+        {topic.compare && (
+          <>
+            <h3 className="g-h">Compare</h3>
+            <div className="compare">
+              <div><span className="head">A</span><p className="sent">{topic.compare.a}</p></div>
+              <div><span className="head">B</span><p className="sent">{topic.compare.b}</p></div>
+            </div>
+            <div className="feedback info"><strong className="title"><Icon name="hint" size={22} /> The difference</strong><p>{topic.compare.note}</p></div>
+          </>
+        )}
+
+        <ActionBar><button className="btn big primary" onClick={() => setStage("practice")}>Practise · {items.length} questions <Icon name="arrow" /></button></ActionBar>
       </div>
     );
 
@@ -159,4 +158,13 @@ export function GrammarReview({ topics, onDone, count = 8 }: { topics: GrammarTo
       />
     </div>
   );
+}
+
+/** Split an explanation paragraph into short rules (one sentence each) and bold the forms in quotes. */
+function splitRules(text: string) {
+  return text
+    .split(/(?<=[.!?])\s+(?=[A-Z"'])/)
+    .map((r) => r.trim())
+    .filter(Boolean)
+    .map((r) => r.replace(/(^|[\s(])'(.{2,40}?)'(?=[\s.,;:)!?]|$)/g, "$1**$2**"));
 }
