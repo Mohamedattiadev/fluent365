@@ -467,19 +467,8 @@ pre { font-family: inherit; }
   .study .btn.quiet { grid-column: 2; justify-self: start; }
 }
 
-/* Black and white answers: shape, icon and word carry right/wrong, not red/green. */
-.option.right { background: var(--md-surface-container-high); border: 2px solid var(--md-on-surface); color: var(--md-on-surface); }
-.option.right::after { border-color: var(--md-on-surface); background: var(--md-on-surface); }
-.option.wrong { background: transparent; border: 2px dashed var(--md-outline); color: var(--md-on-surface-variant); }
-.option.wrong .opt-text { text-decoration: line-through; }
-.option.wrong::after { border-color: var(--md-outline); background: transparent; box-shadow: inset 0 0 0 4px var(--md-surface), inset 0 0 0 10px var(--md-outline); }
-.feedback.ok, .feedback.no, .feedback.warn { background: var(--md-surface-container-high); color: var(--md-on-surface); }
-.feedback.ok { border-left: 4px solid var(--md-on-surface); }
-.feedback.no { border-left: 4px dashed var(--md-on-surface); }
-.diff .del { color: var(--md-on-surface-variant); }
-.diff .add { color: var(--md-on-surface); }
+/* Right/wrong answers use green and red (plus icon and word); everything else stays black and white. */
 .grades .g-again, .grades .g-easy { background: var(--md-surface-container-high); color: var(--md-on-surface); }
-.status { color: var(--md-on-surface); }
 .plan li.done .badge { background: var(--md-on-surface); color: var(--md-surface); }
 .plan li.done .badge .icon { color: var(--md-surface); }
 .record-btn.on { background: var(--md-on-surface); color: var(--md-surface); }
@@ -493,6 +482,6 @@ pre { font-family: inherit; }
 .swipe-label.right { left: 16px; transform: rotate(-8deg); }
 .swipe-label.left { right: 16px; transform: rotate(8deg); border-style: dashed; }
 .swipe-hint { text-align: center; color: var(--md-on-surface-variant); font-size: var(--fs-xs); margin: 8px 0 0; }
-@media (hover: hover) and (pointer: fine) { .swipe-hint::after { content: " · keys 1–4, Space"; } }
+@media (hover: hover) and (pointer: fine) { .swipe-hint::after { content: " · or use the keyboard"; } }
 .tabs { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px; scrollbar-width: none; }
 .tabs .chip { flex-shrink: 0; height: 36px; }

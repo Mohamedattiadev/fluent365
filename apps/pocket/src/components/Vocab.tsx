@@ -43,6 +43,7 @@ export function WordFace({ v, showWord = true }: { v: CardView; showWord?: boole
       <hr className="divider" />
       {v.d && <p className="meaning">{v.d}</p>}
       {own && <p dir={lang === "ar" ? "rtl" : undefined} className="muted">{own}</p>}
+      {!own && !v.d && (v.tr || v.ar) && <p className="muted">{[v.tr && `TR: ${v.tr}`, v.ar && `AR: ${v.ar}`].filter(Boolean).join(" · ")}</p>}
       {v.ex && <Example ex={v.ex} w={v.w} />}
       {v.source && <p className="small faint">From: {v.source}</p>}
     </>
@@ -51,7 +52,7 @@ export function WordFace({ v, showWord = true }: { v: CardView; showWord?: boole
 
 /** Anki-style swipes. Before the answer: tap or swipe to flip. After: right = Good, left = Again.
  *  The card follows the finger; a short swipe springs back. Buttons keep working the same. */
-function SwipeCard({ shown, onFlip, onLeft, onRight, children }: { shown: boolean; onFlip: () => void; onLeft: () => void; onRight: () => void; children: React.ReactNode }) {
+export function SwipeCard({ shown, onFlip, onLeft, onRight, children, labels = ["Again", "Good"] }: { shown: boolean; onFlip: () => void; onLeft: () => void; onRight: () => void; children: React.ReactNode; labels?: [string, string] }) {
   const [dx, setDx] = useState(0);
   const [leaving, setLeaving] = useState(0);
   const start = useRef<{ x: number; y: number; id: number; horizontal: boolean | null } | null>(null);
@@ -87,7 +88,7 @@ function SwipeCard({ shown, onFlip, onLeft, onRight, children }: { shown: boolea
   };
   const x = leaving ? leaving * width() * 1.2 : dx;
   const strength = Math.min(1, Math.abs(dx) / 90);
-  const label = !shown ? "Show answer" : dx > 0 ? "Good" : "Again";
+  const label = !shown ? "Show answer" : dx > 0 ? labels[1] : labels[0];
   return (
     <div className="swipe-wrap">
       <div
@@ -270,6 +271,71 @@ export function NewWords({ c, ids, onDone }: { c: Content; ids: number[]; onDone
           {pick !== null && <ActionBar><button className="btn big primary" onClick={next} autoFocus>Next <Icon name="arrow" /></button></ActionBar>}
         </>
       )}
+    </div>
+  );
+}
+
+/** New words as flip cards (Anki-style): tap to see the meaning, swipe right = got it, left = see it again at the end. */
+export function IntroCards({ items, onDone, title }: { items: CardView[]; onDone: () => void; title?: string }) {
+  const [queue, setQueue] = useState(() => items.map((_, i) => i));
+  const [pos, setPos] = useState(0);
+  const [shown, setShown] = useState(false);
+  const [seen, setSeen] = useState<Set<number>>(new Set());
+  const idx = queue[pos];
+  const v = idx != null ? items[idx] : undefined;
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      const t = (e.target as HTMLElement)?.tagName;
+      if (!v || t === "INPUT" || t === "TEXTAREA") return;
+      if (!shown && (e.key === " " || e.key === "Enter")) { e.preventDefault(); flip(); }
+      else if (shown && (e.key === "1" || e.key === "ArrowLeft")) { e.preventDefault(); again(); }
+      else if (shown && (e.key === "3" || e.key === "ArrowRight" || e.key === " ")) { e.preventDefault(); gotIt(); }
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  });
+  const finished = !v;
+  useEffect(() => { if (finished) onDone(); }, [finished]); // eslint-disable-line react-hooks/exhaustive-deps
+  if (!v) return null;
+  function flip() { setShown(true); ping("vocabulary"); }
+  function gotIt() { setSeen(new Set(seen).add(idx)); setShown(false); setPos(pos + 1); ping("vocabulary"); }
+  function again() { setQueue([...queue, idx]); setShown(false); setPos(pos + 1); ping("vocabulary"); }
+  return (
+    <div>
+      {title && <h2>{title}</h2>}
+      <div className="counter">
+        <span>{Math.min(seen.size + 1, items.length)} / {items.length}</span>
+        <div className="grow"><Progress value={seen.size / items.length} label={`New word ${seen.size + 1} of ${items.length}`} /></div>
+      </div>
+      <SwipeCard key={`${idx}-${pos}`} shown={shown} onFlip={flip} onLeft={again} onRight={gotIt} labels={["Again", "Got it"]}>
+        <div className="flash" key={`${idx}-${shown}`} aria-live="polite">
+          {!shown ? (
+            <>
+              <p className="overline">New word</p>
+              <div className="word">{v.w}</div>
+              {v.pos && <p className="small muted" style={{ margin: 0 }}>{v.pos}</p>}
+              <AudioIcon text={v.w} />
+              <p className="muted small" style={{ marginTop: 8 }}>Guess the meaning, then tap the card.</p>
+            </>
+          ) : (
+            <>
+              <WordFace v={v} />
+              <AudioIcon text={v.ex ? `${v.w}. ${v.ex}` : v.w} label="Listen to the example" />
+            </>
+          )}
+        </div>
+      </SwipeCard>
+      <p className="swipe-hint">{shown ? "Swipe right: Got it · left: Again" : "Tap the card to see the meaning"}</p>
+      <ActionBar>
+        {!shown ? (
+          <button className="btn big primary" onClick={flip}>Show meaning</button>
+        ) : (
+          <div className="grades" style={{ gridTemplateColumns: "1fr 1fr" }}>
+            <button className="btn" onClick={again}>Again<small>see it again</small></button>
+            <button className="btn primary" onClick={gotIt}>Got it<small>next word</small></button>
+          </div>
+        )}
+      </ActionBar>
     </div>
   );
 }

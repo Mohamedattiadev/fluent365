@@ -7,7 +7,8 @@ import { update, useApp } from "../lib/store";
 import type { Course, Lesson, Unit } from "../lib/types";
 import { ExerciseRunner, GrammarLesson } from "./Grammar";
 import { blockToExercise, InputTask, Passage, SpeakingTask, WritingTask } from "./Skills";
-import { ActionBar, Icon, Loading, SpeakButton } from "./ui";
+import { ActionBar, Icon, Loading } from "./ui";
+import { IntroCards, type CardView } from "./Vocab";
 
 export function markLessonStep(lesson: number, step: number, total: number) {
   update((s) => {
@@ -63,27 +64,20 @@ function LessonWords({ c, lesson, title, intro, words, practice, onDone }: { c: 
     addCards(keys);
     onDone();
   };
-  if (stage === "learn")
+  if (stage === "learn") {
+    const cards: CardView[] = words.map((w) => {
+      const v = c.vocab.find((x) => x.w.toLowerCase() === w.en.toLowerCase());
+      return { key: w.en, w: w.en, pos: w.pos, d: v?.d, tr: w.tr, ar: w.ar, ex: w.example, lvl: v?.lvl };
+    });
     return (
       <div>
-        <h2>{title}</h2>
-        {intro && <p className="muted">{intro}</p>}
-        <ul className="list">
-          {words.map((w) => (
-            <li key={w.en}>
-              <div className="row"><b style={{ fontSize: "var(--fs-lg)" }}>{w.en}</b><span className="small faint">{w.pos}</span><span className="grow" /><SpeakButton text={`${w.en}. ${w.example}`} label="Hear" /></div>
-              {(() => { const d = c.vocab.find((v) => v.w.toLowerCase() === w.en.toLowerCase())?.d; return d ? <p style={{ margin: "4px 0" }}>{d}</p> : null; })()}
-              <p className="muted small" dir={lang === "ar" ? "rtl" : undefined} style={{ margin: "4px 0" }}>{lang === "ar" ? w.ar : lang === "tr" ? w.tr : `TR: ${w.tr} · AR: ${w.ar}`}</p>
-              <p style={{ margin: 0 }}><i>{w.example}</i></p>
-            </li>
-          ))}
-        </ul>
-        <ActionBar><button className="btn big primary" onClick={() => (items.length ? setStage("practice") : done())}>Practise these words <Icon name="arrow" /></button></ActionBar>
+        <IntroCards items={cards} title={title} onDone={() => (items.length ? setStage("practice") : done())} />
       </div>
     );
+  }
   return (
     <div>
-      <p className="muted small">Lesson {lesson.number}: {lesson.title}</p>
+      <p className="overline">Quick check · Lesson {lesson.number}: {lesson.title}</p>
       <ExerciseRunner items={items} onFinish={done} />
     </div>
   );
