@@ -270,6 +270,7 @@ export function PracticeScreen({ c, path }: { c: Content; path: string[] }) {
       <h1>Practice</h1>
       <p className="muted">Extra practice. Your daily session already includes a balanced mix.</p>
       <div className="grid2">
+        {tile("/reading", "Lessons & reading", `${c.lessons.length} topic lessons and 6 courses`)}
         {tile("/practice/speaking", "Speaking", `${c.ielts.cueCards.length} cue cards with Part 3 questions`)}
         {tile("/practice/writing", "Writing", `${c.ielts.writing.length} Task 1 & 2 prompts`)}
         {tile("/reading/course/ielts-listening-tests", "Listening tests", "2 full practice tests, exam mode")}

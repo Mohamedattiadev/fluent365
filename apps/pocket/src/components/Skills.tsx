@@ -196,8 +196,8 @@ export function WritingTask({ title, prompt, data, minutes, minWords, tip, model
         <div className="card">
           <h3>Self-check</h3>
           {WRITING_CHECK.map((c) => (
-            <label key={c} className="row" style={{ minHeight: 44 }}>
-              <input type="checkbox" checked={checks.includes(c)} onChange={(e) => { ping("writing"); setChecks(e.target.checked ? [...checks, c] : checks.filter((x) => x !== c)); }} style={{ width: 24, height: 24 }} /> {c}
+            <label key={c} className="check">
+              <input type="checkbox" checked={checks.includes(c)} onChange={(e) => { ping("writing"); setChecks(e.target.checked ? [...checks, c] : checks.filter((x) => x !== c)); }} /> {c}
             </label>
           ))}
         </div>
@@ -314,8 +314,8 @@ export function SpeakingTask({ part1 = [], card, useful = [], onDone }: { part1?
       {r.url && <div className="card soft"><p className="small">Listen to yourself:</p><audio controls src={r.url} style={{ width: "100%" }} /></div>}
       <div className="card">
         {SPEAK_CHECK.map((c) => (
-          <label key={c} className="row" style={{ minHeight: 44 }}>
-            <input type="checkbox" checked={checks.includes(c)} onChange={(e) => setChecks(e.target.checked ? [...checks, c] : checks.filter((x) => x !== c))} style={{ width: 24, height: 24 }} /> {c}
+          <label key={c} className="check">
+            <input type="checkbox" checked={checks.includes(c)} onChange={(e) => setChecks(e.target.checked ? [...checks, c] : checks.filter((x) => x !== c))} /> {c}
           </label>
         ))}
       </div>
@@ -337,7 +337,7 @@ export function Fluency({ cue, minutes, onDone }: { cue: CueCard; minutes: numbe
   if (round === -1)
     return (
       <div>
-        <h2>Fluency: same story, less time</h2>
+        <h2>Fluency: {rounds.map((r) => r / 60).join(" · ")} minutes</h2>
         <div className="card"><h3>{cue.title}</h3><ul>{cue.points.map((p) => <li key={p}>{p}</li>)}</ul></div>
         <p className="muted">Talk about this three times: {rounds.map((r) => mmss(r)).join(", then ")}. Same content, faster each time. Use only words you already know. No new words, no stopping to correct.</p>
         <ActionBar><button className="btn big primary" onClick={() => { setRound(0); ping("speaking"); }}>Start round 1</button></ActionBar>

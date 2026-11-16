@@ -184,3 +184,11 @@ td, th { text-align: left; padding: 8px; border-bottom: 1px solid var(--line); v
 details > summary { cursor: pointer; font-weight: 700; min-height: 44px; display: flex; align-items: center; }
 
 @media (min-width: 900px) { .mobile-only { display: none; } }
+
+/* QA fixes */
+.btn svg, .rowbtn svg, .list svg, .topbar svg { width: 1.25em; height: 1.25em; flex-shrink: 0; }
+.btn.outline { background: var(--surface); }
+.feedback { scroll-margin-bottom: 180px; scroll-margin-top: 16px; }
+label.check { display: flex; flex-wrap: nowrap; align-items: flex-start; gap: 12px; min-height: 44px; padding: 6px 0; }
+label.check input { width: 24px; height: 24px; flex-shrink: 0; margin-top: 2px; }
+.option:disabled, .chip:disabled:not(.used) { opacity: 1; cursor: default; }

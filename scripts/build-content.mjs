@@ -57,6 +57,7 @@ for (const f of lessonFiles) {
   lessonIndex.push({ id: lesson.id, number: lesson.number, title: lesson.title, topic: lesson.topic, level: lesson.level, goal: lesson.goal, grammar: lang ? `l-${lesson.number}` : null, kinds: lesson.steps.map((s) => s.kind) });
   if (!lang) continue;
   const title = (lang.i18n?.en?.title ?? lang.title).replace(/^(Grammar|Language):\s*/i, "");
+  const titleCased = title.charAt(0).toUpperCase() + title.slice(1);
   const exercises = [];
   for (const q of lang.questions) {
     const why = q.why?.en ?? "";
@@ -78,7 +79,7 @@ for (const f of lessonFiles) {
   });
   lessonTopics.push({
     id: `l-${lesson.number}`,
-    title,
+    title: titleCased,
     level: lesson.level,
     summary: `From lesson ${lesson.number}: ${lesson.title}`,
     notice: lang.examples.slice(0, 4),

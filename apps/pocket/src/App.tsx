@@ -45,6 +45,8 @@ export function App() {
     startTracking();
   }, []);
 
+  useEffect(() => { window.scrollTo(0, 0); }, [route]);
+
   useEffect(() => {
     const r = document.documentElement;
     r.dataset.theme = settings.theme === "system" ? "" : settings.theme;

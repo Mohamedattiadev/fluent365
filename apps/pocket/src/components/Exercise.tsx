@@ -19,7 +19,7 @@ interface Props {
 }
 
 const LABEL: Record<Ex["type"], string> = {
-  choose: "Choose the natural sentence",
+  choose: "Choose the best answer",
   compare: "Compare",
   find: "Find the unnatural one",
   predict: "What comes next?",
@@ -45,7 +45,8 @@ export function Exercise({ ex, topic, kind = "grammar", review, onDone, nextLabe
     setState("answer"); setChoice(null); setText(""); setUsed([]); setSelfOk(null); firstTry.current = true;
   }, [ex]);
   useEffect(() => {
-    if (state === "retype" || state === "answer" || state === "hint") inputRef.current?.focus();
+    if (state === "retype" || state === "answer" || state === "hint") inputRef.current?.focus({ preventScroll: state === "answer" });
+    if (state !== "answer") requestAnimationFrame(() => document.querySelector(".feedback")?.scrollIntoView({ block: "nearest", behavior: "smooth" }));
   }, [state]);
 
   const isMC = ex.type === "choose" || ex.type === "compare" || ex.type === "find" || ex.type === "predict";

@@ -43,8 +43,8 @@ function Main() {
           <label className="field"><span>Text size</span><select value={s.textSize} onChange={(e) => set({ textSize: e.target.value as Settings["textSize"] })}><option value="normal">Normal</option><option value="large">Large</option><option value="xl">Extra large</option></select></label>
           <label className="field"><span>Theme</span><select value={s.theme} onChange={(e) => set({ theme: e.target.value as Settings["theme"] })}><option value="system">Same as device</option><option value="light">Light</option><option value="dark">Dark</option></select></label>
         </div>
-        <label className="row" style={{ minHeight: 48 }}><input type="checkbox" checked={s.comfortable} onChange={(e) => set({ comfortable: e.target.checked })} style={{ width: 24, height: 24 }} /> Comfortable mode (more space between things)</label>
-        <label className="row" style={{ minHeight: 48 }}><input type="checkbox" checked={s.reduceMotion} onChange={(e) => set({ reduceMotion: e.target.checked })} style={{ width: 24, height: 24 }} /> Reduce motion</label>
+        <label className="check"><input type="checkbox" checked={s.comfortable} onChange={(e) => set({ comfortable: e.target.checked })} /> Comfortable mode (more space between things)</label>
+        <label className="check"><input type="checkbox" checked={s.reduceMotion} onChange={(e) => set({ reduceMotion: e.target.checked })} /> Reduce motion</label>
       </div>
       <div className="card stack">
         <h2>Your data</h2>
@@ -170,7 +170,12 @@ function ImportCentre({ c }: { c: Content }) {
     })();
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-  const addImport = (it: ImportItem) => update((s) => ({ imports: [it, ...s.imports].slice(0, 200) }));
+  const addImport = (it: ImportItem) =>
+    update((s) => {
+      const same = (x: ImportItem) => x.status === "pending" && x.name === it.name && JSON.stringify([x.vocab, x.corrections]) === JSON.stringify([it.vocab, it.corrections]);
+      if (s.imports.some(same)) { toast("This material is already waiting for review below."); return {}; }
+      return { imports: [it, ...s.imports].slice(0, 200) };
+    });
 
   async function handleFile(f: File, method: ImportItem["method"] = "pdf") {
     if (f.size > 20 * 1024 * 1024) return toast("That file is too large (max 20 MB).");
@@ -201,8 +206,8 @@ function ImportCentre({ c }: { c: Content }) {
           <strong className="title">Automatic Praktika account synchronisation is not currently available.</strong>
           Praktika has no public API or official way to connect other apps (checked 16 Nov 2026). You can import supported lesson exports or shared material: download a lesson summary PDF in Praktika and share it to Fluent365, choose the file here, or paste text.
         </div>
-        <label className="row" style={{ minHeight: 48, marginTop: 12 }}>
-          <input type="checkbox" checked={enabled} onChange={(e) => update((s) => ({ integrations: { ...s.integrations, praktika: { enabled: e.target.checked } } }))} style={{ width: 24, height: 24 }} />
+        <label className="check" style={{ marginTop: 12 }}>
+          <input type="checkbox" checked={enabled} onChange={(e) => update((s) => ({ integrations: { ...s.integrations, praktika: { enabled: e.target.checked } } }))} />
           Show Praktika tools (status: {enabled ? "import enabled — not connected to any account" : "off"})
         </label>
       </div>
@@ -273,15 +278,15 @@ function ReviewImport({ item, c }: { item: ImportItem; c: Content }) {
       {nothing && <p>No words or corrections were found. Fluent365 only reads clear patterns like "word – meaning" or "original → corrected".</p>}
       {it.vocab.length > 0 && <h3>Words ({it.vocab.filter((v) => v.approved).length})</h3>}
       {it.vocab.map((v, i) => (
-        <label key={i} className="row" style={{ minHeight: 44 }}>
-          <input type="checkbox" checked={v.approved} onChange={(e) => setIt({ ...it, vocab: it.vocab.map((x, j) => (j === i ? { ...x, approved: e.target.checked } : x)) })} style={{ width: 24, height: 24 }} />
+        <label key={i} className="check">
+          <input type="checkbox" checked={v.approved} onChange={(e) => setIt({ ...it, vocab: it.vocab.map((x, j) => (j === i ? { ...x, approved: e.target.checked } : x)) })} />
           <span><b>{v.w}</b>{v.d ? ` — ${v.d}` : ""}</span>
         </label>
       ))}
       {it.corrections.length > 0 && <h3>Corrections ({it.corrections.filter((v) => v.approved).length})</h3>}
       {it.corrections.map((x, i) => (
-        <label key={i} className="row" style={{ minHeight: 44, alignItems: "flex-start" }}>
-          <input type="checkbox" checked={x.approved} onChange={(e) => setIt({ ...it, corrections: it.corrections.map((y, j) => (j === i ? { ...y, approved: e.target.checked } : y)) })} style={{ width: 24, height: 24, marginTop: 4 }} />
+        <label key={i} className="check">
+          <input type="checkbox" checked={x.approved} onChange={(e) => setIt({ ...it, corrections: it.corrections.map((y, j) => (j === i ? { ...y, approved: e.target.checked } : y)) })} />
           <span><span style={{ color: "var(--bad)", textDecoration: "line-through" }}>{x.original}</span><br /><span style={{ color: "var(--good)" }}>{x.corrected}</span></span>
         </label>
       ))}

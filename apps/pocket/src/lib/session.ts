@@ -145,7 +145,7 @@ export function buildSession(c: Content, s: AppState = getState(), minutes: 30 |
   // 7. Fluency with known material.
   if (b.fluency > 0) {
     const cue = repeatCue(s, c);
-    add({ kind: "fluency", title: "Fluency: 4 · 3 · 2", why: "Telling the same story three times, faster each time, builds smooth speaking without new words.", minutes: b.fluency, ref: { cue } });
+    add({ kind: "fluency", title: b.fluency >= 9 ? "Fluency: 4 · 3 · 2" : "Fluency: 3 · 2 · 1", why: "Telling the same story three times, faster each time, builds smooth speaking without new words.", minutes: b.fluency, ref: { cue } });
   }
 
   // 8. Mistakes, then wrap-up.

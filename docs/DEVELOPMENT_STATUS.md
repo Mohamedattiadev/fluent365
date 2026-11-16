@@ -25,7 +25,7 @@ _Last updated: 2026-11-16_
 - Phase advancement uses lesson progress. The monthly checkpoint test is not built yet.
 
 ### Next steps
-1. Fix issues from the browser QA pass.
+1. Real-phone checks: Android install, share a Praktika PDF, offline mode.
 2. Monthly checkpoint (vocabulary size + listening + reading + timed writing) and evidence-based phase gates.
 3. Local app (FastAPI + SQLite) with a private book library (PDF/EPUB/DOCX/TXT import, reading plans), as in PLAN.md P0 items 4 and 12.
 4. More content: B2/C1 core grammar topics, more GT reading passages and letters, Turkish/Arabic explanations for the core topics.

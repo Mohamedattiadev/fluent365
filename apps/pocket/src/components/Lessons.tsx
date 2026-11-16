@@ -71,7 +71,8 @@ function LessonWords({ c, lesson, title, intro, words, practice, onDone }: { c: 
           {words.map((w) => (
             <li key={w.en}>
               <div className="row"><b style={{ fontSize: "1.1rem" }}>{w.en}</b><span className="pill">{w.pos}</span><span className="grow" /><SpeakButton text={`${w.en}. ${w.example}`} label="Hear" /></div>
-              {lang !== "en" && <p className="muted" dir={lang === "ar" ? "rtl" : undefined} style={{ margin: "4px 0" }}>{lang === "ar" ? w.ar : w.tr}</p>}
+              {(() => { const d = c.vocab.find((v) => v.w.toLowerCase() === w.en.toLowerCase())?.d; return d ? <p style={{ margin: "4px 0" }}>{d}</p> : null; })()}
+              <p className="muted small" dir={lang === "ar" ? "rtl" : undefined} style={{ margin: "4px 0" }}>{lang === "ar" ? w.ar : lang === "tr" ? w.tr : `TR: ${w.tr} · AR: ${w.ar}`}</p>
               <p style={{ margin: 0 }}><i>{w.example}</i></p>
             </li>
           ))}

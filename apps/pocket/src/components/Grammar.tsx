@@ -1,5 +1,19 @@
 // Grammar Instinct Trainer: Notice → Compare → Explain → Choose/Predict → Produce → (later) Recall.
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+
+// Remembers where the learner is inside a step, so a reload or app switch resumes there.
+function usePersisted<T>(key: string | undefined, initial: T) {
+  const [v, setV] = useState<T>(() => {
+    if (!key) return initial;
+    try { const raw = sessionStorage.getItem(key); return raw ? (JSON.parse(raw) as T) : initial; } catch { return initial; }
+  });
+  useEffect(() => {
+    if (!key) return;
+    try { sessionStorage.setItem(key, JSON.stringify(v)); } catch { /* storage unavailable */ }
+  }, [key, v]);
+  return [v, setV] as const;
+}
+const clearPersisted = (...keys: (string | undefined)[]) => { try { for (const k of keys) if (k) sessionStorage.removeItem(k); } catch { /* ignore */ } };
 import { finishTopic } from "../lib/learning";
 import { useApp } from "../lib/store";
 import { shuffle } from "../lib/text";
@@ -8,9 +22,11 @@ import { Exercise } from "./Exercise";
 import { ActionBar, Bold, Icon, Progress, SpeakButton } from "./ui";
 
 /** Runs a list of exercises one by one and reports accuracy. */
-export function ExerciseRunner({ items, onFinish, review }: { items: { ex: Ex; topic?: string }[]; onFinish: (accuracy: number) => void; review?: boolean }) {
-  const [i, setI] = useState(0);
-  const [right, setRight] = useState(0);
+export function ExerciseRunner({ items, onFinish, review, persistKey }: { items: { ex: Ex; topic?: string }[]; onFinish: (accuracy: number) => void; review?: boolean; persistKey?: string }) {
+  const [pos, setPos] = usePersisted(persistKey, { i: 0, right: 0 });
+  const { i, right } = pos;
+  const setI = (n: number) => setPos((p) => ({ ...p, i: n }));
+  const setRight = (n: number) => setPos((p) => ({ ...p, right: n }));
   if (!items.length) return null;
   const item = items[Math.min(i, items.length - 1)];
   return (
@@ -27,7 +43,7 @@ export function ExerciseRunner({ items, onFinish, review }: { items: { ex: Ex; t
         onDone={(r) => {
           const nr = right + (r.firstTry ? 1 : 0);
           setRight(nr);
-          if (i + 1 >= items.length) onFinish(nr / items.length);
+          if (i + 1 >= items.length) { clearPersisted(persistKey); onFinish(nr / items.length); }
           else setI(i + 1);
         }}
       />
@@ -37,7 +53,8 @@ export function ExerciseRunner({ items, onFinish, review }: { items: { ex: Ex; t
 
 export function GrammarLesson({ topic, onDone }: { topic: GrammarTopic; onDone: () => void }) {
   const lang = useApp((s) => s.settings.explainLang);
-  const [stage, setStage] = useState<"notice" | "compare" | "explain" | "practice" | "result">("notice");
+  const key = `fluent365:grammar:${topic.id}`;
+  const [stage, setStage] = usePersisted<"notice" | "compare" | "explain" | "practice" | "result">(key, "notice");
   const [acc, setAcc] = useState(0);
   // Order: recognition first, then controlled practice, then production last.
   const items = useMemo(() => {
@@ -92,6 +109,7 @@ export function GrammarLesson({ topic, onDone }: { topic: GrammarTopic; onDone: 
     return (
       <ExerciseRunner
         items={items}
+        persistKey={`${key}:run`}
         onFinish={(a) => {
           setAcc(a);
           void finishTopic(topic.id, a);
@@ -105,7 +123,7 @@ export function GrammarLesson({ topic, onDone }: { topic: GrammarTopic; onDone: 
       <h2>{acc >= 0.8 ? "Well done!" : acc >= 0.6 ? "Good work" : "Good start"}</h2>
       <p className="big-number">{Math.round(acc * 100)}%</p>
       <p className="muted">correct on the first try. {acc < 0.8 ? "This pattern will come back sooner so you can practise it again." : "It will come back in a few days to make it automatic."}</p>
-      <ActionBar><button className="btn big primary" onClick={onDone}>Continue <Icon name="arrow" /></button></ActionBar>
+      <ActionBar><button className="btn big primary" onClick={() => { clearPersisted(key); onDone(); }}>Continue <Icon name="arrow" /></button></ActionBar>
     </div>
   );
 }

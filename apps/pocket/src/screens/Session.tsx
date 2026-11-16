@@ -46,7 +46,7 @@ export function SessionScreen({ c }: { c: Content }) {
       <div className="row" style={{ marginBottom: 12 }}>
         <button className="btn link" onClick={() => navigate("/")} aria-label="Pause and go home"><Icon name="back" /> Pause</button>
         <div className="grow steps-dots" aria-label={`Step ${Math.min(session.index + 1, session.steps.length)} of ${session.steps.length}`}>
-          {session.steps.map((s, i) => <span key={s.id} className={i < session.index ? "done" : i === session.index ? "now" : ""} />)}
+          {session.steps.filter((s) => s.kind !== "wrap").map((s, i) => <span key={s.id} className={i < session.index ? "done" : i === session.index ? "now" : ""} />)}
         </div>
       </div>
       {step ? (
