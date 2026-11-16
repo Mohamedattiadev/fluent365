@@ -39,6 +39,7 @@ export function Home({ c }: { c: Content }) {
       <p className="overline">{now.toLocaleDateString(undefined, { weekday: "long", day: "numeric", month: "long" })}</p>
       <div className="home-head"><h1>{finished ? "Done for today" : `${hello}${settings.name ? `, ${settings.name}` : ""}`}</h1></div>
 
+      <div className="home-top">
       <section className="hero" aria-labelledby="today-h">
         <div className="top">
           <Ring value={steps.length ? doneSteps / steps.length : 0} label={`${doneSteps}/${steps.length}`} />
@@ -68,6 +69,7 @@ export function Home({ c }: { c: Content }) {
         <div className="tile"><Icon name="flag" size={20} /><span className="v">{n}</span><span className="k">Day of 365 · {phase === "IELTS" ? "IELTS" : phase}</span></div>
         <button className="tile" onClick={() => navigate("/words")}><Icon name="words" size={20} /><span className="v">{due}</span><span className="k">words due</span></button>
         <button className="tile" onClick={() => navigate("/progress")}><Icon name="today" size={20} /><span className="v">{weekCount}/7</span><span className="k">days this week</span></button>
+      </div>
       </div>
 
       <div className="home-grid">

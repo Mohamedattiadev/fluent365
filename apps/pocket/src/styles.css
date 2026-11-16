@@ -90,16 +90,6 @@ mark { background: var(--md-tertiary-container); color: var(--md-on-tertiary-con
 .bottomnav .ind { width: 64px; height: 32px; }
 .bottomnav a[aria-current="page"] { font-weight: 700; }
 
-/* Pocket is a phone app. On a tablet or laptop it keeps the phone layout in a centred column
-   (the full desktop experience is the separate Local app, see PLAN.md §3). */
-@media (min-width: 600px) {
-  html, body { background: var(--md-surface-container); }
-  .app { max-width: 560px; margin: 0 auto; background: var(--md-surface); box-shadow: 0 0 0 1px var(--md-outline-variant); }
-  .main { padding: 24px 24px calc(104px + env(safe-area-inset-bottom)); }
-  .focus-mode .main { padding-bottom: 24px; }
-  .bottomnav { left: 50%; right: auto; width: 560px; transform: translateX(-50%); }
-  .actionbar { margin: 24px -24px 0; padding: 12px 24px; }
-}
 .focus-mode .bottomnav { display: none; }
 
 /* ---------- Type helpers ---------- */
@@ -403,3 +393,41 @@ pre { font-family: inherit; }
 @media (min-width: 600px) { .mobile-only { display: none; } }
 @media (max-width: 599px) { .desktop-only { display: none; } }
 @media (forced-colors: active) { .btn, .option, .switch, .segmented, .progress { border: 1px solid CanvasText; } }
+
+/* Web layout (tablet/laptop): a real website, not a phone column. Top navigation bar, wide content,
+   multi-column grids. Phones keep the bottom navigation bar. */
+.topnav { display: none; }
+@media (min-width: 900px) {
+  .bottomnav { display: none; }
+  .app { flex-direction: column; }
+  .topnav { display: flex; align-items: center; gap: 4px; position: sticky; top: 0; z-index: 20; height: 64px; padding: 0 32px; background: var(--md-surface-container); border-bottom: 1px solid var(--md-outline-variant); }
+  .topnav .brand { display: flex; align-items: center; gap: 10px; margin-right: 24px; font-size: var(--fs-lg); color: var(--md-on-surface); text-decoration: none; }
+  .topnav .brand img { width: 32px; height: 32px; border-radius: 9px; }
+  .topnav .links { display: flex; gap: 2px; flex: 1; min-width: 0; overflow-x: auto; }
+  .topnav a.link { display: inline-flex; align-items: center; gap: 6px; height: 40px; padding: 0 14px; border-radius: var(--r-full); color: var(--md-on-surface-variant); text-decoration: none; font-size: var(--fs-sm); font-weight: 500; white-space: nowrap; }
+  .topnav a.link:hover { background: color-mix(in srgb, var(--md-on-surface) 8%, transparent); color: var(--md-on-surface); }
+  .topnav a.link[aria-current="page"] { background: var(--md-secondary-container); color: var(--md-on-secondary-container); }
+  .topnav .end { display: flex; gap: 2px; }
+  .focus-mode .topnav { display: none; }
+  .main { max-width: 1240px; padding: 32px 40px 64px; }
+  .focus-mode .main { max-width: 760px; }
+  .actionbar { position: static; margin: 24px 0 0; padding: 0; background: none; }
+  .session-top { margin: 0; padding: 0; }
+
+  /* Home: session card and stats side by side, then plan cards and the week. */
+  .home-top { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); gap: 16px; align-items: stretch; margin-bottom: 8px; }
+  .home-top .hero { margin: 0; display: flex; flex-direction: column; justify-content: center; padding: 28px; }
+  .home-top .hero .btn.primary { max-width: 360px; }
+  .home-top .hero .btn.quiet { width: auto; align-self: flex-start; }
+  .home-top .tiles { grid-template-columns: 1fr; margin: 0; }
+  .home-top .tile { flex-direction: row; align-items: center; gap: 12px; }
+  .home-top .tile .v { margin-left: auto; order: 3; }
+  .home-grid { grid-template-columns: minmax(0, 1fr) 340px; align-items: start; gap: 24px; }
+
+  /* Skill lists become card grids. */
+  .plan { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 12px; padding: 0; background: none; }
+  .plan li, .plan li:has(> .rowbtn) { background: var(--md-surface-container-low); border-radius: var(--r-lg); min-height: 80px; }
+  .plan li.now { margin: 0; padding: 8px 16px; }
+  .plan li > .rowbtn { border-radius: var(--r-lg); min-height: 80px; }
+  .compare { grid-template-columns: 1fr 1fr; }
+}

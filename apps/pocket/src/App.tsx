@@ -14,6 +14,18 @@ import { SettingsScreen } from "./screens/Settings";
 import { Setup } from "./screens/Setup";
 
 // Bottom navigation bar (Pocket is a phone app; on wide screens it stays in a centred column).
+// Top navigation on the web layout (laptop/tablet).
+const TOP = [
+  { to: "/", label: "Today", icon: "today" },
+  { to: "/words", label: "Words", icon: "words" },
+  { to: "/grammar", label: "Grammar", icon: "grammar" },
+  { to: "/reading", label: "Reading", icon: "reading" },
+  { to: "/listening", label: "Listening", icon: "listening" },
+  { to: "/practice/writing", label: "Writing", icon: "writing" },
+  { to: "/practice/speaking", label: "Speaking", icon: "speaking" },
+  { to: "/practice", label: "Practice", icon: "practice" },
+  { to: "/progress", label: "Progress", icon: "progress" },
+];
 const BOTTOM = [
   { to: "/", label: "Today", icon: "today" },
   { to: "/practice", label: "Practice", icon: "practice" },
@@ -85,10 +97,18 @@ export function App() {
   }
   // Highlight the most specific matching item (e.g. "Writing" rather than "All practice").
   const match = (items: { to: string }[]) => items.filter((n) => n.to !== "-" && (n.to === "/" ? section === "" : route === n.to || route.startsWith(`${n.to}/`))).sort((x, y) => y.to.length - x.to.length)[0]?.to;
+  const top = match(TOP);
   const bottom = ["words", "grammar", "reading", "listening", "practice"].includes(section) ? "/practice" : match(BOTTOM);
 
   return (
     <div className={`app ${focus ? "focus-mode" : ""}`}>
+      <header className="topnav nav" aria-label="Main">
+        <a href="#/" className="brand"><img src="./icons/icon.svg" alt="" /> Fluent365</a>
+        <nav className="links" aria-label="Sections">
+          {TOP.map((n) => <a key={n.to} className="link" href={`#${n.to}`} aria-current={top === n.to ? "page" : undefined}><Icon name={n.icon} size={20} filled={top === n.to} />{n.label}</a>)}
+        </nav>
+        <div className="end"><a className="link" href="#/settings" aria-current={section === "settings" ? "page" : undefined}><Icon name="settings" size={20} filled={section === "settings"} />Settings</a></div>
+      </header>
       <main className="main" id="main">
         {page}
       </main>
