@@ -670,3 +670,8 @@ pre { font-family: inherit; }
 .book-text .w:hover { background: var(--md-surface-container-high); }
 .sheet { position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(88px + env(safe-area-inset-bottom)); z-index: 30; width: min(560px, calc(100vw - 16px)); background: var(--md-surface-container-high); border-radius: var(--r-xl); padding: 16px 20px; box-shadow: var(--elev-3); }
 .focus-mode .sheet { bottom: calc(96px + env(safe-area-inset-bottom)); }
+/* Listen: no lingering ring after a mouse/touch click on player buttons (keyboard keeps :focus-visible). */
+.play-fab:focus:not(:focus-visible), .icon-btn:focus:not(:focus-visible), .np-rate .chip:focus:not(:focus-visible) { outline: none; }
+:root[data-input="pointer"] .play-fab:focus-visible:not(:hover), :root[data-input="pointer"] .np-controls .icon-btn:focus-visible:not(:hover) { outline: none; }
+/* Selected speed: solid accent so it reads at a glance. */
+.np-rate .chip.on { background: var(--accent); color: var(--on-accent); border-color: transparent; font-weight: 600; }
