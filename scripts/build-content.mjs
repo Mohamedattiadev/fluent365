@@ -184,7 +184,7 @@ write("books.json", { about: ladder.about, books });
 counts.books = books.length;
 counts.bookWords = books.reduce((n, b) => n + b.words, 0);
 
-// ---------- Audio: generated lesson recordings (Piper) + LibriVox audiobook list ----------
+// ---------- Audio: generated lesson recordings (Edge voices) + LibriVox audiobook list ----------
 // The MP3s are not precached on install (too big); the app downloads them with "Download for offline".
 mkdirSync(join(out, "audio", "tts"), { recursive: true });
 const ttsDir = join(root, "content", "audio", "tts");

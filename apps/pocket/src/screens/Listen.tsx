@@ -1,5 +1,5 @@
 // Listen: background audio for the metro and the bus. The audiobook of your current ladder book (LibriVox,
-// public domain) and the lesson recordings (generated on the laptop with free Piper voices). Plays with the
+// public domain) and the lesson recordings (generated on the laptop with Microsoft Edge neural voices). Plays with the
 // screen off, with lock-screen controls. Download once and it works offline.
 import { useEffect, useState } from "react";
 import { CourseUnitView, LessonStepView } from "../components/Lessons";
@@ -121,7 +121,7 @@ export function ListenScreen({ c, path }: { c: Content; path: string[] }) {
 
       <button className="btn quiet" onClick={() => setShowBooks(!showBooks)} aria-expanded={showBooks}>{showBooks ? "Hide" : "Show"} all audiobooks</button>
       {showBooks && c.books.filter((x) => x.id !== book?.id && c.audio.books[x.id]).map((x) => <BookChapters key={x.id} c={c} id={x.id} stored={stored} compact />)}
-      <p className="small muted" style={{ marginTop: 16 }}>Audiobooks: LibriVox volunteers, public domain, from the Internet Archive. Lesson recordings: generated with Piper voices trained on public-domain recordings.</p>
+      <p className="small muted" style={{ marginTop: 16 }}>Audiobooks: LibriVox volunteers, public domain, from the Internet Archive. Lesson recordings: computer voices (Microsoft Edge neural voices), not human readers.</p>
     </div>
   );
 }

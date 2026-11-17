@@ -184,7 +184,7 @@ export interface SessionStep {
 
 export interface DaySession { date: string; minutes: number; steps: SessionStep[]; index: number; started: string; finished?: string }
 
-/** Generated recording of a listening text (Piper voices): start time of each line, for following along. */
+/** Generated recording of a listening text (Edge neural voices): start time of each line, for following along. */
 export interface TtsRecording { file: string; seconds: number; bytes: number; starts: number[] }
 /** A LibriVox audiobook for a ladder book (public domain), downloaded from archive.org. */
 export interface Audiobook { archive: string; reader: string; title: string; licence: string; source: string; bytes: number; seconds: number; chapters: { title: string; file: string; bytes: number; seconds: number }[] }
