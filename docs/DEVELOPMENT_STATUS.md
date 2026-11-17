@@ -81,7 +81,7 @@ _Last updated: 2026-11-17_
 1b. **Phrases (owner's request, 2026-11-17, not started; plan to agree first).** The most useful everyday expressions, simple common idioms and spoken patterns ("I'd rather…", "It depends on…", "No wonder…"), as cards in the same daily review (design rule 5: chunks). Meanings must come from a licensed source (e.g. Wiktionary, CC BY-SA, with attribution in `docs/CONTENT_LICENSING.md`), example sentences original. Decide size (~300?) and order with the owner.
 2. Real-phone checks: Android install, share a Praktika PDF, offline mode.
 3. Evidence-based phase gates (add listening/reading to the monthly checkpoint).
-4. Local app: build it from Bo-ok (owner's idea, 2026-11-17), synced with Pocket. Notes, options and open questions: `docs/research/LOCAL_FROM_BO-OK.md` (recommends keeping Bo-ok's Next.js stack instead of FastAPI, sync over Bo-ok's record protocol, opt-in).
+4. Local app: build it from Bo-ok (owner's idea, 2026-11-17), synced with Pocket. Notes, options and open questions: `docs/research/LOCAL_FROM_BO-OK.md` (recommends keeping Bo-ok's Next.js stack instead of FastAPI, sync over Bo-ok's record protocol, opt-in). **Owner decided:** in this repo as `apps/local`; sync both ways (own server + own private GitHub repo, each the fallback of the other); keep TR/EN/AR; the same look as Pocket (accent colour, Roboto, G1 logo).
 5. More content: B2/C1 core grammar topics, more GT reading passages and letters, Turkish/Arabic explanations for the core topics.
 6. A `.apkg` export with review history (sql.js).
 7. Playwright e2e in CI.

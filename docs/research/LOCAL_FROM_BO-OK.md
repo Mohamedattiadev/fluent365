@@ -79,7 +79,20 @@ Conflicts: start with "later change wins" per card (as Bo-ok does); later merge 
 5. Clean-up for the rules: AI optional, licences, no hardcoded host, checked book descriptions.
 6. The owner's UI changes on top of Bo-ok's look (to be listed with the owner).
 
-## Open questions for the owner
+## Owner's decisions (2026-11-17)
+
+- **Repo:** Fluent365. Local lives in this repo as `apps/local` (Bo-ok's files copied in, not its private history).
+  The repo is public, so the owner's set-up (Tailscale host, backup repo name, `.data/`) moves to settings and
+  git-ignored files; no learner data in the repo.
+- **Sync: both.** Option A (Pocket → "Connect to my computer", the learner's own server address, Bo-ok's `/api/sync`)
+  and option B (both apps write to the owner's private GitHub repo). If one does not work, the other does. The
+  CLAUDE.md rule changes to: "no network calls with learner data, except to a server or private repo the learner
+  sets up themselves, opt-in".
+- **Languages:** keep the Turkish, English and Arabic interface.
+- **Look:** the same as Pocket: accent colour (violet by default, Settings: Violet / Blue / Orange / Black),
+  green/red only for right/wrong, Roboto, Material Symbols, the G1 logo, light/dark. Bo-ok's layout and features stay.
+
+## Open questions for the owner (answered above)
 
 - Same repo (`apps/local`) or keep Bo-ok's private repo as Fluent365 Local?
 - Sync: A + B as recommended, or only one?
