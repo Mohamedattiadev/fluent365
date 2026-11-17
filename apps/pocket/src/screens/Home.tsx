@@ -64,11 +64,8 @@ function Ring({ value, children }: { value: number; children: React.ReactNode })
 export function Home({ c }: { c: Content }) {
   const settings = useApp((s) => s.settings);
   const session = useApp((s) => s.session);
-  const days = useApp((s) => s.days);
-  const cards = useApp((s) => s.cards);
   const [, force] = useState(0);
   useEffect(() => { if (!session || session.date !== today()) { ensureSession(c); force((x) => x + 1); } }, [c, session]);
-  const word = useMemo(() => wordOfTheDay(c), [c]);
   if (!session || session.date !== today()) return null;
 
   const s = getState();
@@ -80,17 +77,12 @@ export function Home({ c }: { c: Content }) {
   const doneMin = finished ? total : session.steps.slice(0, session.index).filter((x) => counted(x.kind)).reduce((n, x) => n + x.minutes, 0);
   const pct = total ? Math.round((doneMin / total) * 100) : 0;
   const due = dueCardKeys().length;
-  const book = currentBook(s, c.books);
-  const bookPct = book ? Math.floor(((s.reading.books[book.id]?.words ?? 0) / book.words) * 100) : null;
-  const days7 = week(days);
   const onSpeak = session.steps[session.index]?.kind === "speak";
   const nextStep = session.steps[session.index];
-  const now = new Date();
-  const inReviews = word ? !!cards[String(word.id)] : false;
 
   return (
     <div className="today">
-      <p className="overline">{now.toLocaleDateString(undefined, { weekday: "long", day: "numeric", month: "long" })} · Day {dayNumber(s)}</p>
+      <p className="overline">{new Date().toLocaleDateString(undefined, { weekday: "long", day: "numeric", month: "long" })} · Day {dayNumber(s)}</p>
       <h1>{settings.name ? `Hi, ${settings.name}` : "Today"}</h1>
 
       {/* The next step and why, first; today's progress is a small ring beside it (not a big 0 %). */}
@@ -119,6 +111,23 @@ export function Home({ c }: { c: Content }) {
         <p className="study-sub">{finished ? "Done for today. See you tomorrow." : onSpeak ? "Only the optional speaking topic is left" : started ? `Step ${Math.min(session.index + 1, steps.length)} of ${steps.length}` : `About ${total} min · ${steps.length} steps`}</p>
       </ActionBar>
 
+      <div className="today-extras"><TodayExtras c={c} /></div>
+    </div>
+  );
+}
+
+/** This week, the word of the day and one progress line. Under the session on phones; the right-hand panel on laptops. */
+export function TodayExtras({ c }: { c: Content }) {
+  const days = useApp((s) => s.days);
+  const cards = useApp((s) => s.cards);
+  const word = useMemo(() => wordOfTheDay(c), [c]);
+  const s = getState();
+  const days7 = week(days);
+  const inReviews = word ? !!cards[String(word.id)] : false;
+  const book = currentBook(s, c.books);
+  const bookPct = book ? Math.floor(((s.reading.books[book.id]?.words ?? 0) / book.words) * 100) : null;
+  return (
+    <>
       <div className="week-dots" role="list" aria-label={`Studied ${days7.filter((d) => d.on).length} of 7 days this week`}>
         {days7.map((d, i) => (
           <div key={d.k} role="listitem" className="wd" style={{ animationDelay: `${i * 40}ms` }} aria-label={`${d.long}: ${d.on ? "studied" : d.isToday ? "today" : d.future ? "coming up" : "rest day"}`}>
@@ -148,6 +157,6 @@ export function Home({ c }: { c: Content }) {
         <span><CountUp value={wordsKnown(s)} /> words known</span>
         {book && <span>{bookPct}% of {book.title.replace(/^The /, "")}</span>}
       </p>
-    </div>
+    </>
   );
 }

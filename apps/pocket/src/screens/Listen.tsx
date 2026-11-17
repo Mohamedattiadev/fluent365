@@ -4,13 +4,14 @@
 // One card at the top (continue / now playing → opens the full-screen player), then compact lists with
 // what you have heard, then the books. Downloads are small per-chapter buttons; everything at once is in Settings.
 import { useEffect, useState } from "react";
-import { time } from "../components/FullPlayer";
+import { Controls, Extras, QueueList, RATES, Scrubber, time, TranscriptView, useTranscript } from "../components/FullPlayer";
+import { WordSheet } from "../components/Reader";
 import { CourseUnitView, LessonStepView } from "../components/Lessons";
-import { Icon, toast } from "../components/ui";
+import { Icon, toast, useWide } from "../components/ui";
 import { allItems, bookChapterUrl, cachedSet, download, keepStorage, mb, siteUrl, type Item } from "../lib/audio";
 import { loadCourse, type Content } from "../lib/content";
 import * as player from "../lib/player";
-import { currentBook } from "../lib/reading";
+import { currentBook, wordIndex } from "../lib/reading";
 import { useApp } from "../lib/store";
 import type { Course } from "../lib/types";
 import { navigate } from "../router";
@@ -65,6 +66,7 @@ export function ListenScreen({ c, path }: { c: Content; path: string[] }) {
   const p = player.usePlayer();
   const [tests, setTests] = useState<Course | null>(null);
   const dl = useDownloads(c);
+  const wide = useWide("(min-width: 1100px)");
   useEffect(() => { void loadCourse("ielts-listening-tests").then(setTests).catch(() => undefined); }, []);
   const [sub, a, b] = path;
   if (sub === "lesson" && a && b) return <div><Back to="/listen" /><LessonStepView c={c} lesson={Number(a)} step={Number(b)} onDone={() => navigate("/listen")} /></div>;
@@ -98,7 +100,7 @@ export function ListenScreen({ c, path }: { c: Content; path: string[] }) {
         <div className="listen-main">
           {hero && (
             <div className="resume-card">
-              <button className="resume-open" onClick={() => { if (!cur) player.play(rq, ri); player.open(); }} aria-label={`${cur ? "Open the player" : "Play"}: ${hero.title}`}>
+              <button className="resume-open" onClick={() => { if (!cur) player.play(rq, ri); if (!wide) player.open(); }} aria-label={`${cur ? "Open the player" : "Play"}: ${hero.title}`}>
                 {hero.cover ? <img className="cover" src={hero.cover} alt="" width={56} height={74} /> : <span className="cover cover-blank" style={{ width: 56, height: 74 }}><Icon name="listening" /></span>}
                 <span className="grow" style={{ minWidth: 0 }}>
                   <span className="overline" style={{ display: "block", margin: 0 }}>{cur ? (p.loading ? "Loading…" : p.playing ? "Now playing" : "Paused") : lastKey ? "Continue listening" : "Start listening"}</span>
@@ -163,6 +165,7 @@ export function ListenScreen({ c, path }: { c: Content; path: string[] }) {
           </button>
           <p className="small muted" style={{ marginTop: 8 }}>Audiobooks: LibriVox volunteers, public domain, from the Internet Archive. Lesson recordings: computer voices (Microsoft Edge neural voices), not human readers.</p>
         </div>
+        {wide && <NowPanel c={c} />}
       </div>
     </div>
   );
@@ -233,12 +236,49 @@ function BookChapters({ c, id, dl, current }: { c: Content; id: string; dl: Down
   );
 }
 
+/** Laptop Listen page, right column: what is playing and its transcript (the controls are in the bottom bar). */
+function NowPanel({ c }: { c: Content }) {
+  const tr = player.current();
+  const t = useTranscript(c, tr?.key);
+  const cards = useApp((s) => s.cards);
+  const [word, setWord] = useState<{ word: string; sentence: string } | null>(null);
+  const [list, setList] = useState(false);
+  if (!tr) return <aside className="listen-now empty"><Icon name="listening" size={40} /><p className="muted">Pick a recording on the left. Its text appears here and follows the voice.</p></aside>;
+  return (
+    <aside className="listen-now" aria-label="Now playing">
+      <div className="np-head">
+        {tr.cover ? <img className="cover" src={tr.cover} alt="" width={48} height={64} /> : <span className="cover cover-blank" style={{ width: 48, height: 64 }}><Icon name="listening" /></span>}
+        <div className="grow" style={{ minWidth: 0 }}><p className="overline" style={{ margin: 0 }}>Now playing</p><p className="np-title ellipsis">{tr.title}</p><p className="small muted ellipsis" style={{ margin: 0 }}>{tr.artist}</p></div>
+      </div>
+      {list ? <div className="fp-text fp-list"><QueueList onPick={() => setList(false)} /></div> : t ? <TranscriptView c={c} t={t} onWord={setWord} /> : <div className="fp-text fp-empty"><p className="muted">No text for this recording.</p></div>}
+      <p className="fp-note small muted">{t?.book ? "Place in the text is estimated · " : t ? "Click a sentence to jump · " : ""}hold a word to save it</p>
+      <Extras t={t} onList={() => setList(!list)} />
+      {word && <WordSheet c={c} index={wordIndex(c)} pick={word} bookId={tr.key.startsWith("book:") ? tr.key.split(":")[1] : undefined} saved={(k) => !!cards[k]} onClose={() => setWord(null)} />}
+    </aside>
+  );
+}
+
 /** A small bar above the bottom navigation while something plays (hidden on Listen and in Study now).
  *  Tap it to open the full-screen player. */
 export function MiniPlayer() {
   const p = player.usePlayer();
   const t = player.current();
+  const wide = useWide();
   if (!t) return null;
+  // Laptop: a full-width player bar (Spotify desktop): title left, controls and scrubber centre, speed right.
+  if (wide) return (
+    <div className="mini-player player-bar" role="region" aria-label="Player">
+      <button className="mini-main" onClick={() => (matchMedia("(min-width: 1100px)").matches ? navigate("/listen") : player.open())} aria-label={`Show the text: ${t.title}`}>
+        {t.cover ? <img className="cover" src={t.cover} alt="" width={36} height={48} /> : <Icon name="listening" />}
+        <span className="grow" style={{ minWidth: 0 }}><span className="ellipsis" style={{ display: "block", fontWeight: 500 }}>{t.title}</span><span className="small muted ellipsis" style={{ display: "block" }}>{t.album ?? t.artist}</span></span>
+      </button>
+      <div className="pb-centre"><Controls big={false} /><Scrubber /></div>
+      <div className="pb-end">
+        <button className="btn quiet" onClick={() => { const i = RATES.indexOf(p.rate); player.setRate(RATES[(i + 1) % RATES.length]); }} aria-label={`Speed ${p.rate}×, click to change`}>{p.rate}×</button>
+        <button className="icon-btn" onClick={player.stop} aria-label="Stop and close the player"><Icon name="close" /></button>
+      </div>
+    </div>
+  );
   return (
     <div className="mini-player" role="region" aria-label="Now playing">
       <button className="mini-main" onClick={player.open} aria-label={`Open the player: ${t.title}`}>

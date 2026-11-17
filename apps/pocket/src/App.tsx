@@ -1,15 +1,16 @@
 import { useEffect, useState } from "react";
 import { FullPlayer } from "./components/FullPlayer";
 import { InstallCard } from "./components/Install";
-import { Icon, Toaster } from "./components/ui";
+import { Icon, ShortcutsHelp, Toaster, useWide } from "./components/ui";
 import { startTracking } from "./lib/activity";
 import { loadAll, type Content } from "./lib/content";
 import * as db from "./lib/db";
+import * as player from "./lib/player";
 import { usePlayer } from "./lib/player";
 import { isLoaded, loadState, useApp } from "./lib/store";
 import type { GrammarTopic } from "./lib/types";
 import { navigate, useRoute } from "./router";
-import { Home } from "./screens/Home";
+import { Home, TodayExtras } from "./screens/Home";
 import { LearnScreen } from "./screens/Learn";
 import { ListenScreen, MiniPlayer } from "./screens/Listen";
 import { PracticeScreen } from "./screens/LocalOnly";
@@ -45,6 +46,22 @@ export function App() {
   const settings = useApp((s) => s.settings);
   const route = useRoute();
   const expanded = usePlayer().expanded;
+  const wide = useWide();
+  const [help, setHelp] = useState(false);
+
+  // Laptop shortcuts: ? = help, Space = play/pause, ←/→ = ±10 s on Listen (the reader and cards have their own keys).
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      const el = e.target as HTMLElement;
+      if (e.ctrlKey || e.metaKey || e.altKey || /^(INPUT|TEXTAREA|SELECT)$/.test(el?.tagName) || el?.isContentEditable) return;
+      if (e.key === "?") { e.preventDefault(); setHelp((h) => !h); return; }
+      if (!player.current() || location.hash.startsWith("#/session") || document.querySelector(".flash, .swipe")) return;
+      if (e.key === " " && el?.tagName !== "BUTTON") { e.preventDefault(); player.toggle(); }
+      else if ((location.hash.startsWith("#/listen") || document.querySelector(".fp")) && (e.key === "ArrowLeft" || e.key === "ArrowRight")) { e.preventDefault(); player.seek(e.key === "ArrowLeft" ? -10 : 10); }
+    };
+    addEventListener("keydown", onKey);
+    return () => removeEventListener("keydown", onKey);
+  }, []);
 
   useEffect(() => {
     void loadState().then(() => setReady(true));
@@ -108,25 +125,30 @@ export function App() {
   }
   const current = section === "" ? "/" : NAV.find((n) => n.to === `/${section}`)?.to;
   const gear = section === "settings";
+  // Laptop: a right-hand panel (week, word of the day, progress) next to Today, Learn and Read.
+  const side = wide && ["", "learn", "read"].includes(section);
 
   return (
-    <div className={`app ${focus ? "focus-mode" : ""}`}>
+    <div className={`app ${focus ? "focus-mode" : ""} ${side ? "has-side" : ""}`}>
       <header className="topnav nav" aria-label="Main">
         <a href="#/" className="brand"><svg className="logo" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><circle cx="256" cy="256" r="176" fill="none" stroke="currentColor" strokeOpacity=".18" strokeWidth="30"/><circle className="arc" cx="256" cy="256" r="176" fill="none" stroke="var(--accent)" strokeWidth="30" strokeLinecap="round" pathLength={100} transform="rotate(-90 256 256)" strokeDasharray="25 100"/><path d="M251.0 345.0 C203.5 319.0 167.8 323.0 151.0 339.0 V201.0 C167.8 185.0 203.5 187.0 251.0 215.0 Z" fill="currentColor"/><path d="M261.0 345.0 C308.5 319.0 344.2 323.0 361.0 339.0 V201.0 C344.2 185.0 308.5 187.0 261.0 215.0 Z" fill="currentColor"/></svg> Fluent365</a>
         <nav className="links" aria-label="Sections">
           {NAV.map((n) => <a key={n.to} className="link" href={`#${n.to}`} aria-current={current === n.to ? "page" : undefined}><Icon name={n.icon} size={20} filled={current === n.to} />{n.label}</a>)}
         </nav>
-        <a className="gear" href="#/settings" aria-label="Settings" aria-current={gear ? "page" : undefined}><Icon name="settings" filled={gear} /></a>
+        <a className="gear" href="#/settings" aria-label="Settings" aria-current={gear ? "page" : undefined}><Icon name="settings" filled={gear} /><span className="rail-label">Settings</span></a>
+        <button className="rail-help" onClick={() => setHelp(true)} aria-label="Keyboard shortcuts"><Icon name="keyboard" size={20} /><span className="rail-label">Shortcuts <kbd>?</kbd></span></button>
       </header>
       <main className="main" id="main">
         {!focus && <a className="gear phone-gear" href="#/settings" aria-label="Settings" aria-current={gear ? "page" : undefined}><Icon name="settings" filled={gear} /></a>}
         <div className="page" key={focus ? "session" : section === "learn" && rest.length <= 1 ? "learn" : route}>{page}</div>
       </main>
-      {!focus && section !== "listen" && <MiniPlayer />}
+      {!focus && side && <aside className="side-panel" aria-label="Your week"><TodayExtras c={content} /></aside>}
+      {!focus && (section !== "listen" || wide) && <MiniPlayer />}
       <nav className="bottomnav nav" aria-label="Main">
         {NAV.map((n) => <a key={n.to} href={`#${n.to}`} aria-current={current === n.to ? "page" : undefined}><span className="ind"><Icon name={n.icon} filled={current === n.to} /></span>{n.label}</a>)}
       </nav>
       {expanded && <FullPlayer c={content} />}
+      {help && <ShortcutsHelp onClose={() => setHelp(false)} />}
       {!focus && <InstallCard />}
       <Toaster />
     </div>

@@ -846,3 +846,69 @@ p { margin: 0 0 10px; }
 .next-step .ring circle { stroke-width: 10; }
 .next-step .ring-sub { text-align: center; line-height: 1.15; font-size: .75rem; }
 .next-step .ring-sub b { font-size: .95rem; color: var(--md-on-surface); }
+
+/* ---------- UI/UX fixes, group 5: laptop layout (2026-11-17, owner picked draft A) ---------- */
+/* 16. Left navigation rail · centre content · right panel (week, word of the day, progress). */
+.side-panel, .rail-help, .rail-label { display: none; }
+@media (min-width: 900px) {
+  .app { flex-direction: row; align-items: flex-start; }
+  .topnav { position: sticky; top: 0; flex-direction: column; align-items: stretch; gap: 4px; width: 232px; flex-shrink: 0; height: 100vh; padding: 20px 12px; border-bottom: 0; border-right: 1px solid var(--md-outline-variant); }
+  .topnav .brand { margin: 0 0 20px 10px; }
+  .topnav .links { flex-direction: column; flex: 0 0 auto; gap: 4px; overflow: visible; }
+  .topnav a.link { height: 48px; padding: 0 16px; gap: 14px; font-size: var(--fs-md); border-radius: var(--r-full); }
+  .topnav .gear { margin: auto 0 0; width: auto; height: 48px; justify-content: flex-start; gap: 14px; padding: 0 16px; font-size: var(--fs-md); font-weight: 500; }
+  .rail-label { display: inline; }
+  .rail-help { display: flex; align-items: center; gap: 14px; height: 44px; padding: 0 16px; border: 0; border-radius: var(--r-full); background: transparent; color: var(--md-on-surface-variant); font: 500 var(--fs-sm)/1 var(--font); cursor: pointer; }
+  .rail-help:hover { background: color-mix(in srgb, var(--md-on-surface) 8%, transparent); }
+  .app:has(.mini-player) .topnav, .app:has(.mini-player) .side-panel { height: calc(100vh - 80px); }
+  .main { max-width: none; padding: 32px 40px 104px; min-width: 0; }
+  .focus-mode .main { max-width: 760px; }
+  .today { max-width: 640px; margin: 24px auto 0; }
+  .learn, .read-page { max-width: 760px; }
+}
+@media (min-width: 1200px) {
+  .side-panel { display: block; position: sticky; top: 0; width: 340px; flex-shrink: 0; height: 100vh; overflow-y: auto; padding: 32px 24px; border-left: 1px solid var(--md-outline-variant); }
+  .side-panel .week-dots { margin: 0 0 20px; }
+  .has-side .today-extras { display: none; }
+}
+kbd { display: inline-block; min-width: 1.6em; padding: 1px 6px; border: 1px solid var(--md-outline); border-bottom-width: 2px; border-radius: 6px; font: 500 var(--fs-xs)/1.4 var(--font); text-align: center; color: var(--md-on-surface); background: var(--md-surface); }
+/* 18. Shortcuts dialog. */
+.shortcuts dl { margin: 12px 0 16px; display: grid; gap: 10px; }
+.shortcuts dl > div { display: grid; grid-template-columns: 110px 1fr; gap: 12px; align-items: baseline; }
+.shortcuts dt { display: flex; gap: 4px; flex-wrap: wrap; }
+.shortcuts dd { margin: 0; }
+/* 17. Laptop Listen: list left, now playing + transcript right, full-width player bar at the bottom. */
+@media (min-width: 900px) {
+  .mini-player.player-bar { left: 0; right: 0; bottom: 0; height: 80px; padding: 8px 24px; display: grid; grid-template-columns: minmax(180px, 1fr) minmax(320px, 2fr) minmax(120px, 1fr); gap: 24px; border-radius: 0; box-shadow: none; border-top: 1px solid var(--md-outline-variant); background: var(--md-surface-container); z-index: 30; }
+  .player-bar .mini-bar { display: none; }
+  .pb-centre { display: flex; flex-direction: column; align-items: stretch; min-width: 0; }
+  .pb-centre .fp-controls { margin: 0; gap: 6px; }
+  .pb-centre .fp-controls .icon-btn { width: 40px; height: 40px; }
+  .pb-centre .play-fab { width: 40px; height: 40px; box-shadow: none; }
+  .pb-centre .fp-seek { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 8px; }
+  .pb-centre .np-seek { margin: 0; height: 16px; grid-column: 2; grid-row: 1; }
+  .pb-centre .np-times { display: contents; }
+  .pb-centre .np-times span:first-child { grid-column: 1; grid-row: 1; }
+  .pb-centre .np-times span:last-child { grid-column: 3; grid-row: 1; }
+  .pb-end { display: flex; align-items: center; justify-content: flex-end; gap: 4px; }
+  .app:has(.player-bar) .main { padding-bottom: 112px; }
+  .listen { max-width: none; }
+}
+@media (min-width: 1100px) {
+  .listen-cols { display: grid; grid-template-columns: minmax(0, 1fr) minmax(360px, 480px); gap: 32px; align-items: start; }
+  .listen-now { position: sticky; top: 24px; display: flex; flex-direction: column; height: calc(100vh - 152px); padding: 16px; border-radius: var(--r-xl); background: var(--md-surface-container-low); }
+  .listen-now.empty { align-items: center; justify-content: center; text-align: center; gap: 12px; color: var(--md-on-surface-variant); }
+  .listen-now .np-head { display: flex; gap: 12px; align-items: center; margin-bottom: 4px; }
+  .listen-now .np-title { font-size: var(--fs-md); margin: 0; }
+  .listen-now .fp-text { padding: 18vh 8px; }
+  .listen-now .fp-text p { font-size: 1.25rem; }
+  .listen-now .fp-note { margin: 6px 0; }
+  .listen h1 { margin-bottom: 16px; }
+}
+@media (min-width: 900px) {
+  .learn, .read-page, .listen-main { margin-left: auto; margin-right: auto; }
+  .main > .page > div:has(> .settings-group), .offline { max-width: 840px; margin: 0 auto; }
+  .side-panel .progress-line { flex-direction: column; align-items: center; }
+  .side-panel .progress-line span::after { content: none !important; }
+}
+@media (min-width: 1100px) { .listen-main { margin: 0; } }

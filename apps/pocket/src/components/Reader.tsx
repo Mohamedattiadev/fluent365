@@ -1,6 +1,6 @@
 // Book reader for the reading ladder: one page (~350 words) at a time, tap a word to look it up
 // in Fluent365's word list and save it to your reviews. Works offline (books are precached).
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ping } from "../lib/activity";
 import { loadBook, type Content } from "../lib/content";
 import { addCards } from "../lib/learning";
@@ -27,6 +27,18 @@ export function Reader({ c, info, target, onDone, actions }: { c: Content; info:
   const [ahead, setAhead] = useState<ReturnType<typeof wordsAhead> | null>(null);
   useEffect(() => { loadBook(info.id).then((b) => { setBook(b); setAhead(wordsAhead(b, Math.min(getState().reading.books[info.id]?.block ?? 0, b.blocks.length), c, getState())); }).catch(() => setError(true)); }, [info.id, c]);
   useEffect(() => () => stopSpeaking(), []);
+  // Laptop: ← / → turn the page (the handlers are refreshed on every render through the ref).
+  const keys = useRef<{ next?: () => void; back?: () => void }>({});
+  useEffect(() => {
+    const k = (e: KeyboardEvent) => {
+      const t = (e.target as HTMLElement)?.tagName;
+      if (e.ctrlKey || e.metaKey || e.altKey || t === "INPUT" || t === "TEXTAREA" || document.querySelector(".fp")) return;
+      if (e.key === "ArrowRight") { e.preventDefault(); keys.current.next?.(); }
+      else if (e.key === "ArrowLeft") { e.preventDefault(); keys.current.back?.(); }
+    };
+    addEventListener("keydown", k);
+    return () => removeEventListener("keydown", k);
+  }, []);
   if (error) return <p>Could not load this book. Open the app once with internet; after that it works offline.</p>;
   if (!book) return <Loading what="Opening the book…" />;
 
@@ -51,6 +63,7 @@ export function Reader({ c, info, target, onDone, actions }: { c: Content; info:
     setPick(null);
     window.scrollTo({ top: 0 });
   }
+  keys.current = { next: finished ? undefined : next, back: start > 0 ? back : undefined };
   function onTap(e: React.MouseEvent<HTMLElement>) {
     const el = e.target as HTMLElement;
     if (!el.classList.contains("w")) return;

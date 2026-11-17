@@ -178,3 +178,37 @@ export function Toggle({ label, checked, onChange, hint }: { label: string; chec
     </div>
   );
 }
+
+/** True on laptop-width screens (the web layout: left navigation, side panels). */
+export function useWide(query = "(min-width: 900px)") {
+  const [wide, setWide] = useState(() => typeof matchMedia !== "undefined" && matchMedia(query).matches);
+  useEffect(() => {
+    const m = matchMedia(query);
+    const on = () => setWide(m.matches);
+    m.addEventListener("change", on);
+    return () => m.removeEventListener("change", on);
+  }, [query]);
+  return wide;
+}
+
+/** Laptop keyboard shortcuts, shown with "?" (or the button in the left navigation). */
+export function ShortcutsHelp({ onClose }: { onClose: () => void }) {
+  useEffect(() => { const k = (e: KeyboardEvent) => { if (e.key === "Escape") onClose(); }; addEventListener("keydown", k); return () => removeEventListener("keydown", k); }, [onClose]);
+  const rows: [string, string][] = [
+    ["Space", "Play / pause the recording (or show the answer on a card)"],
+    ["← →", "Reader: previous / next page · Listen: back / forward 10 seconds"],
+    ["1 2 3 4", "Grade a card: Again, Hard, Good, Easy (Anki)"],
+    ["1 – 9", "Pick an answer in a question · Enter checks"],
+    ["Esc", "Close the player or a card · leave Study now"],
+    ["?", "Show this list"],
+  ];
+  return (
+    <div className="install-scrim" onClick={onClose}>
+      <div className="install-card shortcuts" role="dialog" aria-modal="true" aria-label="Keyboard shortcuts" onClick={(e) => e.stopPropagation()}>
+        <h2>Keyboard shortcuts</h2>
+        <dl>{rows.map(([k, v]) => <div key={k}><dt>{k.split(" ").map((x) => <kbd key={x}>{x}</kbd>)}</dt><dd>{v}</dd></div>)}</dl>
+        <button className="btn big primary" onClick={onClose} autoFocus>Close</button>
+      </div>
+    </div>
+  );
+}
