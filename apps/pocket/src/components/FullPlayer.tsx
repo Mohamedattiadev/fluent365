@@ -55,6 +55,16 @@ export function placeIn(t: Transcript, p: { time: number; duration: number }) {
   const i = t.book ? sentenceAt(t.starts.map((at) => ({ at })), pos) : lineAt(t.starts, pos);
   return i;
 }
+/** The word being spoken inside line i: an estimate (words spread evenly over the line) until the new voices
+ *  bring exact word times. Lesson lines end with a short pause, so the words finish a little early. -1 = none. */
+export function wordAt(t: Transcript, p: { time: number; duration: number; playing: boolean }, i: number) {
+  if (!p.playing && p.time <= 0) return -1;
+  const pos = t.book ? (p.duration ? p.time / p.duration : 0) : p.time;
+  const end = t.starts[i + 1] ?? (t.book ? 1 : p.duration || t.starts[i] + 4);
+  const span = Math.max(0.0001, (end - t.starts[i]) * (t.book ? 1 : 0.88) - (t.book ? 0 : 0.3));
+  const n = t.lines[i].text.split(/\s+/).length;
+  return Math.min(n - 1, Math.max(0, Math.floor(((pos - t.starts[i]) / span) * n)));
+}
 export const startOf = (t: Transcript, i: number, duration: number) => (t.book ? t.starts[i] * duration : t.starts[i]);
 
 /** Scrubber, −10 s, play/pause, +10 s (and previous/next). Shared by the full-screen player and the laptop bar. */
@@ -118,6 +128,7 @@ export function TranscriptView({ c, t, onWord }: { c: Content; t: Transcript; on
   const manual = useRef(0);
   const press = useRef<{ id: ReturnType<typeof setTimeout>; fired: boolean } | null>(null);
   const i = placeIn(t, p);
+  const wi = wordAt(t, p, i);
   void c;
   useEffect(() => {
     const el = box.current?.querySelector<HTMLElement>(`[data-i="${i}"]`);
@@ -139,7 +150,7 @@ export function TranscriptView({ c, t, onWord }: { c: Content; t: Transcript; on
         <p key={k} data-i={k} className={k === i ? "now" : k < i ? "past" : undefined}
           onClick={() => { if (press.current?.fired) { press.current = null; return; } manual.current = 0; player.playFrom(startOf(t, k, p.duration)); }}>
           {l.speaker && <b className="spk">{l.speaker}: </b>}
-          {l.text.split(/(\s+)/).map((w, n) => (/\S/.test(w) ? <span key={n} className="fw">{w}</span> : w))}
+          {l.text.split(/(\s+)/).map((w, n) => (/\S/.test(w) ? <span key={n} className={k === i && n / 2 === wi ? "fw cur-w" : "fw"}>{w}</span> : w))}
         </p>
       ))}
     </div>
@@ -224,12 +235,13 @@ export function LyricsCard({ c }: { c: Content }) {
   if (!tr) return null;
   if (!t) return <button className="lyrics-card" onClick={player.open}><span className="lyrics-head"><span>Transcript</span><Icon name="arrow" size={18} /></span><p className="lyrics-line next">{p.loading ? "Loading…" : "No text for this recording."}</p></button>;
   const i = placeIn(t, p);
+  const wi = wordAt(t, p, i);
   const show = t.lines.slice(Math.max(0, i - 1), i + 4).map((l, k) => ({ l, k: Math.max(0, i - 1) + k }));
   return (
     <button className="lyrics-card" onClick={player.open} aria-label="Open the transcript in full screen">
       <span className="lyrics-head"><span>{t.book ? "Book text · place estimated" : "Transcript"}</span><span className="lyrics-open">Full screen <Icon name="arrow" size={18} /></span></span>
       {show.map(({ l, k }) => (
-        <p key={k} className={`lyrics-line ${k === i ? "now" : k < i ? "past" : "next"}`}>{l.speaker && <b>{l.speaker}: </b>}{l.text}</p>
+        <p key={k} className={`lyrics-line ${k === i ? "now" : k < i ? "past" : "next"}`}>{l.speaker && <b>{l.speaker}: </b>}{k === i ? l.text.split(/\s+/).map((w, n, a) => <span key={n} className={n === wi ? "cur-w" : undefined}>{w}{n < a.length - 1 ? " " : ""}</span>) : l.text}</p>
       ))}
     </button>
   );
