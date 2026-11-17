@@ -5,6 +5,7 @@ _Last updated: 2026-11-17_
 ## Current milestone: Pocket MVP (usable daily on laptop and phone)
 
 ### Done and tested
+- **Public on GitHub Pages (2026-11-17).** Repo `fluent365` (public), Pages via the Actions workflow, live at https://mohamedattiadev.github.io/fluent365/. Checked live: hash routes and redirects, relative paths only, manifest scope `./`, service worker scoped to the sub-path, no failed requests. Licences: MIT (`LICENSE`), CC BY-SA 4.0 (`content/LICENSE`); the 8 covers were checked as scans of pre-1929 editions. Commit author emails use the GitHub noreply address. The live build has **no lesson recordings yet** (the Piper files were never committed); the lesson listening steps use the device voice until the new voices are generated.
 - **Listen to a tapped word (owner's request, 2026-11-17).** In the reader, the word sheet has two clear buttons: "Word" (the word, a bit slower) and "Sentence" (the sentence it came from), using the device voice.
 - **Install card (2026-11-17).** When the app is opened in a browser and not installed: Android/Chromium shows an Install button (the browser's `beforeinstallprompt`), iPhone/iPad Safari shows the Share → Add to Home Screen steps, other Android browsers show the menu steps. Hidden when running installed (standalone) and for good after "Not now" / install (IndexedDB `kv`). Tested in Chromium with iOS and Android user agents.
 - **Listen page (2026-11-17).** Under the player, a small transcript window: the line being spoken (highlighted, with the speaker) and the next line, from the recording's `starts`. Audiobooks show the book text: the LibriVox chapter is matched to the book chapter by title (fuzzy; "Part 1/2" split by length; index or whole-book fallback), the sentence is estimated from the elapsed time and labelled "place estimated" (`lib/transcript.ts`, unit tests). No click focus ring on player buttons (keyboard ring kept); the selected speed chip is solid accent; chapter lists start collapsed.
@@ -35,12 +36,13 @@ _Last updated: 2026-11-17_
 - Lesson recordings are synthetic (Piper voices), not human. Audiobooks are human (LibriVox volunteers). Downloads continue only while the app is open (no Background Fetch).
 - Writing and speaking feedback is self-assessed with counts and checklists. There is no automated band score (by design: no paid API).
 - OCR for scanned PDFs is not available.
-- Phase advancement uses lesson progress. The monthly checkpoint test is not built yet.
+- Phase advancement uses lesson progress. The monthly checkpoint covers vocabulary and grammar only.
 
 ### Next steps
-1. Real-phone checks: Android install, share a Praktika PDF, offline mode.
-2. Monthly checkpoint (vocabulary size + listening + reading + timed writing) and evidence-based phase gates.
-3. Local app (FastAPI + SQLite) with a private book library (PDF/EPUB/DOCX/TXT import, reading plans), as in PLAN.md P0 items 4 and 12.
-4. More content: B2/C1 core grammar topics, more GT reading passages and letters, Turkish/Arabic explanations for the core topics.
-5. A `.apkg` export with review history (sql.js) and a placement test.
-6. Playwright e2e in CI.
+1. New lesson voices (edge-tts: en-GB-SoniaNeural + en-US-AndrewNeural), **waiting for the owner's go-ahead**; then redeploy.
+2. Real-phone checks: Android install, share a Praktika PDF, offline mode.
+3. Evidence-based phase gates (add listening/reading to the monthly checkpoint).
+4. Local app (FastAPI + SQLite) with a private book library (PDF/EPUB/DOCX/TXT import, reading plans), as in PLAN.md P0 items 4 and 12.
+5. More content: B2/C1 core grammar topics, more GT reading passages and letters, Turkish/Arabic explanations for the core topics.
+6. A `.apkg` export with review history (sql.js).
+7. Playwright e2e in CI.
