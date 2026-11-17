@@ -55,15 +55,20 @@ export function placeIn(t: Transcript, p: { time: number; duration: number }) {
   const i = t.book ? sentenceAt(t.starts.map((at) => ({ at })), pos) : lineAt(t.starts, pos);
   return i;
 }
-/** The word being spoken inside line i: an estimate (words spread evenly over the line) until the new voices
- *  bring exact word times. Lesson lines end with a short pause, so the words finish a little early. -1 = none. */
+/** The word being spoken inside line i, or -1 (owner, 2026-11-17: "the words don't follow the voice").
+ *  Lessons: an estimate inside the line's exact start/end, longer words get more time and punctuation a short
+ *  pause. Audiobooks (LibriVox): no word mark at all, because even the sentence there is only estimated.
+ *  Exact word times come with the new voices (Edge WordBoundary, DEVELOPMENT_STATUS step 1). */
 export function wordAt(t: Transcript, p: { time: number; duration: number; playing: boolean }, i: number) {
-  if (!p.playing && p.time <= 0) return -1;
-  const pos = t.book ? (p.duration ? p.time / p.duration : 0) : p.time;
-  const end = t.starts[i + 1] ?? (t.book ? 1 : p.duration || t.starts[i] + 4);
-  const span = Math.max(0.0001, (end - t.starts[i]) * (t.book ? 1 : 0.88) - (t.book ? 0 : 0.3));
-  const n = t.lines[i].text.split(/\s+/).length;
-  return Math.min(n - 1, Math.max(0, Math.floor(((pos - t.starts[i]) / span) * n)));
+  if (t.book || (!p.playing && p.time <= 0)) return -1;
+  const end = t.starts[i + 1] ?? (p.duration || t.starts[i] + 4);
+  const span = Math.max(0.0001, (end - t.starts[i]) * 0.9 - 0.25);
+  const words = t.lines[i].text.split(/\s+/);
+  const weight = words.map((w) => Math.max(2, w.replace(/[^\p{L}\p{N}]/gu, "").length) + (/[,;:]$/.test(w) ? 3 : /[.!?]["”’]?$/.test(w) ? 5 : 0));
+  const total = weight.reduce((a, b) => a + b, 0);
+  let at = ((p.time - t.starts[i]) / span) * total;
+  for (let k = 0; k < words.length; k++) { at -= weight[k]; if (at < 0) return k; }
+  return words.length - 1;
 }
 export const startOf = (t: Transcript, i: number, duration: number) => (t.book ? t.starts[i] * duration : t.starts[i]);
 

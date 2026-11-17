@@ -53,7 +53,8 @@ _Last updated: 2026-11-17_
    - **Progress:** group 1 done (1, 3, 12, 14); group 2 done (4, 5, 6, 7, 8); group 3 done (9, 10); group 4 done (13, 15); group 5 done (16, 17, 18). Left: 2 and 11 (with the voices).
    - **Bugs**
      1. Settings › Colour: on phones the description is squeezed into a one-word-wide column. Label + description on top, the segmented control below at full width.
-     2. Transcript drifts: the word shown is not the word spoken. Books: place is estimated (`lib/transcript.ts`); lessons: words are spread evenly over the line (`Listen.tsx` ~line 250). Fix comes with the voices: store Edge WordBoundary times and highlight word by word.
+     2. **Owner again, 2026-11-17: "the words don't follow the voice".** For now: no word mark on audiobooks (the sentence itself is estimated there), lessons weight words by length and pause at punctuation. Real fix with the voices below.
+        Transcript drifts: the word shown is not the word spoken. Books: place is estimated (`lib/transcript.ts`); lessons: words are spread evenly over the line (`Listen.tsx` ~line 250). Fix comes with the voices: store Edge WordBoundary times and highlight word by word.
      3. Primary button position varies (Today: middle; Checkpoint start: middle with empty space below; Read: bottom). Put the one primary action in the bottom `ActionBar` on every flow screen (thumb zone).
    - **Listening**
      4. No "now playing" view. Full-screen player like Spotify lyrics: transcript in large type, current sentence bold and kept centred, past/next lines dimmed, tap a sentence to jump there; scrubber, −10 s, big play/pause, +10 s, speed, chapters. Opens by tapping the mini player, closes by swiping down.
