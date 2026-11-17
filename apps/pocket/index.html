@@ -26,12 +26,12 @@
       .splash .arc { stroke-dasharray: 100 100; stroke-dashoffset: 100; animation: f365fill 1.6s cubic-bezier(.4,0,.2,1) forwards; }
       .splash .wm { font: 400 26px/1 Roboto, system-ui, sans-serif; letter-spacing: -.01em; }
       .splash .wm b { font-weight: 700; color: var(--pen); }
-      @keyframes f365fill { to { stroke-dashoffset: 22; } }
-      @media (prefers-reduced-motion: reduce) { .splash .arc { animation: none; stroke-dashoffset: 22; } }
+      @keyframes f365fill { to { stroke-dashoffset: 75; } }
+      @media (prefers-reduced-motion: reduce) { .splash .arc { animation: none; stroke-dashoffset: 75; } }
     </style>
   </head>
   <body>
-    <div id="root"><div class="splash" role="status"><svg class="mark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><circle cx="256" cy="256" r="170" fill="none" stroke="currentColor" stroke-opacity=".22" stroke-width="40"/><circle class="arc" cx="256" cy="256" r="170" fill="none" stroke="var(--pen, #7b61ff)" stroke-width="40" stroke-linecap="round" pathLength="100" transform="rotate(-90 256 256)" stroke-dasharray="78 100"/><path d="M247.0 350.0 C205.0 320.0 163.2 324.0 140.0 342.0 V190.0 C163.2 170.0 205.0 172.0 247.0 204.0 Z" fill="currentColor"/><path d="M 265.0 350.0 C 307.0 320.0 348.8 324.0 372.0 342.0 V 190.0 C 348.8 170.0 307.0 172.0 265.0 204.0 Z" fill="currentColor"/></svg><div class="wm">Fluent<b>365</b></div></div></div>
+    <div id="root"><div class="splash" role="status"><svg class="mark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><circle cx="256" cy="256" r="176" fill="none" stroke="currentColor" stroke-opacity=".18" stroke-width="30"/><circle class="arc" cx="256" cy="256" r="176" fill="none" stroke="var(--pen, #7b61ff)" stroke-width="30" stroke-linecap="round" pathLength="100" transform="rotate(-90 256 256)" stroke-dasharray="25 100"/><path d="M251.0 345.0 C203.5 319.0 167.8 323.0 151.0 339.0 V201.0 C167.8 185.0 203.5 187.0 251.0 215.0 Z" fill="currentColor"/><path d="M261.0 345.0 C308.5 319.0 344.2 323.0 361.0 339.0 V201.0 C344.2 185.0 308.5 187.0 261.0 215.0 Z" fill="currentColor"/></svg><div class="wm">Fluent<b>365</b></div></div></div>
     <noscript>Fluent365 needs JavaScript to run.</noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
