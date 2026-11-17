@@ -131,5 +131,5 @@ export function App() {
 
 /** Same as the opening screen in index.html, so there is no flash while the app loads its data. */
 function Splash() {
-  return <div className="splash" role="status"><img src="./icons/icon.svg" alt="" width={88} height={88} /><span>Fluent365</span><i aria-hidden /><span className="sr-only">Opening Fluent365…</span></div>;
+  return <div className="splash" role="status"><svg className="mark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g transform="translate(256 256) scale(1.12) translate(-256 -256)"><path d="M324.1 207.7A132 132 0 1 1 221.4 164.1" fill="none" stroke="currentColor" strokeWidth="54" strokeLinecap="round"/><g fill="var(--accent)" transform="translate(324.1 207.7) rotate(38)"><path d="M0 -4 L-23.0 -50.6 H23.0 Z"/><rect x="-23.0" y="-150.6" width="46" height="102" rx="11.5"/></g></g></svg><span className="name">FLUENT365</span><span className="sr-only">Opening Fluent365…</span></div>;
 }
