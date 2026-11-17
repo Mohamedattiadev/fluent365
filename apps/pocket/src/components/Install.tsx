@@ -1,6 +1,8 @@
 // "Install the app" card. Android/Chromium: the browser's own install prompt (beforeinstallprompt).
 // iPhone/iPad Safari: the Share → Add to Home Screen steps. Hidden when the app already runs installed,
-// and for good after "Not now" (remembered in IndexedDB on this device).
+// and the pop-up for good after "Not now" (remembered in IndexedDB on this device). If the app was installed
+// and then removed, the browser offers its install prompt again: then the card comes back (the old
+// "installed" mark is cleared). Settings always has an "Install app" row (InstallRow).
 import { useEffect, useState } from "react";
 import * as db from "../lib/db";
 import { Icon } from "./ui";
@@ -27,8 +29,9 @@ export function InstallCard() {
     let timer = 0;
     const decide = async () => {
       if (!live) return;
+      // The browser only offers its prompt when the app is not installed (e.g. installed, then removed).
+      if (deferred) { void db.set("kv", "installDone", false); if (!(await db.get<boolean>("kv", "installDismissed"))) return setMode("prompt"); return setMode(null); }
       if ((await db.get<boolean>("kv", "installDismissed")) || (await db.get<boolean>("kv", "installDone"))) return setMode(null);
-      if (deferred) return setMode("prompt");
       if (isIosSafari()) return setMode("ios");
       // Android browsers without the prompt (or before it arrives): show the menu steps after a moment.
       if (isAndroid()) timer = window.setTimeout(() => { if (live && !deferred) setMode("android"); }, 4000);
@@ -73,6 +76,34 @@ export function InstallCard() {
           <button className={mode === "prompt" ? "btn quiet" : "btn big primary"} style={{ width: "100%" }} onClick={notNow}>{mode === "prompt" ? "Not now" : "Got it"}</button>
         </div>
       </section>
+    </div>
+  );
+}
+
+/** Settings row: install at any time (also after removing the app). Hidden when running installed. */
+export function InstallRow() {
+  const [, tick] = useState(0);
+  const [steps, setSteps] = useState(false);
+  useEffect(() => { const on = () => tick((x) => x + 1); subs.add(on); return () => { subs.delete(on); }; }, []);
+  if (standalone()) return null;
+  const go = async () => {
+    if (deferred) {
+      await deferred.prompt();
+      const { outcome } = await deferred.userChoice;
+      deferred = null;
+      if (outcome === "accepted") void db.set("kv", "installDone", true);
+      tick((x) => x + 1);
+    } else setSteps(!steps);
+  };
+  return (
+    <div className="install-row">
+      <button className="navrow" onClick={() => void go()}><Icon name="download" size={22} /><span className="grow"><span style={{ display: "block", fontWeight: 500 }}>Install app</span><span className="setting-hint">Home-screen app: opens full screen, works offline, plays with the screen off</span></span><Icon name="arrow" size={20} /></button>
+      {steps && (
+        <ol className="install-steps small">
+          {isIosSafari() ? <><li>Tap <b>Share</b> <Icon name="upload" size={16} /> at the bottom of Safari.</li><li>Tap <b>Add to Home Screen</b>, then <b>Add</b>.</li></>
+            : <><li>Open the browser menu <b>⋮</b> (top right).</li><li>Tap <b>Install app</b> or <b>Add to Home screen</b>.</li><li>Just removed the app? Some browsers need the page reloaded once before they offer it again.</li></>}
+        </ol>
+      )}
     </div>
   );
 }

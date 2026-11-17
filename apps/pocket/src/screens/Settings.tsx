@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { InstallRow } from "../components/Install";
 import { ActionBar, Icon, Segmented, toast, Toggle } from "../components/ui";
 import type { Content } from "../lib/content";
 import * as db from "../lib/db";
@@ -33,6 +34,8 @@ function Main() {
     <div>
       <h1>Settings</h1>
       <button className="navrow offline-cta" onClick={() => navigate("/settings/offline")}><Icon name="download" size={22} /><span className="grow"><span style={{ display: "block", fontWeight: 500 }}>Download for offline</span><span className="setting-hint">Everything on this phone in one tap: app, books, recordings, audiobooks</span></span><Icon name="arrow" size={20} /></button>
+
+      <InstallRow />
 
       <p className="overline" style={{ marginTop: 24 }}>Display</p>
       <div className="settings-group">

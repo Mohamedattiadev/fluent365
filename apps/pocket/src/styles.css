@@ -932,3 +932,6 @@ kbd { display: inline-block; min-width: 1.6em; padding: 1px 6px; border: 1px sol
 .flash .xlate { justify-items: center; }
 .today-words { width: 100%; min-height: 48px; margin: 0 0 16px; border-radius: var(--r-md); }
 .xl-note { font-size: .7rem !important; opacity: .75; }
+.install-row { margin-top: 8px; }
+.install-row .navrow { width: 100%; }
+.install-row .install-steps { margin: 8px 0 0; }
