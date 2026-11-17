@@ -61,7 +61,7 @@ function updatePosition() {
 function setMediaSession(t: Track) {
   if (!("mediaSession" in navigator)) return;
   const ms = navigator.mediaSession;
-  ms.metadata = new MediaMetadata({ title: t.title, artist: t.artist, album: t.album ?? "Fluent365", artwork: t.cover ? [{ src: new URL(t.cover, location.href).href, sizes: "200x266", type: "image/jpeg" }] : [{ src: new URL("./icons/icon-512.png", location.href).href, sizes: "512x512", type: "image/png" }] });
+  ms.metadata = new MediaMetadata({ title: t.title, artist: t.artist, album: t.album ?? "Fluent365", artwork: t.cover ? [{ src: new URL(t.cover, location.href).href, sizes: "200x266", type: "image/jpeg" }] : [{ src: new URL("./icons/icon-512-g1.png", location.href).href, sizes: "512x512", type: "image/png" }] });
   const handlers: [MediaSessionAction, MediaSessionActionHandler][] = [
     ["play", () => void resume()],
     ["pause", () => pause()],

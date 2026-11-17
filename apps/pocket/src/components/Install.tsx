@@ -55,7 +55,7 @@ export function InstallCard() {
   return (
     <div className="install-scrim" role="presentation">
       <section className="install-card" role="dialog" aria-modal="false" aria-labelledby="install-title">
-        <img src="./icons/icon-192.png" alt="" width={56} height={56} />
+        <img src="./icons/icon-192-g1.png" alt="" width={56} height={56} />
         <h2 id="install-title">Install Fluent365</h2>
         <p className="muted">It opens like an app, works offline on the metro, and keeps playing audio with the screen off. Your data stays on this device.</p>
         {mode === "ios" && (
