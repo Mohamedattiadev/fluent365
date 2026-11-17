@@ -76,7 +76,12 @@ function WordsTab({ c }: { c: Content }) {
   type Row = { key: string; w: string; d?: string; right: string; vocabId?: number };
   const rows: Row[] = useMemo(() => {
     const now = Date.now();
-    const when = (dueAt: string) => { const ms = new Date(dueAt).getTime() - now; return ms <= 0 ? "due now" : `in ${interval(ms)}`; };
+    // Next review, like Anki: "today", "tomorrow", "in 5 days" (new words are due today).
+    const when = (dueAt: string) => {
+      const d = new Date(dueAt), t = new Date(now);
+      const days = Math.round((new Date(d.getFullYear(), d.getMonth(), d.getDate()).getTime() - new Date(t.getFullYear(), t.getMonth(), t.getDate()).getTime()) / 86400000);
+      return days <= 0 ? "today" : days === 1 ? "tomorrow" : `in ${interval(d.getTime() - now)}`;
+    };
     // Searching looks through the whole word list, so you can add any word.
     if (needle) {
       const out: Row[] = [];
@@ -92,7 +97,7 @@ function WordsTab({ c }: { c: Content }) {
     if (tab === "known") return knownList.map((v) => ({ key: String(v.id), w: v.w, d: v.d, right: "known", vocabId: v.id }));
     const pick = mine.filter((x) => (tab === "learned" ? x.learned : tab === "hard" ? x.hard : !x.learned));
     pick.sort((a, b) => (tab === "learned" ? (a.mc.card.lastReviewAt ?? "") < (b.mc.card.lastReviewAt ?? "") ? 1 : -1 : new Date(a.mc.card.dueAt).getTime() - new Date(b.mc.card.dueAt).getTime()));
-    return pick.map((x) => ({ key: x.key, w: x.view.w, d: x.view.d, right: x.mc.card.fresh ? "new" : when(x.mc.card.dueAt), vocabId: Number.isNaN(Number(x.key)) ? undefined : Number(x.key) }));
+    return pick.map((x) => ({ key: x.key, w: x.view.w, d: x.view.d, right: when(x.mc.card.dueAt), vocabId: Number.isNaN(Number(x.key)) ? undefined : Number(x.key) }));
   }, [tab, mine, knownList, c, needle, cards, known]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const TABS: [WordTab, string, number][] = [["learning", "Learning", counts.learning], ["learned", "Learned", counts.learned], ["known", "Known", counts.known], ["hard", "Difficult", counts.hard]];

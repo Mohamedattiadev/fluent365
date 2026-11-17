@@ -84,6 +84,7 @@ export function Home({ c }: { c: Content }) {
   const bookPct = book ? Math.floor(((s.reading.books[book.id]?.words ?? 0) / book.words) * 100) : null;
   const days7 = week(days);
   const onSpeak = session.steps[session.index]?.kind === "speak";
+  const nextStep = session.steps[session.index];
   const now = new Date();
   const inReviews = word ? !!cards[String(word.id)] : false;
 
@@ -92,9 +93,19 @@ export function Home({ c }: { c: Content }) {
       <p className="overline">{now.toLocaleDateString(undefined, { weekday: "long", day: "numeric", month: "long" })} · Day {dayNumber(s)}</p>
       <h1>{settings.name ? `Hi, ${settings.name}` : "Today"}</h1>
 
-      <section className="today-main">
+      {/* The next step and why, first; today's progress is a small ring beside it (not a big 0 %). */}
+      <section className="next-step" aria-label={finished ? "Today is done" : "Next step"}>
+        <div className="grow">
+          {finished ? (
+            <><p className="overline">Done for today</p><p className="next-title">You did all {steps.length} steps · {total} min</p><p className="next-why">Come back tomorrow: your reviews will be ready.</p></>
+          ) : nextStep ? (
+            <><p className="overline">{started ? `Next · step ${Math.min(session.index + 1, steps.length)} of ${steps.length}` : "First"}</p>
+              <p className="next-title">{nextStep.title} <span className="muted">· {nextStep.minutes} min</span></p>
+              <p className="next-why">{nextStep.why}</p></>
+          ) : null}
+        </div>
         <Ring value={pct / 100}>
-          {finished ? <><Icon name="check" size={36} /><span className="ring-sub">Done</span></> : <><span className="ring-pct"><CountUp value={pct} />%</span><span className="ring-sub">{doneMin} / {total} min</span></>}
+          {finished ? <Icon name="check" size={26} /> : <span className="ring-sub"><b>{doneMin}</b>/{total}<br />min</span>}
         </Ring>
       </section>
       <ActionBar>
