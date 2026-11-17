@@ -131,6 +131,22 @@ try {
       await page.waitForTimeout(500);
       await shot(page, `${tag}-${name}`);
     }
+    // Listen: play a lesson recording, then open the full-screen player (skipped when there are no recordings).
+    await page.goto(`${BASE}#/listen`);
+    await page.waitForTimeout(500);
+    if (await page.locator(".continue-btn").count()) {
+      await page.locator(".continue-btn").click();
+      await page.waitForTimeout(2500);
+      await shot(page, `${tag}-10b-listen-playing`);
+      await page.locator(".resume-open").click();
+      await page.waitForTimeout(1500);
+      await shot(page, `${tag}-10c-full-player`);
+      await page.keyboard.press("Escape");
+      await page.goto(`${BASE}#/`);
+      await page.waitForTimeout(500);
+      await shot(page, `${tag}-10d-home-mini-player`);
+      await page.locator(".mini-player .icon-btn").first().click();
+    }
     await ctx.close();
 
     // Dark theme and the largest text size.

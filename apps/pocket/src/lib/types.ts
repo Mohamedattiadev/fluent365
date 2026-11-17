@@ -189,4 +189,4 @@ export interface TtsRecording { file: string; seconds: number; bytes: number; st
 /** A LibriVox audiobook for a ladder book (public domain), downloaded from archive.org. */
 export interface Audiobook { archive: string; reader: string; title: string; licence: string; source: string; bytes: number; seconds: number; chapters: { title: string; file: string; bytes: number; seconds: number }[] }
 export interface AudioIndex { tts: Record<string, TtsRecording>; books: Record<string, Audiobook>; about?: string }
-export interface ListeningState { pos: Record<string, number>; last?: string }
+export interface ListeningState { pos: Record<string, number>; last?: string; /** Recordings heard to the end (or past 95 %). */ done?: Record<string, true> }

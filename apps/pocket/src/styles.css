@@ -765,3 +765,63 @@ p { margin: 0 0 10px; }
 .actionbar .study-sub { margin: 0; }
 @media (min-width: 900px) { .today .actionbar { margin: 0 0 24px; } }
 @media (min-width: 900px) { .reader-head .cover { order: -2; } .reader-title { order: -1; } }
+
+/* ---------- UI/UX fixes, group 2: Listen (2026-11-17) ---------- */
+.resume-card { position: relative; overflow: hidden; cursor: default; gap: 8px; padding: 10px 12px 10px 10px; }
+.resume-open { all: unset; box-sizing: border-box; display: flex; align-items: center; gap: 14px; flex: 1; min-width: 0; min-height: 56px; cursor: pointer; border-radius: var(--r-md); }
+.resume-open:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.continue-btn { width: 100%; justify-content: flex-start; min-height: 48px; margin-bottom: 8px; border-radius: var(--r-md); padding: 0 16px; }
+/* 5. Compact recording rows: one line, length or a check, a thin bar for how much you have heard. */
+.list.tracks > li { position: relative; }
+.list.tracks .track { position: relative; }
+.list.tracks .rowbtn { padding: 6px 4px 6px 14px; min-height: 48px; gap: 12px; }
+.list.tracks .icon-btn { width: 44px; height: 44px; flex-shrink: 0; margin-right: 4px; }
+.track-meta { flex-shrink: 0; display: inline-flex; align-items: center; }
+.track-meta .icon { color: var(--md-success, var(--accent)); }
+.track-bar { position: absolute; left: 0; bottom: 0; height: 3px; background: var(--accent); border-radius: 0 2px 2px 0; opacity: .8; }
+.book-audio { margin: 0; border-bottom: 1px solid var(--md-outline-variant); }
+.book-audio:last-child { border-bottom: 0; }
+.book-audio-head { padding: 6px 0; min-height: 56px; gap: 12px; }
+.book-audio-sub { margin: 0 0 6px; }
+.book-audio .btn.quiet { margin: -4px 0 8px; min-height: 44px; }
+.books-list { margin-bottom: 8px; }
+/* 7. Download everything is a small link at the bottom (big downloads live in Settings). */
+.offline-link { margin-top: 8px; padding-left: 4px; min-height: 44px; text-align: left; height: auto; }
+
+/* ---------- 4. Full-screen player ---------- */
+:root.fp-open { overflow: hidden; }
+.fp { position: fixed; inset: 0; z-index: 45; display: flex; flex-direction: column; background: var(--md-surface); color: var(--md-on-surface); padding: env(safe-area-inset-top) 0 env(safe-area-inset-bottom); animation: fpIn 260ms var(--ease) backwards; transition: transform 200ms var(--ease); touch-action: pan-x; }
+@keyframes fpIn { from { transform: translateY(40px); opacity: 0; } to { transform: none; opacity: 1; } }
+.fp-head { position: relative; display: flex; align-items: center; gap: 8px; padding: 14px 12px 8px; touch-action: none; }
+.fp-grip { position: absolute; top: 6px; left: 50%; width: 36px; height: 4px; margin-left: -18px; border-radius: 2px; background: var(--md-outline-variant); }
+.fp-title { display: flex; flex-direction: column; min-width: 0; text-align: center; font-weight: 500; }
+.fp-head .cover { border-radius: 4px; flex-shrink: 0; margin-right: 6px; }
+.fp-text { flex: 1; min-height: 0; overflow-y: auto; padding: 30vh 24px; scrollbar-width: none; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; mask-image: linear-gradient(transparent, #000 14%, #000 86%, transparent); -webkit-mask-image: linear-gradient(transparent, #000 14%, #000 86%, transparent); }
+.fp-text::-webkit-scrollbar { display: none; }
+.fp-text p { margin: 0 0 18px; font-size: 1.5rem; line-height: 1.35; font-weight: 500; color: color-mix(in srgb, var(--md-on-surface) 34%, transparent); cursor: pointer; transition: color 250ms var(--ease); max-width: 40ch; }
+.fp-text p.past { color: color-mix(in srgb, var(--md-on-surface) 46%, transparent); }
+.fp-text p.now { color: var(--md-on-surface); font-weight: 700; }
+.fp-text p.now .spk { color: var(--accent-text); }
+.fp-text .spk { font-weight: 700; }
+.fp-text .fw { border-radius: 4px; }
+.fp-text .fw:active { background: var(--accent-soft); }
+.fp-list, .fp-empty { padding: 8px 16px; mask-image: none; -webkit-mask-image: none; }
+.fp-list p, .fp-empty p { font-size: var(--fs-md); }
+.fp-foot { padding: 4px 20px 12px; touch-action: none; }
+.fp-note { text-align: center; margin: 0 0 2px; }
+.fp-seek .np-seek { margin-top: 4px; }
+.fp-controls { display: flex; align-items: center; justify-content: center; gap: 14px; margin: 2px 0 10px; }
+.fp-controls .icon-btn { width: 48px; height: 48px; color: var(--md-on-surface); }
+.fp-controls .play-fab.big { width: 72px; height: 72px; }
+.fp-extras { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
+.fp-chip { appearance: none; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; min-height: 52px; padding: 4px 2px; border: 0; border-radius: var(--r-md); background: var(--md-surface-container); color: var(--md-on-surface); font: 500 var(--fs-xs)/1.2 var(--font); cursor: pointer; text-align: center; }
+.fp-chip span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 100%; }
+.fp-chip.on { background: var(--accent); color: var(--on-accent); }
+.fp-chip:focus:not(:focus-visible) { outline: none; }
+.fp .sheet { bottom: calc(16px + env(safe-area-inset-bottom)); z-index: 50; }
+@media (min-width: 900px) {
+  .fp { left: auto; width: min(560px, 50vw); border-left: 1px solid var(--md-outline-variant); box-shadow: var(--elev-3); }
+  .fp-text p { font-size: 1.375rem; }
+}
+.list.tracks > li { padding: 0; }
+.fp-text { position: relative; }

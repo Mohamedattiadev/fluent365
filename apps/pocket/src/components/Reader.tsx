@@ -112,7 +112,8 @@ export function Reader({ c, info, target, onDone, actions }: { c: Content; info:
   );
 }
 
-function WordSheet({ index, pick, bookId, saved, onClose }: { c: Content; index: Map<string, VocabItem>; pick: { word: string; sentence: string }; bookId: string; saved: (key: string) => boolean; onClose: () => void }) {
+/** Word card: definition, listen, add to reviews. Also used by the full-screen player (long-press a word). */
+export function WordSheet({ index, pick, bookId, saved, onClose }: { c: Content; index: Map<string, VocabItem>; pick: { word: string; sentence: string }; bookId?: string; saved: (key: string) => boolean; onClose: () => void }) {
   const v = lookupWord(index, pick.word);
   const clean = pick.word.replace(/^[^\p{L}]+|[^\p{L}]+$/gu, "");
   const customKey = `c:${cleanWord(pick.word)}`;
@@ -120,8 +121,8 @@ function WordSheet({ index, pick, bookId, saved, onClose }: { c: Content; index:
   const isSaved = saved(key);
   function save() {
     if (v) addCards([key]);
-    else addCards([customKey], { [customKey]: { w: clean.toLowerCase(), ex: pick.sentence, source: "Saved while reading" } });
-    tagBook(key, bookId);
+    else addCards([customKey], { [customKey]: { w: clean.toLowerCase(), ex: pick.sentence, source: bookId ? "Saved while reading" : "Saved while listening" } });
+    if (bookId) tagBook(key, bookId);
     toast(`"${v?.w ?? clean}" added to your reviews`);
     onClose();
   }

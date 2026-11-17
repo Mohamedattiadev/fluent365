@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
+import { FullPlayer } from "./components/FullPlayer";
 import { InstallCard } from "./components/Install";
 import { Icon, Toaster } from "./components/ui";
 import { startTracking } from "./lib/activity";
 import { loadAll, type Content } from "./lib/content";
 import * as db from "./lib/db";
+import { usePlayer } from "./lib/player";
 import { isLoaded, loadState, useApp } from "./lib/store";
 import type { GrammarTopic } from "./lib/types";
 import { navigate, useRoute } from "./router";
@@ -42,6 +44,7 @@ export function App() {
   const [ready, setReady] = useState(isLoaded());
   const settings = useApp((s) => s.settings);
   const route = useRoute();
+  const expanded = usePlayer().expanded;
 
   useEffect(() => {
     void loadState().then(() => setReady(true));
@@ -123,6 +126,7 @@ export function App() {
       <nav className="bottomnav nav" aria-label="Main">
         {NAV.map((n) => <a key={n.to} href={`#${n.to}`} aria-current={current === n.to ? "page" : undefined}><span className="ind"><Icon name={n.icon} filled={current === n.to} /></span>{n.label}</a>)}
       </nav>
+      {expanded && <FullPlayer c={content} />}
       {!focus && <InstallCard />}
       <Toaster />
     </div>

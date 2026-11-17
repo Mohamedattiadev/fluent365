@@ -1,21 +1,25 @@
 // Listen: background audio for the metro and the bus. The audiobook of your current ladder book (LibriVox,
 // public domain) and the lesson recordings (generated on the laptop with Microsoft Edge neural voices). Plays with the
 // screen off, with lock-screen controls. Download once and it works offline.
+// One card at the top (continue / now playing → opens the full-screen player), then compact lists with
+// what you have heard, then the books. Downloads are small per-chapter buttons; everything at once is in Settings.
 import { useEffect, useState } from "react";
+import { time } from "../components/FullPlayer";
 import { CourseUnitView, LessonStepView } from "../components/Lessons";
-import { Icon } from "../components/ui";
-import { allItems, bookChapterUrl, cachedSet, mb, siteUrl } from "../lib/audio";
-import { loadBook, loadCourse, loadLesson, type Content } from "../lib/content";
-import { chapterSentences, lineAt, sentenceAt, type Line } from "../lib/transcript";
+import { Icon, toast } from "../components/ui";
+import { allItems, bookChapterUrl, cachedSet, download, keepStorage, mb, siteUrl, type Item } from "../lib/audio";
+import { loadCourse, type Content } from "../lib/content";
 import * as player from "../lib/player";
 import { currentBook } from "../lib/reading";
 import { useApp } from "../lib/store";
-import type { AudioBlock, Course } from "../lib/types";
+import type { Course } from "../lib/types";
 import { navigate } from "../router";
 import { Back } from "./Learn";
 
-const time = (s: number) => { s = Math.max(0, Math.floor(s)); const h = Math.floor(s / 3600), m = Math.floor((s % 3600) / 60), x = s % 60; return h ? `${h}:${String(m).padStart(2, "0")}:${String(x).padStart(2, "0")}` : `${m}:${String(x).padStart(2, "0")}`; };
+const NONE: Record<string, true> = {};
 const hours = (s: number) => (s >= 3600 ? `${(s / 3600).toFixed(1)} h` : `${Math.round(s / 60)} min`);
+/** Mobile data (when the browser tells us): big downloads ask for a second tap. */
+const onCellular = () => { const n = navigator as Navigator & { connection?: { type?: string; saveData?: boolean } }; return n.connection?.type === "cellular" || !!n.connection?.saveData; };
 
 /** Tracks for one ladder book's audiobook. */
 export function bookTracks(c: Content, id: string): player.Track[] {
@@ -29,25 +33,50 @@ export function lessonTracks(c: Content): player.Track[] {
   return c.lessons.filter((l) => c.audio.tts[`lesson-${l.number}`]).map((l) => ({ key: `tts:lesson-${l.number}`, title: l.title, artist: `Fluent365 · lesson ${l.number} · ${l.topic}`, album: "Fluent365 lessons", url: siteUrl(c.audio.tts[`lesson-${l.number}`].file) }));
 }
 
+/** Download a few files right here (one chapter, one book), with a progress line. */
+function useDownloads(c: Content) {
+  const [stored, setStored] = useState<Set<string>>(new Set());
+  const [busy, setBusy] = useState<Record<string, number>>({});
+  const refresh = () => void cachedSet(allItems(c.audio)).then(setStored);
+  useEffect(refresh, [c]); // eslint-disable-line react-hooks/exhaustive-deps
+  async function get(id: string, items: Item[]) {
+    const todo = items.filter((i) => !stored.has(i.url));
+    const total = todo.reduce((n, i) => n + i.bytes, 0) || 1;
+    setBusy((b) => ({ ...b, [id]: 0 }));
+    await keepStorage();
+    try {
+      await download(todo, (done) => setBusy((b) => ({ ...b, [id]: done / total })));
+      toast("Downloaded: plays offline");
+    } catch {
+      toast(navigator.onLine ? "The download stopped. Tap again to continue." : "You are offline. Tap again on Wi-Fi.");
+    } finally {
+      setBusy((b) => { const n = { ...b }; delete n[id]; return n; });
+      refresh();
+    }
+  }
+  return { stored, busy, get };
+}
+type Downloads = ReturnType<typeof useDownloads>;
+
 export function ListenScreen({ c, path }: { c: Content; path: string[] }) {
   const lessons = useApp((s) => s.lessons);
   const coursework = useApp((s) => s.coursework);
   const st = useApp((s) => s);
   const p = player.usePlayer();
   const [tests, setTests] = useState<Course | null>(null);
-  const [stored, setStored] = useState<Set<string>>(new Set());
-  const [showBooks, setShowBooks] = useState(false);
+  const dl = useDownloads(c);
   useEffect(() => { void loadCourse("ielts-listening-tests").then(setTests).catch(() => undefined); }, []);
-  useEffect(() => { void cachedSet(allItems(c.audio)).then(setStored); }, [c, p.index, p.playing]);
   const [sub, a, b] = path;
   if (sub === "lesson" && a && b) return <div><Back to="/listen" /><LessonStepView c={c} lesson={Number(a)} step={Number(b)} onDone={() => navigate("/listen")} /></div>;
   if (sub === "test" && a) return <div><Back to="/listen" /><CourseUnitView courseId="ielts-listening-tests" unitId={a} onDone={() => navigate("/listen")} /></div>;
 
   const book = currentBook(st, c.books);
   const items = allItems(c.audio);
-  const allStored = items.length > 0 && items.every((i) => stored.has(i.url));
   const lessonList = lessonTracks(c);
   const cur = player.current();
+  const pos = st.listening.pos;
+  const heard = st.listening.done ?? {};
+  const left = items.filter((i) => !dl.stored.has(i.url));
 
   // Nothing playing yet: offer to continue where you stopped (or start the current book).
   const lastKey = st.listening.last;
@@ -57,207 +86,168 @@ export function ListenScreen({ c, path }: { c: Content; path: string[] }) {
     return [book ? bookTracks(c, book.id) : lessonList, 0];
   };
   const [rq, ri] = resumeQueue();
+  const hero = cur ?? rq[ri];
+  // The next lesson to listen to: the one you stopped in, else the first one not heard yet.
+  const nextLesson = Math.max(0, lessonList.findIndex((t) => !heard[t.key]));
+  const books = [...c.books.filter((x) => x.id === book?.id), ...c.books.filter((x) => x.id !== book?.id)].filter((x) => c.audio.books[x.id]);
 
   return (
     <div className="listen">
       <h1>Listen</h1>
-      {cur ? <NowPlaying c={c} /> : rq[ri] && (
-        <button className="resume-card" onClick={() => player.play(rq, ri)}>
-          {rq[ri].cover ? <img className="cover" src={rq[ri].cover} alt="" width={56} height={74} /> : <span className="cover cover-blank" style={{ width: 56, height: 74 }}><Icon name="listening" /></span>}
-          <span className="grow" style={{ minWidth: 0 }}>
-            <span className="overline" style={{ display: "block", margin: 0 }}>{lastKey ? "Continue listening" : "Start listening"}</span>
-            <span className="ellipsis" style={{ display: "block", fontWeight: 500 }}>{rq[ri].title}</span>
-            <span className="small muted ellipsis" style={{ display: "block" }}>{rq[ri].artist}</span>
-          </span>
-          <span className="play-fab" aria-hidden><Icon name="play" size={28} filled /></span>
-        </button>
-      )}
+      <div className="listen-cols">
+        <div className="listen-main">
+          {hero && (
+            <div className="resume-card">
+              <button className="resume-open" onClick={() => { if (!cur) player.play(rq, ri); player.open(); }} aria-label={`${cur ? "Open the player" : "Play"}: ${hero.title}`}>
+                {hero.cover ? <img className="cover" src={hero.cover} alt="" width={56} height={74} /> : <span className="cover cover-blank" style={{ width: 56, height: 74 }}><Icon name="listening" /></span>}
+                <span className="grow" style={{ minWidth: 0 }}>
+                  <span className="overline" style={{ display: "block", margin: 0 }}>{cur ? (p.loading ? "Loading…" : p.playing ? "Now playing" : "Paused") : lastKey ? "Continue listening" : "Start listening"}</span>
+                  <span className="ellipsis" style={{ display: "block", fontWeight: 500 }}>{hero.title}</span>
+                  <span className="small muted ellipsis" style={{ display: "block" }}>{hero.album ?? hero.artist}</span>
+                </span>
+              </button>
+              <button className="play-fab" onClick={() => (cur ? player.toggle() : player.play(rq, ri))} aria-label={cur && p.playing ? "Pause" : "Play"}><Icon name={cur && p.playing ? "pause" : "play"} size={28} filled /></button>
+              {cur && <div className="mini-bar" style={{ width: `${p.duration ? (p.time / p.duration) * 100 : 0}%` }} aria-hidden />}
+            </div>
+          )}
 
-      <button className="offline-row" onClick={() => navigate("/settings/offline")}>
-        <Icon name={allStored ? "offline" : "download"} />
-        <span className="grow">{allStored ? "Everything is downloaded: works offline" : "Download for offline"}<span className="small muted" style={{ display: "block" }}>{allStored ? "Lessons and all audiobooks are on this device" : `Lessons and audiobooks · ${mb(items.filter((i) => !stored.has(i.url)).reduce((n, i) => n + i.bytes, 0))} to go`}</span></span>
-        <Icon name="chevron" size={20} />
-      </button>
+          <h2 className="section-title">Lesson recordings <span className="muted">· {lessonList.filter((t) => heard[t.key]).length} of {lessonList.length} heard</span></h2>
+          {lessonList.length > 0 ? (
+            <>
+              <button className="btn tonal continue-btn" onClick={() => player.play(lessonList, nextLesson)}><Icon name="play" size={20} filled /> <span className="ellipsis">Continue: Lesson {c.lessons.find((l) => lessonList[nextLesson].key === `tts:lesson-${l.number}`)?.number} · {lessonList[nextLesson].title}</span></button>
+              <ul className="list tracks">
+                {c.lessons.map((l) => {
+                  const i = lessonList.findIndex((t) => t.key === `tts:lesson-${l.number}`);
+                  if (i < 0) return null;
+                  const t = lessonList[i];
+                  const on = cur?.key === t.key;
+                  const step = l.kinds.indexOf("listen");
+                  const rec = c.audio.tts[`lesson-${l.number}`];
+                  const done = !!heard[t.key];
+                  const share = done ? 1 : (on ? p.time : pos[t.key] ?? 0) / (rec.seconds || 1);
+                  return (
+                    <li key={l.number} className={on ? "playing" : undefined}><div className="track">
+                      <button className="rowbtn" onClick={() => (on ? player.toggle() : player.play(lessonList, i))} aria-label={`${on && p.playing ? "Pause" : "Play"} lesson ${l.number}: ${l.title}${done ? ", heard" : ""}`}>
+                        <Icon name={on && p.playing ? "pause" : "play"} filled={on} />
+                        <span className="grow ellipsis"><span className="muted num">{l.number}.</span> {l.title}</span>
+                        <span className="small muted num track-meta">{done ? <Icon name="check" size={18} label="Heard" /> : time(rec.seconds)}</span>
+                      </button>
+                      {step >= 0 && <button className="icon-btn" onClick={() => navigate(`/listen/lesson/${l.number}/${step}`)} aria-label={`Questions for lesson ${l.number}${lessons[l.number]?.done.includes(step) ? " (done)" : ""}`}><Icon name={lessons[l.number]?.done.includes(step) ? "done" : "quiz"} size={22} /></button>}
+                      {share > 0.01 && <span className="track-bar" style={{ width: `${Math.min(1, share) * 100}%` }} aria-hidden />}
+                    </div></li>
+                  );
+                })}
+              </ul>
+            </>
+          ) : <p className="muted small">Lesson recordings are not available in this version.</p>}
 
-      {book && c.audio.books[book.id] && <BookChapters c={c} id={book.id} stored={stored} />}
+          <h2 className="section-title">Books</h2>
+          <div className="books-list">
+            {books.map((x) => <BookChapters key={x.id} c={c} id={x.id} dl={dl} current={x.id === book?.id} />)}
+          </div>
 
-      <h2 className="section-title">Lesson recordings <span className="muted">· {lessonList.length}</span></h2>
-      {lessonList.length > 0 ? (
-        <>
-          <button className="btn outline" style={{ marginBottom: 8 }} onClick={() => player.play(lessonList, 0)}><Icon name="play" size={18} /> Play all</button>
+          <h2 className="section-title">IELTS listening practice</h2>
           <ul className="list">
-            {c.lessons.map((l) => {
-              const i = lessonList.findIndex((t) => t.key === `tts:lesson-${l.number}`);
-              if (i < 0) return null;
-              const t = lessonList[i];
-              const on = cur?.key === t.key;
-              const step = l.kinds.indexOf("listen");
-              const rec = c.audio.tts[`lesson-${l.number}`];
-              return (
-                <li key={l.number} className={on ? "playing" : undefined}><div className="track">
-                  <button className="rowbtn" onClick={() => (on ? player.toggle() : player.play(lessonList, i))} aria-label={`${on && p.playing ? "Pause" : "Play"} ${l.title}`}>
-                    <Icon name={on && p.playing ? "pause" : "play"} filled={on} />
-                    <span className="grow" style={{ minWidth: 0 }}><span className="ellipsis" style={{ display: "block" }}>{l.title}</span><span className="small muted">{l.level} · {time(rec.seconds)}{stored.has(t.url) ? " · downloaded" : ""}{lessons[l.number]?.done.includes(step) ? " · questions done" : ""}</span></span>
-                  </button>
-                  {step >= 0 && <button className="btn quiet" onClick={() => navigate(`/listen/lesson/${l.number}/${step}`)}>Questions</button>}
-                </div></li>
-              );
-            })}
+            {(tests?.units ?? []).map((u) => (
+              <li key={u.id}><button className="rowbtn" onClick={() => navigate(`/listen/test/${u.id}`)}>
+                <Icon name={coursework[`ielts-listening-tests/${u.id}`]?.done ? "check" : "timer"} />
+                <span className="grow"><span style={{ display: "block" }}>{u.title}</span><span className="small muted">{u.goal}</span></span>
+                <Icon name="chevron" size={20} />
+              </button></li>
+            ))}
           </ul>
-        </>
-      ) : <p className="muted small">Lesson recordings are not available in this version.</p>}
+          <p className="small muted">Practice scores only, not official IELTS results.</p>
 
-      <h2 className="section-title">IELTS listening practice</h2>
-      <ul className="list">
-        {(tests?.units ?? []).map((u) => (
-          <li key={u.id}><button className="rowbtn" onClick={() => navigate(`/listen/test/${u.id}`)}>
-            <Icon name={coursework[`ielts-listening-tests/${u.id}`]?.done ? "check" : "timer"} />
-            <span className="grow"><span style={{ display: "block" }}>{u.title}</span><span className="small muted">{u.goal}</span></span>
-            <Icon name="chevron" size={20} />
-          </button></li>
-        ))}
-      </ul>
-      <p className="small muted">Practice scores only, not official IELTS results.</p>
-
-      <button className="btn quiet" onClick={() => setShowBooks(!showBooks)} aria-expanded={showBooks}>{showBooks ? "Hide" : "Show"} all audiobooks</button>
-      {showBooks && c.books.filter((x) => x.id !== book?.id && c.audio.books[x.id]).map((x) => <BookChapters key={x.id} c={c} id={x.id} stored={stored} compact />)}
-      <p className="small muted" style={{ marginTop: 16 }}>Audiobooks: LibriVox volunteers, public domain, from the Internet Archive. Lesson recordings: computer voices (Microsoft Edge neural voices), not human readers.</p>
+          <button className="btn quiet offline-link" onClick={() => navigate("/settings/offline")}>
+            <Icon name={left.length ? "download" : "offline"} size={18} /> {left.length ? `Download everything for offline (${mb(left.reduce((n, i) => n + i.bytes, 0))}, use Wi-Fi)` : "Everything is downloaded: works offline"}
+          </button>
+          <p className="small muted" style={{ marginTop: 8 }}>Audiobooks: LibriVox volunteers, public domain, from the Internet Archive. Lesson recordings: computer voices (Microsoft Edge neural voices), not human readers.</p>
+        </div>
+      </div>
     </div>
   );
 }
 
-function BookChapters({ c, id, stored }: { c: Content; id: string; stored: Set<string>; compact?: boolean }) {
+function BookChapters({ c, id, dl, current }: { c: Content; id: string; dl: Downloads; current?: boolean }) {
   const p = player.usePlayer();
   const pos = useApp((s) => s.listening.pos);
+  const heard = useApp((s) => s.listening.done) ?? NONE;
   const [open, setOpen] = useState(false);
+  const [sure, setSure] = useState(false);
   const b = c.audio.books[id];
   const info = c.books.find((x) => x.id === id)!;
   const tracks = bookTracks(c, id);
   const cur = player.current();
-  const have = tracks.filter((t) => stored.has(t.url)).length;
+  const item = (i: number): Item => ({ url: tracks[i].url, bytes: b.chapters[i].bytes, group: id });
+  const all = tracks.map((_, i) => item(i));
+  const have = tracks.filter((t) => dl.stored.has(t.url)).length;
+  const done = tracks.filter((t) => heard[t.key]).length;
+  const leftBytes = all.filter((x) => !dl.stored.has(x.url)).reduce((n, x) => n + x.bytes, 0);
+  function getBook() {
+    if (onCellular() && !sure) { setSure(true); toast(`You seem to be on mobile data. ${mb(leftBytes)}: tap again to download anyway.`); return; }
+    setSure(false);
+    void dl.get(id, all);
+  }
   return (
     <section className="book-audio">
       <button className="book-audio-head" onClick={() => setOpen(!open)} aria-expanded={open}>
-        {info.cover ? <img className="cover" src={`./data/${info.cover}`} alt="" width={44} height={58} /> : null}
+        {info.cover ? <img className="cover" src={`./data/${info.cover}`} alt="" width={36} height={48} /> : null}
         <span className="grow" style={{ minWidth: 0 }}>
-          <span style={{ display: "block", fontWeight: 500 }}>{info.title}</span>
-          <span className="small muted">Read by {b.reader} · {hours(b.seconds)} · {have === tracks.length ? "downloaded" : have ? `${have}/${tracks.length} downloaded` : mb(b.bytes)}</span>
+          <span className="ellipsis" style={{ display: "block", fontWeight: 500 }}>{info.title}{current ? <span className="pill" style={{ marginLeft: 8 }}>Reading now</span> : null}</span>
+          <span className="small muted">{hours(b.seconds)} · {done ? `${done}/${tracks.length} heard · ` : ""}{have === tracks.length ? "downloaded" : have ? `${have}/${tracks.length} downloaded` : `${tracks.length} chapters`}</span>
         </span>
         <Icon name="chevron" size={20} />
       </button>
       {open && (
-        <ul className="list">
-          {tracks.map((t, i) => {
-            const on = cur?.key === t.key;
-            const done = (pos[t.key] ?? 0) > 0;
-            return (
-              <li key={t.key} className={on ? "playing" : undefined}><button className="rowbtn" onClick={() => (on ? player.toggle() : player.play(tracks, i))}>
-                <Icon name={on && p.playing ? "pause" : "play"} filled={on} />
-                <span className="grow" style={{ minWidth: 0 }}><span className="ellipsis" style={{ display: "block" }}>{t.title}</span><span className="small muted">{time(b.chapters[i].seconds)}{done ? ` · stopped at ${time(pos[t.key])}` : ""}</span></span>
-                {stored.has(t.url) && <Icon name="downloaded" size={18} label="Downloaded" />}
-              </button></li>
-            );
-          })}
-        </ul>
+        <>
+          <p className="small muted book-audio-sub">Read by {b.reader} (LibriVox)</p>
+          <ul className="list tracks">
+            {tracks.map((t, i) => {
+              const on = cur?.key === t.key;
+              const isDone = !!heard[t.key];
+              const share = isDone ? 1 : (on ? p.time : pos[t.key] ?? 0) / (b.chapters[i].seconds || 1);
+              const k = `${id}:${i}`;
+              return (
+                <li key={t.key} className={on ? "playing" : undefined}><div className="track">
+                  <button className="rowbtn" onClick={() => (on ? player.toggle() : player.play(tracks, i))} aria-label={`${on && p.playing ? "Pause" : "Play"} ${t.title}${isDone ? ", heard" : ""}`}>
+                    <Icon name={on && p.playing ? "pause" : "play"} filled={on} />
+                    <span className="grow ellipsis">{t.title}</span>
+                    <span className="small muted num track-meta">{isDone ? <Icon name="check" size={18} label="Heard" /> : time(b.chapters[i].seconds)}</span>
+                  </button>
+                  {dl.stored.has(t.url) ? <span className="icon-btn" aria-hidden title="Downloaded"><Icon name="downloaded" size={20} /></span>
+                    : k in dl.busy ? <span className="icon-btn small num" role="status" aria-label="Downloading">{Math.round(dl.busy[k] * 100)}%</span>
+                    : <button className="icon-btn" onClick={() => void dl.get(k, [item(i)])} aria-label={`Download only this chapter (${mb(b.chapters[i].bytes)})`}><Icon name="download" size={20} /></button>}
+                  {share > 0.01 && <span className="track-bar" style={{ width: `${Math.min(1, share) * 100}%` }} aria-hidden />}
+                </div></li>
+              );
+            })}
+          </ul>
+          {have < tracks.length && (
+            id in dl.busy
+              ? <p className="small muted" role="status">Downloading the book… {Math.round(dl.busy[id] * 100)}%</p>
+              : <button className="btn quiet" onClick={getBook}><Icon name="download" size={18} /> {sure ? "Tap again: download on mobile data" : `Download the whole book · ${mb(leftBytes)} (Wi-Fi)`}</button>
+          )}
+        </>
       )}
     </section>
   );
 }
 
-/** The big player on the Listen page. */
-function NowPlaying({ c }: { c: Content }) {
-  const p = player.usePlayer();
-  const t = player.current();
-  if (!t) return null;
-  return (
-    <section className="now-playing" aria-label="Now playing">
-      <div className="np-top">
-        {t.cover ? <img className="cover" src={t.cover} alt="" width={72} height={96} /> : <span className="cover cover-blank" style={{ width: 72, height: 96 }}><Icon name="listening" /></span>}
-        <div className="grow" style={{ minWidth: 0 }}>
-          <p className="overline" style={{ margin: 0 }}>{p.loading ? "Loading…" : p.playing ? "Playing" : "Paused"}</p>
-          <p className="np-title">{t.title}</p>
-          <p className="small muted" style={{ margin: 0 }}>{t.artist}</p>
-        </div>
-      </div>
-      <input className="np-seek" type="range" min={0} max={Math.max(1, Math.floor(p.duration))} value={Math.floor(p.time)} onChange={(e) => player.seekTo(Number(e.target.value))} aria-label="Position" style={{ ["--pct" as string]: `${p.duration ? (p.time / p.duration) * 100 : 0}%` }} />
-      <div className="np-times small muted"><span>{time(p.time)}</span><span>-{time(Math.max(0, p.duration - p.time))}</span></div>
-      <div className="np-controls">
-        <button className="icon-btn" onClick={player.prev} aria-label="Previous"><Icon name="prev" /></button>
-        <button className="icon-btn" onClick={() => player.seek(-10)} aria-label="Back 10 seconds"><Icon name="rew" /></button>
-        <button className="play-fab big" onClick={player.toggle} aria-label={p.playing ? "Pause" : "Play"}><Icon name={p.playing ? "pause" : "play"} size={34} filled /></button>
-        <button className="icon-btn" onClick={() => player.seek(10)} aria-label="Forward 10 seconds"><Icon name="fwd" /></button>
-        <button className="icon-btn" onClick={player.next} aria-label="Next"><Icon name="next" /></button>
-      </div>
-      <div className="np-rate" role="group" aria-label="Speed">
-        {[0.8, 0.9, 1, 1.15, 1.3].map((r) => <button key={r} className={`chip ${p.rate === r ? "on" : ""}`} aria-pressed={p.rate === r} onClick={() => player.setRate(r)}>{r}×</button>)}
-      </div>
-      {p.error && <p className="small" style={{ color: "var(--md-error)", margin: "8px 0 0" }}>{p.error}</p>}
-      <Transcript c={c} trackKey={t.key} />
-    </section>
-  );
-}
-
-/** A small bar above the bottom navigation while something plays (hidden on Listen and in Study now). */
+/** A small bar above the bottom navigation while something plays (hidden on Listen and in Study now).
+ *  Tap it to open the full-screen player. */
 export function MiniPlayer() {
   const p = player.usePlayer();
   const t = player.current();
   if (!t) return null;
   return (
     <div className="mini-player" role="region" aria-label="Now playing">
-      <button className="mini-main" onClick={() => navigate("/listen")} aria-label={`Open the player: ${t.title}`}>
+      <button className="mini-main" onClick={player.open} aria-label={`Open the player: ${t.title}`}>
         {t.cover ? <img className="cover" src={t.cover} alt="" width={30} height={40} /> : <Icon name="listening" />}
         <span className="grow" style={{ minWidth: 0 }}><span className="ellipsis" style={{ display: "block", fontWeight: 500 }}>{t.title}</span><span className="small muted ellipsis" style={{ display: "block" }}>{t.album ?? t.artist}</span></span>
       </button>
       <button className="icon-btn" onClick={player.toggle} aria-label={p.playing ? "Pause" : "Play"}><Icon name={p.playing ? "pause" : "play"} filled /></button>
       <button className="icon-btn" onClick={player.stop} aria-label="Stop and close the player"><Icon name="close" /></button>
       <div className="mini-bar" style={{ width: `${p.duration ? (p.time / p.duration) * 100 : 0}%` }} aria-hidden />
-    </div>
-  );
-}
-
-/** Two or three lines of text under the player: the line being spoken (highlighted) and the next one.
- *  Lesson recordings use exact start times; audiobooks show the book text at an estimated place. */
-function Transcript({ c, trackKey }: { c: Content; trackKey: string }) {
-  const p = player.usePlayer();
-  const [data, setData] = useState<{ key: string; lines: Line[]; starts?: number[] } | null>(null);
-  useEffect(() => {
-    let live = true;
-    const [kind, a, b] = trackKey.split(":");
-    if (kind === "tts" && a.startsWith("lesson-")) {
-      const rec = c.audio.tts[a];
-      void loadLesson(Number(a.slice(7))).then((l) => {
-        let block: AudioBlock | undefined;
-        const walk = (o: unknown): void => { if (block || !o || typeof o !== "object") return; if ((o as AudioBlock).type === "audio" && (o as AudioBlock).lines) { block = o as AudioBlock; return; } Object.values(o).forEach(walk); };
-        walk(l);
-        if (live && block && rec) setData({ key: trackKey, starts: rec.starts, lines: block.lines.map((x) => ({ text: x.text, speaker: block!.speakers[x.speaker]?.name ?? x.speaker })) });
-      }).catch(() => undefined);
-    } else if (kind === "book" && c.audio.books[a]) {
-      void loadBook(a).then((book) => {
-        if (!live) return;
-        const list = chapterSentences(book, c.audio.books[a], Number(b));
-        setData({ key: trackKey, lines: list.map((x) => ({ text: x.text })), starts: list.map((x) => x.at) });
-      }).catch(() => undefined);
-    }
-    return () => { live = false; setData(null); };
-  }, [trackKey, c]);
-  if (!data || data.key !== trackKey || !data.lines.length || !data.starts) return null;
-  const book = trackKey.startsWith("book:");
-  const st = data.starts;
-  // Where we are: lesson lines have exact start times; book sentences have an estimated share of the chapter.
-  const pos = book ? (p.duration ? p.time / p.duration : 0) : p.time;
-  const i = book ? sentenceAt(st.map((at) => ({ at })), pos) : lineAt(st, pos);
-  const end = st[i + 1] ?? (book ? 1 : p.duration || st[i] + 4);
-  // Inside the line, follow the words evenly (lesson lines end with a short pause, so finish a little early).
-  const span = Math.max(0.001, (end - st[i]) * (book ? 1 : 0.88) - (book ? 0 : 0.3));
-  const frac = Math.min(1, Math.max(0, (pos - st[i]) / span));
-  const words = data.lines[i].text.split(/\s+/);
-  const wi = p.playing || p.time > 0 ? Math.min(words.length - 1, Math.floor(frac * words.length)) : -1;
-  const cur = data.lines[i];
-  return (
-    <div className="transcript" aria-live="off">
-      <p className="overline">{book ? "Book text · place estimated" : "Transcript"}</p>
-      <p className="now">{cur.speaker && <b>{cur.speaker}: </b>}{words.map((w, k) => <span key={k} className={k === wi ? "cur-w" : undefined}>{w}{k < words.length - 1 ? " " : ""}</span>)}</p>
-      {data.lines.slice(i + 1, i + 3).map((l, k) => <p key={i + 1 + k} className="next">{l.speaker && <b>{l.speaker}: </b>}{l.text}</p>)}
     </div>
   );
 }

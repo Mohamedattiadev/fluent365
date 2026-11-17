@@ -56,6 +56,7 @@ const ICONS = {
   list: "checklist", school: "school", fire: "local_fire_department", flag: "flag", bolt: "bolt", star: "star", palette: "palette", text: "format_size",
   contrast: "contrast", motion: "animation", person: "person", language: "translate", schedule: "schedule", delete: "delete", dark: "dark_mode",
   next: "skip_next", prev: "skip_previous", fwd: "forward_10", rew: "replay_10", offline: "offline_pin", downloaded: "download_done",
+  down: "keyboard_arrow_down", sleep: "bedtime", repeat1: "repeat_one", queue: "playlist_play", quiz: "quiz", speed: "speed", keyboard: "keyboard", help: "help",
 };
 const require = createRequire(import.meta.url);
 const dir = join(dirname(require.resolve("@material-symbols/svg-400/package.json")), "rounded");
