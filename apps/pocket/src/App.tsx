@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { InstallCard } from "./components/Install";
 import { Icon, Loading, Toaster } from "./components/ui";
 import { startTracking } from "./lib/activity";
 import { loadAll, type Content } from "./lib/content";
@@ -117,6 +118,7 @@ export function App() {
       <nav className="bottomnav nav" aria-label="Main">
         {NAV.map((n) => <a key={n.to} href={`#${n.to}`} aria-current={current === n.to ? "page" : undefined}><span className="ind"><Icon name={n.icon} filled={current === n.to} /></span>{n.label}</a>)}
       </nav>
+      {!focus && <InstallCard />}
       <Toaster />
     </div>
   );
