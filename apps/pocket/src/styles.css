@@ -555,7 +555,14 @@ pre { font-family: inherit; }
 .mini-main { all: unset; display: flex; align-items: center; gap: 10px; flex: 1; min-width: 0; cursor: pointer; min-height: 44px; }
 .mini-bar { position: absolute; left: 0; bottom: 0; height: 3px; background: var(--accent); transition: width 500ms linear; }
 .app:has(.mini-player) .main { padding-bottom: calc(168px + env(safe-area-inset-bottom)); }
-@media (min-width: 900px) { .mini-player { left: auto; right: 24px; bottom: 24px; width: 380px; } .app:has(.mini-player) .main { padding-bottom: 120px; } .listen { max-width: 760px; margin: 0 auto; } }
+/* Phone: the sticky action bar sits above the mini player (bottom bar 80 px + player 60 px + gap). */
+.app:has(.mini-player) .actionbar { bottom: calc(152px + env(safe-area-inset-bottom)); }
+/* Laptop: the mini player is a full-width bar docked at the bottom edge, so it never floats over text or buttons. */
+@media (min-width: 900px) {
+  .mini-player { left: 0; right: 0; bottom: 0; border-radius: 0; padding: 6px max(24px, calc((100% - 1160px) / 2)); border-top: 1px solid var(--md-outline-variant); box-shadow: none; }
+  .app:has(.mini-player) .main { padding-bottom: 104px; }
+  .listen { max-width: 760px; margin: 0 auto; }
+}
 .offline { max-width: 760px; margin: 0 auto; }
 .card.ready { display: flex; gap: 14px; align-items: center; }
 .card.ready > .icon { color: var(--accent); }
