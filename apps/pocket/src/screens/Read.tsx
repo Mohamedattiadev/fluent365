@@ -51,9 +51,9 @@ export function ReadScreen({ c, path }: { c: Content; path: string[] }) {
   return (
     <div className="read-page">
       <Reader key={info.id} c={c} info={info} target={dailyTarget(s, c.books)} onDone={() => navigate(`/read/done/${info.id}`)} actions={<>
-        <button className="btn quiet" onClick={() => navigate(`/read/words/${info.id}`)} aria-label={`Words from ${info.title}: ${saved} saved`} title="Book words"><Icon name="words" />{saved ? <span className="num">{saved}</span> : null}</button>
-        <button className="btn quiet" onClick={() => navigate(`/read/chapters/${info.id}`)} aria-label={`Chapters of ${info.title}`} title="Chapters"><Icon name="list" /></button>
-        <button className="btn quiet" onClick={() => navigate("/read/books")} aria-label={`All books (this is book ${n} of ${c.books.length})`} title="All books"><Icon name="reading" /></button>
+        <button className="btn quiet" onClick={() => navigate(`/read/words/${info.id}`)} aria-label={`Words from ${info.title}: ${saved} saved`} ><Icon name="words" /><span className="tb-label">Words{saved ? <span className="num"> {saved}</span> : null}</span></button>
+        <button className="btn quiet" onClick={() => navigate(`/read/chapters/${info.id}`)} aria-label={`Chapters of ${info.title}`} ><Icon name="list" /><span className="tb-label">Chapters</span></button>
+        <button className="btn quiet" onClick={() => navigate("/read/books")} aria-label={`All books (this is book ${n} of ${c.books.length})`} ><Icon name="reading" /><span className="tb-label">Books</span></button>
       </>} />
     </div>
   );

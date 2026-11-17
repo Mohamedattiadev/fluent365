@@ -80,6 +80,9 @@ export function Reader({ c, info, target, onDone, actions }: { c: Content; info:
       </div>
       <div className="thin-bar"><Progress value={pos.words / info.words} label={`${Math.round((pos.words / info.words) * 100)}% of ${info.title}${chapter ? `, ${chapter.title}` : ""}`} /></div>
       <p className="small muted reader-meta">{Math.round((pos.words / info.words) * 100)}% of the book · today {today.toLocaleString()} / {target.toLocaleString()} words{reachedTarget ? " · target reached" : ""}</p>
+      <p className="small muted legend" aria-label="How words are marked: saved words are coloured, new words for your level have a dotted underline">
+        <span className="book-text-sample"><span className="w saved">word</span></span> saved · <span className="book-text-sample"><span className="w ahead-w">word</span></span> new for you · tap any word
+      </p>
       {ahead && ahead.length > 0 && (
         <details className="ahead">
           <summary>New words ahead <span className="muted">· {ahead.length}</span></summary>
