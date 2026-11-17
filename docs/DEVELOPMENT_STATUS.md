@@ -40,7 +40,33 @@ _Last updated: 2026-11-17_
 - Phase advancement uses lesson progress. The monthly checkpoint covers vocabulary and grammar only.
 
 ### Next steps
-1. **Voices plan (decided 2026-11-17, not started).** The owner compared samples by ear and picked Microsoft Edge neural voices (the ones Bo-ok uses). `scripts/gen-audio.py` is already rewritten for this (edge-tts) but has **not been run**.
+0. **UI/UX fixes (decided 2026-11-17, do these FIRST).** From a review of phone (390 px) and desktop (1366 px) screenshots (`node scripts/screenshots.mjs <dir>`), compared with common patterns in Duolingo, Anki, Spotify, Pocket Casts, Kindle/Apple Books, LingQ (phone) and Duolingo web, Spotify desktop, Kindle web (desktop). Check every item with screenshots at both sizes, plus dark theme and XL text; `pnpm test` + `pnpm build`; small commits. Keep Pocket simple (black/white, large text, ≥ 44 px, one primary action).
+   - **Order:** (1) quick fixes 1, 3, 12, 14 → (2) listening 4, 5, 6, 7, 8 → (3) reading 9, 10 → (4) Today/Learn 13, 15 → (5) desktop 16, 17, 18. Items that need exact word timing (2, 11) are built with the voices (step 1); until then the new player uses the lesson line times and the book estimate.
+   - **Bugs**
+     1. Settings › Colour: on phones the description is squeezed into a one-word-wide column. Label + description on top, the segmented control below at full width.
+     2. Transcript drifts: the word shown is not the word spoken. Books: place is estimated (`lib/transcript.ts`); lessons: words are spread evenly over the line (`Listen.tsx` ~line 250). Fix comes with the voices: store Edge WordBoundary times and highlight word by word.
+     3. Primary button position varies (Today: middle; Checkpoint start: middle with empty space below; Read: bottom). Put the one primary action in the bottom `ActionBar` on every flow screen (thumb zone).
+   - **Listening**
+     4. No "now playing" view. Full-screen player like Spotify lyrics: transcript in large type, current sentence bold and kept centred, past/next lines dimmed, tap a sentence to jump there; scrubber, −10 s, big play/pause, +10 s, speed, chapters. Opens by tapping the mini player, closes by swiping down.
+     5. Lesson rows are ~95 px tall, 25 in a row, and you cannot see which you have heard. Compact rows with a progress bar / ✓ per recording (Pocket Casts); "Continue: Lesson 4" instead of "Play all".
+     6. Oz is shown twice (hero card and the row below). Keep the hero; list books under a "Books" heading.
+     7. "Download for offline · 1.6 GB" is the second biggest thing on Listen (scary; easy to tap on mobile data). Move to Settings or make it small; offer "Only this chapter" first; Wi-Fi warning for big downloads.
+     8. Missing learner controls: "Repeat sentence" (LingQ/Beelinguapp), sleep timer (commute), long-press a word in the transcript → add to words.
+   - **Reading**
+     9. Top-bar icons (`ab 1`, checklist, book) have no labels. Short labels or a one-time hint.
+     10. Two underline styles (dotted / boxed) are never explained. A small legend, or one consistent marking system.
+     11. Read-along: ▶ in the reader starts the book audio and highlights the sentence (Apple Books "Read Along"). Needs the voices' timing (step 1).
+     12. Phone: book title is cut ("The Wonderful …"). Title on its own line under the icons.
+   - **Today / Learn**
+     13. Day starts with a big "0% · 0/60 min" ring (discouraging). Show the next step and why ("First: 12 word reviews, 4 min, because …"), keep the ring small or after the first step.
+     14. Word filter chips overflow ("Diffi…") with no scroll hint. Edge fade or wrap to two rows.
+     15. Every word row says "new". Show the next review time instead ("today", "in 2 days"), like Anki.
+   - **Desktop**
+     16. Every page is one ~760 px column; half the screen is empty. Duolingo-web layout: left navigation rail, centre content, right panel (word of the day, week, goal).
+     17. Listen on desktop: list on the left, now playing + transcript on the right, full-width player bar at the bottom (Spotify desktop).
+     18. Keyboard shortcuts: Space play/pause, ←/→ page or ±10 s, 1–4 to grade cards (Anki). Show them in a "?" help.
+   - **When all of the above is done: ASK the owner "Shall we do the voices now?" and start step 1 only after a yes.**
+1. **Voices plan (decided 2026-11-17, not started; only after the owner says yes when step 0 is done).** The owner compared samples by ear and picked Microsoft Edge neural voices (the ones Bo-ok uses). `scripts/gen-audio.py` is already rewritten for this (edge-tts) but has **not been run**.
    - **Voices and speeds (owner's picks):** narrator en-US-Ava −10 %. Men: en-US-Andrew −15 %, en-US-Brian −15 %, en-US-Guy −10 %, en-GB-Ryan −10 % (Ryan at normal speed was hard to follow). Women besides Ava: en-US-Emma −10 %, en-GB-Sonia −10 % (not yet heard by the owner: play a sample first). MP3 48 kbit/s mono (32 kbit/s blurred word endings).
    - **A. Lesson + IELTS listening recordings (48).** Run `uvx --with edge-tts python scripts/gen-audio.py --all`, listen to 2–3, then commit `content/audio/tts/` and redeploy. About 2–2.5 h of audio, ~50 MB; takes roughly 15–30 min to generate.
    - **B. The 8 ladder books, read by Edge voices.** The owner wants these as well, not only the lessons. Generate per chapter, sentence by sentence (same sentence split as the reader), and store each sentence's start time, so the transcript follows exactly. Roughly 70–80 h of audio; many hours to generate, so per book and resumable. **Format (decided):** Opus 24 kbit/s mono (~0.8 GB for all 8 books; MP3 48 kbit/s would be ~1.6 GB). The number of voices does not change the size, only duration × bitrate. First make Oz Chapter 1 at Opus 24 and 16 kbit/s and let the owner choose by ear. Check playback on iPhone (Opus needs iOS 17+); keep an MP3 fallback only if needed. **Hosting (decided):** the Pages limit (~1 GB) is per site, not per file, so splitting files in the same site does not help. Book audio goes to a separate public repo `fluent365-audio` with its own Pages site; the app opens it by a relative path (`../fluent365-audio/<book>/<chapter>.opus`, same origin, no hardcoded user), and falls back to LibriVox if it is missing (forks). Push it as a single commit without history (orphan branch, force-push on regeneration) so the repo does not grow. If it passes ~900 MB, add `fluent365-audio-2`. Not suitable: Git LFS (Pages does not serve it), Release assets (no CORS for the app). Lesson recordings stay in the app's own site.

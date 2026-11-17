@@ -93,9 +93,10 @@ try {
     await page.goto(`${BASE}#/session`);
     await page.waitForTimeout(600);
     await shot(page, `${tag}-02-session-flashcard`);
-    // Tap the card to flip it (Anki-style), then swipe right = Good.
+    // Tap the card to flip it (Anki-style), then swipe right = Good. (Skipped when the session opens on another step.)
     const card = page.locator(".swipe");
-    const box = await card.boundingBox();
+    const box = (await card.count()) ? await card.boundingBox() : null;
+    if (box) {
     await page.mouse.click(box.x + box.width / 2, box.y + 40);
     await shot(page, `${tag}-03-flashcard-answer`);
     const before = await page.locator(".counter span").first().textContent();
@@ -106,6 +107,7 @@ try {
     await page.waitForTimeout(500);
     const after = await page.locator(".counter span").first().textContent();
     console.log(`swipe right: ${before} -> ${after}`);
+    }
 
     if (topic) {
       await page.goto(`${BASE}#/learn/grammar/${topic.id}`);
