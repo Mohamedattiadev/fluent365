@@ -19,17 +19,19 @@
       html, body { margin: 0; background: #f9f9f9; color: #1b1b1b; }
       @media (prefers-color-scheme: dark) { html:not([data-theme="light"]), html:not([data-theme="light"]) body { background: #131313; color: #e2e2e2; } }
       html[data-theme="dark"], html[data-theme="dark"] body { background: #131313; color: #e2e2e2; }
-      /* Opening screen: the mark alone, like a native app; the name sits quietly at the bottom. */
-      .splash { position: fixed; inset: 0; display: grid; place-items: center; font: 500 14px/1 Roboto, system-ui, sans-serif; letter-spacing: .08em; --pen: #7b61ff; }
+      /* Opening screen: the logo does the loading (the ring fills like today's progress) above the wordmark. */
+      .splash { position: fixed; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px; --pen: #7b61ff; }
       html[data-accent="blue"] .splash { --pen: #2f6fe0; } html[data-accent="orange"] .splash { --pen: #d65a00; } html[data-accent="mono"] .splash { --pen: currentColor; }
-      .splash .mark { width: 96px; height: 96px; animation: f365in 500ms cubic-bezier(.2,.8,.2,1) both; }
-      .splash .name { position: absolute; bottom: calc(40px + env(safe-area-inset-bottom)); opacity: .55; }
-      @keyframes f365in { from { transform: scale(.9); opacity: 0; } to { transform: none; opacity: 1; } }
-      @media (prefers-reduced-motion: reduce) { .splash .mark { animation: none; } }
+      .splash .mark { width: 104px; height: 104px; }
+      .splash .arc { stroke-dasharray: 100 100; stroke-dashoffset: 100; animation: f365fill 1.6s cubic-bezier(.4,0,.2,1) forwards; }
+      .splash .wm { font: 400 26px/1 Roboto, system-ui, sans-serif; letter-spacing: -.01em; }
+      .splash .wm b { font-weight: 700; color: var(--pen); }
+      @keyframes f365fill { to { stroke-dashoffset: 22; } }
+      @media (prefers-reduced-motion: reduce) { .splash .arc { animation: none; stroke-dashoffset: 22; } }
     </style>
   </head>
   <body>
-    <div id="root"><div class="splash" role="status"><svg class="mark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g transform="translate(256 256) scale(1.12) translate(-256 -256)"><path d="M324.1 207.7A132 132 0 1 1 221.4 164.1" fill="none" stroke="currentColor" stroke-width="54" stroke-linecap="round"/><g fill="var(--pen, #7b61ff)" transform="translate(324.1 207.7) rotate(38)"><path d="M0 -4 L-23.0 -50.6 H23.0 Z"/><rect x="-23.0" y="-150.6" width="46" height="102" rx="11.5"/></g></g></svg><span class="name">FLUENT365</span></div></div>
+    <div id="root"><div class="splash" role="status"><svg class="mark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><circle cx="256" cy="256" r="170" fill="none" stroke="currentColor" stroke-opacity=".22" stroke-width="40"/><circle class="arc" cx="256" cy="256" r="170" fill="none" stroke="var(--pen, #7b61ff)" stroke-width="40" stroke-linecap="round" pathLength="100" transform="rotate(-90 256 256)" stroke-dasharray="78 100"/><path d="M247.0 350.0 C205.0 320.0 163.2 324.0 140.0 342.0 V190.0 C163.2 170.0 205.0 172.0 247.0 204.0 Z" fill="currentColor"/><path d="M 265.0 350.0 C 307.0 320.0 348.8 324.0 372.0 342.0 V 190.0 C 348.8 170.0 307.0 172.0 265.0 204.0 Z" fill="currentColor"/></svg><div class="wm">Fluent<b>365</b></div></div></div>
     <noscript>Fluent365 needs JavaScript to run.</noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
