@@ -4,7 +4,7 @@
 // One card at the top (continue / now playing → opens the full-screen player), then compact lists with
 // what you have heard, then the books. Downloads are small per-chapter buttons; everything at once is in Settings.
 import { useEffect, useState } from "react";
-import { Controls, Extras, QueueList, RATES, Scrubber, time, TranscriptView, useTranscript } from "../components/FullPlayer";
+import { Controls, Extras, LyricsCard, QueueList, RATES, Scrubber, time, TranscriptView, useTranscript } from "../components/FullPlayer";
 import { WordSheet } from "../components/Reader";
 import { CourseUnitView, LessonStepView } from "../components/Lessons";
 import { Icon, toast, useWide } from "../components/ui";
@@ -112,6 +112,8 @@ export function ListenScreen({ c, path }: { c: Content; path: string[] }) {
               {cur && <div className="mini-bar" style={{ width: `${p.duration ? (p.time / p.duration) * 100 : 0}%` }} aria-hidden />}
             </div>
           )}
+
+          {cur && !wide && <LyricsCard c={c} />}
 
           <h2 className="section-title">Lesson recordings <span className="muted">· {lessonList.filter((t) => heard[t.key]).length} of {lessonList.length} heard</span></h2>
           {lessonList.length > 0 ? (

@@ -214,3 +214,23 @@ export function FullPlayer({ c }: { c: Content }) {
     </div>
   );
 }
+
+/** Spotify-style lyrics card on the Listen page (phones): the line being spoken, big and bold, with the lines
+ *  around it; it follows the voice. Tap it to open the full-screen player. */
+export function LyricsCard({ c }: { c: Content }) {
+  const p = player.usePlayer();
+  const tr = player.current();
+  const t = useTranscript(c, tr?.key);
+  if (!tr) return null;
+  if (!t) return <button className="lyrics-card" onClick={player.open}><span className="lyrics-head"><span>Transcript</span><Icon name="arrow" size={18} /></span><p className="lyrics-line next">{p.loading ? "Loading…" : "No text for this recording."}</p></button>;
+  const i = placeIn(t, p);
+  const show = t.lines.slice(Math.max(0, i - 1), i + 4).map((l, k) => ({ l, k: Math.max(0, i - 1) + k }));
+  return (
+    <button className="lyrics-card" onClick={player.open} aria-label="Open the transcript in full screen">
+      <span className="lyrics-head"><span>{t.book ? "Book text · place estimated" : "Transcript"}</span><span className="lyrics-open">Full screen <Icon name="arrow" size={18} /></span></span>
+      {show.map(({ l, k }) => (
+        <p key={k} className={`lyrics-line ${k === i ? "now" : k < i ? "past" : "next"}`}>{l.speaker && <b>{l.speaker}: </b>}{l.text}</p>
+      ))}
+    </button>
+  );
+}
