@@ -2,7 +2,7 @@
 // and one small progress line. Black and white; it moves (count-ups, ring fill) unless motion is reduced.
 import { useEffect, useMemo, useState } from "react";
 import { AudioIcon } from "../components/Vocab";
-import { CountUp, Icon, toast } from "../components/ui";
+import { ActionBar, CountUp, Icon, toast } from "../components/ui";
 import type { Content } from "../lib/content";
 import { addCards, dueCardKeys } from "../lib/learning";
 import { currentBook } from "../lib/reading";
@@ -96,17 +96,17 @@ export function Home({ c }: { c: Content }) {
         <Ring value={pct / 100}>
           {finished ? <><Icon name="check" size={36} /><span className="ring-sub">Done</span></> : <><span className="ring-pct"><CountUp value={pct} />%</span><span className="ring-sub">{doneMin} / {total} min</span></>}
         </Ring>
-        <div className="study">
-          {finished ? (
-            due > 0
-              ? <button className="btn big primary" onClick={() => navigate("/learn/words/review")}>Review {due} more {due === 1 ? "word" : "words"}</button>
-              : <button className="btn big outline" onClick={() => { update(() => ({ session: null })); ensureSession(c); navigate("/session"); }}>Study more</button>
-          ) : (
-            <button className="btn big primary" onClick={() => navigate("/session")} autoFocus>{started ? "Continue" : "Study now"}</button>
-          )}
-          <p className="study-sub">{finished ? "Done for today. See you tomorrow." : onSpeak ? "Only the optional speaking topic is left" : started ? `Step ${Math.min(session.index + 1, steps.length)} of ${steps.length}` : `About ${total} min · ${steps.length} steps`}</p>
-        </div>
       </section>
+      <ActionBar>
+        {finished ? (
+          due > 0
+            ? <button className="btn big primary" onClick={() => navigate("/learn/words/review")}>Review {due} more {due === 1 ? "word" : "words"}</button>
+            : <button className="btn big outline" onClick={() => { update(() => ({ session: null })); ensureSession(c); navigate("/session"); }}>Study more</button>
+        ) : (
+          <button className="btn big primary" onClick={() => navigate("/session")} autoFocus>{started ? "Continue" : "Study now"}</button>
+        )}
+        <p className="study-sub">{finished ? "Done for today. See you tomorrow." : onSpeak ? "Only the optional speaking topic is left" : started ? `Step ${Math.min(session.index + 1, steps.length)} of ${steps.length}` : `About ${total} min · ${steps.length} steps`}</p>
+      </ActionBar>
 
       <div className="week-dots" role="list" aria-label={`Studied ${days7.filter((d) => d.on).length} of 7 days this week`}>
         {days7.map((d, i) => (

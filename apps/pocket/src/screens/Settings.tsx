@@ -25,8 +25,9 @@ function Main() {
   const set = (patch: Partial<Settings>) => update((st) => ({ settings: { ...st.settings, ...patch }, session: "minutes" in patch || "level" in patch || "newWords" in patch ? null : st.session }));
   const [confirmReset, setConfirmReset] = useState("");
   const size = ({ normal: "m", large: "l" } as Record<string, Settings["textSize"]>)[s.textSize] ?? s.textSize;
-  const Row = ({ label, hint, children }: { label: string; hint?: string; children: React.ReactNode }) => (
-    <div className="setting-row"><span className="grow"><span className="setting-label">{label}</span>{hint && <span className="setting-hint">{hint}</span>}</span>{children}</div>
+  // A row with a long hint stacks: label + hint on top, the control below at full width (phones).
+  const Row = ({ label, hint, children, stack }: { label: string; hint?: string; children: React.ReactNode; stack?: boolean }) => (
+    <div className={`setting-row${stack ? " stacked" : ""}`}><span className="grow"><span className="setting-label">{label}</span>{hint && <span className="setting-hint">{hint}</span>}</span>{children}</div>
   );
   return (
     <div>
@@ -39,7 +40,7 @@ function Main() {
           <Row label="Text size"><Segmented label="Text size" value={size} onChange={(v) => set({ textSize: v })} options={[["s", "S"], ["m", "M"], ["l", "L"], ["xl", "XL"]]} /></Row>
           <p className="size-preview">Preview: I have lived in this city since 2015.</p>
         </div>
-        <Row label="Colour" hint="For the main button and progress. Green and red stay for right and wrong."><Segmented label="Colour" value={s.accent ?? "violet"} onChange={(v) => set({ accent: v })} options={[["violet", "Violet"], ["blue", "Blue"], ["orange", "Orange"], ["mono", "Black"]]} /></Row>
+        <Row stack label="Colour" hint="For the main button and progress. Green and red stay for right and wrong."><Segmented label="Colour" value={s.accent ?? "violet"} onChange={(v) => set({ accent: v })} options={[["violet", "Violet"], ["blue", "Blue"], ["orange", "Orange"], ["mono", "Black"]]} /></Row>
         <Row label="Theme"><Segmented label="Theme" value={s.theme} onChange={(v) => set({ theme: v })} options={[["system", "System"], ["light", "Light"], ["dark", "Dark"]]} /></Row>
         <Toggle label="High contrast" hint="Darker text and stronger borders" checked={!!s.highContrast} onChange={(v) => set({ highContrast: v })} />
         <Toggle label="Reduce motion" hint="Also follows your device setting" checked={s.reduceMotion} onChange={(v) => set({ reduceMotion: v })} />

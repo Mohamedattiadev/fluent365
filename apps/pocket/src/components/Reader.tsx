@@ -74,8 +74,9 @@ export function Reader({ c, info, target, onDone, actions }: { c: Content; info:
     <div className="reader">
       <div className="reader-head">
         {info.cover && <img className="cover" src={`./data/${info.cover}`} alt="" width={22} height={30} />}
-        <b className="grow ellipsis">{info.title}</b>
+        <span className="grow" />
         {actions}
+        <b className="reader-title">{info.title}</b>
       </div>
       <div className="thin-bar"><Progress value={pos.words / info.words} label={`${Math.round((pos.words / info.words) * 100)}% of ${info.title}${chapter ? `, ${chapter.title}` : ""}`} /></div>
       <p className="small muted reader-meta">{Math.round((pos.words / info.words) * 100)}% of the book · today {today.toLocaleString()} / {target.toLocaleString()} words{reachedTarget ? " · target reached" : ""}</p>
