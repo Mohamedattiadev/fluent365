@@ -6,7 +6,6 @@ import { startTracking } from "./lib/activity";
 import { loadAll, type Content } from "./lib/content";
 import * as db from "./lib/db";
 import * as player from "./lib/player";
-import { usePlayer } from "./lib/player";
 import { isLoaded, loadState, useApp } from "./lib/store";
 import type { GrammarTopic } from "./lib/types";
 import { navigate, useRoute } from "./router";
@@ -45,7 +44,7 @@ export function App() {
   const [ready, setReady] = useState(isLoaded());
   const settings = useApp((s) => s.settings);
   const route = useRoute();
-  const expanded = usePlayer().expanded;
+  const expanded = player.useExpanded();
   const wide = useWide();
   const [help, setHelp] = useState(false);
 

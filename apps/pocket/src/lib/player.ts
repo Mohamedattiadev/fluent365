@@ -129,4 +129,8 @@ if (typeof window !== "undefined") window.addEventListener("popstate", () => { i
 export function usePlayer() {
   return useSyncExternalStore((l) => { listeners.add(l); return () => listeners.delete(l); }, () => st);
 }
+/** Only whether the full-screen player is open (so the whole app does not re-render on every time update). */
+export function useExpanded() {
+  return useSyncExternalStore((l) => { listeners.add(l); return () => listeners.delete(l); }, () => st.expanded);
+}
 export const current = () => st.queue[st.index];
