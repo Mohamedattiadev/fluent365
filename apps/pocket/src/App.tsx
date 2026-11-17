@@ -103,7 +103,7 @@ export function App() {
   return (
     <div className={`app ${focus ? "focus-mode" : ""}`}>
       <header className="topnav nav" aria-label="Main">
-        <a href="#/" className="brand"><img src="./icons/icon.svg" alt="" /> Fluent365</a>
+        <a href="#/" className="brand"><svg className="logo" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g transform="translate(256 256) scale(1.18) translate(-292 -241)"><path d="M360.1 248.1A132 132 0 1 1 294.0 163.5" fill="none" stroke="currentColor" strokeWidth="44" strokeLinecap="round"/><g fill="var(--accent)" transform="translate(377.6 209.0) rotate(38)"><path d="M0 0L-20 -46H20Z"/><rect x="-20" y="-150" width="40" height="96" rx="6"/><rect x="-20" y="-186" width="40" height="28" rx="10"/></g></g></svg> Fluent365</a>
         <nav className="links" aria-label="Sections">
           {NAV.map((n) => <a key={n.to} className="link" href={`#${n.to}`} aria-current={current === n.to ? "page" : undefined}><Icon name={n.icon} size={20} filled={current === n.to} />{n.label}</a>)}
         </nav>

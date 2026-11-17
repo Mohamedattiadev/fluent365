@@ -405,7 +405,7 @@ pre { font-family: inherit; }
   .app { flex-direction: column; }
   .topnav { display: flex; align-items: center; gap: 4px; position: sticky; top: 0; z-index: 20; height: 64px; padding: 0 32px; background: var(--md-surface-container); border-bottom: 1px solid var(--md-outline-variant); }
   .topnav .brand { display: flex; align-items: center; gap: 10px; margin-right: 24px; font-size: var(--fs-lg); color: var(--md-on-surface); text-decoration: none; }
-  .topnav .brand img { width: 32px; height: 32px; border-radius: 9px; }
+  .topnav .brand .logo { width: 34px; height: 34px; }
   .topnav .links { display: flex; gap: 2px; flex: 1; min-width: 0; overflow-x: auto; }
   .topnav a.link { display: inline-flex; align-items: center; gap: 6px; height: 40px; padding: 0 14px; border-radius: var(--r-full); color: var(--md-on-surface-variant); text-decoration: none; font-size: var(--fs-sm); font-weight: 500; white-space: nowrap; }
   .topnav a.link:hover { background: color-mix(in srgb, var(--md-on-surface) 8%, transparent); color: var(--md-on-surface); }

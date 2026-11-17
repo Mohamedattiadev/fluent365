@@ -5,6 +5,7 @@ _Last updated: 2026-11-17_
 ## Current milestone: Pocket MVP (usable daily on laptop and phone)
 
 ### Done and tested
+- **New logo (2026-11-17).** An open ring with a small violet pen: app icon (`icons/icon.svg`, 192/512 PNG, maskable with safe zone, Apple touch icon, PNG favicon) and the top-bar brand (inline SVG that follows the theme and the accent colour). Words icon is now Material Symbol "match_word".
 - **No overlaps with the mini player (2026-11-17).** Phone: sticky action bars (reader Next page / Stop here, word review, grammar) sit above the mini player. Laptop: the mini player is a full-width bar docked at the bottom edge. Checked with a script on every page with an action bar (phone 390×844, laptop 1366×768).
 - **Placement check + monthly checkpoint (2026-11-17).** A Study now step (first in week 1, then every 30 days): yes/no test of 40 word-list words from 5 frequency bands + 10 made-up words (guessing correction), then 12 grammar questions (B1, B1+, B2, B2+). Result: vocabulary-size estimate and a rough level (lower of the word level and the grammar level), always labelled "practice estimate, not an official score". The placement sets the plan level; monthly checks only suggest. Clearly known words are marked known. Stored in `tests` (kind "checkpoint", with `vocab`, `level`). Unit tests for the estimate and the scheduling; full flow tested in Chromium.
 - **Open:** lesson recordings were generated with Piper but the owner finds the voices poor; `content/audio/tts/` (partial) is untracked and will be regenerated with better voices.
