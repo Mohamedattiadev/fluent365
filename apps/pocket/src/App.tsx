@@ -8,7 +8,7 @@ import type { GrammarTopic } from "./lib/types";
 import { navigate, useRoute } from "./router";
 import { Home } from "./screens/Home";
 import { LearnScreen } from "./screens/Learn";
-import { ListenScreen } from "./screens/Listen";
+import { ListenScreen, MiniPlayer } from "./screens/Listen";
 import { PracticeScreen } from "./screens/LocalOnly";
 import { ReadScreen } from "./screens/Read";
 import { SessionScreen } from "./screens/Session";
@@ -113,6 +113,7 @@ export function App() {
         {!focus && <a className="gear phone-gear" href="#/settings" aria-label="Settings" aria-current={gear ? "page" : undefined}><Icon name="settings" filled={gear} /></a>}
         <div className="page" key={focus ? "session" : section === "learn" && rest.length <= 1 ? "learn" : route}>{page}</div>
       </main>
+      {!focus && section !== "listen" && <MiniPlayer />}
       <nav className="bottomnav nav" aria-label="Main">
         {NAV.map((n) => <a key={n.to} href={`#${n.to}`} aria-current={current === n.to ? "page" : undefined}><span className="ind"><Icon name={n.icon} filled={current === n.to} /></span>{n.label}</a>)}
       </nav>

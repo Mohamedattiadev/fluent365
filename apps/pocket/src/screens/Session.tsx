@@ -162,19 +162,21 @@ function Wrap({ c, onDone }: { c: Content; onDone?: () => void }) {
   const s = getState();
   const day = s.days[today()];
   const known = Object.values(s.cards).filter((x) => x.card.stability >= 21).length + Object.keys(s.known).length;
-  const weekMinutes = Object.entries(s.days).filter(([d]) => Date.now() - new Date(d).getTime() < 7 * 86400000).reduce((n, [, d]) => n + d.active, 0) / 60;
+  const weekMinutes = Math.round(Object.entries(s.days).filter(([d]) => Date.now() - new Date(d).getTime() < 7 * 86400000).reduce((n, [, d]) => n + d.active, 0) / 60);
+  const todayMinutes = Math.round((day?.active ?? 0) / 60);
   const phase = phaseOf(s);
+  const plural = (n: number, one: string, many: string) => (n === 1 ? one : many);
   return (
     <div style={{ paddingTop: 32 }}>
       <p className="overline">Day {dayNumber(s)} of 365 · {phase === "IELTS" ? "IELTS phase" : `${phase} phase`}</p>
       <h1>Well done</h1>
       <p className="lede">That's today's session.</p>
       <div className="stats">
-        <div><p className="big-number">{Math.round((day?.active ?? 0) / 60)}</p><p className="label">active minutes today</p></div>
-        <div><p className="big-number">{known}</p><p className="label">words you know well</p></div>
-        <div><p className="big-number">{Math.round(weekMinutes)}</p><p className="label">minutes this week</p></div>
+        <div><p className="big-number">{todayMinutes}</p><p className="label">{plural(todayMinutes, "active minute", "active minutes")} today</p></div>
+        <div><p className="big-number">{known}</p><p className="label">{plural(known, "word", "words")} you know well</p></div>
+        <div><p className="big-number">{weekMinutes}</p><p className="label">{plural(weekMinutes, "minute", "minutes")} this week</p></div>
       </div>
-      <p className="small muted">Tomorrow's session is ready when you are. Short on time? Settings → Daily time → 30 minutes.</p>
+      <p className="small muted">Tomorrow's session is ready when you are. Short on time? Settings → Daily time → About 25 minutes.</p>
       <ActionBar>
         <button className="btn big primary" onClick={() => { onDone?.(); navigate("/"); }}>Finish <Icon name="check" /></button>
       </ActionBar>

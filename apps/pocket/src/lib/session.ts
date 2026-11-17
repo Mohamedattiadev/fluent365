@@ -156,7 +156,38 @@ export function buildSession(c: Content, s: AppState = getState(), minutes: 30 |
   add({ kind: "speak", title: "Speaking topic (optional)", why: "Read it on the way, then speak in HelloTalk or Praktika and log your minutes. Real conversation is where speaking grows.", minutes: 3, ref: { cue: repeatCue(s, c) } });
   add({ kind: "wrap", title: "Done for today", why: "See what you achieved.", minutes: 2 });
 
+  fitToDailyTime(steps, minutes);
   return { date: today(), minutes, steps, index: 0, started: new Date().toISOString() };
+}
+
+/** The daily time the learner chose, in minutes ("30" is shown as "about 25 minutes"). */
+export const dailyMinutes = (minutes: 30 | 60 | 90) => (minutes === 30 ? 25 : minutes);
+/** Steps that count towards the daily time (the optional speaking card and the wrap-up do not). */
+export const countsTowardTime = (st: SessionStep) => st.kind !== "wrap" && st.kind !== "speak";
+
+/**
+ * Make the minutes add up to the chosen daily time. Spare time goes to the book (more reading), or to
+ * reviews and input when there is no book step; too much time shrinks every step in proportion.
+ */
+export function fitToDailyTime(steps: SessionStep[], minutes: 30 | 60 | 90) {
+  const target = dailyMinutes(minutes);
+  const counted = steps.filter(countsTowardTime);
+  if (!counted.length) return;
+  const total = counted.reduce((n, st) => n + st.minutes, 0);
+  if (total < target) {
+    const sink = counted.find((st) => st.kind === "book") ?? counted.find((st) => st.kind === "input") ?? counted.find((st) => st.kind === "review") ?? counted[counted.length - 1];
+    sink.minutes += target - total;
+  } else if (total > target) {
+    const f = target / total;
+    for (const st of counted) st.minutes = Math.max(2, Math.round(st.minutes * f));
+    let diff = target - counted.reduce((n, st) => n + st.minutes, 0);
+    // Rounding leftovers: take them from (or give them to) the longest steps.
+    const byLength = [...counted].sort((a, b) => b.minutes - a.minutes);
+    for (let i = 0; diff !== 0 && i < byLength.length * 4; i++) {
+      const st = byLength[i % byLength.length];
+      if (diff > 0) { st.minutes++; diff--; } else if (st.minutes > 2) { st.minutes--; diff++; }
+    }
+  }
 }
 
 export const kindName = (k: LessonStep["kind"]) => ({ words: "Words", listen: "Listening", read: "Reading", language: "Grammar", write: "Writing", speak: "Speaking" })[k];

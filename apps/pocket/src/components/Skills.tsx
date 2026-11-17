@@ -5,9 +5,11 @@ import * as db from "../lib/db";
 import { recordAttempt } from "../lib/learning";
 import { getState, uid, update, useApp } from "../lib/store";
 import { diffWords, matches, shuffle, wordCount } from "../lib/text";
-import type { AudioBlock, Block, CueCard, Exercise as Ex, Lang, VocabItem } from "../lib/types";
-import { ExerciseRunner } from "./Grammar";
+import type { AudioBlock, Block, CueCard, Exercise as Ex, Lang, TtsRecording, VocabItem } from "../lib/types";
+import { clearPersisted, ExerciseRunner, usePersisted } from "./Grammar";
 import { ActionBar, Bold, Icon, mmss, skillStyle, Progress, Segmented, speak, SpeakButton, stopSpeaking, toast, useTimer, voices } from "./ui";
+import { playableUrl, siteUrl } from "../lib/audio";
+import { pause as globalPause } from "../lib/player";
 import type { Content } from "../lib/content";
 
 // ---------- Blocks ----------
@@ -74,30 +76,78 @@ export function AudioPlayer({ audio, once = false, onPlayed }: { audio: AudioBlo
   );
 }
 
-export function Transcript({ audio }: { audio: AudioBlock }) {
+/** Plays the generated MP3 of a listening text (works offline once downloaded). Exam mode plays once. */
+export function RecordingPlayer({ recording, audio, once = false, onPlayed }: { recording: TtsRecording; audio: AudioBlock; once?: boolean; onPlayed?: () => void }) {
+  const ref = useRef<HTMLAudioElement | null>(null);
+  const [src, setSrc] = useState<string | null>(null);
+  const [playing, setPlaying] = useState(false);
+  const [plays, setPlays] = useState(0);
+  const [t, setT] = useState(0);
+  const [rate, setRate] = useState(1);
+  useEffect(() => {
+    let url: string | null = null;
+    void playableUrl(siteUrl(recording.file)).then((u) => { url = u; setSrc(u); });
+    return () => { if (url?.startsWith("blob:")) URL.revokeObjectURL(url); };
+  }, [recording.file]);
+  useEffect(() => { if (ref.current) ref.current.playbackRate = rate; }, [rate, src]);
+  const blocked = once && plays > 0;
+  const line = recording.starts.reduce((n, s, i) => (t >= s ? i : n), 0);
+  function toggle() {
+    const a = ref.current;
+    if (!a) return;
+    if (playing) { a.pause(); return; }
+    globalPause();
+    void a.play().catch(() => setPlaying(false));
+  }
   return (
-    <details className="card soft">
+    <div>
+      <div className="player">
+        <button className="play-btn" onClick={toggle} disabled={blocked || !src} aria-label={playing ? "Pause the recording" : plays ? "Play the recording again" : "Play the recording"}><Icon name={playing ? (once ? "stop" : "pause") : "play"} size={32} /></button>
+        <div className="grow">
+          <p style={{ margin: 0, fontWeight: 600 }}>{playing ? `Playing · ${mmss(t)} / ${mmss(recording.seconds)}` : blocked ? "Played once" : plays ? "Play again" : `Play the recording · ${mmss(recording.seconds)}`}</p>
+          <p className="small muted" style={{ margin: 0 }}>{once ? "Exam mode: you can play it once. Read the questions first." : `${audio.lines.length} lines · recorded voices`}</p>
+          <Progress value={t / recording.seconds} label="Position in the recording" />
+        </div>
+        {!once && <Segmented label="Speed" value={rate} onChange={setRate} options={[[0.8, "0.8×"], [1, "1×"], [1.15, "1.15×"]]} />}
+      </div>
+      {src && <audio ref={ref} src={src} preload="auto" onPlay={() => { setPlaying(true); ping("listening"); }} onPause={() => setPlaying(false)} onTimeUpdate={(e) => { setT(e.currentTarget.currentTime); if (Math.floor(e.currentTarget.currentTime) % 15 === 0) ping("listening"); }} onEnded={() => { setPlaying(false); setPlays((p) => p + 1); onPlayed?.(); }} />}
+      {!once && playing && <p className="small muted now-line" aria-live="polite"><b>{audio.speakers[audio.lines[line]?.speaker]?.name}:</b> {audio.lines[line]?.text}</p>}
+    </div>
+  );
+}
+
+export function Transcript({ audio, open, current }: { audio: AudioBlock; open?: boolean; current?: number }) {
+  return (
+    <details className="card soft transcript" open={open}>
       <summary>Show transcript</summary>
-      {audio.lines.map((l, i) => <p key={i}><b>{audio.speakers[l.speaker]?.name ?? l.speaker}:</b> {l.text}</p>)}
+      {audio.lines.map((l, i) => <p key={i} className={current === i ? "now" : undefined}><b>{audio.speakers[l.speaker]?.name ?? l.speaker}:</b> {l.text}</p>)}
     </details>
   );
 }
 
 /** Read or listen, then answer questions; transcript afterwards. Used by lessons and courses. */
-export function InputTask({ title, intro, tip, passage, audio, questions, once, onDone, kind }: { title: string; intro?: string; tip?: string; passage?: Block[]; audio?: AudioBlock; questions: Block[]; once?: boolean; kind: "reading" | "listening"; onDone: (acc: number) => void }) {
+export function InputTask({ title, intro, tip, passage, audio, recording, questions, once, onDone, kind, persistKey }: { title: string; intro?: string; tip?: string; passage?: Block[]; audio?: AudioBlock; recording?: TtsRecording; questions: Block[]; once?: boolean; kind: "reading" | "listening"; onDone: (acc: number) => void; persistKey?: string }) {
   const lang = useApp((s) => s.settings.explainLang);
-  const [stage, setStage] = useState<"input" | "questions" | "after">("input");
-  const [acc, setAcc] = useState(0);
-  const canSpeak = typeof speechSynthesis !== "undefined" && voices().length > 0;
-  const [played, setPlayed] = useState(!audio || !canSpeak);
+  // Where you are inside the step survives a reload (stage, whether you played it, the score so far).
+  const k = (x: string) => (persistKey ? `input:${persistKey}:${x}` : undefined);
+  const [stage, setStage] = usePersisted<"input" | "questions" | "after">(k("stage"), "input");
+  const [acc, setAcc] = usePersisted(k("acc"), 0);
+  const canSpeak = !!recording || (typeof speechSynthesis !== "undefined" && voices().length > 0);
+  const [played, setPlayed] = usePersisted(k("played"), !audio || !canSpeak);
+  const finish = (a: number) => { clearPersisted(k("stage"), k("acc"), k("played"), k("q")); onDone(a); };
   const items = questions.map((b) => blockToExercise(b, lang)).filter((x): x is Ex => !!x).map((ex) => ({ ex }));
   return (
     <div>
       <h2>{title}</h2>
       {intro && <p className="muted">{intro}</p>}
       {tip && stage === "input" && <div className="feedback info"><strong className="title"><Icon name="hint" size={22} /> Tip</strong><p>{tip}</p></div>}
-      {audio && stage !== "after" && <AudioPlayer audio={audio} once={once} onPlayed={() => setPlayed(true)} />}
-      {audio && !canSpeak && stage === "input" && <p className="small muted">This device has no English voice installed, so you'll read the transcript instead (see Troubleshooting to add a voice).</p>}
+      {audio && stage !== "after" && canSpeak && (recording ? <RecordingPlayer recording={recording} audio={audio} once={once} onPlayed={() => setPlayed(true)} /> : <AudioPlayer audio={audio} once={once} onPlayed={() => setPlayed(true)} />)}
+      {audio && !canSpeak && stage === "input" && (
+        <>
+          <p className="small muted">This device has no English voice for this recording, so read the transcript instead, then answer.</p>
+          <Transcript audio={audio} open />
+        </>
+      )}
       {passage && stage !== "after" && <Passage blocks={passage} />}
       {stage === "input" && (
         <ActionBar><button className="btn big primary" disabled={!played} onClick={() => setStage("questions")}>{audio ? (played ? "Answer the questions" : "Play the recording first") : "Answer the questions"} <Icon name="arrow" /></button></ActionBar>
@@ -105,16 +155,16 @@ export function InputTask({ title, intro, tip, passage, audio, questions, once, 
       {stage === "questions" && audio && !canSpeak && <Transcript audio={audio} />}
       {stage === "questions" && items.length > 0 && (
         <div style={{ marginTop: 24 }}>
-          <ExerciseRunner items={items} onFinish={(a) => { setAcc(a); setStage("after"); }} />
+          <ExerciseRunner items={items} persistKey={k("q")} onFinish={(a) => { setAcc(a); setStage("after"); }} />
         </div>
       )}
-      {stage === "questions" && items.length === 0 && <ActionBar><button className="btn big primary" onClick={() => onDone(1)}>Continue</button></ActionBar>}
+      {stage === "questions" && items.length === 0 && <ActionBar><button className="btn big primary" onClick={() => finish(1)}>Continue</button></ActionBar>}
       {stage === "after" && (
         <div>
           <div className="stats"><div><p className="big-number">{Math.round(acc * 100)}%</p><p className="label">correct on the first try</p></div></div>
           {audio && <Transcript audio={audio} />}
           {passage && <details className="card soft"><summary>Read the text again</summary><Passage blocks={passage} /></details>}
-          <ActionBar><button className="btn big primary" onClick={() => onDone(acc)}>Continue <Icon name="arrow" /></button></ActionBar>
+          <ActionBar><button className="btn big primary" onClick={() => finish(acc)}>Continue <Icon name="arrow" /></button></ActionBar>
         </div>
       )}
       <span className="sr-only">{kind}</span>
@@ -377,21 +427,47 @@ export function dictationSentences(c: Content, n = 3) {
   return shuffle(pool).slice(0, n);
 }
 
+/** Whether the device has an English voice (voices load late on some browsers, so this updates). */
+function useHasVoice() {
+  const [has, setHas] = useState(() => voices().length > 0);
+  useEffect(() => {
+    if (typeof speechSynthesis === "undefined") return;
+    const on = () => setHas(voices().length > 0);
+    speechSynthesis.addEventListener?.("voiceschanged", on);
+    const t = setTimeout(on, 800);
+    return () => { speechSynthesis.removeEventListener?.("voiceschanged", on); clearTimeout(t); };
+  }, []);
+  return has;
+}
+
 export function Dictation({ sentences, onDone }: { sentences: string[]; onDone: () => void }) {
   const [i, setI] = useState(0);
   const [text, setText] = useState("");
   const [checked, setChecked] = useState(false);
+  const [peek, setPeek] = useState(false);
+  const hasVoice = useHasVoice();
   const s = sentences[i];
   if (!s) return <div><h2>Dictation done</h2><ActionBar><button className="btn big primary" onClick={onDone}>Continue <Icon name="arrow" /></button></ActionBar></div>;
   const ok = matches(text, [s]);
   return (
     <div>
       <p className="overline">Sentence {i + 1} of {sentences.length}</p>
-      <h2>Listen and write exactly what you hear</h2>
-      <div className="row">
-        <button className="play-btn" onClick={() => { stopSpeaking(); speak(s, { rate: 0.9 }); ping("listening"); }} aria-label="Play the sentence"><Icon name="play" size={32} /></button>
-        <button className="btn outline" onClick={() => { stopSpeaking(); speak(s, { rate: 0.7 }); ping("listening"); }}>Play slower</button>
-      </div>
+      {hasVoice ? (
+        <>
+          <h2>Listen and write exactly what you hear</h2>
+          <div className="row">
+            <button className="play-btn" onClick={() => { stopSpeaking(); speak(s, { rate: 0.9 }); ping("listening"); }} aria-label="Play the sentence"><Icon name="play" size={32} /></button>
+            <button className="btn outline" onClick={() => { stopSpeaking(); speak(s, { rate: 0.7 }); ping("listening"); }}>Play slower</button>
+          </div>
+        </>
+      ) : (
+        <>
+          <h2>Read, remember, then write it</h2>
+          <p className="small muted">This device has no English voice, so this is a memory dictation: show the sentence, read it, hide it, then type it exactly.</p>
+          {peek ? <p className="prompt-box" style={{ fontSize: "var(--fs-lg)" }}>{s}</p> : null}
+          {!checked && <button className="btn outline" onClick={() => { setPeek(!peek); ping("listening"); }}>{peek ? "Hide the sentence" : "Show the sentence"}</button>}
+        </>
+      )}
       <input type="text" value={text} onChange={(e) => setText(e.target.value)} disabled={checked} placeholder="Type the sentence" aria-label="What you heard" style={{ marginTop: 12 }} autoCapitalize="off" autoComplete="off" />
       {checked && (
         <div className={`feedback ${ok ? "ok" : "no"}`}>
@@ -401,8 +477,8 @@ export function Dictation({ sentences, onDone }: { sentences: string[]; onDone: 
         </div>
       )}
       <ActionBar>
-        {checked ? <button className="btn big primary" onClick={() => { setI(i + 1); setText(""); setChecked(false); }}>Next <Icon name="arrow" /></button>
-          : <button className="btn big primary" disabled={!text.trim()} onClick={() => { recordAttempt({ kind: "listening", ok, prompt: `Dictation: ${s}`, given: text, expected: s }); setChecked(true); }}>Check</button>}
+        {checked ? <button className="btn big primary" onClick={() => { setI(i + 1); setText(""); setChecked(false); setPeek(false); }}>Next <Icon name="arrow" /></button>
+          : <button className="btn big primary" disabled={!text.trim()} onClick={() => { setPeek(false); recordAttempt({ kind: "listening", ok, prompt: `Dictation: ${s}`, given: text, expected: s }); setChecked(true); }}>Check</button>}
       </ActionBar>
     </div>
   );

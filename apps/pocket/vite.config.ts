@@ -21,7 +21,9 @@ function offlineList(): Plugin {
         }
       };
       walk(dist);
-      const list = ["./", ...files.filter((f) => f !== "sw.js" && !f.endsWith(".map")).map((f) => `./${f}`)];
+      // Recordings are downloaded on demand ("Download for offline"), not on install.
+      const list = ["./", ...files.filter((f) => f !== "sw.js" && !f.endsWith(".map") && !f.startsWith("data/audio/tts/")).map((f) => `./${f}`)];
+      writeFileSync(join(dist, "offline-files.json"), JSON.stringify(list));
       const hash = createHash("sha1");
       for (const f of files) if (f !== "sw.js") hash.update(readFileSync(join(dist, f)));
       const sw = join(dist, "sw.js");

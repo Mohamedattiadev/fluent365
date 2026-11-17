@@ -1,10 +1,10 @@
 // Path lessons (one topic each: words → listen → read → grammar → write → speak) and course units.
 import { useEffect, useState } from "react";
-import { loadCourse, loadLesson, type Content } from "../lib/content";
+import { loadAll, loadCourse, loadLesson, type Content } from "../lib/content";
 import { addCards } from "../lib/learning";
 import { pocketStepCount } from "../lib/session";
 import { update, useApp } from "../lib/store";
-import type { Course, Lesson, Unit } from "../lib/types";
+import type { Course, Lesson, TtsRecording, Unit } from "../lib/types";
 import { ExerciseRunner, GrammarLesson } from "./Grammar";
 import { blockToExercise, InputTask, Passage, SpeakingTask, WritingTask } from "./Skills";
 import { ActionBar, Icon, Loading } from "./ui";
@@ -36,9 +36,9 @@ export function LessonStepView({ c, lesson: n, step, onDone }: { c: Content; les
     case "words":
       return <LessonWords c={c} lesson={lesson} title={title} intro={intro} words={st.words} practice={st.practice} onDone={finish} />;
     case "listen":
-      return <InputTask kind="listening" title={title} intro={intro} tip={tip} audio={st.audio} questions={st.questions} onDone={finish} />;
+      return <InputTask kind="listening" title={title} intro={intro} tip={tip} audio={st.audio} recording={c.audio.tts[`lesson-${n}`]} questions={st.questions} onDone={finish} persistKey={`lesson-${n}-${step}`} />;
     case "read":
-      return <InputTask kind="reading" title={title} intro={intro} tip={tip} passage={st.passage} questions={st.questions} onDone={finish} />;
+      return <InputTask kind="reading" title={title} intro={intro} tip={tip} passage={st.passage} questions={st.questions} onDone={finish} persistKey={`lesson-${n}-${step}`} />;
     case "language": {
       const topic = c.grammarById.get(`l-${n}`);
       return topic ? <GrammarLesson topic={topic} onDone={finish} /> : <ActionBar><button className="btn big primary" onClick={finish}>Continue</button></ActionBar>;
@@ -97,6 +97,8 @@ export function CourseUnitView({ courseId, unitId, onDone }: { courseId: string;
 
 function UnitRunner({ course, unit, onDone }: { course: Course; unit: Unit; onDone: () => void }) {
   const audio = unit.blocks.find((b) => b.type === "audio");
+  const [recording, setRecording] = useState<TtsRecording | undefined>();
+  useEffect(() => { void loadAll().then((c) => setRecording(c.audio.tts[`${course.id}-${unit.id}`])); }, [course.id, unit.id]);
   const questions = unit.blocks.filter((b) => b.type === "choice" || b.type === "gap" || b.type === "tfng");
   const passage = unit.blocks.filter((b) => b.type === "heading" || b.type === "text" || b.type === "vocab");
   const finish = (acc: number) => {
@@ -122,6 +124,8 @@ function UnitRunner({ course, unit, onDone }: { course: Course; unit: Unit; onDo
       intro={unit.goal + (unit.timeMinutes ? ` · About ${unit.timeMinutes} minutes.` : "")}
       passage={passage.length ? passage : undefined}
       audio={audio && audio.type === "audio" ? audio : undefined}
+      recording={recording}
+      persistKey={`${course.id}-${unit.id}`}
       once={!!course.exam && !!audio}
       questions={questions}
       onDone={finish}

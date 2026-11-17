@@ -1,0 +1,1269 @@
+{
+ "about": "LibriVox recordings (public domain), hosted by the Internet Archive. Downloaded per book to the device from archive.org; not stored in this repository.",
+ "books": {
+  "wizard-of-oz": {
+   "archive": "wizardofoz_pc_librivox",
+   "reader": "Phil Chenevert",
+   "title": "The Wonderful Wizard of Oz (solo version 2)",
+   "licence": "http://creativecommons.org/publicdomain/mark/1.0/",
+   "source": "https://archive.org/details/wizardofoz_pc_librivox",
+   "chapters": [
+    {
+     "title": "01 - The Cyclone",
+     "file": "wonderfulwizardofoz_01_baum_64kb.mp3",
+     "bytes": 3611389,
+     "seconds": 451
+    },
+    {
+     "title": "02 - The Council With the Munchkins",
+     "file": "wonderfulwizardofoz_02_baum_64kb.mp3",
+     "bytes": 5828263,
+     "seconds": 728
+    },
+    {
+     "title": "03 - How Dorothy Saved the Scarecrow",
+     "file": "wonderfulwizardofoz_03_baum_64kb.mp3",
+     "bytes": 5791693,
+     "seconds": 723
+    },
+    {
+     "title": "04 - The Road Through the Forest",
+     "file": "wonderfulwizardofoz_04_baum_64kb.mp3",
+     "bytes": 4266974,
+     "seconds": 533
+    },
+    {
+     "title": "05 - The Rescue of the Tin Woodman",
+     "file": "wonderfulwizardofoz_05_baum_64kb.mp3",
+     "bytes": 5852086,
+     "seconds": 731
+    },
+    {
+     "title": "06 - The Cowardly Lion",
+     "file": "wonderfulwizardofoz_06_baum_64kb.mp3",
+     "bytes": 4529860,
+     "seconds": 566
+    },
+    {
+     "title": "07 - The Journey to the Great Oz",
+     "file": "wonderfulwizardofoz_07_baum_64kb.mp3",
+     "bytes": 5486579,
+     "seconds": 685
+    },
+    {
+     "title": "08 - The Deadly Poppy Field",
+     "file": "wonderfulwizardofoz_08_baum_64kb.mp3",
+     "bytes": 5827419,
+     "seconds": 728
+    },
+    {
+     "title": "09 - The Queen of the Field Mice",
+     "file": "wonderfulwizardofoz_09_baum_64kb.mp3",
+     "bytes": 4271153,
+     "seconds": 533
+    },
+    {
+     "title": "10 - The Guardian of the Gates",
+     "file": "wonderfulwizardofoz_10_baum_64kb.mp3",
+     "bytes": 5947586,
+     "seconds": 743
+    },
+    {
+     "title": "11 - The Emerald City of Oz",
+     "file": "wonderfulwizardofoz_11_baum_64kb.mp3",
+     "bytes": 10802179,
+     "seconds": 1350
+    },
+    {
+     "title": "12 - The Search for the Wicked Witch",
+     "file": "wonderfulwizardofoz_12_baum_64kb.mp3",
+     "bytes": 10896020,
+     "seconds": 1361
+    },
+    {
+     "title": "13 - The Rescue",
+     "file": "wonderfulwizardofoz_13_baum_64kb.mp3",
+     "bytes": 3476596,
+     "seconds": 434
+    },
+    {
+     "title": "14 - The Winged Monkeys",
+     "file": "wonderfulwizardofoz_14_baum_64kb.mp3",
+     "bytes": 5501825,
+     "seconds": 687
+    },
+    {
+     "title": "15 - The Discovery of Oz, the Terrible",
+     "file": "wonderfulwizardofoz_15_baum_64kb.mp3",
+     "bytes": 8098621,
+     "seconds": 1012
+    },
+    {
+     "title": "16 - The Magic Art of the Great Humbug",
+     "file": "wonderfulwizardofoz_16_baum_64kb.mp3",
+     "bytes": 2916345,
+     "seconds": 364
+    },
+    {
+     "title": "17 - How The Balloon Was Launched",
+     "file": "wonderfulwizardofoz_17_baum_64kb.mp3",
+     "bytes": 3433355,
+     "seconds": 429
+    },
+    {
+     "title": "18 - Away to the South",
+     "file": "wonderfulwizardofoz_18_baum_64kb.mp3",
+     "bytes": 3547029,
+     "seconds": 443
+    },
+    {
+     "title": "19 - Attacked by the Fighting Trees",
+     "file": "wonderfulwizardofoz_19_baum_64kb.mp3",
+     "bytes": 3104005,
+     "seconds": 387
+    },
+    {
+     "title": "20 - The Dainty China Country",
+     "file": "wonderfulwizardofoz_20_baum_64kb.mp3",
+     "bytes": 4634775,
+     "seconds": 579
+    },
+    {
+     "title": "21 - The Lion Becomes the King of Beasts",
+     "file": "wonderfulwizardofoz_21_baum_64kb.mp3",
+     "bytes": 2963367,
+     "seconds": 370
+    },
+    {
+     "title": "22 - The Country of the Quadlings",
+     "file": "wonderfulwizardofoz_22_baum_64kb.mp3",
+     "bytes": 2979034,
+     "seconds": 372
+    },
+    {
+     "title": "23 - Glinda The Good Witch Grants Dorothy's Wish",
+     "file": "wonderfulwizardofoz_23_baum_64kb.mp3",
+     "bytes": 4067414,
+     "seconds": 508
+    },
+    {
+     "title": "24 - Home Again",
+     "file": "wonderfulwizardofoz_24_baum_64kb.mp3",
+     "bytes": 497592,
+     "seconds": 62
+    }
+   ],
+   "bytes": 118331159,
+   "seconds": 14779
+  },
+  "the-secret-garden": {
+   "archive": "secret_garden_version2_librivox",
+   "reader": "Karen Savage",
+   "title": "The Secret Garden",
+   "licence": "http://creativecommons.org/licenses/publicdomain/",
+   "source": "https://archive.org/details/secret_garden_version2_librivox",
+   "chapters": [
+    {
+     "title": "01 - There Is No One Left",
+     "file": "secretgarden_01_burnett_64kb.mp3",
+     "bytes": 4641820,
+     "seconds": 580
+    },
+    {
+     "title": "02 - Mistress Mary Quite Contrary",
+     "file": "secretgarden_02_burnett_64kb.mp3",
+     "bytes": 6248463,
+     "seconds": 781
+    },
+    {
+     "title": "03 - Across The Moor",
+     "file": "secretgarden_03_burnett_64kb.mp3",
+     "bytes": 3586886,
+     "seconds": 448
+    },
+    {
+     "title": "04 - Martha",
+     "file": "secretgarden_04_burnett_64kb.mp3",
+     "bytes": 12051387,
+     "seconds": 1506
+    },
+    {
+     "title": "05 - The Cry In The Corridor",
+     "file": "secretgarden_05_burnett_64kb.mp3",
+     "bytes": 4986640,
+     "seconds": 623
+    },
+    {
+     "title": "06 - There Was Some One Crying--There Was!",
+     "file": "secretgarden_06_burnett_64kb.mp3",
+     "bytes": 5246833,
+     "seconds": 655
+    },
+    {
+     "title": "07 - The Key To The Garden",
+     "file": "secretgarden_07_burnett_64kb.mp3",
+     "bytes": 5017985,
+     "seconds": 627
+    },
+    {
+     "title": "08 - The Robin Who Showed The Way",
+     "file": "secretgarden_08_burnett_64kb.mp3",
+     "bytes": 6597668,
+     "seconds": 824
+    },
+    {
+     "title": "09 - The Strangest House Any One Ever Lived In",
+     "file": "secretgarden_09_burnett_64kb.mp3",
+     "bytes": 7840065,
+     "seconds": 979
+    },
+    {
+     "title": "10 - Dickon",
+     "file": "secretgarden_10_burnett_64kb.mp3",
+     "bytes": 9554916,
+     "seconds": 1194
+    },
+    {
+     "title": "11 - The Nest Of The Missel Thrush",
+     "file": "secretgarden_11_burnett_64kb.mp3",
+     "bytes": 6108657,
+     "seconds": 763
+    },
+    {
+     "title": "12 - Might I Have A Bit Of Earth\\?",
+     "file": "secretgarden_12_burnett_64kb.mp3",
+     "bytes": 6431113,
+     "seconds": 803
+    },
+    {
+     "title": "13 - I Am Colin",
+     "file": "secretgarden_13_burnett_64kb.mp3",
+     "bytes": 10067547,
+     "seconds": 1258
+    },
+    {
+     "title": "14 - A Young Rajah",
+     "file": "secretgarden_14_burnett_64kb.mp3",
+     "bytes": 8984200,
+     "seconds": 1122
+    },
+    {
+     "title": "15 - Nest Building",
+     "file": "secretgarden_15_burnett_64kb.mp3",
+     "bytes": 9376455,
+     "seconds": 1172
+    },
+    {
+     "title": "16 - I Won\\'t! Said Mary",
+     "file": "secretgarden_16_burnett_64kb.mp3",
+     "bytes": 5532072,
+     "seconds": 691
+    },
+    {
+     "title": "17 - A Tantrum",
+     "file": "secretgarden_17_burnett_64kb.mp3",
+     "bytes": 5919928,
+     "seconds": 739
+    },
+    {
+     "title": "18 - Tha\\' Munnot Waste No Time",
+     "file": "secretgarden_18_burnett_64kb.mp3",
+     "bytes": 5395407,
+     "seconds": 674
+    },
+    {
+     "title": "19 - It Has Come!",
+     "file": "secretgarden_19_burnett_64kb.mp3",
+     "bytes": 8339288,
+     "seconds": 1042
+    },
+    {
+     "title": "20 - I Shall Live Forever--And Ever--And Ever!",
+     "file": "secretgarden_20_burnett_64kb.mp3",
+     "bytes": 6637805,
+     "seconds": 829
+    },
+    {
+     "title": "21 - Ben Weatherstaff",
+     "file": "secretgarden_21_burnett_64kb.mp3",
+     "bytes": 9174375,
+     "seconds": 1146
+    },
+    {
+     "title": "22 - When The Sun Went Down",
+     "file": "secretgarden_22_burnett_64kb.mp3",
+     "bytes": 4661257,
+     "seconds": 582
+    },
+    {
+     "title": "23 - Magic",
+     "file": "secretgarden_23_burnett_64kb.mp3",
+     "bytes": 10437645,
+     "seconds": 1304
+    },
+    {
+     "title": "24 - Let Them Laugh",
+     "file": "secretgarden_24_burnett_64kb.mp3",
+     "bytes": 9727333,
+     "seconds": 1215
+    },
+    {
+     "title": "25 - The Curtain",
+     "file": "secretgarden_25_burnett_64kb.mp3",
+     "bytes": 5854520,
+     "seconds": 731
+    },
+    {
+     "title": "26 - It\\'s Mother",
+     "file": "secretgarden_26_burnett_64kb.mp3",
+     "bytes": 8345140,
+     "seconds": 1043
+    },
+    {
+     "title": "27 - In The Garden, Part 1",
+     "file": "secretgarden_27a_burnett_64kb.mp3",
+     "bytes": 6443016,
+     "seconds": 805
+    },
+    {
+     "title": "28 - In The Garden, Part 2",
+     "file": "secretgarden_27b_burnett_64kb.mp3",
+     "bytes": 7282696,
+     "seconds": 910
+    }
+   ],
+   "bytes": 200491117,
+   "seconds": 25046
+  },
+  "call-of-the-wild": {
+   "archive": "call_ofthe_wild_1010_librivox",
+   "reader": "Mark F. Smith",
+   "title": "The Call of the Wild",
+   "licence": "http://creativecommons.org/licenses/publicdomain/",
+   "source": "https://archive.org/details/call_ofthe_wild_1010_librivox",
+   "chapters": [
+    {
+     "title": "01 - Into the Primitive",
+     "file": "callofwild3_01_london_64kb.mp3",
+     "bytes": 11516471,
+     "seconds": 1439
+    },
+    {
+     "title": "02 - The Law of Club and Fang",
+     "file": "callofwild3_02_london_64kb.mp3",
+     "bytes": 10170230,
+     "seconds": 1271
+    },
+    {
+     "title": "03 - The Dominant Primordial Beast",
+     "file": "callofwild3_03_london_64kb.mp3",
+     "bytes": 15921354,
+     "seconds": 1990
+    },
+    {
+     "title": "04 - Who Has Won to Mastership",
+     "file": "callofwild3_04_london_64kb.mp3",
+     "bytes": 9834401,
+     "seconds": 1229
+    },
+    {
+     "title": "05 - The Toil of Trace and Trail",
+     "file": "callofwild3_05_london_64kb.mp3",
+     "bytes": 16847131,
+     "seconds": 2105
+    },
+    {
+     "title": "06 - For the Love of a Man",
+     "file": "callofwild3_06_london_64kb.mp3",
+     "bytes": 14699651,
+     "seconds": 1837
+    },
+    {
+     "title": "07 - The Sounding of the Call",
+     "file": "callofwild3_07_london_64kb.mp3",
+     "bytes": 19092614,
+     "seconds": 2386
+    }
+   ],
+   "bytes": 98081852,
+   "seconds": 12257
+  },
+  "time-machine": {
+   "archive": "timemachine_sjm_librivox",
+   "reader": "Mark Nelson",
+   "title": "The Time Machine (version 3)",
+   "licence": "http://creativecommons.org/publicdomain/mark/1.0/",
+   "source": "https://archive.org/details/timemachine_sjm_librivox",
+   "chapters": [
+    {
+     "title": "Chapter 1",
+     "file": "timemachine_01_wells_64kb.mp3",
+     "bytes": 10243759,
+     "seconds": 1280
+    },
+    {
+     "title": "Chapter 2",
+     "file": "timemachine_02_wells_64kb.mp3",
+     "bytes": 6631547,
+     "seconds": 828
+    },
+    {
+     "title": "Chapter 3",
+     "file": "timemachine_03_wells_64kb.mp3",
+     "bytes": 7149607,
+     "seconds": 893
+    },
+    {
+     "title": "Chapter 4",
+     "file": "timemachine_04_wells_64kb.mp3",
+     "bytes": 12395622,
+     "seconds": 1549
+    },
+    {
+     "title": "Chapter 5",
+     "file": "timemachine_05_wells_64kb.mp3",
+     "bytes": 20450113,
+     "seconds": 2556
+    },
+    {
+     "title": "Chapter 6",
+     "file": "timemachine_06_wells_64kb.mp3",
+     "bytes": 6885248,
+     "seconds": 860
+    },
+    {
+     "title": "Chapter 7",
+     "file": "timemachine_07_wells_64kb.mp3",
+     "bytes": 8079985,
+     "seconds": 1009
+    },
+    {
+     "title": "Chapter 8",
+     "file": "timemachine_08_wells_64kb.mp3",
+     "bytes": 8115720,
+     "seconds": 1014
+    },
+    {
+     "title": "Chapter 9",
+     "file": "timemachine_09_wells_64kb.mp3",
+     "bytes": 8121571,
+     "seconds": 1015
+    },
+    {
+     "title": "Chapter 10",
+     "file": "timemachine_10_wells_64kb.mp3",
+     "bytes": 3722761,
+     "seconds": 465
+    },
+    {
+     "title": "Chapter 11",
+     "file": "timemachine_11_wells_64kb.mp3",
+     "bytes": 6510758,
+     "seconds": 813
+    },
+    {
+     "title": "Chapter 12",
+     "file": "timemachine_12_wells_64kb.mp3",
+     "bytes": 7194330,
+     "seconds": 899
+    }
+   ],
+   "bytes": 105501021,
+   "seconds": 13181
+  },
+  "around-the-world": {
+   "archive": "around_world_rs_1005_librivox",
+   "reader": "Ralph Snelson",
+   "title": "Around the World in Eighty Days",
+   "licence": "LibriVox: all recordings are released into the public domain",
+   "source": "https://archive.org/details/around_world_rs_1005_librivox",
+   "chapters": [
+    {
+     "title": "01 - Chapter I",
+     "file": "aroundtheworldineightydays_01_verne_64kb.mp3",
+     "bytes": 4945110,
+     "seconds": 618
+    },
+    {
+     "title": "02 - Chapter II",
+     "file": "aroundtheworldineightydays_02_verne_64kb.mp3",
+     "bytes": 3968758,
+     "seconds": 496
+    },
+    {
+     "title": "03 - Chapter III",
+     "file": "aroundtheworldineightydays_03_verne_64kb.mp3",
+     "bytes": 6432628,
+     "seconds": 803
+    },
+    {
+     "title": "04 - Chapter IV",
+     "file": "aroundtheworldineightydays_04_verne_64kb.mp3",
+     "bytes": 3200549,
+     "seconds": 399
+    },
+    {
+     "title": "05 - Chapter V",
+     "file": "aroundtheworldineightydays_05_verne_64kb.mp3",
+     "bytes": 3032528,
+     "seconds": 378
+    },
+    {
+     "title": "06 - Chapter VI",
+     "file": "aroundtheworldineightydays_06_verne_64kb.mp3",
+     "bytes": 4120268,
+     "seconds": 514
+    },
+    {
+     "title": "07 - Chapter VII",
+     "file": "aroundtheworldineightydays_07_verne_64kb.mp3",
+     "bytes": 2592628,
+     "seconds": 323
+    },
+    {
+     "title": "08 - Chapter VIII",
+     "file": "aroundtheworldineightydays_08_verne_64kb.mp3",
+     "bytes": 3337224,
+     "seconds": 417
+    },
+    {
+     "title": "09 - Chapter IX",
+     "file": "aroundtheworldineightydays_09_verne_64kb.mp3",
+     "bytes": 5016373,
+     "seconds": 626
+    },
+    {
+     "title": "10 - Chapter X",
+     "file": "aroundtheworldineightydays_10_verne_64kb.mp3",
+     "bytes": 5184391,
+     "seconds": 647
+    },
+    {
+     "title": "11 - Chapter XI",
+     "file": "aroundtheworldineightydays_11_verne_64kb.mp3",
+     "bytes": 8193698,
+     "seconds": 1024
+    },
+    {
+     "title": "12 - Chapter XII",
+     "file": "aroundtheworldineightydays_12_verne_64kb.mp3",
+     "bytes": 6784968,
+     "seconds": 848
+    },
+    {
+     "title": "13 - Chapter XIII",
+     "file": "aroundtheworldineightydays_13_verne_64kb.mp3",
+     "bytes": 6288642,
+     "seconds": 785
+    },
+    {
+     "title": "14 - Chapter XIV",
+     "file": "aroundtheworldineightydays_14_verne_64kb.mp3",
+     "bytes": 6264818,
+     "seconds": 783
+    },
+    {
+     "title": "15 - Chapter XV",
+     "file": "aroundtheworldineightydays_15_verne_64kb.mp3",
+     "bytes": 5969111,
+     "seconds": 746
+    },
+    {
+     "title": "16 - Chapter XVI",
+     "file": "aroundtheworldineightydays_16_verne_64kb.mp3",
+     "bytes": 5056498,
+     "seconds": 631
+    },
+    {
+     "title": "17 - Chapter XVII",
+     "file": "aroundtheworldineightydays_17_verne_64kb.mp3",
+     "bytes": 5529211,
+     "seconds": 691
+    },
+    {
+     "title": "18 - Chapter XVIII",
+     "file": "aroundtheworldineightydays_18_verne_64kb.mp3",
+     "bytes": 4401140,
+     "seconds": 550
+    },
+    {
+     "title": "19 - Chapter XIX",
+     "file": "aroundtheworldineightydays_19_verne_64kb.mp3",
+     "bytes": 6752158,
+     "seconds": 843
+    },
+    {
+     "title": "20 - Chapter XX",
+     "file": "aroundtheworldineightydays_20_verne_64kb.mp3",
+     "bytes": 5817391,
+     "seconds": 727
+    },
+    {
+     "title": "21 - Chapter XXI",
+     "file": "aroundtheworldineightydays_21_verne_64kb.mp3",
+     "bytes": 8064341,
+     "seconds": 1007
+    },
+    {
+     "title": "22 - Chapter XXII",
+     "file": "aroundtheworldineightydays_22_verne_64kb.mp3",
+     "bytes": 6744845,
+     "seconds": 843
+    },
+    {
+     "title": "23 - Chapter XXIII",
+     "file": "aroundtheworldineightydays_23_verne_64kb.mp3",
+     "bytes": 6352382,
+     "seconds": 793
+    },
+    {
+     "title": "24 - Chapter XXIV",
+     "file": "aroundtheworldineightydays_24_verne_64kb.mp3",
+     "bytes": 6288642,
+     "seconds": 785
+    },
+    {
+     "title": "25 - Chapter XXV",
+     "file": "aroundtheworldineightydays_25_verne_64kb.mp3",
+     "bytes": 6569510,
+     "seconds": 821
+    },
+    {
+     "title": "26 - Chapter XXVI",
+     "file": "aroundtheworldineightydays_26_verne_64kb.mp3",
+     "bytes": 5272166,
+     "seconds": 658
+    },
+    {
+     "title": "27 - Chapter XXVII",
+     "file": "aroundtheworldineightydays_27_verne_64kb.mp3",
+     "bytes": 6264820,
+     "seconds": 783
+    },
+    {
+     "title": "28 - Chapter XXVIII",
+     "file": "aroundtheworldineightydays_28_verne_64kb.mp3",
+     "bytes": 7749412,
+     "seconds": 968
+    },
+    {
+     "title": "29 - Chapter XXIX",
+     "file": "aroundtheworldineightydays_29_verne_64kb.mp3",
+     "bytes": 6728336,
+     "seconds": 840
+    },
+    {
+     "title": "30 - Chapter XXX",
+     "file": "aroundtheworldineightydays_30_verne_64kb.mp3",
+     "bytes": 6825092,
+     "seconds": 853
+    },
+    {
+     "title": "31 - Chapter XXXI",
+     "file": "aroundtheworldineightydays_31_verne_64kb.mp3",
+     "bytes": 6000251,
+     "seconds": 749
+    },
+    {
+     "title": "32 - Chapter XXXII",
+     "file": "aroundtheworldineightydays_32_verne_64kb.mp3",
+     "bytes": 3720702,
+     "seconds": 465
+    },
+    {
+     "title": "33 - Chapter XXXIII",
+     "file": "aroundtheworldineightydays_33_verne_64kb.mp3",
+     "bytes": 7912834,
+     "seconds": 989
+    },
+    {
+     "title": "34 - Chapter XXXIV",
+     "file": "aroundtheworldineightydays_34_verne_64kb.mp3",
+     "bytes": 3160428,
+     "seconds": 394
+    },
+    {
+     "title": "35 - Chapter XXXV",
+     "file": "aroundtheworldineightydays_35_verne_64kb.mp3",
+     "bytes": 5176871,
+     "seconds": 647
+    },
+    {
+     "title": "36 - Chapter XXXVI",
+     "file": "aroundtheworldineightydays_36_verne_64kb.mp3",
+     "bytes": 3552683,
+     "seconds": 444
+    },
+    {
+     "title": "37 - Chapter XXXVII",
+     "file": "aroundtheworldineightydays_37_verne_64kb.mp3",
+     "bytes": 3441298,
+     "seconds": 430
+    }
+   ],
+   "bytes": 202712705,
+   "seconds": 25318
+  },
+  "sherlock-holmes": {
+   "archive": "adventures_sherlockholmes_1007_librivox",
+   "reader": "Mark F. Smith",
+   "title": "The Adventures of Sherlock Holmes",
+   "licence": "http://creativecommons.org/licenses/publicdomain/",
+   "source": "https://archive.org/details/adventures_sherlockholmes_1007_librivox",
+   "chapters": [
+    {
+     "title": "01 - A Scandal in Bohemia",
+     "file": "adventuresherlockholmes_01_doyle_64kb.mp3",
+     "bytes": 27796654,
+     "seconds": 3474
+    },
+    {
+     "title": "02 - The Red-Headed League",
+     "file": "adventuresherlockholmes_02_doyle_64kb.mp3",
+     "bytes": 28801220,
+     "seconds": 3600
+    },
+    {
+     "title": "03 - A Case of Identity",
+     "file": "adventuresherlockholmes_03_doyle_64kb.mp3",
+     "bytes": 21743767,
+     "seconds": 2717
+    },
+    {
+     "title": "04 - The Bascombe Valley Mystery",
+     "file": "adventuresherlockholmes_04_doyle_64kb.mp3",
+     "bytes": 30224795,
+     "seconds": 3778
+    },
+    {
+     "title": "05 - The Five Orange Pips",
+     "file": "adventuresherlockholmes_05_doyle_64kb.mp3",
+     "bytes": 22486901,
+     "seconds": 2810
+    },
+    {
+     "title": "06 - The Man With the Twisted Lip",
+     "file": "adventuresherlockholmes_06_doyle_64kb.mp3",
+     "bytes": 28679392,
+     "seconds": 3584
+    },
+    {
+     "title": "07 - The Adventure of the Blue Carbuncle",
+     "file": "adventuresherlockholmes_07_doyle_64kb.mp3",
+     "bytes": 24810978,
+     "seconds": 3101
+    },
+    {
+     "title": "08 - The Adventure of the Speckled Band",
+     "file": "adventuresherlockholmes_08_doyle_64kb.mp3",
+     "bytes": 30141628,
+     "seconds": 3767
+    },
+    {
+     "title": "09 - The Adventure of the Engineer's Thumb",
+     "file": "adventuresherlockholmes_09_doyle_64kb.mp3",
+     "bytes": 25353491,
+     "seconds": 3169
+    },
+    {
+     "title": "10 - The Adventure of the Noble Bachelor",
+     "file": "adventuresherlockholmes_10_doyle_64kb.mp3",
+     "bytes": 25252343,
+     "seconds": 3156
+    },
+    {
+     "title": "11 - The Adventure of the Beryl Coronet",
+     "file": "adventuresherlockholmes_11_doyle_64kb.mp3",
+     "bytes": 28480240,
+     "seconds": 3559
+    },
+    {
+     "title": "12 - The Adventure of the Copper Beeches",
+     "file": "adventuresherlockholmes_12_doyle_64kb.mp3",
+     "bytes": 30128254,
+     "seconds": 3765
+    }
+   ],
+   "bytes": 323899663,
+   "seconds": 40480
+  },
+  "hound-of-the-baskervilles": {
+   "archive": "hound_baskervilles_bn_librivox",
+   "reader": "Bob Neufeld",
+   "title": "The Hound of the Baskervilles",
+   "licence": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://archive.org/details/hound_baskervilles_bn_librivox",
+   "chapters": [
+    {
+     "title": "01 - Mr. Sherlock Holmes",
+     "file": "houndofthebaskervilles_01_doyle_64kb.mp3",
+     "bytes": 7905325,
+     "seconds": 988
+    },
+    {
+     "title": "02 - The Curse of the Baskervilles",
+     "file": "houndofthebaskervilles_02_doyle_64kb.mp3",
+     "bytes": 13153021,
+     "seconds": 1644
+    },
+    {
+     "title": "03 - The Problem",
+     "file": "houndofthebaskervilles_03_doyle_64kb.mp3",
+     "bytes": 10412654,
+     "seconds": 1301
+    },
+    {
+     "title": "04 - Sir Henry Baskerville",
+     "file": "houndofthebaskervilles_04_doyle_64kb.mp3",
+     "bytes": 13491142,
+     "seconds": 1686
+    },
+    {
+     "title": "05 - Three Broken Threads",
+     "file": "houndofthebaskervilles_05_doyle_64kb.mp3",
+     "bytes": 11813871,
+     "seconds": 1476
+    },
+    {
+     "title": "06 - Baskerville Hall",
+     "file": "houndofthebaskervilles_06_doyle_64kb.mp3",
+     "bytes": 11463826,
+     "seconds": 1432
+    },
+    {
+     "title": "07 - The Stapletons of Merripit House",
+     "file": "houndofthebaskervilles_07_doyle_64kb.mp3",
+     "bytes": 15689409,
+     "seconds": 1961
+    },
+    {
+     "title": "08 - First Report of Dr. Watson",
+     "file": "houndofthebaskervilles_08_doyle_64kb.mp3",
+     "bytes": 8950230,
+     "seconds": 1118
+    },
+    {
+     "title": "09 - The Light upon the Moor [Second Report of Dr. Watson]",
+     "file": "houndofthebaskervilles_09_doyle_64kb.mp3",
+     "bytes": 20949865,
+     "seconds": 2618
+    },
+    {
+     "title": "10 - Extract from the Diary of Dr. Watson",
+     "file": "houndofthebaskervilles_10_doyle_64kb.mp3",
+     "bytes": 11554752,
+     "seconds": 1444
+    },
+    {
+     "title": "11 - The Man on the Tor",
+     "file": "houndofthebaskervilles_11_doyle_64kb.mp3",
+     "bytes": 15032573,
+     "seconds": 1878
+    },
+    {
+     "title": "12 - Death on the Moor",
+     "file": "houndofthebaskervilles_12_doyle_64kb.mp3",
+     "bytes": 13904918,
+     "seconds": 1738
+    },
+    {
+     "title": "13 - Fixing the Nets",
+     "file": "houndofthebaskervilles_13_doyle_64kb.mp3",
+     "bytes": 13097836,
+     "seconds": 1637
+    },
+    {
+     "title": "14 - The Hound of the Baskervilles",
+     "file": "houndofthebaskervilles_14_doyle_64kb.mp3",
+     "bytes": 14157168,
+     "seconds": 1769
+    },
+    {
+     "title": "15 - A Retrospection",
+     "file": "houndofthebaskervilles_15_doyle_64kb.mp3",
+     "bytes": 12630349,
+     "seconds": 1578
+    }
+   ],
+   "bytes": 194206939,
+   "seconds": 24268
+  },
+  "pride-and-prejudice": {
+   "archive": "pride_prejudice_krs_librivox",
+   "reader": "Karen Savage",
+   "title": "Pride and Prejudice (version 3)",
+   "licence": "http://creativecommons.org/licenses/publicdomain/",
+   "source": "https://archive.org/details/pride_prejudice_krs_librivox",
+   "chapters": [
+    {
+     "title": "Chapter 01",
+     "file": "pride_and_prejudice_01_austen_64kb.mp3",
+     "bytes": 2336768,
+     "seconds": 284
+    },
+    {
+     "title": "Chapter 02",
+     "file": "pride_and_prejudice_02_austen_64kb.mp3",
+     "bytes": 2169856,
+     "seconds": 263
+    },
+    {
+     "title": "Chapter 03",
+     "file": "pride_and_prejudice_03_austen_64kb.mp3",
+     "bytes": 4311552,
+     "seconds": 531
+    },
+    {
+     "title": "Chapter 04",
+     "file": "pride_and_prejudice_04_austen_64kb.mp3",
+     "bytes": 2831360,
+     "seconds": 346
+    },
+    {
+     "title": "Chapter 5",
+     "file": "pride_and_prejudice_05_austen_64kb.mp3",
+     "bytes": 2578432,
+     "seconds": 314
+    },
+    {
+     "title": "Chapter 06",
+     "file": "pride_and_prejudice_06_austen_64kb.mp3",
+     "bytes": 5988352,
+     "seconds": 740
+    },
+    {
+     "title": "Chapter 07",
+     "file": "pride_and_prejudice_07_austen_64kb.mp3",
+     "bytes": 4957696,
+     "seconds": 611
+    },
+    {
+     "title": "Chapter 08",
+     "file": "pride_and_prejudice_08_austen_64kb.mp3",
+     "bytes": 4941824,
+     "seconds": 609
+    },
+    {
+     "title": "Chapter 09",
+     "file": "pride_and_prejudice_09_austen_64kb.mp3",
+     "bytes": 4572160,
+     "seconds": 563
+    },
+    {
+     "title": "Chapter 10",
+     "file": "pride_and_prejudice_10_austen_64kb.mp3",
+     "bytes": 5733376,
+     "seconds": 708
+    },
+    {
+     "title": "Chapter 11",
+     "file": "pride_and_prejudice_11_austen_64kb.mp3",
+     "bytes": 4260352,
+     "seconds": 524
+    },
+    {
+     "title": "Chapter 12",
+     "file": "pride_and_prejudice_12_austen_64kb.mp3",
+     "bytes": 1894912,
+     "seconds": 229
+    },
+    {
+     "title": "Chapter 13",
+     "file": "pride_and_prejudice_13_austen_64kb.mp3",
+     "bytes": 4241920,
+     "seconds": 522
+    },
+    {
+     "title": "Chapter 14",
+     "file": "pride_and_prejudice_14_austen_64kb.mp3",
+     "bytes": 3341824,
+     "seconds": 409
+    },
+    {
+     "title": "Chapter 15",
+     "file": "pride_and_prejudice_15_austen_64kb.mp3",
+     "bytes": 4397056,
+     "seconds": 541
+    },
+    {
+     "title": "Chapter 16",
+     "file": "pride_and_prejudice_16_austen_64kb.mp3",
+     "bytes": 8687104,
+     "seconds": 1078
+    },
+    {
+     "title": "Chapter 17",
+     "file": "pride_and_prejudice_17_austen_64kb.mp3",
+     "bytes": 3400704,
+     "seconds": 417
+    },
+    {
+     "title": "Chapter 18",
+     "file": "pride_and_prejudice_18_austen_64kb.mp3",
+     "bytes": 13140480,
+     "seconds": 1634
+    },
+    {
+     "title": "Chapter 18",
+     "file": "pride_and_prejudice_19_austen_64kb.mp3",
+     "bytes": 5540352,
+     "seconds": 684
+    },
+    {
+     "title": "Chapter 20",
+     "file": "pride_and_prejudice_20_austen_64kb.mp3",
+     "bytes": 4536832,
+     "seconds": 559
+    },
+    {
+     "title": "Chapter 21",
+     "file": "pride_and_prejudice_21_austen_64kb.mp3",
+     "bytes": 5161984,
+     "seconds": 637
+    },
+    {
+     "title": "Chapter 22",
+     "file": "pride_and_prejudice_22_austen_64kb.mp3",
+     "bytes": 4588032,
+     "seconds": 565
+    },
+    {
+     "title": "Chapter 23",
+     "file": "pride_and_prejudice_23_austen_64kb.mp3",
+     "bytes": 4110848,
+     "seconds": 506
+    },
+    {
+     "title": "Chapter 24",
+     "file": "pride_and_prejudice_24_austen_64kb.mp3",
+     "bytes": 4935168,
+     "seconds": 609
+    },
+    {
+     "title": "Chapter 25",
+     "file": "pride_and_prejudice_25_austen_64kb.mp3",
+     "bytes": 3822080,
+     "seconds": 470
+    },
+    {
+     "title": "Chatper 26",
+     "file": "pride_and_prejudice_26_austen_64kb.mp3",
+     "bytes": 5834240,
+     "seconds": 721
+    },
+    {
+     "title": "Chapter 27",
+     "file": "pride_and_prejudice_27_austen_64kb.mp3",
+     "bytes": 3297280,
+     "seconds": 404
+    },
+    {
+     "title": "Chapter 28",
+     "file": "pride_and_prejudice_28_austen_64kb.mp3",
+     "bytes": 3844096,
+     "seconds": 472
+    },
+    {
+     "title": "Chapter 29",
+     "file": "pride_and_prejudice_29_austen_64kb.mp3",
+     "bytes": 6503424,
+     "seconds": 805
+    },
+    {
+     "title": "Chapter 30",
+     "file": "pride_and_prejudice_30_austen_64kb.mp3",
+     "bytes": 3102208,
+     "seconds": 380
+    },
+    {
+     "title": "Chapter 31",
+     "file": "pride_and_prejudice_31_austen_64kb.mp3",
+     "bytes": 4034048,
+     "seconds": 496
+    },
+    {
+     "title": "Chapter 32",
+     "file": "pride_and_prejudice_32_austen_64kb.mp3",
+     "bytes": 3961856,
+     "seconds": 487
+    },
+    {
+     "title": "Chatper 33",
+     "file": "pride_and_prejudice_33_austen_64kb.mp3",
+     "bytes": 4631040,
+     "seconds": 571
+    },
+    {
+     "title": "Chapter 34",
+     "file": "pride_and_prejudice_34_austen_64kb.mp3",
+     "bytes": 5522432,
+     "seconds": 682
+    },
+    {
+     "title": "Chapter 35",
+     "file": "pride_and_prejudice_35_austen_64kb.mp3",
+     "bytes": 7754240,
+     "seconds": 961
+    },
+    {
+     "title": "Chapter 36",
+     "file": "pride_and_prejudice_36_austen_64kb.mp3",
+     "bytes": 5415936,
+     "seconds": 669
+    },
+    {
+     "title": "Chapter 37",
+     "file": "pride_and_prejudice_37_austen_64kb.mp3",
+     "bytes": 4083712,
+     "seconds": 502
+    },
+    {
+     "title": "Chapter 38",
+     "file": "pride_and_prejudice_38_austen_64kb.mp3",
+     "bytes": 3212800,
+     "seconds": 393
+    },
+    {
+     "title": "Chapter 39",
+     "file": "pride_and_prejudice_39_austen_64kb.mp3",
+     "bytes": 3853824,
+     "seconds": 473
+    },
+    {
+     "title": "Chapter 40",
+     "file": "pride_and_prejudice_40_austen_64kb.mp3",
+     "bytes": 4390912,
+     "seconds": 541
+    },
+    {
+     "title": "Chapter 41",
+     "file": "pride_and_prejudice_41_austen_64kb.mp3",
+     "bytes": 6042624,
+     "seconds": 747
+    },
+    {
+     "title": "Chapter 42",
+     "file": "pride_and_prejudice_42_austen_64kb.mp3",
+     "bytes": 4836864,
+     "seconds": 596
+    },
+    {
+     "title": "Chapter 43",
+     "file": "pride_and_prejudice_43_austen_64kb.mp3",
+     "bytes": 12046848,
+     "seconds": 1498
+    },
+    {
+     "title": "Chapter 44",
+     "file": "pride_and_prejudice_44_austen_64kb.mp3",
+     "bytes": 5870592,
+     "seconds": 726
+    },
+    {
+     "title": "Chapter 45",
+     "file": "pride_and_prejudice_45_austen_64kb.mp3",
+     "bytes": 4457472,
+     "seconds": 549
+    },
+    {
+     "title": "Chapter 46",
+     "file": "pride_and_prejudice_46_austen_64kb.mp3",
+     "bytes": 7734784,
+     "seconds": 959
+    },
+    {
+     "title": "Chapter 47",
+     "file": "pride_and_prejudice_47_austen_64kb.mp3",
+     "bytes": 9884160,
+     "seconds": 1227
+    },
+    {
+     "title": "Chapter 48",
+     "file": "pride_and_prejudice_48_austen_64kb.mp3",
+     "bytes": 6059008,
+     "seconds": 749
+    },
+    {
+     "title": "Chapter 49",
+     "file": "pride_and_prejudice_49_austen_64kb.mp3",
+     "bytes": 5531136,
+     "seconds": 683
+    },
+    {
+     "title": "Chapter 50",
+     "file": "pride_and_prejudice_50_austen_64kb.mp3",
+     "bytes": 5353472,
+     "seconds": 661
+    },
+    {
+     "title": "Chapter 51",
+     "file": "pride_and_prejudice_51_austen_64kb.mp3",
+     "bytes": 4934144,
+     "seconds": 608
+    },
+    {
+     "title": "Chapter 52",
+     "file": "pride_and_prejudice_52_austen_64kb.mp3",
+     "bytes": 7367680,
+     "seconds": 913
+    },
+    {
+     "title": "Chapter 53",
+     "file": "pride_and_prejudice_53_austen_64kb.mp3",
+     "bytes": 7226880,
+     "seconds": 895
+    },
+    {
+     "title": "Chapter 54",
+     "file": "pride_and_prejudice_54_austen_64kb.mp3",
+     "bytes": 3987456,
+     "seconds": 490
+    },
+    {
+     "title": "Chapter 55",
+     "file": "pride_and_prejudice_55_austen_64kb.mp3",
+     "bytes": 5660672,
+     "seconds": 699
+    },
+    {
+     "title": "Chapter 56",
+     "file": "pride_and_prejudice_56_austen_64kb.mp3",
+     "bytes": 7134208,
+     "seconds": 883
+    },
+    {
+     "title": "Chapter 57",
+     "file": "pride_and_prejudice_57_austen_64kb.mp3",
+     "bytes": 4472832,
+     "seconds": 551
+    },
+    {
+     "title": "Chapter 58",
+     "file": "pride_and_prejudice_58_austen_64kb.mp3",
+     "bytes": 6155264,
+     "seconds": 761
+    },
+    {
+     "title": "Chapter 59",
+     "file": "pride_and_prejudice_59_austen_64kb.mp3",
+     "bytes": 6213120,
+     "seconds": 768
+    },
+    {
+     "title": "Chapter 60",
+     "file": "pride_and_prejudice_60_austen_64kb.mp3",
+     "bytes": 3871744,
+     "seconds": 476
+    },
+    {
+     "title": "Chapter 61",
+     "file": "pride_and_prejudice_61_austen_64kb.mp3",
+     "bytes": 3206144,
+     "seconds": 392
+    }
+   ],
+   "bytes": 313970176,
+   "seconds": 38741
+  }
+ }
+}

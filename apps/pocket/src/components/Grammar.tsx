@@ -2,7 +2,7 @@
 import { useEffect, useMemo, useState } from "react";
 
 // Remembers where the learner is inside a step, so a reload or app switch resumes there.
-function usePersisted<T>(key: string | undefined, initial: T) {
+export function usePersisted<T>(key: string | undefined, initial: T) {
   const [v, setV] = useState<T>(() => {
     if (!key) return initial;
     try { const raw = sessionStorage.getItem(key); return raw ? (JSON.parse(raw) as T) : initial; } catch { return initial; }
@@ -13,7 +13,7 @@ function usePersisted<T>(key: string | undefined, initial: T) {
   }, [key, v]);
   return [v, setV] as const;
 }
-const clearPersisted = (...keys: (string | undefined)[]) => { try { for (const k of keys) if (k) sessionStorage.removeItem(k); } catch { /* ignore */ } };
+export const clearPersisted = (...keys: (string | undefined)[]) => { try { for (const k of keys) if (k) sessionStorage.removeItem(k); } catch { /* ignore */ } };
 import { finishTopic } from "../lib/learning";
 import { useApp } from "../lib/store";
 import { shuffle } from "../lib/text";
@@ -118,7 +118,7 @@ export function GrammarLesson({ topic, onDone }: { topic: GrammarTopic; onDone: 
 
   return (
     <div>
-      <h2>{acc >= 0.8 ? "Well done!" : acc >= 0.6 ? "Good work" : "Good start"}</h2>
+      <h2>{acc >= 0.8 ? "Well done!" : acc >= 0.6 ? "Good work" : acc >= 0.3 ? "Keep practising" : "This one needs more practice"}</h2>
       <p className="big-number">{Math.round(acc * 100)}%</p>
       <p className="muted">correct on the first try. {acc < 0.8 ? "This pattern will come back sooner so you can practise it again." : "It will come back in a few days to make it automatic."}</p>
       <ActionBar><button className="btn big primary" onClick={() => { clearPersisted(key); onDone(); }}>Continue <Icon name="arrow" /></button></ActionBar>

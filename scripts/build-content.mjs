@@ -184,5 +184,20 @@ write("books.json", { about: ladder.about, books });
 counts.books = books.length;
 counts.bookWords = books.reduce((n, b) => n + b.words, 0);
 
+// ---------- Audio: generated lesson recordings (Piper) + LibriVox audiobook list ----------
+// The MP3s are not precached on install (too big); the app downloads them with "Download for offline".
+mkdirSync(join(out, "audio", "tts"), { recursive: true });
+const ttsDir = join(root, "content", "audio", "tts");
+const ttsIndex = existsSync(join(ttsDir, "index.json")) ? JSON.parse(readFileSync(join(ttsDir, "index.json"), "utf8")) : {};
+const tts = {};
+for (const [key, v] of Object.entries(ttsIndex)) {
+  if (!existsSync(join(ttsDir, `${key}.mp3`))) continue;
+  copyFileSync(join(ttsDir, `${key}.mp3`), join(out, "audio", "tts", `${key}.mp3`));
+  tts[key] = { file: `audio/tts/${key}.mp3`, seconds: v.seconds, bytes: v.bytes, starts: v.starts };
+}
+const librivox = existsSync(join(root, "content", "audio", "librivox.json")) ? read("audio/librivox.json") : { books: {} };
+write("audio/index.json", { tts, books: librivox.books, about: librivox.about });
+counts.recordings = Object.keys(tts).length;
+
 write("manifest.json", { built: new Date().toISOString(), counts });
 console.log("content built:", counts);

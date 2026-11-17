@@ -1,5 +1,5 @@
 // Loads public content from ./data (relative, so it works under any base path) and caches it.
-import type { Book, BookInfo, Course, GrammarTopic, IeltsContent, Lesson, LessonInfo, VocabItem } from "./types";
+import type { AudioIndex, Book, BookInfo, Course, GrammarTopic, IeltsContent, Lesson, LessonInfo, VocabItem } from "./types";
 
 const cache = new Map<string, Promise<unknown>>();
 const base = () => (typeof document !== "undefined" ? new URL("./data/", document.baseURI).href : "./data/");
@@ -26,6 +26,7 @@ export interface Content {
   ielts: IeltsContent;
   licence: string;
   books: BookInfo[];
+  audio: AudioIndex;
 }
 
 let all: Promise<Content> | null = null;
@@ -36,7 +37,8 @@ export function loadAll(): Promise<Content> {
     load<{ lessons: LessonInfo[] }>("lessons.json"),
     load<IeltsContent>("ielts.json"),
     load<{ books: BookInfo[] }>("books.json").catch(() => ({ books: [] as BookInfo[] })),
-  ]).then(([g, v, l, i, b]) => ({
+    load<AudioIndex>("audio/index.json").catch((): AudioIndex => ({ tts: {}, books: {} })),
+  ]).then(([g, v, l, i, b, a]) => ({
     grammar: g.topics,
     grammarById: new Map(g.topics.map((t) => [t.id, t])),
     vocab: v.items,
@@ -45,6 +47,7 @@ export function loadAll(): Promise<Content> {
     ielts: i,
     licence: v.licence,
     books: b.books,
+    audio: a,
   }));
   all.catch(() => (all = null));
   return all;

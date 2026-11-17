@@ -5,7 +5,7 @@ import { beforeEach, describe, expect, it } from "vitest";
 import type { Content } from "./content";
 import { addCards, dueCardKeys, recordAttempt, reviewWord } from "./learning";
 import { ankiExport, ankiImport, checkBackup, makeBackup, parseLearningText } from "./portability";
-import { buildSession, newWordLimit } from "./session";
+import { buildSession, countsTowardTime, dailyMinutes, newWordLimit } from "./session";
 import { Rating, schedule, type Grade } from "./srs";
 import { emptyState, flush, getState, loadState, replaceState } from "./store";
 import { diffWords, matches, normalize } from "./text";
@@ -135,6 +135,13 @@ describe("guided session", () => {
   it("short day is shorter", () => {
     const total = (m: 30 | 90) => buildSession(c, getState(), m).steps.reduce((n, x) => n + x.minutes, 0);
     expect(total(30)).toBeLessThan(total(90));
+  });
+  it("minutes add up to the chosen daily time (optional speaking and wrap-up not counted)", () => {
+    for (const m of [30, 60, 90] as const) {
+      const steps = buildSession(c, getState(), m).steps.filter(countsTowardTime);
+      expect(steps.reduce((n, x) => n + x.minutes, 0)).toBe(dailyMinutes(m));
+      expect(steps.every((x) => x.minutes >= 2)).toBe(true);
+    }
   });
 });
 

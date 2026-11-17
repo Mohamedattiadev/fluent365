@@ -8,10 +8,12 @@ import { emptyState, getState, replaceState, today, uid, update, useApp } from "
 import type { Exercise, GrammarTopic, ImportItem, Settings } from "../lib/types";
 import { navigate } from "../router";
 import { IDLE_LIMIT } from "../lib/activity";
+import { OfflineScreen } from "./Offline";
 
 const Back = ({ to = "/settings" }: { to?: string }) => <button className="btn quiet" style={{ marginLeft: -10 }} onClick={() => navigate(to)}><Icon name="back" size={20} /> Settings</button>;
 
 export function SettingsScreen({ c, path }: { c: Content; path: string[] }) {
+  if (path[0] === "offline") return <OfflineScreen c={c} />;
   if (path[0] === "backup") return <BackupScreen c={c} />;
   if (path[0] === "import") return <ImportCentre c={c} />;
   if (path[0] === "about") return <About c={c} />;
@@ -29,6 +31,7 @@ function Main() {
   return (
     <div>
       <h1>Settings</h1>
+      <button className="navrow offline-cta" onClick={() => navigate("/settings/offline")}><Icon name="download" size={22} /><span className="grow"><span style={{ display: "block", fontWeight: 500 }}>Download for offline</span><span className="setting-hint">Everything on this phone in one tap: app, books, recordings, audiobooks</span></span><Icon name="arrow" size={20} /></button>
 
       <p className="overline" style={{ marginTop: 24 }}>Display</p>
       <div className="settings-group">

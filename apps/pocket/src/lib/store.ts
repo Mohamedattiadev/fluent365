@@ -2,7 +2,7 @@
 // never sent anywhere. React components subscribe with useApp().
 import { useSyncExternalStore } from "react";
 import * as db from "./db";
-import type { ReadingState, DayLog, DaySession, ExternalSession, ImportItem, LessonProgress, Mastery, Mistake, MyCard, Settings, SpeakingEntry, TestResult, WritingEntry } from "./types";
+import type { ListeningState, ReadingState, DayLog, DaySession, ExternalSession, ImportItem, LessonProgress, Mastery, Mistake, MyCard, Settings, SpeakingEntry, TestResult, WritingEntry } from "./types";
 
 export const today = (d = new Date()) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
 
@@ -39,11 +39,12 @@ export interface AppState {
   imports: ImportItem[];
   integrations: { praktika: { enabled: boolean } };
   reading: ReadingState;
+  listening: ListeningState; // where you are in each recording (seconds)
   session: DaySession | null;
   history: DaySession[]; // finished sessions (last 60)
 }
 
-export const SLICES = ["settings", "cards", "known", "grammar", "mistakes", "days", "lessons", "coursework", "writing", "speaking", "tests", "external", "imports", "integrations", "reading", "session", "history"] as const;
+export const SLICES = ["settings", "cards", "known", "grammar", "mistakes", "days", "lessons", "coursework", "writing", "speaking", "tests", "external", "imports", "integrations", "reading", "listening", "session", "history"] as const;
 export type Slice = (typeof SLICES)[number];
 
 export const emptyState = (): AppState => ({
@@ -62,6 +63,7 @@ export const emptyState = (): AppState => ({
   imports: [],
   integrations: { praktika: { enabled: false } },
   reading: { books: {}, log: {} },
+  listening: { pos: {} },
   session: null,
   history: [],
 });
