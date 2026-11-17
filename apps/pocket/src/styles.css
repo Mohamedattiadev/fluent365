@@ -689,3 +689,5 @@ pre { font-family: inherit; }
 .install-steps .icon { vertical-align: -3px; }
 .install-actions { display: grid; gap: 4px; margin-top: 16px; }
 @media (min-width: 900px) { .install-scrim { align-items: center; } }
+.sheet-listen { display: flex; gap: 8px; margin: 0 0 12px; } .sheet-listen .btn { flex: 1; min-height: 44px; }
+.btn.tonal { background: var(--accent-soft); color: var(--accent-text); }

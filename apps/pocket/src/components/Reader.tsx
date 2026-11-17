@@ -132,11 +132,14 @@ function WordSheet({ index, pick, bookId, saved, onClose }: { c: Content; index:
           <p style={{ fontSize: "var(--fs-lg)", margin: 0 }}>{v?.w ?? clean}</p>
           {v?.pos && <p className="small muted" style={{ margin: 0 }}>{v.pos}{v.lvl ? ` · ≈ ${v.lvl}` : ""}</p>}
         </div>
-        <button className="icon-btn" onClick={() => { stopSpeaking(); speak(v?.w ?? clean); }} aria-label={`Listen: ${clean}`}><Icon name="audio" /></button>
         <button className="icon-btn" onClick={onClose} aria-label="Close"><Icon name="close" /></button>
       </div>
       {v?.d ? <p style={{ margin: "8px 0" }}>{v.d}</p> : <p className="small muted" style={{ margin: "8px 0" }}>This word is not in Fluent365's word list, so there is no definition here. You can still save it with this sentence.</p>}
-      <p className="small muted" style={{ margin: "0 0 12px" }}><i>"{pick.sentence}"</i></p>
+      <p className="small muted" style={{ margin: "0 0 8px" }}><i>"{pick.sentence}"</i></p>
+      <div className="sheet-listen" role="group" aria-label="Listen">
+        <button className="btn tonal" onClick={() => { stopSpeaking(); speak(v?.w ?? clean, { rate: 0.85 }); }} aria-label={`Listen to the word: ${clean}`}><Icon name="audio" size={20} /> Word</button>
+        <button className="btn tonal" onClick={() => { stopSpeaking(); speak(pick.sentence, { rate: 0.9 }); }} aria-label="Listen to the sentence"><Icon name="audio" size={20} /> Sentence</button>
+      </div>
       {isSaved ? <p className="status"><Icon name="check" size={18} /> In your words · shown in colour in every book</p> : <button className="btn primary" onClick={save}>Add to my words</button>}
     </div>
   );
