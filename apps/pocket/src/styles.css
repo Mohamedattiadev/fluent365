@@ -564,6 +564,10 @@ pre { font-family: inherit; }
 .transcript p.now, .now-line { color: var(--accent-text); }
 .now-line { margin: 8px 0 0; }
 
+/* Placement / monthly checkpoint: word chips. */
+.vcheck { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 8px; }
+.vcheck .chip { height: 44px; display: inline-flex; align-items: center; gap: 4px; font-size: var(--fs-md); }
+
 /* ---------- Motion: everything moves a little (off with reduced motion, see the top of this file) ---------- */
 @keyframes pageIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
 @keyframes stepIn { from { opacity: 0; transform: translateX(24px); } to { opacity: 1; transform: none; } }

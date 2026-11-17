@@ -92,6 +92,13 @@ export function buildSession(c: Content, s: AppState = getState(), minutes: 30 |
   const due = dueCardKeys();
   const topicsDue = dueTopics();
 
+  // 0. Placement check in week 1, then a checkpoint every 30 days (practice estimates, never official scores).
+  const checks = s.tests.filter((t) => t.kind === "checkpoint");
+  const lastCheck = checks[0] ? (Date.now() - new Date(checks[0].at).getTime()) / 86400000 : Infinity;
+  if (!checks.length && dayNumber(s) <= 7) add({ kind: "checkpoint", title: "Placement check", why: "Six minutes to find your level, so the words and grammar fit you. Not an official score.", minutes: 6, ref: { prompt: "placement" } });
+  else if (checks.length && lastCheck >= 30) add({ kind: "checkpoint", title: "Monthly checkpoint", why: "Once a month: how many words you know now and how your grammar has grown. A practice estimate.", minutes: 6, ref: { prompt: "monthly" } });
+  else if (!checks.length && dayNumber(s) >= 30) add({ kind: "checkpoint", title: "Checkpoint", why: "A short check of your words and grammar. A practice estimate, not an official score.", minutes: 6, ref: { prompt: "monthly" } });
+
   // 1. Warm-up recall: yesterday's new words, said aloud.
   const yesterday = Object.entries(s.cards).filter(([, x]) => x.added !== today()).sort((a, b) => (a[1].added < b[1].added ? 1 : -1)).slice(0, 3).map(([k]) => Number(k)).filter((k) => !Number.isNaN(k));
   if (yesterday.length >= 3 && minutes > 30) add({ kind: "recall", title: "Warm-up", why: "Remembering yesterday's words out loud makes them stick (retrieval practice).", minutes: 2, ref: { words: yesterday } });

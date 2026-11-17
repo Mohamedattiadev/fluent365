@@ -6,6 +6,7 @@ import { Dictation, dictationSentences, FixMistakes, Fluency, Recall, SpeakPromp
 import { NewWords, ReviewSession } from "../components/Vocab";
 import { ActionBar, Icon, Progress, SkillLabel, SKILLS } from "../components/ui";
 import { Reader } from "../components/Reader";
+import { Checkpoint } from "../components/Checkpoint";
 import { dailyTarget } from "../lib/reading";
 import type { Content } from "../lib/content";
 import { buildSession, dayNumber, phaseOf, skillOf } from "../lib/session";
@@ -112,6 +113,8 @@ function StepView({ c, step, onDone }: { c: Content; step: SessionStep; onDone: 
       const info = c.books.find((b) => b.id === ref.book);
       return info ? <Reader c={c} info={info} target={dailyTarget(getState(), c.books)} onDone={onDone} /> : <Skip onDone={onDone} />;
     }
+    case "checkpoint":
+      return <Checkpoint c={c} kind={ref.prompt === "placement" ? "placement" : "monthly"} onDone={onDone} />;
     case "speak":
       return <OptionalSpeak c={c} cueId={ref.cue} onDone={onDone} />;
     case "wrap":

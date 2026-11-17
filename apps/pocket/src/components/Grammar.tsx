@@ -22,7 +22,7 @@ import { Exercise } from "./Exercise";
 import { ActionBar, Bold, Icon, Progress, SpeakButton } from "./ui";
 
 /** Runs a list of exercises one by one and reports accuracy. */
-export function ExerciseRunner({ items, onFinish, review, persistKey }: { items: { ex: Ex; topic?: string }[]; onFinish: (accuracy: number) => void; review?: boolean; persistKey?: string }) {
+export function ExerciseRunner({ items, onFinish, review, persistKey, onAnswer }: { items: { ex: Ex; topic?: string }[]; onFinish: (accuracy: number) => void; review?: boolean; persistKey?: string; onAnswer?: (index: number, firstTry: boolean) => void }) {
   const [pos, setPos] = usePersisted(persistKey, { i: 0, right: 0 });
   const { i, right } = pos;
   const setI = (n: number) => setPos((p) => ({ ...p, i: n }));
@@ -42,6 +42,7 @@ export function ExerciseRunner({ items, onFinish, review, persistKey }: { items:
         review={review}
         onDone={(r) => {
           const nr = right + (r.firstTry ? 1 : 0);
+          onAnswer?.(i, r.firstTry);
           setRight(nr);
           if (i + 1 >= items.length) { clearPersisted(persistKey); onFinish(nr / items.length); }
           else setI(i + 1);

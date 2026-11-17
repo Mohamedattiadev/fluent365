@@ -121,9 +121,33 @@ describe("guided session", () => {
     expect(kinds.at(-1)).toBe("wrap");
     expect(s.steps.every((x) => x.why.length > 10)).toBe(true);
   });
-  it("puts reviews first when cards are due", () => {
+  it("puts reviews first when cards are due (after the week-1 placement check)", () => {
     addCards(["100", "101", "102"]);
-    expect(buildSession(c, getState(), 60).steps[0].kind).toBe("review");
+    const kinds = buildSession(c, getState(), 60).steps.map((x) => x.kind);
+    expect(kinds[0]).toBe("checkpoint");
+    expect(kinds[1]).toBe("review");
+  });
+  it("placement check only once; monthly checkpoint after 30 days", () => {
+    const at = (daysAgo: number) => new Date(Date.now() - daysAgo * 86400000).toISOString();
+    const check = (daysAgo: number) => ({ id: "t", at: at(daysAgo), kind: "checkpoint" as const, ref: "placement", title: "Placement check", score: 8, of: 12 });
+    getState().tests = [check(3)];
+    expect(buildSession(c, getState(), 60).steps.some((x) => x.kind === "checkpoint")).toBe(false);
+    getState().tests = [check(31)];
+    expect(buildSession(c, getState(), 60).steps.find((x) => x.kind === "checkpoint")?.ref?.prompt).toBe("monthly");
+    getState().tests = [];
+  });
+  it("vocabulary estimate corrects for guessing; level takes the lower of words and grammar", async () => {
+    const { estimateVocab, estimateLevel } = await import("../components/Checkpoint");
+    const ans = (band: number, yes: number, of = 8) => Array.from({ length: of }, (_, i) => ({ band, yes: i < yes }));
+    // Knows bands 1–3 fully, nothing above, no made-up words: about 3,000 words.
+    expect(estimateVocab([...ans(0, 8), ...ans(1, 8), ...ans(2, 8), ...ans(3, 0), ...ans(4, 0), ...ans(-1, 0, 10)]).words).toBe(3000);
+    // Half "yes" in the two top bands counts when no made-up word is ticked (5,500)…
+    expect(estimateVocab([...ans(0, 8), ...ans(1, 8), ...ans(2, 8), ...ans(3, 4), ...ans(4, 4), ...ans(-1, 0, 10)]).words).toBe(5500);
+    // …but is treated as guessing when half of the made-up words are ticked too (back to 3,000).
+    expect(estimateVocab([...ans(0, 8), ...ans(1, 8), ...ans(2, 8), ...ans(3, 4), ...ans(4, 4), ...ans(-1, 5, 10)]).words).toBe(3000);
+    expect(estimateLevel(3500, { B1: 1, "B1+": 1, B2: 1, "B2+": 0 })).toBe("B2");
+    expect(estimateLevel(3500, { B1: 1, "B1+": 0.6, B2: 0.3, "B2+": 0 })).toBe("B1");
+    expect(estimateLevel(1500, { B1: 1, "B1+": 1, B2: 1, "B2+": 1 })).toBe("A2");
   });
   it("cuts new words when the review backlog is large", () => {
     const st = getState();

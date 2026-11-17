@@ -158,7 +158,7 @@ export interface LessonProgress { done: number[]; finished?: string }
 
 export interface WritingEntry { id: string; at: string; promptId: string; prompt: string; text: string; words: number; seconds: number; selfCheck: string[]; rewriteOf?: string }
 export interface SpeakingEntry { id: string; at: string; prompt: string; seconds: number; audioKey?: string; selfCheck: string[] }
-export interface TestResult { id: string; at: string; kind: "listening" | "reading" | "official" | "checkpoint"; ref: string; title: string; score: number; of: number; band?: number }
+export interface TestResult { id: string; at: string; kind: "listening" | "reading" | "official" | "checkpoint"; ref: string; title: string; score: number; of: number; band?: number; /** Checkpoints: estimated vocabulary size and rough level (practice estimates). */ vocab?: number; level?: string }
 export interface ExternalSession { id: string; at: string; source: "praktika" | "hellotalk" | "other"; topic: string; minutes?: number; method: string }
 
 export interface ImportItem {
@@ -175,7 +175,7 @@ export interface ImportItem {
 
 export interface SessionStep {
   id: string;
-  kind: "recall" | "review" | "pretech" | "grammar" | "grammar-review" | "input" | "book" | "dictation" | "output" | "fluency" | "speak" | "mistakes" | "wrap";
+  kind: "recall" | "review" | "pretech" | "grammar" | "grammar-review" | "input" | "book" | "dictation" | "output" | "fluency" | "speak" | "mistakes" | "checkpoint" | "wrap";
   title: string;
   why: string;
   minutes: number;
