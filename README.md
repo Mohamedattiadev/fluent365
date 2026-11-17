@@ -38,5 +38,5 @@ pnpm build      # static site in apps/pocket/dist
 
 ## Licences
 
-Code: MIT. Learning content: mostly CC BY-SA 4.0 (word lists by Browne, Culligan & Phillips; original lessons and exercises). Details in [docs/CONTENT_LICENSING.md](docs/CONTENT_LICENSING.md).
+Code: MIT ([LICENSE](LICENSE)). Learning content: CC BY-SA 4.0 ([content/LICENSE](content/LICENSE)) (word lists by Browne, Culligan & Phillips; original lessons and exercises); public-domain books, covers and LibriVox recordings stay public domain. Details in [docs/CONTENT_LICENSING.md](docs/CONTENT_LICENSING.md).
 IELTS is a trademark of the British Council, IDP and Cambridge University Press & Assessment. Fluent365 is not affiliated with them and does not give official scores.
