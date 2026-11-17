@@ -93,11 +93,11 @@ try {
     await page.goto(`${BASE}#/session`);
     await page.waitForTimeout(600);
     await shot(page, `${tag}-02-session-flashcard`);
-    // Tap the card to flip it (Anki-style), then swipe right = Good. (Skipped when the session opens on another step.)
+    // Double-tap the card to flip it, then swipe right = Good. (Skipped when the session opens on another step.)
     const card = page.locator(".swipe");
     const box = (await card.count()) ? await card.boundingBox() : null;
     if (box) {
-    await page.mouse.click(box.x + box.width / 2, box.y + 40);
+    await page.mouse.dblclick(box.x + box.width / 2, box.y + 40);
     await shot(page, `${tag}-03-flashcard-answer`);
     const before = await page.locator(".counter span").first().textContent();
     await page.mouse.move(box.x + box.width / 2, box.y + 60);
@@ -107,6 +107,27 @@ try {
     await page.waitForTimeout(500);
     const after = await page.locator(".counter span").first().textContent();
     console.log(`swipe right: ${before} -> ${after}`);
+    }
+
+    // Word review: double-tap flips, double-tap again flips back; a swipe grades without looking.
+    await page.goto(`${BASE}#/learn/words/review`);
+    await page.waitForTimeout(600);
+    const rc = page.locator(".swipe");
+    const rb = (await rc.count()) ? await rc.boundingBox() : null;
+    if (rb) {
+      await shot(page, `${tag}-03c-review-front`);
+      await page.mouse.dblclick(rb.x + rb.width / 2, rb.y + 40);
+      await page.waitForTimeout(400);
+      await shot(page, `${tag}-03d-review-back`);
+      await page.mouse.dblclick(rb.x + rb.width / 2, rb.y + 40);
+      await page.waitForTimeout(400);
+      const flippedBack = !(await page.locator(".flash.back").count());
+      await page.mouse.move(rb.x + rb.width / 2, rb.y + 60);
+      await page.mouse.down();
+      for (let i = 1; i <= 8; i++) await page.mouse.move(rb.x + rb.width / 2 + i * 30, rb.y + 60);
+      await page.mouse.up();
+      await page.waitForTimeout(500);
+      console.log(`review: flipped back ${flippedBack}, after swipe without answer: ${await page.locator(".counter span").first().textContent()}`);
     }
 
     if (topic) {

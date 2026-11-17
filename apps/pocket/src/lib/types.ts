@@ -37,6 +37,11 @@ export interface VocabItem {
   exSrc?: string;
   tr?: string;
   ar?: string;
+  /** "wiktionary" when tr/ar come from Wiktionary's translation tables (else written for the lesson). */
+  trSrc?: string;
+  /** Example sentence in Turkish / Arabic (AI translation). */
+  exTr?: string;
+  exAr?: string;
   topic?: string;
   lesson?: number;
   src: string[];

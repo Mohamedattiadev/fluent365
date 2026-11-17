@@ -137,6 +137,27 @@ for (const f of ["phrasal-verbs.json", "collocations.json", "linking.json"]) {
   for (const it of data.items) add(it.w, { d: it.d, ex: it.ex, pos: it.pos, lvl: it.lvl, topic: it.topic }, data.source);
 }
 
+// Turkish and Arabic for words without a lesson translation: Wiktionary's translation tables (first meaning),
+// made by scripts/fetch-translations.py. `trSrc` marks them so the app can say where they come from.
+if (existsSync(join(src, "vocabulary/translations-wiktionary.json"))) {
+  const wk = read("vocabulary/translations-wiktionary.json").words;
+  for (const v of vocab.values()) {
+    const t = wk[v.w];
+    if (!t || (v.tr && v.ar)) continue;
+    if (!v.tr && t.tr?.length) { v.tr = t.tr.join(", "); v.trSrc = "wiktionary"; }
+    if (!v.ar && t.ar?.length) { v.ar = t.ar.join("، "); v.trSrc = "wiktionary"; }
+  }
+}
+
+// Turkish and Arabic for the original example sentences (AI translation, labelled in the app).
+if (existsSync(join(src, "vocabulary/sentences-tr-ar.json"))) {
+  const st = read("vocabulary/sentences-tr-ar.json").sentences;
+  for (const v of vocab.values()) {
+    const t = v.ex && !v.exSrc ? st[v.ex] : undefined;
+    if (t) { v.exTr = t.tr; v.exAr = t.ar; }
+  }
+}
+
 // Rank every entry: NGSL rank if present, else wordfreq rank, else after the lists.
 const items = [];
 for (const v of vocab.values()) {
@@ -152,7 +173,7 @@ for (const v of vocab.values()) {
 items.sort((a, b) => a.r - b.r || a.w.localeCompare(b.w));
 items.forEach((v, i) => (v.id = i + 1));
 write("vocab.json", {
-  licence: "NGSL, NGSL-Spoken, NAWL, TSL by Browne, Culligan & Phillips (newgeneralservicelist.com), CC BY-SA 4.0. Example quotes from public-domain books (Project Gutenberg). Lesson words, phrasal verbs and collocations: original Fluent365 content, CC BY-SA 4.0.",
+  licence: "NGSL, NGSL-Spoken, NAWL, TSL by Browne, Culligan & Phillips (newgeneralservicelist.com), CC BY-SA 4.0. Example quotes from public-domain books (Project Gutenberg). Lesson words, phrasal verbs and collocations: original Fluent365 content, CC BY-SA 4.0. Turkish/Arabic translations marked trSrc=wiktionary: English Wiktionary contributors (via kaikki.org), CC BY-SA 4.0. exTr/exAr: AI translations of the original example sentences, CC BY-SA 4.0.",
   items,
 });
 

@@ -1,7 +1,7 @@
 // Today: a ring that fills as you study, the Study now button, this week's days, a word of the day,
 // and one small progress line. Black and white; it moves (count-ups, ring fill) unless motion is reduced.
 import { useEffect, useMemo, useState } from "react";
-import { AudioIcon } from "../components/Vocab";
+import { AudioIcon, Xlate } from "../components/Vocab";
 import { ActionBar, CountUp, Icon, toast } from "../components/ui";
 import type { Content } from "../lib/content";
 import { addCards, dueCardKeys } from "../lib/learning";
@@ -10,6 +10,7 @@ import { dayNumber } from "../lib/session";
 import { getState, today, update, useApp } from "../lib/store";
 import type { DayLog, VocabItem } from "../lib/types";
 import { navigate } from "../router";
+import { todaysWordKeys } from "./Learn";
 import { ensureSession } from "./Session";
 
 export const studied = (d?: DayLog) => !!d && (d.active >= 300 || d.sessionDone);
@@ -124,6 +125,7 @@ export function TodayExtras({ c }: { c: Content }) {
   const s = getState();
   const days7 = week(days);
   const inReviews = word ? !!cards[String(word.id)] : false;
+  const todayN = todaysWordKeys(cards).length;
   const book = currentBook(s, c.books);
   const bookPct = book ? Math.floor(((s.reading.books[book.id]?.words ?? 0) / book.words) * 100) : null;
   return (
@@ -147,11 +149,14 @@ export function TodayExtras({ c }: { c: Content }) {
             <AudioIcon text={word.w} label="Listen to the word" />
           </div>
           <p className="wotd-def">{word.d}</p>
+          <Xlate tr={word.tr} ar={word.ar} note={word.trSrc === "wiktionary" ? "Wiktionary · may be another meaning" : undefined} />
           {word.ex && <p className="small muted wotd-ex">“{word.ex}”</p>}
           {inReviews ? <p className="small muted" style={{ margin: 0 }}><Icon name="check" size={16} /> In your reviews</p>
             : <button className="btn quiet" onClick={() => { addCards([String(word.id)]); toast(`"${word.w}" added to your reviews`); }}>Add to my reviews</button>}
         </section>
       )}
+
+      {todayN > 0 && <button className="btn tonal today-words" onClick={() => navigate("/learn/words/today")}><Icon name="again" size={18} /> Today's {todayN} words again</button>}
 
       <p className="progress-line">
         <span><CountUp value={wordsKnown(s)} /> words known</span>

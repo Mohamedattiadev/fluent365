@@ -7,6 +7,7 @@ import { addCards } from "../lib/learning";
 import { cardKeyFor, cleanWord, countWords, lookupWord, pageAt, previousPageStart, readToday, recordPage, setPosition, tagBook, wordIndex, wordsAhead } from "../lib/reading";
 import { getState, useApp } from "../lib/store";
 import type { Book, BookInfo, VocabItem } from "../lib/types";
+import { Xlate } from "./Vocab";
 import { ActionBar, Icon, Loading, Progress, speak, stopSpeaking, toast } from "./ui";
 
 export { lookupWord };
@@ -151,7 +152,9 @@ export function WordSheet({ index, pick, bookId, saved, onClose }: { c: Content;
         </div>
         <button className="icon-btn" onClick={onClose} aria-label="Close"><Icon name="close" /></button>
       </div>
-      {v?.d ? <p className="sheet-def">{v.d}</p> : <p className="small muted sheet-def">Not in the word list (no definition). You can still save it with its sentence.</p>}
+      {v?.d && <p className="sheet-def">{v.d}</p>}
+      {v && <Xlate tr={v.tr} ar={v.ar} note={v.trSrc === "wiktionary" ? "Wiktionary · may be another meaning" : undefined} />}
+      {v?.d ? null : <p className="small muted sheet-def">Not in the word list (no definition). You can still save it with its sentence.</p>}
       <p className="small muted sheet-ex"><i>"{pick.sentence}"</i></p>
       <div className="sheet-actions">
         <button className="btn tonal" onClick={() => { stopSpeaking(); speak(v?.w ?? clean, { rate: 0.85 }); }} aria-label={`Listen to the word: ${clean}`}><Icon name="audio" size={18} /> Word</button>

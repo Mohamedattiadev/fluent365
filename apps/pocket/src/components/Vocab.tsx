@@ -11,14 +11,26 @@ import { OptionMark } from "./Exercise";
 import { ActionBar, buzz, Icon, Progress, speak, stopSpeaking, toast } from "./ui";
 import { ping } from "../lib/activity";
 
-export interface CardView { key: string; w: string; d?: string; ex?: string; pos?: string; tr?: string; ar?: string; lvl?: string; source?: string }
+export interface CardView { key: string; w: string; d?: string; ex?: string; pos?: string; tr?: string; ar?: string; trSrc?: string; exTr?: string; exAr?: string; lvl?: string; source?: string }
 
 export function cardView(key: string, mine: MyCard | undefined, c: Content): CardView | null {
   if (mine?.custom) return { key, w: mine.custom.w, d: mine.custom.d, ex: mine.custom.ex, source: mine.custom.source };
   const v = c.vocabById.get(Number(key));
   return v ? viewOf(v) : null;
 }
-export const viewOf = (v: VocabItem): CardView => ({ key: String(v.id), w: v.w, d: v.d, ex: v.ex, pos: v.pos, tr: v.tr, ar: v.ar, lvl: v.lvl });
+export const viewOf = (v: VocabItem): CardView => ({ key: String(v.id), w: v.w, d: v.d, ex: v.ex, pos: v.pos, tr: v.tr, ar: v.ar, trSrc: v.trSrc, exTr: v.exTr, exAr: v.exAr, lvl: v.lvl });
+
+/** Turkish and Arabic lines (both, when known). */
+export function Xlate({ tr, ar, note }: { tr?: string; ar?: string; note?: string }) {
+  if (!tr && !ar) return null;
+  return (
+    <div className="xlate">
+      {tr && <p lang="tr"><span className="xl-tag">TR</span>{tr}</p>}
+      {ar && <p lang="ar"><span className="xl-tag">AR</span><span dir="rtl">{ar}</span></p>}
+      {note && <p className="xl-note">{note}</p>}
+    </div>
+  );
+}
 
 /** Hide the word inside its example so the learner has to recall it. */
 const cloze = (ex: string, w: string) => ex.replace(new RegExp(`\\b${w.split(" ")[0].replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\w*`, "gi"), "_____");
@@ -35,34 +47,35 @@ export function AudioIcon({ text, label = "Listen" }: { text: string; label?: st
 }
 
 export function WordFace({ v, showWord = true }: { v: CardView; showWord?: boolean }) {
-  const lang = useApp((s) => s.settings.explainLang);
-  const own = lang === "tr" ? v.tr : lang === "ar" ? v.ar : undefined;
   return (
     <>
       {showWord && <div className="word">{v.w}</div>}
       {(v.pos || v.lvl) && <p className="small faint" style={{ margin: 0 }}>{[v.pos, v.lvl && `≈ ${v.lvl}`].filter(Boolean).join(" · ")}</p>}
       <hr className="divider" />
       {v.d && <p className="meaning">{v.d}</p>}
-      {own && <p dir={lang === "ar" ? "rtl" : undefined} className="muted">{own}</p>}
-      {!own && !v.d && (v.tr || v.ar) && <p className="muted">{[v.tr && `TR: ${v.tr}`, v.ar && `AR: ${v.ar}`].filter(Boolean).join(" · ")}</p>}
+      {/* Turkish and Arabic, always both (owner's request): if one is unclear, the other helps. */}
+      <Xlate tr={v.tr} ar={v.ar} note={v.trSrc === "wiktionary" ? "Wiktionary · may be another meaning of the word" : undefined} />
       {v.ex && <Example ex={v.ex} w={v.w} />}
+      <Xlate tr={v.exTr} ar={v.exAr} note={v.exTr || v.exAr ? "Sentence: AI translation" : undefined} />
       {v.source && <p className="small faint">From: {v.source}</p>}
     </>
   );
 }
 
-/** Anki-style swipes. Before the answer: tap or swipe to flip. After: right = Good, left = Again.
+/** Anki-style card (owner's choice, 2026-11-17): double-tap flips the card, double-tap again flips it back.
+ *  Swipe right = Good, left = Again, at any time: you do not have to look at the answer first.
  *  The card follows the finger; a short swipe springs back. Buttons keep working the same. */
 export function SwipeCard({ shown, onFlip, onLeft, onRight, children, labels = ["Again", "Good"] }: { shown: boolean; onFlip: () => void; onLeft: () => void; onRight: () => void; children: React.ReactNode; labels?: [string, string] }) {
   const [dx, setDx] = useState(0);
   const [leaving, setLeaving] = useState(0);
   const start = useRef<{ x: number; y: number; id: number; horizontal: boolean | null } | null>(null);
+  const lastTap = useRef(0);
   const width = () => Math.min(window.innerWidth, 720);
   const done = (dir: -1 | 1) => {
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches || document.documentElement.dataset.motion === "reduce";
-    const act = () => { setDx(0); setLeaving(0); if (!shown) onFlip(); else if (dir > 0) onRight(); else onLeft(); };
-    if (shown) buzz(dir > 0 ? 12 : [20, 40, 20]);
-    if (reduce || !shown) return act();
+    const act = () => { setDx(0); setLeaving(0); if (dir > 0) onRight(); else onLeft(); };
+    buzz(dir > 0 ? 12 : [20, 40, 20]);
+    if (reduce) return act();
     setLeaving(dir);
     setTimeout(act, 160);
   };
@@ -86,11 +99,17 @@ export function SwipeCard({ shown, onFlip, onLeft, onRight, children, labels = [
     if (!st) return;
     const mx = e.clientX - st.x, my = e.clientY - st.y;
     if (st.horizontal && Math.abs(mx) > Math.max(80, width() * 0.22)) done(mx > 0 ? 1 : -1);
-    else { setDx(0); if (!st.horizontal && Math.hypot(mx, my) < 8 && !shown) onFlip(); }
+    else {
+      setDx(0);
+      if (!st.horizontal && Math.hypot(mx, my) < 8) {
+        const now = Date.now();
+        if (now - lastTap.current < 400) { lastTap.current = 0; onFlip(); } else lastTap.current = now;
+      }
+    }
   };
   const x = leaving ? leaving * width() * 1.2 : dx;
   const strength = Math.min(1, Math.abs(dx) / 90);
-  const label = !shown ? "Show answer" : dx > 0 ? labels[1] : labels[0];
+  const label = dx > 0 ? labels[1] : labels[0];
   return (
     <div className="swipe-wrap">
       <div
@@ -132,8 +151,8 @@ export function ReviewSession({ c, limit = 60, onDone }: { c: Content; limit?: n
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (!view || (e.target as HTMLElement)?.tagName === "INPUT" || (e.target as HTMLElement)?.tagName === "TEXTAREA") return;
-      if (!shown && e.key === " ") { e.preventDefault(); setShown(true); ping("vocabulary"); }
-      else if (shown && ["1", "2", "3", "4"].includes(e.key)) { e.preventDefault(); void rate(([Rating.Again, Rating.Hard, Rating.Good, Rating.Easy] as Grade[])[Number(e.key) - 1]); }
+      if (e.key === " ") { e.preventDefault(); setShown((x) => !x); ping("vocabulary"); }
+      else if (["1", "2", "3", "4"].includes(e.key)) { e.preventDefault(); void rate(([Rating.Again, Rating.Hard, Rating.Good, Rating.Easy] as Grade[])[Number(e.key) - 1]); }
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
@@ -154,7 +173,7 @@ export function ReviewSession({ c, limit = 60, onDone }: { c: Content; limit?: n
         <span>{i + 1} / {all.length}</span>
         <div className="grow"><Progress value={i / all.length} label={`Card ${i + 1} of ${all.length}`} /></div>
       </div>
-      <SwipeCard key={key} shown={shown} onFlip={() => { setShown(true); ping("vocabulary"); }} onLeft={() => void rate(Rating.Again as Grade)} onRight={() => void rate(Rating.Good as Grade)}>
+      <SwipeCard key={key} shown={shown} onFlip={() => { setShown((x) => !x); ping("vocabulary"); }} onLeft={() => void rate(Rating.Again as Grade)} onRight={() => void rate(Rating.Good as Grade)}>
       <div className={`flash ${shown ? "back" : ""}`} key={`${key}-${shown}`} aria-live="polite">
         {!shown ? (
           recallFromMeaning && view.d ? (
@@ -178,7 +197,7 @@ export function ReviewSession({ c, limit = 60, onDone }: { c: Content; limit?: n
         )}
       </div>
       </SwipeCard>
-      <p className="swipe-hint">{shown ? "Swipe right: Good · left: Again" : "Tap the card to see the answer"}</p>
+      <p className="swipe-hint">Double-tap to flip · swipe right: Good · left: Again</p>
       <ActionBar>
         {!shown ? (
           <button className="btn big primary" onClick={() => { setShown(true); ping("vocabulary"); }} autoFocus>Show answer</button>
@@ -295,9 +314,9 @@ export function IntroCards({ items, onDone, title }: { items: CardView[]; onDone
     const onKey = (e: KeyboardEvent) => {
       const t = (e.target as HTMLElement)?.tagName;
       if (!v || t === "INPUT" || t === "TEXTAREA") return;
-      if (!shown && (e.key === " " || e.key === "Enter")) { e.preventDefault(); flip(); }
-      else if (shown && (e.key === "1" || e.key === "ArrowLeft")) { e.preventDefault(); again(); }
-      else if (shown && (e.key === "3" || e.key === "ArrowRight" || e.key === " ")) { e.preventDefault(); gotIt(); }
+      if (e.key === " " || e.key === "Enter") { e.preventDefault(); flip(); }
+      else if (e.key === "1" || e.key === "ArrowLeft") { e.preventDefault(); again(); }
+      else if (e.key === "3" || e.key === "ArrowRight") { e.preventDefault(); gotIt(); }
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
@@ -305,7 +324,7 @@ export function IntroCards({ items, onDone, title }: { items: CardView[]; onDone
   const finished = !v;
   useEffect(() => { if (finished) onDone(); }, [finished]); // eslint-disable-line react-hooks/exhaustive-deps
   if (!v) return null;
-  function flip() { setShown(true); ping("vocabulary"); }
+  function flip() { setShown((x) => !x); ping("vocabulary"); }
   function gotIt() { setSeen(new Set(seen).add(idx)); setShown(false); setPos(pos + 1); ping("vocabulary"); }
   function again() { setQueue([...queue, idx]); setShown(false); setPos(pos + 1); ping("vocabulary"); }
   return (
@@ -333,7 +352,7 @@ export function IntroCards({ items, onDone, title }: { items: CardView[]; onDone
           )}
         </div>
       </SwipeCard>
-      <p className="swipe-hint">{shown ? "Swipe right: Got it · left: Again" : "Tap the card to see the meaning"}</p>
+      <p className="swipe-hint">Double-tap to flip · swipe right: Got it · left: Again</p>
       <ActionBar>
         {!shown ? (
           <button className="btn big primary" onClick={flip}>Show meaning</button>

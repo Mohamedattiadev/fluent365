@@ -924,3 +924,11 @@ kbd { display: inline-block; min-width: 1.6em; padding: 1px 6px; border: 1px sol
 /* Word being spoken (estimated until the new voices give exact word times). */
 .fp-text p.now .fw.cur-w { background: var(--accent); color: var(--on-accent); border-radius: 4px; box-shadow: 0 0 0 2px var(--accent); }
 .lyrics-line.now .cur-w { background: var(--on-accent); color: var(--accent); border-radius: 4px; box-shadow: 0 0 0 2px var(--on-accent); }
+/* Turkish + Arabic under the English meaning (owner's request). */
+.xlate { margin: 4px 0 8px; display: grid; gap: 2px; }
+.xlate p { margin: 0; color: var(--md-on-surface-variant); font-size: var(--fs-sm); line-height: 1.5; }
+.xlate p[lang="ar"] { font-size: var(--fs-md); }
+.xl-tag { display: inline-block; min-width: 26px; margin-right: 8px; padding: 0 4px; border-radius: 4px; background: var(--md-surface-container-high); color: var(--md-on-surface-variant); font-size: .7rem; font-weight: 600; text-align: center; vertical-align: 1px; }
+.flash .xlate { justify-items: center; }
+.today-words { width: 100%; min-height: 48px; margin: 0 0 16px; border-radius: var(--r-md); }
+.xl-note { font-size: .7rem !important; opacity: .75; }

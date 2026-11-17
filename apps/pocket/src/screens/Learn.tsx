@@ -2,14 +2,15 @@
 import { useMemo, useState } from "react";
 import { GrammarLesson, GrammarReview } from "../components/Grammar";
 import { FixMistakes } from "../components/Skills";
-import { cardView, NewWords, ReviewSession, WordFace, viewOf } from "../components/Vocab";
-import { Icon, SpeakButton, toast } from "../components/ui";
+import { cardView, IntroCards, NewWords, ReviewSession, WordFace, viewOf } from "../components/Vocab";
+import { ActionBar, Icon, SpeakButton, toast } from "../components/ui";
 import type { Content } from "../lib/content";
 import { addCards, dueCardKeys, markKnown } from "../lib/learning";
 import { pickNewWords } from "../lib/session";
 import { interval, statusOf } from "../lib/srs";
-import { getState, useApp } from "../lib/store";
+import { getState, today, useApp } from "../lib/store";
 import { navigate } from "../router";
+import type { MyCard } from "../lib/types";
 
 export const Back = ({ to, label = "Back" }: { to: string; label?: string }) => (
   <button className="btn quiet back" onClick={() => navigate(to)}><Icon name="back" size={20} /> {label}</button>
@@ -22,6 +23,7 @@ export function LearnScreen({ c, path }: { c: Content; path: string[] }) {
   const [tab = "words", sub, arg] = path;
   // Inner pages (a review, a grammar topic) replace the tabs and have a Back button.
   if (tab === "words" && sub === "review") return <div><Back to="/learn/words" /><ReviewSession c={c} limit={200} onDone={() => navigate("/learn/words")} /></div>;
+  if (tab === "words" && sub === "today") return <div><Back to="/learn/words" /><TodaysWords c={c} /></div>;
   if (tab === "words" && sub === "new") {
     const ids = arg?.split(",").map(Number).filter(Boolean) ?? [];
     return <div><Back to="/learn/words" /><NewWords c={c} ids={ids} onDone={() => navigate("/learn/words")} /></div>;
@@ -107,6 +109,7 @@ function WordsTab({ c }: { c: Content }) {
     known: "Words you marked as already known. They are never shown as new words.",
     hard: "Words you forgot at least once or found hard. They come back more often.",
   };
+  const todayCount = todaysWordKeys(cards).length;
   const learnNew = () => {
     const ids = pickNewWords(getState(), c, Math.min(10, newWords));
     if (!ids.length) toast("No new words left at your level");
@@ -119,6 +122,7 @@ function WordsTab({ c }: { c: Content }) {
         {due > 0 ? <button className="btn big primary" onClick={() => navigate("/learn/words/review")}>Review {due} {due === 1 ? "word" : "words"}</button>
           : <p className="muted" style={{ margin: 0 }}>No words due right now.</p>}
         <button className="btn quiet" onClick={learnNew}><Icon name="arrow" size={18} /> Learn new words</button>
+        {todayCount > 0 && <button className="btn quiet" onClick={() => navigate("/learn/words/today")}><Icon name="again" size={18} /> Today's {todayCount} words again</button>}
       </div>
       <label className="field search"><span className="sr-only">Search all words</span><input type="search" value={q} onChange={(e) => { setQ(e.target.value); setOpen(null); }} placeholder={`Search ${c.vocab.length.toLocaleString()} words`} /></label>
       {!needle && (
@@ -213,5 +217,35 @@ function MistakeList() {
         ))}
       </ul>
     </div>
+  );
+}
+
+/** Words added today (new words learned, words saved while reading). */
+export const todaysWordKeys = (cards: Record<string, MyCard>) => Object.entries(cards).filter(([, m]) => m.added === today()).map(([k]) => k);
+
+/** Look at today's words again as flip cards, as often as you like during the day. Practice only:
+ *  it does not change when the words come back in your reviews (like Anki's custom study). */
+function TodaysWords({ c }: { c: Content }) {
+  const cards = useApp((s) => s.cards);
+  const [round, setRound] = useState(0);
+  const items = useMemo(() => todaysWordKeys(getState().cards).map((k) => cardView(k, getState().cards[k], c)).filter((v): v is NonNullable<typeof v> => !!v).sort(() => Math.random() - 0.5), [c, round]); // eslint-disable-line react-hooks/exhaustive-deps
+  const [done, setDone] = useState(false);
+  void cards;
+  if (!items.length) return <><h1>Today's words</h1><p className="muted">No words added today yet. Learn new words or save some while reading.</p></>;
+  if (done) return (
+    <>
+      <h1>Today's words</h1>
+      <p>You went through all {items.length} words.</p>
+      <ActionBar>
+        <button className="btn big primary" onClick={() => { setDone(false); setRound(round + 1); }}><Icon name="again" /> Once more</button>
+        <button className="btn quiet" style={{ width: "100%" }} onClick={() => navigate("/learn/words")}>Done</button>
+      </ActionBar>
+    </>
+  );
+  return (
+    <>
+      <p className="small muted" style={{ margin: "0 0 8px" }}>Practice only: your review schedule does not change.</p>
+      <IntroCards key={round} items={items} title={`Today's words · ${items.length}`} onDone={() => setDone(true)} />
+    </>
   );
 }
