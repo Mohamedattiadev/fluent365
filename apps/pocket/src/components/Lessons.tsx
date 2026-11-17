@@ -8,7 +8,7 @@ import type { Course, Lesson, TtsRecording, Unit } from "../lib/types";
 import { ExerciseRunner, GrammarLesson } from "./Grammar";
 import { blockToExercise, InputTask, Passage, SpeakingTask, WritingTask } from "./Skills";
 import { ActionBar, Icon, Loading } from "./ui";
-import { IntroCards, type CardView } from "./Vocab";
+import { IntroCards, MoreWords, NewWords, type CardView } from "./Vocab";
 
 export function markLessonStep(lesson: number, step: number, total: number) {
   update((s) => {
@@ -57,13 +57,26 @@ export function LessonStepView({ c, lesson: n, step, onDone }: { c: Content; les
 
 function LessonWords({ c, lesson, title, intro, words, practice, onDone }: { c: Content; lesson: Lesson; title: string; intro?: string; words: Lesson["steps"][number] extends infer S ? S extends { kind: "words"; words: infer W } ? W : never : never; practice: import("../lib/types").Block[]; onDone: () => void }) {
   const lang = useApp((s) => s.settings.explainLang);
-  const [stage, setStage] = useState<"learn" | "practice">("learn");
+  const [stage, setStage] = useState<"learn" | "practice" | "added">("learn");
+  const [more, setMore] = useState<number[] | null>(null);
   const items = practice.map((b) => blockToExercise(b, lang)).filter((x): x is NonNullable<typeof x> => !!x).map((ex) => ({ ex }));
   const done = () => {
     const keys = words.map((w) => c.vocab.find((v) => v.w.toLowerCase() === w.en.toLowerCase())).filter((v): v is NonNullable<typeof v> => !!v).map((v) => String(v.id));
     addCards(keys);
-    onDone();
+    setStage("added");
   };
+  if (more) return <NewWords c={c} ids={more} onDone={onDone} />;
+  if (stage === "added")
+    return (
+      <div className="center">
+        <h2>{words.length} lesson words added</h2>
+        <p className="muted">They will come back in your reviews. Want more today? Add 10 common words at your level.</p>
+        <ActionBar>
+          <button className="btn big primary" onClick={onDone}>Continue <Icon name="arrow" /></button>
+          <MoreWords c={c} onPick={setMore} />
+        </ActionBar>
+      </div>
+    );
   if (stage === "learn") {
     const cards: CardView[] = words.map((w) => {
       const v = c.vocab.find((x) => x.w.toLowerCase() === w.en.toLowerCase());

@@ -70,7 +70,7 @@ export function newWordLimit(s: AppState, due: number, minutes: number) {
   const acc = recentAccuracy();
   if (acc !== null && acc < 0.8) n = Math.round(n * 0.6);
   if (minutes <= 30) n = Math.min(n, 5);
-  return Math.max(0, Math.min(20, n));
+  return Math.max(0, Math.min(30, n));
 }
 
 /** Frequency-ordered new words, skipping what the learner already has or knows; ~40% chunks. */

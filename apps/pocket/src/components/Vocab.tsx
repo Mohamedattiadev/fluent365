@@ -2,12 +2,13 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { Content } from "../lib/content";
 import { addCards, dueCardKeys, reviewWord } from "../lib/learning";
+import { pickNewWords } from "../lib/session";
 import { preview, Rating, type Grade } from "../lib/srs";
 import { getState, useApp } from "../lib/store";
 import { shuffle } from "../lib/text";
 import type { MyCard, VocabItem } from "../lib/types";
 import { OptionMark } from "./Exercise";
-import { ActionBar, buzz, Icon, Progress, speak, stopSpeaking } from "./ui";
+import { ActionBar, buzz, Icon, Progress, speak, stopSpeaking, toast } from "./ui";
 import { ping } from "../lib/activity";
 
 export interface CardView { key: string; w: string; d?: string; ex?: string; pos?: string; tr?: string; ar?: string; lvl?: string; source?: string }
@@ -199,7 +200,9 @@ export function ReviewSession({ c, limit = 60, onDone }: { c: Content; limit?: n
 
 /** Introduce new words: see it → hear it → quick meaning check (recall) → card added. */
 export function NewWords({ c, ids, onDone }: { c: Content; ids: number[]; onDone: () => void }) {
-  const items = useMemo(() => ids.map((id) => c.vocabById.get(id)).filter((v): v is VocabItem => !!v), [ids, c]);
+  const [list, setList] = useState(ids);
+  const [added, setAdded] = useState(0);
+  const items = useMemo(() => list.map((id) => c.vocabById.get(id)).filter((v): v is VocabItem => !!v), [list, c]);
   const [i, setI] = useState(0);
   const [phase, setPhase] = useState<"see" | "check">("see");
   const [pick, setPick] = useState<number | null>(null);
@@ -213,15 +216,19 @@ export function NewWords({ c, ids, onDone }: { c: Content; ids: number[]; onDone
   if (!v) {
     return (
       <div className="center">
-        <h2>{items.length} new words added</h2>
+        <h2>{added} new {added === 1 ? "word" : "words"} added</h2>
         <p className="muted">They will come back in your reviews — first in a few minutes, then after longer and longer gaps.</p>
-        <ActionBar><button className="btn big primary" onClick={onDone}>Continue <Icon name="arrow" /></button></ActionBar>
+        <ActionBar>
+          <button className="btn big primary" onClick={onDone}>Continue <Icon name="arrow" /></button>
+          <MoreWords c={c} onPick={(more) => { setList(more); setI(0); }} />
+        </ActionBar>
       </div>
     );
   }
 
   const next = () => {
     addCards([String(v.id)]);
+    setAdded(added + 1);
     setPick(null);
     setPhase("see");
     setI(i + 1);
@@ -338,5 +345,15 @@ export function IntroCards({ items, onDone, title }: { items: CardView[]; onDone
         )}
       </ActionBar>
     </div>
+  );
+}
+
+/** Optional extra: 10 more frequency words at your level (the plan's daily amount is already done). */
+export function MoreWords({ c, onPick }: { c: Content; onPick: (ids: number[]) => void }) {
+  return (
+    <button className="btn quiet" style={{ width: "100%" }} onClick={() => {
+      const ids = pickNewWords(getState(), c, 10);
+      if (ids.length) onPick(ids); else toast("No new words left at your level");
+    }}>Learn 10 more <span className="muted small">· optional, from the frequency list</span></button>
   );
 }
