@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { InstallCard } from "./components/Install";
-import { Icon, Loading, Toaster } from "./components/ui";
+import { Icon, Toaster } from "./components/ui";
 import { startTracking } from "./lib/activity";
 import { loadAll, type Content } from "./lib/content";
 import * as db from "./lib/db";
@@ -72,6 +72,11 @@ export function App() {
     r.dataset.accent = settings.accent ?? "violet";
     r.dataset.comfortable = String(settings.comfortable);
     r.dataset.motion = settings.reduceMotion ? "reduce" : "";
+    // Phone status bar and navigation bar follow the app's light/dark choice, not only the device setting.
+    const dark = settings.theme === "dark" || (settings.theme !== "light" && window.matchMedia?.("(prefers-color-scheme: dark)").matches);
+    document.querySelectorAll('meta[name="theme-color"]').forEach((m) => { m.removeAttribute("media"); m.setAttribute("content", dark ? "#131313" : "#F9F9F9"); });
+    // Remembered only so the opening screen (index.html) already uses your theme; not learner data.
+    try { localStorage.setItem("f365-look", JSON.stringify({ theme: settings.theme, accent: settings.accent ?? "violet" })); } catch { /* storage blocked */ }
   }, [settings]);
 
   if (error)
@@ -82,7 +87,7 @@ export function App() {
         <button className="btn primary" onClick={() => location.reload()}>Try again</button>
       </main>
     );
-  if (!ready || !content) return <main className="main"><Loading what="Opening Fluent365…" /></main>;
+  if (!ready || !content) return <Splash />;
   if (!settings.setupDone) return <Setup />;
 
   const [, section = "", ...rest] = route.split("/");
@@ -104,7 +109,7 @@ export function App() {
   return (
     <div className={`app ${focus ? "focus-mode" : ""}`}>
       <header className="topnav nav" aria-label="Main">
-        <a href="#/" className="brand"><svg className="logo" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g transform="translate(256 256) scale(1.18) translate(-292 -241)"><path d="M360.1 248.1A132 132 0 1 1 294.0 163.5" fill="none" stroke="currentColor" strokeWidth="44" strokeLinecap="round"/><g fill="var(--accent)" transform="translate(377.6 209.0) rotate(38)"><path d="M0 0L-20 -46H20Z"/><rect x="-20" y="-150" width="40" height="96" rx="6"/><rect x="-20" y="-186" width="40" height="28" rx="10"/></g></g></svg> Fluent365</a>
+        <a href="#/" className="brand"><svg className="logo" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g transform="translate(256 256) scale(1.12) translate(-256 -256)"><path d="M324.1 207.7A132 132 0 1 1 221.4 164.1" fill="none" stroke="currentColor" strokeWidth="54" strokeLinecap="round"/><g fill="var(--accent)" transform="translate(324.1 207.7) rotate(38)"><path d="M0 -4 L-23.0 -50.6 H23.0 Z"/><rect x="-23.0" y="-150.6" width="46" height="102" rx="11.5"/></g></g></svg> Fluent365</a>
         <nav className="links" aria-label="Sections">
           {NAV.map((n) => <a key={n.to} className="link" href={`#${n.to}`} aria-current={current === n.to ? "page" : undefined}><Icon name={n.icon} size={20} filled={current === n.to} />{n.label}</a>)}
         </nav>
@@ -122,4 +127,9 @@ export function App() {
       <Toaster />
     </div>
   );
+}
+
+/** Same as the opening screen in index.html, so there is no flash while the app loads its data. */
+function Splash() {
+  return <div className="splash" role="status"><img src="./icons/icon.svg" alt="" width={88} height={88} /><span>Fluent365</span><i aria-hidden /><span className="sr-only">Opening Fluent365…</span></div>;
 }

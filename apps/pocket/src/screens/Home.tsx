@@ -124,7 +124,7 @@ export function Home({ c }: { c: Content }) {
             <span className="wotd-word">{word.w}</span>
             {word.pos && <span className="small muted">{word.pos}</span>}
             <span className="grow" />
-            <AudioIcon text={`${word.w}. ${word.ex ?? ""}`} />
+            <AudioIcon text={word.w} label="Listen to the word" />
           </div>
           <p className="wotd-def">{word.d}</p>
           {word.ex && <p className="small muted wotd-ex">“{word.ex}”</p>}

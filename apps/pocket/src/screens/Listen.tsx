@@ -242,14 +242,22 @@ function Transcript({ c, trackKey }: { c: Content; trackKey: string }) {
   }, [trackKey, c]);
   if (!data || data.key !== trackKey || !data.lines.length || !data.starts) return null;
   const book = trackKey.startsWith("book:");
-  const i = book ? sentenceAt(data.starts.map((at) => ({ at })), p.duration ? p.time / p.duration : 0) : lineAt(data.starts, p.time);
-  const show = data.lines.slice(i, i + 2);
+  const st = data.starts;
+  // Where we are: lesson lines have exact start times; book sentences have an estimated share of the chapter.
+  const pos = book ? (p.duration ? p.time / p.duration : 0) : p.time;
+  const i = book ? sentenceAt(st.map((at) => ({ at })), pos) : lineAt(st, pos);
+  const end = st[i + 1] ?? (book ? 1 : p.duration || st[i] + 4);
+  // Inside the line, follow the words evenly (lesson lines end with a short pause, so finish a little early).
+  const span = Math.max(0.001, (end - st[i]) * (book ? 1 : 0.88) - (book ? 0 : 0.3));
+  const frac = Math.min(1, Math.max(0, (pos - st[i]) / span));
+  const words = data.lines[i].text.split(/\s+/);
+  const wi = p.playing || p.time > 0 ? Math.min(words.length - 1, Math.floor(frac * words.length)) : -1;
+  const cur = data.lines[i];
   return (
     <div className="transcript" aria-live="off">
       <p className="overline">{book ? "Book text · place estimated" : "Transcript"}</p>
-      {show.map((l, k) => (
-        <p key={i + k} className={k === 0 ? "now" : "next"}>{l.speaker && <b>{l.speaker}: </b>}{l.text}</p>
-      ))}
+      <p className="now">{cur.speaker && <b>{cur.speaker}: </b>}{words.map((w, k) => <span key={k} className={k === wi ? "cur-w" : undefined}>{w}{k < words.length - 1 ? " " : ""}</span>)}</p>
+      {data.lines.slice(i + 1, i + 3).map((l, k) => <p key={i + 1 + k} className="next">{l.speaker && <b>{l.speaker}: </b>}{l.text}</p>)}
     </div>
   );
 }

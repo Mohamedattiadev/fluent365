@@ -47,7 +47,7 @@ export function Setup() {
     </div>,
   ];
   return (
-    <main className="main" style={{ maxWidth: 640 }}>
+    <main className="main setup" style={{ maxWidth: 640 }}>
       <p className="overline">Step {step + 1} of {screens.length}</p>
       <div>{screens[step]}</div>
       <ActionBar>
