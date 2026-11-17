@@ -675,3 +675,8 @@ pre { font-family: inherit; }
 :root[data-input="pointer"] .play-fab:focus-visible:not(:hover), :root[data-input="pointer"] .np-controls .icon-btn:focus-visible:not(:hover) { outline: none; }
 /* Selected speed: solid accent so it reads at a glance. */
 .np-rate .chip.on { background: var(--accent); color: var(--on-accent); border-color: transparent; font-weight: 600; }
+.transcript { margin-top: 16px; padding: 12px 14px; border-radius: var(--r-md, 12px); background: var(--md-surface-container); text-align: left; }
+.transcript .overline { margin: 0 0 6px; }
+.transcript p { margin: 0; line-height: 1.5; display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; }
+.transcript .now { font-size: var(--fs-md); color: var(--md-on-surface); -webkit-line-clamp: 4; background: var(--accent-soft); color: var(--accent-text); margin: 0 -6px; padding: 4px 6px; border-radius: 8px; }
+.transcript .next { margin-top: 6px; font-size: var(--fs-sm); color: var(--md-on-surface-variant); -webkit-line-clamp: 2; }

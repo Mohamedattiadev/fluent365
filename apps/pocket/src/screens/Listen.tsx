@@ -5,11 +5,12 @@ import { useEffect, useState } from "react";
 import { CourseUnitView, LessonStepView } from "../components/Lessons";
 import { Icon } from "../components/ui";
 import { allItems, bookChapterUrl, cachedSet, mb, siteUrl } from "../lib/audio";
-import { loadCourse, type Content } from "../lib/content";
+import { loadBook, loadCourse, loadLesson, type Content } from "../lib/content";
+import { chapterSentences, lineAt, sentenceAt, type Line } from "../lib/transcript";
 import * as player from "../lib/player";
 import { currentBook } from "../lib/reading";
 import { useApp } from "../lib/store";
-import type { Course } from "../lib/types";
+import type { AudioBlock, Course } from "../lib/types";
 import { navigate } from "../router";
 import { Back } from "./Learn";
 
@@ -60,7 +61,7 @@ export function ListenScreen({ c, path }: { c: Content; path: string[] }) {
   return (
     <div className="listen">
       <h1>Listen</h1>
-      {cur ? <NowPlaying /> : rq[ri] && (
+      {cur ? <NowPlaying c={c} /> : rq[ri] && (
         <button className="resume-card" onClick={() => player.play(rq, ri)}>
           {rq[ri].cover ? <img className="cover" src={rq[ri].cover} alt="" width={56} height={74} /> : <span className="cover cover-blank" style={{ width: 56, height: 74 }}><Icon name="listening" /></span>}
           <span className="grow" style={{ minWidth: 0 }}>
@@ -125,10 +126,10 @@ export function ListenScreen({ c, path }: { c: Content; path: string[] }) {
   );
 }
 
-function BookChapters({ c, id, stored, compact }: { c: Content; id: string; stored: Set<string>; compact?: boolean }) {
+function BookChapters({ c, id, stored }: { c: Content; id: string; stored: Set<string>; compact?: boolean }) {
   const p = player.usePlayer();
   const pos = useApp((s) => s.listening.pos);
-  const [open, setOpen] = useState(!compact);
+  const [open, setOpen] = useState(false);
   const b = c.audio.books[id];
   const info = c.books.find((x) => x.id === id)!;
   const tracks = bookTracks(c, id);
@@ -164,7 +165,7 @@ function BookChapters({ c, id, stored, compact }: { c: Content; id: string; stor
 }
 
 /** The big player on the Listen page. */
-function NowPlaying() {
+function NowPlaying({ c }: { c: Content }) {
   const p = player.usePlayer();
   const t = player.current();
   if (!t) return null;
@@ -191,6 +192,7 @@ function NowPlaying() {
         {[0.8, 0.9, 1, 1.15, 1.3].map((r) => <button key={r} className={`chip ${p.rate === r ? "on" : ""}`} aria-pressed={p.rate === r} onClick={() => player.setRate(r)}>{r}×</button>)}
       </div>
       {p.error && <p className="small" style={{ color: "var(--md-error)", margin: "8px 0 0" }}>{p.error}</p>}
+      <Transcript c={c} trackKey={t.key} />
     </section>
   );
 }
@@ -209,6 +211,45 @@ export function MiniPlayer() {
       <button className="icon-btn" onClick={player.toggle} aria-label={p.playing ? "Pause" : "Play"}><Icon name={p.playing ? "pause" : "play"} filled /></button>
       <button className="icon-btn" onClick={player.stop} aria-label="Stop and close the player"><Icon name="close" /></button>
       <div className="mini-bar" style={{ width: `${p.duration ? (p.time / p.duration) * 100 : 0}%` }} aria-hidden />
+    </div>
+  );
+}
+
+/** Two or three lines of text under the player: the line being spoken (highlighted) and the next one.
+ *  Lesson recordings use exact start times; audiobooks show the book text at an estimated place. */
+function Transcript({ c, trackKey }: { c: Content; trackKey: string }) {
+  const p = player.usePlayer();
+  const [data, setData] = useState<{ key: string; lines: Line[]; starts?: number[] } | null>(null);
+  useEffect(() => {
+    let live = true;
+    const [kind, a, b] = trackKey.split(":");
+    if (kind === "tts" && a.startsWith("lesson-")) {
+      const rec = c.audio.tts[a];
+      void loadLesson(Number(a.slice(7))).then((l) => {
+        let block: AudioBlock | undefined;
+        const walk = (o: unknown): void => { if (block || !o || typeof o !== "object") return; if ((o as AudioBlock).type === "audio" && (o as AudioBlock).lines) { block = o as AudioBlock; return; } Object.values(o).forEach(walk); };
+        walk(l);
+        if (live && block && rec) setData({ key: trackKey, starts: rec.starts, lines: block.lines.map((x) => ({ text: x.text, speaker: block!.speakers[x.speaker]?.name ?? x.speaker })) });
+      }).catch(() => undefined);
+    } else if (kind === "book" && c.audio.books[a]) {
+      void loadBook(a).then((book) => {
+        if (!live) return;
+        const list = chapterSentences(book, c.audio.books[a], Number(b));
+        setData({ key: trackKey, lines: list.map((x) => ({ text: x.text })), starts: list.map((x) => x.at) });
+      }).catch(() => undefined);
+    }
+    return () => { live = false; setData(null); };
+  }, [trackKey, c]);
+  if (!data || data.key !== trackKey || !data.lines.length || !data.starts) return null;
+  const book = trackKey.startsWith("book:");
+  const i = book ? sentenceAt(data.starts.map((at) => ({ at })), p.duration ? p.time / p.duration : 0) : lineAt(data.starts, p.time);
+  const show = data.lines.slice(i, i + 2);
+  return (
+    <div className="transcript" aria-live="off">
+      <p className="overline">{book ? "Book text · place estimated" : "Transcript"}</p>
+      {show.map((l, k) => (
+        <p key={i + k} className={k === 0 ? "now" : "next"}>{l.speaker && <b>{l.speaker}: </b>}{l.text}</p>
+      ))}
     </div>
   );
 }
