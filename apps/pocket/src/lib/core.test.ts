@@ -219,3 +219,34 @@ describe("reading ladder", () => {
     expect(dailyTarget(getState(), books)).toBe(1000);
   });
 });
+
+describe("words in books", () => {
+  const vocab = [
+    { id: 1, w: "hi", r: 900, src: ["ngsl"], d: "hello" },
+    { id: 2, w: "lantern", r: 4000, src: ["ngsl"], d: "a lamp you can carry", lvl: "B2" },
+    { id: 3, w: "study", r: 500, src: ["ngsl"], d: "learn" },
+  ] as unknown as VocabItem[];
+  const c = { vocab } as unknown as Content;
+
+  it("matches endings but never stems short words", async () => {
+    const { lookupWord, wordIndex, cardKeyFor } = await import("./reading");
+    const idx = wordIndex(c);
+    expect(lookupWord(idx, "his")).toBeUndefined();
+    expect(lookupWord(idx, "Lanterns,")?.id).toBe(2);
+    expect(lookupWord(idx, "studied")?.id).toBe(3);
+    expect(cardKeyFor(idx, "Henry,")).toBe("c:henry");
+  });
+
+  it("lists new words ahead, skipping saved, known and easy words, and remembers the book", async () => {
+    const { wordsAhead, savedFromBook, tagBook } = await import("./reading");
+    await replaceState(emptyState());
+    const book = { id: "b", title: "B", author: "A", blocks: [{ type: "p" as const, text: "He lit the lantern. The lantern glowed. Hi there, study hard." }] };
+    const ahead = wordsAhead(book, 0, c, getState());
+    expect(ahead.map((a) => a.v.w)).toEqual(["lantern"]);
+    expect(ahead[0].n).toBe(2);
+    addCards(["2"]);
+    tagBook("2", "b");
+    expect(savedFromBook(getState(), "b")).toEqual(["2"]);
+    expect(wordsAhead(book, 0, c, getState())).toEqual([]);
+  });
+});

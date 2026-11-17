@@ -1,30 +1,18 @@
 // Book reader for the reading ladder: one page (~350 words) at a time, tap a word to look it up
 // in Fluent365's word list and save it to your reviews. Works offline (books are precached).
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import { ping } from "../lib/activity";
 import { loadBook, type Content } from "../lib/content";
 import { addCards } from "../lib/learning";
-import { countWords, pageAt, previousPageStart, readToday, recordPage, setPosition } from "../lib/reading";
-import { useApp } from "../lib/store";
+import { cardKeyFor, cleanWord, countWords, lookupWord, pageAt, previousPageStart, readToday, recordPage, setPosition, tagBook, wordIndex, wordsAhead } from "../lib/reading";
+import { getState, useApp } from "../lib/store";
 import type { Book, BookInfo, VocabItem } from "../lib/types";
 import { ActionBar, Icon, Loading, Progress, speak, stopSpeaking, toast } from "./ui";
 
-/** Find a word in the word list, trying simple English endings (books → book, studied → study). */
-export function lookupWord(index: Map<string, VocabItem>, raw: string): VocabItem | undefined {
-  const w = raw.toLowerCase().replace(/[’]/g, "'").replace(/^[^a-z]+|[^a-z]+$/g, "").replace(/'s$/, "");
-  if (!w) return undefined;
-  const tries = [w];
-  if (w.endsWith("ies")) tries.push(w.slice(0, -3) + "y");
-  if (w.endsWith("es")) tries.push(w.slice(0, -2));
-  if (w.endsWith("s")) tries.push(w.slice(0, -1));
-  if (w.endsWith("ied")) tries.push(w.slice(0, -3) + "y");
-  if (w.endsWith("ed")) tries.push(w.slice(0, -2), w.slice(0, -1), w.slice(0, -3));
-  if (w.endsWith("ing")) tries.push(w.slice(0, -3), w.slice(0, -3) + "e", w.slice(0, -4));
-  if (w.endsWith("ly")) tries.push(w.slice(0, -2));
-  if (w.endsWith("er")) tries.push(w.slice(0, -2), w.slice(0, -1));
-  for (const t of tries) { const v = index.get(t); if (v) return v; }
-  return undefined;
-}
+export { lookupWord };
+
+/** Short book title for tight places ("The Wonderful Wizard of Oz" → "Wonderful Wizard of Oz"). */
+export const shortTitle = (t: string) => t.replace(/^The /, "");
 
 export function Reader({ c, info, target, onDone, actions }: { c: Content; info: BookInfo; target: number; onDone?: () => void; actions?: React.ReactNode }) {
   const [book, setBook] = useState<Book | null>(null);
@@ -34,12 +22,10 @@ export function Reader({ c, info, target, onDone, actions }: { c: Content; info:
   const today = useApp((s) => readToday(s));
   const cards = useApp((s) => s.cards);
   const [pick, setPick] = useState<{ word: string; sentence: string } | null>(null);
-  const index = useMemo(() => {
-    const m = new Map<string, VocabItem>();
-    for (const v of c.vocab) if (!v.w.includes(" ") && !m.has(v.w.toLowerCase())) m.set(v.w.toLowerCase(), v);
-    return m;
-  }, [c]);
-  useEffect(() => { loadBook(info.id).then(setBook).catch(() => setError(true)); }, [info.id]);
+  const index = wordIndex(c);
+  // New words in the pages ahead, worked out once when the reader opens (so the list does not jump while reading).
+  const [ahead, setAhead] = useState<ReturnType<typeof wordsAhead> | null>(null);
+  useEffect(() => { loadBook(info.id).then((b) => { setBook(b); setAhead(wordsAhead(b, Math.min(getState().reading.books[info.id]?.block ?? 0, b.blocks.length), c, getState())); }).catch(() => setError(true)); }, [info.id, c]);
   useEffect(() => () => stopSpeaking(), []);
   if (error) return <p>Could not load this book. Open the app once with internet; after that it works offline.</p>;
   if (!book) return <Loading what="Opening the book…" />;
@@ -50,6 +36,7 @@ export function Reader({ c, info, target, onDone, actions }: { c: Content; info:
   const chapter = [...info.chapters].reverse().find((ch) => ch.start <= start);
   const pageText = book.blocks.slice(page.start, page.end).map((b) => b.text).join(" ");
   const reachedTarget = today >= target;
+  const aheadIds = new Set((ahead ?? []).map((a) => String(a.v.id)));
 
   function next() {
     recordPage(book!, info, page.start, page.end);
@@ -86,14 +73,27 @@ export function Reader({ c, info, target, onDone, actions }: { c: Content; info:
   return (
     <div className="reader">
       <div className="reader-head">
+        {info.cover && <img className="cover" src={`./data/${info.cover}`} alt="" width={22} height={30} />}
         <b className="grow ellipsis">{info.title}</b>
         {actions}
       </div>
       <div className="thin-bar"><Progress value={pos.words / info.words} label={`${Math.round((pos.words / info.words) * 100)}% of ${info.title}${chapter ? `, ${chapter.title}` : ""}`} /></div>
       <p className="small muted reader-meta">{Math.round((pos.words / info.words) * 100)}% of the book · today {today.toLocaleString()} / {target.toLocaleString()} words{reachedTarget ? " · target reached" : ""}{today === 0 ? " · tap a word to look it up" : ""}</p>
+      {ahead && ahead.length > 0 && (
+        <details className="ahead" open={today === 0}>
+          <summary>New words ahead <span className="muted">· {ahead.length}</span></summary>
+          <p className="small muted" style={{ margin: "4px 0 8px" }}>Words you will meet in the next pages. Tap one to see it; underlined in the text.</p>
+          <div className="ahead-chips">{ahead.map((a) => <button key={a.v.id} className={`chip ${cards[String(a.v.id)] ? "on" : ""}`} onClick={() => setPick({ word: a.v.w, sentence: a.sentence })}>{a.v.w}</button>)}</div>
+        </details>
+      )}
       <div className="book-text" onClick={onTap}>
         {book.blocks.slice(page.start, page.end).map((b, i) =>
-          b.type === "h2" ? <h3 key={i}>{b.text}</h3> : <p key={i}>{b.text.split(/(\s+)/).map((t, k) => (/\S/.test(t) ? <span key={k} className="w">{t}</span> : t))}</p>,
+          b.type === "h2" ? <h3 key={i}>{b.text}</h3> : <p key={i}>{b.text.split(/(\s+)/).map((t, k) => {
+            if (!/\S/.test(t)) return t;
+            const key = cardKeyFor(index, t);
+            const cls = cards[key] ? "w saved" : aheadIds.has(key) ? "w ahead-w" : "w";
+            return <span key={k} className={cls}>{t}</span>;
+          })}</p>,
         )}
       </div>
       <div className="row" style={{ marginTop: 8 }}>
@@ -101,7 +101,7 @@ export function Reader({ c, info, target, onDone, actions }: { c: Content; info:
         {start > 0 && <button className="btn quiet" onClick={back}><Icon name="back" /> Previous page</button>}
       </div>
 
-      {pick && <WordSheet c={c} index={index} pick={pick} saved={(k) => !!cards[k]} onClose={() => setPick(null)} />}
+      {pick && <WordSheet c={c} index={index} pick={pick} bookId={info.id} saved={(k) => !!cards[k]} onClose={() => setPick(null)} />}
 
       <ActionBar>
         <button className="btn big primary" onClick={next}>Next page <Icon name="arrow" /></button>
@@ -112,15 +112,16 @@ export function Reader({ c, info, target, onDone, actions }: { c: Content; info:
   );
 }
 
-function WordSheet({ index, pick, saved, onClose }: { c: Content; index: Map<string, VocabItem>; pick: { word: string; sentence: string }; saved: (key: string) => boolean; onClose: () => void }) {
+function WordSheet({ index, pick, bookId, saved, onClose }: { c: Content; index: Map<string, VocabItem>; pick: { word: string; sentence: string }; bookId: string; saved: (key: string) => boolean; onClose: () => void }) {
   const v = lookupWord(index, pick.word);
   const clean = pick.word.replace(/^[^\p{L}]+|[^\p{L}]+$/gu, "");
-  const customKey = `c:${clean.toLowerCase()}`;
+  const customKey = `c:${cleanWord(pick.word)}`;
   const key = v ? String(v.id) : customKey;
   const isSaved = saved(key);
   function save() {
     if (v) addCards([key]);
     else addCards([customKey], { [customKey]: { w: clean.toLowerCase(), ex: pick.sentence, source: "Saved while reading" } });
+    tagBook(key, bookId);
     toast(`"${v?.w ?? clean}" added to your reviews`);
     onClose();
   }
@@ -136,7 +137,7 @@ function WordSheet({ index, pick, saved, onClose }: { c: Content; index: Map<str
       </div>
       {v?.d ? <p style={{ margin: "8px 0" }}>{v.d}</p> : <p className="small muted" style={{ margin: "8px 0" }}>This word is not in Fluent365's word list, so there is no definition here. You can still save it with this sentence.</p>}
       <p className="small muted" style={{ margin: "0 0 12px" }}><i>"{pick.sentence}"</i></p>
-      {isSaved ? <p className="status"><Icon name="check" size={18} /> Already in your reviews</p> : <button className="btn primary" onClick={save}>Add to my words</button>}
+      {isSaved ? <p className="status"><Icon name="check" size={18} /> In your words · shown in colour in every book</p> : <button className="btn primary" onClick={save}>Add to my words</button>}
     </div>
   );
 }

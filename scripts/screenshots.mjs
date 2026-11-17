@@ -46,6 +46,11 @@ async function seed(page, extra = {}) {
     const later = (d) => new Date(Date.now() + d * 86400000).toISOString();
     for (const [i, v] of vocab.items.filter((x) => x.d && x.r > 300 && x.r < 700 && !x.w.includes(" ")).slice(0, 9).entries())
       cards[String(v.id)] = { card: { dueAt: later(5 + i * 3), stability: i < 6 ? 25 + i * 4 : 6, difficulty: i === 8 ? 8 : 4, state: 2, reps: 6, lapses: i === 8 ? 2 : 0, lastReviewAt: past }, added: today };
+    // Two words saved while reading Oz, so the reader shows them in colour.
+    for (const w of ["farmer", "wagon", "cyclone"]) {
+      const v = vocab.items.find((x) => x.w === w);
+      if (v) cards[String(v.id)] = { card: { dueAt: later(2), stability: 3, difficulty: 5, state: 2, reps: 2, lapses: 0, lastReviewAt: past }, added: today, book: "wizard-of-oz" };
+    }
     const settings = { name: "", level: "B1", goal: "ielts-gt", target: 7.5, minutes: 60, explainLang: "en", textSize: "m", highContrast: false, theme: "system", reduceMotion: true, comfortable: false, newWords: 15, setupDone: true, startDate: key(new Date(now.getTime() - 40 * 86400000)), ...extra };
     const mistakes = [
       { id: "m1", at: past, kind: "grammar", prompt: "I ___ in Cairo since 2015.", given: "lived", expected: "have lived", why: "since + a point in time: present perfect.", fixed: false },
@@ -119,7 +124,7 @@ try {
       }
     }
 
-    for (const [route, name] of [["/learn/words", "07-learn-words"], ["/learn/grammar", "08-learn-grammar"], ["/read", "09-read"], ["/listen", "10-listen"], ["/settings", "13-settings"]]) {
+    for (const [route, name] of [["/learn/words", "07-learn-words"], ["/learn/grammar", "08-learn-grammar"], ["/read", "09-read"], ["/read/words/wizard-of-oz", "09b-book-words"], ["/read/books", "09c-books"], ["/listen", "10-listen"], ["/settings", "13-settings"]]) {
       await page.goto(`${BASE}#${route}`);
       await page.waitForTimeout(500);
       await shot(page, `${tag}-${name}`);

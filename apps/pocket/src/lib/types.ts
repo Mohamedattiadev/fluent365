@@ -81,7 +81,7 @@ export interface IeltsContent { part1: { id: string; name: string; questions: st
 
 // ---------- Books (reading ladder) ----------
 export interface BookChapter { title: string; start: number; startWord: number }
-export interface BookInfo { id: string; title: string; author: string; level: string; year: number; words: number; blocks: number; chapters: BookChapter[]; note?: string; gutenberg?: number }
+export interface BookInfo { id: string; title: string; author: string; level: string; year: number; words: number; blocks: number; chapters: BookChapter[]; note?: string; gutenberg?: number; cover?: string }
 export interface Book { id: string; title: string; author: string; blocks: { type: "h2" | "p"; text: string }[] }
 export interface ReadingState { current?: string; books: Record<string, { block: number; max?: number; words: number; finished?: string }>; log: Record<string, number> }
 
@@ -117,7 +117,7 @@ export interface StoredCard {
   [k: string]: unknown;
 }
 
-export interface MyCard { card: StoredCard; added: string; custom?: { w: string; d?: string; ex?: string; source: string } }
+export interface MyCard { card: StoredCard; added: string; custom?: { w: string; d?: string; ex?: string; source: string }; /** Book id when the word was saved while reading. */ book?: string }
 
 export interface Mastery {
   rec: number; // recognition 0..1

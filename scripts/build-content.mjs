@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Builds the public learning content in content/ into compact JSON files the app loads
 // (apps/pocket/public/data). Pure Node, no dependencies. Run: pnpm content
-import { readFileSync, writeFileSync, mkdirSync, readdirSync, existsSync, rmSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, readdirSync, existsSync, rmSync, copyFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -173,6 +173,13 @@ const books = ladder.books.map((meta) => {
   });
   return { ...meta, title: book.title, author: book.author, words, blocks: blocks.length, chapters };
 });
+// Covers (from the owner's Bo-ok project; sources in docs/CONTENT_LICENSING.md).
+mkdirSync(join(out, "books", "covers"), { recursive: true });
+for (const meta of ladder.books) {
+  const src = join(root, "content", "books", "covers", `${meta.id}.jpg`);
+  if (existsSync(src)) { copyFileSync(src, join(out, "books", "covers", `${meta.id}.jpg`)); meta.cover = `books/covers/${meta.id}.jpg`; }
+}
+for (const b of books) b.cover = ladder.books.find((m) => m.id === b.id)?.cover;
 write("books.json", { about: ladder.about, books });
 counts.books = books.length;
 counts.bookWords = books.reduce((n, b) => n + b.words, 0);
