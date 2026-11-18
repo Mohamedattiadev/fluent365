@@ -12,7 +12,7 @@ import { cardKeyFor, cleanWord, countWords, lookupWord, pageAt, previousPageStar
 import { getState, useApp } from "../lib/store";
 import type { Book, BookInfo, VocabItem } from "../lib/types";
 import { bookTracks } from "../screens/Listen";
-import { Xlate } from "./Vocab";
+import { Xlate, xlateNote } from "./Vocab";
 import { ActionBar, Icon, Loading, Progress, speak, stopSpeaking, toast } from "./ui";
 
 export { lookupWord };
@@ -206,7 +206,7 @@ export function WordSheet({ index, pick, bookId, saved, onClose }: { c: Content;
         <button className="icon-btn" onClick={onClose} aria-label="Close"><Icon name="close" /></button>
       </div>
       {v?.d && <p className="sheet-def">{v.d}</p>}
-      {v && <Xlate tr={v.tr} ar={v.ar} note={v.trSrc === "wiktionary" ? "Wiktionary · may be another meaning" : undefined} />}
+      {v && <Xlate tr={v.tr} ar={v.ar} note={xlateNote(v.trSrc, "")} />}
       {v?.d ? null : <p className="small muted sheet-def">Not in the word list (no definition). You can still save it with its sentence.</p>}
       <p className="small muted sheet-ex"><i>"{pick.sentence}"</i></p>
       <div className="sheet-actions">

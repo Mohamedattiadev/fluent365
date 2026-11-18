@@ -5,7 +5,7 @@ import { beforeEach, describe, expect, it } from "vitest";
 import type { Content } from "./content";
 import { addCards, dueCardKeys, recordAttempt, reviewWord } from "./learning";
 import { ankiExport, ankiImport, checkBackup, makeBackup, parseLearningText } from "./portability";
-import { buildSession, countsTowardTime, dailyMinutes, newWordLimit } from "./session";
+import { buildSession, countsTowardTime, dailyMinutes, newWordLimit, pickNewWords } from "./session";
 import { Rating, schedule, type Grade } from "./srs";
 import { emptyState, flush, getState, loadState, replaceState } from "./store";
 import { diffWords, matches, normalize } from "./text";
@@ -279,5 +279,23 @@ describe("words in books", () => {
     tagBook("2", "b");
     expect(savedFromBook(getState(), "b")).toEqual(["2"]);
     expect(wordsAhead(book, 0, c, getState())).toEqual([]);
+  });
+});
+
+describe("everyday phrases and idioms", () => {
+  const c = content();
+  it("about 500 phrases with meaning, example and labelled TR/AR", () => {
+    const p = c.vocab.filter((v) => v.src.includes("phrase"));
+    expect(p.length).toBeGreaterThanOrEqual(480);
+    expect(p.every((v) => v.d && v.ex && v.tr && v.ar && v.trSrc === "ai" && v.exTr && v.exAr && v.w.includes(" "))).toBe(true);
+  });
+  it("new chunks come in turn from phrases, phrasal verbs and collocations; easy phrases skipped at C1", () => {
+    const s = { ...emptyState(), settings: { ...emptyState().settings, level: "B1" as const } };
+    const ids = pickNewWords(s, c, 15);
+    expect(new Set(ids).size).toBe(ids.length);
+    const srcs = ids.map((id) => c.vocabById.get(id)!.src);
+    for (const k of ["phrase", "phrasal", "collocation"]) expect(srcs.some((x) => x.includes(k))).toBe(true);
+    const c1 = pickNewWords({ ...s, settings: { ...s.settings, level: "C1" } }, c, 30).map((id) => c.vocabById.get(id)!);
+    expect(c1.filter((v) => v.src.includes("phrase")).every((v) => v.lvl !== "A2")).toBe(true);
   });
 });

@@ -21,6 +21,10 @@ export function cardView(key: string, mine: MyCard | undefined, c: Content): Car
 export const viewOf = (v: VocabItem): CardView => ({ key: String(v.id), w: v.w, d: v.d, ex: v.ex, pos: v.pos, tr: v.tr, ar: v.ar, trSrc: v.trSrc, exTr: v.exTr, exAr: v.exAr, lvl: v.lvl });
 
 /** Turkish and Arabic lines (both, when known). */
+/** Where a TR/AR meaning comes from, for the small note under it. */
+export const xlateNote = (trSrc?: string, word = "of the word") =>
+  trSrc === "wiktionary" ? `Wiktionary · may be another meaning ${word}`.trim() : trSrc === "ai" ? "AI translation · may contain mistakes" : undefined;
+
 export function Xlate({ tr, ar, note }: { tr?: string; ar?: string; note?: string }) {
   if (!tr && !ar) return null;
   return (
@@ -54,7 +58,7 @@ export function WordFace({ v, showWord = true }: { v: CardView; showWord?: boole
       <hr className="divider" />
       {v.d && <p className="meaning">{v.d}</p>}
       {/* Turkish and Arabic, always both (owner's request): if one is unclear, the other helps. */}
-      <Xlate tr={v.tr} ar={v.ar} note={v.trSrc === "wiktionary" ? "Wiktionary · may be another meaning of the word" : undefined} />
+      <Xlate tr={v.tr} ar={v.ar} note={xlateNote(v.trSrc)} />
       {v.ex && <Example ex={v.ex} w={v.w} />}
       <Xlate tr={v.exTr} ar={v.exAr} note={v.exTr || v.exAr ? "Sentence: AI translation" : undefined} />
       {v.source && <p className="small faint">From: {v.source}</p>}

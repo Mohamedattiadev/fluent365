@@ -86,15 +86,27 @@ export function newWordLimit(s: AppState, due: number, minutes: number) {
   return Math.max(0, Math.min(30, n));
 }
 
-/** Frequency-ordered new words, skipping what the learner already has or knows; ~40% chunks. */
+/** Chunk sources: everyday phrases and idioms, phrasal verbs, collocations (design rule 5: chunks). */
+export const CHUNK_SOURCES = ["phrase", "phrasal", "collocation"] as const;
+const LEVEL_ORDER = ["A2", "B1", "B2", "C1"];
+
+/** Frequency-ordered new words, skipping what the learner already has or knows; ~40% chunks,
+ *  taken in turn from phrases, phrasal verbs and collocations (each list in its own order). */
 export function pickNewWords(s: AppState, c: Content, n: number) {
   if (n <= 0) return [];
   const startRank = ({ A2: 300, B1: 800, B2: 1800, C1: 2800 } as const)[s.settings.level] ?? 800;
   const free = (id: number) => !s.cards[String(id)] && !s.known[String(id)];
-  const chunks = c.vocab.filter((v) => (v.src.includes("phrasal") || v.src.includes("collocation")) && free(v.id));
-  const words = c.vocab.filter((v) => v.r >= startRank && !v.src.every((x) => x === "phrasal" || x === "collocation" || x === "lesson") && free(v.id) && v.d);
-  const nChunks = Math.min(chunks.length, Math.round(n * 0.4));
-  return [...words.slice(0, n - nChunks), ...chunks.slice(0, nChunks)].map((v) => v.id);
+  // Phrases two levels below yours are skipped (a C1 learner knows "good morning").
+  const tooEasy = (v: Content["vocab"][number]) => v.src.includes("phrase") && LEVEL_ORDER.indexOf(v.lvl ?? "B1") < LEVEL_ORDER.indexOf(s.settings.level) - 1;
+  const queues = CHUNK_SOURCES.map((src) => c.vocab.filter((v) => v.src.includes(src) && free(v.id) && !tooEasy(v)));
+  const isChunk = (x: string) => (CHUNK_SOURCES as readonly string[]).includes(x) || x === "lesson";
+  const words = c.vocab.filter((v) => v.r >= startRank && !v.src.every(isChunk) && free(v.id) && v.d);
+  const want = Math.round(n * 0.4);
+  const chunks: number[] = [];
+  const seen = new Set<number>(words.slice(0, n).map((v) => v.id));
+  for (let i = 0; chunks.length < want && queues.some((q) => i < q.length); i++)
+    for (const q of queues) if (q[i] && !seen.has(q[i].id) && chunks.length < want) { seen.add(q[i].id); chunks.push(q[i].id); }
+  return [...words.slice(0, n - chunks.length).map((v) => v.id), ...chunks];
 }
 
 export function buildSession(c: Content, s: AppState = getState(), minutes: 30 | 60 | 90 = s.settings.minutes): DaySession {

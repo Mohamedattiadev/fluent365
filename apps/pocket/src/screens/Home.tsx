@@ -1,7 +1,7 @@
 // Today: a ring that fills as you study, the Study now button, this week's days, a word of the day,
 // and one small progress line. Black and white; it moves (count-ups, ring fill) unless motion is reduced.
 import { useEffect, useMemo, useState } from "react";
-import { AudioIcon, Xlate } from "../components/Vocab";
+import { AudioIcon, Xlate, xlateNote } from "../components/Vocab";
 import { ActionBar, CountUp, Icon, toast } from "../components/ui";
 import type { Content } from "../lib/content";
 import { addCards, dueCardKeys } from "../lib/learning";
@@ -149,7 +149,7 @@ export function TodayExtras({ c }: { c: Content }) {
             <AudioIcon text={word.w} label="Listen to the word" />
           </div>
           <p className="wotd-def">{word.d}</p>
-          <Xlate tr={word.tr} ar={word.ar} note={word.trSrc === "wiktionary" ? "Wiktionary · may be another meaning" : undefined} />
+          <Xlate tr={word.tr} ar={word.ar} note={xlateNote(word.trSrc, "")} />
           {word.ex && <p className="small muted wotd-ex">“{word.ex}”</p>}
           {inReviews ? <p className="small muted" style={{ margin: 0 }}><Icon name="check" size={16} /> In your reviews</p>
             : <button className="btn quiet" onClick={() => { addCards([String(word.id)]); toast(`"${word.w}" added to your reviews`); }}>Add to my reviews</button>}
