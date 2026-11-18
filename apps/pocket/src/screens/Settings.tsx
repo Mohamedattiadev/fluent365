@@ -386,7 +386,7 @@ function About({ c }: { c: Content }) {
       <div className="card">
         <h2>Licences</h2>
         <p className="small">{c.licence}</p>
-        <p className="small">Lessons, grammar topics and IELTS-style prompts: original content, CC BY-SA 4.0. Software: MIT. Spaced repetition: ts-fsrs (MIT). PDF reading: pdf.js (Apache-2.0). Typeface: Roboto (<a href="./licenses/roboto-OFL.txt">SIL OFL 1.1</a>). Icons: Material Symbols (<a href="./licenses/material-symbols-Apache-2.0.txt">Apache-2.0</a>). Colour schemes: Material Color Utilities (Apache-2.0). IELTS is a registered trademark of the British Council, IDP and Cambridge University Press & Assessment; Fluent365 is not affiliated with them.</p>
+        <p className="small">Lessons, grammar topics and IELTS-style prompts: original content, CC BY-SA 4.0. Software: MIT. Spaced repetition: ts-fsrs (MIT). PDF reading: pdf.js (Apache-2.0). Anki export: sql.js (MIT). Typeface: Roboto (<a href="./licenses/roboto-OFL.txt">SIL OFL 1.1</a>). Icons: Material Symbols (<a href="./licenses/material-symbols-Apache-2.0.txt">Apache-2.0</a>). Colour schemes: Material Color Utilities (Apache-2.0). IELTS is a registered trademark of the British Council, IDP and Cambridge University Press & Assessment; Fluent365 is not affiliated with them.</p>
       </div>
     </div>
   );
