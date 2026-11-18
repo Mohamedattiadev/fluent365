@@ -1,0 +1,121 @@
+{
+  "about": "Who speaks in the Edge-voice audiobooks (scripts/gen-book-audio.py). The narrator reads everything outside double quotes; text in quotes is read by the speaking character's voice. Main characters are marked by hand (gender → voice). A quote's speaker is the first name (or 'I' in first-person books) in the paragraph's narration; 'he'/'she' with a speech verb gives the book's default male/female voice; otherwise speakers alternate with the previous dialogue paragraph. Voices and speeds: owner's picks (DEVELOPMENT_STATUS, Voices plan).",
+  "narrator": "Ava",
+  "voices": {
+    "Ava": ["en-US-AvaNeural", "-10%"],
+    "Emma": ["en-US-EmmaNeural", "-10%"],
+    "Sonia": ["en-GB-SoniaNeural", "-10%"],
+    "Andrew": ["en-US-AndrewNeural", "-15%"],
+    "Brian": ["en-US-BrianNeural", "-15%"],
+    "Guy": ["en-US-GuyNeural", "-10%"],
+    "Ryan": ["en-GB-RyanNeural", "-10%"]
+  },
+  "books": {
+    "wizard-of-oz": {
+      "male": "Brian", "female": "Sonia",
+      "cast": [
+        { "names": ["Dorothy"], "gender": "f", "voice": "Emma" },
+        { "names": ["Scarecrow"], "gender": "m", "voice": "Andrew" },
+        { "names": ["Tin Woodman", "Woodman"], "gender": "m", "voice": "Brian" },
+        { "names": ["Cowardly Lion", "Lion"], "gender": "m", "voice": "Guy" },
+        { "names": ["Great Oz", "Wizard", "Oz"], "gender": "m", "voice": "Ryan" },
+        { "names": ["Glinda", "Witch", "Sorceress", "little old woman", "old woman"], "gender": "f", "voice": "Sonia" },
+        { "names": ["Uncle Henry"], "gender": "m", "voice": "Guy" },
+        { "names": ["Aunt Em"], "gender": "f", "voice": "Sonia" },
+        { "names": ["Queen", "Field Mouse"], "gender": "f", "voice": "Sonia" },
+        { "names": ["Guardian of the Gates", "Guardian", "soldier", "Soldier with the green whiskers", "Winkies", "King", "Munchkin", "Boq"], "gender": "m", "voice": "Ryan" }
+      ]
+    },
+    "the-secret-garden": {
+      "male": "Guy", "female": "Sonia",
+      "cast": [
+        { "names": ["Mistress Mary", "Mary"], "gender": "f", "voice": "Emma" },
+        { "names": ["Colin"], "gender": "m", "voice": "Andrew" },
+        { "names": ["Dickon"], "gender": "m", "voice": "Brian" },
+        { "names": ["Martha"], "gender": "f", "voice": "Sonia" },
+        { "names": ["Mrs. Medlock", "Medlock"], "gender": "f", "voice": "Sonia" },
+        { "names": ["Mrs. Sowerby", "Susan Sowerby"], "gender": "f", "voice": "Sonia" },
+        { "names": ["Ben Weatherstaff", "Weatherstaff", "Ben"], "gender": "m", "voice": "Guy" },
+        { "names": ["Mr. Craven", "Archibald Craven", "Dr. Craven"], "gender": "m", "voice": "Ryan" },
+        { "names": ["Basil"], "gender": "m", "voice": "Brian" },
+        { "names": ["Ayah", "nurse", "Mrs. Crawford"], "gender": "f", "voice": "Sonia" }
+      ]
+    },
+    "call-of-the-wild": {
+      "male": "Guy", "female": "Emma",
+      "cast": [
+        { "names": ["John Thornton", "Thornton"], "gender": "m", "voice": "Andrew" },
+        { "names": ["Mercedes"], "gender": "f", "voice": "Emma" },
+        { "names": ["Hal"], "gender": "m", "voice": "Brian" },
+        { "names": ["Charles"], "gender": "m", "voice": "Guy" },
+        { "names": ["Perrault"], "gender": "m", "voice": "Ryan" },
+        { "names": ["François", "Francois"], "gender": "m", "voice": "Guy" },
+        { "names": ["Matthewson", "Hans", "Pete", "Manuel", "man in the red sweater", "saloon-keeper"], "gender": "m", "voice": "Brian" }
+      ]
+    },
+    "time-machine": {
+      "male": "Brian", "female": "Emma", "i": "Andrew",
+      "cast": [
+        { "names": ["Time Traveller"], "gender": "m", "voice": "Andrew" },
+        { "names": ["Psychologist"], "gender": "m", "voice": "Brian" },
+        { "names": ["Medical Man"], "gender": "m", "voice": "Guy" },
+        { "names": ["Filby"], "gender": "m", "voice": "Ryan" },
+        { "names": ["Very Young Man", "Provincial Mayor", "Editor", "Journalist", "Silent Man"], "gender": "m", "voice": "Guy" },
+        { "names": ["Weena"], "gender": "f", "voice": "Emma" }
+      ]
+    },
+    "around-the-world": {
+      "male": "Brian", "female": "Emma",
+      "cast": [
+        { "names": ["Phileas Fogg", "Mr. Fogg", "Fogg"], "gender": "m", "voice": "Ryan" },
+        { "names": ["Passepartout"], "gender": "m", "voice": "Andrew" },
+        { "names": ["Fix"], "gender": "m", "voice": "Guy" },
+        { "names": ["Aouda"], "gender": "f", "voice": "Emma" },
+        { "names": ["Sir Francis Cromarty", "Sir Francis"], "gender": "m", "voice": "Brian" },
+        { "names": ["Colonel Proctor", "Proctor", "Stamp Proctor", "Andrew Speedy", "Speedy", "John Bunsby", "Bunsby", "Ralph", "Stuart", "Flanagan", "Fallentin", "Sullivan", "Gauthier Ralph", "Andrew Stuart", "Mudge", "consul", "captain", "conductor", "judge", "Judge Obadiah"], "gender": "m", "voice": "Brian" }
+      ]
+    },
+    "sherlock-holmes": {
+      "male": "Brian", "female": "Emma", "i": "Andrew",
+      "cast": [
+        { "names": ["Sherlock Holmes", "Holmes"], "gender": "m", "voice": "Ryan" },
+        { "names": ["Dr. Watson", "Watson"], "gender": "m", "voice": "Andrew" },
+        { "names": ["Lestrade", "Jones", "Bradstreet", "Gregson"], "gender": "m", "voice": "Guy" },
+        { "names": ["Irene Adler", "Miss Hunter", "Miss Stoner", "Miss Sutherland", "Miss Mary Sutherland", "Mrs. St. Clair", "Mrs. Hudson", "Lady St. Simon", "Miss Doran", "Hatty Doran", "Miss Holder", "Mary"], "gender": "f", "voice": "Emma" },
+        { "names": ["King", "Majesty", "Wilson", "Jabez Wilson", "Windibank", "Hosmer Angel", "Mr. Holder", "Holder", "Mr. Rucastle", "Rucastle", "Dr. Roylott", "Roylott", "Hatherley", "Lord St. Simon", "Turner", "McCarthy", "Openshaw", "Henry Baker", "Ryder", "Breckinridge", "Neville St. Clair", "Isa Whitney", "Whitney", "Arthur"], "gender": "m", "voice": "Brian" }
+      ]
+    },
+    "hound-of-the-baskervilles": {
+      "male": "Guy", "female": "Sonia", "i": "Andrew",
+      "cast": [
+        { "names": ["Sherlock Holmes", "Holmes"], "gender": "m", "voice": "Ryan" },
+        { "names": ["Dr. Watson", "Watson"], "gender": "m", "voice": "Andrew" },
+        { "names": ["Sir Henry Baskerville", "Sir Henry", "Baskerville"], "gender": "m", "voice": "Brian" },
+        { "names": ["Dr. Mortimer", "Mortimer"], "gender": "m", "voice": "Guy" },
+        { "names": ["Barrymore"], "gender": "m", "voice": "Guy" },
+        { "names": ["Mrs. Barrymore"], "gender": "f", "voice": "Sonia" },
+        { "names": ["Stapleton"], "gender": "m", "voice": "Brian" },
+        { "names": ["Miss Stapleton", "Mrs. Stapleton", "Beryl"], "gender": "f", "voice": "Emma" },
+        { "names": ["Laura Lyons", "Mrs. Lyons", "Mrs. Laura Lyons"], "gender": "f", "voice": "Sonia" },
+        { "names": ["Frankland", "Lestrade", "Cartwright", "Clayton", "Selden", "Perkins"], "gender": "m", "voice": "Guy" }
+      ]
+    },
+    "pride-and-prejudice": {
+      "male": "Brian", "female": "Sonia",
+      "cast": [
+        { "names": ["Elizabeth", "Lizzy", "Eliza", "Miss Elizabeth"], "gender": "f", "voice": "Emma" },
+        { "names": ["Jane", "Miss Bennet"], "gender": "f", "voice": "Sonia" },
+        { "names": ["Mrs. Bennet"], "gender": "f", "voice": "Sonia" },
+        { "names": ["Mr. Bennet"], "gender": "m", "voice": "Guy" },
+        { "names": ["Mr. Darcy", "Darcy", "Fitzwilliam Darcy"], "gender": "m", "voice": "Ryan" },
+        { "names": ["Mr. Bingley", "Bingley"], "gender": "m", "voice": "Andrew" },
+        { "names": ["Miss Bingley", "Caroline"], "gender": "f", "voice": "Sonia" },
+        { "names": ["Mr. Wickham", "Wickham"], "gender": "m", "voice": "Brian" },
+        { "names": ["Mr. Collins", "Collins"], "gender": "m", "voice": "Brian" },
+        { "names": ["Lady Catherine", "her ladyship", "Lady Catherine de Bourgh"], "gender": "f", "voice": "Sonia" },
+        { "names": ["Lydia", "Kitty", "Mary", "Charlotte", "Mrs. Gardiner", "Mrs. Philips", "Mrs. Hurst", "Georgiana", "Lady Lucas", "Mrs. Collins", "Maria"], "gender": "f", "voice": "Emma" },
+        { "names": ["Sir William Lucas", "Sir William", "Mr. Gardiner", "Colonel Fitzwilliam", "Fitzwilliam", "Mr. Hurst", "Colonel Forster", "Denny", "Mr. Lucas"], "gender": "m", "voice": "Guy" }
+      ]
+    }
+  }
+}

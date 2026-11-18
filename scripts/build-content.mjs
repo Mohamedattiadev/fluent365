@@ -214,7 +214,9 @@ const tts = {};
 for (const [key, v] of Object.entries(ttsIndex)) {
   if (!existsSync(join(ttsDir, `${key}.mp3`))) continue;
   copyFileSync(join(ttsDir, `${key}.mp3`), join(out, "audio", "tts", `${key}.mp3`));
-  tts[key] = { file: `audio/tts/${key}.mp3`, seconds: v.seconds, bytes: v.bytes, starts: v.starts };
+  // Word times: per line, centiseconds after the line start (compact; index.json stores absolute seconds).
+  const words = v.words?.map((line, i) => line.map((t) => Math.max(0, Math.round((t - v.starts[i]) * 100))));
+  tts[key] = { file: `audio/tts/${key}.mp3`, seconds: v.seconds, bytes: v.bytes, starts: v.starts, ...(words ? { words } : {}) };
 }
 const librivox = existsSync(join(root, "content", "audio", "librivox.json")) ? read("audio/librivox.json") : { books: {} };
 write("audio/index.json", { tts, books: librivox.books, about: librivox.about });
