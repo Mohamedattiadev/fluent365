@@ -6,7 +6,8 @@ import { startTracking } from "./lib/activity";
 import { loadAll, type Content } from "./lib/content";
 import * as db from "./lib/db";
 import * as player from "./lib/player";
-import { isLoaded, loadState, useApp } from "./lib/store";
+import { getState, isLoaded, loadState, useApp } from "./lib/store";
+import { autoBackup } from "./lib/cloud";
 import type { GrammarTopic } from "./lib/types";
 import { navigate, useRoute } from "./router";
 import { Home, TodayExtras } from "./screens/Home";
@@ -63,7 +64,9 @@ export function App() {
   }, []);
 
   useEffect(() => {
-    void loadState().then(() => setReady(true));
+    void loadState().then(() => { setReady(true); if (getState().settings.setupDone) void autoBackup(); });
+    const onHide = () => { if (document.visibilityState === "hidden" && getState().settings.setupDone) void autoBackup(); };
+    document.addEventListener("visibilitychange", onHide);
     loadAll()
       .then(async (c) => {
         const personal = await db.get<GrammarTopic>("kv", "personal-topic");

@@ -1,5 +1,5 @@
 // The learner's private state. Lives in memory, saved to IndexedDB slice by slice (debounced),
-// never sent anywhere. React components subscribe with useApp().
+// never sent anywhere except the opt-in backup to the learner's own private GitHub repo (cloud.ts). React components subscribe with useApp().
 import { useSyncExternalStore } from "react";
 import * as db from "./db";
 import type { ListeningState, ReadingState, DayLog, DaySession, ExternalSession, ImportItem, LessonProgress, Mastery, Mistake, MyCard, Settings, SpeakingEntry, TestResult, WritingEntry } from "./types";

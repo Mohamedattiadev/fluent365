@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { CloudBackup } from "../components/Cloud";
 import { InstallRow } from "../components/Install";
 import { ActionBar, Icon, Segmented, toast, Toggle } from "../components/ui";
 import type { Content } from "../lib/content";
@@ -128,10 +129,11 @@ function BackupScreen({ c }: { c: Content }) {
       <Back />
       <h1>Backup & restore</h1>
       <div className="card">
-        <p>Your progress is stored only in this browser on this device. If you clear browser data or lose the phone, it's gone — so download a backup every week or two.</p>
+        <p>Your progress is stored only in this browser on this device. If you clear browser data or lose the phone, it's gone — so turn on the automatic backup below, or download a backup every week or two.</p>
         {persisted !== null && <p className="small muted">{persisted ? "This browser has agreed to keep your data safe from automatic clean-up." : "Tip: install Fluent365 to your home screen so the browser keeps your data safely."}</p>}
         <button className="btn big primary" onClick={() => { download(`fluent365-backup-${today()}.json`, JSON.stringify(makeBackup())); toast("Backup downloaded"); }}>Download backup</button>
       </div>
+      <CloudBackup onRestored={() => navigate("/")} />
       <div className="card">
         <h2>Restore from a backup</h2>
         <input ref={fileRef} type="file" accept="application/json,.json" onChange={(e) => onFile(e.target.files?.[0])} className="sr-only" />
@@ -350,7 +352,7 @@ function About({ c }: { c: Content }) {
       </div>
       <div className="card">
         <h2>Privacy</h2>
-        <p>All progress, recordings and imports stay in this browser on this device. Nothing is sent to a server. The website only delivers the app and public learning content. There is no automatic sync between devices: use Backup to move data.</p>
+        <p>All progress, recordings and imports stay in this browser on this device. Nothing is sent to a server. The website only delivers the app and public learning content. The only exception is the optional automatic backup, which you turn on yourself: it saves your progress (not recordings) to your own private GitHub repo, and nowhere else. Use Backup to move data between devices.</p>
       </div>
       <div className="card">
         <h2>Scores</h2>

@@ -940,3 +940,7 @@ kbd { display: inline-block; min-width: 1.6em; padding: 1px 6px; border: 1px sol
 .book-text .ra-s { background: var(--accent-soft); box-shadow: 0 0 0 2px var(--accent-soft); }
 .book-text .ra-w { text-decoration: underline 3px var(--accent); text-underline-offset: 4px; }
 .book-text h3.ra-h { color: var(--accent-text); }
+
+/* Numbered how-to steps (cloud backup). */
+ol.steps { margin: 0; padding-left: 1.4em; display: grid; gap: 8px; }
+ol.steps a { font-weight: 500; }

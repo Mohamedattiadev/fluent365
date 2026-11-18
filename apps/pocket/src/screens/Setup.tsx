@@ -26,6 +26,7 @@ export function Setup() {
       <h1>Welcome to Fluent365</h1>
       <p>Every day, Fluent365 prepares one guided English session for you. You press <b>Start</b>, then <b>Next</b>. That's it.</p>
       <p className="muted">Your progress stays on this device. No account, no ads.</p>
+      <p className="small muted">New phone? Finish these four steps, then restore in Settings → Backup.</p>
       <label className="field"><span>What should we call you? (optional)</span>
         <input type="text" value={s.name} onChange={(e) => setS({ ...s, name: e.target.value })} placeholder="Your name" autoComplete="given-name" />
       </label>
