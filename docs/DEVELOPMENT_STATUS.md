@@ -42,7 +42,7 @@ _Last updated: 2026-11-17_
 - **Tests**: 19 Vitest unit tests covering answer checking, content integrity, FSRS, persistence after reload, mastery, mistakes, session building, backlog rules, backup validation, the import parser and Anki.
 
 ### Known limitations
-- Lesson recordings are synthetic (computer voices), not human. Audiobooks are human (LibriVox volunteers). Downloads continue only while the app is open (no Background Fetch).
+- Lesson recordings are synthetic (computer voices), not human. Audiobooks: computer voices by default, human (LibriVox volunteers) by switch. Downloads continue only while the app is open (no Background Fetch).
 - Writing and speaking feedback is self-assessed with counts and checklists. There is no automated band score (by design: no paid API).
 - OCR for scanned PDFs is not available.
 - Phase advancement uses lesson progress. The monthly checkpoint covers vocabulary and grammar only.
