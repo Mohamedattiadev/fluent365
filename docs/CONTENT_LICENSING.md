@@ -20,7 +20,7 @@ Licence files: code `LICENSE` (MIT); content `content/LICENSE` (CC BY-SA 4.0).
 
 ## Software dependencies
 
-React (MIT), ts-fsrs (MIT), pdf.js / pdfjs-dist (Apache-2.0), Vite (MIT). Dev: Vitest (MIT), fake-indexeddb (Apache-2.0), TypeScript (Apache-2.0).
+React (MIT), ts-fsrs (MIT), pdf.js / pdfjs-dist (Apache-2.0), sql.js (MIT, .apkg export), Vite (MIT). Dev: Vitest (MIT), fake-indexeddb (Apache-2.0), TypeScript (Apache-2.0).
 
 ## Rules for contributions
 

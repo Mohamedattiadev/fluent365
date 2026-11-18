@@ -99,15 +99,38 @@ function BackupScreen({ c }: { c: Content }) {
     toast("Backup restored. Your previous data was kept as a safety copy.");
     navigate("/");
   }
-  function exportAnki() {
+  const [packing, setPacking] = useState(false);
+  function ankiRows() {
     const s = getState();
-    const rows = Object.entries(s.cards).map(([key, mc]) => {
+    return Object.entries(s.cards).map(([key, mc]) => {
       const v = mc.custom ?? (() => { const x = c.vocabById.get(Number(key)); return x ? { w: x.w, d: x.d, ex: x.ex, source: x.src.join(" ") } : null; })();
       if (!v) return null;
-      return { key, front: v.w, back: [v.d, v.ex ? `"${v.ex}"` : ""].filter(Boolean).join(" — "), tags: ["fluent365", ...(v.source ? v.source.split(" ") : [])] };
+      return { key, front: v.w, back: [v.d, v.ex ? `"${v.ex}"` : ""].filter(Boolean).join(" — "), tags: ["fluent365", ...(v.source ? v.source.split(" ") : [])], card: mc.card };
     }).filter((x): x is NonNullable<typeof x> => !!x);
+  }
+  function exportAnki() {
+    const rows = ankiRows();
     download(`fluent365-anki-${today()}.txt`, ankiExport(rows), "text/plain");
     toast(`${rows.length} cards exported for Anki`);
+  }
+  async function exportApkg() {
+    const rows = ankiRows();
+    if (!rows.length) return toast("No word cards yet. Learn some words first.");
+    setPacking(true);
+    try {
+      const { buildApkg } = await import("../lib/apkg");
+      const bytes = await buildApkg(rows);
+      const url = URL.createObjectURL(new Blob([bytes as Uint8Array<ArrayBuffer>], { type: "application/octet-stream" }));
+      const a = document.createElement("a");
+      a.href = url; a.download = `fluent365-${today()}.apkg`;
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 2000);
+      toast(`${rows.length} cards exported with their schedule`);
+    } catch {
+      toast("The Anki package could not be made on this device. Use the .txt export instead.");
+    } finally {
+      setPacking(false);
+    }
   }
   async function importAnki(f: File | undefined) {
     if (!f) return;
@@ -150,9 +173,11 @@ function BackupScreen({ c }: { c: Content }) {
       </div>
       <div className="card stack">
         <h2>Anki</h2>
-        <p className="muted">Use Fluent365 cards in Anki, or bring Anki cards into Fluent365. Scheduling history stays in each app.</p>
-        <button className="btn big outline" onClick={exportAnki}>Export my cards for Anki (.txt)</button>
-        <p className="small muted">In Anki: File → Import → choose the file. Re-importing updates cards instead of duplicating them.</p>
+        <p className="muted">Use Fluent365 cards in Anki, or bring Anki cards into Fluent365.</p>
+        <button className="btn big outline" disabled={packing} onClick={exportApkg}>{packing ? "Packing…" : "Export for Anki with progress (.apkg)"}</button>
+        <p className="small muted">Keeps each card's schedule: when it is due, its interval, reviews, lapses and memory state (for Anki's FSRS), plus the last review. Open the file with Anki, or File → Import.</p>
+        <button className="btn big outline" onClick={exportAnki}>Export my cards for Anki (.txt, no progress)</button>
+        <p className="small muted">In Anki: File → Import → choose the file. Re-importing either file updates cards instead of duplicating them.</p>
         <input ref={ankiRef} type="file" accept=".txt,.csv,.tsv,text/plain,.apkg" onChange={(e) => importAnki(e.target.files?.[0])} className="sr-only" />
         <button className="btn big outline" onClick={() => ankiRef.current?.click()}>Import from Anki (Notes in Plain Text)</button>
       </div>
