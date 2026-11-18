@@ -192,7 +192,7 @@ async def make_chapter(book, n, blocks, start, end, out_dir, fmt, sem, force):
         try:
             if json.load(open(base + ".json")).get("hash") == digest:
                 return False
-        except ValueError:
+        except (ValueError, OSError):
             pass
     os.makedirs(os.path.dirname(base), exist_ok=True)
     with tempfile.TemporaryDirectory() as tmp:
@@ -224,9 +224,17 @@ async def make_chapter(book, n, blocks, start, end, out_dir, fmt, sem, force):
             raw += silence(HEAD_PAUSE if kind == "h" else PARA_PAUSE)
         await asyncio.to_thread(encode, raw, f"{base}.{ext}", args, f"{book} {n}")
     seconds = round(len(raw) / 2 / RATE, 1)
-    json.dump({"hash": digest, "seconds": seconds, "s": sents}, open(base + ".json", "w"), separators=(",", ":"))
+    write_json(base + ".json", {"hash": digest, "seconds": seconds, "s": sents}, separators=(",", ":"))
     print(book, n, round(seconds), "s", os.path.getsize(f"{base}.{ext}") // 1024, "KB", flush=True)
     return True
+
+
+def write_json(path, data, **kw):
+    """Write atomically (several generator processes read these files while others write them)."""
+    tmp = f"{path}.{os.getpid()}.tmp"
+    with open(tmp, "w") as f:
+        json.dump(data, f, ensure_ascii=False, **kw)
+    os.replace(tmp, path)
 
 
 def build_index(out_dir):
@@ -243,12 +251,16 @@ def build_index(out_dir):
             audio = next((f"{i + 1:02d}.{e}" for e in ("webm", "mp3") if os.path.exists(os.path.join(d, f"{i + 1:02d}.{e}"))), None)
             if not audio or not os.path.exists(meta):
                 break
+            try:
+                secs = json.load(open(meta))["seconds"]
+            except (ValueError, KeyError):
+                break
             size = os.path.getsize(os.path.join(d, audio))
             total += size
-            chapters.append({"title": ch["title"], "file": f"{book}/{audio}", "timing": f"{book}/{i + 1:02d}.json", "seconds": json.load(open(meta))["seconds"], "bytes": size})
+            chapters.append({"title": ch["title"], "file": f"{book}/{audio}", "timing": f"{book}/{i + 1:02d}.json", "seconds": secs, "bytes": size})
         if chapters:
             index["books"][book] = {"chapters": chapters, "complete": len(chapters) == len(books_meta[book]["chapters"]), "seconds": round(sum(c["seconds"] for c in chapters)), "bytes": sum(c["bytes"] for c in chapters)}
-    json.dump(index, open(os.path.join(out_dir, "index.json"), "w"), indent=1, ensure_ascii=False)
+    write_json(os.path.join(out_dir, "index.json"), index, indent=1)
     print("index:", {k: len(v["chapters"]) for k, v in index["books"].items()}, round(total / 1e6), "MB", flush=True)
 
 
