@@ -9,7 +9,7 @@ export function Setup() {
   const [step, setStep] = useState(0);
   const [s, setS] = useState<Pick<Settings, "name" | "level" | "goal" | "minutes" | "explainLang">>({ name: "", level: "B1", goal: "ielts-gt", minutes: 60, explainLang: "en" });
   const finish = () => {
-    update((st) => ({ settings: { ...st.settings, ...s, setupDone: true, startDate: today() } }));
+    update((st) => ({ settings: { ...st.settings, ...s, setupDone: true, startDate: today(), phaseReached: "B1" } }));
     void persist();
   };
   const Choice = <T extends string | number>({ value, options, onPick }: { value: T; options: [T, string, string?][]; onPick: (v: T) => void }) => (

@@ -944,3 +944,7 @@ kbd { display: inline-block; min-width: 1.6em; padding: 1px 6px; border: 1px sol
 /* Numbered how-to steps (cloud backup). */
 ol.steps { margin: 0; padding-left: 1.4em; display: grid; gap: 8px; }
 ol.steps a { font-weight: 500; }
+
+/* Phase check: what is met and what is not yet. */
+ul.gate { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 6px; }
+ul.gate li { display: flex; gap: 6px; align-items: baseline; flex-wrap: wrap; }

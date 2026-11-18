@@ -2,7 +2,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { ping } from "../lib/activity";
 import * as db from "../lib/db";
-import { recordAttempt } from "../lib/learning";
+import { logComprehension, recordAttempt } from "../lib/learning";
 import { getState, uid, update, useApp } from "../lib/store";
 import { diffWords, matches, shuffle, wordCount } from "../lib/text";
 import type { AudioBlock, Block, CueCard, Exercise as Ex, Lang, TtsRecording, VocabItem } from "../lib/types";
@@ -155,7 +155,7 @@ export function InputTask({ title, intro, tip, passage, audio, recording, questi
       {stage === "questions" && audio && !canSpeak && <Transcript audio={audio} />}
       {stage === "questions" && items.length > 0 && (
         <div style={{ marginTop: 24 }}>
-          <ExerciseRunner items={items} persistKey={k("q")} onFinish={(a) => { setAcc(a); setStage("after"); }} />
+          <ExerciseRunner items={items} persistKey={k("q")} onFinish={(a) => { setAcc(a); logComprehension(kind, a, items.length); setStage("after"); }} />
         </div>
       )}
       {stage === "questions" && items.length === 0 && <ActionBar><button className="btn big primary" onClick={() => finish(1)}>Continue</button></ActionBar>}

@@ -89,7 +89,7 @@ export async function reviewWord(key: string, grade: Grade) {
   const prev = mine?.card && !mine.card.fresh ? mine.card : undefined;
   const card = await schedule(prev, grade);
   update((s) => ({ cards: { ...s.cards, [key]: { ...(s.cards[key] ?? { added: today() }), card } } }));
-  bumpDay((d) => ({ ...d, reviews: d.reviews + 1, attempts: d.attempts + 1, correct: d.correct + (grade === Rating.Again ? 0 : 1) }));
+  bumpDay((d) => ({ ...d, reviews: d.reviews + 1, attempts: d.attempts + 1, correct: d.correct + (grade === Rating.Again ? 0 : 1), revOk: (d.revOk ?? 0) + (grade === Rating.Again ? 0 : 1) }));
 }
 
 export const dueCardKeys = (now = Date.now()) =>
@@ -114,4 +114,13 @@ export function recentAccuracy() {
   const days = Object.entries(getState().days).sort(([a], [b]) => (a < b ? 1 : -1)).slice(0, 3);
   const att = days.reduce((n, [, d]) => n + d.attempts, 0);
   return att < 20 ? null : days.reduce((n, [, d]) => n + d.correct, 0) / att;
+}
+
+/** Comprehension questions answered in a listening or reading task (evidence for phase moves). */
+export function logComprehension(kind: "listening" | "reading", acc: number, asked: number) {
+  if (asked <= 0) return;
+  bumpDay((d) => {
+    const prev = d.comp?.[kind] ?? [0, 0];
+    return { ...d, comp: { ...d.comp, [kind]: [prev[0] + Math.round(acc * asked), prev[1] + asked] } };
+  });
 }

@@ -3,7 +3,9 @@
 // never an official IELTS or CEFR result.
 import { useMemo, useRef, useState } from "react";
 import type { Content } from "../lib/content";
+import { comprehension, gateChecks, nextPhase, type GateCheck, type Phase } from "../lib/evidence";
 import { markKnown } from "../lib/learning";
+import { phaseHeld, phaseOf } from "../lib/session";
 import { getState, uid, update } from "../lib/store";
 import { shuffle } from "../lib/text";
 import type { Exercise as Ex, Settings, VocabItem } from "../lib/types";
@@ -65,7 +67,7 @@ export function Checkpoint({ c, kind, onDone }: { c: Content; kind: CheckKind; o
   const [stage, setStage] = useState<"intro" | "vocab" | "grammar" | "result">("intro");
   const [yes, setYes] = useState<Record<number, boolean>>({});
   const gRight = useRef<Record<string, number>>({}); // share of each level answered right on the first try
-  const [result, setResult] = useState<null | { vocab: number; level: Settings["level"]; grammar: number; fa: number }>(null);
+  const [result, setResult] = useState<null | { vocab: number; level: Settings["level"]; grammar: number; fa: number; listening: number | null; reading: number | null; gate?: { from: Phase; to: Phase; checks: GateCheck[]; passed: boolean } }>(null);
   const previous = getState().tests.find((t) => t.kind === "checkpoint");
 
   function finish(perLevel: Record<string, number>) {
@@ -73,14 +75,23 @@ export function Checkpoint({ c, kind, onDone }: { c: Content; kind: CheckKind; o
     const v = estimateVocab(answers);
     const level = estimateLevel(v.words, perLevel);
     const grammar = Math.round((Object.values(perLevel).reduce((n, x) => n + x, 0) / GRAMMAR_LEVELS.length) * 100);
-    setResult({ vocab: v.words, level, grammar, fa: v.falseAlarms });
+    // Listening and reading come from the last 30 days of practice; a phase move needs all the evidence.
+    const st = getState();
+    const listening = comprehension(st, "listening").acc, reading = comprehension(st, "reading").acc;
+    const from = phaseOf(st), to = nextPhase(from);
+    let gate: { from: Phase; to: Phase; checks: GateCheck[]; passed: boolean } | undefined;
+    if (kind === "monthly" && to && to !== "B1" && phaseHeld(st)) {
+      const checks = gateChecks(st, to, { vocab: v.words, grammar: grammar / 100 });
+      gate = { from, to, checks, passed: checks.every((x) => x.ok) };
+    }
+    setResult({ vocab: v.words, level, grammar, fa: v.falseAlarms, listening, reading, gate });
     // Words you said you know, in bands well inside your estimate, are not taught as new words.
     const safeBand = BANDS.findIndex(([, to]) => to >= v.words) - 1;
     vItems.forEach((it, i) => { if (yes[i] && it.id != null && it.band <= safeBand && v.falseAlarms <= 0.2) markKnown(String(it.id)); });
     update((s) => ({
-      tests: [{ id: uid(), at: new Date().toISOString(), kind: "checkpoint", ref: kind, title: kind === "placement" ? "Placement check" : "Monthly checkpoint", score: Math.round((grammar / 100) * gItems.length), of: gItems.length, vocab: v.words, level }, ...s.tests],
+      tests: [{ id: uid(), at: new Date().toISOString(), kind: "checkpoint", ref: kind, title: kind === "placement" ? "Placement check" : "Monthly checkpoint", score: Math.round((grammar / 100) * gItems.length), of: gItems.length, vocab: v.words, level, ...(listening != null ? { listening } : {}), ...(reading != null ? { reading } : {}) }, ...s.tests],
       // The first placement sets the level (the plan starts there); monthly checks only suggest.
-      settings: kind === "placement" ? { ...s.settings, level } : s.settings,
+      settings: kind === "placement" ? { ...s.settings, level } : gate?.passed ? { ...s.settings, phaseReached: gate.to } : s.settings,
       session: s.session,
     }));
     setStage("result");
@@ -132,7 +143,16 @@ export function Checkpoint({ c, kind, onDone }: { c: Content; kind: CheckKind; o
       <div className="stats">
         <div><p className="big-number">{result!.vocab.toLocaleString()}</p><p className="label">common words you know (estimate)</p></div>
         <div><p className="big-number">{result!.grammar}%</p><p className="label">grammar questions right</p></div>
+        {result!.listening != null && <div><p className="big-number">{Math.round(result!.listening * 100)}%</p><p className="label">listening questions right (30 days)</p></div>}
+        {result!.reading != null && <div><p className="big-number">{Math.round(result!.reading * 100)}%</p><p className="label">reading questions right (30 days)</p></div>}
       </div>
+      {result!.gate && (
+        <div className={`feedback ${result!.gate.passed ? "ok" : "info"}`}>
+          <strong className="title">{result!.gate.passed ? `You move on to the ${result!.gate.to} phase` : `You stay in the ${result!.gate.from} phase for now`}</strong>
+          <p>{result!.gate.passed ? "Your words, grammar, reviews, listening and reading all meet the target. From tomorrow the daily plan follows the next phase." : `The lessons continue. The ${result!.gate.to} phase starts when everything below meets its target; the next check comes in a week.`}</p>
+          <ul className="gate">{result!.gate.checks.map((g) => <li key={g.label}><Icon name={g.ok ? "check" : "close"} size={18} label={g.ok ? "met" : "not yet"} /> {g.label}: <b>{g.have}</b> <span className="muted">(target {g.need})</span></li>)}</ul>
+        </div>
+      )}
       {previous?.vocab != null && <p>Last time: about {previous.vocab.toLocaleString()} words{previous.level ? `, ${previous.level}` : ""} ({new Date(previous.at).toLocaleDateString()}).</p>}
       {result!.fa > 0.2 && <p className="small muted">You marked several made-up words as known, so the word estimate is less reliable this time.</p>}
       <p className="small muted">{kind === "placement" ? `Your plan now starts at ${result!.level}. You can change it any time in Settings.` : result!.level !== getState().settings.level ? `Your plan is set to ${getState().settings.level}. If this estimate feels right, change it in Settings → English level.` : "Your plan level fits this estimate."} Words you clearly know were marked as known, so they won't come as new words.</p>

@@ -109,6 +109,8 @@ export interface Settings {
   newWords: number;
   setupDone: boolean;
   startDate: string;
+  /** Highest phase the evidence has allowed (lib/evidence.ts). Unset = not yet recorded. */
+  phaseReached?: "B1" | "B2" | "IELTS";
 }
 
 export interface StoredCard {
@@ -157,13 +159,17 @@ export interface DayLog {
   reviews: number;
   newWords: number;
   sessionDone: boolean;
+  /** Word reviews not answered "Again" (newer versions only). */
+  revOk?: number;
+  /** Comprehension questions [right on the first try, asked] per skill. */
+  comp?: Partial<Record<"listening" | "reading", [number, number]>>;
 }
 
 export interface LessonProgress { done: number[]; finished?: string }
 
 export interface WritingEntry { id: string; at: string; promptId: string; prompt: string; text: string; words: number; seconds: number; selfCheck: string[]; rewriteOf?: string }
 export interface SpeakingEntry { id: string; at: string; prompt: string; seconds: number; audioKey?: string; selfCheck: string[] }
-export interface TestResult { id: string; at: string; kind: "listening" | "reading" | "official" | "checkpoint"; ref: string; title: string; score: number; of: number; band?: number; /** Checkpoints: estimated vocabulary size and rough level (practice estimates). */ vocab?: number; level?: string }
+export interface TestResult { id: string; at: string; kind: "listening" | "reading" | "official" | "checkpoint"; ref: string; title: string; score: number; of: number; band?: number; /** Checkpoints: estimated vocabulary size and rough level (practice estimates). */ vocab?: number; level?: string; /** Checkpoints: listening/reading questions right in the 30 days before (0..1). */ listening?: number; reading?: number }
 export interface ExternalSession { id: string; at: string; source: "praktika" | "hellotalk" | "other"; topic: string; minutes?: number; method: string }
 
 export interface ImportItem {

@@ -8,15 +8,28 @@ import { currentBook, dailyTarget, READING_WPM } from "./reading";
 import { getState, today, uid } from "./store";
 import type { AppState } from "./store";
 import type { DaySession, LessonInfo, LessonStep, SessionStep, Skill } from "./types";
+import { PHASES, type Phase } from "./evidence";
 
-export type Phase = "B1" | "B2" | "IELTS";
+export type { Phase };
 
 export const lessonsFinished = (s: AppState) => Object.values(s.lessons).filter((l) => l.finished).length;
 
+const byLessons = (done: number): Phase => (done < 16 ? "B1" : done < 40 ? "B2" : "IELTS");
+/** The phase the lesson path has reached (before the evidence gate). */
+export const lessonPhase = (s: AppState): Phase => byLessons(lessonsFinished(s) + startLesson(s) - 1);
+/** The phase your stated level starts in. */
+export const basePhase = (s: AppState): Phase => byLessons(startLesson(s) - 1);
+const later = (a: Phase, b: Phase) => (PHASES.indexOf(a) >= PHASES.indexOf(b) ? a : b);
+const earlier = (a: Phase, b: Phase) => (PHASES.indexOf(a) <= PHASES.indexOf(b) ? a : b);
+
+/** Current phase: the lesson path, but never past what the evidence allowed (design rule 16). */
 export function phaseOf(s: AppState): Phase {
-  const done = lessonsFinished(s) + startLesson(s) - 1;
-  return done < 16 ? "B1" : done < 40 ? "B2" : "IELTS";
+  const lp = lessonPhase(s);
+  const reached = later(s.settings.phaseReached ?? lp, basePhase(s));
+  return earlier(lp, reached);
 }
+/** The lessons are ahead of the evidence: the next checkpoint decides about moving on. */
+export const phaseHeld = (s: AppState) => phaseOf(s) !== lessonPhase(s);
 
 /** Where the path starts for a learner's stated level. */
 export const startLesson = (s: AppState) => ({ A2: 1, B1: 1, B2: 17, C1: 29 })[s.settings.level] ?? 1;
@@ -96,6 +109,7 @@ export function buildSession(c: Content, s: AppState = getState(), minutes: 30 |
   const checks = s.tests.filter((t) => t.kind === "checkpoint");
   const lastCheck = checks[0] ? (Date.now() - new Date(checks[0].at).getTime()) / 86400000 : Infinity;
   if (!checks.length && dayNumber(s) <= 7) add({ kind: "checkpoint", title: "Placement check", why: "Six minutes to find your level, so the words and grammar fit you. Not an official score.", minutes: 6, ref: { prompt: "placement" } });
+  else if (checks.length && phaseHeld(s) && lastCheck >= 7) add({ kind: "checkpoint", title: "Phase check", why: `You have finished the ${phase} lessons. Six minutes to see if your words, grammar, listening and reading are ready for the next phase. A practice estimate.`, minutes: 6, ref: { prompt: "monthly" } });
   else if (checks.length && lastCheck >= 30) add({ kind: "checkpoint", title: "Monthly checkpoint", why: "Once a month: how many words you know now and how your grammar has grown. A practice estimate.", minutes: 6, ref: { prompt: "monthly" } });
   else if (!checks.length && dayNumber(s) >= 30) add({ kind: "checkpoint", title: "Checkpoint", why: "A short check of your words and grammar. A practice estimate, not an official score.", minutes: 6, ref: { prompt: "monthly" } });
 

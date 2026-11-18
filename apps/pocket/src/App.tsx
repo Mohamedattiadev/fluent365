@@ -6,7 +6,8 @@ import { startTracking } from "./lib/activity";
 import { loadAll, type Content } from "./lib/content";
 import * as db from "./lib/db";
 import * as player from "./lib/player";
-import { getState, isLoaded, loadState, useApp } from "./lib/store";
+import { getState, isLoaded, loadState, update, useApp } from "./lib/store";
+import { lessonPhase } from "./lib/session";
 import { autoBackup } from "./lib/cloud";
 import type { GrammarTopic } from "./lib/types";
 import { navigate, useRoute } from "./router";
@@ -64,7 +65,13 @@ export function App() {
   }, []);
 
   useEffect(() => {
-    void loadState().then(() => { setReady(true); if (getState().settings.setupDone) void autoBackup(); });
+    void loadState().then(() => {
+      setReady(true);
+      const st = getState();
+      // Learners from before the evidence gate keep the phase they had reached.
+      if (st.settings.setupDone && !st.settings.phaseReached) update((x) => ({ settings: { ...x.settings, phaseReached: lessonPhase(x) } }));
+      if (st.settings.setupDone) void autoBackup();
+    });
     const onHide = () => { if (document.visibilityState === "hidden" && getState().settings.setupDone) void autoBackup(); };
     document.addEventListener("visibilitychange", onHide);
     loadAll()
