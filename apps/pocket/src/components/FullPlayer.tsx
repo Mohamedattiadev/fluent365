@@ -2,12 +2,14 @@
 // spoken bold and kept in the middle, earlier and later lines dimmed. Tap a sentence to jump there,
 // long-press a word to look it up or add it to your words. Opens from the mini player or the Listen card;
 // closes with the arrow, a swipe down, Escape or the phone's Back button.
-// Lesson recordings have exact line start times; for audiobooks the place is an estimate (lib/transcript.ts).
+// Lesson recordings and the Edge-voice audiobooks have exact sentence and word times (Edge WordBoundary), so the
+// word being spoken is marked. For LibriVox audiobooks the place is only an estimate (lib/transcript.ts).
 import { useEffect, useRef, useState } from "react";
 import { loadBook, loadLesson, type Content } from "../lib/content";
 import * as player from "../lib/player";
 import { wordIndex } from "../lib/reading";
 import { useApp } from "../lib/store";
+import { edgeIndex, lastAt, loadTiming } from "../lib/edgebooks";
 import { chapterSentences, lineAt, sentenceAt, type Line } from "../lib/transcript";
 import type { AudioBlock } from "../lib/types";
 import { WordSheet } from "./Reader";
@@ -20,7 +22,12 @@ const SLEEPS: { label: string; v: player.Sleep | "min"; min?: number }[] = [
   { label: "Sleep", v: null }, { label: "15 min", v: "min", min: 15 }, { label: "30 min", v: "min", min: 30 }, { label: "60 min", v: "min", min: 60 }, { label: "End of chapter", v: { end: true } },
 ];
 
-export interface Transcript { key: string; lines: Line[]; starts: number[]; book: boolean }
+/** `book`: the place is estimated (LibriVox; starts are shares 0–1). Otherwise starts are seconds and `words`
+ *  (when present) holds the start of every word of every line in seconds. */
+export interface Transcript { key: string; lines: Line[]; starts: number[]; book: boolean; words?: number[][] }
+
+/** The ladder book a track belongs to (LibriVox "book:<id>:<n>" or Edge voices "ebook:<id>:<n>"). */
+export const bookOf = (key?: string) => (key && /^e?book:/.test(key) ? key.split(":")[1] : undefined);
 
 /** The text that goes with a recording: lesson lines with start times (seconds) or book sentences (share 0–1). */
 export function useTranscript(c: Content, trackKey?: string) {
@@ -35,7 +42,13 @@ export function useTranscript(c: Content, trackKey?: string) {
         let block: AudioBlock | undefined;
         const walk = (o: unknown): void => { if (block || !o || typeof o !== "object") return; if ((o as AudioBlock).type === "audio" && (o as AudioBlock).lines) { block = o as AudioBlock; return; } Object.values(o).forEach(walk); };
         walk(l);
-        if (live && block && rec?.starts) setData({ key: trackKey, book: false, starts: rec.starts, lines: block.lines.map((x) => ({ text: x.text, speaker: block!.speakers[x.speaker]?.name ?? x.speaker })) });
+        const words = rec?.words?.map((w, i) => w.map((o) => rec.starts[i] + o / 100));
+        if (live && block && rec?.starts) setData({ key: trackKey, book: false, starts: rec.starts, words, lines: block.lines.map((x) => ({ text: x.text, speaker: block!.speakers[x.speaker]?.name ?? x.speaker })) });
+      }).catch(() => undefined);
+    } else if (kind === "ebook") {
+      const ch = edgeIndex()?.books[a]?.chapters[Number(b)];
+      if (ch) void loadBook(a).then((book) => loadTiming(book, ch)).then((tm) => {
+        if (live) setData({ key: trackKey, book: false, lines: tm.sentences.map((x) => ({ text: x.text })), starts: tm.sentences.map((x) => x.start), words: tm.sentences.map((x) => x.words) });
       }).catch(() => undefined);
     } else if (kind === "book" && c.audio.books[a]) {
       void loadBook(a).then((book) => {
@@ -55,12 +68,13 @@ export function placeIn(t: Transcript, p: { time: number; duration: number }) {
   const i = t.book ? sentenceAt(t.starts.map((at) => ({ at })), pos) : lineAt(t.starts, pos);
   return i;
 }
-/** The word being spoken inside line i, or -1 (owner, 2026-11-17: "the words don't follow the voice").
- *  Lessons: an estimate inside the line's exact start/end, longer words get more time and punctuation a short
- *  pause. Audiobooks (LibriVox): no word mark at all, because even the sentence there is only estimated.
- *  Exact word times come with the new voices (Edge WordBoundary, DEVELOPMENT_STATUS step 1). */
+/** The word being spoken inside line i, or -1. Exact when the recording has word times (Edge WordBoundary).
+ *  Older lesson files without them: an estimate inside the line's exact start/end (longer words get more time,
+ *  punctuation a short pause). LibriVox audiobooks: no word mark, because even the sentence is only estimated. */
 export function wordAt(t: Transcript, p: { time: number; duration: number; playing: boolean }, i: number) {
   if (t.book || (!p.playing && p.time <= 0)) return -1;
+  const w = t.words?.[i];
+  if (w?.length) return lastAt(w, p.time);
   const end = t.starts[i + 1] ?? (p.duration || t.starts[i] + 4);
   const span = Math.max(0.0001, (end - t.starts[i]) * 0.9 - 0.25);
   const words = t.lines[i].text.split(/\s+/);
@@ -121,7 +135,7 @@ export function Extras({ t, onList }: { t: Transcript | null; onList: () => void
       <button className="fp-chip" onClick={repeat} aria-label="Repeat this sentence"><Icon name="repeat1" size={20} /><span>Repeat</span></button>
       <button className="fp-chip" onClick={rate} aria-label={`Speed ${p.rate}×, tap to change`}><Icon name="speed" size={20} /><span>{p.rate}×</span></button>
       <button className={`fp-chip ${p.sleep ? "on" : ""}`} onClick={nextSleep} aria-label={`Sleep timer: ${p.sleep ? sleepLabel : "off"}, tap to change`}><Icon name="sleep" size={20} /><span>{sleepLabel}</span></button>
-      <button className="fp-chip" onClick={onList} aria-label="Chapters"><Icon name="queue" size={20} /><span>{p.queue[0]?.key.startsWith("book:") ? "Chapters" : "Lessons"}</span></button>
+      <button className="fp-chip" onClick={onList} aria-label="Chapters"><Icon name="queue" size={20} /><span>{bookOf(p.queue[0]?.key) ? "Chapters" : "Lessons"}</span></button>
     </div>
   );
 }
@@ -194,7 +208,7 @@ export function FullPlayer({ c }: { c: Content }) {
     return () => { removeEventListener("keydown", key); document.documentElement.classList.remove("fp-open"); };
   }, [word, list]);
   if (!tr) return null;
-  const bookId = tr.key.startsWith("book:") ? tr.key.split(":")[1] : undefined;
+  const bookId = bookOf(tr.key);
   // Swipe down on the header or the controls to close (the text in the middle scrolls).
   const start = (e: React.PointerEvent) => { if ((e.target as HTMLElement).closest("button, input")) return; drag.current = e.clientY; (e.currentTarget as HTMLElement).setPointerCapture?.(e.pointerId); };
   const move = (e: React.PointerEvent) => { if (drag.current !== null) setDy(Math.max(0, e.clientY - drag.current)); };
@@ -244,7 +258,7 @@ export function LyricsCard({ c }: { c: Content }) {
   const show = t.lines.slice(Math.max(0, i - 1), i + 4).map((l, k) => ({ l, k: Math.max(0, i - 1) + k }));
   return (
     <button className="lyrics-card" onClick={player.open} aria-label="Open the transcript in full screen">
-      <span className="lyrics-head"><span>{t.book ? "Book text · place estimated" : "Transcript"}</span><span className="lyrics-open">Full screen <Icon name="arrow" size={18} /></span></span>
+      <span className="lyrics-head"><span>{t.book ? "Book text · place estimated" : bookOf(tr.key) ? "Book text" : "Transcript"}</span><span className="lyrics-open">Full screen <Icon name="arrow" size={18} /></span></span>
       {show.map(({ l, k }) => (
         <p key={k} className={`lyrics-line ${k === i ? "now" : k < i ? "past" : "next"}`}>{l.speaker && <b>{l.speaker}: </b>}{k === i ? l.text.split(/\s+/).map((w, n, a) => <span key={n} className={n === wi ? "cur-w" : undefined}>{w}{n < a.length - 1 ? " " : ""}</span>) : l.text}</p>
       ))}

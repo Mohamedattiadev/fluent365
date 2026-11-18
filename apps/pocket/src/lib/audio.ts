@@ -1,6 +1,7 @@
 // Recordings on the device: lesson MP3s (same site) and LibriVox audiobooks (archive.org) are stored in
 // Cache Storage so they play offline and with the screen off. Nothing about the learner is sent: these are
 // plain file downloads. The cache name does not start with "fluent365-", so app updates keep it.
+import type { EdgeIndex } from "./edgebooks";
 import type { Audiobook, AudioIndex } from "./types";
 
 export const AUDIO_CACHE = "f365-audio-v1";
@@ -24,11 +25,33 @@ export async function playableUrl(url: string) {
 
 export type Item = { url: string; bytes: number; group: string };
 
-/** Every downloadable recording: lesson MP3s, then each audiobook chapter. */
-export function allItems(a: AudioIndex): Item[] {
+export type Voice = "human" | "computer";
+/** Which recording of a book is used: the learner's choice (default: computer voices, whose text follows the
+ *  voice exactly), when that version exists. */
+export function voiceFor(pref: Voice | undefined, edge: EdgeIndex | null, a: AudioIndex, id: string): Voice {
+  const hasEdge = !!edge?.books[id], hasHuman = !!a.books[id];
+  if (!hasEdge) return "human";
+  if (!hasHuman) return "computer";
+  return pref ?? "computer";
+}
+
+/** Every downloadable recording: lesson MP3s, then each audiobook chapter in the chosen voice (Edge chapters
+ *  also bring their small timing file and the list). */
+export function allItems(a: AudioIndex, edge: EdgeIndex | null = null, pref?: Voice): Item[] {
   const lessons = Object.values(a.tts).map((t) => ({ url: siteUrl(t.file), bytes: t.bytes, group: "lessons" }));
-  const books = Object.entries(a.books).flatMap(([id, b]) => b.chapters.map((ch) => ({ url: bookChapterUrl(b, ch.file), bytes: ch.bytes, group: id })));
-  return [...lessons, ...books];
+  const ids = [...new Set([...Object.keys(a.books), ...Object.keys(edge?.books ?? {})])];
+  const books = ids.flatMap((id): Item[] => {
+    if (voiceFor(pref, edge, a, id) === "computer" && edge) {
+      const base = edge.base;
+      return [{ url: new URL("index.json", base).href, bytes: 2000, group: id },
+        ...edge.books[id].chapters.flatMap((ch) => [{ url: new URL(ch.file, base).href, bytes: ch.bytes, group: id }, { url: new URL(ch.timing, base).href, bytes: Math.round(ch.seconds * 25), group: id }])];
+    }
+    const b = a.books[id];
+    return b ? b.chapters.map((ch) => ({ url: bookChapterUrl(b, ch.file), bytes: ch.bytes, group: id })) : [];
+  });
+  // The Edge list is shared by all books: keep it once.
+  const seen = new Set<string>();
+  return [...lessons, ...books].filter((i) => (seen.has(i.url) ? false : (seen.add(i.url), true)));
 }
 
 /** Which items are already stored. */
@@ -55,7 +78,8 @@ export async function download(items: Item[], onProgress: (doneBytes: number, ur
         const res = await fetch(it.url, { signal, mode: "cors" });
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const blob = await res.blob();
-        await cache.put(it.url, new Response(blob, { headers: { "Content-Type": "audio/mpeg", "Content-Length": String(blob.size) } }));
+        const type = res.headers.get("Content-Type") || (it.url.endsWith(".webm") ? "audio/webm" : it.url.endsWith(".json") ? "application/json" : "audio/mpeg");
+        await cache.put(it.url, new Response(blob, { headers: { "Content-Type": type, "Content-Length": String(blob.size) } }));
         lastError = null;
         break;
       } catch (e) {

@@ -95,3 +95,21 @@ export function splitSentences(text: string) {
   }
   return out;
 }
+
+/** For each sentence of splitSentences(text): the index of the whitespace word it starts in (same as
+ *  sentence_token_starts in scripts/gen-book-audio.py), so word times can be matched to the words on screen. */
+export function sentenceStarts(text: string) {
+  const parts: { x: string; at: number }[] = [];
+  for (const m of text.matchAll(/[^.!?]+[.!?]+["”’)]*\s*|[^.!?]+$/g)) {
+    const x = m[0];
+    if (x.trim()) parts.push({ x: x.trim(), at: (m.index ?? 0) + x.length - x.trimStart().length });
+  }
+  if (!parts.length) return [0];
+  const starts: { x: string; at: number }[] = [];
+  for (const p of parts) {
+    if (starts.length && /\b(Mr|Mrs|Ms|Dr|St|Mt|Jr|Sr)\.$/.test(starts[starts.length - 1].x)) starts[starts.length - 1].x += " " + p.x;
+    else starts.push({ ...p });
+  }
+  const spans = [...text.matchAll(/\S+/g)].map((m) => m.index ?? 0);
+  return starts.map((s) => Math.max(0, spans.filter((a) => a <= s.at).length - 1));
+}

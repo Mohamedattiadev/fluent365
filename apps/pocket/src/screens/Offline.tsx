@@ -2,14 +2,17 @@
 // LibriVox audiobooks). It skips what is already there, so pressing it again continues where it stopped.
 import { useEffect, useRef, useState } from "react";
 import { Icon, Progress, toast } from "../components/ui";
-import { allItems, cachedSet, download, ensureAppFiles, keepStorage, mb, remove, storageEstimate, type Item } from "../lib/audio";
+import { allItems, cachedSet, download, ensureAppFiles, keepStorage, mb, remove, storageEstimate, voiceFor, type Item } from "../lib/audio";
+import { useEdgeBooks } from "../lib/edgebooks";
 import type { Content } from "../lib/content";
 import { currentBook } from "../lib/reading";
-import { getState } from "../lib/store";
+import { getState, useApp } from "../lib/store";
 import { Back } from "./Learn";
 
 export function OfflineScreen({ c }: { c: Content }) {
-  const items = allItems(c.audio);
+  const edge = useEdgeBooks();
+  const voice = useApp((s) => s.listening.voice);
+  const items = allItems(c.audio, edge, voice);
   const [stored, setStored] = useState<Set<string>>(new Set());
   const [busy, setBusy] = useState<null | { label: string; done: number; total: number }>(null);
   const [error, setError] = useState("");
@@ -20,11 +23,11 @@ export function OfflineScreen({ c }: { c: Content }) {
   useEffect(() => {
     void refresh();
     void caches.keys().then((k) => setAppReady(k.some((x) => x.startsWith("fluent365-")))).catch(() => setAppReady(false));
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [edge, voice]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const groups: { id: string; label: string; sub: string; items: Item[] }[] = [
     { id: "lessons", label: "Lesson recordings", sub: `${Object.keys(c.audio.tts).length} recordings`, items: items.filter((i) => i.group === "lessons") },
-    ...c.books.filter((b) => c.audio.books[b.id]).map((b) => ({ id: b.id, label: b.title, sub: `Audiobook · read by ${c.audio.books[b.id].reader}`, items: items.filter((i) => i.group === b.id) })),
+    ...c.books.filter((b) => c.audio.books[b.id] || edge?.books[b.id]).map((b) => ({ id: b.id, label: b.title, sub: voiceFor(voice, edge, c.audio, b.id) === "computer" ? "Audiobook · computer voices" : `Audiobook · read by ${c.audio.books[b.id].reader}`, items: items.filter((i) => i.group === b.id) })),
   ];
   const left = (list: Item[]) => list.filter((i) => !stored.has(i.url));
   const bytes = (list: Item[]) => list.reduce((n, i) => n + i.bytes, 0);
@@ -99,7 +102,7 @@ export function OfflineScreen({ c }: { c: Content }) {
         })}
       </ul>
       {space && <p className="small muted">Storage used by this browser: {mb(space.used)}{space.quota ? ` of about ${mb(space.quota)} it may use` : ""}.</p>}
-      <p className="small muted">Audiobooks come from the Internet Archive (LibriVox, public domain). Only the files are downloaded; nothing about you is sent.</p>
+      <p className="small muted">Audiobooks in the voice you chose on Listen: computer voices (Fluent365's audio site) or human readers (LibriVox, public domain, from the Internet Archive). Only the files are downloaded; nothing about you is sent.</p>
     </div>
   );
 }

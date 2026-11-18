@@ -1,12 +1,17 @@
 // Book reader for the reading ladder: one page (~350 words) at a time, tap a word to look it up
 // in Fluent365's word list and save it to your reviews. Works offline (books are precached).
+// Read Along (like Apple Books): ▶ plays the computer-voice audiobook from this page; the sentence being read is
+// marked, the word being spoken underlined, and the page turns by itself (exact Edge word times).
 import { useEffect, useRef, useState } from "react";
 import { ping } from "../lib/activity";
 import { loadBook, type Content } from "../lib/content";
 import { addCards } from "../lib/learning";
+import { lastAt, loadTiming, useEdgeBooks, type Timing } from "../lib/edgebooks";
+import * as player from "../lib/player";
 import { cardKeyFor, cleanWord, countWords, lookupWord, pageAt, previousPageStart, readToday, recordPage, setPosition, tagBook, wordIndex, wordsAhead } from "../lib/reading";
 import { getState, useApp } from "../lib/store";
 import type { Book, BookInfo, VocabItem } from "../lib/types";
+import { bookTracks } from "../screens/Listen";
 import { Xlate } from "./Vocab";
 import { ActionBar, Icon, Loading, Progress, speak, stopSpeaking, toast } from "./ui";
 
@@ -28,6 +33,26 @@ export function Reader({ c, info, target, onDone, actions }: { c: Content; info:
   const [ahead, setAhead] = useState<ReturnType<typeof wordsAhead> | null>(null);
   useEffect(() => { loadBook(info.id).then((b) => { setBook(b); setAhead(wordsAhead(b, Math.min(getState().reading.books[info.id]?.block ?? 0, b.blocks.length), c, getState())); }).catch(() => setError(true)); }, [info.id, c]);
   useEffect(() => () => stopSpeaking(), []);
+  // Read Along: the computer-voice audiobook of this book, when there is one.
+  const edge = useEdgeBooks();
+  const eb = edge?.books[info.id];
+  const pl = player.usePlayer();
+  const tr = player.current();
+  const along = tr?.key.startsWith(`ebook:${info.id}:`) ? Number(tr.key.split(":")[2]) : -1;
+  const [timing, setTiming] = useState<{ ch: number; t: Timing } | null>(null);
+  useEffect(() => {
+    if (along < 0 || !book || !eb?.chapters[along] || timing?.ch === along) return;
+    let live = true;
+    void loadTiming(book, eb.chapters[along]).then((t) => { if (live) setTiming({ ch: along, t }); }).catch(() => undefined);
+    return () => { live = false; };
+  }, [along, book, eb, timing?.ch]);
+  const ts = along >= 0 && timing?.ch === along ? timing.t.sentences : null;
+  const si = ts ? lastAt(ts.map((x) => x.start), pl.time) : -1;
+  const cur = ts && si >= 0 && (pl.playing || pl.time > 0) ? ts[si] : null;
+  const curWord = cur ? lastAt(cur.words, pl.time) : -1;
+  // The page follows the voice: when the sentence being read is on another page, go there.
+  const follow = useRef<(block: number) => void>(() => undefined);
+  useEffect(() => { if (cur && pl.playing) follow.current(cur.block); }, [cur?.block, pl.playing]); // eslint-disable-line react-hooks/exhaustive-deps
   // Laptop: ← / → turn the page (the handlers are refreshed on every render through the ref).
   const keys = useRef<{ next?: () => void; back?: () => void }>({});
   useEffect(() => {
@@ -65,6 +90,26 @@ export function Reader({ c, info, target, onDone, actions }: { c: Content; info:
     window.scrollTo({ top: 0 });
   }
   keys.current = { next: finished ? undefined : next, back: start > 0 ? back : undefined };
+  follow.current = (block: number) => {
+    if (block >= page.start && block < page.end) return;
+    if (block >= page.end && block < pageAt(book!, page.end).end) { recordPage(book!, info, page.start, page.end); ping("reading"); window.scrollTo({ top: 0 }); }
+    else setPosition(info.id, block);
+  };
+  const chapterIndex = Math.max(0, info.chapters.reduce((k, ch, n) => (ch.start <= page.start ? n : k), 0));
+  const canAlong = !!eb?.chapters[chapterIndex];
+  async function readAlong() {
+    if (along >= 0) { player.toggle(); return; }
+    stopSpeaking();
+    const tracks = bookTracks(c, info.id, edge, "computer");
+    let at = 0;
+    try {
+      const t = await loadTiming(book!, eb!.chapters[chapterIndex]);
+      const first = t.sentences.find((x) => x.block >= page.start);
+      at = first ? Math.max(0, first.start - 0.15) : 0;
+    } catch { /* offline without the timing file: from the chapter start */ }
+    player.play(tracks, chapterIndex, at);
+    ping("listening");
+  }
   function onTap(e: React.MouseEvent<HTMLElement>) {
     const el = e.target as HTMLElement;
     if (!el.classList.contains("w")) return;
@@ -105,16 +150,24 @@ export function Reader({ c, info, target, onDone, actions }: { c: Content; info:
       )}
       <div className="book-text" onClick={onTap}>
         {book.blocks.slice(page.start, page.end).map((b, i) =>
-          b.type === "h2" ? <h3 key={i}>{b.text}</h3> : <p key={i}>{b.text.split(/(\s+)/).map((t, k) => {
-            if (!/\S/.test(t)) return t;
-            const key = cardKeyFor(index, t);
-            const cls = cards[key] ? "w saved" : aheadIds.has(key) ? "w ahead-w" : "w";
-            return <span key={k} className={cls}>{t}</span>;
-          })}</p>,
+          b.type === "h2" ? <h3 key={i} className={cur?.block === page.start + i ? "ra-h" : undefined}>{b.text}</h3> : <p key={i}>{(() => {
+            let n = -1;
+            const on = cur?.block === page.start + i ? cur : null;
+            return b.text.split(/(\s+)/).map((t, k) => {
+              if (!/\S/.test(t)) return t;
+              n++;
+              const key = cardKeyFor(index, t);
+              let cls = cards[key] ? "w saved" : aheadIds.has(key) ? "w ahead-w" : "w";
+              if (on && n >= on.firstToken && n < on.firstToken + on.words.length) cls += n - on.firstToken === curWord ? " ra-s ra-w" : " ra-s";
+              return <span key={k} className={cls}>{t}</span>;
+            });
+          })()}</p>,
         )}
       </div>
       <div className="row" style={{ marginTop: 8 }}>
-        <button className="btn quiet" onClick={() => { stopSpeaking(); speak(pageText, { rate: 0.95 }); ping("listening"); }}><Icon name="audio" /> Read this page aloud</button>
+        {canAlong
+          ? <button className="btn tonal" onClick={() => void readAlong()} aria-label={along >= 0 && pl.playing ? "Pause reading along" : "Listen and read along from this page"}><Icon name={along >= 0 && pl.playing ? "pause" : "play"} filled /> {along >= 0 ? (pl.playing ? "Pause" : "Continue listening") : "Listen along"}</button>
+          : <button className="btn quiet" onClick={() => { stopSpeaking(); speak(pageText, { rate: 0.95 }); ping("listening"); }}><Icon name="audio" /> Read this page aloud</button>}
         {start > 0 && <button className="btn quiet" onClick={back}><Icon name="back" /> Previous page</button>}
       </div>
 

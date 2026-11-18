@@ -935,3 +935,8 @@ kbd { display: inline-block; min-width: 1.6em; padding: 1px 6px; border: 1px sol
 .install-row { margin-top: 8px; }
 .install-row .navrow { width: 100%; }
 .install-row .install-steps { margin: 8px 0 0; }
+.book-voice { margin: 4px 0 4px; }
+/* Read Along: the sentence being read and the word being spoken (exact Edge word times). */
+.book-text .ra-s { background: var(--accent-soft); box-shadow: 0 0 0 2px var(--accent-soft); }
+.book-text .ra-w { text-decoration: underline 3px var(--accent); text-underline-offset: 4px; }
+.book-text h3.ra-h { color: var(--accent-text); }

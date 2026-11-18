@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { chapterSentences, lineAt, mapChapters, sentenceAt, splitSentences } from "./transcript";
+import { lastAt } from "./edgebooks";
+import { chapterSentences, lineAt, mapChapters, sentenceAt, sentenceStarts, splitSentences } from "./transcript";
 import type { Audiobook, Book } from "./types";
 
 const book: Book = { id: "b", title: "B", author: "A", blocks: [
@@ -28,3 +29,17 @@ describe("transcript", () => {
     expect(sentenceAt([{ at: 0 }, { at: 0.5 }], 0.6)).toBe(1);
   });
 });
+
+describe("exact word times (Edge voices)", () => {
+  it("finds the word where each sentence starts, like the audio generator", () => {
+    expect(sentenceStarts("Mr. Bennet came. He sat down. “Oh!” she cried.")).toEqual([0, 3, 6, 7]);
+    expect(sentenceStarts("“Yes!”she said. No.")).toEqual([0, 0, 2]);
+    expect(sentenceStarts("One two.")).toEqual([0]);
+  });
+  it("marks the last word that has started", () => {
+    expect(lastAt([1, 1.5, 2], 0.5)).toBe(-1);
+    expect(lastAt([1, 1.5, 2], 1.6)).toBe(1);
+    expect(lastAt([1, 1.5, 2], 9)).toBe(2);
+  });
+});
+

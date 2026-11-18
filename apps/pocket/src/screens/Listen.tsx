@@ -1,18 +1,19 @@
-// Listen: background audio for the metro and the bus. The audiobook of your current ladder book (LibriVox,
-// public domain) and the lesson recordings (generated on the laptop with Microsoft Edge neural voices). Plays with the
+// Listen: background audio for the metro and the bus. The audiobook of your current ladder book (computer voices
+// with text that follows word by word, or the LibriVox human reader: a switch per book) and the lesson recordings (generated on the laptop with Microsoft Edge neural voices). Plays with the
 // screen off, with lock-screen controls. Download once and it works offline.
 // One card at the top (continue / now playing → opens the full-screen player), then compact lists with
 // what you have heard, then the books. Downloads are small per-chapter buttons; everything at once is in Settings.
 import { useEffect, useState } from "react";
-import { Controls, Extras, LyricsCard, QueueList, RATES, Scrubber, time, TranscriptView, useTranscript } from "../components/FullPlayer";
+import { bookOf, Controls, Extras, LyricsCard, QueueList, RATES, Scrubber, time, TranscriptView, useTranscript } from "../components/FullPlayer";
 import { WordSheet } from "../components/Reader";
 import { CourseUnitView, LessonStepView } from "../components/Lessons";
-import { Icon, toast, useWide } from "../components/ui";
-import { allItems, bookChapterUrl, cachedSet, download, keepStorage, mb, siteUrl, type Item } from "../lib/audio";
+import { Icon, Segmented, toast, useWide } from "../components/ui";
+import { allItems, bookChapterUrl, cachedSet, download, keepStorage, mb, siteUrl, voiceFor, type Item, type Voice } from "../lib/audio";
+import { edgeUrl, useEdgeBooks, type EdgeIndex } from "../lib/edgebooks";
 import { loadCourse, type Content } from "../lib/content";
 import * as player from "../lib/player";
 import { currentBook, wordIndex } from "../lib/reading";
-import { useApp } from "../lib/store";
+import { getState, update, useApp } from "../lib/store";
 import type { Course } from "../lib/types";
 import { navigate } from "../router";
 import { Back } from "./Learn";
@@ -22,12 +23,17 @@ const hours = (s: number) => (s >= 3600 ? `${(s / 3600).toFixed(1)} h` : `${Math
 /** Mobile data (when the browser tells us): big downloads ask for a second tap. */
 const onCellular = () => { const n = navigator as Navigator & { connection?: { type?: string; saveData?: boolean } }; return n.connection?.type === "cellular" || !!n.connection?.saveData; };
 
-/** Tracks for one ladder book's audiobook. */
-export function bookTracks(c: Content, id: string): player.Track[] {
+/** Tracks for one ladder book's audiobook, in the chosen voice (computer voices when there is no choice yet). */
+export function bookTracks(c: Content, id: string, edge: EdgeIndex | null = null, voice?: Voice): player.Track[] {
   const b = c.audio.books[id];
   const info = c.books.find((x) => x.id === id);
-  if (!b || !info) return [];
-  return b.chapters.map((ch, i) => ({ key: `book:${id}:${i}`, title: ch.title.replace(/^\d+\s*-\s*/, ""), artist: `${info.title} · read by ${b.reader}`, album: info.title, url: bookChapterUrl(b, ch.file), cover: info.cover ? `./data/${info.cover}` : undefined }));
+  if (!info) return [];
+  const cover = info.cover ? `./data/${info.cover}` : undefined;
+  if (voiceFor(voice ?? getState().listening.voice, edge, c.audio, id) === "computer" && edge?.books[id]) {
+    return edge.books[id].chapters.map((ch, i) => ({ key: `ebook:${id}:${i}`, title: ch.title, artist: `${info.title} · computer voices`, album: info.title, url: edgeUrl(ch.file), cover }));
+  }
+  if (!b) return [];
+  return b.chapters.map((ch, i) => ({ key: `book:${id}:${i}`, title: ch.title.replace(/^\d+\s*-\s*/, ""), artist: `${info.title} · read by ${b.reader}`, album: info.title, url: bookChapterUrl(b, ch.file), cover }));
 }
 /** Tracks for the lesson recordings, in lesson order. */
 export function lessonTracks(c: Content): player.Track[] {
@@ -38,8 +44,10 @@ export function lessonTracks(c: Content): player.Track[] {
 function useDownloads(c: Content) {
   const [stored, setStored] = useState<Set<string>>(new Set());
   const [busy, setBusy] = useState<Record<string, number>>({});
-  const refresh = () => void cachedSet(allItems(c.audio)).then(setStored);
-  useEffect(refresh, [c]); // eslint-disable-line react-hooks/exhaustive-deps
+  const edge = useEdgeBooks();
+  const voice = useApp((s) => s.listening.voice);
+  const refresh = () => void cachedSet(allItems(c.audio, edge, voice)).then(setStored);
+  useEffect(refresh, [c, edge, voice]); // eslint-disable-line react-hooks/exhaustive-deps
   async function get(id: string, items: Item[]) {
     const todo = items.filter((i) => !stored.has(i.url));
     const total = todo.reduce((n, i) => n + i.bytes, 0) || 1;
@@ -66,6 +74,7 @@ export function ListenScreen({ c, path }: { c: Content; path: string[] }) {
   const p = player.usePlayer();
   const [tests, setTests] = useState<Course | null>(null);
   const dl = useDownloads(c);
+  const edge = useEdgeBooks();
   const wide = useWide("(min-width: 1100px)");
   useEffect(() => { void loadCourse("ielts-listening-tests").then(setTests).catch(() => undefined); }, []);
   const [sub, a, b] = path;
@@ -73,7 +82,7 @@ export function ListenScreen({ c, path }: { c: Content; path: string[] }) {
   if (sub === "test" && a) return <div><Back to="/listen" /><CourseUnitView courseId="ielts-listening-tests" unitId={a} onDone={() => navigate("/listen")} /></div>;
 
   const book = currentBook(st, c.books);
-  const items = allItems(c.audio);
+  const items = allItems(c.audio, edge, st.listening.voice);
   const lessonList = lessonTracks(c);
   const cur = player.current();
   const pos = st.listening.pos;
@@ -83,15 +92,15 @@ export function ListenScreen({ c, path }: { c: Content; path: string[] }) {
   // Nothing playing yet: offer to continue where you stopped (or start the current book).
   const lastKey = st.listening.last;
   const resumeQueue = (): [player.Track[], number] => {
-    if (lastKey?.startsWith("book:")) { const [, id, i] = lastKey.split(":"); return [bookTracks(c, id), Number(i)]; }
+    if (lastKey && /^e?book:/.test(lastKey)) { const [kind, id, i] = lastKey.split(":"); return [bookTracks(c, id, edge, kind === "ebook" ? "computer" : "human"), Number(i)]; }
     if (lastKey?.startsWith("tts:")) { const i = lessonList.findIndex((t) => t.key === lastKey); if (i >= 0) return [lessonList, i]; }
-    return [book ? bookTracks(c, book.id) : lessonList, 0];
+    return [book ? bookTracks(c, book.id, edge) : lessonList, 0];
   };
   const [rq, ri] = resumeQueue();
   const hero = cur ?? rq[ri];
   // The next lesson to listen to: the one you stopped in, else the first one not heard yet.
   const nextLesson = Math.max(0, lessonList.findIndex((t) => !heard[t.key]));
-  const books = [...c.books.filter((x) => x.id === book?.id), ...c.books.filter((x) => x.id !== book?.id)].filter((x) => c.audio.books[x.id]);
+  const books = [...c.books.filter((x) => x.id === book?.id), ...c.books.filter((x) => x.id !== book?.id)].filter((x) => c.audio.books[x.id] || edge?.books[x.id]);
 
   return (
     <div className="listen">
@@ -147,7 +156,7 @@ export function ListenScreen({ c, path }: { c: Content; path: string[] }) {
 
           <h2 className="section-title">Books</h2>
           <div className="books-list">
-            {books.map((x) => <BookChapters key={x.id} c={c} id={x.id} dl={dl} current={x.id === book?.id} />)}
+            {books.map((x) => <BookChapters key={x.id} c={c} id={x.id} dl={dl} edge={edge} current={x.id === book?.id} />)}
           </div>
 
           <h2 className="section-title">IELTS listening practice</h2>
@@ -165,7 +174,7 @@ export function ListenScreen({ c, path }: { c: Content; path: string[] }) {
           <button className="btn quiet offline-link" onClick={() => navigate("/settings/offline")}>
             <Icon name={left.length ? "download" : "offline"} size={18} /> {left.length ? `Download everything for offline (${mb(left.reduce((n, i) => n + i.bytes, 0))}, use Wi-Fi)` : "Everything is downloaded: works offline"}
           </button>
-          <p className="small muted" style={{ marginTop: 8 }}>Audiobooks: LibriVox volunteers, public domain, from the Internet Archive. Lesson recordings: computer voices (Microsoft Edge neural voices), not human readers.</p>
+          <p className="small muted" style={{ marginTop: 8 }}>Audiobooks: computer voices (Microsoft Edge neural voices; the text follows word by word) or human readers (LibriVox volunteers, public domain, from the Internet Archive). Lesson recordings: computer voices, not human readers.</p>
         </div>
         {wide && <NowPanel c={c} />}
       </div>
@@ -173,18 +182,25 @@ export function ListenScreen({ c, path }: { c: Content; path: string[] }) {
   );
 }
 
-function BookChapters({ c, id, dl, current }: { c: Content; id: string; dl: Downloads; current?: boolean }) {
+function BookChapters({ c, id, dl, edge, current }: { c: Content; id: string; dl: Downloads; edge: EdgeIndex | null; current?: boolean }) {
   const p = player.usePlayer();
   const pos = useApp((s) => s.listening.pos);
   const heard = useApp((s) => s.listening.done) ?? NONE;
   const [open, setOpen] = useState(false);
   const [sure, setSure] = useState(false);
-  const b = c.audio.books[id];
+  const pref = useApp((s) => s.listening.voice);
+  const voice = voiceFor(pref, edge, c.audio, id);
+  const human = c.audio.books[id];
   const info = c.books.find((x) => x.id === id)!;
-  const tracks = bookTracks(c, id);
+  const tracks = bookTracks(c, id, edge, voice);
+  const chapters = voice === "computer" ? edge!.books[id].chapters : human.chapters;
+  const b = { seconds: chapters.reduce((n, x) => n + x.seconds, 0), chapters };
   const cur = player.current();
-  const item = (i: number): Item => ({ url: tracks[i].url, bytes: b.chapters[i].bytes, group: id });
-  const all = tracks.map((_, i) => item(i));
+  // A chapter's files: the recording (+ its timing file for computer voices).
+  const files = (i: number): Item[] => voice === "computer"
+    ? [{ url: tracks[i].url, bytes: chapters[i].bytes, group: id }, { url: edgeUrl(edge!.books[id].chapters[i].timing), bytes: Math.round(chapters[i].seconds * 25), group: id }]
+    : [{ url: tracks[i].url, bytes: chapters[i].bytes, group: id }];
+  const all = tracks.flatMap((_, i) => files(i));
   const have = tracks.filter((t) => dl.stored.has(t.url)).length;
   const done = tracks.filter((t) => heard[t.key]).length;
   const leftBytes = all.filter((x) => !dl.stored.has(x.url)).reduce((n, x) => n + x.bytes, 0);
@@ -205,7 +221,11 @@ function BookChapters({ c, id, dl, current }: { c: Content; id: string; dl: Down
       </button>
       {open && (
         <>
-          <p className="small muted book-audio-sub">Read by {b.reader} (LibriVox)</p>
+          {human && edge?.books[id] ? (
+            <div className="book-voice"><Segmented label="Voice" value={voice} options={[["computer", "Computer"], ["human", "Human"]]}
+              onChange={(v: Voice) => { update((s) => ({ listening: { ...s.listening, voice: v } })); toast(v === "computer" ? "Computer voices: the text follows word by word" : `Human reader: ${human.reader} (LibriVox)`); }} /></div>
+          ) : null}
+          <p className="small muted book-audio-sub">{voice === "computer" ? "Microsoft Edge neural voices: a narrator, the characters in other voices; the text follows word by word" : `Read by ${human.reader} (LibriVox)`}{voice === "computer" && edge && !edge.books[id].complete ? ` · ${chapters.length} chapters so far` : ""}</p>
           <ul className="list tracks">
             {tracks.map((t, i) => {
               const on = cur?.key === t.key;
@@ -221,7 +241,7 @@ function BookChapters({ c, id, dl, current }: { c: Content; id: string; dl: Down
                   </button>
                   {dl.stored.has(t.url) ? <span className="icon-btn" aria-hidden title="Downloaded"><Icon name="downloaded" size={20} /></span>
                     : k in dl.busy ? <span className="icon-btn small num" role="status" aria-label="Downloading">{Math.round(dl.busy[k] * 100)}%</span>
-                    : <button className="icon-btn" onClick={() => void dl.get(k, [item(i)])} aria-label={`Download only this chapter (${mb(b.chapters[i].bytes)})`}><Icon name="download" size={20} /></button>}
+                    : <button className="icon-btn" onClick={() => void dl.get(k, files(i))} aria-label={`Download only this chapter (${mb(b.chapters[i].bytes)})`}><Icon name="download" size={20} /></button>}
                   {share > 0.01 && <span className="track-bar" style={{ width: `${Math.min(1, share) * 100}%` }} aria-hidden />}
                 </div></li>
               );
@@ -255,7 +275,7 @@ function NowPanel({ c }: { c: Content }) {
       {list ? <div className="fp-text fp-list"><QueueList onPick={() => setList(false)} /></div> : t ? <TranscriptView c={c} t={t} onWord={setWord} /> : <div className="fp-text fp-empty"><p className="muted">No text for this recording.</p></div>}
       <p className="fp-note small muted">{t?.book ? "Place in the text is estimated · " : t ? "Click a sentence to jump · " : ""}hold a word to save it</p>
       <Extras t={t} onList={() => setList(!list)} />
-      {word && <WordSheet c={c} index={wordIndex(c)} pick={word} bookId={tr.key.startsWith("book:") ? tr.key.split(":")[1] : undefined} saved={(k) => !!cards[k]} onClose={() => setWord(null)} />}
+      {word && <WordSheet c={c} index={wordIndex(c)} pick={word} bookId={bookOf(tr.key)} saved={(k) => !!cards[k]} onClose={() => setWord(null)} />}
     </aside>
   );
 }
