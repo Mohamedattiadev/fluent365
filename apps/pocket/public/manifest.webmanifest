@@ -2,7 +2,6 @@
   "name": "Fluent365",
   "short_name": "Fluent365",
   "description": "Guided daily English practice: grammar, vocabulary, reading, listening, writing, speaking and IELTS.",
-  "id": "./",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
