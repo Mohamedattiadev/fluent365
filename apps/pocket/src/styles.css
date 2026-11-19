@@ -790,14 +790,17 @@ p { margin: 0 0 10px; }
 
 /* ---------- 4. Full-screen player ---------- */
 :root.fp-open { overflow: hidden; }
-.fp { position: fixed; inset: 0; z-index: 45; display: flex; flex-direction: column; background: var(--md-surface); color: var(--md-on-surface); padding: env(safe-area-inset-top) 0 env(safe-area-inset-bottom); animation: fpIn 260ms var(--ease) backwards; transition: transform 200ms var(--ease); touch-action: pan-x; }
+.fp { position: fixed; inset: 0 0 auto 0; height: 100vh; height: 100dvh; /* dvh: the visible height, so the bottom row is not hidden behind the browser toolbar on phones */ z-index: 45; display: flex; flex-direction: column; background: var(--md-surface); color: var(--md-on-surface); padding: env(safe-area-inset-top) 0 env(safe-area-inset-bottom); animation: fpIn 260ms var(--ease) backwards; transition: transform 200ms var(--ease); touch-action: pan-x; }
 @keyframes fpIn { from { transform: translateY(40px); opacity: 0; } to { transform: none; opacity: 1; } }
-.fp-head { position: relative; display: flex; align-items: center; gap: 8px; padding: 14px 12px 8px; touch-action: none; }
+.fp-head { flex-shrink: 0; position: relative; display: flex; align-items: center; gap: 8px; padding: 14px 12px 8px; touch-action: none; }
 .fp-grip { position: absolute; top: 6px; left: 50%; width: 36px; height: 4px; margin-left: -18px; border-radius: 2px; background: var(--md-outline-variant); }
 .fp-title { display: flex; flex-direction: column; min-width: 0; text-align: center; font-weight: 500; }
 .fp-head .cover { border-radius: 4px; flex-shrink: 0; margin-right: 6px; }
-.fp-text { flex: 1; min-height: 0; overflow-y: auto; padding: 30vh 24px; scrollbar-width: none; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; mask-image: linear-gradient(transparent, #000 14%, #000 86%, transparent); -webkit-mask-image: linear-gradient(transparent, #000 14%, #000 86%, transparent); }
+.fp-text { flex: 1; min-height: 0; overflow-y: auto; padding: 0 24px; scrollbar-width: none; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; mask-image: linear-gradient(transparent, #000 14%, #000 86%, transparent); -webkit-mask-image: linear-gradient(transparent, #000 14%, #000 86%, transparent); }
 .fp-text::-webkit-scrollbar { display: none; }
+/* Room above the first and below the last line so any line can sit in the middle. Spacers inside the
+   scroll area (not padding), so the text area can shrink on short screens and the controls stay visible. */
+.fp-text:not(.fp-list):not(.fp-empty)::before, .fp-text:not(.fp-list):not(.fp-empty)::after { content: ""; display: block; height: 30vh; height: 30dvh; }
 .fp-text p { margin: 0 0 18px; font-size: 1.5rem; line-height: 1.35; font-weight: 500; color: color-mix(in srgb, var(--md-on-surface) 34%, transparent); cursor: pointer; transition: color 250ms var(--ease); max-width: 40ch; }
 .fp-text p.past { color: color-mix(in srgb, var(--md-on-surface) 46%, transparent); }
 .fp-text p.now { color: var(--md-on-surface); font-weight: 700; }
@@ -807,13 +810,13 @@ p { margin: 0 0 10px; }
 .fp-text .fw:active { background: var(--accent-soft); }
 .fp-list, .fp-empty { padding: 8px 16px; mask-image: none; -webkit-mask-image: none; }
 .fp-list p, .fp-empty p { font-size: var(--fs-md); }
-.fp-foot { padding: 4px 20px 12px; touch-action: none; }
+.fp-foot { flex-shrink: 0; padding: 4px 20px 12px; touch-action: none; }
 .fp-note { text-align: center; margin: 0 0 2px; }
 .fp-seek .np-seek { margin-top: 4px; }
 .fp-controls { display: flex; align-items: center; justify-content: center; gap: 14px; margin: 2px 0 10px; }
 .fp-controls .icon-btn { width: 48px; height: 48px; color: var(--md-on-surface); }
 .fp-controls .play-fab.big { width: 72px; height: 72px; }
-.fp-extras { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
+.fp-extras { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: 6px; }
 .fp-chip { appearance: none; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; min-height: 52px; padding: 4px 2px; border: 0; border-radius: var(--r-md); background: var(--md-surface-container); color: var(--md-on-surface); font: 500 var(--fs-xs)/1.2 var(--font); cursor: pointer; text-align: center; }
 .fp-chip span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 100%; }
 .fp-chip.on { background: var(--accent); color: var(--on-accent); }

@@ -274,7 +274,7 @@ function NowPanel({ c }: { c: Content }) {
       </div>
       {list ? <div className="fp-text fp-list"><QueueList onPick={() => setList(false)} /></div> : t ? <TranscriptView c={c} t={t} onWord={setWord} /> : <div className="fp-text fp-empty"><p className="muted">No text for this recording.</p></div>}
       <p className="fp-note small muted">{t?.book ? "Place in the text is estimated · " : t ? "Click a sentence to jump · " : ""}hold a word to save it</p>
-      <Extras t={t} onList={() => setList(!list)} />
+      <Extras c={c} t={t} onList={() => setList(!list)} />
       {word && <WordSheet c={c} index={wordIndex(c)} pick={word} bookId={bookOf(tr.key)} saved={(k) => !!cards[k]} onClose={() => setWord(null)} />}
     </aside>
   );

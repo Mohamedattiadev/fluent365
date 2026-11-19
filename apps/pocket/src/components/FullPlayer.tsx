@@ -8,7 +8,9 @@ import { useEffect, useRef, useState } from "react";
 import { loadBook, loadLesson, type Content } from "../lib/content";
 import * as player from "../lib/player";
 import { wordIndex } from "../lib/reading";
-import { useApp } from "../lib/store";
+import { update, useApp } from "../lib/store";
+import { voiceFor, type Voice } from "../lib/audio";
+import { bookTracks } from "../screens/Listen";
 import { edgeIndex, lastAt, loadTiming } from "../lib/edgebooks";
 import { chapterSentences, lineAt, sentenceAt, type Line } from "../lib/transcript";
 import type { AudioBlock } from "../lib/types";
@@ -109,9 +111,26 @@ export function Scrubber() {
   );
 }
 
-/** Repeat sentence · speed · sleep timer · chapters. */
-export function Extras({ t, onList }: { t: Transcript | null; onList: () => void }) {
+/** Repeat sentence · speed · sleep timer · voice (books with both) · chapters. */
+export function Extras({ c, t, onList }: { c: Content; t: Transcript | null; onList: () => void }) {
   const p = player.usePlayer();
+  const pref = useApp((s) => s.listening.voice);
+  const id = bookOf(p.queue[p.index]?.key);
+  const edge = edgeIndex();
+  const both = !!id && !!c.audio.books[id] && !!edge?.books[id];
+  const voice = both ? voiceFor(pref, edge, c.audio, id!) : undefined;
+  /** Computer ↔ human reader, same chapter, about the same place in it. */
+  function switchVoice() {
+    if (!both || !id || !edge) return;
+    const v: Voice = voice === "computer" ? "human" : "computer";
+    update((s) => ({ listening: { ...s.listening, voice: v } }));
+    const tracks = bookTracks(c, id, edge, v);
+    const i = Math.min(p.index, tracks.length - 1);
+    const secs = v === "computer" ? edge.books[id].chapters[i]?.seconds : c.audio.books[id].chapters[i]?.seconds;
+    const share = p.duration ? p.time / p.duration : 0;
+    player.play(tracks, i, secs ? Math.max(0, share * secs - 3) : 0);
+    toast(v === "computer" ? "Computer voices: the text follows word by word" : `Human reader: ${c.audio.books[id].reader} (LibriVox)`);
+  }
   const [, tick] = useState(0);
   useEffect(() => { if (!p.sleep || !("until" in p.sleep)) return; const id = setInterval(() => tick((x) => x + 1), 15000); return () => clearInterval(id); }, [p.sleep]);
   const step = useRef(0);
@@ -135,6 +154,7 @@ export function Extras({ t, onList }: { t: Transcript | null; onList: () => void
       <button className="fp-chip" onClick={repeat} aria-label="Repeat this sentence"><Icon name="repeat1" size={20} /><span>Repeat</span></button>
       <button className="fp-chip" onClick={rate} aria-label={`Speed ${p.rate}×, tap to change`}><Icon name="speed" size={20} /><span>{p.rate}×</span></button>
       <button className={`fp-chip ${p.sleep ? "on" : ""}`} onClick={nextSleep} aria-label={`Sleep timer: ${p.sleep ? sleepLabel : "off"}, tap to change`}><Icon name="sleep" size={20} /><span>{sleepLabel}</span></button>
+      {both && <button className="fp-chip" onClick={switchVoice} aria-label={`Voice: ${voice === "computer" ? "computer voices" : "human reader"}, tap to switch`}><Icon name="person" size={20} /><span>{voice === "computer" ? "Computer" : "Human"}</span></button>}
       <button className="fp-chip" onClick={onList} aria-label="Chapters"><Icon name="queue" size={20} /><span>{bookOf(p.queue[0]?.key) ? "Chapters" : "Lessons"}</span></button>
     </div>
   );
@@ -238,7 +258,7 @@ export function FullPlayer({ c }: { c: Content }) {
         {p.error && <p className="small" style={{ color: "var(--md-error)", margin: "0 0 6px" }}>{p.error}</p>}
         <Scrubber />
         <Controls />
-        <Extras t={t} onList={() => setList(!list)} />
+        <Extras c={c} t={t} onList={() => setList(!list)} />
       </div>
       {word && <WordSheet c={c} index={wordIndex(c)} pick={word} bookId={bookId} saved={(k) => !!cards[k]} onClose={() => setWord(null)} />}
     </div>

@@ -149,3 +149,16 @@ test("backup: download, change, restore from the file (no network)", async ({ pa
   await page.goto("./#/settings");
   await expect(page.getByLabel("Name")).toHaveValue("Backup Tester");
 });
+
+test("full-screen player: the whole control area fits on a short phone screen", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 640 }); // a phone with the browser toolbar showing
+  await setup(page);
+  await page.goto("./#/listen");
+  await page.getByText(/^Continue: Lesson 1/).click();
+  await page.getByRole("button", { name: "Open the transcript in full screen" }).click();
+  const extras = page.locator(".fp-extras");
+  await expect(extras).toBeVisible();
+  const box = await extras.boundingBox();
+  expect(box!.y + box!.height).toBeLessThanOrEqual(640);
+  await expect(page.getByRole("button", { name: "Next" }).last()).toBeInViewport();
+});
