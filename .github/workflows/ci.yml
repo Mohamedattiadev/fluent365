@@ -36,8 +36,6 @@ jobs:
           key: playwright-chromium-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}
       - if: steps.pw-cache.outputs.cache-hit != 'true'
         run: pnpm --filter pocket exec playwright install --with-deps chromium
-      - if: steps.pw-cache.outputs.cache-hit == 'true'
-        run: pnpm --filter pocket exec playwright install-deps chromium
       - run: pnpm build
       - run: pnpm e2e
       - if: failure()
