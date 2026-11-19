@@ -95,6 +95,6 @@ _Last updated: 2026-11-18_
 2. Real-phone checks (emulated checks passed 2026-11-19, see Done): Android home-screen icon after install, iPhone audio, share a Praktika PDF, backup with the owner's own key (repo `fluent365-data` exists).
 3. ~~Evidence-based phase gates~~ done 2026-11-19 (see Done).
 4. Local app: build it from Bo-ok (owner's idea, 2026-11-17), synced with Pocket. Notes, options and open questions: `docs/research/LOCAL_FROM_BO-OK.md` (recommends keeping Bo-ok's Next.js stack instead of FastAPI, sync over Bo-ok's record protocol, opt-in). **Owner decided:** in this repo as `apps/local`; sync both ways (own server + own private GitHub repo, each the fallback of the other); keep TR/EN/AR; the same look as Pocket (accent colour, Roboto, G1 logo).
-5. More content: more GT reading passages and letters; Arabic explanations for the 18 B1 core topics (they have Turkish; the 12 B2–C1 topics have both). B2/C1 core grammar: done 2026-11-19.
+5. More content: more GT reading passages and letters; B2/C1 core grammar and TR/AR explanations for all 30 core topics: done 2026-11-19.
 6. ~~`.apkg` export~~ done 2026-11-19 (schedule + last review; see Done).
 7. Playwright e2e in CI.

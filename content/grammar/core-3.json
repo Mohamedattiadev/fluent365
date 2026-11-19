@@ -19,7 +19,8 @@
       },
       "explain": {
         "en": "Zero conditional (if + present, present) for things that are always true. First conditional (if + present, will + verb) for real, likely situations in the future. Do not use will after if, when, unless, as soon as, before, until: say 'If it rains', not 'If it will rain'. Unless = if not. When = you are sure it will happen.",
-        "tr": "if/when/unless/as soon as sonrasında will kullanılmaz: If it rains… unless = if not."
+        "tr": "if/when/unless/as soon as sonrasında will kullanılmaz: If it rains… unless = if not.",
+        "ar": "الشرط الصفري (if + مضارع، مضارع) لما هو صحيح دائماً. الشرط الأول (if + مضارع، will + فعل) لمواقف حقيقية محتملة في المستقبل. لا تستعمل will بعد if وwhen وunless وas soon as وbefore وuntil: قل If it rains. unless = if not. when = حين تكون متأكداً أنه سيحدث."
       },
       "exercises": [
         { "type": "choose", "prompt": "Which is natural?", "options": ["If it will rain, we'll stay in.", "If it rains, we'll stay in."], "answer": 1, "why": "No will after if." },
@@ -52,7 +53,8 @@
       },
       "explain": {
         "en": "Second conditional (if + past simple, would + verb) for imaginary or unlikely situations now or in the future. The past form does not mean past time here. 'If I were you' is the usual way to give advice. Wish + past simple expresses a wish about the present (I wish I had a car = I don't have one). Wish + could for abilities.",
-        "tr": "Second conditional: if + V2, would + V1 (hayali durum). I wish + V2: şimdiki zaman için dilek."
+        "tr": "Second conditional: if + V2, would + V1 (hayali durum). I wish + V2: şimdiki zaman için dilek.",
+        "ar": "الشرط الثاني (if + ماضٍ بسيط، would + فعل) لمواقف خيالية أو غير مرجحة الآن أو في المستقبل؛ صيغة الماضي هنا لا تعني زمناً ماضياً. If I were you هي الطريقة المعتادة للنصح. wish + ماضٍ بسيط لتمنٍّ عن الحاضر (I wish I had a car = ليس لدي سيارة). wish + could للقدرات."
       },
       "exercises": [
         { "type": "gap", "prompt": "If I ___ (be) rich, I would travel around the world.", "answers": ["were", "was"], "why": "Unreal present: past form. 'Were' is preferred in formal English." },
@@ -86,7 +88,8 @@
       },
       "explain": {
         "en": "Reason: because + clause; because of / due to + noun. Result: so + clause (It was cold, so I wore a coat). Purpose: to + verb or in order to + verb (I came here to study); so that + subject + can/could/will/would (I left early so that I could catch the train). For purpose, do not say 'for + verb': say 'to learn', not 'for learn'.",
-        "tr": "because + cümle, because of + isim. so = sonuç. to / in order to / so that = amaç; 'for + fiil' yanlış."
+        "tr": "because + cümle, because of + isim. so = sonuç. to / in order to / so that = amaç; 'for + fiil' yanlış.",
+        "ar": "السبب: because + جملة، because of / due to + اسم. النتيجة: so + جملة (It was cold, so I wore a coat). الغرض: to أو in order to + فعل (I came here to study)، وso that + فاعل + can/could/will/would. لا تقل for + فعل للغرض: قل to learn لا for learn."
       },
       "exercises": [
         { "type": "gap", "prompt": "The flight was delayed ___ the storm.", "answers": ["because of", "due to"], "why": "A noun phrase follows: because of/due to." },
@@ -120,7 +123,8 @@
       },
       "explain": {
         "en": "Too + adjective = more than is good or possible (too expensive to buy). Adjective + enough (big enough) but enough + noun (enough money). So + adjective/adverb (so tired); such + (a/an) + adjective + noun (such a nice day, such kind people). Both can be followed by 'that' + result.",
-        "tr": "too + sıfat = gereğinden fazla. sıfat + enough, enough + isim. so + sıfat; such + (a) + sıfat + isim."
+        "tr": "too + sıfat = gereğinden fazla. sıfat + enough, enough + isim. so + sıfat; such + (a) + sıfat + isim.",
+        "ar": "too + صفة = أكثر من اللازم أو الممكن (too expensive to buy). صفة + enough (big enough) لكن enough + اسم (enough money). so + صفة أو ظرف (so tired)؛ such + (a/an) + صفة + اسم (such a nice day). ويمكن أن يليهما that + النتيجة."
       },
       "exercises": [
         { "type": "choose", "prompt": "Which is natural?", "options": ["He's enough tall to play basketball.", "He's tall enough to play basketball."], "answer": 1, "why": "Adjective + enough." },
@@ -154,7 +158,8 @@
       },
       "explain": {
         "en": "Question tags use the auxiliary from the sentence: positive sentence + negative tag (She's nice, isn't she?), negative sentence + positive tag (You can't swim, can you?). In the present/past simple use do/does/did (He works here, doesn't he?). 'I am' → aren't I? Adverbs of frequency (always, usually, often, sometimes, rarely, never) go before the main verb but after be and after the first auxiliary: I often walk / I'm often late / I've never seen.",
-        "tr": "Olumlu cümle → olumsuz etiket, olumsuz → olumlu. Sıklık zarfları ana fiilden önce, be ve yardımcı fiilden sonra gelir."
+        "tr": "Olumlu cümle → olumsuz etiket, olumsuz → olumlu. Sıklık zarfları ana fiilden önce, be ve yardımcı fiilden sonra gelir.",
+        "ar": "السؤال الذيلي يستعمل الفعل المساعد من الجملة: جملة مثبتة + ذيل منفي (She's nice, isn't she?)، جملة منفية + ذيل مثبت (You can't swim, can you?). في المضارع والماضي البسيط استعمل do/does/did. I am ← aren't I? ظروف التكرار (always, often, never…) تأتي قبل الفعل الرئيسي وبعد be وبعد أول فعل مساعد: I often walk / I'm often late / I've never seen."
       },
       "exercises": [
         { "type": "gap", "prompt": "She plays the piano, ___ she?", "answers": ["doesn't"], "why": "Present simple positive → doesn't." },
@@ -187,7 +192,8 @@
       },
       "explain": {
         "en": "Use who (or that) for people, which (or that) for things, where for places, whose for possession. When the pronoun is the object of the clause (the film that I watched), you can omit it: the film I watched. Do not repeat the pronoun: 'the man who I met him' is wrong.",
-        "tr": "who = insan, which = şey, that = ikisi, where = yer, whose = sahiplik. Nesne konumundaysa zamir atılabilir; zamiri tekrar etme."
+        "tr": "who = insan, which = şey, that = ikisi, where = yer, whose = sahiplik. Nesne konumundaysa zamir atılabilir; zamiri tekrar etme.",
+        "ar": "who (أو that) للأشخاص، which (أو that) للأشياء، where للأماكن، whose للملكية. إذا كان الضمير مفعولاً في الجملة (the film that I watched) يمكن حذفه: the film I watched. لا تكرر الضمير: the man who I met him خطأ."
       },
       "exercises": [
         { "type": "gap", "prompt": "That's the hospital ___ I was born.", "answers": ["where"], "why": "A place: where." },

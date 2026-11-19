@@ -19,7 +19,8 @@
       },
       "explain": {
         "en": "Use the present simple for habits, routines, facts and permanent situations (I work, she lives, it rains a lot here). Use the present continuous for actions happening now or around now, and for temporary situations (I'm reading, we're staying with friends this week). State verbs such as know, understand, like, want, need, believe, belong are normally not used in the continuous: say 'I know', not 'I'm knowing'.",
-        "tr": "Present simple: alışkanlıklar, rutinler, genel gerçekler ve kalıcı durumlar. Present continuous: şu anda ya da bu aralar olan geçici durumlar. know, understand, like, want, need gibi durum fiilleri genelde -ing almaz."
+        "tr": "Present simple: alışkanlıklar, rutinler, genel gerçekler ve kalıcı durumlar. Present continuous: şu anda ya da bu aralar olan geçici durumlar. know, understand, like, want, need gibi durum fiilleri genelde -ing almaz.",
+        "ar": "المضارع البسيط: للعادات والروتين والحقائق والأوضاع الدائمة (I work). المضارع المستمر: لما يحدث الآن أو في هذه الفترة، وللأوضاع المؤقتة (I'm reading). أفعال الحالة مثل know وunderstand وlike وwant وneed لا تأتي عادةً مع -ing: قل I know لا I'm knowing."
       },
       "exercises": [
         { "type": "choose", "prompt": "Which sentence sounds natural?", "options": ["I'm knowing the answer.", "I know the answer."], "answer": 1, "why": "Know is a state verb, so it is not normally used in the continuous." },
@@ -51,7 +52,8 @@
       },
       "explain": {
         "en": "Use the past continuous (was/were + -ing) for a longer background action in progress at a past moment. Use the past simple for completed events, especially short actions that interrupt the background or happen one after another. 'While' usually goes with the continuous; 'when' often introduces the short event.",
-        "tr": "Past continuous (was/were + -ing): geçmişte bir anda süren arka plan eylemi. Past simple: biten olaylar, araya giren kısa eylemler, art arda olaylar."
+        "tr": "Past continuous (was/were + -ing): geçmişte bir anda süren arka plan eylemi. Past simple: biten olaylar, araya giren kısa eylemler, art arda olaylar.",
+        "ar": "الماضي المستمر (was/were + -ing): حدث خلفي أطول كان جارياً في لحظة من الماضي. الماضي البسيط: أحداث انتهت، خاصة الأحداث القصيرة التي تقطع الخلفية أو تتتابع. while تأتي عادةً مع المستمر، وwhen تقدّم غالباً الحدث القصير."
       },
       "exercises": [
         { "type": "gap", "prompt": "I ___ (read) when the phone rang.", "answers": ["was reading"], "why": "Reading was in progress; the phone interrupted it." },
@@ -84,7 +86,8 @@
       },
       "explain": {
         "en": "Use a/an for one thing mentioned for the first time, or one of many (a job, an idea). Use the when the listener knows which one: it was mentioned before, there is only one (the sun, the internet), or it is defined (the book on the table). Use no article for plural and uncountable nouns in general meaning (Dogs are loyal. Water is important.). Jobs take a/an: She's a doctor. A/an depends on sound: an hour, a university.",
-        "tr": "a/an: ilk kez söz edilen, herhangi bir tekil şey. the: dinleyenin bildiği, tek olan ya da tanımlanmış şey. Genel anlamda çoğul ve sayılamayan isimlerde artikel yok."
+        "tr": "a/an: ilk kez söz edilen, herhangi bir tekil şey. the: dinleyenin bildiği, tek olan ya da tanımlanmış şey. Genel anlamda çoğul ve sayılamayan isimlerde artikel yok.",
+        "ar": "a/an: لشيء مفرد يُذكر لأول مرة أو واحد من كثير (a job, an idea). the: حين يعرف السامع أيّ شيء: ذُكر من قبل، أو هو واحد فقط (the sun)، أو محدَّد (the book on the table). لا أداة مع الجمع وغير المعدود بالمعنى العام (Water is important). المهن تأخذ a/an: She's a doctor. a/an بحسب الصوت: an hour, a university."
       },
       "exercises": [
         { "type": "choose", "prompt": "Which sentence sounds natural?", "options": ["She is doctor.", "She is a doctor."], "answer": 1, "why": "Jobs need a/an in English." },
@@ -118,7 +121,8 @@
       },
       "explain": {
         "en": "In the present simple, he/she/it takes -s (she works, it doesn't). Everyone, someone, nobody, each and every are singular (Everyone knows). The verb agrees with the main noun, not the nearest noun (The quality of the roads is poor). 'There is' + singular/uncountable, 'there are' + plural. 'The number of' + singular verb; 'a number of' (= several) + plural verb.",
-        "tr": "Fiil, en yakın isme değil asıl özneye uyar. everyone/someone/each tekildir. There is + tekil, there are + çoğul."
+        "tr": "Fiil, en yakın isme değil asıl özneye uyar. everyone/someone/each tekildir. There is + tekil, there are + çoğul.",
+        "ar": "في المضارع البسيط تأخذ he/she/it حرف -s (she works). everyone وsomeone وnobody وeach وevery مفردة (Everyone knows). يتفق الفعل مع الاسم الرئيسي لا مع أقرب اسم (The quality of the roads is poor). there is + مفرد أو غير معدود، there are + جمع. the number of + فعل مفرد، a number of + فعل جمع."
       },
       "exercises": [
         { "type": "gap", "prompt": "Nobody ___ (know) the answer.", "answers": ["knows"], "why": "Nobody is singular: knows." },
@@ -151,7 +155,8 @@
       },
       "explain": {
         "en": "Direct questions: question word + auxiliary + subject + verb (Where does she work?). In the past simple use did + base verb (When did you arrive?). Indirect questions start with a polite phrase (Can you tell me…, Do you know…, I wonder…) and then use statement order with no do/does/did: Can you tell me where she works? For yes/no indirect questions use if or whether.",
-        "tr": "Dolaylı sorularda (Do you know…, Could you tell me…) cümle düz cümle sırasıyla devam eder ve do/does/did kullanılmaz."
+        "tr": "Dolaylı sorularda (Do you know…, Could you tell me…) cümle düz cümle sırasıyla devam eder ve do/does/did kullanılmaz.",
+        "ar": "السؤال المباشر: أداة الاستفهام + فعل مساعد + فاعل + فعل (Where does she work?). السؤال غير المباشر (Can you tell me… / Do you know…) يكمل بترتيب الجملة الخبرية ودون do/does/did: Can you tell me where she works? ولأسئلة نعم/لا استعمل if أو whether."
       },
       "exercises": [
         { "type": "choose", "prompt": "Which question is correct?", "options": ["Where you work?", "Where do you work?"], "answer": 1, "why": "Present simple questions need do/does." },
@@ -184,7 +189,8 @@
       },
       "explain": {
         "en": "Use will for decisions at the moment of speaking, offers and promises (I'll help you), and for opinions about the future (I think it will be fine). Use be going to for plans you have already decided and predictions based on what you can see now. Use the present continuous for fixed arrangements with a time and other people (We're flying to Rome on Friday).",
-        "tr": "will: o an verilen karar, teklif, söz, tahmin. going to: önceden verilmiş karar veya kanıta dayalı tahmin. present continuous: saati belli ayarlanmış planlar."
+        "tr": "will: o an verilen karar, teklif, söz, tahmin. going to: önceden verilmiş karar veya kanıta dayalı tahmin. present continuous: saati belli ayarlanmış planlar.",
+        "ar": "will: لقرار لحظة الكلام والعروض والوعود (I'll help you) وللرأي في المستقبل. be going to: لخطط مقررة مسبقاً وتوقعات مبنية على ما تراه الآن. المضارع المستمر: لترتيبات ثابتة بوقت ومع أشخاص آخرين (We're flying to Rome on Friday)."
       },
       "exercises": [
         { "type": "choose", "prompt": "Your friend says 'I'm thirsty.' You answer:", "options": ["I'm going to get you some water.", "I'll get you some water."], "answer": 1, "why": "A sudden decision/offer: will." },

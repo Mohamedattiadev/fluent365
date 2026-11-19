@@ -288,6 +288,7 @@ describe("core grammar levels", () => {
     const upper = core.filter((t) => ["B2", "B2+", "C1"].includes(t.level));
     expect(upper.length).toBeGreaterThanOrEqual(12);
     expect(core.findIndex((t) => t.level === "B2")).toBeGreaterThan(core.findLastIndex((t) => t.level.startsWith("B1")));
+    for (const t of core) expect(t.explain.ar, t.id).toBeTruthy();
     for (const t of upper) expect(t.explain.tr && t.explain.ar && t.exercises.length === 10, t.id).toBeTruthy();
   });
 });

@@ -19,7 +19,8 @@
       },
       "explain": {
         "en": "Time: in for long periods (in 2025, in July, in the morning, in winter); on for days and dates (on Friday, on 5 June, on my birthday); at for exact times and some fixed expressions (at 7:30, at night, at the weekend in British English). Place: in for inside an area or space (in a room, in Turkey); on for surfaces and streets (on the table, on Main Street); at for a point or event (at the bus stop, at work, at a party).",
-        "tr": "Zaman: in = uzun dönemler, on = gün ve tarih, at = saat. Yer: in = içinde/bölge, on = yüzey/cadde, at = nokta/etkinlik."
+        "tr": "Zaman: in = uzun dönemler, on = gün ve tarih, at = saat. Yer: in = içinde/bölge, on = yüzey/cadde, at = nokta/etkinlik.",
+        "ar": "الزمن: in للفترات الطويلة (in July, in the morning)، on للأيام والتواريخ (on Friday)، at للساعات وبعض العبارات الثابتة (at 7:30, at night). المكان: in داخل منطقة أو حيّز (in Turkey)، on للأسطح والشوارع (on the table)، at لنقطة أو مناسبة (at the bus stop, at work)."
       },
       "exercises": [
         { "type": "gap", "prompt": "My birthday is ___ 14 March.", "answers": ["on"], "why": "Dates take on." },
@@ -52,7 +53,8 @@
       },
       "explain": {
         "en": "Adjectives describe nouns (a quick answer) and come after be, feel, look, seem (You look tired). Adverbs describe verbs: how you do something (answer quickly). Most adverbs = adjective + -ly, but good → well, and fast, hard, late, early stay the same. -ing adjectives describe the thing that causes the feeling (an interesting book); -ed adjectives describe how a person feels (I'm interested).",
-        "tr": "Sıfat ismi, zarf fiili niteler (good → well). -ing: duyguya sebep olan şey; -ed: kişinin hissettiği."
+        "tr": "Sıfat ismi, zarf fiili niteler (good → well). -ing: duyguya sebep olan şey; -ed: kişinin hissettiği.",
+        "ar": "الصفة تصف الاسم (a quick answer) وتأتي بعد be وfeel وlook وseem (You look tired). الظرف يصف الفعل: كيف تفعل الشيء (answer quickly). معظم الظروف = صفة + -ly، لكن good ← well، وfast وhard وlate وearly لا تتغير. -ing تصف ما يسبب الشعور (an interesting book)، و-ed تصف شعور الشخص (I'm interested)."
       },
       "exercises": [
         { "type": "choose", "prompt": "Which is natural?", "options": ["She sings beautiful.", "She sings beautifully."], "answer": 1, "why": "How she sings: adverb." },
@@ -85,7 +87,8 @@
       },
       "explain": {
         "en": "Use the present perfect (have/has + past participle) for situations that started in the past and continue now: for + a period (for three weeks), since + a starting point (since Monday, since 2019). Just = a very short time ago; already = earlier than expected (both go before the participle). Yet = up to now, in questions and negatives, at the end of the sentence.",
-        "tr": "for + süre, since + başlangıç noktası. just/already fiilden önce, yet olumsuz ve soru cümlesinin sonunda."
+        "tr": "for + süre, since + başlangıç noktası. just/already fiilden önce, yet olumsuz ve soru cümlesinin sonunda.",
+        "ar": "المضارع التام (have/has + التصريف الثالث) لوضع بدأ في الماضي ومستمر الآن: for + مدة (for three weeks)، since + نقطة بداية (since 2019). just = قبل قليل، already = أبكر من المتوقع (قبل التصريف الثالث). yet = حتى الآن، في السؤال والنفي وفي آخر الجملة."
       },
       "exercises": [
         { "type": "gap", "prompt": "I've known her ___ we were children.", "answers": ["since"], "why": "A starting point: since." },
@@ -117,7 +120,8 @@
       },
       "explain": {
         "en": "Use the past perfect (had + past participle) to show that one past action happened before another past action or time. It is common with because, when, by the time, already, never…before, and after verbs like realise, discover, find out. If the order is already clear (with after or before), the past simple is often enough.",
-        "tr": "Past perfect (had + V3): geçmişteki bir olaydan daha önce olan olay."
+        "tr": "Past perfect (had + V3): geçmişteki bir olaydan daha önce olan olay.",
+        "ar": "الماضي التام (had + التصريف الثالث) يدل على أن حدثاً ماضياً وقع قبل حدث ماضٍ آخر أو وقت ماضٍ. يكثر مع because وwhen وby the time وalready وnever…before وبعد realise وdiscover وfind out. إذا كان الترتيب واضحاً (مع after أو before) يكفي غالباً الماضي البسيط."
       },
       "exercises": [
         { "type": "gap", "prompt": "By the time the police arrived, the thief ___ (escape).", "answers": ["had escaped"], "why": "The escape happened before the police arrived." },
@@ -150,7 +154,8 @@
       },
       "explain": {
         "en": "Use must when you are almost certain something is true (You must be hungry). Use might, may or could when it is possible (It may rain later). Use can't when you are almost certain something is not true (That can't be right). Do not use mustn't for this meaning: mustn't means 'it is not allowed'. After a modal, use the base verb (must be, might know).",
-        "tr": "must = neredeyse eminim (doğru); might/may/could = mümkün; can't = neredeyse eminim (doğru değil). mustn't bu anlamda kullanılmaz."
+        "tr": "must = neredeyse eminim (doğru); might/may/could = mümkün; can't = neredeyse eminim (doğru değil). mustn't bu anlamda kullanılmaz.",
+        "ar": "must = شبه متأكد أن الأمر صحيح (You must be hungry). might/may/could = ممكن (It may rain later). can't = شبه متأكد أنه غير صحيح (That can't be right). لا تستعمل mustn't بهذا المعنى، فهي تعني «ممنوع». بعد الفعل الناقص يأتي الفعل المجرد (must be)."
       },
       "exercises": [
         { "type": "choose", "prompt": "Her car isn't here and the lights are off. She ___ at home.", "options": ["mustn't be", "can't be"], "answer": 1, "why": "Almost sure it's not true: can't. Mustn't means prohibition." },
@@ -184,7 +189,8 @@
       },
       "explain": {
         "en": "Many verbs and adjectives are followed by a fixed preposition: depend on, listen to, wait for, look forward to, belong to, apply for, agree with (someone), good at, interested in, afraid of, responsible for, different from, married to. After a preposition, use a noun or the -ing form: I'm good at cooking. Learn them as chunks, not word by word.",
-        "tr": "Bazı fiil ve sıfatlar sabit edatlarla gelir; parça (chunk) olarak öğren. Edattan sonra isim veya -ing gelir."
+        "tr": "Bazı fiil ve sıfatlar sabit edatlarla gelir; parça (chunk) olarak öğren. Edattan sonra isim veya -ing gelir.",
+        "ar": "أفعال وصفات كثيرة يليها حرف جر ثابت: depend on, listen to, wait for, look forward to, belong to, apply for, agree with, good at, interested in, afraid of, responsible for, different from. بعد حرف الجر يأتي اسم أو صيغة -ing: I'm good at cooking. تعلّمها كقطع كاملة لا كلمة كلمة."
       },
       "exercises": [
         { "type": "gap", "prompt": "I'm waiting ___ the bus.", "answers": ["for"], "why": "wait for." },
