@@ -282,6 +282,14 @@ describe("words in books", () => {
   });
 });
 
+describe("example sentence translations", () => {
+  it("every word example, book quotes included, has TR and AR", () => {
+    const withEx = content().vocab.filter((v) => v.ex);
+    expect(withEx.filter((v) => v.exSrc).length).toBeGreaterThan(1800);
+    expect(withEx.every((v) => v.exTr && v.exAr)).toBe(true);
+  });
+});
+
 describe("everyday phrases and idioms", () => {
   const c = content();
   it("about 500 phrases with meaning, example and labelled TR/AR", () => {

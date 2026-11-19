@@ -155,11 +155,13 @@ if (existsSync(join(src, "vocabulary/translations-wiktionary.json"))) {
   }
 }
 
-// Turkish and Arabic for the original example sentences (AI translation, labelled in the app).
-if (existsSync(join(src, "vocabulary/sentences-tr-ar.json"))) {
-  const st = read("vocabulary/sentences-tr-ar.json").sentences;
+// Turkish and Arabic for the example sentences (AI translation, labelled in the app): the original
+// sentences (sentences-tr-ar.json) and the public-domain book quotes (quotes-tr-ar.json, scripts/quote-batch.py).
+for (const [f, forQuotes] of [["sentences-tr-ar.json", false], ["quotes-tr-ar.json", true]]) {
+  if (!existsSync(join(src, "vocabulary", f))) continue;
+  const st = read(join("vocabulary", f)).sentences;
   for (const v of vocab.values()) {
-    const t = v.ex && !v.exSrc ? st[v.ex] : undefined;
+    const t = v.ex && !v.exTr && Boolean(v.exSrc) === forQuotes ? st[v.ex] : undefined;
     if (t) { v.exTr = t.tr; v.exAr = t.ar; }
   }
 }
@@ -179,7 +181,7 @@ for (const v of vocab.values()) {
 items.sort((a, b) => a.r - b.r || a.w.localeCompare(b.w));
 items.forEach((v, i) => (v.id = i + 1));
 write("vocab.json", {
-  licence: "NGSL, NGSL-Spoken, NAWL, TSL by Browne, Culligan & Phillips (newgeneralservicelist.com), CC BY-SA 4.0. Example quotes from public-domain books (Project Gutenberg). Lesson words, phrasal verbs, collocations and everyday phrases/idioms: original Fluent365 content, CC BY-SA 4.0. Phrases tr/ar (trSrc=ai): AI translations. Turkish/Arabic translations marked trSrc=wiktionary: English Wiktionary contributors (via kaikki.org), CC BY-SA 4.0. exTr/exAr: AI translations of the original example sentences, CC BY-SA 4.0.",
+  licence: "NGSL, NGSL-Spoken, NAWL, TSL by Browne, Culligan & Phillips (newgeneralservicelist.com), CC BY-SA 4.0. Example quotes from public-domain books (Project Gutenberg). Lesson words, phrasal verbs, collocations and everyday phrases/idioms: original Fluent365 content, CC BY-SA 4.0. Phrases tr/ar (trSrc=ai): AI translations. Turkish/Arabic translations marked trSrc=wiktionary: English Wiktionary contributors (via kaikki.org), CC BY-SA 4.0. exTr/exAr: AI translations of the example sentences (original ones CC BY-SA 4.0; translations of the public-domain book quotes).",
   items,
 });
 
