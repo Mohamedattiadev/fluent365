@@ -14,6 +14,8 @@
     <link rel="apple-touch-icon" href="./icons/apple-touch-icon-g1.png" />
     <title>Fluent365</title>
     <script>
+      // Gym (same origin, same Supabase project): if Supabase sent a Gym sign-in here (Site URL fallback), hand the ?code back to Gym.
+      try { var g = JSON.parse(localStorage.getItem("gym-pkce") || "null"); if (g && g.at && Date.now() - g.at < 600000 && /[?&](code|error)=/.test(location.search)) location.replace("/gym/" + location.search); } catch (e) {}
       // Opening screen: use the saved theme straight away (light, dark or the device setting).
       try { var l = JSON.parse(localStorage.getItem("f365-look") || "{}"); if (l.theme === "light" || l.theme === "dark") document.documentElement.dataset.theme = l.theme; if (l.accent) document.documentElement.dataset.accent = l.accent; } catch (e) {}
       // Installed app: Android/iOS already showed the icon on its own opening screen; ours continues from it (bigger mark, see .splash CSS).
