@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { ActionBar, Icon } from "../components/ui";
 import { persist } from "../lib/db";
-import { today, update } from "../lib/store";
+import { flush, today, update } from "../lib/store";
 import type { Lang, Level, Settings } from "../lib/types";
 
 export function Setup() {
@@ -10,6 +10,7 @@ export function Setup() {
   const [s, setS] = useState<Pick<Settings, "name" | "level" | "goal" | "minutes" | "explainLang">>({ name: "", level: "B1", goal: "ielts-gt", minutes: 60, explainLang: "en" });
   const finish = () => {
     update((st) => ({ settings: { ...st.settings, ...s, setupDone: true, startDate: today(), phaseReached: "B1" } }));
+    void flush(); // save now, not after the usual short delay: setup must survive an immediate reload
     void persist();
   };
   const Choice = <T extends string | number>({ value, options, onPick }: { value: T; options: [T, string, string?][]; onPick: (v: T) => void }) => (
