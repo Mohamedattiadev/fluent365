@@ -67,12 +67,12 @@ Do this after [SUPABASE_SETUP.md](SUPABASE_SETUP.md) is finished (until then the
 1. On the phone, open the installed app (close and reopen it once, so it updates).
 2. **Settings** → **Account** → **Sign in with Google** → choose your Google account.
 3. Back in Fluent365, tap **Back up now**.
-4. On the laptop: open the live site in a private/incognito window, finish the setup steps, **Settings → Account → Sign in with Google** with the same Google account.
+4. On the laptop: open the live site in a private/incognito window and, on the first (welcome) screen, tap **I already use Fluent365: sign in with Google** with the same Google account.
 5. On the laptop: **Account** → **Delete my cloud data** → type DELETE → confirm. Then on the phone sign in again (it uploads a new backup).
 
 **What you should see**
 - Step 2: Google's account chooser opens (it says it continues to `….supabase.co`), then you are back in the **installed app or browser** on the Account page with "Signed in as *your email*" and "Backup saved to your account". If the phone opens a browser tab instead of the installed app, note that (Android/iPhone and browser).
 - Step 3: "Last backup: just now", no red error line.
-- Step 4: the empty laptop restores **by itself** ("Progress restored from your account") and shows your words, days and name from the phone.
+- Step 4: the setup questions are skipped and the empty laptop restores **by itself** ("Progress restored from your account") and shows your words, days and name from the phone.
 - Step 5: "Your cloud data was deleted and you are signed out"; in Supabase **Table Editor → backups** the row is gone; after the phone signs in again there is one row again.
 - If anything fails, copy the red error line and say on which step.

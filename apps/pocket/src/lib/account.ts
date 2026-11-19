@@ -71,8 +71,8 @@ const client = async (): Promise<AccountClient> => {
 const message = (e: unknown) => (e instanceof Error && e.message && e.message !== "Failed to fetch" ? e.message : "No connection to the server. It will try again later.");
 
 /** Start "Sign in with Google": the browser goes to Google and comes back to this same page. */
-export async function signIn() {
-  const route = location.hash || "#/settings/account";
+export async function signIn(back?: string) {
+  const route = back ?? (location.hash || "#/settings/account");
   await patchAccount({ pending: route });
   // Back to the current page without the hash (Supabase adds ?code=…); the route is restored after.
   await (await client()).signIn(location.origin + location.pathname);

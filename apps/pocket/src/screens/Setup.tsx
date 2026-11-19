@@ -1,6 +1,11 @@
 // First run: four short questions, all optional, all with a sensible default. Then straight to learning.
-import { useState } from "react";
-import { ActionBar, Icon } from "../components/ui";
+// When the deployment has a Supabase project, one more optional step offers Sign in with Google
+// (backup + same progress on every device) or "Continue as guest"; the welcome screen also lets a
+// returning learner sign in at once, which restores their progress and skips the questions.
+import { useEffect, useState } from "react";
+import { ActionBar, Icon, toast } from "../components/ui";
+import { accountConfig, signIn } from "../lib/account";
+import type { AccountText } from "../lib/accountText";
 import { persist } from "../lib/db";
 import { flush, today, update } from "../lib/store";
 import type { Lang, Level, Settings } from "../lib/types";
@@ -8,10 +13,23 @@ import type { Lang, Level, Settings } from "../lib/types";
 export function Setup() {
   const [step, setStep] = useState(0);
   const [s, setS] = useState<Pick<Settings, "name" | "level" | "goal" | "minutes" | "explainLang">>({ name: "", level: "B1", goal: "ielts-gt", minutes: 60, explainLang: "en" });
+  const [texts, setTexts] = useState<((l: Lang) => AccountText) | null>(null);
+  const [busy, setBusy] = useState(false);
+  // The account strings are loaded only when a Supabase project is configured (small main bundle).
+  useEffect(() => { void accountConfig().then(async (c) => { if (c) { const m = await import("../lib/accountText"); setTexts(() => m.accountText); } }); }, []);
+  const account = !!texts;
+  const t = texts ? texts(s.explainLang) : ({} as AccountText);
   const finish = () => {
     update((st) => ({ settings: { ...st.settings, ...s, setupDone: true, startDate: today(), phaseReached: "B1" } }));
     void flush(); // save now, not after the usual short delay: setup must survive an immediate reload
     void persist();
+  };
+  // Sign in with Google from setup: save the answers, then go to Google; the app comes back to Today.
+  const google = async () => {
+    setBusy(true);
+    finish();
+    await flush();
+    try { await signIn("#/"); } catch (e) { setBusy(false); toast(e instanceof Error ? e.message : String(e)); }
   };
   const Choice = <T extends string | number>({ value, options, onPick }: { value: T; options: [T, string, string?][]; onPick: (v: T) => void }) => (
     <div className="options" role="radiogroup">
@@ -27,7 +45,11 @@ export function Setup() {
       <h1>Welcome to Fluent365</h1>
       <p>Every day, Fluent365 prepares one guided English session for you. You press <b>Start</b>, then <b>Next</b>. That's it.</p>
       <p className="muted">Your progress stays on this device. No account, no ads.</p>
-      <p className="small muted">New phone? Finish these four steps, then restore in Settings → Backup.</p>
+      {account ? (
+        <button className="btn outline" style={{ width: "100%", margin: "4px 0 12px" }} disabled={busy} onClick={google}>{t.haveAccount}</button>
+      ) : (
+        <p className="small muted">New phone? Finish these four steps, then restore in Settings → Backup.</p>
+      )}
       <label className="field"><span>What should we call you? (optional)</span>
         <input type="text" value={s.name} onChange={(e) => setS({ ...s, name: e.target.value })} placeholder="Your name" autoComplete="given-name" />
       </label>
@@ -47,15 +69,31 @@ export function Setup() {
       <h3 style={{ marginTop: 20 }}>Explanations in</h3>
       <Choice<Lang> value={s.explainLang} onPick={(explainLang) => setS({ ...s, explainLang })} options={[["en", "English"], ["tr", "Türkçe (where available)"], ["ar", "العربية (where available)"]]} />
     </div>,
+    ...(account ? [
+      <div key="4" lang={s.explainLang} dir={s.explainLang === "ar" ? "rtl" : undefined}>
+        <h2>{t.setupTitle}</h2>
+        <p>{t.setupBody}</p>
+        <p className="muted small">{t.setupOptional}</p>
+      </div>,
+    ] : []),
   ];
+  const last = step + 1 === screens.length;
+  const accountStep = account && last;
   return (
     <main className="main setup" style={{ maxWidth: 640 }}>
       <p className="overline">Step {step + 1} of {screens.length}</p>
       <div>{screens[step]}</div>
       <ActionBar>
-        <button className="btn big primary" onClick={() => (step + 1 < screens.length ? setStep(step + 1) : finish())}>
-          {step + 1 < screens.length ? "Next" : "Start learning"} <Icon name="arrow" />
-        </button>
+        {accountStep ? (
+          <>
+            <button className="btn big primary" disabled={busy} onClick={google} lang={s.explainLang}>{busy ? t.opening : t.signIn}</button>
+            <button className="btn big outline" style={{ width: "100%" }} disabled={busy} onClick={finish} lang={s.explainLang}>{t.guest}</button>
+          </>
+        ) : (
+          <button className="btn big primary" onClick={() => (step + 1 < screens.length ? setStep(step + 1) : finish())}>
+            {step + 1 < screens.length ? "Next" : "Start learning"} <Icon name="arrow" />
+          </button>
+        )}
         {step > 0 && <button className="btn quiet" style={{ width: "100%" }} onClick={() => setStep(step - 1)}>Back</button>}
       </ActionBar>
     </main>

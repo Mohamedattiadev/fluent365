@@ -141,3 +141,38 @@ test("account: Turkish strings and Arabic right-to-left", async ({ page }) => {
   await page.goto("./#/settings/account");
   await expect(page.getByRole("button", { name: "Google ile giriş yap" })).toBeVisible();
 });
+
+/** First run with a Supabase project configured (as the live site has): write the config, reload. */
+async function freshWithConfig(page: Page) {
+  await page.goto("./");
+  await expect(page.getByRole("heading", { name: "Welcome to Fluent365" })).toBeVisible({ timeout: 30_000 });
+  await page.evaluate((url) => new Promise((res) => {
+    const r = indexedDB.open("fluent365", 1);
+    r.onupgradeneeded = () => { for (const s of ["kv", "blobs", "inbox"]) if (!r.result.objectStoreNames.contains(s)) r.result.createObjectStore(s); };
+    r.onsuccess = () => { const tx = r.result.transaction("kv", "readwrite"); tx.objectStore("kv").put({ url, key: "e2e-anon-key" }, "account-config"); tx.oncomplete = () => { r.result.close(); res(null); }; };
+  }), URL_);
+  await page.reload();
+  await expect(page.getByRole("heading", { name: "Welcome to Fluent365" })).toBeVisible();
+}
+
+test("setup: last step offers Google or guest; guest goes straight to learning", async ({ page }) => {
+  await mockSupabase(page);
+  await freshWithConfig(page);
+  for (let i = 0; i < 4; i++) await page.getByRole("button", { name: /^Next/ }).click();
+  await expect(page.getByRole("heading", { name: "Keep your progress safe" })).toBeVisible();
+  await expect(page.getByText("Step 5 of 5")).toBeVisible();
+  await expect(page.getByRole("button", { name: "Sign in with Google" })).toBeVisible();
+  await page.getByRole("button", { name: "Continue as guest" }).click();
+  await expect(page.getByRole("button", { name: "Study now" })).toBeVisible();
+});
+
+test("setup: a returning learner signs in on the welcome screen and gets their progress back", async ({ page }) => {
+  const backup = { app: "fluent365", format: 1, exportedAt: new Date().toISOString(), data: { days: { "2026-11-16": day }, settings: { name: "Returning", setupDone: true, level: "B2", goal: "ielts-gt", minutes: 60 } } };
+  const sb = await mockSupabase(page, { data: backup, updated_at: new Date().toISOString() });
+  await freshWithConfig(page);
+  await page.getByRole("button", { name: /I already use Fluent365/ }).click();
+  await expect(page.getByText(/Progress restored from your account/)).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Hi, Returning" })).toBeVisible();
+  expect(await kv(page, "days")).toHaveProperty("2026-11-16");
+  expect(sb.calls).not.toContain("POST /rest/v1/backups");
+});

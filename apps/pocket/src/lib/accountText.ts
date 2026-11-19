@@ -26,6 +26,11 @@ const en = {
   restored: "Progress restored from your account. Your previous data was kept as a safety copy.",
   replaced: "Backup saved. It replaced the one in your account.",
   failed: "Last try failed",
+  setupTitle: "Keep your progress safe",
+  setupBody: "Sign in with Google and Fluent365 saves your progress to your own account, by itself. If you lose or change your phone, sign in again and everything comes back. Your words, days and settings are the same on your phone and your laptop.",
+  setupOptional: "Optional. Without an account everything works too; your progress then stays only on this device. You can sign in later in Settings → Account.",
+  guest: "Continue as guest",
+  haveAccount: "I already use Fluent365: sign in with Google",
   privacy: "Only your progress is sent, to your own row; nobody else can read it (Row Level Security). Recordings are not included. The GitHub backup and the backup file still work.",
 };
 export type AccountText = typeof en;
@@ -55,6 +60,11 @@ const tr: AccountText = {
   restored: "İlerleme hesabından geri yüklendi. Önceki verilerin güvenlik kopyası olarak saklandı.",
   replaced: "Yedek kaydedildi. Hesabındaki yedeğin yerini aldı.",
   failed: "Son deneme başarısız",
+  setupTitle: "İlerlemen güvende kalsın",
+  setupBody: "Google ile giriş yaparsan Fluent365 ilerlemeni kendiliğinden kendi hesabına kaydeder. Telefonunu kaybeder ya da değiştirirsen yeniden giriş yap, her şey geri gelir. Kelimelerin, günlerin ve ayarların telefonda ve bilgisayarda aynı olur.",
+  setupOptional: "İsteğe bağlı. Hesap olmadan da her şey çalışır; o zaman ilerlemen yalnızca bu cihazda kalır. Daha sonra Ayarlar → Hesap'tan giriş yapabilirsin.",
+  guest: "Misafir olarak devam et",
+  haveAccount: "Fluent365'i zaten kullanıyorum: Google ile giriş yap",
   privacy: "Yalnızca ilerlemen, kendi satırına gönderilir; başka kimse okuyamaz (Row Level Security). Ses kayıtları dahil değil. GitHub yedeği ve yedek dosyası çalışmaya devam eder.",
 };
 
@@ -83,6 +93,11 @@ const ar: AccountText = {
   restored: "تمت استعادة التقدّم من حسابك. احتُفظ ببياناتك السابقة كنسخة أمان.",
   replaced: "حُفظت النسخة الاحتياطية واستبدلت التي في حسابك.",
   failed: "فشلت المحاولة الأخيرة",
+  setupTitle: "حافظ على تقدّمك",
+  setupBody: "سجّل الدخول بحساب Google فيحفظ Fluent365 تقدّمك في حسابك تلقائيًا. إذا فقدت هاتفك أو غيّرته، سجّل الدخول مرة أخرى فيعود كل شيء. كلماتك وأيامك وإعداداتك هي نفسها على هاتفك وحاسوبك.",
+  setupOptional: "اختياري. بدون حساب يعمل كل شيء أيضًا، لكن تقدّمك يبقى على هذا الجهاز فقط. يمكنك تسجيل الدخول لاحقًا من الإعدادات ← الحساب.",
+  guest: "المتابعة كضيف",
+  haveAccount: "أستخدم Fluent365 بالفعل: سجّل الدخول باستخدام Google",
   privacy: "يُرسَل تقدّمك فقط، إلى صفّك الخاص؛ لا يستطيع أحد غيرك قراءته (Row Level Security). التسجيلات الصوتية غير مشمولة. النسخ الاحتياطي إلى GitHub وملف النسخة الاحتياطية ما زالا يعملان.",
 };
 
