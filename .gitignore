@@ -13,3 +13,5 @@ backups/
 fluent365-backup-*.json
 private/
 screenshots/
+test-results/
+playwright-report/
