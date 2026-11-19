@@ -6,8 +6,9 @@ import { useEffect, useState } from "react";
 import { ActionBar, Icon, toast } from "../components/ui";
 import { accountConfig, signIn } from "../lib/account";
 import type { AccountText } from "../lib/accountText";
+import * as db from "../lib/db";
 import { persist } from "../lib/db";
-import { flush, today, update } from "../lib/store";
+import { flush, getState, today, update } from "../lib/store";
 import type { Lang, Level, Settings } from "../lib/types";
 
 export function Setup() {
@@ -24,12 +25,18 @@ export function Setup() {
     void flush(); // save now, not after the usual short delay: setup must survive an immediate reload
     void persist();
   };
-  // Sign in with Google from setup: save the answers, then go to Google; the app comes back to Today.
+  // Sign in with Google from setup: the answers are written to storage only (not to the running app),
+  // so this screen stays up, saying "Opening Google…", until the browser leaves for Google. Coming
+  // back, the app loads with setup done and lands on Today (or restores the learner's backup).
   const google = async () => {
     setBusy(true);
-    finish();
-    await flush();
-    try { await signIn("#/"); } catch (e) { setBusy(false); toast(e instanceof Error ? e.message : String(e)); }
+    const before = getState().settings;
+    await db.set("kv", "settings", { ...before, ...s, setupDone: true, startDate: today(), phaseReached: "B1" });
+    try { await signIn("#/"); } catch (e) {
+      await db.set("kv", "settings", before);
+      setBusy(false);
+      toast(e instanceof Error ? e.message : String(e));
+    }
   };
   const Choice = <T extends string | number>({ value, options, onPick }: { value: T; options: [T, string, string?][]; onPick: (v: T) => void }) => (
     <div className="options" role="radiogroup">
@@ -44,12 +51,8 @@ export function Setup() {
     <div key="0">
       <h1>Welcome to Fluent365</h1>
       <p>Every day, Fluent365 prepares one guided English session for you. You press <b>Start</b>, then <b>Next</b>. That's it.</p>
-      <p className="muted">Your progress stays on this device. No account, no ads.</p>
-      {account ? (
-        <button className="btn outline" style={{ width: "100%", margin: "4px 0 12px" }} disabled={busy} onClick={google}>{t.haveAccount}</button>
-      ) : (
-        <p className="small muted">New phone? Finish these four steps, then restore in Settings → Backup.</p>
-      )}
+      <p className="muted">{account ? t.welcomeNote : "Your progress stays on this device. No account, no ads."}</p>
+      {!account && <p className="small muted">New phone? Finish these four steps, then restore in Settings → Backup.</p>}
       <label className="field"><span>What should we call you? (optional)</span>
         <input type="text" value={s.name} onChange={(e) => setS({ ...s, name: e.target.value })} placeholder="Your name" autoComplete="given-name" />
       </label>
@@ -72,7 +75,9 @@ export function Setup() {
     ...(account ? [
       <div key="4" lang={s.explainLang} dir={s.explainLang === "ar" ? "rtl" : undefined}>
         <h2>{t.setupTitle}</h2>
-        <p>{t.setupBody}</p>
+        <ul className="benefits">
+          {t.benefits.map((b) => <li key={b}><Icon name="done" size={22} /><span>{b}</span></li>)}
+        </ul>
         <p className="muted small">{t.setupOptional}</p>
       </div>,
     ] : []),
@@ -86,7 +91,7 @@ export function Setup() {
       <ActionBar>
         {accountStep ? (
           <>
-            <button className="btn big primary" disabled={busy} onClick={google} lang={s.explainLang}>{busy ? t.opening : t.signIn}</button>
+            <button className="btn big primary google" disabled={busy} onClick={google} lang={s.explainLang}><GoogleG />{busy ? t.opening : t.signIn}</button>
             <button className="btn big outline" style={{ width: "100%" }} disabled={busy} onClick={finish} lang={s.explainLang}>{t.guest}</button>
           </>
         ) : (
@@ -95,7 +100,22 @@ export function Setup() {
           </button>
         )}
         {step > 0 && <button className="btn quiet" style={{ width: "100%" }} onClick={() => setStep(step - 1)}>Back</button>}
+        {step === 0 && account && <button className="btn quiet" style={{ width: "100%" }} disabled={busy} onClick={google}>{busy ? t.opening : t.haveAccountShort}</button>}
       </ActionBar>
     </main>
+  );
+}
+
+/** Google's "G" mark, as Google's sign-in branding asks for on a "Sign in with Google" button. */
+function GoogleG() {
+  return (
+    <span className="g-mark" aria-hidden="true">
+      <svg viewBox="0 0 48 48" width="20" height="20">
+        <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z" />
+        <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z" />
+        <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z" />
+        <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z" />
+      </svg>
+    </span>
   );
 }

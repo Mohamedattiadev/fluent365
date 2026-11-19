@@ -160,6 +160,8 @@ test("setup: last step offers Google or guest; guest goes straight to learning",
   await freshWithConfig(page);
   for (let i = 0; i < 4; i++) await page.getByRole("button", { name: /^Next/ }).click();
   await expect(page.getByRole("heading", { name: "Keep your progress safe" })).toBeVisible();
+  await expect(page.getByText("New phone? Sign in and everything comes back")).toBeVisible();
+  if (process.env.SHOTS) await page.screenshot({ path: `${process.env.SHOTS}/setup-5-${test.info().project.name}.png` });
   await expect(page.getByText("Step 5 of 5")).toBeVisible();
   await expect(page.getByRole("button", { name: "Sign in with Google" })).toBeVisible();
   await page.getByRole("button", { name: "Continue as guest" }).click();
@@ -170,7 +172,8 @@ test("setup: a returning learner signs in on the welcome screen and gets their p
   const backup = { app: "fluent365", format: 1, exportedAt: new Date().toISOString(), data: { days: { "2026-11-16": day }, settings: { name: "Returning", setupDone: true, level: "B2", goal: "ielts-gt", minutes: 60 } } };
   const sb = await mockSupabase(page, { data: backup, updated_at: new Date().toISOString() });
   await freshWithConfig(page);
-  await page.getByRole("button", { name: /I already use Fluent365/ }).click();
+  if (process.env.SHOTS) await page.screenshot({ path: `${process.env.SHOTS}/setup-1-${test.info().project.name}.png` });
+  await page.getByRole("button", { name: "Already using Fluent365? Sign in" }).click();
   await expect(page.getByText(/Progress restored from your account/)).toBeVisible();
   await expect(page.getByRole("heading", { name: "Hi, Returning" })).toBeVisible();
   expect(await kv(page, "days")).toHaveProperty("2026-11-16");

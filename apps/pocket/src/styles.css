@@ -951,3 +951,10 @@ ol.steps a { font-weight: 500; }
 /* Phase check: what is met and what is not yet. */
 ul.gate { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 6px; }
 ul.gate li { display: flex; gap: 6px; align-items: baseline; flex-wrap: wrap; }
+
+/* Setup: optional account step */
+.benefits { list-style: none; padding: 0; margin: 20px 0; display: grid; gap: 14px; }
+.benefits li { display: flex; gap: 12px; align-items: flex-start; font-size: 1.05em; line-height: 1.4; }
+.benefits li svg { flex: none; color: var(--primary, currentColor); margin-top: 1px; }
+.btn.google { gap: 10px; }
+.g-mark { display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: #fff; flex: none; }
