@@ -65,7 +65,7 @@
 
 /* ---------- Base ---------- */
 * { box-sizing: border-box; }
-html { font-size: calc(100% * var(--text-scale)); -webkit-text-size-adjust: 100%; background: var(--md-surface); }
+html { font-size: calc(100% * var(--text-scale)); -webkit-text-size-adjust: 100%; background: var(--md-surface); overscroll-behavior-y: none; } /* no pull-past-the-end that shows the window colour behind the page (Android) */
 body { margin: 0; background: var(--md-surface); color: var(--md-on-surface); font: 400 var(--fs-md)/1.5 var(--font); letter-spacing: 0.01em; -webkit-font-smoothing: antialiased; overflow-x: hidden; -webkit-tap-highlight-color: transparent; }
 h1 { font-size: var(--fs-xl); line-height: 2.25rem; font-weight: 400; margin: 0 0 8px; letter-spacing: 0; }
 h2 { font-size: var(--fs-lg); line-height: 1.75rem; font-weight: 400; margin: 0 0 8px; }
