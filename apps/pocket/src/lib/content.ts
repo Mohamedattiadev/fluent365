@@ -57,4 +57,4 @@ export const loadLesson = (n: number) => load<Lesson>(`lessons/lesson-${String(n
 export const loadBooks = () => load<{ about: string; books: BookInfo[] }>("books.json").then((x) => x.books);
 export const loadBook = (id: string) => load<Book>(`books/${id}.json`);
 export const loadCourse = (id: string) => load<Course>(`courses/${id}.json`);
-export const COURSES = ["general-path", "ielts-reading-foundations", "ielts-vocabulary-topics", "ielts-writing-foundations", "ielts-listening-tests", "ielts-reading-mock"] as const;
+export const COURSES = ["general-path", "ielts-reading-foundations", "ielts-vocabulary-topics", "ielts-writing-foundations", "ielts-listening-tests", "ielts-reading-mock", "ielts-reading-gt", "ielts-reading-gt-mock"] as const;

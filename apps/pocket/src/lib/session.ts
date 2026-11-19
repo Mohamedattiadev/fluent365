@@ -169,7 +169,7 @@ export function buildSession(c: Content, s: AppState = getState(), minutes: 30 |
   }
   if (!taken.has("input")) {
     const pick = nextCourseUnit(s, phase);
-    if (pick) add({ kind: "input", title: pick.title, why: phase === "IELTS" ? "Exam-format practice with the real timing." : "Reading or listening for meaning: the biggest source of new language.", minutes: b.input, ref: { course: pick.course, unit: pick.unit } });
+    if (pick) add({ kind: "input", title: pick.title, why: pick.why, minutes: b.input, ref: { course: pick.course, unit: pick.unit } });
   }
 
   // 4b. Book reading: today's share of the reading ladder (finishes all 8 books within the 365-day plan).
@@ -241,19 +241,33 @@ const INPUT_UNITS: [string, string][] = [
   ...["city-bees", "night-sky", "railway-time", "putting-off", "streets-for-people"].map((u) => ["ielts-reading-foundations", u] as [string, string]),
   ...["education", "environment", "technology", "health", "work", "crime-law", "cities-housing", "media-advertising"].map((u) => ["ielts-vocabulary-topics", u] as [string, string]),
 ];
-const IELTS_ROTATION: [string, string][] = [
+// General Training reading (everyday, workplace, then longer texts), first for GT learners.
+export const GT_UNITS: [string, string][] = [
+  "s1-pools-library", "s1-train-info", "s2-job-adverts", "s1-evening-classes", "s2-leave-sickness", "s1-recycling-centre",
+  "s3-night-trains", "s1-building-notices", "s2-screen-safety", "s1-castle-visit", "s2-hotel-induction", "s3-four-day-week",
+].map((u) => ["ielts-reading-gt", u] as [string, string]);
+const IELTS_ROTATION = (gt: boolean): [string, string][] => {
+  const mock = gt ? "ielts-reading-gt-mock" : "ielts-reading-mock";
+  const p = gt ? ["section-1", "section-2", "section-3"] : ["passage-1", "passage-2", "passage-3"];
   // Writing units are practised in the Local app; Pocket rotates reading and listening only.
-  ["ielts-listening-tests", "t1-part1"], ["ielts-reading-mock", "passage-1"], ["ielts-listening-tests", "t1-part2"], ["ielts-reading-mock", "passage-2"],
-  ["ielts-listening-tests", "t1-part3"], ["ielts-reading-mock", "passage-3"], ["ielts-listening-tests", "t1-part4"],
-  ["ielts-listening-tests", "t2-part1"], ["ielts-listening-tests", "t2-part2"], ["ielts-listening-tests", "t2-part3"], ["ielts-listening-tests", "t2-part4"],
-];
+  return [
+    ["ielts-listening-tests", "t1-part1"], [mock, p[0]], ["ielts-listening-tests", "t1-part2"], [mock, p[1]],
+    ["ielts-listening-tests", "t1-part3"], [mock, p[2]], ["ielts-listening-tests", "t1-part4"],
+    ["ielts-listening-tests", "t2-part1"], ["ielts-listening-tests", "t2-part2"], ["ielts-listening-tests", "t2-part3"], ["ielts-listening-tests", "t2-part4"],
+  ];
+};
 
-export function nextCourseUnit(s: AppState, phase: Phase): { course: string; unit: string; title: string } | null {
+export function nextCourseUnit(s: AppState, phase: Phase): { course: string; unit: string; title: string; why: string } | null {
   const done = ([c, u]: [string, string]) => !!s.coursework[`${c}/${u}`]?.done;
-  const list = phase === "IELTS" ? IELTS_ROTATION : INPUT_UNITS;
+  const gt = s.settings.goal === "ielts-gt";
+  const list = phase === "IELTS" ? IELTS_ROTATION(gt) : gt ? [...GT_UNITS, ...INPUT_UNITS] : INPUT_UNITS;
   const pick = list.find((x) => !done(x)) ?? list[Object.keys(s.days).length % list.length];
-  const title = pick[0].includes("listening") ? "IELTS Listening practice" : pick[0].includes("mock") ? "IELTS Reading practice" : pick[0].includes("writing") ? "IELTS Writing skills" : "Reading for meaning";
-  return { course: pick[0], unit: pick[1], title };
+  const [course] = pick;
+  const title = course.includes("listening") ? "IELTS Listening practice" : course === "ielts-reading-gt-mock" ? "IELTS General Training Reading practice" : course.includes("mock") ? "IELTS Reading practice" : course === "ielts-reading-gt" ? "General Training reading" : course.includes("writing") ? "IELTS Writing skills" : "Reading for meaning";
+  const why = phase === "IELTS"
+    ? gt && course.includes("reading") ? "Exam-format practice with the real timing, from the General Training test you are taking (everyday, workplace and longer texts)." : "Exam-format practice with the real timing."
+    : course === "ielts-reading-gt" ? "You are taking IELTS General Training, so you read its kinds of texts (notices, adverts, workplace rules, longer articles) with the real question types." : "Reading or listening for meaning: the biggest source of new language.";
+  return { course: pick[0], unit: pick[1], title, why };
 }
 
 /** Task repetition: reuse a cue card from 2 or 7 days ago, else a fresh one. */

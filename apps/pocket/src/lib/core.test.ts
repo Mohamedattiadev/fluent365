@@ -5,11 +5,11 @@ import { beforeEach, describe, expect, it } from "vitest";
 import type { Content } from "./content";
 import { addCards, dueCardKeys, recordAttempt, reviewWord } from "./learning";
 import { ankiExport, ankiImport, checkBackup, makeBackup, parseLearningText } from "./portability";
-import { buildSession, countsTowardTime, dailyMinutes, newWordLimit, pickNewWords } from "./session";
+import { buildSession, countsTowardTime, dailyMinutes, GT_UNITS, newWordLimit, nextCourseUnit, pickNewWords } from "./session";
 import { Rating, schedule, type Grade } from "./srs";
 import { emptyState, flush, getState, loadState, replaceState } from "./store";
 import { diffWords, matches, normalize } from "./text";
-import type { GrammarTopic, IeltsContent, LessonInfo, SessionStep, VocabItem } from "./types";
+import type { Course, GrammarTopic, IeltsContent, LessonInfo, SessionStep, VocabItem } from "./types";
 
 const data = join(__dirname, "../../public/data");
 const read = <T,>(f: string) => JSON.parse(readFileSync(join(data, f), "utf8")) as T;
@@ -316,5 +316,56 @@ describe("everyday phrases and idioms", () => {
     for (const k of ["phrase", "phrasal", "collocation"]) expect(srcs.some((x) => x.includes(k))).toBe(true);
     const c1 = pickNewWords({ ...s, settings: { ...s.settings, level: "C1" } }, c, 30).map((id) => c.vocabById.get(id)!);
     expect(c1.filter((v) => v.src.includes("phrase")).every((v) => v.lvl !== "A2")).toBe(true);
+  });
+});
+
+describe("IELTS General Training", () => {
+  const course = (id: string) => read<Course>(`courses/${id}.json`);
+  const questions = (u: Course["units"][number]) => u.blocks.filter((b) => b.type === "choice" || b.type === "gap" || b.type === "tfng");
+  it("GT reading course: 6 + 4 + 2 sets, every question answerable and explained", () => {
+    const c = course("ielts-reading-gt");
+    const count = (p: string) => c.units.filter((u) => u.id.startsWith(p)).length;
+    expect([count("s1-"), count("s2-"), count("s3-")]).toEqual([6, 4, 2]);
+    for (const u of c.units) {
+      const qs = questions(u);
+      expect(qs.length, u.id).toBeGreaterThanOrEqual(u.id.startsWith("s3-") ? 13 : 10);
+      expect(new Set(qs.map((q) => ("id" in q ? q.id : ""))).size, u.id).toBe(qs.length);
+      for (const q of qs) {
+        if (q.type === "choice") { expect(q.answer, `${u.id}/${q.id}`).toBeGreaterThanOrEqual(0); expect(q.answer, `${u.id}/${q.id}`).toBeLessThan(q.options.length); }
+        if (q.type === "gap") expect(q.answers.length, `${u.id}/${q.id}`).toBeGreaterThan(0);
+        if (q.type === "tfng") expect(["true", "false", "not given"]).toContain(q.answer);
+        expect(q.why.en.length, `${u.id}/${q.id}`).toBeGreaterThan(10);
+      }
+    }
+    expect(GT_UNITS.every(([, id]) => c.units.some((u) => u.id === id))).toBe(true);
+    expect(GT_UNITS.length).toBe(c.units.length);
+  });
+  it("GT practice test: 3 sections, 40 questions, labelled a practice estimate", () => {
+    const m = course("ielts-reading-gt-mock");
+    expect(m.exam).toBe("reading");
+    expect(m.units.length).toBe(3);
+    expect(m.units.reduce((n, u) => n + questions(u).length, 0)).toBe(40);
+    expect(m.description).toMatch(/practice estimate, not an official score/);
+  });
+  it("GT writing: at least 20 letters with 3 bullet points and 12 essays", () => {
+    const gt = read<IeltsContent>("ielts.json").writing.filter((w) => w.module === "general");
+    const letters = gt.filter((w) => w.task === 1);
+    expect(letters.length).toBeGreaterThanOrEqual(20);
+    expect(letters.every((w) => w.points?.length === 3 && w.tone)).toBe(true);
+    for (const tone of ["formal", "semi-formal", "informal"]) expect(letters.filter((w) => w.tone === tone).length).toBeGreaterThanOrEqual(6);
+    expect(gt.filter((w) => w.task === 2).length).toBeGreaterThanOrEqual(12);
+  });
+  it("the session gives GT learners General Training reading first, Academic learners not", () => {
+    const st = getState();
+    st.settings.goal = "ielts-gt";
+    const gt = nextCourseUnit(st, "B1")!;
+    expect(gt.course).toBe("ielts-reading-gt");
+    expect(gt.why).toMatch(/General Training/);
+    expect(nextCourseUnit(st, "IELTS")!.course).toBe("ielts-listening-tests");
+    st.coursework["ielts-listening-tests/t1-part1"] = { answers: {}, done: new Date().toISOString() };
+    expect(nextCourseUnit(st, "IELTS")!.course).toBe("ielts-reading-gt-mock");
+    st.settings.goal = "ielts-ac";
+    expect(nextCourseUnit(st, "B1")!.course).not.toBe("ielts-reading-gt");
+    expect(nextCourseUnit(st, "IELTS")!.course).toBe("ielts-reading-mock");
   });
 });
