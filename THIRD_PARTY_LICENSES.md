@@ -11,5 +11,6 @@ The app ships these third-party components. Full licence texts are published wit
 | React, React DOM | 18.3.1 | MIT | Bundled |
 | ts-fsrs | 6.0.0 | MIT | Bundled |
 | pdf.js (`pdfjs-dist`) | 4.10.38 | Apache-2.0 | Bundled (PDF import) |
+| Supabase JS client (`@supabase/supabase-js` with auth-js, postgrest-js, realtime-js, storage-js, functions-js) | 2.119.0 | MIT | Bundled as a separate file, loaded only for the optional account |
 
 Fonts are self-hosted and precached by the service worker. The app makes no requests to Google Fonts or any other CDN.

@@ -4,7 +4,7 @@
 Open the app, press **Start today's session**, then **Next**. Fluent365 decides what to practise and tells you why.
 
 - Free and open source. No account, no ads, no paid AI service.
-- Your progress stays on your device (browser storage). Nothing is sent to a server (optional: automatic backup to your own private GitHub repo).
+- Your progress stays on your device (browser storage). Nothing is sent to a server (optional: automatic backup to your own private GitHub repo, or Sign in with Google for a backup in your own account when the deployment has a Supabase project — see `docs/SUPABASE_SETUP.md`).
 - Works offline once it has opened, and installs on Android like an app.
 
 ## What's inside

@@ -700,24 +700,44 @@ differences, and provide a backup before destructive replacement.
 
 The GitHub Pages deployment contains approved public content and
 application code. Personal Pocket progress stays in that user's browser
-unless they deliberately export it.
+unless they deliberately turn on one of two opt-in backups: their own
+private GitHub repo (`lib/cloud.ts`) or their own account in the
+deployment's Supabase project (§14.5). Both send only the backup file
+(no recordings, no keys or tokens) and only to the learner's own place.
+No analytics, no other network calls with learner data.
 
 Static hosting does not provide automatic sync between the Local app and
-Pocket. Do not claim otherwise.
+Pocket. Do not claim otherwise. The backups are "newest wins" copies of
+one device, not a live item-by-item merge.
 
-### 14.5 Optional account: Sign in with Google (Supabase)
+### 14.5 Optional account: Sign in with Google (Supabase) — built 2026-11-19
 
-Owner decision (2026-11-19): add an optional account so progress is
-backed up and follows the learner to a new phone. - Supabase Auth with
-the Google provider; email/password not needed. - Data backed up to the
-learner's own rows in Supabase, protected by Row Level Security
-(`user_id = auth.uid()`). - Opt-in only: no account is ever required,
-the GitHub backup and JSON export stay. - Each deployment configures its
-own Supabase project URL and public anon key; nothing is hardcoded and
-the feature is hidden when they are missing. - Sign out and "Delete my
-cloud data" in Settings. - The same tables may later carry the Local ↔
-Pocket sync. Details and status: `docs/DEVELOPMENT_STATUS.md`, Next
-steps.
+Owner decision (2026-11-19), built the same day:
+
+- Settings → Account → "Sign in with Google" (Supabase Auth, Google
+  provider, PKCE redirect back to the same Pages address; the hash route
+  is restored after the callback). Shows the email, "Back up now",
+  "Last backup", "Sign out", "Delete my cloud data" (deletes the row,
+  then signs out). Strings in EN/TR/AR (Arabic right-to-left).
+- Data: one table `backups (user_id pk → auth.users, data jsonb,
+  updated_at)` with Row Level Security `user_id = auth.uid()` for
+  select/insert/update/delete (`supabase/schema.sql`). Only the public
+  anon/publishable key is in the client; the sign-in session is kept in
+  IndexedDB.
+- Same payload and rules as the GitHub backup (shared `lib/sync.ts`):
+  automatic backup at most every ~20 h, when the app is opened or left;
+  first sign-in: nothing in the cloud → upload, empty device → restore by
+  itself, both have progress → "Restore it here / Replace it with this
+  device"; restore keeps a safety copy.
+- Opt-in only: no account is ever required; the GitHub backup and JSON
+  export stay.
+- Nothing hardcoded: `VITE_SUPABASE_URL` / `VITE_SUPABASE_ANON_KEY` from
+  the repo's Actions *Variables* at build time, or "Use my own Supabase"
+  in Settings → Backup. Without either, the Account row is hidden.
+- `@supabase/supabase-js` is a separate, lazily loaded file (only when
+  Account is opened or the device is signed in).
+- Owner's setup steps: `docs/SUPABASE_SETUP.md`. The same table may later
+  carry the Local ↔ Pocket sync.
 
 ------------------------------------------------------------------------
 

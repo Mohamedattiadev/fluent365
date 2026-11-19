@@ -1,6 +1,6 @@
 # Phone checklist (owner, real phones)
 
-These four checks can only be done on a real phone. Everything else is covered by the automatic tests
+These checks can only be done on a real phone. Everything else is covered by the automatic tests
 (unit tests and Playwright e2e at phone and laptop size, run on every push). Do them in order and send back,
 for each step, **OK** or what you saw instead (a screenshot helps).
 
@@ -59,3 +59,20 @@ Open the live site: the GitHub Pages address of this repo (Settings → Pages in
 - On GitHub: a file `fluent365-backup.json` with a fresh commit. It does **not** contain your key.
 - On the second device after restoring: the same words, days and settings as the phone.
 - If something fails, copy the error line shown under "Last backup".
+
+## 5. Google sign-in + Supabase backup
+
+Do this after [SUPABASE_SETUP.md](SUPABASE_SETUP.md) is finished (until then the **Account** row does not exist).
+
+1. On the phone, open the installed app (close and reopen it once, so it updates).
+2. **Settings** → **Account** → **Sign in with Google** → choose your Google account.
+3. Back in Fluent365, tap **Back up now**.
+4. On the laptop: open the live site in a private/incognito window, finish the setup steps, **Settings → Account → Sign in with Google** with the same Google account.
+5. On the laptop: **Account** → **Delete my cloud data** → type DELETE → confirm. Then on the phone sign in again (it uploads a new backup).
+
+**What you should see**
+- Step 2: Google's account chooser opens (it says it continues to `….supabase.co`), then you are back in the **installed app or browser** on the Account page with "Signed in as *your email*" and "Backup saved to your account". If the phone opens a browser tab instead of the installed app, note that (Android/iPhone and browser).
+- Step 3: "Last backup: just now", no red error line.
+- Step 4: the empty laptop restores **by itself** ("Progress restored from your account") and shows your words, days and name from the phone.
+- Step 5: "Your cloud data was deleted and you are signed out"; in Supabase **Table Editor → backups** the row is gone; after the phone signs in again there is one row again.
+- If anything fails, copy the red error line and say on which step.
