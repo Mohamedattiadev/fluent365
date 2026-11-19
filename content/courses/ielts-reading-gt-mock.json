@@ -1,0 +1,825 @@
+{
+ "id": "ielts-reading-gt-mock",
+ "title": "IELTS Reading: General Training Practice Test",
+ "level": "B2",
+ "track": "ielts",
+ "exam": "reading",
+ "description": "A complete General Training Reading practice test: three sections and 40 questions, about 20 minutes per section, 60 minutes in all. In the official IELTS guide, General Training needs more correct answers than Academic for the same band (about 34/40 for band 7, against about 30 in Academic). Your score here is a practice estimate, not an official score. Original texts written for Fluent365.",
+ "units": [
+  {
+   "id": "section-1",
+   "title": "Section 1: Holiday cottages and a pharmacy leaflet",
+   "goal": "Questions 1–14: matching and True/False/Not Given on two everyday texts.",
+   "timeMinutes": 20,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Section 1"
+    },
+    {
+     "type": "text",
+     "text": "You should spend about 20 minutes on Questions 1–14. In the real General Training test you have 60 minutes for all three sections and no extra time to copy answers."
+    },
+    {
+     "type": "heading",
+     "text": "Questions 1–7"
+    },
+    {
+     "type": "text",
+     "text": "Look at the five holiday cottages, A–E. For each statement, choose the correct cottage. You may use any letter more than once."
+    },
+    {
+     "type": "text",
+     "text": "A  Bramble Cottage. Sleeps 4 in two bedrooms. Five minutes' walk from the beach. Dogs welcome (maximum two). Minimum stay three nights. £95 a night."
+    },
+    {
+     "type": "text",
+     "text": "B  The Old Mill. Sleeps 8. Large garden with a children's play area and a wood-burning stove for cool evenings. Twenty minutes' drive from the nearest town. No pets. In July and August, stays run from Saturday to Saturday only."
+    },
+    {
+     "type": "text",
+     "text": "C  Harbour View Apartment. Sleeps 2. Second floor (no lift) with a balcony over the harbour. Restaurants and shops on the doorstep. Not suitable for children under 12."
+    },
+    {
+     "type": "text",
+     "text": "D  Hillside Farmhouse. Sleeps 6. On a working farm where children can help to feed the animals. Fresh eggs delivered to your door every morning. Bicycles available to borrow free of charge."
+    },
+    {
+     "type": "text",
+     "text": "E  Lakeside Cabin. Sleeps 4. Private jetty; rowing boat available for hire at £15 a day. Outdoor hot tub. There is no mobile signal or Wi-Fi, so it is ideal for a real break."
+    },
+    {
+     "type": "choice",
+     "id": "q1",
+     "prompt": "1. Guests can bring their pets.",
+     "options": [
+      "A  Bramble Cottage",
+      "B  The Old Mill",
+      "C  Harbour View Apartment",
+      "D  Hillside Farmhouse",
+      "E  Lakeside Cabin"
+     ],
+     "answer": 0,
+     "why": {
+      "en": "Bramble Cottage: \"Dogs welcome\". The Old Mill says \"No pets\".",
+      "tr": "Bramble Cottage: \"Dogs welcome\"; Old Mill'de evcil hayvan yok.",
+      "ar": "Bramble Cottage: \"Dogs welcome\"؛ أما Old Mill فلا يقبل الحيوانات."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q2",
+     "prompt": "2. Guests will not be able to use the internet.",
+     "options": [
+      "A  Bramble Cottage",
+      "B  The Old Mill",
+      "C  Harbour View Apartment",
+      "D  Hillside Farmhouse",
+      "E  Lakeside Cabin"
+     ],
+     "answer": 4,
+     "why": {
+      "en": "Lakeside Cabin: \"no mobile signal or Wi-Fi\".",
+      "tr": "Lakeside Cabin: mobil sinyal ve Wi-Fi yok.",
+      "ar": "Lakeside Cabin: لا إشارة هاتف ولا Wi-Fi."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q3",
+     "prompt": "3. Guests can use a form of transport at no extra cost.",
+     "options": [
+      "A  Bramble Cottage",
+      "B  The Old Mill",
+      "C  Harbour View Apartment",
+      "D  Hillside Farmhouse",
+      "E  Lakeside Cabin"
+     ],
+     "answer": 3,
+     "why": {
+      "en": "Hillside Farmhouse: bicycles \"free of charge\". The rowing boat at the cabin must be hired.",
+      "tr": "Hillside Farmhouse: bisikletler ücretsiz; kulübedeki kayık kiralık.",
+      "ar": "Hillside Farmhouse: الدراجات مجانية؛ أما القارب عند الكوخ فبالإيجار."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q4",
+     "prompt": "4. It is not suitable for families with young children.",
+     "options": [
+      "A  Bramble Cottage",
+      "B  The Old Mill",
+      "C  Harbour View Apartment",
+      "D  Hillside Farmhouse",
+      "E  Lakeside Cabin"
+     ],
+     "answer": 2,
+     "why": {
+      "en": "Harbour View: \"Not suitable for children under 12.\"",
+      "tr": "Harbour View: 12 yaş altı çocuklar için uygun değil.",
+      "ar": "Harbour View: غير مناسب للأطفال دون 12 سنة."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q5",
+     "prompt": "5. At certain times of year, guests can only arrive on one day of the week.",
+     "options": [
+      "A  Bramble Cottage",
+      "B  The Old Mill",
+      "C  Harbour View Apartment",
+      "D  Hillside Farmhouse",
+      "E  Lakeside Cabin"
+     ],
+     "answer": 1,
+     "why": {
+      "en": "The Old Mill: in July and August, stays run \"from Saturday to Saturday only\".",
+      "tr": "Old Mill: Temmuz–Ağustos'ta yalnızca cumartesiden cumartesiye.",
+      "ar": "Old Mill: في يوليو وأغسطس من السبت إلى السبت فقط."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q6",
+     "prompt": "6. Guests must stay for a minimum number of nights.",
+     "options": [
+      "A  Bramble Cottage",
+      "B  The Old Mill",
+      "C  Harbour View Apartment",
+      "D  Hillside Farmhouse",
+      "E  Lakeside Cabin"
+     ],
+     "answer": 0,
+     "why": {
+      "en": "Bramble Cottage: \"Minimum stay three nights.\"",
+      "tr": "Bramble Cottage: en az üç gece.",
+      "ar": "Bramble Cottage: الإقامة ثلاث ليالٍ على الأقل."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q7",
+     "prompt": "7. Some food is provided every day.",
+     "options": [
+      "A  Bramble Cottage",
+      "B  The Old Mill",
+      "C  Harbour View Apartment",
+      "D  Hillside Farmhouse",
+      "E  Lakeside Cabin"
+     ],
+     "answer": 3,
+     "why": {
+      "en": "Hillside Farmhouse: \"Fresh eggs delivered to your door every morning.\"",
+      "tr": "Hillside Farmhouse: her sabah taze yumurta.",
+      "ar": "Hillside Farmhouse: بيض طازج كل صباح."
+     }
+    },
+    {
+     "type": "heading",
+     "text": "Questions 8–14"
+    },
+    {
+     "type": "text",
+     "text": "TRUE if the statement agrees with the information, FALSE if it contradicts the information, NOT GIVEN if there is no information on this."
+    },
+    {
+     "type": "heading",
+     "text": "Parkway Pharmacy: repeat prescription service"
+    },
+    {
+     "type": "text",
+     "text": "If you take the same medicine regularly, our free repeat prescription service can save you time. Once you have registered, we will order your prescription from your doctor's surgery about a week before you need it, and prepare your medicines so that they are ready when you come in. You can register in the pharmacy or on our app; you will need to tell us the name of your doctor's surgery."
+    },
+    {
+     "type": "text",
+     "text": "We will send you a text message when your medicines are ready. Please collect them within 14 days; after this time they will be returned to stock. If you cannot come in yourself, a friend or relative may collect them for you, but they will need to give us your address and date of birth."
+    },
+    {
+     "type": "text",
+     "text": "Home delivery is free for patients over 70 or with a disability. For other patients, delivery costs £3. Please note that we cannot order any medicine that your doctor has not approved for repeat use. Prescription charges still apply unless you are exempt."
+    },
+    {
+     "type": "tfng",
+     "id": "q8",
+     "statement": "8. Patients pay a fee to use the repeat prescription service.",
+     "answer": "false",
+     "why": {
+      "en": "It is \"our free repeat prescription service\". (Prescription charges are separate.)",
+      "tr": "Hizmet ücretsiz (\"free\"); reçete ücreti ayrı bir konu.",
+      "ar": "الخدمة مجانية (\"free\")؛ أما رسوم الوصفة فأمر منفصل."
+     }
+    },
+    {
+     "type": "tfng",
+     "id": "q9",
+     "statement": "9. The pharmacy orders prescriptions roughly seven days before they are needed.",
+     "answer": "true",
+     "why": {
+      "en": "\"about a week before you need it\".",
+      "tr": "\"about a week before\" — yaklaşık bir hafta önce.",
+      "ar": "\"about a week before\" أي قبل أسبوع تقريبًا."
+     }
+    },
+    {
+     "type": "tfng",
+     "id": "q10",
+     "statement": "10. Registering on the app is quicker than registering in the pharmacy.",
+     "answer": "not given",
+     "why": {
+      "en": "Both ways are mentioned, but nothing compares how long they take.",
+      "tr": "İki yol da anılıyor ama hangisinin hızlı olduğu söylenmiyor.",
+      "ar": "يُذكر الطريقان لكن دون مقارنة السرعة."
+     }
+    },
+    {
+     "type": "tfng",
+     "id": "q11",
+     "statement": "11. Medicines that are not collected within two weeks are put back into stock.",
+     "answer": "true",
+     "why": {
+      "en": "\"collect them within 14 days; after this time they will be returned to stock\".",
+      "tr": "14 gün içinde alınmazsa stoğa geri konuyor.",
+      "ar": "إذا لم تُستلم خلال 14 يومًا تُعاد إلى المخزون."
+     }
+    },
+    {
+     "type": "tfng",
+     "id": "q12",
+     "statement": "12. A person collecting medicines for someone else must give that patient's date of birth.",
+     "answer": "true",
+     "why": {
+      "en": "\"they will need to give us your address and date of birth\".",
+      "tr": "Başkası alırsa hastanın adresini ve doğum tarihini vermeli.",
+      "ar": "يجب أن يذكر المستلم عنوان المريض وتاريخ ميلاده."
+     }
+    },
+    {
+     "type": "tfng",
+     "id": "q13",
+     "statement": "13. All patients can have their medicines delivered free.",
+     "answer": "false",
+     "why": {
+      "en": "Free only for patients over 70 or with a disability; others pay £3.",
+      "tr": "Sadece 70 yaş üstü veya engelli hastalara ücretsiz; diğerleri £3 öder.",
+      "ar": "مجاني فقط لمن تجاوزوا السبعين أو ذوي الإعاقة؛ والباقون يدفعون £3."
+     }
+    },
+    {
+     "type": "tfng",
+     "id": "q14",
+     "statement": "14. The number of patients using the service has grown in the last year.",
+     "answer": "not given",
+     "why": {
+      "en": "The leaflet gives no information about how many patients use the service.",
+      "tr": "Broşür hizmeti kaç kişinin kullandığından bahsetmiyor.",
+      "ar": "لا تذكر النشرة عدد المستخدمين."
+     }
+    }
+   ]
+  },
+  {
+   "id": "section-2",
+   "title": "Section 2: Travel expenses and flexible working",
+   "goal": "Questions 15–27: note completion, True/False/Not Given and multiple choice on two workplace texts.",
+   "timeMinutes": 20,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Section 2"
+    },
+    {
+     "type": "text",
+     "text": "You should spend about 20 minutes on Questions 15–27."
+    },
+    {
+     "type": "heading",
+     "text": "Questions 15–20"
+    },
+    {
+     "type": "text",
+     "text": "Complete the notes. Use NO MORE THAN TWO WORDS AND/OR A NUMBER from the text."
+    },
+    {
+     "type": "heading",
+     "text": "Lowther Engineering: travel and expenses"
+    },
+    {
+     "type": "text",
+     "text": "Staff who travel for work can claim back reasonable costs. All claims must be submitted through the online expenses system within one month of the journey, together with photos of the receipts. Claims without receipts will not be paid, except for parking meters that do not issue them."
+    },
+    {
+     "type": "text",
+     "text": "Rail travel should be standard class. First-class travel is allowed only for journeys of more than three hours, and it must be approved in advance by your department head. If you use your own car, you can claim 45p per mile, but you must show that your insurance covers business use."
+    },
+    {
+     "type": "text",
+     "text": "The company has agreements with several hotel chains, so hotels should be booked through the travel desk, which will find the best rate. The maximum is £120 a night in London and £90 elsewhere. When you are away overnight you may claim up to £30 a day for meals; alcohol cannot be claimed. Taxis should be used only when there is no reasonable public transport or when you are carrying heavy equipment."
+    },
+    {
+     "type": "gap",
+     "id": "q15",
+     "prompt": "15. Claims must be made within ___ of the journey.",
+     "answers": [
+      "one month",
+      "a month",
+      "1 month"
+     ],
+     "why": {
+      "en": "\"within one month of the journey\".",
+      "tr": "Yolculuktan sonra bir ay içinde.",
+      "ar": "خلال شهر واحد من الرحلة."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q16",
+     "prompt": "16. No receipt is needed for certain ___.",
+     "answers": [
+      "parking meters"
+     ],
+     "why": {
+      "en": "\"except for parking meters that do not issue them\".",
+      "tr": "Fiş vermeyen otopark sayaçları (parking meters) hariç.",
+      "ar": "باستثناء عدادات المواقف (parking meters) التي لا تصدر إيصالات."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q17",
+     "prompt": "17. First-class rail travel must be approved by the ___.",
+     "answers": [
+      "department head",
+      "head of department"
+     ],
+     "why": {
+      "en": "\"approved in advance by your department head\".",
+      "tr": "Bölüm başkanı (department head) önceden onaylamalı.",
+      "ar": "يجب أن يوافق رئيس القسم (department head) مسبقًا."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q18",
+     "prompt": "18. Staff using their own car can claim ___ per mile.",
+     "answers": [
+      "45p",
+      "45 pence",
+      "45",
+      "45 p"
+     ],
+     "why": {
+      "en": "\"you can claim 45p per mile\".",
+      "tr": "Mil başına 45p.",
+      "ar": "45 بنسًا لكل ميل."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q19",
+     "prompt": "19. Hotels should be booked through the ___.",
+     "answers": [
+      "travel desk"
+     ],
+     "why": {
+      "en": "\"hotels should be booked through the travel desk\".",
+      "tr": "Oteller travel desk üzerinden ayarlanmalı.",
+      "ar": "تُحجز الفنادق عبر travel desk."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q20",
+     "prompt": "20. Maximum claim for meals when away overnight: ___ a day",
+     "answers": [
+      "£30",
+      "30",
+      "30 pounds"
+     ],
+     "why": {
+      "en": "\"up to £30 a day for meals\". £120 and £90 are hotel limits.",
+      "tr": "Yemek için günde en fazla £30; £120 ve £90 otel sınırları.",
+      "ar": "حتى £30 يوميًا للطعام؛ أما £120 و£90 فحدود الفنادق."
+     }
+    },
+    {
+     "type": "heading",
+     "text": "Questions 21–27"
+    },
+    {
+     "type": "text",
+     "text": "Read the text and answer the questions. For True/False/Not Given questions: TRUE if the statement agrees with the information, FALSE if it contradicts it, NOT GIVEN if there is no information on this."
+    },
+    {
+     "type": "heading",
+     "text": "Applying for flexible working"
+    },
+    {
+     "type": "text",
+     "text": "All employees who have worked for the company for at least 26 weeks may apply to change their working pattern: for example, to work part-time, to start and finish earlier, or to work from home on some days."
+    },
+    {
+     "type": "text",
+     "text": "Applications must be made in writing on form FW1, which you can find on the HR intranet page. Explain the change you would like, when you would like it to start and how you think it might affect your team. You may make one application in any twelve-month period."
+    },
+    {
+     "type": "text",
+     "text": "Your manager will arrange a meeting with you within 28 days to discuss your request, and you may bring a colleague with you. You will receive a written decision within two weeks of the meeting. Requests may be refused for business reasons, such as the cost of the change or being unable to recruit extra staff. If your request is refused, you may appeal within 14 days by writing to the HR director."
+    },
+    {
+     "type": "text",
+     "text": "Changes agreed under this scheme are permanent unless both sides agree otherwise; you do not have an automatic right to return to your previous pattern. For this reason, many staff choose to try the new pattern for three months first."
+    },
+    {
+     "type": "tfng",
+     "id": "q21",
+     "statement": "21. Employees can apply for flexible working in their first month with the company.",
+     "answer": "false",
+     "why": {
+      "en": "Employees need \"at least 26 weeks\" (about six months) with the company.",
+      "tr": "En az 26 hafta (yaklaşık altı ay) çalışmış olmak gerekiyor.",
+      "ar": "يلزم العمل 26 أسبوعًا على الأقل (نحو ستة أشهر)."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q22",
+     "prompt": "22. What must an application include?",
+     "options": [
+      "a letter from a colleague",
+      "the possible effect on the employee's team",
+      "a note from a doctor",
+      "a new job description"
+     ],
+     "answer": 1,
+     "why": {
+      "en": "Explain \"how you think it might affect your team\".",
+      "tr": "Değişikliğin ekibi nasıl etkileyeceği açıklanmalı.",
+      "ar": "يجب شرح أثر التغيير على الفريق."
+     }
+    },
+    {
+     "type": "tfng",
+     "id": "q23",
+     "statement": "23. Employees may make two applications a year.",
+     "answer": "false",
+     "why": {
+      "en": "\"one application in any twelve-month period\".",
+      "tr": "On iki ayda yalnızca bir başvuru.",
+      "ar": "طلب واحد فقط في أي فترة اثني عشر شهرًا."
+     }
+    },
+    {
+     "type": "tfng",
+     "id": "q24",
+     "statement": "24. An employee can take someone with them to the meeting.",
+     "answer": "true",
+     "why": {
+      "en": "\"you may bring a colleague with you\".",
+      "tr": "Toplantıya bir iş arkadaşı getirilebilir.",
+      "ar": "يمكن إحضار زميل إلى الاجتماع."
+     }
+    },
+    {
+     "type": "tfng",
+     "id": "q25",
+     "statement": "25. Most requests for flexible working are accepted.",
+     "answer": "not given",
+     "why": {
+      "en": "The text explains reasons for refusal but gives no figures on how many requests succeed.",
+      "tr": "Ret gerekçeleri var ama kaç başvurunun kabul edildiği yazmıyor.",
+      "ar": "يذكر النص أسباب الرفض لكن لا يذكر نسبة القبول."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q26",
+     "prompt": "26. If a request is refused, the employee can",
+     "options": [
+      "apply again immediately.",
+      "appeal to the HR director.",
+      "ask a colleague to make the decision.",
+      "move to a different team."
+     ],
+     "answer": 1,
+     "why": {
+      "en": "\"you may appeal within 14 days by writing to the HR director\". Applying again at once is not allowed (one a year).",
+      "tr": "14 gün içinde HR direktörüne itiraz edilebilir; hemen yeniden başvuru yok (yılda bir).",
+      "ar": "يمكن التظلم خلال 14 يومًا لدى مدير الموارد البشرية؛ ولا يجوز التقديم مجددًا فورًا."
+     }
+    },
+    {
+     "type": "tfng",
+     "id": "q27",
+     "statement": "27. Employees always have the right to go back to their old working pattern.",
+     "answer": "false",
+     "why": {
+      "en": "\"you do not have an automatic right to return to your previous pattern\".",
+      "tr": "Eski düzene otomatik dönüş hakkı yok.",
+      "ar": "لا يوجد حق تلقائي في العودة إلى النظام السابق."
+     }
+    }
+   ]
+  },
+  {
+   "id": "section-3",
+   "title": "Section 3: The Story of the Paperback",
+   "goal": "Questions 28–40: matching headings, multiple choice and summary completion on a longer text.",
+   "timeMinutes": 20,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Section 3"
+    },
+    {
+     "type": "text",
+     "text": "You should spend about 20 minutes on Questions 28–40."
+    },
+    {
+     "type": "heading",
+     "text": "Questions 28–33"
+    },
+    {
+     "type": "text",
+     "text": "The text has six paragraphs, A–F. Choose the correct heading for each paragraph. There are more headings than paragraphs."
+    },
+    {
+     "type": "heading",
+     "text": "The Story of the Paperback"
+    },
+    {
+     "type": "text",
+     "text": "A  In 1935, a British publisher called Allen Lane was waiting at a railway station in the south-west of England after visiting a well-known crime writer. Looking for something to read on the journey back to London, he found only expensive hardbacks and cheap magazines. According to the story he later told, it was there that he decided to publish good books at the price of a packet of cigarettes. Within months, the first ten Penguin books, sixpence each, were in the shops."
+    },
+    {
+     "type": "text",
+     "text": "B  Paperback books were not new. Cheap paper-covered editions had been sold in many countries during the nineteenth century, and a publisher in Germany had already produced English-language paperbacks for readers in continental Europe. What made Lane's idea different was the combination of serious literature, low prices and enormous print runs. Booksellers were doubtful at first: they feared that cheap books would reduce their profits. The breakthrough came when a large chain of shops ordered tens of thousands of copies."
+    },
+    {
+     "type": "text",
+     "text": "C  The design of the books was part of their success. Instead of pictures, the early covers used simple horizontal bands of colour, with a different colour for each kind of book: orange for fiction, green for crime, dark blue for biography. Readers could recognise the type of book from across the shop. The penguin logo, drawn by a young member of staff after a visit to the zoo, gave the series a friendly identity that was easy to remember."
+    },
+    {
+     "type": "text",
+     "text": "D  The Second World War, surprisingly, helped the paperback. Paper was rationed, but small, light books used less of it and were easy to send to soldiers overseas. In the United States, publishers printed millions of special editions for the armed forces, and many young men who had read little before the war came home with the habit of reading. After the war, American paperback publishers began to sell books in chemists' shops and at bus and railway stations, places that had never sold books before."
+    },
+    {
+     "type": "text",
+     "text": "E  Not everyone welcomed the change. Some critics argued that cheap books would lower standards, because publishers would choose titles that sold quickly rather than titles of lasting value. Covers in America, in particular, became increasingly sensational, with dramatic pictures designed to catch the eye of shoppers, even on serious novels. Authors sometimes complained that they earned very little from each copy, although the huge numbers sold usually made up for this."
+    },
+    {
+     "type": "text",
+     "text": "F  Today paperbacks compete with e-books and audiobooks, yet they have proved surprisingly resistant. Many readers say they prefer the feel of paper, and a paperback needs no battery or screen. Perhaps more importantly, the paperback changed attitudes to reading itself. It made owning books, rather than borrowing them, normal for ordinary people, and it turned reading from a sign of wealth into an everyday pleasure."
+    },
+    {
+     "type": "choice",
+     "id": "q28",
+     "prompt": "28. Paragraph A",
+     "options": [
+      "i  A new idea on a journey",
+      "ii  Opposition from booksellers that never ended",
+      "iii  How a crisis turned out to be useful",
+      "iv  An old format used in a new way",
+      "v  Worries about quality",
+      "vi  Colour as a guide for readers",
+      "vii  The lasting influence of a cheap book",
+      "viii  How authors became rich"
+     ],
+     "answer": 0,
+     "why": {
+      "en": "Lane had the idea while waiting for a train: a new idea on a journey.",
+      "tr": "Lane fikri tren beklerken buldu: yolculukta doğan yeni bir fikir.",
+      "ar": "خطرت الفكرة لِـLane أثناء انتظار القطار."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q29",
+     "prompt": "29. Paragraph B",
+     "options": [
+      "i  A new idea on a journey",
+      "ii  Opposition from booksellers that never ended",
+      "iii  How a crisis turned out to be useful",
+      "iv  An old format used in a new way",
+      "v  Worries about quality",
+      "vi  Colour as a guide for readers",
+      "vii  The lasting influence of a cheap book",
+      "viii  How authors became rich"
+     ],
+     "answer": 3,
+     "why": {
+      "en": "Paperbacks existed already (old format); Lane combined them with serious books and huge print runs (new way). Heading ii is wrong: booksellers' doubts ended with the big order.",
+      "tr": "Ciltsiz kitap zaten vardı; Lane onu yeni bir şekilde kullandı. ii yanlış: kitapçıların şüphesi büyük siparişle bitti.",
+      "ar": "الكتب الورقية كانت موجودة، واستخدمها Lane بطريقة جديدة. العنوان ii خطأ: انتهت شكوك الباعة بالطلبية الكبيرة."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q30",
+     "prompt": "30. Paragraph C",
+     "options": [
+      "i  A new idea on a journey",
+      "ii  Opposition from booksellers that never ended",
+      "iii  How a crisis turned out to be useful",
+      "iv  An old format used in a new way",
+      "v  Worries about quality",
+      "vi  Colour as a guide for readers",
+      "vii  The lasting influence of a cheap book",
+      "viii  How authors became rich"
+     ],
+     "answer": 5,
+     "why": {
+      "en": "C: a different colour for each kind of book, so readers could recognise the type.",
+      "tr": "C: her tür için farklı renk; okur türü uzaktan tanıyordu.",
+      "ar": "C: لون مختلف لكل نوع ليتعرف القارئ عليه."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q31",
+     "prompt": "31. Paragraph D",
+     "options": [
+      "i  A new idea on a journey",
+      "ii  Opposition from booksellers that never ended",
+      "iii  How a crisis turned out to be useful",
+      "iv  An old format used in a new way",
+      "v  Worries about quality",
+      "vi  Colour as a guide for readers",
+      "vii  The lasting influence of a cheap book",
+      "viii  How authors became rich"
+     ],
+     "answer": 2,
+     "why": {
+      "en": "D: the war (a crisis) \"surprisingly, helped the paperback\".",
+      "tr": "D: savaş (bir kriz) şaşırtıcı biçimde ciltsiz kitaba yaradı.",
+      "ar": "D: الحرب (أزمة) ساعدت الكتاب الورقي على نحو مفاجئ."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q32",
+     "prompt": "32. Paragraph E",
+     "options": [
+      "i  A new idea on a journey",
+      "ii  Opposition from booksellers that never ended",
+      "iii  How a crisis turned out to be useful",
+      "iv  An old format used in a new way",
+      "v  Worries about quality",
+      "vi  Colour as a guide for readers",
+      "vii  The lasting influence of a cheap book",
+      "viii  How authors became rich"
+     ],
+     "answer": 4,
+     "why": {
+      "en": "E: critics feared cheap books \"would lower standards\". Heading viii is wrong: authors complained they earned little per copy.",
+      "tr": "E: eleştirmenler standartların düşeceğinden korktu. viii yanlış: yazarlar kopya başına az kazandıklarından yakındı.",
+      "ar": "E: خشي النقاد انخفاض المستوى. العنوان viii خطأ: اشتكى المؤلفون من قلة الربح."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q33",
+     "prompt": "33. Paragraph F",
+     "options": [
+      "i  A new idea on a journey",
+      "ii  Opposition from booksellers that never ended",
+      "iii  How a crisis turned out to be useful",
+      "iv  An old format used in a new way",
+      "v  Worries about quality",
+      "vi  Colour as a guide for readers",
+      "vii  The lasting influence of a cheap book",
+      "viii  How authors became rich"
+     ],
+     "answer": 6,
+     "why": {
+      "en": "F: the paperback \"changed attitudes to reading itself\" and still survives.",
+      "tr": "F: ciltsiz kitap okumaya bakışı değiştirdi ve hâlâ yaşıyor.",
+      "ar": "F: غيّر الكتاب الورقي النظرة إلى القراءة وما زال باقيًا."
+     }
+    },
+    {
+     "type": "heading",
+     "text": "Questions 34–36"
+    },
+    {
+     "type": "text",
+     "text": "Choose the correct answer."
+    },
+    {
+     "type": "choice",
+     "id": "q34",
+     "prompt": "34. Why were booksellers unsure about Penguin books at first?",
+     "options": [
+      "They thought the covers were unattractive.",
+      "They expected to make less money.",
+      "They did not like the authors.",
+      "They already had too many hardbacks."
+     ],
+     "answer": 1,
+     "why": {
+      "en": "\"they feared that cheap books would reduce their profits\".",
+      "tr": "Ucuz kitapların kârlarını düşüreceğinden korktular.",
+      "ar": "خشوا أن تقلل الكتب الرخيصة أرباحهم."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q35",
+     "prompt": "35. The early covers helped readers to",
+     "options": [
+      "see a picture from the story.",
+      "identify the kind of book quickly.",
+      "read a short summary.",
+      "find out about the author."
+     ],
+     "answer": 1,
+     "why": {
+      "en": "\"Readers could recognise the type of book from across the shop.\"",
+      "tr": "Okurlar kitabın türünü dükkânın öbür ucundan tanıyabiliyordu.",
+      "ar": "كان القراء يعرفون نوع الكتاب من بعيد."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q36",
+     "prompt": "36. After the war, American paperbacks were sold",
+     "options": [
+      "only in bookshops.",
+      "only to soldiers.",
+      "in places that had not sold books before.",
+      "mainly by post."
+     ],
+     "answer": 2,
+     "why": {
+      "en": "\"in chemists' shops and at bus and railway stations, places that had never sold books before\".",
+      "tr": "Daha önce kitap satmayan yerlerde: eczaneler, istasyonlar.",
+      "ar": "في أماكن لم تبع الكتب من قبل كالصيدليات والمحطات."
+     }
+    },
+    {
+     "type": "heading",
+     "text": "Questions 37–40"
+    },
+    {
+     "type": "text",
+     "text": "Complete the summary. Use ONE WORD ONLY from the text for each answer."
+    },
+    {
+     "type": "text",
+     "text": "During the Second World War, (37) ___ was in short supply, but paperbacks were small and light enough to send abroad. Millions of copies went to American soldiers, and many came home with a reading (38) ___. Later, some critics feared that cheap books would lower (39) ___, and American covers became more and more (40) ___."
+    },
+    {
+     "type": "gap",
+     "id": "q37",
+     "prompt": "37. ___ was in short supply",
+     "answers": [
+      "paper"
+     ],
+     "why": {
+      "en": "\"Paper was rationed\" (rationed = in short supply, limited).",
+      "tr": "\"Paper was rationed\" — kâğıt karneyle veriliyordu, kıttı.",
+      "ar": "\"Paper was rationed\" أي كان الورق شحيحًا."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q38",
+     "prompt": "38. a reading ___",
+     "answers": [
+      "habit"
+     ],
+     "why": {
+      "en": "\"came home with the habit of reading\".",
+      "tr": "Okuma alışkanlığıyla (habit) döndüler.",
+      "ar": "عادوا بعادة (habit) القراءة."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q39",
+     "prompt": "39. lower ___",
+     "answers": [
+      "standards"
+     ],
+     "why": {
+      "en": "\"cheap books would lower standards\".",
+      "tr": "\"lower standards\" — standartları düşürmek.",
+      "ar": "\"lower standards\" أي خفض المستوى."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q40",
+     "prompt": "40. more and more ___",
+     "answers": [
+      "sensational"
+     ],
+     "why": {
+      "en": "\"Covers in America ... became increasingly sensational\" (increasingly = more and more).",
+      "tr": "\"increasingly sensational\" — giderek daha çarpıcı.",
+      "ar": "\"increasingly sensational\" أي مثيرة أكثر فأكثر."
+     }
+    }
+   ]
+  }
+ ]
+}

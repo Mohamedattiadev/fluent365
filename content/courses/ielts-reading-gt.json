@@ -1,0 +1,2639 @@
+{
+ "id": "ielts-reading-gt",
+ "title": "IELTS Reading: General Training",
+ "level": "B1",
+ "track": "ielts",
+ "description": "General Training Reading practice in the real three-section order: Section 1 everyday texts (notices, adverts, timetables, leaflets), Section 2 workplace texts (job adverts, staff rules, training) and Section 3 longer general-interest texts. Real question types, every answer explained. Original texts written for Fluent365.",
+ "units": [
+  {
+   "id": "s1-pools-library",
+   "title": "Section 1 · Swimming pools and library hours",
+   "goal": "Matching information and True/False/Not Given on short everyday texts. Scan for the key fact; you may use a letter more than once.",
+   "timeMinutes": 10,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Questions 1–7"
+    },
+    {
+     "type": "text",
+     "text": "Look at the five advertisements for swimming pools in Westbury, A–E. For each statement, choose the correct pool. You may use any letter more than once."
+    },
+    {
+     "type": "heading",
+     "text": "Swimming in Westbury"
+    },
+    {
+     "type": "text",
+     "text": "A  Riverside Leisure Centre. 25-metre indoor pool, open 6.30 am to 10 pm every day. Adult swim £4.50; children under 5 swim free. Before 9 am the pool is for lane swimming only. Free parking for members."
+    },
+    {
+     "type": "text",
+     "text": "B  Hilltop Lido. Our heated outdoor pool is open from May to September. Relax at the poolside café after your swim. Family ticket (two adults and two children) £12. No need to book: just turn up."
+    },
+    {
+     "type": "text",
+     "text": "C  Westbury Academy Pool. The school pool is open to the public from 6 to 9 pm on weekdays and all day at weekends. All sessions must be booked online at least 24 hours in advance. Adults £3."
+    },
+    {
+     "type": "text",
+     "text": "D  Aqua Fun Park. Wave machine, two giant slides and a splash zone for toddlers. Children under 8 must be with an adult in the water at all times. Prices from £7. Closed on Mondays."
+    },
+    {
+     "type": "text",
+     "text": "E  St Mark's Health Club. 20-metre pool, sauna and steam room. For members only: membership £35 a month. Your first visit is free if you come with a friend who is a member."
+    },
+    {
+     "type": "choice",
+     "id": "q1",
+     "prompt": "1. It is only open during part of the year.",
+     "options": [
+      "A  Riverside Leisure Centre",
+      "B  Hilltop Lido",
+      "C  Westbury Academy Pool",
+      "D  Aqua Fun Park",
+      "E  St Mark's Health Club"
+     ],
+     "answer": 1,
+     "why": {
+      "en": "Hilltop Lido is open \"from May to September\" only.",
+      "tr": "Hilltop Lido yalnızca \"from May to September\" açık; yılın bir kısmı.",
+      "ar": "مسبح Hilltop Lido مفتوح فقط \"from May to September\"، أي جزءًا من السنة."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q2",
+     "prompt": "2. It cannot be used during the school day.",
+     "options": [
+      "A  Riverside Leisure Centre",
+      "B  Hilltop Lido",
+      "C  Westbury Academy Pool",
+      "D  Aqua Fun Park",
+      "E  St Mark's Health Club"
+     ],
+     "answer": 2,
+     "why": {
+      "en": "The Academy pool opens to the public only from 6 pm on weekdays and at weekends.",
+      "tr": "Okul havuzu halka hafta içi sadece 18:00'den sonra ve hafta sonu açık; okul saatlerinde kullanılamaz.",
+      "ar": "مسبح المدرسة مفتوح للجمهور فقط بعد السادسة مساءً في أيام الأسبوع وفي العطلة، أي ليس أثناء اليوم الدراسي."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q3",
+     "prompt": "3. Very young children do not have to pay.",
+     "options": [
+      "A  Riverside Leisure Centre",
+      "B  Hilltop Lido",
+      "C  Westbury Academy Pool",
+      "D  Aqua Fun Park",
+      "E  St Mark's Health Club"
+     ],
+     "answer": 0,
+     "why": {
+      "en": "Riverside: \"children under 5 swim free\".",
+      "tr": "Riverside: \"children under 5 swim free\" — 5 yaş altı ücretsiz.",
+      "ar": "Riverside: \"children under 5 swim free\" أي الأطفال دون الخامسة مجانًا."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q4",
+     "prompt": "4. You can try it for nothing if you go with someone.",
+     "options": [
+      "A  Riverside Leisure Centre",
+      "B  Hilltop Lido",
+      "C  Westbury Academy Pool",
+      "D  Aqua Fun Park",
+      "E  St Mark's Health Club"
+     ],
+     "answer": 4,
+     "why": {
+      "en": "St Mark's: the first visit is free \"if you come with a friend who is a member\".",
+      "tr": "St Mark's: üye bir arkadaşla gelirsen ilk ziyaret ücretsiz.",
+      "ar": "St Mark's: الزيارة الأولى مجانية إذا جئت مع صديق عضو."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q5",
+     "prompt": "5. It has an area designed for small children.",
+     "options": [
+      "A  Riverside Leisure Centre",
+      "B  Hilltop Lido",
+      "C  Westbury Academy Pool",
+      "D  Aqua Fun Park",
+      "E  St Mark's Health Club"
+     ],
+     "answer": 3,
+     "why": {
+      "en": "Aqua Fun Park has \"a splash zone for toddlers\" (toddlers = very young children).",
+      "tr": "Aqua Fun Park'ta \"a splash zone for toddlers\" var; toddler = küçük çocuk.",
+      "ar": "في Aqua Fun Park توجد \"a splash zone for toddlers\"، وtoddlers تعني الأطفال الصغار جدًا."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q6",
+     "prompt": "6. At certain times you can only swim up and down in lanes.",
+     "options": [
+      "A  Riverside Leisure Centre",
+      "B  Hilltop Lido",
+      "C  Westbury Academy Pool",
+      "D  Aqua Fun Park",
+      "E  St Mark's Health Club"
+     ],
+     "answer": 0,
+     "why": {
+      "en": "Riverside: \"Before 9 am the pool is for lane swimming only.\"",
+      "tr": "Riverside: sabah 9'dan önce yalnızca kulvar yüzme var.",
+      "ar": "Riverside: قبل التاسعة صباحًا السباحة في الممرات فقط."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q7",
+     "prompt": "7. You can buy something to eat there.",
+     "options": [
+      "A  Riverside Leisure Centre",
+      "B  Hilltop Lido",
+      "C  Westbury Academy Pool",
+      "D  Aqua Fun Park",
+      "E  St Mark's Health Club"
+     ],
+     "answer": 1,
+     "why": {
+      "en": "Hilltop Lido has a \"poolside café\". No other advert mentions food.",
+      "tr": "Hilltop Lido'da \"poolside café\" var; başka ilanda yiyecek yok.",
+      "ar": "في Hilltop Lido يوجد \"poolside café\"، ولا يذكر أي إعلان آخر الطعام."
+     }
+    },
+    {
+     "type": "heading",
+     "text": "Questions 8–10"
+    },
+    {
+     "type": "text",
+     "text": "TRUE if the statement agrees with the information, FALSE if it contradicts the information, NOT GIVEN if there is no information on this."
+    },
+    {
+     "type": "heading",
+     "text": "Westbury Library: new opening hours"
+    },
+    {
+     "type": "text",
+     "text": "From 1 March the library will open at 10 am instead of 9 am on weekdays, but it will stay open until 8 pm on Tuesdays and Thursdays. Saturday hours are unchanged (9 am to 4 pm), and the library will remain closed on Sundays."
+    },
+    {
+     "type": "text",
+     "text": "Computers can be booked for one hour at a time. If nobody is waiting, you may continue for a further hour. Printing costs 10p a page in black and white and 50p a page in colour. Lost library cards can be replaced at the desk for £2."
+    },
+    {
+     "type": "tfng",
+     "id": "q8",
+     "statement": "8. On weekdays the library will open later than it did before.",
+     "answer": "true",
+     "why": {
+      "en": "It will open \"at 10 am instead of 9 am on weekdays\".",
+      "tr": "Hafta içi \"9 yerine 10'da\" açılacak, yani daha geç.",
+      "ar": "ستفتح \"at 10 am instead of 9 am\" في أيام الأسبوع، أي في وقت متأخر عن السابق."
+     }
+    },
+    {
+     "type": "tfng",
+     "id": "q9",
+     "statement": "9. The library will start opening on Sundays.",
+     "answer": "false",
+     "why": {
+      "en": "The library \"will remain closed on Sundays\": this contradicts the statement.",
+      "tr": "\"will remain closed on Sundays\" — pazar kapalı kalacak; ifade metinle çelişiyor.",
+      "ar": "\"will remain closed on Sundays\": المكتبة تبقى مغلقة يوم الأحد، وهذا يناقض العبارة."
+     }
+    },
+    {
+     "type": "tfng",
+     "id": "q10",
+     "statement": "10. More people print in colour than in black and white.",
+     "answer": "not given",
+     "why": {
+      "en": "Only the prices are given; nothing about how many people use each kind of printing.",
+      "tr": "Sadece fiyatlar verilmiş; kaç kişinin hangisini kullandığı yazmıyor.",
+      "ar": "النص يذكر الأسعار فقط، ولا يذكر عدد من يطبع بالألوان أو بالأبيض والأسود."
+     }
+    }
+   ]
+  },
+  {
+   "id": "s1-train-info",
+   "title": "Section 1 · Train tickets and travel information",
+   "goal": "Short-answer questions: find a number, time or name and copy it exactly. Use NO MORE THAN TWO WORDS AND/OR A NUMBER.",
+   "timeMinutes": 10,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Questions 1–10"
+    },
+    {
+     "type": "text",
+     "text": "Read the information below. Answer the questions using NO MORE THAN TWO WORDS AND/OR A NUMBER from the text."
+    },
+    {
+     "type": "heading",
+     "text": "Coastline Railways: travelling between Fairport and Kelby"
+    },
+    {
+     "type": "text",
+     "text": "Tickets. Off-peak tickets are valid on trains leaving after 9.30 am from Monday to Friday, and all day at weekends. An Off-peak Return from Fairport to Kelby costs £18.40; an Anytime Return, which can be used on any train, costs £31."
+    },
+    {
+     "type": "text",
+     "text": "Railcards. Holders of a 16–25 Railcard or a Senior Railcard get one third off most fares. A Railcard costs £30 a year and can be bought online or at any staffed station."
+    },
+    {
+     "type": "text",
+     "text": "Bicycles. Bicycles are carried free of charge, but there is space for only four on each train. Spaces can be reserved at the ticket office up to two hours before departure. Folding bicycles may be taken on any train without a reservation."
+    },
+    {
+     "type": "text",
+     "text": "Delays. If your train reaches your destination 15 minutes or more late, you can claim compensation. Claims must be made within 28 days of your journey, and you will need your ticket or a photo of it."
+    },
+    {
+     "type": "text",
+     "text": "Engineering work. On Sundays in April, buses will replace trains between Marlow and Kelby. Please allow an extra 40 minutes for your journey."
+    },
+    {
+     "type": "text",
+     "text": "Lost property. Items left on our trains are kept at Fairport station for three months."
+    },
+    {
+     "type": "gap",
+     "id": "q1",
+     "prompt": "1. On weekdays, after what time can you travel with an Off-peak ticket?",
+     "answers": [
+      "9.30 am",
+      "9.30",
+      "9:30",
+      "9:30 am",
+      "9.30am",
+      "9:30am"
+     ],
+     "why": {
+      "en": "\"valid on trains leaving after 9.30 am from Monday to Friday\".",
+      "tr": "\"after 9.30 am from Monday to Friday\" — hafta içi 9.30'dan sonra.",
+      "ar": "\"after 9.30 am from Monday to Friday\" أي بعد 9.30 صباحًا في أيام الأسبوع."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q2",
+     "prompt": "2. How much is an Anytime Return?",
+     "answers": [
+      "£31",
+      "31",
+      "31 pounds"
+     ],
+     "why": {
+      "en": "\"an Anytime Return ... costs £31\". £18.40 is the Off-peak fare.",
+      "tr": "\"an Anytime Return ... costs £31\"; £18.40 off-peak bileti.",
+      "ar": "\"an Anytime Return ... costs £31\"؛ أما £18.40 فهو سعر تذكرة خارج الذروة."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q3",
+     "prompt": "3. How much of the fare does a Railcard save?",
+     "answers": [
+      "one third",
+      "a third",
+      "1/3",
+      "third"
+     ],
+     "why": {
+      "en": "Railcard holders \"get one third off most fares\".",
+      "tr": "\"one third off\" — ücretin üçte biri indirim.",
+      "ar": "\"one third off\" أي خصم الثلث."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q4",
+     "prompt": "4. How many bicycles can each train carry?",
+     "answers": [
+      "four",
+      "4"
+     ],
+     "why": {
+      "en": "\"there is space for only four on each train\".",
+      "tr": "\"space for only four on each train\" — her trende dört.",
+      "ar": "\"space for only four on each train\" أي أربع دراجات في كل قطار."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q5",
+     "prompt": "5. What kind of bicycle needs no reservation?",
+     "answers": [
+      "folding",
+      "folding bicycles",
+      "folding bicycle",
+      "a folding bicycle",
+      "folding bikes",
+      "folding bike"
+     ],
+     "why": {
+      "en": "\"Folding bicycles may be taken on any train without a reservation.\"",
+      "tr": "Katlanır bisikletler (folding bicycles) rezervasyonsuz alınır.",
+      "ar": "الدراجات القابلة للطي (folding bicycles) لا تحتاج إلى حجز."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q6",
+     "prompt": "6. How many minutes late must a train be before you can claim compensation?",
+     "answers": [
+      "15",
+      "fifteen",
+      "15 minutes",
+      "fifteen minutes"
+     ],
+     "why": {
+      "en": "\"15 minutes or more late\".",
+      "tr": "\"15 minutes or more late\" — en az 15 dakika.",
+      "ar": "\"15 minutes or more late\" أي 15 دقيقة أو أكثر."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q7",
+     "prompt": "7. Within how many days must you make a claim?",
+     "answers": [
+      "28",
+      "twenty-eight",
+      "28 days"
+     ],
+     "why": {
+      "en": "\"Claims must be made within 28 days\".",
+      "tr": "\"within 28 days\" — 28 gün içinde.",
+      "ar": "\"within 28 days\" أي خلال 28 يومًا."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q8",
+     "prompt": "8. What will replace trains between Marlow and Kelby on Sundays in April?",
+     "answers": [
+      "buses",
+      "bus",
+      "a bus"
+     ],
+     "why": {
+      "en": "\"buses will replace trains between Marlow and Kelby\".",
+      "tr": "\"buses will replace trains\" — trenlerin yerine otobüs.",
+      "ar": "\"buses will replace trains\" أي الحافلات بدل القطارات."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q9",
+     "prompt": "9. How much extra journey time should passengers allow then?",
+     "answers": [
+      "40 minutes",
+      "40",
+      "forty minutes",
+      "40 mins"
+     ],
+     "why": {
+      "en": "\"allow an extra 40 minutes for your journey\".",
+      "tr": "\"an extra 40 minutes\" — 40 dakika fazladan.",
+      "ar": "\"an extra 40 minutes\" أي 40 دقيقة إضافية."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q10",
+     "prompt": "10. Where is lost property kept?",
+     "answers": [
+      "Fairport station",
+      "at Fairport station",
+      "Fairport"
+     ],
+     "why": {
+      "en": "\"Items left on our trains are kept at Fairport station\".",
+      "tr": "Kayıp eşyalar Fairport istasyonunda tutuluyor.",
+      "ar": "تُحفظ المفقودات في محطة Fairport."
+     }
+    }
+   ]
+  },
+  {
+   "id": "s1-evening-classes",
+   "title": "Section 1 · Evening classes leaflet",
+   "goal": "Matching and True/False/Not Given. Watch for paraphrase: the question rarely uses the same words as the text.",
+   "timeMinutes": 10,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Questions 1–6"
+    },
+    {
+     "type": "text",
+     "text": "Look at the six courses, A–F, offered by Northgate College. For each question, choose the correct course."
+    },
+    {
+     "type": "heading",
+     "text": "Northgate College: evening and weekend courses"
+    },
+    {
+     "type": "text",
+     "text": "A  Beginners' Spanish. Tuesdays 7–9 pm, 10 weeks, £95. No previous knowledge needed. The course book is included in the price."
+    },
+    {
+     "type": "text",
+     "text": "B  Digital Photography. Wednesdays 6.30–8.30 pm, 8 weeks, £120. Please bring your own camera; smartphones are not suitable for this course."
+    },
+    {
+     "type": "text",
+     "text": "C  Car Maintenance for Everyone. Saturday mornings, 6 weeks, £80. Learn to change a tyre, check the oil and prepare your car for winter. Overalls are provided."
+    },
+    {
+     "type": "text",
+     "text": "D  Creative Writing. Mondays 7–9 pm, 12 weeks, £110. At the end of the course a selection of students' stories and poems is published in a small book."
+    },
+    {
+     "type": "text",
+     "text": "E  Introduction to Bookkeeping. Thursdays 6–9 pm, 10 weeks, £150. Prepares you for a nationally recognised certificate (exam fee of £40 not included)."
+    },
+    {
+     "type": "text",
+     "text": "F  Garden Design. Online: study at your own pace, £70. Includes one guided visit to the college's own gardens."
+    },
+    {
+     "type": "choice",
+     "id": "q1",
+     "prompt": "1. Which course can lead to a qualification?",
+     "options": [
+      "A  Beginners' Spanish",
+      "B  Digital Photography",
+      "C  Car Maintenance for Everyone",
+      "D  Creative Writing",
+      "E  Introduction to Bookkeeping",
+      "F  Garden Design"
+     ],
+     "answer": 4,
+     "why": {
+      "en": "Bookkeeping \"prepares you for a nationally recognised certificate\".",
+      "tr": "Bookkeeping \"recognised certificate\" için hazırlıyor; sertifika = nitelik.",
+      "ar": "دورة Bookkeeping تُعدّك لـ\"recognised certificate\"، أي مؤهل معترف به."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q2",
+     "prompt": "2. Which course does not involve weekly classes at the college?",
+     "options": [
+      "A  Beginners' Spanish",
+      "B  Digital Photography",
+      "C  Car Maintenance for Everyone",
+      "D  Creative Writing",
+      "E  Introduction to Bookkeeping",
+      "F  Garden Design"
+     ],
+     "answer": 5,
+     "why": {
+      "en": "Garden Design is online, \"at your own pace\", with only one visit.",
+      "tr": "Garden Design çevrim içi ve kendi hızında; sadece bir ziyaret var.",
+      "ar": "دورة Garden Design عبر الإنترنت وبالسرعة التي تناسبك، مع زيارة واحدة فقط."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q3",
+     "prompt": "3. Which course provides protective clothing?",
+     "options": [
+      "A  Beginners' Spanish",
+      "B  Digital Photography",
+      "C  Car Maintenance for Everyone",
+      "D  Creative Writing",
+      "E  Introduction to Bookkeeping",
+      "F  Garden Design"
+     ],
+     "answer": 2,
+     "why": {
+      "en": "Car Maintenance: \"Overalls are provided.\" Overalls protect your clothes.",
+      "tr": "Car Maintenance: \"Overalls are provided\" — iş tulumu koruyucu giysi.",
+      "ar": "Car Maintenance: \"Overalls are provided\"، والـoveralls ملابس واقية."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q4",
+     "prompt": "4. Which course includes learning materials in its fee?",
+     "options": [
+      "A  Beginners' Spanish",
+      "B  Digital Photography",
+      "C  Car Maintenance for Everyone",
+      "D  Creative Writing",
+      "E  Introduction to Bookkeeping",
+      "F  Garden Design"
+     ],
+     "answer": 0,
+     "why": {
+      "en": "Spanish: \"The course book is included in the price.\"",
+      "tr": "Spanish: ders kitabı fiyata dahil.",
+      "ar": "Spanish: كتاب الدورة مشمول في السعر."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q5",
+     "prompt": "5. On which course will learners' work be printed?",
+     "options": [
+      "A  Beginners' Spanish",
+      "B  Digital Photography",
+      "C  Car Maintenance for Everyone",
+      "D  Creative Writing",
+      "E  Introduction to Bookkeeping",
+      "F  Garden Design"
+     ],
+     "answer": 3,
+     "why": {
+      "en": "Creative Writing: students' work \"is published in a small book\".",
+      "tr": "Creative Writing: öğrencilerin yazıları küçük bir kitapta yayımlanıyor.",
+      "ar": "Creative Writing: تُنشر أعمال الطلاب في كتاب صغير."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q6",
+     "prompt": "6. Which course asks learners to bring their own equipment?",
+     "options": [
+      "A  Beginners' Spanish",
+      "B  Digital Photography",
+      "C  Car Maintenance for Everyone",
+      "D  Creative Writing",
+      "E  Introduction to Bookkeeping",
+      "F  Garden Design"
+     ],
+     "answer": 1,
+     "why": {
+      "en": "Photography: \"Please bring your own camera\".",
+      "tr": "Photography: \"bring your own camera\" — kendi fotoğraf makineni getir.",
+      "ar": "Photography: \"bring your own camera\" أي أحضر كاميرتك."
+     }
+    },
+    {
+     "type": "heading",
+     "text": "Questions 7–10"
+    },
+    {
+     "type": "text",
+     "text": "TRUE if the statement agrees with the information, FALSE if it contradicts the information, NOT GIVEN if there is no information on this."
+    },
+    {
+     "type": "heading",
+     "text": "How to enrol"
+    },
+    {
+     "type": "text",
+     "text": "Enrolment opens on 1 August. You can enrol online or in person at reception. Full payment is required when you enrol. If you cancel more than seven days before your course starts, we will refund your fee minus a £10 administration charge."
+    },
+    {
+     "type": "text",
+     "text": "People over 60 and full-time students pay 20% less. Each class needs at least eight students; if too few people enrol, the course will be cancelled and you will receive a full refund. Free parking is available after 6 pm."
+    },
+    {
+     "type": "tfng",
+     "id": "q7",
+     "statement": "7. Students may pay for their course in several instalments.",
+     "answer": "false",
+     "why": {
+      "en": "\"Full payment is required when you enrol\": you pay everything at once.",
+      "tr": "\"Full payment is required when you enrol\" — taksit yok, hepsi baştan.",
+      "ar": "\"Full payment is required when you enrol\": الدفع كاملًا عند التسجيل، لا أقساط."
+     }
+    },
+    {
+     "type": "tfng",
+     "id": "q8",
+     "statement": "8. Someone who cancels ten days before the start gets all their money back.",
+     "answer": "false",
+     "why": {
+      "en": "They get the fee back \"minus a £10 administration charge\", so not all of it.",
+      "tr": "Ücret \"minus a £10 administration charge\" iade edilir; paranın tamamı değil.",
+      "ar": "يُعاد المبلغ \"minus a £10 administration charge\"، أي ليس كاملًا."
+     }
+    },
+    {
+     "type": "tfng",
+     "id": "q9",
+     "statement": "9. Unemployed people can get a discount.",
+     "answer": "not given",
+     "why": {
+      "en": "Discounts are mentioned only for people over 60 and full-time students; unemployed people are not mentioned at all.",
+      "tr": "İndirim sadece 60 yaş üstü ve tam zamanlı öğrenciler için anılıyor; işsizlerden hiç söz edilmiyor.",
+      "ar": "الخصم مذكور فقط لمن تجاوزوا الستين والطلاب المتفرغين، ولا ذكر للعاطلين عن العمل."
+     }
+    },
+    {
+     "type": "tfng",
+     "id": "q10",
+     "statement": "10. A course may not run if not enough people sign up.",
+     "answer": "true",
+     "why": {
+      "en": "\"if too few people enrol, the course will be cancelled\".",
+      "tr": "\"if too few people enrol, the course will be cancelled\" — az kişi olursa iptal.",
+      "ar": "\"if too few people enrol, the course will be cancelled\" أي يُلغى إذا قلّ عدد المسجلين."
+     }
+    }
+   ]
+  },
+  {
+   "id": "s1-recycling-centre",
+   "title": "Section 1 · Recycling centre leaflet",
+   "goal": "Sentence completion and True/False/Not Given on a council leaflet. Check that your word fits the grammar of the sentence.",
+   "timeMinutes": 10,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Questions 1–6"
+    },
+    {
+     "type": "text",
+     "text": "Complete the sentences below. Use NO MORE THAN TWO WORDS AND/OR A NUMBER from the text."
+    },
+    {
+     "type": "heading",
+     "text": "Kingsbridge Recycling Centre: information for residents"
+    },
+    {
+     "type": "text",
+     "text": "Opening hours. April to September: 8 am to 7 pm. October to March: 8 am to 4 pm. The centre is closed on Christmas Day, Boxing Day and New Year's Day."
+    },
+    {
+     "type": "text",
+     "text": "Who can use the centre. The centre is free for residents of Kingsbridge district. You may be asked to show proof of your address, such as a council tax bill. Vans and trailers need a permit, which you can request online; each household may have 12 permits a year."
+    },
+    {
+     "type": "text",
+     "text": "What we accept. Garden waste, glass, paper and cardboard, metal, wood, electrical items and textiles. Furniture in good condition can be left at the Re-use Shop by the entrance, where it is sold to raise money for local charities."
+    },
+    {
+     "type": "text",
+     "text": "Charges. Building rubble and plasterboard are accepted, but there is a charge of £3 per bag. Tyres cost £4 each."
+    },
+    {
+     "type": "text",
+     "text": "What we do not accept. Waste from businesses, gas bottles and asbestos. For asbestos, please contact the council to arrange a special collection."
+    },
+    {
+     "type": "text",
+     "text": "Safety. Children must stay in the car at all times. Staff are happy to help with heavy items but cannot lift anything over 25 kg on their own."
+    },
+    {
+     "type": "gap",
+     "id": "q1",
+     "prompt": "1. In winter the centre closes at ___.",
+     "answers": [
+      "4 pm",
+      "4pm",
+      "4",
+      "4.00 pm",
+      "4 o'clock"
+     ],
+     "why": {
+      "en": "October to March (the winter months): \"8 am to 4 pm\".",
+      "tr": "Ekim–Mart (kış): \"8 am to 4 pm\" — 16:00'da kapanır.",
+      "ar": "من أكتوبر إلى مارس (الشتاء): \"8 am to 4 pm\"، أي يغلق في الرابعة."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q2",
+     "prompt": "2. Residents may have to show proof of their ___.",
+     "answers": [
+      "address"
+     ],
+     "why": {
+      "en": "\"You may be asked to show proof of your address\".",
+      "tr": "\"proof of your address\" — adres kanıtı.",
+      "ar": "\"proof of your address\" أي إثبات العنوان."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q3",
+     "prompt": "3. People arriving in a van must have a ___.",
+     "answers": [
+      "permit",
+      "van permit"
+     ],
+     "why": {
+      "en": "\"Vans and trailers need a permit\".",
+      "tr": "\"Vans and trailers need a permit\" — izin belgesi gerekir.",
+      "ar": "\"Vans and trailers need a permit\" أي يلزم تصريح."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q4",
+     "prompt": "4. A household can have up to ___ permits each year.",
+     "answers": [
+      "12",
+      "twelve"
+     ],
+     "why": {
+      "en": "\"each household may have 12 permits a year\".",
+      "tr": "\"12 permits a year\" — yılda 12 izin.",
+      "ar": "\"12 permits a year\" أي 12 تصريحًا في السنة."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q5",
+     "prompt": "5. Furniture in good condition can be taken to the ___.",
+     "answers": [
+      "Re-use Shop",
+      "reuse shop",
+      "re-use shop",
+      "the Re-use Shop"
+     ],
+     "why": {
+      "en": "\"Furniture in good condition can be left at the Re-use Shop\".",
+      "tr": "İyi durumdaki mobilya Re-use Shop'a bırakılır.",
+      "ar": "يمكن ترك الأثاث الجيد في Re-use Shop."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q6",
+     "prompt": "6. Each bag of building rubble costs ___.",
+     "answers": [
+      "£3",
+      "3",
+      "3 pounds",
+      "three pounds"
+     ],
+     "why": {
+      "en": "\"a charge of £3 per bag\". £4 is for each tyre.",
+      "tr": "\"£3 per bag\"; £4 lastik başına.",
+      "ar": "\"£3 per bag\"؛ أما £4 فهي لكل إطار."
+     }
+    },
+    {
+     "type": "heading",
+     "text": "Questions 7–10"
+    },
+    {
+     "type": "text",
+     "text": "TRUE if the statement agrees with the information, FALSE if it contradicts the information, NOT GIVEN if there is no information on this."
+    },
+    {
+     "type": "tfng",
+     "id": "q7",
+     "statement": "7. The centre is open every day of the year.",
+     "answer": "false",
+     "why": {
+      "en": "It is closed on Christmas Day, Boxing Day and New Year's Day.",
+      "tr": "Noel, Boxing Day ve Yılbaşı'nda kapalı.",
+      "ar": "يغلق في يوم عيد الميلاد وBoxing Day ورأس السنة."
+     }
+    },
+    {
+     "type": "tfng",
+     "id": "q8",
+     "statement": "8. Money from the Re-use Shop goes to charity.",
+     "answer": "true",
+     "why": {
+      "en": "Furniture \"is sold to raise money for local charities\".",
+      "tr": "Mobilya \"to raise money for local charities\" satılıyor.",
+      "ar": "يُباع الأثاث \"to raise money for local charities\" أي لجمع المال للجمعيات الخيرية."
+     }
+    },
+    {
+     "type": "tfng",
+     "id": "q9",
+     "statement": "9. The centre sells compost made from garden waste.",
+     "answer": "not given",
+     "why": {
+      "en": "Garden waste is accepted, but the leaflet says nothing about compost.",
+      "tr": "Bahçe atığı kabul ediliyor ama kompost satışından söz yok.",
+      "ar": "تُقبل نفايات الحدائق، لكن النشرة لا تذكر بيع السماد."
+     }
+    },
+    {
+     "type": "tfng",
+     "id": "q10",
+     "statement": "10. Children may help to unload the car.",
+     "answer": "false",
+     "why": {
+      "en": "\"Children must stay in the car at all times.\"",
+      "tr": "\"Children must stay in the car at all times\" — çocuklar arabada kalmalı.",
+      "ar": "\"Children must stay in the car at all times\" أي يبقى الأطفال في السيارة."
+     }
+    }
+   ]
+  },
+  {
+   "id": "s1-building-notices",
+   "title": "Section 1 · Notices in a block of flats",
+   "goal": "Matching notices and multiple choice. Read each notice for its purpose: is it asking, offering or warning?",
+   "timeMinutes": 10,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Questions 1–6"
+    },
+    {
+     "type": "text",
+     "text": "Look at the six notices, A–F, on the notice board at Maple Court. Which notice does each statement refer to? You may use any letter more than once."
+    },
+    {
+     "type": "heading",
+     "text": "Maple Court: notice board"
+    },
+    {
+     "type": "text",
+     "text": "A  Lift repairs. The lift will be out of service from Monday 3 June to Wednesday 5 June inclusive. Residents who have difficulty with the stairs should contact the caretaker, who will be glad to help carry shopping."
+    },
+    {
+     "type": "text",
+     "text": "B  Bicycle storage. Bicycles must not be left in the entrance hall. A new locked bike shed is now open behind Building B. Keys are available from the caretaker for a £10 deposit, returned when you hand the key back."
+    },
+    {
+     "type": "text",
+     "text": "C  Summer party. Join your neighbours for a barbecue in the garden on Saturday 22 June from 4 pm. Please bring a dish to share. Drinks will be provided by the residents' committee."
+    },
+    {
+     "type": "text",
+     "text": "D  Car park. The car park will be repainted on 10 June. Please move all vehicles to Elm Street by 8 am. Cars left in the car park may be towed away."
+    },
+    {
+     "type": "text",
+     "text": "E  Lost cat. Small grey cat, answers to \"Smokey\". Last seen near the bins on Friday evening. If you have seen him, please call at Flat 14."
+    },
+    {
+     "type": "text",
+     "text": "F  Noise. Please keep noise to a minimum after 11 pm. Washing machines should not be used between 10 pm and 7 am."
+    },
+    {
+     "type": "choice",
+     "id": "q1",
+     "prompt": "1. Residents must put something somewhere else early on a particular day.",
+     "options": [
+      "A  Lift repairs",
+      "B  Bicycle storage",
+      "C  Summer party",
+      "D  Car park",
+      "E  Lost cat",
+      "F  Noise"
+     ],
+     "answer": 3,
+     "why": {
+      "en": "Car park: move vehicles to Elm Street \"by 8 am\" on 10 June.",
+      "tr": "Car park: 10 Haziran sabah 8'e kadar araçları Elm Street'e taşıyın.",
+      "ar": "Car park: انقلوا السيارات إلى Elm Street قبل الثامنة صباح 10 يونيو."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q2",
+     "prompt": "2. Help is offered to some residents.",
+     "options": [
+      "A  Lift repairs",
+      "B  Bicycle storage",
+      "C  Summer party",
+      "D  Car park",
+      "E  Lost cat",
+      "F  Noise"
+     ],
+     "answer": 0,
+     "why": {
+      "en": "Lift repairs: the caretaker \"will be glad to help carry shopping\" for people who find stairs difficult.",
+      "tr": "Lift repairs: merdivende zorlananlara görevli alışverişi taşımada yardım edecek.",
+      "ar": "Lift repairs: سيساعد الحارس من يجد صعوبة في الدرج في حمل المشتريات."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q3",
+     "prompt": "3. Residents pay money that they will get back later.",
+     "options": [
+      "A  Lift repairs",
+      "B  Bicycle storage",
+      "C  Summer party",
+      "D  Car park",
+      "E  Lost cat",
+      "F  Noise"
+     ],
+     "answer": 1,
+     "why": {
+      "en": "Bicycle storage: a £10 deposit, \"returned when you hand the key back\".",
+      "tr": "Bicycle storage: £10 depozito, anahtar iade edilince geri veriliyor.",
+      "ar": "Bicycle storage: تأمين £10 يُعاد عند إرجاع المفتاح."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q4",
+     "prompt": "4. Residents are asked to bring food.",
+     "options": [
+      "A  Lift repairs",
+      "B  Bicycle storage",
+      "C  Summer party",
+      "D  Car park",
+      "E  Lost cat",
+      "F  Noise"
+     ],
+     "answer": 2,
+     "why": {
+      "en": "Summer party: \"Please bring a dish to share.\" A dish = some food.",
+      "tr": "Summer party: \"bring a dish to share\" — paylaşmak için bir yemek getirin.",
+      "ar": "Summer party: \"bring a dish to share\" أي أحضروا طبقًا من الطعام."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q5",
+     "prompt": "5. A household machine is mentioned.",
+     "options": [
+      "A  Lift repairs",
+      "B  Bicycle storage",
+      "C  Summer party",
+      "D  Car park",
+      "E  Lost cat",
+      "F  Noise"
+     ],
+     "answer": 5,
+     "why": {
+      "en": "Noise: \"Washing machines should not be used between 10 pm and 7 am.\"",
+      "tr": "Noise: çamaşır makinesinden söz ediyor.",
+      "ar": "Noise: يذكر الغسالات."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q6",
+     "prompt": "6. Residents are asked for information.",
+     "options": [
+      "A  Lift repairs",
+      "B  Bicycle storage",
+      "C  Summer party",
+      "D  Car park",
+      "E  Lost cat",
+      "F  Noise"
+     ],
+     "answer": 4,
+     "why": {
+      "en": "Lost cat: \"If you have seen him, please call at Flat 14.\"",
+      "tr": "Lost cat: kediyi gördüyseniz Flat 14'e haber verin.",
+      "ar": "Lost cat: إن رأيتموه فأخبروا الشقة 14."
+     }
+    },
+    {
+     "type": "heading",
+     "text": "Questions 7–10"
+    },
+    {
+     "type": "text",
+     "text": "Choose the correct answer."
+    },
+    {
+     "type": "choice",
+     "id": "q7",
+     "prompt": "7. When can residents use the lift again?",
+     "options": [
+      "Monday 3 June",
+      "Tuesday 4 June",
+      "Thursday 6 June",
+      "Monday 10 June"
+     ],
+     "answer": 2,
+     "why": {
+      "en": "It is out of service until Wednesday 5 June \"inclusive\", so it works again from Thursday 6 June.",
+      "tr": "5 Haziran Çarşamba dahil kapalı (inclusive), yani 6 Haziran Perşembe çalışır.",
+      "ar": "المصعد معطل حتى الأربعاء 5 يونيو \"inclusive\"، فيعمل من الخميس 6 يونيو."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q8",
+     "prompt": "8. What may happen to cars left in the car park on 10 June?",
+     "options": [
+      "Their owners will be fined.",
+      "They may be taken away.",
+      "They will be painted around.",
+      "The caretaker will park them in Elm Street."
+     ],
+     "answer": 1,
+     "why": {
+      "en": "\"Cars left in the car park may be towed away\" = taken away by a truck.",
+      "tr": "\"may be towed away\" — çekiciyle götürülebilir.",
+      "ar": "\"may be towed away\" أي قد تُسحب بشاحنة."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q9",
+     "prompt": "9. Who will provide the drinks at the party?",
+     "options": [
+      "each guest",
+      "the caretaker",
+      "the residents' committee",
+      "the people in Flat 14"
+     ],
+     "answer": 2,
+     "why": {
+      "en": "\"Drinks will be provided by the residents' committee.\"",
+      "tr": "İçecekleri sakinler komitesi sağlıyor.",
+      "ar": "تقدّم لجنة السكان المشروبات."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q10",
+     "prompt": "10. Where is the new bike shed?",
+     "options": [
+      "in the entrance hall",
+      "behind Building B",
+      "in Elm Street",
+      "next to the bins"
+     ],
+     "answer": 1,
+     "why": {
+      "en": "\"A new locked bike shed is now open behind Building B.\" The entrance hall is where bikes must not go.",
+      "tr": "Yeni bisiklet barakası Building B'nin arkasında; giriş holüne bisiklet konmamalı.",
+      "ar": "المخزن الجديد خلف Building B؛ أما المدخل فيُمنع ترك الدراجات فيه."
+     }
+    }
+   ]
+  },
+  {
+   "id": "s1-castle-visit",
+   "title": "Section 1 · Visiting a castle",
+   "goal": "True/False/Not Given and short answers on a visitor leaflet. Copy words exactly from the text; check the word limit.",
+   "timeMinutes": 10,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Questions 1–4"
+    },
+    {
+     "type": "text",
+     "text": "TRUE if the statement agrees with the information, FALSE if it contradicts the information, NOT GIVEN if there is no information on this."
+    },
+    {
+     "type": "heading",
+     "text": "Harlow Castle: visitor information"
+    },
+    {
+     "type": "text",
+     "text": "Getting here. The castle is three miles north of Harlow. Bus 27 runs every hour from Harlow bus station and stops at the castle gate. The car park costs £5 a day and is free for members."
+    },
+    {
+     "type": "text",
+     "text": "Tickets. Adults £14, children aged 5–15 £8, under-5s free. Book online and save 10%. UK taxpayers can turn their ticket into an annual pass, with unlimited visits for 12 months, by signing a form at the ticket office."
+    },
+    {
+     "type": "text",
+     "text": "Tours. Free guided tours of the Great Hall leave from the main door every 30 minutes. Tours of the underground prison run twice a day, cost £3 extra and are not suitable for children under 8."
+    },
+    {
+     "type": "text",
+     "text": "Food. The Courtyard Café serves hot lunches from 12 to 2.30 pm. Picnics are welcome in the gardens but not inside the castle."
+    },
+    {
+     "type": "text",
+     "text": "Access. The ground floor and the gardens are accessible to wheelchair users. The towers, which have narrow stone stairs, are not. Wheelchairs can be borrowed free of charge from the ticket office."
+    },
+    {
+     "type": "text",
+     "text": "Dogs. Dogs on leads are welcome in the gardens. Only assistance dogs may enter the castle."
+    },
+    {
+     "type": "tfng",
+     "id": "q1",
+     "statement": "1. The bus to the castle runs every 30 minutes.",
+     "answer": "false",
+     "why": {
+      "en": "Bus 27 \"runs every hour\". Every 30 minutes is the Great Hall tour.",
+      "tr": "Otobüs \"every hour\" çalışıyor; 30 dakika rehberli turun sıklığı.",
+      "ar": "الحافلة \"every hour\"؛ أما كل 30 دقيقة فهي الجولة في القاعة."
+     }
+    },
+    {
+     "type": "tfng",
+     "id": "q2",
+     "statement": "2. Tickets are cheaper if you buy them online.",
+     "answer": "true",
+     "why": {
+      "en": "\"Book online and save 10%.\"",
+      "tr": "\"Book online and save 10%\" — çevrim içi %10 ucuz.",
+      "ar": "\"Book online and save 10%\" أي أرخص عبر الإنترنت."
+     }
+    },
+    {
+     "type": "tfng",
+     "id": "q3",
+     "statement": "3. Every visitor can turn their ticket into an annual pass.",
+     "answer": "false",
+     "why": {
+      "en": "Only \"UK taxpayers\" can do this, not every visitor.",
+      "tr": "Bunu sadece \"UK taxpayers\" yapabilir, herkes değil.",
+      "ar": "هذا متاح فقط لـ\"UK taxpayers\"، لا لكل زائر."
+     }
+    },
+    {
+     "type": "tfng",
+     "id": "q4",
+     "statement": "4. The castle shop sells books about the castle's history.",
+     "answer": "not given",
+     "why": {
+      "en": "The leaflet does not mention a shop at all.",
+      "tr": "Broşürde hiç dükkândan söz edilmiyor.",
+      "ar": "النشرة لا تذكر أي متجر."
+     }
+    },
+    {
+     "type": "heading",
+     "text": "Questions 5–10"
+    },
+    {
+     "type": "text",
+     "text": "Answer the questions. Use NO MORE THAN THREE WORDS AND/OR A NUMBER from the text."
+    },
+    {
+     "type": "gap",
+     "id": "q5",
+     "prompt": "5. Who can use the car park without paying?",
+     "answers": [
+      "members",
+      "castle members"
+     ],
+     "why": {
+      "en": "The car park \"is free for members\".",
+      "tr": "Otopark üyeler (members) için ücretsiz.",
+      "ar": "الموقف مجاني للأعضاء (members)."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q6",
+     "prompt": "6. How much is a ticket for a ten-year-old?",
+     "answers": [
+      "£8",
+      "8",
+      "8 pounds"
+     ],
+     "why": {
+      "en": "Children aged 5–15 pay £8; a ten-year-old is in this group.",
+      "tr": "5–15 yaş £8; on yaşındaki çocuk bu gruba giriyor.",
+      "ar": "الأطفال من 5 إلى 15 يدفعون £8، وابن العاشرة منهم."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q7",
+     "prompt": "7. Which part of the castle do the free tours visit?",
+     "answers": [
+      "the Great Hall",
+      "Great Hall"
+     ],
+     "why": {
+      "en": "\"Free guided tours of the Great Hall\".",
+      "tr": "Ücretsiz turlar Great Hall'u geziyor.",
+      "ar": "الجولات المجانية في Great Hall."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q8",
+     "prompt": "8. What is the minimum age for the prison tour?",
+     "answers": [
+      "8",
+      "eight",
+      "8 years",
+      "8 years old",
+      "eight years"
+     ],
+     "why": {
+      "en": "The prison tour is \"not suitable for children under 8\".",
+      "tr": "\"not suitable for children under 8\" — en az 8 yaş.",
+      "ar": "\"not suitable for children under 8\" أي الحد الأدنى 8 سنوات."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q9",
+     "prompt": "9. Where are visitors allowed to eat their own food?",
+     "answers": [
+      "in the gardens",
+      "the gardens",
+      "gardens"
+     ],
+     "why": {
+      "en": "\"Picnics are welcome in the gardens but not inside the castle.\"",
+      "tr": "Piknik bahçelerde serbest, kale içinde değil.",
+      "ar": "النزهات مسموحة في الحدائق لا داخل القلعة."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q10",
+     "prompt": "10. Which part of the castle can wheelchair users not reach?",
+     "answers": [
+      "the towers",
+      "towers"
+     ],
+     "why": {
+      "en": "\"The towers, which have narrow stone stairs, are not\" accessible.",
+      "tr": "Dar taş merdivenli kuleler (towers) erişilebilir değil.",
+      "ar": "الأبراج (towers) ذات السلالم الضيقة غير متاحة."
+     }
+    }
+   ]
+  },
+  {
+   "id": "s2-job-adverts",
+   "title": "Section 2 · Job advertisements and applying",
+   "goal": "Workplace texts: match job adverts to details, then complete notes on how to apply. You may use a letter more than once.",
+   "timeMinutes": 12,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Questions 1–6"
+    },
+    {
+     "type": "text",
+     "text": "Look at the five job advertisements, A–E. For each statement, choose the correct job."
+    },
+    {
+     "type": "heading",
+     "text": "Jobs this week"
+    },
+    {
+     "type": "text",
+     "text": "A  Receptionist, Greenfield Dental Practice. Part-time, three days a week including Saturdays. Experience of online booking systems is useful, but full training will be given. A friendly, calm manner is essential."
+    },
+    {
+     "type": "text",
+     "text": "B  Delivery Driver, FreshBox Foods. Full-time, early starts (5 am). You must have held a full driving licence for at least two years. Company van and uniform provided."
+    },
+    {
+     "type": "text",
+     "text": "C  Sales Assistant, Brightway Electronics. Temporary contract from November to January. Weekend work required. Staff receive a 25% discount on all products."
+    },
+    {
+     "type": "text",
+     "text": "D  Warehouse Supervisor, Linton Logistics. Full-time, permanent. At least three years' experience of managing a team. Night shifts on a rota, with a higher hourly rate for nights."
+    },
+    {
+     "type": "text",
+     "text": "E  Care Assistant, Oakwood Care Home. Hours to suit you, days or evenings. No qualifications needed: we will pay for you to gain a care certificate while you work."
+    },
+    {
+     "type": "choice",
+     "id": "q1",
+     "prompt": "1. This job is only for a limited period.",
+     "options": [
+      "A  Receptionist",
+      "B  Delivery Driver",
+      "C  Sales Assistant",
+      "D  Warehouse Supervisor",
+      "E  Care Assistant"
+     ],
+     "answer": 2,
+     "why": {
+      "en": "Sales Assistant: \"Temporary contract from November to January\".",
+      "tr": "Sales Assistant: \"Temporary contract\" — Kasım–Ocak, geçici.",
+      "ar": "Sales Assistant: \"Temporary contract\" من نوفمبر إلى يناير، أي مؤقت."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q2",
+     "prompt": "2. The employer will pay for a qualification.",
+     "options": [
+      "A  Receptionist",
+      "B  Delivery Driver",
+      "C  Sales Assistant",
+      "D  Warehouse Supervisor",
+      "E  Care Assistant"
+     ],
+     "answer": 4,
+     "why": {
+      "en": "Care Assistant: \"we will pay for you to gain a care certificate\".",
+      "tr": "Care Assistant: işveren sertifika masrafını ödüyor.",
+      "ar": "Care Assistant: صاحب العمل يدفع تكاليف الشهادة."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q3",
+     "prompt": "3. Applicants need experience of being in charge of other people.",
+     "options": [
+      "A  Receptionist",
+      "B  Delivery Driver",
+      "C  Sales Assistant",
+      "D  Warehouse Supervisor",
+      "E  Care Assistant"
+     ],
+     "answer": 3,
+     "why": {
+      "en": "Warehouse Supervisor: \"experience of managing a team\".",
+      "tr": "Warehouse Supervisor: \"managing a team\" — ekip yönetme deneyimi.",
+      "ar": "Warehouse Supervisor: \"managing a team\" أي خبرة في إدارة فريق."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q4",
+     "prompt": "4. New staff will be taught how to use a system.",
+     "options": [
+      "A  Receptionist",
+      "B  Delivery Driver",
+      "C  Sales Assistant",
+      "D  Warehouse Supervisor",
+      "E  Care Assistant"
+     ],
+     "answer": 0,
+     "why": {
+      "en": "Receptionist: booking-system experience is useful, \"but full training will be given\".",
+      "tr": "Receptionist: rezervasyon sistemi için \"full training will be given\".",
+      "ar": "Receptionist: \"full training will be given\" على نظام الحجز."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q5",
+     "prompt": "5. Applicants must have had a licence for a minimum time.",
+     "options": [
+      "A  Receptionist",
+      "B  Delivery Driver",
+      "C  Sales Assistant",
+      "D  Warehouse Supervisor",
+      "E  Care Assistant"
+     ],
+     "answer": 1,
+     "why": {
+      "en": "Delivery Driver: \"held a full driving licence for at least two years\".",
+      "tr": "Delivery Driver: ehliyet en az iki yıllık olmalı.",
+      "ar": "Delivery Driver: رخصة قيادة منذ سنتين على الأقل."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q6",
+     "prompt": "6. Staff can buy the company's goods more cheaply.",
+     "options": [
+      "A  Receptionist",
+      "B  Delivery Driver",
+      "C  Sales Assistant",
+      "D  Warehouse Supervisor",
+      "E  Care Assistant"
+     ],
+     "answer": 2,
+     "why": {
+      "en": "Sales Assistant: \"a 25% discount on all products\".",
+      "tr": "Sales Assistant: ürünlerde %25 personel indirimi.",
+      "ar": "Sales Assistant: خصم 25% على كل المنتجات."
+     }
+    },
+    {
+     "type": "heading",
+     "text": "Questions 7–10"
+    },
+    {
+     "type": "text",
+     "text": "Complete the notes. Use NO MORE THAN TWO WORDS AND/OR A NUMBER from the text."
+    },
+    {
+     "type": "heading",
+     "text": "FreshBox Foods: how to apply"
+    },
+    {
+     "type": "text",
+     "text": "Please complete the application form on our website; we do not accept CVs on their own. Shortlisted applicants will be invited to an interview and a short driving assessment, which takes about 45 minutes. Successful applicants begin with a two-week induction, during which they travel with an experienced driver before working alone. The closing date for applications is 30 September."
+    },
+    {
+     "type": "gap",
+     "id": "q7",
+     "prompt": "7. Applicants must fill in the ___ online.",
+     "answers": [
+      "application form",
+      "form"
+     ],
+     "why": {
+      "en": "\"complete the application form on our website\"; a CV alone is not accepted.",
+      "tr": "Web sitesindeki başvuru formu (application form) doldurulmalı; tek başına CV kabul edilmiyor.",
+      "ar": "يجب ملء استمارة الطلب (application form)؛ السيرة الذاتية وحدها لا تُقبل."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q8",
+     "prompt": "8. Length of driving assessment: about ___",
+     "answers": [
+      "45 minutes",
+      "45",
+      "forty-five minutes",
+      "45 mins"
+     ],
+     "why": {
+      "en": "\"a short driving assessment, which takes about 45 minutes\".",
+      "tr": "Sürüş değerlendirmesi yaklaşık 45 dakika.",
+      "ar": "اختبار القيادة نحو 45 دقيقة."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q9",
+     "prompt": "9. During the induction, new drivers go out with an ___.",
+     "answers": [
+      "experienced driver"
+     ],
+     "why": {
+      "en": "\"they travel with an experienced driver before working alone\".",
+      "tr": "İlk iki hafta deneyimli bir sürücüyle (experienced driver) gidiyorlar.",
+      "ar": "يرافقون سائقًا ذا خبرة (experienced driver)."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q10",
+     "prompt": "10. Last day to apply: ___",
+     "answers": [
+      "30 September",
+      "September 30",
+      "30th September",
+      "30 Sept",
+      "September 30th"
+     ],
+     "why": {
+      "en": "\"The closing date for applications is 30 September.\"",
+      "tr": "Son başvuru tarihi 30 Eylül.",
+      "ar": "آخر موعد للتقديم 30 سبتمبر."
+     }
+    }
+   ]
+  },
+  {
+   "id": "s2-leave-sickness",
+   "title": "Section 2 · Staff handbook: holidays and sickness",
+   "goal": "True/False/Not Given and sentence completion on staff rules. Rules often have exceptions: read the whole sentence.",
+   "timeMinutes": 12,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Questions 1–5"
+    },
+    {
+     "type": "text",
+     "text": "TRUE if the statement agrees with the information, FALSE if it contradicts the information, NOT GIVEN if there is no information on this."
+    },
+    {
+     "type": "heading",
+     "text": "Staff handbook: annual leave and sickness absence"
+    },
+    {
+     "type": "text",
+     "text": "Annual leave. Full-time staff are entitled to 25 days' paid holiday a year, plus public holidays. Part-time staff receive the same in proportion to the hours they work. The holiday year runs from 1 April to 31 March. Up to five unused days may be carried over into the next holiday year, but these must be taken by the end of June."
+    },
+    {
+     "type": "text",
+     "text": "Requests for more than one week of leave must be made at least one month in advance, using the online HR system. Managers will try to approve requests on a first-come, first-served basis, but may refuse leave during the busy December period."
+    },
+    {
+     "type": "text",
+     "text": "Sickness absence. If you are unable to come to work because of illness, you must phone your line manager before 9.30 am on the first day of your absence. A text message or email is not acceptable unless you have agreed this with your manager in advance."
+    },
+    {
+     "type": "text",
+     "text": "For absences of up to seven calendar days, you complete a self-certification form when you return. For longer absences, you will need a fit note from your doctor. After three separate periods of absence within six months, you will be invited to a meeting with your manager to discuss whether you need any support. This meeting is not a disciplinary procedure."
+    },
+    {
+     "type": "tfng",
+     "id": "q1",
+     "statement": "1. Part-time staff receive 25 days' holiday a year.",
+     "answer": "false",
+     "why": {
+      "en": "Part-time staff get holiday \"in proportion to the hours they work\", so fewer than 25 days.",
+      "tr": "Yarı zamanlılar çalıştıkları saatle orantılı izin alıyor; 25 günden az.",
+      "ar": "يحصل العاملون بدوام جزئي على إجازة تتناسب مع ساعات عملهم، أي أقل من 25 يومًا."
+     }
+    },
+    {
+     "type": "tfng",
+     "id": "q2",
+     "statement": "2. Staff can carry all their unused holiday into the next year.",
+     "answer": "false",
+     "why": {
+      "en": "Only \"up to five unused days\" may be carried over.",
+      "tr": "Sadece en fazla beş gün aktarılabiliyor.",
+      "ar": "يمكن ترحيل خمسة أيام فقط كحد أقصى."
+     }
+    },
+    {
+     "type": "tfng",
+     "id": "q3",
+     "statement": "3. A manager may say no to holiday requests in December.",
+     "answer": "true",
+     "why": {
+      "en": "Managers \"may refuse leave during the busy December period\".",
+      "tr": "Yöneticiler Aralık'ta izni reddedebilir.",
+      "ar": "قد يرفض المدير الإجازة في شهر ديسمبر المزدحم."
+     }
+    },
+    {
+     "type": "tfng",
+     "id": "q4",
+     "statement": "4. Most staff prefer to take their holidays in the summer.",
+     "answer": "not given",
+     "why": {
+      "en": "The handbook says nothing about when staff like to take holidays.",
+      "tr": "El kitabı çalışanların ne zaman izin almayı tercih ettiğinden bahsetmiyor.",
+      "ar": "لا يذكر الدليل متى يفضّل الموظفون إجازاتهم."
+     }
+    },
+    {
+     "type": "tfng",
+     "id": "q5",
+     "statement": "5. The meeting after several absences is a form of punishment.",
+     "answer": "false",
+     "why": {
+      "en": "\"This meeting is not a disciplinary procedure\"; it is about support.",
+      "tr": "\"not a disciplinary procedure\" — ceza değil, destek görüşmesi.",
+      "ar": "\"not a disciplinary procedure\" أي ليس عقوبة بل للدعم."
+     }
+    },
+    {
+     "type": "heading",
+     "text": "Questions 6–10"
+    },
+    {
+     "type": "text",
+     "text": "Complete the sentences. Use NO MORE THAN TWO WORDS AND/OR A NUMBER from the text."
+    },
+    {
+     "type": "gap",
+     "id": "q6",
+     "prompt": "6. Days carried over from last year must be used by the end of ___.",
+     "answers": [
+      "June"
+     ],
+     "why": {
+      "en": "\"these must be taken by the end of June\".",
+      "tr": "Aktarılan günler Haziran sonuna kadar kullanılmalı.",
+      "ar": "يجب استخدام الأيام المرحّلة قبل نهاية يونيو."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q7",
+     "prompt": "7. Requests for long holidays must be made on the ___.",
+     "answers": [
+      "online HR system",
+      "HR system"
+     ],
+     "why": {
+      "en": "\"using the online HR system\".",
+      "tr": "\"online HR system\" üzerinden.",
+      "ar": "عبر \"online HR system\"."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q8",
+     "prompt": "8. Staff who are ill must phone their manager before ___ on the first day.",
+     "answers": [
+      "9.30 am",
+      "9.30",
+      "9:30",
+      "9:30 am",
+      "9.30am"
+     ],
+     "why": {
+      "en": "\"phone your line manager before 9.30 am on the first day\".",
+      "tr": "İlk gün 9.30'dan önce aramalı.",
+      "ar": "الاتصال قبل 9.30 صباحًا في اليوم الأول."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q9",
+     "prompt": "9. After a short absence, staff fill in a ___ form.",
+     "answers": [
+      "self-certification",
+      "self certification"
+     ],
+     "why": {
+      "en": "\"For absences of up to seven calendar days, you complete a self-certification form\".",
+      "tr": "Yedi güne kadar olan devamsızlıkta self-certification formu.",
+      "ar": "للغياب حتى سبعة أيام تُملأ استمارة self-certification."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q10",
+     "prompt": "10. For absences of more than a week, staff need a ___ from a doctor.",
+     "answers": [
+      "fit note"
+     ],
+     "why": {
+      "en": "\"For longer absences, you will need a fit note from your doctor.\"",
+      "tr": "Daha uzun devamsızlıkta doktordan \"fit note\" gerekir.",
+      "ar": "للغياب الأطول تلزم \"fit note\" من الطبيب."
+     }
+    }
+   ]
+  },
+  {
+   "id": "s2-screen-safety",
+   "title": "Section 2 · Health and safety: working at a screen",
+   "goal": "Matching headings and short answers on workplace guidance. A heading sums up the main idea of the whole paragraph, not one detail.",
+   "timeMinutes": 12,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Questions 1–5"
+    },
+    {
+     "type": "text",
+     "text": "The guidance has five paragraphs, A–E. Choose the correct heading for each paragraph from the list. There are more headings than paragraphs."
+    },
+    {
+     "type": "heading",
+     "text": "Working safely at a computer: guidance for office staff"
+    },
+    {
+     "type": "text",
+     "text": "A  Adjust the height of your chair so that your feet rest flat on the floor and your thighs are roughly horizontal. If your feet do not reach the floor once the chair is at the right height for the desk, ask for a footrest. The back of the chair should support the lower part of your back."
+    },
+    {
+     "type": "text",
+     "text": "B  The top of the screen should be at, or slightly below, eye level, and the screen should be about an arm's length away from you. Try not to place it directly opposite or with its back to a window, as the light causes glare and makes the screen harder to read."
+    },
+    {
+     "type": "text",
+     "text": "C  Short, frequent breaks are better than long, occasional ones. Aim for a break of five to ten minutes away from the screen every hour. This does not have to be a rest: switching to another activity, such as filing or making phone calls, gives your eyes and muscles a chance to recover."
+    },
+    {
+     "type": "text",
+     "text": "D  If you use a screen regularly as part of your job, the company will pay for an eye test. If the optician says you need glasses specifically for screen work, the company will also contribute to their cost. Tests can be booked through the Facilities department."
+    },
+    {
+     "type": "text",
+     "text": "E  If you have pain in your wrists, back or neck, tell your manager as soon as possible. A trained assessor will look at your workstation within five working days and suggest changes. Do not wait until the problem becomes serious."
+    },
+    {
+     "type": "choice",
+     "id": "q1",
+     "prompt": "1. Paragraph A",
+     "options": [
+      "i  Getting the right seat",
+      "ii  Looking after your eyes",
+      "iii  Choosing new office furniture",
+      "iv  Where to put your monitor",
+      "v  Why changing tasks helps",
+      "vi  What to do if something hurts",
+      "vii  Working safely from home"
+     ],
+     "answer": 0,
+     "why": {
+      "en": "A is all about adjusting the chair: height, footrest, back support.",
+      "tr": "A paragrafı tamamen sandalye ayarı hakkında.",
+      "ar": "الفقرة A كلها عن ضبط الكرسي."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q2",
+     "prompt": "2. Paragraph B",
+     "options": [
+      "i  Getting the right seat",
+      "ii  Looking after your eyes",
+      "iii  Choosing new office furniture",
+      "iv  Where to put your monitor",
+      "v  Why changing tasks helps",
+      "vi  What to do if something hurts",
+      "vii  Working safely from home"
+     ],
+     "answer": 3,
+     "why": {
+      "en": "B explains the height, distance and position of the screen (monitor). It is not about buying furniture (iii).",
+      "tr": "B ekranın yüksekliği, uzaklığı ve yeri hakkında; yeni mobilya almakla (iii) ilgisi yok.",
+      "ar": "الفقرة B عن ارتفاع الشاشة وبعدها ومكانها، لا عن شراء أثاث (iii)."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q3",
+     "prompt": "3. Paragraph C",
+     "options": [
+      "i  Getting the right seat",
+      "ii  Looking after your eyes",
+      "iii  Choosing new office furniture",
+      "iv  Where to put your monitor",
+      "v  Why changing tasks helps",
+      "vi  What to do if something hurts",
+      "vii  Working safely from home"
+     ],
+     "answer": 4,
+     "why": {
+      "en": "C says switching to another activity lets your eyes and muscles recover.",
+      "tr": "C başka işe geçmenin göz ve kaslara dinlenme fırsatı verdiğini anlatıyor.",
+      "ar": "الفقرة C توضح أن تغيير النشاط يريح العينين والعضلات."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q4",
+     "prompt": "4. Paragraph D",
+     "options": [
+      "i  Getting the right seat",
+      "ii  Looking after your eyes",
+      "iii  Choosing new office furniture",
+      "iv  Where to put your monitor",
+      "v  Why changing tasks helps",
+      "vi  What to do if something hurts",
+      "vii  Working safely from home"
+     ],
+     "answer": 1,
+     "why": {
+      "en": "D is about eye tests and glasses: looking after your eyes.",
+      "tr": "D göz muayenesi ve gözlük hakkında.",
+      "ar": "الفقرة D عن فحص النظر والنظارات."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q5",
+     "prompt": "5. Paragraph E",
+     "options": [
+      "i  Getting the right seat",
+      "ii  Looking after your eyes",
+      "iii  Choosing new office furniture",
+      "iv  Where to put your monitor",
+      "v  Why changing tasks helps",
+      "vi  What to do if something hurts",
+      "vii  Working safely from home"
+     ],
+     "answer": 5,
+     "why": {
+      "en": "E tells you what to do if you have pain.",
+      "tr": "E ağrın olursa ne yapacağını anlatıyor.",
+      "ar": "الفقرة E تخبرك ماذا تفعل إذا شعرت بألم."
+     }
+    },
+    {
+     "type": "heading",
+     "text": "Questions 6–10"
+    },
+    {
+     "type": "text",
+     "text": "Answer the questions. Use NO MORE THAN THREE WORDS AND/OR A NUMBER from the text."
+    },
+    {
+     "type": "gap",
+     "id": "q6",
+     "prompt": "6. What should staff ask for if their feet do not reach the floor?",
+     "answers": [
+      "a footrest",
+      "footrest"
+     ],
+     "why": {
+      "en": "\"If your feet do not reach the floor ... ask for a footrest.\"",
+      "tr": "Ayakların yere değmiyorsa ayak desteği (footrest) iste.",
+      "ar": "إذا لم تصل قدماك إلى الأرض فاطلب مسند قدمين (footrest)."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q7",
+     "prompt": "7. How far away from the user should the screen be?",
+     "answers": [
+      "an arm's length",
+      "arm's length",
+      "about an arm's length",
+      "one arm's length"
+     ],
+     "why": {
+      "en": "\"about an arm's length away from you\".",
+      "tr": "Yaklaşık bir kol boyu (an arm's length).",
+      "ar": "نحو طول ذراع (an arm's length)."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q8",
+     "prompt": "8. How long should the hourly break be?",
+     "answers": [
+      "five to ten minutes",
+      "5 to 10 minutes",
+      "5-10 minutes",
+      "5–10 minutes"
+     ],
+     "why": {
+      "en": "\"a break of five to ten minutes away from the screen every hour\".",
+      "tr": "Her saat beş–on dakika mola.",
+      "ar": "استراحة من خمس إلى عشر دقائق كل ساعة."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q9",
+     "prompt": "9. Which department arranges eye tests?",
+     "answers": [
+      "Facilities",
+      "the Facilities department",
+      "Facilities department"
+     ],
+     "why": {
+      "en": "\"Tests can be booked through the Facilities department.\"",
+      "tr": "Testler Facilities bölümünden ayarlanıyor.",
+      "ar": "تُحجز الفحوص عبر قسم Facilities."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q10",
+     "prompt": "10. Within how many working days will a workstation be checked?",
+     "answers": [
+      "five",
+      "5",
+      "5 working days",
+      "five working days"
+     ],
+     "why": {
+      "en": "\"within five working days\".",
+      "tr": "Beş iş günü içinde.",
+      "ar": "خلال خمسة أيام عمل."
+     }
+    }
+   ]
+  },
+  {
+   "id": "s2-hotel-induction",
+   "title": "Section 2 · New staff: first week and uniform rules",
+   "goal": "Mixed question types on two workplace texts: multiple choice, completion and True/False/Not Given.",
+   "timeMinutes": 12,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Questions 1–5"
+    },
+    {
+     "type": "text",
+     "text": "Read the welcome note and answer the questions."
+    },
+    {
+     "type": "heading",
+     "text": "Welcome to the Harbour Hotel team: your first week"
+    },
+    {
+     "type": "text",
+     "text": "Monday. Please come to the staff entrance at the back of the hotel (not the main reception) at 8.30 am. Security will give you your ID badge. Bring your passport or another photo ID and your bank details so that we can add you to the payroll."
+    },
+    {
+     "type": "text",
+     "text": "In the morning, our training manager, Lisa Chen, will show you round the hotel. In the afternoon you will attend fire safety and food hygiene training, followed by a short online test. The pass mark is 80%."
+    },
+    {
+     "type": "text",
+     "text": "Tuesday to Thursday. You will shadow an experienced colleague in your department, watching and helping as they work."
+    },
+    {
+     "type": "text",
+     "text": "Friday. You will meet your manager to review the week and agree your goals for your three-month probationary period."
+    },
+    {
+     "type": "text",
+     "text": "Meals and discounts. Meals in the staff canteen are free during your shifts. Staff also get 50% off in the hotel restaurant for themselves and one guest, except on Saturdays."
+    },
+    {
+     "type": "choice",
+     "id": "q1",
+     "prompt": "1. On Monday, new staff should go to",
+     "options": [
+      "the main reception.",
+      "the staff entrance.",
+      "the security office.",
+      "the training room."
+     ],
+     "answer": 1,
+     "why": {
+      "en": "\"come to the staff entrance at the back of the hotel (not the main reception)\".",
+      "tr": "Arka taraftaki personel girişine; ana resepsiyona değil.",
+      "ar": "إلى مدخل الموظفين خلف الفندق، لا إلى الاستقبال الرئيسي."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q2",
+     "prompt": "2. New staff need to bring",
+     "options": [
+      "a copy of their CV.",
+      "their bank details.",
+      "a pair of black shoes.",
+      "a reference letter."
+     ],
+     "answer": 1,
+     "why": {
+      "en": "\"Bring your passport or another photo ID and your bank details\".",
+      "tr": "Kimlik ve banka bilgilerini getirmeleri gerekiyor.",
+      "ar": "يجب إحضار هوية بصورة وبيانات الحساب البنكي."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q3",
+     "prompt": "3. To pass the online test, staff need at least ___.",
+     "answers": [
+      "80%",
+      "80",
+      "80 percent",
+      "80 per cent"
+     ],
+     "why": {
+      "en": "\"The pass mark is 80%.\"",
+      "tr": "Geçme notu %80.",
+      "ar": "درجة النجاح 80%."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q4",
+     "prompt": "4. From Tuesday to Thursday, new staff ___ an experienced colleague. (ONE WORD)",
+     "answers": [
+      "shadow"
+     ],
+     "why": {
+      "en": "\"You will shadow an experienced colleague\" (shadow = follow and watch someone at work).",
+      "tr": "\"shadow\" — birini izleyerek ve yardım ederek işi öğrenmek.",
+      "ar": "\"shadow\" أي مرافقة زميل ومراقبته أثناء العمل."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q5",
+     "prompt": "5. The probationary period lasts ___.",
+     "answers": [
+      "three months",
+      "3 months",
+      "three-month",
+      "3-month"
+     ],
+     "why": {
+      "en": "\"your three-month probationary period\".",
+      "tr": "Deneme süresi üç ay.",
+      "ar": "فترة التجربة ثلاثة أشهر."
+     }
+    },
+    {
+     "type": "heading",
+     "text": "Questions 6–10"
+    },
+    {
+     "type": "text",
+     "text": "TRUE if the statement agrees with the information, FALSE if it contradicts the information, NOT GIVEN if there is no information on this."
+    },
+    {
+     "type": "heading",
+     "text": "Uniform and appearance"
+    },
+    {
+     "type": "text",
+     "text": "Two sets of uniform are provided free of charge. They are cleaned by the hotel laundry: leave them in the laundry room by 10 am and they will be ready the next day. Name badges must be worn at all times while on duty."
+    },
+    {
+     "type": "text",
+     "text": "Shoes must be plain black, closed and non-slip. They are not provided, but you can claim back up to £40 if you show a receipt. Jewellery should be limited to one plain ring and small earrings. Kitchen staff may not wear any jewellery except a wedding ring."
+    },
+    {
+     "type": "tfng",
+     "id": "q6",
+     "statement": "6. Staff do not pay for meals in the canteen while they are working.",
+     "answer": "true",
+     "why": {
+      "en": "\"Meals in the staff canteen are free during your shifts.\"",
+      "tr": "Vardiya sırasında kantin yemekleri ücretsiz.",
+      "ar": "الوجبات مجانية أثناء المناوبات."
+     }
+    },
+    {
+     "type": "tfng",
+     "id": "q7",
+     "statement": "7. The restaurant discount can be used on any day of the week.",
+     "answer": "false",
+     "why": {
+      "en": "The discount applies \"except on Saturdays\".",
+      "tr": "İndirim cumartesi geçerli değil.",
+      "ar": "الخصم لا يسري يوم السبت."
+     }
+    },
+    {
+     "type": "tfng",
+     "id": "q8",
+     "statement": "8. Uniforms left in the laundry room in the morning are ready the same afternoon.",
+     "answer": "false",
+     "why": {
+      "en": "Leave them \"by 10 am and they will be ready the next day\", not the same day.",
+      "tr": "Sabah 10'a kadar bırakılan üniforma ertesi gün hazır olur, aynı gün değil.",
+      "ar": "تُترك قبل العاشرة وتكون جاهزة في اليوم التالي، لا في اليوم نفسه."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q9",
+     "prompt": "9. The most staff can claim back for shoes is ___.",
+     "answers": [
+      "£40",
+      "40",
+      "40 pounds"
+     ],
+     "why": {
+      "en": "\"you can claim back up to £40\".",
+      "tr": "Ayakkabı için en fazla £40 geri alınabiliyor.",
+      "ar": "يمكن استرداد حتى £40 للحذاء."
+     }
+    },
+    {
+     "type": "tfng",
+     "id": "q10",
+     "statement": "10. Kitchen staff may wear a wedding ring.",
+     "answer": "true",
+     "why": {
+      "en": "\"Kitchen staff may not wear any jewellery except a wedding ring.\"",
+      "tr": "Mutfak personeli alyans dışında takı takamaz; alyans serbest.",
+      "ar": "يُسمح لعمال المطبخ بخاتم الزواج فقط."
+     }
+    }
+   ]
+  },
+  {
+   "id": "s3-night-trains",
+   "title": "Section 3 · The Return of the Night Train",
+   "goal": "A long general-interest text: matching information to paragraphs, True/False/Not Given and summary completion. Skim first, then scan.",
+   "timeMinutes": 20,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Questions 1–5"
+    },
+    {
+     "type": "text",
+     "text": "The text has seven paragraphs, A–G. Which paragraph contains the following information? You may use any letter more than once."
+    },
+    {
+     "type": "heading",
+     "text": "The Return of the Night Train"
+    },
+    {
+     "type": "text",
+     "text": "A  For much of the twentieth century, sleeper trains were a normal way to cross Europe. Business people boarded in one capital after dinner and stepped onto the platform of another in time for breakfast. Families travelled to the coast in compartments that turned into bedrooms at night. By the early 2000s, however, many of these services had disappeared. Between 2000 and 2015, dozens of international night routes were cut, and some countries stopped running sleeper trains altogether."
+    },
+    {
+     "type": "text",
+     "text": "B  The reasons were mostly economic. Night trains are expensive to operate. A sleeping car carries far fewer passengers than an ordinary carriage, because each traveller needs a bed rather than a seat, and the train makes only one journey in twenty-four hours, whereas a daytime train on the same line might make three or four. Staff must work through the night, and the special carriages need regular, costly maintenance. At the same time, low-cost airlines were offering tickets between major cities for less than the price of a bed on a train, and new high-speed lines were cutting daytime journey times dramatically."
+    },
+    {
+     "type": "text",
+     "text": "C  In the last decade, the picture has begun to change. In 2016 one national railway company took over several routes that a neighbouring country's railway had abandoned, and it ordered new carriages. Its gamble paid off: within a few years its night services were carrying more than a million passengers a year, and new routes followed. Smaller private companies also entered the market, some of them funded partly by crowdfunding from enthusiastic future passengers."
+    },
+    {
+     "type": "text",
+     "text": "D  Much of the new demand is linked to concern about climate change. A passenger travelling by train produces only a fraction of the carbon emissions of the same journey by plane, although the exact figure depends on how each country produces its electricity. Some travellers, especially younger ones, now choose not to fly for short and medium distances. Several governments have encouraged this; one, for example, banned certain short domestic flights on routes where a train journey of under two and a half hours was available."
+    },
+    {
+     "type": "text",
+     "text": "E  Yet the environmental argument is not the only one. Supporters point out that a night train can save time as well as a hotel bill. A traveller who leaves at nine in the evening and arrives at eight the next morning has, in effect, lost no working hours. Airports are usually outside cities and involve security checks and waiting, while trains go from one city centre to another. For people who are nervous about flying, or who simply enjoy the experience, the sleeper offers something that a plane cannot."
+    },
+    {
+     "type": "text",
+     "text": "F  Serious problems remain, however. A private compartment often costs more than a flight, and the cheapest options, a seat or a bed in a shared six-berth compartment, are not attractive to everyone. Journeys between countries are complicated by different signalling systems, electricity supplies and safety rules, so locomotives or drivers sometimes have to be changed at the border. In addition, there is a shortage of modern sleeping cars, and new ones take years to build. Several promised routes have been delayed for this reason."
+    },
+    {
+     "type": "text",
+     "text": "G  Whether night trains can become more than a niche product will depend largely on political decisions. Some experts argue that railways should not have to pay high track charges for night services, which run when the lines are quiet. Others suggest that airline tickets should include the full environmental cost of flying. Without changes of this kind, they warn, the revival may remain small: welcome, but limited to a few popular routes."
+    },
+    {
+     "type": "choice",
+     "id": "q1",
+     "prompt": "1. a comparison of how many journeys day and night trains can make",
+     "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G"
+     ],
+     "answer": 1,
+     "why": {
+      "en": "B: the night train \"makes only one journey in twenty-four hours, whereas a daytime train ... might make three or four\".",
+      "tr": "B: gece treni 24 saatte tek sefer, gündüz treni üç dört sefer yapabiliyor.",
+      "ar": "B: قطار الليل يقوم برحلة واحدة في 24 ساعة، بينما قطار النهار قد يقوم بثلاث أو أربع."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q2",
+     "prompt": "2. an example of a government limiting air travel",
+     "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G"
+     ],
+     "answer": 3,
+     "why": {
+      "en": "D: one government \"banned certain short domestic flights\".",
+      "tr": "D: bir hükümet bazı kısa iç hat uçuşlarını yasakladı.",
+      "ar": "D: حكومة منعت بعض الرحلات الداخلية القصيرة."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q3",
+     "prompt": "3. a reason why travelling between countries can be technically difficult",
+     "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G"
+     ],
+     "answer": 5,
+     "why": {
+      "en": "F: \"different signalling systems, electricity supplies and safety rules\" in each country.",
+      "tr": "F: ülkeler arasında farklı sinyal sistemleri, elektrik ve güvenlik kuralları.",
+      "ar": "F: اختلاف أنظمة الإشارات والكهرباء وقواعد السلامة بين الدول."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q4",
+     "prompt": "4. a description of how night trains were used in the past",
+     "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G"
+     ],
+     "answer": 0,
+     "why": {
+      "en": "A describes business people and families using sleepers in the twentieth century.",
+      "tr": "A, 20. yüzyılda iş insanlarının ve ailelerin yataklı trenleri nasıl kullandığını anlatıyor.",
+      "ar": "A تصف كيف استخدم رجال الأعمال والعائلات قطارات النوم في القرن العشرين."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q5",
+     "prompt": "5. a mention of future passengers helping to pay for a company",
+     "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G"
+     ],
+     "answer": 2,
+     "why": {
+      "en": "C: private companies \"funded partly by crowdfunding from enthusiastic future passengers\".",
+      "tr": "C: bazı şirketler gelecekteki yolcuların kitle fonlamasıyla (crowdfunding) kuruldu.",
+      "ar": "C: شركات موّلها جزئيًا ركاب مستقبليون عبر التمويل الجماعي."
+     }
+    },
+    {
+     "type": "heading",
+     "text": "Questions 6–9"
+    },
+    {
+     "type": "text",
+     "text": "TRUE if the statement agrees with the information, FALSE if it contradicts the information, NOT GIVEN if there is no information on this."
+    },
+    {
+     "type": "tfng",
+     "id": "q6",
+     "statement": "6. Between 2000 and 2015, every European country stopped running night trains.",
+     "answer": "false",
+     "why": {
+      "en": "Only \"some countries\" stopped altogether; routes were cut, not all trains everywhere.",
+      "tr": "Sadece \"some countries\" tamamen durdurdu, her ülke değil.",
+      "ar": "\"some countries\" فقط أوقفتها تمامًا، لا كل الدول."
+     }
+    },
+    {
+     "type": "tfng",
+     "id": "q7",
+     "statement": "7. The railway company that took over routes in 2016 later added more routes.",
+     "answer": "true",
+     "why": {
+      "en": "C: \"its night services were carrying more than a million passengers a year, and new routes followed\".",
+      "tr": "C: \"new routes followed\" — ardından yeni hatlar eklendi.",
+      "ar": "C: \"new routes followed\" أي أُضيفت خطوط جديدة."
+     }
+    },
+    {
+     "type": "tfng",
+     "id": "q8",
+     "statement": "8. A train journey produces the same emissions in every country.",
+     "answer": "false",
+     "why": {
+      "en": "D: the figure \"depends on how each country produces its electricity\".",
+      "tr": "D: rakam her ülkenin elektriği nasıl ürettiğine bağlı; yani aynı değil.",
+      "ar": "D: الرقم يعتمد على طريقة إنتاج الكهرباء في كل دولة، فليس متساويًا."
+     }
+    },
+    {
+     "type": "tfng",
+     "id": "q9",
+     "statement": "9. Most night-train passengers today are travelling for business.",
+     "answer": "not given",
+     "why": {
+      "en": "The text mentions business people in the past and younger travellers today, but gives no figures on why most passengers travel.",
+      "tr": "Metin geçmişteki iş insanlarından ve bugünkü gençlerden söz ediyor ama yolcuların çoğunun neden yolculuk ettiğine dair bilgi yok.",
+      "ar": "يذكر النص رجال الأعمال في الماضي والشباب اليوم، لكنه لا يقول لماذا يسافر معظم الركاب."
+     }
+    },
+    {
+     "type": "heading",
+     "text": "Questions 10–13"
+    },
+    {
+     "type": "text",
+     "text": "Complete the summary. Use ONE WORD ONLY from the text for each answer."
+    },
+    {
+     "type": "text",
+     "text": "Night trains became less common because they are costly to run. A sleeping car holds fewer passengers, since each one needs a (10) ___ instead of a seat, and the carriages require expensive (11) ___. Competition also came from cheap airlines and new (12) ___ lines. Today, a shortage of modern sleeping cars means that some new routes have been (13) ___."
+    },
+    {
+     "type": "gap",
+     "id": "q10",
+     "prompt": "10. each passenger needs a ___ instead of a seat",
+     "answers": [
+      "bed"
+     ],
+     "why": {
+      "en": "B: \"each traveller needs a bed rather than a seat\".",
+      "tr": "B: her yolcunun koltuk yerine yatağa (bed) ihtiyacı var.",
+      "ar": "B: كل مسافر يحتاج إلى سرير (bed) بدل مقعد."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q11",
+     "prompt": "11. the carriages require expensive ___",
+     "answers": [
+      "maintenance"
+     ],
+     "why": {
+      "en": "B: \"the special carriages need regular, costly maintenance\" (costly = expensive).",
+      "tr": "B: \"costly maintenance\" — pahalı bakım.",
+      "ar": "B: \"costly maintenance\" أي صيانة مكلفة."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q12",
+     "prompt": "12. new ___ lines",
+     "answers": [
+      "high-speed",
+      "high speed"
+     ],
+     "why": {
+      "en": "B: \"new high-speed lines were cutting daytime journey times\".",
+      "tr": "B: yeni hızlı tren (high-speed) hatları.",
+      "ar": "B: خطوط جديدة فائقة السرعة (high-speed)."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q13",
+     "prompt": "13. some new routes have been ___",
+     "answers": [
+      "delayed"
+     ],
+     "why": {
+      "en": "F: \"Several promised routes have been delayed for this reason.\"",
+      "tr": "F: bazı hatlar bu yüzden ertelendi (delayed).",
+      "ar": "F: تأخرت (delayed) عدة خطوط لهذا السبب."
+     }
+    }
+   ]
+  },
+  {
+   "id": "s3-four-day-week",
+   "title": "Section 3 · The Four-Day Week",
+   "goal": "A long text with an argument: matching headings, multiple choice and sentence completion. Notice where the writer gives the other side.",
+   "timeMinutes": 20,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Questions 1–6"
+    },
+    {
+     "type": "text",
+     "text": "The text has six paragraphs, A–F. Choose the correct heading for each paragraph from the list. There are more headings than paragraphs."
+    },
+    {
+     "type": "heading",
+     "text": "The Four-Day Week"
+    },
+    {
+     "type": "text",
+     "text": "A  The idea that people should work fewer hours is not new. In 1930 the economist John Maynard Keynes predicted that, thanks to rising productivity, his grandchildren's generation would need to work only around fifteen hours a week. Productivity did rise, but for most full-time employees in rich countries the working week has stayed at roughly forty hours for decades. Recently, however, a growing number of companies have begun to experiment with a four-day week, and the results have attracted attention around the world."
+    },
+    {
+     "type": "text",
+     "text": "B  The most common model is sometimes called \"100-80-100\": employees receive 100 per cent of their pay for 80 per cent of their time, in return for a promise to maintain 100 per cent of their output. This is different from simply squeezing five days of work into four longer days, an arrangement known as a compressed week, which many workers find exhausting. In the 100-80-100 model, the aim is to remove wasted time rather than to work longer hours."
+    },
+    {
+     "type": "text",
+     "text": "C  Several large trials have taken place. In one of the best known, held in the UK in 2022, around sixty companies with nearly three thousand employees took part for six months. Most organisations reported that their revenue stayed about the same, and staff reported less stress and better sleep. At the end of the trial, the great majority of the companies decided to continue with the shorter week."
+    },
+    {
+     "type": "text",
+     "text": "D  How is it possible to do the same work in less time? Companies in the trials described a range of changes. Many cut the length and number of meetings, or replaced some meetings with short written updates. Some introduced periods of the day when staff were not expected to answer messages, so that they could concentrate. Others found that employees took fewer days off sick and were less likely to leave, which reduced the time spent recruiting and training new people."
+    },
+    {
+     "type": "text",
+     "text": "E  Critics, however, warn against drawing too many conclusions. The companies that took part chose to do so, and were probably the ones most likely to succeed. Many were small offices in sectors such as marketing or software, where output is hard to measure precisely. In jobs that depend on being physically present, such as nursing, teaching or working in a shop, a shorter week usually means hiring extra staff, which raises costs. Some participants also said that the pressure to fit everything into four days made their working days more intense."
+    },
+    {
+     "type": "text",
+     "text": "F  For now, the four-day week seems most likely to spread gradually, company by company, rather than through new laws. A few governments have funded pilot schemes, and some employers use the shorter week to attract staff in a competitive job market. What is clear is that the question Keynes raised almost a century ago, what people should do with the benefits of higher productivity, has not gone away."
+    },
+    {
+     "type": "choice",
+     "id": "q1",
+     "prompt": "1. Paragraph A",
+     "options": [
+      "i  A prediction that did not come true",
+      "ii  Why the evidence may be limited",
+      "iii  How the shorter week usually works",
+      "iv  The cost of reducing pay",
+      "v  Practical ways of saving time",
+      "vi  What happened in a large experiment",
+      "vii  A gradual change rather than a sudden one",
+      "viii  Workers who prefer longer days",
+      "ix  Laws that require shorter hours"
+     ],
+     "answer": 0,
+     "why": {
+      "en": "Keynes predicted a fifteen-hour week, but the week \"has stayed at roughly forty hours\": the prediction did not come true.",
+      "tr": "Keynes 15 saatlik hafta öngördü ama hafta 40 saatte kaldı; tahmin gerçekleşmedi.",
+      "ar": "توقّع كينز أسبوعًا من 15 ساعة لكنه بقي نحو 40 ساعة، فلم يتحقق التوقع."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q2",
+     "prompt": "2. Paragraph B",
+     "options": [
+      "i  A prediction that did not come true",
+      "ii  Why the evidence may be limited",
+      "iii  How the shorter week usually works",
+      "iv  The cost of reducing pay",
+      "v  Practical ways of saving time",
+      "vi  What happened in a large experiment",
+      "vii  A gradual change rather than a sudden one",
+      "viii  Workers who prefer longer days",
+      "ix  Laws that require shorter hours"
+     ],
+     "answer": 2,
+     "why": {
+      "en": "B explains the usual \"100-80-100\" model. Heading viii is a trap: workers find the compressed week \"exhausting\", they do not prefer it.",
+      "tr": "B olağan \"100-80-100\" modelini açıklıyor. viii tuzak: sıkıştırılmış hafta yorucu bulunuyor, tercih edilmiyor.",
+      "ar": "B تشرح نموذج \"100-80-100\" المعتاد. العنوان viii فخ: الأسبوع المضغوط مرهق ولا يفضّله العمال."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q3",
+     "prompt": "3. Paragraph C",
+     "options": [
+      "i  A prediction that did not come true",
+      "ii  Why the evidence may be limited",
+      "iii  How the shorter week usually works",
+      "iv  The cost of reducing pay",
+      "v  Practical ways of saving time",
+      "vi  What happened in a large experiment",
+      "vii  A gradual change rather than a sudden one",
+      "viii  Workers who prefer longer days",
+      "ix  Laws that require shorter hours"
+     ],
+     "answer": 5,
+     "why": {
+      "en": "C reports the results of the large UK trial.",
+      "tr": "C büyük İngiltere denemesinin sonuçlarını anlatıyor.",
+      "ar": "C تعرض نتائج التجربة البريطانية الكبيرة."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q4",
+     "prompt": "4. Paragraph D",
+     "options": [
+      "i  A prediction that did not come true",
+      "ii  Why the evidence may be limited",
+      "iii  How the shorter week usually works",
+      "iv  The cost of reducing pay",
+      "v  Practical ways of saving time",
+      "vi  What happened in a large experiment",
+      "vii  A gradual change rather than a sudden one",
+      "viii  Workers who prefer longer days",
+      "ix  Laws that require shorter hours"
+     ],
+     "answer": 4,
+     "why": {
+      "en": "D lists practical changes: fewer meetings, quiet periods, less time on recruiting.",
+      "tr": "D pratik değişiklikleri sıralıyor: daha az toplantı, sessiz saatler, daha az işe alım.",
+      "ar": "D تسرد تغييرات عملية: اجتماعات أقل، فترات تركيز، توظيف أقل."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q5",
+     "prompt": "5. Paragraph E",
+     "options": [
+      "i  A prediction that did not come true",
+      "ii  Why the evidence may be limited",
+      "iii  How the shorter week usually works",
+      "iv  The cost of reducing pay",
+      "v  Practical ways of saving time",
+      "vi  What happened in a large experiment",
+      "vii  A gradual change rather than a sudden one",
+      "viii  Workers who prefer longer days",
+      "ix  Laws that require shorter hours"
+     ],
+     "answer": 1,
+     "why": {
+      "en": "E gives the critics' reasons why the results may not apply everywhere.",
+      "tr": "E eleştirmenlerin sonuçların her yere uymayabileceğine dair gerekçelerini veriyor.",
+      "ar": "E تعرض أسباب النقاد لعدم تعميم النتائج."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q6",
+     "prompt": "6. Paragraph F",
+     "options": [
+      "i  A prediction that did not come true",
+      "ii  Why the evidence may be limited",
+      "iii  How the shorter week usually works",
+      "iv  The cost of reducing pay",
+      "v  Practical ways of saving time",
+      "vi  What happened in a large experiment",
+      "vii  A gradual change rather than a sudden one",
+      "viii  Workers who prefer longer days",
+      "ix  Laws that require shorter hours"
+     ],
+     "answer": 6,
+     "why": {
+      "en": "F: likely to spread \"gradually, company by company, rather than through new laws\" (so not ix).",
+      "tr": "F: yasalarla değil, şirket şirket yavaş yavaş yayılacak (ix değil).",
+      "ar": "F: سينتشر تدريجيًا شركة بعد شركة لا بقوانين جديدة (فليس ix)."
+     }
+    },
+    {
+     "type": "heading",
+     "text": "Questions 7–10"
+    },
+    {
+     "type": "text",
+     "text": "Choose the correct answer."
+    },
+    {
+     "type": "choice",
+     "id": "q7",
+     "prompt": "7. How is the 100-80-100 model different from a compressed week?",
+     "options": [
+      "In a compressed week, people are paid less.",
+      "In a compressed week, people work longer days.",
+      "The 100-80-100 model is only for part-time workers.",
+      "In a compressed week, output goes down."
+     ],
+     "answer": 1,
+     "why": {
+      "en": "A compressed week means \"squeezing five days of work into four longer days\".",
+      "tr": "Sıkıştırılmış hafta beş günlük işi dört uzun güne sığdırmak demek.",
+      "ar": "الأسبوع المضغوط يعني حشر عمل خمسة أيام في أربعة أيام أطول."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q8",
+     "prompt": "8. What did most companies in the UK trial do afterwards?",
+     "options": [
+      "They went back to a five-day week.",
+      "They reduced their employees' pay.",
+      "They kept the four-day week.",
+      "They hired more staff."
+     ],
+     "answer": 2,
+     "why": {
+      "en": "\"the great majority of the companies decided to continue with the shorter week\".",
+      "tr": "Şirketlerin büyük çoğunluğu kısa haftaya devam etti.",
+      "ar": "قررت الغالبية العظمى الاستمرار في الأسبوع الأقصر."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q9",
+     "prompt": "9. According to paragraph D, one benefit for companies was that",
+     "options": [
+      "workers were paid more.",
+      "fewer employees left the company.",
+      "meetings became longer.",
+      "training courses became shorter."
+     ],
+     "answer": 1,
+     "why": {
+      "en": "Employees \"were less likely to leave\", so less time went on recruiting.",
+      "tr": "Çalışanların işten ayrılma olasılığı azaldı.",
+      "ar": "قلّ احتمال ترك الموظفين للعمل."
+     }
+    },
+    {
+     "type": "choice",
+     "id": "q10",
+     "prompt": "10. Why do critics think the results may not apply to all jobs?",
+     "options": [
+      "The trials were too short.",
+      "Some jobs need people to be physically present.",
+      "Workers did not report their results honestly.",
+      "Software companies refused to take part."
+     ],
+     "answer": 1,
+     "why": {
+      "en": "E: in jobs \"that depend on being physically present\", a shorter week means hiring more staff.",
+      "tr": "E: fiziksel olarak orada bulunmayı gerektiren işlerde ek personel gerekir.",
+      "ar": "E: في الوظائف التي تتطلب الحضور الفعلي يلزم توظيف المزيد."
+     }
+    },
+    {
+     "type": "heading",
+     "text": "Questions 11–13"
+    },
+    {
+     "type": "text",
+     "text": "Complete the sentences. Use NO MORE THAN TWO WORDS AND/OR A NUMBER from the text."
+    },
+    {
+     "type": "gap",
+     "id": "q11",
+     "prompt": "11. Keynes believed that people would one day work about ___ hours a week.",
+     "answers": [
+      "fifteen",
+      "15"
+     ],
+     "why": {
+      "en": "A: \"around fifteen hours a week\".",
+      "tr": "A: haftada yaklaşık on beş saat.",
+      "ar": "A: نحو خمس عشرة ساعة أسبوعيًا."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q12",
+     "prompt": "12. Some companies set times when staff did not have to answer ___.",
+     "answers": [
+      "messages"
+     ],
+     "why": {
+      "en": "D: \"periods of the day when staff were not expected to answer messages\".",
+      "tr": "D: mesajlara (messages) cevap verilmeyen saatler.",
+      "ar": "D: فترات لا يُطلب فيها الرد على الرسائل (messages)."
+     }
+    },
+    {
+     "type": "gap",
+     "id": "q13",
+     "prompt": "13. Some employers offer a shorter week to ___ in a competitive job market.",
+     "answers": [
+      "attract staff"
+     ],
+     "why": {
+      "en": "F: \"some employers use the shorter week to attract staff\".",
+      "tr": "F: bazı işverenler kısa haftayı personel çekmek (attract staff) için kullanıyor.",
+      "ar": "F: يستخدمه بعض أصحاب العمل لجذب الموظفين (attract staff)."
+     }
+    }
+   ]
+  }
+ ]
+}

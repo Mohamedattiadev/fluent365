@@ -31,3 +31,5 @@ React (MIT), ts-fsrs (MIT), pdf.js / pdfjs-dist (Apache-2.0), sql.js (MIT, .apkg
 - "Publicly downloadable" is not the same as "reusable". Check the terms.
 - Never add copyrighted book text, Cambridge IELTS book material, official test passages/audio, or pirated PDFs.
 - ShareAlike: content derived from CC BY-SA sources must stay CC BY-SA.
+
+- **General Training reading and writing (2026-11-19).** `content/courses/ielts-reading-gt.json` (12 units: 6 Section 1, 4 Section 2, 2 Section 3; 126 questions) and `content/courses/ielts-reading-gt-mock.json` (full practice test, 3 sections, 40 questions), plus 12 Task 1 letters and 8 Task 2 essays added to `content/ielts/gt-writing.json`: original texts and questions written for Fluent365 (CC BY-SA 4.0), not official IELTS material. Turkish/Arabic answer explanations are AI translations. Places, companies and people in the texts are invented, except the historical facts about the paperback (Allen Lane, Penguin, 1935).
