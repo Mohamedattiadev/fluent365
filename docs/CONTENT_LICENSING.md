@@ -15,7 +15,7 @@
 | Word frequency ranks | wordfreq 3.1.1 (Robyn Speer) | CC BY-SA 4.0 (word lists) | Ranks only. |
 | Example quotes in `daily-en.json` | Public-domain books (Project Gutenberg), selected for Bo-ok | Public domain | |
 | 40 path lessons, 6 courses, IELTS Part 1 topics, cue cards, writing prompts | Written for Bo-ok by the same owner, reused here | CC BY-SA 4.0 | Original content. Task 1 data is invented practice data. |
-| 18 Grammar Instinct topics, phrasal verbs, collocations, linking words, GT letter prompts | Written for Fluent365 | CC BY-SA 4.0 | Original content. |
+| 18 Grammar Instinct topics, phrasal verbs, collocations, linking words, GT letter prompts | Written for Fluent365 | CC BY-SA 4.0 | Original content. Arabic explanations of the 18 grammar topics (added 2026-11-19): AI translation (Claude). |
 | 508 everyday phrases, spoken patterns and idioms (`content/vocabulary/phrases-src/*.tsv` → `phrases.json`) | Written for Fluent365 (choice, order, meanings, example sentences), 2026-11-19 | CC BY-SA 4.0 | Original content. The phrases themselves are common English expressions (short phrases are not protected). 301 were checked to exist as English Wiktionary entries (kaikki.org, only looked up, nothing copied); the rest are everyday sentences without a dictionary entry or idioms listed there in another form. Turkish/Arabic meanings and example translations: AI translation (Claude), labelled "AI translation · may contain mistakes" in the app. |
 | Official IELTS practice links (`content/ielts/official-tests.json`) | ielts.org, IDP, Cambridge | Links and metadata only | No official test content is copied. See docs/research/IELTS_OFFICIAL_MATERIALS.md. |
 
