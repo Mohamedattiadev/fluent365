@@ -17,12 +17,16 @@ Rules: never type a password, code or secret. You may choose one of my test acco
 account chooser and continue on the "unverified app" screen: I approve that for this check.
 Do not delete anything except the test rows this check creates (step c).
 
-Do, in a new tab, with fresh site data for the app (Brave: site settings → clear data for
-mohamedattiadev.github.io, or a private window if the extension works there):
+NEVER clear site data for mohamedattiadev.github.io in my normal profile: Fluent365 and Gym share
+that origin, so it would wipe my real progress in both apps. Work only in the separate Brave profile
+"Test" (I created it, signed in to Google there with the test accounts, and installed + logged in the
+Claude extension there). If you are not in that profile (check: the app shows the welcome screen /
+no real progress), stop and ask me. "Fresh data" below = in the Test profile only: Settings → Delete
+everything inside the app, or clear site data in that profile.
 a) New learner: setup → step 5 → "Sign in with Google" → mohattiads@gmail.com → expect Today,
    toast "Backup saved to your account"; Settings → Account shows the email; "Back up now" works;
    Supabase Table Editor → backups has one row with a fresh updated_at.
-b) Returning learner: clear the app's site data again → welcome → "Already using Fluent365? Sign in"
+b) Returning learner: in the Test profile, Settings → Delete everything (type DELETE) → welcome → "Already using Fluent365? Sign in"
    → same account → setup skipped, progress restored (same name/settings), no upload before restore.
 c) Settings → Account → "Delete my cloud data" (type DELETE) → row gone, signed out.
 d) Repeat a) with mohamedattia.dev@gmail.com → its own row; check in the table that the two rows
