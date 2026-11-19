@@ -1,0 +1,31 @@
+# Keeps the optional Supabase project (Sign in with Google + backup) from being paused: free
+# projects pause after ~1 week with no activity. Every 2 days this calls public.keepalive()
+# (supabase/schema.sql), a real database query that returns only the server time.
+# Uses the same repo *Variables* as the Pages build; does nothing when they are not set.
+# If the project is already paused or the call fails, the run fails and GitHub emails the owner.
+name: Supabase keep-alive
+on:
+  schedule:
+    - cron: "23 5 */2 * *"
+  workflow_dispatch:
+permissions: {}
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      URL: ${{ vars.VITE_SUPABASE_URL }}
+      KEY: ${{ vars.VITE_SUPABASE_ANON_KEY }}
+    steps:
+      - name: Call keepalive()
+        run: |
+          if [ -z "$URL" ] || [ -z "$KEY" ]; then echo "No Supabase Variables set: nothing to do."; exit 0; fi
+          for i in 1 2 3; do
+            code=$(curl -sS -o out.txt -w '%{http_code}' -X POST "$URL/rest/v1/rpc/keepalive" \
+              -H "apikey: $KEY" -H "Authorization: Bearer $KEY" -H "Content-Type: application/json" -d '{}' || echo 000)
+            echo "Attempt $i: HTTP $code $(cat out.txt 2>/dev/null)"
+            [ "$code" = "200" ] && exit 0
+            sleep 20
+          done
+          echo "::error::Supabase did not answer. If the project is paused, open the Supabase dashboard and press Restore project."
+          exit 1

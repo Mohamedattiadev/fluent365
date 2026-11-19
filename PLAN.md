@@ -736,6 +736,8 @@ Owner decision (2026-11-19), built the same day:
   in Settings → Backup. Without either, the Account row is hidden.
 - `@supabase/supabase-js` is a separate, lazily loaded file (only when
   Account is opened or the device is signed in).
+- Free-tier pause (after ~1 week idle) is prevented by a scheduled
+  workflow that calls `public.keepalive()` every 2 days.
 - Owner's setup steps: `docs/SUPABASE_SETUP.md`. The same table may later
   carry the Local ↔ Pocket sync.
 

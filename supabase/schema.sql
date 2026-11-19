@@ -24,3 +24,12 @@ create policy "own backup: delete" on public.backups for delete to authenticated
 -- Only signed-in users get table rights; anonymous visitors get none.
 revoke all on public.backups from anon;
 grant select, insert, update, delete on public.backups to authenticated;
+
+-- Keep-alive: a free Supabase project is paused after ~1 week without activity. The workflow
+-- .github/workflows/supabase-keepalive.yml calls this every 2 days with the public anon key.
+-- It runs a real database query but returns only the server time: no table, no learner data.
+create or replace function public.keepalive() returns timestamptz
+  language sql stable security invoker set search_path = ''
+  as $$ select now() $$;
+revoke all on function public.keepalive() from public;
+grant execute on function public.keepalive() to anon, authenticated;

@@ -24,17 +24,20 @@ Never put a **secret** / **service_role** key anywhere: the app only needs the p
 **What you should see:** the project home page with "Project Status: Healthy" (or similar), and on the
 left the menu with *Table Editor*, *SQL Editor*, *Authentication*.
 
-> **Free tier:** a free project is **paused after about one week with no activity**. Daily backups count
-> as activity, but if nobody uses the app for a week, open the Supabase dashboard and press
-> **Restore project** (data is kept). While paused, sign-in and backup fail with a connection error;
-> the app itself keeps working.
+> **Free tier pause — handled:** a free project is paused after about one week with no activity.
+> The workflow **Supabase keep-alive** (`.github/workflows/supabase-keepalive.yml`) prevents this: every
+> 2 days it runs one tiny database query (`keepalive()`, returns only the time) with the public key.
+> It starts working by itself once step 5 is done. If a run ever fails (red ✗ in Actions, and GitHub
+> emails you), open the Supabase dashboard; if it says paused, press **Restore project** (data is kept).
+> One GitHub rule to know: scheduled workflows are switched off after 60 days with **no commits** in the
+> repo. GitHub emails a warning first; then Actions → *Supabase keep-alive* → **Enable workflow**.
 
 ## 2. Run `supabase/schema.sql`
 
 1. In the dashboard: **SQL Editor** → **New query**.
 2. Open [`supabase/schema.sql`](../supabase/schema.sql) from this repo, copy all of it, paste it, press **Run**.
 
-**What you should see:** "Success. No rows returned". Then **Table Editor** shows a table **backups**
+**What you should see:** "Success. No rows returned". Then **Database → Functions** lists `keepalive`, and **Table Editor** shows a table **backups**
 (columns `user_id`, `data`, `updated_at`) with the label **RLS enabled** (not "RLS disabled" / "Unrestricted").
 
 ## 3. Google Cloud: OAuth client
@@ -90,6 +93,9 @@ and a **Client secret** (`GOCSPX-…`). Copy both (the secret goes only into Sup
   **Restore it here / Replace it with this device**).
 - In Supabase **Table Editor → backups**: one row with your user id and a fresh `updated_at`.
 
+Then check the keep-alive once: **Actions** → **Supabase keep-alive** → **Run workflow**. It should turn green
+and its log shows `Attempt 1: HTTP 200 "2026-…"`.
+
 Then do step 5 of [PHONE_CHECKLIST.md](PHONE_CHECKLIST.md) on the phone.
 
 ---
@@ -104,6 +110,7 @@ Then do step 5 of [PHONE_CHECKLIST.md](PHONE_CHECKLIST.md) on the phone.
 | Back in the app but on the start page of Supabase or "requested path is invalid" | Site URL / Redirect URLs (4.2) do not match the Pages address. |
 | "Could not save the backup: … row-level security" | `schema.sql` was not run, or not completely (step 2). |
 | "No connection to the server" | No internet, or the free project is paused (step 1 note). |
+| Keep-alive run fails with HTTP 404 | `schema.sql` was run before `keepalive()` was added: run it again (it is safe to repeat). |
 
 **Someone else running their own copy** can either set their own Variables (as above) or, without
 rebuilding, enter their project in **Settings → Backup, restore and Anki → Use my own Supabase**.
