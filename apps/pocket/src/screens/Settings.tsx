@@ -2,6 +2,7 @@ import { Suspense, useEffect, useRef, useState } from "react";
 import { AccountScreen, OwnSupabase, useAccountAvailable } from "../components/AccountRow";
 import { CloudBackup } from "../components/Cloud";
 import { restoreFrom } from "../lib/sync";
+import { forgetAccountHere } from "../lib/account";
 import { InstallRow } from "../components/Install";
 import { ActionBar, Icon, Segmented, toast, Toggle } from "../components/ui";
 import type { Content } from "../lib/content";
@@ -76,7 +77,7 @@ function Main() {
       <div className="settings-group" style={{ padding: 16 }}>
         <p className="muted">Deletes all progress on this device. Download a backup first. Type <b>DELETE</b> to confirm.</p>
         <div className="row"><input type="text" value={confirmReset} onChange={(e) => setConfirmReset(e.target.value)} aria-label="Type DELETE to confirm" style={{ maxWidth: 200 }} />
-          <button className="btn danger" disabled={confirmReset !== "DELETE"} onClick={async () => { await db.clear("blobs"); await replaceState(emptyState()); setConfirmReset(""); navigate("/"); }}>Delete everything</button></div>
+          <button className="btn danger" disabled={confirmReset !== "DELETE"} onClick={async () => { await db.clear("blobs"); await forgetAccountHere(); await replaceState(emptyState()); setConfirmReset(""); navigate("/"); }}>Delete everything</button></div>
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import "fake-indexeddb/auto";
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import {
   accountBackupNow, accountConfig, afterSignIn, autoAccountBackup, deleteCloudData, envConfig, getAccount, patchAccount,
-  setClientForTests, setOwnConfig, type AccountClient,
+  forgetAccountHere, setClientForTests, setOwnConfig, type AccountClient,
 } from "./account";
 import * as db from "./db";
 import { checkBackup } from "./portability";
@@ -100,6 +100,19 @@ describe("first sync (same rules as the GitHub backup)", () => {
     expect(cloud.calls.slice(-2)).toEqual(["remove", "signOut"]);
     expect(cloud.row()).toBeNull();
     expect((await getAccount()).on).toBeUndefined();
+  });
+});
+
+describe("Delete everything on this device", () => {
+  it("forgets the sign-in here (account state and stored session), keeps other data", async () => {
+    await patchAccount({ on: true, email: "a@b.c", pending: "#/" });
+    await db.set("kv", "sb:fluent365-auth", "session");
+    await db.set("kv", "sb:fluent365-auth-code-verifier", "v");
+    await db.set("kv", "installDismissed", true);
+    await forgetAccountHere();
+    expect(await getAccount()).toEqual({});
+    expect((await db.entries("kv")).map(([k]) => k).filter((k) => k.startsWith("sb:"))).toEqual([]);
+    expect(await db.get("kv", "installDismissed")).toBe(true);
   });
 });
 

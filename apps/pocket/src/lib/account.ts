@@ -48,6 +48,13 @@ export const getAccount = () => db.get<AccountState>("kv", KEY).then((a) => a ??
 export const patchAccount = async (p: Partial<AccountState>) => { const a = { ...(await getAccount()), ...p }; await db.set("kv", KEY, a); return a; };
 const clearAccount = () => db.del("kv", KEY);
 
+/** "Delete everything" on this device: forget the sign-in here too (the account state and the
+ *  stored Supabase session), without the network. The cloud backup itself is kept. */
+export async function forgetAccountHere() {
+  const keys = (await db.entries("kv")).map(([k]) => k).filter((k) => k.startsWith("sb:"));
+  await Promise.all([clearAccount(), ...keys.map((k) => db.del("kv", k))]);
+}
+
 /** What the app needs from Supabase (implemented in ./supa; replaced in unit tests). */
 export interface AccountClient {
   signIn(redirectTo: string): Promise<void>;
