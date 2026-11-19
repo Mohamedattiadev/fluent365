@@ -16,7 +16,7 @@
     <script>
       // Opening screen: use the saved theme straight away (light, dark or the device setting).
       try { var l = JSON.parse(localStorage.getItem("f365-look") || "{}"); if (l.theme === "light" || l.theme === "dark") document.documentElement.dataset.theme = l.theme; if (l.accent) document.documentElement.dataset.accent = l.accent; } catch (e) {}
-      // Installed app: Android/iOS already showed the icon on its own opening screen, so ours shows no second logo.
+      // Installed app: Android/iOS already showed the icon on its own opening screen; ours continues from it (bigger mark, see .splash CSS).
       try { if (matchMedia("(display-mode: standalone)").matches || navigator.standalone) document.documentElement.dataset.standalone = "1"; } catch (e) {}
     </script>
     <style>
@@ -27,7 +27,8 @@
       .splash { position: fixed; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px; --pen: #7b61ff; }
       html[data-accent="blue"] .splash { --pen: #2f6fe0; } html[data-accent="orange"] .splash { --pen: #d65a00; } html[data-accent="mono"] .splash { --pen: currentColor; }
       .splash .mark { width: 104px; height: 104px; }
-      html[data-standalone] .splash > * { visibility: hidden; }
+      /* Installed app: Android first shows its own screen with the icon (same mark on the same #131313); ours continues from it at about the same size */
+      html[data-standalone] .splash .mark { width: 192px; height: 192px; }
       .splash .arc { stroke-dasharray: 100 100; stroke-dashoffset: 100; animation: f365fill 1.6s cubic-bezier(.4,0,.2,1) forwards; }
       .splash .wm { font: 400 26px/1 Roboto, system-ui, sans-serif; letter-spacing: -.01em; }
       .splash .wm b { font-weight: 700; color: var(--pen); }
