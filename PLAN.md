@@ -705,6 +705,20 @@ unless they deliberately export it.
 Static hosting does not provide automatic sync between the Local app and
 Pocket. Do not claim otherwise.
 
+### 14.5 Optional account: Sign in with Google (Supabase)
+
+Owner decision (2026-11-19): add an optional account so progress is
+backed up and follows the learner to a new phone. - Supabase Auth with
+the Google provider; email/password not needed. - Data backed up to the
+learner's own rows in Supabase, protected by Row Level Security
+(`user_id = auth.uid()`). - Opt-in only: no account is ever required,
+the GitHub backup and JSON export stay. - Each deployment configures its
+own Supabase project URL and public anon key; nothing is hardcoded and
+the feature is hidden when they are missing. - Sign out and "Delete my
+cloud data" in Settings. - The same tables may later carry the Local ↔
+Pocket sync. Details and status: `docs/DEVELOPMENT_STATUS.md`, Next
+steps.
+
 ------------------------------------------------------------------------
 
 ## 15. Performance requirements
@@ -895,7 +909,8 @@ offline without receiving the original developer's private data.
 6.  Detailed analytics.
 7.  Better adaptive recommendations.
 8.  Additional content packs and learning profiles.
-9.  Optional, separately designed cross-device sync.
+9.  Optional, separately designed cross-device sync (first step: §14.5
+    Supabase account with Sign in with Google).
 10. Optional AI-assisted workflows, only if a user configures a provider
     and understands any cost/privacy implications.
 
