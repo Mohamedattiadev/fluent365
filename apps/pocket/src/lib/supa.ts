@@ -41,6 +41,8 @@ export function supa(cfg: AccountConfig): AccountClient {
   };
   return {
     async signIn(redirectTo) {
+      // Gym (same origin) forwards a returning ?code to /gym/ while its own sign-in is pending (index.html); ours wins now.
+      try { localStorage.removeItem("gym-pkce"); } catch { /* storage blocked */ }
       const { error } = await sb.auth.signInWithOAuth({ provider: "google", options: { redirectTo } });
       fail(error, "Sign-in could not start");
     },
