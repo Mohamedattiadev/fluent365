@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { FullPlayer } from "./components/FullPlayer";
 import { InstallCard } from "./components/Install";
-import { Icon, ShortcutsHelp, Toaster, useWide } from "./components/ui";
+import { Icon, ShortcutsHelp, toast, Toaster, useWide } from "./components/ui";
+import { accountStartup, autoAccountBackup } from "./lib/account";
 import { startTracking } from "./lib/activity";
 import { loadAll, type Content } from "./lib/content";
 import * as db from "./lib/db";
@@ -71,8 +72,16 @@ export function App() {
       // Learners from before the evidence gate keep the phase they had reached.
       if (st.settings.setupDone && !st.settings.phaseReached) update((x) => ({ settings: { ...x.settings, phaseReached: lessonPhase(x) } }));
       if (st.settings.setupDone) void autoBackup();
+      // Optional account: finish a Google sign-in, or back up when due (loads Supabase only if signed in).
+      void accountStartup().then(async (r) => {
+        if (!r) return;
+        const t = (await import("./lib/accountText")).accountText(getState().settings.explainLang);
+        if (r === "restored") { toast(t.restored); navigate("/"); }
+        else if (r === "signed-in") toast(t.saved);
+        else if (r === "ask") navigate("/settings/account");
+      });
     });
-    const onHide = () => { if (document.visibilityState === "hidden" && getState().settings.setupDone) void autoBackup(); };
+    const onHide = () => { if (document.visibilityState === "hidden" && getState().settings.setupDone) { void autoBackup(); void autoAccountBackup(); } };
     document.addEventListener("visibilitychange", onHide);
     loadAll()
       .then(async (c) => {

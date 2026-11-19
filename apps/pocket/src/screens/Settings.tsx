@@ -1,5 +1,7 @@
-import { useEffect, useRef, useState } from "react";
+import { Suspense, useEffect, useRef, useState } from "react";
+import { AccountScreen, OwnSupabase, useAccountAvailable } from "../components/AccountRow";
 import { CloudBackup } from "../components/Cloud";
+import { restoreFrom } from "../lib/sync";
 import { InstallRow } from "../components/Install";
 import { ActionBar, Icon, Segmented, toast, Toggle } from "../components/ui";
 import type { Content } from "../lib/content";
@@ -19,6 +21,7 @@ export function SettingsScreen({ c, path }: { c: Content; path: string[] }) {
   if (path[0] === "backup") return <BackupScreen c={c} />;
   if (path[0] === "import") return <ImportCentre c={c} />;
   if (path[0] === "about") return <About c={c} />;
+  if (path[0] === "account") return <Suspense fallback={<Back />}><AccountScreen back={<Back />} /></Suspense>;
   return <Main />;
 }
 
@@ -26,6 +29,7 @@ function Main() {
   const s = useApp((x) => x.settings);
   const set = (patch: Partial<Settings>) => update((st) => ({ settings: { ...st.settings, ...patch }, session: "minutes" in patch || "level" in patch || "newWords" in patch ? null : st.session }));
   const [confirmReset, setConfirmReset] = useState("");
+  const account = useAccountAvailable();
   const size = ({ normal: "m", large: "l" } as Record<string, Settings["textSize"]>)[s.textSize] ?? s.textSize;
   // A row with a long hint stacks: label + hint on top, the control below at full width (phones).
   const Row = ({ label, hint, children, stack }: { label: string; hint?: string; children: React.ReactNode; stack?: boolean }) => (
@@ -63,6 +67,7 @@ function Main() {
 
       <p className="overline">Your data</p>
       <div className="settings-group">
+        {account && <button className="navrow" onClick={() => navigate("/settings/account")}><Icon name="person" size={20} /><span className="grow" lang={account.lang} dir={account.lang === "ar" ? "rtl" : undefined}><span style={{ display: "block" }}>{account.label}</span><span className="setting-hint">{account.hint}</span></span><Icon name="arrow" size={20} /></button>}
         <button className="navrow" onClick={() => navigate("/settings/backup")}><Icon name="download" size={20} /><span className="grow">Backup, restore and Anki</span><Icon name="arrow" size={20} /></button>
         <button className="navrow" onClick={() => navigate("/settings/about")}><Icon name="info" size={20} /><span className="grow">How Fluent365 works · privacy · licences</span><Icon name="arrow" size={20} /></button>
       </div>
@@ -93,8 +98,7 @@ function BackupScreen({ c }: { c: Content }) {
   }
   async function restore() {
     if (!check) return;
-    await db.set("kv", "backup:before-restore", makeBackup());
-    await replaceState(check.state);
+    await restoreFrom(check);
     setCheck(null);
     toast("Backup restored. Your previous data was kept as a safety copy.");
     navigate("/");
@@ -157,6 +161,7 @@ function BackupScreen({ c }: { c: Content }) {
         <button className="btn big primary" onClick={() => { download(`fluent365-backup-${today()}.json`, JSON.stringify(makeBackup())); toast("Backup downloaded"); }}>Download backup</button>
       </div>
       <CloudBackup onRestored={() => navigate("/")} />
+      <Suspense fallback={null}><OwnSupabase /></Suspense>
       <div className="card">
         <h2>Restore from a backup</h2>
         <input ref={fileRef} type="file" accept="application/json,.json" onChange={(e) => onFile(e.target.files?.[0])} className="sr-only" />
@@ -377,7 +382,7 @@ function About({ c }: { c: Content }) {
       </div>
       <div className="card">
         <h2>Privacy</h2>
-        <p>All progress, recordings and imports stay in this browser on this device. Nothing is sent to a server. The website only delivers the app and public learning content. The only exception is the optional automatic backup, which you turn on yourself: it saves your progress (not recordings) to your own private GitHub repo, and nowhere else. Use Backup to move data between devices.</p>
+        <p>All progress, recordings and imports stay in this browser on this device. Nothing is sent to a server. The website only delivers the app and public learning content. The only exceptions are the optional backups, which you turn on yourself: they save your progress (not recordings) to your own private GitHub repo, or — if you sign in with Google under Account — to your own account, which only you can read. Nowhere else. Use Backup to move data between devices.</p>
       </div>
       <div className="card">
         <h2>Scores</h2>

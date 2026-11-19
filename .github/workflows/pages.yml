@@ -27,6 +27,12 @@ jobs:
       - run: pnpm content
       - run: pnpm test
       - run: pnpm --filter pocket build
+        env:
+          # Optional account (Sign in with Google + backup). Set as repo *Variables* (Settings →
+          # Secrets and variables → Actions → Variables); when empty, the Account row is hidden.
+          # Only the public anon/publishable key belongs here, never a service or secret key.
+          VITE_SUPABASE_URL: ${{ vars.VITE_SUPABASE_URL }}
+          VITE_SUPABASE_ANON_KEY: ${{ vars.VITE_SUPABASE_ANON_KEY }}
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

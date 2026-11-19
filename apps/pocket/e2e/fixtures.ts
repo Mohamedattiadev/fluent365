@@ -6,14 +6,17 @@ import { fileURLToPath } from "node:url";
 
 export const data = <T,>(f: string): T => JSON.parse(readFileSync(fileURLToPath(new URL(`../public/data/${f}`, import.meta.url)), "utf8")) as T;
 
-export const test = base.extend<{ guard: void }>({
-  guard: [async ({ page }, use) => {
+// `allowHosts`: a test that mocks a service with page.route (e.g. Supabase) names its fake host here;
+// every other external request still fails the test.
+export const test = base.extend<{ guard: void; allowHosts: string[] }>({
+  allowHosts: [[], { option: true }],
+  guard: [async ({ page, allowHosts }, use) => {
     const problems: string[] = [];
     page.on("console", (m) => { if (m.type() === "error") problems.push(`console: ${m.text()}`); });
     page.on("pageerror", (e) => problems.push(`page error: ${e.message}`));
     page.on("request", (r) => {
       const u = new URL(r.url());
-      if (!["127.0.0.1", "localhost"].includes(u.hostname) && !["data:", "blob:"].includes(u.protocol)) problems.push(`network: ${r.url()}`);
+      if (!["127.0.0.1", "localhost", ...allowHosts].includes(u.hostname) && !["data:", "blob:"].includes(u.protocol)) problems.push(`network: ${r.url()}`);
     });
     await use();
     expect(problems, problems.join("\n")).toEqual([]);
