@@ -16,7 +16,7 @@ Never put a **secret** / **service_role** key anywhere: the app only needs the p
 ## 1. Create the Supabase project
 
 1. Go to <https://supabase.com> → **Start your project** → sign in (with GitHub is easiest).
-2. **New project**: organisation = your personal one, name `fluent365`, a strong database password
+2. **New project**: organisation = your personal one, name `my-apps` (the same project will also serve the Gym app, see `gym/docs/SUPABASE.md`), a strong database password
    (save it in your password manager; the app never needs it), region close to you
    (e.g. *Central EU (Frankfurt)*), plan **Free** → **Create new project**.
 3. Wait 1–2 minutes until the project dashboard is ready.
@@ -44,9 +44,9 @@ left the menu with *Table Editor*, *SQL Editor*, *Authentication*.
 
 1. First copy the **callback URL** from Supabase: **Authentication** → **Sign In / Providers** → **Google**.
    The panel shows *Callback URL (for OAuth)*: `https://<project-ref>.supabase.co/auth/v1/callback`. Keep it.
-2. Go to <https://console.cloud.google.com> → top bar project picker → **New project** → name `fluent365` → **Create**, and select it.
+2. Go to <https://console.cloud.google.com> → top bar project picker → **New project** → name `my-apps` → **Create**, and select it.
 3. Menu → **APIs & Services** → **OAuth consent screen** (newer consoles call it **Google Auth Platform**) → **Get started**:
-   - App name `Fluent365`, user support email = your email → **Next**;
+   - App name `My apps` (neutral: Google shows it on the sign-in page, and Gym will use the same client), user support email = your email → **Next**;
    - Audience: **External** → **Next**; contact email = your email → **Next** → agree → **Create**.
    - Under **Audience**: either add your own Gmail under **Test users** (only listed people can sign in), or press
      **Publish app** so anyone can. The app asks only for name and email (no sensitive scopes), so no Google
