@@ -1,0 +1,209 @@
+{
+  "licence": "Original content written for Fluent365. CC BY-SA 4.0. Turkish and Arabic explanations: AI translation (Claude), checked against the English rules.",
+  "topics": [
+    {
+      "id": "g-reporting-verbs",
+      "title": "Reporting verbs and their patterns",
+      "level": "B2+",
+      "summary": "suggest, deny, accuse, warn, persuade: which pattern follows?",
+      "notice": [
+        "She **suggested going** to the cinema.",
+        "He **denied taking** the money.",
+        "They **accused** him **of lying**.",
+        "The doctor **advised** me **to rest**."
+      ],
+      "compare": {
+        "a": "\"Don't touch the wire,\" he said to me.",
+        "b": "He warned me not to touch the wire.",
+        "note": "A: direct speech. B: a reporting verb gives the meaning in one word and saves you from repeating every word."
+      },
+      "explain": {
+        "en": "Many reporting verbs sum up what someone said, and each has its own pattern. Verb + to: agree, offer, promise, refuse, threaten (He refused to help). Verb + object + to: advise, ask, encourage, invite, persuade, remind, tell, warn (She reminded me to call). Verb + -ing: admit, deny, recommend, suggest (He admitted making a mistake). Verb + preposition + -ing: apologise for, insist on (She apologised for being late). Verb + object + preposition + -ing: accuse someone of, blame someone for, congratulate someone on (They blamed me for losing the keys). Suggest and recommend never take object + to: say I suggested going, or I suggested that we go / that we should go.",
+        "tr": "Bildirme fiilleri söyleneni özetler ve her birinin kendi kalıbı vardır. Fiil + to: agree, offer, promise, refuse, threaten. Fiil + nesne + to: advise, ask, encourage, invite, persuade, remind, tell, warn. Fiil + -ing: admit, deny, recommend, suggest. Fiil + edat + -ing: apologise for, insist on. Fiil + nesne + edat + -ing: accuse sb of, blame sb for, congratulate sb on. suggest ve recommend asla nesne + to almaz: I suggested going ya da I suggested that we go.",
+        "ar": "أفعال النقل تلخّص ما قيل، ولكل منها تركيبه. فعل + to: agree وoffer وpromise وrefuse وthreaten. فعل + مفعول + to: advise وask وencourage وinvite وpersuade وremind وtell وwarn. فعل + -ing: admit وdeny وrecommend وsuggest. فعل + حرف جر + -ing: apologise for وinsist on. فعل + مفعول + حرف جر + -ing: accuse sb of وblame sb for وcongratulate sb on. لا يأتي بعد suggest وrecommend مفعول + to أبداً: قل I suggested going أو I suggested that we go."
+      },
+      "exercises": [
+        { "type": "choose", "prompt": "\"Let's take a taxi.\" → She suggested ___ a taxi.", "options": ["us to take", "taking"], "answer": 1, "why": "suggest + -ing (or suggest that we take); never suggest someone to." },
+        { "type": "choose", "prompt": "\"I didn't break the window!\" → He ___ breaking the window.", "options": ["denied", "refused"], "answer": 0, "why": "deny + -ing = say you didn't do it." },
+        { "type": "gap", "prompt": "\"You stole my idea!\" → She accused him ___ stealing her idea.", "answers": ["of"], "why": "accuse someone of + -ing." },
+        { "type": "fix", "wrong": "My teacher recommended me to read more novels.", "answers": ["My teacher recommended reading more novels.", "My teacher recommended that I read more novels.", "My teacher recommended that I should read more novels.", "My teacher advised me to read more novels."], "why": "recommend + -ing / that…; advise someone to." },
+        { "type": "fix", "wrong": "He apologised to be late.", "answers": ["He apologised for being late.", "He apologized for being late."], "why": "apologise for + -ing." },
+        { "type": "compare", "prompt": "Which sentence reports \"Don't forget to bring your passport\"?", "options": ["She reminded me to bring my passport.", "She admitted bringing my passport."], "answer": 0, "why": "remind someone to do something." },
+        { "type": "find", "prompt": "Find the unnatural sentence.", "options": ["They persuaded me to join the club.", "He offered to carry my bags.", "She insisted to pay for dinner."], "answer": 2, "why": "insist on + -ing: She insisted on paying for dinner." },
+        { "type": "build", "blocks": ["the", "manager", "congratulated", "her", "on", "winning", "the", "award"], "answer": "The manager congratulated her on winning the award.", "alts": [], "why": "congratulate someone on + -ing." },
+        { "type": "rewrite", "prompt": "Report with 'warned': \"Don't swim here, it's dangerous,\" the guard said to us.", "answers": ["The guard warned us not to swim there.", "The guard warned us not to swim there because it was dangerous.", "The guard warned us not to swim there, because it was dangerous.", "The guard warned us not to swim here."], "why": "warn someone not to + verb; here usually becomes there." },
+        { "type": "produce", "prompt": "Report two things people said to you this week, using two different reporting verbs (for example advised, suggested, promised, refused, reminded).", "check": "\\b(advised|asked|encouraged|invited|persuaded|reminded|told|warned)\\s+\\w+\\s+(not\\s+)?to\\b|\\b(suggested|recommended|admitted|denied)\\s+\\w+ing\\b|\\b(agreed|offered|promised|refused|threatened)\\s+(not\\s+)?to\\b", "hint": "Check the pattern: advise someone to, suggest + -ing, promise to…", "model": "My friend suggested going for a walk. My mother reminded me to call my grandmother." }
+      ]
+    },
+    {
+      "id": "g-future-in-past",
+      "title": "The future in the past: was going to, was about to, would",
+      "level": "B2+",
+      "summary": "Talking about the future from a point in the past.",
+      "notice": [
+        "I **was going to** call you, but my phone died.",
+        "We **were about to** leave when it started to snow.",
+        "She knew she **would** miss him.",
+        "The meeting **was to** take place at noon."
+      ],
+      "compare": {
+        "a": "I'm going to visit my aunt.",
+        "b": "I was going to visit my aunt, but I didn't have time.",
+        "note": "A: a plan for the future. B: a plan in the past that did not happen."
+      },
+      "explain": {
+        "en": "When you tell a story, you often need the future as it looked at that time. Was / were going to shows a past plan or intention, often one that did not happen (I was going to buy it, but it was sold out). Was / were about to (+ verb) means something was going to happen very soon (The film was about to start). Would is the past of will in reported speech and thought (He said he would help; I knew it would be difficult). Was / were to (+ verb) is more formal and shows an official arrangement (The president was to arrive at ten); was to have + past participle shows that it did not happen.",
+        "tr": "Bir hikâye anlatırken o zamana göre geleceği anlatmak gerekir. was/were going to: geçmişteki plan ya da niyet, çoğu zaman gerçekleşmeyen (Alacaktım ama tükenmişti). was/were about to: hemen olmak üzere olan şey (Film başlamak üzereydi). would: dolaylı anlatımda ve düşüncede will'in geçmişi (Yardım edeceğini söyledi). was/were to: daha resmî, planlanmış düzen (Başkan saat onda gelecekti); was to have + V3 bunun gerçekleşmediğini gösterir.",
+        "ar": "حين تروي قصة تحتاج غالباً إلى المستقبل كما بدا في ذلك الوقت. was/were going to: خطة أو نية في الماضي، كثيراً ما لم تتحقق (كنت سأشتريه لكنه نفد). was/were about to: أمر كان على وشك الحدوث (كان الفيلم على وشك أن يبدأ). would: ماضي will في الكلام المنقول والتفكير (قال إنه سيساعد). was/were to: أكثر رسمية، لترتيب رسمي (كان الرئيس سيصل في العاشرة)؛ وwas to have + التصريف الثالث يدل على أنه لم يحدث."
+      },
+      "exercises": [
+        { "type": "choose", "prompt": "I ___ email you, but I forgot. Sorry!", "options": ["was going to", "am going to"], "answer": 0, "why": "A past intention that didn't happen: was going to." },
+        { "type": "choose", "prompt": "We were ___ go to bed when the phone rang.", "options": ["about to", "going"], "answer": 0, "why": "Very soon: was / were about to + verb." },
+        { "type": "gap", "prompt": "She promised that she ___ come back soon. (past of will)", "answers": ["would"], "why": "Reported promise: will → would." },
+        { "type": "fix", "wrong": "I was going to calling him, but I didn't have his number.", "answers": ["I was going to call him, but I didn't have his number."], "why": "was going to + base verb." },
+        { "type": "fix", "wrong": "At that time I didn't know that I will live abroad one day.", "answers": ["At that time I didn't know that I would live abroad one day."], "why": "Future seen from the past: would." },
+        { "type": "compare", "prompt": "Which sentence shows that the trip did not happen?", "options": ["We were going to travel to Spain, but our flight was cancelled.", "We traveled to Spain, and our flight was on time."], "answer": 0, "why": "was going to + but = an unfulfilled plan." },
+        { "type": "find", "prompt": "Find the unnatural sentence.", "options": ["He was about to say something, but stopped.", "I knew the exam would be hard.", "They were about leave when we arrived."], "answer": 2, "why": "about to + verb: They were about to leave." },
+        { "type": "build", "blocks": ["I", "was", "going", "to", "tell", "you", "but", "you", "were", "busy"], "answer": "I was going to tell you, but you were busy.", "alts": ["I was going to tell you but you were busy."], "why": "Past intention + but." },
+        { "type": "predict", "prompt": "The plane's doors were closed and the engines were running. It was about ___ ...", "options": ["to take off", "taking off", "take off"], "answer": 0, "why": "be about to + base verb." },
+        { "type": "produce", "prompt": "Write about a plan you had that didn't happen, and why. Use 'was going to'.", "check": "\\b(was|were)\\s+going\\s+to\\s+\\w+", "hint": "was / were going to + verb, but…", "model": "Last summer I was going to learn to drive, but I couldn't find a good instructor." }
+      ]
+    },
+    {
+      "id": "g-whatever-no-matter",
+      "title": "Whatever, however, no matter how",
+      "level": "B2+",
+      "summary": "It doesn't matter what, who, how or where.",
+      "notice": [
+        "**Whatever** you decide, I'll support you.",
+        "**However** hard I try, I can't remember her name.",
+        "**No matter where** you go, you'll find people who speak English.",
+        "Take **whichever** seat you like."
+      ],
+      "compare": {
+        "a": "However, the plan failed.",
+        "b": "However hard we worked, the plan failed.",
+        "note": "A: however = but (a linking word, with a comma). B: however + adjective/adverb = it doesn't matter how."
+      },
+      "explain": {
+        "en": "Whatever, whoever, whichever, wherever, whenever and however mean 'it doesn't matter what / who / which / where / when / how' (Wherever she goes, she makes friends). However in this meaning is followed directly by an adjective or adverb (However tired you are, finish the report). No matter + what / who / where / how means the same and is a little more emphatic (No matter how much it costs, I'll buy it). Use a present tense, not will, for the future after these words: Whatever happens, call me. Do not confuse however + adjective with however, as a linking word meaning 'but'.",
+        "tr": "whatever, whoever, whichever, wherever, whenever, however = 'ne/kim/hangisi/nereye/ne zaman/nasıl olursa olsun' (Nereye giderse arkadaş edinir). Bu anlamda however'dan hemen sonra sıfat ya da zarf gelir (Ne kadar yorgun olursan ol, raporu bitir). no matter + what/who/where/how aynı anlamdadır, biraz daha vurguludur. Bu sözcüklerden sonra gelecek için will değil geniş zaman kullanılır: Ne olursa olsun beni ara. however + sıfat ile 'ama' anlamındaki bağlaç However,'ı karıştırmayın.",
+        "ar": "whatever وwhoever وwhichever وwherever وwhenever وhowever تعني «لا يهم ماذا/من/أيّ/أين/متى/كيف» (أينما ذهبت تكسب أصدقاء). however بهذا المعنى يليها مباشرة صفة أو ظرف (مهما كنت متعباً، أنهِ التقرير). no matter + what/who/where/how بالمعنى نفسه مع توكيد أكبر. بعد هذه الكلمات نستعمل المضارع لا will للمستقبل: مهما حدث اتصل بي. لا تخلط بين however + صفة وHowever, أداة الربط بمعنى «لكن»."
+      },
+      "exercises": [
+        { "type": "choose", "prompt": "___ you need, just ask me.", "options": ["Whatever", "However"], "answer": 0, "why": "It doesn't matter what: whatever." },
+        { "type": "choose", "prompt": "___ fast he runs, he never wins.", "options": ["Whatever", "However"], "answer": 1, "why": "However + adverb = it doesn't matter how." },
+        { "type": "gap", "prompt": "No matter ___ late it is, call me when you arrive.", "answers": ["how"], "why": "No matter how + adjective." },
+        { "type": "fix", "wrong": "Whatever will happen, don't panic.", "answers": ["Whatever happens, don't panic."], "why": "Present tense after whatever." },
+        { "type": "fix", "wrong": "However I am tired, I always read before bed.", "answers": ["However tired I am, I always read before bed."], "why": "However + adjective + subject + verb." },
+        { "type": "compare", "prompt": "Which sentence means 'it doesn't matter how difficult'?", "options": ["However, the exam was difficult.", "However difficult the exam is, don't give up."], "answer": 1, "why": "However + adjective = no matter how." },
+        { "type": "find", "prompt": "Find the unnatural sentence.", "options": ["Sit wherever you like.", "Whoever wins, it will be a great match.", "No matter what it costs much, I want it."], "answer": 2, "why": "No matter how much it costs, I want it." },
+        { "type": "build", "blocks": ["no", "matter", "how", "hard", "I", "try", "I", "can't", "sleep"], "answer": "No matter how hard I try, I can't sleep.", "alts": ["I can't sleep no matter how hard I try."], "why": "No matter how + adverb + clause." },
+        { "type": "rewrite", "prompt": "Rewrite with 'however': 'It doesn't matter how busy you are; you should take a break.'", "answers": ["However busy you are, you should take a break."], "why": "However + adjective + subject + verb." },
+        { "type": "produce", "prompt": "Give a friend two pieces of advice, one with 'whatever' or 'wherever' and one with 'however' or 'no matter how'.", "check": "\\b(whatever|wherever|whoever|whenever|whichever|no matter (what|who|where|when))\\b[\\s\\S]*\\b(however\\s+\\w+|no matter how)\\b|\\b(however\\s+\\w+|no matter how)\\b[\\s\\S]*\\b(whatever|wherever|whoever|whenever|whichever|no matter (what|who|where|when))\\b", "hint": "however / no matter how + adjective; whatever / wherever + clause.", "model": "Whatever you do, don't stop practising. However nervous you feel, smile at the examiner." }
+      ]
+    },
+    {
+      "id": "g-passive-advanced",
+      "title": "Advanced passives: get, being done, to have been done",
+      "level": "B2+",
+      "summary": "Passives after other verbs and the get passive.",
+      "notice": [
+        "I hate **being interrupted**.",
+        "She expects **to be promoted** next year.",
+        "He **got fined** for speeding.",
+        "The bridge is believed **to have been built** in 1850."
+      ],
+      "compare": {
+        "a": "I don't like telling people what to do.",
+        "b": "I don't like being told what to do.",
+        "note": "A: I am the one who tells (active). B: other people tell me (passive)."
+      },
+      "explain": {
+        "en": "After verbs and prepositions that take -ing, the passive is being + past participle (I remember being taken to the zoo; He left without being seen). After verbs that take to, the passive is to be + past participle (She wants to be invited). For an earlier time, use having been + past participle or to have been + past participle (He denied having been told; The letter seems to have been opened). In informal English, get + past participle often replaces be for events, especially sudden or unwanted ones (Our car got stolen; They got married in May).",
+        "tr": "-ing alan fiil ve edatlardan sonra edilgen: being + V3 (Hayvanat bahçesine götürüldüğümü hatırlıyorum; Görülmeden çıktı). to alan fiillerden sonra: to be + V3 (Davet edilmek istiyor). Daha önceki bir zaman için: having been + V3 ya da to have been + V3 (Mektup açılmış gibi görünüyor). Gündelik İngilizcede get + V3 olaylar için, özellikle ani ya da istenmeyen olaylar için be yerine kullanılır (Arabamız çalındı; Mayıs'ta evlendiler).",
+        "ar": "بعد الأفعال وحروف الجر التي يليها -ing يكون المبني للمجهول being + التصريف الثالث (أتذكر أنني أُخذت إلى حديقة الحيوان؛ غادر دون أن يُرى). بعد الأفعال التي يليها to يكون to be + التصريف الثالث (تريد أن تُدعى). لزمن سابق: having been أو to have been + التصريف الثالث (يبدو أن الرسالة قد فُتحت). في الإنجليزية غير الرسمية يحل get + التصريف الثالث محل be في الأحداث، خاصة المفاجئة أو غير المرغوبة (سُرقت سيارتنا؛ تزوجا في مايو)."
+      },
+      "exercises": [
+        { "type": "choose", "prompt": "Nobody likes ___ at in public.", "options": ["shouting", "being shouted"], "answer": 1, "why": "Other people shout at you: being + past participle." },
+        { "type": "choose", "prompt": "The museum is said ___ in the 16th century.", "options": ["to have been built", "to be building"], "answer": 0, "why": "An earlier time, passive: to have been + past participle." },
+        { "type": "gap", "prompt": "She hopes ___ chosen for the national team. (passive)", "answers": ["to be"], "why": "hope + to be + past participle." },
+        { "type": "fix", "wrong": "He entered the building without seeing by the guards.", "answers": ["He entered the building without being seen by the guards.", "He entered the building without being seen."], "why": "Preposition + being + past participle." },
+        { "type": "fix", "wrong": "My phone got steal on the train.", "answers": ["My phone got stolen on the train."], "why": "get + past participle." },
+        { "type": "compare", "prompt": "Which sentence means other people might laugh at him?", "options": ["He's afraid of laughing.", "He's afraid of being laughed at."], "answer": 1, "why": "being laughed at = passive." },
+        { "type": "find", "prompt": "Find the unnatural sentence.", "options": ["I can't stand being kept waiting.", "The documents appear to have been lost.", "She was annoyed at not invited."], "answer": 2, "why": "Preposition + being + past participle: at not being invited." },
+        { "type": "build", "blocks": ["I", "remember", "being", "told", "the", "story", "as", "a", "child"], "answer": "I remember being told the story as a child.", "alts": ["As a child I remember being told the story."], "why": "remember + being + past participle." },
+        { "type": "rewrite", "prompt": "Rewrite in the passive: 'I don't want anyone to disturb me.' Start: 'I don't want…'", "answers": ["I don't want to be disturbed.", "I do not want to be disturbed.", "I don't want to be disturbed by anyone."], "why": "want + to be + past participle." },
+        { "type": "produce", "prompt": "Write about something you love or hate having done to you (for example being praised, being woken up, being asked for advice).", "check": "\\b(being|to be|to have been|having been|got|get|gets)\\s+\\w+(ed|en|t|wn|ne|ng)\\b", "hint": "being + past participle after like / love / hate.", "model": "I love being asked for advice, but I hate being woken up early at the weekend." }
+      ]
+    },
+    {
+      "id": "g-conditional-inversion",
+      "title": "Formal conditionals: had I known, should you, were it not for",
+      "level": "C1",
+      "summary": "Inversion instead of if, plus provided, otherwise and but for.",
+      "notice": [
+        "**Had I known** about the delay, I would have taken the train.",
+        "**Should you need** any help, please contact reception.",
+        "**Were it not for** your support, I would have given up.",
+        "You can borrow it, **provided that** you return it by Friday."
+      ],
+      "compare": {
+        "a": "If I had known, I would have told you.",
+        "b": "Had I known, I would have told you.",
+        "note": "Same meaning. B leaves out if and puts had before the subject; it sounds more formal and is common in writing."
+      },
+      "explain": {
+        "en": "In formal English you can leave out if and put the auxiliary before the subject. Had + subject + past participle = if + past perfect (Had she left earlier, she would have caught the bus). Should + subject + verb = if + present, for something unlikely or polite (Should you have any questions, ask the staff). Were + subject + to + verb or were + subject = if + past (Were I in your position, I would accept). The negative is not contracted: Had he not helped us, not Hadn't he helped us. Were it not for / Had it not been for + noun and but for + noun mean 'if this thing did not exist / had not happened'. Provided (that), providing, as long as and on condition that mean 'only if'; otherwise means 'if not' and starts a new clause.",
+        "tr": "Resmî İngilizcede if atılıp yardımcı fiil öznenin önüne alınabilir. Had + özne + V3 = if + past perfect (Daha erken çıksaydı otobüsü yakalardı). Should + özne + fiil = if + geniş zaman, düşük olasılık ya da kibarlık için (Sorunuz olursa personele sorun). Were + özne (+ to + fiil) = if + geçmiş (Senin yerinde olsam kabul ederdim). Olumsuz kısaltılmaz: Had he not helped us. Were it not for / Had it not been for + isim ve but for + isim: 'bu olmasaydı'. provided (that), providing, as long as, on condition that = 'yalnızca … şartıyla'; otherwise = 'aksi halde'.",
+        "ar": "في الإنجليزية الرسمية يمكن حذف if ووضع الفعل المساعد قبل الفاعل. Had + فاعل + التصريف الثالث = if + الماضي التام (لو خرجت أبكر لأدركت الحافلة). Should + فاعل + فعل = if + المضارع، لأمر غير مرجح أو للتأدب (إن كانت لديك أسئلة فاسأل الموظفين). Were + فاعل (+ to + فعل) = if + الماضي (لو كنت مكانك لقبلت). النفي لا يُختصر: Had he not helped us. وWere it not for / Had it not been for + اسم وbut for + اسم: «لولا هذا الشيء». provided (that) وproviding وas long as وon condition that = «بشرط أن»؛ وotherwise = «وإلا» وتبدأ جملة جديدة."
+      },
+      "exercises": [
+        { "type": "choose", "prompt": "___ you require further information, please do not hesitate to contact us.", "options": ["Should", "Would"], "answer": 0, "why": "Should + subject + verb = if you require (formal)." },
+        { "type": "choose", "prompt": "___ the bad weather, the event would have been a success.", "options": ["Had it not been for", "Unless"], "answer": 0, "why": "Had it not been for + noun = if there hadn't been." },
+        { "type": "gap", "prompt": "___ I known how difficult the course was, I wouldn't have started it.", "answers": ["Had"], "why": "Had + subject + past participle = if I had known." },
+        { "type": "fix", "wrong": "Hadn't he warned us, we would have been in danger.", "answers": ["Had he not warned us, we would have been in danger."], "why": "In inversion the negative is not contracted: Had he not." },
+        { "type": "fix", "wrong": "You can take the car provided that you will drive carefully.", "answers": ["You can take the car provided that you drive carefully.", "You can take the car provided you drive carefully."], "why": "Present tense after provided (that)." },
+        { "type": "compare", "prompt": "Which sentence is more formal?", "options": ["If you change your plans, let us know.", "Should your plans change, kindly let us know."], "answer": 1, "why": "Inversion with should is formal." },
+        { "type": "find", "prompt": "Find the unnatural sentence.", "options": ["Were I you, I would apologise.", "But for his help, we would never have finished.", "Did I have more money, I would travel."], "answer": 2, "why": "Inversion is only possible with had, should and were: Were I to have more money / If I had more money." },
+        { "type": "build", "blocks": ["had", "we", "left", "earlier", "we", "would", "have", "caught", "the", "train"], "answer": "Had we left earlier, we would have caught the train.", "alts": [], "why": "Had + subject + past participle, would have + past participle." },
+        { "type": "rewrite", "prompt": "Rewrite without 'if': 'If it weren't for the internet, I couldn't work from home.' Start: 'Were it…'", "answers": ["Were it not for the internet, I couldn't work from home.", "Were it not for the internet, I could not work from home."], "why": "Were it not for + noun." },
+        { "type": "produce", "prompt": "Write two formal sentences for an email or essay: one beginning with 'Should…' and one beginning with 'Had…'.", "check": "(^|[.!?]\\s+)should\\s+\\w+[\\s\\S]*(^|[.!?]\\s+)had\\s+\\w+|(^|[.!?]\\s+)had\\s+\\w+[\\s\\S]*(^|[.!?]\\s+)should\\s+\\w+", "hint": "Should you…, please… / Had I…, I would have…", "model": "Should you have any questions, please contact me. Had the government acted sooner, the crisis could have been avoided." }
+      ]
+    },
+    {
+      "id": "g-subjunctive-formal",
+      "title": "Formal 'that' clauses: insist that he be, it is essential that",
+      "level": "C1",
+      "summary": "The base verb after demands, suggestions and necessity.",
+      "notice": [
+        "The doctor **insisted that** he **stay** in bed.",
+        "It is **essential that** every student **attend** the first lecture.",
+        "They **recommended that** the law **be changed**.",
+        "I **suggest that** she **not sign** the contract yet."
+      ],
+      "compare": {
+        "a": "It is important that he arrives on time.",
+        "b": "It is important that he arrive on time.",
+        "note": "Both are used. A is common in everyday British English. B (the base verb, no -s) is more formal and is standard in American English and in academic writing."
+      },
+      "explain": {
+        "en": "After verbs such as demand, insist, propose, recommend, request and suggest, and after adjectives such as essential, important, necessary and vital (It is essential that…), formal English uses the base verb in the that clause for every subject: She insisted that he leave; It is vital that the data be accurate. There is no -s for he / she / it, and be is used for every person. The negative is not + base verb (We requested that the meeting not be recorded). In British English, should + base verb is also correct (They recommended that he should rest), and in informal speech many people use an ordinary present or past tense.",
+        "tr": "demand, insist, propose, recommend, request, suggest gibi fiillerden ve essential, important, necessary, vital gibi sıfatlardan sonra (It is essential that…) resmî İngilizcede that cümlesinde her özne için fiilin yalın hâli kullanılır: She insisted that he leave; It is vital that the data be accurate. he/she/it için -s eklenmez ve her kişi için be kullanılır. Olumsuz: not + yalın fiil (Toplantının kaydedilmemesini istedik). İngiliz İngilizcesinde should + yalın fiil de doğrudur; gündelik konuşmada çoğu kişi normal zaman kullanır.",
+        "ar": "بعد أفعال مثل demand وinsist وpropose وrecommend وrequest وsuggest، وبعد صفات مثل essential وimportant وnecessary وvital (It is essential that…)، تستعمل الإنجليزية الرسمية صيغة الفعل المجردة في جملة that مع كل فاعل: She insisted that he leave؛ It is vital that the data be accurate. لا تُضاف -s مع he/she/it، وتُستعمل be مع كل الضمائر. النفي: not + الفعل المجرد (طلبنا ألا يُسجَّل الاجتماع). في الإنجليزية البريطانية يصح أيضاً should + الفعل المجرد، وفي الكلام غير الرسمي يستعمل كثيرون الزمن العادي."
+      },
+      "exercises": [
+        { "type": "choose", "prompt": "The committee recommended that the project ___ postponed.", "options": ["be", "is being"], "answer": 0, "why": "Formal that clause after recommend: base verb be." },
+        { "type": "choose", "prompt": "It is vital that every passenger ___ a seat belt.", "options": ["wear", "wears to"], "answer": 0, "why": "Base verb after It is vital that: wear." },
+        { "type": "gap", "prompt": "The teacher insisted that he ___ (rewrite) the essay. (formal)", "answers": ["rewrite", "should rewrite"], "why": "insist that + base verb (or should + base verb)." },
+        { "type": "fix", "wrong": "I suggest that she doesn't sign the contract yet.", "answers": ["I suggest that she not sign the contract yet.", "I suggest that she should not sign the contract yet.", "I suggest that she shouldn't sign the contract yet."], "why": "Formal negative: not + base verb (or should not)." },
+        { "type": "fix", "wrong": "They demanded that the manager gives them a refund.", "answers": ["They demanded that the manager give them a refund.", "They demanded that the manager should give them a refund."], "why": "demand that + base verb: give." },
+        { "type": "compare", "prompt": "Which sentence uses the formal pattern with the base verb?", "options": ["It is necessary that she is present.", "It is necessary that she be present."], "answer": 1, "why": "be (not is) for every subject in the formal pattern." },
+        { "type": "find", "prompt": "Find the unnatural sentence.", "options": ["We request that all phones be switched off.", "The law requires that every car be tested each year.", "She proposed that we to meet again on Monday."], "answer": 2, "why": "Base verb without to: She proposed that we meet again." },
+        { "type": "build", "blocks": ["it", "is", "essential", "that", "the", "results", "be", "checked"], "answer": "It is essential that the results be checked.", "alts": [], "why": "essential that + be + past participle." },
+        { "type": "rewrite", "prompt": "Make it formal: 'The doctor told him he must rest for a week.' Start: 'The doctor insisted that…'", "answers": ["The doctor insisted that he rest for a week.", "The doctor insisted that he should rest for a week."], "why": "insist that + base verb." },
+        { "type": "produce", "prompt": "Write two formal recommendations for your school or company, using 'recommend that' or 'it is essential that' with the base verb.", "check": "\\b(recommend|suggest|propose|insist|demand|request)(s|ed)?\\s+that\\s+[\\s\\S]*\\b(be|not)\\b|\\b(essential|important|necessary|vital|crucial)\\s+that\\b", "hint": "recommend that + subject + base verb; it is essential that + subject + be…", "model": "I recommend that the library be open at weekends. It is essential that every student have access to a computer." }
+      ]
+    }
+  ]
+}

@@ -282,6 +282,16 @@ describe("words in books", () => {
   });
 });
 
+describe("core grammar levels", () => {
+  it("B2, B2+ and C1 core topics follow the B1 ones, each with TR and AR explanations and 10 exercises", () => {
+    const core = content().grammar.filter((t) => t.track === "core");
+    const upper = core.filter((t) => ["B2", "B2+", "C1"].includes(t.level));
+    expect(upper.length).toBeGreaterThanOrEqual(12);
+    expect(core.findIndex((t) => t.level === "B2")).toBeGreaterThan(core.findLastIndex((t) => t.level.startsWith("B1")));
+    for (const t of upper) expect(t.explain.tr && t.explain.ar && t.exercises.length === 10, t.id).toBeTruthy();
+  });
+});
+
 describe("example sentence translations", () => {
   it("every word example, book quotes included, has TR and AR", () => {
     const withEx = content().vocab.filter((v) => v.ex);

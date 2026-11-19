@@ -1,0 +1,209 @@
+{
+  "licence": "Original content written for Fluent365. CC BY-SA 4.0. Turkish and Arabic explanations: AI translation (Claude), checked against the English rules.",
+  "topics": [
+    {
+      "id": "g-future-continuous-perfect",
+      "title": "Future continuous and future perfect",
+      "level": "B2",
+      "summary": "In progress at a future time, or finished before it.",
+      "notice": [
+        "This time tomorrow I**'ll be flying** to Istanbul.",
+        "By the end of the year, she**'ll have finished** her degree.",
+        "Don't call at eight — we**'ll be having** dinner.",
+        "By the time you arrive, the film **will have started**."
+      ],
+      "compare": {
+        "a": "At 9 p.m. I'll be writing my essay.",
+        "b": "By 9 p.m. I'll have written my essay.",
+        "note": "A: at 9 the writing is in progress. B: before 9 the essay is finished."
+      },
+      "explain": {
+        "en": "Use will be + -ing for an action that will be in progress at a certain future time (At ten I'll be driving). It is also a polite way to ask about plans: Will you be using the car tonight? Use will have + past participle for an action that will be finished before a future time (By June I'll have saved enough). By + time means 'not later than' and often comes with the future perfect. After when, by the time, before and until, use a present tense, not will: By the time you get home, I'll have cooked.",
+        "tr": "will be + -ing: gelecekte belli bir anda devam eden eylem (Yarın saat onda araba sürüyor olacağım). Kibar soru için de kullanılır: Bu akşam arabayı kullanıyor olacak mısın? will have + V3: gelecekteki bir zamandan önce bitmiş olacak eylem (Haziran'a kadar yeterince biriktirmiş olacağım). by + zaman = 'en geç'. when, by the time, before, until'den sonra will değil geniş/şimdiki zaman kullanılır.",
+        "ar": "will be + -ing: حدث سيكون جارياً في وقت محدد في المستقبل (في العاشرة سأكون أقود). ويُستعمل أيضاً للسؤال المهذب عن الخطط: هل ستستعمل السيارة الليلة؟ will have + التصريف الثالث: حدث سيكون قد انتهى قبل وقت في المستقبل (بحلول يونيو سأكون قد ادخرت ما يكفي). by + وقت = «في موعد لا يتجاوز». بعد when وby the time وbefore وuntil نستعمل المضارع لا will."
+      },
+      "exercises": [
+        { "type": "choose", "prompt": "Don't phone at 7. I ___ the children to bed then.", "options": ["will be putting", "will have put"], "answer": 0, "why": "In progress at 7: will be + -ing." },
+        { "type": "choose", "prompt": "By the time we get there, the shop ___.", "options": ["will be closing", "will have closed"], "answer": 1, "why": "Finished before we arrive: will have + past participle." },
+        { "type": "gap", "prompt": "By 2030 they ___ (build) the new airport.", "answers": ["will have built", "'ll have built"], "why": "Finished before a future time: will have built." },
+        { "type": "fix", "wrong": "By the time you will arrive, I'll have left.", "answers": ["By the time you arrive, I'll have left.", "By the time you arrive, I will have left."], "why": "After by the time, use the present: you arrive." },
+        { "type": "fix", "wrong": "This time next week I'll lie on a beach.", "answers": ["This time next week I'll be lying on a beach.", "This time next week I will be lying on a beach."], "why": "In progress at a future moment: will be lying." },
+        { "type": "compare", "prompt": "Which sentence says the report is already finished at 5 p.m.?", "options": ["At 5 p.m. I'll be writing the report.", "By 5 p.m. I'll have written the report."], "answer": 1, "why": "By + will have done = finished before that time." },
+        { "type": "find", "prompt": "Find the unnatural sentence.", "options": ["Will you be using the printer this afternoon?", "By Friday I'll have read the whole book.", "By next year I'll be knowing all the irregular verbs."], "answer": 2, "why": "Know is a state verb: By next year I'll know / I'll have learned all the irregular verbs." },
+        { "type": "build", "blocks": ["by", "June", "we", "will", "have", "paid", "off", "the", "loan"], "answer": "By June we will have paid off the loan.", "alts": ["We will have paid off the loan by June."], "why": "By + time with the future perfect." },
+        { "type": "predict", "prompt": "The match starts at 8 and lasts two hours. At 9 o'clock the players ___ ...", "options": ["will be playing", "will have played", "will play"], "answer": 0, "why": "At 9 the match is in progress." },
+        { "type": "produce", "prompt": "Write two sentences about your life: what you will be doing this time next year, and something you will have done by then.", "check": "\\bwill be \\w+ing\\b[\\s\\S]*\\bwill have \\w+|\\bwill have \\w+[\\s\\S]*\\bwill be \\w+ing\\b|'ll be \\w+ing\\b[\\s\\S]*'ll have \\w+|'ll have \\w+[\\s\\S]*'ll be \\w+ing\\b", "hint": "will be + -ing (in progress) and will have + past participle (finished).", "model": "This time next year I will be working in Ankara. By then I will have passed my IELTS exam." }
+      ]
+    },
+    {
+      "id": "g-wish-regret-past",
+      "title": "Wishes, regrets and the unreal past",
+      "level": "B2",
+      "summary": "wish, if only, should have, would rather and it's time.",
+      "notice": [
+        "I **wish** I **had** more free time.",
+        "**If only** I **hadn't said** that to her.",
+        "I **wish** you **would stop** interrupting me.",
+        "It's late. **It's time** we **went** home."
+      ],
+      "compare": {
+        "a": "I wish I studied harder.",
+        "b": "I wish I had studied harder.",
+        "note": "A: about now (I don't study hard these days). B: about the past (I didn't study hard then — a regret)."
+      },
+      "explain": {
+        "en": "Use wish or if only + past simple for a present situation you want to be different (I wish I lived nearer). Use wish + past perfect for a past regret (I wish I had taken the job). Use wish + would for an annoying habit or something you want another person to change (I wish he would call). Do not use wish + would about yourself. Should have + past participle also shows regret or criticism about the past (You should have told me). After would rather (someone) and it's (high) time, use the past simple with a present meaning: I'd rather you didn't smoke here; It's time we left.",
+        "tr": "wish/if only + geçmiş zaman: şimdiki bir durumun farklı olmasını istemek (Keşke daha yakın otursam). wish + past perfect: geçmişle ilgili pişmanlık (Keşke o işi kabul etseydim). wish + would: can sıkan bir alışkanlık ya da başkasının değişmesini istemek; kendin için kullanılmaz. should have + V3: geçmişle ilgili pişmanlık/eleştiri (Bana söylemeliydin). would rather (biri) ve it's time'dan sonra şimdiki anlamda geçmiş zaman gelir: Burada sigara içmemeni tercih ederim; Gitme vaktimiz geldi.",
+        "ar": "wish أو if only + الماضي البسيط: لتمني تغيّر وضع حاضر (ليتني أسكن أقرب). wish + الماضي التام: للندم على الماضي (ليتني قبلت الوظيفة). wish + would: لعادة مزعجة أو لما تريد أن يغيّره شخص آخر، ولا تُستعمل عن نفسك. should have + التصريف الثالث: ندم أو لوم على الماضي (كان يجب أن تخبرني). بعد would rather (شخص) وit's time يأتي الماضي البسيط بمعنى الحاضر: أفضّل ألا تدخن هنا؛ حان وقت رحيلنا."
+      },
+      "exercises": [
+        { "type": "choose", "prompt": "I failed the test. I wish I ___ more.", "options": ["revised", "had revised"], "answer": 1, "why": "A past regret: wish + past perfect." },
+        { "type": "choose", "prompt": "I wish I ___ how to swim. Everyone is in the pool except me.", "options": ["knew", "had known"], "answer": 0, "why": "About now: wish + past simple." },
+        { "type": "gap", "prompt": "It's nearly midnight. It's time we ___ (go) to bed.", "answers": ["went"], "why": "It's time + past simple with a present meaning." },
+        { "type": "fix", "wrong": "I wish I would have a bigger flat.", "answers": ["I wish I had a bigger flat."], "why": "Not wish + would about yourself; use the past simple." },
+        { "type": "fix", "wrong": "You should tell me earlier. Now it's too late.", "answers": ["You should have told me earlier. Now it's too late.", "You should have told me earlier."], "why": "Criticism about the past: should have + past participle." },
+        { "type": "compare", "prompt": "Which sentence complains about another person's annoying habit?", "options": ["I wish my neighbour would stop playing loud music.", "I wish my neighbour had a quieter flat."], "answer": 0, "why": "wish + would = you want someone to change their behaviour." },
+        { "type": "find", "prompt": "Find the unnatural sentence.", "options": ["If only I had listened to you.", "I'd rather you didn't tell anyone.", "I wish I didn't eat so much at the party last night."], "answer": 2, "why": "A past regret: I wish I hadn't eaten so much last night." },
+        { "type": "build", "blocks": ["I'd", "rather", "you", "didn't", "use", "my", "phone"], "answer": "I'd rather you didn't use my phone.", "alts": [], "why": "Would rather + someone + past simple." },
+        { "type": "rewrite", "prompt": "Rewrite with 'I wish': 'I'm sorry I didn't go to the concert.'", "answers": ["I wish I had gone to the concert.", "I wish I'd gone to the concert."], "why": "Regret about the past: wish + past perfect." },
+        { "type": "produce", "prompt": "Write one wish about your life now and one regret about the past.", "check": "\\b(wish|if only)\\b[\\s\\S]*\\b(had|'d)\\s+(not\\s+)?\\w+(ed|en|t|n)\\b", "hint": "Now: wish + past simple. Past: wish + had + past participle.", "model": "I wish I lived closer to the sea. If only I had started learning English when I was a child." }
+      ]
+    },
+    {
+      "id": "g-causative",
+      "title": "Have or get something done",
+      "level": "B2",
+      "summary": "When someone else does a job for you.",
+      "notice": [
+        "I **had my hair cut** yesterday.",
+        "We need to **get the car repaired** before the trip.",
+        "She**'s having her kitchen painted** this week.",
+        "He **had his phone stolen** on the bus."
+      ],
+      "compare": {
+        "a": "I cut my hair.",
+        "b": "I had my hair cut.",
+        "note": "A: you did it yourself. B: a hairdresser did it for you."
+      },
+      "explain": {
+        "en": "Use have + object + past participle when you arrange for another person to do a job for you (I had my eyes tested). Get + object + past participle means the same and is a little more informal (I need to get my bike fixed). The tense goes on have or get, not on the past participle: I'm having my car serviced; I've had the locks changed. The same pattern can describe something bad that happened to you (She had her bag stolen). Have someone do something and get someone to do something say who does the job: I had the mechanic check the brakes; I got my brother to help me.",
+        "tr": "have + nesne + V3: bir işi başkasına yaptırmak (Gözlerimi muayene ettirdim). get + nesne + V3 aynı anlamdadır, biraz daha gündeliktir. Zaman have/get üzerinde değişir: I'm having my car serviced; I've had the locks changed. Aynı yapı başına gelen kötü bir şeyi de anlatır (Çantası çalındı). Kimin yaptığını söylemek için: have someone do / get someone to do (Kardeşime yardım ettirdim).",
+        "ar": "have + مفعول + التصريف الثالث: حين تكلّف شخصاً آخر بعمل لك (فحصت عينيّ عند الطبيب). get + مفعول + التصريف الثالث بالمعنى نفسه وأقل رسمية. الزمن يظهر على have أو get لا على التصريف الثالث: I'm having my car serviced. والتركيب نفسه يصف أمراً سيئاً حدث لك (سُرقت حقيبتها). لذكر من قام بالعمل: have someone do / get someone to do (جعلت أخي يساعدني)."
+      },
+      "exercises": [
+        { "type": "choose", "prompt": "I can't fix the roof myself, so I'm going to ___.", "options": ["have it repaired", "have repaired it"], "answer": 0, "why": "have + object + past participle." },
+        { "type": "choose", "prompt": "Your hair looks great! Did you ___?", "options": ["cut it", "have it cut"], "answer": 1, "why": "A hairdresser did it: have it cut." },
+        { "type": "gap", "prompt": "We're ___ our house painted next week. (have, present continuous)", "answers": ["having"], "why": "The tense goes on have: we're having." },
+        { "type": "fix", "wrong": "I had cleaned my carpets by a company last month.", "answers": ["I had my carpets cleaned by a company last month.", "I had my carpets cleaned last month."], "why": "Object before the past participle: had my carpets cleaned." },
+        { "type": "fix", "wrong": "She got her brother fix her laptop.", "answers": ["She got her brother to fix her laptop.", "She had her brother fix her laptop."], "why": "get someone to do / have someone do." },
+        { "type": "compare", "prompt": "Which sentence means a professional did the job?", "options": ["We decorated the living room.", "We had the living room decorated."], "answer": 1, "why": "have + object + past participle = someone else did it." },
+        { "type": "find", "prompt": "Find the unnatural sentence.", "options": ["I need to get my passport renewed.", "He had his wallet stolen at the station.", "I've had changed the locks."], "answer": 2, "why": "Object first: I've had the locks changed." },
+        { "type": "build", "blocks": ["you", "should", "get", "your", "eyes", "tested"], "answer": "You should get your eyes tested.", "alts": [], "why": "get + object + past participle." },
+        { "type": "rewrite", "prompt": "Rewrite with 'have': 'A mechanic is servicing my car today.' Start: 'I'm…'", "answers": ["I'm having my car serviced today.", "I am having my car serviced today.", "I'm having my car serviced by a mechanic today."], "why": "Present continuous on have + object + past participle." },
+        { "type": "produce", "prompt": "Write two things you have done for you by other people (for example at a hairdresser, garage or dentist).", "check": "\\b(have|has|had|having|get|gets|got|getting)\\s+(my|your|his|her|our|their|the|a)\\s+(\\w+\\s+)?\\w+(ed|en|t|wn|ne)\\b", "hint": "have / get + object + past participle.", "model": "I have my hair cut every month. Last week I got my bike repaired." }
+      ]
+    },
+    {
+      "id": "g-verb-ing-to-meaning",
+      "title": "Remember, stop, try: -ing or to with a change of meaning",
+      "level": "B2",
+      "summary": "Verbs whose meaning changes with -ing or to.",
+      "notice": [
+        "I **remember locking** the door. (I locked it; I have the memory.)",
+        "**Remember to lock** the door! (Don't forget to do it.)",
+        "He **stopped smoking** last year.",
+        "She **stopped to buy** some water on the way."
+      ],
+      "compare": {
+        "a": "I stopped talking to him.",
+        "b": "I stopped to talk to him.",
+        "note": "A: I don't talk to him any more. B: I paused what I was doing so that I could talk to him."
+      },
+      "explain": {
+        "en": "Remember / forget + -ing look back at something that happened (I'll never forget meeting her). Remember / forget + to look forward to a duty (Don't forget to call your mum). Stop + -ing means you finish an activity; stop + to means you stop in order to do something. Try + -ing means 'test a method and see if it works' (Try restarting the computer); try + to means 'make an effort' (I tried to lift the box, but it was too heavy). Regret + -ing is about the past (I regret leaving); regret + to is formal and used for bad news (We regret to inform you). Go on + -ing continues the same thing; go on + to moves to something new.",
+        "tr": "remember/forget + -ing: geçmişte olanı hatırlamak/unutmak. remember/forget + to: yapılması gereken işi hatırlamak/unutmak. stop + -ing: bir şeyi bırakmak; stop + to: bir şey yapmak için durmak. try + -ing: bir yöntemi denemek; try + to: çabalamak. regret + -ing: geçmişten pişmanlık; regret + to: resmî, kötü haber verirken (Size bildirmekten üzüntü duyarız). go on + -ing aynı şeye devam etmek; go on + to yeni bir şeye geçmek.",
+        "ar": "remember/forget + -ing: تذكّر أو نسيان أمر حدث في الماضي. remember/forget + to: تذكّر أو نسيان واجب يجب فعله. stop + -ing: التوقف عن نشاط؛ stop + to: التوقف من أجل فعل شيء. try + -ing: تجربة طريقة لنرى إن كانت تنجح؛ try + to: بذل الجهد. regret + -ing: ندم على الماضي؛ regret + to: رسمي عند إعلان خبر سيئ (نأسف لإبلاغك). go on + -ing: الاستمرار في الشيء نفسه؛ go on + to: الانتقال إلى شيء جديد."
+      },
+      "exercises": [
+        { "type": "choose", "prompt": "Did you remember ___ the tickets? We need them tonight.", "options": ["to book", "booking"], "answer": 0, "why": "A duty you must not forget: remember to." },
+        { "type": "choose", "prompt": "The printer isn't working. Try ___ it off and on again.", "options": ["to turn", "turning"], "answer": 1, "why": "Test a method: try + -ing." },
+        { "type": "gap", "prompt": "I'll never forget ___ (see) the sea for the first time.", "answers": ["seeing"], "why": "A memory of the past: forget + -ing." },
+        { "type": "fix", "wrong": "We stopped having a coffee at a café on the motorway.", "answers": ["We stopped to have a coffee at a café on the motorway."], "why": "Stopped in order to have a coffee: stop + to." },
+        { "type": "fix", "wrong": "We regret informing you that the flight is cancelled.", "answers": ["We regret to inform you that the flight is cancelled."], "why": "Formal bad news: regret + to." },
+        { "type": "compare", "prompt": "Which sentence means the speaker no longer eats meat?", "options": ["I stopped to eat meat.", "I stopped eating meat."], "answer": 1, "why": "stop + -ing = finish an activity." },
+        { "type": "find", "prompt": "Find the unnatural sentence.", "options": ["I tried to open the window, but it was stuck.", "I remember to meet him at a wedding years ago.", "After the break, she went on to talk about prices."], "answer": 1, "why": "A past memory: I remember meeting him." },
+        { "type": "build", "blocks": ["please", "remember", "to", "switch", "off", "the", "lights"], "answer": "Please remember to switch off the lights.", "alts": ["Remember to switch off the lights please."], "why": "A duty: remember to + verb." },
+        { "type": "predict", "prompt": "He worked as a teacher for ten years and then went on ___ ...", "options": ["to become a head teacher", "becoming a head teacher", "become a head teacher"], "answer": 0, "why": "Moving to something new: go on + to." },
+        { "type": "produce", "prompt": "Write one sentence with 'remember + -ing' (a memory) and one with 'remember to' (a duty).", "check": "\\bremember(ed|s)?\\s+\\w+ing\\b[\\s\\S]*\\bremember(ed|s)?\\s+to\\b|\\bremember(ed|s)?\\s+to\\b[\\s\\S]*\\bremember(ed|s)?\\s+\\w+ing\\b", "hint": "remember + -ing looks back; remember + to looks forward.", "model": "I remember playing football in the street as a child. I must remember to pay the rent tomorrow." }
+      ]
+    },
+    {
+      "id": "g-narrative-tenses",
+      "title": "Narrative tenses and the past perfect continuous",
+      "level": "B2",
+      "summary": "Telling a story with four past tenses.",
+      "notice": [
+        "I **was walking** home when it **started** to rain.",
+        "By the time I **arrived**, the meeting **had** already **finished**.",
+        "Her eyes were red. She **had been crying**.",
+        "We **had been waiting** for an hour when the bus finally **came**."
+      ],
+      "compare": {
+        "a": "When I got home, he had cooked dinner.",
+        "b": "When I got home, he had been cooking.",
+        "note": "A: the dinner was ready (finished action). B: the activity went on for some time before; maybe it wasn't finished, but the kitchen was hot and messy."
+      },
+      "explain": {
+        "en": "Use the past simple for the main events of a story, in order (He opened the door and saw her). Use the past continuous for background actions in progress (It was snowing). Use the past perfect for an earlier, finished event (I had lost my key). Use the past perfect continuous (had been + -ing) for an activity that continued up to a past moment, often with for or since, or to explain a past result (He was tired because he had been running). State verbs such as know, believe and own do not usually take the continuous: I had known her for years.",
+        "tr": "Geçmiş zaman (past simple): hikâyenin ana olayları, sırasıyla. Past continuous: arka planda süren eylemler (Kar yağıyordu). Past perfect: daha önce bitmiş olay (Anahtarımı kaybetmiştim). Past perfect continuous (had been + -ing): geçmişteki bir ana kadar süren eylem (genelde for/since ile) ya da geçmişteki bir sonucu açıklamak (Koşmuş olduğu için yorgundu). know, believe, own gibi durum fiilleri genelde -ing almaz: I had known her for years.",
+        "ar": "الماضي البسيط: لأحداث القصة الرئيسية بالترتيب. الماضي المستمر: لأحداث خلفية جارية (كان الثلج يتساقط). الماضي التام: لحدث سابق انتهى (كنت قد أضعت مفتاحي). الماضي التام المستمر (had been + -ing): لنشاط استمر حتى لحظة في الماضي، غالباً مع for أو since، أو لتفسير نتيجة في الماضي (كان متعباً لأنه كان يركض). أفعال الحالة مثل know وbelieve وown لا تأتي عادةً في صيغة الاستمرار: I had known her for years."
+      },
+      "exercises": [
+        { "type": "choose", "prompt": "The ground was wet. It ___ all night.", "options": ["had been raining", "was raining"], "answer": 0, "why": "An activity before a past moment that explains a result: had been + -ing." },
+        { "type": "choose", "prompt": "When we reached the station, the train ___.", "options": ["already left", "had already left"], "answer": 1, "why": "Earlier, finished event: past perfect." },
+        { "type": "gap", "prompt": "She ___ (work) there for ten years when she finally got a promotion.", "answers": ["had been working", "'d been working"], "why": "Duration up to a past moment: had been working." },
+        { "type": "fix", "wrong": "I had been knowing him for years before we became friends.", "answers": ["I had known him for years before we became friends.", "I'd known him for years before we became friends."], "why": "Know is a state verb: had known." },
+        { "type": "fix", "wrong": "While I had walked to work, I saw an accident.", "answers": ["While I was walking to work, I saw an accident."], "why": "Background action in progress: past continuous." },
+        { "type": "compare", "prompt": "Which sentence focuses on how long the activity lasted?", "options": ["They had painted the room.", "They had been painting the room all morning."], "answer": 1, "why": "had been + -ing + all morning = duration." },
+        { "type": "find", "prompt": "Find the unnatural sentence.", "options": ["He was out of breath because he had been running.", "I was cooking when the lights went out.", "When I had opened the door, I saw a strange man."], "answer": 2, "why": "Main events in order: When I opened the door, I saw a strange man." },
+        { "type": "build", "blocks": ["we", "had", "been", "waiting", "for", "two", "hours", "when", "the", "doctor", "arrived"], "answer": "We had been waiting for two hours when the doctor arrived.", "alts": ["When the doctor arrived, we had been waiting for two hours."], "why": "Past perfect continuous + when + past simple." },
+        { "type": "predict", "prompt": "His hands were covered in oil because he ___ ...", "options": ["had been repairing his bike", "repairs his bike", "has repaired his bike"], "answer": 0, "why": "A past result explained by an earlier activity." },
+        { "type": "produce", "prompt": "Write two or three sentences about a time you were very tired or surprised. Use the past perfect continuous to explain why.", "check": "\\b(had|'d) been \\w+ing\\b", "hint": "had been + -ing explains a past situation.", "model": "When I got to the exam, I was exhausted. I had been studying all night and I hadn't eaten anything." }
+      ]
+    },
+    {
+      "id": "g-modals-past-obligation",
+      "title": "Needn't have, didn't need to, should have, had to",
+      "level": "B2",
+      "summary": "Obligation and necessity in the past.",
+      "notice": [
+        "I **had to** work late yesterday. (It was necessary.)",
+        "You **needn't have bought** flowers — but they're lovely! (You did, but it wasn't necessary.)",
+        "I **didn't need to** wear a suit, so I wore jeans.",
+        "We **should have left** earlier. Now we're stuck in traffic."
+      ],
+      "compare": {
+        "a": "I didn't need to cook, so I watched TV.",
+        "b": "I needn't have cooked — they had already eaten.",
+        "note": "A: it wasn't necessary and I didn't cook. B: I cooked, but it wasn't necessary."
+      },
+      "explain": {
+        "en": "Had to is the past of must and have to: it shows a past obligation (I had to show my passport). Didn't have to and didn't need to mean it was not necessary; usually the person did not do it (I didn't need to pay — it was free). Needn't have + past participle means the person did it, but it was not necessary (You needn't have waited for me). Should have + past participle means it was the right thing, but it did not happen; shouldn't have means it happened, but it was wrong (I shouldn't have shouted). Must have done is for deduction, not obligation: He must have forgotten.",
+        "tr": "had to: geçmişteki zorunluluk (Pasaportumu göstermek zorunda kaldım). didn't have to / didn't need to: gerekli değildi, genelde yapılmadı. needn't have + V3: yapıldı ama gerekli değildi (Beni beklemene gerek yoktu). should have + V3: doğru olandı ama yapılmadı; shouldn't have: yapıldı ama yanlıştı (Bağırmamalıydım). must have done zorunluluk değil, çıkarımdır: Unutmuş olmalı.",
+        "ar": "had to ماضي must وhave to: يدل على إلزام في الماضي (اضطررت إلى إظهار جواز سفري). didn't have to وdidn't need to: لم يكن ضرورياً، وغالباً لم يُفعل. needn't have + التصريف الثالث: فُعل لكنه لم يكن ضرورياً (لم يكن عليك أن تنتظرني). should have + التصريف الثالث: كان هو الصواب لكنه لم يحدث؛ shouldn't have: حدث لكنه كان خطأ (ما كان ينبغي أن أصرخ). must have done للاستنتاج لا للإلزام: لا بد أنه نسي."
+      },
+      "exercises": [
+        { "type": "choose", "prompt": "The museum was free, so we ___ pay.", "options": ["didn't need to", "needn't have"], "answer": 0, "why": "Not necessary and we didn't pay: didn't need to." },
+        { "type": "choose", "prompt": "You ___ brought a gift — but thank you, it's beautiful!", "options": ["didn't need to", "needn't have"], "answer": 1, "why": "You did it, but it wasn't necessary: needn't have + past participle." },
+        { "type": "gap", "prompt": "My car broke down, so I ___ take a taxi to work.", "answers": ["had to"], "why": "Past obligation: had to." },
+        { "type": "fix", "wrong": "I must leave early yesterday because I had a doctor's appointment.", "answers": ["I had to leave early yesterday because I had a doctor's appointment."], "why": "Past obligation: had to, not must." },
+        { "type": "fix", "wrong": "You should told me you were vegetarian.", "answers": ["You should have told me you were vegetarian.", "You should've told me you were vegetarian."], "why": "should have + past participle." },
+        { "type": "compare", "prompt": "In which sentence did the speaker take an umbrella?", "options": ["I needn't have taken an umbrella. It didn't rain.", "I didn't need to take an umbrella. The forecast was sunny."], "answer": 0, "why": "needn't have done = you did it, unnecessarily." },
+        { "type": "find", "prompt": "Find the unnatural sentence.", "options": ["We had to queue for an hour.", "I shouldn't have eaten so much cake.", "She needn't have to come to the meeting."], "answer": 2, "why": "She didn't have to come / She needn't have come." },
+        { "type": "build", "blocks": ["we", "should", "have", "booked", "a", "table", "in", "advance"], "answer": "We should have booked a table in advance.", "alts": [], "why": "A past mistake: should have + past participle." },
+        { "type": "rewrite", "prompt": "Rewrite with 'needn't have': 'I cooked a lot of food, but it wasn't necessary because only two people came.'", "answers": ["I needn't have cooked so much food because only two people came.", "I needn't have cooked so much food.", "I needn't have cooked a lot of food.", "I needn't have cooked so much food, because only two people came."], "why": "Did it, but not necessary: needn't have cooked." },
+        { "type": "produce", "prompt": "Think of a mistake you made last month. Write what you should have done, and one thing you needn't have done.", "check": "\\bshould(n't| not)? have \\w+[\\s\\S]*\\bneedn't have \\w+|\\bneedn't have \\w+[\\s\\S]*\\bshould(n't| not)? have \\w+|should've", "hint": "should have + past participle; needn't have + past participle.", "model": "I should have checked the date of the exam. I needn't have bought a new dictionary — the library had one." }
+      ]
+    }
+  ]
+}

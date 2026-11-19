@@ -42,7 +42,7 @@ const csv = (p) => parseCsv(readFileSync(join(src, p), "utf8")).slice(1);
 const slug = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 48);
 const tokens = (s) => s.trim().split(/\s+/);
 
-const core = ["core-1.json", "core-2.json", "core-3.json"]
+const core = ["core-1.json", "core-2.json", "core-3.json", "core-4.json", "core-5.json"]
   .filter((f) => existsSync(join(src, "grammar", f)))
   .flatMap((f) => read(join("grammar", f)).topics)
   .map((t, i) => ({ ...t, track: "core", order: i + 1 }));
