@@ -4,12 +4,12 @@
 // Every backup is a commit, so the repo's history keeps the older versions.
 import * as db from "./db";
 import { checkBackup, makeBackup, type BackupCheck, type BackupError } from "./portability";
+import { AUTO_EVERY_H, dueSince } from "./sync";
 
 const API = "https://api.github.com";
 export const BACKUP_PATH = "fluent365-backup.json";
 const KEY = "cloud";
-/** Automatic backups: at most one per this many hours. */
-export const AUTO_EVERY_H = 20;
+export { AUTO_EVERY_H };
 
 export interface CloudConfig { token: string; repo: string; branch: string; last?: string; lastError?: string }
 export interface RepoChoice { full_name: string; default_branch: string }
@@ -93,7 +93,7 @@ export async function fetchBackup(): Promise<BackupCheck | BackupError> {
 
 /** Due for an automatic backup. The first backup from a device is always a deliberate tap
  *  (so a new, empty phone never overwrites a good backup before it is restored). */
-export const isDue = (c: CloudConfig | undefined, now = Date.now()) => !!c?.last && now - Date.parse(c.last) >= AUTO_EVERY_H * 3600e3;
+export const isDue = (c: CloudConfig | undefined, now = Date.now()) => dueSince(c?.last, now);
 
 let running = false;
 /** Automatic backup: when the app is left or opened, at most once a day. Silent on failure. */

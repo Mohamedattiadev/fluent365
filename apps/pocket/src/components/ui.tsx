@@ -75,8 +75,9 @@ export function useTimer(running: boolean) {
 export const mmss = (s: number) => `${Math.floor(Math.abs(s) / 60)}:${String(Math.floor(Math.abs(s) % 60)).padStart(2, "0")}`;
 
 let toastSet: ((s: string | null) => void) | null = null;
+let pendingToast: string | null = null; // shown when the Toaster mounts (e.g. right after start-up)
 export function toast(msg: string) {
-  toastSet?.(msg);
+  if (toastSet) toastSet(msg); else pendingToast = msg;
 }
 export function Toaster() {
   const [msg, setMsg] = useState<string | null>(null);
@@ -87,6 +88,7 @@ export function Toaster() {
       clearTimeout(t.current);
       t.current = setTimeout(() => setMsg(null), 3500);
     };
+    if (pendingToast) { toastSet(pendingToast); pendingToast = null; }
     return () => {
       toastSet = null;
     };

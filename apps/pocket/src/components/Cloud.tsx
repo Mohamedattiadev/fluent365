@@ -2,10 +2,26 @@
 // app backs up by itself (at most once a day). Restore on a new phone from the same card.
 import { useEffect, useState } from "react";
 import { backupNow, connect, disconnect, fetchBackup, findRepos, getCloud, NEW_KEY_URL, type CloudConfig, type RepoChoice } from "../lib/cloud";
-import * as db from "../lib/db";
-import { makeBackup, type BackupCheck } from "../lib/portability";
-import { replaceState } from "../lib/store";
+import type { BackupCheck } from "../lib/portability";
+import { restoreFrom } from "../lib/sync";
 import { toast } from "./ui";
+
+/** A backup was found in the cloud and this device has progress too: the learner chooses. */
+export function RestoreOrReplace({ found, busy, title, help, restoreLabel, replaceLabel, onRestore, onReplace }: {
+  found: BackupCheck; busy: boolean; title: string; help: string; restoreLabel: string; replaceLabel: string; onRestore: () => void; onReplace: () => void;
+}) {
+  return (
+    <div className="feedback info">
+      <strong className="title">{title}</strong>
+      <table><tbody>{Object.entries(found.summary).map(([k, v]) => <tr key={k}><td>{k}</td><td><b>{v}</b></td></tr>)}</tbody></table>
+      <p>{help}</p>
+      <div className="stack">
+        <button className="btn big primary" disabled={busy} onClick={onRestore}>{restoreLabel}</button>
+        <button className="btn big outline" disabled={busy} onClick={onReplace}>{replaceLabel}</button>
+      </div>
+    </div>
+  );
+}
 
 const when = (iso?: string) => (iso ? new Date(iso).toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" }) : "never");
 
@@ -40,8 +56,7 @@ export function CloudBackup({ onRestored }: { onRestored?: () => void }) {
     else setRepos(list);
   });
   const restore = (check: BackupCheck) => run(async () => {
-    await db.set("kv", "backup:before-restore", makeBackup());
-    await replaceState(check.state);
+    await restoreFrom(check);
     setFound(null);
     toast("Progress restored from GitHub. Your previous data was kept as a safety copy.");
     onRestored?.();
@@ -52,15 +67,9 @@ export function CloudBackup({ onRestored }: { onRestored?: () => void }) {
     <div className="card stack">
       <h2>Automatic backup to GitHub</h2>
       {found ? (
-        <div className="feedback info">
-          <strong className="title">Your repo already has a backup:</strong>
-          <table><tbody>{Object.entries(found.summary).map(([k, v]) => <tr key={k}><td>{k}</td><td><b>{v}</b></td></tr>)}</tbody></table>
-          <p>Restore it on this device (new phone), or replace it with the progress on this device.</p>
-          <div className="stack">
-            <button className="btn big primary" disabled={busy} onClick={() => restore(found)}>Restore it here</button>
-            <button className="btn big outline" disabled={busy} onClick={() => run(async () => { await backupNow(); setFound(null); toast("Backup saved. The old one stays in the repo history."); })}>Replace it with this device</button>
-          </div>
-        </div>
+        <RestoreOrReplace found={found} busy={busy} title="Your repo already has a backup:" help="Restore it on this device (new phone), or replace it with the progress on this device."
+          restoreLabel="Restore it here" replaceLabel="Replace it with this device" onRestore={() => restore(found)}
+          onReplace={() => run(async () => { await backupNow(); setFound(null); toast("Backup saved. The old one stays in the repo history."); })} />
       ) : cfg ? (
         <>
           <p>Backing up to your private repo <b>{cfg.repo}</b> once a day, by itself, when you open or leave the app.</p>
