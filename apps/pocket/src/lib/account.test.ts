@@ -80,16 +80,24 @@ describe("first sync (same rules as the GitHub backup)", () => {
     expect(cloud.calls).not.toContain("save");
     expect(await db.get("kv", "backup:before-restore")).toBeTruthy();
   });
-  it("both have progress → ask, and nothing is overwritten meanwhile", async () => {
+  it("both have progress → combined by itself (no question), uploaded, safety copy kept", async () => {
     const cloud = fakeCloud(); setClientForTests(cloud);
     cloud.put(backupOf({ ...emptyState(), cards: { "9": {} } }));
     await replaceState(withProgress());
-    expect(await afterSignIn()).toBe("ask");
-    expect(cloud.calls).not.toContain("save");
-    expect(Object.keys(getState().cards)).toEqual(["1"]);
-    await patchAccount({ on: true });
-    await syncNow(); // waiting for the choice: no automatic sync
-    expect(cloud.calls).not.toContain("save");
+    expect(await afterSignIn()).toBe("merged");
+    expect(Object.keys(getState().cards).sort()).toEqual(["1", "9"]);
+    expect(Object.keys((cloud.row() as { data: { cards: object } }).data.cards).sort()).toEqual(["1", "9"]);
+    expect(await db.get("kv", "backup:before-restore")).toBeTruthy();
+    expect((await getAccount()).ask).toBe(false);
+  });
+  it("a device left waiting for the old question is combined on its next sync", async () => {
+    const cloud = fakeCloud(); setClientForTests(cloud);
+    await setOwnConfig({ url: "https://mine.supabase.co", key: "k" });
+    cloud.put(backupOf({ ...emptyState(), cards: { "9": {} } }));
+    await replaceState(withProgress());
+    await patchAccount({ on: true, ask: true });
+    expect(await syncNow()).toBe("merged");
+    expect(Object.keys(getState().cards).sort()).toEqual(["1", "9"]);
   });
   it("newest wins: a backup replaces the row", async () => {
     const cloud = fakeCloud(); setClientForTests(cloud);
@@ -138,12 +146,12 @@ describe("automatic sync between devices", () => {
     expect(syncAction({ synced: t, syncedLocal: 5 }, "2026-11-21T10:00:00+00:00", 5)).toBe("none"); // same time, Postgres format
     expect(syncAction({ synced: t, syncedLocal: 5 }, t, 6)).toBe("push");
     expect(syncAction({ synced: t, syncedLocal: 5 }, later, 5)).toBe("pull");
-    // both changed: the newer wins
-    expect(syncAction({ synced: t, syncedLocal: 5 }, later, Date.parse(later) - 1000)).toBe("pull");
-    expect(syncAction({ synced: t, syncedLocal: 5 }, later, Date.parse(later) + 1000)).toBe("push");
-    // signed in before the sync existed: ours if saved at our last backup, else ask once
+    // both changed: combined
+    expect(syncAction({ synced: t, syncedLocal: 5 }, later, Date.parse(later) - 1000)).toBe("merge");
+    expect(syncAction({ synced: t, syncedLocal: 5 }, later, Date.parse(later) + 1000)).toBe("merge");
+    // signed in before the sync existed: ours if saved at our last backup, else combined
     expect(syncAction({ last: "2026-11-21T10:00:01.000Z" }, t, 9)).toBe("push");
-    expect(syncAction({ last: "2026-11-20T10:00:00.000Z" }, t, 9)).toBe("ask");
+    expect(syncAction({ last: "2026-11-20T10:00:00.000Z" }, t, 9)).toBe("merge");
   });
 
   it("stop on the phone at 3/6, go on on the laptop at 3/6", async () => {
@@ -175,12 +183,10 @@ describe("automatic sync between devices", () => {
     expect(saves(cloud)).toBe(2);
   });
 
-  it("not signed in, or waiting for the first choice → nothing happens", async () => {
+  it("not signed in → nothing happens", async () => {
     const cloud = fakeCloud(); setClientForTests(cloud);
     await setOwnConfig({ url: "https://mine.supabase.co", key: "k" });
     cloud.put(backupOf(withProgress()));
-    expect(await syncNow()).toBeUndefined();
-    await patchAccount({ on: true, ask: true });
     expect(await syncNow()).toBeUndefined();
     expect(cloud.calls).toEqual([]);
   });

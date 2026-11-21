@@ -79,7 +79,7 @@ export function App() {
         if (r === "restored") { toast(t.restored); navigate("/"); }
         else if (r === "pulled") toast(t.pulled);
         else if (r === "signed-in") toast(t.saved);
-        else if (r === "ask") navigate("/settings/account");
+        else if (r === "merged") toast(t.merged);
       });
     });
     // Automatic sync with the learner's other devices (only when signed in; see lib/account.ts).
@@ -88,8 +88,8 @@ export function App() {
       if (!force && Date.now() - lastSync < 10e3) return;
       lastSync = Date.now();
       void syncNow().then(async (r) => {
-        if (r !== "pulled") return;
-        toast((await import("./lib/accountText")).accountText(getState().settings.explainLang).pulled);
+        if (r !== "pulled" && r !== "merged") return;
+        toast((await import("./lib/accountText")).accountText(getState().settings.explainLang)[r]);
       });
     };
     const onVisibility = () => {

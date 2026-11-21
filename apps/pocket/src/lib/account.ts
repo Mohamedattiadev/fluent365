@@ -6,7 +6,8 @@
 // when the Account screen is opened or this device is signed in.
 import * as db from "./db";
 import { makeBackup, type BackupCheck, type BackupError } from "./portability";
-import { changedAt, flush, getState } from "./store";
+import { mergeStates } from "./merge";
+import { changedAt, flush, getState, replaceState } from "./store";
 import { firstSync, hasProgress, restoreFrom } from "./sync";
 
 export interface AccountConfig { url: string; key: string }
@@ -15,7 +16,7 @@ export interface AccountState {
   email?: string;
   last?: string; // last successful backup from this device
   lastError?: string;
-  ask?: boolean; // first sign-in found a backup and progress here: the learner chooses
+  ask?: boolean; // older versions: the learner was to choose; now combined by itself (merge)
   pending?: string; // sign-in started: the route to come back to after Google
   synced?: string; // version (time) of the cloud copy this device last matched
   syncedLocal?: number; // this device's change time at that moment (see store.changedAt)
@@ -95,7 +96,7 @@ export async function signIn(back?: string) {
 const callbackCode = () => new URLSearchParams(location.search).get("code");
 
 /** Called once when the app starts. Finishes a sign-in, or syncs with the other devices. */
-export async function accountStartup(): Promise<"signed-in" | "restored" | "ask" | "pulled" | void> {
+export async function accountStartup(): Promise<"signed-in" | "restored" | "merged" | "pulled" | void> {
   if (!(await accountConfig())) return;
   const a = await getAccount();
   const code = callbackCode();
@@ -115,12 +116,12 @@ export async function accountStartup(): Promise<"signed-in" | "restored" | "ask"
   }
   if (a.on) {
     const r = await syncNow();
-    if (r === "pulled" || r === "ask") return r;
+    if (r === "pulled" || r === "merged") return r;
   }
 }
 
-/** First sync after signing in: upload, restore by itself (empty device) or ask. */
-export async function afterSignIn(): Promise<"signed-in" | "restored" | "ask"> {
+/** First sync after signing in: upload, restore by itself (empty device) or combine both. */
+export async function afterSignIn(): Promise<"signed-in" | "restored" | "merged"> {
   const remote = await fetchAccountBackup();
   if (!remote.ok && remote.error !== NO_BACKUP) throw new Error(remote.error);
   const action = firstSync(hasProgress(getState()), remote.ok);
@@ -129,8 +130,9 @@ export async function afterSignIn(): Promise<"signed-in" | "restored" | "ask"> {
     await pull(remote);
     return "restored";
   }
-  await patchAccount({ ask: true });
-  return "ask";
+  if (!remote.ok) throw new Error(remote.error);
+  await merge(remote);
+  return "merged";
 }
 
 export const NO_BACKUP = "There is no backup in your account yet.";
@@ -151,6 +153,14 @@ async function pull(check: BackupCheck & { stamp?: string }) {
   const at = check.stamp ? Date.parse(check.stamp) : undefined;
   await restoreFrom(check, at);
   await markSynced(check.stamp, changedAt());
+}
+
+/** Both changed: combine them (lib/merge.ts), keep this device's copy as the safety copy, upload. */
+async function merge(remote: BackupCheck & { stamp?: string }) {
+  const localNewer = changedAt() >= (remote.stamp ? Date.parse(remote.stamp) : 0);
+  await db.set("kv", "backup:before-restore", makeBackup());
+  await replaceState(mergeStates(getState(), remote.state, localNewer));
+  await accountBackupNow();
 }
 
 /** Upload the current progress (newest wins). Returns the time of the backup. */
@@ -195,11 +205,11 @@ export async function currentEmail(): Promise<string | null> {
 // cloud version it last matched (synced) and its own change time then (syncedLocal):
 // - only the cloud changed (another device) → take it;
 // - only this device changed → upload it;
-// - both changed (two devices used offline) → the newer one wins; the other side's data stays as
-//   the safety copy on this device (backup:before-restore).
+// - both changed (two devices used offline, or a first sign-in with progress on both) → combined
+//   by itself, each piece from the side further along (lib/merge.ts); then uploaded. No question.
 // Runs when the app opens, comes back to the screen, is left, and ~15 s after a change.
 
-export type SyncAction = "pull" | "push" | "ask" | "none";
+export type SyncAction = "pull" | "push" | "merge" | "none";
 const same = (a?: string | null, b?: string | null) => !!a && !!b && Date.parse(a) === Date.parse(b);
 
 /** Pure decision (tested). remote: version in the cloud; local: this device's change time. */
@@ -208,11 +218,11 @@ export function syncAction(a: Pick<AccountState, "synced" | "syncedLocal" | "las
   if (a.synced === undefined) {
     // Signed in before the automatic sync existed: the cloud copy is ours if it was saved at our last backup.
     const ours = !!a.last && Math.abs(Date.parse(remote) - Date.parse(a.last)) < 120e3;
-    return ours ? "push" : "ask";
+    return ours ? "push" : "merge";
   }
   const remoteChanged = !same(remote, a.synced);
   const localChanged = local !== a.syncedLocal;
-  if (remoteChanged && localChanged) return Date.parse(remote) > local ? "pull" : "push";
+  if (remoteChanged && localChanged) return "merge";
   if (remoteChanged) return "pull";
   if (localChanged) return "push";
   return "none";
@@ -221,22 +231,23 @@ export function syncAction(a: Pick<AccountState, "synced" | "syncedLocal" | "las
 let running = false;
 let again = false;
 /** Sync this device with the account. Silent on failure (recorded in lastError, shown in Settings). */
-export async function syncNow(): Promise<"pulled" | "pushed" | "ask" | void> {
+export async function syncNow(): Promise<"pulled" | "pushed" | "merged" | void> {
   if (typeof navigator !== "undefined" && navigator.onLine === false) return;
   if (running) { again = true; return; }
   running = true;
   try {
     const a = await getAccount();
-    if (!a.on || a.ask || a.pending || !(await accountConfig())) return;
+    if (!a.on || a.pending || !(await accountConfig())) return;
     await flush();
     const c = await client();
     const remote = await c.stamp();
-    const action = syncAction(a, remote, changedAt());
+    const action = a.ask && remote ? "merge" : syncAction(a, remote, changedAt());
     if (action === "push") { await accountBackupNow(); return "pushed"; }
-    if (action === "ask") { await patchAccount({ ask: true }); return "ask"; }
-    if (action === "pull") {
+    if (action === "pull" || action === "merge") {
       const r = await c.load();
-      if (r?.ok) { await pull(r); return "pulled"; }
+      if (!r?.ok) return;
+      if (action === "pull") { await pull(r); return "pulled"; }
+      await merge(r); return "merged";
     }
   } catch (e) {
     await patchAccount({ lastError: message(e) }).catch(() => undefined);
