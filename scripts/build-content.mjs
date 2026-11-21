@@ -155,6 +155,17 @@ if (existsSync(join(src, "vocabulary/translations-wiktionary.json"))) {
   }
 }
 
+// Still missing: Wiktionary's Turkish/Arabic entries read the other way round (scripts/reverse-translations.py).
+if (existsSync(join(src, "vocabulary/translations-reverse.json"))) {
+  const rv = read("vocabulary/translations-reverse.json").words;
+  for (const v of vocab.values()) {
+    const t = rv[v.w.toLowerCase()];
+    if (!t) continue;
+    if (!v.tr && t.tr?.length) { v.tr = t.tr.join(", "); v.trSrc = "wiktionary"; }
+    if (!v.ar && t.ar?.length) { v.ar = t.ar.join("، "); v.trSrc = "wiktionary"; }
+  }
+}
+
 // Words in the books that are not in the word list: meaning + TR/AR from Wiktionary, inflected forms
 // pointing to their base word (scripts/build-book-words.py). Loaded by the app only when a word is tapped.
 if (existsSync(join(src, "vocabulary/book-words.json"))) write("book-words.json", read("vocabulary/book-words.json"));

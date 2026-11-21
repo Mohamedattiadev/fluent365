@@ -59,19 +59,34 @@ SKIP_POS = {"name", "character", "symbol", "suffix", "prefix", "abbrev"}
 
 
 def base_of(word: str):
-    """'startled' → 'startle' when Wiktionary says it is a form of it (first entry that says so)."""
+    """'startled' → ('startle', 'verb') when Wiktionary says it is a form of it (first entry that says so).
+    The part of speech of the form matters: "blistered" is a verb form, so the verb meaning of "blister"."""
     for e in entries(word):
         for s in e.get("senses", []):
             for fo in s.get("form_of") or s.get("alt_of") or []:
                 b = fo.get("word")
                 if b and b != word and " " not in b:
-                    return b
-    return None
+                    return b, e.get("pos")
+    return None, None
 
 
-def meaning(word: str):
-    """(pos, first real gloss) of the first useful entry."""
-    for e in entries(word):
+def short(g: str, n: int = 110):
+    """Cut a long gloss at a ';' or ',' (else at a word), never in the middle of a word."""
+    g = g.rstrip(".")
+    if len(g) <= n:
+        return g
+    for sep in ("; ", ", "):
+        i = g.rfind(sep, 0, n)
+        if i > 30:
+            return g[:i]
+    return g[: g.rfind(" ", 0, n)] + "…"
+
+
+def meaning(word: str, prefer: str | None = None):
+    """(pos, first real gloss) of the first useful entry; entries of the `prefer` part of speech first."""
+    es = entries(word)
+    es = sorted(es, key=lambda e: e.get("pos") != prefer) if prefer else es
+    for e in es:
         if e.get("pos") in SKIP_POS:
             continue
         for s in e.get("senses", []):
@@ -79,7 +94,7 @@ def meaning(word: str):
                 continue
             g = (s.get("glosses") or [None])[0]
             if g and not g.lower().startswith(("obsolete", "archaic form", "alternative")):
-                return e.get("pos"), g.rstrip(".")
+                return e.get("pos"), short(g)
     return None, None
 
 
@@ -94,7 +109,8 @@ def run(todo):
 
 print(f"{len(words)} book words not in the word list", flush=True)
 run(words)
-bases = {w: base_of(w) for w in words}
+forms = {w: base_of(w) for w in words}
+bases = {w: f[0] for w, f in forms.items()}
 run(sorted({b for b in bases.values() if b and b.lower() not in vocab}))
 
 POS = {"noun": "noun", "verb": "verb", "adj": "adjective", "adv": "adverb", "prep": "preposition", "pron": "pronoun", "conj": "conjunction", "det": "determiner", "intj": "interjection"}
@@ -105,15 +121,20 @@ for w in words:
         out[w] = {"base": b.lower()}  # the app shows the word-list entry
         continue
     head_word = b or w
-    pos, d = meaning(head_word)
+    pos, d = meaning(head_word, forms[w][1])
     if not d:
         continue
-    item = {"d": d[:160]}
+    item = {"d": d}
     if b:
         item["base"] = b
     if pos in POS:
         item["pos"] = POS[pos]
     t = translations(head_word, item.get("pos"), d) or {}
+    # Only translations of the same part of speech ("blistered" the verb is not "kabarcık" the noun).
+    kp = {"adjective": "adj", "adverb": "adv"}.get(item.get("pos"), item.get("pos"))
+    for code in ("tr", "ar"):
+        if kp and t.get(code) and not any(e.get("pos") == kp and any(x.get("code") == code for x in (e.get("translations") or []) + [y for sn in e.get("senses", []) for y in sn.get("translations", [])]) for e in entries(head_word)):
+            t.pop(code)
     if t.get("tr"):
         item["tr"] = ", ".join(t["tr"])
     if t.get("ar"):
