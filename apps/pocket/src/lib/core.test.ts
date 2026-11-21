@@ -268,6 +268,40 @@ describe("words in books", () => {
     expect(cardKeyFor(idx, "Henry,")).toBe("c:henry");
   });
 
+  it("'startled' is not 'start': a shorter stem only after a doubled consonant; the book dictionary knows the base", async () => {
+    const { lookupWord, wordIndex, wordInfo, cardKeyFor } = await import("./reading");
+    const v2 = [{ id: 7, w: "start", d: "begin" }, { id: 8, w: "stop", d: "halt" }, { id: 9, w: "dull", d: "not bright" }] as unknown as VocabItem[];
+    const idx = wordIndex({ vocab: v2 } as unknown as Content);
+    expect(lookupWord(idx, "startled")).toBeUndefined();
+    expect(lookupWord(idx, "stopped")?.id).toBe(8);
+    expect(lookupWord(idx, "starting")?.id).toBe(7);
+    const bw = { startled: { base: "startle" }, startle: { d: "to excite by sudden alarm", pos: "verb", tr: "ürkütmek" }, duller: { base: "dull" } };
+    expect(wordInfo(idx, "startled", bw)).toEqual({}); // no meaning anywhere → nothing (never "start")
+    // The build puts the base word's meaning on the form itself:
+    const bw2 = { startled: { base: "startle", d: "to excite by sudden alarm", tr: "ürkütmek" } };
+    expect(wordInfo(idx, "startled,", bw2).extra).toMatchObject({ w: "startle", d: "to excite by sudden alarm", tr: "ürkütmek" });
+    expect(wordInfo(idx, "duller", bw).v?.id).toBe(9);
+    expect(wordInfo(idx, "Stopped", {}).v?.id).toBe(8);
+    expect(cardKeyFor(idx, "zzzz")).toBe("c:zzzz");
+  });
+
+  it("words saved without a meaning get one from the book dictionary (or the word-list base)", async () => {
+    const { fillCustomMeanings, wordIndex } = await import("./reading");
+    const words = { gaunt: { d: "lean and haggard", pos: "adjective", tr: "sıska", ar: "هزيل" }, duller: { base: "dull" } };
+    const old = globalThis.fetch;
+    globalThis.fetch = (async () => new Response(JSON.stringify({ words }))) as typeof fetch;
+    try {
+      await replaceState(emptyState());
+      addCards(["c:gaunt", "c:duller", "c:qqq"], { "c:gaunt": { w: "gaunt", source: "x" }, "c:duller": { w: "duller", source: "x" }, "c:qqq": { w: "qqq", source: "x" } });
+      const idx = wordIndex({ vocab: [{ id: 9, w: "dull", d: "not bright", tr: "donuk" }] } as unknown as Content);
+      expect(await fillCustomMeanings(idx)).toBe(2);
+      const cs = getState().cards;
+      expect(cs["c:gaunt"].custom).toMatchObject({ d: "lean and haggard", tr: "sıska", ar: "هزيل", trSrc: "wiktionary" });
+      expect(cs["c:duller"].custom).toMatchObject({ d: "not bright", tr: "donuk" });
+      expect(cs["c:qqq"].custom?.d).toBeUndefined();
+    } finally { globalThis.fetch = old; }
+  });
+
   it("lists new words ahead, skipping saved, known and easy words, and remembers the book", async () => {
     const { wordsAhead, savedFromBook, tagBook } = await import("./reading");
     await replaceState(emptyState());

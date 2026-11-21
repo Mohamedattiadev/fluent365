@@ -2,7 +2,7 @@
 // Progress is stored per book as the next block (paragraph) to read and the words read so far.
 import { dayNumber } from "./session";
 import { getState, today, update, type AppState } from "./store";
-import type { Content } from "./content";
+import { load, type Content } from "./content";
 import type { Book, BookInfo, VocabItem } from "./types";
 
 export const PAGE_WORDS = 350;
@@ -92,12 +92,68 @@ export function lookupWord(index: Map<string, VocabItem>, raw: string): VocabIte
   if (w.endsWith("es")) tries.push(w.slice(0, -2));
   if (w.endsWith("s")) tries.push(w.slice(0, -1));
   if (w.endsWith("ied")) tries.push(w.slice(0, -3) + "y");
-  if (w.endsWith("ed")) tries.push(w.slice(0, -2), w.slice(0, -1), w.slice(0, -3));
-  if (w.endsWith("ing")) tries.push(w.slice(0, -3), w.slice(0, -3) + "e", w.slice(0, -4));
+  // "stopped" → "stop" only with a doubled consonant ("startled" is not "start").
+  const doubled = (n: number) => w.length > n + 1 && w[w.length - n - 1] === w[w.length - n - 2];
+  if (w.endsWith("ed")) tries.push(w.slice(0, -2), w.slice(0, -1), ...(doubled(2) ? [w.slice(0, -3)] : []));
+  if (w.endsWith("ing")) tries.push(w.slice(0, -3), w.slice(0, -3) + "e", ...(doubled(3) ? [w.slice(0, -4)] : []));
   if (w.endsWith("ly")) tries.push(w.slice(0, -2));
   if (w.endsWith("er")) tries.push(w.slice(0, -2), w.slice(0, -1));
-  for (const t of tries) { const v = index.get(t); if (v) return v; }
+  for (const t of tries) { if (t.length < 3 && t !== w) continue; const v = index.get(t); if (v) return v; }
   return undefined;
+}
+
+// ---------- Words of the books that are not in the word list (Wiktionary, scripts/build-book-words.py) ----------
+export interface BookWord { d?: string; pos?: string; tr?: string; ar?: string; base?: string }
+let bookWords: Record<string, BookWord> | null = null;
+let bookWordsP: Promise<Record<string, BookWord>> | null = null;
+/** Loads data/book-words.json once (empty when missing or offline before it was cached). */
+export function loadBookWords() {
+  bookWordsP ??= load<{ words: Record<string, BookWord> }>("book-words.json").then((j) => (bookWords = j.words ?? {})).catch(() => { bookWordsP = null; return {}; });
+  return bookWordsP;
+}
+export const bookWordsNow = () => bookWords;
+
+/** Words saved before they had a meaning (not in the word list): fill in the Wiktionary meaning and TR/AR
+ *  once the book dictionary is there. Runs at start only when such a card exists. */
+export async function fillCustomMeanings(index?: Map<string, VocabItem>) {
+  const empty = () => Object.entries(getState().cards).filter(([k, c]) => k.startsWith("c:") && c.custom && !c.custom.d);
+  if (!empty().length) return 0;
+  const bw = await loadBookWords();
+  let n = 0;
+  update((s) => {
+    const cards = { ...s.cards };
+    for (const [k, c] of Object.entries(cards)) {
+      const u = c.custom;
+      if (!k.startsWith("c:") || !u || u.d) continue;
+      const w = u.w.toLowerCase();
+      const e = bw[w];
+      // A form of a word-list entry ("startled" → "startle"): that entry's meaning; else the Wiktionary one.
+      const v = index && (e?.base ? index.get(e.base) : undefined);
+      const m = v ? { d: v.d, pos: v.pos, tr: v.tr, ar: v.ar, trSrc: v.trSrc } : e?.d ? { ...e, trSrc: "wiktionary" } : null;
+      if (!m?.d) continue;
+      cards[k] = { ...c, custom: { ...u, d: m.d, pos: m.pos, tr: m.tr, ar: m.ar, trSrc: m.trSrc } };
+      n++;
+    }
+    return n ? { cards } : {};
+  });
+  return n;
+}
+
+export interface WordInfo { v?: VocabItem; extra?: BookWord & { w: string } }
+/** What a tapped word means: the word-list entry (also through Wiktionary's base word: "startled" →
+ *  "startle"), else the Wiktionary meaning of the book word, else the simple-ending guess. */
+export function wordInfo(index: Map<string, VocabItem>, raw: string, bw = bookWords): WordInfo {
+  const w = cleanWord(raw);
+  const exact = index.get(w);
+  if (exact) return { v: exact };
+  const e = bw?.[w];
+  if (e) {
+    const viaBase = e.base ? index.get(e.base) : undefined;
+    if (viaBase) return { v: viaBase };
+    if (e.d) return { extra: { ...e, w: e.base ?? w } };
+  }
+  const guess = lookupWord(index, raw);
+  return guess ? { v: guess } : {};
 }
 
 /** Lower case, curly apostrophes straightened, punctuation and a final 's removed. */
@@ -117,8 +173,8 @@ export function wordIndex(c: Content) {
 
 /** The card key for a word in a book: its word-list id, or the custom key used when it is not in the list. */
 export function cardKeyFor(index: Map<string, VocabItem>, raw: string) {
-  const v = lookupWord(index, raw);
-  return v ? String(v.id) : `c:${cleanWord(raw)}`;
+  const { v, extra } = wordInfo(index, raw);
+  return v ? String(v.id) : `c:${extra?.w ?? cleanWord(raw)}`;
 }
 
 /** The first rank of "new" words for a level (more frequent words count as already known). */

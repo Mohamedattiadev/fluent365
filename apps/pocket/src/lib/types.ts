@@ -124,7 +124,7 @@ export interface StoredCard {
   [k: string]: unknown;
 }
 
-export interface MyCard { card: StoredCard; added: string; custom?: { w: string; d?: string; ex?: string; source: string }; /** Book id when the word was saved while reading. */ book?: string }
+export interface MyCard { card: StoredCard; added: string; custom?: { w: string; d?: string; ex?: string; source: string; pos?: string; tr?: string; ar?: string; trSrc?: string }; /** Book id when the word was saved while reading. */ book?: string }
 
 export interface Mastery {
   rec: number; // recognition 0..1

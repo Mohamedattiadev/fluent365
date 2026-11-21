@@ -8,7 +8,7 @@ import { loadBook, type Content } from "../lib/content";
 import { addCards } from "../lib/learning";
 import { lastAt, loadTiming, useEdgeBooks, type Timing } from "../lib/edgebooks";
 import * as player from "../lib/player";
-import { cardKeyFor, cleanWord, countWords, lookupWord, pageAt, previousPageStart, readToday, recordPage, setPosition, tagBook, wordIndex, wordsAhead } from "../lib/reading";
+import { bookWordsNow, cardKeyFor, cleanWord, countWords, loadBookWords, lookupWord, wordInfo, pageAt, previousPageStart, readToday, recordPage, setPosition, tagBook, wordIndex, wordsAhead } from "../lib/reading";
 import { getState, useApp } from "../lib/store";
 import type { Book, BookInfo, VocabItem } from "../lib/types";
 import { bookTracks } from "../screens/Listen";
@@ -21,6 +21,7 @@ export { lookupWord };
 export const shortTitle = (t: string) => t.replace(/^The /, "");
 
 export function Reader({ c, info, target, onDone, actions }: { c: Content; info: BookInfo; target: number; onDone?: () => void; actions?: React.ReactNode }) {
+  useEffect(() => { void loadBookWords(); }, []); // ready before the first tap
   const [book, setBook] = useState<Book | null>(null);
   const [error, setError] = useState(false);
   const stored = useApp((s) => s.reading.books[info.id]); // select the stored object (stable), default below
@@ -184,14 +185,16 @@ export function Reader({ c, info, target, onDone, actions }: { c: Content; info:
 
 /** Word card: definition, listen, add to reviews. Also used by the full-screen player (long-press a word). */
 export function WordSheet({ index, pick, bookId, saved, onClose }: { c: Content; index: Map<string, VocabItem>; pick: { word: string; sentence: string }; bookId?: string; saved: (key: string) => boolean; onClose: () => void }) {
-  const v = lookupWord(index, pick.word);
-  const clean = pick.word.replace(/^[^\p{L}]+|[^\p{L}]+$/gu, "");
-  const customKey = `c:${cleanWord(pick.word)}`;
+  const [bw, setBw] = useState(bookWordsNow);
+  useEffect(() => { if (!bw) void loadBookWords().then(setBw); }, [bw]);
+  const { v, extra } = wordInfo(index, pick.word, bw);
+  const clean = extra?.w ?? pick.word.replace(/^[^\p{L}]+|[^\p{L}]+$/gu, "");
+  const customKey = `c:${extra?.w ?? cleanWord(pick.word)}`;
   const key = v ? String(v.id) : customKey;
   const isSaved = saved(key);
   function save() {
     if (v) addCards([key]);
-    else addCards([customKey], { [customKey]: { w: clean.toLowerCase(), ex: pick.sentence, source: bookId ? "Saved while reading" : "Saved while listening" } });
+    else addCards([customKey], { [customKey]: { w: clean.toLowerCase(), ex: pick.sentence, source: bookId ? "Saved while reading" : "Saved while listening", ...(extra && { d: extra.d, pos: extra.pos, tr: extra.tr, ar: extra.ar, trSrc: "wiktionary" }) } });
     if (bookId) tagBook(key, bookId);
     toast(`"${v?.w ?? clean}" added to your reviews`);
     onClose();
@@ -202,12 +205,15 @@ export function WordSheet({ index, pick, bookId, saved, onClose }: { c: Content;
         <div className="grow">
           <p className="sheet-word">{v?.w ?? clean}</p>
           {v?.pos && <p className="small muted" style={{ margin: 0 }}>{v.pos}{v.lvl ? ` · ≈ ${v.lvl}` : ""}</p>}
+          {!v && extra?.pos && <p className="small muted" style={{ margin: 0 }}>{extra.pos}</p>}
         </div>
         <button className="icon-btn" onClick={onClose} aria-label="Close"><Icon name="close" /></button>
       </div>
       {v?.d && <p className="sheet-def">{v.d}</p>}
       {v && <Xlate tr={v.tr} ar={v.ar} note={xlateNote(v.trSrc, "")} />}
-      {v?.d ? null : <p className="small muted sheet-def">Not in the word list (no definition). You can still save it with its sentence.</p>}
+      {!v && extra?.d && <p className="sheet-def">{extra.d}</p>}
+      {!v && extra && <Xlate tr={extra.tr} ar={extra.ar} note="Wiktionary · may be another meaning" />}
+      {v?.d || extra?.d ? null : <p className="small muted sheet-def">{bw ? "No meaning found for this word. You can still save it with its sentence." : "Looking up…"}</p>}
       <p className="small muted sheet-ex"><i>"{pick.sentence}"</i></p>
       <div className="sheet-actions">
         <button className="btn tonal" onClick={() => { stopSpeaking(); speak(v?.w ?? clean, { rate: 0.85 }); }} aria-label={`Listen to the word: ${clean}`}><Icon name="audio" size={18} /> Word</button>

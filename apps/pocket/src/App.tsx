@@ -116,6 +116,8 @@ export function App() {
     return () => { document.removeEventListener("visibilitychange", onVisibility); removeEventListener("focus", onFocus); offChange(); clearTimeout(changeTimer); };
   }, []);
 
+  // Words saved while reading before they had a meaning get one now (Wiktionary, offline file).
+  useEffect(() => { if (ready && content) void import("./lib/reading").then((r) => r.fillCustomMeanings(r.wordIndex(content))); }, [ready, content]);
   useEffect(() => { window.scrollTo(0, 0); }, [route]);
   useEffect(() => {
     for (const [re, to] of LEGACY) { const m = route.match(re); if (m) { navigate(to(m)); break; } }

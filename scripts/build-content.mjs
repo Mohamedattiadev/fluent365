@@ -155,6 +155,10 @@ if (existsSync(join(src, "vocabulary/translations-wiktionary.json"))) {
   }
 }
 
+// Words in the books that are not in the word list: meaning + TR/AR from Wiktionary, inflected forms
+// pointing to their base word (scripts/build-book-words.py). Loaded by the app only when a word is tapped.
+if (existsSync(join(src, "vocabulary/book-words.json"))) write("book-words.json", read("vocabulary/book-words.json"));
+
 // Turkish and Arabic for the example sentences (AI translation, labelled in the app): the original
 // sentences (sentences-tr-ar.json) and the public-domain book quotes (quotes-tr-ar.json, scripts/quote-batch.py).
 for (const [f, forQuotes] of [["sentences-tr-ar.json", false], ["quotes-tr-ar.json", true]]) {

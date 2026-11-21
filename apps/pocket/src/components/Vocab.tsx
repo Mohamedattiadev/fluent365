@@ -14,7 +14,7 @@ import { ping } from "../lib/activity";
 export interface CardView { key: string; w: string; d?: string; ex?: string; pos?: string; tr?: string; ar?: string; trSrc?: string; exTr?: string; exAr?: string; lvl?: string; source?: string }
 
 export function cardView(key: string, mine: MyCard | undefined, c: Content): CardView | null {
-  if (mine?.custom) return { key, w: mine.custom.w, d: mine.custom.d, ex: mine.custom.ex, source: mine.custom.source };
+  if (mine?.custom) { const u = mine.custom; return { key, w: u.w, d: u.d, ex: u.ex, source: u.source, pos: u.pos, tr: u.tr, ar: u.ar, trSrc: u.trSrc }; }
   const v = c.vocabById.get(Number(key));
   return v ? viewOf(v) : null;
 }
