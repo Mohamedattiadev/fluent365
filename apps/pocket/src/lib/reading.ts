@@ -3,7 +3,7 @@
 import { dayNumber } from "./session";
 import { getState, today, update, type AppState } from "./store";
 import { load, type Content } from "./content";
-import type { Book, BookInfo, VocabItem } from "./types";
+import type { Book, BookInfo, MyCard, VocabItem } from "./types";
 
 export const PAGE_WORDS = 350;
 export const READING_WPM = 150; // a comfortable B1–B2 reading speed, used only to estimate minutes
@@ -113,25 +113,31 @@ export function loadBookWords() {
 }
 export const bookWordsNow = () => bookWords;
 
-/** Words saved before they had a meaning (not in the word list): fill in the Wiktionary meaning and TR/AR
- *  once the book dictionary is there. Runs at start only when such a card exists. */
+/** Words saved without a meaning or without TR/AR (not in the word list): fill in what the book dictionary
+ *  (or the word-list entry of the base word) has, keeping what the card already has. Runs at start;
+ *  a newer dictionary (more translations) fills the gaps of cards saved earlier. */
 export async function fillCustomMeanings(index?: Map<string, VocabItem>) {
-  const empty = () => Object.entries(getState().cards).filter(([k, c]) => k.startsWith("c:") && c.custom && !c.custom.d);
-  if (!empty().length) return 0;
+  const gaps = (u: NonNullable<MyCard["custom"]>) => !u.d || !u.tr || !u.ar;
+  if (!Object.entries(getState().cards).some(([k, c]) => k.startsWith("c:") && c.custom && gaps(c.custom))) return 0;
   const bw = await loadBookWords();
+  // Cards saved under the base word ("startle") although only the form ("startled") is a key.
+  const byBase = new Map<string, BookWord>();
+  for (const e of Object.values(bw)) if (e.base && e.d && !byBase.has(e.base)) byBase.set(e.base, e);
   let n = 0;
   update((s) => {
     const cards = { ...s.cards };
     for (const [k, c] of Object.entries(cards)) {
       const u = c.custom;
-      if (!k.startsWith("c:") || !u || u.d) continue;
+      if (!k.startsWith("c:") || !u || !gaps(u)) continue;
       const w = u.w.toLowerCase();
-      const e = bw[w];
-      // A form of a word-list entry ("startled" → "startle"): that entry's meaning; else the Wiktionary one.
-      const v = index && (e?.base ? index.get(e.base) : undefined);
+      const e = bw[w] ?? byBase.get(w);
+      // A form of a word-list entry ("duller" → "dull"): that entry; else the Wiktionary meaning.
+      const v = index && (index.get(w) ?? (e?.base ? index.get(e.base) : undefined));
       const m = v ? { d: v.d, pos: v.pos, tr: v.tr, ar: v.ar, trSrc: v.trSrc } : e?.d ? { ...e, trSrc: "wiktionary" } : null;
-      if (!m?.d) continue;
-      cards[k] = { ...c, custom: { ...u, d: m.d, pos: m.pos, tr: m.tr, ar: m.ar, trSrc: m.trSrc } };
+      if (!m) continue;
+      const next = { ...u, d: u.d ?? m.d, pos: u.pos ?? m.pos, tr: u.tr ?? m.tr, ar: u.ar ?? m.ar };
+      if (next.d === u.d && next.tr === u.tr && next.ar === u.ar) continue;
+      cards[k] = { ...c, custom: { ...next, trSrc: u.trSrc ?? m.trSrc } };
       n++;
     }
     return n ? { cards } : {};

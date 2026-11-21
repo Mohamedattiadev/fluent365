@@ -7,7 +7,7 @@ import { addCards, dueCardKeys, recordAttempt, reviewWord } from "./learning";
 import { ankiExport, ankiImport, checkBackup, makeBackup, parseLearningText } from "./portability";
 import { buildSession, countsTowardTime, dailyMinutes, GT_UNITS, newWordLimit, nextCourseUnit, pickNewWords } from "./session";
 import { Rating, schedule, type Grade } from "./srs";
-import { emptyState, flush, getState, loadState, replaceState } from "./store";
+import { emptyState, flush, getState, loadState, replaceState, update } from "./store";
 import { diffWords, matches, normalize } from "./text";
 import type { Course, GrammarTopic, IeltsContent, LessonInfo, SessionStep, VocabItem } from "./types";
 
@@ -299,6 +299,10 @@ describe("words in books", () => {
       expect(cs["c:gaunt"].custom).toMatchObject({ d: "lean and haggard", tr: "sıska", ar: "هزيل", trSrc: "wiktionary" });
       expect(cs["c:duller"].custom).toMatchObject({ d: "not bright", tr: "donuk" });
       expect(cs["c:qqq"].custom?.d).toBeUndefined();
+      // A newer dictionary with more translations fills only the gaps of a card that already had a meaning.
+      update((st) => ({ cards: { ...st.cards, "c:gaunt": { ...st.cards["c:gaunt"], custom: { w: "gaunt", source: "x", d: "mine" } } } }));
+      await fillCustomMeanings(idx);
+      expect(getState().cards["c:gaunt"].custom).toMatchObject({ d: "mine", tr: "sıska", ar: "هزيل" });
     } finally { globalThis.fetch = old; }
   });
 
