@@ -58,10 +58,18 @@ export function supa(cfg: AccountConfig): AccountClient {
     async load() {
       const { data, error } = await sb.from(TABLE).select("data, updated_at").eq("user_id", await userId()).maybeSingle();
       fail(error, "Could not read the backup");
-      return data ? checkBackup(JSON.stringify(data.data)) : null;
+      if (!data) return null;
+      const check = checkBackup(JSON.stringify(data.data));
+      return check.ok ? { ...check, stamp: data.updated_at as string } : check;
+    },
+    async stamp() {
+      const { data, error } = await sb.from(TABLE).select("updated_at").eq("user_id", await userId()).maybeSingle();
+      fail(error, "Could not read the backup");
+      return (data?.updated_at as string | undefined) ?? null;
     },
     async save(backup) {
-      const { error } = await sb.from(TABLE).upsert({ user_id: await userId(), data: backup, updated_at: new Date().toISOString() });
+      // updated_at = the backup's own time: the version the devices compare (automatic sync).
+      const { error } = await sb.from(TABLE).upsert({ user_id: await userId(), data: backup, updated_at: backup.exportedAt });
       fail(error, "Could not save the backup");
     },
     async remove() {

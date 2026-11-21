@@ -1,12 +1,12 @@
 import "fake-indexeddb/auto";
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import {
-  accountBackupNow, accountConfig, afterSignIn, autoAccountBackup, deleteCloudData, envConfig, getAccount, patchAccount,
+  accountBackupNow, accountConfig, afterSignIn, deleteCloudData, syncAction, syncNow, envConfig, getAccount, patchAccount,
   forgetAccountHere, setClientForTests, setOwnConfig, type AccountClient,
 } from "./account";
 import * as db from "./db";
 import { checkBackup } from "./portability";
-import { emptyState, getState, replaceState } from "./store";
+import { changedAt, emptyState, flush, getState, replaceState, update } from "./store";
 import { AUTO_EVERY_H, dueSince, firstSync, hasProgress } from "./sync";
 
 // An in-memory "Supabase": one row, like the backups table for one user.
@@ -18,7 +18,13 @@ function fakeCloud() {
     async signIn() { calls.push("signIn"); },
     async exchange() { calls.push("exchange"); return { email: "me@example.com" }; },
     async email() { return "me@example.com"; },
-    async load() { calls.push("load"); return row ? checkBackup(JSON.stringify(row)) : null; },
+    async load() {
+      calls.push("load");
+      if (!row) return null;
+      const c = checkBackup(JSON.stringify(row));
+      return c.ok ? { ...c, stamp: (row as { exportedAt: string }).exportedAt } : c;
+    },
+    async stamp() { calls.push("stamp"); return row ? (row as { exportedAt: string }).exportedAt : null; },
     async save(b) { calls.push("save"); row = b; },
     async remove() { calls.push("remove"); row = null; },
     async signOut() { calls.push("signOut"); },
@@ -27,7 +33,7 @@ function fakeCloud() {
 }
 
 const withProgress = () => ({ ...emptyState(), cards: { "1": { due: "2026-11-19" } as never } });
-const backupOf = (s: object) => ({ app: "fluent365", format: 1, exportedAt: new Date().toISOString(), data: s });
+const backupOf = (s: object, at = new Date().toISOString()) => ({ app: "fluent365", format: 1, exportedAt: at, data: s });
 
 beforeEach(async () => { await db.del("kv", "account"); await db.del("kv", "account-config"); await replaceState(emptyState()); });
 afterEach(() => setClientForTests(null));
@@ -81,8 +87,8 @@ describe("first sync (same rules as the GitHub backup)", () => {
     expect(await afterSignIn()).toBe("ask");
     expect(cloud.calls).not.toContain("save");
     expect(Object.keys(getState().cards)).toEqual(["1"]);
-    await patchAccount({ on: true, last: new Date(Date.now() - 48 * 3600e3).toISOString() });
-    await autoAccountBackup(); // waiting for the choice: no automatic backup
+    await patchAccount({ on: true });
+    await syncNow(); // waiting for the choice: no automatic sync
     expect(cloud.calls).not.toContain("save");
   });
   it("newest wins: a backup replaces the row", async () => {
@@ -116,26 +122,66 @@ describe("Delete everything on this device", () => {
   });
 });
 
-describe("automatic backup: at most every ~20 h", () => {
-  it("dueSince", () => {
-    const now = Date.now();
-    expect(dueSince(undefined, now)).toBe(false);
-    expect(dueSince(new Date(now - (AUTO_EVERY_H - 1) * 3600e3).toISOString(), now)).toBe(false);
-    expect(dueSince(new Date(now - AUTO_EVERY_H * 3600e3).toISOString(), now)).toBe(true);
+describe("automatic sync between devices", () => {
+  const saves = (c: { calls: string[] }) => c.calls.filter((x) => x === "save").length;
+  const signedIn = async (cloud: ReturnType<typeof fakeCloud>) => {
+    setClientForTests(cloud);
+    await setOwnConfig({ url: "https://mine.supabase.co", key: "k" });
+    await patchAccount({ on: true });
+  };
+
+  it("decision table", () => {
+    const t = "2026-11-21T10:00:00.000Z";
+    const later = "2026-11-21T11:00:00.000Z";
+    expect(syncAction({ synced: t, syncedLocal: 5 }, null, 5)).toBe("push");
+    expect(syncAction({ synced: t, syncedLocal: 5 }, t, 5)).toBe("none");
+    expect(syncAction({ synced: t, syncedLocal: 5 }, "2026-11-21T10:00:00+00:00", 5)).toBe("none"); // same time, Postgres format
+    expect(syncAction({ synced: t, syncedLocal: 5 }, t, 6)).toBe("push");
+    expect(syncAction({ synced: t, syncedLocal: 5 }, later, 5)).toBe("pull");
+    // both changed: the newer wins
+    expect(syncAction({ synced: t, syncedLocal: 5 }, later, Date.parse(later) - 1000)).toBe("pull");
+    expect(syncAction({ synced: t, syncedLocal: 5 }, later, Date.parse(later) + 1000)).toBe("push");
+    // signed in before the sync existed: ours if saved at our last backup, else ask once
+    expect(syncAction({ last: "2026-11-21T10:00:01.000Z" }, t, 9)).toBe("push");
+    expect(syncAction({ last: "2026-11-20T10:00:00.000Z" }, t, 9)).toBe("ask");
   });
-  it("only when signed in, configured and due", async () => {
+
+  it("stop on the phone at 3/6, go on on the laptop at 3/6", async () => {
+    const cloud = fakeCloud(); await signedIn(cloud);
+    // Laptop: in sync with yesterday's copy.
+    cloud.put(backupOf({ ...withProgress(), session: { step: 1 } }, new Date(Date.now() - 86400e3).toISOString()));
+    await replaceState(withProgress());
+    await patchAccount({ synced: (cloud.row() as { exportedAt: string }).exportedAt, syncedLocal: changedAt() });
+    // Phone uploads today's session.
+    cloud.put(backupOf({ ...withProgress(), session: { step: 3 } }));
+    expect(await syncNow()).toBe("pulled");
+    expect(getState().session).toEqual({ step: 3 });
+    expect(saves(cloud)).toBe(0);
+    expect(await syncNow()).toBeUndefined(); // nothing new either side
+    expect(saves(cloud)).toBe(0);
+  });
+
+  it("a change here is uploaded; with nothing new, nothing is sent", async () => {
+    const cloud = fakeCloud(); await signedIn(cloud);
+    await replaceState(withProgress());
+    await accountBackupNow();
+    expect(saves(cloud)).toBe(1);
+    expect(await syncNow()).toBeUndefined();
+    update((s) => ({ session: { step: 4 } as never }));
+    await flush();
+    expect(await syncNow()).toBe("pushed");
+    expect((cloud.row() as { data: { session: unknown } }).data.session).toEqual({ step: 4 });
+    expect(await syncNow()).toBeUndefined();
+    expect(saves(cloud)).toBe(2);
+  });
+
+  it("not signed in, or waiting for the first choice → nothing happens", async () => {
     const cloud = fakeCloud(); setClientForTests(cloud);
     await setOwnConfig({ url: "https://mine.supabase.co", key: "k" });
-    await patchAccount({ on: true, last: new Date(Date.now() - 3600e3).toISOString() });
-    await autoAccountBackup();
-    expect(cloud.calls).not.toContain("save");
-    await patchAccount({ last: new Date(Date.now() - 21 * 3600e3).toISOString() });
-    await autoAccountBackup();
-    expect(cloud.calls.filter((c) => c === "save")).toHaveLength(1);
-    await autoAccountBackup(); // just backed up
-    expect(cloud.calls.filter((c) => c === "save")).toHaveLength(1);
-    await patchAccount({ on: false, last: new Date(Date.now() - 48 * 3600e3).toISOString() });
-    await autoAccountBackup();
-    expect(cloud.calls.filter((c) => c === "save")).toHaveLength(1);
+    cloud.put(backupOf(withProgress()));
+    expect(await syncNow()).toBeUndefined();
+    await patchAccount({ on: true, ask: true });
+    expect(await syncNow()).toBeUndefined();
+    expect(cloud.calls).toEqual([]);
   });
 });

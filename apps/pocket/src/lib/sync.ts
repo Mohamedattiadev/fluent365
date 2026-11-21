@@ -22,8 +22,9 @@ export type FirstSync = "upload" | "restore" | "ask";
 export const firstSync = (localHasProgress: boolean, remoteExists: boolean): FirstSync =>
   !remoteExists ? "upload" : localHasProgress ? "ask" : "restore";
 
-/** Replace this device's progress with a checked backup; the current data is kept as a safety copy. */
-export async function restoreFrom(check: BackupCheck) {
+/** Replace this device's progress with a checked backup; the current data is kept as a safety copy.
+ *  `at`: the backup's own time, recorded as this device's last change (the account sync). */
+export async function restoreFrom(check: BackupCheck, at?: number) {
   await db.set("kv", "backup:before-restore", makeBackup());
-  await replaceState(check.state);
+  await replaceState(check.state, at);
 }

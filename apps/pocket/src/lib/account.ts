@@ -6,8 +6,8 @@
 // when the Account screen is opened or this device is signed in.
 import * as db from "./db";
 import { makeBackup, type BackupCheck, type BackupError } from "./portability";
-import { getState } from "./store";
-import { dueSince, firstSync, hasProgress, restoreFrom } from "./sync";
+import { changedAt, flush, getState } from "./store";
+import { firstSync, hasProgress, restoreFrom } from "./sync";
 
 export interface AccountConfig { url: string; key: string }
 export interface AccountState {
@@ -17,6 +17,8 @@ export interface AccountState {
   lastError?: string;
   ask?: boolean; // first sign-in found a backup and progress here: the learner chooses
   pending?: string; // sign-in started: the route to come back to after Google
+  synced?: string; // version (time) of the cloud copy this device last matched
+  syncedLocal?: number; // this device's change time at that moment (see store.changedAt)
 }
 
 const CFG = "account-config";
@@ -60,8 +62,12 @@ export interface AccountClient {
   signIn(redirectTo: string): Promise<void>;
   exchange(code: string): Promise<{ email?: string }>;
   email(): Promise<string | undefined>;
-  load(): Promise<BackupCheck | BackupError | null>;
-  save(backup: unknown): Promise<void>;
+  /** The backup, with `stamp` = its version (the time it was saved). */
+  load(): Promise<(BackupCheck & { stamp?: string }) | BackupError | null>;
+  /** Only the version of the backup (cheap): null when there is none. */
+  stamp(): Promise<string | null>;
+  /** Saves the backup; its exportedAt becomes the version. */
+  save(backup: { exportedAt: string }): Promise<void>;
   remove(): Promise<void>;
   signOut(): Promise<void>;
 }
@@ -88,8 +94,8 @@ export async function signIn(back?: string) {
 /** Coming back from Google: ?code=… in the URL and a sign-in was started on this device. */
 const callbackCode = () => new URLSearchParams(location.search).get("code");
 
-/** Called once when the app starts. Finishes a sign-in, or makes an automatic backup when due. */
-export async function accountStartup(): Promise<"signed-in" | "restored" | "ask" | void> {
+/** Called once when the app starts. Finishes a sign-in, or syncs with the other devices. */
+export async function accountStartup(): Promise<"signed-in" | "restored" | "ask" | "pulled" | void> {
   if (!(await accountConfig())) return;
   const a = await getAccount();
   const code = callbackCode();
@@ -108,8 +114,8 @@ export async function accountStartup(): Promise<"signed-in" | "restored" | "ask"
     }
   }
   if (a.on) {
-    void import("./supa"); // ready for the backup when the app is left
-    await autoAccountBackup();
+    const r = await syncNow();
+    if (r === "pulled" || r === "ask") return r;
   }
 }
 
@@ -120,8 +126,7 @@ export async function afterSignIn(): Promise<"signed-in" | "restored" | "ask"> {
   const action = firstSync(hasProgress(getState()), remote.ok);
   if (action === "upload") { await accountBackupNow(); return "signed-in"; }
   if (action === "restore" && remote.ok) {
-    await restoreFrom(remote);
-    await patchAccount({ last: new Date().toISOString(), ask: false });
+    await pull(remote);
     return "restored";
   }
   await patchAccount({ ask: true });
@@ -138,13 +143,24 @@ export async function fetchAccountBackup(): Promise<BackupCheck | BackupError> {
   }
 }
 
+const markSynced = (stamp: string | undefined, local: number) =>
+  patchAccount({ synced: stamp, syncedLocal: local, last: new Date().toISOString(), lastError: undefined, ask: false });
+
+/** The cloud copy replaces this device's progress (safety copy kept); it counts as synced. */
+async function pull(check: BackupCheck & { stamp?: string }) {
+  const at = check.stamp ? Date.parse(check.stamp) : undefined;
+  await restoreFrom(check, at);
+  await markSynced(check.stamp, changedAt());
+}
+
 /** Upload the current progress (newest wins). Returns the time of the backup. */
 export async function accountBackupNow(): Promise<string> {
   try {
-    await (await client()).save(makeBackup());
-    const last = new Date().toISOString();
-    await patchAccount({ last, lastError: undefined, ask: false });
-    return last;
+    const local = changedAt();
+    const backup = makeBackup();
+    await (await client()).save(backup);
+    const a = await markSynced(backup.exportedAt, local);
+    return a.last!;
   } catch (e) {
     const msg = message(e);
     await patchAccount({ lastError: msg });
@@ -153,9 +169,8 @@ export async function accountBackupNow(): Promise<string> {
 }
 
 /** "Restore it here": the cloud backup replaces this device's progress (safety copy kept). */
-export async function accountRestore(check: BackupCheck) {
-  await restoreFrom(check);
-  await patchAccount({ last: new Date().toISOString(), ask: false });
+export async function accountRestore(check: BackupCheck & { stamp?: string }) {
+  await pull(check);
 }
 
 export async function signOut() {
@@ -175,17 +190,58 @@ export async function currentEmail(): Promise<string | null> {
   try { return (await (await client()).email()) ?? a.email ?? null; } catch { return a.email ?? null; }
 }
 
+// ---------- Automatic sync between devices ----------
+// One copy in the cloud, "newest wins", nothing merged item by item. Each device remembers which
+// cloud version it last matched (synced) and its own change time then (syncedLocal):
+// - only the cloud changed (another device) → take it;
+// - only this device changed → upload it;
+// - both changed (two devices used offline) → the newer one wins; the other side's data stays as
+//   the safety copy on this device (backup:before-restore).
+// Runs when the app opens, comes back to the screen, is left, and ~15 s after a change.
+
+export type SyncAction = "pull" | "push" | "ask" | "none";
+const same = (a?: string | null, b?: string | null) => !!a && !!b && Date.parse(a) === Date.parse(b);
+
+/** Pure decision (tested). remote: version in the cloud; local: this device's change time. */
+export function syncAction(a: Pick<AccountState, "synced" | "syncedLocal" | "last">, remote: string | null, local: number): SyncAction {
+  if (!remote) return "push";
+  if (a.synced === undefined) {
+    // Signed in before the automatic sync existed: the cloud copy is ours if it was saved at our last backup.
+    const ours = !!a.last && Math.abs(Date.parse(remote) - Date.parse(a.last)) < 120e3;
+    return ours ? "push" : "ask";
+  }
+  const remoteChanged = !same(remote, a.synced);
+  const localChanged = local !== a.syncedLocal;
+  if (remoteChanged && localChanged) return Date.parse(remote) > local ? "pull" : "push";
+  if (remoteChanged) return "pull";
+  if (localChanged) return "push";
+  return "none";
+}
+
 let running = false;
-/** Automatic backup when the app is opened or left: at most once per ~20 h. Silent on failure. */
-export async function autoAccountBackup() {
-  if (running || (typeof navigator !== "undefined" && navigator.onLine === false)) return;
+let again = false;
+/** Sync this device with the account. Silent on failure (recorded in lastError, shown in Settings). */
+export async function syncNow(): Promise<"pulled" | "pushed" | "ask" | void> {
+  if (typeof navigator !== "undefined" && navigator.onLine === false) return;
+  if (running) { again = true; return; }
   running = true;
   try {
     const a = await getAccount();
-    if (a.on && !a.ask && dueSince(a.last) && (await accountConfig())) await accountBackupNow();
-  } catch {
-    /* recorded in lastError, shown in Settings */
+    if (!a.on || a.ask || a.pending || !(await accountConfig())) return;
+    await flush();
+    const c = await client();
+    const remote = await c.stamp();
+    const action = syncAction(a, remote, changedAt());
+    if (action === "push") { await accountBackupNow(); return "pushed"; }
+    if (action === "ask") { await patchAccount({ ask: true }); return "ask"; }
+    if (action === "pull") {
+      const r = await c.load();
+      if (r?.ok) { await pull(r); return "pulled"; }
+    }
+  } catch (e) {
+    await patchAccount({ lastError: message(e) }).catch(() => undefined);
   } finally {
     running = false;
+    if (again) { again = false; void syncNow(); }
   }
 }

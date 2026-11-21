@@ -73,13 +73,26 @@ let loaded = false;
 const listeners = new Set<() => void>();
 const dirty = new Set<Slice>();
 let timer: ReturnType<typeof setTimeout> | null = null;
+// Time of the last change made on this device (ms), kept in IndexedDB. The account sync
+// compares it with the cloud copy to know which side is newer.
+let changed = 0;
+const changeListeners = new Set<() => void>();
 
 export const getState = () => state;
+/** When this device's progress last changed (0 = never recorded). */
+export const changedAt = () => changed;
+/** Called after every change made on this device (not on load). */
+export const onLocalChange = (fn: () => void) => { changeListeners.add(fn); return () => { changeListeners.delete(fn); }; };
+function touch() {
+  changed = Math.max(Date.now(), changed + 1);
+  for (const l of changeListeners) l();
+}
 export const isLoaded = () => loaded;
 
 export async function loadState() {
   const base = emptyState();
   const values = await Promise.all(SLICES.map((s) => db.get<unknown>("kv", s)));
+  changed = (await db.get<number>("kv", "changed-at")) ?? 0;
   SLICES.forEach((s, i) => {
     if (values[i] !== undefined) (base as unknown as Record<string, unknown>)[s] = values[i];
   });
@@ -102,7 +115,8 @@ export async function flush() {
   timer = null;
   const slices = [...dirty];
   dirty.clear();
-  await Promise.all(slices.map((s) => db.set("kv", s, state[s])));
+  if (!slices.length) return;
+  await Promise.all([...slices.map((s) => db.set("kv", s, state[s])), db.set("kv", "changed-at", changed)]);
 }
 
 /** Update one or more slices immutably and schedule saving. */
@@ -111,14 +125,18 @@ export function update(fn: (draft: AppState) => Partial<AppState> | void) {
   const patch = fn(draft) ?? {};
   const next = { ...draft, ...patch };
   for (const s of SLICES) if (next[s] !== state[s]) dirty.add(s);
+  const any = SLICES.some((s) => next[s] !== state[s]);
   state = next;
   emit();
+  if (any) touch();
   if (timer) clearTimeout(timer);
   timer = setTimeout(flush, 400);
 }
 
-export async function replaceState(next: AppState) {
+/** Replace everything (restore, import, delete). `at`: the change time to record (a cloud copy keeps its own). */
+export async function replaceState(next: AppState, at?: number) {
   state = next;
+  if (at === undefined) touch(); else changed = at;
   for (const s of SLICES) dirty.add(s);
   emit();
   await flush();

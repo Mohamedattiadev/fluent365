@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import { FullPlayer } from "./components/FullPlayer";
 import { InstallCard } from "./components/Install";
 import { Icon, ShortcutsHelp, toast, Toaster, useWide } from "./components/ui";
-import { accountStartup, autoAccountBackup } from "./lib/account";
+import { accountStartup, syncNow } from "./lib/account";
 import { startTracking } from "./lib/activity";
 import { loadAll, type Content } from "./lib/content";
 import * as db from "./lib/db";
 import * as player from "./lib/player";
-import { getState, isLoaded, loadState, update, useApp } from "./lib/store";
+import { getState, isLoaded, loadState, onLocalChange, update, useApp } from "./lib/store";
 import { lessonPhase } from "./lib/session";
 import { autoBackup } from "./lib/cloud";
 import type { GrammarTopic } from "./lib/types";
@@ -72,17 +72,36 @@ export function App() {
       // Learners from before the evidence gate keep the phase they had reached.
       if (st.settings.setupDone && !st.settings.phaseReached) update((x) => ({ settings: { ...x.settings, phaseReached: lessonPhase(x) } }));
       if (st.settings.setupDone) void autoBackup();
-      // Optional account: finish a Google sign-in, or back up when due (loads Supabase only if signed in).
+      // Optional account: finish a Google sign-in, or sync with the other devices (loads Supabase only if signed in).
       void accountStartup().then(async (r) => {
         if (!r) return;
         const t = (await import("./lib/accountText")).accountText(getState().settings.explainLang);
         if (r === "restored") { toast(t.restored); navigate("/"); }
+        else if (r === "pulled") toast(t.pulled);
         else if (r === "signed-in") toast(t.saved);
         else if (r === "ask") navigate("/settings/account");
       });
     });
-    const onHide = () => { if (document.visibilityState === "hidden" && getState().settings.setupDone) { void autoBackup(); void autoAccountBackup(); } };
-    document.addEventListener("visibilitychange", onHide);
+    // Automatic sync with the learner's other devices (only when signed in; see lib/account.ts).
+    let lastSync = 0;
+    const sync = (force = false) => {
+      if (!force && Date.now() - lastSync < 10e3) return;
+      lastSync = Date.now();
+      void syncNow().then(async (r) => {
+        if (r !== "pulled") return;
+        toast((await import("./lib/accountText")).accountText(getState().settings.explainLang).pulled);
+      });
+    };
+    const onVisibility = () => {
+      if (!getState().settings.setupDone) return;
+      if (document.visibilityState === "hidden") { void autoBackup(); sync(true); }
+      else sync();
+    };
+    const onFocus = () => { if (getState().settings.setupDone) sync(); };
+    let changeTimer: ReturnType<typeof setTimeout> | undefined;
+    const offChange = onLocalChange(() => { clearTimeout(changeTimer); changeTimer = setTimeout(() => sync(true), 15e3); });
+    document.addEventListener("visibilitychange", onVisibility);
+    addEventListener("focus", onFocus);
     loadAll()
       .then(async (c) => {
         const personal = await db.get<GrammarTopic>("kv", "personal-topic");
@@ -94,6 +113,7 @@ export function App() {
       })
       .catch(() => setError(true));
     startTracking();
+    return () => { document.removeEventListener("visibilitychange", onVisibility); removeEventListener("focus", onFocus); offChange(); clearTimeout(changeTimer); };
   }, []);
 
   useEffect(() => { window.scrollTo(0, 0); }, [route]);
