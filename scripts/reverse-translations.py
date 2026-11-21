@@ -39,8 +39,9 @@ PAREN = re.compile(r"\([^)]*\)|\[[^\]]*\]")
 def pieces(gloss: str):
     g = PAREN.sub("", gloss).strip().rstrip(".")
     for i, p in enumerate(re.split(r"[;,]", g)):
-        p = p.strip().lower()
-        p = re.sub(r"^(to|a|an|the)\s+", "", p)
+        p = re.sub(r"^(to|a|an|the)\s+", "", p.strip())
+        if not p or not p[0].islower():
+            continue  # "May" (the month) is not "may"
         if re.fullmatch(r"[a-z][a-z'-]*( [a-z][a-z'-]*)?", p):
             yield i, p
 
@@ -69,11 +70,16 @@ def build(path: str):
 
 
 def best(rev, w: str, pos: str | None):
+    """Up to 3 words. With a known part of speech only words of that part of speech ("blistered" the
+    verb is not "bombe"); without one, a weak match (one later gloss of one later sense) is not trusted."""
     by = rev.get(w)
     if not by:
         return None
-    c = by.get(pos or "") if pos and by.get(pos) else sum(by.values(), Counter())
-    top = [x for x, _ in c.most_common(3)]
+    p = {"noun": "noun", "verb": "verb", "adjective": "adjective", "adj": "adjective", "adverb": "adverb", "adv": "adverb"}.get((pos or "").split("/")[0].strip())
+    c = by.get(p) if p else sum(by.values(), Counter())
+    if not c:
+        return None
+    top = [x for x, n in c.most_common(3) if p or n >= 2]  # the part-of-speech match already filters
     return top or None
 
 
